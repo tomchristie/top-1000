@@ -25,6 +25,8 @@ for charcter decoding would be...
 Also, it's important that the Chinese character set GB2312 should always be coerced to the superset GBK8,
 since that resolves a bunch of cases that'll otherwise fail. This is important both for cases with a specified charset, and for cases where we guess with chardet.
 
+See https://en.wikipedia.org/wiki/GBK_(character_encoding)
+
 ```
 Specified charsets:
 utf-8 598
