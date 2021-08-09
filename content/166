@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="高速、安定サーバーならさくらのレンタルサーバ！PHP7モジュールモードでWordPress高速化。無料SSL、Webフォント、バックアップ機能などWebサイト制作に便利な機能が充実。ドメイン取得、WordPressインストールも簡単。無料電話サポートで個人から法人まで安心してお使いいただけます。">
+  <meta name="keywords" content="レンタルサーバー,サーバー">
+  <meta name="format-detection" content="telephone=no">
+  <title>さくらのレンタルサーバ | 高速・安定WordPressなら！無料2週間お試し</title>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PLMJ2F');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NL8DR22');</script>
+<!-- End Google Tag Manager -->
+  <link rel="canonical" href="https://www.sakura.ne.jp/">
+  <link rel="stylesheet" href="/resource/css/header.css">
+  <link rel="stylesheet" href="/resource/css/footer.css">
+  <link rel="stylesheet" href="common/css/common.css">
+  <link rel="stylesheet" href="common/css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="/common/js/stickybits.min.js"></script>
+  <script src="/common/js/header-gnav.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    function formatDate (dateString) {
+      var d = new Date(dateString)
+      return [
+        d.getFullYear(),
+        d.getMonth() + 1,
+        d.getDate()
+      ].join('/')
+    }
+    $.ajax({
+      url: 'https://www.sakura.ad.jp/information/wp-json/news/v1/articles/?tag=rentalserver&per_page=3',
+      success: function (data) {
+        $.each(data, function (index, entry) {
+          var time = formatDate(entry.date)
+          var url = entry.link
+          var title = entry.title.rendered
+          var dt = '<dt class="news-time">' + time + '</dt>'
+          var dd = '<dd class="news-title"><a class="link" href="' + url + '">' + title + '</a></dd>'
+          $('.information-rs .news-list').append(dt + dd)
+        })
+      }
+    })
+    $.ajax({
+      url: 'https://www.sakura.ne.jp/maint/api/v1/feeds/?type=minorinfo',
+      success: function (data) {
+        if (data.results.length > 0) {
+          $('.information-addfunction').append(
+            '<div class="information-addfunction-body">' +
+              '<h2 class="hl">機能追加情報</h2>' +
+              '<div class="article-block"><dl class="news-list"></dl></div>' +
+            '</div>')
+
+          $.each(data.results, function (index, entry) {
+            var time = formatDate(Number(entry.date)*1000)
+            var url = entry.url
+            var title = entry.title
+            var dt = '<dt class="news-time">' + time + '</dt>'
+            var dd = '<dd class="news-title"><a class="link" href="' + url + '" target="_blank">' + title + '</a></dd>'
+            $('.information-addfunction .news-list').append(dt + dd)
+          })
+        }
+      }
+    })
+  </script>
+  <!-- OGP -->
+  <meta property="og:title" content="さくらのレンタルサーバ | 高速・安定WordPressなら！無料2週間お試し">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="高速、安定サーバーならさくらのレンタルサーバ！PHP7モジュールモードでWordPress高速化。無料SSL、Webフォント、バックアップ機能などWebサイト制作に便利な機能が充実。ドメイン取得、WordPressインストールも簡単。無料電話サポートで個人から法人まで安心してお使いいただけます。">
+  <meta property="og:url" content="https://www.sakura.ne.jp/">
+  <meta property="og:site_name" content="さくらのレンタルサーバ">
+  <meta property="og:image" content="https://www.sakura.ne.jp/images/ogp.png">
+  <script src="/common/js/typesquare.js"></script>
+  <link rel="icon" type="image/png" href="https://www.sakura.ad.jp/resource/favicon/sakura_logo.png" />
+<link rel="apple-touch-icon" type="image/png" href="https://www.sakura.ad.jp/resource/favicon/sakura_logo.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.sakura.ad.jp/resource/favicon/sakura_logo_16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.sakura.ad.jp/resource/favicon/sakura_logo_32.png" /></head>
+
+<body id="index" class="responsive">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLMJ2F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL8DR22"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <style>body{padding:45px 0 0}.alert-block{align-items:center;background:#e8f5ff;display:flex;font-size:14px;height:45px;position:absolute;text-align:center;top:0;width:100%;z-index:200}.alert-block a{color:#444;text-decoration:underline}@media (max-width:959px){.responsive #nav{top:-865px}.responsive #nav.open{-webkit-transform:translateY(951px);transform:translateY(951px)}.alert-block{font-size:12px}.for-pc{display:none;}}</style>
+<div class="alert-block">
+  <div class="cb">
+    <p><a href="https://www.sakura.ad.jp/information/announcements/2020/02/28/1968202941/" target="_blank">新型コロナウイルス感染症に関する当社対応について</a></p>
+  </div>
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<header id="header">
+	<div class="cb">
+		<figure id="header-logo"><a href="https://www.sakura.ad.jp/"><img src="/resource/images/header_logo_bgwhite.png" alt="SAKURA internet" /></a></figure>
+		<ul id="header-menu">
+			<li><a href="https://www.sakura.ad.jp/corporate/">企業情報</a></li>
+			<li><a href="https://www.sakura.ad.jp/recruit/">採用情報</a></li>
+			<li><a href="https://help.sakura.ad.jp/">サポート</a></li>
+			<li><a href="https://secure.sakura.ad.jp/menu/" target="_blank">会員ログイン</a></li>
+			<li><a href="https://case.sakura.ad.jp/">導入事例</a></li>
+			<li><a href="https://www.sakura.ad.jp/search/"><i class="fa fa-search"></i>サイト内検索</a></li>
+		</ul>
+		<div id="toggle">
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</header>
+
+<nav id="nav">
+	<div id="nav-main">
+		<ul class="cb">
+			<li class="nav_rs"><a href="https://www.sakura.ne.jp/">レンタルサーバ</a></li>
+			<li class="nav_vps"><a href="https://vps.sakura.ad.jp/">VPS</a></li>
+			<li class="nav_cloud"><a href="https://cloud.sakura.ad.jp/">クラウド</a></li>
+			<li class="nav_ds"><a href="https://server.sakura.ad.jp/">専用サーバ</a></li>
+			<li class="nav_gpu"><a href="https://www.sakura.ad.jp/koukaryoku/">高火力</a></li>
+			<li class="nav_iot"><a href="https://iot.sakura.ad.jp/"><span class="visually-hidden">さくらの</span>IoT</a></li>
+		</ul>
+	</div>
+	<div id="nav-sub">
+		<ul>
+			<li>
+				<a href="https://datacenter.sakura.ad.jp/">
+					<figure><img src="/resource/images/nav_icon_dc.png" width="23" alt=""></figure><span>データセンター</span><i class="fa fa-angle-right"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://domain.sakura.ad.jp/">
+					<figure><img src="/resource/images/nav_icon_domain.png" width="24" alt=""></figure><span>ドメイン</span><i class="fa fa-angle-right"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://ssl.sakura.ad.jp/">
+					<figure><img src="/resource/images/nav_icon_ssl.png" width="23" alt=""></figure><span>さくらのSSL</span><i class="fa fa-angle-right"></i>
+				</a>
+			</li>
+		</ul>
+		<p><a href="https://www.sakura.ad.jp/services/"><i class="fa fa-list-ul"></i>サービス一覧を見る</a></p>
+	</div>
+	<aside id="nav-extra">
+		<ul>
+			<li><a href="https://secure.sakura.ad.jp/menu/">会員メニュー</a></li>
+			<li><a href="https://help.sakura.ad.jp/">サポート</a></li>
+			<li><a href="https://www.sakura.ad.jp/corporate/">企業情報</a></li>
+			<li><a href="https://www.sakura.ad.jp/recruit/">採用情報</a></li>
+			<li><a href="https://case.sakura.ad.jp/">導入事例</a></li>
+			<li><a href="https://www.sakura.ad.jp/">さくらインターネットTOP</a></li>
+		</ul>
+		<div id="close"><i class="fa fa-close"></i>閉じる</div>
+	</aside>
+</nav>
+
+<script>
+	(function($) {
+		var $header = $('#header');
+		// Nav Toggle Button
+		$('#header #toggle').click(function() {
+			$('#header, #nav, body').toggleClass('open');
+		});
+		$('#close').click(function() {
+			$('#header, #nav, body').removeClass('open');
+		});
+	})(jQuery);
+</script>
+  <header class="rs-header">
+  <div class="inner">
+    <h1 class="rs-site-name"><a href="/" class="rs-logo_link"><img class="rs-logo" src="/common/images/rs-logo.png" srcset="/common/images/rs-logo@2x.png 2x" alt="さくらのレンタルサーバ"></a></h1>
+    <button type="button" class="rs-gnav-trigger"></button>
+    <div class="sp-accordion-menu">
+      <nav data-scroll-header class="rs-gnav">
+        <ul class="gnav-menus">
+          <li class="gnav-menu has-child-menus can-dropdown"><span class="gnav-menu-name">プラン</span>
+            <ul class="gnav-child-menus">
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/lite.html">ライト</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/standard.html">スタンダード</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/premium.html">プレミアム<span class="no1">おすすめ</span></a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/business.html">ビジネス</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/pro.html">ビジネスプロ</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/managedserver/">マネージドサーバ</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/mail/">メールボックス</a></li>
+            </ul>
+          </li>
+          <li class="gnav-menu has-child-menus can-dropdown"><span class="gnav-menu-name">機能</span>
+            <ul class="gnav-child-menus">
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/plans.html">機能一覧</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/install/">WordPressクイックインストール</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/freessl.html">無料SSL</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/contentboost/">コンテンツブースト<span class="no1">NEW</span></a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/webfont/">Webフォント</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/backup_staging.html">バックアップ＆ステージング</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/function/webmail/">ウェブメール</a></li>
+            </ul>
+          </li>
+          <li class="gnav-menu no-child-menus">
+            <a class="gnav-menu-name" href="/column/">コラム</a>
+          </li>
+          <li class="gnav-menu has-child-menus can-dropdown"><span class="gnav-menu-name">サポート</span>
+            <ul class="gnav-child-menus">
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/faq.html">よくある質問</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/transfer.html">他社からの乗り換え・移転</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="/flow.html">ご利用の流れ</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="https://help.sakura.ad.jp/">サポートサイト</a></li>
+            </ul>
+          </li>
+          <li class="gnav-menu has-child-menus can-dropdown"><span class="gnav-menu-name">ドメイン</span>
+            <ul class="gnav-child-menus">
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="https://domain.sakura.ad.jp/">独自ドメイン取得</a></li>
+              <li class="gnav-child-menu"><a class="gnav-child-menu_link" href="https://domain.sakura.ad.jp/transfer/">ドメイン転入</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="rs-header_upper">
+        <div class="inner rs-header_upper-inner">
+          <a href="https://secure.sakura.ad.jp/rs/cp/" target="_blank" class="btn-login rs-header_upper-link">コントロールパネルログイン</a>
+        </div>
+      </div>
+      <a href="https://secure.sakura.ad.jp/order/rs/plans/" target="_blank" class="btn-apply">お申し込み</a>
+      <button type="button" class="rs-gnav-close"><img class="rs-gnav-close_img" src="/common/images/icon_close.svg" alt="">閉じる</button>
+    </div>
+  </div>
+</header>
+
+<div class="banner-under-header">
+  <div class="otoriyose-banner">
+    <a href="/lp/sns/otoriyose/">
+      <span class="only-sph"><img class="img-sp-banner" src="/common/images/banner_otoriyose_sp.png" alt="おうち時間を幸せに！お取り寄せグルメ特集"></span>
+      <span class="only-pc"><img class="img-pc-banner" src="/common/images/banner_otoriyose.png" srcset="/common/images/banner_otoriyose@2x.png 2x" alt="おうち時間を幸せに！お取り寄せグルメ特集"></span>
+    </a>
+  </div>
+</div>
+
+  <main class="layout_main">
+    <section class="hero">
+      <div class="cb">
+        <h2 class="hero_heading">高速、安定サーバなら<wbr>さくらのレンタルサーバ</h2>
+        <p class="hero_text">PHP7モジュールモードで<wbr>WordPress高速化。<br>無料SSL、Webフォント、<wbr>バックアップ機能など<wbr>Webサイト制作に<wbr>便利な機能が充実。</p>
+        <div class="hero_buttons">
+          <a data-gtm-category="link" data-gtm-action="click" data-gtm-label="お申し込みはこちら(ヒーロー)：/index.html" href="https://secure.sakura.ad.jp/order/rs/plans/" class="hero_button hero_cta" target="_blank"><small class="hero_button_small">まずは2週間無料でお試しください</small>お申し込みはこちら</a>
+          <a data-gtm-category="link" data-gtm-action="click" data-gtm-label="はじめてご利用される方へ(ヒーロー)：/index.html" href="/column/rs/newvisitors-guide/" class="hero_button hero_beginner"><span class="hero_button_inner"><small class="hero_button_small">はじめてご利用される方へ</small>サービス利用までの流れ</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="lineup" class="section">
+      <div class="cb">
+        <div class="group">
+          <div class="plan lite">
+            <h2><a href="/lite.html">ライト</a></h2>
+            <div>
+              <header>
+                月額換算
+                <strong>131<span>円</span></strong> (年額 1,571円）
+              </header>
+              <p>データベース不要のシンプルなホームページ運用をしたい方へ！</p>
+              <em>２週間お試し無料!</em>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/1" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量<strong>10GB</strong></li>
+              <li>転送量<strong>200GB/日</strong></li>
+              <li>マルチドメイン<strong>20個</strong></li>
+              <li>WordPress<i role="img" class="fa fa-times" aria-label="未対応"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-times" aria-label="未対応"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/lite.html">詳しくみる</a></footer>
+          </div>
+          <div class="plan standard">
+            <h2><a href="/standard.html">スタンダード</a></h2>
+            <div>
+              <header>
+                月額
+                <strong>524<span>円</span></strong>
+              </header>
+              <p>WordPressが使える人気No.1プラン。SNI SSL・無料SSLにも対応！</p>
+              <em>２週間お試し無料!</em>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/2" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量<strong>100GB</strong></li>
+              <li>転送量<strong>700GB/日</strong></li>
+              <li>マルチドメイン<strong>200個</strong></li>
+              <li>WordPress<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/standard.html">詳しくみる</a></footer>
+          </div>
+          <div class="plan premium">
+            <h2><a href="/premium.html">プレミアム</a></h2>
+            <div>
+              <header>
+                月額
+                <strong>1,571<span>円</span></strong>
+                <span class="free_cdn">無料CDN付き</span>
+              </header>
+              <p>高トラフィックにも対応できるCDN連携オプション標準装備！</p>
+              <em>２週間お試し無料!</em>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/3" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量<strong>200GB</strong></li>
+              <li>転送量<strong>800GB/日</strong></li>
+              <li>マルチドメイン<strong>300個</strong></li>
+              <li>WordPress<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/premium.html">詳しくみる</a></footer>
+          </div>
+          <div class="plan business">
+            <h2><a href="/business.html">ビジネス</a></h2>
+            <div>
+              <header>
+                月額
+                <strong>2,619<span>円</span></strong>
+                <span class="free_cdn">無料CDN付き</span>
+              </header>
+              <p>複数人管理が可能。サイトの更新を外部委託する際に最適！</p>
+              <em>２週間お試し無料!</em>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/4" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量<strong>300GB</strong></li>
+              <li>転送量<strong>900GB/日</strong></li>
+              <li>マルチドメイン<strong>400個</strong></li>
+              <li>WordPress<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/business.html">詳しくみる</a></footer>
+          </div>
+          <div class="plan pro">
+            <h2><a href="/pro.html">ビジネスプロ</a></h2>
+            <div>
+              <header>
+                月額
+                <strong>4,714<span>円</span></strong>
+                <span class="free_cdn">無料CDN付き</span>
+              </header>
+              <p>サイトの安定性を高める、専用IPアドレスに対応した上級プラン！</p>
+              <em>２週間お試し無料!</em>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/5" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量<strong>500GB</strong></li>
+              <li>転送量<strong>1,000GB/日</strong></li>
+              <li>マルチドメイン<strong>500個</strong></li>
+              <li>WordPress<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/pro.html">詳しくみる</a></footer>
+          </div>
+          <div class="plan managed">
+            <h2><a href="/managedserver/">マネージド</a></h2>
+            <div>
+              <header>
+                月額
+                <strong>13,200<span>円〜</span></strong>
+                <span class="free_cdn">無料CDN付き</span>
+              </header>
+              <p>サーバー1台丸ごとレンタル。Webとメール両方の安定性を重視した専有プラン！</p>
+              <a class="lineup-order-btn gtm_btn_cv_plan-table" href="https://secure.sakura.ad.jp/order/rs/plans/" target="_blank">お申し込み</a>
+            </div>
+            <ul>
+              <li>容量最大<strong>700GB</strong></li>
+              <li>転送量<strong>1,000GB/日</strong></li>
+              <li>マルチドメイン<strong>無制限</strong></li>
+              <li>WordPress<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>無料SSL<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+              <li>PHP高速化<i role="img" class="fa fa-check" aria-label="使用可能"></i></li>
+            </ul>
+            <footer><a class="lineup-detail-link" href="/managedserver/">詳しくみる</a></footer>
+          </div>
+        </div>
+        <div class="note">
+          <p class="note"><span>※</span>表示価格は全て税込です。</p>
+        </div>
+        <div class="btn-wrap"><a href="/plans.html" class="btn lineup-butn">プラン比較をみる</a></div>
+      </div>
+    </section>
+
+    <section id="mail" class="section section-mail">
+      <div class="cb">
+        <h2 class="hl">シンプルなメール専用プランも人気です</h2>
+        <div class="mail-column">
+          <div class="body">
+            <h3 class="subsub-headline">独自ドメインのメールが使えるメールプラン</h3>
+            <p>自分だけのメールアドレスを持つことができます。フリーメールアドレスよりビジネスにおける信頼性が高まります。</p>
+            <p class="service-type"><span class="service-name">さくらのメールボックス</span><strong>月額換算87円</strong>　初期費用無料</p>
+            <a href="/mail/" class="btn detail-btn">詳しくみる</a>
+          </div>
+          <div class="media">
+            <a href="/mail/">
+            <picture>
+              <img src="images/email.svg" alt="" width="130" height="128">
+            </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="manage" class="section section-manage">
+      <div class="cb">
+        <h2 class="hl">ドメインと有料SSLも一緒に管理しよう</h2>
+        <div class="manage-column">
+          <div class="manage-domain">
+            <h3 class="manage-hl">ドメイン取得・転入</h3>
+            <p>印象的で覚えやすいドメイン名を取得しよう。</p>
+            <a href="https://domain.sakura.ad.jp" class="btn detail-btn">ドメイン検索</a>
+          </div>
+          <div class="manage-ssl">
+            <h3 class="manage-hl">SSLサーバー証明書</h3>
+            <p>全てのWebページをHTTPSに。<br class="pc-visible">常時SSL化対策はお済みですか？</p>
+            <a href="https://ssl.sakura.ad.jp" class="btn detail-btn">証明書を選ぶ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply">
+      <div class="cb">
+        <h2 class="hl">まずは2週間無料でお試しください</h2>
+        <p>メールが届き次第すぐにご利用いただけます。お試し期間中もチャットサポートを無料でご利用いただけます。<small>※マネージドサーバはお試し期間はございません。</small></p>
+        <a href="https://secure.sakura.ad.jp/order/rs/plans/" target="_blank" class="btn">お申し込みはこちら</a>
+      </div>
+    </section>
+
+    <section id="recommended-area" class="section">
+      <div class="cb">
+        <h2 class="hl">おすすめコンテンツ</h2>
+        <ul class="recommended-items">
+      <li class="recommended-item">
+          <a href="https://help.sakura.ad.jp/360000201801/" target="_blank">
+            <p class="title">【大阪・東京】【参加無料】レンタルサーバーのサービス移行やメール、ホームページの運用でお困りのことなどを対面でサポートする「まりなカフェ(対面サポートセミナー)」を随時開催中です。</p>
+              <div class="url">help.sakura.ad.jp</div>
+              <figure class="media">
+                <img src="images/recommended_img01.png" srcset="images/recommended_img01@2x.png 2x" alt="marina cafe あなたのお悩みをサポートスタッフが直接解決します" width="460">
+              </figure>
+          </a>
+      </li>
+          <li class="recommended-item">
+            <a href="https://www.shuwasystem.co.jp/book/9784798058900.html" target="_blank">
+              <p class="title">セキュリティに自信がない初心者の方にぴったり。プラグインなどでのセキュリティ対策を解説した「WordPressセキュリティ大全」に取材協力しております。</p>
+              <div class="url">www.shuwasystem.co.jp</div>
+              <figure class="media">
+                <img src="images/recommended_img05.png" srcset="images/recommended_img05@2x.png 2x" alt="セキュリティに自信がない初心者の方にぴったり。プラグインなどでのセキュリティ対策を解説した「WordPressセキュリティ大全」に取材協力しております。" width="460">
+              </figure>
+            </a>
+          </li>
+          <li class="recommended-item">
+            <a href="https://www.sakura.ne.jp/function/webfont/">
+              <!-- <ul class="label-unit">
+                <li class="label-full">満席</li>
+                <li class="label-waitlist">キャンセル待ち</li>
+              </ul> -->
+              <p class="title">モリサワの提供するWebフォント機能は有名フォントが33書体無料！サイトのイメージアップに効果的です。</p>
+              <!--<div class="url">www.meetup.com</div>-->
+              <figure class="media">
+                <img src="images/recommended_img04.png" srcset="images/recommended_img04@2x.png 2x" alt="" width="460">
+              </figure>
+            </a>
+          </li>
+          <li class="recommended-item">
+            <a href="https://www.sakura.ad.jp/function/affiliate/">
+              <p class="title">アフィリエイト始めよう。あなたのサイトやブログを収益化！<br>
+                あなたの紹介でサービスをご契約いただくと、最大28,000円/件をお支払い。</p>
+              <figure class="media">
+                <img src="images/recommended_img02.png" srcset="images/recommended_img02@2x.png 2x" alt="アフィリエイトプログラム" width="460">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="bigginer" class="section">
+      <div class="cb">
+        <h2 class="hl">はじめての方へ</h2>
+        <ul>
+          <li>
+            <figure><a href="/flow.html"><img src="images/bigginer_bnr01.png" alt=""></a></figure>
+            <h3><a href="/flow.html">２週間無料お試し！レンタルサーバーご利用の流れ</a></h3>
+            <p>最短わずか数分で、すぐにレンタルサーバーをご利用いただけます。まずは２週間無料でお試しください。</p>
+            <small class="note"><span>※</span>マネージドサーバプランは除く</small>
+          </li>
+          <li>
+            <figure><a href="/transfer.html"><img src="images/bigginer_bnr02.png" alt=""></a></figure>
+            <h3><a href="/transfer.html">他社サーバーから移行するには？簡単乗り換え方法</a></h3>
+            <p>他社サーバーからのお乗り換えも、２週間無料のお試し期間がつきます。移行方法も３ステップで簡単です。</p>
+          </li>
+          <li>
+            <figure><a href="https://help.sakura.ad.jp/category/rs/" target="_blank"><img src="images/bigginer_bnr03.png" alt=""></a></figure>
+            <h3><a href="https://help.sakura.ad.jp/category/rs/" target="_blank">よくある質問や使い方マニュアル</a></h3>
+            <p>さくらのレンタルサーバの使い方や各機能の設定方法を画像つきのマニュアルでご紹介します。</p>
+          </li>
+          <li>
+            <figure><a href="https://sakuramarina.com/" target="_blank"><img src="images/bigginer_bnr04.png" alt=""></a></figure>
+            <h3><a href="https://sakuramarina.com/" target="_blank">ホームページを作るには？まりなの超初心者講座</a></h3>
+            <p>サーバーやドメインについての基礎知識や、ホームページ公開までの流れなど、わかりやすく連載形式でお届けします。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <aside id="banner-area" class="section">
+      <div class="cb">
+        <div class="banner"><a class="banner-link" href="https://www.sakura.ad.jp/partners/" target="_blank"><img class="banner-img" src="images/banner_partner.png" srcset="images/banner_partner@2x.png" alt="サーバー引っ越しを検討のお客様へ サイト移行もお任せください さくらのパートナーネットワーク" width="292" height="88"></a></div>
+        <div class="banner"><a class="banner-link" href="/resale/"><img class="banner-img" src="images/banner_resale.png" srcset="images/banner_resale@2x.png" alt="大量アカウントや再販に 事業者向けプラン さくらのレンタルサーバ リセール向けサービス" width="292" height="88"></a></div>
+        <div class="banner"><a class="banner-link" href="/lp/logo/" target="_blank"><img class="banner-img" src="images/banner_15thlp.png" srcset="images/banner_15thlp@2x.png" alt="さくらのレンタルサーバ 新ロゴ決定！！さくらのレンタルサーバ15周年記念 ロゴデザインコンテスト" width="292" height="88"></a></div>
+      </div>
+    </aside>
+
+    <section id="feature">
+      <div class="cb">
+      <h2 class="hl">さくらのレンタルサーバの機能</h2>
+      <p class="lead">
+        企業サイト、ECサイトを作りたい。WordPressを使いたい。<br>
+        会社でメールサーバーやファイルサーバーが欲しい。<br>
+        やりたいことをできるに変える機能がたくさん揃っています。
+      </p>
+      <ul>
+        <li>
+          <a href="/function/contentboost/">
+            <figure><img src="images/plan/icon_contentboost.svg" alt=""></figure>
+            <div>
+              <h3>コンテンツブースト</h3>
+              <p>
+                どんなサイトも簡単に<br>
+                CDNで高速・安定化できます
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+        <li>
+          <a href="/function/install/">
+            <figure><img src="images/plan/icon_install.svg" alt=""></figure>
+            <div>
+              <h3>WordPress</h3>
+              <p>
+                WorsPressなど人気のCMSが<br>
+                簡単にインストール可能
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+        <li>
+          <a href="/function/freessl.html">
+            <figure><img src="images/plan/icon_freessl.svg" alt=""></figure>
+            <div>
+              <h3>Let's Encrypt 無料SSL</h3>
+              <p>
+                コントロールパネルから<br>
+                簡単に設定できます
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+        <li>
+          <a href="/function/backup_staging.html">
+            <figure><img src="images/plan/icon_backup_staging.svg" alt=""></figure>
+            <div>
+              <h3>サイトのバックアップ</h3>
+              <p>
+                スナップショット単位で保存<br>
+                万が一の更新ミスも安心
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+        <li>
+          <a href="/sakurapocket/">
+            <figure><img src="images/plan/icon_sakurapocket.svg" alt=""></figure>
+            <div>
+              <h3>さくらぽけっと</h3>
+              <p>
+                サーバーの空き容量が<br>
+                写真や動画のストレージに
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+        <li>
+          <a href="/function/webfont/">
+            <figure><img src="images/plan/icon_webfont.svg" alt=""></figure>
+            <div>
+              <h3>モリサワ提供のWebフォント</h3>
+              <p>
+                モリサワ提供のフォントが<br>
+                33書体無料
+              </p>
+            </div>
+            <span>詳細はこちら</span>
+          </a>
+        </li>
+      </ul>
+      <a href="/plans.html" class="btn">機能一覧はこちら</a>
+    </div>
+    </section>
+
+    <section id="apply">
+      <div class="cb">
+        <h2 class="hl">まずは2週間無料でお試しください</h2>
+        <p>メールが届き次第すぐにご利用いただけます。お試し期間中もチャットサポートを無料でご利用いただけます。<small>※マネージドサーバはお試し期間はございません。</small></p>
+        <a href="https://secure.sakura.ad.jp/order/rs/plans/" target="_blank" class="btn">お申し込みはこちら</a>
+      </div>
+    </section>
+
+    <section id="safety" class="layout_safety section">
+      <div class="cb">
+        <h2 class="hl">安心のさくら</h2>
+        <ul class="safety-boxes">
+          <li class="safety-box">
+            <h3 class="box-hl subsub-headline">サーバー障害に備える</h3>
+            <p class="box-description">RAID10による冗長化と定期バック<br>アップでデータの保全性を高めます。</p>
+            <figure class="box-icon"><img src="images/safety_icon01.svg" alt=""></figure>
+          </li>
+          <li class="safety-box">
+            <h3 class="box-hl subsub-headline">国内自社データセンター</h3>
+            <p class="box-description">耐震、免震構造の地震に強い設備と<br>無停電電源装置による停電対策。</p>
+            <figure class="box-icon"><img src="images/safety_icon02.svg" alt=""></figure>
+          </li>
+          <li class="safety-box">
+            <h3 class="box-hl subsub-headline">ご利用件数45万件突破</h3>
+            <p class="box-description">1996年の提供開始から、<br>多くのお客様に愛されています。</p>
+            <figure class="box-icon"><img src="images/safety_icon03.svg" alt=""></figure>
+          </li>
+        </ul>
+        <div class="safety-banner">
+          <h3 class="banner-hl subsub-headline">稼働率99.99%以上の高い安定性</h3>
+          <p class="banner-description">24時間365日、お客様の大切なデータを守ります</p>
+          <a href="/backup.html" class="btn detail-btn">詳しくみる</a>
+        </div>
+      </div>
+    </section>
+    <section id="information" class="layout_information section">
+      <div class="cb">
+        <div class="information-rs">
+          <h2 class="hl">お知らせ</h2>
+          <div class="article-block">
+            <dl class="news-list"></dl>
+            <ul class="information-nav-items">
+              <li class="information-nav-item"><a href="https://www.sakura.ad.jp/rss/info_rs.rdf" class="link">RSSフィード</a></li>
+              <li class="information-nav-item"><a href="https://www.sakura.ad.jp/information/tag/rentalserver/" class="link">お知らせの一覧</a></li>
+              <li class="information-nav-item"><a href="https://www.sakura.ad.jp/information/events/?tag=rentalserver" class="link">イベント・セミナー情報</a></li>
+              <li class="information-nav-item"><a href="https://help.sakura.ad.jp/maintenance/" class="link">メンテナンス・障害情報</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="information-addfunction"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rs-footer">
+    <div class="footer-feature">
+  <!-- バナー -->
+  <a class="footer-feature-banner" href="/speedup/" target="_blank">
+    <!-- MEMO:
+          pictureだけでは responsive 非対応時のバナー切り替えがうまくいかないので
+          もう一つ img を加えて className で表示を切り替えます.
+          `.feature-banner_hidden-if-unresponsive`
+          `.feature-banner_hidden-if-responsive`
+        TODO: サイト全体が完全レスポンシブ化したら `img.feature-banner_hidden-if-responsive` を削除する.
+     -->
+    <picture class="feature-banner_hidden-if-unresponsive">
+      <source media="(max-width: 599px)" srcset="/common/images/banner_speed-sp.jpg, /common/images/banner_speed-sp@2x.jpg 2x">
+      <source media="(min-width: 600px)" srcset="/common/images/banner_speed.jpg, /common/images/banner_speed@2x.jpg 2x">
+      <img class="feature-banner-img" src="/common/images/banner_speed.jpg" srcset="/common/images/banner_speed@2x.jpg 2x" alt="Webサイトを早くする、さくらのレンタルサーバ">
+    </picture>
+    <img class="feature-banner_hidden-if-responsive" src="/common/images/banner_speed.jpg" srcset="/common/images/banner_speed@2x.jpg 2x" alt="Webサイトを早くする、さくらのレンタルサーバ">
+  </a>
+  <ul class="footer-feature-items">
+    <li class="footer-feature-item manual visible-only-mailbox">
+      <a class="footer-feature-item_link" href="https://help.sakura.ad.jp/category/rs/rs_mail-rs/" target="_blank">
+        <h2 class="footer-feature-item_head">メールマニュアル</h2>
+        <p class="footer-feature-item_text">アドレス作成や転送設定などサポート情報も充実。</p>
+      </a>
+    </li>
+    <li class="footer-feature-item download">
+      <a class="footer-feature-item_link" href="https://www.sakura.ad.jp/request_form/download/" target="_blank">
+        <h2 class="footer-feature-item_head">資料ダウンロード</h2>
+        <p class="footer-feature-item_text">カタログPDFをダウンロードできます。</p>
+      </a>
+    </li>
+    <li class="footer-feature-item guide">
+      <a class="footer-feature-item_link" href="https://help.sakura.ad.jp/206106542/" target="_blank">
+        <h2 class="footer-feature-item_head">スタートアップガイド</h2>
+        <p class="footer-feature-item_text">お申し込みから設定まで画像付きでご説明します。</p>
+      </a>
+    </li>
+    <li class="footer-feature-item server">
+      <a class="footer-feature-item_link" href="/backup.html">
+        <h2 class="footer-feature-item_head">サーバ稼働率99.99％</h2>
+        <p class="footer-feature-item_text">24時間365日のサーバー運用・保守体制。</p>
+      </a>
+    </li>
+    <li class="footer-feature-item case">
+      <a class="footer-feature-item_link" href="/casestudy.html">
+        <h2 class="footer-feature-item_head">レンタルサーバー利用事例</h2>
+        <p class="footer-feature-item_text">お客様のサイトをご紹介します。</p>
+      </a>
+    </li>
+  </ul>
+</div>
+    <section class="section-apply">
+      <h2 class="section-apply-head">まずは2週間<br class="only-sph">無料でお試しください</h2>
+      <p>メールが届き次第すぐにご利用いただけます。お試し期間中もチャットサポートを無料でご利用いただけます。<small>※マネージドサーバはお試し期間はございません。</small></p>
+      <a href="https://secure.sakura.ad.jp/order/rs/plans/" target="_blank" class="section-apply_btn-apply">お申し込みはこちら</a>
+    </section>
+    <section class="footer-contacts-area">
+  <div class="footer-contacts-inner inner">
+    <dl class="footer-contacts">
+      <div class="footer-contact">
+        <dt class="footer-contact-head">新規ご契約・ご相談のお客様へ</dt>
+        <dd class="footer-contact-button"><a class="footer-contact-button_link" href="https://help.sakura.ad.jp/360000162502/" target="_blank">ご相談・お問い合わせ</a></dd>
+      </div>
+      <div class="footer-contact">
+        <dt class="footer-contact-head">既にご利用中のお客様へ</dt>
+        <dd class="footer-contact-button"><a class="footer-contact-button_link" href="https://help.sakura.ad.jp/206052622" target="_blank">サポート・ご相談窓口について</a></dd>
+      </div>
+    </dl>
+    <p class="notes">※感染症拡大防止強化のため、サポート内容に一部変更がある場合がございます。</p>
+  </div>
+</section>
+    <nav class="footer-nav">
+  <ul class="footer-nav-items">
+    <li class="footer-nav-item"><a href="https://help.sakura.ad.jp/category/rs/" target="_blank">サポートサイト</a></li>
+    <li class="footer-nav-item"><a href="https://help.sakura.ad.jp/category/rs/rs_frequently_asked_questions/" target="_blank">よくあるご質問</a></li>
+    <li class="footer-nav-item"><a href="/terms.html">ご利用上の注意</a></li>
+  </ul>
+</nav>
+    <ul class="footer-notes">
+      <li class="note-item">スタンダードプランでは 2018年4月18日以降お申し込みのお客様はPHP高速化が利用できます。<br>2018年4月17日以前にお申し込みのお客様で新構成をご利用希望の方は、<a href="https://help.sakura.ad.jp/360000041941/" target="_blank">こちらのページ</a>をご確認ください。</li>
+    </ul>
+  </footer>
+  <footer id="footer">
+	<div class="cb">
+		<div id="footer-logo" class="mobile">
+			<a href="https://www.sakura.ad.jp/"><img src="/resource/images/footer_logo.png" alt="SAKURA internet" width="232" /></a>
+		</div>
+		<div id="footer-main">
+			<div>
+				<ul id="footer-info">
+					<li class="sosial"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/SAKURA.Internet" target="_blank">さくらインターネット公式<br>
+						Facebookページ</a></li>
+					<li class="sosial"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/SAKURA.Internet.Recruit" target="_blank">採用情報Facebookページ</a></li>
+					<li class="sosial"><i class="fa fa-twitter-square"></i><a href="https://twitter.com/sakura_pr" target="_blank">広報公式Twitter</a></li>
+					<li class="sosial"><i class="fa fa-twitter-square"></i><a href="https://twitter.com/sakura_ope" target="_blank">サポート公式Twitter</a></li>
+					<li class="sosial"><i class="fa fa-twitter-square"></i><a href="https://twitter.com/sakura_server" target="_blank">さくらのレンタルサーバ</a></li>
+					<li><a href="https://www.sakura.ad.jp/request_form/sakurainfo/">さくらのお知らせ（メルマガ登録）</a></li>
+					<li><a href="https://www.sakura.ad.jp/rss/info.rdf">RSS</a></li>
+					<li><a href="https://sakura-kanto.doorkeeper.jp/" target="_blank">イベント情報Doorkeeper</a></li>
+					<li><a href="https://qiita.com/organizations/sakura_internet" target="_blank">Qiita Organization</a></li>
+				</ul>
+			</div>
+			<div>
+				<dl id="footer-service" class="expand">
+					<dt>サーバーサービス</dt>
+					<dd><a href="https://www.sakura.ne.jp/">さくらのレンタルサーバ</a></dd>
+					<dd><a href="https://www.sakura.ne.jp/managedserver/">さくらのマネージドサーバ</a></dd>
+					<dd><a href="https://www.sakura.ne.jp/mail/">さくらのメールボックス</a></dd>
+					<dd><a href="https://vps.sakura.ad.jp/">さくらのVPS</a></dd>
+					<dd><a href="https://vps.sakura.ad.jp/windows/">さくらのVPS for Windows Server</a></dd>
+					<dd><a href="https://cloud.sakura.ad.jp/">さくらのクラウド</a></dd>
+					<dd><a href="https://server.sakura.ad.jp/">さくらの専用サーバ PHY</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/koukaryoku/">高火力</a></dd>
+				</dl>
+				<dl id="footer-iot">
+					<dt>IoT</dt>
+          <dd><a href="https://iot.sakura.ad.jp/">さくらのIoTサイトトップ</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/services/sim/">さくらのセキュアモバイルコネクト</a></dd>
+          <dd><a href="https://sakura.io/">sakura.io</a></dd>
+				</dl>
+			</div>
+			<div>
+				<dl id="footer-recommend">
+					<dt>おすすめサービス</dt>
+					<dd><a href="https://domain.sakura.ad.jp/">ドメイン</a></dd>
+					<dd><a href="https://ssl.sakura.ad.jp/">さくらのSSL</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/services/imageflux/">ImageFlux</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/services/cdn/">ウェブアクセラレータ</a></dd>
+					<dd><a href="https://cloud.sakura.ad.jp/specification/object-storage/">オブジェクトストレージ</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/services/hybrid/">ハイブリッド接続</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/services/external/">外部回線接続</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/function/detection/">Web改ざん検知サービス</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/education/">さくらの文教向けソリューション</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/lgwan-connect/">LGWANコネクト</a></dd>
+				</dl>
+				<dl id="footer-owned-media">
+					<dt>オウンドメディア</dt>
+					<dd><a href="https://knowledge.sakura.ad.jp/" target="_blank">さくらのナレッジ</a></dd>
+					<dd><a href="https://sakumaga.sakura.ad.jp/" target="_blank">さくマガ</a></dd>
+				</dl>
+			</div>
+			<div>
+				<dl id="footer-dc">
+					<dt>データセンター</dt>
+					<dd><a href="https://datacenter.sakura.ad.jp/">ハウジングサービス</a></dd>
+					<dd><a href="https://datacenter.sakura.ad.jp/remotehousing/">リモートハウジング</a></dd>
+				</dl>
+				<dl id="footer-partners">
+					<dt>パートナー</dt>
+					<dd><a href="https://www.sakura.ad.jp/partners/">さくらのパートナーネットワーク</a></dd>
+					<dd><a href="https://www.sakura.ad.jp/partners/list/">パートナーを探す</a></dd>
+				</dl>
+				<dl id="footer-support">
+					<dt>サポート</dt>
+					<dd><a href="https://help.sakura.ad.jp/">サポートサイトトップ</a></dd>
+					<dd><a href="https://help.sakura.ad.jp/maintenance/">メンテナンス・障害情報</a></dd>
+					<dd><a href="https://help.sakura.ad.jp/115000161182/">サポート総合窓口</a></dd>
+				</dl>
+				<div id="footer-case">
+					<a href="https://case.sakura.ad.jp/">導入事例・構成例</a>
+				</div>
+				<div id="footer-document">
+					<a href="https://sakura.ad.jp/document/">資料請求</a>
+				</div>
+        <div id="footer-apply">
+					<a href="https://www.sakura.ad.jp/apply/">お申し込み・書面一覧</a>
+				</div>
+			</div>
+		</div>
+		<figure id="footer-mark">
+			<a href="https://privacymark.jp/" target="_blank"><img class="p-mark" src="/resource/images/fimg_p-mark.png" alt="プライバシーマーク" /></a>
+			<img class="pci-dss" src="/resource/images/fimg_pci-dss.png" alt="PCI DSS監査証明マーク" />
+			<a href="https://www.sakura.ad.jp/privacy/iso27001.html"><img src="/resource/images/fimg_iso-mark.gif" alt="ISO27001認証マーク" /></a>
+		</figure>
+		<aside id="footer-sub">
+			<h2 class="footer-sub-logo"><a href="https://www.sakura.ad.jp/"><img src="/resource/images/footer_logo.png" alt="SAKURA internet" width="232" /></a></h2>
+			<ul class="footer-sub-nav">
+				<li><a href="https://www.sakura.ad.jp/agreement/">サービス約款</a></li>
+				<li><a href="https://www.sakura.ad.jp/about/">本サイトのご利用にあたって</a></li>
+				<li><a href="https://www.sakura.ad.jp/privacy/">個人情報保護ポリシー</a></li>
+				<li><a href="https://www.sakura.ad.jp/info_security/">情報セキュリティ基本方針</a></li>
+				<li><a href="https://www.sakura.ad.jp/corporate/">企業情報</a></li>
+				<li><a href="https://www.sakura.ad.jp/brand-assets/">ブランドガイドライン</a></li>
+				<li><a href="https://www.sakura.ad.jp/sitemap/">サイトマップ</a></li>
+			</ul>
+			<div class="footer-sub-sns">
+				<a href="https://twitter.com/sakura_pr" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/SAKURA.Internet" target="_blank"><i class="fa fa-facebook"></i></a>
+			</div>
+			<small class="footer-sub-copy">&copy; SAKURA internet Inc.</small>
+		</aside>
+	</div>
+</footer>
+
+<script>
+	(function($) {
+		$('#footer-main dt').click(function() {
+			$parent = $(this).parent();
+			if($parent.attr("id") === 'footer-service') {
+				// "サーバーサービス"は処理対象外
+				return;
+			}
+			$parent.toggleClass('expand');
+		});
+	})(jQuery);
+</script>
+
+<!-- SyncSerach -->
+<script type="text/javascript">
+SYNCSEARCH_SITE="81BHNZWF";
+SYNCSEARCH_GROUP=1;
+</script>
+<!-- SyncSerach -->
+  <script type="text/javascript">
+if (!window._dbd) { window._dbd = []; }
+window._dbd.push({id: 10280591, intensity: 50, bt: 'm', sdm:
+'rs.adapf.com'});
+(function() {
+  var i = document.createElement('script');
+  i.type = 'text/javascript';
+  i.src = ('https:' == document.location.protocol ? 'https://' : 'http://')
++ 'rs.adapf.com/p/m.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(i,s);
+})();
+</script>
+<script type="text/javascript">
+if (!window._dbd) { window._dbd = []; }
+window._dbd.push({aid: 8877, oid: 'LQLehx8oaicC6cAqqOLOrw', intensity: 50,
+bt: 'aiom', sdm: 'rs.adapf.com'});
+(function() {
+  var i = document.createElement('script');
+  i.type = 'text/javascript';
+  i.src = ('https:' == document.location.protocol ? 'https://' : 'http://')
++ 'rs.adapf.com/p/aiom.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(i,s);
+})();
+</script></body>
+
+</html>

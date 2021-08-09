@@ -1,0 +1,4129 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	一网通主页 -- 招商银行官方网站
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <script src="../Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="../Scripts/NetBank.js"></script>
+	<script language="javascript" type="text/javascript" src="../Scripts/Common.js"></script>
+    <link rel="Shortcut Icon" href="cmb.ico" /><link rel="Bookmark" href="cmb.ico" /><link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" /><link href="Styles/Common.css?v=201910" rel="stylesheet" type="text/css" /><link href="Styles/header.css" rel="stylesheet" type="text/css" /><link href="/Styles/header2020.css" rel="stylesheet" type="text/css" /><link href="Styles/footer.css" rel="stylesheet" type="text/css" /><link href="/Styles/footer2020.css" rel="stylesheet" type="text/css" /><link href="/Styles/Personal.css" rel="stylesheet" type="text/css" /><meta name="baidu-site-verification" content="prEJCYtyPU" />
+    <meta name="mobile-agent" content="format=html5;url=http://m.cmbchina.com" />
+<meta name="status-check" content="@CMBOK@" /><meta name="keywords" content="招商银行, 招行,招商银行官方网站,招商银行官网, China Merchants Bank, CMB, 一网通, 网上银行, 电话银行, 手机银行, 手机网站, 手机一网通, 掌上银行, 一卡通, 信用卡, 金葵花卡, 财富账户, 储蓄, 贷款, 汇款, 客户服务, 证券, 基金, 外汇, 商城, 房城, 理财, 黄金, 社区, 企业银行, 资产托管, 企业年金, 招行新闻, 招行公告, 营业网点, 酒店预订, 机票预订, 利率, 人才招聘, China Merchants Bank, CMB, @CMBOK@" /><meta name="description" content="招商银行官方网站。办理卡片申请,智能存款,转账汇款,网上支付,投资理财,贷款消费,信用卡还款,生活缴费,外汇买卖,实时利率,汇率查询,公司理财,企业贷款等业务,享受一站式综合金融服务！更可登录网上银行,手机银行,尽享24小时在线便利金融服务！@CMBOK@" /></head>
+<body>
+	<form name="aspnetForm" method="post" action="./default.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcwMjY3NzE1OWRk96P1Cl7MB52cRBgX2SMRREzeGspGAPddX1c0FeDCkcU=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+<script type="text/javascript">
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+	if(window.location.href.indexOf("?from=mweb")<0){		try{
+			if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+				window.location.href="http://m.cmbchina.com/";
+			}else if(/iPad/i.test(navigator.userAgent)){
+			}else{
+				window.location.href="http://m.cmbchina.com/"
+			}
+		}catch(e){}
+	}
+}
+</script>
+	
+
+
+<div id="divNavList" onmouseover="this.style.display='block'; document.getElementById('maplink').className = 'map_link_focus';"
+    onmouseout="this.style.display='none'; document.getElementById('maplink').className = 'map_link';">
+    
+</div>
+
+<script language="javascript">
+
+
+ //     if(window.location.href.indexOf("big5.cmbchina.com") != -1)
+ //     {
+ //        for(var i = 1; i<= 4; i++)
+ //        {
+ //           document.getElementById("tdj_"+i).style.display = "none";
+ //           document.getElementById("tdf_"+i).style.display = "";
+ //        }
+ //     }
+     
+	//if (top.location != self.location) {
+	//	var topWeb = document.referrer;
+	//	if (topWeb.indexOf(".cmbchina.com") == -1) {
+	//		top.location = self.location;
+	//	}
+	//}
+
+	//function showNavList(element) {
+	//	var obj = document.getElementById("divNavList");
+	//	obj.style.display = 'block';
+	//	var offsetTop = element.offsetTop;
+	//	var offsetLeft = element.offsetLeft;
+	//	var offsetWidth = element.offsetWidth;
+	//	var offsetHeight = element.offsetHeight;
+	//	while (element = element.offsetParent) {
+	//		offsetTop += element.offsetTop;
+	//		offsetLeft += element.offsetLeft;
+	//	}
+	//	obj.style.left = (offsetLeft - 147) + "px";
+	//	obj.style.top = offsetTop + 20 + "px";
+	//	document.getElementById("maplink").className = "map_link_focus";
+	//}
+
+	//function hideNavList() {
+	//	var obj = document.getElementById("divNavList");
+	//	obj.style.display = 'none';
+	//	document.getElementById("maplink").className = "map_link";
+	//}
+
+	//function toGB2312() {
+	//	var curUrl = window.location.href;
+	//	var gb2312Url = curUrl.replace("big5.cmbchina.com/gate/big5/", "");
+	//	window.location.href = gb2312Url;
+	//}
+
+	//function toBig5() {
+	//	var curUrl = window.location.href;
+	//	var big5Url = "http://big5.cmbchina.com/gate/big5/" + curUrl.replace("http://", "");
+	//	window.open(big5Url);
+	//}
+
+	//document.onkeypress = function(evt) {
+	//	var isie = (document.all) ? true : false; //判断是IE内核还是Mozilla
+	//	var key;
+	//	if (isie) {
+	//		key = window.event.keyCode;
+	//		if (key == 13) {
+	//			window.event.returnValue = false;
+	//			document.getElementById("btn_search").click();
+	//		}
+	//	}
+	//	else {
+	//		key = evt.which;
+	//		if (key == 13) {
+	//			evt.preventDefault();
+	//			document.getElementById("btn_search").click();
+	//		}
+	//	}
+	//}
+//    var curDomain = location.hostname;
+//     if (curDomain.indexOf(".cmbchina.com") == -1) {
+//      location.href = "http://www.cmbchina.com";
+//     }
+
+</script>
+
+
+	
+<!--[if lt IE 8 ]><script language="javascript" src="/Scripts/json2.min.js" type="text/javascript"></script><![endif]-->
+<script language="javascript" src="/Scripts/personalreco.js" type="text/javascript"></script>
+<script src="/Scripts/cmbsearch.js" type="text/javascript" charset="gb2312"></script>
+
+<div class="header w">
+    <div class="shortcut">
+
+        <div class="w">
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="/CustomerService/Default.aspx" target="_blank">服务热线：95555</a>
+                    </li>
+                    <li>
+                        <a href="http://branch.cmbchina.com/" target="_blank">分行网站</a>
+
+                    </li>
+                    <li>
+                        <a href="http://map.cmbchina.com" target="_blank">网点咨询</a>
+
+                    </li>
+                    <li>
+                        <a href="http://career.cmbchina.com/" target="_blank">人才招聘</a>
+                    </li>
+                    <li style="background: url('/images/IPv6BG.png') 0 0 no-repeat; width: 109px; height: 24px; position: relative; top: -2px; text-align: center; line-height: 24px;">
+                         本网站支持IPv6
+                    </li>
+                    <li>
+                        <a href="javascript:toGB2312()">简 </a>| 
+                        <a href="http://big5.cmbchina.com/gate/big5/www.cmbchina.com/ " target="_blank">繁 </a>|
+                        <a href="http://english.cmbchina.com" target="_blank">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <a href="http://www.cmbchina.com" title="一网通主站"></a>
+    </div>
+    <div class="nav">
+        <a href="/">个人业务</a>
+        <a href="/corporate">公司业务</a>
+        <a href="http://cc.cmbchina.com" target="_blank">信用卡</a>
+        <a href="/cmbinfo">今日招行</a>
+    </div>
+    <div class="nav_bar_tools">
+        <div class="fr">
+            <ul>
+                <li>
+                    <a href="https://market.cmbchina.com/MPage/online/201229173418544/admin/html/index.html" target="_blank">
+                        <div class="nav_bar_tools_container">
+                            <div class="nav_doanload_icon"></div>
+                        </div>
+                        <span>APP</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:fLoginICS();">
+                        <div class="nav_service_icon"></div>
+                        <span>客服</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://sou.cmbchina.com" target="_blank">
+                        <div class="nav_search_icon"></div>
+                        <span>搜索</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="nav_bar_row">
+    <div class="nav_bar_container">
+        <div class="nav_menu_collapse">
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/allinonecard/">一卡通</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Allinonecard">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Allinonecard';
+    var linkUrl = '/personal/allinonecard/CardInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/sunflower/">金葵花理财</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Sunflower">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Sunflower';
+    var linkUrl = '/personal/Sunflower/SunflowerInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/privatebank/">私人银行</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-PrivateBank">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'PrivateBank';
+    var linkUrl = '/privatebank/PrivateBankInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/credit/">个人贷款</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Credit">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Credit';
+    var linkUrl = '/personal/credit/CreditInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/saving/">储蓄业务</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Saving">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Saving';
+    var linkUrl = '/personal/saving/SavingInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/living/">居家生活</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Living">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Living';
+    var linkUrl = '/personal/living/LivingInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/invest/">投资理财</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Invest">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Invest';
+    var linkUrl = '/personal/invest/InvestInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = 'wwqq';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/cgjr/" target="_self">跨境金融</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Cgjr">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Cgjr';
+    var linkUrl = '/personal/cgjr/CGJRInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/personal/netbank/">网上银行</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Netbank">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Netbank';
+    var linkUrl = '/personal/netbank/NetbankInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_menu_collapse">
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/firmbank/">企业网银及App</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Firmbank">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Firmbank';
+    var linkUrl = '/corporate/firmbank/FirmbankInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/domestic/">国内业务</a></h4>
+                    </li>
+
+                    
+
+<div id="subHeader-Domestic">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Domestic';
+    var linkUrl = '/corporate/domestic/DomesticInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/international/">跨境金融</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-International">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'International';
+    var linkUrl = '/corporate/international/InternationalInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/investment/">投资银行</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Investbank">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Investbank';
+    var linkUrl = '/corporate/investment/InvestbankInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/offshore/">离岸业务</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Offshore">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Offshore';
+    var linkUrl = '/corporate/offshore/OffshoreInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/custody/">资产托管</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Custody">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Custody';
+    var linkUrl = '/corporate/custody/CustodyInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/pension/">养老金金融</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Pension">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Pension';
+    var linkUrl = '/corporate/pension/PensionInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/financial/">同业金融</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Financial">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Financial';
+    var linkUrl = '/corporate/financial/FinancialInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/corporate/cashmanagement/">企业服务</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="https://sme.cmbchina.com" target="_blank">小企业金融</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="http://www.cmbchina.com/cfweb/corporate/">公司理财产品</a></h4>
+                    </li>
+                    <li>
+                        <h4><a href="http://www.cmb-leasing.com/" target="_blank">融资租赁</a></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_menu_collapse">
+            <div class="menu_column" style="margin-left:160px !important;margin-right:80px"><ul><li><h4><a href="http://cc.cmbchina.com/card/newcustomer.htm?WT.mc_id=N17PCGW10408944100ZH" target="_blank">我要办卡</a></h4></li><li><p><a href="http://cc.cmbchina.com/card/newcustomer.htm?WT.mc_id=N17PCGW1065K457100ZH" target="_blank">新客户快捷申请</a></p></li><li><p><a href="http://cc.cmbchina.com/card/?WT.mc_id=N17PCGW100AY688100ZH" target="_blank">信用卡全家福</a></p></li><li><p><a href="http://cc.cmbchina.com/card/?WT.mc_id=N17PCGW100AY688100ZH" target="_blank">推荐亲友办卡</a></p></li><li><p><a href="http://cc.cmbchina.com/content/card/schedule.htm" target="_blank">进度查询</a></p></li><li><p><a href="http://cc.cmbchina.com/content/card/active.htm" target="_blank">快速开卡</a></p></li><li><p><a href="http://cc.cmbchina.com/schoolzone/" target="_blank">校园版信用卡</a></p></li></ul></div><div class="menu_column" style="margin-right:80px"><ul><li><h4><a href="http://cc.cmbchina.com/cusservice/" target="_blank">客户服务</a></h4></li><li><p><a href="http://cc.cmbchina.com/notice/" target="_blank">最新公告</a></p></li><li><p><a href="http://cc.cmbchina.com/cusservice/" target="_blank">信用卡问题解答</a></p></li><li><p><a href="http://cc.cmbchina.com/content/cusservice/51.htm" target="_blank">还款指南</a></p></li><li><p><a href="http://cc.cmbchina.com/content/cusservice/2019zc.htm" target="_blank">信用卡章程</a></p></li></ul></div><div class="menu_column" style="margin-right:80px"><ul><li><h4><a href="http://cc.cmbchina.com/promotion/" target="_blank">优惠礼遇</a></h4></li><li><p><a href="http://cc.cmbchina.com/promotion/" target="_blank">特惠快讯</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/cmblife/download/" target="_blank">App专享</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/feichang/jingwailvxing.html" target="_blank">非常海购</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/cfyhpc/" target="_blank">饭票</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/yppc2021/" target="_blank">影票</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/xjgdlqpc/" target="_blank">积分</a></p></li></ul></div><div class="menu_column" style="margin-right:80px"><ul><li><h4><a href="http://cc.cmbchina.com/financing/" target="_blank">贷款分期</a></h4></li><li><p><a href="http://cc.cmbchina.com/content/loan/efq.htm" target="_blank">分期还款</a></p></li><li><p><a href="http://cc.cmbchina.com/content/loan/cashad.htm" target="_blank">预借现金</a></p></li><li><p><a href="http://cc.cmbchina.com/content/loan/eloan.htm" target="_blank">e招贷</a></p></li><li><p><a href="http://market.cmbchina.com/MPage/online/210420141112656/" target="_blank">汽车分期</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/platinum4/" target="_blank">白金分期卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/bx/" target="_blank">保险理财</a></p></li></ul></div><div class="menu_column" style="margin-right:80px"><ul><li><h4><a href="http://cc.cmbchina.com/vip/" target="_blank">高端专享</a></h4></li><li><p><a href="http://market.cmbchina.com/ccard/vip/wuxian/index.html" target="_blank">无限信用卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/diamond/index.html" target="_blank">钻石信用卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/aebpc/index.html" target="_blank">百夫长白金卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/jingdian/index.html" target="_blank">经典版白金卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/zyb/index.html" target="_blank">自由人生白金卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/jingzhi/index.html" target="_blank">精致版白金卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/yinlian/index.html" target="_blank">银联白金卡</a></p></li><li><p><a href="http://market.cmbchina.com/ccard/vip/quanbi/index.html" target="_blank">外币单标白金卡</a></p></li></ul></div>
+        </div>
+        <div class="nav_menu_collapse today_cmb">
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/cmbinfo/aboutcmb/">招行介绍</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-AboutCmb">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'AboutCmb';
+    var linkUrl = '/cmbinfo/aboutcmb/default.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                    <li>
+                        <h4 style="margin-top: 20px">
+                            <a href="/cmbinfo/news/">招行新闻</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="/cmbinfo/brand/">首席观点</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="http://www.cmbchina.com/cmbir/">投资者关系</a></h4>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/cmbir/ProductInfo.aspx?type=info&id=intro">公司基本信息</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/cmbir/intro.aspx?type=annentry">公司公告</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/cmbir/intro.aspx?type=report">财务信息</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/cmbir/FAQ.aspx?type=FAQ">投资者服务</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/cmbir/ProductInfo.aspx?type=info&id=CONUS">与我们联系</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="http://gongyi.cmbchina.com/qyzr/" target="_blank">企业社会责任</a></h4>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/CMBIR/ProductInfo.aspx?type=info&id=CSR_report">企业社会责任报告</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://gongyi.cmbchina.com/qyzr/" target="_blank">社会责任体系</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://gongyi.cmbchina.com/yuejuan/index.html" target="_blank">捐赠平台</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="/cmbinfo/awards/">荣誉榜</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-Awards">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'Awards';
+    var linkUrl = '/cmbinfo/awards/awardsinfo.aspx';
+    var itemcount = '5';
+    var stringcount = '5';
+    var parenturl = '0';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="http://career.cmbchina.com" target="_blank">人才招聘</a></h4>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://career.cloud.cmbchina.com" target="_blank">校园招聘</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://career.cmbchina.com/index.html#home" target="_blank">社会招聘</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_column">
+                <ul>
+                    <li>
+                        <h4><a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/"">消费者权益保护</a></h4>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/cmbinfo/cusservice/ListInfo.htm">消保时讯</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/">金融知识</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/">法规政策</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/">服务管理</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/">分行风采</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/">主题活动</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_column ">
+                <ul>
+                    <li>
+                        <h4><a href="/assetdisposal/">资产处置</a></h4>
+                    </li>
+                    
+
+<div id="subHeader-AssetCommend">
+
+</div>
+
+
+<script type="text/javascript">
+
+    var webName = 'AssetCommend';
+    var linkUrl = '/assetdisposal/ListInfo.aspx';
+    var itemcount = '0';
+    var stringcount = '0';
+    var parenturl = '1';
+    var notequals = '';
+    linkUrl = btoa(linkUrl);
+
+    if (webName) {
+
+        (function (webName, linkUrl, itemcount, stringcount, notequals) {
+            var url = "/SrvAjax/CmsWebApi.ashx?type=subheader&web=" + webName + "&linkUrl=" + linkUrl + "&itemcount=" + itemcount + "&stringcount=" + stringcount + "&parenturl=" + parenturl;
+            jQuery(function () {
+                jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json;charset=UTF-8",
+                    url: url,
+                    success: function (res) {
+
+                        var result = JSON.parse(res);
+                        
+
+                        if (result.errCode === "0") {
+                            var html = "";
+                            for (var i = 0; i < result.data.length; i++) {
+                                if (notequals === '' || result.data[i].Name.indexOf(notequals) == -1) {
+                                    html += "<li><p><a href='" + result.data[i].LinkUrl + "' target='" + result.data[i].Target + "'>" + result.data[i].Title + "</a></p></li>"
+                                } 
+                                
+                               
+                                
+                            }
+                            jQuery("#subHeader-" + webName).html(html);
+                        }
+
+                    }
+
+                })
+            })
+        })(webName, linkUrl, itemcount, stringcount, notequals)
+
+        
+    }
+
+    
+
+</script>
+                    <li>
+                        <h4 style="margin-top: 20px">
+                            <a href="http://purchase.cmbchina.com/portal/" target="_blank">采购平台</a>
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_menu_collapse nav_tools_collapse">
+            <div class="nav_tools_app_container">
+                <div class="nav_tools_app_item">
+                    <div class="nav_tools_app_title">
+                        <img src="../../Images/header/app/personal.png" />
+                        <span>个人业务</span>
+                    </div>
+                    <div class="nav_tools_app_content">
+                        <a class="nav_tools_app_info" href="https://market.cmbchina.com/MPage/online/201229173418544/admin/html/index.html" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zsyh.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招商银行App</span>
+                                <span class="nav_tools_app_info_des">一亿人的财富App</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="http://market.cmbchina.com/ccard/cmblife/download/" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zssh.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">掌上生活App</span>
+                                <span class="nav_tools_app_info_des">招商银行信用卡官方App</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="https://market.cmbchina.com/MPage/online/210513172802147/zdh5/index.html" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zd.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招贷App</span>
+                                <span class="nav_tools_app_info_des">让小微贷更简单</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="http://www.cmbchina.com/personal/invest/InvestInfo.aspx?guid=2e1f2843-20c7-4f4c-ae91-011fbe3f2739" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zyhj.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招银汇金App</span>
+                                <span class="nav_tools_app_info_des">您身边的交易专家</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav_tools_app_item">
+                    <div class="nav_tools_app_title">
+                        <img src="../../Images/header/app/personal.png" />
+                        <span>公司业务</span>
+                    </div>
+                    <div class="nav_tools_app_content">
+                        <a class="nav_tools_app_info" href="https://u.ebank.cmbchina.com/CmbBank_MB/UI/Public/MobileBank.aspx" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zsyhqy.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招商银行企业App</span>
+                                <span class="nav_tools_app_info_des">简单一点，以小及大</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="http://www.cmbchina.com/corporate/firmbank/FirmbankInfo.aspx?guid=d0917853-6256-44ea-b1e2-24b8524042db" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_ubank.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">企业银行U-BANK</span>
+                                <span class="nav_tools_app_info_des">金融科技与您同步</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="https://fi.cmbchina.com/user/#/home" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zyt.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招赢通App</span>
+                                <span class="nav_tools_app_info_des">招商银行 与您共赢</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="http://www.cmbchina.com/corporate/domestic/DomesticInfo.aspx?guid=88e89ec4-37e5-4c53-a8f6-9855bd218b9a" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_cbs.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">招商银行财资管理云(CBS)</span>
+                                <span class="nav_tools_app_info_des">让财资管理触手可及</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_cfec.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">产品一点通小程序</span>
+                                <span class="nav_tools_app_info_des">公司金融产品，一点就通</span>
+                            </div>
+                        </a>
+                        <a class="nav_tools_app_info" href="https://market.cmbchina.com/MPage/online/210525094527983/zstgh5/index.html" target="_blank">
+                            <div class="nav_tools_app_info_img">
+                                <img src="../../Images/header/app/icon_zstg.png" />
+                            </div>
+                            <div class="nav_tools_app_info_content">
+                                <span class="nav_tools_app_info_title">掌上托管App</span>
+                                <span class="nav_tools_app_info_des">专业创造价值</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //ICS 
+    var mpageUrl = 'https://log.cmbchina.com/CmbBank_Mobile/Handler/ca.gif?q='
+    var mpageSysId = '000'
+    var icsWnd = null;
+    var switchWnd = null;
+    function fLoginICS() {
+        var nWinLeft = (screen.width - 600) / 2;
+        var nWinTop = (screen.height - 400) / 2;
+        if (icsWnd != null)
+            icsWnd.close();
+        icsWnd = window.open('https://link.cmbchina.com/onlineservice/onlineservice.ashx');
+    }
+
+    function toGB2312() {
+        var curUrl = window.location.href;
+        var gb2312Url = curUrl.replace("big5.cmbchina.com/gate/big5/", "");
+        window.location.href = gb2312Url;
+    }
+    /*导航栏下拉效果*/
+    jQuery(function () {
+
+        jQuery(".nav a").hover(function (e) {
+            /*去掉信用卡效果*/
+            //if (jQuery(this).index() == 2) {
+            //    return;
+            //}
+            jQuery('.nav_bar_container .nav_menu_collapse').eq(jQuery(this).index()).show();
+            jQuery(".nav a").eq(jQuery(this).index()).addClass('active');
+        }, function (e) {
+            jQuery('.nav_bar_container .nav_menu_collapse').eq(jQuery(this).index()).hide();
+            jQuery(".nav a").eq(jQuery(this).index()).removeClass('active');
+        });
+        jQuery(".nav_bar_container .nav_menu_collapse").hover(function () {
+            jQuery(this).show();
+            jQuery(".nav a").eq(jQuery(this).index()).addClass('active');
+
+        }, function () {
+            jQuery(this).hide();
+            jQuery(".nav a").eq(jQuery(this).index()).removeClass('active');
+        });
+
+        jQuery(".nav_bar_tools li").hover(function () {
+
+            if (jQuery(this).find(".nav_doanload_icon").length == 0) {
+                return;
+            }
+
+            jQuery(this).addClass('active');
+            jQuery(".nav_tools_collapse").index() - (jQuery(".nav_menu_collapse").length - jQuery(".nav_tools_collapse").length)
+            jQuery(".nav_tools_collapse").eq(jQuery(this).index()).show();
+        }, function () {
+            jQuery(this).removeClass('active');
+            jQuery(".nav_tools_collapse").eq(jQuery(this).index()).hide();
+        })
+
+        jQuery(".nav_tools_collapse").hover(function () {
+            jQuery(this).show();
+            console.log(jQuery(this).index())
+            jQuery(".nav_bar_tools li").eq(jQuery(this).index() - jQuery(".nav_menu_collapse").length + 1).addClass('active');
+
+        }, function () {
+            jQuery(this).hide();
+            jQuery(".nav_bar_tools li").eq(jQuery(this).index() - jQuery(".nav_menu_collapse").length + 1).removeClass('active');
+        });
+
+
+        var pathname = window.location.pathname.toLocaleLowerCase().replace("default.aspx", "");
+
+        jQuery(jQuery(".nav").find("a")[1]).attr("href");
+
+        /*主TAB高亮*/
+        jQuery(".nav").find("a").each(function () {
+            var href = jQuery(this).attr("href").toLocaleLowerCase();
+
+            if (jQuery(this).hasClass("nav-selected")) {
+                jQuery(this).removeClass("nav-selected");
+            }
+
+            if (href == "/") {
+                if (pathname.indexOf("/person") > -1 || pathname == "/" || pathname.indexOf("/privatebank") > -1 || pathname.indexOf("/main") > -1) {
+                    jQuery(this).addClass("nav-selected");
+                }
+                return;
+            }
+
+            if (href == "/cmbinfo") {
+                if (pathname.indexOf("/assetdisposal") > -1) {
+                    jQuery(this).addClass("nav-selected");
+                    return;
+                }
+            }
+
+            if (pathname.indexOf(href) > -1) {
+                jQuery(this).addClass("nav-selected");
+            }
+        });
+
+        jQuery(".nav_bar_container").find("a").each(function () {
+            if (jQuery(this).attr("href")) {
+                var href = jQuery(this).attr("href").toLocaleLowerCase().replace("default.aspx", "");
+                if (jQuery(this).hasClass("nav-selected")) {
+                    jQuery(this).removeClass("nav-selected");
+                }
+
+                //过滤固定链接三级页以及三级页
+                if (href.indexOf("aspx") > -1 || (window.location.search.length > 0 && window.location.search.toLocaleLowerCase().indexOf("guid") > -1)) {
+                    return;
+                }
+
+                if (pathname == href) {
+                    jQuery(this).addClass("nav-selected");
+                }
+            }
+
+
+        });
+
+
+        /*判断浏览器类型和版本*/
+        function BrowserCheck() {
+            var me = this;
+            me.version = me.getVersion();
+        }
+
+        BrowserCheck.prototype.getVersion = function () {
+            // 取得浏览器的userAgent字符串
+            var userAgent = navigator.userAgent.toLowerCase();
+            if (userAgent.indexOf('firefox') != -1) {
+                return "firefox";
+            }
+            else if (userAgent.indexOf('opr') != -1) {
+                return "opera";
+            }
+            else if (userAgent.indexOf('chrome') != -1) {
+                var ChromeReg = new RegExp('chrome/(\\d+\\.\\d+)');
+                ChromeReg.test(userAgent);
+                // 取正则表达式中第一个小括号里匹配到的值
+                var ChromeVersionNum = parseFloat(RegExp['$1']);
+                return "chrome|" + ChromeVersionNum;
+            }
+            else if (userAgent.indexOf('safari') != -1) {
+                return "safari";
+            }
+            else if (userAgent.indexOf("edge") > -1) {
+                return "edge";
+            }
+            else if (userAgent.indexOf("trident") > -1 && userAgent.indexOf("v:11.0") > -1) {
+                return 11;
+            }
+            else if (userAgent.indexOf('compatible') > -1 && userAgent.indexOf('msie')) {
+                var IEReg = new RegExp('msie (\\d+\\.\\d+);');
+                // 正则表达式匹配浏览器的userAgent字符串中MSIE后的数字部分，，这一步不可省略！！！
+                IEReg.test(userAgent);
+                // 取正则表达式中第一个小括号里匹配到的值
+                var IEVersionNum = parseFloat(RegExp['$1']);
+                if (IEVersionNum === 7) {
+                    return 7;
+                } else if (IEVersionNum === 8) {
+                    return 8;
+                } else if (IEVersionNum === 9) {
+                    return 9;
+                } else if (IEVersionNum === 10) {
+                    return 10;
+                } else {
+                    return 6;
+                }
+            }
+            else {
+                return "unknown";
+            }
+        }
+
+        BrowserCheck.prototype.isLessAndEqualIE9 = function () {
+
+            if (!isNaN(this.version) && this.version <= 9) {
+                return true;
+            }
+            return false;
+        }
+
+        BrowserCheck.prototype.isLessAndEqualChrome57 = function () {
+
+            if (isNaN(this.version) && this.version.indexOf("chrome") > -1 && this.version.indexOf("|") > -1) {
+                if (parseFloat(this.version.split("|")[1]) < 58) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        BrowserCheck.prototype.showWin = function (content, width, height) {
+
+            if (!width) {
+                width = 400;
+            }
+
+            if (!height) {
+                height = 200;
+            }
+
+            var tips;
+
+            if (!content) {
+                if (this.isLessAndEqualIE9() || this.isLessAndEqualChrome57()) {
+                    tips = "<p style='text-align: left;margin:0 20px; line-height: 25px;'>尊敬的用户：</p><p style='line-height:25px;text-indent: 2em;text-align: left;margin:0 20px;'>您好，系统检测到您当前的浏览器版本过低，为享受更好的浏览体验，建议您升级至IE10/Chrome57及以上版本。</p>"
+                    jQuery(".m_banner_video").html("");
+                    jQuery("#videodiv").css("display", "none");
+                    jQuery("#imgdiv").css("display", "block");
+                } else {
+                    return;
+                }
+            }
+            //var eSrc = (document.all) ? window.event.srcElement : arguments[1];
+            var shield = document.createElement("DIV");
+            shield.id = "shield";
+            shield.style.position = "absolute";
+            shield.style.left = "0px";
+            shield.style.top = "0px";
+            shield.style.width = document.body.clientWidth + "px"; //"100%";
+
+            shield.style.height = document.body.scrollHeight + "px";
+            shield.style.background = "#333";
+            shield.style.textAlign = "center";
+            shield.style.zIndex = "10000";
+            shield.style.filter = "alpha(opacity=50)";
+            shield.style.opacity = 0.5;
+            var alertFram = document.createElement("DIV");
+            alertFram.id = "alertFram";
+            alertFram.style.position = "absolute";
+            alertFram.style.left = (document.body.clientWidth - width) / 2 + "px";
+            alertFram.style.top = "20%";
+            alertFram.style.marginLeft = "-0px";
+            var scrollTop = GetScrollTop();
+            alertFram.style.marginTop = -45 + scrollTop + "px";
+            alertFram.style.width = width + "px";
+            alertFram.style.height = height + "px";
+            alertFram.style.background = "#fff";
+            alertFram.style.textAlign = "center";
+            alertFram.style.lineHeight = "90%";
+            alertFram.style.zIndex = "10001";
+            strHtml = "<ul style=\"list-style:none;margin:0px;padding:0px;width:100%\">\n";
+            strHtml += " <li style=\"background: #A30030;text-align:left;padding-left:20px;margin:0;padding:0;font-size:14px;font-weight:bold;height:25px;line-height:25px;border:1px solid #A30030;\"><span style=\"float:left;margin-left:8px;line-height:25px; color: white; \">提示</span>\n";
+            strHtml += " <span style=\"height:25px;line-height:25px;float:right;margin-right:8px;margin-top:3px;\"><input style=\"border:1px solid #666;cursor:pointer;background-color: white;\" type=\"button\" value=\" X \" id=\"do_OK\" onclick=\"doOk()\" /></span></li>\n";
+            strHtml += " <li style=\"background:#fff;text-align:center;font-size:14px;margin:0;padding:0;\"><p style=\"margin:50px 20px 20px 20px;\">" + tips + "</p></li>\n";
+            strHtml += "</ul>\n";
+            alertFram.innerHTML = strHtml;
+            document.body.appendChild(alertFram);
+            document.body.appendChild(shield);
+
+            window.doOk = function () {
+                //alertFram.style.display = "none";
+                //shield.style.display = "none";
+                document.body.removeChild(alertFram);
+                document.body.removeChild(shield);
+                //eSrc.focus();
+                document.body.onselectstart = function () { return true; }
+                document.body.oncontextmenu = function () { return true; }
+            }
+
+            //eSrc.blur();
+            document.body.onselectstart = function () { return false; }
+            document.body.oncontextmenu = function () { return false; }
+            window.onscroll = function () {
+                setTimeout(function () {
+                    if (document.getElementById("alertFram")) {
+                        var scrollTop = GetScrollTop();
+                        document.getElementById("alertFram").style.marginTop = -45 + scrollTop + "px";
+                    }
+                }, 50);
+            }
+        }
+
+        var browserCheck = new BrowserCheck();
+        browserCheck.showWin();
+    });
+</script>
+<script src="/Scripts/mpage.js" type="text/javascript"></script>
+<style>
+    .nav-selected {
+        color: #A30030 !important;
+    }
+</style>
+
+	
+	
+    
+
+<div>
+    
+    <div id="videodiv"  class="m_banner_video_container" style="display:none;">
+        <div class="m_banner_video">
+            <video id="video1" loop muted preload="auto"  oncanplaythrough="show()">           
+                <source src="http://s3gw.cmbimg.com/lb50.01-cmbweb-prd/20210331_a6efe5ea-fcda-4bfd-9266-b9fd9b60d9ef.mp4?AWSAccessKeyId=lb50.01-user1-prd&Expires=4770864939&Signature=aB%2FzsktUWa25v3E6ponfIKMvYws%3D&response-content-disposition=attachment%3Bfilename%3D20210331_a6efe5ea-fcda-4bfd-9266-b9fd9b60d9ef.mp4%3Bfilename*%3DUTF-8%27%2720210331_a6efe5ea-fcda-4bfd-9266-b9fd9b60d9ef.mp4" type="video/mp4">                     
+            </video>
+        </div>
+        <div class="m_banner_video_netbank">
+            
+<div class="netbank">
+    <div class="netbank_item">
+        <a href="javascript:hbwindows();">
+             <i class="personal_bank_public">
+
+             </i>
+        <p>
+            个人银行大众版
+        </p>
+        </a>
+       
+    </div>
+    <div class="separate_line">
+
+    </div>
+    <div class="netbank_item">
+        <a href="http://www.cmbchina.com/pbankwebNew/downloadPage.aspx" target ="_blank">
+             <i class="personal_bank_pro">
+
+             </i>
+        <p>
+            个人银行专业版
+        </p>
+        </a>
+       
+    </div>
+     <div class="separate_line">
+
+    </div>
+     <div class="netbank_item">
+        <a href="https://market.cmbchina.com/MPage/online/201229173418544/admin/html/index.html" target ="_blank">
+             <i class="finance_public">
+
+             </i>
+        <p>
+            招商银行App
+        </p>
+        </a>
+       
+    </div>
+    <div class="separate_line">
+
+    </div>
+    <div class="netbank_item">
+        <a href="http://market.cmbchina.com/ccard/cmblife/download/" target ="_blank" >
+             <i class="cmblife">
+
+             </i>
+        <p>
+            掌上生活App
+        </p>
+        </a>
+       
+    </div>
+
+</div>
+<script>
+    function hbwindows() {
+        open('https://pbsz.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/Login/Login.aspx', 'newhb', 'menubar=no,toolbar=no,location=no,directories=no,scrollbars=yes,status=yes,resizable=yes');
+    }
+    function ifinwindows() {
+        open('https://pbsz.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/NetBankAcc/Login.aspx', 'newifin', 'menubar=no,toolbar=no,location=no,directories=no,scrollbars=yes,status=yes,resizable=yes');
+    }
+</script>
+        </div>
+    </div>
+    <div id="imgdiv" class="m_banner_bg" style="display:block; height:520px;">
+        <div class="banner_ig_cover">
+            <div class="m_banner_container w">
+                
+<div class="netbank">
+    <div class="netbank_item">
+        <a href="javascript:hbwindows();">
+             <i class="personal_bank_public">
+
+             </i>
+        <p>
+            个人银行大众版
+        </p>
+        </a>
+       
+    </div>
+    <div class="separate_line">
+
+    </div>
+    <div class="netbank_item">
+        <a href="http://www.cmbchina.com/pbankwebNew/downloadPage.aspx" target ="_blank">
+             <i class="personal_bank_pro">
+
+             </i>
+        <p>
+            个人银行专业版
+        </p>
+        </a>
+       
+    </div>
+     <div class="separate_line">
+
+    </div>
+     <div class="netbank_item">
+        <a href="https://market.cmbchina.com/MPage/online/201229173418544/admin/html/index.html" target ="_blank">
+             <i class="finance_public">
+
+             </i>
+        <p>
+            招商银行App
+        </p>
+        </a>
+       
+    </div>
+    <div class="separate_line">
+
+    </div>
+    <div class="netbank_item">
+        <a href="http://market.cmbchina.com/ccard/cmblife/download/" target ="_blank" >
+             <i class="cmblife">
+
+             </i>
+        <p>
+            掌上生活App
+        </p>
+        </a>
+       
+    </div>
+
+</div>
+<script>
+    function hbwindows() {
+        open('https://pbsz.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/Login/Login.aspx', 'newhb', 'menubar=no,toolbar=no,location=no,directories=no,scrollbars=yes,status=yes,resizable=yes');
+    }
+    function ifinwindows() {
+        open('https://pbsz.ebank.cmbchina.com/CmbBank_GenShell/UI/GenShellPC/NetBankAcc/Login.aspx', 'newifin', 'menubar=no,toolbar=no,location=no,directories=no,scrollbars=yes,status=yes,resizable=yes');
+    }
+</script>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</div>
+<script type="text/javascript">
+    var canvas = document.createElement('canvas');
+    var gl = canvas.getContext('experimental-webgl');
+    var ig_flg = 0;//集成显卡标识
+    if (gl != null) {
+        var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+        gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+        var glname = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+        //glname = "Basic Render Driver";
+        if (glname.indexOf("Basic Render Driver") != -1) {
+            ig_flg = 1;
+            jQuery(".m_banner_video").html("");
+            jQuery("#videodiv").css("display", "none");
+            jQuery("#imgdiv").css("display", "block");
+        }
+    }
+    function show() {
+        //如果是集成显卡，关闭视频播放
+        if (ig_flg == 1) {
+            jQuery(".m_banner_video").html("");
+            jQuery("#videodiv").css("display", "none");
+            jQuery("#imgdiv").css("display", "block");
+        }
+        else {
+            var myVideo = document.getElementById("video1");
+            myVideo.play();
+            jQuery("#videodiv").css("display", "block");
+            jQuery("#imgdiv").css("display", "none");
+        }
+    }
+
+</script>
+
+
+    
+<script type="text/javascript" src="../../Scripts/cmb_animate-1.0.0.js"></script>
+<div class="notice_container" style="z-index:100;">
+    <div class="w">
+        <div  class="notice_head">
+             <i>
+            </i>
+            <span>重要公告： </span>
+            <div  class="notice-content-container">
+                
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于调整公司客户购买理财产品风险测评覆盖范围的通告" href="/main/noticeinfo.aspx?guid=2b8dcc95-2995-40dc-b710-bdccc9e20b03">
+                                关于调整公司客户购买理财产品风险测评覆盖范围的通...
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于云直联企业App版改造的通告" href="/main/noticeinfo.aspx?guid=ebcbff9e-578d-4757-8a31-2db6cfe258a1">
+                                关于云直联企业App版改造的通告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于调整个人纸贵金属双向交易业务、实盘纸黄金纸白银买卖业务的通告" href="/main/noticeinfo.aspx?guid=c46fac6c-b035-438f-ade5-da76a1f382a7">
+                                关于调整个人纸贵金属双向交易业务、实盘纸黄金纸白...
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="  关于调整“招财金”业务的通告" href="/main/noticeinfo.aspx?guid=b174d7d2-b4bd-4d31-bb97-081a2309c14b">
+                                  关于调整“招财金”业务的通告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于调整个人双向外汇买卖业务的通告" href="/main/noticeinfo.aspx?guid=91227931-2c30-4fcd-a32a-865d18b23609">
+                                关于调整个人双向外汇买卖业务的通告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于关闭实盘纸黄金纸白银、实盘外汇买卖业务电话银行渠道的通告" href="/main/noticeinfo.aspx?guid=1f7e9e8d-928b-4751-9acf-3af689460b53">
+                                关于关闭实盘纸黄金纸白银、实盘外汇买卖业务电话银...
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于调整个人外汇期权业务的通告" href="/main/noticeinfo.aspx?guid=a59a28b6-b2ab-4ce9-83ae-13abe7386ddf">
+                                关于调整个人外汇期权业务的通告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于部分理财产品变更产品管理人的公告" href="/main/noticeinfo.aspx?guid=b6d0ba62-d11d-4221-b75b-fbd13482797a">
+                                关于部分理财产品变更产品管理人的公告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于部分理财产品变更产品管理人的公告" href="/main/noticeinfo.aspx?guid=9c808930-4d38-4ded-a222-295da6d66321">
+                                关于部分理财产品变更产品管理人的公告
+                            </a>
+                        </div>
+                    
+                        <div class="notice-content-item">
+                             <a target="_blank" title="关于“一网通”官方网站改版上线的通告" href="/main/noticeinfo.aspx?guid=ebd2a97b-da8d-4ec0-8aa6-578592bee303">
+                                关于“一网通”官方网站改版上线的通告
+                            </a>
+                        </div>
+                    
+            </div>
+        </div>
+        <div class="notice_more">
+            
+            <a href="/main/" target="_blank">
+                <span>查看更多</span>
+                <i></i>
+            </a>           
+        </div>
+    </div>
+    
+</div>
+<script type="text/javascript" defer="defer">
+    jQuery(function () {
+        try {
+
+            var carousel = new Carousel({ containerDiv: "notice-content-container", itemDiv: "notice-content-item" }, jQuery);
+        } catch(e) {
+            console.log(e);
+        }
+    })
+</script>
+    
+    <div class="DivContainer">
+        
+<div class="main_banner">
+    
+            <li>
+                
+                     <img src="http://images.cmbchina.com/cmbadv/202104/7a998033-7028-42e2-a376-4e85b8ed7601.PNG" width="732" height="96" />
+                    <a href="http://cc.cmbchina.com" target="_blank">
+                        <i></i>
+                    </a>
+                
+
+               
+
+            </li>
+        
+            <li>
+                
+                     <img src="http://images.cmbchina.com/cmbadv/202104/1fb1291e-1cc6-44cc-922f-02b536b2dbaf.PNG" width="732" height="96" />
+                    <a href="https://market.cmbchina.com/brand/fanxiqianxuanchuan/index.html" target="_blank">
+                        <i></i>
+                    </a>
+                
+
+               
+
+            </li>
+        
+            <li>
+                
+                     <img src="http://images.cmbchina.com/cmbadv/202104/0339f3da-1237-4057-9732-bc4a0af667b5.PNG" width="732" height="96" />
+                    <a href="https://market.cmbchina.com/MPage/online/210305164726891/cunkuanbaoxian/index.html" target="_blank">
+                        <i></i>
+                    </a>
+                
+
+               
+
+            </li>
+        
+            <li>
+                
+                     <img src="http://images.cmbchina.com/cmbadv/202104/0beb4180-286f-4442-b04a-e3a02e92d8a7.PNG" width="732" height="96" />
+                    <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/" target="_blank">
+                        <i></i>
+                    </a>
+                
+
+               
+
+            </li>
+        
+</div>
+
+        
+<div class="tool_tab">
+
+    <div class="tab_container">
+        <div class="tab-content">
+            <div class="tool_tab_item">
+                <div class="cicle_shadow">
+                    <i class="online_service"></i>
+                </div>
+
+
+                <p>在线服务</p>
+                <div class="buttom_line">
+                </div>
+
+
+            </div>
+            <div class="tool_tab_item_content">
+                <div class="content_head">
+                    <p>在线服务</p>
+                    <div class="buttom_line">
+                    </div>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://ccclub.cmbchina.com/ccproduct/newcustomer.aspx" target="_blank">信用卡申请</a>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://market.cmbchina.com/personal/sdkh_pc/index.html" target="_blank">在线极速开户</a>
+
+                </div>
+
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="https://market.cmbchina.com/personal/shengyidai/index.html" target="_blank">在线申请生意贷</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="https://app.cmbchina.com/pevs/pccheck.aspx" target="_blank">个人电子回单验证</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://checktransactionbill.paas.cmbchina.com/checkTransaction" target="_blank">零售交易流水验真</a>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="javascript:ifinwindows();">i理财大众版</a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="tab_container">
+        <div class="tab-content">
+            <div class="tool_tab_item">
+                <div class="cicle_shadow">
+                    <i class="common_query"></i>
+                </div>
+
+                <p>常用查询</p>
+                <div class="buttom_line">
+                </div>
+
+            </div>
+            <div class="tool_tab_item_content">
+                <div class="content_head">
+                    <p>常用查询</p>
+                    <div class="buttom_line">
+                    </div>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="/CustomerService/CustomerServiceInfo.aspx?pageid=xzfwbd" target="_blank">小招服务宝典</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="/CustomerService/CustomerServiceInfo.aspx?pageid=zhbz" target="_blank">服务价格目录</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://map.cmbchina.com" target="_blank">服务网点查询</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/BondTradePrice.aspx?chnl=bondprice" target="_blank">国债柜台交易报价</a>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://cc.cmbchina.com/common/schedule.htm" target="_blank">信用卡申请进度</a>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="tab_container">
+        <div class="tab-content">
+            <div class="tool_tab_item ">
+                <div class="cicle_shadow">
+                    <i class="finance_tool"></i>
+                </div>
+
+                <p>金融工具</p>
+                <div class="buttom_line">
+                </div>
+
+            </div>
+            <div class="tool_tab_item_content">
+                <div class="content_head">
+                    <p>金融工具</p>
+                    <div class="buttom_line">
+                    </div>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/Cal_Saving_Per.aspx?chnl=ckjsq" target="_blank">个人存款计算器</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/Cal_Loan_Per.aspx?chnl=dkjsq" target="_blank">个人贷款计算器</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/Cal_Forex.aspx?chnl=whjsq" target="_blank">外币兑换计算器</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/Cal_Guozai.aspx?chnl=gzjsq" target="_blank">国债收益计算器</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/Cal_Pension.aspx?chnl=yljjsq" target="_blank">养老金计算器</a>
+
+                </div>
+                 <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/corporate/pension/PensionInfo.aspx?pageid=download" target="_blank">业务表格下载</a>
+
+                </div>
+
+
+
+            </div>  
+        </div>
+        
+    </div>
+    <div class="tab_container">
+        <div class="tab-content">
+            <div class="tool_tab_item">
+                <div class="cicle_shadow">
+                    <i class="realtime_market"></i>
+                </div>
+
+                <p>实时行情</p>
+                <div class="buttom_line">
+                </div>
+
+            </div>
+            <div class="tool_tab_item_content">
+                <div class="content_head">
+                    <p>实时行情</p>
+                    <div class="buttom_line">
+                    </div>
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://fx.cmbchina.com/hq/" target="_blank">外汇实时汇率</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://gold.cmbchina.com/rate/" target="_blank">黄金市场行情</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://fund.cmbchina.com/FundPages/OpenFund/FundNetValue.aspx" target="_blank">基金净值</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/cfweb/personal/prodvalue.aspx" target="_blank">理财产品净值</a>
+                </div>
+
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/InterestRate.aspx?chnl=ckrate" target="_blank">存款利率</a>
+
+                </div>
+                <div class="content_list_item">
+
+                    <div class="tool_tab_dot">
+                    </div>
+                    <a href="http://www.cmbchina.com/CmbWebPubInfo/CDRate.aspx?chnl=cdrate" target="_blank">贷款利率</a>
+
+                </div>
+
+
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+</div>
+<script type="text/javascript" defer="defer"> 
+    jQuery(function () {
+
+
+    });
+</script>
+
+
+    </div>
+    
+<div class="finance_index_bg">
+    <div class="finance_index_container">
+        <div class="finance_index_content w">
+            <ul>
+                <li class="finance_index_content_item">
+                    <a  href="http://www.cmbchina.com/cfweb" target="_blank">
+                        <i class="finance_product"></i>
+                        <p>
+                            理财产品
+                        </p>
+
+
+                    </a>
+
+                </li>
+                <li class="finance_index_content_item">
+                    <a href="http://fx.cmbchina.com" target="_blank">
+                        <i class="foreign_exchage"></i>
+                        <p>
+                            外汇
+                        </p>
+                    </a>
+                </li>
+                <li class="finance_index_content_item">
+                    <a href="http://gold.cmbchina.com"  target="_blank">
+                        <i class="gold"></i>
+                        <p>
+                            黄金
+                        </p>
+                    </a>
+                </li>
+                <li class="finance_index_content_item">
+                    <a href="http://fund.cmbchina.com"  target="_blank">
+                        <i class="personal_fund"></i>
+                        <p>
+                            基金
+                        </p>
+                    </a>
+                </li>
+                <li class="finance_index_content_item">
+                    <a href="http://cmbchina.cignacmb.com/"  target="_blank">
+                        <i class="insurance"></i>
+                        <p>
+                            保险
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .finance_index_content_item a{
+        display: block;
+        width: 100%;
+        height: 58%;
+        padding-top: 172px;
+    }
+</style>
+
+    
+<div class="buttom_adv_bg">
+    <div class="buttom_adv_container">
+        <div class="buttom_adv_content w">
+            <div class="buttom_adv_content_info">
+                <div class="content_item content_item_0">
+                    <div class="buttom_adv_head">
+                        <i></i>
+                        <h4>日常消费怎么省钱？
+                        </h4>
+                    </div>
+                    <div class="buttom_adv_body">
+                        <p>
+                            努力工作升职加薪可以多赚10%，而我聪明消费也能。用招行卡，吃喝玩乐优惠多多，生活缴费红包连连，工资理财收益稳健。点滴积累，一个月开支竟然省下了好几百块。
+
+                        </p>
+                    </div>
+                
+                </div>
+
+
+                <div class="content_item content_item_1">
+                    <div class="buttom_adv_head">
+                        <i></i>
+                        <h4>高端客户，如何使用自己的权益？
+                        </h4>
+                    </div>
+                    <div class="buttom_adv_body">
+                        <p>
+                            在商务出行、海外教育、健康管理等方面，我们都非常依赖招商银行的私行服务，招行于我们早已不只是一家银行，而更像是管家与同行者。
+
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="content_item content_item_2">
+                    <div class="buttom_adv_head">
+                        <i></i>
+                        <h4>买房买车，预算不够怎么办？
+                        </h4>
+                    </div>
+                    <div class="buttom_adv_body">
+                        <p>
+                           买房装修忙前顾后，期待的同时，烦恼随之而来。三年前我在招商银行做了房屋贷款计划，既安全又有保障。不仅住上了理想的房子，生活品质也没有因此下降。
+
+                        </p>
+                    </div>
+                
+                </div>
+                <div class="content_item content_item_3">
+                    <div class="buttom_adv_head">
+                        <i></i>
+                        <h4>收入少，需不需要理财？
+                        </h4>
+                    </div>
+                    <div class="buttom_adv_body">
+                        <p>
+                            理财是一种有规划的人生态度。让每一笔“小钱”像雪球一样越滚越大。刚毕业那会儿，我咬着牙就从几千块钱的月薪中学着做定投。几年过去了，不仅工资翻倍，理财结构和收益也更加科学可靠。
+
+
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="content_item_button">
+                <div class="detail_button">
+                    <a href="/personal/allinonecard/" target="_blank">
+                        <span>聪明消费，多攒一笔</span>
+                       <i></i>
+                    </a>
+
+                </div>
+
+                <div class="detail_button">
+                    <a href="/privatebank/" target="_blank">
+                        <span>权益更多，私享生活</span>
+                        <i></i>
+                    </a>
+
+                </div>
+
+                <div class="detail_button">
+                    <a href="/personal/credit/" target="_blank">
+                        <span>大件消费，轻松贷款</span>
+                        <i></i>
+                    </a>
+
+                </div>
+
+                <div class="detail_button">
+                    <a href="/personal/invest/" target="_blank">
+                        <span>善于理财，薪上加薪</span>
+                        <i></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="profile_photo">
+                <div class="profile_photo_list">
+
+                    <div class="profile_photo_item profile_photo_0 photo_active">
+                    </div>
+                    <div class="profile_photo_item profile_photo_1">
+                    </div>
+                    <div class="profile_photo_item profile_photo_2">
+                    </div>
+                    <div class="profile_photo_item profile_photo_3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(function () {
+        init();
+
+        jQuery('.profile_photo_item').click(function () {
+            // 获取当前元素得序号
+            var index = jQuery(this).index();
+            // 如果点击得是当前元素，不进行处理
+            if ($(".content_item").eq(index).hasClass("button_adv_active")) {
+                return;
+            }
+
+            // 更改当前点击元素背景颜色
+            jQuery(this).css("background-image", "url(" + "'./Images/profile_photo_" + index + "_color.png')");
+            // 之前点亮的元素背景变灰
+            var without_color_bg = jQuery(".photo_active").css("background-image").replace("_color", "");
+            jQuery(".photo_active").css("background-image", without_color_bg);
+            // 使当前元素置位最顶层
+            var zIndex = $(jQuery(".profile_photo_list").find(".photo_active")[0]).css("z-index");
+            jQuery(this).css("z-index", parseInt(zIndex) + 1);
+            jQuery('.profile_photo_item').removeClass("photo_active");
+            jQuery(this).addClass("photo_active");
+
+            var $item;
+
+            jQuery(".detail_button").hide();
+            jQuery(".detail_button").eq(index).show();
+
+            if (jQuery(".content_item").eq(index).length > 0) {
+
+                $item = jQuery(".content_item").eq(index);
+                moveIn($item)
+            }
+
+            if (jQuery(".content_item.button_adv_active").length > 0) {
+                $pre = jQuery(".content_item.button_adv_active");
+                moveOut($pre, $item);
+            }
+            
+            $item.addClass("button_adv_active");
+
+            // 元素的滑动切换效果
+           /* jQuery(".content_item").css("dispaly","block").slideUp('normal', 'linear', function () {
+
+            });
+            jQuery(".content_item").eq(jQuery(this).index()).slideDown('normal', 'linear', function () {
+
+            });*/
+           
+        });
+
+        function moveIn($item) {
+            move($item);
+            $item.css("opacity", 1);
+        }
+
+        function moveOut($item, $next) {
+            move($item, $next)
+            $item.removeClass("button_adv_active");
+            $item.css("opacity", 0);
+        }
+
+        function move($item, $next) {
+            var top = parseInt($item.css("top").replace("px", ""));
+            var nextTop = 0;
+
+            if ($next) {
+                nextTop = parseInt($next.css("top").replace("px", ""));
+            }
+
+            if (top > 0) {
+                up($item);
+            } else if (top < 0) {
+                down($item);
+            } else if (nextTop > 0) {
+                up($item);
+            } else if (nextTop < 0) {
+                down($item);
+            } else {
+                up($item);
+            }
+        }
+
+        function up($item) {
+            var top = parseInt($item.css("top").replace("px", ""));
+            $item.css("top", (top - 147) + "px");
+        }
+
+        function down($item) {
+            var top = parseInt($item.css("top").replace("px", ""));
+            $item.css("top", (top + 147) + "px");
+        }
+
+        function init() {
+            // 获取当前元素得序号
+            var index = 0;
+            var $item;
+            jQuery(".detail_button").hide();
+            jQuery(".detail_button").eq(index).show();
+
+            if (jQuery(".content_item").eq(index).length > 0) {
+
+                $item = jQuery(".content_item").eq(index);
+                moveIn($item)
+            }
+
+            if (jQuery(".content_item.button_adv_active").length > 0) {
+                $pre = jQuery(".content_item.button_adv_active");
+                moveOut($pre, $item);
+            }
+
+            $item.addClass("button_adv_active");
+        }
+    });
+</script>
+
+    
+<script type="text/javascript" src="../../Scripts/cmb_animate-1.0.0.js"></script>
+<div class="cmb-his-container">
+    <div class="cmb-his-line">
+        <div class="cmb-his-content">
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1987</div>
+                    <div class="cmb-his-item-title-text">生而不一样</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/1.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1987</div>
+                        <div class="cmb-his-item-body-text">生而不一样</div>
+                        <div class="cmb-his-item-body-date">1987.04.08</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1987</div>
+                        <div class="cmb-his-item-body-text">生而不一样</div>
+                        <div class="cmb-his-item-body-date">1987.04.08</div>
+                        <div class="cmb-his-item-body-info">1987年4月8日，招商银行在中国改革开放的前沿——深圳蛇口开业，新中国第一家由企业创办、自主经营、独立核算、自负盈亏的商业银行宣告诞生。不一样的基因、不一样的服务、不一样的机制、不一样的科技……这些迥然不同的特质，造就了“不一样”的招商银行。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1987</div>
+                    <div class="cmb-his-item-title-text">现代公司治理</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/2.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1987</div>
+                        <div class="cmb-his-item-body-text">现代公司治理</div>
+                        <div class="cmb-his-item-body-date">1987.05.15</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1987</div>
+                        <div class="cmb-his-item-body-text">现代公司治理</div>
+                        <div class="cmb-his-item-body-date">1987.05.15</div>
+                        <div class="cmb-his-item-body-info">招商银行创办时，虽然只有招商局一家股东，但坚持按照国际惯例创建现代企业管理制度，组建董事会、监事会，并按法规制定了《招商银行章程》。在第一次董事会会议上，招商银行就确定了董事会领导下的行长负责制，明确所有权与经营权分开。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1993</div>
+                    <div class="cmb-his-item-title-text">招银模式</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/3.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1993</div>
+                        <div class="cmb-his-item-body-text">招银模式</div>
+                        <div class="cmb-his-item-body-date">1993.03.09</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1993</div>
+                        <div class="cmb-his-item-body-text">招银模式</div>
+                        <div class="cmb-his-item-body-date">1993.03.09</div>
+                        <div class="cmb-his-item-body-info">1993年，《经济日报》在报道中首先提出“招银模式”。随后《人民日报》《新华社内参》《金融时报》等多家媒体相继对我行作了报道。一时间，“招银模式”成了金融界热门话题，其涵义主要包括：无行政级别、自主经营、自负盈亏、自担风险、董事会领导下的行长负责制等。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1995</div>
+                    <div class="cmb-his-item-title-text">一卡通</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/4.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1995</div>
+                        <div class="cmb-his-item-body-text">一卡通</div>
+                        <div class="cmb-his-item-body-date">1995.02.09</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1995</div>
+                        <div class="cmb-his-item-body-text">一卡通</div>
+                        <div class="cmb-his-item-body-date">1995.02.09</div>
+                        <div class="cmb-his-item-body-info">1995年，招商银行推出集多储种、多币种、多功能服务于一身的电子货币卡——“一卡通”。一卡通将客户号管理这个先进的理念引入中国市场，引领着中国银行业由存折时代进入卡片时代。一卡通是中国银行业储蓄服务的一场革命，推动了中国银行业结算制度的变革。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1996</div>
+                    <div class="cmb-his-item-title-text">牛奶与咖啡服务</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/5.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1996</div>
+                        <div class="cmb-his-item-body-text">牛奶与咖啡服务</div>
+                        <div class="cmb-his-item-body-date">1996.07.13</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1996</div>
+                        <div class="cmb-his-item-body-text">牛奶与咖啡服务</div>
+                        <div class="cmb-his-item-body-date">1996.07.13</div>
+                        <div class="cmb-his-item-body-info">讲招行的服务发展史，一定避不开沈阳分行的牛奶咖啡革命。1996年，沈阳分行行长孙培泮提出要让客户来招行享受到“上帝”一样的服务，沈阳分行率先将顾客服务区域扩大，摆放舒适沙发，并给客人提供咖啡和牛奶。随后，总行在沈阳召开现场会，全面总结推广这一服务模式。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">1997</div>
+                    <div class="cmb-his-item-title-text">一网通</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/6.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">1997</div>
+                        <div class="cmb-his-item-body-text">一网通</div>
+                        <div class="cmb-his-item-body-date">1997.01.23</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">1987</div>
+                        <div class="cmb-his-item-body-text">一网通</div>
+                        <div class="cmb-his-item-body-date">1997.01.23</div>
+                        <div class="cmb-his-item-body-info">1997年，招商银行率先推出自己的网站——“一网通”（域名为：www.cmbchina.com），这是中国银行业最早的域名之一。1998年，招行推出面向个人客户的网上银行服务——“网上支付”业务，成为国内首家在互联网上提供支付服务的银行。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2002</div>
+                    <div class="cmb-his-item-title-text">因您而变</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/7.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2002</div>
+                        <div class="cmb-his-item-body-text">因您而变</div>
+                        <div class="cmb-his-item-body-date">2002.02.09</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2002</div>
+                        <div class="cmb-his-item-body-text">因您而变</div>
+                        <div class="cmb-his-item-body-date">2002.02.09</div>
+                        <div class="cmb-his-item-body-info">“因您而变”是招商银行自2002年开始使用的企业品牌口号，该口号由“山因势而变、水因时而变、人因思而变”这一品牌策略推演而来。招商银行把客户比作太阳，招行是始终围绕太阳生长变化的向日葵。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2014</div>
+                    <div class="cmb-his-item-title-text">“轻型银行”</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/8.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2014</div>
+                        <div class="cmb-his-item-body-text">“轻型银行”</div>
+                        <div class="cmb-his-item-body-date">2014.01.04</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2014</div>
+                        <div class="cmb-his-item-body-text">“轻型银行”</div>
+                        <div class="cmb-his-item-body-date">2014.01.04</div>
+                        <div class="cmb-his-item-body-info">2014年，招行提出“轻型银行”的转型方向。轻型银行的本质，就是以更少的资本消耗、更集约的经营方式、更灵巧的应变能力，实现更高效的发展和更丰厚的价值回报。其内涵包括四个方面：轻资产、轻运营、轻管理、轻文化。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2014</div>
+                    <div class="cmb-his-item-title-text">“一体两翼”</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/9.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2014</div>
+                        <div class="cmb-his-item-body-text">“一体两翼”</div>
+                        <div class="cmb-his-item-body-date">2014.02.11</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2014</div>
+                        <div class="cmb-his-item-body-text">“一体两翼”</div>
+                        <div class="cmb-his-item-body-date">2014.02.11</div>
+                        <div class="cmb-his-item-body-info">2014年，招行提出以“一体两翼”为战略定位，零售金融是“一体”，公司金融和同业金融是“两翼”。“一体两翼”是对招行独特优势业务的一种战略整合，是一个正向循环、互相促进的有机整体。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+           
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2017</div>
+                    <div class="cmb-his-item-title-text">金融科技银行</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/11.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2017</div>
+                        <div class="cmb-his-item-body-text">金融科技银行</div>
+                        <div class="cmb-his-item-body-date">2017.03.12</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2017</div>
+                        <div class="cmb-his-item-body-text">金融科技银行</div>
+                        <div class="cmb-his-item-body-date">2017.03.12</div>
+                        <div class="cmb-his-item-body-info">2017年，招行提出要把自己定位为一家“金融科技银行”，为转型下半场提供源源不断的“核动力”，对标科技公司，改变业务模式、运营方式、管理模式和基础架构。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2019</div>
+                    <div class="cmb-his-item-title-text">招行App用户数破亿</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/12.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2019</div>
+                        <div class="cmb-his-item-body-text">招行App用户数破亿</div>
+                        <div class="cmb-his-item-body-date">2019.09.12</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2019</div>
+                        <div class="cmb-his-item-body-text">招商银行App用户数破亿</div>
+                        <div class="cmb-his-item-body-date">2019.09.12</div>
+                        <div class="cmb-his-item-body-info">2019年9月12日，招商银行App用户数突破1亿。这是招行继零售客户数（含信用卡）、两大App用户数、个人储蓄账户数破亿后，在零售用户规模上的第四个“亿级”里程碑，招行也因此成为国内首家App用户数破亿的股份制商业银行。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2019</div>
+                    <div class="cmb-his-item-title-text">清风公约</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/13.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2019</div>
+                        <div class="cmb-his-item-body-text">清风公约</div>
+                        <div class="cmb-his-item-body-date">2019.11.03</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2019</div>
+                        <div class="cmb-his-item-body-text">清风公约</div>
+                        <div class="cmb-his-item-body-date">2019.11.03</div>
+                        <div class="cmb-his-item-body-info">2019年11月，招行推出改进工作作风的“清风公约”，从文化层面为反对“大企业病”开出一剂药方。“清风公约”不仅诠释了轻文化的丰富内涵，也是招行员工践行轻文化的行为准则。“清风公约”一经推出，即引起行内广大员工强烈共鸣，并自发传播到行外，引起社会的热烈反响和点赞。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+
+            <div class="cmb-his-item">
+                <div class="cmb-his-item-title">
+                    <div class="cmb-his-item-title-year">2020</div>
+                    <div class="cmb-his-item-title-text">开放与融合</div>
+                </div>
+                <div class="cmb-his-item-body">
+                    <div class="cmb-his-item-body-img">
+                        <img src="../../Images/personal/history/14.png"/>
+                    </div>
+                    <div class="cmb-his-item-body-title">
+                        <div class="cmb-his-item-body-year">2020</div>
+                        <div class="cmb-his-item-body-text">开放与融合</div>
+                        <div class="cmb-his-item-body-date">2020.05.18</div>
+                    </div>
+                    <div class="cmb-his-item-body-content">
+                        <div class="cmb-his-item-body-year">2020</div>
+                        <div class="cmb-his-item-body-text">开放与融合</div>
+                        <div class="cmb-his-item-body-date">2020.05.18</div>
+                        <div class="cmb-his-item-body-info">2020年，招行提出开放与融合作为解锁数字化时代经营模式的钥匙和方法论，通过内部融合提升服务能力，通过连接开放突破服务边界进入客户的生活圈、企业的经营圈，营造服务生态，并将开放与融合贯彻应用于业务、科技、组织及文化升级的方方面面。</div>
+                    </div>
+                </div>
+                <div class="cmb-his-item-point"></div>
+            </div>
+            
+
+            <div class="cmb-his-ctrl">
+                <div class="cmb-his-btn cmb-his-left"></div>
+                <div class="cmb-his-ctrl-span">
+                    <span class="cmb-his-ctrl-span-cur">0</span>
+                    <span class="">/</span>
+                    <span class="cmb-his-ctrl-span-total">0</span></div>
+                <div class="cmb-his-btn cmb-his-right"></div>
+            </div>
+            <div class="cmb-his-active-point"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" defer="defer">
+    jQuery(function () {
+
+        var itemLength = jQuery(".cmb-his-item").length;
+        if (itemLength == 0) {
+            return;
+        }
+        jQuery(".cmb-his-ctrl-span-total").text(itemLength);
+
+        var startPosition = {};
+        startPosition.x = parseFloat(jQuery(".cmb-his-item").eq(0).css("left"));
+        startPosition.y = parseFloat(jQuery(".cmb-his-item").eq(0).css("bottom"));
+
+        var secondP = {};
+        secondP.x = 600;
+        secondP.y = -111;
+
+        var thirdP = {};
+        thirdP.x = 1110;
+        thirdP.y = -25;
+        var cm = new CircularMotion({ itemDiv: "cmb-his-item", startPosition: startPosition, secondPosition: secondP, thirdPosition:thirdP}, jQuery);
+        cm.initListPosition();
+
+        var activeCm = new initActive(cm);
+
+        var duringTime = 300;
+        var initCount = 4;
+
+        findContentInContainer();
+        hideAllItems();
+
+        var listenDom = AnimateUtils.listenDomToWindow({ domClass: "cmb-his-container" }, jQuery);
+        listenDom.open(function () {
+            initAllItems();
+            listenDom.close();
+        });
+
+        var autoExecute = AnimateUtils.autoExecute({
+            func: function () {
+                jQuery(".cmb-his-right").click();
+            },
+            delay: 3000
+        })
+
+
+        function hideAllItems() {
+            jQuery(".cmb-his-active .cmb-his-item-body").hide();
+
+            var titles = jQuery(".cmb-his-item-title");
+            for (var i = 1; i < initCount; i++) {
+                titles.eq(i).hide();
+            }
+        }
+
+        function initAllItems() {
+            showItem(jQuery(".cmb-his-active .cmb-his-item-body"));
+            var index = 1;
+            showItems(index, function () {
+                autoExecute.start();
+                jQuery(".cmb-his-container").hover(function () {
+                    autoExecute.stop();
+                }, function () {
+                    autoExecute.start();
+                })
+            })
+        }
+
+        function showItem($item) {
+            $item.css("opacity", 0);
+            $item.css("display", "");
+            $item.css("bottom", "-30px");
+            $item.animate({ opacity: 1,bottom: "0px" }, duringTime*1.5);
+        }
+
+        function showItems(index, func) {
+            setTimeout(function () {
+                showItem(jQuery(".cmb-his-item-title").eq(index));
+                index++;
+                if (index >= initCount) {
+                    if (func && typeof func == "function") {
+                        func();
+                    }
+                    return;
+                }
+                showItems(index, func);
+            }, duringTime*1.5);
+        }
+
+
+        jQuery(".cmb-his-left").on("click", function () {
+
+            if (activeCm.cm.isMoving || cm.isMoving) {
+                return;
+            }
+            activeCm.minusCurIndex();
+
+            findContentInContainer();
+            if (checkContentInContainer(jQuery(".cmb-his-container"), jQuery(".cmb-his-item").eq(activeCm.curIndex))) {
+                activeCm.cm.next(function () {
+                    showActive();
+                }, function () {
+                    adjustActive(activeCm)
+                });
+            } else {
+                cm.prev();
+                activeCm.cm.prev(function () {
+                    
+                }, function () {
+                   showActive();
+                    activeCm.cm.next(null, function () {
+                        adjustActive(activeCm)
+                    });
+                });
+            }
+            
+        })
+
+        jQuery(".cmb-his-right").on("click", function () {
+            if (activeCm.cm.isMoving || cm.isMoving) {
+                return;
+            }
+            activeCm.addCurIndex();
+
+            findContentInContainer();
+
+            if (checkContentInContainer(jQuery(".cmb-his-container"), jQuery(".cmb-his-item").eq(activeCm.curIndex))) {
+                activeCm.cm.prev(function () {
+                    showActive();
+                }, function () {
+                    adjustActive(activeCm)
+                });
+                
+            } else {
+                cm.next();
+                activeCm.cm.next(function () {
+                    
+                }, function () {
+                    showActive();
+                    activeCm.cm.prev(null,function () {
+                        adjustActive(activeCm)
+                    });
+                });
+            }
+           
+            
+
+        })
+
+        jQuery(".cmb-his-item-body").hover(function () {
+            
+            jQuery(this).stop(true, true).animate(holdContentInContainer(jQuery(".cmb-his-container"), jQuery(this), {
+                width: "500px",
+                height: "162px"
+            }), duringTime);
+           ;
+            jQuery(this).find(".cmb-his-item-body-title").stop(true, true).animate({
+                top: "200px",
+                opacity: 0
+            }, duringTime);
+
+            jQuery(this).find(".cmb-his-item-body-img").stop(true, true).animate({
+                width: "175px",
+                height: "160px"
+            }, duringTime);
+            jQuery(this).find(".cmb-his-item-body-content").stop(true, true).delay(duringTime / 2).animate({
+                left: "208px",
+                opacity: 1
+            }, duringTime);
+
+            jQuery(this).find(".cmb-his-item-body-img img").stop(true, true).animate({
+                left: "-20px"
+            }, duringTime);
+
+           
+        }, function () {
+            jQuery(this).stop(true, true).animate({
+                width: "120px",
+                height: "175px",
+                right: "45px"
+            }, duringTime);
+            jQuery(this).find(".cmb-his-item-body-title").stop(true, true).animate({
+                top: "140px",
+                opacity: 1
+            }, duringTime);
+            jQuery(this).find(".cmb-his-item-body-img").stop(true, true).animate({
+                width: "120px",
+                height: "84px"
+            }, duringTime);
+            jQuery(this).find(".cmb-his-item-body-content").stop(true, true).animate({
+                left: "0px",
+                opacity: 0
+            }, duringTime);
+            jQuery(this).find(".cmb-his-item-body-img img").stop(true, true).animate({
+                left: "0px"
+            }, duringTime);
+        });
+
+
+        function initActive(cm) {
+            var me = this;
+            jQuery(".cmb-his-item").eq(0).addClass("cmb-his-active");
+            jQuery(".cmb-his-active-point").css("bottom", offestActive(cm.options.startPosition).y + "px");
+            jQuery(".cmb-his-active-point").css("left", offestActive(cm.options.startPosition).x + "px");
+            var avtiveCm = new CircularMotion({ itemDiv: "cmb-his-active-point", startPosition: offestActive(cm.options.startPosition), secondPosition: offestActive(cm.options.secondPosition), thirdPosition: offestActive(cm.options.thirdPosition) }, jQuery)
+
+
+            me.cm = avtiveCm;
+            me.curIndex = 0;
+
+            showActive(me.curIndex);
+
+            function offestActive(point) {
+                return {
+                    x: point.x - 6,
+                    y: point.y - 6
+                }
+            }
+
+            me.offestActive = offestActive;
+
+            me.addCurIndex = function () {
+
+
+                if (me.curIndex == cm.currentLastIndex) {
+                    cm.resetFirstToLast();
+                }
+
+                me.curIndex++;
+                if (me.curIndex > cm.$item.length - 1) {
+                    me.curIndex = 0;
+                }
+            }
+
+            me.minusCurIndex = function () {
+
+                if (me.curIndex == cm.currentFirstIndex) {
+                    cm.resetLastToFirst();
+                }
+
+                me.curIndex--;
+                if (me.curIndex < 0) {
+                    me.curIndex = cm.$item.length - 1;
+                }
+            }
+        }
+
+        function adjustActive(active) {
+            var abottom = parseFloat(jQuery(".cmb-his-active-point").css("bottom").replace("px", ""));
+            var aleft = parseFloat(jQuery(".cmb-his-active-point").css("left").replace("px", ""));
+
+            var bottom = parseFloat(jQuery(".cmb-his-active").css("bottom").replace("px", ""));
+            var left = parseFloat(jQuery(".cmb-his-active").css("left").replace("px", ""));
+
+            var shouldPosition = active.offestActive({ x: left, y: bottom });
+
+            if (shouldPosition.x != aleft) {
+                jQuery(".cmb-his-active-point").css("left", shouldPosition.x + "px");
+            }
+
+            if (shouldPosition.y != abottom) {
+                jQuery(".cmb-his-active-point").css("bottom", shouldPosition.y + "px");
+            }
+
+        }
+
+        function showActive(curIndex) {
+
+            
+            jQuery(".cmb-his-item.cmb-his-active").addClass("cmb-his-prev");
+            
+
+            jQuery(".cmb-his-item.cmb-his-prev .cmb-his-item-body").animate({
+                opacity: 0,
+                bottom: "-20px"
+            }, duringTime * 2)
+
+            jQuery(".cmb-his-item.cmb-his-active").removeClass("cmb-his-active");
+
+            setTimeout(function () {
+                jQuery(".cmb-his-item.cmb-his-prev").removeClass("cmb-his-prev");
+            }, duringTime * 2)
+            
+            jQuery(".cmb-his-item").eq((curIndex || curIndex === 0) ? curIndex : activeCm.curIndex).addClass("cmb-his-active");
+
+            jQuery(".cmb-his-item.cmb-his-active .cmb-his-item-body").animate({
+                opacity: 1,
+                bottom: "0px"
+            }, duringTime * 2)
+
+            jQuery(".cmb-his-ctrl-span-cur").text((curIndex || curIndex === 0) ? curIndex + 1 : activeCm.curIndex + 1)
+        }
+        
+
+        function holdContentInContainer($container, $content, option) {
+
+            var width = $content.width();
+            var add = parseFloat(option.width.replace("px", "")) - width;
+
+            var containerBound = $container[0].getBoundingClientRect();
+            var contentBound = $content[0].getBoundingClientRect();
+
+            var _option = {};
+
+            if (contentBound.right + add > containerBound.right) {
+                var offset = contentBound.right + add - containerBound.right;
+                var right = parseFloat($content.css("right").replace("px", ""));
+                right += offset;
+                _option.right = right + "px";
+            }
+
+            return Object.assign(_option, option);
+
+        }
+
+        
+
+        function findContentInContainer() {
+
+            jQuery(".cmb-his-item").each(function () {
+                var containerBound = jQuery(".cmb-his-container")[0].getBoundingClientRect();
+
+                if (jQuery(this).hasClass("cmb-his-item-hide")) {
+                    jQuery(this).removeClass("cmb-his-item-hide");
+                }
+
+                var contentBound = jQuery(this)[0].getBoundingClientRect();
+
+
+                if ((contentBound.top > containerBound.top && contentBound.bottom < containerBound.bottom)
+                    && nearbyItem(jQuery(this))
+                ) {
+                    jQuery(this).removeClass("cmb-his-item-hide");
+                } else {
+                    jQuery(this).addClass("cmb-his-item-hide");
+                }
+
+            })
+        }
+
+        function nearbyItem($this) {
+            var curIndex = jQuery(".cmb-his-item.cmb-his-active").index();
+            var length = jQuery(".cmb-his-item").length;
+            return ((Math.abs(curIndex - $this.index()) < 10) || Math.min($this.index() - curIndex, length - ($this.index() - curIndex)));
+
+        }
+
+        function checkContentInContainer($container, $content) {
+            var containerBound = $container[0].getBoundingClientRect();
+            var contentBound = $content[0].getBoundingClientRect();
+
+
+            if (contentBound.top > containerBound.top
+                && contentBound.bottom < containerBound.bottom
+                && contentBound.left > containerBound.left
+                && contentBound.right < containerBound.right
+            ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+    })
+</script>
+<style>
+    .cmb-his-container{
+        width: 1200px;
+        height: 186px;
+        margin: 0 auto;
+        background: url(/Images/personal/history/world.png);
+        padding-top: 244px;
+        overflow:hidden;
+    }
+    .cmb-his-line{
+        width:1190px;
+        height:195px;
+        background: url("/Images/personal/history/line.png");
+    }
+    .cmb-his-content{
+        position: relative;
+    }
+    .cmb-his-item{
+        position: absolute;
+        bottom: -114px;
+        left: 138px;
+    }
+    .cmb-his-item-hide{
+        display:none;
+    }
+    .cmb-his-item.cmb-his-active .cmb-his-item-body {
+        display:block;
+        opacity:0;
+        bottom: -20px;
+    }
+    .cmb-his-item.cmb-his-prev .cmb-his-item-body {
+        display:block;
+    }
+
+    .cmb-his-item-body{
+        width: 120px;
+        height: 175px;
+        background: #FFFFFF;
+        box-shadow: 0 2px 15px 0 rgba(0,0,0,0.07);
+        position: relative;
+        padding:15px;
+        overflow:hidden;
+        right: 45px;
+        display:none;
+        z-index:1;
+    }
+    .cmb-his-item-point{
+        width:10px;
+        height:10px;
+        background: url("/Images/personal/history/point.png");
+        margin-top: 20px;
+    }
+    .cmb-his-ctrl{
+        position: absolute;
+        right: 19px;
+        bottom: -162px;
+    }
+    .cmb-his-btn{
+        width:30px;
+        height:30px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+
+    .cmb-his-left{
+        background: url("/Images/personal/history/left.png");
+    }
+
+    .cmb-his-right{
+         background: url("/Images/personal/history/right.png");
+    }
+
+    .cmb-his-ctrl-span{
+        width:50px;
+        height:30px;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 5px;
+        font-size: 0px;
+        white-space: nowrap;
+    }
+
+    .cmb-his-ctrl-span span{
+        font-size: 14px;
+        color: #3F3F3F;
+        letter-spacing: 0.58px;
+        text-align: justify;
+        font-weight: bold;
+        display: inline-block;
+    }
+        
+    .cmb-his-ctrl-span-cur{
+        color: #A30030 !important;
+        width: 20px;
+        text-align: right !important;
+    }
+    
+    .cmb-his-ctrl-span-total{
+        width: 20px
+    }
+    
+    .cmb-his-active-point{
+        width:22px;
+        height:22px;
+        background:url("/Images/personal/history/point_active.png");
+        position: absolute;
+    }
+
+    .cmb-his-item-body-img{
+        width:120px;
+        height:84px;
+        position:absolute;
+        overflow: hidden;
+    }
+    .cmb-his-item-body-title{
+        position:absolute;
+        top: 140px;
+    }
+    .cmb-his-item-body-content{
+        position:absolute;
+        width: 308px;
+        left: 0px;
+        opacity:0;
+        text-align: justify;
+    }
+    .cmb-his-item-body-year{
+        opacity: 0.24;
+        font-size: 24px;
+        color: #626262;
+        letter-spacing: 0.34px;
+        line-height: 28px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .cmb-his-item-body-text{
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.58px;
+        position: relative;
+        top: -13px;
+        font-weight: bold;
+    }
+    .cmb-his-item-body-date{
+        font-size: 12px;
+        color: #999999;
+        letter-spacing: 0.5px;
+        position: relative;
+        top: -14px;
+    }
+    .cmb-his-item-body-content .cmb-his-item-body-date{
+        font-size: 14px;
+        top: -33px;
+        left: 229px;
+    }
+    .cmb-his-item-body-content .cmb-his-item-body-text{
+        font-size: 14px;
+        color: #5c89ea;
+    }
+    .cmb-his-item-body-content .cmb-his-item-body-year{
+
+    }
+    .cmb-his-item-body-info{
+        font-size: 14px;
+        position: relative;
+        top: -24px;
+        color: #999999;
+    }
+    .cmb-his-item-body-img img{
+        height: 100%;
+        position: relative;
+    }
+
+    .cmb-his-item-title{
+        position: relative;
+    }
+    .cmb-his-item.cmb-his-active .cmb-his-item-title {
+        display:none;
+    }
+    .cmb-his-item.cmb-his-prev .cmb-his-item-title {
+        display:none;
+    }
+    .cmb-his-item-title-year{
+        font-size: 16px;
+        color: #333333;
+        letter-spacing: 0.57px;
+        font-weight:bold;
+    }
+    .cmb-his-item-title-text{
+        font-size: 14px;
+        color: #999999;
+        margin-top: 8px;
+        letter-spacing: 0.58px;
+        width: 156px;
+    }
+</style>
+    <script language="javascript" type="text/javascript" src="scripts/Animate.js"></script>
+ 
+	<div class="spacer"></div>
+	
+
+<div class="footer">
+
+    <div class="service_info">
+        <div class="w">
+            <div class="service_info_list">
+                <div class="contact_cmb">
+                    <div class="clear_float">
+                        <i class="contact_cmb_icon"></i>
+                        <p>
+                            联系招行
+                        </p>
+                    </div>
+                    <div class="contact_cmb_list">
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                服务热线：95555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                境外服务热线：86-755-84391000
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                信用卡服务热线：400-820-5555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                企业年金专线：4006095555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                小招外呼专线：4006995555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                私人银行服务专线：40066-95555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                钻石贵宾服务专线：40068-95555
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                金葵花贵宾服务专线：40088-95555
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="cmb_about">
+                    <div class="clear_float">
+                        <i class="cmb_about_icon"></i>
+                        <p>
+                            关于招行
+                        </p>
+                    </div>
+                    <div class="contact_cmb_list">
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="http://www.cmbchina.com/cmbir/" target="_blank">投资者关系
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="/about/?pageid=licence" target="_blank">金融许可信息
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="/about/?pageid=goodlink" target="_blank">友情链接
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a target="_blank" href="http://career.cmbchina.com/">人才招聘
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="/about/sitemap.aspx" target="_blank">网站地图
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="website_security">
+                    <div class="clear_float">
+                        <i class="website_security_icon"></i>
+                        <p>
+                            网站安全
+                        </p>
+                    </div>
+                    <div class="contact_cmb_list">
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+
+                            <a href="/about/?pageid=security" target="_blank">安全说明
+                            </a>
+
+
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="/about/?pageid=webnotice" target="_blank">网站声明
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="/about/?pageid=privacy" target="_blank">隐私保密条款
+                            </a>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <a href="http://www.cmbchina.com/Cmb2014Web/CmbInfo/CustomerService/" target="_blank">消费者权益保护
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="clear_float">
+                        <i class="feedback_icon"></i>
+                        <p>
+                            意见反馈
+                        </p>
+                    </div>
+                    <div class="contact_cmb_list">
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                客户投诉电话：95555转7
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                信用卡投诉电话：4008205555转7
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                总行消费者投诉受理邮箱：xfzts@cmbchina. com
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item multiline_text_height ">
+                            <div class="dot">
+                            </div>
+                            <p class="multiline_text">
+                                总行信函投诉地址：深圳市福田区深南大道7088号招商银行大厦消费者权益保护与服务监督管理中心
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                邮政编码：518040
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                招商银行信访电话：0755-83077333
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div class="dot">
+                            </div>
+                            <p>
+                                信访邮箱、来信来访地址同投诉受理途径
+                            </p>
+                        </div>
+                        <div class="contact_cmb_item">
+                            <div style="background:url('/images/click_point.png') no-repeat;width:22px;height:16px;float:left;margin-left:35px;margin-top:2px">
+                                
+                            </div>
+                            
+                            
+                                <div><a href="http://www.cmbchina.com/Cmb2014Web/cmbinfo/cusservice/risk_knowledge/page12.htm" target="_blank" style="color:#4986E8!important;margin-left:6px">点击查看投诉处理流程</a></div>
+                            
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="web_certify">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="http://szcert.ebs.org.cn/418b33e0-18a9-4206-bb61-1c201322a400">
+                                <img src="/images/gongshang.jpg" border="0" alt="工商网监标志" class="small">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.cmbchina.com/webpages/cmbsafe/index.htm">
+                                <img src="/images/wangan.gif" border="0" alt="网络安全标志" class="small">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.sznet110.gov.cn/netalarm/index.jsp" target="_blank">
+                                <img src="/images/sz_police.gif" border="0" alt="网络安全标志" class="small">
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="https://search.szfw.org/cert/l/CX20120110001800001833" target="_blank">
+                                <img src="/images/chengxinlogo.png" border="0" alt="诚信网站" class="medium">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ss.knet.cn/verifyseal.dll?sn=e13073144030041836wa7c000000&amp;ct=df&amp;a=1&amp;pa=500267" target="_blank">
+                                <img src="/images/knetseallogo.png" alt="可信网站" class="medium">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div class="copyright">
+        <div class="w">
+            <p>
+                招商银行一网通创建于一九九七年&nbsp;&nbsp;&nbsp;&nbsp;     &copy 2020 招商银行 版权所有   &nbsp;&nbsp;&nbsp;&nbsp; 粤ICP备17088997号
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script language="javascript">
+    function AddFavorite(sURL, sTitle) {
+        try {
+            window.external.addFavorite(sURL, sTitle);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }
+            catch (e) {
+            }
+        }
+    }
+    /*if (window.screen.width > 1024) {
+    	document.body.style.background = "#fff url(/images/bg.gif) no-repeat center top";
+    	document.getElementById("top_bar").style.width = "950px";
+    }
+    else {
+        document.body.style.background = "#fff";
+        document.getElementById("top_bar").style.width = "100%";
+    }*/
+</script>
+<script type="text/JavaScript"> 
+    function CNNIC_change(eleId) {
+        var str = document.getElementById(eleId).href;
+        var str1 = str.substring(0, (str.length - 6));
+        str1 += CNNIC_RndNum(6);
+        document.getElementById(eleId).href = str1;
+    }
+
+    function CNNIC_RndNum(k) {
+        var rnd = "";
+        for (var i = 0; i < k; i++)
+            rnd += Math.floor(Math.random() * 10);
+        return rnd;
+    } 
+</script>
+
+<script language="javascript" src="/scripts/sdc_web.js" type="text/javascript"></script>
+
+
+	</form>
+</body>
+</html>

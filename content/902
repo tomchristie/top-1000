@@ -1,0 +1,4642 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	
+
+    
+    <!-- start DTM -->
+<script src="//assets.adobedtm.com/launch-ENb46a5d84ec144ff28a08696f5571813e.min.js"></script>
+<!-- end DTM -->
+
+
+<script type="text/javascript">
+//   start DTM Tealium script here
+var VM = VM || {};
+
+VM.track = {};
+VM.track.env = 'qa';
+VM.track.profile = 'vm-uk';
+VM.track.host = document.location.host;
+
+// DOMAIN LIST HERE
+VM.track.domains = {
+  'www.virginmedia.com': 'prod',
+  'store.virginmedia.com': 'prod',
+  'my.virginmedia.com': 'prod',
+  //No Track Domains
+  'telesales.systems.private': 'notrack',
+  'pptelesales.systems.private': 'notrack',
+  'storetest5-tbb.itp2.virginmedia.com': 'notrack',
+};
+
+if (typeof VM.track.domains[VM.track.host] !== 'undefined') {
+  VM.track.env = VM.track.domains[VM.track.host];
+}
+// check for csj
+var csjRegEx = RegExp(/(https:\/\/www\.virginmedia\.com\/)(checkout|check-availability|personalise-your-bundle)/g);
+if (csjRegEx.test(window.location.href)) {
+  VM.track.profile = 'vm-uk-csj-pilot';
+}
+
+// don't include tealium script for notrack domain
+// if (VM.track.env !== 'notrack') {
+  (function (a, b, c, d) {
+    a = '//tags.tiqcdn.com/utag/lgi/' + VM.track.profile + '/' + VM.track.env + '/utag.js';
+    b = document;
+    c = 'script';
+    d = b.createElement(c);
+    d.src = a;
+    d.type = 'text/java' + c;
+    d.async = true;
+    a = b.getElementsByTagName(c)[0];
+    a.parentNode.insertBefore(d, a);
+  })();
+//}
+//  end Tealium script here
+
+</script> 
+
+
+
+    
+         <!-- pre-head analytics -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="google-site-verification" content="YWejV9jlcH3aFKHMiZBXS4Ita7WpowjSt6zNNovG2_M" />
+<meta name="msvalidate.01" content="168858F5B0958F26B8979B087B694583" />
+
+<link rel="shortcut icon" href="/content/dam/virginmedia/dotcom/static/favicon.ico">
+<link rel="apple-touch-icon" href="/content/dam/virginmedia/dotcom/static/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/content/dam/virginmedia/dotcom/static/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/content/dam/virginmedia/dotcom/static/apple-touch-icon-114x114.png">
+
+<meta property="fb:admins" content="771467177,515120630"/>
+<meta property="fb:app_id" content="51825855886"/>
+
+<link rel="alternate" hreflang="x-default" href="https://www.virginmedia.com/"/>
+<link rel="alternate" href="https://www.virginmedia.com/" hreflang="en-gb"/> 
+<link rel="alternate" href="https://www.virginmedia.ie/" hreflang="en-ie"/>
+
+<script type="text/javascript">
+	var fb_param = {};
+	fb_param.pixel_id = '6008678551822';
+	fb_param.value = '0.00';
+	fb_param.currency = 'GBP';
+	(function(){
+		var fpw = document.createElement('script');
+		fpw.async = true;
+		fpw.src = '//connect.facebook.net/en_US/fp.js';
+		var ref = document.getElementsByTagName('script')[0];
+		ref.parentNode.insertBefore(fpw, ref);
+	})();
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none;" src="https://www.facebook.com/offsite_event.php?id=6008678551822&value=0&currency=GBP"/></noscript>
+
+<script>
+var uniquePageIdentifier = "homepage/customer";
+</script>
+ 
+    
+    
+
+
+	
+
+
+
+
+
+
+    <meta name="description" content="Broadband, cable TV, landline phone and mobile services from Virgin Media. Order online for the best broadband, cable TV, phone and mobile deals"/>
+
+
+    <link rel="canonical" href="https://www.virginmedia.com"/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+    <!--[Meta Tags - Twitter]-->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@virginmedia"/>
+    <meta name="twitter:title" content="Virgin Media – Cable Broadband, Digital TV, Mobile & More"/>
+    <meta name="twitter:description" content="Broadband, cable TV, landline phone and mobile services from Virgin Media. Order online for the best broadband, cable TV, phone and mobile deals"/>
+    
+    <!--[Meta Tags - Facebook]-->
+    <meta property="og:title" content="Virgin Media – Cable Broadband, Digital TV, Mobile & More"/>
+    <meta property="og:description" content="Broadband, cable TV, landline phone and mobile services from Virgin Media. Order online for the best broadband, cable TV, phone and mobile deals"/>
+    <meta property="og:type" content="article"/>
+    
+    <meta property="og:url" content="https://www.virginmedia.com"/>
+    <meta property="og:site_name" content="Virgin Media"/>
+
+
+<title>Virgin Media – Cable Broadband, Digital TV, Mobile & More | Virgin Media</title>
+
+
+    
+<link rel="stylesheet" href="/etc/designs/onecms/clientlibs/onecms-critical.min.css" type="text/css">
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var defer = document.createElement('link');
+    defer.rel = 'stylesheet';
+    defer.href = '/etc/designs/onecms/clientlibs/onelib.min.css';
+    defer.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    window.onload=godefer.parentNode.appendChild(defer, godefer);
+</script>
+
+<noscript>
+    
+    
+<link rel="stylesheet" href="/etc/designs/onecms/clientlibs/onelib.min.css" type="text/css">
+
+
+
+</noscript>
+
+<script>
+    var googletag = googletag || {};
+    googletag.adUnitId = "/6545/v6545_home";
+    var sitePropNestedColumnSplitter = "10";
+    var maxNestedColumnSplitter = sitePropNestedColumnSplitter ? sitePropNestedColumnSplitter : 10;
+</script>
+<noscript>
+    <style>
+        body .fade-in-img { opacity: 1; }
+    </style>
+</noscript>
+
+
+
+
+
+
+    <script type="text/javascript" src="//assets.virginmedia.com/resources/js/global-data-layer.js" defer=""></script>
+
+
+
+	
+	<script type="text/javascript">
+//   start Tealium Only script here
+var VM = VM || {};
+
+VM.track = {};
+VM.track.env = 'qa';
+VM.track.profile = 'vm-uk';
+VM.track.host = document.location.host;
+
+// DOMAIN LIST HERE
+VM.track.domains = {
+  'www.virginmedia.com': 'prod',
+  'store.virginmedia.com': 'prod',
+  'my.virginmedia.com': 'prod',
+  //No Track Domains
+  'telesales.systems.private': 'notrack',
+  'pptelesales.systems.private': 'notrack',
+  'storetest5-tbb.itp2.virginmedia.com': 'notrack',
+};
+
+if (typeof VM.track.domains[VM.track.host] !== 'undefined') {
+  VM.track.env = VM.track.domains[VM.track.host];
+}
+// check for csj
+var csjRegEx = RegExp(/(https:\/\/www\.virginmedia\.com\/)(checkout|check-availability|personalise-your-bundle)/g);
+if (csjRegEx.test(window.location.href)) {
+  VM.track.profile = 'vm-uk-csj-pilot';
+}
+
+// don't include tealium script for notrack domain
+//if (VM.track.env !== 'notrack') {
+  (function (a, b, c, d) {
+    a = '//tags.tiqcdn.com/utag/lgi/' + VM.track.profile + '/' + VM.track.env + '/utag.js';
+    b = document;
+    c = 'script';
+    d = b.createElement(c);
+    d.src = a;
+    d.type = 'text/java' + c;
+    d.async = true;
+    a = b.getElementsByTagName(c)[0];
+    a.parentNode.insertBefore(d, a);
+  })();
+//}
+//   end Tealium script here
+
+</script> 
+
+
+</head>
+
+
+
+    <body>
+        
+
+    
+         <div class="mboxDefault"></div>
+<script type="text/javascript">
+	mboxCreate('classic_vm_existinghp');
+</script>
+
+ 
+    
+
+
+
+        
+        
+    
+        <div class="global-messages ">
+            
+            <div class="unsupported-msg" style="display: none;">
+                It looks like you are using an out of date version of your browser - due to enhanced securityrequirements protecting customers, we will no longer support this browser version as of June 2017 and you will need to update it in order to access virginmedia.com website
+            </div>
+        </div>
+    
+
+
+
+
+    <div id="cablemystreet-error-page" data-cms-error-page="/postcode-checker/error" data-cms-pages-with-error="register">
+    </div>
+    <div id="cablemystreet-thankyou-page" data-cms-thank-you-page="https://www.virginmedia.com/postcode-checker/thank-you">
+    </div>
+    <div id="cablemystreet-home-page" data-cms-home-page="https://www.virginmedia.com/postcode-checker">
+    </div>
+    <div id="cablemystreet-hub-page" data-cms-hub-page="https://www.virginmedia.com/postcode-checker/results" data-cms-address-api-url="https://cablemystreet.virginmedia.com/cms/api/getCMSResponse">
+    </div>
+    <div id="cablemystreet-ignore-redirect" data-cms-pages-ignore-redirect="thank-you;about-us;faq;error">
+    </div>
+    <div id="get-uprn-from-cms-api-url" data-cms-get-uprn-from-api-url="https://cablemystreet.virginmedia.com/cms/api/CmSUPRNLookup">
+    </div>
+    <div id="cablemystreet-returning-journey-campaigns" data-cms-returning-journey-campaigns="TVPOC2;TVPOC1">
+    </div>
+    
+
+    
+    
+<script type="text/javascript" src="/etc/designs/onecms/clientlibs/cablemystreet-redirect.min.js" defer=""></script>
+
+
+
+
+
+
+        <div id="mainPageContent" class="page">
+    <a id="skip-to-content-link" class="skip-to-content" tabindex="1">Skip to main content</a>
+
+<!-- Snippet area above header starts -->
+
+
+<!-- Leaderboard above header starts -->
+
+
+<!-- parsys above header ends -->
+
+	
+		
+			 <header>
+    <div id="unified-header" data-unique-id="0">
+        
+        <div class="unified-header-content unified-header-new">
+            
+            
+    <div class="container-fluid ">
+        
+        
+            <div class="unified-header-logo">
+                <a href="https://www.virginmedia.com/" tabindex="1">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.lg.png"/>
+                        <img src="/etc/designs/onecms/clientlibs/onecms-critical/img/header-vm-logo.sm.png" alt="Virgin Media"/>
+                    </picture>
+                </a>
+            </div>
+        
+        <div class="unified-header-nav">
+            <div class="unified-header-level-one clearfix">
+                <div class="unified-header-utilities">
+                    
+    
+    
+
+                    <ul class="unified-header-utilities-side">
+                        
+                            <li class="unified-header-utilities-item hidden-xs hidden-sm">
+    <a href="https://my.virginmedia.com/my-apps/email/mailbox">Email
+    </a>
+</li>
+                        
+
+                        <li class="unified-header-utilities-item signin-link  ">
+                            <a href="#" class="visible-xs-block visible-sm-block">
+                                <img src="/content/dam/virginmedia/dotcom/images/shop/icons/user_icn.svg"/>
+                            </a>
+
+                            <a href="#" class="hidden-xs hidden-sm ">Sign in</a>
+                            <div class="signin-link-content">
+                                <div class="signin-link-sublinks-subsection">
+                                    <span class="header-subtitle">
+                                        My Virgin Media
+                                    </span>
+                                    <ul>
+                                        <li>
+    <a href="https://my.virginmedia.com/home/signIn">Sign in
+    </a>
+</li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="signin-link-sublinks-subsection">
+                                    <span class="header-subtitle">
+                                        Virgin Mobile Account
+                                    </span>
+                                    <ul>
+                                        <li>
+    <a href="https://mobile.virginmedia.com/ecare/login">Sign in
+    </a>
+</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+
+                        
+                        <li class="unified-header-utilities-item visible-xs-block visible-sm-block">
+                            <a href="#" class="unified-header-menu-toggle">
+                                <i class="menu-icon hamburger-menu hidden-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="unified-header-sign-in hidden-lg hidden-md clearfix">
+                    
+                        <div class="signin-link-sublinks-subsection">
+                            <span class="header-subtitle">
+                                My Virgin Media
+                            </span>
+                            <ul>
+                                <li>
+    <a href="https://my.virginmedia.com/home/signIn">Sign in
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="signin-link-sublinks-subsection">
+                            <span class="header-subtitle">
+                                Virgin Mobile Account
+                            </span>
+                            <ul>
+                                <li>
+    <a href="https://mobile.virginmedia.com/ecare/login">Sign in
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    
+                </div>
+                <div class="unified-header-menu">
+                    
+                    <ul class="col-xs-12 visible-lg-block visible-md-block">
+                        <li class="col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmedia.com" tabindex="2">For the home
+    </a>
+</li>
+                    
+                        <li class="col-xs-6 unified-header-menu-item">
+    <a href="https://my.virginmedia.com/" tabindex="3">My Virgin Media
+    </a>
+</li>
+                    
+                        <li class="col-xs-6 unified-header-menu-item">
+    <a href="https://store.virginmedia.com/networkexpansion.html" tabindex="4">Expanding our network
+    </a>
+</li>
+                    
+                        <li class="col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmedia.com/help" tabindex="5">Help
+    </a>
+</li>
+                    
+                        <li class="col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmediabusiness.co.uk/small-business/?utm_source=vmstore&utm_medium=header&utm_campaign=business" tabindex="6">For business
+    </a>
+</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="unified-header-level-two">
+                <div class="unified-header-main-menu clearfix">
+                    <ul class="sub-label no-sub-label">
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://my.virginmedia.com/home/index" class="menu-link-item hidden-xs hidden-sm">
+                                <span>My Account</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">My Account</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Managing my account
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://my.virginmedia.com/home/index">
+        My Virgin Media
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/home/index">
+        My package
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://store.virginmedia.com/special-offers/Movers.html">
+        Moving home
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/faults/service-status?navelement=ehp_sstatus">
+        Service status
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-bills/index?navelement=ehp_bills">
+        My bills
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://payments.virginmedia.com/epayments/notloggedinstart_ecare.jsf?navelement=ehp_pymt">
+        Make a payment
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://my.virginmedia.com/my-offers/index" class="menu-link-item hidden-xs hidden-sm">
+                                <span>Upgrades &amp; offers</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">Upgrades &amp; offers</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Amazing offers
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://my.virginmedia.com/my-offers/index">
+        Top offers
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://store.virginmedia.com/existing-customer/my-offers/extras">
+        Add Sky Sports and Sky Cinema
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/existing-customer-deals" title="Discover Virgin Media">
+        Discover Virgin Media
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virginmedia.aklamio.com?source=cushomenav_upgd_nav">
+        Refer a friend
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/deals" title="Virgin Mobile deals">
+        Virgin Mobile deals
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://store.virginmedia.com/discover/tv/on-the-go/tv-anywhere.html" class="menu-link-item hidden-xs hidden-sm">
+                                <span>TV on the go </span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">TV on the go </span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Watch TV on the go
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://virgintvgo.virginmedia.com/en.html">
+        Watch live TV
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.skysports.com" rel="nofollow" title="Watch Sky Sports">
+        Watch Sky Sports
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.sky.com/tv/channel/skycinema" rel="nofollow">
+        Watch Sky Cinema
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virgintvgo.virginmedia.com/en/movies-and-series/discover.html">
+        Watch On Demand
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virgintvgo.virginmedia.com/en/tv/tv-guide.html">
+        TV Listings
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virgintvgo.virginmedia.com/en/settings/device-management.html">
+        My Profile
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="http://manage-virgintvgo.virginmedia.com/tivo/">
+        Manage my TiVo
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Find out more
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tv/channels/sky-sports">
+        Sky Sports
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tv/channels/sky-movies">
+        Sky Cinema
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tv/set-top-box-and-apps">
+        TV Go
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                How to guides
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/article/HELP-4049/What-is-Virgin-TV-Go">
+        TV Go Online
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/topic/200300000001033/Sky-Cinema-and-Sky-Sports">
+        Sky Sports online
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/topic/200300000001033/Sky-Cinema-and-Sky-Sports">
+        Sky Cinema online
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/article/HELP-4049/What-is-Virgin-TV-Go">
+        TV Go app
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/topic/200300000001033/Sky-Cinema-and-Sky-Sports">
+        Sky Sports app
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://help.virginmedia.com/system/templates/selfservice/vm/help/customer/locale/en-GB/portal/200300000001000/topic/200300000001033/Sky-Cinema-and-Sky-Sports">
+        Sky Cinema app
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://www.virginmedia.com/virgin-tv-edit" class="menu-link-item hidden-xs hidden-sm">
+                                <span>What to watch</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">What to watch</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Discover great TV and movies
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/virgin-tv-edit">
+        Your week ahead
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virgintvgo.virginmedia.com/en.html">
+        TV Go
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tv/virginmediastore">
+        Virgin Media Store
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://my.virginmedia.com/my-apps/index" class="menu-link-item hidden-xs hidden-sm">
+                                <span>My apps</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">My apps</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                My apps
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/my-virgin-media-app">
+        My Virgin Media App
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tvgo-tvcontrol">
+        TV Go
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/tvgo-tvcontrol">
+        TV Control
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-apps/security.html">
+        F-Secure SAFE
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-apps/websafe/overview">
+        Web Safe
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-app/what-is-virgin-media-wifi.html">
+        Virgin Media WiFi
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-app/london-underground/overview.html">
+        WiFi on the tube
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-apps/email.html">
+        Virgin Media Mail
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-apps/homeworks/overview.html">
+        HomeWorks
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-apps/digital-home-support.html">
+        Gadget Rescue
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-app/skymovies/overview.html">
+        Sky Cinema
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://my.virginmedia.com/my-app/skysports/overview.html">
+        Sky Sports
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://www.virginmedia.com/mobile" class="menu-link-item hidden-xs hidden-sm">
+                                <span>Mobile</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">Mobile</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Top Offers
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly/apple/iphone-12">
+        iPhone 12 deals
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly/apple/iphone-11">
+        iPhone 11 deals
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly/samsung/galaxy-a12-and-nintendo-switch">
+        Galaxy A12 & Nintendo Switch
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly/apple/iphone-12-mini-and-airpods">
+        iPhone 12 mini & Airpods deals
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Shop
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly">
+        Pay Monthly Phones
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/pay-monthly-tablets">
+        iPad & Tablets
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/sim-only/pay-monthly-sim">
+        SIM only deals
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/deals">
+        Virgin Mobile deals
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/mobile/early-bird">
+        Early Bird
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://virginmedia.aklamio.com/">
+        Refer A Friend
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/manufacturers">
+        Phones by Manufacturer
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmediabusiness.co.uk/connectivity/business-mobile">
+        Business Mobile
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Upgrade
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/mobile/upgrade">
+        Upgrade your phone
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/shop/mobile/trade-in">
+        Trade in your phone
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Help
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/help/mobile">
+        Get help with your mobile
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/mobile/why-you-will-love-us">
+        Virgin mobile perks
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    
+                        <li class="col-md-6 col-sm-12 unified-header-main-menu-item">
+                            <a href="https://www.virginmedia.com/help" class="menu-link-item hidden-xs hidden-sm">
+                                <span>Help</span>
+                                <span></span>
+                            </a>
+                            <a href="#" class="hidden-lg hidden-md unified-header-menu-2-level-toggle ">
+                                <span class="unified-header--main-menu-item-label">Help</span>
+                                <i class="chevron-down hidden-lg"></i>
+                            </a>
+                            <div class="level-two-sublinks-dropdown has-sublinks">
+                                <div class="level-two-sublinks-dropdown-subsection">
+                                    
+                                    
+                                        <div class="sublinks-subsection clearfix">
+                                            <span class="header-subtitle">
+                                                Browse help by topic
+                                            </span>
+                                            <i class="chevron-down hidden-lg hidden-md"></i>
+                                            <ul>
+                                                <li>
+    <a href="https://www.virginmedia.com/help/accessibility" title="Accessibility">
+        Accessibility
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/getting-started" title="Help getting started">
+        Help getting started
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/fix-an-issue" title="Help fixing an issue">
+        Help fixing an issue
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/services-support" title="Help using your services ">
+        Help using your services
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/accounts" title="Help with your account ">
+        Help with your account 
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/accounts-and-billing" title="Help with billing and payments">
+        Help with billing and payments
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/manage-orders" title="Orders and appointments">
+        Orders and appointments
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://devicesupport.virginmedia.com/" title="Mobile device support">
+        Mobile device support
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help/security-hub" title="Security &amp; Fraud">
+        Security & Fraud
+
+        
+    </a>
+</li>
+                                            
+                                                <li>
+    <a href="https://www.virginmedia.com/help" title="View all Help">
+        View all Help
+
+        
+    </a>
+</li>
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+    
+    
+
+                    
+                    <div class="unified-header-menu-mobile">
+                        
+                        <ul class="col-xs-12 visible-xs-block visible-sm-block utility-links-mobile">
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmedia.com">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/store_icn.svg" class="img-mobile-footer"/>
+        For the home
+    </a>
+</li>
+                        
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://my.virginmedia.com/">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/user_icn.svg" class="img-mobile-footer"/>
+        My Virgin Media
+    </a>
+</li>
+                        
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://store.virginmedia.com/networkexpansion.html">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/network_icn.svg" class="img-mobile-footer"/>
+        Expanding our network
+    </a>
+</li>
+                        
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmedia.com/help">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/white_chevron_down_icn.svg" class="img-mobile-footer"/>
+        Help
+    </a>
+</li>
+                        
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://www.virginmediabusiness.co.uk/small-business/?utm_source=vmstore&utm_medium=header&utm_campaign=business">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/business_icn.svg" class="img-mobile-footer"/>
+        For business
+    </a>
+</li>
+                        
+                            <li class=" col-xs-6 unified-header-menu-item">
+    <a href="https://my.virginmedia.com/my-apps/email/mailbox">
+        <img src="/content/dam/virginmedia/dotcom/images/shop/icons/user_icn.svg" class="img-mobile-footer"/>
+        Email
+    </a>
+</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+    </div>
+
+</header>
+ 
+		
+		
+	
+
+
+<a id="skip-to-content-target" tabindex="-1"></a>
+
+    <div class="snippetRenderer abstractPageRenderer page basicpage section"><div class="mainParsys paragraphSystem parsys snippet-section">
+
+
+    
+    
+
+    <div class="affiliate-logo variantConfigurable component">
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+    <section class="page-takeover-gap page-takeover-option-3 clearfix">
+    <div class="mainParsys paragraphSystem parsys article-section">
+
+
+    
+    
+
+    <div class="quizAndPoll variantConfigurable component">
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="362356115"><p>&nbsp;&nbsp; &nbsp;</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         text-center" data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/page_image_768537979" data-unique-id="1490653777">
+		<figure>
+			
+                
+                
+                    
+    
+    <a href="https://www.virginmediastore.com/movies/VUBI0000000001569846?intcmpid=house_excusthp_desktop_hb_BlackWidow_Aug21">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-640x420_v1.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-640x420_v1.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-640x420_v1.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-640x420_v1.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-1920x580_v1.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-1920x580_v1.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-1920x580_v1.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-1920x580_v1.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-1920x580_v1.jpg" alt="Black Widow " class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/August-Banner2-BlackWidow-640x420_v1.jpg" alt="Black Widow "/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+                    
+                
+            
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="2035553332" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                container-fluid" data-unique-id="392734918" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                " data-unique-id="1996678172" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+
+            
+
+            
+
+            
+                
+                <div class="columns-wrapper">
+                    <div class="row  ">
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="1182942439"><p style="text-align: center;"><strong>My Virgin Media</strong></p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="callToAction variantConfigurable cta component text-center btn-center primary">
+
+	<div class="cta-content " data-unique-id="410210380">
+		<div class="cta-contain">
+			<a href="https://my.virginmedia.com/home/signIn" title="myvmsignin">
+				<span aria-hidden="true" class="prev-arrow">&larr;</span>
+				Sign in
+                <span aria-hidden="true" class="next-arrow">&rarr;</span>
+                
+			</a>
+		</div>
+	</div>
+
+    
+
+    
+
+    
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="789915429"><p style="text-align: center;"><b>Virgin Mobile Account</b><br>
+</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="callToAction variantConfigurable cta component text-center btn-center primary">
+
+	<div class="cta-content " data-unique-id="1546576778">
+		<div class="cta-contain">
+			<a href="https://mobile.virginmedia.com/ecare/login" title="mobileaccount">
+				<span aria-hidden="true" class="prev-arrow">&larr;</span>
+				Log in
+                <span aria-hidden="true" class="next-arrow">&rarr;</span>
+                
+			</a>
+		</div>
+	</div>
+
+    
+
+    
+
+    
+
+
+
+
+</div>
+
+
+
+
+</div>
+                    </div>
+                    <div class="carousel-nav" style="color: ;"></div>
+                </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="mobile-desktop-only-wrapper variantConfigurable component">
+
+    <div class=" pub-view
+                 from-medium
+                 to-nolimit " data-unique-id="943361127">
+
+        <div class="author-description">
+            <span>Mobile/Desktop only wrapper</span>
+            
+            
+            
+                <span> - from <b>Medium breakpoint</b></span>
+            
+            
+            
+            
+            
+            
+                <span> - to <b>No limit breakpoint</b></span>
+            
+
+        </div>
+        <div class="content paragraphSystem parsys contentWrapper">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-
+         small-order-
+         extra-small-order-
+         
+         
+         
+         " data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/page_image" data-unique-id="1715538613">
+		<figure>
+			
+			
+                
+                    <div class="img-channel-wrap ">
+                        
+                        
+                            
+                            
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+        <source srcset="/services/api/imagetransformer.webp//content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png" src="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png"/>
+    </picture>
+
+                        
+
+                        
+                            
+    
+
+                        
+                        
+                    </div>
+                
+                
+			
+			
+                <figcaption class="page-img-content simple-caption ">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-
+         small-order-
+         extra-small-order-
+         
+         
+         
+         " data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/page_image_1563213580" data-unique-id="952150660">
+		<figure>
+			
+			
+                
+                    <div class="img-channel-wrap ">
+                        
+                        
+                            
+                            
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+        <source srcset="/services/api/imagetransformer.webp//content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png" src="/content/dam/virginmedia/dotcom/images/shop/mobile/deals/sales-labels/2019/2px-spacer.png"/>
+    </picture>
+
+                        
+
+                        
+                            
+    
+
+                        
+                        
+                    </div>
+                
+                
+			
+			
+                <figcaption class="page-img-content simple-caption ">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 bg-none
+                " data-unique-id="1608620791" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 vm-bg-grey3
+                " data-unique-id="408684544" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="1460495140" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                container-fluid" data-unique-id="961686023" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="503778204"><h2>Manage your accounts</h2>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                container-fluid" data-unique-id="651279318" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+
+            
+
+            
+
+            
+                
+                <div class="columns-wrapper">
+                    <div class="row  ">
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-white-background tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1556924050">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://my.virginmedia.com/my-offers/index?navelement=existhomepagetest_pos2_imagelink">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/cable/upgrade-icon-grey.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://my.virginmedia.com/my-offers/index?navelement=existhomepagetest_pos2_imagelink" class="tile-title-link"><p>Upgrades and offers<br>
+</p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Discover our latest handpicked selection of goodies just for you<br>
+&nbsp;</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://my.virginmedia.com/my-offers/index?navelement=existhomepagetest_pos2_imagelink" class="tile-link">Upgrades
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="355188366" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-white-background tile-image-top">
+	<div class="tile-content   " data-unique-id="1585553201">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://my.virginmedia.com/faults/service-status?navelement=existhomepagetest_pos3_imagelink">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/cable/manage-icon-grey.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://my.virginmedia.com/faults/service-status?navelement=existhomepagetest_pos3_imagelink" class="tile-title-link"><p>Service status</p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Something not quite right? Check if there are any known service issues in your area.</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://my.virginmedia.com/faults/service-status?navelement=existhomepagetest_pos3_imagelink" class="tile-link">Service status
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="1505599661" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-white-background tile-image-top">
+	<div class="tile-content   " data-unique-id="1614182352">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="http://www.virginmedia.com/help/?navelement=existhomepagetest_pos4_imagelink">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/cable/help-icon-grey.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="http://www.virginmedia.com/help/?navelement=existhomepagetest_pos4_imagelink" class="tile-title-link"><p>Help and support<br>
+</p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Need a helping hand? You’ll find the answers in our comprehensive help section.<br>
+&nbsp;</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="http://www.virginmedia.com/help/?navelement=existhomepagetest_pos4_imagelink" class="tile-link">Help and support
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="508527308" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-white-background tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1642811503">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://www.virginmedia.com/help/moving-home-faqs?navelement=existhomepagetest_pos5_imagelink">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/Homepage/ECHP-moving.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://www.virginmedia.com/help/moving-home-faqs?navelement=existhomepagetest_pos5_imagelink" class="tile-title-link"><p>Moving home?<br>
+</p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Here's everything you need to know about taking us with you when you go.<br>
+&nbsp;</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://www.virginmedia.com/help/moving-home-faqs?navelement=existhomepagetest_pos5_imagelink" class="tile-link">Moving
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="1658938603" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+                    </div>
+                    <div class="carousel-nav" style="color: ;"></div>
+                </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         text-center" data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/column_splitter_0/col-1/page_image" data-unique-id="267265934">
+		<figure>
+			
+                
+                
+                    
+                    
+    
+    <a href="https://www.internetmatters.org/?utm_source=virgin_customerhp&utm_medium=banner&utm_campaign=alwayson">
+        
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic640x160.png.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic640x160.png.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+        <source srcset="/services/api/imagetransformer.webp//content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic640x160.png.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic640x160.png.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+        <source srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png" type="image/webp"/>
+        <source srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png" src="/content/dam/virginmedia/dotcom/images/Merchandise/Internet_Matters-September_Campaign_Generic1920x160.png" alt="Internet Matters "/>
+    </picture>
+
+    </a>
+
+                
+            
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 
+                " data-unique-id="408684548" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="93311999"><p>&nbsp; &nbsp;&nbsp;</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         text-center" data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/column_splitter_0/col-1/column_splitter_6/col-1/page_image_1214356685" data-unique-id="1377069313">
+		<figure>
+			
+                
+                
+                    
+    
+    <a href="https://store.virginmedia.com/existing-customer/my-offers/offers?intcmpid=house_excusthp_desktop_b2_CableSales_Aug21" target="_blank">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Mobile_640x420_JULY21.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Mobile_640x420_JULY21.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Mobile_640x420_JULY21.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Mobile_640x420_JULY21.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Desktop_1920x580_JULY21.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Desktop_1920x580_JULY21.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Desktop_1920x580_JULY21.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Desktop_1920x580_JULY21.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Desktop_1920x580_JULY21.jpg" alt="Cable Sales  " class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/Cable_Sales_Mobile_640x420_JULY21.jpg" alt="Cable Sales  "/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+                    
+                
+            
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 
+                " data-unique-id="408684551" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="709193116"><p>&nbsp; &nbsp;&nbsp;</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="173443663"><h2 style="text-align: center;"><br>
+Discover more Virgin Media goodness<br>
+&nbsp;</h2>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                container-fluid" data-unique-id="408684547" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                " data-unique-id="90605465" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+
+            
+                
+            <div class="row">
+                <div class="  col-xs-12 col-sm-6">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1689990542">
+        <div class="tile-image left clearfix">
+            
+                
+    
+    <a href="https://www.virginmedia.com/shop/tv/virginmediastore?intcmpid=house_excusthp_desktop_b3_Conjuring_Aug21" title="New to Virgin Media Store">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg" alt="New to Virgin Media Store" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/Aug-Banner4-TheConjuring-780x423_v1.jpg" alt="New to Virgin Media Store"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                        
+                            <p><b>New to Virgin Media Store</b></p>
+
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description left">
+                        
+                            
+    <a href="https://www.virginmedia.com/shop/tv/virginmediastore?intcmpid=house_excusthp_desktop_b3_Conjuring_Aug21" title="New to Virgin Media Store"><p>Buy now</p>
+
+    </a>
+
+                        
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://www.virginmedia.com/shop/tv/virginmediastore?intcmpid=house_excusthp_desktop_b3_Conjuring_Aug21" title="New to Virgin Media Store" class="tile-link">New to Virgin Media Store
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+                <div class="  col-xs-12 col-sm-6">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1218660303">
+        <div class="tile-image left clearfix">
+            
+                
+    
+    <a href="https://www.virginmedia.com/virgin-tv-edit/customer-exclusive/win-a-virgin-experience-day-with-virgin-mobile?intcmpid=house_excusthp_desktop_b4_MobileVEComp_Aug21" title="Mobile Virgin Experience Comp">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg" alt="Mobile Virgin Experience Comp" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/Win_A_Virgin_Experience_Desktop_Mobile_780x423_JULY21.jpg" alt="Mobile Virgin Experience Comp"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                        
+                            <p style="text-align: justify;"><b>You could win a £200 voucher</b></p>
+
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description left">
+                        
+                            
+    <a href="https://www.virginmedia.com/virgin-tv-edit/customer-exclusive/win-a-virgin-experience-day-with-virgin-mobile?intcmpid=house_excusthp_desktop_b4_MobileVEComp_Aug21" title="Mobile Virgin Experience Comp"><p>Enter now</p>
+
+    </a>
+
+                        
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://www.virginmedia.com/virgin-tv-edit/customer-exclusive/win-a-virgin-experience-day-with-virgin-mobile?intcmpid=house_excusthp_desktop_b4_MobileVEComp_Aug21" title="Mobile Virgin Experience Comp" class="tile-link">Mobile Virgin Experience Comp
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+            </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 vm-bg-grey3
+                " data-unique-id="408684550" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         text-center" data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/column_splitter_0/col-1/column_splitter_8/col-1/page_image_1670143343" data-unique-id="234544288">
+		<figure>
+			
+                
+                
+                    
+    
+    <a href="https://store.virginmedia.com/my-virginmedia-app/Helpbanner.html?intcmpid=house_excusthp_desktop_b5_MyVMappnew_Aug21" target="_blank">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Mobile_640x420_MARCH21.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Mobile_640x420_MARCH21.jpg.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Mobile_640x420_MARCH21.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Mobile_640x420_MARCH21.jpg.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Desktop_1920x580_MARCH21.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Desktop_1920x580_MARCH21.jpg.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Desktop_1920x580_MARCH21.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Desktop_1920x580_MARCH21.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Desktop_1920x580_MARCH21.jpg" alt="Virgin_Media_App" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/Virgin_Media_App_Mobile_640x420_MARCH21.jpg" alt="Virgin_Media_App"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+                    
+                
+            
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="spacer-component variantConfigurable component">
+    <div class="spacer-container-wrapper" data-unique-id="1058454622" data-desktoppadding="0px
+         0px
+         10px
+         0px" data-tabletpadding="0px
+         0px
+         0px
+         0px" data-mobilepadding="0px
+         0px
+         0px
+         0px">
+            
+            <div class="spacer-container paragraphSystem parsys">
+
+
+
+
+</div>
+
+    </div>
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 bg-none
+                container-fluid" data-unique-id="1677415260" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="1848995239"><h2>Featured partners</h2>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                container-fluid" data-unique-id="1383331853" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+
+            
+
+            
+
+            
+                
+                <div class="columns-wrapper">
+                    <div class="row  ">
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1104646651">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://www.virgingames.com/?acquisition-channel=affiliate&publisher_id=784502&creative_id=456884416&advert_id=456884416&agent_id=1&utm_source=affiliate&utm_medium=DFA&utm_campaign=784502&rdr=298048983%20" title="Discover this exciting Slot ">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png" alt="Discover this exciting Slot " class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_offerChoice_760x520v2.png" alt="Discover this exciting Slot "/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://www.virgingames.com/?acquisition-channel=affiliate&publisher_id=784502&creative_id=456884416&advert_id=456884416&agent_id=1&utm_source=affiliate&utm_medium=DFA&utm_campaign=784502&rdr=298048983%20" title="Discover this exciting Slot " class="tile-title-link"><p><span class="vm-grey1">Discover this exciting Slot&nbsp;</span></p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Get 30 Free Spins on&nbsp;Virgin Games when you play £10*</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://www.virgingames.com/?acquisition-channel=affiliate&publisher_id=784502&creative_id=456884416&advert_id=456884416&agent_id=1&utm_source=affiliate&utm_medium=DFA&utm_campaign=784502&rdr=298048983%20" title="Discover this exciting Slot " class="tile-link">Discover this exciting Slot 
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content   " data-unique-id="1133275802">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://app.adjust.com/e5f9h0_z2kp0x?campaign=PermFooter&adgroup=VCO&creative=Web?intcmpid=virginred_app_desktop_fp_vra_Feb17" title="Get rewarded for living a life more Virgin">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/cable/partner-virginred.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://app.adjust.com/e5f9h0_z2kp0x?campaign=PermFooter&adgroup=VCO&creative=Web?intcmpid=virginred_app_desktop_fp_vra_Feb17" title="Get rewarded for living a life more Virgin" class="tile-title-link"><p><span class="vm-grey1">Get rewarded for living a life more Virgin</span></p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>Exclusive offers &amp; experiences for Virgin customers</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://app.adjust.com/e5f9h0_z2kp0x?campaign=PermFooter&adgroup=VCO&creative=Web?intcmpid=virginred_app_desktop_fp_vra_Feb17" title="Get rewarded for living a life more Virgin" class="tile-link">Get rewarded for living a life more Virgin
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1644408446">
+        <div class="tile-image left clearfix">
+            
+                
+    
+    <a href="https://virginmedia.aklamio.com/?source=vmcom_existingcust" title="Refer a friend">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/flash-sale/DT_3326_refer_a_friend/DT-3326_LowerDownExistingCustomerVMmcom_227x156%20.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://virginmedia.aklamio.com/?source=vmcom_existingcust" title="Refer a friend" class="tile-title-link"><p><span class="vm-grey1">Refer a friend</span></p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description left">
+                        
+                        
+                            <p>and you'll both pocket up to £50 cash</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://virginmedia.aklamio.com/?source=vmcom_existingcust" title="Refer a friend" class="tile-link">Refer a friend
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-3 col-four">
+
+
+    
+    
+
+    <div class="tile variantConfigurable component tile-image-top">
+	<div class="tile-content  top over" data-unique-id="1190534104">
+        <div class="tile-image  clearfix">
+            
+                
+    
+    <a href="https://my.virginmedia.com/home/signIn/" title="Fancy something BIGGER?">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg.renditions/640.420/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/shop/cable/xsus-4partner-760.jpg"/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+            
+            
+        </div>
+        
+		
+            <div class="tile-text">
+                
+                    <h2 class="tile-title">
+                        
+                            
+    <a href="https://my.virginmedia.com/home/signIn/" title="Fancy something BIGGER?" class="tile-title-link"><p><span class="vm-grey1">Fancy something BIGGER?</span></p>
+
+    </a>
+
+                        
+                        
+                    </h2>
+                
+                
+                    <div class="tile-description ">
+                        
+                        
+                            <p>See what upgrades &amp; offers we've got for you today</p>
+
+                        
+                        
+                    </div>
+                
+                
+    <a href="https://my.virginmedia.com/home/signIn/" title="Fancy something BIGGER?" class="tile-link">Fancy something BIGGER?
+    </a>
+
+            </div>
+        
+        
+	</div>
+    
+        
+
+
+
+</div>
+
+
+
+
+</div>
+                    </div>
+                    <div class="carousel-nav" style="color: ;"></div>
+                </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            no-padding
+                default-padding-LR 
+                 vm-bg-white
+                container-fluid" data-unique-id="735619981" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+                
+                <div>
+
+
+    
+    
+
+    <div class="column-splitter variantConfigurable component">
+	<div class="column-splitter-container column-splitter-custom-border
+	            
+                 
+                 None
+                " data-unique-id="657688483" style="
+         padding-top: ;
+         padding-bottom: ;">
+
+        
+        
+        
+
+        <div class="custom-background">
+            
+
+            
+
+            
+                
+                <div class="columns-wrapper">
+                    <div class="row  ">
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-4 col-three">
+
+
+    
+    
+
+    <div class="richText variantConfigurable component rte rte-list">
+	
+	<div class="rte-content" data-unique-id="75711104"><p><small>Enjoy Virgin Games!<b></b></small></p>
+<p><small>Get 30 Free Spins with Virgin Games when you play £10*</small></p>
+<p><small><a href="https://www.virgingames.com/promo/v2/a/brand_slots_50years/?acquisition-channel=partner_online&amp;publisher_id=784502&amp;creative_id=0&amp;advert_id=414485673&amp;placement_id=96023156&amp;rdr=2023870312">Play Virgin Games</a></small></p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         Left" data-node-path="/content/virginmedia/dotcom/en/home/homepage-existing/jcr:content/mainParsys/column_splitter_0/col-1/column_splitter/col-1/column_splitter/col-1/page_image" data-unique-id="1127589986">
+		<figure>
+			
+                
+                
+                    
+    
+    <a href="https://www.virgingames.com/promo/v2/a/brand_slots_50years/?acquisition-channel=partner_online&publisher_id=784502&creative_id=0&advert_id=414485673&placement_id=96023156&rdr=2023870312">
+        
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png" alt="Enjoy fun-filled Double Bubble! " class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Merchandise/vgn_brandLogo_140x115v2.png" alt="Enjoy fun-filled Double Bubble! "/>
+        </noscript>
+    </picture>
+    
+    
+
+    </a>
+
+                    
+                
+            
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-4 col-three">
+
+
+    
+    
+
+    <div class="richText variantConfigurable component rte rte-list">
+	
+	<div class="rte-content" data-unique-id="2026681247"><p style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12px;">Hot offers</p>
+<ul style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 12px;">
+<li><a href="https://ad-emea.doubleclick.net/clk;269785365;93723415;y?intcmpid=virgingames_desktop_fp_vg_Feb17">Get 30 Free Spins on Virgin Games when you play £10*</a></li>
+<li><a href="https://keepup.virginmedia.com/referafriend?intcmpid=house_keepup_desktop_fp_raf-mar17">Refer a friend and get £50</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable component rte rte-list">
+	
+	<div class="rte-content" data-unique-id="2020496272"><p>My favourite websites</p>
+<ul>
+<li><a href="https://ad-emea.doubleclick.net/clk;269785365;93723415;y?intcmpid=virgingames_desktop_fp_vg_Feb17" target="_blank">Virgin Games</a></li>
+<li><a href="https://app.adjust.com/e5f9h0_z2kp0x?campaign=PermFooter&amp;adgroup=VCO&amp;creative=Web?intcmpid=virginred_app_desktop_fp_vra_Feb17" target="_blank">Virgin Red</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+                        <div class="col-item   col-xs-12 col-sm-12 col-md-4 col-three">
+
+
+
+
+</div>
+                    </div>
+                    <div class="carousel-nav" style="color: ;"></div>
+                </div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="568888662"><p style="text-align: right;"><a href="https://www.virginmedia.com/?customer=new" class="vm-red"><span class="vm-red"><strong>Not a customer?</strong></span></a></p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+
+
+</div>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+        </div>
+	</div>
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="snippet-importer variantConfigurable component">
+    
+         <div class="mainParsys paragraphSystem parsys snippet-section">
+
+
+    
+    
+
+    <div class="lightbox-popup">
+
+    <div class="lightbox-popup-overlay modal fade" data-hidden-mobile="false" data-hidden-tablet="false" data-hidden-desktop="true" data-max-views="1" data-unique-id="956504999" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <div class="close-modal text-center" data-dismiss="modal" aria-label="Close">Close<i class="fa fa-times"></i></div>
+                </div>
+                <div class="modal-body">
+                    
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="715575229"><h2 style="text-align: center;"><b>Self-install your services with QuickStart</b></h2>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="page-image variantConfigurable component simple-image">
+    
+    
+    <div class="image-content
+         medium-order-top
+         small-order-top
+         extra-small-order-top
+         
+         
+         
+         text-center" data-node-path="/content/virginmedia/dotcom/en/snippets/lightbox-popup-quickstart/jcr:content/mainParsys/lightbox_popup/lightBoxPopupParsys/page_image" data-unique-id="1856690783">
+		<figure>
+			
+			
+                
+                    <div class="img-channel-wrap ">
+                        
+                        
+                            
+    
+    <picture>
+        <!--[if IE 9]>
+        <video style="display: none;"><![endif]-->
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Mobile.png.renditions/992.311/asset.rendition" media="(max-width: 767px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Mobile.png.renditions/992.311/asset.rendition" media="(max-width: 767px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Mobile.png.renditions/992.311/asset.rendition" media="(max-width: 991px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Mobile.png.renditions/992.311/asset.rendition" media="(max-width: 991px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Tablet.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Tablet.png.renditions/1180.315/asset.rendition" media="(max-width: 1199px)"/>
+
+        <source data-srcset="/services/api/imagetransformer.webp/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Desktop.png" type="image/webp"/>
+        <source data-srcset="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Desktop.png"/>
+        <!--[if IE 9]></video><![endif]-->
+        <img data-srcset="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Desktop.png" class="lazyload  fade-in-img"/>
+        <noscript>
+            <img src="/content/dam/virginmedia/dotcom/images/Snippet/VM_Quickstart_Mobile.png"/>
+        </noscript>
+    </picture>
+    
+    
+
+                            
+                        
+
+                        
+                            
+    
+
+                        
+                        
+                    </div>
+                
+                
+			
+			
+                <figcaption class="page-img-content simple-caption simple-image">
+                    
+    
+
+                    
+                </figcaption>
+            
+            
+            
+
+            
+		</figure>
+	</div>
+
+	
+
+    
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="richText variantConfigurable general component rte">
+	
+	<div class="rte-content" data-unique-id="251149957"><p style="text-align: center;">We’ve waived delivery charges so you can have your kit delivered to your door for free!</p>
+<p style="text-align: center;">Find out if it’s available in your area…</p>
+</div>
+
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="callToAction variantConfigurable cta component text-center btn-center primary">
+
+	<div class="cta-content " data-unique-id="221034115">
+		<div class="cta-contain">
+			<a href="https://www.virginmedia.com/postcode-checker" target="_blank" title="Check your postcode">
+				<span aria-hidden="true" class="prev-arrow">&larr;</span>
+				Check your postcode
+                <span aria-hidden="true" class="next-arrow">&rarr;</span>
+                
+			</a>
+		</div>
+	</div>
+
+    
+
+    
+
+    
+
+
+
+
+</div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+ 
+    
+
+    
+
+
+</div>
+
+
+
+
+</div>
+
+</section>
+
+    
+    <div class="hidden need-help-component">
+        <div id="floatinghelp">
+            <a class="need-help-close">Close<i class="fa fa-times" aria-hidden="true"></i></a>
+            
+                <div class="need-help-btn-placeholder" id="floatinghelp_helpmechoose"></div>
+            
+                <div class="need-help-btn-placeholder" id="floatinghelp_livechat"></div>
+            
+        </div>
+        <div class="need-help-label" style="background: #64A541">
+            <span style="color: #ffffff">Need Help?</span>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+	
+		
+			 <footer>
+	<div id="unified-footer" data-unique-id="0">
+		<div class="unified-footer-content">
+			
+				<div class="unified-footer-large">
+					
+				</div>
+			
+			<div class="unified-footer-small">
+				<div class="unified-footer-small-contain clearfix">
+					<div class="unified-small-primary">
+						<ul class="clearfix">
+							<li>
+								
+    <a href="https://www.virginmedia.com/corporate">About us
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://careers.virginmedia.com">Careers
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/content/virginmedia/dotcom/en/home/advertise.html">Advertise with us
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/partner-with-us">Partner with us
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/help/accessibility">Accessibility
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/shop/the-legal-stuff">Legal
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/sitemap">Site map
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/help/contact-us">Contact Us
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/shop/our-cookies">Our Cookies
+    </a>
+
+							</li>
+						
+							<li>
+								
+    <a href="https://www.virginmedia.com/news/virgin-media-o2">Virgin Media and O2
+    </a>
+
+							</li>
+						</ul>
+					</div>
+					<div class="unified-small-logo clearfix hidden-sm hidden-xs">
+                        <div class="unified-small-logo-text">
+                            <p class="copyright">©2021 Virgin Media</p>
+                            <p>All Rights Reserved</p>
+                        </div>
+						<a class="logo-footer" href="https://www.virginmedia.com/">Logo</a>
+					</div>
+                    <div class="unified-small-logo clearfix hidden-md hidden-lg">
+                        <a class="logo-footer" href="https://www.virginmedia.com/">Logo</a>
+                        <div class="unified-small-logo-text">
+                            <span class="copyright">©2021 Virgin Media</span>
+                            <span>All Rights Reserved</span>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</footer>
+ 
+		
+		
+	
+
+
+</div>
+
+        <!-- tracking starts -->
+<!-- TODO include tracking here -->
+
+<!-- tracking ends -->
+
+
+
+    <div id="cablemystreet-display-p2s" data-cms-display-p2s="true">
+    </div>
+    <div id="cms-use-p2s-check-address" data-cms-use-p2s-check-address="false">
+    </div>
+    <div id="cablemystreet-community-api" data-cms-community-api="https://cablemystreet.virginmedia.com/cms/api/getCommunityDetails">
+    </div>
+
+    
+    
+<script type="text/javascript" src="/etc/designs/onecms/clientlibs/onecms-js-critical.min.js"></script>
+<script type="text/javascript" src="/etc/designs/onecms/clientlibs/commons.min.js" defer=""></script>
+<script type="text/javascript" src="/etc/designs/onecms/clientlibs/cablemystreet-cta.min.js" defer=""></script>
+
+
+
+    
+
+
+    
+<script type="text/javascript" src="/etc/designs/onecms/clientlibs/modernizr.min.js" defer=""></script>
+
+
+
+
+        
+
+    
+         <script type="text/javascript">if (typeof VM == "undefined") { var VM = {}; }VM.Ad = {"adserver":"http:\/\/ad-emea.doubleclick.net\/N6545","channel":"home","subchannel":"","sschannel":"","pagename":"home","t":"0","l":"c","seg":";rsi=I09838_0","ord":"70576120","format":["adj","adi"],"types":{"banner":{"size":"970x250,728x90;dcopt=ist;","tile":"1","src":"v6545_home\/;z2=;pg=home;sz=970x250,728x90;dcopt=ist;;e=live;l=c;t=0;p=0;tile=1;hp=old;rsi=I09838_0"},"mpu":{"size":"300x250,300x600;pos=top","tile":"4","src":"v6545_home\/;z2=;pg=home;sz=300x250,300x600;pos=top;e=live;l=c;t=0;p=0;tile=4;hp=old;rsi=I09838_0"},"promo":{"size":"176x72","tile":"2","src":"v6545_home\/;z2=;pg=home;sz=176x72;e=live;l=c;t=0;p=0;tile=2;hp=old;rsi=I09838_0"},"title":{"size":"300x136","tile":"3","src":"v6545_home\/;z2=;pg=home;sz=300x136;e=live;l=c;t=0;p=0;tile=3;hp=old;rsi=I09838_0"},"tower":{"size":"120x600","tile":"5","src":"v6545_home\/;z2=;pg=home;sz=120x600;e=live;l=c;t=0;p=0;tile=5;hp=old;rsi=I09838_0"},"adv":{"size":"300x70;pos=adv","tile":"6","src":"v6545_home\/;z2=;pg=home;sz=300x70;pos=adv;e=live;l=c;t=0;p=0;tile=6;hp=old;rsi=I09838_0"},"ecomm":{"size":"300x70;pos=eco","tile":"7","src":"v6545_home\/;z2=;pg=home;sz=300x70;pos=eco;e=live;l=c;t=0;p=0;tile=7;hp=old;rsi=I09838_0"},"skin":{"size":"1x1","tile":"8","src":"v6545_home\/;z2=;pg=home;sz=1x1;e=live;l=c;t=0;p=0;tile=8;hp=old;rsi=I09838_0"},"mpu2":{"size":"300x250,300x600;pos=bot","tile":"9","src":"v6545_home\/;z2=;pg=home;sz=300x250,300x600;pos=bot;e=live;l=c;t=0;p=0;tile=9;hp=old;rsi=I09838_0"}},"isMobile":false,"isTablet":false}</script>
+
+
+<!-- Start of eDigital Survey -->
+    <script type="text/javascript">
+        var ecos_data2 = 'default';
+    </script>
+    <iframe src="javascript:'';" id="ecos_iframe" style="position:absolute; left: 0; top: 0; width: 1px; height: 1px; visibility: hidden;" title=""></iframe>
+    <iframe src="javascript:'';" id="ecos_iframe2" style="position:absolute; left: 0; top: 0; width: 1px; height: 1px; visibility: hidden;" title=""></iframe>
+    <div id="ecos_surveylayer" style="position:absolute; left: 0; top: 0; width: 1px; height: 1px; visibility: hidden;" title="Visitor Survey (dynamically generated)"></div>
+        <noscript>
+        <img src="https://ecustomeropinions.com/survey/img.php?sid=377627622&amp;nojs=1" border="0" width="1" height="1" alt=""/>
+        <a href="https://ecustomeropinions.com/survey/noscript.php?sid=377627622&amp;nojs=1" rel="nofollow">We would like your feedback, please fill in our survey</a>
+    </noscript>
+
+    
+<script language="JavaScript" type="text/javascript"> /* <![CDATA[ */ s.pageName = "VME_Customer Homepage"; s.channel = "Cable_CustomerHP"; s.prop1 = "VME CustomerHP"; s.prop2 = "CustomerHP"; s.prop4 = "Customer Homepage"; s.hier1 = "VME:CustomerHP"; /* ]]> */ var s_code = s.t(); if (s_code)document.write(s_code) </script> <script language="JavaScript" type="text/javascript"> /* <![CDATA[ */ /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/ if (navigator.appVersion.indexOf('MSIE') >= 0)document.write(unescape('%3C') + '!-' + '-') /* ]]> */ </script> <noscript> <a href="https://www.omniture.com" title="Web Analytics"><img src="https://virginmedia.112.2o7.net/b/ss/virginmediacableprod/1/H.19.3--NS/0" height="1" width="1" border="0" alt=""/></a> </noscript> <!--/DO NOT REMOVE/--> <!-- End SiteCatalyst code version: H.19.3. -->
+
+<!-- Dax tag -->
+<script type="text/javascript">
+    var vm_dax_base_str = "//da.virginmedia.com/virginmedia/vmmsu/s?";
+    var vm_dax_click_str = "name=vm.home.page&vm_vs_pl=we&vm_vs_sn=vm&vm_vs_ct=ge&vm_iprange=non-customer&vm_vs_ch=ho&vm_ov=none&vm_pagevariant=customer&vm_customertype=0&vm_customersource=existing&vm_pversion=4.1.1&vm_lt_asset={asset}&vm_lt_placement={placement}&ns_type=hidden&vm_ev_ty={type}&vm_ev_ac={action}";
+</script>
+<!-- Begin comScore CMC v.1.0.1 -->
+<script type="text/javascript">
+/** (c) 2004-2009 Copyright Nedstat BV Netherlands. ALL RIGHTS RESERVED
+* @version 1.1.1
+* @arg a domelement which onclick event triggered this function
+* @arg url url where to navigate to
+* @arg name name of counter
+* @arg type type of event
+* @arg winopt parameters new window
+*/
+function ns_onclick(i,b,c,h,j){var e="";if(typeof ns_pixelUrl=="string"){e=ns_pixelUrl.substring(0,ns_pixelUrl.indexOf("?")+1)}e+=c;e+="&ns_type="+h+"&ns_action=view";e+="&ns__t="+(new Date()).getTime();if(!b){b=i.href}var d=document.referrer;if(d.lastIndexOf("/")==d.length-1){d=d.substring(d.lastIndexOf("/"),0)}if(d.length>0){e+="&amp;ns_referrer="+escape(d)}j=j||"";var f=(i&&i.target&&i.target!="")?(i.target.substring(0,1)=="_")?i.target.substring(1):i.target:"self";var g=new Image();if(f&&b){if(window[f]){window.ns_softclick_timer=function(k,a){return function(){if(window.ns_softclick_timeout){window.clearTimeout(window.ns_softclick_timeout)}g.onload=g.onerror=function(){return};window[((window[k])?k:"self")].location.href=a}}(f,b);ns_softclick_timeout=window.setTimeout("ns_softclick_timer()",5000);g.onload=g.onerror=window.ns_softclick_timer}else{window.open(b,f,j)}}g.src=e;return false};
+</script>
+<noscript><p><img src="//da.virginmedia.com/virginmedia/vmmsu/s?name=vm.home.page&vm_vs_pl=we&vm_vs_sn=vm&vm_vs_ct=ge&vm_iprange=non-customer&vm_vs_ch=ho&vm_ov=none&vm_pagevariant=customer&vm_customertype=0&vm_customersource=existing&vm_pversion=4.1.1" height="1" width="1" alt="*"></p></noscript>
+<!-- End comScore CMC -->
+ 
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    document.write('<script src="' + (document.location.protocol == 'https:' ? 'https://sb' : 'https://b') + '.scorecardresearch.com/beacon.js"><\/script>');
+    /* ]]> */
+</script>
+ 
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var comurl = window.location.href.match(new RegExp("((http|https)://)([a-zA-Z0-9]+\.)(.*)"));
+    COMSCORE.beacon({c1: 2, c2: "6036321", c3: "6036321", c4: comurl[4]});
+    /* ]]> */
+</script>
+ 
+<noscript><img src="https://b.scorecardresearch.com/b?c1=2&c2=6036321&c3=6036321" alt=""/></noscript>
+<!-- End comScore Tag -->
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://www.schema.org",
+  "@type": "Organization",
+  "name": "Virgin Media",
+  "url": "https://www.virginmedia.com",
+  "logo": "https://store.virginmedia.com/content/dam/eSales/corporate/VM_R_LOGO_RED_RGB_REG.PNG",
+  "description": "Virgin Media is a telecommunications company which offers four multi award-winning services: broadband, TV, mobile and home phone to households and businesses across the UK and Ireland.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Griffin House, 161 Hammersmith Road",
+    "addressLocality": "Hammersmith",
+    "addressRegion": "London",
+    "postalCode": "W6 8DS", 
+          "sameAs": [
+    "https://www.instagram.com/virginmedia",
+    "https://www.linkedin.com/company/virgin-media",
+    "https://twitter.com/virginmedia",
+    "https://plus.google.com/+virginmedia",
+    "https://www.youtube.com/user/virginmedia"
+]},
+"contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+44 0345 454 1111",
+    "contactType": "customer service"
+  },{
+"@type": "ContactPoint",
+    "telephone": "+44 800 052 0422",
+    "contactType": "sales"
+}]
+}
+</script>
+ 
+    
+    
+    <!-- start DTM -->  <script type="text/javascript">_satellite.pageBottom();</script> <!-- end DTM -->
+
+
+
+
+    </body>
+
+
+</html>

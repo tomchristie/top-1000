@@ -1,0 +1,1115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://www.1ting.com/" />
+<title>一听音乐网_歌曲大全::免费网络在线正版音乐站</title>
+<meta name="description" content="一听音乐网是在线音乐网站，提供免费歌曲在线试听、下载。一听音乐网拥有正版、庞大、完整的曲库，歌曲更新迅速，试听流畅，口碑极佳。一听音乐网，每天听一听"  />
+<meta name="keywords" content="音乐,免费音乐,好听的歌,网络歌曲,高品质mp3,音乐下载,经典老歌,最新音乐,dj,佛教音乐,胎教音乐,广场舞,古典音乐,戏曲,QQ音乐"  />
+<meta http-equiv="mobile-agent" content="format=xhtml; url=https://h5.1ting.com/">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://h5.1ting.com/">
+<script>document.domain="1ting.com";</script>
+<script>
+    if(/(iPad|iPhone|iTouch|iPod|IEMobile|Android)/i.test(navigator.userAgent)){
+        var a = location.pathname,
+            b = 'https://h5.1ting.com/',
+            c = /^\/(singer|album)\/[a-z0-9]{2}\/(singer|album)_(\d+).html/i,
+            c = a.match(c), d = c ? '#/' + c.slice(2).join('/') : '';
+        location.replace(b + d);
+    }
+</script>
+<!--
+<script type="text/javascript">    
+     var url = window.location.href;    
+     if (url.indexOf("https") < 0) {    
+     url = url.replace("http:", "https:");    
+     window.location.replace(url);    
+    }    
+</script>
+-->
+<link href="/v5/r5/style/common.css" rel="stylesheet" type="text/css"/>
+<link href="/v5/r5/style/index.css" rel="stylesheet" type="text/css"/>
+<script src="/v5/r4/js/jquery.min.js"></script>
+<script src="/v5/r4/js/common.js"></script>
+<script>
+    function cTab(obj, i){
+        $('.tabs[data-for="'+obj+'"]').children('a').removeClass('selected')
+            .eq(i).blur().addClass('selected');
+        $(obj).children('ul').removeAttr('data-selected').hide()
+            .eq(i).attr('data-selected','true').show();
+        $(obj).find('input:checkbox').attr('checked',false);
+    }
+    function cButtons(){
+        var args = Array.prototype.slice.call(arguments);
+        for(var i = 0, l = args.length; i < l; i++){
+            (function(i){
+                $('#' + args[i]+' .listAction a').each(function () {
+                    var m = $(this).attr('class'),
+                        s = '#' + args[i]+' ul[data-selected] input:checkbox';
+                    if (m == 'add') {
+                        $(this).mousedown(function () {
+                            fns.add(s);
+                        }).mouseup(function () {
+                            fns.addlist(s);
+                        }).click(function(){
+                            return false;
+                        });
+                    } else {
+                        $(this).click(function () {
+                            fns[m](s);
+                            return false;
+                        })
+                    }
+                });
+            })(i)
+        }
+    }
+</script>
+<!--[if IE 6]><script>try{document.execCommand("BackgroundImageCache", false, true)}catch(e){}</script><![endif]-->
+
+<base target="_blank" />
+</head>
+<body>
+        <div class="site-nav">
+        <div class="center">
+            <ul class="navlink">
+                <li><a href="http://d.1ting.com/听音乐.url">保存到桌面</a></li>
+                <li><a href="/genre/">曲风</a></li>
+                <li><a href="/rank.html">排行榜</a></li>
+                <li><a href="/archives/">专辑库</a></li>
+            </ul>
+            <!--div class="bshare-custom"><a title="分享到微信" class="bshare-weixin"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到QQ空间" class="bshare-qzone"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div-->
+            <!--div class="sinaweibo_iframe">
+                <iframe width="120" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="https://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=136&height=24&uid=1671108633&style=2&btn=light&dpc=1"></iframe>
+            </div-->
+
+            <!--<ul style="height:19px;width:110px;padding-top:5px;float:left;"><li><a style="color:#333" href="https://h5.1ting.com" title="手机访问一听">手机版:h5.1ting.com</a></li></ul>-->
+            <ul class="siteaction" style="height:24px;padding-top:1px;"> 
+                <li class="favorite" style="margin-top:5px"><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+            </ul>
+        </div>
+    </div>
+               <script type="text/javascript" language="javascript">
+                function AddFavorite(sURL, sTitle) {
+                    sURL = encodeURI(sURL); 
+                try{   
+                    window.external.addFavorite(sURL, sTitle);   
+                }catch(e) {   
+                    try{   
+                        window.sidebar.addPanel(sTitle, sURL, "");   
+                    }catch (e) {   
+                        alert("加入收藏失败，请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+         
+                        }   
+                    }
+                }
+              </script>
+    <!-- /site-nav -->
+    <div class="header center">
+        <div class="logo">
+            <h1>
+                <a href="https://www.1ting.com/?ssl" title="返回一听首页?">一听音乐网</a>
+            </h1>
+        </div>
+        <div class="search">
+            <div class="option_selected" id="search_option_selected">
+                <a href="javascript:void(0);" id="st" target="_self">全部</a>
+            </div>
+            <div class="option_list" id="search_option_list">
+                <ul>
+                    <li class="selected"><a href="javascript:void(0);" target="_self">全部</a></li>
+                    <li><a href="javascript:void(0);" target="_self">歌曲</a></li>
+                    <li><a href="javascript:void(0);" target="_self">专辑</a></li>
+                    <li><a href="javascript:void(0);" target="_self">歌手</a></li>
+                    <li><a href="javascript:void(0);" target="_self">歌词</a></li>
+                </ul>
+            </div>
+            <div class="search_box"><form method="get" action="//so.1ting.com/all.do" onsubmit="return search(this);">
+                <input type="text" name="q" id="sq" x-webkit-speech  x-webkit-grammar="builtin:search" onwebkitspeechchange="(function(e){e.target.form.submit();})(event)" />
+                <button type="submit">搜索</button></form>
+            </div>
+        </div>
+        <div class="userbox">
+            <div class="user-guest" id="user-guest">
+                <p class="sitelogin">
+                    <a href="//my.1ting.com/register" class="link-reg">免费注册</a> -
+                    <a href="//my.1ting.com/login" class="link-login">登录</a>
+                </p>
+                <p class="pluginlogin">
+                    <a href="//my.1ting.com/login/connect/sina" class="login-weibo">微博登录</a>
+                    <a href="//my.1ting.com/login/connect/qq" class="login-qq">QQ登录</a>
+                    <a href="//my.1ting.com/" class="link-favor">我的收藏</a>
+                </p>
+            </div>
+            <div class="user-login" id="user-login">
+                <p class="user-welcome">
+                    <a href="//my.1ting.com/profile" class="link-username" id="username"></a>
+                    <span id="greeting"></span>
+                </p>
+                <div class="user-action" id="user_login_action">
+                    <a href="//my.1ting.com/" class="act-fav">我的收藏</a>
+                    <div style="display: none;">
+                        <a href="//my.1ting.com/" target="_blank">用户中心</a>
+                        <a href="//my.1ting.com/logout">退出登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        (function(){
+            function cookie(k){
+                var v = "";
+                var s = k+"=",c = document.cookie,l=c.length;
+                if (l > 0) {
+                    var os = c.indexOf(s);
+                    if (os != -1) {
+                        os += s.length;
+                        var ed = c.indexOf(";", os);
+                        if (ed == -1) ed = l;
+                        v = decodeURIComponent(c.substring(os, ed)).replace(/\+/g,' ');
+                    }
+                }
+                return v;
+            }
+            function receive(){
+                var greeting,
+                    hour = new Date().getHours(),
+                    id = cookie('OneId'),
+                    user = cookie('OneNick')||cookie('OneUser');
+                if(hour >= 6 && hour < 12){
+                    greeting='上午好!';
+                }else if(hour>=12 && hour<18){
+                    greeting='下午好!';
+                }else if(hour>=18 && hour<23){
+                    greeting='晚上好!';
+                }else{
+                    greeting='夜深了 请注意休息!';
+                }
+                if(id && /^\d+$/.test(id) && user && /^[^<>\"\']+$/.test(user)){
+                    $('#username').html(user);
+                    $('#greeting').html(greeting);
+                    $('#user-login').show();
+                    $('#user-guest').hide();
+                }else{
+                    $('#user-guest').show();
+                    $('#user-login').hide();
+                }
+            }
+            (function(ctn) {
+                var timeId, time = 500,
+                    slideTime = 200,
+                    child = ctn.children("div"),
+                    upClass = "user-action-arrow-up";
+                ctn.hover(function() {
+                    timeId = setTimeout(function() {
+                        ctn.addClass(upClass);
+                        child.slideDown(slideTime);
+                    }, time);
+                }, function() {
+                    ctn.removeClass(upClass);
+                    clearTimeout(timeId);
+                    child.slideUp(slideTime);
+                });
+            })($("#user_login_action"));
+            receive();
+            setInterval(receive, 3000);
+        })();
+        </script>
+        <div class="nav">
+            <ul class="allcate" id="nav_list">
+                <li><a href="/" target="_self"><span>首页</span></a></li>
+                <li><a href="/group.html" class="has-sub" target="_self"><i style="display:block" target="_self"></i><span>歌手</span></a></li>
+                <li><a href="/archives/" target="_self"><span>专辑</span></a></li>
+                <li><a href="/rank.html" target="_self"><span>排行榜</span></a></li>
+                <li><a href="#" class="has-sub" target="_self"><span>高清MV</span></a></li>
+            </ul>
+            <div class="randplay">
+                <a href="/rand.php">随便一听</a>
+            </div>
+            <div class="nav-category">
+                <a href="/genre" target="_self">曲风分类</a>
+                <!--span>|</span>
+                <a href="/topic" target="_self">专题 &bull; 活动</a-->
+                
+            </div>
+        </div>
+        <div class="nav-secondary" id="nav_secondary">
+            <p style="display:block;">
+                <a href="/group/group0_2.html"><span>华语女歌手</span></a> |
+                <a href="/group/group0_1.html"><span>华语男歌手</span></a> |
+                <a href="/group/group0_3.html"><span>华语组合</span></a> |
+                <a href="/group/group3_15.html"><span>欧美女歌手</span></a> |
+                <a href="/group/group3_14.html"><span>欧美男歌手</span></a> |
+                <a href="/group/group3_16.html"><span>欧美组合</span></a> |
+                <a href="/group/group5_0.html"><span>韩国</span></a> |
+                <a href="/group/group4_0.html"><span>日本</span></a> |
+                <a href="/group/group6_0.html"><span>影视</span></a> |
+                <a href="/group/group7_0.html"><span>其他</span></a> |
+                <span><!--a class="misc" href="/fo/">佛教音乐</a><a href="/prenatal/">胎教/儿歌</a><a href="http://5.1ting.com">广场舞</a><a href="/xiqu/">戏曲</a--><a href="/mv/">高清MV</a></span>
+            </p>
+            <p style="text-align:center;width:736px;">
+                 <a href="/mv/cate/3.html">港台歌手MV</a>  | <a href="/mv/cate/6.html">内地歌手MV</a> | <a href="/mv/cate/2.html">韩国歌手MV</a> | <a href="/mv/cate/5.html">日本歌手MV</a> | <a href="/mv/cate/4.html">欧美歌手MV</a> | <a href="/mv/search?q=演唱会">演唱会视频</a>   
+            </p>
+        </div>
+    </div>
+    <!-- /header -->
+    <script>
+    (function(){
+        var menus = $("#nav_list").find("a.has-sub"),
+            subMenu = $("#nav_secondary");
+        $.each(menus, function(index, ele) {
+            $(ele).mouseover(function() {
+                menus.children("i").hide();
+                $(ele).children("i").show();
+                subMenu.children("p").hide()
+                            .eq(index).show();
+            });
+        });
+        /*var links = [{'name': '明星美图',  'path': 'star'}, 
+                     {'name': '街拍美女',  'path': 'jiepai'}, 
+                     /*{'name': '流行服饰',  'path': 'dress'}, 
+                     {'name': '时尚彩妆',  'path': 'face'}, 
+                     {'name': '潮流发型',  'path': 'tide'}, 
+                     {'name': '清新美女',  'path': 'meinv'}, 
+                     {'name': '车模美女',  'path': 'chemo'},
+                     {'name': '唯美女生',  'path': 'fennen'}, 
+                     {'name': '非主流女生',  'path': 'feizhuliu'}, 
+                     {'name': 'Show Girl',   'path': 'showgirl'}, 
+                     {'name': 'Cosplay女神', 'path': 'cosplay'},
+                     {'name': '婚纱秀欣赏',  'path': 'hunsha'}];
+        setInterval(function(){
+            var d = links[Math.ceil(Math.random()*links.length)-1];
+            $('#picture').attr('href', 'https://ent.1ting.com/pictures/'+d.path).text(d.name);
+        }, 10000);*/
+    })();
+    </script>
+    <div class="center mt8">
+        <div class="container">
+            <div class="topAlbum">
+                <div class="sTitle">
+                    <strong>推荐专辑</strong>
+                    <p class="tabs" data-for="#niceAlbumList">
+                        <a href="javascript:cTab('#niceAlbumList',0);" class="selected" target="_self">精选</a>
+                        <a href="javascript:cTab('#niceAlbumList',1);" target="_self">单曲</a>
+                        <!--<a href="javascript:cTab('#niceAlbumList',2);" target="_self">欧美</a>-->
+                        <!--<a href="javascript:cTab('#niceAlbumList',3);" target="_self">日韩</a>-->
+                        <a href="/album_n.html" style="width:64px;color:#0093E1;">最新专辑</a>
+                    </p>
+                </div>
+                <div class="albumList" id="niceAlbumList">
+                                    <ul style="display:block;" data-selected="true">
+                                                <li>
+                            <a href="/album/c5/album_133360.html" class="albumPic"><img src="//img.1ting.com/images/special/445/s100_8c94e955a235ec127c69c5ca53c8f591.jpg" alt="戴荃 - 九尾（EP） 试听" /></a>
+                            <a href="/album_133360.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c5/album_133360.html" class="albumName" title="九尾（EP）">九尾（EP）</a>
+                            <a href="/singer/a5/singer_37729.html" class="singerName" title="戴荃">戴荃</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_129050.html" class="albumPic"><img src="//img.1ting.com/images/special/431/s100_466041f6c3a0c2a8ba482aba13d61e62.jpg" alt="段旭宇 - You don’t know（单曲） 试听" /></a>
+                            <a href="/album_129050.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_129050.html" class="albumName" title="You don’t know（单曲）">You don’t know（单曲）</a>
+                            <a href="/singer/d6/singer_39312.html" class="singerName" title="段旭宇">段旭宇</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c5/album_132221.html" class="albumPic"><img src="//img.1ting.com/images/special/441/s100_367c9cdc345f6d18f66f5af81c1d4a98.jpg" alt="裂天 - 梦想百招诀(《梦想世界3》主题曲)（单曲） 试听" /></a>
+                            <a href="/album_132221.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c5/album_132221.html" class="albumName" title="梦想百招诀(《梦想世界3》主题曲)（单曲）">梦想百招诀(《梦想世界3》主题曲)（单曲）</a>
+                            <a href="/singer/a5/singer_37412.html" class="singerName" title="裂天">裂天</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128595.html" class="albumPic"><img src="//img.1ting.com/images/special/429/s100_460b75af3256059959c2a5b0d57d5cf0.jpg" alt="刘柯廷 - 共祈平安（单曲） 试听" /></a>
+                            <a href="/album_128595.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128595.html" class="albumName" title="共祈平安（单曲）">共祈平安（单曲）</a>
+                            <a href="/singer/d6/singer_39108.html" class="singerName" title="刘柯廷">刘柯廷</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128596.html" class="albumPic"><img src="//img.1ting.com/images/special/429/s100_b81fcae80ad2e47c11e04151efc3f82f.jpg" alt="王春 - 我在前世等你（单曲） 试听" /></a>
+                            <a href="/album_128596.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128596.html" class="albumName" title="我在前世等你（单曲）">我在前世等你（单曲）</a>
+                            <a href="/singer/a5/singer_38813.html" class="singerName" title="王春">王春</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128462.html" class="albumPic"><img src="//img.1ting.com/images/special/429/s100_7c00ef40d7bcb3dd542f6d20a4891fff.jpg" alt="徐新军 - 十年的爱（单曲） 试听" /></a>
+                            <a href="/album_128462.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128462.html" class="albumName" title="十年的爱（单曲）">十年的爱（单曲）</a>
+                            <a href="/singer/d6/singer_39046.html" class="singerName" title="徐新军">徐新军</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128453.html" class="albumPic"><img src="//img.1ting.com/images/special/429/s100_03235dd7b7fd84252a28b1efcf03310a.jpg" alt="金天琪 - 守候（单曲） 试听" /></a>
+                            <a href="/album_128453.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128453.html" class="albumName" title="守候（单曲）">守候（单曲）</a>
+                            <a href="/singer/d6/singer_39041.html" class="singerName" title="金天琪">金天琪</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128468.html" class="albumPic"><img src="//img.1ting.com/images/special/429/s100_c4d91e6928520b43077b2d6d08a516a6.jpg" alt="雨霖枫 - 爱情的头七（单曲） 试听" /></a>
+                            <a href="/album_128468.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128468.html" class="albumName" title="爱情的头七（单曲）">爱情的头七（单曲）</a>
+                            <a href="/singer/18/singer_33649.html" class="singerName" title="雨霖枫">雨霖枫</a>
+                        </li>
+                                            </ul>
+                                    <ul>
+                                                <li>
+                            <a href="/album/c2/album_129050.html" class="albumPic"><img src="//img.1ting.com/images/special/431/s100_466041f6c3a0c2a8ba482aba13d61e62.jpg" alt="段旭宇 - You don’t know（单曲） 试听" /></a>
+                            <a href="/album_129050.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_129050.html" class="albumName" title="You don’t know（单曲）">You don’t know（单曲）</a>
+                            <a href="/singer/d6/singer_39312.html" class="singerName" title="段旭宇">段旭宇</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128099.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_1950034f3ff72aa476808c0b3507dacb.jpg" alt="孙泽霖 - 没忘记爱你 (单曲) 试听" /></a>
+                            <a href="/album_128099.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128099.html" class="albumName" title="没忘记爱你 (单曲)">没忘记爱你 (单曲)</a>
+                            <a href="/singer/a5/singer_38844.html" class="singerName" title="孙泽霖">孙泽霖</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128097.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_4948a5fd14cb8688c7a80de93e95bc9d.jpg" alt="洪小乔red - 夏甜 (单曲) 试听" /></a>
+                            <a href="/album_128097.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128097.html" class="albumName" title="夏甜 (单曲)">夏甜 (单曲)</a>
+                            <a href="/singer/a5/singer_38843.html" class="singerName" title="洪小乔red">洪小乔red</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128096.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_0cf8219e5dbf81bdb808c233ea3e5af5.jpg" alt="杨艳艳 - 阴霾 (单曲) 试听" /></a>
+                            <a href="/album_128096.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128096.html" class="albumName" title="阴霾 (单曲)">阴霾 (单曲)</a>
+                            <a href="/singer/a5/singer_38842.html" class="singerName" title="杨艳艳">杨艳艳</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128094.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_55cf9a6dfa4160815da0d44b578ceeb0.jpg" alt="嫣苒 - 心玺 (单曲) 试听" /></a>
+                            <a href="/album_128094.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128094.html" class="albumName" title="心玺 (单曲)">心玺 (单曲)</a>
+                            <a href="/singer/a5/singer_38840.html" class="singerName" title="嫣苒">嫣苒</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128081.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_9bd26dfe8fe6ad88157b886a2c5c9ec6.jpg" alt="彭钧 - 一城花开 (单曲) 试听" /></a>
+                            <a href="/album_128081.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128081.html" class="albumName" title="一城花开 (单曲)">一城花开 (单曲)</a>
+                            <a href="/singer/c2/singer_12893.html" class="singerName" title="彭钧">彭钧</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128049.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_35b2c14769564345a233bec653eb2019.jpg" alt="IDOLGIRLS爱朵女孩 - 公子在等谁 (单曲) 试听" /></a>
+                            <a href="/album_128049.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128049.html" class="albumName" title="公子在等谁 (单曲)">公子在等谁 (单曲)</a>
+                            <a href="/singer/c2/singer_12990.html" class="singerName" title="IDOLGIRLS爱朵女孩">IDOLGIRLS爱朵女孩</a>
+                        </li>
+                                                <li>
+                            <a href="/album/c2/album_128041.html" class="albumPic"><img src="//img.1ting.com/images/special/427/s100_e7f7613059389d9094a48735ec8daab0.jpg" alt="优秀少年 (Good Boys) - 神奇宝宝 (单曲) 试听" /></a>
+                            <a href="/album_128041.html" class="albumPlay" target="_1ting">播放整张专辑</a>
+                            <a href="/album/c2/album_128041.html" class="albumName" title="神奇宝宝 (单曲)">神奇宝宝 (单曲)</a>
+                            <a href="/singer/a5/singer_38026.html" class="singerName" title="优秀少年 (Good Boys)">优秀少年 (Good Boys)</a>
+                        </li>
+                                            </ul>
+                                </div>
+            </div>
+            <div class="smallnav">
+                <dl>
+                    <dt>
+                        <strong>曲风</strong>
+                        <a href="/genre/" class="more">更多曲风</a>
+                    </dt>
+                    <dd>
+                        <ul>
+                                                <li><a href="/genre/g75p0.html">经典老歌</a></li></li>
+                                                <li><a href="/genre/g260p0.html">网络流行</a></li></li>
+                                                <li><a href="/genre/g241p0.html">佛乐</a></li></li>
+                                                <li><a href="/genre/g147p0.html">胎教音乐</a></li></li>
+                                                <li><a href="/genre/g74p0.html">流行</a></li></li>
+                                                <li><a href="/genre/g108p0.html">DJ</a></li></li>
+                                                <li><a href="/genre/g114p0.html">古典音乐</a></li></li>
+                                                <li><a href="/genre/g131p0.html">钢琴</a></li></li>
+                                                <li><a href="/genre/g136p0.html">军营歌曲</a></li></li>
+                                                <li><a href="/genre/g101p0.html">民谣</a></li></li>
+                                                <li><a href="/genre/g145p0.html">演唱会</a></li></li>
+                                                <li><a href="/genre/g133p0.html">萨克斯</a></li></li>
+                                                <li><a href="/genre/g88p0.html">民歌</a></li></li>
+                                                <li><a href="/genre/g259p0.html">韩国影视歌曲</a></li></li>
+                                                <li><a href="/genre/g261p0.html">有声读物</a></li></li>
+                                                <li><a href="/genre/g150p0.html">古筝</a></li></li>
+                                                <li><a href="/genre/g120p0.html">爵士</a></li></li>
+                                                <li><a href="/genre/g128p0.html">发烧音乐</a></li></li>
+                                                <li><a href="/genre/g155p0.html">轻音乐</a></li></li>
+                                                <li><a href="/genre/g106p0.html">舞曲</a></li></li>
+                                                <li><a href="/genre/g77p0.html">嘻哈</a></li></li>
+                                                <li><a href="/genre/g107p0.html">迪士高</a></li></li>
+                                                <li><a href="/genre/g103p0.html">校园民谣</a></li></li>
+                                                <li><a href="/genre/g89p0.html">摇滚</a></li></li>
+                                                </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <strong>榜单</strong>
+                        <a href="/rank.html" class="more">更多榜单</a>
+                    </dt>
+                    <dd>
+                        <ul>
+                                                        <li><a href="http://www.1ting.com/song_t.html">热门歌曲</a></li>
+                                                        <li><a href="http://www.1ting.com/rank/pop.html">经典老歌</a></li>
+                                                        <li><a href="http://www.1ting.com/song_n.html">最新歌曲</a></li>
+                                                        <li><a href="http://www.1ting.com/rank/netpop.html">网络流行榜</a></li>
+                                                        <li><a href="http://www.1ting.com/rank/tv.html">电视剧歌曲</a></li>
+                                                        <li><a href="http://www.1ting.com/singer_t.html">热门歌手</a></li>
+                                                        <li><a href="http://www.1ting.com/rank/harmony.html">情歌对唱</a></li>
+                                                        <li><a href="http://www.1ting.com/album_t.html">热门专辑</a></li>
+                                                        <li><a href="http://www.1ting.com/album_n.html">最新专辑</a></li>
+                                                        <li><a href="/rank/CRock.html">华语摇滚</a></li>
+                                                        <li><a href="/rank/acg.html">动漫歌曲</a></li>
+                                                        <li><a href="/rank/ost.html">电影原声</a></li>
+                                                        <li><a href="http://www.1ting.com/singer/5554/album/">越剧</a></li>
+                                                        <li><a href="http://www.1ting.com/archives/">专辑归档</a></li>
+                                                        <li><a href="http://www.1ting.com/lingting/silverlight/">随便一听</a></li>
+                                                    </ul>
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <div class="focusPic" id="focusPic">
+                    <ul class='piclist'>
+                                                    <li><a href="https://www.1ting.com/player/65/player_1196730.html" class="pic"><img src="//img.1ting.com/images/misc/3/71/d4c042a2029530aef54213bf2566d181.jpg" /></a></li>
+                                                    <li><a href="https://www.1ting.com/player/65/player_1196697.html?s" class="pic"><img src="//img.1ting.com/images/misc/3/71/dc233ba286338e74f048e16c403244b4.jpg" /></a></li>
+                                                    <li><a href="https://www.1ting.com/player/65/player_1196696.html?" class="pic"><img src="//img.1ting.com/images/misc/3/71/23590bfd0fc2e9d972a292042011fd66.jpg" /></a></li>
+                                                    <li><a href="https://www.1ting.com/player/65/player_1196691.html?s" class="pic"><img src="//img.1ting.com/images/misc/3/71/a3ba145a83e80f1a51271cb450f92bc4.jpg" /></a></li>
+                                            </ul> 
+                <div class="picaction">
+                    <a href="#" target="_self" class="pic2left">left</a>
+                    <p class="listaction"></p>
+                    <a href="#" target="_self" class="pic2right">right</a>
+                </div>
+            </div>
+            <script>
+                (function($){
+                    var delay = 5000,
+                        count = 0,
+                        run_index = function(index){
+                            $('#focusPic .piclist li').removeClass('selected').eq(index).fadeTo(0, 0).addClass('selected').fadeTo(200, 1);
+                            $('#focusPic .listaction a').removeClass('selected').eq(index).addClass('selected');
+                        },
+                        run_next = function () {
+                            if (time_id) clearTimeout(time_id);
+                            if($('#focusPic .piclist li.selected').next('li').size()){
+                                $obj = $('#focusPic .piclist li.selected').next('li');
+                            }else{
+                                $obj = $('#focusPic .piclist li').eq(0);
+                            }
+                            run_index($obj.attr('data-index'));
+                            time_id = setTimeout(run_next, delay);
+                        },
+                        run_prev = function () {
+                            if($('#focusPic .piclist li.selected').prev('li').size()){
+                                $obj = $('#focusPic .piclist li.selected').prev('li');
+                            }else{
+                                $obj = $('#focusPic .piclist li').eq(count);
+                            }
+                            run_index($obj.attr('data-index'));
+                        };
+
+                    $('#focusPic .piclist li').each(function(i){
+                        $(this).attr('data-index',i);
+                        $('#focusPic .listaction').append('<a href="#" target="_self" data-index="'+i+'">'+i+'</a>');
+                        count = i;
+                    });
+                    $('#focusPic .listaction a').click(function(){
+                        run_index($(this).attr('data-index'));
+                        return false;
+                    });
+                    $('#focusPic .picaction .pic2left').click(function(){
+                        run_prev();
+                        return false;
+                    });
+                    $('#focusPic .picaction .pic2right').click(function(){
+                        run_next();
+                        return false;
+                    });
+                    $('#focusPic').mouseover(function () {
+                        if (time_id)  clearTimeout(time_id);
+                    }).mouseout(function () {
+                        time_id = setTimeout(run_next, delay);
+                    });
+                    time_id = setTimeout(run_next, 0);
+                })($);
+            </script>
+            <dl class="todaySong">
+               <dd>
+               <script type="text/javascript" src="//cpro.baidustatic.com/common/api/gz6pxr.js?c=xpggmymz"></script>
+               </dd>
+
+            </dl>
+        </div>
+    </div>
+    <script>
+        $('.albumPic').bind('mouseenter',function(){
+            $(this).children('img').fadeTo(0,.6);
+            $(this).siblings('.albumPlay').show();
+        }).bind('mouseleave',function(){
+            $(this).find('img').fadeTo(0,1);
+            $(this).siblings('.albumPlay').hide();
+        });
+        $('.albumPlay').bind('mouseenter',function(){
+            $(this).siblings('.albumPic').children('img').fadeTo(0,.6);
+            $(this).show();
+        })
+    </script>
+    <div class="center mt8">
+        <div class="container">
+            <div class="NA_2plus3" id="NA_2plus3">
+            <!--<a href="/co/hb.html" target="_f"><img src="/co/alipay.jpg" /></a>-->
+            <script type="text/javascript" src="//cpro.baidustatic.com/site/5ogfb.js?hcr=bkzdii"></script>
+            </div>
+        </div>
+        <div class="sidebar notice">
+            <ul>
+                        <li><a href="http://list.youku.com/albumlist/show/id_51936298.html">【警惕】防范陷入网络诈骗</a></li>
+                        <li><a href="http://weibo.com/2328516855/E6nF0Eo4x"><font style='color:red'>【警示】学生党防骗全攻略</font></a></li>
+                        <li><a href="http://www.ncac.gov.cn/chinacopyright/contents/483/255725.html">【答疑】为什么“由于版权原因下线”</a></li>
+                        </ul>
+        </div>
+    </div>
+
+    <div class="center mt8">
+        <div class="container">
+            <div class="songBox">
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>新歌推荐</h2>
+                        <p class="tabs" data-for="#newSongList">
+                            <a href="javascript:cTab('#newSongList',0);" class="selected" target="_self">推荐</a>
+                            <!--<a href="javascript:cTab('#newSongList',1);" target="_self">欧美</a>
+                            <a href="javascript:cTab('#newSongList',2);" target="_self">日韩</a>
+                            -->
+                        </p>
+                    </div>
+                    <div class="songList" id="newSongList">
+                                            <ul style="display:block;" data-selected="true">
+                                                <li><input type="checkbox" value="1205446" name="checked"/><span><a href="/player/c2/player_1205446.html" class="songTitle" target="_1ting">守护</a> - <a href="/singer/a5/singer_38745.html" class="singerName">郑云龙</a></span></li>
+                                                <li><input type="checkbox" value="1205451" name="checked"/><span><a href="/player/c2/player_1205451.html" class="songTitle" target="_1ting">飞鸟恋爱日记</a> - <a href="/singer/d6/singer_39221.html" class="singerName">不是花火呀</a></span></li>
+                                                <li><input type="checkbox" value="1205431" name="checked"/><span><a href="/player/c2/player_1205431.html" class="songTitle" target="_1ting">青春的酸也很甜</a> - <a href="/singer/d6/singer_39476.html" class="singerName">陈立农</a></span></li>
+                                                <li><input type="checkbox" value="1205418" name="checked"/><span><a href="/player/c2/player_1205418.html" class="songTitle" target="_1ting">一剪梅</a> - <a href="/singer/c5/singer_13532.html" class="singerName">李玉刚</a></span></li>
+                                                <li><input type="checkbox" value="1205398" name="checked"/><span><a href="/player/c2/player_1205398.html" class="songTitle" target="_1ting">Photographs- 蔡健雅/Carla Bruni</a> - <a href="/singer/70/singer_175.html" class="singerName">蔡健雅</a></span></li>
+                                                <li><input type="checkbox" value="1205412" name="checked"/><span><a href="/player/c2/player_1205412.html" class="songTitle" target="_1ting">墨香</a> - <a href="/singer/c2/singer_12050.html" class="singerName">蒋雪儿</a></span></li>
+                                                <li><input type="checkbox" value="1205383" name="checked"/><span><a href="/player/c2/player_1205383.html" class="songTitle" target="_1ting">带我去很远地方</a> - <a href="/singer/d6/singer_39556.html" class="singerName">黄霄雲</a></span></li>
+                                                <li><input type="checkbox" value="1205381" name="checked"/><span><a href="/player/c2/player_1205381.html" class="songTitle" target="_1ting">徒劳</a> - <a href="/singer/d6/singer_39332.html" class="singerName">乔佳旭</a></span></li>
+                                                <li><input type="checkbox" value="1205371" name="checked"/><span><a href="/player/c2/player_1205371.html" class="songTitle" target="_1ting">破阵</a> - <a href="/singer/19/singer_36778.html" class="singerName">阿云嘎</a></span></li>
+                                                <li><input type="checkbox" value="1205366" name="checked"/><span><a href="/player/c2/player_1205366.html" class="songTitle" target="_1ting">画卷</a> - <a href="/singer/18/singer_33900.html" class="singerName">张艺兴</a></span></li>
+                                                <li><input type="checkbox" value="1205349" name="checked"/><span><a href="/player/c2/player_1205349.html" class="songTitle" target="_1ting">五天五夜</a> - <a href="/singer/c1/singer_31670.html" class="singerName">李琦</a></span></li>
+                                                <li><input type="checkbox" value="1205340" name="checked"/><span><a href="/player/c2/player_1205340.html" class="songTitle" target="_1ting">喂</a> - <a href="/singer/d6/singer_39246.html" class="singerName">单依纯</a></span></li>
+                                                <li><input type="checkbox" value="1205307" name="checked"/><span><a href="/player/c2/player_1205307.html" class="songTitle" target="_1ting">以你之姓 冠我之名</a> - <a href="/singer/d3/singer_10626.html" class="singerName">郁可唯</a></span></li>
+                                                <li><input type="checkbox" value="1205296" name="checked"/><span><a href="/player/c2/player_1205296.html" class="songTitle" target="_1ting">空投计划-王一博 /和平精英</a> - <a href="/singer/d6/singer_39244.html" class="singerName">王一博</a></span></li>
+                                                <li><input type="checkbox" value="1205285" name="checked"/><span><a href="/player/c2/player_1205285.html" class="songTitle" target="_1ting">心中向往的地方</a> - <a href="/singer/e2/singer_973.html" class="singerName">韩磊</a></span></li>
+                                                <li><input type="checkbox" value="1205276" name="checked"/><span><a href="/player/c2/player_1205276.html" class="songTitle" target="_1ting">奉陪到底</a> - <a href="/singer/65/singer_114.html" class="singerName">刘德华</a></span></li>
+                                                <li><input type="checkbox" value="1205267" name="checked"/><span><a href="/player/c2/player_1205267.html" class="songTitle" target="_1ting">你的名字是世界瞒着我最大的事情</a> - <a href="/singer/d6/singer_39293.html" class="singerName">王源</a></span></li>
+                                                <li><input type="checkbox" value="1205268" name="checked"/><span><a href="/player/c2/player_1205268.html" class="songTitle" target="_1ting">女将</a> - <a href="/singer/c2/singer_12050.html" class="singerName">蒋雪儿</a></span></li>
+                                                <li><input type="checkbox" value="1205253" name="checked"/><span><a href="/player/c2/player_1205253.html" class="songTitle" target="_1ting">太阳洒在海洋的方向- 赖美云/旅行团乐队</a> - <a href="/singer/d6/singer_39515.html" class="singerName">赖美云</a></span></li>
+                                                <li><input type="checkbox" value="1205252" name="checked"/><span><a href="/player/c2/player_1205252.html" class="songTitle" target="_1ting">往昔</a> - <a href="/singer/34/singer_4168.html" class="singerName">陆虎</a></span></li>
+                                                </ul>
+                                            <ul>
+                                                <li><input type="checkbox" value="1191836" name="checked"/><span><a href="/player/65/player_1191836.html" class="songTitle" target="_1ting">One Day</a> - <a href="/singer/a5/singer_37579.html" class="singerName">Jackson Turner&Niki Darling</a></span></li>
+                                                <li><input type="checkbox" value="1152254" name="checked"/><span><a href="/player/65/player_1152254.html" class="songTitle" target="_1ting">808 (Jack Novak Remix)</a> - <a href="/singer/33/singer_2871.html" class="singerName">张靓颖</a></span></li>
+                                                <li><input type="checkbox" value="1129440" name="checked"/><span><a href="/player/65/player_1129440.html" class="songTitle" target="_1ting">I'm So Bad I'm Good</a> - <a href="/singer/63/singer_32975.html" class="singerName">王敏德</a></span></li>
+                                                <li><input type="checkbox" value="1128882" name="checked"/><span><a href="/player/65/player_1128882.html" class="songTitle" target="_1ting">I Can’t Live Without You (Remix)</a> - <a href="/singer/32/singer_6602.html" class="singerName">刘力扬</a></span></li>
+                                                <li><input type="checkbox" value="1127101" name="checked"/><span><a href="/player/65/player_1127101.html" class="songTitle" target="_1ting">Lost in the Pacific</a> - <a href="/singer/e3/singer_34273.html" class="singerName">Sebastian Mikael</a></span></li>
+                                                <li><input type="checkbox" value="1124431" name="checked"/><span><a href="/player/65/player_1124431.html" class="songTitle" target="_1ting">Stir it up</a> - <a href="/singer/c1/singer_31641.html" class="singerName">Bertie Higgins</a></span></li>
+                                                <li><input type="checkbox" value="1120945" name="checked"/><span><a href="/player/65/player_1120945.html" class="songTitle" target="_1ting">October Snow</a> - <a href="/singer/18/singer_33969.html" class="singerName">陈明憙</a></span></li>
+                                                <li><input type="checkbox" value="1120046" name="checked"/><span><a href="/player/65/player_1120046.html" class="songTitle" target="_1ting">Writing's On The Wall</a> - <a href="/singer/33/singer_2871.html" class="singerName">张靓颖</a></span></li>
+                                                <li><input type="checkbox" value="1109582" name="checked"/><span><a href="/player/65/player_1109582.html" class="songTitle" target="_1ting">Come Home to China</a> - <a href="/singer/c1/singer_31641.html" class="singerName">Bertie Higgins</a></span></li>
+                                                <li><input type="checkbox" value="1071745" name="checked"/><span><a href="/player/d3/player_1071745.html" class="songTitle" target="_1ting">Only You</a> - <a href="/singer/63/singer_32020.html" class="singerName">Issa</a></span></li>
+                                                <li><input type="checkbox" value="1071809" name="checked"/><span><a href="/player/d3/player_1071809.html" class="songTitle" target="_1ting">Time Sailor</a> - <a href="/singer/63/singer_32022.html" class="singerName">Jens Buchert</a></span></li>
+                                                <li><input type="checkbox" value="1071815" name="checked"/><span><a href="/player/d3/player_1071815.html" class="songTitle" target="_1ting">Tarim Vilhovnicesc</a> - <a href="/singer/63/singer_32023.html" class="singerName">Negură Bunget</a></span></li>
+                                                <li><input type="checkbox" value="1071875" name="checked"/><span><a href="/player/d3/player_1071875.html" class="songTitle" target="_1ting">Heartbeat</a> - <a href="/singer/34/singer_4104.html" class="singerName">Mat Kearney</a></span></li>
+                                                <li><input type="checkbox" value="1071886" name="checked"/><span><a href="/player/d3/player_1071886.html" class="songTitle" target="_1ting">Glitter</a> - <a href="/singer/33/singer_28417.html" class="singerName">Say Lou Lou</a></span></li>
+                                                <li><input type="checkbox" value="1071929" name="checked"/><span><a href="/player/d3/player_1071929.html" class="songTitle" target="_1ting">Take You High</a> - <a href="/singer/c5/singer_1301.html" class="singerName">Kelly Clarkson</a></span></li>
+                                                <li><input type="checkbox" value="1072148" name="checked"/><span><a href="/player/d3/player_1072148.html" class="songTitle" target="_1ting">In the Heat of the Moment</a> - <a href="/singer/98/singer_9337.html" class="singerName">Noel Gallagher's High Flying Birds</a></span></li>
+                                                <li><input type="checkbox" value="1072164" name="checked"/><span><a href="/player/d3/player_1072164.html" class="songTitle" target="_1ting">Take Ü There - Skrillex&Diplo&Kiesza</a> - <a href="/singer/63/singer_32029.html" class="singerName">Jack Ü</a></span></li>
+                                                <li><input type="checkbox" value="1072191" name="checked"/><span><a href="/player/d3/player_1072191.html" class="songTitle" target="_1ting">Let the Road</a> - <a href="/singer/63/singer_32031.html" class="singerName">Rixton</a></span></li>
+                                                <li><input type="checkbox" value="1068513" name="checked"/><span><a href="/player/d3/player_1068513.html" class="songTitle" target="_1ting">Hear Your Heart</a> - <a href="/singer/c1/singer_31856.html" class="singerName">James Bay</a></span></li>
+                                                <li><input type="checkbox" value="1069355" name="checked"/><span><a href="/player/d3/player_1069355.html" class="songTitle" target="_1ting">Blind As I Am</a> - <a href="/singer/02/singer_27987.html" class="singerName">Indiana</a></span></li>
+                                                </ul>
+                                            <ul>
+                                                <li><input type="checkbox" value="1197897" name="checked"/><span><a href="/player/65/player_1197897.html" class="songTitle" target="_1ting">Flower</a> - <a href="/singer/d6/singer_39199.html" class="singerName">龙俊亨</a></span></li>
+                                                <li><input type="checkbox" value="1171945" name="checked"/><span><a href="/player/65/player_1171945.html" class="songTitle" target="_1ting">When I Feeling Blue</a> - <a href="/singer/19/singer_36781.html" class="singerName">赵慧仙</a></span></li>
+                                                <li><input type="checkbox" value="1166474" name="checked"/><span><a href="/player/65/player_1166474.html" class="songTitle" target="_1ting">Sugar</a> - <a href="/singer/19/singer_36494.html" class="singerName">H•B</a></span></li>
+                                                <li><input type="checkbox" value="1159604" name="checked"/><span><a href="/player/65/player_1159604.html" class="songTitle" target="_1ting">Sugar Rush</a> - <a href="/singer/19/singer_36095.html" class="singerName">吴映洁</a></span></li>
+                                                <li><input type="checkbox" value="1152793" name="checked"/><span><a href="/player/65/player_1152793.html" class="songTitle" target="_1ting">RECIPE</a> - <a href="/singer/1c/singer_35631.html" class="singerName">曹承衍Luizy&Flowsik</a></span></li>
+                                                <li><input type="checkbox" value="1151201" name="checked"/><span><a href="/player/65/player_1151201.html" class="songTitle" target="_1ting">等待你出现</a> - <a href="/singer/37/singer_2337.html" class="singerName">小野丽莎</a></span></li>
+                                                <li><input type="checkbox" value="1147021" name="checked"/><span><a href="/player/65/player_1147021.html" class="songTitle" target="_1ting">我们的法则 (同名真人秀主题曲)</a> - <a href="/singer/97/singer_8246.html" class="singerName">YB</a></span></li>
+                                                <li><input type="checkbox" value="1143222" name="checked"/><span><a href="/player/65/player_1143222.html" class="songTitle" target="_1ting">Promise You</a> - <a href="/singer/1c/singer_35033.html" class="singerName">Swing Girls</a></span></li>
+                                                <li><input type="checkbox" value="1142613" name="checked"/><span><a href="/player/65/player_1142613.html" class="songTitle" target="_1ting">Hey Ya!</a> - <a href="/singer/c2/singer_1244.html" class="singerName">As One</a></span></li>
+                                                <li><input type="checkbox" value="1140630" name="checked"/><span><a href="/player/65/player_1140630.html" class="songTitle" target="_1ting">Cutie Girl</a> - <a href="/singer/e3/singer_34899.html" class="singerName">金秀妍</a></span></li>
+                                                <li><input type="checkbox" value="1131193" name="checked"/><span><a href="/player/65/player_1131193.html" class="songTitle" target="_1ting">心のままに</a> - <a href="/singer/c2/singer_1201.html" class="singerName">岛谷瞳</a></span></li>
+                                                <li><input type="checkbox" value="1117783" name="checked"/><span><a href="/player/65/player_1117783.html" class="songTitle" target="_1ting">战舰世界</a> - <a href="/singer/d3/singer_10153.html" class="singerName">T-ara</a></span></li>
+                                                <li><input type="checkbox" value="1116360" name="checked"/><span><a href="/player/65/player_1116360.html" class="songTitle" target="_1ting">Best Friend</a> - <a href="/singer/c1/singer_31327.html" class="singerName">UNIQ</a></span></li>
+                                                <li><input type="checkbox" value="1109934" name="checked"/><span><a href="/player/65/player_1109934.html" class="songTitle" target="_1ting">The Lost Eden (动漫《雏蜂》主题曲)</a> - <a href="/singer/8e/singer_2535.html" class="singerName">阿兰</a></span></li>
+                                                <li><input type="checkbox" value="1108445" name="checked"/><span><a href="/player/65/player_1108445.html" class="songTitle" target="_1ting">Candy Ball (韩文版)</a> - <a href="/singer/c2/singer_1244.html" class="singerName">As One</a></span></li>
+                                                <li><input type="checkbox" value="1108058" name="checked"/><span><a href="/player/65/player_1108058.html" class="songTitle" target="_1ting">Marry Me</a> - <a href="/singer/c1/singer_31887.html" class="singerName">ZE:A J 帝国之子</a></span></li>
+                                                <li><input type="checkbox" value="1107618" name="checked"/><span><a href="/player/65/player_1107618.html" class="songTitle" target="_1ting">Candy Ball</a> - <a href="/singer/c2/singer_1244.html" class="singerName">As One</a></span></li>
+                                                <li><input type="checkbox" value="1101069" name="checked"/><span><a href="/player/65/player_1101069.html" class="songTitle" target="_1ting">看透</a> - <a href="/singer/18/singer_3300.html" class="singerName">蔡妍</a></span></li>
+                                                <li><input type="checkbox" value="1096691" name="checked"/><span><a href="/player/d3/player_1096691.html" class="songTitle" target="_1ting">Error (中文版)</a> - <a href="/singer/02/singer_27359.html" class="singerName">VIXX</a></span></li>
+                                                <li><input type="checkbox" value="1081985" name="checked"/><span><a href="/player/d3/player_1081985.html" class="songTitle" target="_1ting">Home</a> - <a href="/singer/97/singer_82.html" class="singerName">BoA (宝儿)</a></span></li>
+                                                </ul>
+                                            <p class="listAction">
+                            <a href="#newSongList" class="select" target="_self">全/反选</a>
+                            <a href="#newSongList" class="play" target="_self">播放</a>
+                            <a href="#newSongList" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>编辑推荐</h2>
+                        <!--<p class="more">
+                            <a href="http://d.1ting.com/dujia.html">合作</a>
+                        </p>-->
+                    </div>
+                    <div class="songList" id="oldSong">
+                        <ul data-selected="true">
+                                                <li><input type="checkbox" value="1196731" name="checked"/><span><a href="/player/65/player_1196731.html" class="songTitle" target="_1ting">阴霾</a> - <a href="/singer/a5/singer_38842.html" class="singerName">杨艳艳</a></span></li>
+                                                <li><input type="checkbox" value="1196717" name="checked"/><span><a href="/player/65/player_1196717.html" class="songTitle" target="_1ting">桃花酒</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1196708" name="checked"/><span><a href="/player/65/player_1196708.html" class="songTitle" target="_1ting">直到再次相遇</a> - <a href="/singer/a5/singer_38835.html" class="singerName">张楚寒</a></span></li>
+                                                <li><input type="checkbox" value="1196654" name="checked"/><span><a href="/player/65/player_1196654.html" class="songTitle" target="_1ting">痛(pain)</a> - <a href="/singer/a5/singer_38264.html" class="singerName">Atom Panda 柳李</a></span></li>
+                                                <li><input type="checkbox" value="1196645" name="checked"/><span><a href="/player/65/player_1196645.html" class="songTitle" target="_1ting">公子在等谁</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1196577" name="checked"/><span><a href="/player/65/player_1196577.html" class="songTitle" target="_1ting">何必再问</a> - <a href="/singer/a5/singer_38515.html" class="singerName">狼王</a></span></li>
+                                                <li><input type="checkbox" value="1196561" name="checked"/><span><a href="/player/65/player_1196561.html" class="songTitle" target="_1ting">想</a> - <a href="/singer/a5/singer_38811.html" class="singerName">小艺丫</a></span></li>
+                                                <li><input type="checkbox" value="1196556" name="checked"/><span><a href="/player/65/player_1196556.html" class="songTitle" target="_1ting">如果重来</a> - <a href="/singer/a5/singer_37706.html" class="singerName">徐若汐</a></span></li>
+                                                <li><input type="checkbox" value="1196518" name="checked"/><span><a href="/player/65/player_1196518.html" class="songTitle" target="_1ting">风月无语</a> - <a href="/singer/a5/singer_38798.html" class="singerName">邓雅心</a></span></li>
+                                                <li><input type="checkbox" value="1196422" name="checked"/><span><a href="/player/65/player_1196422.html" class="songTitle" target="_1ting">逐鹿</a> - <a href="/singer/35/singer_7847.html" class="singerName">莎啦啦</a></span></li>
+                                                <li><input type="checkbox" value="1196417" name="checked"/><span><a href="/player/65/player_1196417.html" class="songTitle" target="_1ting">带你去全世界</a> - <a href="/singer/a5/singer_38264.html" class="singerName">Atom Panda&DJ St3v3&李硕&Amanda</a></span></li>
+                                                <li><input type="checkbox" value="1196359" name="checked"/><span><a href="/player/65/player_1196359.html" class="songTitle" target="_1ting">听从党的号令</a> - <a href="/singer/d6/singer_3955.html" class="singerName">金波</a></span></li>
+                                                <li><input type="checkbox" value="1196301" name="checked"/><span><a href="/player/65/player_1196301.html" class="songTitle" target="_1ting">闪亮的心</a> - <a href="/singer/1c/singer_35845.html" class="singerName">韩颖心</a></span></li>
+                                                <li><input type="checkbox" value="1196290" name="checked"/><span><a href="/player/65/player_1196290.html" class="songTitle" target="_1ting">你的一切</a> - <a href="/singer/a5/singer_38264.html" class="singerName">Atom Panda&李硕&Amanda</a></span></li>
+                                                <li><input type="checkbox" value="1196163" name="checked"/><span><a href="/player/65/player_1196163.html" class="songTitle" target="_1ting">青锋红染人间路</a> - <a href="/singer/a5/singer_38725.html" class="singerName">林乐乐</a></span></li>
+                                                <li><input type="checkbox" value="1196155" name="checked"/><span><a href="/player/65/player_1196155.html" class="songTitle" target="_1ting">只为遇见你</a> - <a href="/singer/a5/singer_38062.html" class="singerName">朱俊霖&张旭</a></span></li>
+                                                <li><input type="checkbox" value="1196071" name="checked"/><span><a href="/player/65/player_1196071.html" class="songTitle" target="_1ting">哎呀呀爱咋咋</a> - <a href="/singer/a5/singer_38697.html" class="singerName">许贝贝</a></span></li>
+                                                <li><input type="checkbox" value="1196064" name="checked"/><span><a href="/player/65/player_1196064.html" class="songTitle" target="_1ting">Can You Feel the Love</a> - <a href="/singer/a5/singer_37496.html" class="singerName">窦友芝</a></span></li>
+                                                <li><input type="checkbox" value="1196049" name="checked"/><span><a href="/player/65/player_1196049.html" class="songTitle" target="_1ting">多情诗</a> - <a href="/singer/a5/singer_37789.html" class="singerName">童珂舟</a></span></li>
+                                                <li><input type="checkbox" value="1196040" name="checked"/><span><a href="/player/65/player_1196040.html" class="songTitle" target="_1ting">少年说风就是雨</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                </ul>
+                        <p class="listAction">
+                            <a href="#oldSong" class="select" target="_self">全/反选</a>
+                            <a href="#oldSong" class="play" target="_self">播放</a>
+                            <a href="#oldSong" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>会员推荐</h2>
+                    </div>
+                    <div class="songList" id="userSong">
+                        <ul data-selected="true">
+                                                <li><input type="checkbox" value="1196729" name="checked"/><span><a href="/player/65/player_1196729.html" class="songTitle" target="_1ting">心玺</a> - <a href="/singer/a5/singer_38840.html" class="singerName">嫣苒</a></span></li>
+                                                <li><input type="checkbox" value="1196712" name="checked"/><span><a href="/player/65/player_1196712.html" class="songTitle" target="_1ting">Guiding Light</a> - <a href="/singer/a5/singer_38264.html" class="singerName">柳李&DJ St3v3</a></span></li>
+                                                <li><input type="checkbox" value="1196698" name="checked"/><span><a href="/player/65/player_1196698.html" class="songTitle" target="_1ting">一城花开</a> - <a href="/singer/c2/singer_12893.html" class="singerName">彭钧</a></span></li>
+                                                <li><input type="checkbox" value="1196649" name="checked"/><span><a href="/player/65/player_1196649.html" class="songTitle" target="_1ting">少年说风就是雨</a> - <a href="/singer/a5/singer_38827.html" class="singerName">宋小睿</a></span></li>
+                                                <li><input type="checkbox" value="1196628" name="checked"/><span><a href="/player/65/player_1196628.html" class="songTitle" target="_1ting">重要的事情说三遍</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1196589" name="checked"/><span><a href="/player/65/player_1196589.html" class="songTitle" target="_1ting">好好活着</a> - <a href="/singer/c1/singer_31126.html" class="singerName">晏敏敏</a></span></li>
+                                                <li><input type="checkbox" value="1196587" name="checked"/><span><a href="/player/65/player_1196587.html" class="songTitle" target="_1ting">爱过的陌生人</a> - <a href="/singer/19/singer_36923.html" class="singerName">权歌</a></span></li>
+                                                <li><input type="checkbox" value="1196582" name="checked"/><span><a href="/player/65/player_1196582.html" class="songTitle" target="_1ting">母亲的目光</a> - <a href="/singer/a5/singer_38817.html" class="singerName">甘玫</a></span></li>
+                                                <li><input type="checkbox" value="1196578" name="checked"/><span><a href="/player/65/player_1196578.html" class="songTitle" target="_1ting">黑夜</a> - <a href="/singer/a5/singer_38264.html" class="singerName">柳李&阿曼&李硕</a></span></li>
+                                                <li><input type="checkbox" value="1196559" name="checked"/><span><a href="/player/65/player_1196559.html" class="songTitle" target="_1ting">想你的心</a> - <a href="/singer/a5/singer_38810.html" class="singerName">岑广冰</a></span></li>
+                                                <li><input type="checkbox" value="1196513" name="checked"/><span><a href="/player/65/player_1196513.html" class="songTitle" target="_1ting">爱是带刺的玫瑰</a> - <a href="/singer/a5/singer_38793.html" class="singerName">杜婉仙</a></span></li>
+                                                <li><input type="checkbox" value="1196504" name="checked"/><span><a href="/player/65/player_1196504.html" class="songTitle" target="_1ting">让平凡不平凡</a> - <a href="/singer/a5/singer_38791.html" class="singerName">李家栋</a></span></li>
+                                                <li><input type="checkbox" value="1196477" name="checked"/><span><a href="/player/65/player_1196477.html" class="songTitle" target="_1ting">父母心</a> - <a href="/singer/c1/singer_31377.html" class="singerName">黄训国</a></span></li>
+                                                <li><input type="checkbox" value="1196429" name="checked"/><span><a href="/player/65/player_1196429.html" class="songTitle" target="_1ting">故乡的碣滩茶</a> - <a href="/singer/a5/singer_38760.html" class="singerName">张芝明</a></span></li>
+                                                <li><input type="checkbox" value="1196427" name="checked"/><span><a href="/player/65/player_1196427.html" class="songTitle" target="_1ting">党旗飘扬</a> - <a href="/singer/d6/singer_3955.html" class="singerName">金波</a></span></li>
+                                                <li><input type="checkbox" value="1196426" name="checked"/><span><a href="/player/65/player_1196426.html" class="songTitle" target="_1ting">守护</a> - <a href="/singer/a5/singer_38777.html" class="singerName">陈光</a></span></li>
+                                                <li><input type="checkbox" value="1196419" name="checked"/><span><a href="/player/65/player_1196419.html" class="songTitle" target="_1ting">假如没有相遇</a> - <a href="/singer/a5/singer_38760.html" class="singerName">张芝明</a></span></li>
+                                                <li><input type="checkbox" value="1196388" name="checked"/><span><a href="/player/65/player_1196388.html" class="songTitle" target="_1ting">天仙配</a> - <a href="/singer/a5/singer_38723.html" class="singerName">周玄</a></span></li>
+                                                <li><input type="checkbox" value="1196374" name="checked"/><span><a href="/player/65/player_1196374.html" class="songTitle" target="_1ting">余生不打扰</a> - <a href="/singer/a5/singer_38762.html" class="singerName">苏栎</a></span></li>
+                                                <li><input type="checkbox" value="1196355" name="checked"/><span><a href="/player/65/player_1196355.html" class="songTitle" target="_1ting">天佑我 爱的国</a> - <a href="/singer/63/singer_32383.html" class="singerName">周澎</a></span></li>
+                                                </ul>
+                        <p class="listAction">
+                            <a href="#userSong" class="select" target="_self">全/反选</a>
+                            <a href="#userSong" class="play" target="_self">播放</a>
+                            <a href="#userSong" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!--
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>经典老歌</h2>
+                        <p class="more">
+                            <a href="/rank/pop.html">更多...</a>
+                        </p>
+                    </div>
+                    <div class="songList" id="oldSong">
+                        <ul data-selected="true">
+                                                <li><input type="checkbox" value="1200117" name="checked"/><span><a href="/player/c2/player_1200117.html" class="songTitle" target="_1ting">气象站台</a> - <a href="/singer/a5/singer_38242.html" class="singerName">UU</a></span></li>
+                                                <li><input type="checkbox" value="1136963" name="checked"/><span><a href="/player/65/player_1136963.html" class="songTitle" target="_1ting">天都亮了你还没有回家</a> - <a href="/singer/e3/singer_34733.html" class="singerName">周至贤</a></span></li>
+                                                <li><input type="checkbox" value="1129945" name="checked"/><span><a href="/player/65/player_1129945.html" class="songTitle" target="_1ting">天冷就回来2016</a> - <a href="/singer/70/singer_174.html" class="singerName">陈洁仪</a></span></li>
+                                                <li><input type="checkbox" value="368370" name="checked"/><span><a href="/player/19/player_368370.html" class="songTitle" target="_1ting">潮湿的心</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="353441" name="checked"/><span><a href="/player/1c/player_353441.html" class="songTitle" target="_1ting">南无阿弥陀佛</a> - <a href="/singer/fc/singer_654.html" class="singerName">李娜</a></span></li>
+                                                <li><input type="checkbox" value="429834" name="checked"/><span><a href="/player/a1/player_429834.html" class="songTitle" target="_1ting">故乡的云</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="231488" name="checked"/><span><a href="/player/37/player_231488.html" class="songTitle" target="_1ting">垄上行</a> - <a href="/singer/d8/singer_530.html" class="singerName">张明敏</a></span></li>
+                                                <li><input type="checkbox" value="10604" name="checked"/><span><a href="/player/d3/player_10604.html" class="songTitle" target="_1ting">你的眼神</a> - <a href="/singer/70/singer_172.html" class="singerName">蔡琴</a></span></li>
+                                                <li><input type="checkbox" value="368379" name="checked"/><span><a href="/player/19/player_368379.html" class="songTitle" target="_1ting">山清水秀太阳高</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="231486" name="checked"/><span><a href="/player/37/player_231486.html" class="songTitle" target="_1ting">我的中国心</a> - <a href="/singer/d8/singer_530.html" class="singerName">张明敏</a></span></li>
+                                                <li><input type="checkbox" value="354761" name="checked"/><span><a href="/player/1c/player_354761.html" class="songTitle" target="_1ting">真的好想你</a> - <a href="/singer/33/singer_2844.html" class="singerName">周冰倩</a></span></li>
+                                                <li><input type="checkbox" value="56482" name="checked"/><span><a href="/player/9f/player_56482.html" class="songTitle" target="_1ting">梦里水乡</a> - <a href="/singer/93/singer_862.html" class="singerName">江珊</a></span></li>
+                                                <li><input type="checkbox" value="231495" name="checked"/><span><a href="/player/37/player_231495.html" class="songTitle" target="_1ting">一剪梅</a> - <a href="/singer/d8/singer_530.html" class="singerName">张明敏</a></span></li>
+                                                <li><input type="checkbox" value="333630" name="checked"/><span><a href="/player/18/player_333630.html" class="songTitle" target="_1ting">牧羊曲</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="368378" name="checked"/><span><a href="/player/19/player_368378.html" class="songTitle" target="_1ting">小背篓</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="333637" name="checked"/><span><a href="/player/18/player_333637.html" class="songTitle" target="_1ting">月光下的凤尾竹</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="429827" name="checked"/><span><a href="/player/a1/player_429827.html" class="songTitle" target="_1ting">东方之珠</a> - <a href="/singer/f7/singer_4422.html" class="singerName">龚玥</a></span></li>
+                                                <li><input type="checkbox" value="544144" name="checked"/><span><a href="/player/a6/player_544144.html" class="songTitle" target="_1ting">千年等一回</a> - <a href="/singer/9b/singer_15327.html" class="singerName">芙蓉姐姐</a></span></li>
+                                                <li><input type="checkbox" value="560783" name="checked"/><span><a href="/player/9f/player_560783.html" class="songTitle" target="_1ting">灰姑娘</a> - <a href="/singer/c2/singer_12237.html" class="singerName">白玛多吉</a></span></li>
+                                                <li><input type="checkbox" value="237344" name="checked"/><span><a href="/player/37/player_237344.html" class="songTitle" target="_1ting">小薇</a> - <a href="/singer/3c/singer_2182.html" class="singerName">刘芳</a></span></li>
+                                                </ul>
+                        <p class="listAction">
+                            <a href="#oldSong" class="select" target="_self">全/反选</a>
+                            <a href="#oldSong" class="play" target="_self">播放</a>
+                            <a href="#oldSong" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+                -->
+            </div>
+            <script>cButtons("newSongList", "hotSongList", "oldSong");</script>
+            <div class="everyday" id="u3112729">
+            <script type="text/javascript" src="//cpro.baidustatic.com/common/resource/api/bokp6l.js?dyqh=hnzng"></script>
+            </div>
+        </div>
+
+        <div class="sidebar">
+
+            <dl class="rsBox special">
+                <dt>
+                    <strong><a href="/mv/">精彩MV推荐</a></strong>
+                </dt>
+                <dd>
+                                        <a href="https://www.1ting.com/mv/video/73/67638483.html" class="txpic">
+                        <img src="//img.1ting.com/images/misc/3/71/s224_7efd3d457a5559fa8238da5956c6c9ed.jpg" width="212"  alt="王菲演唱电影《我和我的祖国》主题曲" />
+                        <span>王菲演唱电影《我和我的祖国》主题曲</span>
+                    </a>
+                    <ul>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638461.html">周杰伦&五月天阿信《说好不哭》MV</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638514.html">王铮亮 - 最美的告白 MV上线</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638482.html">蔡徐坤洗脑MV《Young》</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638481.html">陈伟霆 - My Lady MV 上线</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638472.html">薛之谦 - 病态</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638467.html">李艺彤 - 就差一点点</a></li>
+                                            <li><a href="/mv/video/73/67638445.html">王源 - 2019「源」演唱会幕后纪录片</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638450.html">肖战 - 问少年 (电影《诛仙Ⅰ》放肆版主题曲)</a></li>
+                                            <li><a href="https://www.1ting.com/mv/video/73/67638447.html">莫文蔚 - 只是不够爱 (《飞虎之雷霆极战》主题曲)</a></li>
+                                        </ul>
+                </dd>
+            </dl>
+
+            <div class="singerBox mt8">
+                <div class="sTitle">
+                    <h2>热门歌手推荐</h2>
+                    <p class="tabs" data-for="#hotSingerList">
+                        <a href="javascript:cTab('#hotSingerList',0);" class="selected" target="_self">华语</a>
+                    </p>
+                </div>
+                <div class="singerList" id="hotSingerList">
+                                        <ul style="display:block;">
+                                                                     <li class="singerPic"><a href="/singer/a6/singer_5470.html"><img src="//img.1ting.com/images/singer/s75_5470.jpg" width="66" height="88" alt="姜鹏 全部专辑歌曲" /><span>姜鹏</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/f7/singer_4422.html"><img src="//img.1ting.com/images/singer/s75_4422.jpg" width="66" height="88" alt="龚玥 全部专辑歌曲" /><span>龚玥</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/33/singer_2871.html"><img src="//img.1ting.com/images/singer/s75_2871.jpg" width="66" height="88" alt="张靓颖 全部专辑歌曲" /><span>张靓颖</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/6f/singer_1819.html"><img src="//img.1ting.com/images/singer/s75_1819.jpg" width="66" height="88" alt="刀郎 全部专辑歌曲" /><span>刀郎</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/67/singer_4743.html"><img src="//img.1ting.com/images/singer/s75_4743.jpg" width="66" height="88" alt="尚雯婕 全部专辑歌曲" /><span>尚雯婕</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/64/singer_482.html"><img src="//img.1ting.com/images/singer/s75_482.jpg" width="66" height="88" alt="齐秦 全部专辑歌曲" /><span>齐秦</span></a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/8e/singer_2535.html" title="阿兰">阿兰</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/64/singer_4853.html" title="陈楚生">陈楚生</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/28/singer_5116.html" title="斯琴高丽">斯琴高丽</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/03/singer_634.html" title="孙楠">孙楠</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/54/singer_91.html" title="韩红">韩红</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/43/singer_81.html" title="小虎队">小虎队</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/c5/singer_135.html" title="许茹芸">许茹芸</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/70/singer_178.html" title="王力宏">王力宏</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/9b/singer_159.html" title="费玉清">费玉清</a></li>
+                                                                </ul>
+                                        <ul>
+                                                                     <li class="singerPic"><a href="/singer/c1/singer_31076.html"><img src="//img.1ting.com/images/singer/s75_31076.jpg" width="66" height="88" alt="FKA twigs 全部专辑歌曲" /><span>FKA twigs</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/3e/singer_851.html"><img src="//img.1ting.com/images/singer/s75_851.jpg" width="66" height="88" alt="Backstreet Boys 全部专辑歌曲" /><span>Backstreet Boys</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/d3/singer_106.html"><img src="//img.1ting.com/images/singer/s75_106.jpg" width="66" height="88" alt="Eminem 全部专辑歌曲" /><span>Eminem</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/d1/singer_794.html"><img src="//img.1ting.com/images/singer/s75_794.jpg" width="66" height="88" alt="Avril Lavigne 全部专辑歌曲" /><span>Avril Lavigne</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/a1/singer_421.html"><img src="//img.1ting.com/images/singer/s75_421.jpg" width="66" height="88" alt="Michael Jackson 全部专辑歌曲" /><span>Michael Jackson</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/d2/singer_7383.html"><img src="//img.1ting.com/images/singer/s75_7383.jpg" width="66" height="88" alt="Lady GaGa 全部专辑歌曲" /><span>Lady GaGa</span></a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/c7/singer_1654.html" title="Coldplay">Coldplay</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/65/singer_1143.html" title="Linkin Park">Linkin Park</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/aa/singer_149.html" title="Madonna">Madonna</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/aa/singer_147.html" title="Enya">Enya</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/a5/singer_3860.html" title="Taylor Swift">Taylor Swift</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/9f/singer_5670.html" title="Chris Brown">Chris Brown</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/a5/singer_3754.html" title="Akon">Akon</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/d6/singer_3934.html" title="Gwen Stefani">Gwen Stefani</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/9b/singer_1530.html" title="Shakira">Shakira</a></li>
+                                                                </ul>
+                                        <ul>
+                                                                     <li class="singerPic"><a href="/singer/f4/singer_4958.html"><img src="//img.1ting.com/images/singer/s75_4958.jpg" width="66" height="88" alt="AKB48 全部专辑歌曲" /><span>AKB48</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/28/singer_5199.html"><img src="//img.1ting.com/images/singer/s75_5199.jpg" width="66" height="88" alt="少女时代 全部专辑歌曲" /><span>少女时代</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/9b/singer_15313.html"><img src="//img.1ting.com/images/singer/s75_15313.jpg" width="66" height="88" alt="EXO 全部专辑歌曲" /><span>EXO</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/fc/singer_6586.html"><img src="//img.1ting.com/images/singer/s75_6586.jpg" width="66" height="88" alt="久石譲 全部专辑歌曲" /><span>久石譲</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/d8/singer_5348.html"><img src="//img.1ting.com/images/singer/s75_5348.jpg" width="66" height="88" alt="Super Junior 全部专辑歌曲" /><span>Super Junior</span></a></li>
+                                                                                             <li class="singerPic"><a href="/singer/34/singer_30950.html"><img src="//img.1ting.com/images/singer/s75_30950.jpg" width="66" height="88" alt="Jessica&Krystal (郑氏姐妹) 全部专辑歌曲" /><span>Jessica&Krystal (郑氏姐妹)</span></a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/76/singer_899.html" title="仓木麻衣 Mai Kuraki">仓木麻衣 Mai Kuraki</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/76/singer_895.html" title="滨崎步 (浜崎あゆみ)">滨崎步 (浜崎あゆみ)</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/1f/singer_1925.html" title="东方神起">东方神起</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/37/singer_2350.html" title="大塚愛">大塚愛</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/14/singer_69.html" title="平井堅">平井堅</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/aa/singer_14739.html" title="Aimer">Aimer</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/9b/singer_15246.html" title="ももいろクローバーZ(桃色幸运草)">ももいろクローバーZ(桃色幸运草)</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/76/singer_894.html" title="安室奈美惠">安室奈美惠</a></li>
+                                                                                            <li class="singerTxt"><a href="/singer/c2/singer_12820.html" title="JYJ">JYJ</a></li>
+                                                                </ul>
+                                        </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="center mt8">
+        <div class="container">
+            <div class="songBox">
+                            <div class="songRow">
+                    <div class="sTitle">
+                        <h2>新歌推荐</h2>
+                        <!--p class="tabs" data-for="#hotSongList">
+                            <a href="javascript:cTab('#hotSongList',0);" class="selected" target="_self">日榜</a>
+                            <a href="javascript:cTab('#hotSongList',1);" target="_self">周榜</a>
+                        </p-->
+                    </div>
+                    <div class="songList" id="hotSongList">
+                        <ul style="display:block;" data-selected="true">
+                                            <ul style="display:block;" data-selected="true">
+                                                <li><input type="checkbox" value="1205220" name="checked"/><span><a href="/player/c2/player_1205220.html" class="songTitle" target="_1ting">普通爱情故事</a> - <a href="/singer/c2/singer_12574.html" class="singerName">汪苏泷</a></span></li>
+                                                <li><input type="checkbox" value="1205225" name="checked"/><span><a href="/player/c2/player_1205225.html" class="songTitle" target="_1ting">骁-井胧/井迪儿</a> - <a href="/singer/d6/singer_39651.html" class="singerName">井胧</a></span></li>
+                                                <li><input type="checkbox" value="1205212" name="checked"/><span><a href="/player/c2/player_1205212.html" class="songTitle" target="_1ting">我喜欢你</a> - <a href="/singer/d6/singer_39282.html" class="singerName">时代少年团</a></span></li>
+                                                <li><input type="checkbox" value="1205213" name="checked"/><span><a href="/player/c2/player_1205213.html" class="songTitle" target="_1ting">清福</a> - <a href="/singer/4e/singer_2652.html" class="singerName">李宇春</a></span></li>
+                                                <li><input type="checkbox" value="1205181" name="checked"/><span><a href="/player/c2/player_1205181.html" class="songTitle" target="_1ting">Shining in the dark</a> - <a href="/singer/a5/singer_37365.html" class="singerName">Lil Ghost小鬼</a></span></li>
+                                                <li><input type="checkbox" value="1205182" name="checked"/><span><a href="/player/c2/player_1205182.html" class="songTitle" target="_1ting">天蝎</a> - <a href="/singer/1c/singer_35094.html" class="singerName">徐秉龙</a></span></li>
+                                                <li><input type="checkbox" value="1205155" name="checked"/><span><a href="/player/c2/player_1205155.html" class="songTitle" target="_1ting">动听</a> - <a href="/singer/9b/singer_15323.html" class="singerName">阿悄</a></span></li>
+                                                <li><input type="checkbox" value="1205157" name="checked"/><span><a href="/player/c2/player_1205157.html" class="songTitle" target="_1ting">那天</a> - <a href="/singer/d6/singer_39682.html" class="singerName">魏大勋</a></span></li>
+                                                <li><input type="checkbox" value="1205148" name="checked"/><span><a href="/player/c2/player_1205148.html" class="songTitle" target="_1ting">变废为宝</a> - <a href="/singer/18/singer_3376.html" class="singerName">薛之谦</a></span></li>
+                                                <li><input type="checkbox" value="1205153" name="checked"/><span><a href="/player/c2/player_1205153.html" class="songTitle" target="_1ting">藏</a> - <a href="/singer/e3/singer_34178.html" class="singerName">欧阳娜娜</a></span></li>
+                                                <li><input type="checkbox" value="1205133" name="checked"/><span><a href="/player/c2/player_1205133.html" class="songTitle" target="_1ting">瘾</a> - <a href="/singer/d6/singer_39645.html" class="singerName">Sunnee杨芸晴</a></span></li>
+                                                <li><input type="checkbox" value="1205127" name="checked"/><span><a href="/player/c2/player_1205127.html" class="songTitle" target="_1ting">三天</a> - <a href="/singer/a5/singer_38373.html" class="singerName">李鑫一</a></span></li>
+                                                <li><input type="checkbox" value="1205099" name="checked"/><span><a href="/player/c2/player_1205099.html" class="songTitle" target="_1ting">甘心替代你</a> - <a href="/singer/a5/singer_38002.html" class="singerName">毛不易</a></span></li>
+                                                <li><input type="checkbox" value="1205103" name="checked"/><span><a href="/player/c2/player_1205103.html" class="songTitle" target="_1ting">致未来的我</a> - <a href="/singer/d6/singer_39191.html" class="singerName">尤长靖</a></span></li>
+                                                <li><input type="checkbox" value="1205092" name="checked"/><span><a href="/player/c2/player_1205092.html" class="songTitle" target="_1ting">你来到我世界</a> - <a href="/singer/03/singer_6344.html" class="singerName">刘惜君</a></span></li>
+                                                <li><input type="checkbox" value="1205060" name="checked"/><span><a href="/player/c2/player_1205060.html" class="songTitle" target="_1ting">飘</a> - <a href="/singer/d6/singer_39293.html" class="singerName">王源</a></span></li>
+                                                </ul>
+                                            <ul>
+                                                <li><input type="checkbox" value="1065744" name="checked"/><span><a href="/player/d3/player_1065744.html" class="songTitle" target="_1ting">Leave Your Love</a> - <a href="/singer/c1/singer_31699.html" class="singerName">Tyler Carter</a></span></li>
+                                                <li><input type="checkbox" value="1066829" name="checked"/><span><a href="/player/d3/player_1066829.html" class="songTitle" target="_1ting">Who Knows Tomorrow</a> - <a href="/singer/c1/singer_31754.html" class="singerName">Angela Moyra</a></span></li>
+                                                <li><input type="checkbox" value="1066985" name="checked"/><span><a href="/player/d3/player_1066985.html" class="songTitle" target="_1ting">Close Your Eyes</a> - <a href="/singer/c1/singer_31209.html" class="singerName">Meghan Trainor</a></span></li>
+                                                <li><input type="checkbox" value="1067029" name="checked"/><span><a href="/player/d3/player_1067029.html" class="songTitle" target="_1ting">Stupid Girl</a> - <a href="/singer/fb/singer_7633.html" class="singerName">Jazmine Sullivan</a></span></li>
+                                                <li><input type="checkbox" value="1065227" name="checked"/><span><a href="/player/d3/player_1065227.html" class="songTitle" target="_1ting">All Good</a> - <a href="/singer/d3/singer_10033.html" class="singerName">Fabolous</a></span></li>
+                                                <li><input type="checkbox" value="1065266" name="checked"/><span><a href="/player/d3/player_1065266.html" class="songTitle" target="_1ting">The Power Of Love</a> - <a href="/singer/c1/singer_31674.html" class="singerName">Sam Bailey</a></span></li>
+                                                <li><input type="checkbox" value="1065372" name="checked"/><span><a href="/player/d3/player_1065372.html" class="songTitle" target="_1ting">Blue Roses</a> - <a href="/singer/aa/singer_14464.html" class="singerName">Rachael Sage</a></span></li>
+                                                <li><input type="checkbox" value="1064464" name="checked"/><span><a href="/player/d3/player_1064464.html" class="songTitle" target="_1ting">Christmas Time's For Family</a> - <a href="/singer/6f/singer_1850.html" class="singerName">Peter Andre</a></span></li>
+                                                <li><input type="checkbox" value="1063250" name="checked"/><span><a href="/player/d3/player_1063250.html" class="songTitle" target="_1ting">Air Guitar</a> - <a href="/singer/c1/singer_31577.html" class="singerName">McBusted</a></span></li>
+                                                <li><input type="checkbox" value="1063274" name="checked"/><span><a href="/player/d3/player_1063274.html" class="songTitle" target="_1ting">Good Time (feat. Problem)</a> - <a href="/singer/c1/singer_31578.html" class="singerName">Faith Evans</a></span></li>
+                                                <li><input type="checkbox" value="1063298" name="checked"/><span><a href="/player/d3/player_1063298.html" class="songTitle" target="_1ting">Winter Wonderland</a> - <a href="/singer/c1/singer_31580.html" class="singerName">Jason Manns</a></span></li>
+                                                <li><input type="checkbox" value="1064042" name="checked"/><span><a href="/player/d3/player_1064042.html" class="songTitle" target="_1ting">Do You Want To Build A Snowman?</a> - <a href="/singer/c1/singer_31620.html" class="singerName">Jasmine Thompson</a></span></li>
+                                                <li><input type="checkbox" value="1063781" name="checked"/><span><a href="/player/d3/player_1063781.html" class="songTitle" target="_1ting">Something In The Water</a> - <a href="/singer/c1/singer_3135.html" class="singerName">Carrie Underwood</a></span></li>
+                                                <li><input type="checkbox" value="1063866" name="checked"/><span><a href="/player/d3/player_1063866.html" class="songTitle" target="_1ting">Note To Self</a> - <a href="/singer/aa/singer_14814.html" class="singerName">J. Cole</a></span></li>
+                                                <li><input type="checkbox" value="1063680" name="checked"/><span><a href="/player/d3/player_1063680.html" class="songTitle" target="_1ting">Sucker</a> - <a href="/singer/70/singer_17331.html" class="singerName">Charli XCX</a></span></li>
+                                                <li><input type="checkbox" value="1063460" name="checked"/><span><a href="/player/d3/player_1063460.html" class="songTitle" target="_1ting">Tonight (We Live Forever)</a> - <a href="/singer/02/singer_27399.html" class="singerName">Union J</a></span></li>
+                                                </ul>
+                                            <ul>
+                                                <li><input type="checkbox" value="1081979" name="checked"/><span><a href="/player/d3/player_1081979.html" class="songTitle" target="_1ting">Kiss My Lips</a> - <a href="/singer/97/singer_82.html" class="singerName">BoA (宝儿)</a></span></li>
+                                                <li><input type="checkbox" value="1071976" name="checked"/><span><a href="/player/d3/player_1071976.html" class="songTitle" target="_1ting">Absolute Soul</a> - <a href="/singer/c1/singer_31537.html" class="singerName">鈴木このみ</a></span></li>
+                                                <li><input type="checkbox" value="1072015" name="checked"/><span><a href="/player/d3/player_1072015.html" class="songTitle" target="_1ting">결석</a> - <a href="/singer/63/singer_32026.html" class="singerName">Olltii</a></span></li>
+                                                <li><input type="checkbox" value="1072036" name="checked"/><span><a href="/player/d3/player_1072036.html" class="songTitle" target="_1ting">白い季節</a> - <a href="/singer/c7/singer_1653.html" class="singerName">MISIA(米希亚)</a></span></li>
+                                                <li><input type="checkbox" value="1072042" name="checked"/><span><a href="/player/d3/player_1072042.html" class="songTitle" target="_1ting">恋詩</a> - <a href="/singer/63/singer_32027.html" class="singerName">安田レイ</a></span></li>
+                                                <li><input type="checkbox" value="1072046" name="checked"/><span><a href="/player/d3/player_1072046.html" class="songTitle" target="_1ting">MR.WHITE</a> - <a href="/singer/ea/singer_6484.html" class="singerName">NewS</a></span></li>
+                                                <li><input type="checkbox" value="1072061" name="checked"/><span><a href="/player/d3/player_1072061.html" class="songTitle" target="_1ting">Season</a> - <a href="/singer/63/singer_32028.html" class="singerName">瀧川ありさ</a></span></li>
+                                                <li><input type="checkbox" value="1072204" name="checked"/><span><a href="/player/d3/player_1072204.html" class="songTitle" target="_1ting">優しい世界そして未来へ</a> - <a href="/singer/63/singer_32025.html" class="singerName">新田恵海</a></span></li>
+                                                <li><input type="checkbox" value="1072207" name="checked"/><span><a href="/player/d3/player_1072207.html" class="songTitle" target="_1ting">情熱CONTINUE</a> - <a href="/singer/86/singer_9019.html" class="singerName">Sphere -スフィア-</a></span></li>
+                                                <li><input type="checkbox" value="1072211" name="checked"/><span><a href="/player/d3/player_1072211.html" class="songTitle" target="_1ting">華麗なる逆襲</a> - <a href="/singer/c2/singer_1206.html" class="singerName">SMAP</a></span></li>
+                                                <li><input type="checkbox" value="1072216" name="checked"/><span><a href="/player/d3/player_1072216.html" class="songTitle" target="_1ting">너무 very 막</a> - <a href="/singer/9b/singer_15987.html" class="singerName">MYNAME</a></span></li>
+                                                <li><input type="checkbox" value="1069346" name="checked"/><span><a href="/player/d3/player_1069346.html" class="songTitle" target="_1ting">사랑하나봐요</a> - <a href="/singer/c1/singer_31884.html" class="singerName">The Daisy</a></span></li>
+                                                <li><input type="checkbox" value="1069394" name="checked"/><span><a href="/player/d3/player_1069394.html" class="songTitle" target="_1ting">With You</a> - <a href="/singer/c1/singer_31887.html" class="singerName">ZE:A J</a></span></li>
+                                                <li><input type="checkbox" value="1066804" name="checked"/><span><a href="/player/d3/player_1066804.html" class="songTitle" target="_1ting">Garden</a> - <a href="/singer/07/singer_6011.html" class="singerName">堀江由衣</a></span></li>
+                                                <li><input type="checkbox" value="1067004" name="checked"/><span><a href="/player/d3/player_1067004.html" class="songTitle" target="_1ting">그대라서 - 손승연 (孙胜妍)</a> - <a href="/singer/34/singer_30633.html" class="singerName">韩国原声带</a></span></li>
+                                                <li><input type="checkbox" value="1065476" name="checked"/><span><a href="/player/d3/player_1065476.html" class="songTitle" target="_1ting">Highschool ❤ love</a> - <a href="/singer/c7/singer_16279.html" class="singerName">E-Girls</a></span></li>
+                                                </ul>
+                                            </ul>
+
+                        <p class="listAction">
+                            <a href="#hotSongList" class="select" target="_self">全/反选</a>
+                            <a href="#hotSongList" class="play" target="_self">播放</a>
+                            <a href="#hotSongList" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>编辑推荐</h2>
+                        <!--<p class="more">
+                            <a href="http://d.1ting.com/dujia.html">合作</a>
+                        </p>-->
+                    </div>
+                    <div class="songList" id="oldSong">
+                        <ul data-selected="true">
+                                                <li><input type="checkbox" value="1196030" name="checked"/><span><a href="/player/65/player_1196030.html" class="songTitle" target="_1ting">近水而思</a> - <a href="/singer/a5/singer_3731.html" class="singerName">张迈</a></span></li>
+                                                <li><input type="checkbox" value="1195998" name="checked"/><span><a href="/player/65/player_1195998.html" class="songTitle" target="_1ting">爱·情</a> - <a href="/singer/63/singer_32298.html" class="singerName">陈利</a></span></li>
+                                                <li><input type="checkbox" value="1195994" name="checked"/><span><a href="/player/65/player_1195994.html" class="songTitle" target="_1ting">圣诞祝福</a> - <a href="/singer/a5/singer_38026.html" class="singerName">优秀少年 (Good Boys)</a></span></li>
+                                                <li><input type="checkbox" value="1195909" name="checked"/><span><a href="/player/65/player_1195909.html" class="songTitle" target="_1ting">木兰无双</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1195882" name="checked"/><span><a href="/player/65/player_1195882.html" class="songTitle" target="_1ting">别后两宽</a> - <a href="/singer/a5/singer_38662.html" class="singerName">马小媛</a></span></li>
+                                                <li><input type="checkbox" value="1195877" name="checked"/><span><a href="/player/65/player_1195877.html" class="songTitle" target="_1ting">徙sai</a> - <a href="/singer/a5/singer_38659.html" class="singerName">爱客乐iColo</a></span></li>
+                                                <li><input type="checkbox" value="1195765" name="checked"/><span><a href="/player/65/player_1195765.html" class="songTitle" target="_1ting">大叔</a> - <a href="/singer/d6/singer_3920.html" class="singerName">王童语</a></span></li>
+                                                <li><input type="checkbox" value="1195701" name="checked"/><span><a href="/player/65/player_1195701.html" class="songTitle" target="_1ting">我就喜欢你</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1195669" name="checked"/><span><a href="/player/65/player_1195669.html" class="songTitle" target="_1ting">摇啊摇</a> - <a href="/singer/a5/singer_38618.html" class="singerName">阿玖</a></span></li>
+                                                <li><input type="checkbox" value="1195665" name="checked"/><span><a href="/player/65/player_1195665.html" class="songTitle" target="_1ting">OK</a> - <a href="/singer/a5/singer_38233.html" class="singerName">周跳跳</a></span></li>
+                                                <li><input type="checkbox" value="1195645" name="checked"/><span><a href="/player/65/player_1195645.html" class="songTitle" target="_1ting">姑娘</a> - <a href="/singer/a5/singer_38482.html" class="singerName">方欣妍</a></span></li>
+                                                <li><input type="checkbox" value="1195639" name="checked"/><span><a href="/player/65/player_1195639.html" class="songTitle" target="_1ting">Fire（ft Fireman766）</a> - <a href="/singer/a5/singer_37934.html" class="singerName">阿敏</a></span></li>
+                                                <li><input type="checkbox" value="1195581" name="checked"/><span><a href="/player/65/player_1195581.html" class="songTitle" target="_1ting">汪星人与喵星人</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1195522" name="checked"/><span><a href="/player/65/player_1195522.html" class="songTitle" target="_1ting">夜游大唐城</a> - <a href="/singer/a5/singer_38584.html" class="singerName">杨虹</a></span></li>
+                                                <li><input type="checkbox" value="1195496" name="checked"/><span><a href="/player/65/player_1195496.html" class="songTitle" target="_1ting">风之少年</a> - <a href="/singer/a5/singer_38576.html" class="singerName">祝雨潇</a></span></li>
+                                                <li><input type="checkbox" value="1195440" name="checked"/><span><a href="/player/65/player_1195440.html" class="songTitle" target="_1ting">Kiss Of The Cobra King</a> - <a href="/singer/18/singer_33024.html" class="singerName">Powerwolf</a></span></li>
+                                                </ul>
+                        <p class="listAction">
+                            <a href="#oldSong" class="select" target="_self">全/反选</a>
+                            <a href="#oldSong" class="play" target="_self">播放</a>
+                            <a href="#oldSong" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="songRow">
+                    <div class="sTitle">
+                        <h2>会员推荐</h2>
+                    </div>
+                    <div class="songList" id="userSong">
+                        <ul data-selected="true">
+                                                <li><input type="checkbox" value="1196304" name="checked"/><span><a href="/player/65/player_1196304.html" class="songTitle" target="_1ting">还好有你在身边</a> - <a href="/singer/a5/singer_37531.html" class="singerName">沙泉</a></span></li>
+                                                <li><input type="checkbox" value="1196206" name="checked"/><span><a href="/player/65/player_1196206.html" class="songTitle" target="_1ting">你的行星</a> - <a href="/singer/a5/singer_38737.html" class="singerName">张乐晗</a></span></li>
+                                                <li><input type="checkbox" value="1196198" name="checked"/><span><a href="/player/65/player_1196198.html" class="songTitle" target="_1ting">暖 (“温暖回家”主题曲)</a> - <a href="/singer/a5/singer_38734.html" class="singerName">覃子瑄</a></span></li>
+                                                <li><input type="checkbox" value="1196189" name="checked"/><span><a href="/player/65/player_1196189.html" class="songTitle" target="_1ting">麒麟少女</a> - <a href="/singer/a5/singer_38453.html" class="singerName">张远谋</a></span></li>
+                                                <li><input type="checkbox" value="1196181" name="checked"/><span><a href="/player/65/player_1196181.html" class="songTitle" target="_1ting">望儿台</a> - <a href="/singer/c2/singer_12590.html" class="singerName">张天龙</a></span></li>
+                                                <li><input type="checkbox" value="1196167" name="checked"/><span><a href="/player/65/player_1196167.html" class="songTitle" target="_1ting">梦如花开</a> - <a href="/singer/a5/singer_38728.html" class="singerName">马丹薇</a></span></li>
+                                                <li><input type="checkbox" value="1196164" name="checked"/><span><a href="/player/65/player_1196164.html" class="songTitle" target="_1ting">错误</a> - <a href="/singer/a5/singer_38726.html" class="singerName">若离</a></span></li>
+                                                <li><input type="checkbox" value="1196102" name="checked"/><span><a href="/player/65/player_1196102.html" class="songTitle" target="_1ting">让我进入你的梦</a> - <a href="/singer/a5/singer_38129.html" class="singerName">大智</a></span></li>
+                                                <li><input type="checkbox" value="1196092" name="checked"/><span><a href="/player/65/player_1196092.html" class="songTitle" target="_1ting">我的姐姐不喜欢猫</a> - <a href="/singer/a5/singer_38704.html" class="singerName">李沁枬</a></span></li>
+                                                <li><input type="checkbox" value="1196085" name="checked"/><span><a href="/player/65/player_1196085.html" class="songTitle" target="_1ting">我想要去拥抱你</a> - <a href="/singer/c2/singer_12990.html" class="singerName">IDOLGIRLS爱朵女孩</a></span></li>
+                                                <li><input type="checkbox" value="1196065" name="checked"/><span><a href="/player/65/player_1196065.html" class="songTitle" target="_1ting">陈情令</a> - <a href="/singer/a5/singer_38694.html" class="singerName">老黑</a></span></li>
+                                                <li><input type="checkbox" value="1196053" name="checked"/><span><a href="/player/65/player_1196053.html" class="songTitle" target="_1ting">骄傲</a> - <a href="/singer/a5/singer_38692.html" class="singerName">大娇娇</a></span></li>
+                                                <li><input type="checkbox" value="1196051" name="checked"/><span><a href="/player/65/player_1196051.html" class="songTitle" target="_1ting">This Is How We Dance</a> - <a href="/singer/a5/singer_38264.html" class="singerName">Atom Panda &Amanda</a></span></li>
+                                                <li><input type="checkbox" value="1196031" name="checked"/><span><a href="/player/65/player_1196031.html" class="songTitle" target="_1ting">爱情便利店</a> - <a href="/singer/a5/singer_38686.html" class="singerName">fung.W&Cass</a></span></li>
+                                                <li><input type="checkbox" value="1196003" name="checked"/><span><a href="/player/65/player_1196003.html" class="songTitle" target="_1ting">梨花千古</a> - <a href="/singer/9b/singer_15221.html" class="singerName">段红</a></span></li>
+                                                <li><input type="checkbox" value="1195974" name="checked"/><span><a href="/player/65/player_1195974.html" class="songTitle" target="_1ting">十四</a> - <a href="/singer/a5/singer_38674.html" class="singerName">林佳仁</a></span></li>
+                                                </ul>
+                        <p class="listAction">
+                            <a href="#userSong" class="select" target="_self">全/反选</a>
+                            <a href="#userSong" class="play" target="_self">播放</a>
+                            <a href="#userSong" class="add" target="_self">加入列表</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>cButtons("userSong", "rankDance", "rankNetpop");</script>
+        <div class="sidebar">
+            <dl class="rsBox hotAlbum">
+                <dt>
+                    <strong>热门专辑排行榜</strong>
+                    <a href="/album_t.html" class="more">更多</a>
+                </dt>
+                <dd>
+                    <ul>
+                                            </ul><script>$('.hotAlbum dd ul li').mouseover(function(){$(this).addClass('mouseover').siblings('li').removeClass('mouseover');});</script>
+                </dd>
+            </dl>
+            <!-- <div class="NA_4 mt8" id="NA_4"></div> -->
+        </div>
+    </div>
+
+
+
+    <div class="NA_7" id="NA_7" style="height:auto">
+    <script type="text/javascript" src="//cpro.baidustatic.com/production/web/1jsokp.js?qldruddd=r"></script>
+    </div>
+
+    <div style="width:960px;margin:8px auto;">
+              <dl class="lsBox flinks">
+                <dt>
+                    <strong>友情链接</strong>
+                    <a href="/faq/etc/links.html" class="more">交换链接</a>
+                </dt>
+                <dd>
+
+                    <ul style="width:960px">
+                                        <li><a href="http://www.1ting.com/mv/">高清MV</a></li>
+                                        <li><a href="http://www.zongheng.com/">小说网</a></li>
+                                        <li><a href="http://www.xiazaiba.com/">绿色下载吧</a></li>
+                                        <li><a href="http://www.tianqi.com/">天气预报</a></li>
+                                        <li><a href="https://www.qqtn.com">QQ下载</a></li>
+                                        <li><a href="https://www.enterdesk.com/">壁纸</a></li>
+                                        <li><a href="http://www.chinaz.com">站长之家</a></li>
+                                        <li><a href="http://www.manmankan.com">火影忍者漫画</a></li>
+                                        <li><a href="http://www.9ku.com">9酷音乐网</a></li>
+                                        <li><a href="http://www.1ting.com/faq/etc/links.html">友链已满</a></li>
+                                        </ul>
+                </dd>
+            </dl>
+    </div>
+
+
+    <link href="/v5/r4/style/suggest.css" rel="stylesheet" type="text/css"/>
+    <script src="/v5/r4/js/suggest.js"></script>
+    <div class="footer center">
+        <p class="footlink"> <!--<a href="/faq/etc/about.html">关于一听</a> |-->  <a href="http://d.1ting.com">歌曲入库</a> | <a href="/faq/etc/copyright.html">版权声明</a> | <a href="/faq/etc/contact_us.html">联系我们</a> | <a href="/faq/etc/history.html">历史合作</a> | <a href="/faq/etc/links.html">友情链接</a> | <a href="/faq/etc/help.html">帮助中心</a> </p>
+
+
+        <!--<p class="footlink"> <a href="/faq/etc/about.html">关于一听</a> |  <a href="http://d.1ting.com">歌曲入库</a> | <a href="/faq/etc/copyright.html">版权声明</a> | <--<a href="/faq/etc/recruit.html">诚聘英才</a>-- | <a href="/faq/etc/contact_us.html">联系我们</a> | <a href="/faq/etc/history.html">历史合作</a> <--a href="/faq/etc/disc.html">唱片公司</a | <a href="/faq/etc/ad.html">广告服务</a>-- | <a href="/faq/etc/links.html">友情链接</a> | <a href="/faq/etc/help.html">帮助中心</a> </p>-->
+
+        <p class="copyright">&copy; 2003-2020 <a href="http://www.1ting.com" class="homepage">一听音乐网</a> 版权所有</p>
+        <p class="support" style="text-indent:0;">
+        <span><a href="http://beian.miit.gov.cn/" rel="nofollow">沪ICP备19024260号-3</a></span> |
+        <!--<span>京ICP证080320号</span> | -->
+        <span><a href="/act/cnl.html" target="_blank">沪网文[2020]3044-227</a></span> 
+        <!--<span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020469">京公网安备11010802020469号</a></span> -->
+        </p>
+    </div>
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="0" height="0" id="play_list_send">
+        <param name="allowScriptAccess" value="always"/>
+        <param name="movie" value="/v5/flash/play_list_send.swf"/>
+        <embed src="/v5/flash/play_list_send.swf" quality="high" width="0" height="0" name="play_list_send" allowScriptAccess="always" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+    </object>
+    <!-- 54574730：N_A0 首页富媒体 类型：固定 尺寸：300x250-->
+    <div style="position:fixed;bottom:0; right:0;z-index:999"><script type="text/javascript" src="//cpro.baidustatic.com/production/vi55.js?j=ewkfngfb"></script><div style="position:absolute;top:1px;right:0;background:url('//img13.360buyimg.com/da/jfs/t2404/310/2196729438/1126/702d4c79/56a598b6N82664dfc.png');height:20px;width:20px;" onclick="javascript:this.parentNode.style.display='none';"></div></div>
+
+
+    <script>
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F32c12acc9a2efc3fa896bb3ebcd47ee7'%3E%3C/script%3E"));
+    </script>
+    <script src='//w.cnzz.com/c.php?id=30001746' language='JavaScript'></script>
+
+    <!-- 
+    <script type="text/javascript" charset="utf-8">
+    bShare.addEntry({
+        title: "一听音乐网",
+        summary: "一听音乐网 每天听一听:我们为您提供更新更快的歌曲试听",
+        pic: "https://img.1ting.com/images/singer/7416.jpg"
+    });
+    </script>
+    <script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=7d129b1d-4caa-454c-8fb3-4b53f97172f0&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="https://static.bshare.cn/b/bshareC0.js"></script>
+
+    <script id="bdshare_js" data="type=tools&amp;uid=14170" ></script>
+    <script id="bdshell_js"></script>
+    <script>
+        var bds_config = {
+            //'wbUid':1671108633,
+            'bdPopTitle':'一听音乐网',
+            'snsKey':{'tqq':'403a778463634ece8f0c75a66c4e230d', 'tsina':'1435846576'},
+            'bdText':'一听音乐网 每天听一听:我们为您提供更新更快的歌曲试听',
+            'bdPic':'//img.1ting.com/images/singer/7416.jpg'
+            };
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+    </script>
+-->
+</body>
+</html>

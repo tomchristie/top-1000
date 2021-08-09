@@ -1,0 +1,217 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_Head1"><meta http-equiv="X-UA-Compatible" content="IE=7" /><title>
+	Login
+</title><style type="text/css">  <!--  BODY  {padding:0; margin:0; BACKGROUND-COLOR: #FFFFFF; FONT-FAMILY: Arial; FONT-SIZE:12px; FONT-WEIGHT: normal;  LETTER-SPACING: normal;  TEXT-TRANSFORM: none; WORD-SPACING: normal}  .TextBoxDesign{width:200px; height:18px;} A:link {text-decoration: underline;   color: #343434; text-decoration:none;   }       A:visited {    text-decoration: none;   color: #343434;   }       A:active {    text-decoration: none;   color: #343434;   }       A:hover {    text-decoration: none;   color: #343434;   }       TEXTAREA {   background-color : #ffffff; font : Arial;}  Select {font-family : Arial;}      .tableDefault { background-color : #ededed;}  .tableDefaultBody {background:url(Images/Master/bg.png) no-repeat;  width:959px; padding:35px 0 0 65px; margin:0 0 0 0;}  .tableDefaultHeaderFont {   color: #343434;   font-family:Arial    font-size: 12px;    }    .MenuTitle{background:url(Images/Master/top_table.png) no-repeat; height:21px; width:136px; padding:10px 0 0 10px; color:#ffffff; font-size:14px; font-weight:bold;} .BtmMenuSubjects{background:url(Images/Master/bottom_table.png) no-repeat; height:22px; width:136px; padding:10px 0 0 10px; margin:0 0 2px 0;} .BtmMenuSubjectsWithLine{background:url(Images/Master/bottom_table_roll_over.png) no-repeat; height:22px; width:136px; padding:10px 0 0 10px; margin:0 0 2px 0;} .MenuSubjects{background:url(Images/Master/table.png) no-repeat; height:20px; width:136px; padding:10px 0 0 10px; margin:0 0 2px 0;} .MenuDDLLanguage{margin:-15px 0 0 0; background:url(Images/Master/bottom_table.png) no-repeat; height:27px; width:138px; padding:5px 0 0 10px;} .MenuSubjectsWithLine{background:url(Images/Master/roll_over.png) no-repeat; height:20px; width:136px; padding:10px 0 0 10px; margin:0 0 2px 0;}   .tablenavigationHeader {padding:9px 0 0 0;} .tablenavigationHeaderLogin {padding:0 0 0 0;}    .tablenavigationTD {background-color : #EEEEEE ;}  .tablenavigationSelectedTD {background-color : #FFFFFF ;}  .navigationlink {   color:#343434 ;    text-decoration:none}  .fontnavigation {   font-family:Arial;    font-size: 12px;    color:#343434 }    .tableMain {}   .tableMainHeaderTD2 {}    .tableMainHeaderFont {color: #343434;   font-family:Arial    font-size: 12px;} .username{padding:15px 0 0 0;} .tableMainBodyFont{color: #343434; font-family:Arial; font-size:12px;} .tableMainBodyFontSR{color: #343434; font-family:Arial; font-size:12px; padding:5px 0 10px 10px;} html>/**/body .tableMainBodyFontSR{padding:5px 0 6px 10px;} .tableMainBody11Font{color: #343434; font-family:Arial; font-size:11px;} .SummeryMainFont{color: #343434; font-family:Arial; font-size: 11px;} .tableMainBodyFontSmall{color: #343434; font-family:Arial; font-size: 10px;} .TdMasterHeader{background:url(Images/Master/header.png) no-repeat; height:120px; width:1024px;} .HeaderUpperMenu{clear:right; padding:20px 0 0 250px; width:774px; height:23px; font-weight:bold; font-family:arial; font-size:10px; color:#ffffff;} .DolarImgStyle{float:right; width:322px; height:64px; margin:10px 100px 0 0;} .HeaderLabelFloat{float:left; padding-right:10px;} .HeaderUserBox{font-family:arial; font-size:11px; float:left; padding-top:5px; background:url(Images/Master/user_name.png) no-repeat; width:95px; height:23px; color:#343434; margin:-5px 10px 0 0;} .FooterSection{width:1024px; height:28px; margin:0 auto; padding:0 0 0 0;} .PageHeader{background:url(Images/Master/small_middle_table.png) no-repeat; width:560px; height:33px; color:#ffffff; text-align:center; padding:0 0 0 0; font-size:14px;} .PageHeader2{background:url(Images/Master/small_middle_table.png) no-repeat; width:560px; height:26px; color:#ffffff; text-align:center; padding:7px 0 0 0; font-size:14px;} .LoginRemark{font-size:11px; font-family:arial; color:red;} .LoginCheckbox{padding:0 0 0 35px;} .ClickHereTD{padding:10px 0 0 0;} .LoginButton{background:url(Images/Login/log_in.png) no-repeat; margin:0 30px 0 0; height:32px; width:69px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer ;} .LoginForgot{text-decoration:underline;} .PageHeader_Login{background:url(Images/Master/small_middle_table.png) no-repeat; width:560px; height:25px; color:#ffffff; text-align:center; padding:8px 0 0 0; font-size:14px;} .BannerPosition{width:158px; height:367px; float:right; margin:0 0 250px 0;} .AnnouncementContent{background-color:#ededed; padding:20px 0 10px 35px; border-bottom:solid 3px #ffffff;} .LoginContentLeft{background-color:#ededed; text-align:center; border-bottom:solid 3px #ffffff; height:220px; width:560px; padding:0 0 0 0;} .LoginContentFloat{float:left} .LoginMainContent{width:730px;} .MarketingToolsTitle{background:url(Images/Banners/large_top_table.png) no-repeat; height:25px; width:738px; padding:8px 0 0 0; text-align:center; font-family:arial; font-size:12px; color:#ffffff;} .MarketingToolsTitleFont{ font-family:arial; font-size:12px; color:#ffffff;} .MarketingButton{background:url(Images/Login/log_in.png) no-repeat; margin:0 0 -5px 0; height:32px; width:69px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer ;} #DDLDiv{background:url(Images/Banners/step123.png) no-repeat; margin:0 0 0 0; height:71px; width:738px; padding:5px 0 0 0;} .GridDividor{background:url(Images/Banners/line_728px.png) no-repeat; margin:0 0 0 0; height:10px; width:728px;} .PriorToGridDividor{background:url(Images/Banners/line_738px.png) no-repeat; margin:0 0 0 0; height:10px; width:738px;} .GraphTitle{text-align:center; font-weight:bold; font-size:12px;} .GraphsLeftTitles{background-color:#1c7ebf; color:#ffffff; padding:0 0 0 15px; height:28px;} .GraphsRightTitles{background-color:#1c7ebf; color:#ffffff; text-align:center; height:18px;} #GraphsTitle{background:url(Images/Summery_Reports/top_for_graph.png) no-repeat; color:#ffffff; width:509px; height:24px; text-align:center; padding:9px 0 0 0; margin:0 0 0 0;} #UserDetailsTitle{background:url(Images/Summery_Reports/user_details.png) no-repeat; color:#ffffff; width:216px; height:25px; text-align:center; padding:8px 0 0 0} .GenerateButton{background:url(Images/Custom_Reports/generic_link_button.png)  no-repeat; height:32px; width:123px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer;} .GenerateTrackingButton{background:url(Images/Custom_Reports/generate_trcaking_button.png)  no-repeat; height:32px; width:151px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer;} .UpdateAccountButton{background:url(Images/Update_Account/Update_Account_button.png) no-repeat; height:32px; width:123px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer ;} .ReportsButton{background:url(Images/Reports/create_Report_button.png) no-repeat; height:32px; width:123px; border:0; font-family:arial; color:#ffffff; font-size:12px; cursor:pointer ;} -->  </style>
+    <style type="text/css">
+    .tablenavigationHeader{padding:0 0 0 0;}
+    #TopMenuHeightDiv{height:9px;}
+    </style>
+
+<script type="text/javascript">
+    function GetClasses() {
+        var CssSelected
+        if (location.href = 'Announcements.aspx?D=Announcements') {
+            CssSelected = 'BtmMenuSubjectsWithLine';
+        }
+        else {
+            CssSelected = 'BtmMenuSubjects';
+        }
+
+        return CssSelected;
+    }
+</script>
+</head>
+
+<body >
+    <form name="aspnetForm" method="post" action="./login.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMTU0MjcwNzIPZBYCZg9kFgQCAQ9kFgICAg8WAh4HVmlzaWJsZWhkAgMPZBYyAgsPDxYCHgRUZXh0BQYkIDAuMDBkZAINDw8WAh8BBRxNZW1iZXIgQWRtaW5pc3RyYXRvciBDb25zb2xlZGQCDw9kFgJmD2QWAgIDDxAPFgYeDURhdGFUZXh0RmllbGQFDExhbmd1YWdlTmFtZR4ORGF0YVZhbHVlRmllbGQFCkxhbmd1YWdlSUQeC18hRGF0YUJvdW5kZ2QQFQgHRW5nbGlzaAZGcmVuY2gHSXRhbGlhbgZHZXJtYW4HU3BhbmlzaApQb3J0dWd1ZXNlBUR1dGNoCU5vcndlZ2lhbhUIATEBMgEzATQBNQE2ATcBOBQrAwhnZ2dnZ2dnZxYBZmQCEw8WAh8AaGQCFw8WAh8AaGQCGQ8WAh8AaGQCGw8WAh8AaGQCHQ8WAh8AaGQCHw8WAh8AaGQCIQ8WAh8AaGQCIw8WAh8AaGQCJQ8WAh8AaGQCJw8WAh8AaGQCKQ8WAh8AaGQCKw8WAh8AaGQCLQ8WAh8AaGQCLw8WAh8AaGQCMw8WAh8AaGQCNQ8WAh8AaGQCOQ8WAh8AaGQCOw8WAh8AaGQCPQ8WAh8AaGQCQQ9kFgICAQ9kFgJmDxYCHglpbm5lcmh0bWwFBUxvZ2luZAJDD2QWAgIBD2QWAmYPFgIeBGhyZWYFJW1haWx0bzpkaXJlY3RvckBhZmZpbGlhdGVzLWNlbnRlci5vcmdkAkUPZBYCAgUPZBYCZg9kFgJmD2QWAmYPDxYCHwBoZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFJ2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY2hrU3RvcmVMb2dpbkWbQ2iUjXGh0sbRsD7KWDvmGq1ORh5mV2bS19dqmecP" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="041496F2" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAA2EgLGPXbtMEbZQ4d+nKP2nXCMhu0Z+xZ3oCjSSJry3UO/TasRiXPmcQG/Rfz/kT5dD8RqoyEFw5HGeFtSWnxuY7FamHvugbYPhlMoiz7XKtgLnzqfzP/UMWbLCVNrGc974ezPPekYVKa6BY6Pa70pfEMiG41vwveeyVhoQOO1Q5xacHvcRHDDwJ4792UXPh6RxnPVadBTAh0fbNWTfmY2HXMf0wzMZcg1xynDEof9ZRo3CNCUfrY4EeogoTkFPMoSMplYbisfn1/rpVzrhYac3OkLKfxzM8lUAU1iOP64x9c8vcVMZsfOtASKquq6ggFQ=" />
+<div align="center">
+	<table cellspacing="0" cellpadding="0" width="1024" border="0">
+		<tr>
+			<td>
+				<div align="left" style="margin-bottom:-2px;">
+					<table cellspacing="0" width="100%" border="0">
+						<tr>
+							<td width="100%">
+								<div align="left">
+									<table cellspacing="0" cellpadding="0" width="100%" border="0" class="tableDefault">
+										<tr>
+											<td align="center" width="100%" class="TdMasterHeader">
+									    		    <div class="tableDefaultHeaderFont">
+                                                        <img src="Images/Master/dolar.png" alt="" class="DolarImgStyle"/><br />
+                                                        <div class="HeaderUpperMenu">
+                                                            <span id="ctl00_Label1" class="HeaderLabelFloat">USER NAME:</span><div class="HeaderUserBox">&nbsp;<strong></strong></div><img src="Images/Master/line.png" style="float:left; padding:0 10px 0 0 ; margin-top:-4px;"/>
+                                                            <span id="ctl00_Label2" class="HeaderLabelFloat">DATE/TIME:</span><div class="HeaderLabelFloat">&nbsp;<strong>09/08/2021 08:24:30</strong></div><img src="Images/Master/line.png" style="float:left; padding:0 10px 0 0 ; margin-top:-4px;"/>
+                                                            <span id="ctl00_Label3" class="HeaderLabelFloat">CURRENT BALANCE:</span>
+                                                            <span id="ctl00_lblMasterCurrentBalance" class="HeaderLabelFloat"><b>$ 0.00</b></span>
+                                                        </div> 
+                                                    <!--<div style="float:left; background:url(Images/Master/user_name.png) no-repeat; width:95px; height:23px; margin:-20px 0 0 200px; color:#404040;" ></div><span id="ctl00_lblAffiliateTitle">Member Administrator Console</span>-->
+												    </div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div align="left">
+				<!--Left Menu & ContentPlaceHolder-->
+					<table cellspacing="0" width="100%" border="0">
+						<tr>
+							<td width="100%">
+								<div align="left" class="tableDefaultBody" style="overflow:auto; height:auto !important;">
+									<table cellspacing="0" cellpadding="0" width="100%" border="0">
+										<tr>
+											<td valign="top" align="left" width="160px">
+                                                <table id="Table1" cellspacing="0" cellpadding="0" border="0" >
+                                                    <tr id="ctl00_Tr1">
+	<td nowrap="nowrap">
+                                                           <div class="MenuTitle" ><span id="ctl00_lblLanguage">Language:</span></div><br />
+                                                            <div class="MenuDDLLanguage" ><select name="ctl00$drpLanguageID" id="ctl00_drpLanguageID" disabled="disabled">
+		<option selected="selected" value="1">English</option>
+		<option value="2">French</option>
+		<option value="3">Italian</option>
+		<option value="4">German</option>
+		<option value="5">Spanish</option>
+		<option value="6">Portuguese</option>
+		<option value="7">Dutch</option>
+		<option value="8">Norwegian</option>
+
+	</select></div>
+                                                            <div id="TopMenuHeightDiv"></div>
+                                                        </td>
+</tr>
+
+	                                                <tr id="ctl00_trHome">
+	<td class="tablenavigationHeader" nowrap="nowrap"><div class="MenuTitle" ><span id="ctl00_lblLanguage1">Navigation</span></div></td>
+</tr>
+
+	                                                
+	                                                <tr id="ctl00_trCreateLinks">
+	<td class="tablenavigationHeader" nowrap="nowrap">
+		                                                    <div class="MenuTitle" ><span id="ctl00_lblLanguage3">Create Links</span></div>
+		                                                </td>
+</tr>
+
+	                                                
+	                                                	
+	                                                	
+	                                                	
+	                                                	
+	                                                	                                                	                                                
+	                                                
+	                                                	                                                
+	                                                
+	                                                
+<!--	                                                
+                                                    
+
+
+	                                                
+	                                                
+	                                                
+-->	
+				
+	                                                <tr>
+		                                                <td class="tablenavigationHeader" nowrap="nowrap"><div class="MenuTitle"><span id="ctl00_lblLanguage16">Account Info</span></div></td>
+	                                                </tr>
+	                                                
+<!--	                                                <tr>
+		                                                
+	                                                </tr>-->
+	                                                <tr>
+		                                                <td class="tablenavigationHeader" nowrap="nowrap"><div class="MenuTitle" ><span id="ctl00_lblLanguage19">Earnings Info</span></div></td>
+	                                                </tr>
+	                                                	                                              
+	                                                
+	                                                
+	                                                <tr>
+		                                                <td class="tablenavigationHeader" nowrap="nowrap"><div class="MenuTitle"><span id="ctl00_lblLanguage24">Other</span></div></td>
+	                                                </tr>
+	                                                <tr>
+		                                                <td id="ctl00_tdLogout" onclick="javascript:location.href=&#39;Logout.aspx&#39;; return false;" nowrap="nowrap">
+			                                                <div id="ctl00_Div16" class="MenuSubjects" onmouseout="this.className=&#39;MenuSubjects&#39;;" onmouseover="this.className=&#39;MenuSubjectsWithLine&#39;;this.style.cursor = &#39;hand&#39;"><a href="Logout.aspx" id="ctl00_LogoutLink" class="navigationlink">Login</a></div>
+			                                            </td>
+
+	                                                </tr>
+	                                                <tr>
+		                                                <td id="ctl00_tdEmailAdministrator" nowrap="nowrap">
+		                                                    <div id="ctl00_Div17" class="BtmMenuSubjects" onmouseout="this.className=&#39;BtmMenuSubjects&#39;;" onmouseover="this.className=&#39;BtmMenuSubjectsWithLine&#39;;this.style.cursor = &#39;hand&#39;"><a href="mailto:director@affiliates-center.org" id="ctl00_linkEmailAdministrator" class="navigationlink" target="_blank"><span id="ctl00_lblLanguage26">Email Administrator</span></a></div>
+		                                                    <div style="height:20px;"></div>
+		                                                </td>
+
+	                                                </tr>
+                                                </table>
+											</td>
+											<td valign="top">
+											
+                                                    
+			    <div class="LoginMainContent">
+			        <div class="LoginContentFloat">
+			            <div class="PageHeader_Login"><span id="ctl00_ContentPlaceHolder1_lblLanguage1">Enter Login Information</span></div>
+			            <div class="LoginContentLeft">
+			                <table id="ctl00_ContentPlaceHolder1_TableData" cellspacing="2" cellpadding="5" width="100%">
+	<tr>
+		<TD class="tableMainHeaderTD" align="center" colspan="2" style="height:0;">
+					                </TD>
+	</tr>
+	<tr>
+		<TD class="username" width="40%" style="padding:0 0 0 150px;"><span class="tableMainBodyFont" ><span id="ctl00_ContentPlaceHolder1_lblLanguage2">* User Name Or Email</span></span></TD>
+		<TD align="left"><input name="ctl00$ContentPlaceHolder1$LoginName" type="text" maxlength="255" size="30" id="ctl00_ContentPlaceHolder1_LoginName" class="TextBoxDesign" />&nbsp;</TD>
+	</tr>
+	<tr>
+		<TD align="right"><span class="tableMainBodyFont" style="padding-right:4px;"><span id="ctl00_ContentPlaceHolder1_lblLanguage3">* Password</span></span></TD>
+		<TD align="left"><input name="ctl00$ContentPlaceHolder1$LoginPassword" type="password" maxlength="50" size="30" id="ctl00_ContentPlaceHolder1_LoginPassword" class="TextBoxDesign" />&nbsp;</TD>
+	</tr>
+	<tr>
+		<TD align="center" colspan="2" class="LoginCheckbox">
+						                <span class="tableMainBodyFont"><input id="ctl00_ContentPlaceHolder1_chkStoreLogin" type="checkbox" name="ctl00$ContentPlaceHolder1$chkStoreLogin" /><label for="ctl00_ContentPlaceHolder1_chkStoreLogin">  Store Login in Cookie</label></span></TD>
+	</tr>
+	<tr>
+		<TD align="center" colspan="2">
+						                <input type="submit" name="ctl00$ContentPlaceHolder1$SubmitButton" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$SubmitButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_SubmitButton" class="LoginButton" />&nbsp;</TD>
+	</tr>
+	<tr>
+		<TD align="center" colspan="2" class="ClickHereTD"><span class="tableMainBodyFont"><a href="ForgotPassword.aspx"><span id="ctl00_ContentPlaceHolder1_lblLanguage4" class="LoginForgot">Click here if you forgot your login information.</span></a></span></TD>
+	</tr>
+</table>
+
+			                <table id="ctl00_ContentPlaceHolder1_TableMessage" cellspacing="2" cellpadding="5" width="100%" border="0">
+	<tr>
+		<TD align="center" colspan="2"></TD>
+	</tr>
+</table>
+
+			            </div>
+                    </div>
+                    <img src="Images/Master/banner.jpg" class="BannerPosition" alt="" />
+                </div>
+
+											   
+											</td>
+										</tr>
+									</table>
+				                </div>
+							</td>
+						</tr>
+						<tr>
+						    <td><br /><img src="Images/Master/footer.png" alt="" class="FooterSection"/></td>
+						</tr>		
+					</table>
+				</div>
+		    </td>
+		</tr>
+    </table>
+</div>     
+</form>
+</body>
+</html>

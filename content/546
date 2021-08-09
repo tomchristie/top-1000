@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"129fe16bc0",applicationID:"424007197"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://thewaltdisneycompany.com/wp/xmlrpc.php">
+    <link rel="alternate" href="https://thewaltdisneycompany.com/" hreflang="en-us" />
+    <link rel="alternate" href="https://thewaltdisneycompany.eu/" hreflang="en-gb" />
+
+    
+	<!-- This site is optimized with the Yoast SEO plugin v15.9.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>21CF - The Walt Disney Company</title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://thewaltdisneycompany.com/redirect/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="21CF - The Walt Disney Company" />
+	<meta property="og:url" content="https://thewaltdisneycompany.com/redirect/" />
+	<meta property="og:site_name" content="The Walt Disney Company" />
+	<meta property="article:modified_time" content="2020-03-18T16:46:17+00:00" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WaltDisneyCo" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://thewaltdisneycompany.com/#website","url":"https://thewaltdisneycompany.com/","name":"The Walt Disney Company","description":"","potentialAction":[{"@type":"SearchAction","target":"https://thewaltdisneycompany.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://thewaltdisneycompany.com/redirect/#webpage","url":"https://thewaltdisneycompany.com/redirect/","name":"21CF - The Walt Disney Company","isPartOf":{"@id":"https://thewaltdisneycompany.com/#website"},"datePublished":"2019-03-19T23:34:48+00:00","dateModified":"2020-03-18T16:46:17+00:00","breadcrumb":{"@id":"https://thewaltdisneycompany.com/redirect/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://thewaltdisneycompany.com/redirect/"]}]},{"@type":"BreadcrumbList","@id":"https://thewaltdisneycompany.com/redirect/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://thewaltdisneycompany.com/","url":"https://thewaltdisneycompany.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://thewaltdisneycompany.com/redirect/","url":"https://thewaltdisneycompany.com/redirect/","name":"21CF"}}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fast.fonts.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//ddm-twdc-prod.s3.amazonaws.com' />
+<link rel="alternate" type="application/rss+xml" title="The Walt Disney Company &raquo; Feed" href="https://thewaltdisneycompany.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thewaltdisneycompany.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=460ef5f6"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://thewaltdisneycompany.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=460ef5f6' type='text/css' media='all' />
+<link rel='stylesheet' id='twdc-main-css'  href='https://thewaltdisneycompany.com/app/themes/thewaltdisneycompany-theme/assets/dist/css/main-b06f35ac43.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twdc-fonts-css'  href='//fast.fonts.net/t/1.css?apiType=css&#038;projectid=1fbe3431-6388-4561-9109-9ba61a25b360&#038;ver=2.7.4' type='text/css' media='all' />
+<script type='text/javascript' src='https://thewaltdisneycompany.com/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thewaltdisneycompany.com/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thewaltdisneycompany.com/wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://thewaltdisneycompany.com/?p=15149' />
+<link rel="icon" href="https://thewaltdisneycompany.com/app/uploads/cropped-512x512-copy5-160x160.png" sizes="32x32" />
+<link rel="icon" href="https://thewaltdisneycompany.com/app/uploads/cropped-512x512-copy5-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thewaltdisneycompany.com/app/uploads/cropped-512x512-copy5-300x300.png" />
+<meta name="msapplication-TileImage" content="https://thewaltdisneycompany.com/app/uploads/cropped-512x512-copy5-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			body.js-show-mobile-nav #disney-tou > div > a { color: #2f2f2f !important; }
+
+.edit-link
+{ display:none; }
+
+.leaders-section .flex-hide-for-small {
+	display: inherit !important;
+}
+.leaders-section .button.button__white.show-for-small {
+	display: none !important;
+}		</style>
+		</head>
+
+<body class="page-template page-template-page-templates page-template-21cf page-template-page-templates21cf-php page page-id-15149 twdc-body group-blog">
+<div id="page" class="hfeed site ">
+    <div class="wrapper">
+        <div class="overlay"></div>
+
+        
+        <div id="site-content" class="outer-container site-content">
+
+            
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
+        
+    <section id="section-redirect-1" class="section section__orange-white">
+        <div class="inner-container">
+                            <header class="section-header">
+                    <div class="section-copy">
+                        <h4 style="text-align: center;">On March 20, 2019, The Walt Disney Company acquired certain 21st Century Fox assets.</h4>
+<h6 style="text-align: center;">This page may no longer be available after March 19, 2020.  To continue accessing the corporate sites for The Walt Disney Company and Fox Corporation, please update your bookmarks.</h6>
+                    </div><!-- .section-copy -->
+                </header><!-- .section-header -->
+            <div class="row center-xs match-height">
+                        <div class="mh col-xs-12 col-md-6">
+                            <div class="content-block">
+                                <h4 class="investor-subheader" style="text-align: center;">To access the corporate site for The Walt Disney Company, click the logo below.</h4>
+<p><a href="https://thewaltdisneycompany.com"><img loading="lazy" class="size-full wp-image-11948 aligncenter" src="https://thewaltdisneycompany.com/app/uploads/2019/03/TWDC-Logo.png" alt="" width="450" height="300" /></a></p>
+                            </div><!-- .content-block -->
+                        </div><!-- .mh -->
+                        
+                        <div class="mh col-xs-12 col-md-6">
+                            <div class="content-block">
+                                <h4 class="investor-subheader" style="text-align: center;">To access the corporate site for Fox Corporation,<br />
+click the logo below.</h4>
+<p><a href="https://foxcorporation.com"><img loading="lazy" class="size-full wp-image-11967 aligncenter" src="https://thewaltdisneycompany.com/app/uploads/2019/03/Fox-Blue-Pop.png" alt="" width="450" height="300" /></a></p>
+                            </div><!-- .content-block -->
+                        </div><!-- .mh -->
+                        </div><!-- .row -->
+        </div><!-- .inner-container -->
+    </section><!-- .section -->
+
+    
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+
+</div><!-- #content -->
+</div><!-- .wrapper -->
+</div><!-- #page -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+        
+        <nav id="footer-navigation" class="footer-navigation" role="navigation">
+            <ul id="menu-footer" class="menu"><li id="menu-item-330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-330"><a target="_blank" rel="noopener noreferrer" href="https://disneytermsofuse.com/">Terms of Use</a></li>
+<li id="menu-item-331" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-331"><a target="_blank" rel="noopener noreferrer" href="https://disneyprivacycenter.com/">Privacy Policy</a></li>
+<li id="menu-item-332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-332"><a target="_blank" rel="noopener noreferrer" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-california-privacy-rights/">Your California Privacy Rights</a></li>
+<li id="menu-item-333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-333"><a target="_blank" rel="noopener noreferrer" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/">Children&#8217;s Online Privacy Policy</a></li>
+<li id="menu-item-334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-334"><a target="_blank" rel="noopener noreferrer" href="http://help.disney.com/">Disney.com Guest Services</a></li>
+<li id="menu-item-11231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11231"><a target="_blank" rel="noopener noreferrer" href="http://ddn.disney.com">Advertise With Us</a></li>
+<li id="menu-item-17457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17457"><a target="_blank" rel="noopener noreferrer" href="http://preferences-mgr.truste.com/?affiliateId=115&#038;type=disneycolor">Interest-Based Ads</a></li>
+<li id="menu-item-16814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16814"><a target="_blank" rel="noopener noreferrer" href="https://privacyportal-de.onetrust.com/webform/64f077b5-2f93-429f-a005-c0206ec0738e/0a4f1f0b-7130-421f-971d-ef578c0bce6d">Do Not Sell My Personal Information</a></li>
+<li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384"><a href="https://thewaltdisneycompany.com/contact-us/">Contact Us</a></li>
+</ul>        </nav>
+
+        <div id="copyright">&copy; Disney. All rights reserved</div>
+    </div>
+    <!-- .site-info -->
+</footer><!-- #colophon -->
+
+<div class="mobile-overlay">
+    <button type="button" class="button menu-toggle">
+        <i class="twdc-icon twdc-close" aria-hidden="true"></i>
+    </button>
+    <i class="twdc-icon twdc-logo" aria-hidden="true"></i>
+    <nav>
+        <ul>
+            <li id="menu-item-4188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4188"><a href="https://thewaltdisneycompany.com/about/">About</a></li>
+<li id="menu-item-4199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4199"><a href="https://thewaltdisneycompany.com/investor-relations/">Investor Relations</a></li>
+<li id="menu-item-4210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4210"><a target="_blank" rel="noopener noreferrer" href="https://jobs.disneycareers.com/">Careers</a></li>
+<li id="menu-item-17330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17330"><a href="https://thewaltdisneycompany.com/social-responsibility/">Social Responsibility</a></li>
+<li id="menu-item-4223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4223"><a href="https://thewaltdisneycompany.com/news/">News</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<!-- BEGIN DTSS DDM Tealium Web Analytics -->						
+
+<script language="JavaScript">
+	(function(a,b,c,d){
+		a="//cdn.media.disneyatoz.com/analytics/corp-batch-2/utag.js";
+		b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+		a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+	})();
+</script> 
+<!-- END DTSS DDM Tealium Web Analytics -->						
+
+			<script type='text/javascript' src='https://global.go.com/stat/dolWebAnalytics.js?ver=2.0.0' id='disney-cto-analytics-js'></script>
+<script type='text/javascript' id='disney-cto-tracking-js-extra'>
+/* <![CDATA[ */
+var disney_cto = {"params":{"region":"us","account":"matterhorn","categoryCode":"dcom","siteCode":"thewaltdisneycompany","brandSegment":"thewaltdisneycompany","buCode":"corp","program":"","breadcrumbs":"redirect","pageName":"main","postDate":"2019\/03\/19 4:34:48 PM","adPageName":"","adKeywords":"redirect","pageId":15149,"author":"","contentTag":"","articleid":"","coreid":"","isQuiz":""},"fireTrackEvent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/plugins/disney-analytics-plugin/public/js/disney-analytics.min.js?ver=2.0.0' id='disney-cto-tracking-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/themes/thewaltdisneycompany-theme/assets/dist/js/vendor/toggles-switches.js' id='toggles-switches-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/themes/thewaltdisneycompany-theme/assets/dist/js/vendor/slick.min.js' id='slick-carousel-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/themes/thewaltdisneycompany-theme/assets/dist/js/vendor/iframeResizer.min.js' id='iframe-resizer-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/themes/thewaltdisneycompany-theme/assets/dist/js/app-b0c1eb047b.min.js' id='twdc-scripts-js'></script>
+<script type='text/javascript' src='https://cdn.media.disneyatoz.com/includes/js/dtssdma.js?ver=1.0' id='dtssdma-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/wp/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/wp/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=460ef5f6' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/wp/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=460ef5f6' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/wp/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' src='https://thewaltdisneycompany.com/app/plugins/ddm-tealium/js/dmatealium.js?ver=460ef5f6' id='dmatealium-js'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"129fe16bc0","applicationID":"424007197,101161962","transactionName":"ZQZbZ0sDWEZWUU0MCVxMbEFQTUFFGFtXAQNKTUlbSQ==","queueTime":0,"applicationTime":9,"atts":"SUFYEQMZS0g=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

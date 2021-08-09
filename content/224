@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>麒麟文化 - 北京麒麟游戏</title>
+<meta name="keywords" content="麒麟文化,麒麟游戏,成吉思汗,成吉思汗怀旧版,成吉思汗3,梦幻聊斋,画皮世界,麒麟文化中心,麒麟游戏中心,画皮世界2" />
+<meta name="description" content="北京麒麟网文化股份有限公司的是在国内领先的第三代网络游戏企业,旗下自主研发运营网游产品《成吉思汗》、《成吉思汗3》、《梦幻聊斋》和《画皮世界》等。" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="author" content="Kylin Games" />
+<meta name="copyright" content="Kylin Games Inc." />
+<meta name="editor" content="yangmk" />
+<meta name="designer" content="shenhx" />
+<meta name="front-end" content="fengjj" />
+<link href="default5/style/global.css" rel="stylesheet" type="text/css" />
+<link href="default5/style/layout.css" rel="stylesheet" type="text/css" />
+<link href="default5/style/font.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]><script type="text/javascript" src="default5/script/html5.js"></script><![endif]-->
+<!--[if IE 6]><script type="text/javascript" src="default5/script/png_fix.js"></script><![endif]-->
+<link type="text/css" rel="stylesheet" href="default5/style/owl.carousel.css">
+
+<link href="default5/style/fwslider.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="default5/script/jquery.js"></script>
+<script type="text/javascript" src="default5/script/jquery-ui.js"></script>
+<script type="text/javascript" src="default5/script/fwslider.js"></script>
+<script type="text/javascript">
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    //if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+        //window.location.href="/blank.shtml";
+    //}
+</script>
+<style type="text/css">
+*{margin:0;padding:0}
+.ad{width:175px;height:241px;position:absolute;top:0;right:0;z-index:99;}
+#topMenu{background:url(http://tg.70yx.com/inc/menu/images/topMenubg.png) 0 0 repeat-x;margin:0px;padding:0px;font-size:12px;line-height:180%;color:#333;font-family:Arial,\5B8B\4F53;min-width:1002px;width:100%;}
+#topMenu ul,#topMenu ol,#topMenu dl{list-style:none;margin:0px;padding:0px;}
+#topMenu *{margin:0px;padding:0px;}
+#topMenu img{border:none}
+#topMenu a{color:#666;text-decoration:none;blr:expression(this.onFocus=this.blur());outline:none;cursor:pointer}
+#topMenu a:hover{text-decoration:underline;cursor:pointer;color:#921b88}
+#topMenu table{border-collapse:collapse}
+#topMenu table,#topMenu thead,#topMenu tbody,#topMenu tfoot,#topMenu tr,#topMenu td{margin:0px}
+#menuContent{position:relative;height:37px;width:100%;z-index:999;}
+#top_logo{background:url(http://tg.70yx.com/inc/menu/images/logo.gif) 0 0 repeat-x;height:37px;width:142px;position:absolute;left:0;top:0;z-index:10}
+#top_logo h1{ text-indent:-1987px;}
+/**mainNav**/
+#mainNav{position:absolute;top:2px;right:0;height:35px;overflow:hidden;text-align:right;z-index:10;}
+#mainNav ul{overflow:hidden;height:35px;text-align:right;display:inline-block;*display:inline;*zoom:1;width:auto!important}
+#mainNav li{float:left;background:url(http://tg.70yx.com/inc/menu/images/line.gif) 0 0 no-repeat;padding-left:1px}
+#mainNav li a{padding-right:9px;}
+
+/**gameNames**/
+#gameNames{position:absolute;left:142px;top:2px;padding-top:7px;width:96px;z-index:10;}
+#gameNames .game_title{background:url(http://tg.70yx.com/inc/menu/images/game_title.png) 0 0 no-repeat;width:110px;height:21px;line-height:21px;padding-left:13px;cursor:pointer}
+/**specific_name**/
+#specific_name{position:absolute;left:142px;top:30px;width:700px;z-index:999999;font-family:\5FAE\8F6F\96C5\9ED1;display:none}
+#specific_name .name_boxT{background:url(http://tg.70yx.com/inc/menu/images/name_box.png) 0 0 no-repeat;padding-top:10px;}
+#specific_name .name_boxB{background:url(http://tg.70yx.com/inc/menu/images/name_box.png) 0 100% no-repeat;padding:0 7px 7px;overflow:hidden;}
+
+/*弹层所有TABLE----begin*/
+#specific_name .name_boxB table{width:100%;}
+#specific_name .name_boxB table td{border:1px solid #d6d6d6;background:url(http://tg.70yx.com/inc/menu/images/topMenu_td.png) repeat-x left bottom #FFF;width:50%}
+#specific_name .name_boxB table td a{display:block;padding-left:27px; position:relative; height:27px; line-height:27px;}
+#specific_name .name_boxB table td a:hover{color:#921b88;text-decoration:none}
+#specific_name .name_boxB table th{background:url(http://tg.70yx.com/inc/menu/images/topMenu_td.png) repeat-x left bottom #FFF;height:33px;line-height:33px;padding:0 0 0 10px;color:#921b88;border:1px solid #d6d6d6; text-align:left; font-weight:normal}
+#specific_name .name_boxB table th h3{color:#921b88; font-size:12px; font-weight:normal}
+/**特殊标记**/
+#specific_name .name_boxB table td a .hot{background:url(http://tg.70yx.com/inc/menu/images/icon/hot.gif) right center no-repeat;height:11px;width:11px;position: absolute;right:10px;top:9px;_top:4px;}
+#specific_name .name_boxB table td a .new{background:url(http://tg.70yx.com/inc/menu/images/icon/new.gif) right center no-repeat;height:11px;width:11px;position: absolute;right:10px;top:9px;_top:4px;}
+/*弹层所有TABLE-----en*/
+
+/**大型游戏**/
+#specific_name .big_game{float:left;width:363px}
+/**游戏图标**/
+#specific_name .big_game a.han3{background:url(http://tg.70yx.com/inc/menu/images/icon/11.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.han2{background:url(http://tg.70yx.com/inc/menu/images/icon/2.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.han{background:url(http://tg.70yx.com/inc/menu/images/icon/1.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.sh{background:url(http://tg.70yx.com/inc/menu/images/icon/6.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.hp2{background:url(http://tg.70yx.com/inc/menu/images/icon/12.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.xs{background:url(http://tg.70yx.com/inc/menu/images/icon/4.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.lz{background:url(http://tg.70yx.com/inc/menu/images/icon/3.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.wl{background:url(http://tg.70yx.com/inc/menu/images/icon/13.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.wg{background:url(http://tg.70yx.com/inc/menu/images/icon/14.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.hp2w{background:url(http://tg.70yx.com/inc/menu/images/icon/15.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.drmj{background:url(http://tg.70yx.com/inc/menu/images/icon/16.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.yf{background:url(http://tg.70yx.com/inc/menu/images/icon/17.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.ddz{background:url(http://tg.70yx.com/inc/menu/images/icon/18.gif) 7px 50% no-repeat;}
+#specific_name .big_game a.hq{background:url(http://tg.70yx.com/inc/menu/images/icon/27.jpg) 7px 50% no-repeat;}
+#specific_name .big_game a.h2{background:url(http://tg.70yx.com/inc/menu/images/icon/h2.png) 7px 50% no-repeat;}
+
+/**更多服务**/
+#specific_name .initial_service{float:left;width:323px; position:relative;left:-2px;}
+/**服务图标**/
+#topMenu a.digit{padding-left:29px;width:70px;height:27px;line-height:27px;background:url(http://tg.70yx.com/inc/menu/images/digit.png) no-repeat}
+#topMenu a#navReg{background-position: 6px 6px}
+#topMenu a#t_group{background-position: 6px -21px}
+#topMenu a#recharge1{background-position: 6px -48px}
+#topMenu a#gamer{background-position: 6px -76px}
+#topMenu a#security{background-position: 6px -103px}
+#topMenu a#t_bbs{background-position: 6px -129px}
+#topMenu a#t_buy{background-position: 6px -156px}
+#topMenu a#home{background-position: 6px -183px}
+#topMenu a#t_hr{background-position: 6px -210px}
+/**导航图标**/
+#menuContent .initial_links{display:inline-block;*display:inline;*zoom:1;height:35px;line-height:35px;color:#4c4c4c;font-size:12px;font-family:\5B8B\4F53;text-decoration:none;padding-left:9px;}
+
+/**广告图**/
+#topMenu #t_ad{position:absolute;left:300px;top:2px;width:230px;height:35px;overflow:hidden;z-index:3;}
+#topMenu #t_big_ad{position:absolute;left:100px;top:0px;width:900px;height:183px;overflow:hidden;z-index:5;display:none;}
+#topMenu #t_big_ad_link{position:absolute;left:0;top:37px;width:900px;height:146px;overflow:hidden;z-index:5;background:url(http://tg.70yx.com/inc/menu/images/digit.png) -1000px -1000px no-repeat;}
+/**导航 滑过广告**/
+#gg-img{ cursor:pointer; position:absolute; left:300px; top:0px; line-height:37px;}
+#gg-img img{  display:block;}
+#gg-box{ position:relative; left:0px; top:-37px; display:none;}
+#gg-box img{ display:block;}
+</style>
+</head>
+
+<body>
+<script language="javascript" src="http://tg.70yx.com/inc/Scripts/top_menu.js"></script>
+<!--<div id="m_menu_0">
+<div id="m_menu">
+<div id="m_menu_1"><a href="http://www.70yx.com/"><img src="default5/images/70yx_logo.png"></a><img src="default5/images/70yx_logo_2.png" width="267" height="69"></div>
+<div id="m_menu_2">
+<a href="http://www.70yx.com/" target="_blank" class="btn_index"></a><a href="http://reg.70yx.com/login.aspx" target="_blank" class="btn_zhzx"></a><a href="http://pay.70yx.com/" target="_blank" class="btn_czzx"></a><a href="http://service.70yx.com/" target="_blank" class="btn_kfzx"></a><a href="http://bbs.70yx.com/forum.php" target="_blank" class="btn_yxlt"></a><a href="http://hr.70yx.com/" target="_blank" class="btn_hrzx"></a>
+</div>
+</div>
+</div>-->
+<!--轮播-->
+<div id="lunbo">
+
+<!--banner-->
+<div id="banner">
+	<div id="fwslider" style="height: 500px;">
+        <div class="slider_container">
+            <!-- ****************** STEP 3: ADD SLIDES ****************** -->
+            <!-- Duplicate to create more slides -->
+            
+<!--            <div class="slide slide_item1" style="background: url(http://www.70yx.com/userfiles/20150810/70lb1.jpg) no-repeat top center; width:100%; height:500px;"> 
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                         <a href="http://h2.70yx.com/index.shtml" target="_blank" class="slide_into">进入官网</a>
+                         <a href="http://patch.70yx.com/hpsj2/gfzb/hpsj2_1.2.515.0.exe" class="slide_down">下载游戏</a>
+
+						
+                        
+                    </div>
+                </div>
+            </div>
+-->            
+            
+			 <div class="slide slide_item3" style="width: 100%; height: 500px; display: block; z-index: 1; opacity: 1; background: url(http://www.70yx.com/userfiles/20150519/70lb4.jpg) 50% 0% no-repeat;">
+                <!--<img src="http://www.70yx.com/userfiles/20150513/70lb3.jpg">-->
+                <div class="slide_content">
+ <div class="slide_content_wrap">
+<a href="http://hr.70yx.com/" target="_blank" style=" width:2000px; height:500px; top:-10%; left:-180%; display:block;position:relative;"></a>
+<!-- <a href="http://hr.70yx.com/" target="_blank" class="slide_into">查看详情</a>
+-->						
+</div>
+                                   </div>
+            </div>
+            <div class="slide slide_item1" style="width: 100%; height: 500px; opacity: 1; z-index: 0; display: none; background: url(http://www.70yx.com/userfiles/20151029/han3-2000x500.jpg) 50% 0% no-repeat;"> 
+                <!-- Slide image -->
+                <!--<img src="http://www.70yx.com/userfiles/20150513/70lb1.jpg" width="2000" height="500" />-->
+                <!-- /Slide image -->
+                <!-- Texts container -->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <!-- Text title -->
+                         <a href="http://han3.70yx.com/index.shtml" target="_blank" class="slide_into">进入官网</a>
+                         <!--<a href="http://han3.70yx.com/Download.aspx" class="slide_down">下载游戏</a>-->
+
+						
+                        
+                    </div>
+                </div>
+                 <!-- /Texts container -->
+            </div>
+            <!-- /Duplicate to create more slides -->
+            <!-- ****************** /STEP 3: ADD SLIDES ****************** -->
+            <div class="slide slide_item3" style="width: 100%; height: 500px; z-index: 0; opacity: 1; display: none; background: url(http://www.70yx.com/userfiles/20150513/70lb2.jpg) 50% 0% no-repeat;">
+                <!--<img src="http://www.70yx.com/userfiles/20150513/70lb2.jpg">-->
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <a href="http://hp.70yx.com" target="_blank" class="slide_into">进入官网</a>
+                        <!--<a href="
+http://hp.70yx.com/WDDownload.aspx" class="slide_down">下载游戏</a>-->
+                    </div>
+                </div>
+            </div><!--/slide -->
+            
+			 <div class="slide slide_item3" style="width: 100%; height: 500px; z-index: 0; opacity: 1; display: none; background: url(http://www.70yx.com/userfiles/20150520/2000x500.jpg) 50% 0% no-repeat;">
+                <div class="slide_content">
+ <div class="slide_content_wrap">
+ <a href="http://han2.70yx.com/zt/zlp_qzzh/index.html" target="_blank" class="slide_into">查看详情</a>
+						
+</div>
+                                   </div>
+            </div>
+            
+            <!--/slide -->
+
+        </div>
+        
+        <div class="timers">
+        
+<!--            <div class="timer"><div class="progress" style="width: 0%; overflow: hidden;"></div></div>
+            <div class="timer"><div class="progress" style="width: 0%; overflow: hidden;"></div></div>
+            <div class="timer"><div class="progress" style="width: 0%; overflow: hidden;"></div></div>
+            <div class="timer"><div class="progress" style="width: 0%; overflow: hidden;"></div></div>-->
+            
+        </div>
+        
+        <div class="slidePrev" style="left: 0px; top: 200px;"><span class="pngFix"></span></div>
+        <div class="slideNext" style="right: 0px; top: 200px;"><span class="pngFix"></span></div>
+    </div>
+</div>
+<!--/banner-->
+
+
+
+
+</div>
+
+
+<!--轮播2-->
+<!--<div class="scroll-outer">
+	<!--轮播选项-->
+	<div id="scroll" class="owl-carousel">
+	<!--游戏5-->
+    
+<!--		<div class="item" data-load="/default5/sliderPage/h2_tc.shtml">
+			<img src="default5/images/game_h2.png" alt="">
+			<div class="shd" data-index="4"><a href="#3"></a></div>
+			<div class="txt1">
+				<h3><a href="http://h2.70yx.com/" target="_blank">画皮世界2</a>	2015全新巨作！</h3>
+			</div>
+		</div>
+-->        
+	<!--游戏1-->
+		<div class="item" data-load="/default5/sliderPage/han3_tc.shtml">
+			<div class="boder_1"><img src="default5/images/game_han3.png" alt=""></div>
+			<div class="shd" data-index="0"><a href="#1"></a></div>
+			<div class="txt1">
+				<h3><a href="http://han3.70yx.com/" target="_blank">成吉思汗3</a>	大型热血PK网游！</h3>
+			</div>
+		</div>
+	<!--游戏2-->
+        <div class="item" data-load="/default5/sliderPage/hp_tc.shtml">
+			<div class="boder_1"><img src="default5/images/game_hp.png" alt=""></div>
+			<div class="shd" data-index="1"><a href="#1"></a></div>
+			<div class="txt1">
+				<h3><a href="http://hp.70yx.com/" target="_blank">画皮世界</a>	大型集群式网游！</h3>
+			</div>
+		</div>
+	<!--游戏3-->
+		<div class="item" data-load="/default5/sliderPage/han2_tc.shtml">
+			<img src="default5/images/game_han2.png" alt="" width="350px">
+			<div class="shd" data-index="3"><a href="#2"></a></div>
+			<div class="txt1">
+				<h3><a href="http://han2.70yx.com/" target="_blank">成吉思汗2</a>	大型热血PK网游！</h3>
+			</div>
+		</div>
+	<!--游戏4-->
+        <div class="item" data-load="/default5/sliderPage/han1_tc.shtml">
+			<div class="boder_1"><img src="default5/images/game_han1.png" alt=""></div>
+			<div class="shd" data-index="2"><a href="#1"></a></div>
+			<div class="txt1">
+				<h3><a href="http://han.70yx.com/" target="_blank">成吉思汗</a>	大型热血PK网游！</h3>
+			</div>
+		</div>
+	<!--游戏6-->
+		<div class="item" data-load="/default5/sliderPage/lz_tc.shtml">
+			<img src="default5/images/game_mh.png" alt="">
+			<div class="shd" data-index="5"><a href="#4"></a></div>
+			<div class="txt1">
+				<h3><a href="http://lz.70yx.com/" target="_blank">梦幻聊斋</a>	Q版回合制网游！</h3>
+			</div>
+		</div>
+	<!--游戏7-->
+		<div class="item" data-load="/default5/sliderPage/sh_tc.shtml">
+			<img src="default5/images/game_sh.png" alt="">
+			<div class="shd" data-index="6"><a href="#5"></a></div>
+			<div class="txt1">
+				<h3><a href="http://sh.70yx.com/" target="_blank">水浒传</a>	大型热血PK网游！</h3>
+			</div>
+		</div>
+        
+<!--		<div class="item">
+			<img src="default5/images/game_2.png" alt="">
+			<div class="shd" data-index="7"><a href="#6"></a></div>
+			<div class="txt1">
+				<h3><a href="#">电子港澳通行证15日起启用</a></h3>
+			</div>
+		</div>
+-->        
+	</div>
+	<!--轮播弹层-->
+	<div class="scroll-dialog">
+        
+	</div>
+
+
+
+<div class="body_1" style="overflow:hidden">
+<div id="new_hd">
+<div class="n_hd">
+<span class="f_l"><a href="http://han3.70yx.com/zt/han3_zlp_yctg/index.html" target="_blank"><img src="http://www.70yx.com/userfiles/20150513/70lbx1.jpg" width="156" height="90"></a></span>
+<div class="n_hd_info"><a href="http://han3.70yx.com/zt/han3_zlp_yctg/index.html" target="_blank">《成吉思汗3》全新资料片"勇闯天关"火爆上线！</a><br>
+  《成吉思汗3》全新资料片"勇闯天关"震撼上线，新服【勇闯天关】同步开启。</div>
+</div>
+
+<div class="n_hd">
+<span class="f_l"><a href="http://han2.70yx.com/zt/zlp_qzzh/index.html" target="_blank"><img src="http://www.70yx.com/userfiles/20150520/156x90.jpg" width="156" height="90"></a></span>
+<div class="n_hd_info"><a href="http://han2.70yx.com/zt/zlp_qzzh/index.html" target="_blank">《成吉思汗2》全新资料片"全职战魂"火爆来袭！</a><br>高阶职业、装备转换全面开启，国战系统优化升级，更有万人新服【战魂觉醒】同步开启，一起战个痛快！</div>
+</div>
+
+<div class="n_hd">
+<span class="f_l"><a href="http://hp.70yx.com/zt/hp_zlp_hhzl/index.html" target="_blank"><img src="http://www.70yx.com/userfiles/20150513/70lbx2.jpg" width="156" height="90"></a></span>
+<div class="n_hd_info"><a href="http://hp.70yx.com/zt/hp_zlp_mpjs/index.html" target="_blank">《画皮世界》全新资料片"魔牌降世"火爆上线！</a><br>全新的"封魔卡牌"不仅可通过星级和卡组激活提供强大的力量，同时卡牌自身的品质也可通过养成提升，使卡牌本身拥有更为强大的属性。</div>
+</div>
+
+
+
+</div>
+
+<div id="join_us">
+<a href="http://hr.70yx.com/" target="_blank" class="r_more"><img src="default5/images/more1.png" width="18" height="18"></a>
+<div id="zwxq">
+<div id="zwxq_1"><h3>热招职位：</h3>
+  <a href="http://hr.70yx.com/page/150513/15051320150513040544.shtml" target="_blank">手游客户端开发工程师</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155813035835.shtml" target="_blank">Unity前端开发</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320154613044652.shtml" target="_blank">flash视觉设计</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155713045718.shtml" target="_blank">财务经理</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155213045230.shtml" target="_blank">原画</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155913035944.shtml" target="_blank">服务器开发工程师</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155113045123.shtml" target="_blank">3D人物</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320155313045326.shtml" target="_blank">游戏特效</a><br>
+  <a href="http://hr.70yx.com/page/150513/15051320152113042147.shtml" target="_blank">游戏客服</a></div>
+
+<div id="zwxq_2"><a href="http://hr.70yx.com/" target="_blank" class="btn_zp_1"></a><a href="http://hr.70yx.com/" target="_blank" class="btn_zp_2"></a></div>
+</div>
+
+</div>
+
+<div id="qlry">
+<a href="http://www.70yx.com/hr8.shtml" target="_blank" class="r_more"><img src="default5/images/more1.png" width="18" height="18"></a>
+<div id="qlry_title">2015年12月 《成吉思汗手机版》摘得金口奖"2016年度最受玩家期待手游"</div>
+<div id="qlry_1">
+  2015年4月22日 《成吉思汗3》荣获"年度最受玩家喜爱奖"<br>
+  2015年1月9日 《画皮世界》制作团队荣获"最佳游戏数值平衡设计奖"<br>
+  2014年12月17日 麒麟游戏总裁盖延玲荣获"2014年度中国游戏产业十大影响力人物"奖<br>
+  2014年10月17日 《画皮世界》荣获"网络游戏最佳原创奖"<br>
+  2014年10月17日 《成吉思汗3》荣获"玩家最喜爱的网络游戏" 奖<br>
+  2012年1月17日 《书剑恩仇录》荣获"十大新锐网络游戏奖</div>
+</div>
+
+
+<div id="gsdt">
+<a href="http://www.70yx.com/class/PtListhtml/338.shtml" target="_blank" class="r_more"><img src="default5/images/more1.png" width="18" height="18"></a>
+<div id="gsdt_title"><a href="http://www.70yx.com/news/PtShowhtml/2015-12-30/201500300300304631.shtml" target="_blank">《成吉思汗手机版》摘得金口奖"2016年度最受玩家期待手游"</a></div>
+<ul>
+<script language="javascript" type="text/javascript" src="http://www.70yx.com/News.aspx?ClassId=338&amp;Type=7&amp;PageSize=6&amp;length=24"></script><li><span class="f_r">2016-08-04</span><a href="http://www.70yx.com/news/PtShowhtml/2016-08-04/201645040445061249.shtml" target="_blank" title="北京麒麟网文化股份有限公司声明书">北京麒麟网文化股份有限公司声明书</a></li><li><span class="f_r">2016-07-30</span><a href="http://www.70yx.com/news/PtShowhtml/2016-07-30/201613300313473574.shtml" target="_blank" title="广电数字出版处祖老师参观麒麟文化CJ展台">广电数字出版处祖老师参观麒麟文化CJ展台</a></li><li><span class="f_r">2016-07-30</span><a href="http://www.70yx.com/news/PtShowhtml/2016-07-30/201608300308572019.shtml" target="_blank" title="北京市文化局产业发展处一行人亲临麒麟文化2016ChinaJoy展台指导工作">北京市文化局产业发展处一行人亲临麒麟文化2016Chin</a></li><li><span class="f_r">2016-07-25</span><a href="http://www.70yx.com/news/PtShowhtml/2016-07-25/201644251144149265.shtml" target="_blank" title="《成吉思汗手机版》入围任玩堂星评选"2016最受期待手游奖"">《成吉思汗手机版》入围任玩堂星评选"2016最受期待</a></li><li><span class="f_r">2016-04-15</span><a href="http://www.70yx.com/news/PtShowhtml/2016-04-15/201653150253371753.shtml" target="_blank" title="《成吉思汗手机版》斩获金苹果奖"2015最受期待手机游戏"">《成吉思汗手机版》斩获金苹果奖"2015最受期待手机</a></li><li><span class="f_r">2016-04-15</span><a href="http://www.70yx.com/news/PtShowhtml/2016-04-15/201640150240183213.shtml" target="_blank" title="《成吉思汗手机版》荣获金娱奖"2015十大期待手机游戏奖"">《成吉思汗手机版》荣获金娱奖"2015十大期待手机游</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="bottom_bg1">
+<div id="bottom_bg2">
+<div class="wx" onMouseOver="toolTip('<img src=default5/images/70yx_wx.jpg>')" onMouseOut="toolTip()"></div>
+<a href="http://weibo.com/qilinwang70w" target="_blank" class="wb_2"></a><a href="http://t.qq.com/bejingqilinwang" target="_blank" class="wb_1"></a><div class="gzwm">关注我们</div>
+<div class="clear"></div>
+</div>
+</div>
+
+
+
+<!--/微信二维码-->
+
+<div id="bottom_link">
+<div class="body_1">
+<ul>
+<li><br>公司<br><br>
+  <a href="http://www.70yx.com/hr1.shtml" target="_blank">麒麟简介</a><br>
+  <a href="http://www.70yx.com/hr7.shtml" target="_blank">大事记</a><br>
+  <a href="http://www.70yx.com/hr2.shtml" target="_blank">企业文化</a><br>
+  <a href="http://www.70yx.com/hr6.shtml" target="_blank">行业优势</a><br></li>
+<li><br>
+  帐号<br><br>
+  <a href="http://reg.70yx.com/login.aspx" target="_blank">注册通行证</a><br>
+  <a href="http://reg.70yx.com/SecurityGuide.aspx" target="_blank">账号安全</a><br>
+  <a href="http://reg.70yx.com/UserProfile.aspx" target="_blank">个人资料</a><br>
+  <a href="http://pay.70yx.com/GameAward.aspx" target="_blank">领取礼包</a></li>
+<li><br>
+  充值<br><br>
+  <a href="http://pay.70yx.com/GameCharge.aspx" target="_blank">我要充值</a><br>
+  <a href="http://pay.70yx.com/GameTransfer.aspx" target="_blank">我要划拨</a><br>
+  <a href="http://reg.70yx.com/MyGames/Index.aspx" target="_blank">我的游戏</a></li>
+<li><br>
+  服务<br><br>
+  <a href="http://service.70yx.com/" target="_blank">客服中心</a><br>
+  <a href="http://service.70yx.com/ProRecord/BusinessService.aspx" target="_blank">问题咨询</a><br>
+  <a href="http://service.70yx.com/CurrencyService/CurrencyService.aspx" target="_blank">服务申请</a><br>
+  <a href="http://service.70yx.com/TouSu/KF_Complaint.aspx" target="_blank">我要投诉</a><br>
+  <a href="http://service.70yx.com/TouSu/KF_Complaint.aspx" target="_blank">纠纷处理</a></li>
+<li style="border:0"><br>
+  合作<br><br>
+  <a href="http://www.70yx.com/hr9.shtml" target="_blank">合作伙伴</a><br>
+  <a href="http://www.70yx.com/hr10.shtml" target="_blank">商务合作</a><br>
+  <a href="http://www.70yx.com/hr12.shtml" target="_blank">法律声明</a><br>
+  <a href="http://www.70yx.com/hr11.shtml" target="_blank">联系我们</a></li>
+</ul>
+</div>
+</div>
+
+<!--<div id="bqxx_i"><script type="text/javascript" src="http://www.70yx.com/Copyright/copy_right_70yx.js"></script></div>-->
+<div id="bqxx_i">
+   &copy;2008 All Rights Reserved.版权所有 北京麒麟网文化股份有限公司(<a href="http://www.70yx.com" target="_blank">WWW.70YX.COM</a>)<br/>
+   <a 
+
+href="http://www.70yx.com/images/jww.jpg" target="_blank">京网文（2018）1277-126号</a> <a 
+
+href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京
+
+ICP备09103503号-1</a><br><img alt='' src='http://www.70yx.com/images/beianicon.png'><a href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020025' target='_blank'>京公网安备 11010802020025号</a><br> 北京市海淀区黑泉路宝盛广场D座9层  
+
+电话：（8610）62309700<a class="fzp" style="position:absolute;margin:-25px 0 0 302px; 
+
+width:108px; height:40px;" href="http://han.70yx.com/zt/fzp/" target="_blank"><img 
+
+src="http://www.70yx.com/userfiles/jshdwj/hdwj.jpg" style="border:none"></a><a class="fzp" 
+
+style="position:absolute;margin:-25px 0 0 416px;  width:40px; height:43px;" 
+
+href="http://182.131.21.137/ccnt-apply/admin/business/preview/business-preview!
+
+lookUrlRFID.action?main_id=35D55CD2260943D78803C0FAB290EE8C" target="_blank"><img 
+
+src="http://www.70yx.com/userfiles/jshdwj/gamerfid.png" style="border:none"></a></div>
+
+
+
+
+
+<!--<script type="text/javascript" src="default5/script/jquery-1.8.3.min.js"></script>-->
+<script type="text/javascript" src="default5/script/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	document.domain="70yx.com";
+</script>
+<script type="text/javascript">
+$(function(){
+	(function(){
+	var btn = document.getElementById('gameNames');
+	var menu = document.getElementById('specific_name');
+	btn.onmouseover = menu.onmouseover = function(){
+		menu.style.display = 'block';
+	}
+	btn.onmouseout =menu.onmouseout = function(){
+		menu.style.display = 'none';
+	}
+	})();
+	
+	
+	//游戏左右切换
+	$('#scroll').owlCarousel({
+		items: 3,
+		autoPlay: false,
+		navigation: true,
+		navigationText: ["",""],
+		scrollPerPage: true
+	});
+	
+	
+	//游戏点击弹层
+	var $dialog=$('.scroll-dialog');
+	var $dialogBox=$('.scroll-dialog>div');
+	$('.item').click(function(){
+		var url=$(this).attr('data-load');
+		openLoad(url);
+	});
+	 var timer1=0;
+	//弹层内轮播
+	function showImg(box,timer){
+				console.log(box+','+timer);
+					var $ul = box.find('ul');
+					var $li = $ul.find('li');
+					var $btn = box.find('.list-btn>span');
+					var $w = $li.outerWidth(true);
+					var num = 0;
+					
+					function animateImg(index){
+						stopAuto();
+						num=index;
+						$ul.animate({marginLeft:-$w*index}, 500);
+						$btn.removeClass('td-list-hover').eq(index).addClass('td-list-hover');
+						starAuto();
+						
+					}
+					function starAuto(){
+						timer = setTimeout(function(){
+							num+=1;
+							if(num>$li.length-1){
+								num=0;
+							}
+							animateImg(num);
+						},5000);
+					}
+					function stopAuto(){
+						clearTimeout(timer);
+					}
+					starAuto();
+					$btn.on('mouseenter',function(){
+						var a=$(this).index();
+						animateImg(a);
+						stopAuto();
+					}).on('mouseleave',function(){
+						starAuto();
+					});
+					$li.on('mouseenter',function(){
+						stopAuto();
+					}).on('mouseleave',function(){
+						starAuto();
+					});
+	}
+	
+	//根据url加载展示内容
+	function openLoad(url) {
+	  var surl=url + "?" + new Date().getTime();
+	   $(".scroll-dialog").load(surl,function(data){
+			 $(".scroll-dialog").html(data);
+				var scrollDialog=$('.show-img-box');	
+				$('.scroll-dialog-close').on('click',function(){
+					$dialog.fadeOut(300);
+					clearTimeout(timer1);
+				});
+			  $(".scroll-dialog").fadeIn(314, function() {
+					showImg(scrollDialog,timer1);
+			  });
+	   });
+	}
+});
+</script>
+<script language="javascript" src="default5/script/ToolTip.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?8c6ff77bf8ccc788e5b4762ed44e86ee";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script type="text/javascript">
+/*案例分析：让广告图随着滚动条一起动，通过更改广告图的top值=滚动条的值;
+ 步骤分解：
+ 	1、找到广告图,通过ID来找
+	2、设置top属性
+*/
+
+/*window.onload=function(){
+		var objAd=document.getElementById("ad");// 	1、找到广告图,通过ID来找
+		var scrVal=0;
+		var buffer=0;//声明一个缓冲值
+		var screenH=document.documentElement.clientHeight//获取屏幕可见高度     document.documentElement.clientWidth获取屏幕可见宽度
+		var adH=objAd.offsetHeight//获取对象的实际高度。  offsetWidth获取对象的实际宽度
+		
+	function couplet(){//该函数是为了获取垂直滚动条的值
+		if(document.documentElement.scrollTop==0){
+			scrVal=document.body.scrollTop
+		}else{
+			scrVal=document.documentElement.scrollTop;//document.documentElement.scrollTop获取垂直滚动条的值;
+		}
+		
+	}//end couplet
+	setInterval(couplet,1)	
+	function buf(){
+		if(scrVal>buffer){
+			p=Math.ceil(0.1*(scrVal-buffer));
+		}else{
+			p=Math.floor(0.1*(scrVal-buffer));	
+		}
+		buffer+=p;
+		objAd.style.top=buffer+(screenH-adH)+"px"//设置广告图的top属性=buffer;	
+	}
+	setInterval(buf,1)
+}
+*/
+
+</script>
+
+
+<div class="ad" id="ad" style="position:fixed !important; right:0 !important;top:520px !important;"><a href="http://bbs.70yx.com/forum-199-1.html" target="_blank"><img src="http://www.70yx.com/userfiles/20150813/wlaq.png"/></a></div>
+
+<div class="fixed-pic" style="position:fixed !important;right:0 !important;bottom: 0 !important;width:86px;height:86px;background:red;z-index: 999;">
+	<img src="http://www.70yx.com/userfiles/20171114/cx.jpg" width="86px" height="86px" />
+</div>
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.70yx.com"><img border="0" src="http://webscan.360.cn/status/pai/hash/7a5a5476379c28f6e74677f8c4562a1c"/></a>
+</body>
+</html>

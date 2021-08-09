@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="keywords" content="11周年庆,十一周年,荣耀8区,风雨同舟,蜀门,蜀门官网,端游,新蜀门,蜀门美女,客户端,游戏下载,补丁下载,5分钟极速下载,shumen,周年庆,经典版,灵纪元,荣耀,新服,仙禽,峨嵋,百花,青城,武尊,天净,灵狐,新手,礼包,新手礼包,新手指南,注册礼包,全新版本,玩家风采,主播,美女陪玩,公会赛,现金奖励,至尊王印,打架,PVP,PVE,公平竞技,福利,资源,优惠,活动,攻略,资料,版本,更新,职业,技能,装备,宝石,副本,Boss,玩游戏赚钱,现金奖励,瓜分万元,装备回收,攻城战,帮会联赛,网络游"/>
+    <meta name="description" content="《蜀门》端游官方网站-绿岸第一战斗网游,全新职业,全新版本玩法登场,十年经典游戏,最高在线突破50万人,传统武侠游戏,低配置高画质,唯美武侠场景,海量福利上线领取,游戏下载仅需5分钟,注册即领限量礼包！"/>
+    <meta property="og:type" content="image"/>
+	<meta property="og:image" content="/uploadfile/2016/0623/20160623052533776.jpg"/>
+    <title>《蜀门》端游官方网站_全新版本 邀您闯荡江湖！</title>
+    <link rel="stylesheet" href="/css/base.min.css" />
+    <link rel="stylesheet" href="/css/footer_black.min.css" />
+    <link rel="stylesheet" href="/css/v4/default.min.css?version=201902"/>
+    <script>
+        var url = location.search;
+        var webid;
+        if(url.indexOf('?') == -1){
+            if(navigator.userAgent.match(/Android|iPhone|iPad/i)){
+                window.location = '//m.shumenol.com';
+            }
+        }
+        if(url.indexOf('?') != -1){
+            var str = url.substr(1);
+            webid = str.split('=')[1];
+            if(webid != 'web'){
+                if(navigator.userAgent.match(/Android|iPhone|iPad/i)){
+                    window.location = '//m.shumenol.com';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<script src="/js/topMenu.min.js"></script>
+	 <div class="content">
+        <!-- <video src="http://cache.iwgame.com/p1/www/default/newyear-default-bg.mp4" muted="muted" autoplay="autoplay" loop="loop" class="flash-block" style="top: 0px; left: 0px;"></video> -->
+         <!--<video src="http://cache.iwgame.com/p1/www/video/1802/video1.mp4" autoplay="autoplay" loop="loop" class="flash-block" style="top: 0px; left: 0px;"></video>-->
+         <div class="top">
+            <div class="center">
+                <a href="/index.html" target="_blank" class="logo"><img src="/images/v3/default/left_top.png" alt=""></a>
+                <a href="/index.html" target="_blank" class="enter"></a>
+                <script src="/js/poster_js/51.js"></script>
+                <div class="slogan"></div>
+                <ul class="step clearfix">
+                    <li class="fir"><iframe width="315" height="320" frameborder="0" allowtransparency="true" scrolling="no"></iframe></li>
+                    <li class="sec">
+                        <div class="downloadGroup">
+                            <div class="download-jd"></div>
+                            <div class="download-ljy"></div>
+                            <div class="download-other"></div>
+                        </div>
+                    </li>
+                    <li class="thr">
+                        <div class="topBanner">
+                            <!-- com: 119 test: 57 -->
+                            <ul class="topBannerHide hide"><script src="//www.shumenol.com/js/poster_js/119.js"></script></ul>
+                            <div class="topBannerPic">
+                                <ul class="topBannerUl clearfix"></ul>
+                            </div>
+                            <ul class="topBannerTip clearfix"></ul>
+                            <div class="topBannerBtn">
+                                <div class="prev"></div>
+                                <div class="next"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+         <div class="main">
+            <div class="center clearfix">
+                <div class="banner">
+                    <div class="bannerTitle"></div>
+                    <!-- com: 120 test: 128 -->
+                    <div class="bannerHide hide"><script src="//www.shumenol.com/js/poster_js/120.js"></script></div>
+                    <div class="bannerPic">
+                        <ul class="bannerLong clearfix"></ul>
+                    </div>
+                    <ul class="bannerTip clearfix"></ul>
+                </div>
+            </div>
+            <div class="chacterBanner">
+                <div class="chacterTab">
+                    <ul>
+                        <li class="wz on"><p>武尊</p></li>
+                        <li class="tj"><p>天净</p></li>
+                        <li class="xq"><p>仙禽</p></li>
+                        <li class="qc"><p>青城</p></li>
+                        <li class="em"><p>峨嵋</p></li>
+                        <li class="bh"><p>百花</p></li>
+                        <li class="lh"><p>灵狐</p></li>
+                    </ul>
+                </div>
+                <div class="chacterinfo">
+                    <div class="chacterinfoMain wz"></div>
+                    <div class="chacterinfoMain tj hide"></div>
+                    <div class="chacterinfoMain xq hide"></div>
+                    <div class="chacterinfoMain qc hide"></div>
+                    <div class="chacterinfoMain em hide"></div>
+                    <div class="chacterinfoMain bh hide"></div>
+                    <div class="chacterinfoMain lh hide"></div>
+                </div>
+                <div class="chacterBtn hide">
+                    <div class="male on"></div>
+                    <div class="female"></div>
+                </div>
+                <div class="chacterPerson">
+                    <div class="chacterMain wz"></div>
+                    <div class="chacterMain tj hide"></div>
+                    <div class="chacterMain xq-m hide"></div>
+                    <div class="chacterMain qc hide"></div>
+                    <div class="chacterMain em-m hide"></div>
+                    <div class="chacterMain bh hide"></div>
+                    <div class="chacterMain lh hide"></div>
+                </div>
+            </div>
+            <div class="bottom clearfix">
+                <div class="bottom-title"></div>
+                <div class="bottom-btn-group clearfix">
+                    <div class="enter"><a href="/index.html" target="_blank"></a></div>
+                    <div class="download-btn"><a href="/html/download/" target="_blank"></a></div>
+                </div>
+                <div class="wxQr">
+                    <a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E8%9C%80%E9%97%A8&fr=search" target="_blank" class="tb"></a>
+                </div>
+            </div>
+         </div>
+    </div>
+<script src="/js/footer.min.js"></script>
+</body>
+</html>
+<script src="/js/jquery.min.js"></script>
+<script src="//www.iwgame.com/js/top_nav.js"></script>
+<script src="/js/client/down_version_json.js"></script>
+<script src="/js/ckplayer/ckplayer/ckplayer.js"></script>
+<script src="/js/v3/banner.js"></script>
+<script src="/js/v4/common.js?version=201902"></script>
+<script src="/js/v4/default.js?version=201902"></script>
+<script src="//media.shumenol.com/"></script>
+<script src="//www.shumenol.com/js/smbd.min.js"></script>

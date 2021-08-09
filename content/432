@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>wauee</title>
+  <meta name="keywords" content="&gt;&lt;meta name=" description"="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <div class="tophead">
+      <div class="logo"><a href="#">江西中至科技有限公司</a></div>
+    </div>
+  </header>
+  <article>
+    <h1 class="t_nav"><a href="#" class="n1">首页</a></h1>
+    <div class="ab_box">
+      <div class="newsview">
+        <div class="news_infos"> 高新技术产品的研发、相关技术的咨询服务；计算机软件设计、开发、销售；互联网信息服务；其他互联网服务；信息技术咨询服务；数据处理和存储服务；第二类增值电信业务中的在线数据处理与交易处理业务；国内各类广告的设计、制作、代理、发布；自营和代理各类商品和技术的进出口业务（国家限定公司经营或禁止进出口的商品和技术除外 </div>
+      </div>
+    </div>
+  </article>
+  <footer>
+    <a href="http://beian.miit.gov.cn" style="color:#000">
+      <p>ICP备案编号：赣ICP备15001426号 版权所有：江西中至科技有限公司</p>
+    </a>
+    <div style="width:300px;margin:0 auto; padding:20px 0;">
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36012202000122" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="./icon.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">赣公网安备 36012202000122号</p></a>
+    </div>
+  </footer>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font: 14px "微软雅黑", Arial, Helvetica, sans-serif;
+      color: #555;
+      background: #f7f7f7;
+    }
+
+    img {
+      border: 0;
+      display: block
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    /*默认链接颜色 */
+    a {
+      text-decoration: none;
+      color: #555
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    header {
+      width: 100%;
+      background: rgba(255, 255, 255, 1);
+    }
+
+    article {
+      overflow: hidden;
+      width: 80%;
+      margin: auto;
+    }
+
+    .tophead {
+      width: 80%;
+      margin: 0 auto 10px;
+      overflow: hidden;
+    }
+
+    /* nav */
+    .logo {
+      float: left;
+      overflow: hidden;
+      font-size: 30px;
+      margin: 10px 0 10px 10px;
+    }
+
+    .logo a {
+      color: #333
+    }
+
+    .logo img {
+      float: left
+    }
+
+    .topnav {
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    nav {
+      color: #999;
+      line-height: 32px;
+    }
+
+    nav ul {
+      text-align: right;
+    }
+
+    nav ul li {
+      display: inline;
+      font-size: 16px;
+      padding: 10px 20px;
+      height: 46px;
+      line-height: 46px;
+    }
+
+    /*导航当前页*/
+    #topnav_current {
+      color: #000;
+      border-bottom: #333 2px solid;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      width: 100%;
+      background: #ffffff;
+      color: #000000;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+    }
+
+    footer a {
+      color: #ffffff
+    }
+
+
+    /*content*/
+
+    h1.t_nav span {
+      float: right;
+      color: #999
+    }
+
+    h1.t_nav {
+      border-bottom: #bfbfbf 1px solid;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 40px;
+      width: 100%;
+      overflow: hidden
+    }
+
+    h1.t_nav a {
+      width: 100px;
+      display: block;
+      text-align: center;
+      color: #fff;
+      float: left
+    }
+
+    .n1 {
+      background: #5EA51B;
+    }
+
+    .n2 {
+      background: #8BBF5D;
+    }
+
+    .litle {
+      font-size: 20px;
+      margin: 20px 0 0 0;
+      border-bottom: #d6d5d5 1px solid;
+      padding-bottom: 5px;
+      padding: 10px 0 10px 100px;
+      color: #000;
+      background: url(../images/jdbg.png) no-repeat left center;
+    }
+
+    .litle span {
+      float: right;
+      font-size: 14px;
+      color: #666;
+      font-weight: normal
+    }
+
+    .ab_box {
+      padding: 20px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 1);
+      margin-top: 20px
+    }
+  </style>

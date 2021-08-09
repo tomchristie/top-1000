@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Answerbag -- Start a conversation. Have some fun.</title>
+	<meta name="description" content=" Ask questions on any topic, get real answers from real people. Have a question? Ask it. Know an answer? Share it." />
+
+	<meta property="og:url" content="https://www.answerbag.com/" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Answerbag -- Start a conversation. Have some fun." />
+	<meta property="fb:app_id" content="2378549640" />
+	<meta property="site_name" content="Answerbag.com" />
+
+    <link rel="canonical" href="https://www.answerbag.com/" />
+    <link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,700italic' rel='stylesheet' type='text/css'>
+
+
+<link href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+<!-- link rel="manifest" href="/images/favicons/manifest.json" -->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/css/main.css?v=23" rel="stylesheet">
+<link href="/css/style.css?v=23" rel="stylesheet">
+<link href="/css/responsive.css?v=23" rel="stylesheet" type="text/css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js?v=64"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/js/main.js?v=23"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+        <style>
+        .trending-category {
+        	margin: 8px;
+        }
+        .popular-q {
+        	margin:8px;
+        }
+        </style>
+</head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7761822059111346",
+    enable_page_level_ads: true
+  });
+</script>
+  <body>
+    <div class="container">
+
+    <div id="main">
+	<div class="header">
+    	<div class="logo"><a href="/"><img src="https://cdn1.answerbag.com/images/ab_banner170x71.png" alt="" style="width:170px;height:71px" /></a></div>
+        <div class="navigation">|  <a href="/questions" classer="select">QUESTIONS</a>  |  <a href="/categories">CATEGORIES</a>  |  <a href="/blog">BLOG</a>  |  <a href="/profile">PROFILE</a>  |
+            <a href="/login">Login</a> | <a href="/register">Register</a>
+    
+          |</div>
+        <!-- div class="search"><input name="" type="text" placeholder="Search" /></div -->
+        <div class="question_button"><a href="/ask">ASK QUESTION</a></div>
+        </div>
+<div style="clear:both;"></div>
+
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+    <form class="navbar-form navbar-left" role="search"  style="width:100%" method="POST" action="/ask">
+        <div class="form-group q-input" id="ask-question" style="text-align:center;">
+            <input type="text" autocomplete="off" name="question" class="form-control" placeholder="Ask a question"/>
+            <input type="hidden" name="first" value="true" />
+        </div>
+        <div class="q-submit">
+            <button type="submit" class="btn btn-info" style="background-color:indigo">Submit</button>
+        </div>
+        <div style="clear:both;"></div>
+    </form>
+      </div>
+      
+      		<div style="margin: 10px 0px;">
+			<h3>Happening Now</h3>
+		</div>
+		<div style="clear:both;"></div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="729770" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="165489">Posted by <a href="/profile/brandon">brandon</a> a short time ago</div>
+						<div class="mail-info-name2"><a href="/q_view/729770">I have a new girl friend and i do not want to screw anything up with her what should i be careful with?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3508304" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/f4977cb5847fa502debb34343662bc93.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1206026">Posted by <a href="/profile/alicia-lehoux">Alicia Lehoux</a> a short time ago</div>
+						<div class="mail-info-name1"><a href="/q_view/3508304">how about high heel boots</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="272215" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="148232">Posted by <a href="/profile/curious271">curious271</a> recently</div>
+						<div class="mail-info-name2"><a href="/q_view/272215">Is it possible for a gorgeous guy to get involved with an overweight woman, even if she has a beautiful face?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="1875" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="870">Posted by <a href="/profile/Hot-stuff">Hot-stuff</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/1875">How do you know when you are in a serious relationship?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="1231766" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="785973">Posted by <a href="/profile/bettybaby">bettybaby</a> recently</div>
+						<div class="mail-info-name2"><a href="/q_view/1231766">Where did you meet your significant other and how long did it take for you to start dating?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="906015" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="449585">Posted by <a href="/profile/alf-gordon-shumway">ALF - Gordon Shumway</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/906015">What song has a person&#039;s name in the title?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="1180941" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="183188">Posted by <a href="/profile/yahoo-answers-is-a-fraud">Yahoo Answers Is A Fraud</a> recently</div>
+						<div class="mail-info-name2"><a href="/q_view/1180941">In the United States, why don&#039;t women ever approach men? Why do men always have to do the hard work?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3504150" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/b90c922bbd3ed368743986af38dae8e9.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1200131">Posted by <a href="/profile/linda-joy">Linda Joy</a> recently</div>
+						<div class="mail-info-name2"><a href="/q_view/3504150">Is it really true that "everyone should be entitled to their opinion"?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="577914" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="277773">Posted by <a href="/profile/steve-de-costa">Steve de Costa</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/577914">Do you think that interracial marriage is okay?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521867" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/d5bd0fceec876c44fe7a009766f0072d.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1238159">Posted by <a href="/profile/shaky-1991">Shaky_1991</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/3521867">Was Hitler was an Atheist or Christian? </a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521884" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/4028e1c47d11789bdb70fba5557d8ce3.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1195904">Posted by <a href="/profile/bootsiebaby">Bootsiebaby</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/3521884">Does your mother know you're here?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521865" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/d5bd0fceec876c44fe7a009766f0072d.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1238159">Posted by <a href="/profile/shaky-1991">Shaky_1991</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/3521865">Is there a Historical Jesus? </a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521862" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/cb2b20dbc4bd8adf1eaad36e388ff6af.gif" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1195987">Posted by <a href="/profile/nosmo-king">Nosmo King</a> recently</div>
+						<div class="mail-info-name2"><a href="/q_view/3521862">Why do trolls continue to stir the pot in the same sexist direction they were stirring it ten years ago?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="1510771" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="308010">Posted by <a href="/profile/-you-can-leave-your-hat-on">-_You Can Leave Your Hat On....-</a> recently</div>
+						<div class="mail-info-name1"><a href="/q_view/1510771">What kind of person attracts you like a magnet...?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521876" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/4f3800f9d95405868981c6f845962408.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1250966">Posted by <a href="/profile/straightedgesociety">DancesWithWolves</a> a little while ago</div>
+						<div class="mail-info-name1"><a href="/q_view/3521876">Does anyone believe that "Big Foot " is for real or a myth?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="182468" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="132038">Posted by <a href="/profile/duckie-girl">Duckie_Girl</a> a little while ago</div>
+						<div class="mail-info-name2"><a href="/q_view/182468">My boyfriend&#039;s best friend keeps flirting w/ me should i ask him to stop (i kinda like the attention)?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="72301" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="81337">Posted by <a href="/profile/jay_bird">jay_bird</a> a little while ago</div>
+						<div class="mail-info-name2"><a href="/q_view/72301">Do guys like girls with weaves or extensions better than girls with real hair?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="3521879" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://scdn1.answerbag.com/avatars/9b9ff1b69f2e5a0b0083440a2fcf7f80.jpg" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="1200571">Posted by <a href="/profile/je-sean">Je'sean </a> a little while ago</div>
+						<div class="mail-info-name1"><a href="/q_view/3521879">Why are there phone bills but no ipad bills?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="538946" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="254253">Posted by <a href="/profile/koolxxx">koolxxx</a> a little while ago</div>
+						<div class="mail-info-name1"><a href="/q_view/538946">My girlfriend flirts with other men is this normal?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        				<div id="items-container">
+				<div class="mail-row" data-id="11319" data-num="0" data-type="4" style="background-colorer: aliceblue;">
+					<div class="mail-col-check">
+						<div class="selected-bar"></div>
+						<input class="mail-check hidden" type="checkbox" />
+					</div>
+					<div class="mail-col-avatar">
+						<div style="position:relative">
+							<!-- i class="fa fa-circle color-group7" style="position:absolute;font-size:58px;"></i>
+							<i class="fa fa-user user-group" style=""></i -->
+							<img class="avatar-image" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+						</div>
+
+					</div>
+										<div class="mail-col-info">
+						<div class="mail-info-time" uid="12502">Posted by <a href="/profile/the unstopable">the unstopable</a> a little while ago</div>
+						<div class="mail-info-name2"><a href="/q_view/11319">How can I get a girl to notice me, without being too obvious about it?</a></div>
+						<div class="mail-info-subject"></div>
+						<!-- div class="mail-info-body">aaaa</div -->
+					</div>
+					<div class="mail-col-icons">
+						<i class="fa fa-check-circle-o read-question" style="display:none;"></i>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+
+			</div>
+        	        </div>
+        <div class="col-md-4">
+		<div>
+	<h3>Trending Categories</h3>
+	<ul>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'politics-and-modern-events', 'pos0');" href="/category/politics-and-modern-events">Politics and modern events</a>
+			</div>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'dating', 'pos1');" href="/category/dating">Dating</a>
+			</div>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'urban-legends', 'pos2');" href="/category/urban-legends">Urban legends</a>
+			</div>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'approaching-someone', 'pos3');" href="/category/approaching-someone">Approaching someone</a>
+			</div>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'history', 'pos4');" href="/category/history">History</a>
+			</div>
+					<div class="trending-category">
+				<a onclick="ga('send','event', 'TrendCats', 'animals', 'pos5');" href="/category/animals">Animals &amp; Wildlife</a>
+			</div>
+			</ul>
+</div>
+
+		<div>
+<h3>This Week's Leaders</h3>
+	<div style="font-size:1.5em;margin-bottom: 5px;">
+		<img class="avatar-image-small" src="https://scdn1.answerbag.com/avatars/b90c922bbd3ed368743986af38dae8e9.png" />
+		<a href="/profile/linda-joy">Linda Joy</a>
+	</div>
+	<div style="font-size:1.5em;margin-bottom: 5px;">
+		<img class="avatar-image-small" src="https://scdn1.answerbag.com/avatars/4f3800f9d95405868981c6f845962408.jpg" />
+		<a href="/profile/straightedgesociety">DancesWithWolves</a>
+	</div>
+	<div style="font-size:1.5em;margin-bottom: 5px;">
+		<img class="avatar-image-small" src="https://scdn1.answerbag.com/avatars/d5bd0fceec876c44fe7a009766f0072d.jpg" />
+		<a href="/profile/shaky-1991">Shaky_1991</a>
+	</div>
+	<div style="font-size:1.5em;margin-bottom: 5px;">
+		<img class="avatar-image-small" src="https://cdn1.answerbag.com/images/avatars/placeholder.png" />
+		<a href="/profile/wrestlingfan4you">WrestlingFan4You</a>
+	</div>
+	<div style="font-size:1.5em;margin-bottom: 5px;">
+		<img class="avatar-image-small" src="https://scdn1.answerbag.com/avatars/3b58a1154c803f0ecd9c7a3f78fb70de.jpg" />
+		<a href="/profile/axe77">Terrible Judge</a>
+	</div>
+</div>
+		<div class="ad_holder">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Landing Page_Above Popular Questions -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7761822059111346"
+			     data-ad-slot="5621646911"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+        	<div>
+        		<h3>Popular Questions</h3>
+        		<ul class="popular-qs">
+        		        			<div class="popular-q">
+        				<a href="/q_view/3521867">Was Hitler was an Atheist or Christian? </a>
+        			</div>
+        		        			<div class="popular-q">
+        				<a href="/q_view/11319">How can I get a girl to notice me, without being too obvious about it?</a>
+        			</div>
+        		        			<div class="popular-q">
+        				<a href="/q_view/3521884">Does your mother know you're here?</a>
+        			</div>
+        		        			<div class="popular-q">
+        				<a href="/q_view/3521865">Is there a Historical Jesus? </a>
+        			</div>
+        		        			<div class="popular-q">
+        				<a href="/q_view/272215">Is it possible for a gorgeous guy to get involved with an overweight woman, even if she has a beautiful face?</a>
+        			</div>
+        		        		</ul>
+        	</div>
+		<div class="ad_holder">
+			<!-- Landing Page_Below Popular Questions -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-7761822059111346"
+			     data-ad-slot="4005312913"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+        	</div>
+      </div>
+      </div>
+    	<div styler="margin-top:40px;border-top:1px solid lightgray;padding:10px 0px;">
+	<div>
+	    <p>Copyright 2020, Wired Ivy, LLC</p>
+	</div>
+	<div>
+		<a href="http://www.answerbag.com">Answerbag</a> |
+		<a href="http://www.answerbag.com/termsofservice">Terms of Service</a> |
+		<a href="http://www.answerbag.com/privacypolicy">Privacy Policy</a>
+	</div>
+
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84261319-1', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+
+   </body>
+
+</html>

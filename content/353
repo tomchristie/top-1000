@@ -1,0 +1,1472 @@
+
+<!--Akamai-ESI:PAGE:setreftime=1628511361/--><!doctype html>
+<!--[if lt IE 7 ]> <html lang="fr" class="no-js ie6 lt-ie9 lt-ie8 lt-ie7 oldie"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="fr" class="no-js ie7 lt-ie9 lt-ie8 oldie"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="fr" class="no-js ie8 lt-ie9 oldie"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="fr" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="fr" class="no-js"> <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# linternaute: http://ogp.me/ns/fb/linternaute#">
+    <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="referrer" content="always" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>L'Internaute : actualité, loisirs, culture et découvertes...</title>
+    <script>
+    var dataLayer = [{"appConfig":{"subContainers":["GTM-5H5DBFV"],"ua":"UA-314706-3"},"site":"www.linternaute.com","application":"app/ccmcms","environnement":"production","pageType/screenType":"classique","sessionType":"nonConnectee","userStatus":"anonyme","pageCategory":"homepage","country":"GB","asnum":"5089"}];
+
+            !function(e){"use strict";var t=function(){},n=Object.getOwnPropertyNames(window.console).reduce(function(e,n){return"function"==typeof console[n]&&(e[n]=t),e},{}),o=function(){return n},r=e.console;if("object"==typeof e.JSON&&"function"==typeof e.JSON.parse&&"object"==typeof e.console&&"function"==typeof Object.keys){var i=!/Edge|Trident/.test(navigator.userAgent),s={available:["others.catch","others.show"],broadcasted:[]},a=function(){var e=9,t=242,n=220,o=/^\s+(.*)\s+$/g,r=function(e){e=e.replace(o,"$1");for(var t=[0,0,0],n=0,r=0;n<e.length;n++)r=parseInt(n/t.length),t[n%3]+=parseInt(a(e[n])/s(r));for(n=0;n<t.length;n++)t[n]>255&&(t[n]=255);return t},i=function(e){return"rgb("+e.join(",")+")"},s=function(t){return Math.pow(e,t)},a=function(n){return parseInt((n.charCodeAt()<<e)%t)};return{get:r,toRGB:i,visible:function(e){return e[0]>n||e[1]>n||e[2]>n?[0,0,0]:[255,255,255]}}}(),c=function(e,t,n,o){return r[t]?function(){var s=Array.prototype.slice.call(arguments);i&&s.unshift("background-color:"+o+";color:"+n+";border-radius:2px;"),s.unshift((i?"%c":"")+[" ",e," "].join("")),r[t].apply(console,s)}:function(){}},u=function(){try{var e=localStorage.getItem("getConsole");e=null===e?[]:JSON.parse(e)}catch(t){e=[]}return e},f=function(e){s.available.push(e);var t=document.createEvent("CustomEvent");t.initCustomEvent("getConsole.tag.available",!1,!1,e),document.dispatchEvent(t)};e.getConsole=function(e){if("string"!=typeof e)throw"getConsole need a tag name (string)";if(-1===s.available.indexOf(e)&&f(e),-1!==s.broadcasted.indexOf(e)){var t=a.get(e),n=a.toRGB(a.visible(t)),i=a.toRGB(t),u={log:c(e,"log",n,i),warn:c(e,"warn",n,i),error:c(e,"error",n,i),info:c(e,"info",n,i)};return Object.keys(r).forEach(function(e){"undefined"==typeof u[e]&&(u[e]=r[e])}),u}return o()},e.getConsole.tags=s,s.broadcasted=u(),-1!==s.broadcasted.indexOf("others.catch")&&(e.console=e.getConsole("others.show"))}else e.getConsole=o}(window),logger={_buffer:[],log:function(){"use strict";this._buffer.push(arguments)}},_logmatic=[],logmatic={log:function(){"use strict";_logmatic.push(Array.prototype.slice.call(arguments))}},function(e){"use strict";var t={domains:["hpphmfubhnbobhfs","bnb{po.betztufn","beoyt","epvcmfdmjdl","hpphmftzoejdbujpo","wjefptufq","s77ofu","ufbet","vosvmznfejb","tnbsubetfswfs","tljnsftpvsdft","{fcftupg","uumce","hpphmfbqjt","wjefpqmb{b","hpphmfbetfswjdft","fggfdujwfnfbtvsf","pvucsbjo","ubcppmb"],classes:"ufyuBe!BeCpy!qvc`411y361!qvc`411y361n!qvc`839y:1!ufyu.be!ufyuBe!Mjhbuvt!ufyu`be!ufyu`bet!ufyu.bet!ufyu.be.mjolt",event:{category:"pbt`mpbefe",action:"gbjm"}},n=e.getConsole("inObs"),o=2,r=0,i={},s=function(e,s){if("undefined"==typeof MutationObserver||"undefined"==typeof URL.prototype)return void e.call(!1,!1);var c=document.getElementsByTagName("html")[0],u={childList:!0,attributes:!0,characterData:!0,subtree:!0},f=!1,d=new MutationObserver(function(c){c.forEach(function(c){try{var u,l,p,g="",h=new Date,m=function(){};if("childList"===c.type&&c.addedNodes.length&&(u=c.addedNodes[0],"undefined"!=typeof u.src&&(g=u.nodeName,"SCRIPT"===g||"IFRAME"===g))){try{l=new URL(u.src),p=l&&l.host?l.host.split(/\./).slice(-2).shift():null}catch(v){}m=c.addedNodes[0].onerror,c.addedNodes[0].onerror=function(){try{n.warn("Missing script",u.src),!f&&p&&-1!==t.domains.indexOf(a(p))&&(new Date).getTime()-h.getTime()<1500&&(n.warn("Integrity violation on ",u.src," not observing anymore !"),d.disconnect(),f=!0,e(!0)),"function"==typeof m&&m.apply(this,Array.prototype.slice.call(arguments))}catch(o){}},"function"==typeof performance.getEntriesByType&&o>r&&"SCRIPT"===g&&-1!==t.domains.indexOf(a(p))&&("undefined"==typeof i[p]||"hpphmfubhnbobhfs"===a(p))&&(i[p]=!0,c.addedNodes[0].addEventListener("load",function(){var e=performance.getEntriesByType("resource").map(function(e){return e.name});-1===e.indexOf(u.src)&&(r++,r===o&&(d.disconnect(),s(!0)))}))}}catch(y){}})});d.observe(c,u)},a=function(e,t){return t=t||1,e.split("").map(function(e){return String.fromCharCode(e.charCodeAt()+t)}).join("")},c=function(e){if("undefined"==typeof MutationObserver)return void e.call(!1,!1);var n=document.createElement("div"),o=document.getElementsByTagName("html")[0],r={},i={childList:!0,attributes:!0,characterData:!0,subtree:!0},s=!1,c=new MutationObserver(function(t){t.forEach(function(t){"style"===t.attributeName&&(c.disconnect(),"none"===t.target.style.display&&!e.called&&(e.called=!0)&&e.call(r,!0))})}),u=new MutationObserver(function(t){t.forEach(function(t){try{if("childList"===t.type&&"HTML"===t.target.nodeName&&t.addedNodes.length&&"BODY"===t.addedNodes[0].nodeName&&!s){s=!0,t.addedNodes[0].appendChild(n);var o=getComputedStyle(n);if(r=t.addedNodes[0],u.disconnect(),/Trident/.test(navigator.userAgent))return void setTimeout(function(){!e.called&&(e.called=!0)&&e.call(r,!1)},50);setTimeout(function(){t.addedNodes[0].removeChild(n)},60),c.disconnect(),e.call(t.addedNodes[0],"none"===o.getPropertyValue("display")||/url\("about:abp/.test(o.getPropertyValue("-moz-binding")))}}catch(i){}})});n.className=a(t.classes,-1),n.style.display="block",u.observe(o,i),c.observe(n,i)},u=[];e.integrityObserver={state:{net:null,dom:null,perf:null},corrupted:!1,listen:function(e){this.corrupted?e(this.state):u.push(e)},sendToListeners:function(){u.forEach(function(e){e(this.state)}.bind(this))},reportCorruption:function(){var e=function(){"undefined"!=typeof ga?ga("send",{hitType:"event",eventCategory:a(t.event.category,-1),eventAction:a(t.event.action,-1),nonInteraction:!0}):setTimeout(e,100)};e()},reportListCorruption:function(){var e,t,n=[];for(t in this.state)this.state[t]&&n.push(t);n.length>0&&(e=new Image,e.src="https://lists.ccmbg.com/st?t="+encodeURIComponent(n.join(","))+"&d="+window.location.host.split(/\./).slice(0,-1).join("."))},reportChange:function(){this.sendToListeners(),this.reportCorruption()},init:function(){var e=function(e){return function(t){this.state[e]=t,t&&(!this.corrupted&&this.reportChange(),this.corrupted=!0)}.bind(this)};c(e.call(this,"dom")),s(e.call(this,"net"),e.call(this,"perf")),window.addEventListener("load",function(){this.reportListCorruption()}.bind(this))}},"function"==typeof Object.bind&&e.integrityObserver.init()}(window),function(e,t,n,o,r){"use strict";"undefined"==typeof e._gtm&&(e._gtm={events:{on:[],ready:[],readyAll:[],trigger:function(e){this._trigger.push(e)},_trigger:[]},versions:{}}),"undefined"==typeof e._gtm.versions&&(e._gtm.versions={}),e._gtm.versions.staticheader=1,e._gtm.state="loading";var i=dataLayer[0].appConfig,s=[r],a=i.subContainers||[],c=e.getConsole("GTM").log,u=function(e){if("undefined"!=typeof t.dispatchEvent){var n=null;"function"==typeof Event?n=new Event(e):(n=t.createEvent("Event"),n.initEvent(e,!1,!1)),t.dispatchEvent(n)}},f=function(){f.state++,f.state===s.length&&(e._gtm.state="loaded",u("gtm.loaded"))},d=function(){e._gtm.state="error",u("gtm.error"),l.clearWorkspacesInfo(this)};f.state=0,s=s.concat(a),c("Loading sub containers:",a);var l={infoKey:"ccm_gtm_workspaces",workspacesInfo:{},fetchWorkspacesInfo:function(){try{this.workspacesInfo=this.getInfoFromQuerystring()||this.getInfoFromCookie()||{}}catch(e){console.error("Cannot get workspaces info.",e)}},parseWorkspacesInfo:function(e){for(var t={},n=e.split("|"),o=0;o<n.length;o++){var r=n[o].split("::");3===r.length&&(t[r[0]]={container:r[0],workspace:r[1],auth:r[2]})}return t},removeInfoFromQuerystring:function(){if(""===e.location.search)return"";for(var t=e.location.search.substring(1).split("&"),n=[],o=0;o<t.length;o++){var r=t[o].split("=");r[0]!==this.infoKey&&n.push(t[o])}return"?"+n.join("&")},generatePreviewQuery:function(e){try{var t=this.workspacesInfo[e];return t?(c("["+t.container+'] loading custom workspace "'+t.workspace+'"'),dataLayer[0].appConfig.previewWorkspaces=dataLayer[0].appConfig.previewWorkspaces||[],dataLayer[0].appConfig.previewWorkspaces.push(t),"&gtm_auth="+t.auth+"&gtm_preview="+t.workspace+"&gtm_cookies_win=x"):""}catch(n){return console.error('Cannot generate preview query for container "'+e+'"',n),""}},getInfoFromQuerystring:function(){for(var t=(e.location.search||"").substring(1).split("&"),n=0;n<t.length;n++){var o=t[n].split("=");if(decodeURIComponent(o[0])===this.infoKey)return this.parseWorkspacesInfo(decodeURIComponent(o[1]))}return null},getInfoFromCookie:function(){try{var t=e.document.cookie.match("(^|;) ?"+this.infoKey+"=([^;]*)(;|$)");if(t)return this.parseWorkspacesInfo(decodeURIComponent(t[2]))}catch(n){}return null},clearWorkspacesInfo:function(t){try{var n=t.getAttribute("data-id");if(this.workspacesInfo[n]){c('Cannot load container "'+n+'". Clearing cookie and querystring param...');var o=e.location.hostname.split("."),r=o.length;o=r>2&&"br"===o[r-1]&&"com"===o[r-2]?o.slice(-3).join("."):o.slice(-2).join("."),document.cookie=this.infoKey+"=; domain= "+o+"; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";var i=this.removeInfoFromQuerystring();e.location.search=i}}catch(s){console.error("Cannot clear workspaces info.",s)}}};l.fetchWorkspacesInfo();for(var p=0,g=s.length;g>p;++p){e[o]=e[o]||[],e[o].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var h=l.generatePreviewQuery(s[p]),m=t.getElementsByTagName(n)[0],v=t.createElement(n),y="dataLayer"!==o?"&l="+o:"";v.async=!0,v.onload=f,v.onerror=d,v.setAttribute("data-id",s[p]),v.src="https://www.googletagmanager.com/gtm.js?id="+s[p]+y+h,m.parentNode.insertBefore(v,m)}}(window,document,"script","dataLayer","GTM-N4SNZN"),OAS_AD_BUFFER=[],OAS_AD=function(){OAS_AD_BUFFER.push(Array.prototype.slice.call(arguments))},function(e){"use strict";e._gtm=e._gtm||{},e._gtm.errors=[],window.addEventListener("error",function(t){t instanceof ErrorEvent&&e._gtm.errors.push({message:t.message,stack:t.error?t.error.stack:void 0,name:t.error?t.error.name:void 0,filename:t.filename,line:t.lineno,column:t.colno})})}(window);    
+
+    dataLayer.push({event: "app.config", appConfig :{asl : {screens: {"mobile":{"max":480,"invcode":"mobile","client":"appnexus"},"tablet":{"min":480,"max":1024,"invcode":"tablet","client":"appnexus"},"desktop":{"min":1024,"invcode":"desktop","client":"appnexus"}},positions: {"x01":{"insve":false,"mapping":[]},"x02":{"insve":false,"mapping":{"mobile":{"name":"special","sizes":[[4,4],[320,480]],"interstitial":true},"tablet":{"name":"habillage_atf","sizes":[[2,1],[1800,1000]]},"desktop":{"name":"habillage_atf","sizes":[[2,1],[1800,1000]]}}},"TopLeft":{"insve":true,"mapping":{"tablet":{"name":"special","sizes":[[4,4]],"mediaType":["banner"]},"desktop":{"name":"special","sizes":[[4,4]],"mediaType":["banner"]}}},"Right":{"insve":false,"mapping":{"desktop":{"name":"pave_atf","sizes":[[300,250],[300,600],[300,900],[300,1050],[300,251],[300,601],[300,901],[300,1051]]}}},"Position1":{"insve":false,"mapping":[]},"Position2":{"insve":false,"mapping":{"desktop":{"name":"pave_mtf","sizes":[[300,250],[300,252],[300,600],[300,602]],"lazy":true}}},"Right2":{"insve":false,"mapping":[]},"Position4":{"insve":false,"mapping":[]},"Position3":{"insve":false,"mapping":{"mobile":{"name":"pave_btf","sizes":[[300,250],[300,600],[300,254],[300,604]]}}},"Top":{"insve":false,"mapping":{"mobile":{"name":"mban_atf","sizes":[[320,50],[1600,451]]},"tablet":{"name":"mban_atf","sizes":[[1600,451]]},"desktop":{"name":"mban_atf","sizes":[[1600,451]]}}},"Infeed":{"insve":false,"mapping":{"mobile":{"name":"pave_atf","sizes":[[300,250],[300,600],[320,480],[300,251],[300,601]]}}},"x95":{"insve":false,"mapping":{"tablet":{"name":"native_atf","sizes":[[2,2]],"lazy":false},"desktop":{"name":"native_atf","sizes":[[2,2]],"lazy":false}}}},clients: {"appnexus":{"partners":true,"loaded":2}},sitepage: 'fr_linternaute_divers_home',keywords: ["controller-home","home","parallaxeinfeed","home=1"]}}});
+</script>
+<meta property="og:title" content="L'Internaute : actualité, loisirs, culture et découvertes..." />
+<meta property="og:description" content="Actualité, voyages, photos, cinéma, restaurants, cartes de voeux, tv, musique, encyclopédie... Un magazine en ligne complet, pratique, ludique et gratuit pour tous !" />
+<meta property="ccmbg:tag_id" content="1" />
+<meta http-equiv="refresh" content="360" />
+<meta name="msvalidate.01" content="251D9DB3A53ED61E6B3E5B878C59F131" />
+<meta name="description" content="Actualité, voyages, photos, cinéma, restaurants, cartes de voeux, tv, musique, encyclopédie... Un magazine en ligne complet, pratique, ludique et gratuit pour tous !" />
+<meta http-equiv="Content-Language" content="fr" />
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:15" />
+<meta property="og:title" content="L'Internaute : actualité, loisirs, culture et découvertes..." />
+<meta property="og:description" content="Actualité, voyages, photos, cinéma, restaurants, cartes de voeux, tv, musique, encyclopédie... Un magazine en ligne complet, pratique, ludique et gratuit pour tous !" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@LInternauteInfo" />
+<meta name="twitter:title" content="L'Internaute : actualité, loisirs, culture et découvertes..." />
+<meta name="twitter:description" content="Actualité, voyages, photos, cinéma, restaurants, cartes de voeux, tv, musique, encyclopédie... Un magazine en ligne complet, pratique, ludique et gratuit pour tous !" />
+<meta property="atm" content="aHR0cDovL3d3dy5saW50ZXJuYXV0ZS5jb20v" /><link rel="canonical" href="https://www.linternaute.com/" />
+<link rel="preconnect" href="https://ajax.googleapis.com" />
+<link rel="preconnect" href="https://www.googletagmanager.com" /><link href="https://akm-static.ccmbg.com/a/aHR0cHM6Ly93d3cubGludGVybmF1dGUuY29tLw==/polyfill.css" rel="stylesheet" type="text/css" media="*" />
+<link href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/css/chunks/linternaute.626b1a6b02401a5bef8c.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/css/chunks/linternaute_home.84d311b055c52fde2599.css" rel="stylesheet" type="text/css" media="all" /><link rel="alternate" href="android-app://com.linternaute.linternaute/http/www.linternaute.com/">
+<link rel="shortcut icon" href="https://astatic.ccmbg.com/www.linternaute.com/img/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://astatic.ccmbg.com/www.linternaute.com/img/icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://astatic.ccmbg.com/www.linternaute.com/img/icons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://astatic.ccmbg.com/www.linternaute.com/img/icons/favicon-16x16.png" />
+<link rel="mask-icon" color="#ff0000" href="https://astatic.ccmbg.com/www.linternaute.com/img/icons/safari-pinned-tab.svg" />
+<meta name="msapplication-config" content="https://astatic.ccmbg.com/www.linternaute.com/browserconfig.xml" />
+<link rel="manifest" href="https://astatic.ccmbg.com/www.linternaute.com/manifest.json?201806201500">
+<meta name="theme-color" content="#ffffff" />
+<link rel="search" type="application/opensearchdescription+xml" href="/litesearch.xml" />
+<link rel="preload" href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/css/chunks/linternaute.626b1a6b02401a5bef8c.css" as="style"/>
+<link rel="preload" href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/fonts/Montserrat-VF.woff2" as="font" crossorigin />
+<link rel="preload" href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/fonts/vendor/@ccmbenchmark_frontcore/icomoon-pack.woff2" as="font" crossorigin />
+<link rel="preload" href="https://astatic.ccmbg.com/www.linternaute.com/dist/app/fonts/vendor/@ccmbenchmark_frontcore/icomoon.woff2" as="font" crossorigin />
+<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script">
+            <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.linternaute.com/",
+            "inLanguage": "fr",
+            "name": "L'Internaute : actualité, loisirs, culture et découvertes...",
+            "image": "https://astatic.ccmbg.com/www.linternaute.com/img/img-promotion.jpg",
+                        "publisher": {
+                "@type": "Organization",
+                "name": "Linternaute.com"
+            },
+                        "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.linternaute.com/recherche/?f_libelle={query}",
+                "query-input": "required name=query"
+            }
+        }
+
+        </script>
+            <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body class="linternaute content linternaute-2015 channel-index app--rwd">
+    <div id="ctn_x02"><div id="ba_x02" class="ba x02"><script>OAS_AD('x02');</script></div></div>    <div class="ccmcss_offcanvas_1">
+        <div class="ccmcss_offcanvas_2">
+            <img src="https://akm-static.ccmbg.com/a/aHR0cHM6Ly93d3cubGludGVybmF1dGUuY29tLw==/alpha.png" style="position: absolute;">
+            
+        
+<!--Akamai-ESI:FRAGMENT:/api/layout/header?CCMDBG=0&tag_name=index&format=html&disableSSB=1&disableCss=1&disableJs=1&encoding=UTF-8&startHeaderService=0&renderMeta=0&variance=0&esi=1/-->
+
+<!--Akamai-ESI:FRAGMENT:setgentime=1628510699/-->
+    
+    <!-- headerdebbloc -->
+
+<header class="app_header app_header header_index jHeader" role="banner"
+    data-cookie-prefix="">
+
+    <div class="app_header__top">
+        <div class="layout">
+                        <a href="https://www.linternaute.com/" class="app_logo" id="jRwdLogo">
+                <img width="185" height="31" src="https://img-4.linternaute.com/34zEXDlw3VM5_Dw456cbI_hAERE=/185x/smart/a4412e4b00a844358b603720df29dbdb/ccmcms-linternaute/10512556.png"
+                    alt="Linternaute.com">
+            </a>
+
+            
+            <nav id="jMainNav" class="app_header__nav" role="navigation">
+                <ul>
+                    <li><a href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/2484527-coronavirus-comprendre-le-virus-qui-effraie-la-planete/">Coronavirus</a></li><li><a href="https://www.linternaute.com/actualite/">Actualités</a></li><li><a href="https://www.linternaute.com/culture/">Culture</a></li><li><a href="https://www.linternaute.com/argent/">Finance</a></li><li><a href="https://www.linternaute.com/sport/">Sport</a></li><li><a href="https://www.linternaute.com/auto/">Auto</a></li><li><a href="https://www.linternaute.com/voyage/">Voyage</a></li><li><a href="https://www.linternaute.com/hightech/">High-tech</a></li><li><a href="https://www.linternaute.com/bricolage/">Bricolage</a></li><li><a href="https://www.linternaute.com/sortir/">Week-end</a></li><li><a href="https://www.linternaute.com/restaurant/">Restaurant</a></li><li><a href="https://www.linternaute.com/photo_numerique/">Photo</a></li><li><a href="https://www.linternaute.com/lifestyle/">Lifestyle</a></li><li><a href="https://www.linternaute.com/guide-d-achat/">Guides d'achat</a></li><li><a href="https://www.linternaute.com/bons-plans/">Bons plans</a></li><li><a href="https://www.linternaute.com/cartes/">Carte de voeux</a></li><li><a href="https://www.linternaute.fr/dictionnaire/fr/">Dictionnaire</a></li><li><a href="http://jeux.linternaute.com/">Jeux</a></li><li><a href="https://copainsdavant.linternaute.com/">Copains d'avant</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/">Salon Littéraire</a></li><li><a href="https://avis-deces.linternaute.com/">Avis de décès</a></li>                    <li class="app_header__plus">
+                        <div class="app_header__subnav jDropBox jMenuBox">
+                            <ul>
+                                <li><a href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/2484527-coronavirus-comprendre-le-virus-qui-effraie-la-planete/">Coronavirus</a></li><li><a href="https://www.linternaute.com/actualite/">Actualités</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><ul id="header-submenu-actualite"><li><a href="https://www.linternaute.com/actualite/depeches/">Info</a></li><li><a href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/2484527-coronavirus-comprendre-le-virus-qui-effraie-la-planete/">Coronavirus</a></li><li><a href="https://www.linternaute.com/actualite/politique/">Politique</a></li><li><a href="https://www.linternaute.com/actualite/societe/">Société</a></li><li><a href="https://www.linternaute.com/actualite/education/">Education</a></li><li><a href="https://www.linternaute.com/actualite/monde/">Monde</a></li><li><a href="https://www.linternaute.com/actualite/grand-projet/">Grands projets</a></li><li><a href="http://emploi-formation.linternaute.com/">Emploi</a></li><li><a href="http://www.linternaute.com/ville/">Villes</a></li><li><a href="https://www.linternaute.com/actualite/list">+</a></li></ul></ul></div></li><li><a href="https://www.linternaute.com/culture/">Culture</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/television/">Programme TV</a></li><li><a href="https://www.linternaute.com/television/programme-tnt/">TNT</a></li><li><a href="https://www.linternaute.com/cinema/">Cinéma</a></li><li><a href="https://www.linternaute.com/cinema/sortie-semaine/">Sorties cinéma</a></li><li><a href="https://www.linternaute.com/musique/">Musique</a></li><li><a href="http://www.linternaute.com/cinema/bande-annonce/">Bandes-annonces</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/">Salon littéraire</a></li><li><a href="https://www.linternaute.com/culture/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/argent/">Finance</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><ul id="header-submenu-argent"><li><a href="https://www.linternaute.fr/argent/guide-de-vos-finances/">Guide de vos finances</a></li><li><a href="https://www.linternaute.com/argent/epargne/">Epargne</a></li><li><a href="https://www.linternaute.com/argent/impots/">Impôts</a></li><li><a href="https://www.linternaute.com/argent/immobilier/">Immobilier</a></li></ul></ul></div></li><li><a href="https://www.linternaute.com/sport/">Sport</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><ul id="header-submenu-sport"><li><a href="https://www.linternaute.com/sport/foot/1317291-ligue-1-classement-definitif-lille-double-le-psg/">Ligue 1</a></li><li><a href="https://www.linternaute.com/sport/foot/">Football</a></li><li><a href="https://www.linternaute.com/sport/tennis/">Tennis</a></li><li><a href="https://www.linternaute.com/sport/cyclisme/">Cyclisme</a></li><li><a href="https://www.linternaute.com/sport/pratique/">Pratique du sport</a></li><li><a href="https://sport.linternaute.com/forum/">Forum</a></li></ul></ul></div></li><li><a href="https://www.linternaute.com/auto/">Auto</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/auto/test-auto/">Essais</a></li><li><a href="http://www.linternaute.com/auto/reserverunessai">Réserver un essai</a></li><li><a href="https://www.linternaute.com/auto/berline/2534260-citadines-notre-guide-complet/">Citadines</a></li><li><a href="https://www.linternaute.com/auto/berlines/2537876-berlines-compacte-sportive-electrique-notre-guide-complet/">Berlines</a></li><li><a href="https://www.linternaute.com/auto/suv/2364299-suv-le-guide-complet-pour-faire-le-bon-choix/">SUV</a></li><li><a href="https://www.linternaute.com/auto/magazine/formule-e/">Formule E</a></li><li><a href="https://www.linternaute.fr/auto/guide-pratique-auto/">Pratique</a></li><li><a href="https://auto.linternaute.com/forum/">Forum auto</a></li><li><a href="https://www.linternaute.com/auto/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/voyage/">Voyage</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.fr/voyage/guides-de-voyage/">Destinations</a></li><li><a href="https://www.linternaute.com/voyage/magazine/2364287-city-break-les-meilleures-idees-de-destinations-pour-un-week-end/">City break</a></li><li><a href="https://www.linternaute.com/voyage/magazine/2413613-voyage-nature-en-route-vers-des-destinations-grand-air/">Voyage nature</a></li><li><a href="https://www.linternaute.com/voyage/magazine/1853615-voyage-de-noces-les-meilleures-destinations-pour-une-lune-de-miel/">Voyage de noces</a></li><li><a href="https://www.linternaute.com/voyage/pratique/">Pratique</a></li><li><a href="https://voyage.linternaute.com/forum/">Forum</a></li><li><a href="https://www.linternaute.com/voyage/climat">Climat</a></li><li><a href="https://www.linternaute.com/voyage/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/hightech/">High-tech</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/hightech/internet/">Internet</a></li><li><a href="https://www.linternaute.com/hightech/mobile/">Smartphones</a></li><li><a href="https://www.linternaute.com/hightech/micro/">Ordinateurs</a></li><li><a href="https://www.linternaute.com/hightech/jeux-video/">Jeux vidéo</a></li><li><a href="https://www.linternaute.fr/hightech/guide-high-tech/">Pratique</a></li><li><a href="https://www.linternaute.com/hightech/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/bricolage/">Bricolage</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://bricolage.linternaute.com/forum/">Forum</a></li><li><a href="https://www.linternaute.com/bricolage/amenagement-interieur/">Aménagement intérieur</a></li><li><a href="https://www.linternaute.com/bricolage/amenagement-exterieur/">Extérieur</a></li><li><a href="https://www.linternaute.com/bricolage/cuisine/">Cuisine</a></li><li><a href="https://www.linternaute.com/bricolage/salle-de-bain/">Salle de bains</a></li><li><a href="https://www.linternaute.com/bricolage/jardinage/">Jardinage</a></li><li><a href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/">Pratique</a></li><li><a href="https://www.linternaute.com/bricolage/amenagement-interieur/2450703-des-solutions-pour-tout-ranger-dans-la-maison/">Rangement</a></li><li><a href="https://www.linternaute.com/bricolage/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/sortir/">Week-end</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.fr/sortir/guides-de-france/2497979-guides-de-voyage-en-france-les-meilleures-destinations-a-visiter/">Guides de France</a></li><li><a href="https://www.linternaute.fr/sortir/guide-des-loisirs/">Guide des loisirs</a></li><li><a href="https://www.linternaute.com/sortir/escapade/">Escapades</a></li><li><a href="https://www.linternaute.com/sortir/patrimoine/">Patrimoine</a></li><li><a href="https://www.linternaute.com/sortir/exposition/">Expositions</a></li><li><a href="https://www.linternaute.fr/sortir/guide-des-loisirs/musees-monuments/">Musées</a></li><li><a href="https://www.linternaute.com/sortir/nature/2519349-week-end-nature-les-meilleures-idees-de-destination-en-france/">Week-end nature</a></li><li><a href="https://www.linternaute.com/sortir/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/restaurant/">Restaurant</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/restaurant/">Guide des restaurants</a></li><li><a href="https://www.linternaute.com/restaurant/choice">Proposer un restaurant</a></li><li><a href="https://www.linternaute.com/restaurant/restaurants">Accès restaurateur</a></li><li><a href="https://www.linternaute.com/sortir/sorties/resto/">Gastronomie</a></li><li><a href="https://www.linternaute.com/sortir/sorties/resto/grande-cuisine/1259448-guide-michelin-2021-la-liste-des-restaurants-etoiles-en-france/">Guide Michelin</a></li><li><a href="https://www.linternaute.com/sortir/sorties/resto/1102230-restaurant-insolite-a-paris-et-en-province-les-30-meilleurs/">Restaurants insolites</a></li><li><a href="https://www.linternaute.com/restaurant/guide/">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/photo_numerique/">Photo</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/photo_numerique/retouche-photo/1268255-retouche-photo-meilleur-logiciel-de-retouche-site-en-ligne-gratuit-photoshop/">Retouche photo</a></li><li><a href="https://www.linternaute.com/photo_numerique/prise-de-vue/">Prise de vue</a></li><li><a href="https://www.linternaute.com/photo_numerique/materiel/">Matériel</a></li><li><a href="https://www.linternaute.com/photo_numerique/photographe/">Photographes</a></li><li><a href="https://www.linternaute.com/photo_numerique/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/lifestyle/">Lifestyle</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/lifestyle/mode/">Mode</a></li><li><a href="https://www.linternaute.com/lifestyle/mode/montre/">Montres</a></li><li><a href="https://www.linternaute.com/lifestyle/art-de-vivre/vin/">Vin</a></li><li><a href="https://www.linternaute.com/lifestyle/loisirs/aviation/">Aviation</a></li><li><a href="https://www.linternaute.com/lifestyle/beaute-et-soins/">Bien-être</a></li><li><a href="https://www.linternaute.com/lifestyle/seduction/">Séduction</a></li><li><a href="https://www.linternaute.com/science/">Sciences</a></li><li><a href="https://www.linternaute.com/lifestyle/list">+</a></li></ul></div></li><li><a href="https://www.linternaute.com/guide-d-achat/">Guides d'achat</a></li><li><a href="https://www.linternaute.com/bons-plans/">Bons plans</a></li><li><a href="https://www.linternaute.com/cartes/">Carte de voeux</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://www.linternaute.com/cartes-de-voeux/category/1-noel/">Carte de Noël</a></li><li><a href="https://www.linternaute.com/cartes-de-voeux/category/2-bonne-annee/">Carte Bonne année</a></li><li><a href="https://www.linternaute.com/cartes-de-voeux/category/5-saint-valentin/">Carte Saint-Valentin</a></li><li><a href="https://www.linternaute.com/cartes-de-voeux/category/9-paques/">Carte Pâques</a></li><li><a href="https://www.linternaute.com/cartes-de-voeux/category/8-anniversaire/">Carte d'anniversaire</a></li></ul></div></li><li><a href="https://www.linternaute.fr/dictionnaire/fr/">Dictionnaire</a></li><li><a href="http://jeux.linternaute.com/">Jeux</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="http://tests.linternaute.com/">Tests QI</a></li><li><a href="http://jeux.linternaute.com/jouer-candy-crush.html">Candy Crush</a></li><li><a href="http://jeux.linternaute.com/jouer-pyramid-solitaire-ancient-egypt.html">Solitaire</a></li></ul></div></li><li><a href="https://copainsdavant.linternaute.com/">Copains d'avant</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="https://copainsdavant.linternaute.com/">S'inscrire</a></li><li><a href="https://copainsdavant.linternaute.com/p/login">Se connecter</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/lycees-56/all">Lycées</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/colleges-54/all">Collèges</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/ecoles-primaires-et-maternelles-97/all">Primaires</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/universites-73/all">Universités</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/entreprises-2/all">Entreprises</a></li><li><a href="https://copainsdavant.linternaute.com/glossary/etablissements/services-militaires-4/all">Service militaire</a></li><li><a href="https://copainsdavant.linternaute.com/recherche-amis">Avis de recherche</a></li></ul></div></li><li><a href="http://salon-litteraire.linternaute.com/fr/">Salon Littéraire</a><button class="app_header__subnav--collapse jNavSubCollapse app_nav__sub--collapse--plus">
+
+                </button>
+                <div class="app_header__subnav--resp">
+                    <ul><li><a href="http://salon-litteraire.linternaute.com/fr/">SALON LITTÉRAIRE</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/roman/wall">ROMAN</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/essai/wall">ESSAI</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/arts/wall">ARTS</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/bd-manga/wall">BD MANGA</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/interviews/wall">INTERVIEWS</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/resume-d-oeuvre/content/1830787-resumes-d-oeuvres">RÉSUMÉS D'OEUVRES</a></li><li><a href="http://salon-litteraire.linternaute.com/fr/biographie-auteur/content/1805886-biographies-d-auteurs">ÉCRIVAINS</a></li><li><a href="https://culture.linternaute.com/forum/livres-101">FORUM</a></li></ul></div></li><li><a href="https://avis-deces.linternaute.com/">Avis de décès</a></li>                            </ul>
+                        </div>
+                        <a class="app_header__hover_trigger" href="#">
+                            Plus
+                            <svg viewBox="0 0 284.929 284.929" class="svg_icon svg_icon--arrowd">
+                                <g fill="#fff" class="svg_icon_g">
+                                    <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441 L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082   c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647 c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <span data-target="jMenuBox" class="jDropBtn jDropMenuBtn app_header__click_trigger">
+                            <span>Menu</span>
+                            <svg viewBox="0 0 440.307 440.307" class="svg_icon svg_icon--cross">
+                                <g fill="#fff" class="svg_icon_g">
+                                    <polygon points="440.307,58.583 381.723,0 220.153,161.57 58.584,0 0,58.583 161.569,220.153 0,381.723 58.584,440.307    220.153,278.736 381.723,440.307 440.307,381.723 278.736,220.153"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="app_header__right">
+                <ul>
+                    <li>
+                                                <a href="javascript:void(0)" data-target="jSearchBox" class="jDropBtn">
+                            <svg viewBox="-281 404.9 32 32" class="svg_icon svg_icon--search"><path class="svg_icon_g" d="M-280 432.1c-1.2 1.1-1.3 2.9-.2 4s2.9 1 4-.2l6.4-7.6c.7-.8 1-1.6 1-2.3 2.1 1.8 4.8 2.9 7.8 2.9 6.6 0 12-5.4 12-12s-5.4-12-12-12-12 5.4-12 12c0 3 1.1 5.7 2.9 7.8-.7 0-1.5.3-2.3 1l-7.6 6.4zm11-15.2c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z"/></svg>
+                        </a>
+                                            </li>
+                    <li>
+                        <a href="https://twitter.com/LInternauteInfo">
+                            <svg viewBox="-43.1 212.4 515.4 416.9" class="svg_icon svg_icon--tw"><path class="svg_icon_g" d="M471 262.2c-18.8 8.4-39.1 14-60.3 16.5 21.7-13 38.3-33.6 46.2-58.1-20.3 12-42.8 20.8-66.7 25.5-19.2-20.4-46.4-33.2-76.7-33.2-58 0-105 47-105 105 0 8.2.9 16.3 2.7 23.9-87.3-4.4-164.7-46.2-216.5-109.7-9.1 15.5-14.2 33.5-14.2 52.8 0 36.4 18.6 68.6 46.7 87.4-17.2-.5-33.4-5.3-47.6-13.1v1.3c0 50.9 36.2 93.3 84.2 103-8.8 2.4-18.1 3.7-27.7 3.7-6.8 0-13.3-.7-19.8-2 13.4 41.8 52.2 72.1 98.1 72.9C78.6 566.3 33.3 583-15.9 583c-8.5 0-16.8-.5-25.1-1.4 46.5 29.9 101.7 47.3 161 47.3 193.2 0 298.8-160 298.8-298.8l-.4-13.6c20.7-14.8 38.6-33.3 52.6-54.3z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/linternaute">
+                            <svg viewBox="95.5 164.9 238.9 512" class="svg_icon svg_icon--fb"><path d="M147.2 264v70.5H95.5v86.2h51.6v256.1h106.1V420.7h71.2s6.7-41.3 9.9-86.5h-80.7v-58.9c0-8.8 11.6-20.7 23-20.7h57.8v-89.7h-78.6c-111.2 0-108.6 86.3-108.6 99.1z" class="svg_icon_g" /></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="jHeaderDisconnected jDropBtn" data-target="jLoginBox" href="javascript:void(0)">
+                            <svg viewBox="-73 204.9 448 432" class="svg_icon svg_icon--user"><path class="svg_icon_g svg_icon_path" d="M206.4 508.3c-11.1-1.8-11.3-32.2-11.3-32.2s32.5-32.2 39.6-75.4c19 0 30.8-46 11.8-62.1.8-17 24.5-133.7-95.4-133.7S54.8 321.5 55.6 338.6c-19 16.2-7.3 62.1 11.8 62.1 7.1 43.2 39.6 75.4 39.6 75.4s-.3 30.4-11.3 32.2C60 513.9-73 572.6-73 636.9h448c0-64.3-133-123-168.6-128.6z"/></svg>
+                        </a>
+                        <a class="jHeaderConnected jDropBtn" data-target="jLoginBox" href="javascript:void(0)" style="display:none">
+                            <span data-baseurl="https://image-uniservice.linternaute.com/image" data-staticurl="https://astatic.ccmbg.com/www.linternaute.com" data-size="75" class="jHeaderAvatar app_header__user_pic"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="app_header__search jDropBox jSearchBox">
+                <form role="search" method="get" action="https://www.linternaute.com/recherche/"
+                >
+                    <fieldset>
+                        <legend>Moteur de recherche</legend>
+                        <input type="search"
+                            name="f_libelle"
+                            placeholder="Tapez votre recherche"
+                            aria-label="Rechercher">
+                        <button type="submit">Rechercher</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="app_header__login jDropBox jLoginBox">
+
+                <ul class="app_header__login_connect jMenuDisconnected" style="display:none">
+                    <li><a rel="nofollow" href="https://www.linternaute.com/account/signup">S'inscrire</a></li>
+                    <li><a rel="nofollow" href="https://www.linternaute.com/account/login" data-link="login">Connexion</a></li>
+                </ul>
+
+                <ul class="app_header__login_edit jMenuConnected" style="display:none">
+                    <!--blockLinkMsgCCM-->
+                    <li><a href="https://www.linternaute.com/account/edit">Editer mes informations</a></li>
+                    
+                    <!-- AdminMenu -->
+
+                    <li>
+                        <a href="//www.linternaute.com/account/?logout">Se déconnecter</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="app_header__bottom">
+        <div class="layout">
+            <nav class="app_header__bottom__left jSecondLevelMenu">
+                <ul><li class="app_header__bottom__left__navfirst">en ce moment</li><!-- variance: 0 --><li><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2538272-pass-sanitaire-que-va-changer-son-extension-toutes-les-infos/">Pass sanitaire</a></li><li><a href="https://www.linternaute.com/sortir/guide-des-loisirs/1400252-sncf-quelles-conditions-pour-monter-a-bord-d-un-train-depuis-le-9-aout/">SNCF</a></li><li><a href="https://www.linternaute.com/argent/guide-de-vos-finances/1392873-allocation-de-rentree-scolaire-2021-les-premiers-versements-ont-debute-les-infos/">Allocation de rentrée scolaire</a></li><li><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2519119-restaurant-et-covid-le-pass-sanitaire-sera-exige-des-le-9-aout/">Restaurant et Covid </a></li><li><a href="https://www.linternaute.com/cinema/pratique/1463099-amazon-prime-ligue-1-toutes-les-etapes-pour-s-abonner-prix-test-gratuit-matchs/">Amazon Prime Ligue 1</a></li><li><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">Rentrée scolaire 2021 </a></li><li><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2462477-direct-coronavirus-en-france-la-vaccination-se-poursuit-les-infos-sur-la-quatrieme-vaguedirect-coronavirus-en-france-un-nouveau-cap-pour-la-vaccination-les-effets-de-la-quatrieme-vague/">Coronavirus en France</a></li><li><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">Rentrée scolaire</a></li><li><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2558764-vaccination-covid-obligatoire-faudra-t-il-se-faire-vacciner-tous-les-six-mois/">Vaccination obligatoire</a></li><li><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2492203-tousanticovid-carnet-verif-comment-fonctionne-l-application-avec-le-pass-sanitaire/">TousAntiCovid</a></li></ul>            </nav>
+            <!-- login  / search part -->
+            <div class="app_header__bottom__right">
+                                    <form role="search" method="get" action="https://www.linternaute.com/recherche/"
+                    >
+                        <fieldset>
+                            <legend>Moteur de recherche</legend>
+                            <button type="submit">
+                                <svg width="13" height="13" viewBox="-281 404.9 32 32" class="svg_icon"><path fill="#000" class="svg_icon_g" d="M-280 432.1c-1.2 1.1-1.3 2.9-.2 4s2.9 1 4-.2l6.4-7.6c.7-.8 1-1.6 1-2.3 2.1 1.8 4.8 2.9 7.8 2.9 6.6 0 12-5.4 12-12s-5.4-12-12-12-12 5.4-12 12c0 3 1.1 5.7 2.9 7.8-.7 0-1.5.3-2.3 1l-7.6 6.4zm11-15.2c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z"/></svg>
+                            </button>
+                            <input type="search" name="f_libelle" placeholder="Tapez votre recherche" aria-label="Rechercher">
+                        </fieldset>
+                    </form>
+                            </div>
+        </div>
+    </div>
+</header>
+
+<!-- headerfinbloc -->
+    
+
+            <div class="layout layout--offcanvas  col_1 gutter">
+
+                                                                                        <div class="ccmcss_oas_top">
+                                <div id="ctn_top"><div id="ba_top" class="ba top"><script>OAS_AD('Top');</script></div></div>                            </div>
+                                                            
+                                <div class="layout_ct">
+                        <!-- MODULE MEA + PUB -->
+    <div class="app_mod_mea_prect app_home_section app_home_section--nopadding">
+        <div class="app_mod_mea_ct">
+            <!-- MODULE MEA -->
+            <section class="app_mod_mea">
+                <div id="mosaic_slider" class="">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sport/competitions/1323571-jo-2021-la-ceremonie-de-cloture-des-jo-de-tokyo/">
+                <span style="background-image:url('https://img-4.linternaute.com/KpeHF6aQu-gAJrynv73jhh2KbwA=/1000x/smart/c9eef758a2d5452bbb0495e79fb2bf07/ccmcms-linternaute/26917095.jpg');" class="app_mod_fig__img"></span>
+            </a>
+            <figcaption>
+                <div><span><a href="https://www.linternaute.com/sport/competitions/1323571-jo-2021-la-ceremonie-de-cloture-des-jo-de-tokyo/">JO 2021</a></span></div>
+                <h1><a href="https://www.linternaute.com/sport/competitions/1323571-jo-2021-la-ceremonie-de-cloture-des-jo-de-tokyo/">JO 2021 : c'est fini ! Résultats et bilan</a></h1>
+            </figcaption>
+        </figure>
+        <div class="grid_row grid_row--fixed">
+        <div class="grid_col">
+            <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/argent/guide-de-vos-finances/1392873-allocation-de-rentree-scolaire-2021-les-premiers-versements-ont-debute-les-infos/">
+                <span style="background-image:url('https://img-4.linternaute.com/hSqaYjdeYJQMW3r5UuzJNTvFt9Q=/600x/smart/92f46e25273a48e7978a5a208c839a00/ccmcms-linternaute/26835947.jpg');" class="app_mod_fig__img"></span>
+            </a>
+            <figcaption>
+                <div><span><a href="https://www.linternaute.com/argent/">Argent</a></span></div>
+                <h2><a href="https://www.linternaute.com/argent/guide-de-vos-finances/1392873-allocation-de-rentree-scolaire-2021-les-premiers-versements-ont-debute-les-infos/">Allocation de rentrée scolaire 2021 : date de versement, montant... Toutes les infos</a></h2>
+            </figcaption>
+        </figure>
+        </div>
+        
+        <div class="grid_col">
+            <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/guide-des-loisirs/2538272-pass-sanitaire-que-va-changer-son-extension-toutes-les-infos/">
+                <span style="background-image:url('https://img-4.linternaute.com/elku_CFYnzfS-uFCjH2QfzOB_ss=/600x/smart/a12680c5822c4a0d8e5611aa98a635a8/ccmcms-linternaute/26790493.jpg');" class="app_mod_fig__img"></span>
+            </a>
+            <figcaption>
+                <div><span><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2538272-pass-sanitaire-que-va-changer-son-extension-toutes-les-infos/">Pass sanitaire</a></span></div>
+                <h2><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2538272-pass-sanitaire-que-va-changer-son-extension-toutes-les-infos/">Pass sanitaire : au restaurant, dans le train, au cinéma, au centre commercial… Dates et infos</a></h2>
+            </figcaption>
+        </figure>
+        </div>
+        </div></div>            </section>
+            <!-- /MODULE MEA -->
+        </div>
+    </div>
+    <!-- /MODULE MEA + PUB -->
+    <div id="ctn_infeed"><div id="ba_infeed" class="ba infeed"><script>OAS_AD('Infeed');</script></div></div><div class="app_home_section app_home_section--noborder">
+
+    
+    <h2 class="app_mod_title  app_mod_title--link app_mod_title--news">
+        <a href="">
+            L'Actu            <span class="app_mod_header__icon">
+                <svg class="svg_icon svg_icon--direct" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="24" height="24" viewBox="0 0 612.001 612.001" style="enable-background:new 0 0 612.001 612.001;" xml:space="preserve">
+                    <g>
+                        <path d="M201.582,398.487c0-57.43,74.473-66.617,74.473-98.255c0-13.901-10.759-22.212-24.221-22.212   c-18.613,0-28.715,18.851-28.715,18.851l-21.536-14.357c0,0,14.576-31.857,52.717-31.857c28.039,0,51.822,17.042,51.822,47.109   c0,51.147-71.331,59.896-72.007,89.962h74.473v24.897H202.934C202.258,407.475,201.582,402.981,201.582,398.487z M324.809,353.845   l68.646-100.503h34.322v94.219h20.642v24.021h-20.642v41.045h-28.495v-41.045h-74.473V353.845L324.809,353.845z M399.281,347.561   v-49.337c0-7.854,1.132-16.604,1.132-16.604h-0.457c0,0-3.58,8.512-7.854,14.576l-36.789,50.927v0.438H399.281L399.281,347.561z    M539.777,339.118l-5.543,19.855C502.727,471.835,387.76,543.053,274.033,514.826C164.799,487.716,96.911,381.87,113.235,274.033   l32.914,9.188c7.629,2.13,14.704-4.798,12.733-12.471L123.088,131.37c-1.97-7.672-11.506-10.334-17.166-4.792L3.097,227.26   c-5.66,5.542-3.198,15.134,4.433,17.264l35.826,10.001C16.62,400.396,106.611,545.678,253.463,583.919   c152.489,39.71,308.024-54.678,350.394-206.45l5.299-18.982c1.528-5.474-1.67-11.149-7.144-12.678l-49.557-13.835   C546.981,330.445,541.305,333.645,539.777,339.118z M598.336,252.268l-51.97,6.752c-5.636,0.732-9.61,5.894-8.879,11.53   l2.048,15.762c0.732,5.636,5.895,9.611,11.53,8.878l51.97-6.752c5.636-0.732,9.61-5.894,8.879-11.53l-2.049-15.762   C609.134,255.511,603.972,251.536,598.336,252.268z M558.328,154.064l-45.655,25.729c-4.951,2.79-6.703,9.065-3.913,14.017   l7.803,13.847c2.79,4.951,9.065,6.703,14.017,3.913l45.655-25.729c4.951-2.79,6.703-9.065,3.913-14.017l-7.803-13.847   C569.555,153.026,563.279,151.274,558.328,154.064z M484.447,77.998l-32.694,40.958c-3.546,4.441-2.818,10.917,1.623,14.461   l12.423,9.916c4.441,3.546,10.916,2.819,14.461-1.623l32.694-40.958c3.546-4.442,2.818-10.917-1.623-14.462l-12.423-9.916   C494.467,72.83,487.992,73.556,484.447,77.998z M387.45,35.147L372.48,85.37c-1.624,5.446,1.476,11.178,6.921,12.801l15.233,4.54   c5.445,1.624,11.177-1.476,12.801-6.921l14.97-50.223c1.623-5.446-1.476-11.177-6.922-12.801l-15.232-4.54   C394.805,26.602,389.073,29.701,387.45,35.147z M281.464,31.752l4.933,52.174c0.535,5.658,5.556,9.811,11.213,9.276l15.824-1.497   c5.658-0.535,9.811-5.555,9.276-11.213l-4.934-52.174c-0.535-5.658-5.556-9.81-11.213-9.275l-15.824,1.496   C285.082,21.074,280.929,26.094,281.464,31.752z M181.924,68.308l24.119,46.526c2.615,5.045,8.826,7.015,13.872,4.399l14.111-7.314   c5.045-2.616,7.015-8.826,4.399-13.872l-24.119-46.526c-2.615-5.045-8.826-7.015-13.872-4.399l-14.111,7.315   C181.278,57.051,179.309,63.262,181.924,68.308z" fill="#D80027"/>
+                    </g>
+                </svg>
+            </span>
+        </a>
+    </h2>
+    <section class="swiper-container jSliderNews app_list app_list--lastminute">
+        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" data-time="14:05">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563522-foot-apres-ses-adieux-a-barcelone-messi-attendu-a-paris/">
+                        <p><span>Foot: apr&egrave;s ses adieux &agrave; Barcelone, Messi esp&eacute;r&eacute; &agrave; Paris</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/8NHRSDnZQtZF6dST_Myw030ijyE=/400x/smart/50cce412c8f244f28385d601a0dcb197/ccmcms-linternaute/26947376.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="14:03">
+                    <a href="https://www.linternaute.com/sortir/guide-des-loisirs/1400252-sncf-quelles-conditions-pour-monter-a-bord-d-un-train-depuis-le-9-aout/">
+                        <p><span>SNCF&nbsp;: quelles conditions pour monter &agrave; bord d'un train depuis le 9&nbsp;ao&ucirc;t&nbsp;?</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/AXYzLCr4Ibp04KnzeCIM8mC9ATY=/400x/smart/5466c8a9c8ff4da38bf2a913a59b1013/ccmcms-linternaute/26947153.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="14:02">
+                    <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2462477-direct-coronavirus-en-france-la-vaccination-se-poursuit-les-infos-sur-la-quatrieme-vaguedirect-coronavirus-en-france-un-nouveau-cap-pour-la-vaccination-les-effets-de-la-quatrieme-vague/">
+                        <p><span>DIRECT. Coronavirus en France&nbsp;: les hospitalisations en hausse, les infos sur la quatri&egrave;me vague&hellip;</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/ZJSU1HP_klvElGey-lKfxYcoHko=/400x/smart/2f7daa6e39f5401eafbe97213717abd2/ccmcms-linternaute/26943190.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:59">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563516-afghanistan-les-talibans-controlent-cinq-capitales-regionales/">
+                        <p><span>Afghanistan: les talibans prennent une autre ville du nord et regardent vers Mazar-i-Sharif</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/_GMMhkBSNgENChufzlEJANj8gQk=/400x/smart/4b183d1f451b4f27b266b38137ead623/ccmcms-linternaute/26947368.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:57">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563528-grece-les-pompiers-livrent-leur-7e-jour-de-bataille-contre-le-brasier-de-l-ile-d-eubee/">
+                        <p><span>Gr&egrave;ce: les pompiers livrent leur 7e jour de bataille contre le brasier de l'&icirc;le d'Eub&eacute;e</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/0TqpR1BU6hHA65W0WdD4rhPAhR8=/400x/smart/0cdda6ca87da45838cf7db442a15319a/ccmcms-linternaute/26947363.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:52">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563532-dans-le-delta-du-nil-des-fermiers-veulent-sauver-le-papyrus/">
+                        <p><span>Dans le delta du Nil, des fermiers veulent sauver le papyrus</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/X6-_uIWvcXdDcu6OAKavaUye7RE=/400x/smart/457cb95341fc404a9b253d63afd3cd00/ccmcms-linternaute/26947388.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:51">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563530-loukachenko-droit-dans-ses-bottes-apres-un-an-de-repression-au-belarus/">
+                        <p><span>Loukachenko droit dans ses bottes apr&egrave;s un an de r&eacute;pression au B&eacute;larus</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/jdc1GnwqK6RbJE3RpaIqnhjTSG4=/400x/smart/a21efd5fa85c42d38f23fb920c511cac/ccmcms-linternaute/26947371.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:24">
+                    <a href="https://www.linternaute.com/actualite/depeches/1469213-pedophilie-l-ancien-eveque-d-orleans-renvoye-en-correctionnelle-pour-non-denonciation/">
+                        <p><span>Un pr&ecirc;tre assassin&eacute; en Vend&eacute;e</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/1ZGoQ7hw3--Ka0q7AvAHF9SWaPU=/400x/smart/bd6309d8d94347a8adf3b991a076a32c/ccmcms-linternaute/26947372.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="13:24">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563518-le-pass-sanitaire-fait-son-entree-dans-la-vie-quotidienne-des-francais/">
+                        <p><span>Le pass sanitaire fait son entr&eacute;e dans la vie quotidienne des Fran&ccedil;ais</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/4MuY9kvare6AdbmGoaK_lcwJ7wA=/400x/smart/e205fd7e5d534d9d9c88f25bb450678d/ccmcms-linternaute/26947353.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="12:46">
+                    <a href="https://www.linternaute.com/sport/competitions/1323571-jo-2021-la-ceremonie-de-cloture-des-jo-de-tokyo/">
+                        <p><span>JO 2021&nbsp;: c'est fini, combien de m&eacute;dailles remport&eacute;es pour la France&nbsp;? R&eacute;sultats et bilan</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/ZHSOtaYR5ZErtJsidC0EfNxy-VM=/400x/smart/c5826ff329c142149cc33aa26e4b3321/ccmcms-linternaute/26945405.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="12:43">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563520-au-milieu-des-catastrophes-de-nouvelles-previsions-climatiques-tres-attendues/">
+                        <p><span>Le r&eacute;chauffement s'acc&eacute;l&egrave;re, &quot;alerte rouge&quot; pour l'humanit&eacute;</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/AWDGlOxsBBAih0lW-Hxi9wLUVdA=/400x/smart/a7bd30cc2faa4286a9d9ce3e9e261562/ccmcms-linternaute/26947358.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="12:21">
+                    <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">
+                        <p><span>Rentr&eacute;e scolaire 2021&nbsp;: date, protocole sanitaire... Quels dispositifs dans les &eacute;coles, coll&egrave;ges et lyc&eacute;es&nbsp;?</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/Vk8B2o3zfrLHcBugUFMHIqmOYu4=/400x/smart/f6488f8b88154149b9ab41fa6053b9c4/ccmcms-linternaute/26944666.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time="11:25">
+                    <a href="https://www.linternaute.com/cinema/pratique/1463099-amazon-prime-ligue-1-toutes-les-etapes-pour-s-abonner-prix-test-gratuit-matchs/">
+                        <p><span>Amazon Prime Ligue 1&nbsp;: toutes les &eacute;tapes pour s'abonner (prix, test gratuit, matchs...)</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/PYQnVrnlVz5cyhSECepCLQsOBWY=/400x/smart/37a2f4df33d74c78b3ae7684988194ed/ccmcms-linternaute/26944228.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time=" 8:40">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563514-la-californie-lutte-contre-le-2e-incendie-le-plus-vaste-de-son-histoire/">
+                        <p><span>La Californie lutte contre le 2e incendie le plus vaste de son histoire</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/E_NnFi_VXx8DyB-Rmlf4g50GsTY=/400x/smart/60def83041f54d719d50c5310f9810d9/ccmcms-linternaute/26947362.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                                <li class="swiper-slide" data-time=" 6:47">
+                    <a href="https://www.linternaute.com/actualite/depeches/2563526-aux-etats-unis-des-passionnes-preservent-la-legende-des-sirenes/">
+                        <p><span>Aux Etats-Unis, des passionn&eacute;s pr&eacute;servent la l&eacute;gende des sir&egrave;nes</span></p>
+                        <span style="background-image:url('https://img-4.linternaute.com/k9J9meriBn12X0TdBc4AfB_hkg8=/400x/smart/bbb028f0ce57496c9f7aa7377c3aff59/ccmcms-linternaute/26947003.jpg')" class="app_fig_img"></span>
+                    </a>
+                </li>
+                        </ul>
+        <div class="swiper-button-prev"><span aria-hidden="true" class="icon-arrow-l"></div>
+        <div class="swiper-button-next"><span aria-hidden="true" class="icon-arrow-r"></span></div>
+    </section>
+</div>
+
+                    <div class="layout_ct__1">
+                        <div class="layout_ct__2">
+                            <div class="app_home_section app_home_section--nopadding2">
+    <div class="app_home_main_ct">
+        <div class="app_home_leftcol">
+            <div id="abovemiddle" class="bu_ccmeditor"></div>
+<div id="ba_x95" class="ba x95"><script>OAS_AD('x95');</script></div><div class="grid_line gutter grid--norwd app_mod_forward_contents">
+        <div class="grid_left w50">
+            <h2 class="app_mod_title app_mod_title--link">
+                <a href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/2484527-coronavirus-comprendre-le-virus-qui-effraie-la-planete/">Coronavirus<span aria-hidden="true" class="icon-arrow-r"></span></a>
+            </h2>
+                            <section class="app_mod_forward_contents">
+                    <div id="forwardContents_1">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2462477-direct-coronavirus-en-france-la-vaccination-se-poursuit-les-infos-sur-la-quatrieme-vaguedirect-coronavirus-en-france-un-nouveau-cap-pour-la-vaccination-les-effets-de-la-quatrieme-vague/">
+                <span style="background-image:url('https://img-4.linternaute.com/bYsslkqPdtbgkC65BpPzk8gEz34=/540x/smart/6346e0122b294dcaa83f7049e6b70648/ccmcms-linternaute/26510228.jpg');" class="app_mod_fig__img"></span>
+                <figcaption>
+                    <h1>DIRECT. Coronavirus en France : les dernières infos sur la 4e vague</h1>
+                </figcaption>
+            </a>
+        </figure>
+        <div class="grid_row grid_row--fixed">
+
+            <figure class="app_mod_fig">
+                <div class="grid_line">
+                    <div class="grid_left">
+                        <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2489651-chiffres-covid-bilan-du-coronavirus-en-france/">
+                            <span class="app_mod_fig__img" style="background-image:url(https://img-4.linternaute.com/1zo2tSXIaSnhrRDUE2G1zLebUY4=/250x/smart/fd9a59eb3c2a4b729348b5c82581702f/ccmcms-linternaute/26510395.jpg);"></span>
+                        </a>
+                    </div>
+                    <div class="grid_last">
+                        <figcaption>
+                            <h2 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2489651-chiffres-covid-bilan-du-coronavirus-en-france/">Le bilan du coronavirus en chiffres chaque soir</a></h2>
+                        </figcaption>
+                    </div>
+                </div>
+            <figure>
+
+        
+
+            <figure class="app_mod_fig">
+                <div class="grid_line">
+                    <div class="grid_left">
+                        <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2516001-carte-covid-suivez-la-situation-de-l-epidemie-par-departement-et-par-ville/">
+                            <span class="app_mod_fig__img" style="background-image:url(https://img-4.linternaute.com/IFvE_pxwDWNeNoInaClqJn24TIE=/250x/smart/edb68c03f2fb4083969c849ba191a68b/ccmcms-linternaute/26511950.jpg);"></span>
+                        </a>
+                    </div>
+                    <div class="grid_last">
+                        <figcaption>
+                            <h2 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2516001-carte-covid-suivez-la-situation-de-l-epidemie-par-departement-et-par-ville/">Carte du Covid : la situation par département et par ville</a></h2>
+                        </figcaption>
+                    </div>
+                </div>
+            <figure>
+
+        </div></div>                </section>
+                        </div>
+    
+        <div class="grid_left w50">
+            <h2 class="app_mod_title app_mod_title--link">
+                <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">Rentr&eacute;e scolaire<span aria-hidden="true" class="icon-arrow-r"></span></a>
+            </h2>
+                            <section class="app_mod_forward_contents">
+                    <div id="forwardContents_2">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">
+                <span style="background-image:url('https://img-4.linternaute.com/HVP3jIJJRECUUhJXv9zUKP2pU70=/540x/smart/0521a33699a54532bbb00b8d580aebeb/ccmcms-linternaute/26764614.jpg');" class="app_mod_fig__img"></span>
+                <figcaption>
+                    <h1>Rentrée scolaire 2021 : date, protocole sanitaire... Quelles règles dans les écoles, collèges et lycées ?</h1>
+                </figcaption>
+            </a>
+        </figure>
+        <div class="grid_row grid_row--fixed">
+
+            <figure class="app_mod_fig">
+                <div class="grid_line">
+                    <div class="grid_left">
+                        <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2514161-ecole-et-covid-sans-vaccin-les-eleves-exposes-a-des-sorties-de-classe/">
+                            <span class="app_mod_fig__img" style="background-image:url(https://img-4.linternaute.com/AiFlqPDW5JI_tS2cniYb_S1GCgs=/250x/smart/dc689e2ee1e74b9680ea3fa74e13131c/ccmcms-linternaute/26667970.jpg);"></span>
+                        </a>
+                    </div>
+                    <div class="grid_last">
+                        <figcaption>
+                            <h2 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2514161-ecole-et-covid-sans-vaccin-les-eleves-exposes-a-des-sorties-de-classe/">Ecole et Covid : le protocole sanitaire de la rentrée en détails</a></h2>
+                        </figcaption>
+                    </div>
+                </div>
+            <figure>
+
+        
+
+            <figure class="app_mod_fig">
+                <div class="grid_line">
+                    <div class="grid_left">
+                        <a href="https://www.linternaute.com/argent/guide-de-vos-finances/1392873-allocation-de-rentree-scolaire-2021-les-premiers-versements-ont-debute-les-infos/">
+                            <span class="app_mod_fig__img" style="background-image:url(https://img-4.linternaute.com/wy8H25JlI10rjwV04BaCn1IlUQQ=/250x/smart/5ebc058f9ea348ee8d18b5b0bdc96ea3/ccmcms-linternaute/26788262.jpg);"></span>
+                        </a>
+                    </div>
+                    <div class="grid_last">
+                        <figcaption>
+                            <h2 class="app_title"><a href="https://www.linternaute.com/argent/guide-de-vos-finances/1392873-allocation-de-rentree-scolaire-2021-les-premiers-versements-ont-debute-les-infos/">Allocation de rentrée scolaire 2021 : toutes les infos</a></h2>
+                        </figcaption>
+                    </div>
+                </div>
+            <figure>
+
+        </div></div>                </section>
+                        </div>
+    </div><h2 class="app_mod_title  app_mod_title--link" style="display:inline-block">
+                    <a href="/list">Aujourd'hui                        <span aria-hidden="true" class="icon-arrow-r"></span>
+                    </a>                </h2>
+                <section id="middle" class="app_list app_list--news app_list--river"><ul><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/sortir/guide-des-loisirs/1400252-sncf-quelles-conditions-pour-monter-a-bord-d-un-train-depuis-le-9-aout/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/FQau9cPI_a624ztR5BmB1nrmU2I=/200x130/smart/5466c8a9c8ff4da38bf2a913a59b1013/ccmcms-linternaute/26947153.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/bZAhYQNxe1jmKS0XwPsJgHGPyrc=/225x148/smart/5466c8a9c8ff4da38bf2a913a59b1013/ccmcms-linternaute/26947153.jpg">
+                                        <img src="https://img-4.linternaute.com/s05mzkaY6cVLQfbg1OV9yLfXr0M=/280x185/smart/5466c8a9c8ff4da38bf2a913a59b1013/ccmcms-linternaute/26947153.jpg" alt="SNCF&nbsp;: quelles conditions pour monter &agrave; bord d'un train depuis le 9&nbsp;ao&ucirc;t&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/sortir/guide-des-loisirs/1400252-sncf-quelles-conditions-pour-monter-a-bord-d-un-train-depuis-le-9-aout/">SNCF : quelles conditions pour monter à bord d'un train depuis le 9 août ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/Zl_FuQaCtGZH-83SOQoHaan-adE=/200x130/smart/f6488f8b88154149b9ab41fa6053b9c4/ccmcms-linternaute/26944666.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/SbQUh7DQ7cFcx6ie7Tw2TlSunZM=/225x148/smart/f6488f8b88154149b9ab41fa6053b9c4/ccmcms-linternaute/26944666.jpg">
+                                        <img src="https://img-4.linternaute.com/ji1hpxsJM7RHokOsVw_7QaATRXQ=/280x185/smart/f6488f8b88154149b9ab41fa6053b9c4/ccmcms-linternaute/26944666.jpg" alt="Rentr&eacute;e scolaire 2021&nbsp;: date, protocole sanitaire... Quels dispositifs dans les &eacute;coles, coll&egrave;ges et lyc&eacute;es&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/1243286-rentree-scolaire-2021-date-protocole-sanitaire-quels-dispositifs-dans-les-ecoles-colleges-et-lycees/">Rentrée scolaire 2021 : date, protocole sanitaire... Quels dispositifs dans les écoles, collèges et lycées ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/auto/magazine/2214595-24h-du-mans-2021-date-billetterie-chaines-tv-le-programme-complet/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/fIU1SsMZIh8TpbYkhyPcaER3vmw=/200x130/smart/86b4665164ff4923893ed6985d063306/ccmcms-linternaute/26946381.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/OpAhKytX6bRae12b9Rxrkp9zvPA=/225x148/smart/86b4665164ff4923893ed6985d063306/ccmcms-linternaute/26946381.jpg">
+                                        <img src="https://img-4.linternaute.com/IgqN8bDIHWNGjTwklOSwaU2YYPc=/280x185/smart/86b4665164ff4923893ed6985d063306/ccmcms-linternaute/26946381.jpg" alt="24h du Mans 2021&nbsp;: date, billetterie, cha&icirc;nes TV... Le programme complet">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/auto/magazine/2214595-24h-du-mans-2021-date-billetterie-chaines-tv-le-programme-complet/">24h du Mans 2021 : date, billetterie, chaînes TV... Le programme complet</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/cinema/pratique/1463099-amazon-prime-ligue-1-toutes-les-etapes-pour-s-abonner-prix-test-gratuit-matchs/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/pnDoYeC7thoDe8PHHOJjSR4bWv0=/200x130/smart/37a2f4df33d74c78b3ae7684988194ed/ccmcms-linternaute/26944228.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/QDXW0e_UF4ZswM2mIX9NbjskLVM=/225x148/smart/37a2f4df33d74c78b3ae7684988194ed/ccmcms-linternaute/26944228.jpg">
+                                        <img src="https://img-4.linternaute.com/QE9KomaaE_38gGWhvYPr9_POiUs=/280x185/smart/37a2f4df33d74c78b3ae7684988194ed/ccmcms-linternaute/26944228.jpg" alt="Amazon Prime Ligue 1&nbsp;: toutes les &eacute;tapes pour s'abonner (prix, test gratuit, matchs...)">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/cinema/pratique/1463099-amazon-prime-ligue-1-toutes-les-etapes-pour-s-abonner-prix-test-gratuit-matchs/">Amazon Prime Ligue 1 : toutes les étapes pour s'abonner (prix, test gratuit, matchs...)</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/sortir/guide-des-loisirs/2519119-restaurant-et-covid-le-pass-sanitaire-sera-exige-des-le-9-aout/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/Mhpxn6WKjzlhUrMiAmIZfJYK8H4=/200x130/smart/c70834a2826f47f68ab43cfb073b0315/ccmcms-linternaute/26842568.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/exA-mX5GL6LzvCdwUqO8Ieqo-M8=/225x148/smart/c70834a2826f47f68ab43cfb073b0315/ccmcms-linternaute/26842568.jpg">
+                                        <img src="https://img-4.linternaute.com/GgkV1itsoPjP-IdZM4MxrtjuM1Q=/280x185/smart/c70834a2826f47f68ab43cfb073b0315/ccmcms-linternaute/26842568.jpg" alt="Restaurant et Covid&nbsp;: le pass sanitaire sera exig&eacute; d&egrave;s le 9&nbsp;ao&ucirc;t">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/sortir/guide-des-loisirs/2519119-restaurant-et-covid-le-pass-sanitaire-sera-exige-des-le-9-aout/">Restaurant et Covid : le pass sanitaire sera exigé dès le 9 août</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/voyage/pratique/2488167-voyage-et-covid-carte-actualisee-des-pays-verts-orange-et-rouges-motifs-imperieux-ou-partir-cet-ete-2021/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/rKOOoqD8O6UQlo3yIhX_-MpVqG8=/200x130/smart/791c96f7ef594ba79dfd0fda9cd84f0b/ccmcms-linternaute/26836375.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/pCGh24qNt9XrgsAwVyGmuSsN2Ww=/225x148/smart/791c96f7ef594ba79dfd0fda9cd84f0b/ccmcms-linternaute/26836375.jpg">
+                                        <img src="https://img-4.linternaute.com/BC0F_sgXDFR2yKpiF3IFwcNItKM=/280x185/smart/791c96f7ef594ba79dfd0fda9cd84f0b/ccmcms-linternaute/26836375.jpg" alt="Voyage et Covid&nbsp;: carte actualis&eacute;e des pays verts, orange et rouges, motifs imp&eacute;rieux, o&ugrave; partir cet &eacute;t&eacute; 2021&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/voyage/pratique/2488167-voyage-et-covid-carte-actualisee-des-pays-verts-orange-et-rouges-motifs-imperieux-ou-partir-cet-ete-2021/">Voyage et Covid : carte actualisée des pays verts, orange et rouges, motifs impérieux, où partir cet été 2021 ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/cinema/tous-les-films/1261449-oss-117-3-que-disent-les-critiques-cannoises-sur-le-film/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/YPF5xDHcbdT2TU0jP2QxR1JbL3Y=/200x130/smart/2569e7c15dd64a21a378ec61a4938027/ccmcms-linternaute/26672388.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/0GtMKfYVFpouVmSZUIMPI9MSkrw=/225x148/smart/2569e7c15dd64a21a378ec61a4938027/ccmcms-linternaute/26672388.jpg">
+                                        <img src="https://img-4.linternaute.com/2Zm-OSO2pt4HFy11PevuRMNyVIM=/280x185/smart/2569e7c15dd64a21a378ec61a4938027/ccmcms-linternaute/26672388.jpg" alt="OSS 117&nbsp;3&nbsp;: que disent les critiques cannoises sur le film&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/cinema/tous-les-films/1261449-oss-117-3-que-disent-les-critiques-cannoises-sur-le-film/">OSS 117 3 : que disent les critiques cannoises sur le film ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/cinema/pratique/1433729-la-casa-de-papel-une-nouvelle-bande-annonce-explosive-pour-la-saison-5/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/lY3iAXqIpSK3owKsWzKIcuLyv4g=/200x130/smart/4423fcca60e34df587c9597a9994cfe5/ccmcms-linternaute/26664580.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/x_b6lPN8okKF5cKd5FEy4JLLCKk=/225x148/smart/4423fcca60e34df587c9597a9994cfe5/ccmcms-linternaute/26664580.jpg">
+                                        <img src="https://img-4.linternaute.com/NlIXXl2o18LhZbjvLjh0J8dRpJk=/280x185/smart/4423fcca60e34df587c9597a9994cfe5/ccmcms-linternaute/26664580.jpg" alt="La Casa de Papel&nbsp;: une nouvelle bande-annonce explosive pour la saison 5">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/cinema/pratique/1433729-la-casa-de-papel-une-nouvelle-bande-annonce-explosive-pour-la-saison-5/">La Casa de Papel : une nouvelle bande-annonce explosive pour la saison 5</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2543120-variant-delta-des-infections-possibles-meme-vaccine-la-mutation-represente-plus-de-90-des-cas-en-france/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/iw4l3G9UvwBhmJAX4zF4raEEpfU=/200x130/smart/9f1ed8648b03472a9b919e9c2d98523b/ccmcms-linternaute/26695220.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/V2ygq5v1m1jMlTzPvWmAxIKSmts=/225x148/smart/9f1ed8648b03472a9b919e9c2d98523b/ccmcms-linternaute/26695220.jpg">
+                                        <img src="https://img-4.linternaute.com/IyNN-NEFFfv-b054hrAwRHlsimI=/280x185/smart/9f1ed8648b03472a9b919e9c2d98523b/ccmcms-linternaute/26695220.jpg" alt="Variant Delta&nbsp;: des infections possibles, m&ecirc;me vaccin&eacute;&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2543120-variant-delta-des-infections-possibles-meme-vaccine-la-mutation-represente-plus-de-90-des-cas-en-france/">Variant Delta : des infections possibles, même vacciné ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/actualite/politique/2556574-sondage-primaire-eelv-favori-nombre-de-participants-les-enseignements-de-notre-enquete/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/dW6C3xSowE3P2aV9Id7NG_YMSwE=/200x130/smart/5ef79854d06c4cd097c67656c588bc1b/ccmcms-linternaute/26669154.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/ttsUIx5Dkqk2Kd9O_35Vly4mWAc=/225x148/smart/5ef79854d06c4cd097c67656c588bc1b/ccmcms-linternaute/26669154.jpg">
+                                        <img src="https://img-4.linternaute.com/7oWOHgty6MdtYvzXYASo0A8C20g=/280x185/smart/5ef79854d06c4cd097c67656c588bc1b/ccmcms-linternaute/26669154.jpg" alt="SONDAGE. Primaire EELV&nbsp;: favori, nombre de participants... Les enseignements de notre enqu&ecirc;te">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/actualite/politique/2556574-sondage-primaire-eelv-favori-nombre-de-participants-les-enseignements-de-notre-enquete/">SONDAGE. Primaire EELV : favori, nombre de participants... Les enseignements de notre enquête</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/actualite/politique/2534320-sondage-presidentielle-2022-qui-ferait-un-meilleur-president-qu-emmanuel-macron-juillet-2021/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/9teWp58uAmCtv9VDeFBpH6SU6NI=/200x130/smart/c404c82f0cd843dba85b763048d1cbe2/ccmcms-linternaute/23558205.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/WeRjr1Lzjh4gZk5jrbDC_Ej7O80=/225x148/smart/c404c82f0cd843dba85b763048d1cbe2/ccmcms-linternaute/23558205.jpg">
+                                        <img src="https://img-4.linternaute.com/hO5UMdEwcB6fd6ZlbJCJSDvw_4M=/280x185/smart/c404c82f0cd843dba85b763048d1cbe2/ccmcms-linternaute/23558205.jpg" alt="Sondage pr&eacute;sidentielle 2022&nbsp;: qui ferait un meilleur pr&eacute;sident qu'Emmanuel Macron&nbsp;?">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/actualite/politique/2534320-sondage-presidentielle-2022-qui-ferait-un-meilleur-president-qu-emmanuel-macron-juillet-2021/">Sondage présidentielle 2022 : qui ferait un meilleur président qu'Emmanuel Macron ?</a></h3>
+                        </div>
+                    </div>
+            </li><li>
+                    <div class="grid_line gutter grid--norwd app_fig--med_ct">
+                        <div class="grid_left">
+                            <figure class="app_fig app_fig--med">
+                                <a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2558764-vaccination-covid-obligatoire-faudra-t-il-se-faire-vacciner-tous-les-six-mois/">
+                                    <picture>
+                                        <source media="(min-width: 481px) and (max-width: 1299px)" srcset="https://img-4.linternaute.com/HP1x6xLTwk05Mv_g-ttu-_tIOIo=/200x130/smart/eefaf761283d467e9278ad5948df6729/ccmcms-linternaute/26469098.jpg">
+                                        <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/FsJvSsMkMQOpOaYENj2BxjtpRTE=/225x148/smart/eefaf761283d467e9278ad5948df6729/ccmcms-linternaute/26469098.jpg">
+                                        <img src="https://img-4.linternaute.com/hbIs7CNKmiDD0F1F5_KE8bTg1eY=/280x185/smart/eefaf761283d467e9278ad5948df6729/ccmcms-linternaute/26469098.jpg" alt="Vaccination Covid obligatoire&nbsp;: pour tous&nbsp;? La mesure n'est &quot;pas &eacute;cart&eacute;e&quot;">
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="grid_last">
+                            <h3 class="app_title"><a href="https://www.linternaute.com/actualite/guide-vie-quotidienne/2558764-vaccination-covid-obligatoire-faudra-t-il-se-faire-vacciner-tous-les-six-mois/">Vaccination Covid obligatoire : pour tous ? La mesure n'est "pas écartée"</a></h3>
+                        </div>
+                    </div>
+            </li></ul></section>                    <footer>
+                        <a class="app_home_leftcol_common_link" href="/list">Tous les articles</a>
+                    </footer>
+                    <div id="football_league_1" class="bu_ccmeditor"></div>        </div>
+    </div>
+    <div class="app_home_rightcol">
+        <aside class="nl-box nl-box--right-col">
+        <span class="nl-box__title">
+                            <h3 class="app_mod_title">Newsletter</h3>
+                    </span>
+        <img class="nl-box__ico" src="https://astatic.ccmbg.com/www.linternaute.com/img/newsletter/picto-nl.svg" width="54" height="54" alt="">
+        <form method="post" action="//mailing.ccmbg.com/subscribe?ajx=1" id="frmSS7" class="nl-box__form jBindingGTM" data-position="ColRightForm">
+                        <div class="ccmcss_form">
+                                    <div class="grid_line grid--norwd">
+                        <div class="grid_left">
+                            <label>
+                                <input type="checkbox" id="list_276" name="lists[]" value="276" checked>
+                                Linternaute.com
+                            </label>
+                        </div>
+                        <div class="grid_last">
+                            <a target="_blank" href="//mailing.ccmbg.com/archive/last-276" class="a_hover">
+                                Voir un exemple
+                            </a>
+                        </div>
+                    </div>
+                            </div>
+            <fieldset>
+                <legend>Abonnement newsletters</legend>
+                <input type="email" name="email" placeholder="Entrer son email pour s'abonner" autocomplete="email" required aria-label="S'abonner" />
+                <input type="submit" value="Ok">
+                <div class="jMailingRecaptcha"></div>
+                <div class="rgpdNewsletter">
+                    <p>Les informations recueillies sont destinées à CCM Benchmark Group pour vous assurer l'envoi de votre newsletter.</p>
+                    <p>Elles seront également utilisées sous réserve des options souscrites, à des fins de ciblage publicitaire. </p>
+                    <p>Vous bénéficiez d'un droit d'accès et de rectification de vos données personnelles, ainsi que celui d'en demander l'effacement dans les limites prévues par la loi. </p>
+                    <p>Vous pouvez également à tout moment revoir vos options en matière de ciblage. En savoir plus sur notre <a href="https://www.ccmbenchmark.com/donnees-personnelles?origin=www.linternaute.com">politique de confidentialité</a>.</p>
+                </div>
+            </fieldset>
+        </form>
+    </aside>
+        <aside>
+            <div id="ctn_right"><div id="ba_right" class="ba "><script>OAS_AD('Right');</script></div></div><aside class="app_aside">
+    <h3 class="app_mod_title">Fiches pratiques</h3>
+    <div class="app_list app_list--lastnews">
+        <ul id="header_slider">
+            <li><a href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/">Guide Maison et Jardin</a></li>
+            <li><a href="https://www.linternaute.fr/auto/guide-pratique-auto/">Guide pratique Auto</a></li>
+            <li><a href="https://www.linternaute.fr/argent/guide-de-vos-finances/">Guide de vos finances</a></li>
+            <li><a href="https://www.linternaute.fr/hightech/guide-high-tech/">Guide High-tech</a></li>
+            <li><a href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/">Guide Vie quotidienne</a></li>
+            <li><a href="https://www.linternaute.fr/voyage/pratique/guide-du-voyageur/">Guide du voyageur</a></li>
+            <li><a href="https://www.linternaute.fr/voyage/guides-de-voyage/">Guides de voyage</a></li>
+            <li><a href="https://www.linternaute.fr/sortir/guide-des-loisirs/">Guide des loisirs</a></li>
+            <li><a href="https://www.linternaute.fr/sport/pratique/guide-pratique-du-sport/">Guide pratique du sport</a></li>
+            <li><a href="https://www.linternaute.fr/lifestyle/guide-du-lifestyle/">Guide Lifestyle</a></li>
+        </ul>
+    </div>
+</aside>
+<div id="ctn_position2"><div id="ba_position2" class="ba position2"><script>OAS_AD('Position2');</script></div></div>        </aside>
+        </div>
+</div>
+        <section class="app_home_section"><div id="abovevideo" class="bu_ccmeditor"><h2 class="app_mod_title app_widget_title app_mod_title--link" style="display:inline-block"><a href="https://www.linternaute.com/bons-plans/">Bon plan</a></h2>
+
+<div class="entry">    <aside class="app_widget_fo app_widget_fo--gallery">
+        <ul>
+                            <li>
+                    <a  href="https://www.linternaute.fr/hightech/guide-high-tech/2544668-meilleur-smartphone-2021-quelle-reference-acheter-en-mai/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Meilleur smartphone 2021 : quelle référence acheter cet été ?">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/9ftwrYJ2sSKE00ZhzmvkFRwXlVw=/210x140/smart/9bbc6c1ff7ed4096a8cddb4bef7979bf/ccmcms-linternaute/26109556.jpg" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/8x-5Kc2OqFvFdXEw5yIv6wFrtsk=/225x150/smart/9bbc6c1ff7ed4096a8cddb4bef7979bf/ccmcms-linternaute/26109556.jpg" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Meilleur smartphone 2021 : quelle référence acheter cet été ?</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                            <li>
+                    <a  href="https://www.linternaute.com/hightech/jeux-video/1337541-bon-plan-nintendo-switch-ou-precommander-la-nintendo-switch-oled/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Bon plan Nintendo Switch : où précommander la Nintendo Switch OLED ?">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/45E0BaljgChbUSiDrwI0bUdELPk=/210x140/smart/4741d145f25648caaea64bf90f85f0da/ccmcms-linternaute/26697131.jpg" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/WuGKb4MUPHGfFjKeZiiKrfhZyug=/225x150/smart/4741d145f25648caaea64bf90f85f0da/ccmcms-linternaute/26697131.jpg" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Bon plan Nintendo Switch : où précommander la Nintendo Switch OLED ?</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                            <li>
+                    <a  href="https://www.linternaute.com/hightech/micro/2551082-bon-plan-disque-dur-les-meilleures-offres-du-moment/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Bon plan disque dur : les meilleures offres du moment">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/TZ85_KHTayNFtEarmykzz89GGXs=/210x140/smart/3eeccbd3890e4e11b75458d9755b5255/ccmcms-linternaute/26694794.jpg" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/6HYtLTTKtSPg76Tc3AVXlm_bfw0=/225x150/smart/3eeccbd3890e4e11b75458d9755b5255/ccmcms-linternaute/26694794.jpg" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Bon plan disque dur : les meilleures offres du moment</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                            <li>
+                    <a  href="https://www.linternaute.com/hightech/micro/2544462-bon-plan-ecran-pc-gamer-les-meilleures-offres-du-moment/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Bon plan écran PC gamer : les meilleures offres du moment">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/X_t7dFXVkC9okFRPPXyyz2VMeRQ=/210x140/smart/2d411f2ca21147f6a17ecde87c409f49/ccmcms-linternaute/26670173.png" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/o6gndDImSDbYOJ6isENsMGL6fLs=/225x150/smart/2d411f2ca21147f6a17ecde87c409f49/ccmcms-linternaute/26670173.png" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Bon plan écran PC gamer : les meilleures offres du moment</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                            <li>
+                    <a  href="https://www.linternaute.com/hightech/magazine/2495657-bon-plan-airpods-les-ecouteurs-sans-fil-au-meilleur-prix/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Bon plan AirPods : les écouteurs sans fil au meilleur prix">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/m7F9FTcYm6x2KE4z0rPyPDY-JI4=/210x140/smart/7e2f90ea06324b6e99c846f29ca0f53c/ccmcms-linternaute/26666189.png" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/VHYQkABllVZSNcHRoLQp67k3eI0=/225x150/smart/7e2f90ea06324b6e99c846f29ca0f53c/ccmcms-linternaute/26666189.png" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Bon plan AirPods : les écouteurs sans fil au meilleur prix</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                            <li>
+                    <a  href="https://www.linternaute.com/hightech/mobile/2542472-bon-plan-xiaomi-les-smartphones-au-meilleur-prix/" class="jGTMWidgetGAEventClick" data-GTMWidgetGaEventAction="clickWidgetGalleryList" data-GTMWidgetGaEventLabel="Bon plan Xiaomi : les smartphones au meilleur prix">
+                        <figure>
+                            <picture>
+                                <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/hJrVhuxLLy6vu1SbNIQyHe8KZuA=/210x140/smart/fcc2f2a0374f413bb4204175e1e0a272/ccmcms-linternaute/26642572.png" width="210" height="140">
+                                <img src="https://img-4.linternaute.com/ShpSFBZneIoTB8waq_S2ghU98rU=/225x150/smart/fcc2f2a0374f413bb4204175e1e0a272/ccmcms-linternaute/26642572.png" alt="" width="225" height="150" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h3>Bon plan Xiaomi : les smartphones au meilleur prix</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                    </ul>
+    </aside>
+</div>
+
+<h2 class="app_mod_title app_widget_title app_mod_title--link" style="display:inline-block"><a href="https://www.linternaute.com/guide-d-achat/">Guides d&#39;achat</a></h2>
+
+<p align="center"><strong><a href="https://www.linternaute.fr/hightech/guide-high-tech/2544668-meilleur-smartphone-2021-quelle-reference-acheter-en-mai/">Meilleur smartphone</a>&nbsp;| <a href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/1409930-rafraichisseur-d-air-mobile-silencieux-la-selection-pour-bien-le-choisir/">Rafra&icirc;chisseur d&#39;air</a> |&nbsp;<a href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/1409828-chaise-de-bureau-comment-bien-la-choisir/">Meilleure chaise de bureau</a> | <a href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/1409318-piscine-hors-sol-comment-bien-la-choisir/">Piscine hors-sol</a></strong></p>
+</div></section>
+    
+        <section class="app_home_section app_home_section--insitu">
+        <div id="beforecinetv1" class="bu_ccmeditor"><div class="bu_ccmeditor" id="abovemiddle">
+
+<h2 class="app_mod_title app_widget_title app_mod_title--link" style="display:inline-block"><a href="https://www.linternaute.fr/biographie/">Biographie</a></h2>
+
+<section class="app_cold_stream">
+<div class="app_cold_stream_content_list_ct">
+<ul class="app_cold_stream_content_list">
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/actualite/biographie/histoire/">Personnages historiques</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/actualite/biographie/politique/">Politiques</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/science/biographie/inventions/">Inventeurs</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/science/biographie/physique/">Scientifiques</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/biographie/art/">Artistes</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/biographie/litterature/">Romanciers</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/cinema/biographie/cinema-francais/">Acteurs fran&ccedil;ais</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/television/biographie/presentateur/">Pr&eacute;sentateurs TV</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/television/biographie/journaliste/">Journalistes</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/musique/biographie/chanteur/">Chanteurs</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sport/biographie/football/">Footballeurs</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sport/biographie/cyclisme/">Cyclistes</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sport/biographie/tennis/">Tennismen</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/auto/biographie/">Automobile</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div>    </section>
+    <section class="app_home_section app_home_section--insitu">
+    <div id="beforecinetv" class="bu_ccmeditor"><div class="bu_ccmeditor" id="abovemiddle">
+<h2 class="app_mod_title app_widget_title app_mod_title--link" style="display:inline-block">Fiches pratiques</h2>
+
+<section class="app_cold_stream">
+<div class="app_cold_stream_content_list_ct">
+<ul class="app_cold_stream_content_list">
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/auto/guide-pratique-auto/">Guide&nbsp;Auto</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/argent/guide-de-vos-finances/">Guide de vos Finances</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/hightech/guide-high-tech/">Guide High-tech</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/lifestyle/guide-du-lifestyle/">Guide du Lifestyle</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sortir/guide-des-loisirs/">Guide des Loisirs</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/bricolage/guide-maison-et-jardin/">Guide Maison et Jardin</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sport/pratique/guide-pratique-du-sport/">Guide pratique du Sport</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/actualite/guide-vie-quotidienne/">Guide Vie quotidienne</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/voyage/pratique/guide-du-voyageur/">Guide du Voyageur</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/voyage/guides-de-voyage/">Guides de voyage</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/sortir/guides-de-france/2497979-guides-de-voyage-en-france-les-meilleures-destinations-a-visiter/">Guides de voyage en France</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/actualite/guide-histoire/">Guide Histoire</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/musique/guide-pratique-musique/meilleures-chansons/">Guide&nbsp;des meilleures chansons</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/cinema/pratique/guide-du-streaming/">Guide du streaming</a></li>
+	<li><a class="app_edito_btn" href="https://www.linternaute.fr/cinema/pratique/2497481-meilleurs-films-nos-selections-de-films-a-voir-classees-par-genres/">Guide des meilleurs films</a></li>
+</ul>
+</div>
+</section>
+</div>
+</div></section>
+    <!-- PROGRAMME CINE TV -->
+    <section class="app_home_section app_home_section--program">
+        <header class="grid_line gutter grid--norwd">
+                            <div class="grid_left jTitleProgTv">
+                    <h2 class="app_mod_title app_mod_title--link"><a
+                            href="https://www.linternaute.com/television/">Programme
+                            TV<span aria-hidden="true" class="icon-arrow-r"></span></a></h2>
+                </div>
+                            <div class="grid_left jTitleProgCine" style="display:none">
+                    <h2 class="app_mod_title app_mod_title--link">
+                        <a href="https://www.linternaute.com/cinema/sortie-semaine/">Sorties Cinéma<span aria-hidden="true" class="icon-arrow-r"></span></a>
+                    </h2>
+                </div>
+                        <div class="grid_right">
+                                    <a class="linter_btn jtoggleProg jProgTv" href="javascript:void(0);"
+                       data-target="progTv"><span>A la télé</span></a>
+                                    <a class="linter_btn jtoggleProg jProgCine" href="javascript:void(0);"
+                       data-target="progCine"><span>Au cinéma</span></a>
+                            </div>
+        </header>
+        <!-- /PROGRAMME TV -->
+        
+        <!-- PROGRAMME TV -->
+        <div class="jProg" id="progTv" style="display:none;">
+            <div class="grid_line gutter grid--norwd">
+                                    <div class="grid_left w25">
+                        <figure class="app_mod_fig app_mod_fig--tv">
+                            <a href="https://www.linternaute.com/television/serie-camping-paradis-p4452847/cette-annee-la-e4590198/">
+                                <span style="background-image:url('https://img-4.linternaute.com/mlr0NzGu9Y4lHqfFZct9SnNb7w0=/200x/smart/86aee8b2b0ea47309ff3790f66057d89/ptv/4367869.jpg')" class="app_mod_fig__img"><img src="https://astatic.ccmbg.com/www.linternaute.com/img/tvprogram/channels/192.png?14" alt="Programme TF1"></span>
+                                <figcaption>
+                                    <span class="app_label"><span>TF1</span> | 21h05</span>
+                                    <h2 class="app_title">Camping Paradis</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+                        <figure class="app_mod_fig app_mod_fig--tv">
+                            <a href="https://www.linternaute.com/television/serie-motive-le-mobile-du-crime-p4307959/l-affaire-maria-snow-e3241037/">
+                                <span style="background-image:url('https://img-4.linternaute.com/XHsW8Cuk6MVTTn7lj_DPmM50ENs=/200x/smart/21e8236da7ba4c01ac7cdb9f2f387f6e/ptv/4367211.jpg')" class="app_mod_fig__img"><img src="https://astatic.ccmbg.com/www.linternaute.com/img/tvprogram/channels/4.png?14" alt="Programme France 2"></span>
+                                <figcaption>
+                                    <span class="app_label"><span>France 2</span> | 21h05</span>
+                                    <h2 class="app_title">Motive : le mobile du crime</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+                        <figure class="app_mod_fig app_mod_fig--tv">
+                            <a href="https://www.linternaute.fr/cinema/tous-les-films/1866403-marseille/">
+                                <span style="background-image:url('https://img-4.linternaute.com/L7Er73Fr4BXpGCB1hl3pCIE2VaA=/200x/smart/18d84ee6afda4b2d9d92ad51915b4fe7/ptv/4367344.jpg')" class="app_mod_fig__img"><img src="https://astatic.ccmbg.com/www.linternaute.com/img/tvprogram/channels/80.png?14" alt="Programme France 3"></span>
+                                <figcaption>
+                                    <span class="app_label"><span>France 3</span> | 21h05</span>
+                                    <h2 class="app_title">Marseille</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+                        <figure class="app_mod_fig app_mod_fig--tv">
+                            <a href="https://www.linternaute.com/television/serie-the-king-p5437285/the-king-e5443981/">
+                                <span style="background-image:url('https://img-4.linternaute.com/eXC0zrToUmDg07EInyIQHOF3uSg=/200x/smart/faa9e6c4c6ce48f89c7e97f5f14333bb/ptv/4367007.jpg')" class="app_mod_fig__img"><img src="https://astatic.ccmbg.com/www.linternaute.com/img/tvprogram/channels/34.png?14" alt="Programme Canal+"></span>
+                                <figcaption>
+                                    <span class="app_label"><span>Canal+</span> | 21h05</span>
+                                    <h2 class="app_title">The King</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+                        <figure class="app_mod_fig app_mod_fig--tv">
+                            <a href="https://www.linternaute.com/television/documentaire-au-bout-c-est-la-mer-p4297095/le-fleuve-senegal-e5443953/">
+                                <span style="background-image:url('https://img-4.linternaute.com/6TajV2VCKa-M52XDCFsNl1dGydY=/200x/smart/b5dffee82f1446d29d5c83cad652f9be/ptv/4366937.jpg')" class="app_mod_fig__img"><img src="https://astatic.ccmbg.com/www.linternaute.com/img/tvprogram/channels/47.png?14" alt="Programme France 5"></span>
+                                <figcaption>
+                                    <span class="app_label"><span>France 5</span> | 20h50</span>
+                                    <h2 class="app_title">Au bout c'est la mer</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                            </div>
+            <footer>
+                <ul>
+                    <li><a href="https://www.linternaute.com/television/">Tous les programmes</a></li>
+                </ul>
+            </footer>
+        </div>
+        <!-- /PROGRAMME TV -->
+
+        <!-- PROGRAMME CINE -->
+                <!-- PROGRAMME CINE -->
+        <div class="jProg" id="progCine" style="display:none;">
+            <div class="grid_line gutter grid--norwd">
+                                    <div class="grid_left w25">
+
+                        <figure class="app_mod_fig">
+                            <a href="https://www.linternaute.com/cinema/tous-les-films/1261449-oss-117-3-que-disent-les-critiques-cannoises-sur-le-film/">
+                                <span style="background-image:url(https://img-4.linternaute.com/6qIOpcxQ4_qGM902_nts7RYeFHA=/216x/b3ce98bceea5406d8b39623e8a3c5024/ccmcms-linternaute/191113.jpeg)" class="app_mod_fig__img"></span>
+                                <figcaption>
+                                    <h2 class="app_title">OSS 117 3</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+
+                        <figure class="app_mod_fig">
+                            <a href="https://www.linternaute.fr/cinema/tous-les-films/2552214-le-tour-du-monde-en-80-jours/">
+                                <span style="background-image:url(https://img-4.linternaute.com/WaS9W4xSYUMk73NCb3lnfe65GPs=/216x/ea2030dceaa3424bb3098482d720afb6/ccmcms-linternaute/193998.jpg)" class="app_mod_fig__img"></span>
+                                <figcaption>
+                                    <h2 class="app_title">Le Tour du monde en 80 jours</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+
+                        <figure class="app_mod_fig">
+                            <a href="https://www.linternaute.fr/cinema/tous-les-films/2559922-american-nightmare-5-sans-limites/">
+                                <span style="background-image:url(https://img-4.linternaute.com/8a1-sA4wtBhtiavqbiK1MJSX1Zg=/216x/8e14ae4abb4b4847b52d7f2759ea33b6/ccmcms-linternaute/193769.jpg)" class="app_mod_fig__img"></span>
+                                <figcaption>
+                                    <h2 class="app_title">American Nightmare 5 : sans limites</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+
+                        <figure class="app_mod_fig">
+                            <a href="https://www.linternaute.fr/cinema/tous-les-films/2559944-ice-road/">
+                                <span style="background-image:url(https://img-4.linternaute.com/_ngKt-l6lqL-ts-DFPHVIntbAkE=/216x/3221e3fda68240388b884d9c22fd9a53/ccmcms-linternaute/193828.jpg)" class="app_mod_fig__img"></span>
+                                <figcaption>
+                                    <h2 class="app_title">Ice Road</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                                    <div class="grid_left w25">
+
+                        <figure class="app_mod_fig">
+                            <a href="https://www.linternaute.fr/cinema/tous-les-films/2550890-dream-horse/">
+                                <span style="background-image:url(https://img-4.linternaute.com/va3elG-W8qfvRP9JxxfAON_4T9A=/216x/f7a22b2f15b246808f0fe0503977c3fd/ccmcms-linternaute/194209.jpg)" class="app_mod_fig__img"></span>
+                                <figcaption>
+                                    <h2 class="app_title">Dream Horse</h2>
+                                </figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="https://www.linternaute.com/cinema/sortie-semaine/">Les sorties cinéma de la semaine</a></li>
+                    <li><a href="https://www.linternaute.com/cinema/film-a-l-affiche/">Films à voir en ce moment</a></li>
+                    <li><a href="https://www.linternaute.com/cinema/prochainement/">Prochainement au cinéma</a></li>
+                    <li><a href="https://www.linternaute.com/cinema/bande-annonce/">Bandes-annonces</a></li>
+                </ul>
+            </footer>
+        </div>
+        <!-- /PROGRAMME CINE -->
+        </section>
+    <!-- /PROGRAMME CINE TV -->
+    <div class="app_home_section app_home_section--nomaxwidth">
+    		<div class="app_home_section app_home_section--noborder2">
+	    		<h2 class="app_mod_title app_mod_title--link"><a href="photo/">En images<span aria-hidden="true" class="icon-arrow-r"></span></a></h2>
+		        <section class="app_slider_ct app_slider_large_ct jSliderLarge">		    		
+					<div id="mainSlider" class="app_slider"><div id="slider-large" class="swiper-container"><div id="slider-large_slider" class="swiper-wrapper"><div class="swiper-slide">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/escapade/1149531-les-plus-beaux-phares-de-bretagne/">
+                <picture>
+                    <source media="(min-width: 769px) and (max-width: 999px)" srcset="https://img-4.linternaute.com/5QaAidztpiule5Vzrm72YldmJIs=/999x440/smart/df67b43a600a4b36890ac91ec094458a/ccmcms-linternaute/10422295.jpg">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="https://img-4.linternaute.com/8RNUBsfgUViqj18A-ppY4mm-Wuo=/768x440/smart/df67b43a600a4b36890ac91ec094458a/ccmcms-linternaute/10422295.jpg">
+                    <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/b2OysrWNHUzq0Zpb0fDpSw2LpFA=/480x440/smart/df67b43a600a4b36890ac91ec094458a/ccmcms-linternaute/10422295.jpg">
+                    <img src="https://img-4.linternaute.com/hJi0yMYmtlKUOtL-qLq39XprVi8=/1300x440/smart/df67b43a600a4b36890ac91ec094458a/ccmcms-linternaute/10422295.jpg" alt="Les plus beaux phares de Bretagne">
+                </picture>
+                 <figcaption>
+                    <div class="app_slider__legend">
+                        <h2 class="app_slider__title">Les plus beaux phares de Bretagne</h2>
+                    </div>
+                 </figcaption>
+             </a>
+        </figure>
+        </div><div class="swiper-slide">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/escapade/1143925-les-plus-beaux-villages-de-bretagne/">
+                <picture>
+                    <source media="(min-width: 769px) and (max-width: 999px)" srcset="https://img-4.linternaute.com/LH96ezOS8RJLM3seEdvtAbxxyuo=/999x440/smart/c81449572e0c4a029cdae6fbf0a9b8af/ccmcms-linternaute/10576184.jpg">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="https://img-4.linternaute.com/LO3E2TyeSV0eVgsD_wvORFd6XUg=/768x440/smart/c81449572e0c4a029cdae6fbf0a9b8af/ccmcms-linternaute/10576184.jpg">
+                    <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/LPOrKkgjx7NFUz4LsHsvXVuBLIo=/480x440/smart/c81449572e0c4a029cdae6fbf0a9b8af/ccmcms-linternaute/10576184.jpg">
+                    <img src="https://img-4.linternaute.com/wVtUmZXrQzuvNQCfSUSLceUQjdE=/1300x440/smart/c81449572e0c4a029cdae6fbf0a9b8af/ccmcms-linternaute/10576184.jpg" alt="Les plus beaux villages de Bretagne">
+                </picture>
+                 <figcaption>
+                    <div class="app_slider__legend">
+                        <h2 class="app_slider__title">Les plus beaux villages de Bretagne</h2>
+                    </div>
+                 </figcaption>
+             </a>
+        </figure>
+        </div><div class="swiper-slide">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/escapade/1241444-les-iles-de-bretagne/">
+                <picture>
+                    <source media="(min-width: 769px) and (max-width: 999px)" srcset="https://img-4.linternaute.com/xrFJRi0SDnEgvspCfgYL-EJX49E=/999x440/smart/02ecf4a5164a4ebdb067e13dfd151786/ccmcms-linternaute/10123491.jpg">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="https://img-4.linternaute.com/UXtPzrunrIiuJm0ynL1MbASUPik=/768x440/smart/02ecf4a5164a4ebdb067e13dfd151786/ccmcms-linternaute/10123491.jpg">
+                    <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/aBd25uHF46gtnaD1hdvDrTKyLjU=/480x440/smart/02ecf4a5164a4ebdb067e13dfd151786/ccmcms-linternaute/10123491.jpg">
+                    <img src="https://img-4.linternaute.com/QICf8f4y8ssCmOPZnd0Wz7b-hLk=/1300x440/smart/02ecf4a5164a4ebdb067e13dfd151786/ccmcms-linternaute/10123491.jpg" alt="Les plus belles &icirc;les de Bretagne">
+                </picture>
+                 <figcaption>
+                    <div class="app_slider__legend">
+                        <h2 class="app_slider__title">Les plus belles îles de Bretagne</h2>
+                    </div>
+                 </figcaption>
+             </a>
+        </figure>
+        </div><div class="swiper-slide">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/escapade/1073900-20-villages-medievaux-a-l-ambiance-unique/">
+                <picture>
+                    <source media="(min-width: 769px) and (max-width: 999px)" srcset="https://img-4.linternaute.com/gLHoE71b2bRYxwQjZ0nQPtWPNtk=/999x440/smart/41440c0aeaf84ffbb78240a6a108b4b8/ccmcms-linternaute/10594013.jpg">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="https://img-4.linternaute.com/B6sZfEPAT0ScL2roIeqeGxyIFnw=/768x440/smart/41440c0aeaf84ffbb78240a6a108b4b8/ccmcms-linternaute/10594013.jpg">
+                    <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/mkD5pIb1oE9h-YSodBplmofuf0U=/480x440/smart/41440c0aeaf84ffbb78240a6a108b4b8/ccmcms-linternaute/10594013.jpg">
+                    <img src="https://img-4.linternaute.com/uuukuw4XkraA4U3bu1d_q_IRuqM=/1300x440/smart/41440c0aeaf84ffbb78240a6a108b4b8/ccmcms-linternaute/10594013.jpg" alt="30&nbsp;villages m&eacute;di&eacute;vaux &agrave; l'atmosph&egrave;re unique">
+                </picture>
+                 <figcaption>
+                    <div class="app_slider__legend">
+                        <h2 class="app_slider__title">30 villages médiévaux à l'atmosphère unique</h2>
+                    </div>
+                 </figcaption>
+             </a>
+        </figure>
+        </div><div class="swiper-slide">
+        <figure class="app_mod_fig app_mod_fig--legendinside">
+            <a href="https://www.linternaute.com/sortir/escapade/1086264-escapade-a-travers-le-pays-cathare/">
+                <picture>
+                    <source media="(min-width: 769px) and (max-width: 999px)" srcset="https://img-4.linternaute.com/HX40w5lBcuneGm5vOemM1cLd47E=/999x440/smart/f08ba1be89c14c76a2c2b938749b5c89/ccmcms-linternaute/10323053.jpg">
+                    <source media="(min-width: 481px) and (max-width: 768px)" srcset="https://img-4.linternaute.com/Ocx2mVExIravaifBLYVP2DaygsM=/768x440/smart/f08ba1be89c14c76a2c2b938749b5c89/ccmcms-linternaute/10323053.jpg">
+                    <source media="(max-width: 480px)" srcset="https://img-4.linternaute.com/IWmjceHT5d2ReUeUL-uswI_NLDQ=/480x440/smart/f08ba1be89c14c76a2c2b938749b5c89/ccmcms-linternaute/10323053.jpg">
+                    <img src="https://img-4.linternaute.com/MPVbKBLFjMCyLaVc57kFrrCShbY=/1300x440/smart/f08ba1be89c14c76a2c2b938749b5c89/ccmcms-linternaute/10323053.jpg" alt="Escapade &agrave; travers le Pays cathare">
+                </picture>
+                 <figcaption>
+                    <div class="app_slider__legend">
+                        <h2 class="app_slider__title">Escapade à travers le Pays cathare</h2>
+                    </div>
+                 </figcaption>
+             </a>
+        </figure>
+        </div></div><div class="swiper-button-prev" aria-hidden="true" data-icon="&#x27;"></div><div class="swiper-button-next" aria-hidden="true" data-icon="&#x23;"></div>
+				</section>
+                <style>body {overflow-x:hidden;}</style>
+			</div>
+		</div>
+	
+    <div class="app_home_section app_home_section--services">
+        <div class="grid_line gutter">
+            <div class="grid_left w30">
+                <aside class="app_aside">
+                    <h3 class="app_mod_title app_mod_title--link">Services</h3>
+                    <div class="app_list app_list--services">
+                        <div class="grid_line gutter grid--norwd">
+                            <div id="services" class="bu_ccmeditor"><div class="grid_line gutter grid--norwd">
+<div class="grid_left w55">
+<ul>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/pages-blanches/" onclick="$.googleEvents.send('HP-Service', 'Click', 'PagesBlanches');">Pages Blanches</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/pages-jaunes/" onclick="$.googleEvents.send('HP-Service', 'Click', 'PagesJaunes');">Pages Jaunes</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/television/" onclick="$.googleEvents.send('HP-Service', 'Click', 'ProgrammeTV');">Programme TV</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://avis-deces.linternaute.com/" onclick="$.googleEvents.send('HP-Service', 'Click', 'AvisDeces');">Avis de d&eacute;c&egrave;s</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://avis-deces.linternaute.com/annonce-deces" title="Avis de décès gratuit">D&eacute;poser un avis de d&eacute;c&egrave;s gratuit</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/cinema/seances/">S&eacute;ances cin&eacute;</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/cinema/sortie-semaine/" onclick="$.googleEvents.send('HP-Service', 'Click', 'SeancesCine');">Sorties cin&eacute;</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/cartes/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Cartes');">Cartes de voeux</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/magazine/infos/1172361-les-services-de-linternaute-com-sur-android/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Android');">Applis Android</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/magazine/infos/1172464-toutes-les-applications-iphone-gratuites-de-linternaute-com/" onclick="$.googleEvents.send('HP-Service', 'Click', 'iPhone');">Applis iPhone</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/sortir/magazine/1358366-fond-d-ecran-gratuit-choisissez-votre-wallpaper-parmi-nos-selections/f" onclick="$.googleEvents.send('HP-Service', 'Click', 'FondsEcran');">Fonds d&rsquo;&eacute;cran</a></li>
+</ul>
+</div>
+
+<div class="grid_left w45">
+<ul>
+	<li aria-hidden="true" data-icon="#"><a data-processed="1" href="https://www.linternaute.fr/dictionnaire/fr/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Dictionnaire');">Dictionnaire</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.fr/biographie/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Biographie');">Biographie</a></li>
+	<li aria-hidden="true" data-icon="#"><a data-processed="1" href="https://www.linternaute.fr/expression/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Expressions');">Expressions</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/ville/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Villes');">Villes</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/magazine/infos/1215950-les-forums-de-linternaute-com/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Forums');">Forums</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="http://photos.linternaute.com/" onclick="$.googleEvents.send('HP-Service', 'Click', 'GaleriePhoto');">Galerie photo</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/argent/immobilier/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Immobilier');">Immobilier</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="http://jeux.linternaute.com/">Jeux</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.lachainemeteo.com/meteo-france/previsions-meteo-france-aujourdhui">M&eacute;t&eacute;o</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/magazine/infos/1241751-newsletters-comment-s-abonner-se-desabonner/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Newsletters');">Newsletters</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="https://www.linternaute.com/restaurant/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Restaurant');">Restaurant</a></li>
+	<li aria-hidden="true" data-icon="#"><a href="http://tests.linternaute.com/" onclick="$.googleEvents.send('HP-Service', 'Click', 'Test_QI');">Test QI</a></li>
+</ul>
+</div>
+</div>
+</div>                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+            <div class="grid_left w35">
+                <aside class="app_aside app_aside--cartes">
+                    <h3 class="app_mod_title app_mod_title--link"><a href="https://www.linternaute.com/cartes/">Cartes de voeux gratuites</a></h3>
+                    <div class="grid_line gutter grid--norwd">
+                        <div class="grid_left">
+                            <img width="38" height="39" src="https://astatic.ccmbg.com/www.linternaute.com/img/carte_voeux.png" alt="Cartes de voeux" />
+                        </div>
+                        <div class="grid_last">
+                            <h4 class="app_title">Carte d'anniversaire, carte Bonne f&ecirc;te, carte Saint-Valentin... Envoyez une carte de voeux &agrave; vos proches.</h4>
+                        </div>
+                    </div>
+                    <a href="https://www.linternaute.com/cartes/" class="linter_btn linter_btn--channel"><span>Envoyez une carte virtuelle</span></a>
+                </aside>
+            </div>
+            <div class="grid_left w35">
+                    <aside class="app_aside app_aside--day">
+        <h3 class="app_mod_title app_mod_title--link">
+            lundi  9 août        </h3>
+        <div class="app_list app_list--services">
+            <ul>
+                                            <li aria-hidden="true" data-icon="&#x23;">
+                                Bonne fête 
+                                <a href="https://www.journaldesfemmes.fr/prenoms/amour/prenom-9240">
+                                    Amour                                </a>
+                            </li>
+                                                    <li aria-hidden="true" data-icon="&#x23;">
+                                Le mot du jour : <a href="https://www.linternaute.fr/dictionnaire/fr/definition/cynique/">Cynique</a>
+                            </li>
+                                                    <li aria-hidden="true" data-icon="&#x23;">
+                                La ville du jour : <a href="http://www.linternaute.com/ville/ville/accueil/1843/chalon-sur-saone.shtml">CHALON SUR SAONE</a>
+                            </li>
+                                                    <li aria-hidden="true" data-icon="&#x23;">
+                                Le signe du jour : <a href="https://www.journaldesfemmes.fr/horoscope/zodiaque/lion-jour/">Lion</a>
+                            </li>
+                                    </ul>
+        </div>
+    </aside>
+            </div>
+        </div>
+    </div>
+                            </div>
+                    </div>
+                                    </div>
+
+                            </div>
+
+            
+        
+<!--Akamai-ESI:FRAGMENT:/api/layout/footer?client=linternaute_index&esi=1/-->
+
+<!--Akamai-ESI:FRAGMENT:setgentime=1627648809/-->
+    
+    
+<!-- footerdebbloc -->
+<footer role="contentinfo" class="ccmcss_footer">
+
+    <div id="footer" class="bu_ccmeditor"></div>
+
+    <div class="layout" mutualised="true">
+                    <a href="#jSNSPreview" class="sns_ico--bell sns_avoidance_link"></a>
+
+        
+        <div id="footer_internal_links" class="bu_ccmeditor"><ul>
+	<li><a href="https://www.linternaute.com/magazine/infos/1344836-qui-sommes-nous/">Qui sommes-nous ?</a></li>
+	<li><a href="https://www.linternaute.com/magazine/infos/1241749-contacter-linternaute-com/">Contact</a></li>
+	<li><a href="https://media.figaro.fr/">Publicit&eacute;</a></li>
+	<li><a href="https://formation.ccmbenchmark.com/formations">Formation</a></li>
+	<li><a href="https://media.figaro.fr/">La soci&eacute;t&eacute;</a></li>
+	<li><a href="https://www.linternaute.com/list">Tous les articles</a></li>
+	<li><a href="https://www.cadremploi.fr/">Recrutement</a></li>
+	<li><a href="https://www.ccmbenchmark.com/donnees-personnelles?origin=www.linternaute.com">Donn&eacute;es personnelles</a></li>
+	<li><a class="jConsentChoice" href="https://www.ccmbenchmark.com/donnees-personnelles?origin=www.linternaute.com">Param&eacute;trer les cookies</a></li>
+	<li><a href="https://www.linternaute.com/magazine/infos/1253554-mentions-legales/">Mentions l&eacute;gales</a></li>
+	<li><a href="https://www.ccmbenchmark.com/">&copy; 2021 CCM Benchmark</a></li>
+</ul>
+</div>
+
+        <div class="logo">
+            <a original-title="CCM Benchmark Group" href="https://www.ccmbenchmark.com/" target="_blank">
+                <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-groupe.svg" alt="CCM Benchmark Group" loading="lazy" width="212" height="49">
+            </a>
+        </div>
+
+                    <div class="brands">
+                                    <a href="https://www.journaldesfemmes.fr/" original-title="Journal des femmes">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-jdf.svg" alt="Journal des femmes" loading="lazy" width="115">
+                    </a>
+                                    <a href="https://www.commentcamarche.net/" original-title="Comment Ca Marche">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-ccm.svg?1" alt="Comment Ca Marche" loading="lazy" width="103">
+                    </a>
+                                    <a href="https://www.journaldunet.com/" original-title="Journal Du Net">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-jdn.svg" alt="Journal Du Net" loading="lazy" width="86">
+                    </a>
+                                    <a href="https://droit-finances.commentcamarche.com/" original-title="Droit-finances.net">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-df.svg" alt="Droit-finances.net" loading="lazy" width="103">
+                    </a>
+                                    <a href="https://copainsdavant.linternaute.com/" original-title="Copains d&#039;avant">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-copains.svg" alt="Copains d&#039;avant" loading="lazy" width="122">
+                    </a>
+                                    <a href="https://www.hugolescargot.com/" original-title="Hugo L&#039;Escargot">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-hugo.svg" alt="Hugo L&#039;Escargot" loading="lazy" width="122">
+                    </a>
+                                    <a href="https://viadeo.journaldunet.com/" original-title="Viadeo JDN">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-viadeo.svg?2" alt="Viadeo JDN" loading="lazy" width="106">
+                    </a>
+                                    <a href="https://www.jeux-gratuits.com/" original-title="Jeux gratuits">
+                        <img src="https://astatic.ccmbg.com/www.linternaute.com/bundles/ccmbenchmarkccmcms/img/footer/logo-jeuxgratuits.svg?2" alt="Jeux gratuits" loading="lazy" width="106">
+                    </a>
+                            </div>
+        
+        <div id="footer_links" class="bu_ccmeditor"><div class="foot_links"><a href="https://www.journaldesfemmes.fr/horoscope/">Horoscope</a> | <a href="https://www.journaldesfemmes.fr/beaute/conseils-cheveux/2548078-coupe-cheveux-2021/">Coupe de cheveux</a> | <a href="https://cuisine.journaldesfemmes.fr/toutes-les-recettes/">Recette</a> | <a href="https://cuisine.journaldesfemmes.fr/recette/330802-gateau-au-yaourt">G&acirc;teau au yaourt</a> | <a href="https://www.journaldesfemmes.fr/prenoms/">Pr&eacute;noms</a> | <a href="https://sante.journaldesfemmes.fr/">Sant&eacute;</a> | <a href="https://sante.journaldesfemmes.fr/fiches-sante-du-quotidien/2441413-calcul-imc-formule-femme-homme-enfant-norme-indice-de-masse-corporelle-obese/">IMC</a> | <a href="https://www.linternaute.com/actualite/">Actualit&eacute;s</a> | <a href="https://www.linternaute.fr/dictionnaire/fr/">Dictionnaire</a> | <a href="https://www.linternaute.com/cartes/">Carte de voeux</a> | <a href="https://www.linternaute.com/cinema/sortie-semaine/">Sorties cin&eacute;ma</a> | <a href="https://www.linternaute.com/television/">Programme TV</a> | <a href="https://www.linternaute.com/pages-blanches/">Pages blanches</a> | <a href="https://www.linternaute.com/pages-jaunes/">Pages jaunes</a> | <a href="https://avis-deces.linternaute.com/">Avis de d&eacute;c&egrave;s</a> | <a href="https://www.linternaute.com/bons-plans/">Bons plans</a> | <a href="https://www.linternaute.fr/biographie/">Biographie</a> | <a href="https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/1487601-test-debit-internet/">Test d&eacute;bit</a> | <a href="https://www.journaldunet.fr/patrimoine/guide-des-finances-personnelles/resiliation/">R&eacute;siliation</a> | <a href="https://www.journaldunet.com/business/salaire">Salaires</a> | <a href="https://www.journaldunet.fr/management/guide-du-management/1200753-lettre-de-motivation-exemple-modele-gratuit-a-telecharger-et-comment-la-faire/">Lettre de motivation</a> | <a href="https://www.commentcamarche.net/download/">T&eacute;l&eacute;charger</a> | <a href="https://www.commentcamarche.net/informatique/windows/guide-de-windows/">Windows 10</a> | <a href="https://www.commentcamarche.net/mobile/ios/guide-ios/">iOS</a> | <a href="https://www.commentcamarche.net/mobile/android/guide-android/">Android</a> | <a href="https://www.commentcamarche.net/applis-sites/bureautique/guide-bureautique/microsoft-office/">Microsoft Office</a> | <a href="https://droit-finances.commentcamarche.com/immobilier/guide-immobilier/copropriete/">Copropri&eacute;t&eacute;</a> | <a href="https://droit-finances.commentcamarche.com/patrimoine/guide-patrimoine/transmission/droit-des-successions/">Succession</a> | <a href="https://droit-finances.commentcamarche.com/famille-et-allocations/guide-famille-et-allocations/couple/divorce/">Divorce</a> | <a href="https://www.hugolescargot.com/coloriages/">Coloriage</a></div>
+</div>
+
+    </div>
+
+</footer>
+<!-- footerfinbloc -->
+
+    <div id="ctn_x01"><div id="ba_x01" class="ba x01"><script>OAS_AD('x01');</script></div></div><div id="ctn_topleft"><div id="ba_topleft" class="ba topleft"><script>OAS_AD('TopLeft');</script></div></div>        </div>
+    </div>
+
+    <script type="application/x-microTemplate" id="template_ba_native_atf">
+    <aside class="app_edito_na app_edito_na--above" data-sponsor="${sponsoredBy}" id="${id}">
+        <span class="adchoice_ctn"></span>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <span class="app_edito_title_2">${title}</span>
+            <button class="app_edito_btn">${cta}</button>
+        </a>
+    </aside>
+</script>
+
+
+<script type="application/x-microTemplate" id="template_ba_native_mtf">
+    <aside class="app_edito_na app_edito_na--inside" data-sponsor="${sponsoredBy}" id="${id}">
+        <span class="adchoice_ctn"></span>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <span class="app_edito_na__img" style="background-image:url('${image}')"></span>
+            <div>
+                <span class="app_edito_title_2">${title}</span>
+                <p>
+                    ${description}
+                </p>
+                <button class="app_edito_btn">${cta}</button>
+            </div>
+        </a>
+    </aside>
+</script>
+
+<script type="application/x-microTemplate" id="template_ba_preload1">
+    <aside class="app_edito_na app_edito_na--inside" data-sponsor="${sponsoredBy}" id="${id}">
+        <span class="adchoice_ctn"></span>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <span class="app_edito_na__img" style="background-image:url('${image}')"></span>
+            <div>
+                <span class="app_edito_title_2">${title}</span>
+                <p>
+                    ${description}
+                </p>
+                <button class="app_edito_btn">${cta}</button>
+            </div>
+        </a>
+    </aside>
+</script>
+
+<script type="application/x-microTemplate" id="template_ba_preload2">
+    <aside class="app_edito_na app_edito_na--inside" data-sponsor="${sponsoredBy}" id="${id}">
+        <span class="adchoice_ctn"></span>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <span class="app_edito_na__img" style="background-image:url('${image}')"></span>
+            <div>
+                <span class="app_edito_title_2">${title}</span>
+                <p>
+                    ${description}
+                </p>
+                <button class="app_edito_btn">${cta}</button>
+            </div>
+        </a>
+    </aside>
+</script>
+
+<script type="application/x-microTemplate" id="template_ba_preload3">
+    <aside class="app_edito_na app_edito_na--inside" data-sponsor="${sponsoredBy}" id="${id}">
+        <span class="adchoice_ctn"></span>
+        <a href="${link}" target="_blank" rel="noopener noreferrer">
+            <span class="app_edito_na__img" style="background-image:url('${image}')"></span>
+            <div>
+                <span class="app_edito_title_2">${title}</span>
+                <p>
+                    ${description}
+                </p>
+                <button class="app_edito_btn">${cta}</button>
+            </div>
+        </a>
+    </aside>
+</script>
+<script type="text/javascript"> $data = {"common":{"lang":"FR","selfurl":"\/","status_code":"200","baseUrl":"","connected":false,"staticDomain":"\/\/astatic.ccmbg.com\/www.linternaute.com","cookieDomain":".linternaute.com","widgetSource":"linternaute","GAEvents":{"click":[{"target":".app_select_navigation a[rel=prev]","category":"ccmcms\/contents","action":"header\/prev","complete":":=>function(e){ window.location = $(this).attr(\"href\"); }","preventDefault":true},{"target":".app_select_navigation a[rel=next]","category":"ccmcms\/contents","action":"header\/next","complete":":=>function(e){ window.location = $(this).attr(\"href\") }","preventDefault":true},{"target":".app_customselect__items a","category":"ccmcms\/contents","action":"header\/menu","complete":":=>function(e){ window.location = $(this).attr(\"href\"); }","preventDefault":true},{"target":".ccmcss_paginator a[rel=next]","category":"ccmcms\/contents","action":"footer\/next","complete":":=>function(e){ window.location = $(this).attr(\"href\"); }","preventDefault":true},{"target":".ccmcss_paginator a[rel=prev]","category":"ccmcms\/contents","action":"footer\/prev","complete":":=>function(e){ window.location = $(this).attr(\"href\"); }","preventDefault":true},{"target":".app_box_1--summary a","category":"ccmcms\/contents","action":"footer\/summary","complete":":=>function(e){ window.location = $(this).attr(\"href\"); }","preventDefault":true}]}},"ccmcms":{"services":{"config":{"start":false,"step":1,"selector":"#col_middle"},"videoOnScroll":{"start":true,"forceStart":false},"rwdShare":{"pattern":{"twitter":"https:\/\/twitter.com\/intent\/tweet?text={title} : {url} via @LInternauteInfo","facebook":"http:\/\/www.facebook.com\/sharer.php?u={url}","linkedin":"https:\/\/www.linkedin.com\/shareArticle?url={url}","pinterest":"http:\/\/pinterest.com\/pin\/create\/link\/?url={url}&media={media}&description={title}","google":"https:\/\/plus.google.com\/share?url={url}","mail":"https:\/\/www.linternaute.com\/sendinfo\/?url={url}"}},"odeditor":{"start":false},"mapstraction":{"start":false},"rating":{"start":false},"blocks":{"start":false},"socialbuttons":false,"slider":{"start":true,"selector":".slider","options":[]},"contents":{"content":{"urlController":"\/c","common":{"view":{"start":false,"selector":"#col_middle"},"form":{"start":false,"selector":"#content"},"common":{"start":true,"selector":"#col_middle"}},"top":{"view":{"start":false,"selector":"#col_middle"},"form":{"start":false,"selector":"#col_middle"},"common":{"start":false,"selector":"#col_middle"}},"summary":{"start":{"start":false}}},"tag":{"common":{"start":false,"selector":"#groupDescForm"}},"embed":[]},"errors":{"controller":[]},"header":{"start":true,"nav":{"sub":{"limit":1,"viewmode":"img","domain":"www.linternaute.com"}}},"account":{"start":false,"selector":"form[data-formaccount=\"1\"]"},"ajaxUpdate":{"start":false},"swiperVoyage":{"start":false},"linkedin":{"followButton":{"start":false}},"playlist":{"start":false,"options":{"host":"\/\/p.ccmbg.com\/media\/","adDomain":"linternaute"}},"fileUpload":{"start":false},"croppable":{"start":false},"authorlayer":{"start":false},"fancybox":{"start":false},"aprilfool":{"start":false},"thumbslider":{"start":false},"diaporama":{"start":false},"trackevent":{"start":true},"nativeAdsMoreDialog":{"start":false},"election":{"start":false},"ckeditor":{"start":false,"options":{"selector":".jCkEditorBlocks"}},"hammer":{"start":true},"notifications":[],"zbo":{"start":true},"mobileShare":true,"swiper":{"start":true},"blockcinetv":{"start":true}}}}</script><script type="application/x-jet-extend" data-target="jQuery.jet.env.packager" data-priority="1" data-load="init">
+                {"url":{"css":"\/ressource\/css\/css.php","js":"\/ressource\/js\/js.php"},"host":"https:\/\/astatic.ccmbg.com"}
+            </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script><script src="https://astatic.ccmbg.com/www.linternaute.com/dist/app/js/commons.8d6cc3f14ec8fff01c56.js" crossorigin="anonymous"></script><script src="https://astatic.ccmbg.com/www.linternaute.com/dist/app/js/chunks/app.a2896fdf7fa99c911da6.js" crossorigin="anonymous"></script><script src="https://astatic.ccmbg.com/www.linternaute.com/dist/app/js/chunks/start.84e9d0cb0017ec62e462.js" crossorigin="anonymous"></script><script> typeof jQuery !== 'undefined' && typeof jQuery.jet !== 'undefined'  && jQuery.jet.started === false  && jQuery(document).trigger('start');</script>
+</body>
+</html>
+
+<!--Akamai-ESI:PAGE:finalreftime=1628511361/-->
+
+    
+    
+<!--Akamai-ESI:PAGE:If-Modified-Since=/-->
+<!--Akamai-ESI:PAGE:Last-Modified=Mon, 09 Aug 2021 12:16:01 GMT/-->

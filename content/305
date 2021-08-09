@@ -1,0 +1,2207 @@
+
+<!DOCTYPE html>
+<html  lang="en" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#" >
+<head>
+<title>Welcome to Robtex!</title>
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#63bb9d">
+
+
+<script>
+var dfp_nsfw='N';
+</script>
+
+<meta property="fb:app_id" content="521724824578638" />
+<link href="https://plus.google.com/+robtex" rel="publisher" />
+
+
+
+
+
+
+
+        <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+<script async src="//cdn-a.yieldlove.com/yieldlove-bidder.js?robtex.com"></script>
+<script async='async' src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  googletag.cmd.push(function() {
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+  });
+</script>
+
+<script>
+var addthis_config = {
+       data_track_clickback: false
+}
+</script>
+
+
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="robtex search" href="/osd.xml" />
+<link rel="icon" href="https://www.robtex.com/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<base href="https://www.robtex.com/" /><link rel="canonical" href="https://www.robtex.com/"/>
+
+<link rel="apple-touch-icon" href="https://www.robtex.com/apple-touch-icon.png" />
+
+
+
+
+<meta itemprop="image" property="og:image" content="https://gfx.robtex.com/gfx/graph.png?dns=&amp;square=256" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@robtexdotcom" />
+<meta name="twitter:title" content="Welcome to Robtex!" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="https://gfx.robtex.com/gfx/graph.png?dns=&amp;square=256" />
+
+<meta content="" itemprop="description" name="description" property="og:description"/>
+
+
+
+
+
+
+    <script type="application/ld+json">
+
+      {
+"@context":"http://schema.org",
+"@type":"NewsArticle",
+"headline":"",
+"datePublished":"2017-07-22T12:19:11Z",
+"author":["Robtex"],
+"image":{"@type":"ImageObject","url":"https://gfx.robtex.com/gfx/graph.png?dns=&amp;square=1024","height":1024,"width":1024},
+"description":"",
+"publisher":{"@type":"Organization","name":"Robtex",
+    "logo":{"@type":"ImageObject","url":"https://www.robtex.com/robtex.gif","width":190,"height":43}
+    },
+    "url":"https://www.robtex.com/"
+}
+
+
+    </script>
+
+
+
+
+<script>
+var isq=1;
+var ise=0;
+var rtrk=1500725951;
+var isaj=0;
+
+var rtpv=0;
+var acceptedcookies=0;
+
+var baseurl='https://www.robtex.com/';
+var protohost='https://www.robtex.com';
+var shbbu='"?dns="';
+var yesads=1;
+
+
+var promoext=0;
+var didpromo=0;
+
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    window.location.reload();
+  }
+});
+
+function dopromoext()
+{
+    return;
+if(!promoext) return;
+var x=document.getElementById("promoext");
+if(x)
+{
+if(didpromo++) return;
+x.innerHTML="<div style=\"background:#eee;padding:10px;margin:10px auto;border-radius:15px;width:300px\"><center><a href=\"https://www.robtex.com/toolbar/\">Try our chrome extension!</a></center></div>";
+}
+}
+
+function trypromo()
+{
+  if(!acceptedcookies) return;
+if(window['chrome'])
+if(window['chrome']['runtime'])
+chrome.runtime.sendMessage(
+'neagmbhdnabclgpgjkpepoahjkafipbn'
+, { message: "version" },
+    function (reply) {
+        if (reply) {
+        }
+        else {
+          promoext = 1;
+            dopromoext();
+        }
+    });
+}
+
+function getcookie(n)
+{
+    var name=n+"=";
+    var found=undefined;
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            found=c.substring(name.length,c.length);
+        }
+    }
+    return found;
+}
+
+function setcookie(o)
+{
+var exdays=o.d;
+var d = new Date();
+d.setTime(d.getTime() + (exdays*24*60*60*1000));
+var expires = "expires="+ d.toUTCString();
+document.cookie =  o.n+"="+o.v + ";" + expires + ";path=/";
+
+}
+
+function acceptcookies(a)
+{
+acceptedcookies=a;
+setcookie({'n':'acceptcookies','v':a,'d':30});
+checkcookies();
+return false;
+}
+
+function checkcookies()
+{
+document.getElementById('cookienotice').style.display=(acceptedcookies==1?'none':'block');
+}
+
+function dortpv()
+{
+  rtpv=getcookie('rtpv')||0;
+  rtpv++;
+//  console.log('rtpv',rtpv);
+  setcookie({'n':'rtpv','v':rtpv,'d':365});
+}
+
+
+acceptedcookies=!!getcookie('acceptcookies');
+dortpv();
+
+</script>
+
+<style>a {
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table.dnsh {
+    background: #eee;
+}
+
+td.dnsht {
+    background: #0c0;
+}
+
+td.dnshf {
+    background: #ccc;
+}
+
+
+html,body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+    background: #fff;
+}
+
+.rtad {
+    visibility: hidden;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    
+}
+
+#contres {
+
+
+    
+}
+
+#mynetwork {
+    
+    height: 100%;
+    
+    
+}
+
+#mynetworkflex {
+    display: flex;
+    
+    
+    width: 100%;
+    height: 100%;
+}
+
+#mynetworkcanvas {
+    
+    
+    
+    height: 100%;
+    flex-grow: 1;
+    flex: 1;
+}
+
+.rtfrag {
+}
+
+.rtfragmax {
+    height: 100%;
+}
+
+.rtgui {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+.rtfragui {
+    border: 3px solid #63bb9d;
+    
+    
+    width: 100%;
+    
+    
+    
+    
+    margin: 1em 0;
+}
+
+.rtfragh {
+    background: #63bb9d;
+    margin: none;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rtfragh > div {
+}
+
+.rtfragh > div:nth-child(1) {
+    flex: 1;
+}
+
+.rtfragh > div:nth-child(2) {
+}
+
+.rtfragh > div:nth-child(2) > span > a {
+    border-bottom: none;
+}
+
+.rtfragh > div > div {
+}
+
+.rtfragh> div > h2 {
+    background: #63bb9d;
+    padding: none;
+    margin: none;
+    border: none;
+    margin: 0 0.1em;
+}
+
+.rtfragc {
+    overflow: scroll;
+}
+
+.rtfullheight {
+    
+}
+
+.rtstyle table {
+    
+    
+    border-radius: 10px 0 0 10px;
+}
+
+.rtstyle table table {
+    
+    
+}
+
+.rtstyle td, .rtstyle th {
+    
+    
+    
+    
+}
+
+.whois td {
+    vertical-align: top;
+}
+
+.whois td:first-child {
+    color: #008;
+    text-align: right;
+    padding-right: 10px;
+    width: 100px;
+}
+
+.thmitable td {
+    vertical-align: top;
+    max-width: 250px;
+    overflow: scroll;
+}
+
+.thmitable td:first-child {
+    color: #008;
+    text-align: right;
+    padding-right: 10px;
+    width: 150px;
+}
+
+table.thmitable {
+    border-radius: 0 0 0 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+table.whois {
+    border-radius: 0 0 0 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.rtpopup table {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+div.res > div {
+    width: 100%;
+    overflow: hidden;
+}
+
+#res table {
+    
+    
+    
+    
+    
+}
+
+
+#res table td td {
+    
+}
+
+#res table td td td {
+    
+}
+
+#res table td {
+    
+    
+}
+
+#res table th {
+    
+    
+    
+}
+
+#res table td {
+    
+}
+
+div.cards > div {
+    background: #c6d0c6;
+    border: 1px solid #585;
+    
+    border-radius: 15px;
+    padding: 10px;
+}
+
+div.cards > div >h2 {
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #585;
+    margin: 10px;
+    padding: 10px;
+}
+
+div.cards >div>h2>span {
+    padding-top: 50px;
+}
+
+sup {
+    font-weight: bold;
+}
+
+div.index {
+    background: #c6d0c6;
+    
+    margin: 30px 0;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+div.index > div {
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #585;
+    overflow-y: scroll;
+    margin: 10px;
+    height: 150px;
+}
+
+span.resspan {
+    
+    
+}
+
+
+div.contad {
+    
+    
+    
+    
+    
+}
+
+
+div.dns table {
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+div.dns td, div.dns th {
+    
+    vertical-align: top;
+    
+}
+
+div.dns th {
+    font-weight: normal;
+    text-align: r;
+}
+
+
+div.dns td > b {
+    color: rgba(0,0,0,.5);
+    
+    
+    text-align: right;
+    float: right;
+}
+
+div.dns table > tbody > tr >td:nth-child(2) {
+    width: 100%;
+}
+
+table.l2 ,table.l4 ,table.l6 ,table.l8 {
+    margin: 0.5em 0;
+    
+}
+
+table.l0 {
+    background: #eee;
+}
+
+table.l0 table.l2:nth-child(even), table.l4 table.l6:nth-child(even) {
+    background: #eef;
+}
+
+table.l0 table.l2:nth-child(odd), table.l4 table.l6:nth-child(odd) {
+    background: #efe;
+}
+
+table.l2 table.l4:nth-child(even), table.l6 table.l8:nth-child(even) {
+    background: #fee;
+}
+
+table.l2 table.l4:nth-child(odd), table.l6 table.l8:nth-child(odd) {
+    background: #ffe;
+}
+
+.rtsak {
+    
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#dbg {
+    font-family: monospace;
+    color: white;
+    background: black;
+    float: right;
+}
+
+div.rtstyle a {
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    
+    
+    
+    
+    white-space: nowrap;
+    
+    
+    
+    
+}
+
+div.brk {
+    clear: both;
+    height: 3px;
+    background: #ccc;
+    margin: 5px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #fff 00px,#ccc 25%,#ccc 75%,#fff 100%);
+}
+
+#prog {
+}
+
+#prog , #prog div {
+    font-family: Courier;
+    
+    height: 3px;
+    position: fixed;
+    
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#prog div {
+    
+}
+
+#prog div div:nth-child(1) {
+    background: rgba(0,0,255,0.4);
+}
+
+#prog div div:nth-child(2) {
+    background: rgba(255,0,0,0.4);
+}
+
+#prog div div:nth-child(3) {
+    background: rgba(128,128,128,0.4);
+}
+
+#prog div div:nth-child(4) {
+    color: #fff;
+}
+
+div.dnsbl {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+div.dnsbl table, div.dnsbl tr, div.dnsbl td {
+}
+
+div.dnsbl table {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    
+}
+
+div.dnsbl tr {
+    
+}
+
+div.dnsbl td {
+    overflow-wrap: break-word;
+    
+}
+
+div.dnsbl table tr td:first-child {
+    
+}
+
+div.dnsbl tt {
+    float: left;
+    margin: 0px 10px;
+    border: 1px solid black;
+    background: #fff;
+    color: #000;
+}
+
+div.dnsbl i {
+    clear: both;
+    float: left;
+    
+}
+
+div.dnsbl table tr:not(:last-child) td {
+    border-bottom: 2px rgba(0,0,0,.5) dashed;
+}
+
+div.dnsbl tr {
+    background: #eee;
+    padding: 0.2em 0px;
+}
+
+div.dnsbl tr.red {
+    background: #fdd;
+    color: #c00;
+}
+
+div.dnsbl tr.error {
+    background: #ffc;
+    color: #000;
+}
+
+div.dnsbl tr.ok {
+    background: #dfd;
+}
+
+div.autofold {
+    padding: 3px;
+    width: 100%;
+    display: flex;
+    overflow: wrap;
+    border: 3px solid #000;
+}
+
+.autofold div {
+    overflow: wrap;
+    display: flex;
+    border: 1px solid #0f0;
+}
+
+div.autofold2 {
+    clear: both;
+    flex-flow: row wrap;
+    width: 100%;
+    display: flex;
+    qborder: 3px solid #000;
+}
+
+.autofold2 div {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    jborder: 1px solid #800;
+}
+
+.autofold2 div {
+    padding: 1px;
+    border: 1px solid #000;
+    border-radius: 5px
+}
+
+prog#div {
+    z-order: 1000;
+}
+
+.scrollist > li {
+    
+    list-style: none;
+    max-width: 200px;
+    min-width: 100px;
+    white-space: nowrap;
+}
+
+.scrollist {
+    
+    
+    
+    
+}
+
+.scrollist::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+}
+
+.scrollist::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    
+}
+
+.scrollist::-webkit-scrollbar {
+    background-color: rgb(99, 187, 157);
+    border: none;
+    
+}
+
+.rtstyle h2, .rtstyle h3 {
+    text-align: center;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+@media screen and (max-width: 499px) {
+    #mynetworkdragl, #mynetworkdragr {
+         width: 30px;
+        
+        background: url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAYAAAA4GpVBAAAAGUlEQVQYV2O4e/fuf4bdu3cjEzNnzkQXAwADDhmBxLFwEwAAAABJRU5ErkJggg==
+) repeat;
+    }
+
+    .scrollist {
+        columns: 200px;
+        overflow-x: auto;
+        
+        max-height: 100px;
+    }
+}
+
+
+.notfound:after
+{
+    display:block;
+    content:'Nothing found here, sorry';
+    color:#008
+}
+
+.pleaselogin:after
+{
+    display:block;
+    content:'Please login to see this section';
+    color:#008;
+}
+
+.loading:after
+{
+    display:block;
+    content:'loading...';
+    color:#008;
+}
+
+
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size:11pt;
+        
+    }
+
+    .rtstyle {
+        
+        
+        
+    }
+
+    .scrollist {
+        
+        
+        clear: none;
+        font-family: verdana,arial,sans-serif;
+        
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 2px;
+        
+        overflow-y: auto;
+        max-height: 600px;
+        
+        margin: 0;
+        border-bottom: 2px solid #ccc;
+        border-top: 2px solid #ccc;
+    }
+
+    .rtstyle h2, .rtstyle h3 {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .infobox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+
+    .infobox > div {
+        border: #63bb9d solid 1px;
+        
+        margin: 5px;
+        
+        
+        
+        
+        flex-grow: 1;
+        flex-shrink: 1;
+        box-shadow: 7px 7px 10px 0px #ddd;
+        border-radius: 4px;
+    }
+}
+
+.infobox h3 {
+    border: 0;
+    margin: 0;
+    background: #63bb9d;
+}
+
+.img24 {
+    width: 24px;
+    height: 24px;
+}
+
+.img_restore {
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3Cpath d='M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z'/%3E %3C/svg%3E");
+}
+
+.img_fullscreen {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3Cpath d='M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z'/%3E %3C/svg%3E");
+}
+
+.img_bottom {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z'/%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3C/svg%3E");
+}
+
+.im_top {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z'/%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3C/svg%3E");
+}
+
+
+.rtpopup table td {
+    
+    
+    border: 1px;
+}
+
+.rtpopup table td a {
+    text-decoration: none;
+}
+
+.rtpopup table td strike {
+    color: #f00;
+}
+
+.rtpopup table td b {
+    text-decoration: none;
+}
+
+.ttal , .rtpopup table td.shared1 {
+    text-align: left;
+    background: linear-gradient(30deg, #ccf 10%,#fff 90%);
+}
+
+.ttar, .rtpopup table td.shared2 {
+    text-align: right;
+    background: linear-gradient(30deg, #fff 10%,#cfc 90%);
+}
+
+.rtpopup table td.shared3 {
+    text-align: center;
+    background: linear-gradient(90deg, #ccc 10%,#ccc 90%);
+}
+
+.rtpopup table tr.l0 {
+    background: #fcc;
+}
+
+.rtpopup table tr.l1 {
+    background: #eec;
+}
+
+.rtpopup {
+    min-width: 100px;
+    min-height: 100px;
+    background: #fff;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border: 4px solid #ccc;
+    padding: 4px;
+    max-height: 500px;
+    overflow: scroll;
+    z-index: 1111;
+}
+
+.rtpopup::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+}
+
+.rtpopup::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    
+}
+
+.rtpopup h1 {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.flex1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex1 > div {
+    flex: 1;
+}
+
+.seo table {
+    border: 1px solid black;
+    min-width: 300px;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+.endsection {
+    
+    font-style: italic;
+    font-weight: lighter;
+    clear: both;
+    text-align: right;
+}
+
+
+.xsha {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.xsha > div {
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    
+    padding: 5px 10px 10px 5px;
+}
+
+.xsha>div>div {
+    background: #63bb9d;
+    color: #1f701f;
+    min-height: 50px;
+}
+
+.xsha > div > div > span {
+    padding: 10px;
+}
+
+.xsha h3 {
+    color: #ffffff;
+    margin: 0px;
+    padding: 7px;
+    background: #63bb9d;
+    border: none;
+}
+
+
+.xbul {
+    border: 1px solid #000000;
+    clear: none;
+    font-family: verdana,arial,sans-serif;
+    
+    max-height: 300px;
+    margin: 0;
+    overflow-x: auto;
+    
+    padding: 2px;
+    max-width: 100%;
+    
+    padding: 9px;
+    
+}
+
+.xbul li {
+    list-style-type: none;
+    margin-left: 0px;
+    display: list-item;
+}
+
+.xsha>div {
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    padding: 5px 10px 10px 5px;
+}
+
+.old h3 {
+    background: none;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .xbul {
+        max-height: 140px;
+        columns: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .xsha>div {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .xsha>div {
+        width: 300px;
+    }
+}
+
+.anchor {
+    content: 'ANCHOR';
+    
+    position: relative;
+    top: -100px;
+    display: inline;
+}
+
+div.rttab ul {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.rttab button, div.rttab li {
+    
+    color: #1f701f;
+    font-family: arial;
+    padding: 3px;
+    flex: 1;
+    word-break: normal;
+    margin: 2px;
+    text-align: center;
+    border: 2px solid #1f701f;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+div.rttab a {
+    text-decoration: none;
+}
+
+div.rttab ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.rttab li {
+}
+
+span.censor {
+    background: #888;
+}
+
+span.censor:hover {
+    background: none;
+}
+
+span.censor:hover:before {
+    background: #f0f;
+    content: attr(data-hover);
+    
+    position: absolute;
+    overflow: visible;
+    z-index: 2000;
+}
+
+span.censor:hover:before 
+{
+    background: #ff0;
+}
+
+table.protable {
+    border-radius: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.protable tr {
+}
+
+table.protable td {
+    padding: 10px;
+}
+
+table.protable tr:nth-child(even) td {
+    background: #eef;
+}
+
+table.protable tr:nth-child(odd) td {
+    background: #efe;
+}
+
+table.protable th {
+    background: #ccc;
+}
+
+
+
+table.table2col {
+    border-radius: 0;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-collapse:collapse;
+    margin:0 30px;
+}
+
+table.table2col tr {
+    width: 400px;
+}
+
+table.table2col td ,
+table.table2col th {
+
+    padding:4px 7px;
+}
+
+table.table2col tr.ttog0 td {
+    background: #eef;
+}
+
+table.table2col tr.ttog0 th {
+    background: #ccf;
+}
+
+
+table.table2col tr.ttog1 td {
+    background: #efe;
+}
+
+table.table2col tr.ttog1 th[scope=row] {
+    background: #cfc;
+}
+
+
+table.table2col th:not([scope=row]) {
+    background:#ccc;
+}
+
+table.table2col th[scope=row] {
+    vertical-align: top;
+    text-align:left;
+    width:140px;
+}
+
+table.table2col td {
+    background:#f0f;
+
+}
+
+table.table2col ul {
+    padding:0;
+    margin:0;
+}
+table.table2col li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.button {
+    background: #f8f8f8;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+div.loginbar {
+    background: #ccc;
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.loginbar > div {
+    flex: 1;
+    flex-grow: 0;
+    white-space: nowrap;
+}
+
+div.loginbar .button {
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+div.loginbar .button a {
+    text-decoration: none;
+}
+
+.img24 {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border: none;
+    background: none;
+}
+
+.img_restore {
+    background-image: url("data:image/svg+xml,%3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3Cpath d='M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z'/%3E %3C/svg%3E");
+}
+
+.img_fullscreen {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3Cpath d='M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z'/%3E %3C/svg%3E");
+}
+
+.img_bottom {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M16 13h-3V3h-2v10H8l4 4 4-4zM4 19v2h16v-2H4z'/%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3C/svg%3E");
+}
+
+.img_top {
+    background-image: url("data:image/svg+xml, %3Csvg fill='%23000000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M8 11h3v10h2V11h3l-4-4-4 4zM4 3v2h16V3H4z'/%3E %3Cpath d='M0 0h24v24H0z' fill='none'/%3E %3C/svg%3E");
+}
+
+#rtfragc_visgraph {
+    height: 500px;
+}
+
+#rtfragc_dnst, #rtfragc_dnsbl, #rtfragc_ohistory, #rtfragc_owhois {
+    height: 300px;
+}
+
+#rtfragc_ograph {
+    overflow: scroll;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.aspan {
+    display: inline;
+    background: #f0f;
+}
+
+.dlicon {
+    display: inline-block;
+    width: 20px;
+    clear: none;
+}
+
+.progress {
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    margin: 0 .5em;
+    font-size: 12px;
+    text-indent: 999em;
+    overflow: hidden;
+    animation: spin 1s infinite steps(8);
+}
+
+.small.progress {
+    font-size: 4px;
+}
+
+.large.progress {
+    font-size: 24px;
+}
+
+.progress:before, .progress:after, .progress > div:before, .progress > div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2.25em;
+    
+    width: .5em;
+    height: 1.5em;
+    border-radius: .2em;
+    background: #eee;
+    box-shadow: 0 3.5em #eee;
+    
+    transform-origin: 50% 2.5em;
+    
+}
+
+.progress:before {
+    background: #555;
+}
+
+.progress:after {
+    transform: rotate(-45deg);
+    background: #777;
+}
+
+.progress > div:before {
+    transform: rotate(-90deg);
+    background: #999;
+}
+
+.progress > div:after {
+    transform: rotate(-135deg);
+    background: #bbb;
+}
+
+.dlicon>a {
+    border-bottom: none ;
+}
+
+
+
+
+header, footer {
+    overflow-x: hidden;
+
+}
+
+.adc {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+/*border:1px solid #00f; */
+
+}
+
+div.marg {
+display:flex
+}
+
+div.marg > div {
+/*flex:1;*/
+overflow:hidden;
+}
+
+div.marg > div:nth-child(2) {
+flex:1;
+}
+
+div.marg > div:nth-child(1) ,
+div.marg > div:nth-child(3)
+ {
+/*background: #ccc;
+min-width:30px;*/
+}
+
+
+@media (max-width: 767px)
+{
+div.marg > div:nth-child(1) ,
+div.marg > div:nth-child(3)
+{
+  display:none;
+}
+
+}
+
+
+
+div.inputform {
+    display: flex;
+}
+
+div.inputtext {
+    flex-grow: 1;
+}
+
+input#q {width:100%;height:30px;margin: 10px 0;}
+
+input#q, input#go {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+    border: 1px solid #63bb9d;
+}
+
+h1#supertitle > a {
+    text-decoration-line: underline;
+    text-decoration-color: #1f701f;
+    color: #1f701f;
+}
+
+.titlecrumb {
+    display:flex;
+    flex-direction:row;
+    }
+    div.rttab li {
+        min-width: 100px;
+    }
+#supertitle {
+    text-align: center;
+    border: 0;
+    background: #63bb9d;
+    color: #1f701f;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2.2em;
+}
+
+#supercrumb a, #supernav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#supercrumb>span+span:before {
+    color: #1f701f;
+    content: '>>>';
+}
+
+#supertop {
+    background: #63bb9d;
+    min-height: 50px;
+}
+
+#supertop {
+    border: 0;
+    margin: 0 0 1em 0;
+    box-shadow: 0 0.3em 1em 0.1em #ccc;
+    padding: 1em;
+}
+
+#supercrumb {
+    display: block;
+    border: 0;
+    padding: 0.5em;
+    color: #ffffff;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: rtl;
+    text-align: right;
+}
+
+footer {
+    background: #63bb9d;
+    color: #1f701f;
+}
+
+
+footer  li
+{
+    list-style: none;
+}
+
+footer  ul
+{
+    display:flex;
+}
+
+
+
+footer > ul > li
+{
+font-size:20pt;
+    width: 40%;
+}
+
+footer > hr
+{
+border: inset 1px $bgforwhite;
+}
+footer ul  ul
+{
+    display:block;
+}
+
+footer ul li div
+{
+    margin:20pt;
+}
+
+
+footer ul li div::after {
+    display: block;
+    width: 20%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: currentColor;
+}
+
+
+footer a, footer  a:visited{
+    text-decoration: none;
+font-size:15pt;
+color:#ffffff;
+}
+
+#superarticle {
+    margin: 0 3em;
+}
+
+@media (max-width: 767px)
+{
+.rtstyle h2, .rtstyle h3 {margin:0;}
+
+.titlecrumb {
+        flex-direction:column;
+        }
+
+.rtstyle h2 {
+    font-size:1em;
+}
+
+.rtstyle h3 {
+    font-size:1em;
+}
+   #supertop {
+       padding: 0;
+   }
+   .rtfragh> div > h2 {
+       font-size:1em;
+   }
+   #supertitle {
+   font-size: 1.2em;
+    }
+
+#superarticle {
+/*    margin: 0 30px 0 0; */
+    margin: 0 0 0 0;
+
+}
+.adc {
+/*    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+*/
+}
+
+}
+
+div.other {
+    background: #63bb9d;
+    color: #1f701f;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+div.other > a {
+    background: #fff;
+    padding: 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+/*
+#superdiv a, #superdiv a:visited {
+    font-family: courier;
+    color: #000;
+    transition: all .4s ease-in-out;
+}
+*/
+
+div.cookieclass {
+    background: rgba(255,255,255,0.9);
+    border-top: 2px solid #ddd;
+    color: #000;
+    font-size: 40px;
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Helvetica,Calibri,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    min-height: 80px;
+}
+
+div.cookieclass  > div{
+    margin: 10px;
+}
+div.cookieclass   > div:nth-child(1){
+  flex: 1;
+}
+
+div.cookieclass  > div:nth-child(2){
+}
+
+
+div.cookieclass a,div.cookieclass a:visited {
+        color:$fgforwhite2;
+}
+
+div.cookieclass > div:nth-child(2) a{
+    background: #000;
+    color:#fff;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div.preview {
+  position:relative;
+  overflow:hidden;
+  width:700px;
+
+/*  border:1px solid #000; */
+}
+
+div.preview  > table
+{
+  border:2px solid #ccc;
+  border-collapse: collapse;
+}
+
+
+
+
+div.preview  > table th,
+div.preview  > table td
+{
+  border:2px solid #ccc;
+}
+
+div.preview  > table td
+{
+  min-width:120px;
+  max-width:120px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div.preview  > table th,
+div.preview  > table tr > td:first-child
+{
+  font-weight: bold;
+  background:#eee;
+  min-width:20px;
+  text-align:center;
+}
+
+
+div.fadeendv {
+  display: block;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  bottom: 0;
+
+}
+
+div.fadeendh {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  right: 0;
+  top:0;
+}
+
+a.download
+{
+    background: #008800;
+    position: relative;
+    padding: 7px 12px;
+    height: 30px;
+    line-height: 30px;
+    border: 3px solid #12ff75 ;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+
+
+
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+
+
+border-radius: 4px;
+
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  /*
+    background-color: #4CAF50;
+    */
+ /*   color: white;
+    padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 0px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ecefe0;
+}</style>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-29491637-1', 'robtex.com');
+
+
+
+ga('set', 'dimension5', 'y');
+ga('send', 'pageview');
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div id="sse0"></div>
+<div id="sse1"></div>
+
+
+
+
+
+<span class="classhash" id="dns="></span>
+<span class="classhashbang" id="!dns="></span>
+
+<div id="zz" style="display:none">
+<div class="zzzbase" id="zzz01">
+</div>
+<div class="zzzbase" id="zzz02">
+</div>
+<div class="zzzbase" id="zzz03">
+</div>
+<div class="zzzbase" id="zzz04">
+</div>
+<div class="zzzbase" id="zzz05">
+</div>
+<div class="zzzbase" id="zzz06">
+</div>
+<div class="zzzbase" id="zzz07">
+</div>
+<div class="zzzbase" id="zzz08">
+</div>
+</div>
+
+
+
+<header>
+
+<div class='loginbar'><div><span class="button"><a href="/dashboard/">Login</a></span></div>
+</div>
+  
+<div id="supertop">
+<div class="titlecrumb">
+
+<div><h1 id="supertitle">Welcome to Robtex!</h1>
+</div>
+
+<div id="supernav"> </div>
+
+<div id="supercrumb" style="flex:1">
+
+
+<br/>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</header>
+<main>
+
+
+
+
+<article id="superarticle">
+
+
+<div id="supercontainer">
+
+<div id="zzztopad" class="notinapp onew">
+
+</div>
+<br/>
+
+
+
+
+
+<div itemscope itemtype="http://schema.org/WebSite">
+<meta itemprop="url" content="https://www.robtex.com/"/>
+
+<script>
+function onsub(x)
+{
+    var v=document.forms['f1'].q.value;
+    var nurl="https://www.robtex.com/search/?q="+v;
+    document.location=nurl;
+return false;
+}
+function onchg()
+{
+return false;
+}
+</script>
+
+
+<form
+id="f1"
+onsubmit="return onsub('')"
+
+action="https://www.robtex.com/search/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+<meta itemprop="target" content="https://www.robtex.com/search/?q={q}"/>
+
+<div
+class='inputform'
+>
+<div class='inputtext' ><input id="q"
+oninput="return onchg();"
+onpropertychange="return onchg();"
+class="zinputtext"
+autocorrect="off" autocapitalize="off" spellcheck="false"
+placeholder="hostname, ipnumber, route or AS-number"
+title="domain name, ip number, as number, route"
+itemprop="query-input"
+type="text" name="q"
+value=""
+required
+ />
+</div>
+<div class='inputsubmit'>
+<input id='go' name='go' type=submit value='GO' />
+</div>
+</div>
+
+</form>
+
+
+
+</div>
+
+<div class='zenter'>
+<div>
+</div>
+<div>
+</div>
+
+
+<span id="promoext"></span>
+
+<script>
+
+
+trypromo();
+</script>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div id="superdiv">
+
+
+
+
+
+
+
+
+
+<br/>
+
+<h2>What is Robtex used for?</h2>
+<p>Robtex is used for various kinds of research of IP numbers, Domain names, etc</p>
+<p>Are you a normal IT guy doing data forensics, investigating competitors, tracking spammers or hackers or a virus, or just curious? No matter what, this should be the first place to go</p>
+
+
+<h2>What does Robtex do?</h2>
+Robtex uses various sources to gather public information about IP numbers, domain names, host names, Autonomous systems, routes etc.
+It then indexes the data in a big database and provide free access to the data.
+<p>We aim to make the fastest and most comprehensive free DNS lookup tool on the Internet.</p>
+<p>Our database now contains <a href="/stats/">billions of documents</a> of internet data collected over more than a decade.</p>
+
+<h2>How to use Robtex?</h2>
+<p>Enter an IP address or hostname in the field above, and click "GO"
+to look up technical information. From the resulting page you can navigate further between the different tabs.
+</p>
+<p>We have released a subset of this data by an API available at mashape. We also provide a few other API:s.
+<br/>For more information, see the <a href="/api/">Robtex API</a>
+</p>
+<h2>What types of information does Robtex provide?</h2>
+<p>
+
+<dl>
+<dt>Reverse DNS Lookup</dt><dd>Search for an IP number and get which hostnames points to it.
+The reverse DNS records works not only for IP address, but also MX (mail server) records and NS (name server) records.</dd>
+<dt>Whois</dt><dd>Make a whois lookup for a registered domain in various whois databases. There you can find contact information from the domain registration together with the registration date and expiration date.</dd>
+<dt>AS Macros. </dt><dd></dd>
+</dl>
+
+
+</p>
+
+<hr/>
+
+
+try some matches for common hostnames:<br/><a href="/dns-lookup/abc.xyz">abc.xyz</a><br/><a href="/dns-lookup/google.com">google.com</a><br/><a href="/dns-lookup/facebook.com">facebook.com</a><br/><a href="/dns-lookup/yahoo.com">yahoo.com</a><br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+
+<br/></div>
+
+<div style="clear:both"></div>
+
+
+
+
+</div>
+</article>
+
+
+<div id='zsocial'>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9079685345082025"
+     data-ad-slot="8022495258"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="soctop">
+<div id="divaddthis" class="addthis_inline_share_toolbox"></div>
+<div><a class="twitter-follow-button"
+  href="https://twitter.com/robtexdotcom"
+  data-show-screen-name="false"
+  data-show-count="true"
+  data-size="large">
+Follow</a></div>
+
+</div>
+
+<footer>
+<ul>
+<li>
+<div>Robtex</div>
+<ul>
+
+<li><a class="rtgo" href="https://twitter.com/robtexdotcom">Twitter</a></li>
+<li><a class="rtgo" href="https://www.facebook.com/robtexdotcom">Facebook</a></li>
+<li><a class="rtgo" href="https://plus.google.com/+robtex">Google+</a></li>
+<li><a class="rtgo" href="https://www.linkedin.com/company/robtex">LinkedIn</a></li>
+</ul>
+</li>
+<li>
+<div>About</div>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/api/">API</a></li>
+<li><a href="/stats/">Statistics</a></li>
+</ul>
+</li>
+<li>
+<div>Sections</div>
+<ul>
+<li><a href="/dns-lookup/">DNS</a></li>
+<li><a href="/ip-lookup/">IP</a></li>
+<li><a href="/as/">AS Numbers</a></li>
+<li><a href="/asmacro/">AS Macros</a></li>
+<li><a href="/cidr/">Network Routes</a></li>
+<li><a href="/premium/">Premium Reports</a></li>
+
+</ul>
+</li>
+</ul>
+
+© 2020 Robtex
+
+<hr/>
+<span id="statusgif"></span>
+
+
+<script>
+//loadflags|=2;
+//doit();
+</script>
+<div style=""></div>
+
+
+</footer>
+
+
+
+
+
+<div id="sse2"></div>
+
+
+
+
+<div id="cookienotice"><div class="cookieclass">
+<div>This website uses cookies to ensure you get the best experience on our website. <a href="/privacy-policy">Learn more</a></div>
+<div><a href="#" class="rtgo" onclick="return acceptcookies(1)">Got it!</a></div>
+</div></div>
+<script>
+
+checkcookies();
+</script>
+
+
+
+This site is protected by reCAPTCHA and the Google
+    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+    <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+<style>
+.grecaptcha-badge {
+  display: none;
+}
+</style>
+<script type="text/javascript">
+  var onloadCallback = function() {
+grecaptcha.ready(function() {
+      grecaptcha.execute('6LcNupIUAAAAAKqpkrqfj8RXxPKYuJJ7QNnfUzoA', {action: 'hit'})
+.then(function(token) {
+
+  var elem = document.createElement('script');
+  elem.src = '/rtx/recaptcha/'+token;
+  elem.async = true;
+  elem.type = "text/javascript";
+  document.head.appendChild(elem);
+
+         console.log(token);
+      });
+  });
+  };
+</script>
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=6LcNupIUAAAAAKqpkrqfj8RXxPKYuJJ7QNnfUzoA" async></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>THE END OF A GREAT ADVENTURE!</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="https://static.vente-privee.com/vp5/_web/site/vp/_common/js/jquery-1.8.2.min.js"></script>
+		<title>veepee</title>
+		<style type="text/css">
+			@font-face {
+				font-family: 'VP Next';
+				src: url(https://static.vente-privee.com/vp5//_web/site//vp/_common/fonts/vpNext/VPSansNext-Light.eot);
+				src: url(https://static.vente-privee.com/vp5//_web/site//vp/_common/fonts/vpNext/VPSansNext-Light.eot?#iefix) format('embedded-opentype'), url(https://static.vente-privee.com/vp5//_web/site//vp/_common/fonts/vpNext/VPSansNext-Light.woff) format('woff'),
+					url(https://static.vente-privee.com/vp5//_web/site//vp/_common/fonts/vpNext/VPSansNext-Light.ttf) format('truetype'), url(https://static.vente-privee.com/vp5//_web/site//vp/_common/fonts/vpNext/VPSansNext-Light.svg?#vp_sansregular) format('svg');
+				font-weight: 200;
+				font-style: normal;
+				}
+​
+				@font-face {
+				font-family: 'VP Condensed';
+				src: url(../fonts/vpNext/VPCondensedNext-Regular.eot);
+				src: url(../fonts/vpNext/VPCondensedNext-Regular.eot?#iefix) format('embedded-opentype'),
+					url(../fonts/vpNext/VPCondensedNext-Regular.woff) format('woff'), url(../fonts/vpNext/VPCondensedNext-Regular.ttf) format('truetype'),
+					url(../fonts/vpNext/VPCondensedNext-Regular.svg?#vp_sansregular) format('svg');
+				font-weight: 400;
+				font-style: normal;
+				}
+				@font-face {
+					font-family: 'vp_sansbold';
+					src: url(../fonts/vp/vpsans-bold-webfont.eot);
+					src: url(../fonts/vp/vpsans-bold-webfont.eot?#iefix) format('embedded-opentype'),
+						url(../fonts/vp/vpsans-bold-webfont.woff) format('woff'), url(../fonts/vp/vpsans-bold-webfont.ttf) format('truetype'),
+						url(../fonts/vp/vpsans-bold-webfont.otf) format('opentype');
+					font-weight: 700;
+					font-style: normal;
+				}
+			body {
+				position: relative;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				margin: 0;
+				background: #e1adb3;
+   				 background: linear-gradient(to top,#a29bc9,  #ffffff, #e1adb3, #ffffff,#a29bc9);
+			}
+			section{
+				margin-left: 64px;
+				margin-right: 64px;
+				max-width: none;
+				width: auto;
+			}
+			.container{
+				min-height: 100vh;
+				background: #fff;
+				z-index: 1;
+    			position: relative;
+			}
+			.content{
+				margin: 0 auto;
+				display: table;
+				padding: 150px 0 50px;
+				width: 100%;
+			}
+			.doorBloc {
+				position: relative;
+				width:1024px;
+				margin: auto;
+				color: #fff;
+				background: #fff;		
+			}
+			.doorBloc::before {
+				content: '';
+				position: absolute;
+				top: 0; right: 0; bottom: 0; left: 0;
+				z-index: -1;
+				margin: -20px; 
+				border-radius: inherit; 
+				background: linear-gradient(to right, #e1adb3, #a29bc9);
+			}
+			.doorBloc h1 {
+				margin: 20px auto 0;
+				width: 280px;
+				height: 63px;
+				background: url(https://vp-eu.scene7.com/is/image/vpeu/00_int_door_logoBlack?$PNG$) left 0 no-repeat;
+			}
+			.doorBloc .formBloc {
+				text-align: center;
+				color: #202020;
+				padding: 50px 15px 15px;
+				width: auto;
+			}
+			.doorBloc .formBloc h2 {
+				margin: 0 0 20px;
+				font-size: 44px;
+				font-weight: 700;
+				font-family: 'vp_sansbold', Arial, Helvetica, sans-serif;
+				color: #ec008c;
+				line-height: 1.19;
+				letter-spacing: 1.9px;
+			}
+			.doorBloc .formBloc p {
+				margin: 0 0 15px;
+				color: #464650;
+				font-size: 19px;
+				line-height: 1.6;
+				letter-spacing: 2.3px;
+				font-weight: 300;
+				font-family: 'Poppins',Impact,Arial,sans-serif;
+			}
+			@media screen and (max-width: 1200px){
+				html, body{
+					height:100%;
+					margin: 0 auto;
+					background: #fff;
+				}
+				.doorBloc {
+					margin: 0 auto 30px;
+					width: 100%;
+				}
+			}
+			@media screen and (max-width: 767px) {
+				body {
+					width: 85%;
+				}
+				section {
+					margin-left: 0;
+					margin-right: 0;
+				}
+				.doorBloc .formBloc h2 {
+					font-size: 2rem;
+				}
+				.doorBloc .formBloc p {
+					font-size: 1.2rem;
+					line-height: 1.5;
+				}
+				.content {
+					padding: 100px 0 50px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="content">
+					<div class="doorBloc">
+						<div class="formBloc">
+							<h2>THE END OF A GREAT ADVENTURE!</h2>
+							<p>It is often said that all good things must come to an end…</p>
+							<p>Unfortunately, the uncertainty surrounding the membership status of the U.K. in the E.U has taken its toll on our ability to maintain the high-quality standards we require from of ourselves in the context of our e-commerce business in the UK.</p>
+							<p>As such, our website has been closed since March 2<sup style="font-size:11px;">nd</sup>.</p>
+							<p>If you are a Veepee member or a business partner and have any questions or comments regarding the closure, please refer to our FAQ at the link below:</p>
+                            <p><a target="_blank" href="https://www.veepee.uk/UKClosure/FAQ.pdf">LET’S READ IT!</a></p>
+                            <p>Your trust and support have been much appreciated over the years.</p>
+                            <p>Sharing a part of your daily life was such a pleasure!</p>
+                            <p>Yours Sincerely,</p>
+                            <p>The Veepee UK Team</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript">
+			function redimensionnement(){ 
+				var $image = $('img.maintenanceBg');
+				var image_width = $image.width(); 
+				var image_height = $image.height();     
+				
+				var over = image_width / image_height; 
+				var under = image_height / image_width; 
+				
+				var body_width = $(window).width(); 
+				var body_height = $(window).height(); 
+		
+				if (body_width / body_height >= over) { 
+					$image.css({ 
+						'width': body_width + 'px', 
+						'height': Math.ceil(under * body_width) + 'px', 
+						'left': '0px', 
+						'top': Math.abs((under * body_width) - body_height) / -2 + 'px' 
+					}); 
+				}  
+				else { 
+					$image.css({ 
+						'width': Math.ceil(over * body_height) + 'px', 
+						'height': body_height + 'px', 
+						'top': '0px', 
+						'left': Math.abs((over * body_height) - body_width) / -2 + 'px' 
+					}); 
+				} 
+			} 
+				
+			$(document).ready(function(){  
+				redimensionnement();
+				$(window).resize(function(){ 
+					redimensionnement(); 
+				}); 
+			}); 
+		</script> 
+	</body>
+</html>

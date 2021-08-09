@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NCRKWJ');</script>
+<!-- End Google Tag Manager -->
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	 <meta charset="UTF-8">
+
+	<title>
+	Swiftic: iPhone &amp; Android App Maker - Create Your Own App in Minutes!</title>
+<meta name="p:domain_verify" content="d478b1afce674aef0648ea2bc919a5b2"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UAcOWVBQGwAFXVlRBQU=",licenseKey:"02b3544b6d",applicationID:"3598324"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(22),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(23),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(6),t(5),"addEventListener"in window&&t(3),c.xhrWrappable&&t(7),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(23),a=t(22);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],5:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],6:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],7:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function o(t){x.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,g="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],8:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),g={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(g.traceContextParentHeader=i(h,m),g.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(g.newrelicHeader=a(h,m,v,n,r,f)),g}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(19),h=t(10);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],9:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime]))}}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(10),f=t(8).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(15),m=t(14),v=t(11),g=NREUM.o.REQ,w=window.XMLHttpRequest;a.features.xhr=!0,t(7),t(4),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;"string"==typeof o?n=o:"object"==typeof o&&o instanceof g?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n);var s=(""+(o&&o instanceof g&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime])})}},{}],10:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],11:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(14);e.exports=r},{}],12:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(22),s=t(23),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],13:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],14:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],15:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],16:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(24);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],17:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],18:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),v=!0,d("timing",["fi",e,n])}}function s(t){"hidden"===t&&d("pageHide",[l.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d=t("handle"),l=t("loader"),p=t(21),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,g=["click","keydown","mousedown","pointerdown","touchstart"];g.forEach(function(t){document.addEventListener(t,a,!1)})}p(s)}},{}],19:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],20:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],21:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],22:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],23:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],24:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[x[n]];return l&&l.push([y,n,r,s]),s}}function o(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return l[t]=l[t]||i(n)}function g(t,e){p.aborted||u(t,function(t,n){e=e||"feature",x[n]=e,e in d||(d[e]=[])})}var w={},x={},y={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:g,abort:s,aborted:!1};return y}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(22),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(16),s=t("handle"),c=t(22),f=t("ee"),u=t(20),d=t(17),l=t(13),p=l.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",g="attachEvent",w=h.XMLHttpRequest,x=w&&w.prototype,y=!d(h.location);NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:w,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},R=w&&x&&x[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:y};if(!y){t(12),t(18),m[v]?(m[v]("DOMContentLoaded",o,!1),h[v]("load",r,!1)):(m[g]("onreadystatechange",i),h[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(23),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,9]);</script>
+<meta name="format-detection" content="telephone=no">
+<meta name="google-site-verification" content="hRcenMTtoJYgjxFwGXp5qVY9JzJmibD8WxN1YmrNPTg" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+	<!-- JS
+  ================================================== -->
+
+	<!--[if lt IE 9]>
+	<script src="https://www.swiftic.com/wp-content/themes/florida-wp/js/modernizr.custom.11889.js" type="text/javascript"></script>
+	<script src="https://www.swiftic.com/wp-content/themes/florida-wp/js/respond.js" type="text/javascript"></script>
+	<![endif]-->
+		<!-- HTML5 Shiv events (end)-->
+	<!-- MEGA MENU -->
+
+<link rel='stylesheet' id='main-style-css'  href='https://www.swiftic.com/wp-content/themes/Florida_child_theme/style.css?ver=1.32.0.0' type='text/css' media='all' />
+	<!-- Favicons
+  ================================================== -->
+<link rel="shortcut icon" href="https://static-marketing.swiftic.com/images/site/2017/05/favicon_new.png">
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="1,000,000+ Apps Created - Swiftic is a leading DIY mobile app maker that helps small businesses all over the world to build personalized apps. Get Started Now!"/>
+<link rel="canonical" href="https://www.swiftic.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Swiftic: iPhone &amp; Android App Maker - Create Your Own App in Minutes!" />
+<meta property="og:description" content="1,000,000+ Apps Created - Swiftic is a leading DIY mobile app maker that helps small businesses all over the world to build personalized apps. Get Started Now!" />
+<meta property="og:url" content="https://www.swiftic.com/" />
+<meta property="og:image" content="http://static-marketing.como.com/images/site/2017/03/logo_swiftic_share_fb.png" />
+<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "https://www.swiftic.com/", "potentialAction": { "@type": "SearchAction", "target": "https://www.swiftic.com/?s={search_term}", "query-input": "required name=search_term" } }</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://www.swiftic.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://www.swiftic.com/comments/feed/" />
+<link rel='stylesheet' id='dynamic_css-css'  href='https://www.swiftic.com/wp-content/themes/florida-wp/dyncss.php?ver=4.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.swiftic.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.swiftic.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.swiftic.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.1" />
+<link rel='shortlink' href='https://www.swiftic.com/' />
+<script type="text/javascript">
+  var __lc = {};
+  __lc.license = 8749531;
+
+  (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script><style type="text/css" media="screen">body{ background-color:#ffffff; background-image:url(''); } </style><link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- Google Analytics Universal Code for como main site -->
+<!-- Homepage multi language declaration -->
+<link rel="alternate" hreflang="en" href="https://www.swiftic.com/" />
+<link rel="alternate" hreflang="pt" href="https://www.swiftic.com/pt/" />
+<link rel="alternate" hreflang="es" href="https://www.swiftic.com/es/" />
+<link rel="alternate" hreflang="it" href="https://www.swiftic.com/it/" />
+<link rel="alternate" hreflang="fr" href="https://www.swiftic.com/fr/" />
+<link rel="alternate" hreflang="de" href="https://www.swiftic.com/de/" />
+<link rel="alternate" hreflang="x-default" href="https://www.swiftic.com/" />
+
+
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+
+var _vwo_code=(function(){
+var account_id=51909,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+
+
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+<!-- Start Conduit Tracker Asynchronous Code -->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['ConduitTrackerObject'] = r;
+        a = s.createElement(o); m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//tracking.como-services.com/js/v2/tracker.js', '_conduitTracker');
+
+    var _conduitTracker = _conduitTracker || [];
+    _conduitTracker.push(['_setAccount', 'COMO.COM']);
+    _conduitTracker.push(['_require', 'referralState']);
+    _conduitTracker.push(['_trackPageview']);
+    jQuery(document).on("click", "[track]", function (b) {
+        b.preventDefault(); try { var a = jQuery(b.currentTarget); _conduitTracker.push(["_trackEvent", a.attr("track") ? a.attr("track") : a.closest("[track]").attr("track"), b.type, null, null]); if ("A" === a.prop("tagName")) { var c = a.attr("href"), d = a.attr("target"); c && 0 < c.length && (d ? window.open(c, d) : document.location.href = a.attr("href")) } else "submit" === a.prop("type") && jQuery(b.currentTarget).parents("form").submit() } catch (e) { console.log("conduit tracking error", e) } console.log("conduit tracking triggered")
+    });
+</script>
+<!-- End Conduit Tracker Asynchronous Code -->
+
+</head>
+
+<body class="home page page-id-13952 page-template page-template-home-template-updated page-template-home-template-updated-php default-header wpb-js-composer js-comp-ver-3.7 vc_responsive">
+	
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCRKWJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<!-- Primary Page Layout
+	================================================== -->
+<script type="text/javascript">
+	console.log('site url:')
+	console.log('get_option')
+	console.log("https://www.swiftic.com");
+</script>
+<div id="wrap" class="colorskin-"></div>
+<section class="top-bar">
+<div class="container default-row"><div class="top-links lftflot"></div>
+<div id="chosen_language" class="pointer" onclick="jQuery('#languages_to_choose').toggleClass('closed');"><!-- <img src="https://static-marketing.swiftic.com/images/site/2014/07/language_icon.png" alt="world"/>-->English<i class="icomoon-arrow-down mob-lang-arrow-down"></i></div>
+
+<div class="login-staff">
+<div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-upper-top-menu-container"><ul id="menu-upper-top-menu" class="menu"><li id="menu-item-17453" class="t-10 text-lightgrey menu-item menu-item-type-custom menu-item-object-custom menu-item-17453"><a href="http://my.swiftic.com/user/login">SIGN IN</a></li>
+<li id="menu-item-17454" class="t-10 text-lightgrey menu-item menu-item-type-custom menu-item-object-custom menu-item-17454"><a href="http://my.swiftic.com/user/login?tab=join">JOIN</a></li>
+<li id="menu-item-17455" class="t-10 text-lightgrey menu-item menu-item-type-custom menu-item-object-custom menu-item-17455"><a href="https://help.swiftic.com/hc/en-us">SUPPORT</a></li>
+</ul></div></div></div>
+
+<div class="socailfollow rgtflot"><a target="_blank" href="https://www.facebook.com/Swiftic/" class="facebook"><i class="icomoon-facebook"></i></a><a target="_blank" href="https://www.linkedin.com/company/swiftic/" class="linkedin"><i class="icomoon-linkedin"></i></a>
+
+</div>
+
+	
+
+<div id="languages_to_choose" class="closed">
+		<a   href="https://www.swiftic.com/pt/">Português </a>
+		<a  href="https://www.swiftic.com/es/" >Español</a>
+		<a  href="https://www.swiftic.com/it/" >Italiano</a>
+		<a  href="https://www.swiftic.com/fr/" >Français</a>
+		<a  href="https://www.swiftic.com/de/" >Deutsch</a>	
+	</div>
+</div>
+</section>
+<div id="sticker">
+<header id="header">
+<div  class="container default-row">
+<div class="col-md-3 col-sm-2">
+<div class="logo"><a href="https://www.swiftic.com/">
+
+<img style="max-width: 160px;" id="main-logo"src="https://static-marketing.swiftic.com/images/site/2021/02/logo-for-website_564X270_black.png" width="200" id="img-logo" alt="Swiftic logo">
+
+</a></div></div>
+<nav id="nav-wrap" class="nav-wrap1 col-md-9 col-sm-10">
+				<ul id="nav"><li id="menu-item-17418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17418"><a href="https://www.swiftic.com/features/">Features</a></li>
+<li id="menu-item-17417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17417"><a href="https://www.swiftic.com/case-studies/">Success Stories</a></li>
+<li id="menu-item-17419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17419"><a href="https://www.swiftic.com/pricing/">Pricing</a></li>
+<li id="menu-item-20572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20572"><a href="https://www.swiftic.com/build-it-for-me/">Hire a Pro</a></li>
+<li id="menu-item-20531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20531"><a href="https://www.swiftic.com/partners/">Partners</a></li>
+<li id="menu-item-20317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20317"><a  target="_blank" href="https://www.swiftic.com/blog" >Blog</a></li>
+<li id="menu-item-17422" class="create-my-app-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-17422"><a  href="http://create.swiftic.com/en/discover" >CREATE APP</a></li>
+</ul>	</nav>
+		<!-- /nav-wrap -->
+</div>
+</header>
+</div>
+<!-- end-header -->
+<link rel="stylesheet" type="text/css" href="https://www.swiftic.com/wp-content/themes/Florida_child_theme/css/min/mobile-nav.css"/>
+<div id="mobile_nav">
+	<div id="mobile_header">
+		<div id="menu_btn"></div>
+		<img alt="Swiftic logo" src="https://static-marketing.swiftic.com/images/site/2017/05/logo_swiftic_white_no_tagline.png" id="como_small_logo"/>
+		<div id="mob_languages" class="inactive" ><i class="icomoon-arrow-down mob-lang-arrow-down"></i>en</div>
+	
+	</div>
+	
+	 <div class="menu-mobile_main-container"><ul id="menu-mobile_main" class="menu"><li id="menu-item-17429" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-13952 current_page_item menu-item-17429"><a href="https://www.swiftic.com/">Home</a></li>
+<li id="menu-item-18034" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18034"><a href="http://my.swiftic.com/user/login">Sign In</a></li>
+<li id="menu-item-17431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17431"><a href="https://www.swiftic.com/app-gallery/">App Gallery</a></li>
+<li id="menu-item-17435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17435"><a href="https://www.swiftic.com/features/">Features</a></li>
+<li id="menu-item-17442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17442"><a href="https://www.swiftic.com/pricing/">Pricing</a></li>
+<li id="menu-item-20573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20573"><a href="https://www.swiftic.com/build-it-for-me/">Hire a pro</a></li>
+<li id="menu-item-17432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17432"><a href="https://www.swiftic.com/case-studies/">Success Stories</a></li>
+<li id="menu-item-19836" class="add-track menu-item menu-item-type-post_type menu-item-object-page menu-item-19836"><a href="https://www.swiftic.com/partners/">Partners</a></li>
+<li id="menu-item-17448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17448"><a href="http://help.swiftic.com">Help Center</a></li>
+<li id="menu-item-17433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17433"><a href="https://www.swiftic.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-17449" class="no-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17449"><a>Swiftic<span style="font-size:13px;position:relative;top:-3px;">®</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-17441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17441"><a href="https://www.swiftic.com/news/">News</a></li>
+	<li id="menu-item-19741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19741"><a href="https://www.swiftic.com/tutorials/">Tutorials</a></li>
+	<li id="menu-item-17445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17445"><a href="https://www.swiftic.com/terms-conditions/">Terms &#038; Conditions</a></li>
+	<li id="menu-item-17443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17443"><a href="https://www.swiftic.com/privacy-policy/">Privacy Policy</a></li>
+	<li id="menu-item-17436" class="pricing-only menu-item menu-item-type-post_type menu-item-object-page menu-item-17436"><a href="https://www.swiftic.com/guidelines/">Guidelines</a></li>
+	<li id="menu-item-18045" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18045"><a href="https://www.swiftic.com/affiliates/">Affiliates</a></li>
+</ul>
+</li>
+<li id="menu-item-17450" class="no-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17450"><a>Explore</a>
+<ul class="sub-menu">
+	<li id="menu-item-17437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17437"><a href="https://www.swiftic.com/learning-center/">Learning Center</a></li>
+	<li id="menu-item-17438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17438"><a href="https://www.swiftic.com/learning-center/create/">Learning  Create</a></li>
+	<li id="menu-item-17439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17439"><a href="https://www.swiftic.com/learning-center/design/">Learning  Design</a></li>
+	<li id="menu-item-17440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17440"><a href="https://www.swiftic.com/learning-center/publish/">Learning  Publish</a></li>
+</ul>
+</li>
+</ul></div><div id="mob_languages_to_choose" class="closed">				
+		<a  href="https://www.swiftic.com/pt/">Português</a>
+		<a  href="https://www.swiftic.com/es/">Español</a>
+		<a  href="https://www.swiftic.com/it/">Italiano</a>
+		<a  href="https://www.swiftic.com/fr/">Français</a>
+		<a  href="https://www.swiftic.com/de/">Deutsch</a>
+	
+</div>
+</div>
+<script src="https://www.swiftic.com/wp-content/themes/Florida_child_theme/JS/min/mobile-nav.js?ver=1.32.0.0" type="text/javascript" async ></script>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/Florida_child_theme/css/home.css?ver=1.32.0.0"/>
+
+
+<!-- swiftic banner -->
+<!-- <div class="swiftic-banner-mask"></div>
+
+<div class="swiftic-banner">
+	<div style="position: relative; margin: 0 auto; width: 520px;">
+		<div class="swiftic-banner-close" style="cursor: pointer; position: absolute; top: 10px; right: 35px; background-color: #000; border-radius: 50%;">
+			<img src="https://static-marketing.swiftic.com/images/site/2017/05/x.png" style="position: relative; top: 4px; right: -1px; width: 30px;">
+		</div>
+		<a href="http://create.como.com">
+			<img src="https://static-marketing.swiftic.com/images/site/2017/05/baner-2.png">
+		</a>
+	</div>
+</div> -->
+
+
+<!-- swiftic io pop up -->
+
+<script type="text/javascript">
+    function changeClass()
+    {
+        document.getElementById("swifticio").className = "hidepopup";
+    }
+</script>
+
+
+<!-- <div class="popup-wrap" id="swifticio">-->
+<!--	 <div class="swiftic_new_banner">-->
+<!--		<a href="https://www.swiftic.io/?srl=1060221">-->
+<!--		<img src="http://vidoo.swiftic.com/yoav/intro_banner.jpg" alt="swiftic.io" class="swiftic_new_banner_img">-->
+<!--		</a>-->
+<!--        <a class="boxclose" onclick="changeClass();">X</a>  -->
+<!--		</div>-->
+<!--    </div>-->
+
+
+<!-- <a href="" class="rebranding-ribbon"></a>-->
+<!-- fixed create app button for mobile -->
+<div class="vc_span12 create-button-container wpb_column column_container" id="create_app_fixed_btn">
+	<div class="wpb_wrapper">
+	    <a href="https://www.swiftic.com/lp/mobile/#hp" class="wpb_button wpb_wpb_button wpb_regularsize button create-my-app-btn">GET STARTED</a>
+		<div class="about-gallery-details">Instant app creation. No technical skills required!</div>			
+	</div> 
+</div> <!-- top slider -->
+<section class="wpb_row vc_row-fluid full-row">
+	<div class="vc_span12 page-header wp-new wpb_column column_container">
+        <div class="page-header-img-block"><img src="https://www.swiftic.com/wp-content/themes/Florida_child_theme/images/swifticcom.jpg" alt="" /></div>
+	<div class="default-row">
+		<div class="wpb_wrapper">
+
+				<h1 class="mex-title">Create Your Own Mobile App</h1>
+				<p class="">It's easy, it's fast, it's for everyone. </p>
+				<a href="http://my.swiftic.com/regdiscover" class="create-my-app-btn">create my app</a>
+
+		</div>
+		</div>
+		</div>
+</section>
+
+
+
+<!-- apps slider -->
+<section class="wpb_row vc_row-fluid full-row desktop-only  hidden-sm hidden-xsanchor-tag" data-anchor_index="2" id="applications_examples">
+	<div class="vc_span12 apps-gallery-slider wpb_column column_container">
+		<section class="wpb_row vc_row-fluid default-row">
+			<div class="vc_span12 create-app-for-any-business default-row wpb_column column_container">
+				<div class="wpb_wrapper">
+					<h2 class="mex-title">A Big Solution for Small Businesses</h2>
+					<p class="hp-apps-subtitle">Whether you own a pet shop, a pub, or a pampering spa, your loyal customers are the heart of your business. Swiftic gives you all the tools you need to keep your business in the hearts and pockets of your customers with a loyalty app as unique as your business.</p>
+
+	<div class="vc_wp_custommenu wpb_content_element">
+						<div class="widget widget_nav_menu">
+
+    	 <div class="menu-homepage-home-app-gallery-container"><ul id="menu-homepage-home-app-gallery" class="menu"><li id="menu-item-20313" class="active menu-item menu-item-type-custom menu-item-object-custom menu-item-20313"><a href="#retail-commerce">Retail &#038; Commerce</a></li>
+<li id="menu-item-20314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20314"><a href="#restaurants">Restaurants</a></li>
+<li id="menu-item-20315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20315"><a href="#health-beauty">Health &#038; Beauty</a></li>
+<li id="menu-item-20316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20316"><a href="#professional-services">Professional Services</a></li>
+</ul></div>
+     </div>
+  </div>
+				</div>
+			</div>
+		</section>
+		<section class="wpb_row vc_row-fluid full-row no-overflow">
+			<div class="vc_span12 gallery-desktop wpb_column column_container">
+				<div class="wpb_wrapper">
+					<div class="ls-wp-fullwidth-container">
+						<div id="home_apps_slider" class="ls-wp-container">
+							<div class="ls-slide current" data-content="retail-commerce" data-ls="slidedelay:3000;transition2d:5;id:app_slide_1;">
+								<div class="inner-part default-row">
+									<img class="ls-l go-left phone-img" data-ls="offsetxin:0;offsetyin:555;durationin:2000;offsetxout:0;offsetyout:800;durationout:1500;" src="https://static-marketing.swiftic.com/images/site/2017/02/retail-commerce-app-new.png" alt="small business app">
+									<div class="inner-details go-left">
+										<div class="constant-height-elem">
+											<div class="ls-l inner-details-text" data-ls="offsetxin:0;offsetxout:0;">Offer your customers an app that’ll keep them coming back for more! Boost your sales with a mobile catalog, store, loyalty program, coupons, and your choice of other features.</div>
+										</div>
+										<a href="http://my.swiftic.com/regdiscover" class="create-my-app-btn">create my app</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="ls-slide" data-content="restaurants" data-ls="slidedelay:3000;transition2d:5;id:app_slide_1;">
+								<div class="inner-part default-row">
+									<img class="ls-l go-left phone-img" data-ls="offsetxin:0;offsetyin:555;durationin:2000;offsetxout:0;offsetyout:800;durationout:1500;" src="https://static-marketing.swiftic.com/images/site/2017/02/eliveries-app-new.png" alt="restaurant app">
+									<div class="inner-details go-left">
+										<div class="constant-height-elem">
+											<div class="ls-l inner-details-text" data-ls="offsetxin:0;offsetxout:0;">Satisfy your diners with a mouthwatering app that's made to order! Add your choice of features to let them check your menu, book a table, place an order, get directions, and more.</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="ls-slide" data-content="health-beauty" data-ls="slidedelay:3000;transition2d:5;id:app_slide_1;">
+								<div class="inner-part default-row">
+									<img class="ls-l go-left phone-img" data-ls="offsetxin:0;offsetyin:555;durationin:2000;offsetxout:0;offsetyout:800;durationout:1500;" src="https://static-marketing.swiftic.com/images/site/2017/02/health-and-beauty-app-new.png" alt="health and beauty app">
+									<div class="inner-details go-left">
+										<div class="constant-height-elem">
+											<div class="ls-l inner-details-text" data-ls="offsetxin:0;offsetxout:0;">Become a part of your customers’ mobile lifestyle! Grab their attention with useful info, and sell more of your products with exclusive discounts and the convenience of mobile commerce.</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="ls-slide" data-content="professional-services" data-ls="slidedelay:3000;transition2d:5;id:app_slide_1;">
+								<div class="inner-part default-row">
+									<img class="ls-l go-left phone-img" data-ls="offsetxin:0;offsetyin:555;durationin:2000;offsetxout:0;offsetyout:800;durationout:1500;" src="https://static-marketing.swiftic.com/images/site/2017/02/scheduling-s-new.png" alt="professional services app">
+									<div class="inner-details go-left">
+										<div class="constant-height-elem">
+											<div class="ls-l inner-details-text" data-ls="offsetxin:0;offsetxout:0;">Build customer loyalty by making it easy for them to stay connected! Go the extra mile by offering valuable information, an inviting loyalty program, exclusive discounts, and convenient tools. </div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+
+<!-- partners slider -->
+<section class="wpb_row vc_row-fluid full-row desktop-only  hidden-sm hidden-xs anchor-tag" id="our_partners">
+	<div class="vc_span12 partners-slider wpb_column column_container">
+		<div class="wpb_wrapper">
+			<section class="wpb_row vc_row-fluid">
+				<div class="vc_span12 default-row wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+								<a class="slide-elem go prev"><div class="slider-side-bg"></div><div class="slider-side-title t-16 text-grey"><span class="supported-text">SUPPORTED SERVICES </span><div class="blue-arrow"></div></div></a>
+								<a class="slide-elem go next"><div class="slider-side-bg"></div></a>
+								<div class="slide-elem slidewrap">
+     								<ul class="slider" id="sliderName"></ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+
+<!-- grow your business section -->
+<section class="container anchor-tag" id="grow_in_3_steps">
+	<div class="row-wrapper-x">
+		<section class="wpb_row vc_row-fluid">
+			<div class="vc_span12 grow-your-buisness default-row wpb_column column_container">
+				<div class="wpb_wrapper">
+					<h2 class="mex-title">Reward Your Customers. Reward Your Business.</h2>
+					<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+						<div class="wpb_wrapper">
+					        <div class="vc_span4 wpb_column column_container custom-one-third">
+		            			<div class="wpb_wrapper">
+									<div class="colored blue-colored"></div>
+						                <article class="icon-box1">
+						                	<div class="new-grow-icon create"></div>
+						                	<h3>Create</h3>
+											<p>Create a custom app and loyalty program for your business using our do-it-yourself mobile app solution.</p>
+										</article>
+									<div class="colored blue-colored"></div>
+		            			</div>
+		        			</div>
+		        			<div class="vc_span4 wpb_column column_container custom-one-third">
+		            			<div class="wpb_wrapper">
+									<div class="colored pink-colored"></div>
+					                <article class="icon-box1">
+										<div class="new-grow-icon publish"></div>
+						                 <h3>Publish</h3>
+										<p>Publish your app on the leading stores and make your business accessible to your customers 24/7. </p>
+					    			</article>
+									<div class="colored pink-colored"></div>
+		            			</div>
+		        			</div>
+					        <div class="vc_span4 wpb_column column_container custom-one-third">
+					            <div class="wpb_wrapper">
+									<div class="colored green-colored"></div>
+					                <article class="icon-box1">
+						                <div class="new-grow-icon grow"></div>
+						                <h3>Grow</h3>
+										<p>Grow greater customer loyalty and drive the results your business needs to succeed! </p>
+					    			</article>
+									<div class="colored green-colored"></div>
+					            </div>
+					        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</section>
+
+<!-- publishers slider -->
+<!-- if any slide should be linked to case study add class to ls-slide: case-study-positive, relevant link and text -->
+<!-- when adding a slide duplicate existing and make sure to change the id, add a navigation button as well -->
+<section class="wpb_row vc_row-fluid full-row anchor-tag" id="happy_publishers">
+	<div class="vc_span12 publishers-wrap wpb_column column_container">
+		<div class="wpb_wrapper">
+			<h2 class="mex-title">What Small Business Owners Are Saying </h2>
+			<div class="wpb_layerslider_element wpb_content_element">
+				<div id="home_publishers_slider" class="ls-wp-container default-row">
+					<div id="pub_slide_1" class="current ls-slide default-row case-study-positive" data-ls=" transition2d: all;">
+							<div>
+								<div class="mobile-correction">
+									<a href="https://www.swiftic.com/case-studies/wilmot-vet-clinic/">
+										<img class="ls-l publisher-image go-left" data-ls="offsetxin:0;offsetxout:0;" src="https://static-marketing.swiftic.com/images/site/2017/07/Russell-White-Fleurty-Ginger-Boutique-hp.jpg" alt="Chris Torti Clubhouse">
+									</a>
+								</div>
+								<div class="inner-text go-left">
+									<p class="ls-l story">"We went with Swiftic because of the focus on small business. It's really easy to manage and to learn on your own. Swiftic makes mobile technology more accessible to small businesses, which allows them to compete &mdash; in real time &mdash; with large competitors."</p>
+									<p class="ls-l author">Chris Torti, Clubhouse</p>
+									<p class="ls-l case-study-link case-study-part">Read the Clubhouse's <a href="https://www.swiftic.com/case-studies/the-clubhouse/"> success story &rsaquo;</a></p>
+								</div>
+							</div>
+					</div>
+					<div id="pub_slide_2" class="ls-slide default-row case-study-positive" data-ls=" transition2d: all;">
+						<div>
+							<div class="mobile-correction">
+								<a href="https://www.swiftic.com/case-studies/muve-magazine/">
+									<img class="ls-l publisher-image go-left" data-ls="offsetxin:0;offsetxout:0;" src="https://static-marketing.swiftic.com/images/site/2017/07/Andrew-Cantor-Mount-Royal-Bagel-Company-hp.jpg" alt="Andrew Cantor Mount Royal Bagel Company">
+								</a>
+							</div>
+							<div class="inner-text go-left">
+								<p class="ls-l story">"With our younger audience being totally mobile, making an app was one of our means to connect with the market we were aiming to reach ... and as a result, our younger audience has grown."</p>
+								<p class="ls-l author">Andrew Cantor, Mount Royal Bagel Company</p>
+								<p class="ls-l case-study-link case-study-part">Read Mount Royal's<a href="https://www.swiftic.com/case-studies/mt-royal-bagel-co/"> success story &rsaquo;</a></p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div id="pub_slide_3" class="ls-slide default-row case-study-positive" data-ls=" transition2d: all;">
+						<div>
+							<img class="ls-l publisher-image go-left" data-ls="offsetxin:0;offsetxout:0;" src="https://static-marketing.swiftic.com/images/site/2017/07/Greg-DiRenzo-Lakeside-Fitness-Center-hp.jpg" alt="Greg DiRenzo Lakeside Fitness Center">
+							<div class="inner-text go-left">
+								<p class="ls-l story">"Our members love the app, especially the notifications. ... Almost everyone who buys a shake, smoothie, or coffee at the juice bar uses the app."</p>
+								<p class="ls-l author">Greg DiRenzo, Lakeside Fitness Center</p>
+								<p class="ls-l case-study-link case-study-part">Read Lakeside's<a href="https://www.swiftic.com/case-studies/lakeside-fitness-center/"> success story &rsaquo;</a></p>
+							</div>
+						</div>
+					</div>
+					<div id="pub_slide_4" class="ls-slide default-row case-study-positive" data-ls=" transition2d: all;">
+						<div>
+							<img class="ls-l publisher-image go-left" data-ls="offsetxin:0;offsetxout:0;" src="https://static-marketing.swiftic.com/images/site/2017/07/Chris-Torti-Clubhouse-hp2.jpg" alt="Russell White Fleurty Ginger Boutique">
+							<div class="inner-text go-left">
+								<p class="ls-l story">"No more lost and forgotten paper cards ... customers just pull out their phone. To them, the app is the card"</p>
+								<p class="ls-l author">Russell White, Fleurty Ginger Boutique</p>
+								<p class="ls-l case-study-link case-study-part">Read Fleurty Ginger's<a href="https://www.swiftic.com/case-studies/fleurty-ginger/"> success story &rsaquo;</a></p>
+							</div>
+						</div>
+					</div>
+					<div id="pub_slide_5" class="ls-slide default-row case-study-positive" data-ls=" transition2d: all;">
+						<div>
+							<img class="ls-l publisher-image go-left" data-ls="offsetxin:0;offsetxout:0;" src="https://static-marketing.swiftic.com/images/site/2017/07/photo_spacafe_owner.png" alt="Dr Marnita Sandifer Spa Cafe">
+							<div class="inner-text go-left">
+								<p class="ls-l story">"I wanted to make an app because I wanted to make my business more accessible to clients on the go. And that’s just what I got: I can engage returning customers, book new business, and sell products &mdash; all through the app"</p>
+								<p class="ls-l author">Dr. Marnita Sandifer, Spa Café</p>
+								<p class="ls-l case-study-link case-study-part">Read Spa Café's <a href="https://www.swiftic.com/case-studies/spa-cafe/"> success story &rsaquo;</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ls-bottom-slidebuttons">
+					<div id="pub_nav_1" class="active pub-nav"></div>
+					<div id="pub_nav_2" class="pub-nav"></div>
+					<div id="pub_nav_3" class="pub-nav"></div>
+					<div id="pub_nav_4" class="pub-nav"></div>
+					<div id="pub_nav_5" class="pub-nav"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="our_platform" class="blox anchor-tag">
+	<div class="wpb_row vc_row-fluid full-row">
+		<div class="container">
+			<div class="vc_span12 why-youll-love-our-platform default-row wpb_column column_container">
+				<div class="wpb_wrapper">
+					<h2 class="mex-title">What You Get as a Swiftic Member </h2>
+					<section class="wpb_row vc_row-fluid">
+						<div class="vc_span4 wpb_column column_container">
+							<div class="wpb_wrapper">
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored blue-colored"></div>
+									</div>
+								</div>
+								<article class="icon-box1">
+									<i class="icomoon-radio-unchecked"></i>
+									<h3>Guaranteed Success</h3>
+									<p>We offer a 30-day money back guarantee<br/></p>
+								</article>
+								<article class="icon-box1">
+									<i class="icomoon-cog"></i>
+									<h3>Your Own Look</h3>
+									<p>Customize every aspect of your app's appearance to match the look and feel of your brand.<br /></p>
+								</article>
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored blue-colored"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vc_span4 wpb_column column_container">
+							<div class="wpb_wrapper">
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored pink-colored"></div>
+									</div>
+								</div>
+								<article class="icon-box1">
+									<i class="icomoon-equalizer-2"></i>
+									<h3>Profitable Features</h3>
+									<p>Keep the customers coming back and the sales coming in with a mobile store, coupons, loyalty cards, and scratch cards.</p>
+								</article>
+								<article class="icon-box1">
+									<i class="icomoon-droplet"></i>
+									<h3>Tools for Connecting</h3>
+									<p>Reach out to your customers by sending them eye-catching push notifications from either your computer or your smartphone.<br /></p>
+								</article>
+
+
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored pink-colored"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vc_span4 wpb_column column_container">
+							<div class="wpb_wrapper">
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored green-colored"></div>
+									</div>
+								</div>
+								<article class="icon-box1">
+									<i class="icomoon-heart-4"></i>
+									<h3>Easy App Creation</h3>
+									<p>No need to start from scratch! We let you import your online content and choose from our wide selection of design themes.</p>
+								</article>
+								<article class="icon-box1">
+									<i class="icomoon-smiley"></i>
+									<h3>Expert Guidance</h3>
+									<p>Our Success Team is here to guide you every step of the way, from building your app to going live on the stores and beyond.<br /></p>
+								</article>
+								<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+									<div class="wpb_wrapper">
+										<div class="colored green-colored"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Press slider -->
+<section class="wpb_row vc_row-fluid full-row desktop-only hidden-sm hidden-xs anchor-tag" id="press">
+	<div class="vc_span12 news-slider wpb_column column_container">
+		<div class="wpb_wrapper">
+			<section class="wpb_row vc_row-fluid">
+				<div class="vc_span12 default-row wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+								<a class="slide-elem go prev"><div class="slider-side-bg"></div><span class="slider-side-title short t-16 text-grey">PRESS <div class="blue-arrow"></div></span></a>
+								<a class="slide-elem go next"><div class="slider-side-bg"></div></a>
+								<div class="slide-elem slidewrap">
+     								<ul class="slider" id="sliderName1"></ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section>
+
+
+
+<!-- video -->
+<section class="wpb_row vc_row-fluid full-row desktop-only hidden-sm hidden-xsanchor-tag" id="video_story">
+	<div class="vc_span12 bg-almost-black video-wrap wpb_column column_container">
+		<div class="wpb_wrapper">
+			<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+				<div class="wpb_wrapper">
+					<div class="wpb_video_widget wpb_content_element">
+						 <div class="wpb_wrapper">
+							  <div class="wpb_video_wrapper">
+							 	<div id="video-player"></div>
+							  </div>
+							 </div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- one app - multiple devices section -->
+<section class="wpb_row vc_row-fluid full-row anchor-tag" id="multiple_devices">
+	<div class="vc_span12 tile-bg wpb_column column_container default-row">
+		<div class="wpb_wrapper">
+			<h2 class="mex-title">Como DIY is Swiftic </h2>
+			<p>Como app builder (also known as Como DIY) was recently rebranded to Swiftic. Along with our new name, we rolled out many major updates to further commit being the Best Do-it-yourself App Builder in the world.
+Como app maker has been in the app creation business since 2014 and has helped small businesses all over the world build over a million apps. We welcome both long-standing costumers and new customers to create an app within 3 simple steps.</p>
+			<a href="http://my.swiftic.com/regdiscover" class="wpb_button wpb_wpb_button wpb_regularsize button create-my-app-btn">create my app</a>
+		</div>
+		<img src="https://static-marketing.swiftic.com/images/site/2015/07/devices3.png" alt="one app - many devices"/>
+	</div>
+</section>
+<!-- <a class="ebook-popup desktop" href="http://www.como.com/lp/loyalty-ebook/?srl=1056684" target="_blank"></a> -->
+<!-- <a class="ebook-popup mobile" href="http://www.como.com/lp/loyalty-ebook/?srl=1056684" target="_blank">Download our new free e-book!</a> --><!-- como moments -->
+<!-- <section class="wpb_row vc_row-fluid full-row anchor-tag" id="connect">
+	<div class="vc_span12 como-moments wpb_column column_container">
+		<div class="wpb_wrapper">
+			<section class="wpb_row vc_row-fluid connect-title-wrap">
+				<div class="vc_span12 wpb_column column_container">
+					<div class="wpb_wrapper">
+						<h2 class="mex-title">Connect with Us</h2>
+					</div>
+				</div>
+			</section>
+			<section class="wpb_row vc_row-fluid default-row">
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap fb" href="https://www.facebook.com/Como" target="_blank">
+									<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/05/fb-l.png" alt="facebook page"/>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap twit" href="https://twitter.com/@Como" target="_blank">
+			         				<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/05/twit-l.png" alt="twitter page"/>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap linkedin" href="https://www.linkedin.com/company/como-mobile" target="_blank">
+									<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/05/linkedin-trimmed-l.png" alt="linkedin page"/>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap utube" href="https://www.youtube.com/como" target="_blank">
+									<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/05/weird-l.png" alt="youtube channel"/>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap google" href="https://plus.google.com/+como/posts" rel="publisher"  target="_blank">
+					         		<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/05/google-l.png" alt="google plus page"/>
+					         	</a>
+					         </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="vc_span2 como-moments-share wpb_column column_container">
+					<div class="wpb_wrapper">
+						<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+							<div class="wpb_wrapper">
+							<div class="border-wrap">
+								<a class="como-moments-wrap co" href="http://blog.como.com/" target="_blank">
+									<img class="image-icon toggled" src="https://static-marketing.swiftic.com/images/site/2015/07/blog-icon.png" alt="blog" style="margin-top: 25px; margin-left: -9px;"/>
+								</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</section> -->
+<script src="/wp-content/themes/Florida_child_theme/JS/min/home.js?ver=1.32.0.0" async></script>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		// var $swifticBanner = jQuery('.swiftic-banner');
+		// var $swifticBannerMask = jQuery('.swiftic-banner-mask');
+
+		// function showBanner() {
+		// 	$swifticBanner.fadeIn();
+		// 	$swifticBannerMask.fadeIn();
+		// }
+
+		// function hideBanner() {
+		// 	$swifticBanner.fadeOut();
+		// 	$swifticBannerMask.fadeOut();
+		// }
+
+		// jQuery('.swiftic-banner-close').on('click', hideBanner);
+		// setTimeout(showBanner, 2000);
+	});
+</script>
+<footer id="footer" >
+	<section class="container footer-in">
+	  <div class="col-md-3">
+<div class="widget"><div class="menu-footer2-container"><ul id="menu-footer2" class="menu"><li id="menu-item-17389" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17389"><a>Swiftic <span style="font-size: 13px; color: #1391ac !important; position: relative; top: -2px;" >®</span></a></li>
+<li id="menu-item-19914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19914"><a target="_blank" href="https://www.swiftic.com/blog">Blog</a></li>
+<li id="menu-item-17393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17393"><a href="https://www.swiftic.com/news/">News</a></li>
+<li id="menu-item-20634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20634"><a href="https://www.swiftic.com/careers/">Careers</a></li>
+<li id="menu-item-17391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17391"><a href="https://www.swiftic.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-17395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17395"><a href="https://www.swiftic.com/terms-conditions/">Terms of Use</a></li>
+<li id="menu-item-17397" class="pricing-only menu-item menu-item-type-post_type menu-item-object-page menu-item-17397"><a href="https://www.swiftic.com/guidelines/">Developer Guidelines</a></li>
+<li id="menu-item-20708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20708"><a href="http://app4mobilebiz.wpengine.com/swiftic-website-privacy-policy.html">Privacy Policy</a></li>
+</ul></div></div></div>
+<div class="col-md-3">
+<div class="widget"><div class="menu-footer1-container"><ul id="menu-footer1" class="menu"><li id="menu-item-17398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17398"><a>Platform</a></li>
+<li id="menu-item-17400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17400"><a href="https://www.swiftic.com/features/">Features</a></li>
+<li id="menu-item-17403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17403"><a href="https://www.swiftic.com/tutorials/">Tutorials</a></li>
+<li id="menu-item-17401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17401"><a href="https://www.swiftic.com/pricing/">Pricing</a></li>
+<li id="menu-item-19739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19739"><a href="https://www.swiftic.com/affiliates/">Affiliates</a></li>
+<li id="menu-item-20530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20530"><a href="https://www.swiftic.com/partners/">Partners</a></li>
+<li id="menu-item-17404" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17404"><a href="http://www.swiftic.com/help">Support</a></li>
+</ul></div></div></div>
+<div class="col-md-3">
+<div class="widget"><div class="menu-footer3-container"><ul id="menu-footer3" class="menu"><li id="menu-item-17405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17405"><a>Explore</a></li>
+<li id="menu-item-17406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17406"><a href="https://www.swiftic.com/learning-center/">Learning Center</a></li>
+<li id="menu-item-17407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17407"><a href="https://www.swiftic.com/learning-center/create/">Create Your App</a></li>
+<li id="menu-item-17409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17409"><a href="https://www.swiftic.com/learning-center/publish/">Publish Your App</a></li>
+</ul></div></div></div>
+<div class="col-md-3">
+<div class="widget"><div class="menu-footer4-container"><ul id="menu-footer4" class="menu"><li id="menu-item-20319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20319"><a>Success Stories</a></li>
+<li id="menu-item-20320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20320"><a href="https://www.swiftic.com/case-studies/mt-royal-bagel-co/">Restaurant App</a></li>
+<li id="menu-item-20321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20321"><a href="https://www.swiftic.com/case-studies/the-clubhouse/">Retail App</a></li>
+<li id="menu-item-20322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20322"><a href="https://www.swiftic.com/case-studies/spa-cafe/">Spa App</a></li>
+<li id="menu-item-20323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20323"><a href="https://www.swiftic.com/case-studies/lakeside-fitness-center/">Fitness App</a></li>
+</ul></div></div></div>	  </section>
+    <!-- end-footer-in -->
+   <section class="footbot">
+	<div class="container">
+		<div class="col-md-12" style="text-align: left;">
+			<a href="/" ><img alt="Swiftic small logo" src="https://static-marketing.swiftic.com/images/site/2017/02/swiftic-footer-logo.png" id="fotter-logo" /></a>
+			<a class="clear-footer-label">&#169;&nbsp;2017. All rights reserved.</a>&nbsp;  |  <!-- <a href="http://conduit.com/" target="_blank">conduit.com</a>-->
+			<div id="translated_home">
+				<a href="https://www.swiftic.com/">en</a>
+				<a href="https://www.swiftic.com/pt/">pt</a>
+				<a href="https://www.swiftic.com/es/">es</a>
+				<a href="https://www.swiftic.com/it/">it</a>
+				<a href="https://www.swiftic.com/fr/">fr</a>
+				<a href="https://www.swiftic.com/de/">de</a>
+			</div>
+		</div>
+		<div class="footer-navi floatright"></div>
+	</div>
+</section>    <!-- end-footbot -->
+</footer>
+<!-- end-footer -->
+<style>
+	#cookie-auth {
+		max-width: 1920px;
+		width: 100%;
+		min-height: 40px;
+		opacity: 0.99;
+		background-color: #54b9ce;
+		position: fixed;
+                z-index: 2001;
+			bottom: 0;
+			text-align: center;
+			padding: 15px 0;
+	}
+	.ico {
+		width: 41px;
+		height: 41px;
+		object-fit: contain;
+                padding-right: 10px;
+		display: inline-block; 
+	}
+	.cookie-content {
+		width: 52%; min-width: 206px;
+		margin: auto; display: block;
+	}
+	.cookie-text {
+		width: 100%;
+		font-family: MuseoSansCyrl;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 20px;
+		letter-spacing: normal;
+		color: #ffffff;
+		display: inline-block;
+		vertical-align: middle;
+	}
+        .ico-close {
+	  width: 16px;
+	  height: 16px;
+	  object-fit: contain;
+	    position: absolute;
+	    left: 31px;
+	    top: 35px;
+	    z-index: 1;
+         cursor: pointer;
+	}
+	@media all and (min-width: 768px) {
+		.cookie-text {
+                	width: calc(100% - 80px);
+	                width: -webkit-calc(100% - 80px);
+	                width: -moz-calc(100% - 80px);
+        	        width: -ms-calc(100% - 80px);
+               		width: -o-calc(100% - 80px);
+		}
+	}
+	@media all and (max-width: 767px) {
+		.ico {display: none;}
+	}
+</style>
+<script type="text/javascript">
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+jQuery( document ).ready(function() {
+   if(getCookie('IsCookiesMessageClicked') == "true"){
+     jQuery('#cookie-auth').hide();
+   }else{
+     setCookie('IsCookiesMessageClicked', 'false', '1');
+	 jQuery('#cookie-auth').show();
+   }
+   
+   jQuery('.ico-close').on('click', function(){
+	 setCookie('IsCookiesMessageClicked', 'true', '1');
+     jQuery('#cookie-auth').hide();
+
+   });
+});
+</script>
+             <div id="cookie-auth">
+         	<!-- png -->
+		<div class="cookie-content">
+	        	<img src="https://www.swiftic.com/wp-content/themes/florida-wp/images/ico.png" class="ico">
+        		<span class="cookie-text">This site uses cookies to provide you with a great user experience. By using Swiftic, you are accepting our use of cookies.</span>
+		</div>
+                <img src="https://www.swiftic.com/wp-content/themes/florida-wp/images/ico-close.png" class="ico-close">
+             </div>
+
+<span id="scroll-top"><a class="scrollup"><i class="icomoon-arrow-up"></i></a></span>
+<!-- end-wrap -->
+<!-- End Document
+================================================== -->
+<script type="text/javascript">
+/*doubletaptogo.js*/
+/*
+	By Osvaldas Valutis, www.osvaldas.info
+	Available for use under the MIT License
+*/
+
+
+
+;(function( $, window, document, undefined )
+{
+	$.fn.doubleTapToGo = function( params )
+	{
+		if( !( 'ontouchstart' in window ) &&
+			!navigator.msMaxTouchPoints &&
+			!navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
+
+		this.each( function()
+		{
+			var curItem = false;
+
+			$( this ).on( 'click', function( e )
+			{
+				var item = $( this );
+				if( item[ 0 ] != curItem[ 0 ] )
+				{
+					e.preventDefault();
+					curItem = item;
+				}
+			});
+
+			$( document ).on( 'click touchstart MSPointerDown', function( e )
+			{
+				var resetItem = true,
+					parents	  = $( e.target ).parents();
+
+				for( var i = 0; i < parents.length; i++ )
+					if( parents[ i ] == curItem[ 0 ] )
+						resetItem = false;
+
+				if( resetItem )
+					curItem = false;
+			});
+		});
+		return this;
+	};
+})( jQuery, window, document );
+</script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-content/themes/florida-wp/js/jquery.jcarousel.min.js'></script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-content/themes/florida-wp/js/bootstrap-alert.js'></script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-content/themes/florida-wp/js/bootstrap-dropdown.js'></script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-content/themes/florida-wp/js/jquery.sticky.js'></script>
+<script type='text/javascript' src='https://www.swiftic.com/wp-content/themes/florida-wp/js/florida-custom.js'></script>
+<div style="display:none;">
+<script src="https://www.swiftic.com/wp-content/themes/Florida_child_theme/JS/min/scripts.js?ver=1.32.0.0" type="text/javascript"></script>
+ 
+    <!-- Google Search Code for Remarketing Tag -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 964928206;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/964928206/?value=0&amp;guid=ON&amp;script=0" />
+    </div>
+</noscript>
+
+
+<!-- Google Remarketing Pixel -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 999818253;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+  
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/999818253/?value=0&amp;guid=ON&amp;script=0" />
+    </div>
+</noscript>
+</div>
+
+<!-- FB Pixel -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '357922621016370']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=357922621016370&amp;ev=NoScript" /></noscript>
+
+<!-- Twitter Pixel -->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l4hzs');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4hzs&p_id=Twitter" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4hzs&p_id=Twitter" />
+</noscript>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"02b3544b6d","applicationID":"3598324","transactionName":"ZwYEY0dVWUYDB0wPX15MJ1RBXVhbTQxXC1UdFwNaRVhWQQdJTRZUURcDUw==","queueTime":0,"applicationTime":975,"atts":"S0EHFQ9PSkg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

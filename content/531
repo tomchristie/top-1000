@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <title>머니투데이 - 돈이 보이는 리얼타임 뉴스</title>
+        <meta http-equiv="content-type" content="text/html; charset=euc-kr"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta http-equiv="refresh" content="300;url=https://www.mt.co.kr" />
+        <!-- Basic Meta Tags -->
+        <meta name="robots" content="all" />
+        <meta name="author" content="머니투데이">
+        <meta name="keywords" content="머니투데이, MoneyToday, 뉴스, 속보, 신문, 보도, 정치, 경제, 증권, 금융, 투자정보, 비즈니스, 사회, 국제, 문화, 연예, 스포츠, 포토"/>
+        <meta name="copyright" content="MoneyToday Inc."/>
+        <meta name="referrer" content="unsafe-url">
+        <link rel="canonical" href="https://www.mt.co.kr">
+        
+        <!-- OpenGraph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="머니투데이">
+        <meta property="og:description" name="description" content="머니투데이는 경제, 증권, 기업 등 모든 금융 및 경제정보를 리얼타임으로 전해드립니다.">
+        <meta property="og:url" content="https://news.mt.co.kr/index.html">
+        <meta property="og:site" content="https://news.mt.co.kr/index.html">
+        <meta property="og:image" content="https://menu.mt.co.kr/new_navi/mtlogo223x223.gif" />
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="fb:app_id" content="173026022742732">
+        <meta property="post:sharer_text" content="머니투데이"/>
+        
+        <!--Twitter -->
+        <meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@moneytodaynews">
+		<meta name="twitter:title" content="머니투데이">
+		<meta name="twitter:description" content="머니투데이는 경제, 증권, 기업 등 모든 금융 및 경제정보를 리얼타임으로 전해드립니다.">
+		<meta name="twitter:creator" content="@moneytodaynews">
+		<meta name="twitter:image" content="https://menu.mt.co.kr/common/meta/meta_mt_twonly.jpg">
+		<meta name="twitter:image:alt" content="머니투데이">
+		<meta name="twitter:domain" content="https://www.mt.co.kr">
+		<meta name="twitter:app:name:iphone" content="머니투데이">
+		<meta name="twitter:app:id:iphone" content="id349423458">
+		<meta name="twitter:app:url:iphone" content="https://apps.apple.com/kr/app/moneytoday-news-in-korea/id349423458">
+		<meta name="twitter:app:name:ipad" content="머니투데이">
+		<meta name="twitter:app:id:ipad" content="id349423458">
+		<meta name="twitter:app:url:ipad" content="https://apps.apple.com/kr/app/moneytoday-news-in-korea/id349423458">
+		<meta name="twitter:app:name:googleplay" content="머니투데이">
+		<meta name="twitter:app:id:googleplay" content="com.mt.MoneyTodayNews.apis">
+		<meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.mt.MoneyTodayNews.apis">
+		
+        <!-- Google -->
+        <meta name="google-site-verification" content="2dXTrxs5KTOJhRz4MIEjqbd9qyKJwfyxDppeARgKGak"/>
+
+
+        
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "머니투데이",
+            "url": "https://www.mt.co.kr",
+            "sameAs": [
+                "https://post.naver.com/my.nhn?memberNo=36310338",
+                "https://www.youtube.com/user/Moneytodaynews",
+                "https://www.facebook.com/mt.co.kr",
+                "https://www.instagram.com/moneytodaynews",
+                "https://twitter.com/moneytodaynews",
+                "https://tv.naver.com/moneytoday",
+                "https://play.google.com/store/apps/details?id=com.mt.MoneyTodayNews.apis&hl=ko",
+                "https://apps.apple.com/kr/app/id349423458"
+            ]
+        }
+        </script>
+
+        <!-- get style -->
+        <link rel="apple-touch-icon" href="https://menu.mt.co.kr/bil/icon_iphone_mt.png">
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/css/mt2017_header_min.css?date=20210805"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/css/mt2017_footer_min.css?date=20200213"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/css/mt2017_common_min.css?date=20210709"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/css/mt2017_etc_min.css?date=20210702"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/common/scrolltype/css/scrolltype_min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/common/mt_map/css/pc_map_daum_min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://menu.mt.co.kr/common/slick/css/slick_min.css"/>
+        <!-- add style --><!-- 삭제 200331 세종 / aside_q_bn 관련 내용 / 2018년 선관위배너 추가물 -->
+        <style type="text/css">
+            #aside_q_bn {}
+        </style>
+
+        <!-- get script(min) -->
+        <script type="text/javascript" src="https://menu.mt.co.kr/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/js/jquery.lazyload_min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/js/mainscroll_min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/common/js/jquery.cookie_min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/common/js/slick1.8.1.min.js"></script>
+        <!-- get script -->
+        <script type="text/javascript" src="https://menu.mt.co.kr/news/common.min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/news/loadFlash.min.js"></script>
+        <script type="text/javascript" src="https://menu.mt.co.kr/search/js/search.min.js"></script>
+        
+        <!-- cpson web Push START -->
+        <!-- cpson web Push END -->
+
+        <!-- add script -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                                var winW = $('#wrap').width();//브라우저의 가로길이
+                if ($('#rightShow').val() == 'on') {
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+                } else {
+                    $('#aside2017_open').css('display', 'block');
+                    $('.leftbn_wrap').css('display', 'block');
+                    $("#aside_q_bn").css('display', 'block');	//선관위배너관련
+                }
+
+                var boolAsd = true;
+                if ($("#aside2017").css("display") == "block") {
+                    boolAsd = true;
+                } else {
+                    boolAsd = false;
+                }
+
+                var boolLfb = true;
+                if ($(".leftbn_wrap").css("display") == "block") {
+                    boolLfb = true;
+                } else {
+                    boolLfb = false;
+                }
+				/* 수정 200331 세종 */
+                if (boolAsd && boolLfb) {
+                    $('#wrap').css('min-width', '1464px');
+                    $('#mt_header').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#container').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#mt_footer').css('padding-right', '220px').css('padding-left', '220px');
+                 //   $('.wrap_banner').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+                } else if (boolAsd && !boolLfb) {
+                    $('#wrap').css('min-width', '1464px');
+                    $('#mt_header').css('padding-right', '220px').css('padding-left', '0');
+                    $('#container').css('padding-right', '220px').css('padding-left', '0');
+                    $('#mt_footer').css('padding-right', '220px').css('padding-left', '0');
+                //    $('.wrap_banner').css('padding-right', '220px').css('padding-left', '0');
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+                } else if (!boolAsd && boolLfb) {
+                    $('#wrap').css('min-width', '1404px');
+                    $('#mt_header').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#container').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#mt_footer').css('padding-left', '190px').css('padding-right', '190px');
+                //    $('.wrap_banner').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#aside2017_open').css('display', 'block');
+                } else if (!boolAsd && !boolLfb) {
+                    $('#wrap').css('min-width', '1114px');
+                    $('#mt_header').css('padding-left', '0').css('padding-right', '0');
+                    $('#container').css('padding-left', '0').css('padding-right', '0');
+                    $('#mt_footer').css('padding-left', '0').css('padding-right', '0');
+                //    $('.wrap_banner').css('padding-left', '0').css('padding-right', '0');
+                    $('#aside2017_open').css('display', 'block');
+                }
+				/* //수정 200331 세종 */
+
+                /* ask 2019.12.31
+                //신년기획
+                var bgImgTop = Math.round($('.bg_img').offset().top);
+                var txtImgTop = Math.round($('.txt_img').offset().top);
+                var scroll_top = Math.round($(window).scrollTop());
+
+                // 닫기 버튼 클릭시 배너 축소
+                $('.close_btn').on('click', function () {
+                    $('.wrap_banner').removeClass('on').addClass('off');
+                    // setTimeout(function () {
+                    //     $('.wrap_banner');
+                    // }, 500);
+                });
+
+                // 추가 190715 세종 / 띠배너 클릭시 영역 확장
+                $('.wrap_banner .txt_img').on('click', function () {
+                    $('.wrap_banner').removeClass('off').addClass('on');
+                });
+
+
+                // firefox 대응 휠 이벤트
+                var scrollUp = 0, scrollDown = 0;
+                $(window).bind('wheel', function (event) {
+                    if (event.originalEvent.deltaY < 0) {
+                        scroll_top = Math.round($(window).scrollTop());
+                        if (scroll_top <= 0) {
+                            $('.wrap_banner').addClass('on');
+                            //setTimeout(function(){
+                            $('.wrap_banner').removeClass('off');
+                            //},1000);
+                        }
+                    } else {
+                        scroll_top = Math.round($(window).scrollTop());
+                    }
+                });
+                */
+                                                /*엠티리포트&평창 랜덤*/
+                var cookie = $.cookie('rdmView');
+                var rdmView = $('.rdm_view');
+                var rdmView2 = $('.rdm_view.spc_menu');
+
+                if (cookie == 'value') {
+                    //쿠키값이 존재할때
+                    $(rdmView).show().css('visibility', 'hidden');
+                    $(rdmView2).hide();
+                    $(rdmView).css('visibility', 'visible').css('position', 'static');
+                    $.cookie('rdmView', null);
+                } else {
+                    //쿠키값이 없을때
+                    $(rdmView).hide();
+                    $(rdmView2).show().css('visibility', 'visible').css('position', 'static');
+                    $.cookie('rdmView', 'value'); //쿠키생성
+                }
+
+                // 익스플로러 버전이 호환성보기로 나오는 현상 막기
+                if ($.browser.msie) {
+                    if ($.browser.version < 10 && $.browser.version >= 9) { // IE 9.x
+                        $('meta[http-equiv="X-UA-Compatible"]').attr('content', 'IE=9');
+                    } else if ($.browser.version < 9 && $.browser.version >= 8) { // IE 8.x
+                        $('meta[http-equiv="X-UA-Compatible"]').attr('content', 'IE=8');
+                    } else {// 머투 기본이 IE8 이상이므로(IE7 이하는 없다는 가정하에) 이외는 IE10 이상으로 간주합니다.
+                        $('meta[http-equiv="X-UA-Compatible"]').attr('content', 'IE=Edge');
+                    }
+                }
+
+                // 상단 3depth 영역 실시간뉴스, 다음 뉴스로 변경
+                changeTopFlashnews = function () {
+                    if ($('#topMenuFlashnewsArea  ul li').length > 0) {
+                        if ($('#topMenuFlashnewsArea ul li:visible').next().attr('id')) {
+                            var nextShowId = $('#topMenuFlashnewsArea ul li:visible').next().attr('id');
+                        } else {
+                            var nextShowId = 'topFlashnewsLi0';
+                        }
+                        $('#topMenuFlashnewsArea ul li').hide();
+                        $('#' + nextShowId).show();
+                    }
+                }
+
+                // 상단 3depth영역 실시간속보 3초에 한번씩 롤링(실시간 속보 데이터가 있을 때만 실행)
+                initTopFlashnews = function () {
+                    if ($('#topMenuFlashnewsArea ul li').length > 0) {
+                        changeFlash = setInterval(changeTopFlashnews, 3000);
+                    }
+                }
+                initTopFlashnews(); // 실시간 속보 초기화
+
+                // lazy img 클래스 공통사용
+                $(".lazyimg").lazyload();
+
+                // mt_idx_spot 부제높이에 따른 클래스 // 161227 추가
+                var subject = $('#mt2 .mt_idx_spot .cont .con_txt h2.m_subject');
+                if (subject.height() <= 26) {
+                    $(subject).addClass('tit1');
+                } else {
+                    $(subject).addClass('tit2');
+                }
+
+                setTimeout("checkAds();", 1000);
+
+                // 메뉴 이벤트
+                // 2-3depth 메뉴영역 보임/안보임 초기화
+                function initTabMenu() {
+                    var menuAreaId = 'menu_area_1';
+                    var submenuAreaId = '';
+
+                    // 해당하는 2 depth 메뉴영역 보이게 함
+                    $('dd[id^="menu_area_"]').hide();
+                    if (menuAreaId != '') {
+                        $('#' + menuAreaId).show();
+                    }
+
+                    // 3 depth 서브메뉴가 있으면 보이게 함
+                    if (submenuAreaId != '') {
+                        if ($('#' + submenuAreaId).attr('id') != 'undefined') {
+                            $('#' + submenuAreaId).show();
+                        }
+                    }
+                }
+
+                initTabMenu(); // 메뉴영역 초기화
+
+                // 맨 처음 로딩 후, 노출되고 있는 3depth 메뉴 아이디(initTabMenu() 함수 다음에 불러야 함)
+                var firstViewTabmenu = $('div.gnbbox li[id^="tabmenu_"] a.on').parent('li').attr('id');
+                var firstViewSubmenu = $('div.gnbbox ul.depth3:visible').attr('id');
+
+                // 마우스에 따른 상단메뉴 영역 변경
+                $('div.gnbbox li[id^="tabmenu_"]').on('mouseover', function () {
+                    var currentTabMenuId = $(this).attr('id');
+                    var thisSubMenuId = currentTabMenuId.replace('tabmenu_', 'submenu_');
+
+                    if ($('#' + thisSubMenuId).length > 0) {
+                        $('div.gnbbox ul.depth3').hide();
+                        // 메인페이지도 실시간 속보 보여지도록 바뀜
+                        $('#topMenuFlashnewsArea').hide();
+
+                        $('#topNoticeArea').hide();
+                        $('#' + thisSubMenuId).show();
+                    } else {
+                        $('div.gnbbox ul.depth3').hide();
+                        $('#topMenuFlashnewsArea').show();
+                    }
+
+                    // 탭메뉴 버튼 on class 변경
+                    $('div.gnbbox li[id^="tabmenu_"] a.tabtitle').removeClass('on');
+                    $('#' + currentTabMenuId + ' a.tabtitle').addClass('on');
+                }).on('mouseleave', function () {
+                    if (firstViewSubmenu) {
+                        $('div.gnbbox ul.depth3').hide();
+                        $('#topMenuFlashnewsArea').hide();
+                        $('#' + firstViewSubmenu).show();
+                    } else {
+                        $('div.gnbbox ul.depth3').hide();
+                        // 메인페이지도 실시간 속보 보여지도록 바뀜
+                        $('#topMenuFlashnewsArea').show();
+                    }
+                    // 탭메뉴 버튼 on class 변경
+                    $('div.gnbbox li[id^="tabmenu_"] a.tabtitle').removeClass('on');
+                    $('#' + firstViewTabmenu + ' a.tabtitle').addClass('on');
+                });
+
+                $('.gnb').children().hover(function () {
+                    $(this).children('.sec').addClass('on');
+                    $(this).find('.snb_group').show();
+                }, function () {
+                    $(this).children('.sec').removeClass('on');
+                    $(this).find('.snb_group').hide();
+                    $('#aTagClass_main').addClass('on');
+                });
+
+                $('.snb_group').children().hover(function () {
+                    $(this).find('.depth3').show().siblings('.tabtitle.child').addClass('on');
+                }, function () {
+                    $(this).find('.depth3').hide().siblings('.tabtitle.child').removeClass('on');
+                });
+            });
+            //end document ready
+
+            $(window).resize(function () {
+                                var winW = $('#wrap').width();					//브라우저의 가로길이
+                if ($('#rightShow').val() == 'on') {
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+					/* 수정 200331 세종
+                    //$("#aside_q_bn").css('display', 'none');		//선관위배너관련 추가 180511 세종
+                    if (winW > 1368) {
+                        $('.leftbn_wrap').css('display', 'block');
+                    } else {
+                        $('.leftbn_wrap').css('display', 'block');
+                    }
+					*/
+                } else {
+                    $('#aside2017_open').css('display', 'block');
+                    $('.leftbn_wrap').css('display', 'block');	//#leftbn_wrap
+					//$("#aside_q_bn").css('display', 'block');	//선관위배너관련 추가 180511 세종
+                }
+
+                var boolAsd = true;
+                if ($("#aside2017").css("display") == "block") {
+                    boolAsd = true;
+                } else {
+                    boolAsd = false;
+                }
+
+                var boolLfb = true;
+                if ($(".leftbn_wrap").css("display") == "block") {
+                    boolLfb = true;
+                } else {
+                    boolLfb = false;
+                }
+                /* 수정 200331 세종 */
+                if (boolAsd && boolLfb) {
+                    $('#wrap').css('min-width', '1464px');
+                    $('#mt_header').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#container').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#mt_footer').css('padding-right', '220px').css('padding-left', '220px');
+                 //   $('.wrap_banner').css('padding-right', '220px').css('padding-left', '220px');
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+                } else if (boolAsd && !boolLfb) {
+                    $('#wrap').css('min-width', '1464px');
+                    $('#mt_header').css('padding-right', '220px').css('padding-left', '0');
+                    $('#container').css('padding-right', '220px').css('padding-left', '0');
+                    $('#mt_footer').css('padding-right', '220px').css('padding-left', '0');
+                //    $('.wrap_banner').css('padding-right', '220px').css('padding-left', '0');
+                    $('#aside2017_open').css('display', 'none');
+					$('.rightbn_wrap').css('display', 'none');
+                } else if (!boolAsd && boolLfb) {
+                    $('#wrap').css('min-width', '1404px');
+                    $('#mt_header').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#container').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#mt_footer').css('padding-left', '190px').css('padding-right', '190px');
+                //    $('.wrap_banner').css('padding-left', '190px').css('padding-right', '190px');
+                    $('#aside2017_open').css('display', 'block');
+                    //$("#aside_q_bn").css('display', 'block');	//선관위배너관련
+                } else if (!boolAsd && !boolLfb) {
+                    $('#wrap').css('min-width', '1114px');
+                    $('#mt_header').css('padding-left', '0').css('padding-right', '0');
+                    $('#container').css('padding-left', '0').css('padding-right', '0');
+                    $('#mt_footer').css('padding-left', '0').css('padding-right', '0');
+                //    $('.wrap_banner').css('padding-left', '0').css('padding-right', '0');
+                    $('#aside2017_open').css('display', 'block');
+                    //$("#aside_q_bn").css('display', 'block');		//선관위배너관련
+                }
+				/* 수정 200331 세종 */
+                            });
+            //end resize
+
+            //start function
+            // 함수 : 검색
+            function HeaderSearchOpen() {
+                $('#mt_header .schopen').hide();
+                $('#mt_header .search1').css('width', '180');
+                $('#mt_header .search1 fieldset').animate({width: 'show'}, 100);
+            }
+
+            // 함수 : 검색
+            function HeaderSearchClose() {
+                $('#mt_header .schopen').show();
+                $('#mt_header .search1').css('width', 'auto');
+                $('#mt_header .search1 fieldset').hide();
+            }
+
+            // 속보창 팝업
+            function popupFlashnews() {
+                window.open("https://news.mt.co.kr/newsflash/newsflash.html", "flashnews", 'width=1103,height=745,top=0,left=0,resizable=1,scrollbars=no,toolbar=yes');
+            }
+
+            function popupFlashnewsAll() {
+                window.open("https://news.mt.co.kr/newsflash/newsflash.html?sec=all&listType=left", "flashnews", 'width=1103,height=745,top=0,left=0,resizable=1,scrollbars=no,toolbar=yes');
+            }
+
+            //속보창 2
+            function popupFlashnews2(no) {
+                window.open("https://news.mt.co.kr/newsflash/newsflash.html?no=" + no, "flashnews", 'width=1103,height=745,top=0,left=0,resizable=1,scrollbars=no,toolbar=yes');
+            }
+
+            //속보창 2
+            function popupFlashnewsNo(flashId, flashSeq) {
+                window.open("https://news.mt.co.kr/newsflash/newsflash.html?sec=all&flashId=" + flashId + "&flashSeq=" + flashSeq, "flashnews", 'width=1103,height=745,top=0,left=0,resizable=1,scrollbars=no,toolbar=yes');
+            }
+
+            // 쿠키 생성
+            function setCookie(cName, cValue, cDay) {
+                var expire = new Date();
+                expire.setDate(expire.getDate() + cDay);
+                cookies = cName + '=' + (cValue) + '; path=/ ; domain=' + '.mt.co.kr'; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+                if (typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+                document.cookie = cookies;
+            }
+
+            // 쿠키 가져오기
+            function getCookie(cName) {
+                cName = cName + '=';
+                var cookieData = document.cookie;
+                var start = cookieData.indexOf(cName);
+                var cValue = '';
+
+                if (start != -1) {
+                    start += cName.length;
+                    var end = cookieData.indexOf(';', start);
+                    if (end == -1) end = cookieData.length;
+                    cValue = cookieData.substring(start, end);
+                }
+                return unescape(cValue);
+            }
+
+            function statusChangeCallback(response) {
+                if (response.status === 'connected' && getCookie('comefrom') == '') {
+                    get_fb_info();
+                } else {
+                    FB.login(function (response) {
+                        if (response.status === 'connected') {
+                            get_fb_info();
+                        } else {
+                            alert('not connect');
+                        }
+                    }, {scope: 'publish_actions,public_profile,user_friends,email'});
+                }
+            }
+            // This function is called when someone finishes with the Login
+            // Button.  See the onlogin handler attached to it in the sample
+            // code below.
+            function checkLoginState() {
+                FB.getLoginStatus(function (response) {
+                    statusChangeCallback(response);
+                });
+            }
+
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '530090113839958',
+                    cookie: true,  // enable cookies to allow the server to access
+                                   // the session
+                    xfbml: true,  // parse social plugins on this page
+                    version: 'v2.8' // use graph api version 2.8
+                });
+            };
+
+            function get_fb_info() {
+                FB.api('/me', function (response) {
+                    setCookie("comefrom", "facebook", "0");
+                    setCookie("facebook_token", "", "0");
+                    setCookie("facebook_uid", response.id, "0");
+                    setCookie("screen_name", response.name, "0");
+                    setCookie("t_img", "https://graph.facebook.com/" + response.id + "/picture?type=small", "0");
+                    FB.api(
+                        "/me/friends?summary=total_count",
+                        function (response) {
+                            if (response && !response.error) {
+                                setCookie("fb_friend_cnt", response.summary.total_count, "0");
+                            }
+                        }
+                    );
+
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 1000);
+                });
+            }
+
+            function checkAds() {
+                if ($(".adH").height() == "0") {
+                    $(".ad").css('display', 'none');
+                    //MTCMU-4611
+                    $(".issue_package").css('margin-top', '30px');
+                }
+            };
+
+            //네비게이션 : 전체 GNB메뉴 버튼
+            function openAmvbox(_this) {
+                $(_this).parent().children('.gnbbox .amvbox').toggle();
+            }
+
+            //네비게이션 : 전체 GNB메뉴 버튼
+            function closeAmvbox(_this) {
+                $(_this).parent('.gnbbox .amvbox').toggle();
+            }
+
+            // 즉시실행함수 :
+            // Load the SDK asynchronously
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            // 즉시실행함수 : google analytics script
+                        (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-22186599-19', 'auto');
+            ga('require', 'displayfeatures');
+            ga('require', 'linkid', 'linkid.js');
+            ga('set', 'dimension2', '');
+            ga('set', 'dimension1', '');
+            ga('set', 'dimension3', '0');
+            ga('set', 'dimension4', '');
+            ga('set', 'dimension5', ''); //대표분류코드
+            ga('set', 'dimension6', ''); //기사표출일
+            ga('set', 'dimension7', ''); //기사키워드
+            ga('send', 'pageview');
+            
+            // 즉시실행함수 : chartbeat script 2019.01.07 ask -->
+            (function () {
+                /** CONFIGURATION START **/
+                var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+                _sf_async_config.uid = 65854;
+                _sf_async_config.domain = 'mt.co.kr';
+                _sf_async_config.flickerControl = false;
+                _sf_async_config.useCanonical = true;
+                //_sf_async_config.useCanonicalDomain = true;
+                _sf_async_config.sections = 'no section'; // CHANGE THIS TO YOUR SECTION NAME(s)
+                _sf_async_config.authors = 'no authors'; // CHANGE THIS TO YOUR AUTHOR NAME(s)
+                _sf_async_config.type = 'no department';
+                _sf_async_config.title = "머니투데이";
+
+                /** CONFIGURATION END **/
+                function loadChartbeat() {
+                    var e = document.createElement('script');
+                    var n = document.getElementsByTagName('script')[0];
+                    e.type = 'text/javascript';
+                    e.async = true;
+                    e.src = '//static.chartbeat.com/js/chartbeat.js';
+                    ;
+                    n.parentNode.insertBefore(e, n);
+                }
+
+                loadChartbeat();
+            })();
+        </script>
+
+            </head>
+<body id="mt2">
+
+
+    <div id="wrap">
+        <!-- skip -->
+        <a href="#content" class="skip">본문영역 바로가기</a>
+<!-- INCLUDE HEADER AREA START -->
+
+<!-- header -->
+<div id="mt_header">
+    <div class="limit1">
+        <div class="hd_rellink">
+            
+				<script type="text/javascript">
+					function toggleHeaderTopServiceArea() {
+						$('.mt_mgroup div.svlbox').slideToggle('fast');
+					}
+				</script>
+
+				<!-- 그룹사이트 -->
+				<div class="mt_mgroup">
+					<strong class="hide">그룹 사이트</strong>
+					<a href="https://vip.mt.co.kr" target="_blank" style="color:#F54141;">VIP</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://star.mt.co.kr" target="_blank">스타뉴스</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.thebell.co.kr" target="_blank" rel="noopener noreferrer">the bell</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://moneys.mt.co.kr" target="_blank">머니S</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.mtn.co.kr" target="_blank" rel="noopener noreferrer">MTN</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.news1.kr" target="_blank" rel="noopener noreferrer">뉴스1</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.newsis.com" target="_blank" rel="noopener noreferrer">뉴시스</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.zdnet.co.kr" target="_blank" rel="noopener noreferrer">지디넷</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://kr.pixtastock.com/" target="_blank" rel="noopener noreferrer">PIXTA</a>
+				</div>
+				
+				<!-- 날짜 -->
+				<span class="date_area1">
+					<script type="text/javascript">
+						var week = new Array('일', '월', '화', '수', '목', '금', '토');
+                        var today = new Date();
+                        var dayName = week[today.getDay()];
+                        var year = today.getFullYear();
+                        var day = today.getDate();
+                        var month = today.getMonth()+1; //January is 0!
+                        if(day<10) {
+                            day='0'+day
+                        }
+                        if(month<10) {
+                            month='0'+month
+                        }
+                        today = year+'.'+month+'.'+day+"("+dayName+")";
+                        document.write(today);
+					</script>
+				</span>
+				
+				<!-- 로그인 -->
+				<form name="frmLogin" action="https://login.mt.co.kr/logout.html" method="get" class="box" onsubmit="document.frmLogin.submit();">
+				<input name="data" type="hidden" value=''>
+				<input name="qurl64" type="hidden" value='aHR0cHM6Ly93d3cubXQuY28ua3Iv'>
+				<div class="login_area1">
+					<a href="https://login.mt.co.kr/login.html?qurl64=aHR0cHM6Ly93d3cubXQuY28ua3Iv">로그인</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://login.mt.co.kr/mtJoinAgreement.html">회원가입</a>
+				</div>
+				</form>
+				<!-- float해제 -->
+				<span class="cboth"></span>        </div>
+
+        <!-- 머니투데이 로고 -->
+        <h1 class="logo">
+            <a href="https://www.mt.co.kr"><img src="https://menu.mt.co.kr/new_navi2/logo_mt2017.png" alt="머니투데이"/></a>
+        </h1>
+
+        <div class="gnbbox">
+            <button type="button" class="allview" onclick="javascript:openAmvbox(this);">전체</button>
+            <ul class="gnb">
+                <li class="fst_bundle">
+                    <!-- 뉴스 -->
+                    <a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal" id="aTagClass_news" class="sec">뉴스</a>
+                    <ul class="snb_group" style="margin-left:54px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal" class="tabtitle">경제정책</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=finance&pDepth2=Ftotal" class="tabtitle">증권</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=politics2&pDepth2=Qtotal" class="tabtitle">정치</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=estate&pDepth2=Etotal" class="tabtitle">부동산</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=world&pDepth2=Weconomy" class="tabtitle">국제경제</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=society&pDepth2=Stotal" class="tabtitle">사회</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=industry&pDepth2=Itotal" class="tabtitle">산업</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=tech&pDepth2=Ttotal" class="tabtitle">IT</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=bank&pDepth2=Btotal" class="tabtitle">금융</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/gazua/gazuaMain.html" class="tabtitle">블록체인</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth1=lifeculture&pDepth2=Ltotal" class="tabtitle">문화</a>
+                        </li>
+                                                <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/photonews/index.html" class="tabtitle child">포토</a>
+                            <ul class="depth3" style="display:none;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/photonews/index.html">포토</a></li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/photonews/specialIndex.html">스페셜</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/photonews/graphicIndex.html">그래픽</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/photonews/photovod_star.html?type=vod&cate=1000" class="tabtitle child">영상</a>
+                            <ul class="depth3" style="display:none;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/photonews/photovod_star.html?type=vod&cate=1000">MT
+                                        영상</a></li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/norm.html?pDepth=news">놂
+                                        - norm</a></li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/muffler.html?pDepth=news">머플러</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsTotalList.html?pDepth1=newsTotal" class="tabtitle">전체기사</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 증권 -->
+                    <a href="https://news.mt.co.kr/stock" id="aTagClass_stock" class="sec">증권</a>
+                    <ul class="snb_group" style="margin-left:122px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?comd=7&pDepth=stock&pDepth1=sNews&pDepth2=Ftotal" class="tabtitle">뉴스</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=01" class="tabtitle child">시세/공시</a>
+                            <ul class="depth3" style="display:none;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=01">코스피</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=001">코스닥</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSKONEX.html">코넥스</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSRaise.html?mode=up">상승/하락</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSHighest.html?mode=up">상하한가</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSAmount.html">시가총액</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSTradeRank.html">거래량상위</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/sise/stockSNewEntry.html">신규상장</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/cowork/dart/stockDisclosure.html?comd=1">주요공시</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/stock/strategy/newsList.html" class="tabtitle">포인트&전략</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/stock/fund/fundIRList.html" class="tabtitle child">펀드</a>
+                            <ul class="depth3" style="display:none;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/fund/fundIRList.html">펀드IR</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/fund/wealthFund.html?comd=1">국내펀드</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/fund/wealthFund.html?comd=2">해외펀드</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/stock/fund/wealthFund.html?comd=3">유형종합</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/stock/analysis/newsList.html" class="tabtitle">종목대해부</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/stock/report/newsList.html" class="tabtitle">베스트리포트</a>
+                        </li>
+                        <!-- li class="snb_bundle">
+							<a href="https://news.mt.co.kr/stock/vod/stockVod.html" class="tabtitle">투자영상</a>
+						</li -->
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/mypage/myFavorityStock.html" class="tabtitle">MY스톡</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 정치 -->
+                    <a href="https://the300.mt.co.kr" target="_blank" class="sec">정치</a>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 법률 -->
+                    <a href="https://thel.mt.co.kr" target="_blank" class="sec">법률</a>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 유니콘팩토리 -->
+                    <a href="https://news.mt.co.kr/unicorn" id="aTagClass_unicorn" class="sec">유니콘팩토리</a>
+                    <ul class="snb_group" style="margin-left:356px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/unicorn/newsList.html" class="tabtitle">&nbsp;최신기사</a>
+                        </li>
+                    </ul>
+                    <!-- TOM -->
+                                    </li>
+
+                <li class="fst_bundle">
+                    <!-- 칼럼 -->
+                    <a href="https://news.mt.co.kr/column/opinion_main.html" id="aTagClass_opinion" class="sec">칼럼</a>
+                    <ul class="snb_group" style="margin-left:454px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=03" class="tabtitle">데스크칼럼</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=01" class="tabtitle">사내칼럼</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=04" class="tabtitle">현장리포트</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=02" class="tabtitle">사외칼럼</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=05" class="tabtitle">SUCCESS</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/opinion_inside.html?category=06" class="tabtitle">SCIENCE</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/column/cultureBox.html?category=07" class="tabtitle child">컬쳐박스</a>
+                            <ul class="depth3" style="display:none; width:130px;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/column/cultureBox.html?category=07">문화가
+                                        좋다</a></li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/column/cultureBox_list.html?category=07&listNo=1">책이
+                                        좋다</a></li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/column/cultureBox_list.html?category=07&listNo=2">이야기가
+                                        좋다</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 자동차 -->
+                    <a href="https://news.mt.co.kr/autom" id="aTagClass_autom" class="sec">자동차</a>
+                    <ul class="snb_group" style="margin-left:530px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=latestNews" class="tabtitle">최신기사</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=newCar" class="tabtitle">신차소식</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/autom/rideList.html?pDepth=autom&pDepth1=trialRide" class="tabtitle">시승기</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=carLife" class="tabtitle">카라이프</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 연예 -->
+                    <a href="https://news.mt.co.kr/enter" id="aTagClass_enter" class="sec">연예</a>
+                    <ul class="snb_group" style="margin-left:606px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?pDepth=enter&pDepth1=enter&pDepth2=Senter" class="tabtitle">연예</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/newsList.html?type=1&pDepth=enter&pDepth1=sports&pDepth2=Stotal&vgb=sports" class="tabtitle">스포츠</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle">
+                    <!-- 이슈 -->
+                    <a href="https://news.mt.co.kr/theissue" id="aTagClass_theissue" class="sec">이슈</a>
+                    <ul class="snb_group" style="margin-left:674px; display:none;">
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/theissue/hotIssueMain.html" class="tabtitle child">핫이슈</a>
+                            <ul class="depth3" style="display:none; width:130px;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/hotIssueMain.html">전체핫이슈</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/yearlyPlanMain.html">연중기획</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/theissue/realtimeRank.html" class="tabtitle">실시간급상승</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/theissue/dailyRankingNews.html" class="tabtitle">베스트클릭</a>
+                        </li>
+                        <li class="snb_bundle">
+                            <a href="https://news.mt.co.kr/theissue/peopleList.html" class="tabtitle child">사람&amp;</a>
+                            <ul class="depth3" style="display:none;">
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=1">피플</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=2">MT초대석</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=3">인터뷰</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=4">대표선배</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=5">인사</a>
+                                </li>
+                                <li class="depth3_bundle">
+                                    <a href="https://news.mt.co.kr/theissue/peopleList.html?subp=6">부고</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="fst_bundle" style="display:block; margin-left:-6px; margin-right:0;">
+                    <!-- MT리포트 -->
+                    <a href="https://news.mt.co.kr/mtReport.html?MGR_B" class="sec">MT리포트</a>
+                </li>
+
+                <!-- <li class="fst_bundle rdm_view spc_menu" style="margin-left:-17px;">
+                    <a href="https://news.mt.co.kr/gazua/gazuaMain.html?GIF" class="sec"><img src="https://menu.mt.co.kr/new_navi3/mtgnb_blockchain1.gif" alt="블록체인" style="display:block; margin-top:-14px;"></a>
+                </li> -->
+            </ul>
+
+            <!-- float해제 -->
+            <span class="cboth"></span>
+
+            <!-- 메뉴 전체보기 -->
+            <!-- 메뉴 전체보기 -->
+<div class="amvbox" style="display:none;">
+
+	<ul class="groupbox1">
+		<li class="bundle">
+			<dl>
+				<dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal">뉴스</a></dt>
+				<dd class="ty2">
+					<ul>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal">경제정책</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=finance&pDepth2=Ftotal">증권</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics2&pDepth2=Qtotal">정치</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=estate&pDepth2=Etotal">부동산</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=world&pDepth2=Weconomy">국제경제</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=society&pDepth2=Stotal">사회</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=industry&pDepth2=Itotal">산업</a></li>
+					</ul>
+				</dd>
+				<dd class="ty2">
+					<ul>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=tech&pDepth2=Ttotal">IT</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=bank&pDepth2=Btotal">금융</a></li>
+						<li><a href="https://news.mt.co.kr/gazua/gazuaMain.html">블록체인</a></li>
+						<li><a href="https://news.mt.co.kr/newsList.html?pDepth1=lifeculture&pDepth2=Ltotal">문화</a></li>
+												<li><a href="https://news.mt.co.kr/photonews/index.html">포토</a></li>
+						<li><a href="https://news.mt.co.kr/photonews/photovod_star.html?type=vod&cate=1000">영상</a></li>
+						<li><a href="https://news.mt.co.kr/newsTotalList.html?pDepth1=newsTotal">전체기사</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</li>
+		<li class="bundle" style="width:163px;">
+			<dl style="margin-left:39px">
+				<dt><a href="https://news.mt.co.kr/stock">증권</a></dt>
+				<dd><a href="https://news.mt.co.kr/newsList.html?comd=7&pDepth=stock&pDepth1=sNews&pDepth2=Ftotal">뉴스</a></dd>
+				<dd><a href="https://news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=01">시세/공시</a></dd>
+                <dd><a href="https://news.mt.co.kr/stock/strategy/newsList.html">포인트&전략</a></dd>
+				<dd><a href="https://news.mt.co.kr/stock/fund/fundIRList.html">펀드</a></dd>
+				<dd><a href="https://news.mt.co.kr/stock/analysis/newsList.html">종목대해부</a></dd>
+				<dd><a href="https://news.mt.co.kr/stock/report/newsList.html">베스트리포트</a></dd>
+				<!--dd><a href="https://news.mt.co.kr/stock/vod/stockVod.html">투자영상</a></dd-->
+				<dd><a href="https://news.mt.co.kr/mypage/myFavorityStock.html">MY스톡</a></dd>
+				<dt><a href="https://the300.mt.co.kr" target="_blank">정치 - the300</a></dt>
+				<dt><a href="https://thel.mt.co.kr" target="_blank">법률 - the L</a></dt>
+			</dl>
+		</li>
+		<li class="bundle" style="width:159px;">
+			<dl style="margin-left:38px;">
+                <dt><a href="https://news.mt.co.kr/unicorn">유니콘팩토리</a></dt>
+                <dd><a href="https://news.mt.co.kr/unicorn/newsList.html">최신기사</a></dd>
+				<dt><a href="https://news.mt.co.kr/column/opinion_main.html">칼럼</a></dt>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=03">데스크칼럼</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=01">사내칼럼</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=04">현장리포트</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=02">사외칼럼</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=05">SUCCESS</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=06">SCIENCE</a></dd>
+				<dd><a href="https://news.mt.co.kr/column/cultureBox.html?category=07">컬쳐박스</a></dd>
+			</dl>
+		</li>
+		<li class="bundle" style="width:152px;">
+			<dl>
+				<dt><a href="https://news.mt.co.kr/autom">자동차</a></dt>
+				<dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=latestNews">최신기사</a></dd>
+				<dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=newCar">신차소식</a></dd>
+				<dd><a href="https://news.mt.co.kr/autom/rideList.html?pDepth=autom&pDepth1=trialRide">시승기</a></dd>
+				<dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=carLife">카라이프</a></dd>
+				<dt><a href="https://news.mt.co.kr/enter">연예</a></dt>
+				<dd><a href="https://news.mt.co.kr/newsList.html?pDepth=enter&pDepth1=enter&pDepth2=Senter">연예</a></dd>
+				<dd><a href="https://news.mt.co.kr/newsList.html?type=1&pDepth=enter&pDepth1=sports&pDepth2=Stotal&vgb=sports">스포츠</a></dd>
+			</dl>
+		</li>
+		<li class="bundle" style="width:155px;">
+			<dl>
+				<dt><a href="https://news.mt.co.kr/theissue">이슈</a></dt>
+				<dd><a href="https://news.mt.co.kr/theissue/hotIssueMain.html">핫이슈</a></dd>
+				<dd><a href="https://news.mt.co.kr/theissue/realtimeRank.html">실시간급상승</a></dd>
+				<dd><a href="https://news.mt.co.kr/theissue/dailyRankingNews.html">베스트클릭</a></dd>
+				<dd><a href="https://news.mt.co.kr/theissue/peopleList.html">사람&</a></dd>
+			</dl>
+		</li>
+		<li class="bundle" style="width:185px;">
+			<dl style="margin-left:44px;">
+				<dt><a href="https://vip.mt.co.kr" target="_blank">VIP</a></dt>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=only" target="_blank">VIP Only</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=story" target="_blank">VIP Story</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=tom" target="_blank">T.O.M</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=director" target="_blank">투자디렉터</a></dd>
+				<dd><a href="https://vip.mt.co.kr/specialReportList.html" target="_blank">런치리포트</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=law" target="_blank">the L</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=ict" target="_blank">ICT & Tech</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=culture" target="_blank">Culture</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipList.html?pDepth=full" target="_blank">FULL TEXT</a></dd>
+				<dd><a href="https://vip.mt.co.kr/epaper/epaperFirstEdition.html" target="_blank">초판</a>/<a href="https://vip.mt.co.kr/epaper/epaperPdfList.html" target="_blank">e-신문보기</a></dd>
+				<dd><a href="https://vip.mt.co.kr/vipService.html" target="_blank">서비스 신청</a></dd>
+			</dl>
+		</li>
+	</ul>
+	<ul class="groupbox2">
+		<li class="bundle" style="margin-top:22px;"><a href="http://www.ttimes.co.kr" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/logo_ttimes1.png" alt="TTimes" /></a></li>
+		<li class="bundle" style="margin-top:30px;"><a href="https://stylem.mt.co.kr" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/logo_stylem1.png" alt="styleM" /></a></li>
+		<li class="bundle" style="margin:27px 3px 0 -3px; padding-left:0;"><a href="https://theleader.mt.co.kr" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/logo_theleader3.png" alt="the Leader" /></a></li>
+		<li class="bundle" style="margin-top:23px;"><a href="https://www.ize.co.kr" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/logo_ize1.png" alt="ize" /></a></li>
+		<li class="bundle" style="margin-top:27px;"><a href="https://www.lofficielkorea.com" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/logo_lofficiel1.png" alt="LOFFICIEL HOMMES" /></a></li>
+	</ul>
+	<button type="button" class="close" onclick="javascript:closeAmvbox(this);"><span>전체보기 닫기</span></button>
+
+</div>
+
+        </div>
+
+        <!-- 기타1 -->
+        <div class="etc_link">
+			<span class="pop_link">
+				<a href="javascript:;" onclick="javascript:popUp('https://news.mt.co.kr/stock/sise/sisepanKse.html','kse',1005,700);">시세판</a>
+				<a href="javascript:popupFlashnews();" style="color:#F54141;">속보창</a>
+			</span>
+        </div>
+
+        <!-- 기타1 -->
+        <div class="etc_link2">
+			<span class="sns_link">
+				<a href="https://www.facebook.com/mt.co.kr" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/icon_facebook2.png" alt="머니투데이 페이스북"/></a>
+				<a href="https://twitter.com/moneytodaynews" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/icon_twitter2.png" alt="머니투데이 트위터"/></a>
+                <a href="https://www.instagram.com/moneytodaynews" target="_blank"><img src="https://menu.mt.co.kr/new_navi3/icon_instargram1.png" alt="머니투데이 인스타그램"/></a>
+			</span>
+
+            <div class="search1">
+                <button type="button" class="schopen" onclick="javascript:HeaderSearchOpen();"><span>검색창 열기</span>
+                </button>
+                <form name="GNBsearchForm" id=AKCFrm autocomplete="off" method=get action="https://search.mt.co.kr" onsubmit="return topKwdSearch(this);">
+                    <input type="hidden" name='srchFd' id='srchFd' value='TOTAL'/>
+                    <input type="hidden" name='range' id='range' value='TOTAL'/>
+                    <input type="hidden" name='category' id='category' value='TOTAL'/>
+                    <input type="hidden" name="reSrchFlag"/>
+                    <input type="hidden" name="preKwd" value=""/>
+                    <input type="hidden" name="search_type" id="search_type" value='m'/>
+                    <input type="hidden" name="mode" value=""/>
+                    <input type="hidden" name="code" value=""/>
+
+                    <fieldset>
+                        <legend>통합검색</legend>
+                        <button type="submit"><span>검색</span></button>
+                        <input type="text" name="kwd" placeholder="검색"/>
+                        <button type="button" onclick="javascript:HeaderSearchClose();"><span>닫기</span></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- 오늘의 증시 -->
+        
+<div class="today_wstreet">
+	<h3 class="hide">오늘의 증시</h3>
+	<div class="wall_street">
+		<table width="100%" summary="코스피,코스닥,코스피200">
+			<caption>오늘의 증시</caption>
+			<colgroup>
+				<col width="36%" />
+				<col width="32%" />
+				<col width="32%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">코스피</th>
+					<th scope="col">코스닥</th>
+					<th scope="col">원/달러</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="su1 dn"><a href="//news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=01">3260.42</a></td>
+					<td class="su1 up"><a href="//news.mt.co.kr/stock/sise/stockSKOSPI.html?sCode=001">1060.00</a></td>
+					<td class="su1 up"><a href="//news.mt.co.kr/stock/index.html">1144.30</a></td>
+				</tr>
+				<tr>
+					<td class="su2 dn">▼9.94</td>
+					<td class="su2 up">▲0.2</td>
+					<td class="su2 up">▲2.2</td>
+				</tr>
+				<tr>
+					<td class="su2 dn">-0.30%</td>
+					<td class="su2 up">+0.02%</td>
+					<td class="su2 up">+0.19%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>    </div>
+</div>
+<!-- //header -->
+
+<div id="main-wrap" style="position:relative;"<!-- container -->
+<div id="container">
+    <div style="position:relative;"><!-- 추가 181228 세종 -->
+        
+        <!-- INCLUDE HEADER AREA END -->
+
+<div id="main-wrap01-scroll-start">
+    <div id="main-wrap01-scroll-in">
+        <div id="content" class="mt_idx">
+            <!-- 1번세트 메인탑, 실시간핫클립,메인탑 Tsub -->
+            	
+<!-- 메인 탑 -->
+<div class="mt_idx_spot">
+	<!-- 기사제목 -->
+	<h1 class="tit_subject">	
+		<a href="https://news.mt.co.kr/mtview.php?no=2021080913575130720&MT_T">개발부터 생산까지…한미약품 145조 mRNA백신 겨냥</a></h1>
+
+	<div class="mt_idx_spot_box1">
+		<div class="photo_con">
+			<div class="m_thum">
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080916465277148&MT_P" class="">
+					<span class="thum"><img src="https://menu.mt.co.kr/upload/main/2021/2021080916465277148_mainTop_200454_1.jpg" alt="&#39;美파운드리·M&A&#39;…돌아온 이재용, 삼성 경영시계 빨라지나"></span>
+					<!-- 제목 -->
+					<strong class="subject" style="display:;">&#39;美파운드리·M&A&#39;…<br>돌아온 이재용, 삼성 경영시계 빨라지나</strong>
+					<!-- 리드 -->
+					<p class="txt" style="display:none;">[이재용 삼성전자 부회장 가석방]법무부가 9일 이재용 삼성전자 부회장의 가석방을 확정하면서 미국 현지 반도체 파운드리(위탁생산) 투자, 3년 내 대규모 M&amp;A(인수합병) 등 지지부진했던 삼성전자의 경영전략에 물꼬가 트일 것이라는 전망이 나온다. 코로나19 4차 대유행으로 경제 양극화가 심화되는 상황에서 삼성전자가 올 하반기 일자리 창출 방안을 내놓을 가능성도 거론된다.업계에서 이 부회장의 경영복귀 이후 첫 결단으로 주목하는 분야는 당면한 반도체 경쟁 대응 전략이다. 특히 미국 현지 후보지 4곳을 대상으로 검토 중인 파운드리 ...</p>
+				</a>
+
+				<div class="txtbox" style="display:none;">
+					<!-- 에초 -->
+									</div>
+			</div>
+
+            <!-- 2020선거 MTCMU-3442 -->
+                        
+			<!-- 관련기사 -->
+
+			<!-- 실시간 핫클립 -->
+						<ul class="m_rellist">
+								<li class="bundle" >					<a href="https://news.mt.co.kr/mtview.php?no=2021080911065484393&MRH_P" class="">						<span class="thum"><img src="https://thumb.mt.co.kr/05/2021/08/2021080911065484393_1.jpg" alt="&#034;코로나보다 무서운 식량난&#034;…北, 中 무역 재개"></span>						<strong class="subject"><span class="vmtxt">&#034;코로나보다 무서운 식량난&#034;…北, 中 무역 재개</span></strong>					</a>				</li>				<li class="bundle" >					<a href="https://news.mt.co.kr/mtview.php?no=2021080914525634376&MRH_P" class="">						<span class="thum"><img src="https://thumb.mt.co.kr/05/2021/08/2021080914525634376_1.jpg" alt="&#034;충전하고 나왔는데&#034; 전기 마을버스 화재"></span>						<strong class="subject"><span class="vmtxt">&#034;충전하고 나왔는데&#034; 전기 마을버스 화재</span></strong>					</a>				</li>				<li class="bundle" >					<a href="https://news.mt.co.kr/mtview.php?no=2021080913504844728&MRH_P" class="">						<span class="thum"><img src="https://thumb.mt.co.kr/05/2021/08/2021080913504844728_1.jpg" alt="&#39;쿵&#39; 고등 유도부 선배 4명, 후배 던져 사지마비"></span>						<strong class="subject"><span class="vmtxt">&#39;쿵&#39; 고등 유도부 선배 4명, 후배 던져 사지마비</span></strong>					</a>				</li>			</ul>		</div>
+
+		<!-- 메인탑 Tsub -->
+				<div class="text_con">
+			<ul class="text_con_table">
+				<li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080919000388932&MTS_P" >법무부 &#034;이재용 가석방 특혜 아니다…사례 많아&#034;</a></strong><ul class="text_con_list"><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080919043653827&MTS_P">&#034;설마 했더니, 기어이…이재용 가석방, 사법 불공정의 전형&#034;</a></li><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080919272561192&MTS_P">與 이재용 가석방 &#034;삼성, 백신·반도체 문제 해결에 역할 기대&#034;</a></li><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080920322660758&MTS_P">이재용 가석방에 野 주자들 &#034;국민뜻=경제살리기, 책임 다해달라&#034;</a></li></ul>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><span class="sort" style="color:#F54141;">단독</span>&nbsp;<a href="https://news.mt.co.kr/mtview.php?no=2021080616444071157&MTS_P" >중개보수 고가주택 &#39;9억→15억 상향&#39; 검토…이달내 확정</a></strong><ul class="text_con_list"><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080619062482610&MTS_P">압구정 현대2차 팔고·현대7차 샀더니 중개보수 &#39;1억&#39;</a></li><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080617202917623&MTS_P">&#034;지적서고 설치 기준은?&#034;…틀리라고 내는 황당한 공인중개사 시험</a></li><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080915043937778&MTS_P">중개수수료 인하보다 반발 큰 &#39;직방&#39; 중개업 진출</a></li></ul>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080909212525224&MTS_P" >바이든이 던진 애플카 가이드라인…K배터리 두근두근</a></strong>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080917542525464&MTS_P" >모더나, 못오나…젊은층 AZ까지 재소환 검토</a></strong><ul class="text_con_list"><li class="bundle"><a href="https://news.mt.co.kr/mtview.php?no=2021080916585247909&MTS_P">모더나 백신 8월 물량 반토막…&#034;제 차례도 미뤄지나요?&#034;</a></li></ul>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080915173257481&MTS_P" >&#034;고집스럽다&#034; 靑 직격한 오세훈…주택정책 공조 막내리나</a></strong>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080915313392684&MTS_P" >&#39;코로나 4차 유행&#39;에 내년 예산 더 푼다…600조 넘을까</a></strong>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080920080385088&MTS_P" >송영길, 이낙연과 만찬 회동 &#034;원팀으로 선거 승리, 지혜 모으자&#034;</a></strong>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080916153324037&MTS_P" >옵티머스 전직 대표, 벌금 3600억 구형에 &#034;원통하다&#034;</a></strong>	</div></li><li class="text_con_tr">	<div class="text_con_td">		<strong class="title"><a href="https://news.mt.co.kr/mtview.php?no=2021080610524025918&MTS_P" >&#034;10조 &#39;라방&#39; 시장 잡으러 쇼호스트 플랫폼 뜬다&#034;</a></strong>	</div></li>			</ul>
+		</div>
+
+		<!-- SE -->
+		
+
+		<!--MT리포트-->
+		<!-- 2018-10-19 -->
+		
+		<!-- 추가 180221 동현 -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".se2_list > li").mouseenter(function(){
+					$(".se2_list .slick-arrow").hide();
+				});
+				$(".se2_list > li").mouseleave(function(){
+					$(".se2_list .slick-arrow").show();
+				});
+			});
+		</script>
+		<!-- //추가 180221 동현 -->
+
+		<div class="main_ri">
+			<!-- MT리포트 -->
+			
+		<div class="ri_cont report">
+			<h3 class="catit"><a href="https://news.mt.co.kr/mtReport.html?MTR_P"><strong>MT</strong> 리포트</a></h3>
+			<div class="ri_box">
+				<ul class="r_slider">
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080720310545575&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_080903582224.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_080903582224.jpg" alt="등교와 방역 사이 (上)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">등교와 방역 사이 (上)</span></span></span>
+					<span class="date">2021.08.08</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.08</span>
+					<span class="txt">배운거 다 까먹는다…&quot;코로나보다 성적저하 더 무섭다&quot;</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080721043515278&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_080901027169.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_080901027169.jpg" alt="등교와 방역 사이 (下)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">등교와 방역 사이 (下)</span></span></span>
+					<span class="date">2021.08.08</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.08</span>
+					<span class="txt">학교 닫는데 학원 열고…&quot;더는 교실 밖에 둘 수 없다&quot;</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080419152477477&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_051134398548.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_051134398548.jpg" alt="돌아온 스태그플레이션 공포 (上)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">돌아온 스태그플레이션 공포 (上)</span></span></span>
+					<span class="date">2021.08.05</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.05</span>
+					<span class="txt">장보러 간 엄마의 한숨…집밥 보다 배달음식이 싸다</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080419385217384&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_051132571561.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_051132571561.jpg" alt="돌아온 스태그플레이션 공포(下)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">돌아온 스태그플레이션 공포(下)</span></span></span>
+					<span class="date">2021.08.05</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.05</span>
+					<span class="txt">뛰고 또 뛰는 &#39;미친 물가&#39;…전기·가스요금까지 오른다?</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080420521591834&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_050635145003.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_050635145003.jpg" alt="증시에 부는 메타버스 열풍 (上)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">증시에 부는 메타버스 열풍 (上)</span></span></span>
+					<span class="date">2021.08.05</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.05</span>
+					<span class="txt">증시 뒤흔든 메타버스, 차세대 혁신? 현실 수익은 &#39;…&#39;</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080420574375773&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_050633253856.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202108/mtSpecial_050633253856.jpg" alt="증시에 부는 메타버스 열풍 (下)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">증시에 부는 메타버스 열풍 (下)</span></span></span>
+					<span class="date">2021.08.05</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.08.05</span>
+					<span class="txt">&#39;한국인 열광&#39; 메타버스의 반전…&quot;펀드 연내 1000억 쌓인다&quot;</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072923371465208&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_301118118031.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_301118118031.jpg" alt="종잣돈 부족한 '대한민국 국부펀드'(상)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">종잣돈 부족한 '대한민국 국부펀드'(상)</span></span></span>
+					<span class="date">2021.07.30</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.07.30</span>
+					<span class="txt">&#39;수익률 세계 3위&#39; 韓 국부펀드, 종잣돈 &#39;좁쌀굴리기&#39; 한계</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072923431394832&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_301117097505.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_301117097505.jpg" alt="종잣돈 부족한 '대한민국 국부펀드'(하)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">종잣돈 부족한 '대한민국 국부펀드'(하)</span></span></span>
+					<span class="date">2021.07.30</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.07.30</span>
+					<span class="txt">백신개발·부동산투자…&#39;코로나 구원투수&#39; 국부펀드, 구종 늘린다</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072723472241219&MTR_CA">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_280621395442.jpg') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/mtreport/img/202107/mtSpecial_280621395442.jpg" alt="'어닝 서프라이즈'의 경제학(상)"></span>
+				<span class="cont_box">
+					<span class="subject"><span class="stxt"><span class="in">'어닝 서프라이즈'의 경제학(상)</span></span></span>
+					<span class="date">2021.07.28</span>
+				</span>
+				<span class="hover_box">
+					<span class="date">2021.07.28</span>
+					<span class="txt">&#39;대체불가 기술&#39; 무장한 국대 기업, 코로나에도 &#39;1조 클럽&#39; 늘었다</span>
+					<span class="more">기사보기</span>
+				</span>
+			</a>
+		</li>
+	
+				</ul>
+				<div class="btn_wrap">
+					<button type="button" class="btn_arrow btn_prev">이전</button>
+					<div class="btn_dots"></div>
+					<button type="button" class="btn_arrow btn_next">다음</button>
+				</div>
+			</div>
+		</div>
+	
+			<!-- ISSUE 패키지 -->
+			
+	<div class="ri_cont issue">
+		<h3 class="catit"><a href="//news.mt.co.kr/theissue/hotIssueMain.html?MTPK_T"><strong>ISSUE</strong> 패키지</a></h3>
+		<div class="ri_box">
+			<ul class="i_list">
+
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/theissue/hotIssueList.html?sec=all&hid=202107261536509537&mpg&MTPKI_P" class="link1">
+				<span class="thum" style="background:url('https://thumb.mt.co.kr/06/2021/07/2021072614594813884_1.jpg/dims/resize/322/crop/322x203!/optimize/') no-repeat center center; background-size:auto 100%;"><img src="https://thumb.mt.co.kr/06/2021/07/2021072614594813884_1.jpg/dims/resize/322/crop/322x203!/optimize/" alt="2021 세법개정안"></span>
+				<span class="subject">2021 세법개정안</span>
+			</a>
+			<a href="https://news.mt.co.kr/hotview.php?no=2021072614594813884&type=1&sec=all&hid=202107261536509537&hcnt=11&vgb=hot&MTPKA_T" class="link2"><span class="txt">제주 멤버십골프장 개소세 감면 올해로 끝</span></a>
+			<a href="https://news.mt.co.kr/hotview.php?no=2021072614583525228&type=1&sec=all&hid=202107261536509537&hcnt=11&vgb=hot&MTPKA_T" class="link3"><span class="txt">삼성이 촉발한 미술품 상속 물납, 여당 신중론에 백지화</span></a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/theissue/hotIssueList.html?sec=all&hid=202106300836496168&mpg&MTPKI_P" class="link1">
+				<span class="thum" style="background:url('https://menu.mt.co.kr/news/hotissue/202106/202106300836498346.png') no-repeat center center; background-size:auto 100%;"><img src="https://menu.mt.co.kr/news/hotissue/202106/202106300836498346.png" alt="2021 인구이야기 PopCon"></span>
+				<span class="subject">2021 인구이야기 PopCon</span>
+			</a>
+			<a href="https://news.mt.co.kr/hotview.php?no=2021063016202357875&type=1&sec=all&hid=202106300836496168&hcnt=9&vgb=hot&MTPKA_T" class="link2"><span class="txt">25억 자산가 '부산빠꾸미', 그가 부동산 카페 회원수에 집착하는 이유</span></a>
+			<a href="https://news.mt.co.kr/hotview.php?no=2021062907382163531&type=1&sec=all&hid=202106300836496168&hcnt=9&vgb=hot&MTPKA_T" class="link3"><span class="txt">[싱글파이어]파이어족으로 가는 치트키 &quot;선배들이 전수하는 비법은?&quot;</span></a>
+		</li>
+	
+			</ul>
+		</div>
+	</div>
+		</div>
+		<!--  -->
+		<script type="text/javascript">
+
+			function showPdf(pdfFile){
+				var pdfUrl = 'https://thumb.mt.co.kr/pdfViewer/pdf/mt/' + pdfFile;
+				window.open("https://thumb.mt.co.kr/pdfViewer/web/mtViewer.html?file="+pdfUrl+"&MTR_P", "pdfWindow", "width=800,height=600");
+				$(".se2_list a").blur(); /* 포커스 해제 추가 20180221 동현 */
+			}
+
+			$(document).on('ready', function() {
+				$(".se2_list").slick({
+					//dots: true,
+					infinite: true,
+					slidesToShow: 5,
+					slidesToScroll: 5
+				});
+				 /* 베스트클릭 */
+				$('.slick_wrap').slick({
+					prevArrow: '.pn_btn2 .prev',
+					nextArrow: '.pn_btn2 .next',
+					swipe: false
+				});
+				$(".r_slider").slick({
+					dots: true,
+					infinite: true,					
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					prevArrow: '.ri_box .btn_prev',
+					nextArrow: '.ri_box .btn_next',
+					appendDots: '.btn_dots'
+				});
+			});
+
+            /* 추가 200506 세종 / 2020신년기획 랜덤정렬 */
+            $(document).on('ready', function() {
+				var $list1 = '<span><a href="https://news.mt.co.kr/theissue/yearlyPlanList.html?hid=201912191421526686&YP2020_1"><img src="https://menu.mt.co.kr/common/etc/banner_plan2020_4.jpg" alt="ESG 시대, 착한 기업만 살아남는다"></a></span>';
+				var $list2 = '<span><a href="https://news.mt.co.kr/theissue/yearlyPlanList.html?hid=201912191422533111&YP2020_2"><img src="https://menu.mt.co.kr/common/etc/banner_plan2020_5.jpg" alt="그린수소시대, 미래를 선점하라"></a></span>';
+				var $list3 = '<span><a href="https://news.mt.co.kr/theissue/yearlyPlanList.html?hid=202003161248533761&YP2020_4"><img src="https://menu.mt.co.kr/common/etc/banner_plan2020_6.jpg" alt="대한민국 4.0 타락한 진영의식의 고개를 너머"></a></span>';
+				var $listArr = [$list1,$list2,$list3];
+
+				function RandomArr(d) {
+					for(var c = d.length - 1; c > 0; c--){
+						var b = Math.floor(Math.random() * (c + 1));
+						var a = d[c]; d[c] = d[b]; d[b] = a;
+					}
+					return d
+				}
+				$listArr = RandomArr($listArr);
+				$('.bnslick').html($listArr.join());
+				
+				bnSlickStart();
+			});
+			/* //추가 200506 세종 / 2020신년기획 랜덤정렬 */
+			/* 수정 200506 세종 / 랜덤정렬 이후 적용을 위해 함수로 변경 */
+			function bnSlickStart(){
+				$(".bnslick").slick({
+					infinite: true,					/* 맨끝이미지에서 끝나지 않고 다시 맨앞으로 이동 */
+					dots: true,						/*  아래점  */
+					arrows: false,					/* 화살표  */
+					autoplay: true,					/* 자동으로 다음이미지 보여주기 */
+					autoplaySpeed:3000,		/* 다음이미지로 넘어갈 시간 */
+					speed:1000 ,					/* 다음이미지로 넘겨질때 걸리는 시간 */
+					pauseOnHover:true			/* 마우스 호버시 슬라이드 이동 멈춤 */
+				});
+			}
+			/* //수정 200506 세종 */
+		</script>
+
+		<!-- float해제 -->
+		<span class="cboth"></span>
+	</div>
+</div>            <!-- 2번세트 실시간속보, 메인탑 sub,메인탑 밸류에이션  -->
+            
+<!-- 2번세트 -->
+<div class="mt_idx_body" id="main-middle">
+    <!-- 실시간 속보 -->
+    <div class="mt_idx_body_l mgt30">
+        <div id="main-middle01-scroll-start">
+            <div id="main-middle01-scroll-in">
+
+                <!-- 메인탑 sub -->
+                <div class="article_etc1" >		
+						<a href="https://news.mt.co.kr/mtview.php?no=2021080913392513732&MS_P" class="spot ">
+							<strong class="top_title">&#034;제가 예약해 드린 백신에 아빠 온몸 마비&#034; 간호사 딸의 눈물</strong>
+							<span class="con">
+								<span class="thum"><img src="https://thumb.mt.co.kr/05/2021/08/2021080913392513732_1.jpg" alt="&#034;제가 예약해 드린 백신에 아빠 온몸 마비&#034; 간호사 딸의 눈물"></span>			<span class="txt">&#034;걱정말고 백신 맞으셔도 된다고 했는데. 2주만에 중환자실에서 꼼짝 못하고 계시니 후회가 돼서…&#034;부산 한 재활병원에서 6년째 간호사로 일하고 있는 김수정씨(33·가명)는 자기 손으로 직접 아버지 백신 예약을 해드렸다며 말끝을 흐렸다. 그는 9일 머니투데이와 한 전화통화에서 &#034;의료진으로서 지난 3월 가장 먼저 코로나19 백신을 접종했다&#034;며 &#034;특별한 부작용없이 지나갔고 아버지께도 안심하고 맞으셔도 된다며 예약까지 해드렸는데 너무 후회된다&#034;고 말했다. 김씨의 아버지 A씨(61)는 지난...</span>		</span>
+						</a>
+						<span class="cboth"></span>
+					</div>
+					<div class="article_etc1" ><ul class="rel_list no4"><li><a href="https://news.mt.co.kr/mtview.php?no=2021080817534342839&MS_P">&#034;아, 식빵&#034;…김연경의 외침에 &#39;빵&#39; 터진 세르비아 에이스</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080909302733290&MS_P">배구 &#39;예선 탈락&#39; 男 31억 vs &#39;4강&#39; 女 23억…김연경 &#034;WHAT!&#034;</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080822344571362&MS_P">도쿄올림픽 11인에…&#39;양궁 3관왕&#39; 안산, 파리도 인정했다</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080910065728869&MS_P">&#39;올림픽 금메달&#39; 일본 27 vs 한국 6…큰 격차, 그래도 희망을 봤다</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080915302419097&MS_P">&#39;여자배구&#39; 김희진, 올림픽 소감 올리자…김연경 &#034;잘 버텼다&#034; 댓글</a></li></ul>		
+						<a href="https://news.mt.co.kr/mtview.php?no=2021080908552332409&MS_P" class="spot ">
+							<strong class="top_title">&#034;우리 선수들 어디에?&#034;…도쿄올림픽 폐막식, 한국 &#39;패싱&#39;했나</strong>
+							<span class="con">
+								<span class="thum"><img src="https://thumb.mt.co.kr/05/2021/08/2021080908552332409_1.jpg" alt="&#034;우리 선수들 어디에?&#034;…도쿄올림픽 폐막식, 한국 &#39;패싱&#39;했나"></span>		</span>
+						</a>
+						<span class="cboth"></span>
+					</div>
+					
+                <!-- 메인탑 밸류에이션 -->
+                				<div class="article_list">
+					<ul class="s_list">
+						<li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080918175238954&MS2_T">&#39;문재인 케어&#39; 4주년… 文 &#034;치매안심센터 활성화방안 모색하라&#034;</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080918510728705&MS2_T">&#39;서욱의 침묵&#39;에 與野 갈등 …&#39;국방위 소집&#39; 적절성 논란</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080914573028567&MS2_T">김부선 &#034;이준석 정신 똑바로 차려라…윤석열 받들어 모셔야&#034;</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080919544352058&MS2_T">여성인 척 &#39;남성 몸캠&#39; 찍은 김영준, 첫 재판서 &#034;일부 피해자는 동의&#034;</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080916392353341&MS2_T">&#034;성폭행한 친오빠와 동거&#034;… 28만명 엄벌 호소한 재판, 비공개로</a></li>					</ul>
+				</div>
+						<!-- 수정 180314 세종 --><!-- 3 -->
+				<div style="overflow:hidden; margin:10px 0 12px; width:398px; height:64px; text-align:center; ">
+					<!-- 애드서버 교체 관련, 광고 변경 (5월24일자) 20210504 김성희 -->
+					<script type="text/javascript" src="https://ads.mtgroup.kr/RealMedia/ads/adstream_jx.ads/mt_pc/main@Middle"></script>
+				</div>
+						<div class="article_list">
+					<ul class="s_list">
+						<li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080907590095977&MS2_T">&#034;저 성에 전유성이 산다고?&#034;…&#39;지리산 뷰&#39; 한옥 대저택 공개</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080913580358215&MS2_T">&#034;전현무, 10년 출연료만 399억…이혜성에 편히 쓰라며 카드 줬다&#034;</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080913085216971&MS2_T">마마무 솔라, 신촌역 꼬마빌딩 45억에 매입…&#39;건물주&#39; 등극</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080919313379008&MS2_T">이수근 아내 박지연 &#034;인생은 혼자&#034;…의미심장 글 삭제, 무슨 일?</a></li><li class="bundle">	<a href="https://news.mt.co.kr/mtview.php?no=2021080513243166356&MS2_T">티파니 영, 가슴선 드러낸 &#39;1839만원&#39; 드레스 룩…&#034;어디 거?&#034;</a></li>					</ul>
+				</div>
+            </div>
+        </div>
+    </div>
+    <div class="mt_idx_body_r mgt34">
+        <div id="main-middle02-scroll-start">
+            <div id="main-middle02-scroll-in" style="">
+                <div style="padding-bottom:33px; background:#f4f4f4;">
+                    
+                                            <div style="position:relative; overflow:hidden; width:403px; height:120px;"><!-- 수정 200506 세종 / style 수정 / title 추가 / img 파일명 변경 -->
+                                                        <div class="bnslick">
+                                <!-- 스크립트로 제어 -->
+                            </div>
+                        </div>
+                    
+
+                    <!-- 베스트클릭 -->
+                    <div class="lmt_bundle">
+                        <div class="lmt_l31 lmt_r31">
+                            <h3 class="secm_catit9 mgt30"><a href="https://news.mt.co.kr/theissue/dailyRankingNews.html?MBC_P">베스트클릭</a>
+                            </h3>
+                            <div class="slick_wrap">
+                                <ol class="conlist_p65 mgt19">
+                                    
+			<li class="bundle">
+				<span class="rank">1</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080809483436722&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080809483436722_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080809483436722_1.jpg" alt="전기요금 무섭다고 에어컨 살살 틀지 마세요…절약 꿀팁 3가지" /></span>
+					<strong class="subject">전기요금 무섭다고 에어컨 살살 틀지 마세요…절약 꿀팁 3가지</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">2</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080913580358215&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080913580358215_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080913580358215_1.jpg" alt="전현무, 10년 출연료만 399억…♥이혜성에 "편히 써" 카드 줬다" /></span>
+					<strong class="subject">전현무, 10년 출연료만 399억…♥이혜성에 "편히 써" 카드 줬다</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">3</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080606054967124&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080606054967124_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080606054967124_1.jpg" alt="귀 피어싱에 발 동동대는 6개월 아기… 엄마는 "내 아기니 상관 마"" /></span>
+					<strong class="subject">귀 피어싱에 발 동동대는 6개월 아기… 엄마는 "내 아기니 상관 마"</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">4</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080821551138911&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080821551138911_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080821551138911_1.jpg" alt="올림픽 내내 걸고 뛰었다…김연경 '308만원 목걸이'의 정체" /></span>
+					<strong class="subject">올림픽 내내 걸고 뛰었다…김연경 '308만원 목걸이'의 정체</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">5</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080413255538563&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080413255538563_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080413255538563_1.jpg" alt="예리 vs 한예슬, 배꼽까지 파인 '351만원' 드레스…"어디 거?"" /></span>
+					<strong class="subject">예리 vs 한예슬, 배꼽까지 파인 '351만원' 드레스…"어디 거?"</strong>
+				</a>
+			</li>
+		                                </ol>
+                                <ol class="conlist_p65 mgt19">
+                                    
+			<li class="bundle">
+				<span class="rank">6</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080907590095977&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080907590095977_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080907590095977_1.jpg" alt=""성에 산다고?"…전유성, '지리산 뷰' 한옥 대저택 공개" /></span>
+					<strong class="subject">"성에 산다고?"…전유성, '지리산 뷰' 한옥 대저택 공개</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">7</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080911301352996&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080911301352996_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080911301352996_1.jpg" alt="남친 만나느라 사흘 집 비운 엄마…쓸쓸히 죽어간 3살 딸" /></span>
+					<strong class="subject">남친 만나느라 사흘 집 비운 엄마…쓸쓸히 죽어간 3살 딸</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">8</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080907093228165&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080907093228165_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080907093228165_1.jpg" alt="런닝맨 떠난 이광수 근황…"다음달에 수술"" /></span>
+					<strong class="subject">런닝맨 떠난 이광수 근황…"다음달에 수술"</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">9</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080516094113719&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080516094113719_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080516094113719_1.jpg" alt=""왜 생일 선물 안줘" 50대 아버지 흉기로 찌른 30대 아들" /></span>
+					<strong class="subject">"왜 생일 선물 안줘" 50대 아버지 흉기로 찌른 30대 아들</strong>
+				</a>
+			</li>
+		
+			<li class="bundle">
+				<span class="rank">10</span>
+				<a href="https://news.mt.co.kr/mtview.php?no=2021080813501161496&VBC_P">
+					<span class="thum" style="background:url(https://thumb.mt.co.kr/05/2021/08/2021080813501161496_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/05/2021/08/2021080813501161496_1.jpg" alt="창문형 에어컨, 중고매물 쏟아지는 이유는" /></span>
+					<strong class="subject">창문형 에어컨, 중고매물 쏟아지는 이유는</strong>
+				</a>
+			</li>
+		                                </ol>
+                            </div>
+                            <input type="hidden" id="ex" name="ex" value="0"/>
+                            <span class="pn_btn2" style="top:29px; right:31px;">
+								<button type="button" class="prev"><span>이전</span></button>
+								<button type="button" class="next"><span>다음</span></button>
+							</span>
+                        </div>
+                    </div>
+                    <!-- 빅배너 -->
+                    <div class="lmt_bundle mgt36">
+                        <div id="mainRightBigBanArea" style="position:relative; margin:0 auto; width:300px;">
+                            <script type="text/javascript" src="https://ads.mtgroup.kr/RealMedia/ads/adstream_jx.ads/mt_pc/main@Right"></script>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span class="cboth"></span>
+</div>            <!-- 3번세트 포토.영상 -->
+            <!-- 3번세트 -->
+<div class="mt_idx_body4 mgt34">
+    <!-- 포토.영상 -->
+    <h3 class="catit">
+        <span class="lmt"><a href="https://news.mt.co.kr/photonews/index.html">포토</a>&nbsp;&middot;&nbsp;<a href="https://news.mt.co.kr/photonews/photovod_star.html?type=vod&cate=1000">영상</a></span>
+    </h3>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            var idx = document.getElementById('fx').value;
+
+			textAutoHeight(idx);
+        });
+		function textAutoHeight(idx) {
+			if ($('#photoVod_' + idx).is(':visible')) {
+                var element = $('#photoVod_' + idx + ' .bundle.ty2 .thum');
+				var element2 = $('#photoVod_' + idx + ' .bundle.ty2 .subject');
+                var elmH = element.height();
+				var elm2H = element2.height();
+				var elm3H = elmH + elm2H + 11; //제목 상단의 여백(11px) 포함
+				var bdH = $('.bundle.ty2').height() - elm3H - 6 - 7;
+				var txtH = $('#photoVod_' + idx + ' .bundle.ty2 .txt');
+				// console.log('elmH = '+elmH+' / elm2H = '+elm2H+' elm3H = '+elm3H+' bdH = '+bdH);
+
+				if (elm3H >= 252) {
+                    $(txtH).css('display', 'none');
+                } else if(252 > elm3H && elm3H > 231) {
+                    $(txtH).css('display', 'block').css('height', 22 + 'px');
+                } else if(232 > elm3H && elm3H > 210) {
+                    $(txtH).css('display', 'block').css('height', 40 + 'px');
+                } else {
+                    $(txtH).css('display', 'block').css('height', bdH + 'px');
+                }
+            }
+		}
+        function photoVodtab(direction) {
+            var idx = document.getElementById('fx').value;
+            if (direction == "prev") {
+                idx = parseInt(idx) - 1;
+                if (idx < 0) {
+                    idx = '1';
+                }
+            } else {
+                idx = parseInt(idx) + 1;
+                if (idx == '2') {
+                    idx = 0;
+                }
+            }
+            document.getElementById('fx').value = idx;
+
+            for (i = 0; i < 2; i++) {
+                document.getElementById('photoVod_' + i).style.display = "none";
+            }
+            document.getElementById('photoVod_' + idx).style.display = "block";
+
+			textAutoHeight(idx);
+        }
+    
+    </script>
+    <div class="mt_idx_body4_limit">
+        <div class="photovod">
+            <ul class="group" id="photoVod_0">
+                <li class="bundle ty1">
+                    <ul class="list">
+                        <li>
+                            
+			<a href="https://news.mt.co.kr/photonews/photovod_view.html?no=202108091934221071&cate=3000&MP_P">
+				<span class="thum" style="background:url(https://thumb.mtstarnews.com/06/2021/08/2021080919275716782_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mtstarnews.com/06/2021/08/2021080919275716782_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="유성재-한예슬 커플 &#39;명품 커플링&#39;" /></span>
+				<strong class="subject"><span class="lmt">유성재-한예슬 커플 &#39;명품 커플링&#39;</span></strong>
+			</a>
+		                        </li>
+                        <li>
+                            
+			<a href="https://news.mt.co.kr/photonews/photovod_view.html?no=202108061239498212&cate=3000&MP_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/08/2021080612191433778_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/08/2021080612191433778_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="거리두기 4단계 재연장" /></span>
+				<strong class="subject"><span class="lmt">거리두기 4단계 재연장</span></strong>
+			</a>
+		                        </li>
+                    </ul>
+                </li>
+                <li class="bundle ty2">
+                    <div class="list">
+                        
+<a href="https://news.mt.co.kr/mtview.php?vgb=autom&no=2021080909045391260&MATN_P">
+	<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/08/2021080909045391260_1.jpg/dims/resize/231/crop/231x220!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/08/2021080909045391260_1.jpg/dims/resize/231/crop/231x220!/optimize/" alt="현대차-카카오 다인승 택시 공략..&#39;스타리아 라운지 모빌리티&#39; 출시" /></span>
+	<strong class="subject" style="height: auto;">현대차-카카오 다인승 택시 공략..&#39;스타리아 라운지 모빌리티&#39; 출시</strong>
+	<p class="txt">이달 중 &#39;카카오 T 벤티&#39;로 첫 선현대자동차가 다인승 모빌리티(이동수단) 서비스 시장을 선도할 다목적차량(MPV) 택시 모델 &#034;스타리아 라운지 모빌리티&#034;를 출시하고 판매에 들어간다고 9일 밝혔다. 현대차는 스타리아 라운지 모빌리티 초기 개발단계부터 &#034;카카오모빌리티&#034;와 전략적 협업을 진행해왔다. 그 결과 스타리아 라운지 모빌리티는 △플랫폼 운송 사업자 △운전자 △서비스 이용 고객 등이 필요로 하는 사항들을 충실히 반영해 탄생했으며, 이달 중 &#034;카카오 T 벤티&#034;를 통해 국내 이용자들을 대상으로 첫 선을 보일 예정이다.현대차는 스타리아...</p>
+</a>
+                    </div>
+                </li>
+                <li class="bundle ty1">
+                    <ul class="list">
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/photonews/photovod_star.html?no=2789&page=1&MV_P">
+            <span class="thum" style="background:url(https://i3.ytimg.com/vi/z5hD8xHHvcU/hqdefault.jpg) no-repeat center center; background-size:cover;"><img src="https://i3.ytimg.com/vi/z5hD8xHHvcU/hqdefault.jpg" alt="서민들의 스포츠카 아반떼N을 타봤다. 왜 전 세계 사람들이 열광하는지 알 것 같다.[고요한시승기-25]" /></span>
+            <strong class="subject"><span class="lmt">서민들의 스포츠카 아반떼N을 타봤다. 왜 전 세계 사람들이 열광하는지 알 것 같다.[고요한시승기-25]</span></strong>
+        </a>
+                            </li>
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/photonews/photovod_star.html?no=2790&page=1&MV_P">
+            <span class="thum" style="background:url(https://i4.ytimg.com/vi/clNSM1L6lWg/hqdefault.jpg) no-repeat center center; background-size:cover;"><img src="https://i4.ytimg.com/vi/clNSM1L6lWg/hqdefault.jpg" alt="운 없으면 1년 기다린다는 볼보 XC60 타봤습니다 [고요한시승기-26]" /></span>
+            <strong class="subject"><span class="lmt">운 없으면 1년 기다린다는 볼보 XC60 타봤습니다 [고요한시승기-26]</span></strong>
+        </a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="bundle ty1"><!-- 수정 200508 세종 -->
+                    <ul class="list">
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/mtview.php?no=2021070616531681473&MV_P">
+            <span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/07/2021070616531681473_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/07/2021070616531681473_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="서울 살고 청약가점 낮아도 GO…공무원 뺀 세종 &#39;로또 분양&#39; [부릿지]" /></span>
+            <strong class="subject"><span class="lmt">서울 살고 청약가점 낮아도 GO…공무원 뺀 세종 &#39;로또 분양&#39; [부릿지]</span></strong>
+        </a>
+    						</li>
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/mtview.php?no=2020122415295325922&MV_P">
+            <span class="thum" style="background:url(https://thumb.mt.co.kr/06/2020/12/2020122415295325922_4.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2020/12/2020122415295325922_4.jpg/dims/resize/231/crop/231x145!/optimize/" alt="월급 30만원 스타일리스트가 &#39;60만 구독자&#39; 거느리게 된 사연 [머투맨] " /></span>
+            <strong class="subject"><span class="lmt">월급 30만원 스타일리스트가 &#39;60만 구독자&#39; 거느리게 된 사연 [머투맨] </span></strong>
+        </a>
+    						</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="group" id="photoVod_1">
+                <li class="bundle ty1">
+                    <ul class="list">
+                        <li>
+                            
+			<a href="https://news.mt.co.kr/photonews/photovod_view.html?no=202108091758424216&cate=3000&MP_P">
+				<span class="thum" style="background:url(https://thumb.mtstarnews.com/06/2021/08/2021080916055970709_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mtstarnews.com/06/2021/08/2021080916055970709_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="온앤오프 &#39;여름 무더위 맡겨주세요&#39;" /></span>
+				<strong class="subject"><span class="lmt">온앤오프 &#39;여름 무더위 맡겨주세요&#39;</span></strong>
+			</a>
+		                        </li>
+                        <li>
+                            
+			<a href="https://news.mt.co.kr/photonews/photovod_view.html?no=202107281021501166&cate=3000&MP_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/07/2021072810135073370_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/07/2021072810135073370_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="홍남기 &quot;택지 추가 확보 적극 검토&quot;" /></span>
+				<strong class="subject"><span class="lmt">홍남기 &quot;택지 추가 확보 적극 검토&quot;</span></strong>
+			</a>
+		                        </li>
+                    </ul>
+                </li>
+                <li class="bundle ty2">
+                    <div class="list">
+                        
+	<a href="https://news.mt.co.kr/mtview.php?no=202108092051778204O&vgb=sports&MATN_P">
+		<span class="thum spo" style="background:url(https://menu.mt.co.kr/mobile/osen/data/2021/08/09/202108092051778204_320_1.jpg/dims/resize/231/crop/231x220!/optimize/) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/mobile/osen/data/2021/08/09/202108092051778204_320_1.jpg/dims/resize/231/crop/231x220!/optimize/" alt="&#39;되는 게 없네&#39;...&#39;메시와 결별&#39; 바르사, 아구에로 10주 결장에 한숨" /></span>
+		<strong class="subject" style="height: auto;">&#39;되는 게 없네&#39;...&#39;메시와 결별&#39; 바르사, 아구에로 10주 결장에 한숨</strong>
+		<p class="txt">[OSEN=이균재 기자] 리오넬 메시와 작별한 바르셀로나에 또 하나의 청천벽력같은 소식이 전해졌다.
+
+바르사는 9일 구단 공식 홈페이지에&nbsp;&ldquo;세르히오 아구에로가 오른쪽 종아리 힘줄 부상으로 약 10주간 결장한다&rdquo;고 밝혔다.
+
+맨체스터 시티 레전드 공격수인 아구에로는 올여름 잉글랜드 무대를 떠나 바르사 유니폼을 입었다. 아르헨티나 대표팀의 오랜 동료 메시와 한솥밥을 먹기 위해서였다.
+
+그러나 메시가 바르사와 이별하면서 아구에로는 낙동강 오리알 신세가 됐다. 설상가상 개막 직전 부상 암운까지 드리웠다.
+
+바르사는 오는 16일 레알 소시에다드와 2021-2022시즌 스페인 프리메라리가 개막전을 치른다.
+
+바르사는 새 시즌의 문을 열기도 전에 어두운 미래를 예고했다./dolyng@osen.co.kr</p>
+	</a>
+	                    </div>
+                </li>
+                <li class="bundle ty1">
+                    <ul class="list">
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/photonews/photovod_star.html?no=2787&page=1&MV_P">
+            <span class="thum" style="background:url(https://i1.ytimg.com/vi/04apLehGZac/hqdefault.jpg) no-repeat center center; background-size:cover;"><img src="https://i1.ytimg.com/vi/04apLehGZac/hqdefault.jpg" alt="&#39;편안함&#39;의 대명사 렉서스, 이들이 만든 컨버터블 LC500은 어떤 느낌일까? 타봤습니다 [고요한시승기-24]" /></span>
+            <strong class="subject"><span class="lmt">&#39;편안함&#39;의 대명사 렉서스, 이들이 만든 컨버터블 LC500은 어떤 느낌일까? 타봤습니다 [고요한시승기-24]</span></strong>
+        </a>
+                            </li>
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/photonews/photovod_star.html?no=2788&page=1&MV_P">
+            <span class="thum" style="background:url(https://i3.ytimg.com/vi/jJABmlzYfeQ/hqdefault.jpg) no-repeat center center; background-size:cover;"><img src="https://i3.ytimg.com/vi/jJABmlzYfeQ/hqdefault.jpg" alt="아반떼N 풀악셀, 팝콘 소리 쏟아짐... 10인분 튀긴듯 #Shorts" /></span>
+            <strong class="subject"><span class="lmt">아반떼N 풀악셀, 팝콘 소리 쏟아짐... 10인분 튀긴듯 #Shorts</span></strong>
+        </a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="bundle ty1"><!-- 수정 200508 세종 -->
+                    <ul class="list">
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/mtview.php?no=2021051316494262799&MV_P">
+            <span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/05/2021051316494262799_1.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/05/2021051316494262799_1.jpg/dims/resize/231/crop/231x145!/optimize/" alt="&#39;구독형&#39; 네이버 프리미엄 콘텐츠 오픈...&#39;체헐리즘&#39;·&#39;부릿지&#39; 참여" /></span>
+            <strong class="subject"><span class="lmt">&#39;구독형&#39; 네이버 프리미엄 콘텐츠 오픈...&#39;체헐리즘&#39;·&#39;부릿지&#39; 참여</span></strong>
+        </a>
+    						</li>
+                        <li class="vod">
+                            
+        <a href="https://news.mt.co.kr/mtview.php?no=2020121816255211064&MV_P">
+            <span class="thum" style="background:url(https://thumb.mt.co.kr/06/2020/12/2020121816255211064_4.jpg/dims/resize/231/crop/231x145!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2020/12/2020121816255211064_4.jpg/dims/resize/231/crop/231x145!/optimize/" alt="대학로 연극배우가 &#39;50만 구독자&#39; 고양이 유튜버가 된 사연 [머투맨]" /></span>
+            <strong class="subject"><span class="lmt">대학로 연극배우가 &#39;50만 구독자&#39; 고양이 유튜버가 된 사연 [머투맨]</span></strong>
+        </a>
+    						</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <input type="hidden" id="fx" name="fx" value="0"/>
+        <button type="button" class="move left" onclick="javascript:photoVodtab('prev')" style="display:none;">
+            <span>이전</span></button>
+        <button type="button" class="move right" onclick="javascript:photoVodtab('next')" style="display:none;">
+            <span>다음</span></button>
+    </div>
+    <script type="text/javascript">
+        $('.mt_idx_body4_limit').mouseenter(function () {
+            $('.mt_idx_body4_limit .move').fadeIn();
+        });
+        $('.mt_idx_body4_limit').mouseleave(function () {
+            $('.mt_idx_body4_limit .move').fadeOut();
+        });
+    </script>
+</div>            <!-- 4번세트 오피니언, 카드뉴스/인포그래픽 -->
+            
+<!-- 4번세트 -->
+<div class="mt_idx_body2">
+	<div class="mt_idx_body2_l mgt46">
+		<div class="groupbox">
+			<div class="article_list">
+				<dl class="s_list2">
+					<dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal">경제</a></dt>
+					<dd>
+						<ul>
+							<li><a href="https://news.mt.co.kr/mtview.php?no=2021080913582099995&type=2&sec=politics&pDepth2=Ptotal&MNE_T">"카뱅 추종 않고, 은행만 할 수 있는 일 찾기"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080918533534871&type=2&sec=politics&pDepth2=Ptotal&MNE_T">외신 '이재용 가석방' 긴급 타진…"삼성, 투자·M&A 속도낼 듯"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080915250727556&type=2&sec=politics&pDepth2=Ptotal&MNE_T">전기버스 업체 "쌍용차 구조조정 없이 흑자전환"…실현 가능성은?</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080918530124615&type=2&sec=politics&pDepth2=Ptotal&MNE_T">경총 "이재용 가석방 다행, 취업·해외출장 제한 행정배려 필요"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080912243411784&type=2&sec=politics&pDepth2=Ptotal&MNE_T">'이재용 가석방' 한숨 돌린 삼성 "리더십 공백 덜었지만…"</a></li>						</ul>
+					</dd>
+				</dl>
+				<dl class="s_list2">
+					<dt><a href="https://news.mt.co.kr/stock">증권</a></dt>
+					<dd>
+						<ul>
+							<li><a href="https://news.mt.co.kr/mtview.php?no=2021080917485697380&type=2&sec=finance&pDepth2=Ftotal&MNS_T">HK이노엔 코스닥 상장 첫날…공모가 대비 16% 상승</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080915290740248&type=2&sec=finance&pDepth2=Ftotal&MNS_T">코스피, 9.94p(0.30%) 내린 3260.42, 원/달러 환율 2.2원 오른 1144.3원 마감</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080915291155910&type=2&sec=finance&pDepth2=Ftotal&MNS_T">[스팟]코스피, 9.94p(0.30%) 내린 3260.42 마감</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080912234866938&type=2&sec=finance&pDepth2=Ftotal&MNS_T">메타버스 올라탄 한빛소프트, 9%대 급등</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080910453572985&type=2&sec=finance&pDepth2=Ftotal&MNS_T">에코프로, 자회사 가치 부각에 장중 상한가 근접</a></li>						</ul>
+					</dd>
+				</dl>
+				<dl class="s_list2">
+					<dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=tech&pDepth2=Ttotal">IT</a></dt>
+					<dd>
+						<ul>
+							<li><a href="https://news.mt.co.kr/mtview.php?no=2021080914224942833&type=2&sec=tech&pDepth2=Ttotal&MNI_T">올림픽 막말중계 논란 MBC "환골탈태 수준 조직혁신"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080813501161496&type=2&sec=tech&pDepth2=Ttotal&MNI_T">창문형 에어컨, 중고매물 쏟아지는 이유는</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080616304222010&type=2&sec=tech&pDepth2=Ttotal&MNI_T">[판교통신]카카오 어떻게 들어왔냐고요? 멀티프로필 개발자의 입사 '꿀팁'</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080612204977720&type=2&sec=tech&pDepth2=Ttotal&MNI_T">괴로운 기억 지울 수 있을까...국내 연구진이 단초 찾았다</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080612245990838&type=2&sec=tech&pDepth2=Ttotal&MNI_T">네이버·카카오, 신사업이 '신의한수'…검색·메신저 매출 제쳤다</a></li>						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+
+		<span class="cboth" style="height:58px;"></span>
+	</div>
+	<div class="mt_idx_body2_r mgt55">
+		<div class="groupbox">
+			<!-- 오피니언 -->
+			<h3 class="secm_catit10 mgt2"><em>MT</em>오피니언</h3>
+			<dl class="conlist_p67 mgt21" style="height:266px;">
+				<dt style="top:-45px; right:86px;"><a href="https://news.mt.co.kr/column/opinion_inside.html?category=03" class="on" id="opion1" onmouseover="showHideTab('opi',1,3);" onfocus="showHideTab('opi',1,3);"><span class="tit">기자 &middot; 데스크</span></a></dt>
+				<dd id="opi1">
+					<ul class="conlist_p68">
+							
+					<li class="bundle">
+						<a href="https://news.mt.co.kr/mtview.php?no=2021080814350444637&vgb=column&code=column24&MO_P">
+							<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column24.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column24.gif" alt=""></span>
+							<span class="table">
+								<span class="tr">
+									<span class="td sort">기자수첩</span>
+								</span>
+								<span class="tr">
+									<span class="td subject">차라리 거짓 공약이었더라면</span>
+								</span>
+								<span class="tr">
+									<span class="td writer">머니투데이 세종=최우영 기자</span>
+								</span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="bundle">
+						<a href="https://news.mt.co.kr/mtview.php?no=2021080808251118334&vgb=column&code=column336&MO_P">
+							<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column336.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column336.gif" alt=""></span>
+							<span class="table">
+								<span class="tr">
+									<span class="td sort">투데이 窓</span>
+								</span>
+								<span class="tr">
+									<span class="td subject">오늘은 어느 카페를 가볼까?</span>
+								</span>
+								<span class="tr">
+									<span class="td writer">머니투데이 한상엽 소풍벤처스 대표</span>
+								</span>
+							</span>
+						</a>
+					</li>
+					
+					<li class="bundle">
+						<a href="https://news.mt.co.kr/mtview.php?no=2021080718095348411&vgb=column&code=column6&MO_P">
+							<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column6.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column6.gif" alt=""></span>
+							<span class="table">
+								<span class="tr">
+									<span class="td sort">광화문</span>
+								</span>
+								<span class="tr">
+									<span class="td subject"> 코리아 'R&D' 패러독스<2></span>
+								</span>
+								<span class="tr">
+									<span class="td writer">머니투데이 임상연 미래산업부장</span>
+								</span>
+							</span>
+						</a>
+					</li>
+									</ul>
+				</dd>
+				<dt style="top:-45px; right:0;"><a href="https://news.mt.co.kr/column/opinion_inside.html?category=05" id="opion2" onmouseover="showHideTab('opi',2,3);" onfocus="showHideTab('opi',2,3);"><span class="tit">석세스</span></a></dt>
+				<dd id="opi2" style="display:none;">
+					<ul class="conlist_p68">
+							
+						<li class="bundle">
+							<a href="https://news.mt.co.kr/mtview.php?no=2021070213213294960&vgb=column&code=column274&MSC_P">
+								<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column274.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column274.gif" alt=""></span>
+								<span class="table">
+									<span class="tr">
+										<span class="td sort">줄리아 투자노트</span>
+									</span>
+									<span class="tr">
+										<span class="td subject">노후 대비보다 중요한 사후 대비, 비결 셋</span>
+									</span>
+									<span class="tr">
+										<span class="td writer">머니투데이 권성희 콘텐츠총괄부국장</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						
+						<li class="bundle">
+							<a href="https://news.mt.co.kr/mtview.php?no=2021061219410822169&vgb=column&code=column248&MSC_P">
+								<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column248.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column248.gif" alt=""></span>
+								<span class="table">
+									<span class="tr">
+										<span class="td sort">i-로드</span>
+									</span>
+									<span class="tr">
+										<span class="td subject">삼성 창업주가 남긴 마지막 질문…"부자는 나쁜 사람인가"</span>
+									</span>
+									<span class="tr">
+										<span class="td writer">머니투데이 강상규 소장</span>
+									</span>
+								</span>
+							</a>
+						</li>
+						
+						<li class="bundle">
+							<a href="https://news.mt.co.kr/mtview.php?no=2021060410524580050&vgb=column&code=column274&MSC_P">
+								<span class="thum" style="background:url(https://menu.mt.co.kr/contents/column/editor/column274.gif) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/contents/column/editor/column274.gif" alt=""></span>
+								<span class="table">
+									<span class="tr">
+										<span class="td sort">줄리아 투자노트</span>
+									</span>
+									<span class="tr">
+										<span class="td subject">부모를 실망시켜야 자녀가 성공한다</span>
+									</span>
+									<span class="tr">
+										<span class="td writer">머니투데이 권성희 콘텐츠총괄부국장</span>
+									</span>
+								</span>
+							</a>
+						</li>
+										</ul>
+				</dd>
+							</dl>
+		</div>
+		<div class="groupbox2 mgt18">
+			<!-- 카드뉴스/인포그래픽 -->
+			<script type="text/javascript">
+				function cdNewstab(direction){
+					var idx = document.getElementById('gx').value;
+
+					if(direction == "prev"){
+						idx = parseInt(idx) - 1;
+
+						if(idx < 0){
+							idx = '2';
+						}
+					}
+					else{
+						idx = parseInt(idx) + 1;
+
+						if(idx == '3'){
+							idx = 0;
+						}
+					}
+					document.getElementById('gx').value = idx;
+
+					for(i=0; i<3; i++){
+						document.getElementById('card'+i).style.display = "none";
+						//document.getElementById('ttime'+i).style.display = "none";
+						document.getElementById('infog'+i).style.display = "none";
+					}
+					document.getElementById('card'+idx).style.display = "block";
+					//document.getElementById('ttime'+idx).style.display = "block";
+					document.getElementById('infog'+idx).style.display = "block";
+				}
+			</script>
+			<div class="cardinfo1">
+				<ul class="info_group">
+					<li class="info_bundle">
+						<h3 class="cate"><a href="//news.mt.co.kr/photonews/cardNewsList.html"><em>MT</em>카드</a></h3>
+						<div class="conlist_p66">
+							<ul class="group">
+								
+		<li class="bundle" id="card0">
+			<a href="https://news.mt.co.kr/photonews/cardNewsList.html?id=2021042911181321896&MCN_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2021/04/2021042911181321896_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2021/04/2021042911181321896_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" 맛있는 우유요리로 &#034;우리 아이 면역력 지키자&#034;" /></span>
+				<strong class="subject"><span class="vmtxt"> 맛있는 우유요리로 "우리 아이 면역력 지키자"</span></strong>
+			</a>
+		</li>
+	
+		<li class="bundle" id="card1">
+			<a href="https://news.mt.co.kr/photonews/cardNewsList.html?id=2020071314038233486&MCN_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2020/07/2020071314038233486_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2020/07/2020071314038233486_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" &#39;폐기&#39; 고기 손님에…더는 반복 안된다" /></span>
+				<strong class="subject"><span class="vmtxt"> '폐기' 고기 손님에…더는 반복 안된다</span></strong>
+			</a>
+		</li>
+	
+		<li class="bundle" id="card2">
+			<a href="https://news.mt.co.kr/photonews/cardNewsList.html?id=2020070914538297259&MCN_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2020/07/2020070914538297259_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2020/07/2020070914538297259_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" 올해 해수욕장에서는 밤에 술 안돼요!" /></span>
+				<strong class="subject"><span class="vmtxt"> 올해 해수욕장에서는 밤에 술 안돼요!</span></strong>
+			</a>
+		</li>
+								</ul>
+							<input type="hidden" id="gx" name="gx" value="0" />
+						</div>
+					</li>
+					<li class="info_bundle">
+						<h3 class="cate"><a href="//news.mt.co.kr/photonews/graphicNewsList.html">인포그래픽</a></h3>
+						<div class="conlist_p66">
+							<ul class="group">
+																			
+		<li class="bundle" id="infog0">
+			<a href="https://news.mt.co.kr/photonews/graphicNewsList.html?id=2021072116202950056&MIG_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2021/07/2021072116202950056_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2021/07/2021072116202950056_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" 연일 삼복더위... 삼계탕 식중독 예방하려면?" /></span>
+				<strong class="subject"><span class="vmtxt"> 연일 삼복더위... 삼계탕 식중독 예방하려면?</span></strong>
+			</a>
+		</li>											
+												
+		<li class="bundle" id="infog1">
+			<a href="https://news.mt.co.kr/photonews/graphicNewsList.html?id=2021072116411560459&MIG_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2021/07/2021072116411560459_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2021/07/2021072116411560459_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" 팬데믹 속 막오른 도쿄올림픽… 한국대표팀 주요 경기일정" /></span>
+				<strong class="subject"><span class="vmtxt"> 팬데믹 속 막오른 도쿄올림픽… 한국대표팀 주요 경기일정</span></strong>
+			</a>
+		</li>											
+												
+		<li class="bundle" id="infog2">
+			<a href="https://news.mt.co.kr/photonews/graphicNewsList.html?id=2021072719062011201&MIG_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/07/2021/07/2021072719062011201_1.jpg/dims/resize/200/crop/200x200!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/07/2021/07/2021072719062011201_1.jpg/dims/resize/200/crop/200x200!/optimize/" alt=" 세계인이 가장 좋아하는 역대 올림픽 마스코트! 최종 승자는?" /></span>
+				<strong class="subject"><span class="vmtxt"> 세계인이 가장 좋아하는 역대 올림픽 마스코트! 최종 승자는?</span></strong>
+			</a>
+		</li>											
+								</ul>
+						</div>
+					</li>
+				</ul>
+
+				<button type="button" class="prev" onclick="javascript:cdNewstab('prev')"><span>이전</span></button>
+				<button type="button" class="next" onclick="javascript:cdNewstab('next')"><span>다음</span></button>
+			</div>
+		</div>
+
+		<span class="cboth" style="height:58px;"></span>
+	</div>
+</div>            <!-- 5번세트 techM, 컬쳐박스-->
+            
+<!-- 5번세트 -->
+<div class="mt_idx_body3">
+    <div class="mt_idx_body3_l">
+        <div class="groupbox mgt27">
+            <div class="bundlebox">
+                <h3 class="secm_catit10" style="margin-left:3px;">체헐리즘</h3>
+                <ul class="conlist_p64 mgt8">
+                    
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080616222250033&MCT_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/17/2021/08/2021080616222250033_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/17/2021/08/2021080616222250033_1.jpg" alt="뱃살 흔들며…75리터 &#39;쓰레기봉지&#39; 들고 뛰었다[남기자의 체헐리즘]" /></span>
+				<strong class="subject">뱃살 흔들며…75리터 &#39;쓰레기봉지&#39; 들고 뛰었다[남기자의 체헐리즘]</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072400205665903&MCT_P">
+				
+				<strong class="subject">죽은 이의 &#39;마지막 이사&#39;를 도왔다[남기자의 체헐리즘]</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021070922570218281&MCT_P">
+				
+				<strong class="subject">집 나오니 많이 힘들지…이 &#39;버스&#39;에 타렴[남기자의 체헐리즘]</strong>
+			</a>
+		</li>
+	                </ul>
+            </div>
+            <div class="bundlebox">
+                <h3 class="secm_catit10" style="margin-left:3px;">부꾸미</h3>
+                <ul class="conlist_p64 mgt8">
+                    
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080416251196748&MCT_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/17/2021/08/2021080416251196748_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/17/2021/08/2021080416251196748_1.jpg" alt="[부꾸미]한국 증시에서 꼭 사야할 종목…&#39;여기&#39; 주목하세요" /></span>
+				<strong class="subject">[부꾸미]한국 증시에서 꼭 사야할 종목…&#39;여기&#39; 주목하세요</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080214104958798&MCT_P">
+				
+				<strong class="subject">[부꾸미]실적 좋은데 왜 주가 안 올라요?…&#39;박스피&#39; 투자 전략은</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072815044150205&MCT_P">
+				
+				<strong class="subject">[부꾸미]원자재 투자, 금보다 구리? 더 오를 수밖에 없는 이유</strong>
+			</a>
+		</li>
+	                </ul>
+            </div>
+            <div class="bundlebox">
+                <h3 class="secm_catit10" style="margin-left:3px;">싱글파이어</h3>
+                <ul class="conlist_p64 mgt8">
+                    
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021080521153461377&MCT_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/17/2021/08/2021080521153461377_1.jpg) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/17/2021/08/2021080521153461377_1.jpg" alt="&#034;무주택자 내집마련, 8년간 안 샀는데 이제와서 사겠다고?&#034;" /></span>
+				<strong class="subject">&#034;무주택자 내집마련, 8년간 안 샀는데 이제와서 사겠다고?&#034;</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021073007355430432&MCT_P">
+				
+				<strong class="subject">&#034;대출받아 산 수익형 부동산, 빚부터 다 갚지는 말라고?&#034;</strong>
+			</a>
+		</li>
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?no=2021072718260288890&MCT_P">
+				
+				<strong class="subject">마흔에 동시 사표낸 부부…연봉 1800만원, 파이어족 되다</strong>
+			</a>
+		</li>
+	                </ul>
+            </div>
+        </div>
+        <div class="groupbox2 mgt50">
+            <div class="article_list">
+                <dl class="s_list2">
+                    <dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics2&pDepth2=Qtotal">정치</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="https://news.mt.co.kr/mtview.php?no=2021080918510728705&type=2&sec=politics2&pDepth2=Qtotal&MPT_T">'서욱의 침묵'에 與野 갈등 …'국방위 소집' 적절성 논란</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080909434086823&type=2&sec=politics2&pDepth2=Qtotal&MPT_T">6년 전 최태원 46조 투자 화답…이재용도 '투자 보따리' 풀까</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080806320746803&type=2&sec=politics2&pDepth2=Qtotal&MPT_T">강원 고성 아프리아돼지열병 발생…정부 "이동중지·살처분 조치"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080806293767772&type=2&sec=politics2&pDepth2=Qtotal&MPT_T">[속보]김부겸 총리 "강원고성 아프리카 돼지열병, 이동중지명령 발령"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080708382453385&type=2&sec=politics2&pDepth2=Qtotal&MPT_T">윤석열, 개 끌어안고 "회사 안간다 앗싸"…김남국 "국민은 힘든데" "안하무인"</a></li>                        </ul>
+                    </dd>
+                </dl>
+                <dl class="s_list2">
+                    <dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=society&pDepth2=Stotal">사회</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="https://news.mt.co.kr/mtview.php?no=2021080919544352058&type=2&sec=society&pDepth2=Stotal&MSC_T">여성인 척 '남성 몸캠'찍다 잡힌 김영준, 첫 재판서 "일부 피해자는 동의"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080918272131404&type=2&sec=society&pDepth2=Stotal&MSC_T">이재용 가석방 결정…재계 "삼성이 세계 중심되는 계기 마련"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080914165095438&type=2&sec=society&pDepth2=Stotal&MSC_T">'을 중 을' 아파트 경비·미화원..오세훈표 권익보호 방안 나온다</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080918531489644&type=2&sec=society&pDepth2=Stotal&MSC_T">[속보] 이재용 가석방 13일 출소…"경제상황과 글로벌 경제환경 고려"</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080918484930199&type=2&sec=society&pDepth2=Stotal&MSC_T">[속보]이재용 삼성전자 부회장 가석방 결정</a></li>                        </ul>
+                    </dd>
+                </dl>
+                <dl class="s_list2">
+                    <dt><a href="https://news.mt.co.kr/unicorn">유니콘<br />팩토리</a></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="https://news.mt.co.kr/mtview.php?no=2021072713342223297&type=2&sec=midsmall&pDepth2=Ototal&MSI_T">패션부터 IT까지…이커머스, '입점 브랜드를 늘려라' 특명</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080409055925111&type=2&sec=midsmall&pDepth2=Ototal&MSI_T">애플·구글도 사내간식으로 택했다…하루 4000개씩 팔리는 비건빵</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080615304851510&type=2&sec=midsmall&pDepth2=Ototal&MSI_T">유니콘 데뷔 앞둔 '당근마켓', 2년새 몸값 10배 뛴 비결[이노머니]</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080610144187400&type=2&sec=midsmall&pDepth2=Ototal&MSI_T">'로톡' 징계나선 변협, 알고보니 '제2의 로톡' 준비</a></li><li><a href="https://news.mt.co.kr/mtview.php?no=2021080408512169631&type=2&sec=midsmall&pDepth2=Ototal&MSI_T">힙합 따라부르니 시험 100점? 노래방 점수가 성적되는 비결</a></li>                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <span class="cboth" style="height:60px;"></span>
+    </div>
+    <div class="mt_idx_body3_r">
+        <!-- 컬쳐박스 -->
+        <h3 class="secm_catit10 mgt29"><a href="https://news.mt.co.kr/column/cultureBox.html?category=07">컬쳐박스</a></h3>
+        <ul class="conlist_p63 mgt13">
+            <li class="bundle ">
+                
+		<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2021012206140351792&code=101&total_cnt=&type=1&MCB_P">
+			<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/01/2021012206140351792_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/01/2021012206140351792_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/" alt="" /></span>
+			<strong class="stit">시인의 집</strong>
+			<span class="subject">[시인의 집]멀어져야 보이는 곁</span>
+		</a>
+	            </li>
+            <li class="bundle ">
+                
+		<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2021012109333160066&code=004&total_cnt=&type=1&MCB_P">
+			<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/01/2021012109333160066_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/01/2021012109333160066_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/" alt="" /></span>
+			<strong class="stit">액자세상 렌즈세상</strong>
+			<span class="subject">‘연장’하고 ‘새 시즌’ 준비하는 ‘코로나 시대’ 인기 전시회들</span>
+		</a>
+	            </li>
+            <li class="bundle ">
+                
+	<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2020120117595838203&code=204&total_cnt=&type=1&MCB_P">
+		<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2020/12/2020120117595838203_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2020/12/2020120117595838203_1.jpg/dims/resize/100x/optimize//dims/crop/60x71!/optimize/" alt="" /></span>
+		<strong class="stit">His Movie</strong>
+		<span class="subject">빚쟁이로 살다 50억 로또에 당첨된다면?</span>
+	</a>
+            </li>
+        </ul>
+        <!-- 따끈따끈 새책 -->
+        <h3 class="secm_catit10 mgt40"><a href="https://news.mt.co.kr/column/cultureBox_corner.html?code=102">따끈따끈 새책</a></h3>
+        <ul class="conlist_p62 mgt13">
+            
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2021011518472828967&code=102&total_cnt=&type=1&MCB_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/01/2021011518472828967_1.jpg/dims/resize/160/crop/160x118!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/01/2021011518472828967_1.jpg/dims/resize/160/crop/160x118!/optimize/" alt="‘파격의 삼국지’ 고우영 만화로 다시 읽는다"></span>
+				<strong class="subject">‘파격의 삼국지’ 고우영 만화로 다시 읽는다</strong>
+			</a>
+		</li>	
+	
+		<li class="bundle even">
+			<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2021011517512421702&code=102&total_cnt=&type=1&MCB_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/01/2021011517512421702_1.jpg/dims/resize/160/crop/160x118!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/01/2021011517512421702_1.jpg/dims/resize/160/crop/160x118!/optimize/" alt="비트코인 1억이 그릴 미래 사회"></span>
+				<strong class="subject">비트코인 1억이 그릴 미래 사회</strong>
+			</a>
+		</li>	
+	
+		<li class="bundle">
+			<a href="https://news.mt.co.kr/mtview.php?vgb=culturebox&no=2021011516543133267&code=102&total_cnt=&type=1&MCB_P">
+				<span class="thum" style="background:url(https://thumb.mt.co.kr/06/2021/01/2021011516543133267_1.jpg/dims/resize/160/crop/160x118!/optimize/) no-repeat center center; background-size:cover;"><img src="https://thumb.mt.co.kr/06/2021/01/2021011516543133267_1.jpg/dims/resize/160/crop/160x118!/optimize/" alt="일을 잘하는 사람의 ‘3가지 특별한 감각’"></span>
+				<strong class="subject">일을 잘하는 사람의 ‘3가지 특별한 감각’</strong>
+			</a>
+		</li>	
+	        </ul>
+        <!-- IR서비스 -->
+        <h3 class="secm_catit10 mgt47"><em>MT</em> IR SERVICE</h3>
+        <ul class="conlist_t24 mgt7">
+            <li class="bundle"><a href="https://goldring.mt.co.kr/086790" target="_blank"><strong>KEB하나은행</strong>국내첫성년후견지원신탁계약</a></li><li class="bundle"><a href="https://goldring.mt.co.kr/055550" target="_blank"><strong>신한은행</strong>써니뱅크 비대면 계좌 신규 이벤트</a></li><li class="bundle"><a href="https://goldring.mt.co.kr/005490" target="_blank"><strong>POSCO</strong>현장 안전 위해 스마트안전모 도입</a></li>        </ul>
+
+        <span class="cboth" style="height:60px;"></span>
+    </div>
+</div>        </div>
+        <!-- 서비스 전체보기 -->
+<div class="sallv_area">
+    <h3>머니투데이 SERVICE</h3>
+    <div class="sallv_group">
+        <div class="abox">
+            <ul class="group00">
+                <li class="bundle">
+                    <dl class="group1" style="width:81px;">
+                        <dt><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal">뉴스</a></dt>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics&pDepth2=Ptotal">경제정책</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=finance&pDepth2=Ftotal">증권</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=politics2&pDepth2=Qtotal">정치</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=estate&pDepth2=Etotal">부동산</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=world&pDepth2=Weconomy">국제경제</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=society&pDepth2=Stotal">사회</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=industry&pDepth2=Itotal">산업</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:105px;">
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=tech&pDepth2=Ttotal">IT</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=bank&pDepth2=Btotal">금융</a></dd>
+                        <dd><a href="https://news.mt.co.kr/gazua/gazuaMain.html">블록체인</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth1=lifeculture&pDepth2=Ltotal">문화</a></dd>
+                        <dd><a href="https://news.mt.co.kr/photonews/index.html">포토</a></dd>
+                        <dd><a href="https://news.mt.co.kr/photonews/photovod_star.html?type=vod&cate=1000">영상</a></dd>
+                        <dd><a href="https://news.mt.co.kr/newsTotalList.html?pDepth1=newsTotal">전체기사</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:125px;">
+                        <dt><a href="https://news.mt.co.kr/stock">증권</a></dt>
+                        <dd>
+                            <a href="https://news.mt.co.kr/newsList.html?comd=7&pDepth=stock&pDepth1=sNews&pDepth2=Ftotal">뉴스</a>
+                        </dd>
+                        <dd><a href="https://news.mt.co.kr/stock/sise/stockSKOSPI.html">시세/공시</a></dd>
+                        <dd><a href="https://news.mt.co.kr/stock/strategy/newsList.html">포인트&전략</a></dd>
+                        <dd><a href="https://news.mt.co.kr/stock/fund/fundIRList.html">펀드</a></dd>
+                        <dd><a href="https://news.mt.co.kr/stock/analysis/newsList.html">종목대해부</a></dd>
+                        <dd><a href="https://news.mt.co.kr/stock/report/newsList.html">베스트리포트</a></dd>
+                        <dd><a href="https://news.mt.co.kr/mypage/myFavorityStock.html">MY스톡</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:123px;">
+                        <dt><a href="https://news.mt.co.kr/unicorn">유니콘팩토리</a></dt>
+                        <dd><a href="https://news.mt.co.kr/unicorn/newsList.html">최신기사</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:121px;">
+                        <dt><a href="https://news.mt.co.kr/column/opinion_main.html">칼럼</a></dt>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=03">데스크칼럼</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=01">사내칼럼</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=04">현장리포트</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=02">사외칼럼</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=05">SUCCESS</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/opinion_inside.html?category=06">SCIENCE</a></dd>
+                        <dd><a href="https://news.mt.co.kr/column/cultureBox.html?category=07">컬쳐박스</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:120px;">
+                        <dt><a href="https://news.mt.co.kr/autom">자동차</a></dt>
+                        <dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=latestNews">최신기사</a></dd>
+                        <dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=newCar">신차소식</a></dd>
+                        <dd><a href="https://news.mt.co.kr/autom/rideList.html?pDepth=autom&pDepth1=trialRide">시승기</a></dd>
+                        <dd><a href="https://news.mt.co.kr/autom/automList.html?pDepth=autom&pDepth1=carLife">카라이프</a></dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1" style="width:93px;">
+                        <dt><a href="https://news.mt.co.kr/enter/">연예</a></dt>
+                        <dd><a href="https://news.mt.co.kr/newsList.html?pDepth=enter&pDepth1=enter&pDepth2=Senter">연예</a>
+                        </dd>
+                        <dd>
+                            <a href="https://news.mt.co.kr/newsList.html?type=1&pDepth=enter&pDepth1=sports&pDepth2=Stotal&vgb=sports">스포츠</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="bundle">
+                    <dl class="group1">
+                        <dt><a href="https://news.mt.co.kr/theissue">이슈</a></dt>
+                        <dd><a href="https://news.mt.co.kr/theissue/hotIssueMain.html">핫이슈</a></dd>
+                        <dd><a href="https://news.mt.co.kr/theissue/realtimeRank.html">실시간급상승</a></dd>
+                        <dd><a href="https://news.mt.co.kr/theissue/dailyRankingNews.html">베스트클릭</a></dd>
+                        <dd><a href="https://news.mt.co.kr/theissue/peopleList.html">사람&</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="bbox">
+            <div class="bbox1">
+                <ul class="group01">
+                    <li class="bundle">
+                        <dl class="group1" style="width:119px;">
+                            <dt>전문지&middot;서비스</dt>
+                            <dd><a href="https://vip.mt.co.kr" target="_blank" style="color:#F54141;">VIP 머니투데이</a></dd>
+                            <dd><a href="https://star.mt.co.kr" target="_blank">스타뉴스</a></dd>
+                            <dd><a href="https://stylem.mt.co.kr" target="_blank">스타일M</a></dd>
+                                                        <dd><a href="http://sportalkorea.mt.co.kr" target="_blank">스포탈코리아</a></dd>
+                            <dd><a href="http://osen.mt.co.kr" target="_blank">OSEN</a></dd>
+                            <dd><a href="https://www.keyplatform.or.kr" target="_blank" rel="noopener noreferrer">키플랫폼</a></dd>
+                            <dd><a href="http://ttimes.co.kr/index.html" target="_blank" rel="noopener noreferrer">티타임즈</a></dd>
+                            <dd><a href="http://mnb.moneyweek.co.kr" target="_blank" rel="noopener noreferrer">MnB창업</a></dd>
+                        </dl>
+                    </li>
+                    <li class="bundle">
+                        <dl class="group1" style="width:89px;">
+                            <dd><a href="https://marine.mt.co.kr" target="_blank">MT해양</a></dd>
+                            <dd><a href="http://bike.moneys.mt.co.kr" target="_blank">자전거</a></dd>
+                            <dd><a href="https://the300.mt.co.kr" target="_blank">the300</a></dd>
+                            <dd><a href="http://www.thebell.co.kr" target="_blank" rel="noopener noreferrer">thebell</a></dd>
+                            <dd><a href="https://thel.mt.co.kr" target="_blank">theL</a></dd>
+                            <dd><a href="http://www.mtn.co.kr" target="_blank" rel="noopener noreferrer">MTN</a></dd>
+                            <dd><a href="http://www.notepet.co.kr" target="_blank" rel="noopener noreferrer">노트펫</a></dd>
+                            <dd><a href="http://appkorea.org/" target="_blank" rel="noopener noreferrer">앱어워드</a></dd>
+                            <dd><a href="http://eroun.net" target="_blank" rel="noopener noreferrer">이로운넷</a></dd>
+                        </dl>
+                    </li>
+                    <li class="bundle">
+                        <dl class="group1" style="width:135px;">
+                           <dd><a href="https://kr.pixtastock.com/" target="_blank" rel="noopener noreferrer">PIXTA</a></dd>
+                        </dl>
+                    </li>
+                    <li class="bundle">
+                        <dl class="group1" style="width:119px;">
+                            <dt>매거진</dt>
+                            <dd><a href="https://moneys.mt.co.kr" target="_blank">머니S</a></dd>
+                            <dd><a href="https://theleader.mt.co.kr" target="_blank">더리더</a></dd>
+                            <dd><a href="http://ubiz.mt.co.kr" target="_blank">대학경제</a></dd>
+                            <dd><a href="https://www.lofficielkorea.com" target="_blank">로피시엘</a></dd>
+                            <dd><a href="http://www.leonkorea.com/" target="_blank" rel="noopener noreferrer">레옹</a></dd>
+                            <dd><a href="https://www.ize.co.kr" target="_blank" rel="noopener noreferrer">IZE</a></dd>
+                        </dl>
+                    </li>
+                    <li class="bundle">
+                        <dl class="group1">
+                            <dt>캠페인</dt>
+                            <dd><a href="https://uclean.mt.co.kr" target="_blank">U클린</a></dd>
+                            <dd><a href="https://coolmoney.mt.co.kr" target="_blank">쿨머니</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="bbox2">
+                <ul class="group02">
+                    <li class="bundle">
+                        <dl class="group1">
+                            <dt>SNS</dt>
+                            <dd class="fcb"><a href="https://www.facebook.com/mt.co.kr" target="_blank" rel="noopener noreferrer">MT페이스북</a>
+                            </dd>
+                            <dd class="twt"><a href="https://twitter.com/moneytodaynews" target="_blank" rel="noopener noreferrer">MT트위터</a>
+                            </dd>
+                            <dd class="npst">
+                                <a href="http://m.post.naver.com/my.nhn?memberNo=36310338" target="_blank" rel="noopener noreferrer">MT포스트</a>
+                            </dd>
+                            <dd class="inst"><a href="https://www.instagram.com/moneytodaynews" target="_blank" rel="noopener noreferrer">MT인스타그램</a>
+                            </dd>
+                            <dd class="ytb"><a href="https://www.youtube.com/user/Moneytodaynews" target="_blank" rel="noopener noreferrer">MT유튜브</a>
+                            </dd>
+                            <dd class="ntv"><a href="http://tv.naver.com/moneytoday" target="_blank" rel="noopener noreferrer">네이버TV</a></dd>
+                        </dl>
+                    </li>
+                    <li class="bundle">
+                        <dl class="group1">
+                            <dd class="twt"><a href="https://twitter.com/mtwtkr" target="_blank" rel="noopener noreferrer">MT증권 트위터</a></dd>
+                            <dd class="ytb">
+                                <a href="https://www.youtube.com/channel/UC5CyCSvCdoEP-VgQmFq3iww" target="_blank" rel="noopener noreferrer">머플러
+                                    유튜브</a></dd>
+                            <dd class="ntv"><a href="http://tv.naver.com/muffler" target="_blank" rel="noopener noreferrer">머플러 네이버TV</a></dd>
+                            <dd class="ytb">
+                                <a href="https://www.youtube.com/channel/UCRCxPhlFNKshJKebPTFC4Qw" target="_blank" rel="noopener noreferrer">놂-norm
+                                    유튜브</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+</div>
+<!-- 우측 -->
+<!-- 우측 컨텐츠 영역 -->
+<div id="aside2017" style="display:none;">
+    <input type="hidden" id="rightShow" name="rightShow" value="off">
+    <div id="main-wrap02-scroll-start">
+        <div id="main-wrap02-scroll-in">
+            <div class="asd_group">
+                <div class="asd_bundle mgt39">
+                    <ul class="adgroup1">
+    <li class="bundle"><a href="https://www.mt.co.kr/ksi"><img src="https://menu.mt.co.kr/news/wingBanner/wingBanner_202103021815220_9311.jpg" alt="" /></a></li>
+    
+</ul>                    <dl class="asd_list1">
+                                                <dt><a href="https://stylem.mt.co.kr" target="_blank">스타일M</a></dt>
+                        <dd>
+<a href="https://stylem.mt.co.kr/stylemView.php?no=2021080513243166356&MRO_P" target="_blank">
+	<span class="thum" style="background:url(https://menu.mt.co.kr/stylem/banner/thumb/2021/styMainTop_202108090702010_thumb.png) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/stylem/banner/thumb/2021/styMainTop_202108090702010_thumb.png" alt="티파니 영, 가슴선 드러낸 &#39;1839만원&#39; 드레스 룩…&#034;어디 거?&#034;"></span>
+	<strong class="subject">티파니 영, 가슴선 드러낸 &#39;1839만원&#39; 드레스 룩…&#034;어디 거?&#034;</strong>
+</a>
+</dd>
+                        <dt><a href="https://star.mt.co.kr" target="_blank">스타뉴스</a></dt>
+                        <dd>
+<a href="https://star.mt.co.kr/stview.php?no=2021080912280785818&MRO_P" target="_blank">
+	<span class="thum" style="background:url(https://menu.mt.co.kr/upload/main/2021/2021080912280785818001_mainTop.jpg) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/upload/main/2021/2021080912280785818001_mainTop.jpg" alt="이광수 &quot;이선빈과 연애, 남들과 비슷..잘 지내고 있다&quot;"></span>
+	<strong class="subject">이광수 &quot;이선빈과 연애, 남들과 비슷..잘 지내고 있다&quot;</strong>
+</a>
+</dd>
+                        <dt><a href="https://moneys.mt.co.kr" target="_blank">MoneyS</a></dt>
+                        <dd>
+<a href="https://moneys.mt.co.kr/news/mwView.php?no=2021080919038018828&MRO_P" target="_blank">
+	<span class="thum" style="background:url(https://menu.mt.co.kr/moneyweek/thumb/2021/08/09/06/2021080919038018828_1.jpg) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/moneyweek/thumb/2021/08/09/06/2021080919038018828_1.jpg" alt="이재용 부회장, 구속 207일 만에… 13일 가석방(종합)"></span>
+	<strong class="subject">이재용 부회장, 구속 207일 만에… 13일 가석방(종합)</strong>
+</a>
+</dd>
+                        <dt><a href="https://www.ize.co.kr" target="_blank">IZE</a></dt>
+                        <dd>
+		<a href="https://www.ize.co.kr/articleView.html?no=2021080912057271504&MRO_P" target="_blank">
+			<span class="thum" style="background:url(https://menu.mt.co.kr/ize/thumb/2021/08/08/2021080912057271504_1.jpg) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/ize/thumb/2021/08/08/2021080912057271504_1.jpg" alt="비범한 두 소녀가 선사하는 &#39;꿀잼&#39; 하이틴물"></span>
+			<strong class="subject">비범한 두 소녀가 선사하는 &#39;꿀잼&#39; 하이틴물</strong>
+		</a>
+		</dd>
+                                                    <dt><a href="https://the300.mt.co.kr" target="_blank">the300</a></dt>
+                            <dd>
+                <a href="https://the300.mt.co.kr/newsView.html?no=2021080920322660758&MRO_P" target="_blank">
+                    <span class="thum" style="background:url(https://menu.mt.co.kr/the300/thumb/2021/08/02/2021080920322660758_1.jpg) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/the300/thumb/2021/08/02/2021080920322660758_1.jpg" alt="이재용 가석방에 野 주자들 &#034;국민뜻=경제살리기, 책임 다해달라&#034;"></span>
+                    <strong class="subject">이재용 가석방에 野 주자들 &#034;국민뜻=경제살리기, 책임 다해달라&#034;</strong>
+                </a>
+                </dd>
+                                                <dt><a href="https://thel.mt.co.kr" target="_blank">theL</a></dt>
+                        <dd>
+<a href="https://thel.mt.co.kr/newsView.html?no=2021080918561989176&MRO_P" target="_blank">
+	<span class="thum" style="background:url(https://menu.mt.co.kr/thel/thumb/2021/08/01/2021080918561989176_1.jpg) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/thel/thumb/2021/08/01/2021080918561989176_1.jpg" alt="법무부, 이재용 가석방 허가…&quot;국가·글로벌 경제 상황 감안&quot;"></span>
+	<strong class="subject">법무부, 이재용 가석방 허가…&quot;국가·글로벌 경제 상황 감안&quot;</strong>
+</a>
+</dd>
+                        <dt><a href="http://www.ttimes.co.kr" target="_blank">티타임즈</a></dt>
+                        <dd>
+<a href="http://ttimes.co.kr/view.html?no=2021080917547721163&MRO_P" target="_blank">
+	<span class="thum" style="background:url(http://img.ttimes.co.kr/img/202108/2021080917547721163_43695.png) no-repeat center center; background-size:cover;"><img src="http://img.ttimes.co.kr/img/202108/2021080917547721163_43695.png" alt="트렌드를 거슬렀던 언더아머가 다시 살아난 이유"></span>
+	<strong class="subject">트렌드를 거슬렀던 언더아머가 다시 살아난 이유</strong>
+</a>
+</dd>
+                        <dt><a href="https://theleader.mt.co.kr" target="_blank">더리더</a></dt>
+                        <dd>
+<a href="https://theleader.mt.co.kr/articleView.html?no=2021072914377891230&sec=&MRO_P" target="_blank">
+	<span class="thum" style="background:url(https://menu.mt.co.kr/theleader/thumb/2021/07/06/2021072914377891230_1.jpg/dims/resize/190x/optimize/) no-repeat center center; background-size:cover;"><img src="https://menu.mt.co.kr/theleader/thumb/2021/07/06/2021072914377891230_1.jpg/dims/resize/190x/optimize/" alt="&#034;인재는 현장에서 자란다&#034; 한국농수산대학의 이유 있는 변신"></span>
+	<strong class="subject">&#034;인재는 현장에서 자란다&#034; 한국농수산대학의 이유 있는 변신</strong>
+</a>
+</dd>
+                    </dl>
+                </div>
+                <div class="asd_bundle mgt22">
+                    <div class="asd_list2">
+                        <h3>단독</h3>
+                        <a href="https://news.mt.co.kr/mtview.php?no=2021072108451310344&vgb=column&code=columnmtonly&type=1&MRMO_T">이재용, &#39;광복절 가석방&#39; 법무부 심사 대상 올랐다</a>                    </div>
+                </div>
+                                <div class="asd_bundle mgt26">
+                    <h3 class="secm_catit10"><a href="https://www.mt.co.kr/company/info/notice.htm" target="_blank">알림/이벤트</a>
+                    </h3>
+                    <ul class="asd_list5 mgt18">
+                        <li><a href="https://www.mt.co.kr/company/info/notice.htm?gisaid=2021080513242150367&mode=article" target="_blank">[알림]머니투데이 27기 수습기자 최종합격자 발표</a></li><li><a href="https://www.mt.co.kr/company/info/notice.htm?gisaid=2021063015111697871&mode=article" target="_blank">[알림]탄소중립으로 가는 길을 알려드립니다</a></li><li><a href="https://www.mt.co.kr/company/info/notice.htm?gisaid=2021062509174089111&mode=article" target="_blank">[알림]탄소중립 아카데미(CNA)에 여러분을 초대합니다</a></li>                    </ul>
+                </div>
+
+                <span class="cboth" style="height:50px;"></span>
+            </div>
+            <button type="button" class="asdclose" onclick="javascript:asdHide();"><span>닫기</span></button>
+        </div>
+    </div>
+</div>
+<button type="button" id="aside2017_open" onclick="javascript:asdShow();"><span>우측영역 열기</span></button>
+<script type="text/javascript">
+    function on_showArticle(strHashtag, num) {
+        $.ajax({
+            type: 'POST',
+            url: '/contain/hashtagProc.php',
+            data: 'hashtag=' + strHashtag,
+            async: false,
+            dataType: 'html',
+            error: function (request, status, error) {
+                returnStr = '';
+            },				// 통신 에러 발생 시
+            success: function (response, status, request) {
+                returnStr = response;
+            },	// 통신 성공 시
+            complete: function () {
+            }													// 통신이 완료 후
+        });
+
+        $("a[name='hashtag']").removeClass('on');
+
+        $('#hashtag' + num).addClass('on');
+
+        var arrArticleList = returnStr.split('||');
+        var articleList = '';
+        for (var i = 0; i < arrArticleList.length - 1; i++) {
+            var arrAritcle = arrArticleList[i].split('|');
+            var articleId = arrAritcle[0];
+            var articleTitle = arrAritcle[1];
+            var articleLink = arrAritcle[2];
+            articleList = articleList + '<li class="bundle"><a href="' + articleLink + '&MRHT_T' + '">' + articleTitle + '</a></li>';
+        }
+        $('#hashtagArticle').html(articleList);
+    }
+
+    function setCookie(cookieName, cookieValue, expireDate) {
+        var today = new Date();
+        today.setDate(today.getDate() + parseInt(expireDate));
+        document.cookie = cookieName + "=" + escape(cookieValue) + "; path=/; expires=" + today.toGMTString() + ";"
+    }
+
+    function asdHide() {
+		//var winW = screen.availWidth;
+        var winW = $('#wrap').width();			//브라우저의 가로길이
+        $('#aside2017').hide();
+        $('#aside2017_open').show();
+        $(".leftbn_wrap").show(); /* 수정 181228 세종 */ //#leftbn_wrap
+        //$("#aside_q_bn").show(); //선관위배너관련 추가 180511 세종
+		containerHeightSetter(); /* 추가 200331 세종 */
+		$(".rightbn_wrap").show(); /* 추가 200331 세종 */
+
+        var boolAsd = true;
+        if ($("#aside2017").css("display") == "block") {
+            boolAsd = true;
+        } else {
+            boolAsd = false;
+        }
+        var boolLfb = true;
+        if ($(".leftbn_wrap").css("display") == "block") /* 수정 181228 세종 */ //#leftbn_wrap
+        {
+            boolLfb = true;
+        } else {
+            boolLfb = false;
+        }
+        /* 수정 200331 세종 */
+        if (!boolAsd && boolLfb) {
+            $('#wrap').css('min-width', '1404px');
+            $('#mt_header').css('padding-left', '190px').css('padding-right', '190px');
+            $('#container').css('padding-left', '190px').css('padding-right', '190px');
+            $('#mt_footer').css('padding-left', '190px').css('padding-right', '190px');
+        //    $('.wrap_banner').css('padding-left', '190px').css('padding-right', '190px'); /* 추가 190102 동현 */
+        }
+        else if (!boolAsd && !boolLfb) {
+            $('#wrap').css('min-width', '1114px');
+            $('#mt_header').css('padding-left', '0').css('padding-right', '0');
+            $('#container').css('padding-left', '0').css('padding-right', '0');
+            $('#mt_footer').css('padding-left', '0').css('padding-right', '0');
+        //    $('.wrap_banner').css('padding-left', '0').css('padding-right', '0'); /* 추가 190102 동현 */
+        }
+		/* //수정 200331 세종 */
+
+        setCookie("mtmainright", "off", 365);
+    }
+
+    function asdShow() {
+		//var winW = screen.availWidth;
+        var winW = $('#wrap').width();			//브라우저의 가로길이
+        $('#aside2017_open').hide();
+		$(".rightbn_wrap").hide(); /* 추가 200331 세종 */
+        $('#aside2017').show();
+        //$("#aside_q_bn").hide(); //선관위배너관련 추가 180511 세종
+		/*	수정 200331 세종
+        if (winW < 1368) {
+            $('.leftbn_wrap').hide();
+        } else {
+            $(".leftbn_wrap").show();
+        }
+		*/
+
+        var boolAsd = true;
+        if ($("#aside2017").css("display") == "block") {
+            boolAsd = true;
+        } else {
+            boolAsd = false;
+        }
+        var boolLfb = true;
+        if ($(".leftbn_wrap").css("display") == "block") /* 수정 181228 세종 */ //#leftbn_wrap
+        {
+            boolLfb = true;
+        } else {
+            boolLfb = false;
+        }
+		
+        /* 수정 200331 세종 */
+        if (boolAsd && boolLfb) {
+            $('#wrap').css('min-width', '1464px');
+            $('#mt_header').css('padding-right', '220px').css('padding-left', '220px');
+            $('#container').css('padding-right', '220px').css('padding-left', '220px');
+            $('#mt_footer').css('padding-right', '220px').css('padding-left', '220px');
+         //   $('.wrap_banner').css('padding-right', '220px').css('padding-left', '220px'); /* 추가 190102 동현 */
+        } else if (boolAsd && !boolLfb) {
+            $('#wrap').css('min-width', '1464px');
+            $('#mt_header').css('padding-right', '220px').css('padding-left', '0');
+            $('#container').css('padding-right', '220px').css('padding-left', '0');
+            $('#mt_footer').css('padding-right', '220px').css('padding-left', '0');
+         //   $('.wrap_banner').css('padding-right', '220px').css('padding-left', '0'); /* 추가 190102 동현 */
+        }
+		/* //수정 200331 세종 */
+
+        setCookie("mtmainright", "on", 365);
+    }
+</script>
+<!-- //우측 컨텐츠 영역 -->
+
+
+    
+    <div class="leftbn_wrap" style="top:112px">
+        <div class="lbw_g1"><div class="bundle"><a href="https://www.youtube.com/channel/UCKXWYKTnQiRGPpkkAdiFhUw"  target="_blank"><img src="https://menu.mt.co.kr/news/articleBanner/quickBanner_202004210919041_9532.jpg" alt="부동산 유튜브 정보채널 부릿지" /></a></div><div class="bundle"><a href="https://www.youtube.com/channel/UCu95uXPp1liUyv8w_lAuYyg "  target="_blank"><img src="https://menu.mt.co.kr/news/articleBanner/quickBanner_202011050933242_5294.jpg" alt="부꾸미" /></a></div></div>        <div class="lbw_g2">
+            <div class="bundle">
+                <div id="leftViewSlideBannerArea">
+                                            <script type="text/javascript" src="https://ads.mtgroup.kr/RealMedia/ads/adstream_jx.ads/mt_pc/main@x01"></script>
+                                                            </div>
+            </div>
+        </div>
+    </div>
+    		<!-- 추가 200331 세종 -->
+		<div class="rightbn_wrap" style="top:112px">
+		   <div class="rbw_g1">
+				<div class="bundle"></div>
+			</div>
+			<div class="rbw_g2">
+				<div class="bundle">
+                    <!-- 애드서버 교체 관련, 광고 변경 (5월24일자) 20210504 김성희 -->
+                    <div><script type="text/javascript" src="https://ads.mtgroup.kr/RealMedia/ads/adstream_jx.ads/mt_pc/main@x02"></script></div>
+				</div>
+			</div>
+		</div>
+		<!-- //추가 200331 세종 -->
+	        </div>
+    </div>
+    <!--// container -->
+
+    
+            </div>
+    
+
+<!-- footer -->
+<div id="mt_footer">
+    <div class="limit1">
+        <!-- 로고 -->
+        <h1 class="logo"><img src="https://menu.mt.co.kr/common/etc/logo_mt2017_110x47.png" alt="머니투데이"/></h1>
+        <!-- 관련링크 -->
+        <div class="rellink">
+            <a href="https://www.mt.co.kr/company/index.htm" target="_blank">회사소개</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://news.mt.co.kr/mtm/mtm_newspaper.htm" target="_blank">구독신청</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/info/privacy.htm" target="_blank" style="color:#F54141;">개인정보처리방침</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/info/teenager.html" target="_blank" style="">청소년보호정책</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/info/tou.htm" target="_blank">이용약관</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/coop/advinfo.htm" target="_blank">광고안내</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/coop/coopinfo.htm" target="_blank">제휴안내</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/coop/copyright.htm" target="_blank">저작권규약</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/info/proffer.htm" target="_blank">기사제보</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mt.co.kr/company/info/dilemma.htm" target="_blank">고충처리</a>
+        </div>
+        <div class="copyright">
+            <address>서울시 종로구 청계천로 11(서린동, 청계한국빌딩)&nbsp;&nbsp;&nbsp;대표이사/발행인/편집인:박종면&nbsp;&nbsp;&nbsp;등록번호:서울 아01084&nbsp;&nbsp;&nbsp;사업자등록번호:101-81-50419&nbsp;&nbsp;&nbsp;<br/>등록일:2009.12.24&nbsp;&nbsp;&nbsp;제호:머니투데이&nbsp;&nbsp;&nbsp;발행일:2000.1.1&nbsp;&nbsp;&nbsp;청소년
+                보호책임자:신택균&nbsp;&nbsp;&nbsp;대표번호:02-724-7700&nbsp;&nbsp;&nbsp;ISSN 2636-0055
+            </address>
+            <span class="cmt1">머니투데이의 모든 기사(콘텐츠)는 저작권법의 보호를 받으며, 무단 전재 복사 배포 등을 금지합니다.&nbsp;&nbsp;&nbsp;&nbsp;<span class="cpr">COPYRIGHT &copy; <strong>MONEYTODAY</strong> ALL RIGHTS RESERVED.</span></span>
+        </div>
+    </div>
+</div>
+<!--// footer -->
+
+<!-- 모바일화면 이동 -->
+
+</div>
+<iframe width=0 height=0 name='hiddenframe' id='hiddenframe' title="빈프레임" style='display:none;'></iframe>
+<!--// wrap -->
+
+<script src="//static.chartbeat.com/js/chartbeat_mab.js" async="true"></script>
+
+<script text="text/javascript">
+    var addFlg = "";
+    $(document).ready(function () {
+        if (addFlg != 'false') {
+            containerHeightSetter();
+        }
+    });
+
+    function containerHeightSetter() {
+        $('#aside2017').css('visibility', 'visible');
+        /*좌우측 배너관련*/
+        var leftbn_wrap = $('.leftbn_wrap');
+        var rightbn_wrap = $('.rightbn_wrap');
+        var lbw_g1 = $('.leftbn_wrap .lbw_g1');
+        var leftbn_wrap_h = leftbn_wrap.height();
+        var rightbn_wrap_h = rightbn_wrap.height();
+        var lbw_g1_h = lbw_g1.height();
+		if (lbw_g1_h == null || lbw_g1_h == undefined ||  lbw_g1_h == 'undefined') {
+			lbw_g1_h = 0;
+		}
+		if(lbw_g1.length > 0){
+			$('.rightbn_wrap .rbw_g1').attr('style', 'min-height:' + lbw_g1_h + 'px;');	/*좌우측 두번째 날개배너 높이 조절*/
+		}else{
+			$('.rightbn_wrap .rbw_g1').remove();
+		}
+        if ((leftbn_wrap.is(':visible')) && (rightbn_wrap.is(':visible'))) {	/*페이지 가로사이즈 최소값 지정*/
+            $('html').attr('style', 'min-width:1404px;');
+        }
+
+        var minHeight = rightbn_wrap_h;
+        if (leftbn_wrap_h >= rightbn_wrap_h) {
+            minHeight = leftbn_wrap_h;
+        }
+
+        if ($('.rbw_g2 .bundle').length) {
+            minHeight = minHeight > 1470 ? minHeight : 1470;
+        }
+
+        $('#container').css('min-height', minHeight + 150);
+    }
+
+    
+        
+</script>
+
+    <script>
+(function (d, a, b, l, e, _) {
+    d[b] = d[b] || function () {
+        (d[b].q = d[b].q || []).push(arguments)
+    };
+    e = a.createElement(l);
+    e.async = 1;
+    e.charset = 'utf-8';
+    e.src = '//static.dable.io/dist/plugin.min.js';
+    _ = a.getElementsByTagName(l)[0];
+    _.parentNode.insertBefore(e, _);
+})(window, document, 'dable', 'script');
+dable('setService', 'mt.co.kr');
+
+</script>
+
+<!-- 머니투데이 메인면 PV체크 스크립트-->
+    <div style="position:absolute; font-size:0; line-height:0;">
+        <!-- [MTCMU-5360] 애드서버 교체 관련, 광고 변경 20210528 김성희 -->
+        <!-- <script src='//compass.adop.cc/assets/js/adop/adopJ.js?v=14'></script>
+        <ins class='adsbyadop' _adop_zon='6e77b037-fa85-443b-ac82-29b09e70084c' _adop_type='re' style='display:inline-block;width:0px;height:0px;' _page_url=''></ins> -->
+        <script type="text/javascript"
+                src="https://ads.mtgroup.kr/RealMedia/ads/adstream_jx.ads/mt_pc/main@x96"></script>
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        onScrollDirection();
+        onScrollAdjustEndLine("#main-middle01-scroll-start", "#main-middle", "#main-middle01-scroll-in");
+        onScrollAdjustEndLine("#main-middle02-scroll-start", "#main-middle", "#main-middle02-scroll-in");
+
+        onScrollAdjustEndLine("#main-wrap01-scroll-start", "#main-wrap", "#main-wrap01-scroll-in");
+        onScrollAdjustEndLine("#main-wrap02-scroll-start", "#main-wrap", "#main-wrap02-scroll-in");
+    });
+</script>
+</body>
+</html>

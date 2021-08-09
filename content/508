@@ -1,0 +1,145 @@
+<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#006ac6">  <meta property="og:type" content="website"><meta property="og:title" content="痞客邦(PIXNET)"><meta property="og:description" content="痞客邦為台灣最大興趣社交媒體，提供社群服務「邦邦」，讓你與更多興趣同好開啟交流；「部落格」服務匯聚豐富多元的內容，無論是美食、旅遊、親子、3C、電影、美妝資訊，通通都在痞客邦！"><meta property="og:image" content="https://www.pixfs.net/desktop/static/media/img-logo.jpg?v=d3720009e218f2883c13a60b4712a457"><meta property="og:url" content="www.pixnet.net"><meta property="og:site_name" content="痞客邦"> <link rel="manifest" href="/manifest.json"> <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/icon-144x144.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/icon-114x114.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/icon-72x72.png"><link rel="apple-touch-icon-precomposed" sizes="57x57" href="/icon-57x57.png"><link rel="shortcut icon" href="/favicon.ico"><title>痞客邦</title><meta name="description" content="痞客邦為台灣最大興趣社交媒體，提供社群服務「邦邦」，讓你與更多興趣同好開啟交流；「部落格」服務匯聚豐富多元的內容，無論是美食、旅遊、親子、3C、電影、美妝資訊，通通都在痞客邦！"><style id="app_shell">body {
+margin: 0;
+padding: 0;
+background-color: #f6f6f6;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes placeHolderShimmer {
+0% {
+background-position: -470px 0
+}
+100% {
+background-position: 470px 0
+}
+}
+
+.top-bar {
+height: 50px;
+color: white;
+background-color: #006ac6;
+}
+
+.workspace {
+width: 1060px;
+margin: 20px auto 0;
+}
+
+.left-bar {
+float: left;
+width: 200px;
+}
+
+.content {
+float: left;
+width: 530px;
+margin: 0 15px;
+}
+
+.right-bar {
+float: left;
+width: 300px;
+}
+
+.card {
+width: 100%;
+height: 150px;
+padding: 20px;
+box-sizing: border-box;
+background-color: white;
+margin-bottom: 5px;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.information {
+width: 100%;
+height: 600px;
+padding: 20px;
+box-sizing: border-box;
+background-color: white;
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.bg {
+height: 6px;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-name: placeHolderShimmer;
+animation-timing-function: linear;
+background: #f6f7f8;
+background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+background-size: 1000px 105px;
+}
+
+.bg.avatar {
+width: 30px;
+height: 30px;
+margin-right: 5px;
+border-radius: 50%;
+}
+
+.header {
+display: flex;
+margin-bottom: 20px;
+}
+
+.info {
+display: flex;
+padding: 3px 0;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.desc {
+margin-bottom: 10px;
+padding: 0;
+list-style: none;
+}
+
+.desc li {
+margin-bottom: 15px;
+}
+
+.bg.text1 {
+width: 100px;
+}
+
+.bg.text2 {
+width: 60px;
+}
+
+.bg.text3 {
+width: 200px;
+}
+
+.bg.text4 {
+width: 300px;
+}
+
+.bg.text5 {
+width: 150px;
+}</style> <script>var pix = pix || {}; pix.domain_append = '';</script>
+<script src="//checklogin.www.pixnet.net/login_name.php?key=b2b1b6822253ddec7723608cb30bd497&unique=4044081950&timestamp=1628511857&sig=2740441819"></script><script src="//member.pixnet.cc/api/checklogin.php?js=1&unique=4044081950&timestamp=1628511857&type=2"></script><script src="//s.pixfs.net/js/pixnet/checklogin.min.js"></script><meta name="csrf_token" content="0tG8Xw25O9CQ0iNTZQej0aupHGefQwuRWCQa5RwRI70="> <script>(function() {
+var purl = window.location.href;
+var url = '//ads.pubmatic.com/AdServer/js/pwt/160596/4190';
+var profileVersionId = '';
+if(purl.indexOf('pwtv=')>0){
+var regexp = /pwtv=(.*?)(&|$)/g;
+var matches = regexp.exec(purl);
+if(matches.length >= 2 && matches[1].length > 0){
+profileVersionId = '/'+matches[1];
+}
+}
+var wtads = document.createElement('script');
+wtads.async = true;
+wtads.type = 'text/javascript';
+wtads.src = url+profileVersionId+'/pwt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(wtads, node);
+})();</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6RPB3Q');</script><script>window.SC_DISABLE_SPEEDY = location.search.indexOf('from_pre_render') >= 0;</script></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6RPB3Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="root" data-device="desktop"><nav class="top-bar"></nav><div class="workspace"><div class="left-bar"><div class="information"><ul class="desc"><li class="bg text1"></li><li class="bg text2"></li><li class="bg text1"></li></ul></div></div><article class="content"><section class="card"><header class="header"><div class="bg avatar"></div><div class="info"><div class="bg text1"></div><div class="bg text2"></div></div></header><ul class="desc"><li class="bg text3"></li><li class="bg text4"></li><li class="bg text5"></li></ul></section><section class="card"><header class="header"><div class="bg avatar"></div><div class="info"><div class="bg text1"></div><div class="bg text2"></div></div></header><ul class="desc"><li class="bg text3"></li><li class="bg text4"></li><li class="bg text5"></li></ul></section><section class="card"><header class="header"><div class="bg avatar"></div><div class="info"><div class="bg text1"></div><div class="bg text2"></div></div></header><ul class="desc"><li class="bg text3"></li><li class="bg text4"></li><li class="bg text5"></li></ul></section><section class="card"><header class="header"><div class="bg avatar"></div><div class="info"><div class="bg text1"></div><div class="bg text2"></div></div></header><ul class="desc"><li class="bg text3"></li><li class="bg text4"></li><li class="bg text5"></li></ul></section><section class="card"><header class="header"><div class="bg avatar"></div><div class="info"><div class="bg text1"></div><div class="bg text2"></div></div></header><ul class="desc"><li class="bg text3"></li><li class="bg text4"></li><li class="bg text5"></li></ul></section></article><div class="right-bar"><div class="information"><ul class="desc"><li class="bg text1"></li><li class="bg text2"></li><li class="bg text3"></li></ul></div></div></div></div><script defer="defer" src="https://www.pixfs.net/desktop/static/js/runtime-main.js?v=6d5b8c6a66c4f"></script><script defer="defer" src="https://www.pixfs.net/desktop/static/js/vendors.chunk.js?v=10df390a281cb"></script><script defer="defer" src="https://www.pixfs.net/desktop/static/js/main.chunk.js?v=ffef8ec06e7eb"></script></body></html>

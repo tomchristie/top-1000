@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title></title>
+
+<!-- 全站跳转页用到的函数 -->
+<script type="text/javascript">
+
+	var provincesJson = [
+	{"code":100,"name":"北京","href":"http://www.10086.cn/index/bj","url":"http://shop.10086.cn/mall_100_100.html","abbr":"bj"},
+	{"code":551,"name":"安徽","href":"http://www.10086.cn/index/ah","url":"http://shop.10086.cn/mall_551_551.html","abbr":"ah"},
+	{"code":230,"name":"重庆","href":"http://www.10086.cn/index/cq","url":"http://shop.10086.cn/mall_230_230.html","abbr":"cq"},
+	{"code":591,"name":"福建","href":"http://www.10086.cn/index/fj","url":"http://shop.10086.cn/mall_591_591.html","abbr":"fj"},
+	{"code":200,"name":"广东","href":"http://www.10086.cn/index/gd","url":"http://shop.10086.cn/mall_200_200.html","abbr":"gd"},
+	{"code":771,"name":"广西","href":"http://www.10086.cn/index/gx","url":"http://shop.10086.cn/mall_771_771.html","abbr":"gx"},
+	{"code":931,"name":"甘肃","href":"http://www.10086.cn/index/gs","url":"http://shop.10086.cn/mall_931_931.html","abbr":"gs"},
+	{"code":851,"name":"贵州","href":"http://www.10086.cn/index/gz","url":"http://shop.10086.cn/mall_851_851.html","abbr":"gz"},
+	{"code":311,"name":"河北","href":"http://www.10086.cn/index/he","url":"http://shop.10086.cn/mall_311_311.html","abbr":"he"},
+	{"code":371,"name":"河南","href":"http://www.10086.cn/index/ha","url":"http://shop.10086.cn/mall_371_371.html","abbr":"ha"},
+	{"code":898,"name":"海南","href":"http://www.10086.cn/index/hi","url":"http://shop.10086.cn/mall_898_898.html","abbr":"hi"},
+	{"code":270,"name":"湖北","href":"http://www.10086.cn/index/hb","url":"http://shop.10086.cn/mall_270_270.html","abbr":"hb"},
+	{"code":731,"name":"湖南","href":"http://www.10086.cn/index/hn","url":"http://shop.10086.cn/mall_731_731.html","abbr":"hn"},
+	{"code":451,"name":"黑龙江","href":"http://www.10086.cn/index/hl","url":"http://shop.10086.cn/mall_451_451.html","abbr":"hl"},
+	{"code":431,"name":"吉林","href":"http://www.10086.cn/index/jl","url":"http://shop.10086.cn/mall_431_431.html","abbr":"jl"},
+	{"code":250,"name":"江苏","href":"http://www.10086.cn/index/js","url":"http://shop.10086.cn/mall_250_250.html","abbr":"js"},
+	{"code":791,"name":"江西","href":"http://www.10086.cn/index/jx","url":"http://shop.10086.cn/mall_791_791.html","abbr":"jx"},
+	{"code":240,"name":"辽宁","href":"http://www.10086.cn/index/ln","url":"http://shop.10086.cn/mall_240_240.html","abbr":"ln"},
+	{"code":471,"name":"内蒙古","href":"http://www.10086.cn/index/nm","url":"http://shop.10086.cn/mall_471_471.html","abbr":"nm"},
+	{"code":951,"name":"宁夏","href":"http://www.10086.cn/index/nx","url":"http://shop.10086.cn/mall_951_951.html","abbr":"nx"},
+	{"code":971,"name":"青海","href":"http://www.10086.cn/index/qh","url":"http://shop.10086.cn/mall_971_971.html","abbr":"qh"},
+	{"code":210,"name":"上海","href":"http://www.10086.cn/index/sh","url":"http://shop.10086.cn/mall_210_210.html","abbr":"sh"},
+	{"code":280,"name":"四川","href":"http://www.10086.cn/index/sc","url":"http://shop.10086.cn/mall_280_280.html","abbr":"sc"},
+	{"code":531,"name":"山东","href":"http://www.10086.cn/index/sd","url":"http://shop.10086.cn/mall_531_531.html","abbr":"sd"},
+	{"code":351,"name":"山西","href":"http://www.10086.cn/index/sx","url":"http://shop.10086.cn/mall_351_351.html","abbr":"sx"},
+	{"code":290,"name":"陕西","href":"http://www.10086.cn/index/sn","url":"http://shop.10086.cn/mall_290_290.html","abbr":"sn"},
+	{"code":220,"name":"天津","href":"http://www.10086.cn/index/tj","url":"http://shop.10086.cn/mall_220_220.html","abbr":"tj"},
+	{"code":991,"name":"新疆","href":"http://www.10086.cn/index/xj","url":"http://shop.10086.cn/mall_991_991.html","abbr":"xj"},
+	{"code":891,"name":"西藏","href":"http://www.10086.cn/index/xz","url":"http://shop.10086.cn/mall_891_891.html","abbr":"xz"},
+	{"code":871,"name":"云南","href":"http://www.10086.cn/index/yn","url":"http://shop.10086.cn/mall_871_871.html","abbr":"yn"},
+	{"code":571,"name":"浙江","href":"http://www.10086.cn/index/zj","url":"http://shop.10086.cn/mall_571_571.html","abbr":"zj"}
+	];
+
+
+	function getCurrLocationByCookie() {
+		var rv = null;
+		
+        var strCookie = document.cookie;
+        var arrCookie = strCookie.split("; ");
+        for (var i = 0; i < arrCookie.length; i++) {
+            var arr = arrCookie[i].split("=");
+            if (2 <= arr.length && "CmLocation" == arr[0]) {
+				rv = arr[1];
+                break;
+            }
+        }
+		
+		return rv;
+	}
+
+
+	function getCurrLocationByIp() {
+		var rv = null;
+
+		var ajaxurlCity = location.protocol + "//www.10086.cn/web-Center/commonservice/ipLocation.do";
+		
+		sendAjax({
+			async : false,
+			url: ajaxurlCity, 
+			dataType: "json",
+			success:
+				function (jsonobj) {
+                	var prov_id = jsonobj.province_id;
+    				var city_id = jsonobj.city_id;
+    				
+    				rv = prov_id + "|" + city_id;
+				}
+			,
+			error:
+				function(XMLHttpRequest, textStatus, errorThrown) {
+					var prov_id = 0;
+					var city_id = 0;
+					
+					rv = null;
+				}
+		});
+
+		return rv;
+	}
+
+
+	function sendAjax(objJson) {
+		//执行Ajax
+		var majax = false;
+		if (window.XMLHttpRequest) {
+			majax = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			majax = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if (majax) {
+			try{
+				majax.open("POST",objJson.url,objJson.async);
+				majax.onreadystatechange = function() {
+					if (majax.readyState == 4) {
+						if(majax.status == 200) {
+							objJson.success(eval('(' + majax.responseText + ')'));
+						}
+						else{
+							objJson.error(majax,"E1",null);
+						}
+					}
+				}
+				majax.send(null);
+			}
+			catch(E) {
+				objJson.error(majax,"E2",null);
+			}
+		} else {
+			objJson.error(null,"E3",null);
+		}
+					
+					
+	}
+
+
+	// 获得引流cookie
+	function findCmChannelID() {
+	    var cookies =  document.cookie.split("; ");
+	    var cmChannelID = null;
+	    for (var i = 0; i < cookies.length; i++) {
+	        var arr = cookies[i].split("=");
+	        if ("CmChannelID" == arr[0]) {
+	            cmChannelID = arr[1];
+	            break;
+	        }
+	    }
+	    return cmChannelID;
+	}
+	
+</script>
+
+
+
+<script language="javascript">
+
+	// 判断域名,如果不是10086.cn的域名，则跳转到www.10086.cn。
+	
+	var hostname = window.location.host;
+	var strpc = null;
+	var arrstrpc;
+	var prov_id = 0;
+	var city_id = 0;
+	var prov_abbr = "";
+	var gourl = null; // 跳转地址
+
+
+	if(hostname.indexOf("10086.cn") == -1) {
+		gourl = "http://www.10086.cn/index/";
+	}
+	else {
+
+		strpc = getCurrLocationByCookie(); // 返回cookie中的location字符串，如果不存在则返回null。
+		
+		if (strpc != null) {
+		    arrstrpc = strpc.split("|");
+		    if (2 <= arrstrpc.length) {
+		    	prov_id = arrstrpc[0];
+				city_id = arrstrpc[1];
+				
+			    for (var i=0;i<provincesJson.length;i++) {
+			    	if (provincesJson[i].code == prov_id) {
+			    		prov_abbr = provincesJson[i].abbr;
+			    		break;
+			    	}
+			    }
+		    }
+		}
+		if (2 <= prov_abbr.length) {
+	
+			var exp = new Date();
+			exp.setTime(exp.getTime() + 90*24*60*60*1000);
+			document.cookie = "CmLocation=" + prov_id + "|" + city_id + ";path=/;domain=10086.cn;expires=" + exp.toGMTString();
+			document.cookie = "CmProvid=" + prov_abbr + ";path=/;domain=10086.cn;expires=" + exp.toGMTString();
+	
+			gourl = "/index/" + prov_abbr + "/index_" + prov_id + "_" + city_id + ".html";
+		}
+		else {
+			strpc = getCurrLocationByIp();
+				
+			if (strpc != null) {
+			    arrstrpc = strpc.split("|");
+			    if (2 <= arrstrpc.length) {
+			    	prov_id = arrstrpc[0];
+					city_id = arrstrpc[1];
+					
+				    for (var i=0;i<provincesJson.length;i++) {
+				    	if (provincesJson[i].code == prov_id) {
+				    		prov_abbr = provincesJson[i].abbr;
+				    		break;
+				    	}
+				    }
+			    }
+			}
+			if (2 <= prov_abbr.length) {
+				var exp = new Date();
+				exp.setTime(exp.getTime() + 90*24*60*60*1000);
+				document.cookie = "CmLocation=" + prov_id + "|" + city_id + ";path=/;domain=10086.cn;expires=" + exp.toGMTString();
+				document.cookie = "CmProvid=" + prov_abbr + ";path=/;domain=10086.cn;expires=" + exp.toGMTString();
+	
+				gourl = "/index/" + prov_abbr + "/index_" + prov_id + "_" + city_id + ".html";
+			}
+			else {
+				gourl = "/index_5074.htm";
+			}
+	
+		}
+	
+		
+		
+		// 特殊跳转开始
+		// 2015年5月17日00:00，实现门户首页（www.10086.cn）跳转到商城活动页（http://shop.10086.cn/hd/517/index.html） 5月19日24:00，恢复正常访问
+		// Cookie名称用redirection_517，为1表示当天已经跳转过。作用域10086.cn 根目录 过期时间为当天24点。
+		
+		// 根据浏览器中的cookie信息，确定当天是否已经条专过。
+		/*
+		var redirection_517 = null;
+		var strCookie = document.cookie;
+		var arrCookie = strCookie.split("; ");
+		for ( var i = 0; i < arrCookie.length; i++) {
+			var arr = arrCookie[i].split("=");
+			if ("redirection_517" == arr[0]) {
+				redirection_517 = arr[1];
+			}
+		}
+		
+		// 设置缺省省份代码
+		if (redirection_517 == "1") { // 不跳转
+			;
+		} else {
+			var exp = new Date();
+			exp.setHours(23,59,59,999) ;
+			document.cookie = "redirection_517=1;path=/;domain=10086.cn;expires=" + exp.toGMTString();
+	
+			if (prov_id == 0 || city_id == 0) {
+				gourl = "http://shop.10086.cn/hd/517/index.html";
+			} else {
+				gourl = "http://shop.10086.cn/hd/517/index.html";
+			}
+			
+			// 统计插码
+			if(typeof(_tag)!='undefined') _tag.dcsMultiTrack('WT.event','INDEX_' + prov_id + "|" + city_id);
+			
+		}
+		*/
+		// 特殊跳转结束 
+
+		
+		// 引流判断代码
+		/*
+		var cmChannelID = findCmChannelID(); // 获得引流cookie
+		if ("pc" == cmChannelID) { // pc：用户切换到电脑版
+			;
+		}
+		else if ("pad" == cmChannelID) { // pad：用户切换到pad版（此字段预留）
+			;
+		}
+		else if ("wap" == cmChannelID) { // wap：用户切换到标准版
+			gourl = "http://wap.10086.cn/";
+		}
+		else if ("h5" == cmChannelID) { // h5：用户切换到触屏版
+			gourl = "http://touch.10086.cn/";
+		}
+		else {
+			// 不能通过cookie判定分流目的地址时,如果用户终端类型为手机，则分流到http://touch.10086.cn/
+			var ua = navigator.userAgent;
+			if (typeof(ua) != "undefined") {
+				if (0 <= ua.indexOf("Mobile")) {
+					gourl = "http://touch.10086.cn/";
+				}
+			}
+		}
+		*/
+		
+	}
+	
+	// 执行跳转操作
+	var args = window.location.search; // 搜索字符串
+	var target = window.location.hash; // 锚点
+	
+	//判断访问来源
+	var flag = false;
+	if(document.referrer.indexOf("wap.10086.cn") >= 0 || document.referrer.indexOf("touch.10086.cn") >= 0){
+		flag = true;
+	}
+	if (!flag && !is_iPad() && navigator.userAgent.match(/(phone|pod|iPhone|iPod|ios|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+		window.location.href = "http://wap.10086.cn"+ args + target;
+		//window.location.href = gourl + args + target;
+	}
+	else {
+		window.location.href = gourl + args + target;
+	}
+	
+	//判断IPAD端
+	function is_iPad(){ 
+		var ua = navigator.userAgent.toLowerCase(); 
+		if(ua.match(/iPad/i)=="ipad") { 
+		   return true; 
+		} else { 
+		   return false; 
+		} 
+	}
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

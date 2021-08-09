@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			var forwardingUrl = "/page/bouncy.php?&bpae=GbhGtrsipVx79rtPUfomc7GhlvcKC3aw25bNNhj%2B2LBB7AY%2FQIZDAoaYidGOg6%2B4uhV6yaUj7EZWLbAPvO4v93QBy1n1%2FmjqwmQFAScwfRxOvHMSNFEuDB0mlChKMoeMIp6D0RrrQCTIxXFXR0dedIb0o2x0ae7fXoYb3b8i2bNjkOaBZiPVIwQP%2FWUyt3jOQST6OhcFo3nuhwb8lL%2BRk0QPQZ3ThTSFvsN9GwEQhIuMm62hSPaQpmd9mgu1Sq57g4sMbNws7Qlm6uGGI2zDpgTuz2gmMblotmcmEHtD5ggazEQTtUZCaCDHU5wAJBOZeoIOLQg7OnyHs4vJfc8ds9ifzo2cI38YHzcPOAP04%2BFCyEmvnyva3GBH9v1Q&redirectType=js";
+			var destinationUrl = "/page/bouncy.php?&bpae=GbhGtrsipVx79rtPUfomc7GhlvcKC3aw25bNNhj%2B2LBB7AY%2FQIZDAoaYidGOg6%2B4uhV6yaUj7EZWLbAPvO4v93QBy1n1%2FmjqwmQFAScwfRxOvHMSNFEuDB0mlChKMoeMIp6D0RrrQCTIxXFXR0dedIb0o2x0ae7fXoYb3b8i2bNjkOaBZiPVIwQP%2FWUyt3jOQST6OhcFo3nuhwb8lL%2BRk0QPQZ3ThTSFvsN9GwEQhIuMm62hSPaQpmd9mgu1Sq57g4sMbNws7Qlm6uGGI2zDpgTuz2gmMblotmcmEHtD5ggazEQTtUZCaCDHU5wAJBOZeoIOLQg7OnyHs4vJfc8ds9ifzo2cI38YHzcPOAP04%2BFCyEmvnyva3GBH9v1Q&redirectType=meta";
+			var addDetection = true;
+			if (addDetection) {
+				var inIframe = window.self !== window.top;
+				forwardingUrl += "&inIframe=" + inIframe;
+				var inPopUp = (window.opener !== undefined && window.opener !== null && window.opener !== window);
+				forwardingUrl += "&inPopUp=" + inPopUp;
+			}
+			window.location.replace(forwardingUrl);
+		</script>
+		<meta http-equiv="refresh" content="1;url=/page/bouncy.php?&bpae=GbhGtrsipVx79rtPUfomc7GhlvcKC3aw25bNNhj%2B2LBB7AY%2FQIZDAoaYidGOg6%2B4uhV6yaUj7EZWLbAPvO4v93QBy1n1%2FmjqwmQFAScwfRxOvHMSNFEuDB0mlChKMoeMIp6D0RrrQCTIxXFXR0dedIb0o2x0ae7fXoYb3b8i2bNjkOaBZiPVIwQP%2FWUyt3jOQST6OhcFo3nuhwb8lL%2BRk0QPQZ3ThTSFvsN9GwEQhIuMm62hSPaQpmd9mgu1Sq57g4sMbNws7Qlm6uGGI2zDpgTuz2gmMblotmcmEHtD5ggazEQTtUZCaCDHU5wAJBOZeoIOLQg7OnyHs4vJfc8ds9ifzo2cI38YHzcPOAP04%2BFCyEmvnyva3GBH9v1Q&redirectType=meta" />
+	</head>
+</html>

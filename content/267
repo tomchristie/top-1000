@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b67fc6a152",applicationID:"70700070"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"entityLanguage":"en","entityCountry":"US","siteName":"Internal Revenue Service","entityLangcode":"en","entityVid":"2177056","entityCreated":"1528516479","entityStatus":"1","entityType":"node","entityBundle":"pup_home_page","entityId":"58476","entityTitle":"Home","primaryCategory":"node","subCategory1":"58476","userUid":0});</script>
+<link rel="canonical" href="https://www.irs.gov/" />
+<meta name="robots" content="index, follow" />
+<link rel="shortlink" href="https://www.irs.gov/" />
+<meta name="description" content="Pay your taxes. Get your refund status. Find IRS forms and answers to tax questions. We help you understand and meet your federal tax responsibilities." />
+<meta name="abstract" content="Pay your taxes. Get your refund status. Find IRS forms and answers to tax questions. We help you understand and meet your federal tax responsibilities." />
+<meta property="og:image:url" content="https://www.irs.gov/pub/image/logo_small.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:alt" content="IRS logo" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Home | Internal Revenue Service" />
+<meta name="twitter:image:alt" content="IRS logo" />
+<meta name="twitter:image" content="https://www.irs.gov/pub/image/logo_small.jpg" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="audience" content="NULL" />
+<meta name="irsStandard-type" content="NULL" />
+<meta name="uniqueID" content="58476" />
+<meta name="isHistorical" content="NULL" />
+<meta name="historical-date" content="NULL" />
+<meta name="changed" content="1628176254" />
+<meta name="topic" content="NULL" />
+<meta name="guidance" content="NULL" />
+<meta name="channel" content="NULL" />
+<meta name="organization" content="NULL" />
+<meta name="otID" content="NULL" />
+<meta name="prod_SEID" content="CL5NB" />
+<link rel="shortcut icon" href="/themes/custom/pup_base/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.irs.gov/node/58476" />
+<link rel="alternate" hreflang="es" href="https://www.irs.gov/es/node/58476" />
+<link rel="alternate" hreflang="zh-hans" href="https://www.irs.gov/zh-hans/node/58476" />
+<link rel="alternate" hreflang="zh-hant" href="https://www.irs.gov/zh-hant/node/58476" />
+<link rel="alternate" hreflang="ko" href="https://www.irs.gov/ko/node/58476" />
+<link rel="alternate" hreflang="ru" href="https://www.irs.gov/ru/node/58476" />
+<link rel="alternate" hreflang="vi" href="https://www.irs.gov/vi/node/58476" />
+<link rel="alternate" hreflang="ht" href="https://www.irs.gov/ht/node/58476" />
+<link rel="revision" href="https://www.irs.gov/node/58476" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>Internal Revenue Service | An official website of the United States government</title>
+    <link rel="stylesheet" media="all" href="/pub/css/css_GDInOE4t66irsEN4ofpcgupFkq_8IZyw7F4agUWXU_8.css" />
+<link rel="stylesheet" media="all" href="/pub/css/css_qsv3PpBjeQjNhZZOLtFoRSkCSgIRwDibfWX8OVZW5Ic.css" />
+<link rel="stylesheet" media="screen" href="/pub/css/css_TPMs-A75V-DLtMvJGynwCucQqlu318W9uQct2FBqdmA.css" />
+<link rel="stylesheet" media="print" href="/pub/css/css_mbEdPJit2a_rSEJu-pfZeztFtyMKwys3wFfb4Cz5BPw.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/pub/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/pub/js/js_JL5-xpD24I600Ahcw5Q4vP2Cfa69VcdR4zEsiFjClFY.js"></script>
+
+  
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="YVPKX-K5D8K-83D3W-U8X45-X3FTN",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"YVPKX-K5D8K-83D3W-U8X45-X3FTN",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="hyprzvqxb2ljeyirdujq-f-355abf86d-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"8675","ak.ai":parseInt("388528",10),"ak.ol":"0","ak.cr":107,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1b9aaa3","ak.r":33949,"ak.a2":e,"ak.m":"dscna","ak.n":"essl","ak.bpcip":"62.31.28.0","ak.cport":62274,"ak.gh":"184.25.117.174","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1628511507","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==6IkSKEXdut6DfBu2QlTX0gTlgAF2K2uCo3XVT5uL8AwuuSnggim9Ef5okxdasD+URVyXZJvpUFvf4rv3Oqpi9QpYPwm1AlR+1iTTFEhWLHwYqbBgTYipkAYzusFos+b3XsmjKZx9ycH2+anqrfpPDRi8x6ISx1uD/4WyR6hQEKbTbk8jSaJWnMU0D5kSJ9BeoAl6NECg+T4zNl/7Jr7r+ayiWLrn2vfHWt+zsDUyOU1MI8I7eFo6TupuOzDeH+gVQPybiXHs7FU7iVLK4A7JYCj4I/DmImbEyCeI5eKCQzUTrcIU114iqVndPNzQnASc4ruCWPaHps+06ekVY9eqjjW5EDGxVmuyy9eB1kKWGakNaWjOnAwvwLZi7ajD7suqRCj2+7xeSaSMfThhrz9KhIqlINoVNreZ3x43Ny23Xv8=","ak.pv":"160","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <body class="path-frontpage page-node-type-pup-home-page has-glyphicons">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+    <div id='mobile-clickable-overlay' class='mobile-menu-overlay'></div>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<h1 class="visually-hidden sr-only">Home Page</h1>
+
+ 
+
+<header id="navbar" role="banner">
+
+  
+  
+          
+    
+    
+          <div class="pup-header_official">
+        <div class="container header-official-message">
+          <div class="inline-official">
+            <div class="official-site-flag">
+            </div>
+              <div class="region region-header-official">
+    
+
+ 
+
+<section id="block-governmentbanner" data-block-plugin-id="block_content:2d0fd18b-5f78-424d-a8b7-dfb90febb231" class="block block-block-content block-block-content2d0fd18b-5f78-424d-a8b7-dfb90febb231 clearfix">
+  
+    
+
+      
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>An official website of the United States Government</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+          </div>
+        </div>
+      </div>
+    
+    <div class="pup-header-main">
+      <div class="container">
+        <div class="row pup-header-main__content">
+          
+                                        
+                                        <div class="col-xs-2 no-gutter pup-header-content-lt">
+                    <div class="region region-header-left">
+                <a class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+            <img src="/themes/custom/pup_base/IRS-Logo.svg" alt="Home" />
+            <img class="print-logo" src="/themes/custom/pup_irs/images/logo-print.svg" alt="Home" />
+        </a>
+            
+  </div>
+
+                </div>
+              
+              
+              <div class="col-sm-10 hidden-xs hidden-sm pup-header-content-rt">
+                  <div class="region region-header-right">
+    <section class="language-switcher-language-url block block-language block-language-blocklanguage-interface clearfix" id="block-languageswitcher" role="navigation" data-block-plugin-id="language_block:language_interface">
+  
+    
+
+        <div class="dropdown pup-switch-hidden">
+    <button class="btn btn-default dropdown-toggle" type="button" id="languageSwitcher" data-toggle="dropdown" aria-label="Press enter to activate the menu, then navigate with the tab key." aria-expanded="false">
+      English
+      <i class="fa fa-chevron-down"></i>
+    </button>
+    <ul class="dropdown-menu" block="languageswitcher" aria-labelledby="languageSwitcher"><li hreflang="es" data-drupal-link-system-path="&lt;front&gt;" class="es"><a href="/es" class="language-link" lang="es" hreflang="es" data-drupal-link-system-path="&lt;front&gt;">Español</a></li><li hreflang="zh-hans" data-drupal-link-system-path="&lt;front&gt;" class="zh-hans"><a href="/zh-hans" class="language-link" lang="zh-hans" hreflang="zh-hans" data-drupal-link-system-path="&lt;front&gt;">中文 (简体)</a></li><li hreflang="zh-hant" data-drupal-link-system-path="&lt;front&gt;" class="zh-hant"><a href="/zh-hant" class="language-link" lang="zh-hant" hreflang="zh-hant" data-drupal-link-system-path="&lt;front&gt;">中文 (繁體)</a></li><li hreflang="ko" data-drupal-link-system-path="&lt;front&gt;" class="ko"><a href="/ko" class="language-link" lang="ko" hreflang="ko" data-drupal-link-system-path="&lt;front&gt;">한국어</a></li><li hreflang="ru" data-drupal-link-system-path="&lt;front&gt;" class="ru"><a href="/ru" class="language-link" lang="ru" hreflang="ru" data-drupal-link-system-path="&lt;front&gt;">Русский</a></li><li hreflang="vi" data-drupal-link-system-path="&lt;front&gt;" class="vi"><a href="/vi" class="language-link" lang="vi" hreflang="vi" data-drupal-link-system-path="&lt;front&gt;">Tiếng Việt</a></li><li hreflang="ht" data-drupal-link-system-path="&lt;front&gt;" class="ht"><a href="/ht" class="language-link" lang="ht" hreflang="ht" data-drupal-link-system-path="&lt;front&gt;">Kreyòl ayisyen</a></li></ul>
+    </div>
+
+  </section>
+
+<nav role="navigation" aria-labelledby="block-pup-irs-informationmenu-2-menu" id="block-pup-irs-informationmenu-2" data-block-plugin-id="system_menu_block:pup-info-menu" class="pup-nav-en">
+            
+  <h2 class="visually-hidden" id="block-pup-irs-informationmenu-2-menu">Information Menu</h2>
+  
+
+        
+      <ul block="pup_irs_informationmenu_2" class="menu menu--pup-info-menu nav">
+                      <li class="first">
+                                        <a href="/help/telephone-assistance" title="Help" data-drupal-link-system-path="node/16916">Help</a>
+              </li>
+                      <li>
+                                        <a href="/newsroom" title="News" data-drupal-link-system-path="node/19646">News</a>
+              </li>
+                      <li>
+                                        <a href="/charities-and-nonprofits" data-drupal-link-system-path="node/58461">Charities &amp; Nonprofits</a>
+              </li>
+                      <li class="last">
+                                        <a href="/tax-professionals" class="pup-info-menu-button" data-drupal-link-system-path="node/11">Tax Pros</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+              </div>
+              
+                            <div class="col-xs-10 hidden-md hidden-lg no-gutter">
+                <ul class="pup-header-mobile-menu pull-right">
+                  <li id="pup-mobile-navbar-searchBtn" class="pup-header-mobile-menu__searchBtn" data-target="#navbar-collapse">
+                    Search
+                    <span class="sr-only">Toggle search</span>
+                                          <div id="navbar-collapse"  class="pup-header-content-rt col-xs-12 hidden-md hidden-lg collapse no-gutter">
+                          <div class="region region-search-form-collapsible">
+      <div class="pup-site-header-search-block pup-search-box-hidden">
+            <div class="pup-site-header-search-block__searchfield">
+        <form block="exposedformpup_site_index_searchsite_search_srt_relevance_4" action="/site-index-search" method="get" id="views-exposed-form-pup-site-index-search-site-search-srt-relevance" accept-charset="UTF-8" novalidate>
+  <div class="form--inline form-inline clearfix">
+  
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search">
+
+
+    
+    
+            <label for="edit-search--2" class="control-label">Search</label>
+    
+    <input placeholder="Search" aria-label="Search" data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search--2" name="search" value="" size="30" maxlength="128" />
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-select js-form-type-select form-item-field-pup-historical-1 js-form-item-field-pup-historical-1">
+
+
+    
+    
+            <label for="edit-field-pup-historical-1--2" class="control-label">Include Historical Content</label>
+    
+    <div class="select-style select-wrapper"><select data-drupal-selector="edit-field-pup-historical-1" class="form-select form-control" id="edit-field-pup-historical-1--2" name="field_pup_historical_1"><option value="All">- Any -</option><option value="1" selected="selected">No</option></select></div>
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-select js-form-type-select form-item-field-pup-historical js-form-item-field-pup-historical">
+
+
+    
+    
+            <label for="edit-field-pup-historical--2" class="control-label">Include Historical Content</label>
+    
+    <div class="select-style select-wrapper"><select data-drupal-selector="edit-field-pup-historical" class="form-select form-control" id="edit-field-pup-historical--2" name="field_pup_historical"><option value="All">- Any -</option><option value="1" selected="selected">No</option></select></div>
+
+    
+
+</div>
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions--2"><button title="Search" data-drupal-selector="edit-submit-pup-site-index-search-2" class="button js-form-submit form-submit btn-primary btn icon-before" type="submit" id="edit-submit-pup-site-index-search--2" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button></div>
+
+</div>
+
+</form>
+
+      </div>
+      </div>
+
+  </div>
+
+                      </div>
+                                      </li>
+                                      <li id="pup-mobile-navbar-infoBtn" class="pup-header-mobile-menu__infoBtn">  <div class="region region-help-menu-mobile">
+    <nav role="navigation" aria-labelledby="block-helpmenumobile-menu" id="block-helpmenumobile" data-block-plugin-id="system_menu_block:help-menu-mobile">
+            
+  <h2 class="visually-hidden" id="block-helpmenumobile-menu">Help Menu Mobile</h2>
+  
+
+        
+      <ul block="helpmenumobile" class="menu menu--help-menu-mobile nav">
+                      <li class="first last">
+                                        <a href="/help/telephone-assistance" data-drupal-link-system-path="node/16916">Help</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+</li>
+                                    <li id="pup-mobile-navbar-menuBtn" class="pup-header-mobile-menu__menuBtn mobile-menu-icon" data-target="#pup-header-nav-collapse">
+                    Menu
+                    <span class="sr-only">Toggle menu</span>
+                  </li>
+                </ul>
+              </div>
+          
+
+        </div>       </div>
+    </div> 
+          <div class="header-nav hidden-xs hidden-sm">
+          <div class="container-fluid">
+              <div class="region region-site-navigation">
+    <nav role="navigation" aria-labelledby="block-mainnavigationmobile-2-menu" id="block-mainnavigationmobile-2" data-block-plugin-id="system_menu_block:main_mobile">
+            
+  <h2 class="visually-hidden" id="block-mainnavigationmobile-2-menu">Main navigation mobile</h2>
+  
+
+        
+
+              <ul block="mainnavigationmobile_2" class="menu nav" id="accessible-megamenu-navigation">
+        <a id="stickyNavLogo" class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+          <img src="/themes/custom/pup_base/IRS-Logo.svg" alt="Home">
+          <img class="print-logo accessible-megamenu-panel" src="/themes/custom/pup_irs/images/logo-print.svg" alt="Home" role="region" aria-expanded="false" aria-hidden="true">
+        </a>
+                                                                <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/filing" aria-controls="accessible-megamenu-file-submenu" aria-expanded="false" aria-label="File menu has additional options. Use the spacebar to open the File sub menu or enter to navigate to the File page." role="application" id="accessible-megamenu-nav-item-0">File</a>
+                                        <ul block="mainnavigationmobile_2" class="menu dropdown-menu" id="accessible-megamenu-file-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-0" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/filing" class="mobile-only-text" id="accessible-megamenu-file-submenu-0" data-drupal-link-system-path="node/19656">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-1">INFORMATION FOR…</span>
+                  </li>
+                                                                      <li><a href="/individuals" id="accessible-megamenu-file-submenu-2" data-drupal-link-system-path="node/19456">Individuals</a>
+                  </li>
+                                                                      <li><a href="/businesses" id="accessible-megamenu-file-submenu-3" data-drupal-link-system-path="node/18976">Business & Self Employed</a>
+                  </li>
+                                                                      <li><a href="/charities-and-nonprofits" id="accessible-megamenu-file-submenu-4" data-drupal-link-system-path="node/58461">Charities and Nonprofits</a>
+                  </li>
+                                                                      <li><a href="/individuals/international-taxpayers" id="accessible-megamenu-file-submenu-5" data-drupal-link-system-path="node/19696">International Taxpayers</a>
+                  </li>
+                                                                      <li><a href="/government-entities/federal-state-local-governments" id="accessible-megamenu-file-submenu-6" data-drupal-link-system-path="node/19446">Federal State and Local Governments</a>
+                  </li>
+                                                                      <li><a href="/government-entities/indian-tribal-governments" id="accessible-megamenu-file-submenu-7" data-drupal-link-system-path="node/19601">Indian Tribal Governments</a>
+                  </li>
+                                                                      <li><a href="/tax-exempt-bonds" id="accessible-megamenu-file-submenu-8" data-drupal-link-system-path="node/19671">Tax Exempt Bonds</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-9">FILING FOR INDIVIDUALS</span>
+                  </li>
+                                                                      <li><a href="/filing/individuals/how-to-file" id="accessible-megamenu-file-submenu-10" data-drupal-link-system-path="node/22856">How to File</a>
+                  </li>
+                                                                      <li><a href="/filing/individuals/when-to-file" id="accessible-megamenu-file-submenu-11" data-drupal-link-system-path="node/22726">When to File</a>
+                  </li>
+                                                                      <li><a href="/filing/where-to-file-tax-returns-addresses-listed-by-return-type" id="accessible-megamenu-file-submenu-12" data-drupal-link-system-path="node/2442">Where to File</a>
+                  </li>
+                                                                      <li><a href="/filing/individuals/update-my-information" id="accessible-megamenu-file-submenu-13" data-drupal-link-system-path="node/22861">Update My Information</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-14">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/coronavirus/get-my-payment" id="accessible-megamenu-file-submenu-15" data-drupal-link-system-path="node/77521">Get My Payment</a>
+                  </li>
+                                                                      <li><a href="/coronavirus-tax-relief-and-economic-impact-payments" id="accessible-megamenu-file-submenu-16" data-drupal-link-system-path="node/77071">Coronavirus Tax Relief</a>
+                  </li>
+                                                                      <li><a href="/filing/free-file-do-your-federal-taxes-for-free" id="accessible-megamenu-file-submenu-17" data-drupal-link-system-path="node/54546">Free File</a>
+                  </li>
+                                                                      <li><a href="/individuals/get-transcript" id="accessible-megamenu-file-submenu-18" data-drupal-link-system-path="node/64256">Get Your Tax Record</a>
+                  </li>
+                                                                      <li><a href="/identity-theft-fraud-scams/get-an-identity-protection-pin" id="accessible-megamenu-file-submenu-19" data-drupal-link-system-path="node/16696">Get an Identity Protection PIN (IP PIN)</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/payments" aria-controls="accessible-megamenu-pay-submenu" aria-expanded="false" aria-label="Pay menu has additional options. Use the spacebar to open the Pay sub menu or enter to navigate to the Pay page." role="application" id="accessible-megamenu-nav-item-1">Pay</a>
+                                        <ul block="mainnavigationmobile_2" class="menu dropdown-menu" id="accessible-megamenu-pay-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-1" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/payments" class="mobile-only-text" id="accessible-megamenu-pay-submenu-0" data-drupal-link-system-path="node/19551">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-pay-submenu-1">PAY BY</span>
+                  </li>
+                                                                      <li><a href="/payments/direct-pay" id="accessible-megamenu-pay-submenu-2" data-drupal-link-system-path="node/10224">Bank Account (Direct Pay)</a>
+                  </li>
+                                                                      <li><a href="/payments/pay-taxes-by-credit-or-debit-card" id="accessible-megamenu-pay-submenu-3" data-drupal-link-system-path="node/15583">Debit or Credit Card</a>
+                  </li>
+                                                                      <li><a href="/payments/online-payment-agreement-application" id="accessible-megamenu-pay-submenu-4" data-drupal-link-system-path="node/16716">Payment Plan (Installment Agreement)</a>
+                  </li>
+                                                                      <li><a href="/payments/eftps-the-electronic-federal-tax-payment-system" id="accessible-megamenu-pay-submenu-5" data-drupal-link-system-path="node/15488">Electronic Federal Tax Payment System (EFTPS)</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-pay-submenu-6">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/payments/view-your-tax-account" id="accessible-megamenu-pay-submenu-7" data-drupal-link-system-path="node/11608">View Your Account</a>
+                  </li>
+                                                                      <li><a href="/individuals/tax-withholding-estimator" id="accessible-megamenu-pay-submenu-8" data-drupal-link-system-path="node/16703">Tax Withholding Estimator</a>
+                  </li>
+                                                                      <li><a href="/businesses/small-businesses-self-employed/estimated-taxes" id="accessible-megamenu-pay-submenu-9" data-drupal-link-system-path="node/17135">Estimated Taxes</a>
+                  </li>
+                                                                      <li><a href="/payments/penalties" id="accessible-megamenu-pay-submenu-10" data-drupal-link-system-path="node/91826">Penalties</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/refunds" aria-controls="accessible-megamenu-refunds-submenu" aria-expanded="false" aria-label="Refunds menu has additional options. Use the spacebar to open the Refunds sub menu or enter to navigate to the Refunds page." role="application" id="accessible-megamenu-nav-item-2">Refunds</a>
+                                        <ul block="mainnavigationmobile_2" class="menu dropdown-menu" id="accessible-megamenu-refunds-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-2" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/refunds" class="mobile-only-text" id="accessible-megamenu-refunds-submenu-0" data-drupal-link-system-path="node/19556">Overview</a>
+                  </li>
+                                                                    <div class="mega-menu-column no-header-extra-padding">
+                                                    <li><a href="https://sa.www4.irs.gov/irfof/lang/en/irfofgetstatus.jsp" class="mega-menu-column-header" id="accessible-megamenu-refunds-submenu-1">Where's My Refund</a>
+                  </li>
+                                                                      <li><a href="/refunds/what-to-expect-for-refunds-this-year" id="accessible-megamenu-refunds-submenu-2" data-drupal-link-system-path="node/9503">What to Expect</a>
+                  </li>
+                                                                      <li><a href="/refunds/get-your-refund-faster-tell-irs-to-direct-deposit-your-refund-to-one-two-or-three-accounts" id="accessible-megamenu-refunds-submenu-3" data-drupal-link-system-path="node/10971">Direct Deposit</a>
+                  </li>
+                                                                      <li><a href="/taxtopics/tc203" id="accessible-megamenu-refunds-submenu-4" data-drupal-link-system-path="node/67936">Reduced Refunds</a>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040x" id="accessible-megamenu-refunds-submenu-5" data-drupal-link-system-path="node/19996">Fix/Correct a Return</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/credits-and-deductions" aria-controls="accessible-megamenu-credits &amp; deductions-submenu" aria-expanded="false" aria-label="Credits &amp; Deductions menu has additional options. Use the spacebar to open the Credits &amp; Deductions sub menu or enter to navigate to the Credits &amp; Deductions page." role="application" id="accessible-megamenu-nav-item-3">Credits & Deductions</a>
+                                        <ul block="mainnavigationmobile_2" class="menu dropdown-menu" id="accessible-megamenu-credits &amp; deductions-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-3" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/credits-and-deductions" class="mobile-only-text" id="accessible-megamenu-credits &amp; deductions-submenu-0" data-drupal-link-system-path="node/80206">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-credits &amp; deductions-submenu-1">INFORMATION FOR...</span>
+                  </li>
+                                                                      <li><a href="/credits-deductions-for-individuals" title="For you and your family" id="accessible-megamenu-credits &amp; deductions-submenu-2" data-drupal-link-system-path="node/5">Individuals</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            For you and your family
+          </span>
+        </li>
+                                                                      <li><a href="/credits-deductions/businesses" title="Standard mileage and other information" id="accessible-megamenu-credits &amp; deductions-submenu-3" data-drupal-link-system-path="node/19941">Businesses & Self-Employed</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Standard mileage and other information
+          </span>
+        </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-credits &amp; deductions-submenu-4">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/credits-deductions/individuals/earned-income-tax-credit-eitc" id="accessible-megamenu-credits &amp; deductions-submenu-5" data-drupal-link-system-path="node/18966">Earned Income Credit (EITC)</a>
+                  </li>
+                                                                      <li><a href="/credits-deductions/advance-child-tax-credit-payments-in-2021" id="accessible-megamenu-credits &amp; deductions-submenu-6" data-drupal-link-system-path="node/95076">Advance Child Tax Credit</a>
+                  </li>
+                                                                      <li><a href="/help/ita/how-much-is-my-standard-deduction" id="accessible-megamenu-credits &amp; deductions-submenu-7" data-drupal-link-system-path="node/5229">Standard Deduction</a>
+                  </li>
+                                                                      <li><a href="/credits-deductions/individuals/hctc" id="accessible-megamenu-credits &amp; deductions-submenu-8" data-drupal-link-system-path="node/17082">Health Coverage</a>
+                  </li>
+                                                                      <li><a href="/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit" id="accessible-megamenu-credits &amp; deductions-submenu-9" data-drupal-link-system-path="node/6665">Retirement Savings</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/forms-instructions" aria-controls="accessible-megamenu-forms &amp; instructions-submenu" aria-expanded="false" aria-label="Forms &amp; Instructions menu has additional options. Use the spacebar to open the Forms &amp; Instructions sub menu or enter to navigate to the Forms &amp; Instructions page." role="application" id="accessible-megamenu-nav-item-4">Forms & Instructions</a>
+                                        <ul block="mainnavigationmobile_2" class="menu dropdown-menu" id="accessible-megamenu-forms &amp; instructions-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-4" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/forms-instructions" class="mobile-only-text" id="accessible-megamenu-forms &amp; instructions-submenu-0" data-drupal-link-system-path="node/6">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-forms &amp; instructions-submenu-1">FORMS & INSTRUCTIONS</span>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040" title="Individual Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-2" data-drupal-link-system-path="node/16022">Form 1040</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Individual Tax Return
+          </span>
+        </li>
+                                                                      <li><a href="/pub/irs-pdf/i1040gi.pdf" title="Instructions for Form 1040 " id="accessible-megamenu-forms &amp; instructions-submenu-3">Form 1040 Instructions</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Instructions for Form 1040 
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-9" title="Request for Taxpayer Identification Number (TIN) and Certification" id="accessible-megamenu-forms &amp; instructions-submenu-4" data-drupal-link-system-path="node/15825">Form W-9</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Request for Taxpayer Identification Number (TIN) and Certification
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-4506-t" title="Request for Transcript of Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-5" data-drupal-link-system-path="node/10554">Form 4506-T</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Request for Transcript of Tax Return
+          </span>
+        </li>
+                                                          </div>
+                                      <div class="mega-menu-column extra-padding">
+                                                    <li><a href="/forms-pubs/about-form-w-4" class="mega-menu-column-header" title="Employee&#039;s Withholding Certificate" id="accessible-megamenu-forms &amp; instructions-submenu-6" data-drupal-link-system-path="node/15498">Form W-4</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employee&#039;s Withholding Certificate
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-941" title="Employer&#039;s Quarterly Federal Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-7" data-drupal-link-system-path="node/53446">Form 941</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employer&#039;s Quarterly Federal Tax Return
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-2" title="Employers engaged in a trade or business who pay compensation" id="accessible-megamenu-forms &amp; instructions-submenu-8" data-drupal-link-system-path="node/5737">Form W-2</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employers engaged in a trade or business who pay compensation
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-9465" title="Installment Agreement Request" id="accessible-megamenu-forms &amp; instructions-submenu-9" data-drupal-link-system-path="node/15532">Form 9465</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Installment Agreement Request
+          </span>
+        </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-forms &amp; instructions-submenu-10">POPULAR FOR TAX PROS</span>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040x" title="Amend/Fix Return" id="accessible-megamenu-forms &amp; instructions-submenu-11" data-drupal-link-system-path="node/19996">Form 1040-X</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Amend/Fix Return
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-2848" title="Apply for Power of Attorney" id="accessible-megamenu-forms &amp; instructions-submenu-12" data-drupal-link-system-path="node/15839">Form 2848</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Apply for Power of Attorney
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-7" title="Apply for an ITIN" id="accessible-megamenu-forms &amp; instructions-submenu-13" data-drupal-link-system-path="node/15536">Form W-7</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Apply for an ITIN
+          </span>
+        </li>
+                                                                      <li><a href="/pub/irs-pdf/pcir230.pdf" title="Rules Governing Practice before IRS" id="accessible-megamenu-forms &amp; instructions-submenu-14">Circular 230</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Rules Governing Practice before IRS
+          </span>
+        </li>
+                    </div>
+        </ul>
+  
+            </li>
+                  </ul>
+  
+
+  </nav>
+  <div class="pup-site-header-search-block pup-search-box-hidden">
+            <div class="pup-site-header-search-block__searchfield">
+        <form block="pup_irs_exposedformpup_site_index_searchsite_search_srt_relevance_2" action="/site-index-search" method="get" id="views-exposed-form-pup-site-index-search-site-search-srt-relevance" accept-charset="UTF-8" novalidate>
+  <div class="form--inline form-inline clearfix">
+  
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search">
+
+
+    
+    
+            <label for="search-main" class="control-label">Search</label>
+    
+    <input placeholder="Search" aria-label="Search" data-drupal-selector="edit-search" class="form-text form-control" type="text" id="search-main" name="search" value="" size="30" maxlength="128" />
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-select js-form-type-select form-item-field-pup-historical-1 js-form-item-field-pup-historical-1">
+
+
+    
+    
+            <label for="edit-field-pup-historical-1" class="control-label">Include Historical Content</label>
+    
+    <div class="select-style select-wrapper"><select data-drupal-selector="edit-field-pup-historical-1" class="form-select form-control" id="edit-field-pup-historical-1" name="field_pup_historical_1"><option value="All">- Any -</option><option value="1" selected="selected">No</option></select></div>
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-item form-group js-form-item form-type-select js-form-type-select form-item-field-pup-historical js-form-item-field-pup-historical">
+
+
+    
+    
+            <label for="edit-field-pup-historical" class="control-label">Include Historical Content</label>
+    
+    <div class="select-style select-wrapper"><select data-drupal-selector="edit-field-pup-historical" class="form-select form-control" id="edit-field-pup-historical" name="field_pup_historical"><option value="All">- Any -</option><option value="1" selected="selected">No</option></select></div>
+
+    
+
+</div>
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button title="Search" data-drupal-selector="edit-submit-pup-site-index-search" class="button js-form-submit form-submit btn-primary btn icon-before" type="submit" id="edit-submit-pup-site-index-search" value="Search" name=""><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span>
+Search</button></div>
+
+</div>
+
+</form>
+
+      </div>
+      </div>
+
+  </div>
+
+          </div>
+      </div>
+    
+          <div id="pup-info-menu-collapse"  class="pup-header-content-rt col-xs-12 hidden-md hidden-lg collapse no-gutter">
+          <div class="region region-info-menu-collapsible">
+    <nav role="navigation" aria-labelledby="block-pup-irs-informationmenu-menu" id="block-pup-irs-informationmenu" data-block-plugin-id="system_menu_block:pup-info-menu" class="pup-nav-en">
+            
+  <h2 class="visually-hidden" id="block-pup-irs-informationmenu-menu">Information Menu</h2>
+  
+
+        
+      <ul block="pup_irs_informationmenu" class="menu menu--pup-info-menu nav">
+                      <li class="first">
+                                        <a href="/help/telephone-assistance" title="Help" data-drupal-link-system-path="node/16916">Help</a>
+              </li>
+                      <li>
+                                        <a href="/newsroom" title="News" data-drupal-link-system-path="node/19646">News</a>
+              </li>
+                      <li>
+                                        <a href="/charities-and-nonprofits" data-drupal-link-system-path="node/58461">Charities &amp; Nonprofits</a>
+              </li>
+                      <li class="last">
+                                        <a href="/tax-professionals" class="pup-info-menu-button" data-drupal-link-system-path="node/11">Tax Pros</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+      </div>
+    
+          <div id="pup-header-nav-collapse"  class="pup-header-content-rt col-xs-12 hidden-md hidden-lg collapse no-gutter">
+          <div class="region region-header-nav-collapsible">
+    <section id="block-accordionmainnavigationmobile" data-block-plugin-id="accordion_menus_block:main_mobile" class="block block-accordion-menus block-accordion-menus-blockmain-mobile clearfix">
+  
+    
+
+      <div class="accordion_menus_block_container main_mobile">
+  <h2 class="accordion-title">
+    <a href="#">File</a>
+  </h2>
+  <div class="accordion_menus-block-content">
+    <ul><li><a href="/filing" class="mobile-only-text">Overview</a></li><li><span class="mega-menu-column-header">INFORMATION FOR…</span></li><li><a href="/individuals">Individuals</a></li><li><a href="/businesses">Business &amp; Self Employed</a></li><li><a href="/charities-and-nonprofits">Charities and Nonprofits</a></li><li><a href="/individuals/international-taxpayers">International Taxpayers</a></li><li><a href="/government-entities/federal-state-local-governments">Federal State and Local Governments</a></li><li><a href="/government-entities/indian-tribal-governments">Indian Tribal Governments</a></li><li><a href="/tax-exempt-bonds">Tax Exempt Bonds</a></li><li><span class="mega-menu-column-header">FILING FOR INDIVIDUALS</span></li><li><a href="/filing/individuals/how-to-file">How to File</a></li><li><a href="/filing/individuals/when-to-file">When to File</a></li><li><a href="/filing/where-to-file-tax-returns-addresses-listed-by-return-type">Where to File</a></li><li><a href="/filing/individuals/update-my-information">Update My Information</a></li><li><span class="mega-menu-column-header">POPULAR</span></li><li><a href="/coronavirus/get-my-payment">Get My Payment</a></li><li><a href="/coronavirus-tax-relief-and-economic-impact-payments">Coronavirus Tax Relief</a></li><li><a href="/filing/free-file-do-your-federal-taxes-for-free">Free File</a></li><li><a href="/individuals/get-transcript">Get Your Tax Record</a></li><li><a href="/identity-theft-fraud-scams/get-an-identity-protection-pin">Get an Identity Protection PIN (IP PIN)</a></li></ul>
+  </div>
+  <h2 class="accordion-title">
+    <a href="#">Pay</a>
+  </h2>
+  <div class="accordion_menus-block-content">
+    <ul><li><a href="/payments" class="mobile-only-text">Overview</a></li><li><span class="mega-menu-column-header">PAY BY</span></li><li><a href="/payments/direct-pay">Bank Account (Direct Pay)</a></li><li><a href="/payments/pay-taxes-by-credit-or-debit-card">Debit or Credit Card</a></li><li><a href="/payments/online-payment-agreement-application">Payment Plan (Installment Agreement)</a></li><li><a href="/payments/eftps-the-electronic-federal-tax-payment-system">Electronic Federal Tax Payment System (EFTPS)</a></li><li><span class="mega-menu-column-header">POPULAR</span></li><li><a href="/payments/view-your-tax-account">View Your Account</a></li><li><a href="/individuals/tax-withholding-estimator">Tax Withholding Estimator</a></li><li><a href="/businesses/small-businesses-self-employed/estimated-taxes">Estimated Taxes</a></li><li><a href="/payments/penalties">Penalties</a></li></ul>
+  </div>
+  <h2 class="accordion-title">
+    <a href="#">Refunds</a>
+  </h2>
+  <div class="accordion_menus-block-content">
+    <ul><li><a href="/refunds" class="mobile-only-text">Overview</a></li><li><a href="https://sa.www4.irs.gov/irfof/lang/en/irfofgetstatus.jsp" class="mega-menu-column-header">Where&#039;s My Refund</a></li><li><a href="/refunds/what-to-expect-for-refunds-this-year">What to Expect</a></li><li><a href="/refunds/get-your-refund-faster-tell-irs-to-direct-deposit-your-refund-to-one-two-or-three-accounts">Direct Deposit</a></li><li><a href="/taxtopics/tc203">Reduced Refunds</a></li><li><a href="/forms-pubs/about-form-1040x">Fix/Correct a Return</a></li></ul>
+  </div>
+  <h2 class="accordion-title">
+    <a href="#">Credits &amp; Deductions</a>
+  </h2>
+  <div class="accordion_menus-block-content">
+    <ul><li><a href="/credits-and-deductions" class="mobile-only-text">Overview</a></li><li><span class="mega-menu-column-header">INFORMATION FOR...</span></li><li><a href="/credits-deductions-for-individuals" title="For you and your family">Individuals</a></li><li><a href="/credits-deductions/businesses" title="Standard mileage and other information">Businesses &amp; Self-Employed</a></li><li><span class="mega-menu-column-header">POPULAR</span></li><li><a href="/credits-deductions/individuals/earned-income-tax-credit-eitc">Earned Income Credit (EITC)</a></li><li><a href="/credits-deductions/advance-child-tax-credit-payments-in-2021">Advance Child Tax Credit</a></li><li><a href="/help/ita/how-much-is-my-standard-deduction">Standard Deduction</a></li><li><a href="/credits-deductions/individuals/hctc">Health Coverage</a></li><li><a href="/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit">Retirement Savings</a></li></ul>
+  </div>
+  <h2 class="accordion-title">
+    <a href="#">Forms &amp; Instructions</a>
+  </h2>
+  <div class="accordion_menus-block-content">
+    <ul><li><a href="/forms-instructions" class="mobile-only-text">Overview</a></li><li><span class="mega-menu-column-header">FORMS &amp; INSTRUCTIONS</span></li><li><a href="/forms-pubs/about-form-1040" title="Individual Tax Return">Form 1040</a></li><li><a href="/pub/irs-pdf/i1040gi.pdf" title="Instructions for Form 1040 ">Form 1040 Instructions</a></li><li><a href="/forms-pubs/about-form-w-9" title="Request for Taxpayer Identification Number (TIN) and Certification">Form W-9</a></li><li><a href="/forms-pubs/about-form-4506-t" title="Request for Transcript of Tax Return">Form 4506-T</a></li><li><a href="/forms-pubs/about-form-w-4" class="mega-menu-column-header" title="Employee&#039;s Withholding Certificate">Form W-4</a></li><li><a href="/forms-pubs/about-form-941" title="Employer&#039;s Quarterly Federal Tax Return">Form 941</a></li><li><a href="/forms-pubs/about-form-w-2" title="Employers engaged in a trade or business who pay compensation">Form W-2</a></li><li><a href="/forms-pubs/about-form-9465" title="Installment Agreement Request">Form 9465</a></li><li><span class="mega-menu-column-header">POPULAR FOR TAX PROS</span></li><li><a href="/forms-pubs/about-form-1040x" title="Amend/Fix Return">Form 1040-X</a></li><li><a href="/forms-pubs/about-form-2848" title="Apply for Power of Attorney">Form 2848</a></li><li><a href="/forms-pubs/about-form-w-7" title="Apply for an ITIN">Form W-7</a></li><li><a href="/pub/irs-pdf/pcir230.pdf" title="Rules Governing Practice before IRS">Circular 230</a></li></ul>
+  </div>
+</div>
+
+  </section>
+
+<nav role="navigation" aria-labelledby="block-mainnavigationmobile-menu" id="block-mainnavigationmobile" data-block-plugin-id="system_menu_block:main_mobile">
+            
+  <h2 class="visually-hidden" id="block-mainnavigationmobile-menu">Main navigation mobile</h2>
+  
+
+        
+
+              <ul block="mainnavigationmobile" class="menu nav" id="accessible-megamenu-navigation">
+        <a id="stickyNavLogo" class="logo navbar-btn pull-left" href="/" title="Home" rel="home">
+          <img src="/themes/custom/pup_base/IRS-Logo.svg" alt="Home">
+          <img class="print-logo accessible-megamenu-panel" src="/themes/custom/pup_irs/images/logo-print.svg" alt="Home" role="region" aria-expanded="false" aria-hidden="true">
+        </a>
+                                                                <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/filing" aria-controls="accessible-megamenu-file-submenu" aria-expanded="false" aria-label="File menu has additional options. Use the spacebar to open the File sub menu or enter to navigate to the File page." role="application" id="accessible-megamenu-nav-item-0">File</a>
+                                        <ul block="mainnavigationmobile" class="menu dropdown-menu" id="accessible-megamenu-file-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-0" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/filing" class="mobile-only-text" id="accessible-megamenu-file-submenu-0" data-drupal-link-system-path="node/19656">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-1">INFORMATION FOR…</span>
+                  </li>
+                                                                      <li><a href="/individuals" id="accessible-megamenu-file-submenu-2" data-drupal-link-system-path="node/19456">Individuals</a>
+                  </li>
+                                                                      <li><a href="/businesses" id="accessible-megamenu-file-submenu-3" data-drupal-link-system-path="node/18976">Business & Self Employed</a>
+                  </li>
+                                                                      <li><a href="/charities-and-nonprofits" id="accessible-megamenu-file-submenu-4" data-drupal-link-system-path="node/58461">Charities and Nonprofits</a>
+                  </li>
+                                                                      <li><a href="/individuals/international-taxpayers" id="accessible-megamenu-file-submenu-5" data-drupal-link-system-path="node/19696">International Taxpayers</a>
+                  </li>
+                                                                      <li><a href="/government-entities/federal-state-local-governments" id="accessible-megamenu-file-submenu-6" data-drupal-link-system-path="node/19446">Federal State and Local Governments</a>
+                  </li>
+                                                                      <li><a href="/government-entities/indian-tribal-governments" id="accessible-megamenu-file-submenu-7" data-drupal-link-system-path="node/19601">Indian Tribal Governments</a>
+                  </li>
+                                                                      <li><a href="/tax-exempt-bonds" id="accessible-megamenu-file-submenu-8" data-drupal-link-system-path="node/19671">Tax Exempt Bonds</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-9">FILING FOR INDIVIDUALS</span>
+                  </li>
+                                                                      <li><a href="/filing/individuals/how-to-file" id="accessible-megamenu-file-submenu-10" data-drupal-link-system-path="node/22856">How to File</a>
+                  </li>
+                                                                      <li><a href="/filing/individuals/when-to-file" id="accessible-megamenu-file-submenu-11" data-drupal-link-system-path="node/22726">When to File</a>
+                  </li>
+                                                                      <li><a href="/filing/where-to-file-tax-returns-addresses-listed-by-return-type" id="accessible-megamenu-file-submenu-12" data-drupal-link-system-path="node/2442">Where to File</a>
+                  </li>
+                                                                      <li><a href="/filing/individuals/update-my-information" id="accessible-megamenu-file-submenu-13" data-drupal-link-system-path="node/22861">Update My Information</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-file-submenu-14">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/coronavirus/get-my-payment" id="accessible-megamenu-file-submenu-15" data-drupal-link-system-path="node/77521">Get My Payment</a>
+                  </li>
+                                                                      <li><a href="/coronavirus-tax-relief-and-economic-impact-payments" id="accessible-megamenu-file-submenu-16" data-drupal-link-system-path="node/77071">Coronavirus Tax Relief</a>
+                  </li>
+                                                                      <li><a href="/filing/free-file-do-your-federal-taxes-for-free" id="accessible-megamenu-file-submenu-17" data-drupal-link-system-path="node/54546">Free File</a>
+                  </li>
+                                                                      <li><a href="/individuals/get-transcript" id="accessible-megamenu-file-submenu-18" data-drupal-link-system-path="node/64256">Get Your Tax Record</a>
+                  </li>
+                                                                      <li><a href="/identity-theft-fraud-scams/get-an-identity-protection-pin" id="accessible-megamenu-file-submenu-19" data-drupal-link-system-path="node/16696">Get an Identity Protection PIN (IP PIN)</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/payments" aria-controls="accessible-megamenu-pay-submenu" aria-expanded="false" aria-label="Pay menu has additional options. Use the spacebar to open the Pay sub menu or enter to navigate to the Pay page." role="application" id="accessible-megamenu-nav-item-1">Pay</a>
+                                        <ul block="mainnavigationmobile" class="menu dropdown-menu" id="accessible-megamenu-pay-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-1" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/payments" class="mobile-only-text" id="accessible-megamenu-pay-submenu-0" data-drupal-link-system-path="node/19551">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-pay-submenu-1">PAY BY</span>
+                  </li>
+                                                                      <li><a href="/payments/direct-pay" id="accessible-megamenu-pay-submenu-2" data-drupal-link-system-path="node/10224">Bank Account (Direct Pay)</a>
+                  </li>
+                                                                      <li><a href="/payments/pay-taxes-by-credit-or-debit-card" id="accessible-megamenu-pay-submenu-3" data-drupal-link-system-path="node/15583">Debit or Credit Card</a>
+                  </li>
+                                                                      <li><a href="/payments/online-payment-agreement-application" id="accessible-megamenu-pay-submenu-4" data-drupal-link-system-path="node/16716">Payment Plan (Installment Agreement)</a>
+                  </li>
+                                                                      <li><a href="/payments/eftps-the-electronic-federal-tax-payment-system" id="accessible-megamenu-pay-submenu-5" data-drupal-link-system-path="node/15488">Electronic Federal Tax Payment System (EFTPS)</a>
+                  </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-pay-submenu-6">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/payments/view-your-tax-account" id="accessible-megamenu-pay-submenu-7" data-drupal-link-system-path="node/11608">View Your Account</a>
+                  </li>
+                                                                      <li><a href="/individuals/tax-withholding-estimator" id="accessible-megamenu-pay-submenu-8" data-drupal-link-system-path="node/16703">Tax Withholding Estimator</a>
+                  </li>
+                                                                      <li><a href="/businesses/small-businesses-self-employed/estimated-taxes" id="accessible-megamenu-pay-submenu-9" data-drupal-link-system-path="node/17135">Estimated Taxes</a>
+                  </li>
+                                                                      <li><a href="/payments/penalties" id="accessible-megamenu-pay-submenu-10" data-drupal-link-system-path="node/91826">Penalties</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/refunds" aria-controls="accessible-megamenu-refunds-submenu" aria-expanded="false" aria-label="Refunds menu has additional options. Use the spacebar to open the Refunds sub menu or enter to navigate to the Refunds page." role="application" id="accessible-megamenu-nav-item-2">Refunds</a>
+                                        <ul block="mainnavigationmobile" class="menu dropdown-menu" id="accessible-megamenu-refunds-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-2" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/refunds" class="mobile-only-text" id="accessible-megamenu-refunds-submenu-0" data-drupal-link-system-path="node/19556">Overview</a>
+                  </li>
+                                                                    <div class="mega-menu-column no-header-extra-padding">
+                                                    <li><a href="https://sa.www4.irs.gov/irfof/lang/en/irfofgetstatus.jsp" class="mega-menu-column-header" id="accessible-megamenu-refunds-submenu-1">Where's My Refund</a>
+                  </li>
+                                                                      <li><a href="/refunds/what-to-expect-for-refunds-this-year" id="accessible-megamenu-refunds-submenu-2" data-drupal-link-system-path="node/9503">What to Expect</a>
+                  </li>
+                                                                      <li><a href="/refunds/get-your-refund-faster-tell-irs-to-direct-deposit-your-refund-to-one-two-or-three-accounts" id="accessible-megamenu-refunds-submenu-3" data-drupal-link-system-path="node/10971">Direct Deposit</a>
+                  </li>
+                                                                      <li><a href="/taxtopics/tc203" id="accessible-megamenu-refunds-submenu-4" data-drupal-link-system-path="node/67936">Reduced Refunds</a>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040x" id="accessible-megamenu-refunds-submenu-5" data-drupal-link-system-path="node/19996">Fix/Correct a Return</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/credits-and-deductions" aria-controls="accessible-megamenu-credits &amp; deductions-submenu" aria-expanded="false" aria-label="Credits &amp; Deductions menu has additional options. Use the spacebar to open the Credits &amp; Deductions sub menu or enter to navigate to the Credits &amp; Deductions page." role="application" id="accessible-megamenu-nav-item-3">Credits & Deductions</a>
+                                        <ul block="mainnavigationmobile" class="menu dropdown-menu" id="accessible-megamenu-credits &amp; deductions-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-3" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/credits-and-deductions" class="mobile-only-text" id="accessible-megamenu-credits &amp; deductions-submenu-0" data-drupal-link-system-path="node/80206">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-credits &amp; deductions-submenu-1">INFORMATION FOR...</span>
+                  </li>
+                                                                      <li><a href="/credits-deductions-for-individuals" title="For you and your family" id="accessible-megamenu-credits &amp; deductions-submenu-2" data-drupal-link-system-path="node/5">Individuals</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            For you and your family
+          </span>
+        </li>
+                                                                      <li><a href="/credits-deductions/businesses" title="Standard mileage and other information" id="accessible-megamenu-credits &amp; deductions-submenu-3" data-drupal-link-system-path="node/19941">Businesses & Self-Employed</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Standard mileage and other information
+          </span>
+        </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-credits &amp; deductions-submenu-4">POPULAR</span>
+                  </li>
+                                                                      <li><a href="/credits-deductions/individuals/earned-income-tax-credit-eitc" id="accessible-megamenu-credits &amp; deductions-submenu-5" data-drupal-link-system-path="node/18966">Earned Income Credit (EITC)</a>
+                  </li>
+                                                                      <li><a href="/credits-deductions/advance-child-tax-credit-payments-in-2021" id="accessible-megamenu-credits &amp; deductions-submenu-6" data-drupal-link-system-path="node/95076">Advance Child Tax Credit</a>
+                  </li>
+                                                                      <li><a href="/help/ita/how-much-is-my-standard-deduction" id="accessible-megamenu-credits &amp; deductions-submenu-7" data-drupal-link-system-path="node/5229">Standard Deduction</a>
+                  </li>
+                                                                      <li><a href="/credits-deductions/individuals/hctc" id="accessible-megamenu-credits &amp; deductions-submenu-8" data-drupal-link-system-path="node/17082">Health Coverage</a>
+                  </li>
+                                                                      <li><a href="/retirement-plans/plan-participant-employee/retirement-savings-contributions-savers-credit" id="accessible-megamenu-credits &amp; deductions-submenu-9" data-drupal-link-system-path="node/6665">Retirement Savings</a>
+                  </li>
+                    </div>
+        </ul>
+  
+            </li>
+                                                              <li class="expanded megamenu-top-nav-item dropdown">	
+          <a href="/forms-instructions" aria-controls="accessible-megamenu-forms &amp; instructions-submenu" aria-expanded="false" aria-label="Forms &amp; Instructions menu has additional options. Use the spacebar to open the Forms &amp; Instructions sub menu or enter to navigate to the Forms &amp; Instructions page." role="application" id="accessible-megamenu-nav-item-4">Forms & Instructions</a>
+                                        <ul block="mainnavigationmobile" class="menu dropdown-menu" id="accessible-megamenu-forms &amp; instructions-submenu" aria-expanded="false" aria-hidden="true" aria-labeledby="accessible-megamenu-nav-item-4" role="region">
+       <div class="mega-menu-container">
+                                                                        <li><a href="/forms-instructions" class="mobile-only-text" id="accessible-megamenu-forms &amp; instructions-submenu-0" data-drupal-link-system-path="node/6">Overview</a>
+                  </li>
+                                                                                <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-forms &amp; instructions-submenu-1">FORMS & INSTRUCTIONS</span>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040" title="Individual Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-2" data-drupal-link-system-path="node/16022">Form 1040</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Individual Tax Return
+          </span>
+        </li>
+                                                                      <li><a href="/pub/irs-pdf/i1040gi.pdf" title="Instructions for Form 1040 " id="accessible-megamenu-forms &amp; instructions-submenu-3">Form 1040 Instructions</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Instructions for Form 1040 
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-9" title="Request for Taxpayer Identification Number (TIN) and Certification" id="accessible-megamenu-forms &amp; instructions-submenu-4" data-drupal-link-system-path="node/15825">Form W-9</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Request for Taxpayer Identification Number (TIN) and Certification
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-4506-t" title="Request for Transcript of Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-5" data-drupal-link-system-path="node/10554">Form 4506-T</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Request for Transcript of Tax Return
+          </span>
+        </li>
+                                                          </div>
+                                      <div class="mega-menu-column extra-padding">
+                                                    <li><a href="/forms-pubs/about-form-w-4" class="mega-menu-column-header" title="Employee&#039;s Withholding Certificate" id="accessible-megamenu-forms &amp; instructions-submenu-6" data-drupal-link-system-path="node/15498">Form W-4</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employee&#039;s Withholding Certificate
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-941" title="Employer&#039;s Quarterly Federal Tax Return" id="accessible-megamenu-forms &amp; instructions-submenu-7" data-drupal-link-system-path="node/53446">Form 941</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employer&#039;s Quarterly Federal Tax Return
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-2" title="Employers engaged in a trade or business who pay compensation" id="accessible-megamenu-forms &amp; instructions-submenu-8" data-drupal-link-system-path="node/5737">Form W-2</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Employers engaged in a trade or business who pay compensation
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-9465" title="Installment Agreement Request" id="accessible-megamenu-forms &amp; instructions-submenu-9" data-drupal-link-system-path="node/15532">Form 9465</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Installment Agreement Request
+          </span>
+        </li>
+                                                          </div>
+                                                  <div class="mega-menu-column">
+                                                    <li><span class="mega-menu-column-header" id="accessible-megamenu-forms &amp; instructions-submenu-10">POPULAR FOR TAX PROS</span>
+                  </li>
+                                                                      <li><a href="/forms-pubs/about-form-1040x" title="Amend/Fix Return" id="accessible-megamenu-forms &amp; instructions-submenu-11" data-drupal-link-system-path="node/19996">Form 1040-X</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Amend/Fix Return
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-2848" title="Apply for Power of Attorney" id="accessible-megamenu-forms &amp; instructions-submenu-12" data-drupal-link-system-path="node/15839">Form 2848</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Apply for Power of Attorney
+          </span>
+        </li>
+                                                                      <li><a href="/forms-pubs/about-form-w-7" title="Apply for an ITIN" id="accessible-megamenu-forms &amp; instructions-submenu-13" data-drupal-link-system-path="node/15536">Form W-7</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Apply for an ITIN
+          </span>
+        </li>
+                                                                      <li><a href="/pub/irs-pdf/pcir230.pdf" title="Rules Governing Practice before IRS" id="accessible-megamenu-forms &amp; instructions-submenu-14">Circular 230</a>
+                  </li>
+              <li class="mega-menu-helper-text">
+          <span class="desktop-only-text">
+            Rules Governing Practice before IRS
+          </span>
+        </li>
+                    </div>
+        </ul>
+  
+            </li>
+                  </ul>
+  
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-pup-irs-mainnavigation-menu" id="block-pup-irs-mainnavigation" data-block-plugin-id="system_menu_block:main">
+            <h2 class="sr-only" id="block-pup-irs-mainnavigation-menu">Main navigation</h2>
+
+      
+        <ul block="pup_irs_mainnavigation" class="menu nav navbar-nav">
+                                          <li>
+            <a href="/filing" class="top-level-nav-item">File</a>
+                            </li>
+                                      <li>
+            <a href="/payments" class="top-level-nav-item">Pay</a>
+                            </li>
+                                      <li>
+            <a href="/refunds" class="top-level-nav-item">Refunds</a>
+                            </li>
+                                      <li>
+            <a href="/credits-and-deductions" class="top-level-nav-item">Credits &amp; Deductions</a>
+                            </li>
+                                      <li>
+            <a href="/forms-instructions" class="top-level-nav-item">Forms &amp; Instructions</a>
+                            </li>
+        </ul>
+        
+
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-pup-irs-infomenumobile-menu" id="block-pup-irs-infomenumobile" data-block-plugin-id="system_menu_block:info-menu-mobile">
+            
+  <h2 class="visually-hidden" id="block-pup-irs-infomenumobile-menu">Info Menu Mobile</h2>
+  
+
+        
+      <ul block="pup_irs_infomenumobile" class="menu menu--info-menu-mobile nav">
+                      <li class="first">
+                                        <a href="/help/telephone-assistance" title="Help" data-drupal-link-system-path="node/16916">Help</a>
+              </li>
+                      <li>
+                                        <a href="/newsroom" title="News" data-drupal-link-system-path="node/19646">News</a>
+              </li>
+                      <li>
+                                        <a href="/charities-and-nonprofits" data-drupal-link-system-path="node/58461">Charities &amp; Nonprofits</a>
+              </li>
+                      <li class="last">
+                                        <a href="/tax-professionals" title="Tax Pros" data-drupal-link-system-path="node/11">Tax Pros</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+      </div>
+    
+   </header>
+
+  <div class="pup-homepage-hero">
+    <img src="/pub/2020-10/AmericanFlagPROD.jpg" alt="The American Flag">
+   <div class="pup-homepage-hero--gradient"></div>
+  </div>
+
+<div class="container">
+  <div role="main" class="pup-main-container js-quickedit-main-content">
+    <div class="row">
+                  <section class="col-sm-12">
+
+                
+                            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>  <article role="article" about="/node/58476" class="pup-home-page is-promoted full clearfix" id="main-content">
+  
+  
+    
+
+  
+  <div class='pup-home-cards'>
+             <div class='row'>
+      <div class="col-md-12 pup-home-cards__first clearfix">
+          <div class="row match-height">
+          <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/coronavirus/get-my-payment" class='top-8 equalHeight'>
+        <i class="fa fa-support"></i>Get My Payment
+      </a>
+      </div>
+</div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/refunds" class='top-8 equalHeight'>
+        <i class="fa fa-search"></i>Get Your Refund Status
+      </a>
+      </div>
+</div>
+              <div class="clearfix visible-sm-block"></div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/coronavirus-tax-relief-and-economic-impact-payments" class='top-8 equalHeight'>
+        <i class="fa fa-support"></i>Get Coronavirus Tax Relief
+      </a>
+      </div>
+</div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/credits-deductions/advance-child-tax-credit-payments-in-2021" class='top-8 equalHeight'>
+        <i class="fa fa-gears"></i>Get Details on the Advance Child Tax Credit
+      </a>
+      </div>
+</div>
+              <div class="clearfix visible-sm-block"></div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/filing/free-file-do-your-federal-taxes-for-free" class='top-8 equalHeight'>
+        <i class="fa fa-laptop"></i>File Your Taxes for Free
+      </a>
+      </div>
+</div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/individuals/get-transcript" class='top-8 equalHeight'>
+        <i class="fa fa-file-text-o"></i>Get Your Tax Record
+      </a>
+      </div>
+</div>
+              <div class="clearfix visible-sm-block"></div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/payments/view-your-tax-account" class='top-8 equalHeight'>
+        <i class="fa fa-folder-o"></i>View Your Account
+      </a>
+      </div>
+</div>
+                <div class="col-sm-6">  <div class="paragraph paragraph--type--pup-htt paragraph--view-mode--default">
+          <a href="/payments" class='top-8 equalHeight'>
+        <i class="fa fa-money"></i>Make a Payment
+      </a>
+      </div>
+</div>
+              <div class="clearfix visible-sm-block"></div>
+            </div>
+
+      </div>
+     </div>
+              <div class='row'>
+        <div class='col-md-12 pup-home-cards__second'>
+          
+  <h2 class='block-title'>Forms and Instructions</h2>
+  <div class='row'>
+                  <div class="col-lg-3 col-sm-6">  <div class="paragraph paragraph--type--pup-fai paragraph--view-mode--default">
+          <a href="/forms-pubs/about-form-1040" class='forms-instructions-link'>
+        <div class="forms-instructions-blocks fai_size_full">
+          <span class="forms-instructions-label-title">1040 and Schedules 1-3</span>
+          <span class="forms-instructions-label-desc">Individual Tax Return</span> 
+        </div>
+      </a>
+      </div>
+</div>
+                              <div class="col-lg-3 col-sm-6">  <div class="paragraph paragraph--type--pup-fai paragraph--view-mode--default">
+          <a href="/forms-pubs/schedules-for-form-1040" class='forms-instructions-link'>
+        <div class="forms-instructions-blocks fai_size_full">
+          <span class="forms-instructions-label-title">Other 1040 Schedules</span>
+          <span class="forms-instructions-label-desc">Information About the Other Schedules Filed With Form 1040</span> 
+        </div>
+      </a>
+      </div>
+</div>
+                    <div class="clearfix visible-sm-block"></div>
+                        <div class="col-lg-3 col-sm-6">  <div class="paragraph paragraph--type--pup-fai paragraph--view-mode--default">
+          <a href="/forms-pubs/about-form-w-4" class='forms-instructions-link'>
+        <div class="forms-instructions-blocks fai_size_full">
+          <span class="forms-instructions-label-title">Form W-4</span>
+          <span class="forms-instructions-label-desc">Employee&#039;s Withholding Certificate</span> 
+        </div>
+      </a>
+      </div>
+</div>
+                              <div class="col-lg-3 col-sm-6 fai-last-row">  <div class="paragraph paragraph--type--pup-fai paragraph--view-mode--default">
+          <a href="/forms-pubs/about-form-w-9" class='forms-instructions-link'>
+        <div class="forms-instructions-blocks fai_size_full">
+          <span class="forms-instructions-label-title">Form W-9</span>
+          <span class="forms-instructions-label-desc">Request for Taxpayer Identification Number and Certification</span> 
+        </div>
+      </a>
+      </div>
+</div>
+                    <div class="clearfix visible-sm-block"></div>
+            </div>
+
+        </div>
+      </div>
+                 <div class='row'>
+      <div class="col-md-12 pup-home-cards__fourth">
+        <div class='row'>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/newsroom/recovery-rebate-credit'>
+                              <img src='/pub/image/money-stimulus-homepage.jpg' class='img-responsive' alt=' Recovery Rebate Credit - You may qualify if you didn’t get a payment'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/newsroom/recovery-rebate-credit'>
+          <h2> Recovery Rebate Credit</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>You may qualify if you didn’t get a payment</div>
+      </div>
+
+
+    </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/credits-deductions/2021-child-tax-credit-and-advance-child-tax-credit-payments-frequently-asked-questions'>
+                              <img src='/pub/image/woman-working-daughter-370x200.jpg' class='img-responsive' alt='Child Tax Credit Non-filer Sign-up Tool'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/credits-deductions/2021-child-tax-credit-and-advance-child-tax-credit-payments-frequently-asked-questions'>
+          <h2>Child Tax Credit</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>Get answers to questions about the changes to the Child Tax Credit in 2021</div>
+      </div>
+
+
+    </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/coronavirus/third-economic-impact-payment'>
+                              <img src='/pub/image/flagwaving-homepage-370x200.jpg' class='img-responsive' alt='Third Economic Impact Payments'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/coronavirus/third-economic-impact-payment'>
+          <h2>Third Economic Impact Payments</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>Check status in the Get My Payment tool</div>
+      </div>
+
+
+    </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/newsroom/tax-treatment-of-unemployment-compensation'>
+                              <img src='/pub/image/free-file-homepage.jpg' class='img-responsive' alt='How the 2020 tax exclusion works'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/newsroom/tax-treatment-of-unemployment-compensation'>
+          <h2>Unemployment Compensation</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>How the 2020 tax exclusion works</div>
+      </div>
+
+
+    </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/filing/free-file-do-your-federal-taxes-for-free'>
+                              <img src='/pub/image/extension-free-file-homepage-370x200.jpg' class='img-responsive' alt='IRS Free File Open Now'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/filing/free-file-do-your-federal-taxes-for-free'>
+          <h2>IRS Free File</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>Free File helps you do your taxes online for free</div>
+      </div>
+
+
+    </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 pup-teaser">
+        <div class="paragraph paragraph--type--pup-hsc paragraph--view-mode--default">
+          <div class='pup-callout-image'>
+        <a href='/about-irs/enhancing-systems-and-processes-to-better-serve-taxpayers'>
+                              <img src='/pub/image/commissioners-closer-look-flag-people-370x200-hp.jpg' class='img-responsive' alt='Enhancing Systems and Processes to Better Serve Taxpayers'>
+          <div class='tag-and-title'>
+                      </div>
+        </a>
+      </div>
+      <div class='pup-landing-pg-callout-credit' title=''></div>
+      <div class='pup-landing-pg-callout-title'>
+        <a href='/about-irs/enhancing-systems-and-processes-to-better-serve-taxpayers'>
+          <h2>A Closer Look</h2>
+        </a>
+      </div>
+                  <div class='pup-landing-pg-callout-desc'>NEW: Enhancing Systems and Processes to Better Serve Taxpayers</div>
+      </div>
+
+
+    </div>
+  </div>
+
+      </div>
+     </div>
+         
+     <div class='row'>
+      <div class="pup-home-cards__fifth">
+                    <div class="col-md-4 col-sm-6 col-xs-12 last-row" id='mobile-row'>
+    <div class="block-region-fourth-row-col-1">
+              <div class="pup-hmpg-callout-learn-more" style="background: url('/pub/image/IRS2Go_cropped_1.jpg'); background-size: cover; background-repeat: no-repeat; background-position: right;">
+          <div class="pup-hmpg-callout-learn-more-content">
+            <a href="/newsroom/irs2goapp" class="pup-landing-pg-callout-mobile">
+              <div class="row">
+                <span class="col-md-4 pup-landing-pg-callout-mobile-title">IRS2Go Mobile App</span>
+              </div>
+              <div class="row">
+                <div class="col-md-5 pup-landing-pg-callout-mobile-desc">The official mobile app of the IRS</div>
+              </div>
+              <div class="row">
+                <span class="col-md-6 pup-landing-pg-callout-mobile-link">Learn more</span>
+              </div>
+            </a>
+          </div>  
+        </div>
+          </div>
+  </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12 last-row" id='video-row'>
+    <div class="block-region-fourth-row-col-2">
+              
+            <div class="field field--name-field-pup-video-callout field--type-entity-reference field--label-hidden field--item"><div>
+  
+  
+            <div class="field field--name-field-media-video-embed-field field--type-video-embed-field field--label-hidden field--item"><div class="video-embed-field-provider-youtube video-embed-field-responsive-video form-group"><iframe width="854" height="480" frameborder="0" allowfullscreen="allowfullscreen" title="Here’s Who Will Get Advance Payments of the Child Tax Credit" src="https://www.youtube.com/embed/KMe3q9N5UHY?autoplay=0&amp;start=0&amp;rel=0"></iframe>
+</div>
+</div>
+      
+</div>
+</div>
+      
+          </div>
+  </div>
+
+                            <div class="col-md-4 col-sm-6 col-xs-12 last-row" id='twitter-row'>
+    <div class="block-region-fourth-row-col-3">
+      <div class="pup-twitter-block">
+        <div class="pup-twitter-content">
+                      
+            <div class="field field--name-field-pup-twitter-embed field--type-text-long field--label-hidden field--item"><blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/IRS?src=hash&amp;ref_src=twsrc%5Etfw">#IRS</a> and community partners are offering special free tax preparation events in July to help eligible families receive advance <a href="https://twitter.com/hashtag/ChildTaxCredit?src=hash&amp;ref_src=twsrc%5Etfw">#ChildTaxCredit</a> payments. See a full listing of the efforts being held in several cities at <a href="https://t.co/SBYoKTsMf5">https://t.co/SBYoKTsMf5</a> <a href="https://t.co/MxINQ2jdGS">pic.twitter.com/MxINQ2jdGS</a></p>&mdash; IRSnews (@IRSnews) <a href="https://twitter.com/IRSnews/status/1417977141581553664?ref_src=twsrc%5Etfw">July 21, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+      
+                  </div>
+      </div>
+    </div>
+  </div>
+
+              </div>
+     </div>
+      </div>
+  
+
+</article>
+
+
+  </div>
+
+              </section>
+    </div>
+  </div>
+</div>
+
+  <footer class="pup-footer" role="contentinfo" aria-label="footer">
+    <section class="container" role="tablist" aria-multiselectable="true">
+              <div class="row menu">
+            <div class="region region-footer-first">
+    <nav role="navigation" aria-labelledby="block-footernavigation-2-menu" id="block-footernavigation-2" data-block-plugin-id="system_menu_block:pup-footer-navigation">
+            
+  <h2 class="visually-hidden" id="block-footernavigation-2-menu">Footer Navigation</h2>
+  
+
+        
+      <ul block="footernavigation_2" class="menu menu--pup-footer-navigation nav">
+                      <li class="expanded dropdown first">
+                                                                    <span class="footer-column-header navbar-text dropdown-toggle" data-toggle="dropdown">Our Agency <span class="caret"></span></span>
+                        <ul block="footernavigation_2" class="dropdown-menu">
+                      <li class="first">
+                                        <a href="/about-irs" data-drupal-link-system-path="node/18841">About IRS</a>
+              </li>
+                      <li>
+                                        <a href="https://jobs.irs.gov/">Careers</a>
+              </li>
+                      <li>
+                                        <a href="/statistics/soi-tax-stats-irs-operations-and-budget" data-drupal-link-system-path="node/506">Operations and Budget</a>
+              </li>
+                      <li>
+                                        <a href="/statistics" data-drupal-link-system-path="node/19746">Tax Statistics</a>
+              </li>
+                      <li>
+                                        <a href="/help/telephone-assistance" data-drupal-link-system-path="node/16916">Help</a>
+              </li>
+                      <li class="last">
+                                        <a href="/help/contact-your-local-irs-office" data-drupal-link-system-path="node/16903">Find a Local Office</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <span class="footer-column-header navbar-text dropdown-toggle" data-toggle="dropdown">Know Your Rights <span class="caret"></span></span>
+                        <ul block="footernavigation_2" class="dropdown-menu">
+                      <li class="first">
+                                        <a href="/taxpayer-bill-of-rights" data-drupal-link-system-path="node/19686">Taxpayer Bill of Rights</a>
+              </li>
+                      <li>
+                                        <a href="/taxpayer-advocate" data-drupal-link-system-path="node/18846">Taxpayer Advocate Service</a>
+              </li>
+                      <li>
+                                        <a href="/about-irs/protecting-taxpayer-civil-rights" data-drupal-link-system-path="node/15736">Civil Rights </a>
+              </li>
+                      <li>
+                                        <a href="/privacy-disclosure/irs-freedom-of-information" data-drupal-link-system-path="node/10662">FOIA</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://home.treasury.gov/footer/no-fear-act">No FEAR Act Data</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <span class="footer-column-header navbar-text dropdown-toggle" data-toggle="dropdown">Resolve an Issue <span class="caret"></span></span>
+                        <ul block="footernavigation_2" class="dropdown-menu">
+                      <li class="first">
+                                        <a href="/individuals/understanding-your-irs-notice-or-letter" data-drupal-link-system-path="node/16683">IRS Notices and Letters</a>
+              </li>
+                      <li>
+                                        <a href="/appeals" data-drupal-link-system-path="node/19036">Independent Office of Appeals</a>
+              </li>
+                      <li>
+                                        <a href="/identity-theft-central" data-drupal-link-system-path="node/19616">Identity Theft</a>
+              </li>
+                      <li>
+                                        <a href="/privacy-disclosure/report-phishing" data-drupal-link-system-path="node/15745">Phishing</a>
+              </li>
+                      <li>
+                                        <a href="/compliance/criminal-investigation/tax-fraud-alerts" data-drupal-link-system-path="node/15416">Tax Fraud</a>
+              </li>
+                      <li>
+                                        <a href="/compliance/criminal-investigation" data-drupal-link-system-path="node/19091">Criminal Investigation</a>
+              </li>
+                      <li class="last">
+                                        <a href="/compliance/whistleblower-office" data-drupal-link-system-path="node/7935">Whistleblower Office</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown">
+                                                                    <span class="footer-column-header navbar-text dropdown-toggle" data-toggle="dropdown">Languages <span class="caret"></span></span>
+                        <ul block="footernavigation_2" class="dropdown-menu">
+                      <li class="first">
+                                        <a href="https://www.irs.gov/es">Español</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/zh-hans">中文 (简体)</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/zh-hant">中文 (繁體)</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/ko">한국어</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/ru">Pусский</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/vi">Tiếng Việt</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov/ht">Kreyòl ayisyen</a>
+              </li>
+                      <li>
+                                        <a href="https://www.irs.gov">English</a>
+              </li>
+                      <li class="last">
+                                        <a href="/help/languages" data-drupal-link-system-path="node/80696">Other Languages</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="expanded dropdown last">
+                                                                    <span class="footer-column-header navbar-text dropdown-toggle" data-toggle="dropdown">Related Sites <span class="caret"></span></span>
+                        <ul block="footernavigation_2" class="dropdown-menu">
+                      <li class="first">
+                                        <a href="https://www.treasury.gov/">U.S. Treasury</a>
+              </li>
+                      <li>
+                                        <a href="https://www.treasury.gov/tigta/">Treasury Inspector General for Tax Administration</a>
+              </li>
+                      <li>
+                                        <a href="https://www.usa.gov/">USA.gov</a>
+              </li>
+                      <li class="last">
+                                        <a href="https://www.usaspending.gov">USAspending.gov</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+          </section>
+    <div class="container">
+      <div class="row pup-footer-social-media-links">
+          <div class="region region-social-media-footer pull-right">
+    <section id="block-socialmediaforfooter" data-block-plugin-id="block_content:40b0cf2e-cb49-4f62-888d-000cf00eb582" class="block block-block-content block-block-content40b0cf2e-cb49-4f62-888d-000cf00eb582 clearfix">
+  
+    
+
+        <div class="row">
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		          <a href="https://www.facebook.com/IRS" aria-label="fa-facebook-square"> 
+				  <i aria-hidden class="fa fa-facebook-square"></i>
+			  </a>
+		        </div>
+</div>
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		          <a href="https://www.twitter.com/IRSnews" aria-label="fa-twitter-square"> 
+				  <i aria-hidden class="fa fa-twitter-square"></i>
+			  </a>
+		        </div>
+</div>
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		          <a href="https://www.instagram.com/irsnews" aria-label="fa-instagram"> 
+				  <i aria-hidden class="fa fa-instagram"></i>
+			  </a>
+		        </div>
+</div>
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		          <a href="https://www.linkedin.com/company/irs" aria-label="fa-linkedin"> 
+				  <i aria-hidden class="fa fa-linkedin"></i>
+			  </a>
+		        </div>
+</div>
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		          <a href="https://www.youtube.com/user/irsvideos" aria-label="fa-youtube-play"> 
+				  <i aria-hidden class="fa fa-youtube-play"></i>
+			  </a>
+		        </div>
+</div>
+          <div class="social-icon">  <div class="paragraph paragraph--type--social-media-footer paragraph--view-mode--default">
+    		  			  <a href="/newsroom/irs2goapp" class="social-media-image">
+				  
+            <div class="field field--name-field-social-media-icon-images field--type-image field--label-hidden field--item">  <img width="" height="" src="/pub/irs_horiz_logo.svg" alt="IRS2Go App" typeof="foaf:Image" class="img-responsive" />
+
+</div>
+      
+				</a>
+	          </div>
+</div>
+      </div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+    </div>  
+    <div class="pup-footer-bottom">
+      <div class="container">
+        <div class="pup-footer-logo">
+          <a href="/"><img class="pup-footer-logo-img" src="/themes/custom/pup_base/IRS-Logo.svg" alt="Home"></a>
+        </div>
+        <div class="subfooter-menu">
+            <div class="region region-subfooter">
+    <nav role="navigation" aria-labelledby="block-subfooter-menu" id="block-subfooter" data-block-plugin-id="system_menu_block:subfooter">
+            
+  <h2 class="visually-hidden" id="block-subfooter-menu">Subfooter</h2>
+  
+
+        
+      <ul block="subfooter" class="menu menu--subfooter nav">
+                      <li class="first">
+                                        <a href="/privacy-disclosure/irs-privacy-policy" data-drupal-link-system-path="node/15856">Privacy Policy</a>
+              </li>
+                      <li class="last">
+                                        <a href="/accessibility" data-drupal-link-system-path="node/82611">Accessibility</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Start GA AutoTracker Code -->
+<script src='/static_assets/js/libs/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript' src='/static_assets/js/reporting/autotracker.js'></script>
+<script type='text/javascript'>addLinkerEvents();</script> <!--End AutoTracker Code -->
+<!--412017-->
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/58476","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":-10},"es":{"id":"es","name":"Spanish","direction":"ltr","weight":-9},"zh-hans":{"id":"zh-hans","name":"Chinese, Simplified","direction":"ltr","weight":-8},"zh-hant":{"id":"zh-hant","name":"Chinese, Traditional","direction":"ltr","weight":-7},"ko":{"id":"ko","name":"Korean","direction":"ltr","weight":-6},"ru":{"id":"ru","name":"Russian","direction":"ltr","weight":-5},"vi":{"id":"vi","name":"Vietnamese","direction":"ltr","weight":-4},"ht":{"id":"ht","name":"Haitian Creole","direction":"ltr","weight":-3}}},"data":{"extlink":{"extTarget":false,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":true,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":".paragraph--type--social-media-footer","extCssExplicit":"","extAlert":false,"extAlertText":"","mailtoClass":"mailto","mailtoLabel":"(link sends email)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":[]}},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"accordion_menus":{"accordion_closed":{"main_mobile":"main_mobile"}},"ajaxTrustedUrl":{"\/site-index-search":true},"chosen":{"selector":"select:visible","minimum_single":20,"minimum_multiple":20,"minimum_width":200,"use_relative_width":false,"options":{"disable_search":false,"disable_search_threshold":0,"allow_single_deselect":false,"search_contains":true,"placeholder_text_multiple":"Choose some option","placeholder_text_single":"Choose an option","no_results_text":"No results match","max_shown_results":null,"inherit_select_classes":true}},"ajax":[],"user":{"uid":0,"permissionsHash":"4cb55071ba708d8704ee639ba5dc79c71b9bc475a6faedcccfd371d6bf43fe7d"}}</script>
+<script src="/pub/js/js_LpRljZL8fa9Z5cdpBGBhUELw9OcJ2XNwng4x0_JlBro.js"></script>
+<script src="https://static.addtoany.com/menu/page.js" async></script>
+<script src="/pub/js/js_6xpLcD2gFkU8nbd4wLEbhvrfWl1IXpKl3hxmovFzaE8.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"b67fc6a152","applicationID":"70700070","transactionName":"blMHY0AHDUcDUEZQWFcZJFRGDwxaTUNTXlJmVQRUWgM=","queueTime":0,"applicationTime":37,"atts":"QhQEFQgdHkk=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

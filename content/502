@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>天盟数码官方网站</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="author" content="kailin">
+    <meta name="keywords" content="天盟数码 天盟数码公司 福州天盟数码 福州天盟" />
+    <meta name="description" content="福州天盟数码有限公司，创建于2006年12月，地处海峡西岸经济特区福建福州，是快速发展的全球知名手机游戏开发商及运营商IGG集团附属公司。IGG集团在全球拥有庞大的客户群体，累计注册用户迄今已高达6.2亿。目前IGG集团在美国、新加坡、加拿大、中国、日本、韩国、泰国、菲律宾、白俄罗斯以及阿联酋都设有分支机构，在全球共有员工1000多人，IGG集团将继续加快全球化的进程。" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/kai.min.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+</head>
+<body>
+<div class="nav">
+    <div class="nav_warrper">
+		<a href="index.php" class="logo"></a>
+		<div class="nav_btn"></div>
+        <div class="nav_list">
+            <ul>
+                <li class="on"><a href="index.php">首页</a></li>
+                <li><a href="#page3">我们的游戏</a></li>
+<!--
+                <li><a href="http://cn.careers.igg.com/about.php" target="_blank">我们的故事</a></li>
+                <li><a href="http://cn.careers.igg.com/careers.php" target="_blank">加入我们</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="page1">
+    <div class="page1_bd">
+        <ul>
+            
+            <li>
+                <video autoplay loop muted>
+                    <source src="//statics.igg.com/video/game/1051/2018/lo_180515_1920_1080.mp4" type="video/mp4">
+                </video>
+            </li>
+            
+            <li>
+                <video autoplay loop muted>
+                    <source src="//statics.igg.com/video/game/1074/2021/ca2106137cn1920x1080.mp4" type="video/mp4">
+                </video>
+            </li>
+            
+
+            
+        </ul>
+    </div>
+    <div class="page1_hd">
+        <ul>
+            
+            
+            <li class="on"></li>
+            
+            
+            
+            <li></li>
+            
+            
+            
+        </ul>
+    </div>
+    <a href="####" class="prev"></a>
+    <a href="####" class="next"></a>
+    <a href="####" class="more" target="_blank">
+        <i>了解更多</i>
+        <span></span>
+    </a>
+</div>
+<script>
+$(function(){
+	var arr = ["//lm.176.com/","//tp.176.com/"];
+	$('.page1 a.more').on('click',function(){
+		var index = $('.page1_hd ul li.on').index();
+		$(this).attr('href',arr[index]);
+	});
+});
+</script>
+<div class="page2">
+    <div class="page2_warpper">
+        <div class="app_left">
+            <div class="page2_app_top">
+                <div class="app_pic"><img src="images/lo_icon.png" alt=""/></div>
+                <div class="app_name">王国纪元</div>
+                <div class="app_item">
+                    <ul>
+                        <li class="i1"><i>Google Play</i><br/><span>全球首页推荐</span></li>
+                        <li class="i2"><i>App Store</i><br/><span>全球首页推荐</span></li>
+                        <li class="i3"><i>Google Play</i><br/><span>全球最佳策略游戏</span></li>
+                        <li class="i4"><i>App Store</i><br/><span>全球近10万次推荐</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page2_app_bottom">
+                <div class="app_text">
+                    Google Play 年度最佳对战游戏！<br />
+                    与来自全球6000万的菁英玩家一决天下!<br />
+                    真实国家对抗，全球玩家PK，国战爆发，中国战队等您加入！<br /><br />
+
+                    「王国纪元」是一款多人在线、实时战争策略游戏。您将扮演奇幻世界中的一名领主，建立属于自己的王国，训练军队，投身史诗级的多人战争，攻占敌方城池，俘虏传奇英雄，与其他玩家组成联盟，互相协助，击溃那些挡住您称霸世界的敌人！
+                </div>
+
+                <div class="app_shop">
+                    <ul>
+                        <li class="apple"><a href="https://itunes.apple.com/cn/app/wang-guo-ji-yuan-lords-mobile/id1071976327?mt=8"></a></li>
+                        <li class="android"><a href="https://lordsmobile.176.com/"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="https://lm.176.com/" class="more">
+                <i>了解更多</i>
+                <span></span>
+            </a>
+        </div>
+        <div class="app_right">
+            <img src="images/hero.png" width="474" height="641" alt=""/>
+        </div>
+    </div>
+</div>
+
+<div class="page3" id="page3">
+    <div class="other_game" style="display: none;">
+        <a href="javascript:;" class="back2games"></a>
+        <div class="logo_list">
+            <a href="https://go2.176.com/" class="logo_go2"></a>
+        </div>
+    </div>
+    <div class="page3_warpper">
+         <a href="javascript:;" class="go2_other_game"></a>
+        <div class="game_list">
+            <ul>
+                
+                
+                <li class="on">
+                    <div class="img"><img src="//www.176.com/v2/images/games_icon.png" width="46" height="46" alt=""/></div>
+                    <div class="info">
+                        <em>王国纪元</em>
+                        <span>Google Play最佳对战游戏</span>
+                    </div>
+                </li>
+                
+                
+                
+                <li>
+                    <div class="img"><img src="//statics.igg.com/ops/tmp/888.png" width="46" height="46" alt=""/></div>
+                    <div class="info">
+                        <em>时光公主</em>
+                        <span>多世界3D换装手游</span>
+                    </div>
+                </li>
+                
+                
+            </ul>
+            <span class="more_game">更多游戏   敬请期待</span>
+        </div>
+        
+        <div class="game_pic">
+            <ul>
+                
+                <li><a href="//lm.176.com/"><img _src="//img1.igg.com/99998/news/2018/02/24/023911_3452.png" width="590" height="420" alt=""/></a></li>
+                
+                <li><a href="//tp.176.com/"><img _src="//statics.igg.com/support/news/2021/07/08/053118_60e6d3f6e4bd92160.jpg" width="590" height="420" alt=""/></a></li>
+                
+            </ul>
+        </div>
+        <div class="news">
+            <div class="new_list">
+                <ul>
+                    <li class="on">最新</li>
+                    <li>新闻</li>
+                    <li>公告</li>
+                    <li>活动</li>
+                </ul>
+            </div>
+            <div class="new_content">
+                <ul>
+                    <li>
+                        
+                        
+                            <i><a href="https://lm.176.com/content.php?aid=570&back=1">【新闻】IGG ChinaJoy首秀！确认出展BtoC展厅！ </a><span>2018-07-20</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=413">【新闻】加勒比海的传奇乐章，在《王国纪元》续写！ </a><span>2018-04-08</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=414">【新闻】全新漫画：海洋之音遭遇史上最大危机！ </a><span>2018-04-04</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=411">【新闻】“王国大帝全球巡回赛：亚洲决赛”专属资讯页面上线！ </a><span>2018-04-04</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=321&back=1">【活动】与大帝同框，赢香港嘉年华门票！ </a><span>2018-03-08</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=323">【新闻】能否捍卫你们的荣耀，就看他们六人了！ </a><span>2018-03-07</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=317&back=1">【新闻】福利再加码，十万个礼包全民领！ </a><span>2018-03-01</span></i>
+                        
+                        
+                        
+                            <i><a href="https://lordsmobile.176.com/content.php?aid=319">【活动】再胖的领主，在我们的微信公众号也能灰起来！ </a><span>2018-02-28</span></i>
+                        
+                        
+                    </li>
+                    <li>
+                        
+                        
+                        <i><a href="https://lm.176.com/content.php?aid=570&back=1">【新闻】IGG ChinaJoy首秀！确认出展BtoC展厅！ </a><span>2018-07-20</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=413">【新闻】加勒比海的传奇乐章，在《王国纪元》续写！ </a><span>2018-04-08</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=414">【新闻】全新漫画：海洋之音遭遇史上最大危机！ </a><span>2018-04-04</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=411">【新闻】“王国大帝全球巡回赛：亚洲决赛”专属资讯页面上线！ </a><span>2018-04-04</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=323">【新闻】能否捍卫你们的荣耀，就看他们六人了！ </a><span>2018-03-07</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=317&back=1">【新闻】福利再加码，十万个礼包全民领！ </a><span>2018-03-01</span></i>
+                        
+                        
+                        
+                        <i><a href="https://sm.176.com/content.php?id=113">【新闻】全球首创玩家DIY关卡，《糖果消除大师》今日甜蜜上线！ </a><span>2018-02-26</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=311&back=1http://lordsmobile.176.com/content.php?aid=311&back=1">【新闻】遥远的东方有一座城… </a><span>2018-02-12</span></i>
+                        
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=321&back=1">【活动】与大帝同框，赢香港嘉年华门票！ </a><span>2018-03-08</span></i>
+                        
+                        
+                        
+                        <i><a href="https://lordsmobile.176.com/content.php?aid=319">【活动】再胖的领主，在我们的微信公众号也能灰起来！ </a><span>2018-02-28</span></i>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="####" class="more_new">查看更多+</a>
+    </div>
+</div>
+
+<div class="page4" style="display: none">
+    <div class="page4_title">加入我们</div>
+    <div class="page4_warpper">
+        <div class="join_list">
+            <ul>
+                <li class="i1"><a href="http://cn.careers.igg.com/careers.php?sl=1#b3-title" target="_blank">程序</a></li>
+                <li class="i2"><a href="http://cn.careers.igg.com/careers.php?sl=2#b3-title" target="_blank">设计和产品</a></li>
+                <li class="i3"><a href="http://cn.careers.igg.com/careers.php?sl=3#b3-title" target="_blank">美术</a></li>
+                <li class="i4"><a href="http://cn.careers.igg.com/careers.php?sl=4#b3-title" target="_blank">运营和市场</a></li>
+                <li class="i5"><a href="http://cn.careers.igg.com/careers.php?sl=6#b3-title" target="_blank">实习</a></li>
+                <li class="i6"><a href="http://cn.careers.igg.com/careers.php?sl=5#b3-title" target="_blank">更多。。。</a></li>
+            </ul>
+        </div>
+        <div class="join_video">
+            <video id="myvideo">
+<!--            <source src="//img1.igg.com/game/lo/swf/igg_index_170427_1920_900.mp4" type="video/mp4">-->
+                <source src="//statics.igg.com/video/game/1051/2018/lo_180523_1920_1080.mp4" type="video/mp4">
+            </video>
+            <i></i>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .footer_logo{ width:155px; height:48px; background:url(//www.176.com/v2/images/logo.png) no-repeat; position:absolute; top:75px; top:67px; left:0px;}
+</style>
+<div class="footer">
+    <div class="footer_warpper">
+        <div class="footer_logo"><a href="index.php"></a></div>
+<!--
+        <div class="footer_copyright">
+            © 2007-2018 福州天盟数码有限公司版权所有 <br />
+            新广出审[2017]5382号ISBN978-7-7979-8893-3 &nbsp;&nbsp;&nbsp;&nbsp; 网游进字〔2017〕0094 号  <br />
+            闽ICP备08000587号&nbsp;&nbsp;&nbsp;&nbsp;<a href="images/cert.jpg" target="_blank">《互联网出版许可证》</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="artist.php?id=39" target="_blank">服务协议</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="artist.php?id=40" target="_blank">商务合作</a><br />
+        </div>
+-->
+		<div class="footer_copyright">
+            © 2007-2021 福州天盟数码有限公司版权所有 <br />
+            <a href="https://beian.miit.gov.cn/" target="_blank">闽ICP备08000587号</a>&nbsp;&nbsp;&nbsp;
+            <a href="//www.176.com/v2/images/cert.png?20191105" target="_blank">《网络出版服务许可证》</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://policies.176.com/terms_of_service/chs/new" target="_blank">服务协议</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://policies.176.com/privacy_policy/chs/new" target="_blank">隐私政策</a>&nbsp;&nbsp;&nbsp;
+            <a href="artist.php?id=40" target="_blank">商务合作</a>&nbsp;&nbsp;&nbsp;
+            <a href="artist.php?id=66" style="color: #ec6f21" target="_blank">防骗提醒</a>&nbsp;&nbsp;&nbsp
+            <a href="artist.php?id=69" style="color: red" target="_blank">网络游戏纠纷处理方式</a><br />
+        </div>
+        <div class="footer_icon" style="width: 800px">
+            <dl>
+                <a href="artist.php?id=41" target="_blank">
+                    <dt><img src="//www.176.com/v2/images/footer_ico_icp.png" width="34" height="44" alt=""/></dt>
+                    <dd>闽ICP证<br/>B2-20080020</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35011102350519" target="_blank">
+                    <dt><img src="//www.176.com/v2/images/footer_ico_ga.png" width="32" height="34" alt=""/></dt>
+                    <dd>闽公网安备<br/>35011102350519</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/56FF33EE1FAE4240ABA9BF53A3C2A9A6" target="_blank">
+                    <dt><img src="//www.176.com/v2/images/footer_ico_mww.png" width="34" height="34" alt=""/></dt>
+                    <dd>闽网文：<br/>[2017]3474-037号</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="http://www.cyberpolice.cn/wfjb/" target="_blank">
+                    <dt><img src="//www.176.com/v2/images/cert-cyberpolice.png" width="38" height="45" alt=""/></dt>
+                    <dd style="margin-top: 20px">网络违法举报中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="footer_advice">
+            健康游戏忠告:<br/>
+            抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑， 沉迷游戏伤身。合理安排时间，享受健康生活。
+        </div>
+    </div>
+</div>
+<script>
+$(function(){
+	$('.page2').roll();
+	$('.page3').roll();
+	$('.page4').roll();	
+	$('.chinajoy span').on('click',function(){
+		$('.chinajoy').hide();
+	});
+});	
+</script>
+<script>
+    var dict = { "最新": 0, "新闻": 2,"公告":3,"活动":4 };
+    $('.more_new').click(function () {
+        var id = $(".new_list ul li.on").html();
+        window.location.href='list.php?class='+dict[id];
+    })
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?169057f934feace2a2b75b24febfbdc4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    $('.go2_other_game').click(function(){
+        $('.page3_warpper').hide();
+        $('.other_game').show();
+    })
+    $('.back2games').click(function(){
+        $('.other_game').hide();
+        $('.page3_warpper').show();
+    })
+</script>
+</body>
+</html>

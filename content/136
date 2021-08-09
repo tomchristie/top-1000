@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>５ちゃんねる</title>
+<link rel="stylesheet" href="//5ch.net/css/css/font-awesome.min.css">
+<link href="//5ch.net/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="//5ch.net/css/5ch.css" rel="stylesheet">
+<link rel="icon" href="favicon.ico">
+<script type=text/javascript src='//i2ad.jp/i/iVCCp0kwKCl4/sync'></script>
+</head>
+<body class="ch5-body ">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+<div class="container">
+<a class="navbar-brand" href="/"><img id="rabbit-img1" src="//5ch.net/images/rabbit.png"><img id="ch_logo" src="//5ch.net/images/5ch_logo.png" alt="５ちゃんねる" align="middle" border="0"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<div class="form-group has-search">
+<span class="fa fa-search form-control-feedback"></span>
+<input id="search_input" type="text" class="form-control" placeholder="スレッドタイトル検索">
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="/_login" title="" data-toggle="popover" data-placement="bottom" data-content="ここからBEアカウントでログインすると、フロントページのすべての機能を楽しめます! 詳細については<a href='https://5ch.net/faq.html'>FAQ</a>をご覧ください。"><i class="fa fa-sign-in"></i> ログイン</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="//www2.5ch.net/5ch.html">掲示板</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="//itest.5ch.net/">スマホ版</a>
+</li>
+<li>
+<a href="https://5ch.net/susu/susucoin_ja.html"><img id="susu_logo" src="//5ch.net/images/bitcoin16-30x30.png"></a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="sub-nav">
+<div class="container">
+<div id="under_header">
+<span class="public_nav">
+<span class="menu_item"><a href="/" title="ホーム">[ホーム]</a></span>
+<span class="menu_item"><a href="/faq.html" title="新フロントページについてのよくある質問">[FAQ]</a></span>
+<span class="menu_item"><a href="https://bintan.me/">[びんたん]</a></span>
+<span class="menu_item"><a href="javascript:void(0)" id="clear_hide_posts" title="Clear hidden posts">[クリア]</a></span>
+<span class="menu_item"><a href="javascript:void(0)" id="filter_posts" title="Filter posts">[フィルタ]</a></span>
+</span>
+<div class="btn-group sortby-dropdown">
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div id="myModal" class="modal">
+<div class="modal-content">
+<p>
+<span class="close">&times;</span>
+キーワードを入れる: <input type="text" id="filter_keyword" name="fkeyword" minlength="3" maxlength="32" class="form-control" placeholder="キーワード"></p>
+<input class="btn btn-lg btn-primary btn-block" id="filter_add" type="button" value="追加">
+<div align="center" class="filter_keywords_list_box">
+<span class="filter_keywords_item">
+<a href="javascript:void(0)" class="filter_keywords_list_button">[リスト表示]</a>
+<a href="javascript:void(0)" class="filter_keywords_clear_all_button">[フィルタをクリア]</a>
+<a href="javascript:void(0)" class="filter_keywords_refresh_page_button">[ページの更新]</a>
+</span>
+<span class="filter_keywords_item" id="filter_keywords_list"></span>
+</div>
+</div>
+</div>
+</div>
+<div id="main-content-box">
+<div class="container">
+<div class="row">
+<div class="col-lg-8">
+<div class="leader hidden" id="js-to-itest">
+<div class="post-item-box text-center">
+<a href="https://itest.5ch.net/">[5ちゃんねる スマートフォン版はこちら]</a>
+</div>
+</div>
+<div class="post-item-box">
+<div class="thread-main-box">
+<ul class="threadlist" id="thread_list_posts">
+<li class="newsplus-20210809210602671309 thread " data-board="newsplus" data-board-threadid="newsplus-20210809210602671309">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628510762" rel="nofollow noopener" target="_blank">【香川】屋外設置の草間彌生さんのアート作品 海に流され割れる 香川 [朝一から閉店までφ★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 2021年8月9日 19時17分 台風 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www3.nhk.or.jp/news/html/20210809/K10013191541_2108091900_2108091902_01_02.jpg" target="_blank">https://www3.nhk.or.jp/news/html/20210809/K10013191541_2108091900_2108091902_01_02.jpg</a> <br> <br> 「現代アートの島」として知られる香川県の離島の直島で、9日、海沿いの屋外に設置していた前衛芸術家の草間彌生さんが手がけたかぼちゃをモチーフにしたアート作品が海に流されて割れました。 <br> <br> 9日午前10時半ごろ、香川県の離島の直島で、海沿いの屋外に設置していた、日本を代表する前衛芸術家の草間彌生さんのアート作品「南瓜（かぼちゃ）」が海に流されているのを見回りをしていた作品を管理する会社の社員が見つけました。 <br> <br> 所有するベネッセホールディングスによりますと、作品は流されて海岸や突堤に打ちつけられた際に大きく3つに割れ、社員が回収したということです。 <br> <br> 「南瓜」は高さ2メートル、幅2.5メートルの強化プラスチック製の作品で、黄色いかぼちゃに草間さんのトレードマークの水玉があしらわれています。 <br> <br> 台風接近の際には作品を一時的に外す場合があるということですが、ベネッセホールディングスは「台風の進路などから直島には大きな影響がないと判断して作品を撤去しなかったことが破損につながり大変残念に思う」と話しています。 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www3.nhk.or.jp/news/html/20210809/k10013191541000.html" target="_blank">https://www3.nhk.or.jp/news/html/20210809/k10013191541000.html</a> </p></div>
+<div class="poster_info">
+<span class="name">朝一から閉店までφ ★</span> <span class="date">2021/08/09(月) 21:06:02.67 ID:HuOT1I309</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628510762"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">17</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">4720</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class='ads_conten_main' style="padding-top:15px"><iframe scrolling="no" marginwidth="0" marginheight="0" allowfullscreen="true" allowtransparency="true" border="0" frameborder="0" style="border: 0px; visibility:hidden;" onload="this.style.visibility = 'visible';" width="300px" height="250p" class="ads_pc_iframe" src="/_ads/pc/first_content"></iframe><li><li class="newsplus-20210809205745829 thread " data-board="newsplus" data-board-threadid="newsplus-20210809205745829">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628510265" rel="nofollow noopener" target="_blank">【お願い】菅義偉首相「お盆の帰省は自粛して。今は極めて大事な時期」★3 [ボラえもん★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 菅義偉（すが・よしひで）首相は９日、長崎市内での記者会見で、新型コロナウイルスの感染対策について「今週からお盆の時期を迎える。 <br> 感染力の強い変異株により、かつてない感染拡大が進んでいる中で極めて大事な時期だ」と強調した。 <br> その上で「帰省、旅行も極力避けていただき、やむを得ないときは検査をしながら身近な人と小人数で行くなど若い人たちにも協力していただければ」と語った。 <br> <br> 首相は新規感染者に占める３０歳以下の割合が７割を超えているとして「若い人の対策が極めて大事だ」と指摘し、 <br> ツイッターや動画投稿サイト「ユーチューブ」でワクチン接種を呼びかけているとした。 <br> また、「若者から家庭への感染が広がっているという指摘がある。若者でも重症化のリスクが高まっているし、後遺症がある方も出てきている。 <br> 若いから影響がないということではないということも認識いただきたい」と述べた。 <br> <br> 首相はまた、総接種回数が１億回を超えたとし、６５歳以上の高齢者の８割以上が２回接種を終えていること説明した。 <br> さらに「１日も早く２回接種を進めていくことが感染拡大、重症化防止に大いに効果がある。そうした目標を立てながら全力で取り組んでいる」と語った。 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://news.yahoo.co.jp/articles/567bc102da020452706f08b80aa82b84cebeb8b9" target="_blank">https://news.yahoo.co.jp/articles/567bc102da020452706f08b80aa82b84cebeb8b9</a> <br> <br> ★1が立った時間：2021/08/09(月) 19:38:04.00 <br> ※前スレ <br> <a rel="nofollow noopener" href="https://asahi.5ch.net/test/read.cgi/newsplus/1628507977/" target="_blank">https://asahi.5ch.net/test/read.cgi/newsplus/1628507977/</a> </p></div>
+<div class="poster_info">
+<span class="name">ボラえもん ★</span> <span class="date">2021/08/09(月) 20:57:45.82 ID:hnBgpZPE9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628510265"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">26</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">17580</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-202108092050304259 thread " data-board="newsplus" data-board-threadid="newsplus-202108092050304259">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628509830" rel="nofollow noopener" target="_blank">【デルタ株】石破茂氏「ウイルスの感染力が強まれば弱毒化するのが一般的。なぜ感染者の数ばかり報じられるのか？」★2 [ボラえもん★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 　石破　茂　です。 <br> 　 <br> 　新型コロナの感染者の数が激増し、医療逼迫・医療崩壊が懸念されることから、入院者を制限する方針が打ち出されました。 <br> <br> 　ウイルスが感染力を強めれば、強毒性は一般的には弱まるはずなのですが、この点についての分析はほとんど行われず、 <br> 相変らず感染者の増加だけが大きく報じられていることに大きな違和感を覚えます。 <br> 酷暑となって換気の頻度が低下し、体力や免疫力も低下しているのですから、感染・発症する人が増えるのも理由のあることなのでしょう。 <br> <br> 　昨年の二月以来、「相手が新種のウイルスである以上、感染者が増えるのはやむを得ない」「限られた医療資源はいかにすれば重症化し、 <br> 死に至ることを防ぐかに集中すべき」「その間に新型ウイルスへの対処法を進化させ、これを普遍化し、免疫力を低下させず、 <br> ワクチンの普及によって集団免疫を獲得するまでの時間を稼ぐことが重要」「これを機に、医療体制の機動性や弾力性を確保し、 <br> 公的インフラに相応しい法体系の整備は急務」と訴え続けてきたことに今も全く変わりはありません。 <br> 党の公約に位置づけられるかどうかはわかりませんが、次期総選挙においてはこの点を強く訴えて信任を得たいものと思っております。 <br> 　重症者、感染者の数と年代は報じられますが、基礎疾患との関連報道がほとんどないのは不思議なことです。 <br> 当然ながら個人情報保護に抵触しない形で、ある程度の時間差があっても、新型コロナを正確に予防するための情報は、もっと適切に発信されるべきものです。 <br> <br> 　情報の発信に際して細心の注意をすべきことは今回の件でも明らかですが、それがどのように報ぜられ、 <br> 国民にどのように受け止められるか、もう一度よく考えてみる必要があります。政府の広報部門は大手広告代理店の知恵を取り入れているのかもしれませんが、 <br> 本質的な部分が等閑視されているように思います。 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://lite.blogos.com/article/553143/" target="_blank">https://lite.blogos.com/article/553143/</a> <br> <br> ★1が立った時間：2021/08/09(月) 19:44:11.08 <br> ※前スレ <br> <a rel="nofollow noopener" href="https://asahi.5ch.net/test/read.cgi/newsplus/1628505851/" target="_blank">https://asahi.5ch.net/test/read.cgi/newsplus/1628505851/</a> </p></div>
+<div class="poster_info">
+<span class="name">ボラえもん ★</span> <span class="date">2021/08/09(月) 20:50:30.42 ID:H5kbKZLJ9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628509830"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">26</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">7146</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-20210809204510729 thread " data-board="newsplus" data-board-threadid="newsplus-20210809204510729">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628509510" rel="nofollow noopener" target="_blank">【愛国】日本の極右団体と韓国情報機関（国情院）が不当取引　支援を受けていた人は安倍晋三と近い関係にある「櫻井よしこ」★11 [Stargazer★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 韓国情報機関と日本の極右団体が「不当取引」　韓国テレビ局があす報道へ <br> <br> 【ソウル聯合ニュース】韓国ＭＢＣテレビの調査報道番組「ＰＤ手帳」は９日、韓国情報機関の国家情報院（国情院）と日本の右翼団体の間で不当な取引があったことを確認し、１０日の番組で関連映像や内容を報じると予告した。 <br> <br> 　制作陣によると、国情院で２５年間海外工作員として勤務した情報提供者が、番組側に対し「国情院が日本の極右勢力を支援しており、独島と旧日本軍の慰安婦問題を扱う市民団体の内部情報を日本の極右勢力に流出させるのに協力した」と明らかにした。 <br> <br> 　番組側はこのインタビューに基づき、日本の右翼団体が韓国の独島、慰安婦関連の市民団体の動きを事前に把握し、弾圧する未公開映像を入手したと説明した。 <br> <br> 　また、「７カ月間の追跡取材で国情院の多くの関係者が驚くべき事実を告白した。国情院が訪韓した日本の右翼関係者を接待し、北の重要情報を彼らと共有した」と主張した。 <br> <br> 　制作陣は国情院から支援を受けたとされる代表的な右翼関係者として、安倍晋三前首相と近い関係にあることが知られるジャーナリストの桜井よしこ氏を挙げた。 <br> <br> 　番組は１０日午後１０時半から放送される。 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www.chosunonline.com/m/svc/article.html?contid=2021080980103" target="_blank">https://www.chosunonline.com/m/svc/article.html?contid=2021080980103</a> <br> ※前スレ <br> <a rel="nofollow noopener" href="https://asahi.5ch.net/test/read.cgi/newsplus/1628506158/" target="_blank">https://asahi.5ch.net/test/read.cgi/newsplus/1628506158/</a> </p></div>
+<div class="poster_info">
+<span class="name">Stargazer ★</span> <span class="date">2021/08/09(月) 20:45:10.72 ID:ZnLAvVeO9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628509510"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">44</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">13768</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-20210809203349579 thread " data-board="newsplus" data-board-threadid="newsplus-20210809203349579">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628508829" rel="nofollow noopener" target="_blank">【世論調査】次期首相に相応しいのは？ 石破茂20％、河野太郎17％、小泉進次郎12％、安倍晋三10％ JNN調べ [ボラえもん★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 菅内閣 支持率は?調査日 2021年8月7日,8日　定期調査 <br> <br> 次の自民党総裁にふさわしいのは？ <br> 菅総理の自民党総裁としての任期は今年9月までです。 <br> <br> あなたは次の自民党総裁に誰が相応しいと思いますか。 <br> 次の9人の中から一人だけ選んで下さい。 <br> <br> 7月3日,4日 <br> 調査との比較 <br> <br> 石破茂　　　　　20%　　↑+4pt <br> 河野太郎　　　　17%　　↓-1pt <br> 小泉進次郎　　　12%　　→±0pt <br> 安倍晋三　　　　10%　　↓-2pt <br> 菅義偉　　　　　 5%　　↓-3pt <br> 岸田文雄　　　 　4%　　↑+1pt <br> 野田聖子　　　　 3%　　↑+1pt <br> 加藤勝信　　　 　2%　　↑+1pt <br> 茂木敏充　　　　 2%　　↑+1pt <br> それ以外　　　　 0%　　→±0pt <br> 答えない・わからない　　25%　　↓-2pt <br> <br> (調査方法) <br> 固定･携帯電話による聞き取り（RDD方式） <br> 全国18歳以上の男女2478人 〔固定 1069人，携帯 1409人〕 <br> 有効回答1218人 〔固定 608人， 携帯 610人〕 <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://news.tbs.co.jp/newsi_sp/yoron/backnumber/20210807/q4-1.html" target="_blank">https://news.tbs.co.jp/newsi_sp/yoron/backnumber/20210807/q4-1.html</a> </p></div>
+<div class="poster_info">
+<span class="name">ボラえもん ★</span> <span class="date">2021/08/09(月) 20:33:49.57 ID:tZbdK/Rc9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628508829"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">9</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">22139</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-202108092025554719 thread " data-board="newsplus" data-board-threadid="newsplus-202108092025554719">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628508355" rel="nofollow noopener" target="_blank">【東京五輪】閉会式、葉巻で「リラックス」？　禁煙の国立競技場で米選手団メンバーとみられる数人 [孤高の旅人★]</a>
+</div>
+<div class="thread-content "><p title="クリックして展開する" class="full-content"> 閉会式、葉巻で「リラックス」？　禁煙の国立競技場—東京五輪 <br> 2021年08月09日16時16分 <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www.jiji.com/jc/article?k=2021080900295&amp;g=int" target="_blank">https://www.jiji.com/jc/article?k=2021080900295&amp;g=int</a> <br> 東京五輪閉会式の会場内で葉巻のようなものを吸う米選手団メンバーとみられる人たち＝８日、国立競技場 <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www.jiji.com/jc/article?k=2021080900295&amp;g=int&amp;p=20210809fl13S&amp;rel=pv" target="_blank">https://www.jiji.com/jc/article?k=2021080900295&amp;g=int&amp;p=20210809fl13S&amp;rel=pv</a> <br> <br> 　８日に行われた東京五輪の閉会式で、米選手団メンバーとみられる数人が、マスクを着用せずに葉巻のようなものを吸っている姿が確認された。国際オリンピック委員会（ＩＯＣ）が「たばこのない五輪」を掲げ、東京五輪・パラリンピック組織委員会も競技会場の敷地内を全面禁煙とする方針を示す中で、カメラに捉えられた。 <br> <br> 　午後８時に国立競技場で始まった閉会式では、各国の選手らが、東京の公園をイメージした芝生敷きのフィールドに入場。芝生は「リラックスした雰囲気を生み出し、選手たちへの安らぎの時間を提供する」（組織委）ことが目的とされた。実際、選手らは寝転がったり流れる曲に合わせて踊ったりと、各自くつろいだ様子だった。 </p></div>
+<div class="poster_info">
+<span class="name">孤高の旅人 ★</span> <span class="date">2021/08/09(月) 20:25:55.47 ID:OxDmF1bw9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628508355"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">18</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">5489</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-2021080920193717309 thread " data-board="newsplus" data-board-threadid="newsplus-2021080920193717309">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628507977" rel="nofollow noopener" target="_blank">【お願い】菅義偉首相「お盆の帰省は自粛して。今は極めて大事な時期」★2 [ボラえもん★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 菅義偉（すが・よしひで）首相は９日、長崎市内での記者会見で、新型コロナウイルスの感染対策について「今週からお盆の時期を迎える。 <br> 感染力の強い変異株により、かつてない感染拡大が進んでいる中で極めて大事な時期だ」と強調した。 <br> その上で「帰省、旅行も極力避けていただき、やむを得ないときは検査をしながら身近な人と小人数で行くなど若い人たちにも協力していただければ」と語った。 <br> <br> 首相は新規感染者に占める３０歳以下の割合が７割を超えているとして「若い人の対策が極めて大事だ」と指摘し、 <br> ツイッターや動画投稿サイト「ユーチューブ」でワクチン接種を呼びかけているとした。 <br> また、「若者から家庭への感染が広がっているという指摘がある。若者でも重症化のリスクが高まっているし、後遺症がある方も出てきている。 <br> 若いから影響がないということではないということも認識いただきたい」と述べた。 <br> <br> 首相はまた、総接種回数が１億回を超えたとし、６５歳以上の高齢者の８割以上が２回接種を終えていること説明した。 <br> さらに「１日も早く２回接種を進めていくことが感染拡大、重症化防止に大いに効果がある。そうした目標を立てながら全力で取り組んでいる」と語った。 <br> <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://news.yahoo.co.jp/articles/567bc102da020452706f08b80aa82b84cebeb8b9" target="_blank">https://news.yahoo.co.jp/articles/567bc102da020452706f08b80aa82b84cebeb8b9</a> <br> <br> ★1が立った時間：2021/08/09(月) 19:38:04.00 <br> ※前スレ <br> <a rel="nofollow noopener" href="https://asahi.5ch.net/test/read.cgi/newsplus/1628505484/" target="_blank">https://asahi.5ch.net/test/read.cgi/newsplus/1628505484/</a> </p></div>
+<div class="poster_info">
+<span class="name">ボラえもん ★</span> <span class="date">2021/08/09(月) 20:19:37.17 ID:r3yz0Lbg9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628507977"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">79</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">51974</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class="newsplus-202108092016010959 thread " data-board="newsplus" data-board-threadid="newsplus-202108092016010959">
+<div class="thread_link">
+<div class="thread_box thread_box-left text-center">
+</div>
+<div class="thread_box thread_box-right">
+<div class="public_nav" align="right">
+<div class="post_nav_buttons">
+<a title="隠す" class="hide_post" href="javascript:void(0)">[隠す]</a>
+</div>
+</div>
+<div class="thread_box_wrap">
+<img class="thread_box_wrap_thumbnail" src="./images/boards/newsplus.jpg">
+</div>
+<div class="thread_title">
+<a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628507761" rel="nofollow noopener" target="_blank">【裁判員裁判】交番襲撃、被告の男「精霊さんから指示された」…責任能力の判断焦点に／大阪 [チミル★]</a>
+</div>
+<div class="thread-content fade-buttom-thread-content"><p title="クリックして展開する" class="full-content"> 大阪府吹田市で２０１９年、交番勤務中の警察官が刺されて拳銃を奪われた事件で、強盗殺人未遂罪などに問われた無職 飯森いいもり 裕次郎被告（３５）の裁判員裁判の判決が１０日、地裁で言い渡される。精神障害がある飯森被告の刑事責任能力をどう判断するかが焦点だ。 <br> <br> 起訴状によると、飯森被告は１９年６月、府警吹田署千里山交番の駐車場で、 古瀬鈴之佑こせすずのすけ 巡査長（２８）の胸を包丁で刺し、実弾入りの拳銃を奪ったとされる。翌朝、箕面市の山中で逮捕された。 <br> <br> 公判で検察側は、拳銃を奪った動機が不明であることなどを踏まえ、事件時に統合失調症の影響を著しく受けていたことを認める一方、事件後に服を着替えるなど合理的な行動も取ることができていたと指摘。限定的ながらも責任能力は問えるとした。 <br> <br> 飯森被告は被告人質問で、襲ったのは「頭の中の知人」や「夢の中の精霊さん」から自分を攻撃する人に仕返しをするよう指示されたからだと説明。弁護側は、現実と妄想の区別がつかず、責任能力はなかったとした。 <br> <br> <br> ※引用ここまで。全文は下記よりお願いいたします。 <br> <a rel="nofollow noopener" href="https://jump.5ch.net/?https://www.yomiuri.co.jp/national/20210809-OYT1T50106/" target="_blank">https://www.yomiuri.co.jp/national/20210809-OYT1T50106/</a> </p></div>
+<div class="poster_info">
+<span class="name">チミル ★</span> <span class="date">2021/08/09(月) 20:16:01.09 ID:kFr5onfh9</span>
+</div>
+<div class="thread_detail text-right">
+<span class="thread_detail_child" title="Comment"><a href="https://asahi.5ch.net/test/read.cgi/newsplus/1628507761"><span class="fa fa-comment"></span> <span class="thread_detail_child_value">26</span></a></span>
+<span class="thread_detail_child"><span class="thread_detail_child_value"><a href="https://asahi.5ch.net/newsplus/">ニュース速報+</a></span></span>
+<span class="thread_detail_child" title="パワ"><span class="fa fa-flash"></span> <span class="thread_detail_child_value">10804</span></span>
+<span class="thread_detail_child" title="板をフォローする"><button data-boardid="newsplus" type="button" class="btn btn-info btn-sm follow-button">フォローする</button></span>
+<span class="thread_detail_child" title="ban be user"></span>
+</div>
+</div>
+</div>
+</li>
+<li class='ads_conten_main' style="padding-top:15px"><iframe scrolling="no" marginwidth="0" marginheight="0" allowfullscreen="true" allowtransparency="true" border="0" frameborder="0" style="border: 0px; visibility:hidden;" onload="this.style.visibility = 'visible';" width="300px" height="250p" class="ads_pc_iframe" src="/_ads/pc/repeat_content"></iframe><li> </ul>
+</div>
+</div>
+<center>
+<div class="more-posts">
+<a href="javascript:void(0)" id="more_news_index"><h3>もっと見る <span class="glyphicon glyphicon-arrow-down"></span></h3></a>
+<input type="hidden" value="0" id="recent_page">
+<input type="hidden" value="0" id="additional_articles_loaded">
+</div>
+</center>
+</div>
+<div id="content-widget" class="col-md-4">
+<div class="card my-4">
+<div class="card-body">
+<div class="content">
+<div>
+<div class="center-object">
+<a class="navbar-brand" href="/"><img width="150px" src="//5ch.net/images/5ch_mascot_normal.png"></a>
+</div>
+「ハッキング」から「今晩のおかず」までを手広くカバーする巨大掲示板群『５ちゃんねる』へようこそ！ </div>
+</div>
+</div>
+</div>
+<div class="card my-4">
+<div class="card-body">
+<span class="title-widget">インフォメーション</span>
+<hr class="widget-hr">
+<div class="content">
+<ul class="circle-style">
+<li><a href="https://info.5ch.net/">使い方＆注意 </a></li>
+<li><a href="https://premium.5ch.net/">プレミアム浪人 </a></li>
+<li><a href="https://headline.5ch.net/bbynews/">ヘッドライン </a></li>
+<li><a href="https://newsnavi.5ch.net/">ニュース </a></li>
+<li><a href="https://headline.5ch.net/bbynamazu/">地震速報 </a></li>
+<li><a href="https://stat.5ch.net/">投稿数 </a></li>
+<li><a href="https://www.5ch.net/kakolog.html">過去ログ倉庫 </a></li>
+<li><a href="https://qb5.5ch.net/saku2ch/">削除ガイドライン </a></li>
+<li><a href="https://www.5ch.net/matome.html">5chまとめブログ・アプリ運営者の皆さまへ</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sticky_side_point">
+<div class="card my-4">
+<div class="card-body">
+<hr class="widget-hr">
+<div class="content">
+<div class="ads-item">
+<div class="side_ads side-ads-pc">
+<script type="text/javascript"> 
+			var pubId=156180; 
+			var siteId=253824; 
+			var kadId=2619913; 
+			var kadwidth=300; 
+			var kadheight=250; 
+			var kadschain="SUPPLYCHAIN_GOES_HERE"; 
+			var kadUsPrivacy=""; <!-- Insert user CCPA consent string here for CCPA compliant inventory --> 
+			var kadtype=1; 
+			var kadGdpr=""; <!-- set to 1 if inventory is GDPR compliant --> 
+			var kadGdprConsent=""; <!-- Insert user GDPR consent string here for GDPR compliant inventory --> 
+			var kadpageurl= "https%3A%2F%2Fwww.5ch.net%2F"; 
+			</script>
+<script type="text/javascript" src="https://ads.pubmatic.com/AdServer/js/showad.js"></script>
+</div>
+<div class="side_ads side-ads-pc">
+<script type="text/javascript"> 
+			var pubId=156180; 
+			var siteId=253824; 
+			var kadId=2620198; 
+			var kadwidth=300; 
+			var kadheight=250; 
+			var kadschain="SUPPLYCHAIN_GOES_HERE"; 
+			var kadUsPrivacy=""; <!-- Insert user CCPA consent string here for CCPA compliant inventory --> 
+			var kadtype=1; 
+			var kadGdpr=""; <!-- set to 1 if inventory is GDPR compliant --> 
+			var kadGdprConsent=""; <!-- Insert user GDPR consent string here for GDPR compliant inventory --> 
+			var kadpageurl= "https%3A%2F%2Fwww.5ch.net%2F"; 
+			</script>
+<script type="text/javascript" src="https://ads.pubmatic.com/AdServer/js/showad.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card my-4">
+<div class="card-body">
+<div class="content">
+<center>
+Loki Technology, Inc.
+<br>
+29F Joy Nostalg Center
+<br>
+17 ADB Avenue, Ortigas Center
+<br>
+PASIG 1600
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="py-5 bg-light">
+<div class="container">
+<p class="m-0 text-center text-dark content">
+５ちゃんねるのご利用は利用者各位のご判断にお任せしています｜<br>
+5ch.netにおけるコンテンツの権利はLoki Technology, Inc. に帰属します。<br><br>
+コンテンツの無断複写、転載を禁じます。
+</p>
+</div>
+</footer>
+<script src="//5ch.net/vendor/jquery/jquery.min.js"></script>
+<script src="//5ch.net/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="//5ch.net/js/frontpage-min.js"></script>
+<script src="//5ch.net/js/filter-min.js"></script>
+<script>
+  $(document).ready(function () {
+		let showLeader = function(){
+			$('#js-to-itest').removeClass('hidden');
+		}
+  let observeLeader = function(){
+    setInterval(function(){
+			let d = $('#js-to-itest');
+			let top = $(window).scrollTop();
+			if(top > 45){
+				d.addClass('leader-fixed');
+				d.next('.post-item-box').addClass('margin-80px');
+			} else {
+				d.removeClass('leader-fixed');
+				d.next('.post-item-box').removeClass('margin-80px');
+			}
+		}, 50);
+  }
+
+  let getEnv = function(){
+    let ua = navigator.userAgent.toLowerCase();
+    let env = 'SP';
+    if (ua.indexOf("iphone")  === -1 &&
+        ua.indexOf("ipad")    === -1 &&
+        ua.indexOf("ipod")    === -1 &&
+        ua.indexOf("android") === -1) {
+      env = "PC";
+    }
+    return env;
+  }
+  let env = getEnv();
+  let wid = $(document).width();
+  if(env == 'SP' && 976 >= wid) {
+		showLeader();
+    observeLeader();
+  }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en"><head>
+    <base href="/">
+    <title>Ryanair</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="Description" content="Book direct at the official Ryanair.com website to guarantee that you get the best prices on Ryanair&apos;s cheap flights.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0d49c0">
+    <meta name="fragment" content="!">
+
+    <link rel="preconnect" href="https://in.hotjar.com" crossorigin>
+    <link rel="preconnect" href="https://script.hotjar.com" crossorigin>
+    <link rel="preconnect" href="https://static.hotjar.com" crossorigin>
+    <link rel="preconnect" href="https://vars.hotjar.com" crossorigin>
+    <link rel="preconnect" href="https://app.launchdarkly.com" crossorigin>
+    <link rel="preconnect" href="https://events.launchdarkly.com" crossorigin>
+    <link rel="preconnect" href="https://smetrics.ryanair.com" crossorigin>
+    <link rel="preconnect" href="https://dpm.demdex.net" crossorigin>
+    <link rel="preconnect" href="https://ryanair.demdex.net" crossorigin>
+    <link rel="preconnect" href="https://assets.ryanair.com">
+    <link rel="preconnect" href="https://polyfill.ryanair.com">
+    <link rel="preconnect" href="https://api.ryanair.com">
+    <link rel="preconnect" href="https://services-api.ryanair.com">
+
+    
+    <link rel="manifest" href="/homepage_dist/desktop/manifest.json">
+    
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon-96x96.png" sizes="96x96">
+    <link id="appFavicon" rel="shortcut icon" href="https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon.ico">
+    <style>
+      body,
+      html {
+        margin: 0;
+      }
+      .shell__container {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+      }
+      .shell__spinner {
+        box-sizing: border-box;
+        -webkit-animation: 1s linear infinite rotation;
+        animation: 1s linear infinite rotation;
+        border-radius: 100%;
+        margin: 0 auto;
+        border: 0.1875rem solid rgba(32, 145, 235, 0.25);
+        height: 2rem;
+        width: 2rem;
+      }
+      .shell__spinner::before {
+        box-sizing: border-box;
+        border: 0.1875rem solid transparent;
+        height: 2rem;
+        left: -0.1875rem;
+        top: -0.1875rem;
+        width: 2rem;
+        border-right-color: #2091eb;
+        border-top-color: #2091eb;
+        border-radius: 100%;
+        content: '';
+        display: block;
+        position: absolute;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <hp-app-root>
+      <div class="shell__container">
+        <div class="shell__spinner"></div>
+      </div>
+    </hp-app-root>
+
+    <script>
+      if (navigator.vendor.toString() === 'Google Inc.') {
+        document.documentElement.classList.add('devtools');
+      }
+    </script>
+    
+      <script src="https://polyfill.ryanair.com?features=intersectionObserver,cssVars,objectFit"></script>
+    
+    <!-- App version: 0.68.0 (desktop) -->
+  <script src="/homepage_dist/desktop/runtime-es2015.cef07ed322a5641d0b35.js" type="module"></script><script src="/homepage_dist/desktop/runtime-es5.cef07ed322a5641d0b35.js" nomodule defer></script><script src="/homepage_dist/desktop/main-es2015.12b752ddd960fd47a8fa.js" type="module"></script><script src="/homepage_dist/desktop/main-es5.12b752ddd960fd47a8fa.js" nomodule defer></script>
+
+</body></html>

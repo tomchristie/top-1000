@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>水星音乐</title>
+    <meta name="keywords" content="水星音乐">
+		<meta name="description" content="水星音乐">
+		<link rel="shortcut icon" href="/static/favicon.png">
+		<!--[if lt IE 9]>
+  	<style type="text/css">
+  		/*
+		*旧版浏览器不兼容的提示样式
+		*/
+  		.browser-old-tips{
+  			width: 600px;
+    		margin: 100px auto;
+    		color: #000;
+  		}
+  		.browser-old-tips .browser-old-tips-title{
+	        font-size: 24px;
+	        font-weight: bold;
+	    }
+	    .browser-old-tips .browser-old-tips-subtitle{
+	        font-size: 16px;
+	        margin: 10px 0;
+	        border-bottom: 1px solid #eee;
+	        padding-bottom: 10px;
+	    }
+	    .browser-old-tips .browser-old-tips-content{
+	        overflow: hidden;
+	        padding: 10px 0;
+	    }
+	    .browser-old-tips  .browser-old-tips-content p{
+            font-size: 16px;
+        }
+        .browser-old-tips .browser-old-tips-content .browser-down{
+            padding: 20px 0;
+            overflow: hidden;
+        }
+        .browser-old-tips .browser-old-tips-content .browser-down a{
+            float: left;
+            text-align: center;
+            margin-right: 30px;
+            font-size: 16px;
+        }
+        .browser-old-tips .browser-old-tips-content .browser-down a img{
+            width: 45px;
+            display: inline-block;
+            &.firefox{
+                width: 50px;
+            }
+        }
+        .browser-old-tips .browser-old-tips-content a{
+            color: #3D4CB4;
+            text-decoration: none;
+		    border: none;
+		    outline: 0;
+        }
+  	</style>
+  	<![endif]-->
+    <script>
+  		(function (doc, win) {
+		    var docEl = doc.documentElement,
+	        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (clientWidth > 1280) {
+            	clientWidth = 1280;
+            }
+            if (!clientWidth) return;
+            var rate = clientWidth / 1280
+            var oMeta = document.getElementsByTagName('meta')[1];
+            oMeta.content = "width=device-width, initial-scale=" + rate + ", maximum-scale=1, user-scalable=no";
+	        }
+		    doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+	  </script>
+  <link href="./static/css/app.34e2a1493e9f520c9f6b936337976e97.css" rel="stylesheet"></head>
+  <body>
+  <!--[if lt IE 9]>
+	<div class="browser-old-tips">
+		<p class="browser-old-tips-title">亲，您正在使用的浏览器无法完全支持我们的系统</p>
+		<p class="browser-old-tips-subtitle">很抱歉，当前浏览器版本太低，请升级您的浏览器</p>
+		<div class="browser-old-tips-content">
+			<p>推荐您使用以下浏览器的最新版本:</p>
+			<div class="browser-down">
+				<a href="http://www.google.cn/chrome/browser/" class="nsky-browser-down nsky-browser-down-chrome">
+            <img src="./assets/image/chrome.png">
+            <div>Chrome浏览器</div>
+        </a>
+        <a href="http://www.firefox.com.cn/download/" class="nsky-browser-down">
+            <img class="firefox" src="./assets/image/firefox.png">
+            <div>火狐浏览器</div>
+        </a>
+        <a href="https://support.apple.com/zh_CN/downloads/safari" class="nsky-browser-down">
+            <img src="./assets/image/safari.png">
+            <div>Safari浏览器</div>
+        </a>
+			</div>
+			<p>或更新其他浏览器的最新版本：<a href="https://browsehappy.com/">马上去更新</a></p>
+		</div>
+	</div>
+	<![endif]-->
+	<!--[if gt IE 9]><!-->
+	<div id="app"></div>
+	<!--<![endif]-->
+  <script type="text/javascript" src="./static/js/manifest.b6c58c683230180cc52e.js"></script><script type="text/javascript" src="./static/js/vendor.4ff5fd271f1d1be7b042.js"></script><script type="text/javascript" src="./static/js/app.0a7ded013852131553ac.js"></script></body>
+
+</html>

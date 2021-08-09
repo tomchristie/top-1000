@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>开心网</title>
+<script type="text/javascript">var g_st_time=new Date().getTime();</script>
+<script src="http://s.kaixin001.com.cn/js/_combo/base*Base,base*Array,base*Class,base*Function,base*Object,base*String,base*Browser,base*Pubsub,base*Module,base*CustEvent,base*Env,base*Util-00209b36e.js"></script>
+<meta name="keywords" content="开心网,开心网001,SNS交友,社交网站,社交网" />
+<meta name="description" content="开心网是一个在线社区,通过它您可以与朋友、同学、同事、家人保持更紧密的联系,及时了解他们的动态;与他们分享你的照片、心情、快乐。" />
+<meta http-equiv="mobile-agent" content="format=xhtml; url=http://wap.kaixin001.com/"><meta http-equiv="mobile-agent" content="format=html5; url=http://iphone.kaixin001.com/">
+<meta name="msapplication-window" content="" />
+<meta name="msapplication-starturl" content="/" />
+<meta name="msapplication-task" content="name=照片;action-uri=/photo/;icon-uri=http://img1.kaixin001.com.cn/i/favicon/album.ico;window-type=self" />
+<meta name="msapplication-task" content="name=日记;action-uri=/diary/;icon-uri=http://img1.kaixin001.com.cn/i/favicon/diary.ico;window-type=self" />
+<meta name="msapplication-task" content="name=记录;action-uri=/records/;icon-uri=http://img1.kaixin001.com.cn/i/favicon/records.ico;window-type=self" />
+<meta name="msapplication-task" content="name=转贴;action-uri=/!repaste/friend.php;icon-uri=http://img1.kaixin001.com.cn/i/favicon/repaste.ico;window-type=self" />
+<meta name="msapplication-task" content="name=全部应用;action-uri=/app/;icon-uri=http://img1.kaixin001.com.cn/i/favicon/apps.ico;window-type=self" />
+<meta property="wb:webmaster" content="d6d8d51fcef20df2" />
+<meta property="qc:admins" content="224566147163110160016375" />
+<meta name="baidu_union_verify" content="67092e34cceb69ac08a7c60a2242a2f5">
+<link href="http://img1.kaixin001.com.cn/i/favicon/favicon1.ico" rel="icon" type="image/x-icon" />
+<link href="http://img1.kaixin001.com.cn/i/favicon/favicon1.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://img1.kaixin001.com.cn/i/favicon/favicon1.ico" rel="bookmark" type="image/x-icon" />
+<link href="http://s.kaixin001.com.cn/css/_combo/s,basic,suggestion,icon,panel-080461129.css" rel="stylesheet" />
+<script src="http://s.kaixin001.com.cn/js/_combo/prototype-1.6.1,jquery_min,kaixin-0037cc5f8.js"></script>
+<script src="http://s.kaixin001.com.cn/js/_combo/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js"></script>
+<script src="http://s.kaixin001.com.cn/js/_combo/seclogin,apps*common*AQqLogin,apps*common*AOauthLogin-004835e68.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?500f908d39095efce74d0e9c64f55ffb";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script></head>
+<body onload="javascript:if ('function' == typeof(_bodyonload)) { _bodyonload(); }">
+<div class="newHeadArea newHeadArea_index">
+<div id="head" class="newhead">
+<div class="hd" style="background: url(http://cos.feidou.com/i3/gameplat/game/2021_100y.png) repeat-x;">
+<div class="kxlogo"><a title="开心网" href="/"></a></div>
+<div class="hdsearchC">
+<div class="hdsearch">
+<input type="text" autocomplete="off" value="搜人/公共主页/应用/内容" placeholder="搜人/公共主页/应用/内容" id="headsearchuser" class="sc_txt _kxj_suggestbind" />
+<span class="sc_btn _kxj_suggestbtn" title="搜索"></span>
+</div>
+</div>
+<div class="headMoreAction" style="margin-right:2px;">
+<div id="head2_kxt3" class="hasSub"><a class="headLink" href="/t/help.html"><b>帮助</b></a></div>
+<div id="head2_kxt2" class="hasSub"><a class="headLink" href="http://login.kaixin001.com"><b>登录</b></a></div>
+<div id="head2_kxt1" class="hasSub"><a class="headLink" href="http://reg.kaixin001.com"><b>注册</b></a></div>
+</div>
+<script type="text/javascript">
+bindSearchEvents(0);
+( function ( $ ) {
+//onmouseout="$j( this ).removeClass( 'hasSub_show' ); h('more_sub');" onmouseover="$j( this ).addClass( 'hasSub_show' ); s('more_sub');"
+var container = $( '#head2_kxt4' ),
+headLink = container.find( '.headLink' ),
+subUl = container.find( '#more_sub' );
+container.hover( function(){
+var iframe = container.find( '.headSubIframe' );
+$( this ).toggleClass( 'hasSub_show' );
+headLink.toggleClass( 'hover' );
+subUl.toggle();
+iframe.css( { 'right' : 0 , 'left' : 'auto' }).toggle();
+} )
+} )( $j );
+</script>
+<!--div class="headFindPerson rt_nav" style="clear:none;">
+<div class="rt_menu l"><a href="http://reg.kaixin001.com" class="ce" id=head_reg>注册</a></div>
+<div class="l rt_menu_bar"></div>
+<div class="rt_menu l"><a href="http://login.kaixin001.com" class="ce">登录</a></div>
+<div class="l rt_menu_bar"></div>
+<div class="rt_menu l"><a href="/t/help.html" class="ce">帮助</a></div>
+<div class="l rt_menu_bar"></div>
+<div class="rt_menu" >
+<a href="/daohang.html" class="ce2">导航</a>
+</div>
+</div-->
+<div class="c"></div>
+</div>
+</div>
+<iframe id="headIframe" frameborder="0" src="about:blank"></iframe>
+</div>
+<script type="text/javascript">var KxVersion = {"js\/kxbase.js":"js\/_combo\/prototype-1.6.1,jquery_min,kaixin-0037cc5f8.js","js\/kxcommon.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/kxcommon2.js":"js\/_combo\/Kx_LocalStorage,Kx_Suggestion,Kx_Captcha-007662a76.js","js\/kxfriend.js":"js\/_combo\/addfriend,app_friend,invite-00287d368.js","js\/kxindex.js":"js\/_combo\/home_base,home_new_async-00833ef78.js","js\/kxflash.js":"js\/_combo\/swfobject,AC_RunActiveContent,swfupload-0008eee71.js","js\/kxsuggest.js":"js\/_combo\/friend_suggest,friend_singlesuggest,friend_supersuggest,word_suggest-002650814.js","js\/kxsuggest2.js":"js\/_combo\/friendsuggest_single,friendsuggest_super,friendsuggest_panel-00314ad0c.js","js\/kxcomment.js":"js\/_combo\/comment-0064c7582.js","js\/kxcommon_defer.js":"js\/_combo\/rshare_dlg,dialog,giftcommon,music-00781b4ef.js","js\/kxrecords.js":"js\/_combo\/records*Kx_Publisher,records*Kx_MediaBox-01004678a.js","js\/home_package.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/kxphoto.js":"js\/_combo\/Kx_CurNav-0003179dc.js","js\/logincommon.js":"js\/_combo\/seclogin,apps*common*AQqLogin,apps*common*AOauthLogin-004835e68.js","css\/kxindex.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/kxcommon.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/kxchats.css":"css\/_combo\/kxchat,kxchat_expand-0012b7633.css","css\/kxcomment.css":"css\/_combo\/comment,comment2,commentnew-0042fe699.css","css\/lite.css":"css\/_combo\/lite_reset,lite_global,lite_index,lite_login-0090b79e8.css","css\/kxcommon2.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","js\/head_old_applist.js":"js\/head_old_applist-00010c317.js","js\/prototype-1.6.1.js":"js\/_combo\/prototype-1.6.1,jquery_min,kaixin-0037cc5f8.js","js\/jquery_min.js":"js\/_combo\/prototype-1.6.1,jquery_min,kaixin-0037cc5f8.js","js\/kaixin.js":"js\/_combo\/prototype-1.6.1,jquery_min,kaixin-0037cc5f8.js","js\/forks\/home\/kxbase.js":"js\/forks\/home\/kxbase-00373a6ed.js","js\/statistics.js":"js\/statistics-0009b615c.js","js\/page.js":"js\/page-0002a802f.js","js\/common.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/lazyload.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/s.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/cpm.js":"js\/cpm-00051fa58.js","js\/head.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/head_rgroup.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/webeditor\/editor.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/webeditor\/lite.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/comment_base.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/Kx_Utils.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/Kx_HtmlTpl.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/Kx_Easy_Captcha.js":"js\/_combo\/common,lazyload,s,head,head_rgroup,webeditor*editor,webeditor*lite,comment_base,Kx_Utils,Kx_HtmlTpl,apps*common*FaceResource,Kx_Easy_Captcha,apps*common*UserCard,apps*common*AppCard-048651b03.js","js\/Kx_LocalStorage.js":"js\/_combo\/Kx_LocalStorage,Kx_Suggestion,Kx_Captcha-007662a76.js","js\/Kx_Suggestion.js":"js\/_combo\/Kx_LocalStorage,Kx_Suggestion,Kx_Captcha-007662a76.js","js\/Kx_Captcha.js":"js\/_combo\/Kx_LocalStorage,Kx_Suggestion,Kx_Captcha-007662a76.js","js\/addfriend.js":"js\/_combo\/addfriend,app_friend,invite-00287d368.js","js\/app_friend.js":"js\/_combo\/addfriend,app_friend,invite-00287d368.js","js\/invite.js":"js\/_combo\/addfriend,app_friend,invite-00287d368.js","js\/home_base.js":"js\/_combo\/home_base,home_new_async-00833ef78.js","js\/home_new_async.js":"js\/_combo\/home_base,home_new_async-00833ef78.js","js\/forks\/homeTA_temp\/home_new_async.js":"js\/forks\/homeTA_temp\/home_new_async-00015fdb3.js","js\/swfobject.js":"js\/_combo\/swfobject,AC_RunActiveContent,swfupload-0008eee71.js","js\/AC_RunActiveContent.js":"js\/_combo\/swfobject,AC_RunActiveContent,swfupload-0008eee71.js","js\/swfupload.js":"js\/_combo\/swfobject,AC_RunActiveContent,swfupload-0008eee71.js","js\/swfupload_define.js":"js\/swfupload_define-000233f6c.js","js\/friend_suggest.js":"js\/_combo\/friend_suggest,friend_singlesuggest,friend_supersuggest,word_suggest-002650814.js","js\/friend_singlesuggest.js":"js\/_combo\/friend_suggest,friend_singlesuggest,friend_supersuggest,word_suggest-002650814.js","js\/friend_supersuggest.js":"js\/_combo\/friend_suggest,friend_singlesuggest,friend_supersuggest,word_suggest-002650814.js","js\/word_suggest.js":"js\/_combo\/friend_suggest,friend_singlesuggest,friend_supersuggest,word_suggest-002650814.js","js\/friendsuggest_single.js":"js\/_combo\/friendsuggest_single,friendsuggest_super,friendsuggest_panel-00314ad0c.js","js\/friendsuggest_super.js":"js\/_combo\/friendsuggest_single,friendsuggest_super,friendsuggest_panel-00314ad0c.js","js\/friendsuggest_panel.js":"js\/_combo\/friendsuggest_single,friendsuggest_super,friendsuggest_panel-00314ad0c.js","js\/comment.js":"js\/_combo\/comment-0064c7582.js","js\/rshare_dlg.js":"js\/_combo\/rshare_dlg,dialog,giftcommon,music-00781b4ef.js","js\/dialog.js":"js\/_combo\/rshare_dlg,dialog,giftcommon,music-00781b4ef.js","js\/giftcommon.js":"js\/_combo\/rshare_dlg,dialog,giftcommon,music-00781b4ef.js","js\/music.js":"js\/_combo\/rshare_dlg,dialog,giftcommon,music-00781b4ef.js","js\/records\/Kx_Publisher.js":"js\/_combo\/records*Kx_Publisher,records*Kx_MediaBox-01004678a.js","js\/records\/Kx_MediaBox.js":"js\/_combo\/records*Kx_Publisher,records*Kx_MediaBox-01004678a.js","js\/home_misc.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/home_news.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/home_star.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/home_rec.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/home_ad.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/home.js":"js\/_combo\/home_misc,home_news,home_star,home_rec,home_ad,home-0060ecd1e.js","js\/forks\/homeTA_temp\/home_news.js":"js\/forks\/homeTA_temp\/home_news-000371225.js","js\/Kx_CurNav.js":"js\/_combo\/Kx_CurNav-0003179dc.js","js\/promotion.js":"js\/promotion-0014734fc.js","js\/bite.js":"js\/bite-0102f094b.js","js\/friendsuggestion.js":"js\/friendsuggestion-000213de8.js","js\/client\/IntroduceFriendDialogHandler.js":"js\/client\/IntroduceFriendDialogHandler-000716227.js","js\/records\/Kx_Record.js":"js\/records\/Kx_Record-00279575c.js","js\/records\/Kx_NewsBubble.js":"js\/records\/Kx_NewsBubble-0026e9cad.js","js\/Kx_Face.js":"js\/Kx_Face-001597dab.js","js\/json.js":"js\/json-000152ce4.js","js\/Kx_ImageZoomer.js":"js\/Kx_ImageZoomer-0006300c6.js","js\/records\/Kx_Forward.js":"js\/records\/Kx_Forward-0004d6127.js","js\/records\/Kx_Parse.js":"js\/records\/Kx_Parse-0002d0a21.js","js\/Kx_UserCard.js":"js\/Kx_UserCard-0020d1a6f.js","js\/news_comment.js":"js\/news_comment-0041d602a.js","js\/Kx_Formvalidator.js":"js\/Kx_Formvalidator-000135e42.js","js\/comment2.js":"js\/comment2-0073a375b.js","js\/piframe.js":"js\/piframe-00292f244.js","js\/Kx_Transmit.js":"js\/Kx_Transmit-00501922f.js","js\/Kx_Search.js":"js\/Kx_Search-0009bdf0d.js","js\/init_forward.js":"js\/init_forward-00159edc2.js","js\/init_pagebind.js":"js\/init_pagebind-00015bb81.js","js\/init_pagecreate.js":"js\/init_pagecreate-00019b338.js","js\/init_pagestep.js":"js\/init_pagestep-00013fb67.js","js\/init_photoZoomer.js":"js\/init_photoZoomer-0004ba8bd.js","js\/gift.js":"js\/gift-01172aefd.js","js\/kxchat.js":"js\/kxchat-0088f9fba.js","js\/kxchatui.js":"js\/kxchatui-0081fcc25.js","js\/kxmobileindex.js":"js\/kxmobileindex-000789322.js","js\/presence.js":"js\/presence-00263634d.js","js\/activity_calendar_new.js":"js\/activity_calendar_new-0035eda2b.js","js\/friend_suggest2.js":"js\/friend_suggest2-0116b99fb.js","js\/widget_calendar.js":"js\/widget_calendar-00043dcb8.js","js\/proxydlg.js":"js\/proxydlg-00096c34c.js","js\/seclogin.js":"js\/_combo\/seclogin,apps*common*AQqLogin,apps*common*AOauthLogin-004835e68.js","js\/user_card.js":"js\/user_card-000560f36.js","js\/talk_editor.js":"js\/talk_editor-000503ac2.js","js\/repaste_talk.js":"js\/repaste_talk-000132bed.js","js\/kxsso.js":"js\/kxsso-000636e6f.js","js\/game_index_sso.js":"js\/game_index_sso-000141c98.js","js\/kxreg.js":"js\/kxreg-00022baff.js","js\/friend.js":"js\/friend-00089b44c.js","js\/reg.js":"js\/reg-01049f684.js","js\/forks\/photo_detail\/photofunc.js":"js\/forks\/photo_detail\/photofunc-0044934cb.js","js\/photofunc.js":"js\/photofunc-0044662d0.js","js\/log_kaixin001.js":"js\/log_kaixin001-00257bf5a.js","js\/records\/init_friendsuggestion.js":"js\/records\/init_friendsuggestion-0002230e7.js","js\/records\/init_list.js":"js\/records\/init_list-0029f3f33.js","js\/records\/init_newsrecords.js":"js\/records\/init_newsrecords-004557143.js","js\/records\/init_recordslist.js":"js\/records\/init_recordslist-003052497.js","js\/records\/init_sysnews.js":"js\/records\/init_sysnews-0005e7520.js","js\/focus.js":"js\/focus-0014d12f7.js","js\/records\/Kx_RecComment.js":"js\/records\/Kx_RecComment-00116ddc9.js","js\/records\/Kx_AfterZoom.js":"js\/records\/Kx_AfterZoom-0013ccb3c.js","js\/school.js":"js\/school-001026433.js","head_old_applist.js":"head_old_applist-0003a90eb.js","head_lite.js":"head_lite-0001b6cea.js","\/js\/openapi_invitation.js":"\/js\/openapi_invitation-0723169cf.js","js\/IMPresence.js":"js\/IMPresence-0002e1c89.js","js\/KXIPresence.js":"js\/KXIPresence-00021ae69.js","js\/photo.js":"js\/photo-009390521.js","js\/forks\/photo_detail\/photo.js":"js\/forks\/photo_detail\/photo-00932b503.js","js\/logophoto.js":"js\/logophoto-0020b2997.js","js\/swfupload_new.js":"js\/swfupload_new-000736e9b.js","htdocs\/js\/apps\/award\/kuainv\/AShowRecords.js":"htdocs\/js\/apps\/award\/kuainv\/AShowRecords-0004fe50a.js","js\/drag_drop2.js":"js\/drag_drop2-000294b1a.js","js\/kxeditor.js":"js\/kxeditor-001300a2e.js","js\/kxeditorrepaste.js":"js\/kxeditorrepaste-002229133.js","js\/Uniongame_IMPresence.js":"js\/Uniongame_IMPresence-0001662b0.js","css\/apppop.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/usernews.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/userstar.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/home.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/state.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/calendar2.css":"css\/_combo\/apppop,usernews,userstar,home,state,calendar2-0280d1a0c.css","css\/kxchatnew.css":"css\/kxchatnew-00163c148.css","css\/homeTa.css":"css\/homeTa-0010db975.css","css\/homeprofile.css":"css\/homeprofile-0021b484b.css","css\/profileGuide.css":"css\/profileGuide-001385310.css","css\/s.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/basic.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/suggestion.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/icon.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/panel.css":"css\/_combo\/s,basic,suggestion,icon,panel-080461129.css","css\/kxchat.css":"css\/_combo\/kxchat,kxchat_expand-0012b7633.css","css\/kxchat_expand.css":"css\/_combo\/kxchat,kxchat_expand-0012b7633.css","css\/comment.css":"css\/_combo\/comment,comment2,commentnew-0042fe699.css","css\/comment2.css":"css\/_combo\/comment,comment2,commentnew-0042fe699.css","css\/commentnew.css":"css\/_combo\/comment,comment2,commentnew-0042fe699.css","css\/homenew.css":"css\/homenew-013926a05.css","css\/album.css":"css\/album-01245be30.css","css\/photoView.css":"css\/photoView-00048f7d2.css","css\/photoDialog.css":"css\/photoDialog-00101c3b8.css","css\/photo\/photoUpload.css":"css\/photo\/photoUpload-0012f306f.css","css\/msgattach.css":"css\/msgattach-001343f95.css","css\/gametop.css":"css\/gametop-001159883.css","css\/friend.css":"css\/friend-052259ee4.css","css\/nverify.css":"css\/nverify-00040bc71.css","css\/lite_reset.css":"css\/_combo\/lite_reset,lite_global,lite_index,lite_login-0090b79e8.css","css\/lite_global.css":"css\/_combo\/lite_reset,lite_global,lite_index,lite_login-0090b79e8.css","css\/lite_index.css":"css\/_combo\/lite_reset,lite_global,lite_index,lite_login-0090b79e8.css","css\/lite_login.css":"css\/_combo\/lite_reset,lite_global,lite_index,lite_login-0090b79e8.css","css\/widget_calendar.css":"css\/widget_calendar-00031a1ec.css","css\/ipad.css":"css\/ipad-00251522c.css","css\/user_card.css":"css\/user_card-0014cb0ff.css","css\/talk_editor.css":"css\/talk_editor-000709f00.css","css\/activity_home.css":"css\/activity_home-0001f6259.css","css\/restapi.css":"css\/restapi-00030a2ea.css","css\/register.css":"css\/register-00146e215.css","css\/weibo.css":"css\/weibo-000466e89.css","css\/kxcommon\/basic.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/kxcommon\/module.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/kxcommon\/suggestion.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/kxcommon\/icon.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/kxcommon\/kxchat.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/kxcommon\/panel.css":"css\/_combo\/kxcommon*basic,kxcommon*module,kxcommon*suggestion,kxcommon*icon,kxcommon*kxchat,kxcommon*panel-00128b666.css","css\/platform_new.css":"css\/platform_new-0004ed04d.css","css\/platform.css":"css\/platform-00020c03d.css","css\/dlg_photoUpload.css":"css\/dlg_photoUpload-00022e970.css","css\/caigeapp.css":"css\/caigeapp-00036097d.css","css\/caigeappandroid.css":"css\/caigeappandroid-0002da657.css","css\/caigeappiphone.css":"css\/caigeappiphone-0002e1856.css","css\/repaste.css":"css\/repaste-00362ec74.css","css\/kxseo.css":"css\/kxseo-00039cd76.css"};</script>
+<!-- index_enhance.html,login page without advertisement-->
+<script src="http://s.kaixin001.com.cn/js/index-7.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (top.location != self.location) top.location = self.location;
+$Index.adjust = 49;
+$Index.CommonHost = "kaixin001.com";
+$Index.Flag = "";
+$Index.Account = "";
+CDNCheck('STC', "http://rw.kaixin001.com/stc/rw.gif?", 10000, "&from=index");
+CDNCheck('IMG', "http://rw.kaixin001.com/img1/rw.gif?login", 10000)
+</script>
+<link href="http://s.kaixin001.com.cn/css/register-14.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.login_enhance{width:1004px;background:#fff;border-right:1px solid #f0f1f3;margin:0 auto;border-bottom:1px solid #f0f1f3; }
+.login_enhance_con{width:220px; min-height: 775px; _height: 775px; *min-height: 642px; border:1px solid #d9dce2; border-top:none; box-shadow:0 2px 3px #d9dce2;background:#f0f5fa url(http://img1.kaixin001.com.cn/i/login/left_bg.png) repeat-x left 2px;}
+.login_enhance_right{width:700px; height: 640px;*height: 642px; margin-right:41px;}
+.mobileList{ padding-left:2px;}
+.mobileList li{float:left; list-style:none; position:relative; padding-top:2px;}
+.mobileList li a{float:left;width:17px; height:22px; overflow:hidden; background:url(http://img1.kaixin001.com.cn/i/wapico5.png) no-repeat;}
+.mobileList li i{position:absolute; top:-6px; left:13px; width:23px; height:11px;background:url(http://img1.kaixin001.com.cn/i/new.gif) no-repeat;}
+.mobileList li.android{margin:0 11px 0 12px;}
+.mobileList li.iphone a{background-position:0 -54px;}
+.mobileList li.iphone a:hover{background-position:0 -80px;}
+.mobileList li.android a{background-position:-31px -54px;}
+.mobileList li.android a:hover{background-position:-31px -80px;}
+.mobileList li.symbian a{background-position:-62px -54px;}
+.mobileList li.symbian a:hover{background-position:-62px -80px;}
+.mobileList li.androidNo{margin:0 14px 0 20px}
+.mobileList li.androidNo a{background-position:-89px top;width:19px;height:23px;}
+.mt15{ margin-top:15px!important;}
+/*新版重设*/
+#kxhr{ margin-top:19px; margin-bottom:18px;}
+#kxhr p {margin:0;height:1px;line-height:1px;overflow:hidden;}
+#kxhr .line1 {background:#e2e2e2;}
+#kxhr .line2 {background:#fff;}
+.loginPanel p { padding-left:6px;margin-bottom:10px;}
+.loginPanel form { width:100%;position:relative; z-index:10; }
+.loginPanel_open .panel-wp{ height:280px;}
+.loginPanel_randiv{ top:25px; }
+.loginPanel_randiv .panel-wp{ height: 410px }
+/** 其他帐号登录 **/
+.otherLogin{ margin:18px 0 -1px 0; padding-left:2px;}
+.newFormItem{ margin-bottom:15px; }
+.newFormItem .checkbox{ vertical-align:text-bottom; vertical-align:middle\9; }
+.newFormItem_inptList{margin-top:-2px;_margin-top:-1px;margin-top:1px\0;}
+.newFormItem_inptList .checkbox{margin:3px 4px 0 1px;*margin:0 1px 0 -3px;_margin:-1px -2px 0 -3px;margin:-1px 1px 0 -2px\0;}
+.newFormItem_inptList label{ margin-top:1px\0;}
+.newFormItem_inptList .c9{font-family:\5b8b\4f53;}
+.newFormInput{position:relative; zoom:1; }
+.newFormInput i{ position:absolute; right:18px; top:12px; background:url( http://img1.kaixin001.com.cn/i/del_account.gif ) no-repeat; width:13px; height:13px; cursor:pointer;}
+.newFormInput .it_s{ border-color:#adb6c9; }
+.newFormInput .it1{ border:none;border-top:1px solid #fff;border-left:1px solid #fff;}
+.newFormInput .it2{ border:none;border-top:1px solid #999;border-left:1px solid #999;}
+#sy_yhm input,#sy_mm input,#sy_yzm input{ width:173px; height:19px; padding:7px; font-size:14px; outline:none;}
+#loginbtn{margin-top:-3px;}
+#link1div{ margin-top:-1px;margin-top:-3px\0;}
+#link1div a.c9,#link1div a.c9:hover{ text-decoration:none; cursor:default; color:#999;}
+:root input.newFormBtn_red,
+:root input.newFormBtn_gray{ padding-bottom:4px; padding-bottom:0\0; }
+:root a.newFormBtn_blue{ line-height:38px\0;}
+.errorList{ position:relative; height:30px; width:202px; margin-bottom:4px; margin-top:-7px;}
+.errorList .box-login{ position:absolute; width:190px; bottom:0; padding-bottom:7px; border-top:1px solid #ffb7b7;background:url(http://img1.kaixin001.com.cn/i/login/login_prompt_err.png) no-repeat left bottom;}
+.errorList .box-login p{ margin:0; padding:6px 8px; background:none; color:#dd4b39; font-size:14px;}
+.warnList{ position:relative; height:30px; width:202px; margin-bottom:10px; margin-top:5px;}
+.warnList .box-login{ position:absolute; width:188px; bottom:0;border:1px solid #fde588;background:#ffc}
+.warnList .box-login p{ margin:0; padding:8px 10px 6px 10px;_padding:9px 10px 5px 10px; background:none; color:#333; font-size:14px;}
+.box-loginhelp{ display:inline-block; width:12px; height:12px; overflow:hidden; background:url(http://img1.kaixin001.com.cn/i/qmark.gif) no-repeat; }
+.errorList .spaw{ display:block;width:13px; height:7px; position:absolute;background:url(http://img1.kaixin001.com.cn/i/spawd_pink.gif) no-repeat;left:12px; bottom:-6px;_bottom:-13px;z-index:101;}
+.updateNews{width:698px; border:1px solid #eee; background:#fbfbfb; font-size:14px; margin-top:17px; padding-bottom:15px;}
+.custom-placeholder{position:absolute; top:8px;_top:10px; left:0.5em; color:#cccccc; font-size:14px;}
+.reg_step8{ background:url(http://img1.kaixin001.com.cn/i/register/step12.png) no-repeat; width: 258px; height: 17px; margin-left: 0px!important; margin-top: 41px!important; }
+.reg_tit{ font-size: 14px; }
+.reg_box2 li .reg_tit{ width: 72px!important; }
+.reg_box2 .reg_element input.txt, .reg_box2 .reg_element input.capt,.reg_element input.job{ height: 19px; }
+.reg_element input.txt, .reg_element input.capt,.reg_element input.job{ width: 212px; }
+.reg_labWidth{ font-size: 14px; }
+.btn_nowRegBox{ width: 175px; height: 38px; display: inline-block; background-image: url(http://img1.kaixin001.com.cn/i/register/spr_reg.png); background-repeat: no-repeat; background-position: -1px -1px; margin-left: 5px; }
+.btn_nowReg{ width: 175px; height: 38px; color: white; font: bold 14px/37px "宋体"; text-align: center; border: none; line-height: 33px; cursor:  pointer; background: none; }
+.reg_element select,.reg_mt3{ font-size: 14px; }
+.reg_element select{ padding: 2px; padding-left: 0px; width: 70px; }
+.regBox .w70{ width: 70px; }
+.regBox .w48{ width: 48px; }
+.reg_mt3{ margin-top: 0px; }
+#inputInner{ width: 220px; }
+.prompt span{ width: 246px; }
+.reg_tips{ width: 262px; left: 224px; z-index: 20; }
+.prompt{ padding: 4px 6px; padding: 4px 6px 0\0; border: 1px solid #ddd; background: #f9f9f9; color: #999; }
+.regTip1{ top: -8px; }
+.reg_tips .tips_img{ margin-left: 3px; height: 23px; margin-top: -2px; }
+.error span{ width: 226px; }
+.error{ left: 4px; background: #ffe5e5; border: 1px solid #ffb7b7; color: #dd4b39; padding: 3px 3px 3px 6px; padding: 4px 6px 0\0; }
+#reg_opera{ margin-left: 5px; font-family: tahoma; }
+#reg_opera input{ vertical-align: middle; margin-top: 3px\0; margin-left: 5px\0; margin-right: 2px\0; }
+.reg_element select{ height: 23px; border: 1px solid #b1bacc; }
+.reg_element .inp_box{ border: 1px solid #b1bacc; }
+.regBox .cityBg { padding-top: 9px; width: 464px; border: 1px solid #C9C9C9; }
+.error, .prompt{ box-shadow: 0px 0px 0px #E6E6E6; -webkit-box-shadow: 0px 0px 0px #E6E6E6; -moz-box-shadow: 0px 0px 0px #e6e6e6; padding-bottom :4px\0;  }
+.error{ padding-bottom :3px\0; _padding-bottom : 1px; _padding-top: 2px; }
+#choose_city{ width: 466px; margin: 7px 0 0 9px; }
+.regBox .cbox { width: 442px; }
+.reg_box2 .reg_element input.capt{ width: 82px; }
+.reg_box li{ margin-bottom: 15px; margin-bottom: 14px\0; *margin-bottom: 15px; _margin-bottom: 11px; }
+.reg_box li.sing{ margin-top: -10px; *margin-top: -13px; margin-top: -9px\0; _margin-top: -11px; }
+.reg_box li.birthday{ margin-top: -9px; *margin-top: -9px; _margin-top:-4px; margin-top:-5px\0; }
+:root .reg_box li.birthday{ margin-top:-6px\0; }
+.reg_box li.state{ margin-top: -11px; margin-top: -10px\0;*margin-top:-15px;_margin-top:-12px; }
+.reg_box li.live{ margin-top: -9px; *margin-top: -12px; _margin-top: -10px; margin-top: -8px\0; }
+:root .reg_box li.live{ margin-top: -9px\0; }
+.reg_box li.clause{  margin-bottom: 16px;  margin-bottom: 14px\0; *margin-bottom: 13px; _margin-bottom: 14px; margin-top: -10px; margin-top: -8px\0; *margin-top: -7px; _margin-top: -5px; }
+.reg_box li.captchadivImg{  margin-top: -4px; margin-top: -3px\0; *margin-top: -6px; _margin-top: -4px; margin-bottom: 14px; margin-bottom: 13px\0; _margin-bottom: 13px; padding-left: 72px; }
+#changeRcode2{ float: left; line-height: 50px; margin-left: 8px; }
+.reg_box li.reg_bt label input{ margin-top: 3px; margin-top: 2px\9; margin:-2px -2px 0 2px; }
+.cityBg .city_list span{ display: inline-block; }
+.reg_operaCon,.reg_operaTxt{ vertical-align: middle; }
+.reg_operaTxt{ _margin-top: 1px; }
+.reg_operaCon{ *display: inline-block; *margin-left: 2px;  }
+.reg_element input.job{ _margin-top: -1px; }
+.reg_timeinto{ margin-left: 3px; margin-top: 2px; margin-right: 3px; margin-top: 4px\0; *margin-top:4px; _margin-top: 5px; }
+.reg_labWidth{ width: 55px; }
+:root .reg_timeinto{ margin-top: 4px\0; }
+:root #reg_opera input{ vertical-align: middle\0; margin-top: 2px\0; margin-left: 5px\0; margin-right: 2px\0; }
+:root .reg_operaCon{ vertical-align: top\0; display: inline-block\0; }
+/* webkit */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.reg_operaCon{ vertical-align: top; }
+#reg_opera input{ margin-top: 3px; margin-left: 5px; margin-right: 3px; }
+}
+@-moz-document url-prefix(){
+.reg_mt3{ margin-top: 1px; }
+.reg_box li.clause{ margin-bottom:15px; }
+#reg_opera input{ margin-left: 5px; margin-right: 3px; margin-top: 3px; }
+}
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0)
+{
+#reg_opera input{ margin-left: 5px; margin-right: 3px; margin-top: 3px; }
+}
+/** 客户端推广 **/
+.aClient_spread{background:url(http://img1.kaixin001.com.cn/i3/kxmobile/aClient_spread_login.jpg) 0 12px no-repeat; padding-top:113px;}
+.aClient_spread p.tar a{color:#c1ccdc; font-family:SimSum; text-decoration:none;}
+.aClient_spread p.tar a:hover{color:#c1ccdc;text-decoration:underline;}
+.aClient_spread li{padding-bottom:10px;}
+.aClient_spread li a{background:url(http://img1.kaixin001.com.cn/i3/kxmobile/KXaClient_down_link02.png) 0 0 no-repeat; outline:none; display:block; width:191px; height:37px; position:relative; text-indent:-9999em;}
+.aClient_spread li .iphone_link{background-position:0 0;}
+.aClient_spread li .iphone_link:hover{background-position:0 -48px;}
+.aClient_spread li .android_link{background-position:0 -95px;}
+.aClient_spread li .android_link:hover{background-position:0 -143px;}
+/** 动态数字 **/
+.regBoxrPicWarp{ position: relative; width: 0px; height: 0px; }
+.regBoxrPicWarp .regBoxrPic{ width: 383px; height: 381px; position: absolute; top: 85px; left: 335px; background: #f9f9f9; border: 1px solid #e3e3e3; }
+.regBoxrPicWarp .regBoxrPic img{ margin: 90px 0 0 17px; }
+.regBoxrPicMain{ position: absolute; left: 342px; top: 100px; width: 370px; height: 70px; }
+.regBoxrPicHerf{ display: block; font-size: 0; padding-left: 10px; }
+.reg_cnt_d_o{ display: none; }
+.reg_cnt_d,.reg_cnt_d_f{ width: 36px; height: 54px; display: inline-block; background-image: url(http://img1.kaixin001.com.cn/i/register/spr_reg_num02.png); background-repeat: no-repeat; position: relative; }
+.reg_cnt_d{ margin-right: 1px; }
+.mp_cnt_space{ width: 8px; background: none; }
+.reg_cnt_d_f{ position: absolute; bottom: -14px; left: 0; width: 36px; height: 15px; background-position: -2px -601px; }
+.reg_cnt_d_0{ background-position: -1px -3px; }
+.reg_cnt_d_0_1{ background-position: -45px -3px; }
+.reg_cnt_d_0_2{ background-position: -89px -3px; }
+.reg_cnt_d_1{ background-position: -1px -63px; }
+.reg_cnt_d_1_1{ background-position: -45px -63px; }
+.reg_cnt_d_1_2{ background-position: -89px -63px; }
+.reg_cnt_d_2{ background-position: -1px -124px; }
+.reg_cnt_d_2_1{ background-position: -45px -124px; }
+.reg_cnt_d_2_2{ background-position: -89px -124px; }
+.reg_cnt_d_3{ background-position: -1px -184px; }
+.reg_cnt_d_3_1{ background-position: -45px -184px; }
+.reg_cnt_d_3_2{ background-position: -89px -184px; }
+.reg_cnt_d_4{ background-position: -1px -244px; }
+.reg_cnt_d_4_1{ background-position: -45px -244px; }
+.reg_cnt_d_4_2{ background-position: -89px -244px; }
+.reg_cnt_d_5{ background-position: -1px -306px; }
+.reg_cnt_d_5_1{ background-position: -45px -306px; }
+.reg_cnt_d_5_2{ background-position: -89px -306px; }
+.reg_cnt_d_6{ background-position: -1px -366px; }
+.reg_cnt_d_6_1{ background-position: -45px -366px; }
+.reg_cnt_d_6_2{ background-position: -89px -366px; }
+.reg_cnt_d_7{ background-position: -1px -426px; }
+.reg_cnt_d_7_1{ background-position: -45px -426px; }
+.reg_cnt_d_7_2{ background-position: -89px -426px; }
+.reg_cnt_d_8{ background-position: -1px -486px; }
+.reg_cnt_d_8_1{ background-position: -45px -486px; }
+.reg_cnt_d_8_2{ background-position: -89px -486px; }
+.reg_cnt_d_9{ background-position: -1px -543px; }
+.reg_cnt_d_9_1{ background-position: -45px -543px; }
+.reg_cnt_d_9_2{ background-position: -89px -543px; }
+.reg_cnt_d_10{ background-position: -45px -601px; }
+.login_banner{ background: url(http://img1.kaixin001.com.cn/i/loginbanner/logionBanner_1.png) no-repeat; width: 700px; height: 360px;margin-top: 36px; }
+.login_banner h1{ text-indent: -9999px; }
+.login_banner_mini{ background: url(http://img1.kaixin001.com.cn/i/loginbanner/sy_tp03.png) no-repeat; width: 700px; height: 91px;margin-top: 36px; }
+.login_banner_mini h1{ text-indent: -9999px; }
+</style>
+<div class="login_enhance clearfix">
+<div class="l login_enhance_con">
+<div class="m1t"><b></b></div>
+<div style="padding:36px 0 0 15px;" class="loginPanel">
+<!--登录提示信息-->
+<div class="errorList" style="display:none">
+<div id="prompt1" style="display:none;" class="box-login">
+<p>您需要登录后才能继续浏览或操作！</p>
+</div>
+<div  id="prompt2" style="display:none;" class="box-login">
+<p>账号不太对吧！ 重试一次&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt3" style="display:none;" class="box-login">
+<p>该账号尚未完成注册，请进行邮箱确认</p>
+</div>
+<div  id="prompt4" style="display:none;" class="box-login">
+<p>你输入的用户名和密码不匹配&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt5" style="display:none;" class="box-login">
+<p>请输入帐号！</p>
+</div>
+<div  id="prompt6" style="display:none;" class="box-login">
+<p>请输入密码！</p>
+</div>
+<div id="prompt7" style="display:none;" class="box-login">
+<p><img src="http://img1.kaixin001.com.cn/i/fzcg_dh.gif" align="absmiddle" />&nbsp;Email地址修改成功！<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;请用此Email地址重新登录你的开心账户</p>
+</div>
+<div  id="prompt8" style="display:none;" class="box-login">
+<p>密码多次输入错误，请一小时后再登录&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q14" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt9" style="display:none;" class="box-login">
+<p>隐身登录是内部功能，暂时停止使用！</p>
+</div>
+<div  id="prompt10" style="display:none;" class="box-login">
+<p>请输入验证码！</p>
+</div>
+<div  id="prompt11" style="display:none;" class="box-login">
+<p>验证码输入错误，请重试！</p>
+</div>
+<div  id="prompt12" style="display:none;" class="box-login">
+<p>为保证你的账户安全，请输入验证码！</p>
+</div>
+<div  id="prompt13" style="display:none;" class="box-login">
+<p>为保证你的账户安全，请输入验证码后登录。&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q14" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt131" style="display:none;" class="box-login">
+<p>异地登陆，请输入验证码！</p>
+</div>
+<div  id="prompt14" style="display:none;" class="box-login">
+<p>此账号已被禁用！</p>
+</div>
+<div  id="prompt15" style="display:none;" class="box-login">
+<p>你输入的用户名和密码不匹配&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt16" style="display:none;" class="box-login">
+<p>账号存在危险，请立即修改密码！</p>
+</div>
+<div  id="prompt17" style="display:none;" class="box-login">
+<p>你输入的用户名和密码不匹配&nbsp; <a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="box-loginhelp vm" target="_blank" title="帮助" style="margin:-2px 3px 0 0;"></a><a HREF="http://www.kaixin001.com/t/help_user.html#q9" class="sl2" target="_blank" title="帮助">帮助</a></p>
+</div>
+<div  id="prompt19" style="display:none;" class="box-login">
+<p>登录权限错误！</p>
+</div>
+</div>
+<!--登录提示信息END-->
+<form action="https://security.kaixin001.com/login/login_post.php" data-use-custom-placeholder="true" method="post" name="loginform" id="kxloginform">
+<!--
+<input type=hidden name=url value="/home/">
+-->
+<div class="newFormItem clearfix">
+<!--<div id="emailtextdiv">账号：</div>-->
+<div id="sy_yhm" class="newFormInput"><span class="it_s"><input style="font-family:Arial;" name="loginemail" value="" type="text" size="18" class="it1" onfocus="this.className='it2';" onblur="this.className='it1';" /></span><i id="clearEmail"></i></div>
+</div>
+<div class="newFormItem clearfix">
+<!--<div id="passwordtextdiv">密码：</div>-->
+<div id="sy_mm" class="newFormInput"><span class="it_s"><input name="password" type="password" size="18" class="it1" maxlength="20" onfocus="this.className='it2';" onblur="this.className='it1';" /></span></div>
+</div>
+<div class="newFormItem" id="randdiv" style="display:none;">
+<!--<div>验证码：</div>-->
+<div class="l">
+<img id="randimg" data-keytype="login" style="display:none;" alt="验证码" align="absmiddle" />
+<div style="display:block; height:20px; width:140px;" class="c9 pore f12 mt5"><span style="position:absolute; width:180px">如果是算术题，请填写计算结果</span></div>
+</div>
+<div class="l f12" style="margin-left:8px;margin-top:7px;"><a id="changeRcode" href=""  class="sl">换一张</a></div>
+<div id="sy_yzm" class="newFormInput c pt10"><span class="it_s"><!-- <input name="code" id="code" type="text" size="4" style="width:95px;" class="it1" onfocus="this.className='it2';" onblur="this.className='it1';" /> --></span></div>
+</div>
+<div class="newFormItem newFormItem_inptList clearfix">
+<div class="l" style="margin-top:-1px;*margin-top:-2px;margin-top:-3px\0;" title="为了确保你的信息安全，请不要在网吧或者公共机房选择此项！&#10;如果今后要取消此选项，只需点击网站右上角的“退出”链接即可"><input id="status" type="checkbox" class="checkbox l" name="remember" value="1"> <label for="status" class="c3">下次自动登录</label></div>
+<div id="link1div" class="r mr15"><a href="/reg/sendpass.php" class="sl2" title="找回密码">忘记密码?</a></div>
+</div>
+<div class="newFormItem clearfix">
+<a href="/s/reg.html" class="sl2">我已了解并同意《开心网服务条款》</a>
+</div>
+<div id="loginbtn" class="newFormItem">
+<input type="submit" id="btn_dl" value="登 录" title="登录" class="newFormBtn_red2" onclick="" />
+</div>
+<div id="logoutbtn" class="newFormItem clearfix" style="margin-top:10px; display:none;"><input type="button" id="btn_dl2" value="退出" title="退出" class="newFormBtn_gray newFormBtn_gray2 l" onclick="javascript:logout();" />
+<span id="autologindiv" class="c9 pl10 l" style="margin-top:8px;display:none;">自动登录中...</span></div>
+<div class="c"></div>
+<div id="kxhr" class="mr15"><p class="line1"></p><p class="line2"></p></div>
+<!-- 其他账号登录-->
+<div class="newFormItem clearfix">
+<div id="link2div" class="l"><a href="http://reg.kaixin001.com" title="注册新账号" class="newFormBtn_blue">注册新账号</a></div>
+<div class="otherLogin l">
+<div class="c9 mb5"></div>
+<ul class="clearfix">
+<!--
+<li><a title="用QQ账号登录" href="#" id="qqlogin" data-from="index" class="otherLogin_q"></a></li>
+<li><a href="#" data-from="index" title="用新浪微博登录" data-login-type="weibo" class="oauthlogin otherLogin_sina"></a></li>
+<li><a title="用天翼账号登录" href="#" data-from="index" data-login-type="esurfing" class="oauthlogin otherLogin_t"></a></li>
+<li><a href="#" data-from="index" data-login-type="unicom" class="otherLogin_l sl2" style="display:none">联通</a></li>
+<li class="moreBnt" style="display:none">
+<a href="javascript:void(0)" class="moreBntIco"></a>
+<div class="moreCont">
+<a href="javascript:void(0)" class="otherLogin_m sl2">用MSN账号登录</a>
+</div>
+</li>
+-->
+</ul>
+</div>
+</div>
+<!-- 其他账号登录 结束-->
+<!--
+<div class="newFormItem clearfix">
+<div class="c9 mb5">开心网手机客户端</div>
+<ul class="mobileList clearfix">
+<li class="iphone"><a title="下载iPhone手机客户端" onclick="Kx.Utils.writeLog('s','','jipin_apppage_to_itunes')" target="_blank" href="http://www.kaixin001.com/interface/netpush.php?identify=CE0Yqm6hEBnNajIfcyDsy6M"></a></li>
+<li class="android"><a title="下载Android手机客户端"  onclick="Kx.Utils.writeLog('s','','jipin_apppage_to_android')" target="_blank" href="http://mobile.kaixin001.com/kxmobile/index.php?t=103"></a></li>
+<li class="symbian"><a title="下载Symbian手机客户端" onclick="Kx.Utils.writeLog('s','','ugc_apppage_to_clients_symbian')" target="_blank" href="http://mobile.kaixin001.com/kxmobile/index.php?t=104"></a></li>
+</ul>
+</div>-->
+<!-- 客户端推广 -->
+<div class="mr15" id="kxhr"><p class="line1"></p><p class="line2"></p></div>
+<div class="c9">开心网客户端</div>
+<div class="aClient_spread">
+<ul>
+<li><a href="http://mobile.kaixin001.com/?from=logon_kaixinapp_ios" title="iPhone/iPad版下载" class="iphone_link" target="_blank">iPhone/iPad版下载</a></li>
+<li><a href="http://mobile.kaixin001.com/?from=logon_kaixinapp_android" onclick="Kx.Utils.writeLog2('logon_kaixinapp_android_click')" title="下载Android版下载" class="android_link" target="_blank">Android版下载</a></li>
+</ul>
+<p class="tar mr15"><a href="http://mobile.kaixin001.com/?from=logon_kaixinapp_other" title="更多版本" target="_blank">更多版本>></a></p>
+</div>
+<!-- 客户端推广 end -->
+</form>
+</div>
+</div>
+<div class="fr login_enhance_right">
+<div id="r2s_2" style="border:none; padding:0;">
+<div id="r2l" style="width:700px;">
+<div class="login_banner_mini mb15"><h1>是一个社区网络，通过它你可以与朋友、同学、同事、家人保持更紧密的联系，及时了解他们的动态；与他们分享你的生活和快乐。</h1></div>
+<script type="text/javascript">
+        (function() {
+            var s = "_" + Math.random().toString(36).slice(2);
+            document.write('<div style="" id="' + s + '"></div>');
+            (window.slotbydup = window.slotbydup || []).push({
+                id: "u4167857",
+                container: s
+            });
+        })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" >
+</script>
+<!-- 登陆页图片 -->
+<div class="updateNews">
+<div class="c3" style="margin:0px 50px 5px 88px;">
+<div class="mt15">我们每天都在开心地进步着：</div>
+</div>
+<div style="margin-top:5px;">
+<div class="l tar f13 c6" style="margin:0px 10px 3px 120px;width:5em;">09月29日</div>
+    <div class="l f13 c6" style="margin:0 50px 3px 0;_margin:0 50px 0px 0;width:430px;"><a target="_blank" class="sl1" href="http://www.kaixin001.com/~gift/">礼物</a> 萌萌玉兔送月饼，愿月圆人圆事事团圆！</div>
+    <div class="c"></div>
+<div class="l tar f13 c6" style="margin:0px 10px 3px 120px;width:5em;">09月13日</div>
+    <div class="l f13 c6" style="margin:0 50px 3px 0;_margin:0 50px 0px 0;width:430px;"><a target="_blank" class="sl1" href="http://www.kaixin001.com/~gift/">礼物</a> 送你一瓶新鲜空气，雾霾风沙全不怕~</div>
+    <div class="c"></div>
+<div class="l tar f13 c6" style="margin:0px 10px 3px 120px;width:5em;">09月07日</div>
+    <div class="l f13 c6" style="margin:0 50px 3px 0;_margin:0 50px 0px 0;width:430px;"><a target="_blank" class="sl1" href="http://www.kaixin001.com/~gift/">礼物</a> 秋高气爽，约上ta，一起去骑车踏秋吧！</div>
+    <div class="c"></div>
+</div>
+</div>
+<div class="f13 tar" style="padding-top:11px;eight:20px;">
+<a style="float:left;" href="/t/statement.html" target="_blank">关于不法分子盗用我公司名义进行网络诈骗的声明</a>
+<a class="sl2" href="/t/feedback.html" target="_blank">给我们提意见</a>
+</div>
+<div style="float:left;width:340;padding-top:20px"><script type="text/javascript">
+        (function() {
+            var s = "_" + Math.random().toString(36).slice(2);
+            document.write('<div style="" id="' + s + '"></div>');
+            (window.slotbydup = window.slotbydup || []).push({
+                id: "u4168103",
+                container: s
+            });
+        })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" >
+</script></div>
+<div style="float:right;width:340;padding-top:20px"><script type="text/javascript">
+        (function() {
+            var s = "_" + Math.random().toString(36).slice(2);
+            document.write('<div style="" id="' + s + '"></div>');
+            (window.slotbydup = window.slotbydup || []).push({
+                id: "u4168375",
+                container: s
+            });
+        })();
+</script>
+<!-- 多条广告如下脚本只需引入一次 -->
+<script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/c.js" async="async" defer="defer" >
+</script></div>
+<span class="dn"><a href="/t/star.html">名人</a></span>
+</div>
+</div>
+<script type="text/javascript">
+var loginMgr = new EnLogin('', $('kxloginform'), undefined, onValidationFailed, undefined, {
+onShowPrompt: onLoginError,
+onShowCaptcha: window.onShowCaptcha
+});
+</script>
+<img src="/favicon.ico" style="display:none;" />
+</div>
+</div>
+<div id="footer" style="border:none;">
+<div class="footerNav clearfix">
+<div class="left">
+<a href="/t/about.html" target="_blank" title="关于我们">关于我们</a>
+<a href="http://mobile.kaixin001.com" target="_blank" title="手机中心">手机中心</a>
+<a href="/app/list.html" target="_blank" title="应用中心">应用中心</a>
+<a href="http://zhaopin.kaixin001.com" target="_blank" title="开心招聘">开心招聘</a>
+<a href="/t/cronline.html" target="_blank" title="客服">客服</a>
+<a href="/t/help.html" target="_blank" title="帮助">帮助</a>
+<a href="http://www.nmpa.gov.cn/WS04/CL2042/" target="_blank" title="信息专栏">信息专栏</a>
+</div>
+<div class="right">&copy;2021 开心网</div>
+</div>
+<div class="footerInfo">
+<span class="footerNobg">北京开心人信息技术有限公司： 京网文[2018]10698-965号</span>
+<span><a href="http://www.miibeian.gov.cn" target="_blank">京ICP证080482号</a></span>
+<span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502040798"><img src="http://img1.kaixin001.com.cn/i/lark2020.png"/>京公网安备 11010502040798号</a></span>
+<span>(京)-非经营性-2014-0010</span>
+<span><a href="http://kaixin001.com/care/" target="_blank">未成年家长监护</a></span>
+<div class="footerReport">违法和不良信息举报电话：010-57978788 举报邮箱：jubao@kaixin-inc.com   <img src="http://img1.kaixin001.com.cn/i/footreport.png" /> 北京互联网举报中心 <a href="http://www.bjjubao.org" target="_blank">www.bjjubao.org</a><a href="http://py.qianlong.com/" target="_blank" class="ml10">北京地区网站联合辟谣平台</a> <a href="http://www.12377.cn" target="_blank" class="ml10">中国互联网举报中心</a></div>
+<div class="footerReport">涉未成年人专用举报渠道 举报电话：010-57978788 举报邮箱：jubao@kaixin-inc.com <a href="http://www.12377.cn" target="_blank" class="ml10">网上有害信息举报专区</a></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//outputTail();
+KxLazyLoad([], function() {} );
+KxLazyLoad(["js/log_kaixin001.js"], function() {} );
+</script>
+
+<script>K.Resource.disableAutoLoad()</script>
+<script>K.Resource.addResourceMap({"apps\/news_interaction\/Like.js":"js\/apps\/news_interaction\/Like-0003eaa15.js","apps\/common\/EmoticonControl.js":"js\/apps\/common\/EmoticonControl-0001d914b.js","core\/media\/MediaBox.js":"js\/core\/media\/MediaBox-0002a9159.js","core\/CmpEventMgr.js":"js\/core\/CmpEventMgr-00030bfcd.js","apps\/news_interaction\/Share.js":"js\/apps\/news_interaction\/Share-0015d0adf.js","core\/panel\/AsyncDialog.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","core\/async\/Request.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","core\/panel\/Dialog.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","core\/panel\/Panel.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","core\/panel\/Mask.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","apps\/common\/MFacePanel.js":"js\/apps\/common\/MFacePanel-00194e843.js","core\/panel\/Window.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js","core\/panel\/MessageBox.js":"js\/_combo\/core*panel*Mask,core*panel*Panel,core*panel*Dialog,core*panel*Window,core*panel*MessageBox,core*panel*AsyncDialog,core*async*Request-0058ffad4.js"});</script>
+<script></script>
+<script>K.Resource.loadJS(['http://s.kaixin001.com.cn/js/_combo/apps*common*AScrollTip,apps*common*AHeadPopupNav-0043add5c.js',
+'http://s.kaixin001.com.cn/js/core/Geometry-0001de487.js',
+'http://s.kaixin001.com.cn/js/core/ScrollObserver-000179b73.js',
+'http://s.kaixin001.com.cn/js/_combo/apps*news_interaction*AInit,apps*news_interaction*Utils,apps*news_interaction*Comment-004653333.js',
+'http://s.kaixin001.com.cn/js/core/3rd/autosize/Autosize-00031e451.js',
+'http://s.kaixin001.com.cn/js/_combo/apps*common*event_log*Rules,apps*common*event_log*AEventLog-0020c99e2.js',
+'http://s.kaixin001.com.cn/js/core/cookie/Cookie-0001f6c85.js']);</script>
+
+<script>K.Resource.passiveLoad(["base\/Base","base\/Array","base\/Class","base\/Function","base\/Object","base\/String","base\/Browser","base\/Pubsub","base\/Module","base\/CustEvent","base\/Env","base\/Util","prototype-1.6.1","core\/jQuery","kaixin","common","lazyload","s","head","head_rgroup","webeditor\/editor","webeditor\/lite","comment_base","Kx_Utils","Kx_HtmlTpl","apps\/common\/FaceResource","Kx_Easy_Captcha","apps\/common\/UserCard","apps\/common\/AppCard","seclogin","apps\/common\/AQqLogin","apps\/common\/AOauthLogin","apps\/common\/AScrollTip","apps\/common\/AHeadPopupNav","core\/Geometry","core\/ScrollObserver","apps\/news_interaction\/AInit","apps\/news_interaction\/Utils","apps\/news_interaction\/Comment","core\/3rd\/autosize\/Autosize","apps\/common\/event_log\/Rules","core\/common\/event_log\/Rules","apps\/common\/event_log\/AEventLog","core\/cookie\/Cookie"]);</script>
+<script>K.Resource.enableAutoLoad()</script>
+
+
+</body>
+</html>

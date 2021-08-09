@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr" data-server-language="fr-fr" data-accept-language="fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7">
+<head>
+	<title>Pixmania.com</title>
+	<meta name="description" content="Pixmania.com revient très bientôt." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/png" href="/assets/icon/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700|Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="/assets/css/v0012/global_new.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">			
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-52WGZXKM8B"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-52WGZXKM8B');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-N3KT8SQ');</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body class="">
+	<div class="global-content" style="position:relative;width:100%;overflow-x:hidden;">
+		<!-- Page Wrap -->
+		<div id="wrap"> 
+			<div class="globalcontent">     
+
+<style>
+	.newContact {background:url(/assets/images/waiting/bg_mail.jpg) no-repeat center;background-size:contain;height:800px}
+	.icotopvente {position:absolute;top:10px;right:0;background:url(/assets/images/waiting/ico_topvente.png) no-repeat center;background-size:contain;width:137px;height:46px;}
+	.bg-brush01 {background:url(/assets/images/waiting/bg_brush_vert.jpg) no-repeat center;position:absolute;top:0;bottom:0;right:0;left:0;}
+	.bg-brush02 {background:url(/assets/images/waiting/bg_brush_gris.jpg) no-repeat center;}
+	.block-service {background:#f8f8f8}
+	.block-service .brush-green02{position:absolute;top:100px;left:-450px;background:url(/assets/images/waiting/brush_vert02.png) no-repeat center;width:916px;height:623px;}
+	.block-revente {background:#000000}
+	.block-revente .brush-pink{position:absolute;bottom:-50px;left:-200px;background:url(/assets/images/waiting/brush_rose.png) no-repeat center;width:1118px;height:361px;}	
+	
+	.block-carte {background:url(/assets/images/waiting/ico_brush_gris_2.jpg) no-repeat center;}
+	
+	.block-ancien-client {background:#d70975}
+	
+	span.underline-pink {position:relative}
+	span.underline-pink:before{content:"";position:absolute;bottom:5px;height:10px;background:#db0880;left:0;right:0} 
+	span.underline-pink:after {content:"au meilleur prix";position:absolute;left:0;top:0;right:0}	
+	
+	.input-mail {border-radius:5px;margin-top:20px;}
+	.input-mail::placeholder {
+		  color: white;
+		  font-weight: 700;
+		}
+	input.btn-email, input.btn-email:hover {
+		background:white;
+		color:black;
+		font-weight:600;
+		font-size:14px;
+		letter-spacing:0;
+		text-transform:none;
+		border:1px solid white;
+		border-radius:5px;
+	}
+	
+	input.btn-email:hover {
+		background:#f5f5f5;
+	}
+	
+	.btn-contact {
+		border:1px solid white;
+		border-radius:5px;
+		color:black;
+		font-weight:600;
+		font-size:14px;
+		letter-spacing:0;
+		text-transform:none;
+	}
+	.secondevie {color:#d70975}
+	@media(min-width:769px)  {	
+		.ico-xs, .ico-xs-detail  {padding:0;}
+	}
+	@media(max-width:768px)  {
+		.newContact {background:url(/assets/images/waiting/bg_mail.jpg) no-repeat top center;background-size:cover;height:800px}
+		.icotopvente {position:absolute;top:10px;right:0;background:url(/assets/images/waiting/ico_topvente.png) no-repeat center;background-size:contain;width:100px;height:40px;}
+		.block-service .brush-green02{position:absolute;top:30px;left:-140px;background:url(/assets/images/waiting/brush_vert02.png) no-repeat center;background-size:contain;width:560px;height:400px;}
+		.ico-xs {padding:0;}
+		.ico-xs-detail {padding:0;text-align:left;padding-top:30px}
+		.ico-xs-detail-2 {padding:0;text-align:left;padding-top:30px}
+		h2 {font-size:24px}
+		h3 {font-size:18px}
+		.bg-brush01 {background:url(/assets/images/waiting/bg_brush_gris.jpg) no-repeat center;}
+		span.underline-pink {position:relative}
+		span.underline-pink:before{content:none} 
+		span.underline-pink:after {content:none}	
+		.secondevie {color:white}
+	}
+</style>
+
+<div class="container">
+	<div class="newContact">
+			
+			<div class="contentContact text-center vpadtop ">
+				<div style="width:300px;margin:auto; ">
+					<img src="/assets/images/waiting/logo_pixmania.png" class="resizeimg">
+				</div>			
+				<h1 class="text-center white vmargtop">Pixmania s’offre une <em class="secondevie">seconde vie</em> <br/>et vous propose tout pour le mobile</h1>
+				<p class="text-center white font-700 pixel-md-16">Smartphones et Tablettes reconditionnés&nbsp;&nbsp;|&nbsp;&nbsp;Accessoires mobiles</p>
+				<p class="text-center white vmargtop font-700 pixel-md-16">Inscrivez-vous pour être informé du lancement officiel</p>
+				
+					<form method="post" action="/">
+						<div style="width:300px;margin:auto;">
+							<input type="text" class="form-control input-mail" placeholder="email" name="email" style="background-color:rgba(255,255,255,0.3);border:none;text-align:center;color:white!important">
+						</div>
+						<input type="submit" class="btn btn-email" value="Je m'inscris" >
+					</form>
+				
+			
+			</div>
+			
+	</div>
+	
+
+</div>
+
+
+<div class="container xmargtop vmargbottom">
+	<h2 class="text-center">+ de 10.000 <span class="green">reconditionnés</span> disponibles</h2>
+	<h3 class="text-center">comme neufs à prix reconditionné</h3>
+</div>
+<div class="block-device relative">
+	<div class="bg-brush01"></div>
+	<div class="container">
+		<div class="col-md-3 col-xs-6 ">
+			<div class="relative">
+				<div class="icotopvente"></div>
+				<img src="/assets/images/waiting/device_iphonex.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">iPhone Xs</div>
+		</div>
+		<div class="col-md-3 col-xs-6 ">
+			<div class="relative">
+				<img src="/assets/images/waiting/device_s9.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Galaxy S9+ Xs</div>
+		</div>
+		<div class="col-md-3 col-xs-6 xs-bmargtop">
+			<div class="relative">
+				<img src="/assets/images/waiting/device_huawei.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Huawei P30 Lite</div>
+		</div>
+		<div class="col-md-3 col-xs-6  xs-bmargtop">
+			<div class="relative">
+				<img src="/assets/images/waiting/device_ipad.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">iPad Mini 5</div>
+		</div>
+	</div>
+</div>
+<div class="container vmargtop bpadtop text-center pixel-md-16 font-700">
+	<p>
+	En attendant l’ouverture de notre site, découvrez en exclusivité nos téléphones 
+	reconditionnés dans les boutiques The Kase et sur le site internet thekase.com
+	</p>
+</div>
+
+
+<div class="container xmargtop vmargbottom">
+	<h2 class="text-center">La protection est notre priorité</h2>
+	<h3 class="text-center">Découvrez notre large choix d’accessoires pour protégez votre smartphone</h3>
+</div>
+<div class="bg-brush02">
+	<div class="container bpadtop bpadbottom">
+		<div class="col-md-3 col-xs-6 text-center">
+			<div class="relative">
+				<img src="/assets/images/waiting/case.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Coque silicone</div>
+		</div>
+		<div class="col-md-3 col-xs-6 text-center">
+			<div class="relative">
+				<img src="/assets/images/waiting/verre_iphone12.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Verre de protection 100% surface</div>
+		</div>
+		<div class="col-md-3 col-xs-6 text-center xs-bmargtop">
+			<div class="relative">
+				<img src="/assets/images/waiting/verre_s20.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Verre de protection Samsung</div>
+		</div>
+		<div class="col-md-3 col-xs-6 text-center xs-bmargtop">
+			<div class="relative">
+				<img src="/assets/images/waiting/cable.png" class="resizeimg">
+			</div>
+			<div class="text-center bmargtop pixel-md-16 font-700">Câble</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container xmargtop">
+	<div class="block-service">
+		<div class="col-md-5 relative text-center">
+			<div class="brush-green02"></div>
+			<div class="col-xs-12 text-center col-xs-8 col-xs-push-2"><img src="/assets/images/waiting/box_pix.png" class="resizeimg vmargtop" style="position:relative;z-index:50"></div>
+			<div class="clearfix"></div>
+			
+		</div>
+		<div class="col-md-7  text-center vpadtop vpadbottom">
+			<h2 class=" text-center">Nos services <span class="green">garantis</span></h2>
+			
+			<div class="vpadleft vpadright xs-nopad">
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_01.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-16">LIVRÉ AVEC SES ACCESSOIRES</p></div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_02.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase  font-700 pixel-md-16 ">GARANTIE 24 MOIS*</p></div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_03.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-16 ">TESTÉS ET REMIS À NEUF</p></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<h2 class="vmargtop text-center">Les <span class="green">+ PIX</span></h2>
+			<div class="vpadleft vpadright xs-nopad">
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_04.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-16 ">PAIEMENT EN 3 OU 4 FOIS*</p></div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_05.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-16 ">RECONDITIONNÉ EN FRANCE</p></div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_06.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-16 ">RECYCLAGE ECORESPONSABLE</p></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>		
+			<div class="clearfix"></div>	
+		</div>
+		<div class="clearfix"></div>			
+	</div>
+</div>
+
+
+<div class="container xmargtop xs-nomargtop">
+	<div class="block-revente relative">
+		<div class="brush-pink"></div>
+		<div class="relative" style="z-index:50;padding-bottom:150px">
+			<div class="col-xs-12 text-center vpadtop xpadbottom xs-nopadbottom">
+				<h2 class="text-center white">Revendez votre téléphone <span class="underline-pink">au meilleur prix</span></h2>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-7 relative xs-bmargtop xs-bmargbottom">
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_chrono.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-15 white">ESTIMATION EN - 3 MIN</p></div>
+					<div class="clearfix"></div>					
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_euro.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-15 white">Cash le jour même*</p></div>
+					<div class="clearfix"></div>					
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="col-xs-3 ico-xs col-md-12"><img src="/assets/images/waiting/ico_rachat.gif" class="resizeimg"></div>
+					<div class="col-xs-9 ico-xs-detail col-md-12"><p class="uppercase font-700 pixel-md-15 white">Rachat immédiat de tous vos smartphones*</p></div>
+					<div class="clearfix"></div>
+				</div>	
+			</div>
+			<div class="col-md-5  text-center">
+				<img src="/assets/images/waiting/boutique.jpg" class="resizeimg">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+<div class="container xmargtop block-carte xpadbottom xs-vpadbottom">
+	<div>
+		<h2 class="text-center vmargbottom">Adhérez à nos offres de fidélité</h2>
+	</div>
+	<div class="">
+		<div class="col-md-3 col-xs-6 text-center">
+			<div><img src="/assets/images/waiting/carte_vipix.png" class="resizeimg"></div>
+		</div>
+		<div class="col-md-3 col-xs-6 text-center">
+			<div><img src="/assets/images/waiting/carte_vipix_plus.png" class="resizeimg"></div>
+		</div>
+		<div class="col-md-3 col-xs-6 text-center xs-bmargtop">
+			<div><img src="/assets/images/waiting/carte_pass.png" class="resizeimg"></div>
+		</div>	
+		<div class="col-md-3 col-xs-6 text-center xs-bmargtop">
+			<div><img src="/assets/images/waiting/carte_CAT.png" class="resizeimg"></div>
+		</div>	
+		<div class="clearfix"></div>
+	</div>
+	<div>
+		<h2 class="text-center vmargtop pink">& profitez d’avantages exclusifs !</h2>
+	</div>	
+
+</div>
+
+<div class="container xmargtop">
+	<div class="block-ancien-client text-center xpadtop xpadbottom">
+		<div class="col-md-10 col-md-push-1">
+			<h3 class="text-center white uppercase">ancien client pixmania ?</h3> 
+			<p class="bmargtop pixel-md-16 text-center white font-700">Pixmania a changé de propriétaire et d’activité. Nous sommes heureux de vous accueillir sous nos toutes nouvelles couleurs sur cette nouvelle marque (et bientôt nouveau site) pour vous proposer le meilleur des téléphones reconditionnés et de la téléphonie mobile.</p>
+			<p class="bmargtop pixel-md-16 text-center white font-700">Au plaisir de vous revoir sur notre site.</p>
+			<div class=""><a class="btn btn-white btn-contact" href="mailto:service-client@pixmania-group.com">Vous pouvez nous contacter ici</a></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

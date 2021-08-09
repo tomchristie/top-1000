@@ -1,0 +1,3393 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  
+<head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="&copy; DWANGO Co., Ltd.">
+    <link rel="shortcut icon" href="https://nicovideo.cdn.nimg.jp/uni/images/favicon/favicon.ico?re"><link rel="icon" type="image/png" href="https://nicovideo.cdn.nimg.jp/uni/images/favicon/32.png?re" sizes="32x32"><link rel="icon" type="image/png" href="https://nicovideo.cdn.nimg.jp/uni/images/favicon/48.png?re" sizes="48x48"><link rel="icon" type="image/png" href="https://nicovideo.cdn.nimg.jp/uni/images/favicon/96.png?re" sizes="96x96"><link rel="icon" type="image/png" href="https://nicovideo.cdn.nimg.jp/uni/images/favicon/144.png?re" sizes="144x144">
+
+    <title>ニコニコ</title>
+
+    <meta name="msapplication-task" content="name=ニコニコ; action-uri=https://www.nicovideo.jp/; icon-uri=https://nicovideo.cdn.nimg.jp/uni/img/favicon.ico?re">
+    <meta property="fb:app_id" content="378853695459932">
+
+    
+
+    
+  <meta name="description" content="日本最大級の動画サービス、ニコニコ（niconico）。動画にコメントを付けて楽しむニコニコ動画や、生放送番組にリアルタイムでコメントを付けられるニコニコ生放送のほか、イラスト・マンガ・最新ニュース・ゲームなど、エンターテイメントを全て無料で楽しめる！">
+  <meta property="og:title" content="ニコニコ">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="日本最大級の動画サービス、ニコニコ（niconico）。動画にコメントを付けて楽しむニコニコ動画や、生放送番組にリアルタイムでコメントを付けられるニコニコ生放送のほか、イラスト・マンガ・最新ニュース・ゲームなど、エンターテイメントを全て無料で楽しめる！">
+  <meta property="og:url" content="https://www.nicovideo.jp/">
+  <meta property="og:image" content="https://nicovideo.cdn.nimg.jp/uni/images/ogp.png?re">
+  <meta property="og:site_name" content="ニコニコ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:title" content="ニコニコ" />
+  <meta name="twitter:description" content="日本最大級の動画サービス、ニコニコ（niconico）。動画にコメントを付けて楽しむニコニコ動画や、生放送番組にリアルタイムでコメントを付けられるニコニコ生放送のほか、イラスト・マンガ・最新ニュース・ゲームなど、エンターテイメントを全て無料で楽しめる！" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@nico_nico_info" />
+  <meta name="twitter:image" content="https://nicovideo.cdn.nimg.jp/uni/images/ogp.png?re" />
+
+
+    
+              <link rel="alternate" media="handheld" href="http://m.nicovideo.jp/" />
+                
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="https://sp.nicovideo.jp/" />
+  <link rel="canonical" href="https://www.nicovideo.jp/">
+
+
+                      <script type="text/javascript">
+  try {
+    window.NicoGoogleTagManagerDataLayer = [];
+
+    var data = {
+    };
+
+        data.user = (function() {
+      var user = {};
+
+                  user.login_status = 'not_login';
+      
+      return user;
+    })();
+
+        data.content = (function() {
+      var content = {};
+
+            
+      return content;
+    })()
+
+    window.NicoGoogleTagManagerDataLayer.push(data);
+  } catch(e) {
+  }
+</script>
+<script>
+    
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','NicoGoogleTagManagerDataLayer','GTM-KTTXCBK');
+  
+</script>
+    
+        <script>
+      window.Ads = { protocol: 'https:' };
+    </script>
+
+    
+  <link href="https://nicovideo.cdn.nimg.jp/uni/styles/bundle/pages_index_TopPage.css?1627877984" rel="stylesheet">
+
+    
+  
+</head>
+<body class="BaseLayout ja-jp ">
+
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTTXCBK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+    <div id="CommonHeader" class="CommonHeader" data-common-header="{&quot;initConfig&quot;:{&quot;frontendId&quot;:6,&quot;frontendVersion&quot;:&quot;0&quot;,&quot;site&quot;:&quot;niconico&quot;,&quot;debug&quot;:{&quot;showAppeal&quot;:false},&quot;baseUrl&quot;:{&quot;accountUrl&quot;:&quot;https:\/\/account.nicovideo.jp&quot;,&quot;channelUrl&quot;:&quot;https:\/\/ch.nicovideo.jp&quot;,&quot;communityUrl&quot;:&quot;https:\/\/com.nicovideo.jp&quot;,&quot;nicoadUrl&quot;:&quot;https:\/\/nicoad.nicovideo.jp&quot;,&quot;niconicoUrl&quot;:&quot;https:\/\/www.nicovideo.jp&quot;},&quot;customization&quot;:{&quot;cmnhdRef&quot;:{&quot;page&quot;:&quot;top&quot;},&quot;nextUrl&quot;:&quot;\/&quot;,&quot;logoutNextUrl&quot;:&quot;\/&quot;,&quot;size&quot;:{&quot;hMargin&quot;:&quot;auto&quot;,&quot;maxWidth&quot;:&quot;1024px&quot;,&quot;minWidth&quot;:&quot;1024px&quot;},&quot;userPanelLinks&quot;:[{&quot;href&quot;:&quot;https:\/\/www.nicovideo.jp\/my\/mylist&quot;,&quot;label&quot;:&quot;\u30de\u30a4\u30ea\u30b9\u30c8&quot;},{&quot;href&quot;:&quot;https:\/\/www.nicovideo.jp\/my\/follow&quot;,&quot;label&quot;:&quot;\u30d5\u30a9\u30ed\u30fc\u4e2d&quot;},{&quot;href&quot;:&quot;https:\/\/www.nicovideo.jp\/ranking&quot;,&quot;label&quot;:&quot;\u52d5\u753b\u30e9\u30f3\u30ad\u30f3\u30b0&quot;},{&quot;href&quot;:&quot;https:\/\/live.nicovideo.jp\/ranking&quot;,&quot;label&quot;:&quot;\u751f\u653e\u9001\u30e9\u30f3\u30ad\u30f3\u30b0&quot;},{&quot;href&quot;:&quot;https:\/\/www.nicovideo.jp\/my\/history\/video&quot;,&quot;label&quot;:&quot;\u52d5\u753b\u8996\u8074\u5c65\u6b74&quot;},{&quot;href&quot;:&quot;https:\/\/live.nicovideo.jp\/timetable&quot;,&quot;label&quot;:&quot;\u751f\u653e\u9001\u756a\u7d44\u8868&quot;},{&quot;href&quot;:&quot;https:\/\/www.upload.nicovideo.jp\/garage\/&quot;,&quot;label&quot;:&quot;\u6295\u7a3f\u52d5\u753b\uff0f\u52d5\u753b\u3092\u6295\u7a3f\u3059\u308b&quot;},{&quot;href&quot;:&quot;https:\/\/live.nicovideo.jp\/create&quot;,&quot;label&quot;:&quot;\u751f\u653e\u9001\u3059\u308b&quot;}]},&quot;user&quot;:{&quot;isLogin&quot;:false}},&quot;language&quot;:&quot;ja&quot;,&quot;commonHeaderBaseUrl&quot;:&quot;https:\/\/secure-dcdn.cdn.nimg.jp\/&quot;}"></div>
+
+          
+  <div class="BaseLayout-main">
+    
+<script type="text/x-template" class="NC-Tooltip-template">
+  <div class="NC-Tooltip" style="visibility: hidden;"></div>
+</script>
+<div id="js-initial-top-page-data" data-environment="{&quot;baseURL&quot;:{&quot;nicoad&quot;:&quot;https:\/\/nicoad.nicovideo.jp&quot;,&quot;nicoadApi&quot;:&quot;https:\/\/api.nicoad.nicovideo.jp&quot;,&quot;nicoapp&quot;:&quot;http:\/\/app.nicovideo.jp&quot;,&quot;nicochannel&quot;:&quot;https:\/\/ch.nicovideo.jp&quot;,&quot;nicogame&quot;:&quot;https:\/\/game.nicovideo.jp&quot;,&quot;nicolive&quot;:&quot;https:\/\/live.nicovideo.jp&quot;,&quot;nicoliveExt&quot;:&quot;https:\/\/ext.live.nicovideo.jp&quot;,&quot;nvapi&quot;:&quot;https:\/\/nvapi.nicovideo.jp&quot;,&quot;user&quot;:&quot;https:\/\/www.nicovideo.jp\/user\/&quot;},&quot;language&quot;:&quot;ja-jp&quot;,&quot;locale&quot;:&quot;ja_JP&quot;}" hidden></div><div class="TopPage">  <section class="TopPage-section">    <div class="HeaderContainer_Re TopPage-header">
+    <div class="HeaderContainer_Re-main">
+              <div class="HeaderContainer_Re-decorationBackground">
+        <script
+          type="text/x-template"
+          data-wktk-name="nicotop-logo-bg"
+          data-wktk-selector=".HeaderContainer_Re-decorationBackground"
+        >
+          
+            {{#with items.[0]}}
+              <img class="HeaderContainer_Re-decorationBackgroundShort" src="{{ values.thumbnailShort.url }}" alt="{{ values.thumbnailShort.alt }}">
+              <img class="HeaderContainer_Re-decorationBackgroundLong" src="{{ values.thumbnailLong.url }}" alt="{{ values.thumbnailLong.alt }}">
+            {{/with}}
+          
+        </script>
+      </div>
+    
+    <div class="HeaderContainer_Re-mainUpper">
+            <div class="LogoContainer">
+  <h1 class="NiconicoLogo NiconicoLogo_re"><a href="/">ニコニコ</a></h1>
+</div>
+
+            <div
+  class="SearchContainer"
+    data-suggest-enabled="1"  data-suggest-api-url="https://sug.search.nicovideo.jp/"
+>
+  <div class="CrossSearch_Re"><ul class="CrossSearch_Re-rowSelector"><li class="CrossSearch_Re-rowService active" data-service="video" data-base-url="https://www.nicovideo.jp/search/">動画</li><li class="CrossSearch_Re-rowService" data-service="seiga" data-base-url="https://seiga.nicovideo.jp/search/">静画</li><li class="CrossSearch_Re-rowService" data-service="live" data-base-url="https://live.nicovideo.jp/search/">生放送</li></ul><div class="CrossSearch_Re-pullDownSelector"><button class="CrossSearch_Re-pullDownButton"><div class='CrossSearch_Re-pullDownButtonText'>動画</div><div class='CrossSearch_Re-arrowIcon'></div></button><ul class="CrossSearch_Re-pullDownList" style="display: none"><li class="CrossSearch_Re-pullDownService" data-service="video" style="display: none">動画</li><li class="CrossSearch_Re-pullDownService" data-service="seiga">静画</li><li class="CrossSearch_Re-pullDownService" data-service="live">生放送</li></ul></div><form action="" class="CrossSearch_Re-form"><input type="text" class="CrossSearch_Re-input" name="CrossSearch_Re-input" placeholder="動画を検索"><button type="submit" class="CrossSearch_Re-button"></button></form></div>
+</div>
+    </div>
+    <div class="HeaderContainer_Re-mainLower">
+              <ul class="OneLineLinkContainer">
+  <script
+    type="text/x-template"
+    data-wktk-id="OneLineLinkContainer"
+    data-wktk-name="nicotop-1line"
+    data-wktk-selector=".OneLineLinkContainer"
+  >
+
+    {{#each items}}
+      <li
+        id="OneLineLinkContainer-item{{ itemId }}"
+        class="OneLineLinkContainer-item"
+        {{#with values.TextShadowColor}}data-shadow-color="{{ context }}"{{/with}}
+      >
+
+        <svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z"></path></g></svg>
+
+        <a
+          href="{{addQuery values.url.url 'ref=nicotop_1line'}}"
+          title="{{values.text.context}}"
+          {{#if values.url.isNewWindow}}target="_blank" rel="noopener"{{/if}}
+        >
+          {{values.text.context}}
+        </a>
+    <style>
+      #OneLineLinkContainer-item{{ itemId }} {
+        {{#is values.TextBold.context '==' 'bold'}}
+          font-weight: 700;
+        {{/is}}
+        {{#if values.TextColor.context}}
+          color: {{ values.TextColor.context }};
+        {{/if}}
+        {{#if values.TextShadowColor.context}}
+          text-shadow:
+            0 0 4px {{ values.TextShadowColor.context }},
+            0 0 4px {{ values.TextShadowColor.context }},
+            0 0 4px {{ values.TextShadowColor.context }},
+            0 0 4px {{ values.TextShadowColor.context }};
+        {{/if}}
+      }
+      #OneLineLinkContainer-item{{ itemId }} > a:hover {
+        {{#if values.TextHoverColor.context}}
+          color: {{ values.TextHoverColor.context }};
+        {{/if}}
+      }
+    </style>
+      </li>
+    {{/each}}
+
+  </script>
+</ul>
+          </div>
+
+              <div class="HeaderContainer_Re-decorationSide">
+        <script
+          type="text/x-template"
+          data-wktk-name="nicotop-logo-image"
+          data-wktk-selector=".HeaderContainer_Re-decorationSide"
+        >
+          
+            {{#with items.[0]}}
+              {{#if values.url }}
+                <a href="{{addQuery values.url.url 'ref=nicotop_logoimage'}}" {{#if values.url.isNewWindow}}target="_blank"{{/if}}>
+                  <img src="{{ values.thumbnail.url }}" alt="{{ values.thumbnail.alt }}">
+                </a>
+              {{else}}
+                <img src="{{ values.thumbnail.url }}" alt="{{ values.thumbnail.alt }}">
+              {{/if}}
+            {{/with}}
+          
+        </script>
+      </div>
+      </div>
+
+  <div class="HeaderContainer_Re-ad">
+        <div class="PcUniTop468x60NorthAdContainer">
+  <div id="pc_uni_top_468x60_north" class="Ads">
+      <div class="PcUniTop468x60NorthAdContainer-skeleton"></div>
+  
+</div>
+</div>
+  </div>
+</div>
+</section><section class="TopPage-wideSection">    <div
+  class="PersonalFrameContainer"
+  data-personal-frame-container
+  data-enable="0"
+  data-apiBaseURL="https://public.api.nicovideo.jp/"
+  data-language="ja-jp"
+  hidden
+>
+  <script type="text/x-template" data-personal-frame-container-template>
+        <div
+      hidden
+      data-gtm-imp="nicovideo_imp_personal"
+      data-gtm-imp-label-detail="{{id}}"
+    ></div>
+
+    <div class="PersonalFrameContainer-header">
+      <span class="PersonalFrameContainer-title">
+        {{title}}
+      </span>
+    </div>
+
+
+    <div class="PersonalFrameContainer-body">
+      <a
+        class="PersonalFrameContainer-link"
+        href="{{addQuery linkUrl 'ref=nicotop_personal'}}"
+        data-personal-frame-container-link
+        data-gtm-click="nicovideo_click_personal"
+        data-gtm-click-label-detail="{{id}}"
+      >
+
+        <svg class="PersonalFrameContainer-arrow" viewbox="0 0 120 160"><path d="M0 8C0-2 14-2 21 4l97 71q4 5 0 10l-97 71c-7 6-21 6-21-4z"/></svg>
+        <span class="PersonalFrameContainer-description">
+          {{{text}}}
+        </span>
+      </a>
+
+      <div
+        class="PersonalFrameContainer-close"
+        title="非表示にする"
+        data-personal-frame-container-close
+        data-gtm-click="nicovideo_close_personal"
+        data-gtm-click-label-detail="{{id}}"
+      >
+
+        <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1">
+    <path d="M12,2 C6.47,2 2,6.47 2,12 C2,17.53 6.47,22 12,22 C17.53,22 22,17.53 22,12 C22,6.47 17.53,2 12,2 Z M16.3,16.3 C15.91,16.69 15.28,16.69 14.89,16.3 L12,13.41 L9.11,16.3 C8.72,16.69 8.09,16.69 7.7,16.3 C7.31,15.91 7.31,15.28 7.7,14.89 L10.59,12 L7.7,9.11 C7.31,8.72 7.31,8.09 7.7,7.7 C8.09,7.31 8.72,7.31 9.11,7.7 L12,10.59 L14.89,7.7 C15.28,7.31 15.91,7.31 16.3,7.7 C16.69,8.09 16.69,8.72 16.3,9.11 L13.41,12 L16.3,14.89 C16.68,15.27 16.68,15.91 16.3,16.3 Z"></path>
+  </g>
+</svg>
+      </div>
+    </div>
+  </script>
+</div>
+    <div class="TopPage-stageArea">      <div class="StageBackground">
+  <div class="StageBackground-custom">
+    <script
+      type="text/x-template"
+      data-wktk-name="nicotop-stage-bg"
+      data-wktk-selector=".StageBackground-custom"
+    >
+      
+        {{#with items.[0]}}
+          <div style="
+            {{#with values.BackgroundColor.context }}
+              background-color: {{ this }};
+            {{/with}}
+            {{#with values.thumbnail.url }}
+              background-image: url('{{ this }}');
+            {{/with}}
+            {{#with values.isBackgroundPosition.context }}
+              background-position: {{ this }};
+            {{/with}}
+            {{#with values.isBackgroundRepeat.context }}
+              background-repeat: {{ this }};
+            {{/with}}
+          "></div>
+        {{/with}}
+      
+    </script>
+  </div>
+</div>
+<section class="TopPage-billboardAdSection">        <div class="PcUniTop970x250BillboardAdContainer" data-is-enabled="true">
+  <div id="web_pc_billboard" class="Ads">
+  
+</div>
+</div>
+</section><section class="TopPage-section" data-wait-for-billboard="true">                
+<div
+  class="AuroraVisionContainer"
+  data-disable-ext-player="false"
+>
+  <div class="AuroraVisionContainer-body">
+    
+
+<div class="LEDMessageBoard">
+  <canvas class="LEDMessageBoard-offscreenMessage"></canvas>
+  <canvas class="LEDMessageBoard-message">8月9日のニコニコ</canvas>
+  <div class="LEDMessageBoard-custom" hidden>
+    <script
+      type="text/x-template"
+      data-wktk-name="nicotop-vision-text"
+      data-wktk-selector=".LEDMessageBoard-custom"
+    >
+      
+        {{#with items.[0].values.TextColor.context}}
+          <div data-color>{{ this }}</div>
+        {{/with}}
+        <div data-text>{{ items.[0].values.Text.context }}</div>
+      
+    </script>
+  </div>
+</div>
+    <div class="AuroraVisionContainer-extPlayerWrapper">
+                    <div
+  class="ExtPlayerView AuroraVisionContainer-extPlayer"
+  data-type="video"
+  data-src="sm39128044"
+  data-thumbnail-url="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/39128044/39128044.71013461.original/r640x360l?key=5fc30bed955ea1cfced7185813ffe6cea111632306dfbf8eea9161fc5c8a88de"
+  data-disable-watch-count="false"
+  data-is-error="false"
+>
+  <div class="ExtPlayerView-player"></div>
+
+  <div class="ExtPlayerView-error">
+    <div class="ExtPlayerView-errorImage"></div>
+    <div class="ExtPlayerView-errorText">コンテンツの取得に失敗しました</div>
+  </div>
+</div>
+            <a
+        class="AuroraVisionContainer-extPlayerCover"
+        href="https://www.nicovideo.jp/watch/sm39128044?ref=nicotop_stage_vision"
+         data-gtm-click="nicovideo_click_nicotop-stage-vision" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm39128044" data-gtm-content-user-id="53788150"
+      >
+        <div class="AuroraVisionContainer-extPlayerLink">
+          視聴ページで見る
+        </div>
+      </a>
+              <div class="AuroraVisionContainer-audioControllerWrapper"
+           data-gtm-click="nicovideo_click_nicotop-stage-vision-mute" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm39128044" data-gtm-content-user-id="53788150"
+          data-gtm-click-send-once=true
+        >
+          <div class="AudioController AuroraVisionContainer-audioController">
+  <button class="AudioController-muteButton">
+    <div class="Icon AudioController-muteIcon" data-type="icon_mute"></div>
+  </button>
+  <div class="AudioController-volumeBarContainer">
+    <div class="AudioController-volumeBar">
+      <div class="AudioController-volumeBarInner"></div>
+    </div>
+  </div>
+</div>
+        </div>
+          </div>
+               
+<div
+  class="AuroraVisionCard AuroraVisionContainer-card"
+  data-link="https://www.nicovideo.jp/watch/sm39128044"
+   data-gtm-imp="nicovideo_imp_nicotop-stage-vision" data-gtm-click="nicovideo_click_nicotop-stage-vision" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm39128044" data-gtm-content-user-id="53788150"
+>
+    <div class="AuroraVisionBanner AuroraVisionCard-banner">
+  <script
+    type="text/x-template"
+    data-wktk-id="AuroraVisionBanner"
+    data-wktk-name="nicotop-stage-eventsettings"
+    data-wktk-selector=".AuroraVisionBanner"
+  >
+    {{#with items.[0]}}
+      
+      {{#if values.thumbnail.url}}
+        <img
+          class="AuroraVisionBanner-image"
+          src="{{values.thumbnail.url}}"
+          alt="{{values.thumbnail.alt}}"
+        />
+      {{/if}}
+
+      {{#if values.url.url}}
+        <a
+          class="AuroraVisionBanner-button"
+          title="{{values.text.context}}"
+          href="{{addQuery values.url.url 'ref=nicotop_stage_vision_eventsettings'}}"
+          {{#if values.url.isNewWindow}}target="_blank"{{/if}}
+          rel="noopener"
+           data-gtm-click="nicovideo_click_nicotop-stage-eventsettings" data-gtm-action-detail="{{values.url.url}}"
+          {{#if values.backgroundColor.context}}style="background-color: {{values.backgroundColor.context}}"{{/if}}
+        >
+          <span
+            class="AuroraVisionBanner-buttonText"
+            {{#if values.textcolor.context}}style="color: {{values.textcolor.context}}"{{/if}}
+          >
+            {{values.text.context}}
+          </span>
+        </a>
+      {{else}}
+        <div
+          class="AuroraVisionBanner-button is-disabled"
+          {{#if values.backgroundColor.context}}style="background-color: {{values.backgroundColor.context}}"{{/if}}
+        >
+          <span
+            class="AuroraVisionBanner-buttonText"
+            {{#if values.textcolor.context}}style="color: {{values.textcolor.context}}"{{/if}}
+          >
+            {{values.text.context}}
+          </span>
+        </div>
+      {{/if}}
+    {{/with}}
+  </script>
+</div>
+    <div class="AuroraVisionCard-meta">
+        <div class="AuroraVisionCard-metaCatch">少し不思議で切ない出会いの物語</div>
+        <div class="AuroraVisionCard-metaPickupComment">宇宙を旅するとこんな出会いがある</div>
+        <div
+      class="AuroraVisionCard-metaContentTitle"
+      data-is-visible="true"
+    >
+      自主制作アニメ「ねむらないよるのそこで」
+    </div>
+    <div class="AuroraVisionCard-metaCounters">
+            <span class="AuroraVisionCard-metaViewCounter">
+                  <svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1">
+    <path d="M4,4.11525064 C4,3.61183088 4.3798008,3.36791494 4.85259438,3.57230176 L13.6440947,7.37283299 C13.8406558,7.45780557 14,7.69477412 14,7.90440677 L14,7.94154661 C14,8.15015413 13.8429238,8.38965828 13.6440947,8.47876444 L4.83539442,12.426422 C4.37401882,12.6331895 4,12.3884331 4,11.8892855 L4,4.11525064 Z"></path>
+  </g>
+</svg>
+                1,554      </span>
+            <span class="AuroraVisionCard-metaCommentCounter">
+        <svg viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g stroke="none" stroke-width="1">
+    <path d="M7.74857129,11.2178905 L5.69111957,13.238878 C5.23052695,13.6913075 4.85714286,13.5422755 4.85714286,12.8967332 L4.85714286,11.2178905 L3.29109287,11.2178905 C2.85418434,11.2178905 2.5,10.8662138 2.5,10.4496536 L2.5,4.26823695 C2.5,3.8439514 2.85353117,3.5 3.29109287,3.5 L12.7089071,3.5 C13.1458156,3.5 13.5,3.8516768 13.5,4.26823695 L13.5,10.4496536 C13.5,10.8739391 13.1464688,11.2178905 12.7089071,11.2178905 L7.74857129,11.2178905 Z"></path>
+  </g>
+</svg>
+        40      </span>
+    </div>
+  </div>
+    <a
+    class="AuroraVisionCard-uploader"
+    title="2784"
+    data-provider-type="user"
+    data-provider-id="53788150"
+  >
+    <div class="Thumbnail AuroraVisionCard-uploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/5378/53788150.jpg?1628027165"
+         alt="2784"  ></div>
+</div>
+    <span class="AuroraVisionCard-uploaderText">
+      2784さんの投稿動画
+    </span>
+  </a>
+    </div>
+      </div>
+  <div class="AuroraVisionContainer-ad">
+        <div class="PcUniTop300x250EastAdContainer">
+  <div id="pc_uni_top_300x250_east" class="Ads">
+      <div class="PcUniTop300x250EastAdContainer-skeleton">
+      <div class="SkeletonRect"></div>
+    </div>
+  
+</div>
+</div>
+                <a
+  class="NiconicoTwitterBanner AuroraVisionContainer-twitterBanner"
+  href="https://twitter.com/nico_nico_info"
+  title="ニコニコ公式Twitter"
+  target="_blank" rel="noopener"
+>
+  <div class="NiconicoTwitterBanner-logo"></div>
+  <div class="NiconicoTwitterBanner-text">
+    <div class="NiconicoTwitterBanner-text1">話題のコンテンツを毎日紹介！</div>
+    <div class="NiconicoTwitterBanner-text2">ニコニコ公式Twitter</div>
+  </div>
+</a>
+      </div>
+</div>
+                
+
+<div
+  class="ContentsPickupContainer"
+  data-layout-mode="medium"
+  data-is-visible="true"
+>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://live2.nicovideo.jp/watch/lv332868260?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="生放送" data-gtm-action-detail="https://live2.nicovideo.jp/watch/lv332868260" data-gtm-content-user-id="ch2639811"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="live"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicolive/program-pictures/prod-lv332868260/thumbnail_1626861081407.jpg/r640x360l.jpg?key=699b8aa7e27dca950a3a2839995bea3c50d919ee2a6e6c5d18f03bb0e79fd796"
+         alt="「私に天使が舞い降りた！」一挙放送"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="live"
+    data-label="LIVE"
+  >
+    LIVE
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">放送中の注目番組</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  「私に天使が舞い降りた！」一挙放送
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="私に天使が舞い降りた！"
+      data-provider-type="channel"
+      data-provider-id="ch2639811"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/comch/channel-icon/128x128/ch2639811.jpg?1554256998"
+         alt="私に天使が舞い降りた！"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          私に天使が舞い降りた！の生放送
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://www.nicovideo.jp/watch/sm39082840?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm39082840" data-gtm-content-user-id="1027271"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="video"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/39082840/39082840.78644715.original/r640x360l?key=271ee1be259d66781e63c74c509b4189ebfae3faf22ddd77719b9b9e0a446078"
+         alt="【ゆるキャン△】ゆづきずのキャンプ場開拓日誌 0日目【VOICEROID】"  ></div>
+</div>
+
+        <div class="VideoThumbnailComment"><span class="VideoThumbnailComment-comment" style="transition-delay: 0ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 0ms;">沢がある?</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 534ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 534ms;">最終的に貸主がキャンプ場スタートするための体の良い労働力だったりしてw</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1393ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1393ms;">趣味としてはかなり安いな。</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 609ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 609ms;">これロープの向こうは他の人の?</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1242ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1242ms;">此処をキャンプ地とする(物理</span></span></div>
+  
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="video"
+    data-label="動画"
+  >
+    動画
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">VOICEROID旅行(旅行・アウトドア)ランキング1位</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  【ゆるキャン△】ゆづきずのキャンプ場開拓日誌 0日目【VOICEROID】
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="くる猫"
+      data-provider-type="user"
+      data-provider-id="1027271"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/102/1027271.jpg?1552181583"
+         alt="くる猫"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          くる猫さんの投稿動画
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://live.nicovideo.jp/watch/lv333148488?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="生放送" data-gtm-action-detail="https://live.nicovideo.jp/watch/lv333148488" data-gtm-content-user-id="38762035"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="live"
+  data-is-square="true"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3876/38762035.jpg?1525100662"
+         alt="あ"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="live"
+    data-label="LIVE"
+  >
+    LIVE
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">盛り上がっているユーザー番組</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  あ
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="勇者トロ"
+      data-provider-type="user"
+      data-provider-id="38762035"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/3876/38762035.jpg?1525100662"
+         alt="勇者トロ"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          勇者トロさんの生放送
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://www.nicovideo.jp/watch/sm39040253?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm39040253" data-gtm-content-user-id="1514533"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="video"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/39040253/39040253.32320055.original/r640x360l?key=6b079a17650d7219015d774d17a2312a6ec2e7ba3a66030a7f64a8fad7d2ab55"
+         alt="【VOCAROCK】虹の境界feat.東北きりたん"  ></div>
+</div>
+
+        <div class="VideoThumbnailComment"><span class="VideoThumbnailComment-comment" style="transition-delay: 0ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 0ms;">うぽつです!</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 985ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 985ms;">8888</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 169ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 169ms;">これJ-POPで出せば売れるわ〜</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1053ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1053ms;">ギターイケてる!</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1410ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1410ms;">うぽつ</span></span></div>
+  
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="video"
+    data-label="動画"
+  >
+    動画
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">夏を駆け抜けるようなボカロ曲</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  きりたんの力強い歌声にうっとり
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="SakuraUsagi"
+      data-provider-type="user"
+      data-provider-id="1514533"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/151/1514533.jpg?1617198521"
+         alt="SakuraUsagi"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          SakuraUsagiさんの投稿動画
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://live2.nicovideo.jp/watch/lv332795450?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="生放送" data-gtm-action-detail="https://live2.nicovideo.jp/watch/lv332795450" data-gtm-content-user-id="ch2594132"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="live"
+  data-is-square="true"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicochannel/live/2594132/ce9e9fb3-9720-408e-8376-4b7b948fafeb.jpg/128x128l_FFFFFFFF"
+         alt="和合真一×碕理人×杉江大志「じゅっきま！」"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="live"
+    data-label="LIVE"
+  >
+    LIVE
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">放送中の注目番組</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  和合真一×碕理人×杉江大志「じゅっきま！」
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="キャストサイズチャンネル"
+      data-provider-type="channel"
+      data-provider-id="ch2594132"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/comch/channel-icon/128x128/ch2594132.jpg?1627626867"
+         alt="キャストサイズチャンネル"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          キャストサイズチャンネルの生放送
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://nico.ms/so39053105?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="プレミアム限定動画" data-gtm-action-detail="https://nico.ms/so39053105" data-gtm-content-user-id="ch2647996"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="other"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicocc/wakutkool/v2/nicotop-stage-other/143833_baf40ce3.jpg"
+         alt="劇場版 Fate/kaleid liner プリズマ☆イリヤ　雪下の誓い"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="other"
+    data-label="プレミアム限定動画"
+  >
+    プレミアム限定動画
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">「劇場版プリヤ 雪下の誓い」を見よう</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  話をしようと思う。俺と、美遊の……これまでの話を
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="劇場版　Fate/kaleid liner プリズマ☆イリヤ　雪下の誓い"
+      data-provider-type="channel"
+      data-provider-id="ch2647996"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/comch/channel-icon/128x128/ch2647996.jpg?1627365048"
+         alt="劇場版　Fate/kaleid liner プリズマ☆イリヤ　雪下の誓い"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          劇場版　Fate/kaleid liner プリズマ☆イリヤ　雪下の誓い
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://game.nicovideo.jp/atsumaru/games/gm21224?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="ゲーム" data-gtm-action-detail="https://game.nicovideo.jp/atsumaru/games/gm21224"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="other"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicocc/wakutkool/v2/nicotop-stage-other/143831_49dc90f7.jpg"
+         alt="アプデされた世界で俺だけが何も変わってない件"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="other"
+    data-label="ゲーム"
+  >
+    ゲーム
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">30年も経てばこれもああなる。</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  アプデートされるタイトル画面にご注目ください
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="おるとさんの投稿ゲーム"
+      data-provider-type="other"
+      data-provider-id=""
+      data-provider-link="https://game.nicovideo.jp/atsumaru/users/119587400?ref=nicotop_stage"
+       href="https://game.nicovideo.jp/atsumaru/users/119587400?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicocc/wakutkool/v2/nicotop-stage-other/143831_da651a36.jpg"
+         alt="おるとさんの投稿ゲーム"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          おるとさんの投稿ゲーム
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://www.nicovideo.jp/watch/sm36531143?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm36531143" data-gtm-content-user-id="2227510"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="video"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/36531143/36531143.51492666.original/r640x360l?key=0f1337afd344f5ec745bc7318a10796a0e8bac2ec7a9468ad1e6091110aa9026"
+         alt="ちょこっと物理【速度】"  ></div>
+</div>
+
+        <div class="VideoThumbnailComment"><span class="VideoThumbnailComment-comment" style="transition-delay: 0ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 0ms;">また会おうメイトリックス</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 97ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 97ms;">タクシーがバックしても金くれないのは移動距離で計算してるからなのか</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1122ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1122ms;">この子透けて見えるけど妖精かお化けなの?</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 495ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 495ms;">なんかえっち</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1382ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1382ms;">なるほど</span></span></div>
+  
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="video"
+    data-label="動画"
+  >
+    動画
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">速度と速さの違いを学ぼう</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  学生時代を思い出すなあ…！
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="長旅P"
+      data-provider-type="user"
+      data-provider-id="2227510"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/222/2227510.jpg?1421135749"
+         alt="長旅P"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          長旅Pさんの投稿動画
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://seiga.nicovideo.jp/watch/mg505043?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="マンガ" data-gtm-action-detail="https://seiga.nicovideo.jp/watch/mg505043"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="other"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicocc/wakutkool/v2/nicotop-stage-other/143832_2229950e.jpg"
+         alt="聖女の魔力は万能です ～もう一人の聖女～ "  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="other"
+    data-label="マンガ"
+  >
+    マンガ
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">これはもうひとりの「聖女」の話。</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  少女は異世界で何を学ぶのか――
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="聖女の魔力は万能です ～もう一人の聖女～ "
+      data-provider-type="other"
+      data-provider-id=""
+      data-provider-link="https://seiga.nicovideo.jp/comic/49759?ref=nicotop_stage"
+       href="https://seiga.nicovideo.jp/comic/49759?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicocc/wakutkool/v2/nicotop-stage-other/143832_4af39430.jpg"
+         alt="聖女の魔力は万能です ～もう一人の聖女～ "  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          聖女の魔力は万能です ～もう一人の聖女～ 
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://www.nicovideo.jp/watch/sm38706481?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="動画" data-gtm-action-detail="https://www.nicovideo.jp/watch/sm38706481" data-gtm-content-user-id="702405"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="video"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicovideo/thumbnails/38706481/38706481.21681732.original/r640x360l?key=0a88efba4419bad165fb242bfe2e361bc18e61535993011bfa0c420bc0a47876"
+         alt="ダイソーメスティン で豚の角煮　自炊料理"  ></div>
+</div>
+
+        <div class="VideoThumbnailComment"><span class="VideoThumbnailComment-comment" style="transition-delay: 0ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 0ms;">私も田舎のネズミが好き</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 816ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 816ms;">うぽつ</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 1209ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 1209ms;">GUNDAM☆</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 836ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 836ms;">゜+.(ノ。&#039;▽&#039;)ノ*.オオォォ☆゜・:*☆</span></span><span class="VideoThumbnailComment-comment" style="transition-delay: 2ms;"><span class="VideoThumbnailComment-inner" style="transition-delay: 2ms;">蹴っ飛ばしそうで怖い</span></span></div>
+  
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="video"
+    data-label="動画"
+  >
+    動画
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">メスティンで作る豚の角煮</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  これは絶対おいしい。
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="ジャンク太郎"
+      data-provider-type="user"
+      data-provider-id="702405"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/70/702405.jpg?1606379623"
+         alt="ジャンク太郎"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          ジャンク太郎さんの投稿動画
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://live2.nicovideo.jp/watch/lv332823087?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="生放送" data-gtm-action-detail="https://live2.nicovideo.jp/watch/lv332823087" data-gtm-content-user-id="ch2633237"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="live"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicolive/program-pictures/prod-program_template_cinderellanight/thumbnail_1529999143071.jpg/r640x360l.jpg?key=71957909f1b559c107cdc3c4f8bdbf0722093470fde8369bd0af77b20d3bfe15"
+         alt="飯田友子・大坪由佳・立花理香・藤田茜「デレラジ☆」"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="live"
+    data-label="LIVE"
+  >
+    LIVE
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">放送中の注目番組</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  飯田友子・大坪由佳・立花理香・藤田茜「デレラジ☆」
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="ラジオ アイドルマスター シンデレラガールズ『デレラジ』"
+      data-provider-type="channel"
+      data-provider-id="ch2633237"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/comch/channel-icon/128x128/ch2633237.jpg?1627977603"
+         alt="ラジオ アイドルマスター シンデレラガールズ『デレラジ』"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          ラジオ アイドルマスター シンデレラガールズ『デレラジ』の生放送
+              </span>
+    </a>
+          </div>
+</div>
+      
+
+<div
+  class="ContentsPickupCard ContentsPickupContainer-card"
+  data-video-thumbnail-comment-hover
+  data-layout-mode="medium"
+>
+  <a
+    class="ContentsPickupCard-content"
+    href="https://live2.nicovideo.jp/watch/lv332875371?ref=nicotop_stage"
+         data-gtm-imp="nicovideo_imp_nicotop-stage-pickup" data-gtm-click="nicovideo_click_nicotop-stage-pickup" data-gtm-label-detail="生放送" data-gtm-action-detail="https://live2.nicovideo.jp/watch/lv332875371" data-gtm-content-user-id="ch912"
+  >
+                    <div
+  class="ContentsPickupCardThumbnail ContentsPickupCard-thumbnail"
+  data-is-legacy-browser="true"
+  data-content-type="live"
+  data-is-square="false"
+  data-is-small="false"
+>
+    
+    <div class="Thumbnail ContentsPickupCardThumbnail-foreground">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://img.cdn.nimg.jp/s/nicolive/program-pictures/prod-lv332875371/thumbnail_1627366228494.jpg/r640x360l.jpg?key=ebd976abd9597620abad0bf5a3d65d89ee39ae6b465f6c196ccc201a9cfac2bb"
+         alt="「牡丹燈籠」ネット上映会【妖怪・特撮映画祭】"  ></div>
+</div>
+
+    
+    <div
+    class="ContentsPickupCardThumbnail-label"
+    data-type="live"
+    data-label="LIVE"
+  >
+    LIVE
+  </div>
+</div>
+        <div class="ContentsPickupCard-meta">
+            <div class="ContentsPickupCard-metaCatch">放送中の注目番組</div>
+                  <div class="ContentsPickupCard-metaPickupComment">
+                  「牡丹燈籠」ネット上映会【妖怪・特撮映画祭】
+              </div>
+    </div>
+  </a>
+    <div class="ContentsPickupCard-footer">
+        <a
+      class="ContentsPickupCard-footerUploader"
+      title="ホラー百物語"
+      data-provider-type="channel"
+      data-provider-id="ch912"
+      data-provider-link="?ref=nicotop_stage"
+       href="?ref=nicotop_stage"           >
+      <div class="Thumbnail ContentsPickupCard-footerUploaderIcon">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="https://secure-dcdn.cdn.nimg.jp/comch/channel-icon/128x128/ch912.jpg?1615600562"
+         alt="ホラー百物語"  ></div>
+</div>
+      <span class="ContentsPickupCard-footerUploaderText">
+                          ホラー百物語の生放送
+              </span>
+    </a>
+          </div>
+</div>
+        <div class="ContentsPickupContainer-card ContentsPickupCard" data-dummy></div>
+  </div>
+        <div
+  class="LockedContentsPickupContainer"
+  data-layout-mode="medium"
+  data-is-visible="false"
+>
+  </div>
+</section></div>    <div class="LiveWindowContainer">
+  <script
+    type="text/x-template"
+    data-wktk-id="LiveWindowContainer"
+    data-wktk-name="pc-nicotop-liveplayer"
+    data-wktk-selector=".LiveWindowContainer"
+  >
+
+
+    {{#if hasData}}
+
+            <div
+  class="ExtPlayerView LiveWindowContainer-extPlayer"
+  data-type="live"
+  data-src="{{liveExtPlayerUrl}}"
+  data-thumbnail-url=""
+  data-disable-watch-count="true"
+  data-is-error=""
+>
+  <div class="ExtPlayerView-player"></div>
+
+  <div class="ExtPlayerView-error">
+    <div class="ExtPlayerView-errorImage"></div>
+    <div class="ExtPlayerView-errorText">コンテンツの取得に失敗しました</div>
+  </div>
+</div>
+
+      <div class="LiveWindowContainer-meta">
+        <a
+          class="LiveWindowContainer-metaLink"
+          href="{{addQuery liveWatchUrl 'ref=nicotop_livew'}}"
+          title="{{title}}"
+        >
+          <div class="LiveWindowContainer-metaTitle">
+            {{title}}
+          </div>
+          <div class="LiveWindowContainer-metaDescription">{{description}}</div>
+        </a>
+      </div>
+    {{/if}}
+
+
+  </script>
+</div>
+    <div class="SpecialPickupBannerContainer">
+  <script
+    type="text/x-template"
+    data-wktk-id="SpecialPickupBannerContainer"
+    data-wktk-name="pc-nicotop-specialpickup"
+    data-wktk-selector=".SpecialPickupBannerContainer"
+  >
+  
+    {{#each items}}
+      <a
+        class="SpecialPickupBannerContainer-banner"
+        href="{{addQuery values.contentLink.url 'ref=nicotop_feature'}}"
+        {{#if values.contentLink.isNewWindow}}target="_blank" rel="noopener"{{/if}}
+        data-lazy-load
+        data-background-image="{{values.bannerImage.url}}"
+      ></a>
+    {{/each}}
+  
+  </script>
+</div>
+</section><section class="TopPage-section">      <div class="RankingContainer" data-container-lazy-load>
+  <script
+    type="text/x-handlebars-template"
+    id="RankingContainer-template"
+  >
+    
+      {{#each digests}}
+    
+    <div
+  class="ContentsDigestFrame RankingContainer-contentsDigestFrame" {{gtmAttr gtm}}
+  {{#is items.length '==' 0}}
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="{{link}}" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">{{linkText}}</p>
+  </div>
+  <div class="FrameTitleLink-titleText">{{title}}</div>
+</a>
+        <div class="ContentsDigestFrame-description">{{description}}</div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="{{link}}" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>{{linkText}}</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      {{gtmAttr gtm}} data-rank={{rank}}
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          style="background-image: url({{thumbnail}})"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      <div class="RankingContainerBlankState">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.88 18.47C20.36 17.7 20.63 16.8 20.57 15.81C20.44 13.66 18.73 11.84 16.6 11.61C13.88 11.31 11.58 13.42 11.58 16.08C11.58 18.57 13.59 20.58 16.07 20.58C16.95 20.58 17.77 20.32 18.46 19.88L20.87 22.29C21.26 22.68 21.9 22.68 22.29 22.29C22.68 21.9 22.68 21.26 22.29 20.87L19.88 18.47ZM16.08 18.58C14.7 18.58 13.58 17.46 13.58 16.08C13.58 14.7 14.7 13.58 16.08 13.58C17.46 13.58 18.58 14.7 18.58 16.08C18.58 17.46 17.46 18.58 16.08 18.58ZM15.72 10.08C14.98 10.1 14.27 10.26 13.62 10.53L13.07 9.69999L9.98998 14.71C9.62998 15.29 8.81999 15.35 8.37999 14.84L6.25999 12.37L3.19999 17.27C2.88999 17.76 2.22998 17.89 1.75998 17.55C1.33998 17.24 1.21998 16.66 1.49998 16.21L5.27999 10.16C5.63999 9.58999 6.44999 9.52999 6.88999 10.04L8.99999 12.5L12.18 7.32999C12.56 6.70999 13.46 6.68999 13.86 7.29999L15.72 10.08ZM18.31 10.58C17.67 10.3 16.98 10.13 16.26 10.09L20.8 2.89999C21.11 2.40999 21.77 2.28999 22.23 2.62999C22.66 2.93999 22.77 3.52999 22.49 3.96999L18.31 10.58Z" fill="#555555"/>
+</svg>
+  ランキング集計中です
+</div>
+
+    {{/each}}
+  </div>
+</div>
+    
+      {{/each}}
+    
+  </script>
+      <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+      <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+      <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+  </div>
+      <div class="CreatorSupportContainer" data-nicoad-api-url="https://api.nicoad.nicovideo.jp/" data-container-lazy-load>
+  <header class="CreatorSupportContainer-header">
+    <script
+      type="text/x-template"
+      data-wktk-id="CreatorSupportContainer-header"
+      data-wktk-name="nicotop-event-nicoad"
+      data-wktk-selector=".CreatorSupportContainer-header"
+    >
+    
+    {{#with items.[0]}}
+    
+            <a class="FrameTitleLink CreatorSupportContainer-titleLink" href="{{values.url.url}}?ref=nicotop_event_ouen" {{#if values.url.isNewWindow}} target="_blank" rel="noopener"{{/if}}  data-gtm-click="nicovideo_click_nicotop-event-ouen-site" data-gtm-action-detail="{{values.url.url}}">
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">{{values.urlText.context}}</p>
+  </div>
+  <div class="FrameTitleLink-titleText">{{values.title.context}}</div>
+</a>
+            
+      <div class="CreatorSupportContainer-description">{{values.description.context}}</div>
+      
+            <a class="SeeMoreLink" href="{{values.url.url}}?ref=nicotop_event_ouen" {{#if values.url.isNewWindow}} target="_blank" rel="noopener"{{/if}}  data-gtm-click="nicovideo_click_nicotop-event-ouen-site" data-gtm-action-detail="{{values.url.url}}">
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>{{values.urlText.context}}</span>
+  </div>
+</a>
+    
+    {{/with}}
+    
+    </script>
+    </header>
+    <ul class="CreatorSupportContainer-items">
+        <li class="CreatorSupportItem CreatorSupportItemSkeleton" hidden>
+  <header>
+    <div class="CreatorSupportItem-thumbnail CreatorSupportItemSkeleton-thumbnail"></div>
+    <div class="CreatorSupportItem-itemHeaderRight">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  <div class="CreatorSupportItem-ranking">
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+  </div>
+  <footer>
+    <div class="CreatorSupportItem-footerLink"></div>
+    <div class="CreatorSupportItem-footerLink"></div>
+  </footer>
+</li>
+    <li class="CreatorSupportItem CreatorSupportItemSkeleton" hidden>
+  <header>
+    <div class="CreatorSupportItem-thumbnail CreatorSupportItemSkeleton-thumbnail"></div>
+    <div class="CreatorSupportItem-itemHeaderRight">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  <div class="CreatorSupportItem-ranking">
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+  </div>
+  <footer>
+    <div class="CreatorSupportItem-footerLink"></div>
+    <div class="CreatorSupportItem-footerLink"></div>
+  </footer>
+</li>
+    <li class="CreatorSupportItem CreatorSupportItemSkeleton" hidden>
+  <header>
+    <div class="CreatorSupportItem-thumbnail CreatorSupportItemSkeleton-thumbnail"></div>
+    <div class="CreatorSupportItem-itemHeaderRight">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  <div class="CreatorSupportItem-ranking">
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+    <div class="CreatorSupportItem-advertiser"></div>
+  </div>
+  <footer>
+    <div class="CreatorSupportItem-footerLink"></div>
+    <div class="CreatorSupportItem-footerLink"></div>
+  </footer>
+</li>
+        <script type="text/x-template">
+      
+      {{#each this}}
+      
+          <li class="CreatorSupportItem">
+    <header>
+      <a
+        href="/watch/{{ nicoad.contentId }}?ref=nicotop_event_ouen_{{ nicoad.contentId }}"
+        title="{{ nicoad.title }}"
+         data-gtm-click="nicovideo_click_nicotop-event-ouen-content" data-gtm-action-detail="{{ nicoad.contentId }}"
+      >
+        
+                    <div class="NC-NicoadFrame CreatorSupportItem-adFrame NC-NicoadFrame_{{ nicoad.decoration }}">          <div class="Thumbnail CreatorSupportItem-thumbnail">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          style="background-image: url({{ nicoad.thumbnailUrl }})"
+          ></div>
+</div>
+          </div>
+          
+        <div class="CreatorSupportItem-itemHeaderRight">
+          <p class="CreatorSupportItem-itemHeaderPrefix">この動画を応援中!</p>
+          <h2 class="CreatorSupportItem-videoTitle">{{ nicoad.title }}</h2>
+        </div>
+      </a>
+    </header>
+    <ol class="CreatorSupportItem-ranking">
+      {{#each ranking}}
+      {{#with this}}
+      <li class="CreatorSupportItem-advertiser">
+        <p>{{advertiserName}}</p>
+      </li>
+      {{else}}
+      <li class="CreatorSupportItem-advertiser CreatorSupportItem-advertiser_empty">
+        <p>・・・・・・</p>
+      </li>
+      {{/with}}
+      {{/each}}
+    </ol>
+    <footer>
+      <a
+        class="CreatorSupportItem-footerLink CreatorSupportItem-footerLink_advertise"
+        href="https://nicoad.nicovideo.jp/video/publish/{{ nicoad.contentId }}?frontend_id=6&frontend_version=0"
+         data-gtm-click="nicovideo_click_nicotop-event-ouen-support" data-gtm-action-detail="{{ nicoad.contentId }}"
+      >
+        この動画を応援
+      </a>
+      <a
+        class="CreatorSupportItem-footerLink CreatorSupportItem-footerLink_history"
+        href="https://nicoad.nicovideo.jp/video/publish/{{ nicoad.contentId }}?frontend_id=6&frontend_version=0&adhistory=open"
+         data-gtm-click="nicovideo_click_nicotop-event-ouen-rireki" data-gtm-action-detail="{{ nicoad.contentId }}"
+      >
+        応援履歴
+      </a>
+    </footer>
+  </li>
+
+      
+      {{/each}}
+      
+    </script>
+    </ul>
+        <div
+  class="ContentErrorMessage CreatorSupportContainer-error"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+</div>
+    <div class="ThemeContainer">
+  <div class="ThemeContainer-content">
+    <script
+      type="text/x-template"
+      data-wktk-id="ThemeContainer-content"
+      data-wktk-name="nicotop-theme"
+      data-wktk-selector=".ThemeContainer-content"
+    >
+    
+    {{#each items}}
+    
+      <div
+  class="ContentsDigestFrame ThemeContainer-contentsDigestFrame" {{gtmAttr gtm}}
+  {{#is items.length '==' 0}}
+          hidden
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="{{link}}" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">{{linkText}}</p>
+  </div>
+  <div class="FrameTitleLink-titleText">{{title}}</div>
+</a>
+        <div class="ContentsDigestFrame-description">{{description}}</div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="{{link}}" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>{{linkText}}</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      {{gtmAttr gtm}}
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="{{thumbnail}}"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      
+    {{/each}}
+  </div>
+</div>
+    
+    {{/each}}
+    
+    </script>
+          <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+          <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+          <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <div class="ContentsDigestFrame-titleLink">
+        <div class="SkeletonLine ContentsDigestFrameSkeleton-title"></div>
+      </div>
+            <div class="ContentsDigestFrame-description">
+              <div class="SkeletonLine ContentsDigestFrameSkeleton-description"></div>
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+  <div class="ThemeContainer-style">
+    <script
+      type="text/x-template"
+      data-wktk-id="ThemeContainer-icon"
+      data-wktk-name="nicotop-theme-icon"
+      data-wktk-selector=".ThemeContainer-style"
+    >
+      <style type="text/css">
+        
+        {{#with items.[0]}}
+          .ThemeContainer-contentsDigestFrame .FrameTitleLink-titleText::before {
+            display: inline-block;
+            background-image: url("{{values.icon.url}}");
+          }
+        {{/with}}
+        
+      </style>
+    </script>
+  </div>
+</div>
+    <section class="PublishedEventArticlesContainer">
+  <div data-wktk-id="nicotop-event-articles-settings" data-wktk-name="nicotop-event-articles-settings" data-wktk-selector=".PublishedEventArticlesContainer"></div>
+  <div data-wktk-id="nicotop-event-articles" data-wktk-name="nicotop-event-articles" data-wktk-selector=".PublishedEventArticlesContainer"></div>
+
+  <script type="text/x-handlebars-template" id="PublishedEventArticlesContainer-template">
+    
+      <h1 class="PublishedEventArticlesContainer-title">{{this.title}}</h1>
+      <ul class="PublishedEventArticlesContainer-articleList">
+        {{#each articles}}
+          <li class="PublishedEventArticlesContainer-article">
+            <a class="PublishedEventArticlesContainer-articleTitle" href="{{this.articleUrl.url}}" {{#if this.articleUrl.isNewWindow}}target="_blank" rel="noopener"{{/if}}  data-gtm-click="nicovideo_click_nicotop-event-articles" data-gtm-action-detail="{{ this.articleUrl.url }}">{{this.articleTitle.context}}</a>
+            <div class="PublishedEventArticlesContainer-articleMeta">
+              <span>{{this.updateDate.context}}</span>
+              <span>[{{this.mediaName.context}}]</span>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+      <a class="PublishedEventArticlesContainer-seeMore" href="{{this.seeMoreURL.url}}" {{#if this.seeMoreURL.isNewWindow}}target="_blank" rel="noopener"{{/if}}>
+        <svg class="ArrowLink-arrow" viewBox="0 0 120 160" xmlns='http://www.w3.org/2000/svg'><path d="M0 8C0-2 14-2 21 4l97 71q4 5 0 10l-97 71c-7 6-21 6-21-4z"></path></svg>
+        {{this.seeMoreText}}
+      </a>
+    
+  </script>
+</section>
+    <div class="SponsorsContainer">
+  <div data-wktk-id="nicotop-event-sponsor-settings" data-wktk-name="nicotop-event-sponsor-settings" data-wktk-selector=".SponsorsContainer"></div>
+  <div data-wktk-id="nicotop-event-sponsor" data-wktk-name="nicotop-event-sponsor" data-wktk-selector=".SponsorsContainer"></div>
+
+  <script type="text/x-handlebars-template" id="SponsorsContainer-template">
+    {{#each sponsors}}
+      <div class="SponsorsBoard" data-display={{this.display}}>
+  <div class="SponsorsBoard-title">
+    <h2 class="SponsorsBoard-titleText">{{this.title}}</h2>
+  </div>
+
+  <div class="SponsorsBoard-itemArea">
+    <div class="SponsorsBoard-items">
+      {{#each sponsors}}
+        {{#if values.banner.url}}
+          <div
+  class="SponsorCard"
+  {{#if values.backgroundColor.context}}style="background-color: {{values.backgroundColor.context}}"{{/if}}
+>
+    <a
+    class="SponsorCard-link"
+    title="{{values.text.context}}"
+    href="{{values.url.url}}"
+    {{#if values.url.isNewWindow}}target="_blank"{{/if}}
+    rel="noopener"
+     data-gtm-click="nicovideo_click_nicotop-event-sponsor" data-gtm-action-detail="{{values.url.url}}"
+  >
+    <img
+      class="SponsorCard-image"
+      src="{{values.banner.url}}"
+      alt="{{values.text.context}}"
+    />
+  </a>
+</div>
+        {{else}}
+          <div class="SponsorText">
+  {{values.text.context}}
+</div>
+        {{/if}}
+      {{/each}}
+    </div>
+  </div>
+</div>
+    {{/each}}
+  </script>
+</div>
+</section><section class="TopPage-middleBillboardAdSection"><section class="TopPage-billboardAdSection">      <div class="PcUniTop970x250MiddleAdContainer" data-is-enabled="true">
+  <div id="web_pc_billboard_middle" class="Ads">
+      <div class="PcUniTop970x250MiddleAdContainer-skeleton">
+      <div class="SkeletonRect"></div>
+    </div>
+  
+</div>
+</div>
+</section></section><section class="TopPage-section">    
+<div class="NicoAdContainer" data-container-lazy-load>
+    <div class="NicoAdContainer-header">
+    <a class="FrameTitleLink " href="https://nicoad.nicovideo.jp/?ref=nicotop_ad" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">ニコニ広告とは</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニ広告</div>
+</a>
+    <a class="SeeMoreLink" href="https://nicoad.nicovideo.jp/?ref=nicotop_ad" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>ニコニ広告とは</span>
+  </div>
+</a>
+  </div>
+    <div class="NicoAdContainer-main">
+          <div class="NicoAdCardSkeleton NicoAdContainer-card">
+  <div class="NicoAdCardSkeleton-cardHeader NicoAdContainer-cardHeader">
+    <span class="NicoAdContainer-cardHeaderTitle">
+    </span>
+  </div>
+  <div class="NicoAdContainer-cardContent">
+    <div class="NicoAdContainer-adFrame">
+      <div class="NicoAdCardSkeleton-thumbnail NicoAdContainer-adFrameThumbnail"></div>
+    </div>
+    <div class="NicoAdContainer-cardMeta">
+      <div class="NicoAdCardSkeleton-cardMetaTitle NicoAdContainer-cardMetaTitle">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+      </div>
+      <div class="NicoAdContainer-cardMetaPoint">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaPoint"></div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="NicoAdCardSkeleton NicoAdContainer-card">
+  <div class="NicoAdCardSkeleton-cardHeader NicoAdContainer-cardHeader">
+    <span class="NicoAdContainer-cardHeaderTitle">
+    </span>
+  </div>
+  <div class="NicoAdContainer-cardContent">
+    <div class="NicoAdContainer-adFrame">
+      <div class="NicoAdCardSkeleton-thumbnail NicoAdContainer-adFrameThumbnail"></div>
+    </div>
+    <div class="NicoAdContainer-cardMeta">
+      <div class="NicoAdCardSkeleton-cardMetaTitle NicoAdContainer-cardMetaTitle">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+      </div>
+      <div class="NicoAdContainer-cardMetaPoint">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaPoint"></div>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="NicoAdCardSkeleton NicoAdContainer-card">
+  <div class="NicoAdCardSkeleton-cardHeader NicoAdContainer-cardHeader">
+    <span class="NicoAdContainer-cardHeaderTitle">
+    </span>
+  </div>
+  <div class="NicoAdContainer-cardContent">
+    <div class="NicoAdContainer-adFrame">
+      <div class="NicoAdCardSkeleton-thumbnail NicoAdContainer-adFrameThumbnail"></div>
+    </div>
+    <div class="NicoAdContainer-cardMeta">
+      <div class="NicoAdCardSkeleton-cardMetaTitle NicoAdContainer-cardMetaTitle">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaTitleLine"></div>
+      </div>
+      <div class="NicoAdContainer-cardMetaPoint">
+        <div class="SkeletonLine NicoAdCardSkeleton-cardMetaPoint"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="NicoAdContainer-error">
+      <div
+  class="ContentErrorMessage NicoAdContainer-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+
+    <div class="NicoAdContainer-cardTemplate" hidden>
+    <div class="NicoAdContainer-card" data-nicoad-item>
+      <div class="NicoAdContainer-cardHeader">
+        <span class="NicoAdContainer-cardHeaderTitle" data-message></span>
+      </div>
+      <a class="NicoAdContainer-cardContent" data-link>
+        <div class="NC-NicoadFrame NicoAdContainer-adFrame">          <div class="Thumbnail NicoAdContainer-adFrameThumbnail">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          style="background-image: url()"
+          ></div>
+</div>
+        </div>
+        <div class="NicoAdContainer-cardMeta">
+          <div class="NicoAdContainer-cardMetaTitle" data-label="" data-title></div>
+          <div class="NicoAdContainer-cardMetaPoint" data-nicoad-point></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</section><section class="TopPage-section">    <div class="NicoNewsAreaContainer">
+    <div class="NicoNewsContainer" data-container-lazy-load>
+  <div class="NicoNewsContainer-header">
+    <a class="FrameTitleLink " href="https://news.nicovideo.jp/?ref=nicotop_news" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコニュース</div>
+</a>
+    <a class="SeeMoreLink" href="https://news.nicovideo.jp/?ref=nicotop_news" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+  </div>
+  <div class="NicoNewsContainer-main">
+    <div class="NicoNewsContainer-skeleton">
+      <ul class="TabsSkeleton Tabs">
+      <li class="Tabs-tab is-active">トピックス</li>
+      <li class="Tabs-tab">コメント数</li>
+      <li class="Tabs-tab">アクセス数</li>
+      <li class="Tabs-tab">オリジナル記事</li>
+      <li class="Tabs-tab">新着コメント</li>
+  </ul>
+      <div class="NicoNewsContainer-articles is-active">
+        <ul class="NicoNewsContainer-textNews">
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                      <li class="NicoNewsContainer-textNewsItem">
+              <div class="NicoNewsContainer-textNewsItemLink">
+                <div class="SkeletonLine"></div>
+              </div>
+            </li>
+                    <div class="NicoNewsContainer-textNewsError">
+            <div
+  class="ContentErrorMessage NicoNewsContainer-textNewsErrorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+          </div>
+        </ul>
+        <div class="NicoNewsContainer-photoNews">
+          <div class="NicoNewsContainer-photoNewsContent">
+            <div class="NicoNewsContainer-photoNewsThumbnail"></div>
+            <div class="NicoNewsContainer-photoNewsTitle">
+                              <div class="SkeletonLine"></div>
+                              <div class="SkeletonLine"></div>
+                              <div class="SkeletonLine"></div>
+                          </div>
+          </div>
+          <div class="NicoNewsContainer-photoNewsError">
+            <div
+  class="ContentErrorMessage NicoNewsContainer-photoNewsErrorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/x-handlebars-template"
+      id="NicoNewsContainer-contentsTemplate"
+    >
+      <ul class="Tabs" id="NicoNewsContainer-tabs">
+  
+    {{#each tabItems}}
+      <li class="Tabs-tab" data-tab="{{this.name}}">{{this.label}}</li>
+    {{/each}}
+  
+</ul>
+      
+        {{#each nicoNewsItems}}
+          <div class="NicoNewsContainer-articles" data-niconews-container-articles="{{this.tabName}}">
+            <ul class="NicoNewsContainer-textNews">
+              {{#each this.textNews}}
+                <li class="NicoNewsContainer-textNewsItem">
+                  <a class="NicoNewsContainer-textNewsItemLink" href="{{addQuery this.link ../ref}}" title="{{this.title}}">{{this.title}}</a>
+                  {{#if this.hasPhoto}}
+                    <span class="NicoNewsContainer-textNewsPhoto">
+                      <div class="Icon" data-type="icon_news-camera"></div>
+                    </span>
+                  {{/if}}
+                  <a class="NicoNewsContainer-commentCount {{#if this.isOver1000Comment}}NicoNewsContainer-commentCount-isOver1000{{/if}}" href="{{addQuery this.link ../ref}}#COMMENT">
+                    <div class="Icon NicoNewsContainer-commentCountIcon" data-type="icon_news-comment-count"></div>
+                    {{this.commentCount}}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+            {{#if this.photoNews}}
+              <div class="NicoNewsContainer-photoNews">
+                <a class="NicoNewsContainer-photoNewsContent" href="{{addQuery this.photoNews.link this.ref}}" title="{{this.photoNews.title}}">
+                  <div class="NicoNewsContainer-photoNewsThumbnail">
+                    <div data-lazy-load data-background-image="{{this.photoNews.thumbnailUrl}}" alt="{{this.photoNews.title}}"></div>
+                  </div>
+                  <div class="NicoNewsContainer-photoNewsTitle">{{this.photoNews.title}}</div>
+                </a>
+                <a class="NicoNewsContainer-commentCount {{#if this.photoNews.isOver1000Comment}}NicoNewsContainer-commentCount-isOver1000{{/if}}" href="{{addQuery this.photoNews.link this.ref}}#COMMENT">
+                  <div class="Icon NicoNewsContainer-commentCountIcon" data-type="icon_news-comment-count"></div>
+                  {{this.photoNews.commentCount}}
+                </a>
+              </div>
+            {{/if}}
+          </div>
+        {{else}}
+        {{/each}}
+      
+    </script>
+  </div>
+</div>
+
+    <div class="PcUniTop350x240MiddleEastAdContainer"><div id="pc_uni_top_350x240_middle_east" class="Ads">
+      <div class="PcUniTop350x240MiddleEastAdContainer-skeleton"><div class="SkeletonRect"></div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="TopPage-section">    <div class="ContentsInformationAreaContainer">
+    <div class="DAnimeContainer" data-container-lazy-load>
+  <script
+    type="text/x-handlebars-template"
+    id="DAnimeContainer-template"
+    data-link-query={&quot;ref&quot;:&quot;nicotop_danime&quot;}
+  >
+    <div
+  class="ContentsDigestFrame DAnimeContainer-contentsDigestFrame" 
+  {{#is items.length '==' 0}}
+          hidden
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://site.nicovideo.jp/danime/?ref=nicotop_danime" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">dアニメストア ニコニコ支店</div>
+</a>
+        <div class="ContentsDigestFrame-description"></div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="https://site.nicovideo.jp/danime/?ref=nicotop_danime" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          style="background-image: url({{thumbnail}})"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      
+    {{/each}}
+  </div>
+</div>
+  </script>
+  <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://site.nicovideo.jp/danime/?ref=nicotop_danime" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">dアニメストア ニコニコ支店</div>
+</a>
+              <a class="SeeMoreLink" href="https://site.nicovideo.jp/danime/?ref=nicotop_danime" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+        <div class="ContentsDigestFrame-description">
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="ChannelContainer" data-container-lazy-load>
+  <script
+    type="text/x-handlebars-template"
+    id="ChannelContainer-template"
+    data-ref="ref=nicotop_chmap&amp;ref=nicotop_channel"
+  >
+    <div
+  class="ContentsDigestFrame ChannelContainer-contentsDigestFrame" 
+  {{#is items.length '==' 0}}
+          hidden
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://ch.nicovideo.jp/?ref=nicotop_chmap&amp;ref=nicotop_channel" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコチャンネル</div>
+</a>
+        <div class="ContentsDigestFrame-description"></div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="https://ch.nicovideo.jp/?ref=nicotop_chmap&ref=nicotop_channel" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          style="background-image: url({{thumbnail}})"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      
+    {{/each}}
+  </div>
+</div>
+  </script>
+  <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://ch.nicovideo.jp/?ref=nicotop_chmap&amp;ref=nicotop_channel" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコチャンネル</div>
+</a>
+              <a class="SeeMoreLink" href="https://ch.nicovideo.jp/?ref=nicotop_chmap&ref=nicotop_channel" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+        <div class="ContentsDigestFrame-description">
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="GameAtsumaruContainer">
+  <script
+    type="text/x-template"
+    data-wktk-id="GameAtsumaruContainer"
+    data-wktk-name="nicotop-atsumaru"
+    data-wktk-selector=".GameAtsumaruContainer"
+    data-link-query={&quot;ref&quot;:&quot;nicotop_atsumaru&quot;}
+  >
+    <div
+  class="ContentsDigestFrame GameAtsumaruContainer-contentsDigestFrame" 
+  {{#is items.length '==' 0}}
+          hidden
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://game.nicovideo.jp/?ref=nicotop_atsumaru" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ゲームアツマール</div>
+</a>
+        <div class="ContentsDigestFrame-description"></div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="https://game.nicovideo.jp/?ref=nicotop_atsumaru" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="{{thumbnail}}"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      
+    {{/each}}
+  </div>
+</div>
+  </script>
+  <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="https://game.nicovideo.jp/?ref=nicotop_atsumaru" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ゲームアツマール</div>
+</a>
+              <a class="SeeMoreLink" href="https://game.nicovideo.jp/?ref=nicotop_atsumaru" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+        <div class="ContentsDigestFrame-description">
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="NicoAppContainer">
+  <script
+    type="text/x-template"
+    data-wktk-id="NicoAppContainer"
+    data-wktk-name="nicotop-niconicoappli"
+    data-wktk-selector=".NicoAppContainer"
+    data-link-query={&quot;ref&quot;:&quot;nicotop_app&quot;}
+  >
+    <div
+  class="ContentsDigestFrame NicoAppContainer-contentsDigestFrame" 
+  {{#is items.length '==' 0}}
+          hidden
+      {{/is}}
+>
+    <div class="ContentsDigestFrame-header">
+            <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="http://app.nicovideo.jp/?ref=nicotop_app" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコアプリ</div>
+</a>
+        <div class="ContentsDigestFrame-description"></div>
+        {{#is items.length '!=' 0}}
+      <a class="SeeMoreLink" href="http://app.nicovideo.jp/?ref=nicotop_app" {{#if linkIsNewWindow}} target="_blank" rel="noopener"{{/if}}{{#is items.length "==" 0}} disabled{{/is}}>
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+    {{/is}}
+  </div>
+  <div class="ContentsDigestFrame-body">
+    {{#each items}}
+    <a class="ContentsDigestFrame-card"
+       href="{{link}}" title="{{title}}" {{_blank linkIsNewWindow}} 
+      
+    >
+      <div class="ContentThumbnail ContentsDigestFrame-contentThumbnail" data-type="{{type}}">
+          <div class="Thumbnail ContentThumbnail-legacy">
+  <div
+    class="Thumbnail-image"
+    data-thumbnail
+          data-lazy-load
+      data-background-image="{{thumbnail}}"
+         alt="{{title}}"  ></div>
+</div>
+  
+  <div class="ContentThumbnail-label" data-label="{{label}}">
+    {{label}}
+  </div>
+</div>
+      <div class="ContentsDigestFrame-cardMeta">
+        <p class="ContentsDigestFrame-cardMetaTitle">{{title}}</p>
+      </div>
+    </a>
+    {{else}}
+      
+    {{/each}}
+  </div>
+</div>
+  </script>
+  <div class="ContentsDigestFrameSkeleton ContentsDigestFrame">
+  <div class="ContentsDigestFrame-header">
+          <a class="FrameTitleLink ContentsDigestFrame-titleLink" href="http://app.nicovideo.jp/?ref=nicotop_app" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">もっと見る</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコアプリ</div>
+</a>
+              <a class="SeeMoreLink" href="http://app.nicovideo.jp/?ref=nicotop_app" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>もっと見る</span>
+  </div>
+</a>
+        <div class="ContentsDigestFrame-description">
+          </div>
+  </div>
+  <div class="ContentsDigestFrame-body">
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+          <div class="ContentItemSkeleton ContentsDigestFrame-card">
+  <div class="ContentItemSkeleton-thumbnail"></div>
+  <div class="ContentItemSkeleton-meta">
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+    <div class="SkeletonLine ContentItemSkeleton-metaRow"></div>
+  </div>
+</div>
+        <div class="ContentsDigestFrame-error">
+      <div
+  class="ContentErrorMessage ContentsDigestFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+    <div class="RealEventInformationAreaContainer">
+  <section>
+    <h1>イベント情報</h1>
+    <div class="RealEventInformationAreaContainer-contents">
+      <div class="RealEventContainer">
+      <div class="SkeletonRect Banner RealEventContainer-banner"></div>
+      <div class="SkeletonRect Banner RealEventContainer-banner"></div>
+      <div class="SkeletonRect Banner RealEventContainer-banner"></div>
+      <div class="SkeletonRect Banner RealEventContainer-banner"></div>
+    <script
+    type="text/x-template"
+    data-wktk-name="nicotop-realevent"
+    data-wktk-selector=".RealEventContainer"
+  >
+    
+      {{#each items}}
+        
+          <a
+  class="Banner RealEventContainer-banner"
+  href="{{addQuery values.contentLink.url 'ref=nicotop_info_event'}}"
+  data-lazy-load
+  data-background-image="{{values.thumbnailImage.url}}"
+  alt="{{values.thumbnailImage.alt}}"
+  {{_blank values.contentLink.isNewWindow}}
+></a>
+        
+      {{/each}}
+    
+  </script>
+  <div class="RealEventContainer-error">
+    <div
+  class="ContentErrorMessage RealEventContainer-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+  </div>
+</div>
+    </div>
+  </section>
+  <section>
+    <h1>各種チケット情報</h1>
+    <div class="RealEventInformationAreaContainer-contents">
+      <ul class="TicketNoticeContainer">
+      <li class="TicketNoticeContainer-title TicketNoticeContainer-titleSkeleton">
+      <div class="SkeletonLine TicketNoticeContainer-titleLink"></div>
+    </li>
+      <li class="TicketNoticeContainer-title TicketNoticeContainer-titleSkeleton">
+      <div class="SkeletonLine TicketNoticeContainer-titleLink"></div>
+    </li>
+    <script
+    type="text/x-template"
+    data-wktk-name="nicotop-ticket"
+    data-wktk-selector=".TicketNoticeContainer"
+  >
+  
+    {{#each items}}
+      <li class="TicketNoticeContainer-title">
+        <a
+          class="TicketNoticeContainer-titleLink"
+          href="{{addQuery values.contentLink.url 'ref=nicotop_info_ticket'}}"
+          title="{{values.title.context}}"
+          {{_blank values.contentLink.isNewWindow}}
+        >{{values.title.context}}</a>
+      </li>
+    {{/each}}
+  
+  </script>
+  <div class="TicketNoticeContainer-error">
+    <div
+  class="ContentErrorMessage TicketNoticeContainer-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+  </div>
+</ul>
+    </div>
+  </section>
+</div>
+</section><section class="TopPage-footer"><div class="TopPage-section">      <div class="FooterAreaContainer">
+  <section class="FooterAreaContainer-upper">
+    <div class="FooterAreaContainer-left">
+      <div class="FooterAreaContainer-contents">
+        <div class="TextListFrame NicoNoticeContainer" data-container-lazy-load>
+  <div class="TextListFrame-header">
+    <a class="FrameTitleLink TextListFrame-title" href="https://blog.nicovideo.jp/niconews/?ref=nicotop_topics" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">一覧</p>
+  </div>
+  <div class="FrameTitleLink-titleText">ニコニコからのお知らせ</div>
+</a>
+    <a class="SeeMoreLink" href="https://blog.nicovideo.jp/niconews/?ref=nicotop_topics" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>一覧</span>
+  </div>
+</a>
+  </div>
+  <ul class="TextListFrame-contents">
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+        <script
+      type="text/x-handlebars-template"
+      id="NicoNoticeContainer-template"
+      data-link-query={&quot;ref&quot;:&quot;nicotop_topics&quot;}
+    >
+      
+        {{#each items}}
+          <li class="TextListFrame-item">
+            <a href="{{this.link}}" title="{{this.title}}">{{this.title}}</a>
+            {{#if this.meta}}
+              <div class="TextListFrame-meta">{{this.meta}}</div>
+            {{/if}}
+          </li>
+        {{/each}}
+      
+    </script>
+    <div class="TextListFrame-error">
+      <div
+  class="ContentErrorMessage TextListFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </ul>
+</div>
+      </div>
+    </div>
+    <div class="FooterAreaContainer-right">
+      <div class="FooterAreaContainer-contents">
+        <div class="EnjoyContainer">
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+      <div class="SkeletonRect Banner EnjoyContainer-banner"></div>
+    <script
+    type="text/x-template"
+    data-wktk-name="spweb-nicotop-enjoy"
+    data-wktk-selector=".EnjoyContainer"
+  >
+    
+      {{#each items}}
+        
+          <a
+  class="Banner EnjoyContainer-banner"
+  href="{{addQuery values.url.url 'ref=nicotop_enjoys'}}"
+  data-lazy-load
+  data-background-image="{{values.banner.url}}"
+  alt="{{values.banner.alt}}"
+  {{_blank values.url.isNewWindow}}
+></a>
+        
+      {{/each}}
+    
+  </script>
+</div>
+      </div>
+    </div>
+  </section>
+  <section class="FooterAreaContainer-lower">
+    <div class="FooterAreaContainer-left">
+      <div class="FooterAreaContainer-contents">
+        <div class="TextListFrame FunctionNoticeContainer" data-container-lazy-load>
+  <div class="TextListFrame-header">
+    <a class="FrameTitleLink TextListFrame-title" href="https://blog.nicovideo.jp/niconews/category/ge_function/?ref=nicotop_info" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">一覧</p>
+  </div>
+  <div class="FrameTitleLink-titleText">機能追加・改善</div>
+</a>
+    <a class="SeeMoreLink" href="https://blog.nicovideo.jp/niconews/category/ge_function/?ref=nicotop_info" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>一覧</span>
+  </div>
+</a>
+  </div>
+  <ul class="TextListFrame-contents">
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+        <script
+      type="text/x-handlebars-template"
+      id="FunctionNoticeContainer-template"
+      data-link-query={&quot;ref&quot;:&quot;nicotop_info&quot;}
+    >
+      
+        {{#each items}}
+          <li class="TextListFrame-item">
+            <a href="{{this.link}}" title="{{this.title}}">{{this.title}}</a>
+            {{#if this.meta}}
+              <div class="TextListFrame-meta">{{this.meta}}</div>
+            {{/if}}
+          </li>
+        {{/each}}
+      
+    </script>
+    <div class="TextListFrame-error">
+      <div
+  class="ContentErrorMessage TextListFrame-errorMessage"
+  data-mode="compact"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </ul>
+</div>
+      </div>
+      <div class="FooterAreaContainer-contents">
+        <div class="TextListFrame MaintenanceNoticeContainer" data-container-lazy-load>
+  <div class="TextListFrame-header">
+    <a class="FrameTitleLink TextListFrame-title" href="https://blog.nicovideo.jp/niconews/category/ge_maintenance/?ref=nicotop_info" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">一覧</p>
+  </div>
+  <div class="FrameTitleLink-titleText">メンテナンス・障害・復旧</div>
+</a>
+    <a class="SeeMoreLink" href="https://blog.nicovideo.jp/niconews/category/ge_maintenance/?ref=nicotop_info" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>一覧</span>
+  </div>
+</a>
+  </div>
+  <ul class="TextListFrame-contents">
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+              </li>
+        <script
+      type="text/x-handlebars-template"
+      id="MaintenanceNoticeContainer-template"
+      data-link-query={&quot;ref&quot;:&quot;nicotop_info&quot;}
+    >
+      
+        {{#each items}}
+          <li class="TextListFrame-item">
+            <a href="{{this.link}}" title="{{this.title}}">{{this.title}}</a>
+            {{#if this.meta}}
+              <div class="TextListFrame-meta">{{this.meta}}</div>
+            {{/if}}
+          </li>
+        {{/each}}
+      
+    </script>
+    <div class="TextListFrame-error">
+      <div
+  class="ContentErrorMessage TextListFrame-errorMessage"
+  data-mode="compact"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </ul>
+</div>
+      </div>
+    </div>
+    <div class="FooterAreaContainer-right">
+      <div class="FooterAreaContainer-contents">
+        <div class="TextListFrame PublishedArticlesContainer" data-container-lazy-load>
+  <div class="TextListFrame-header">
+    <a class="FrameTitleLink TextListFrame-title" href="https://www.nicovideo.jp/recommendnews?ref=nicotop_reconews" >
+  <div class="FrameTitleLink-balloon">
+    <p class="FrameTitleLink-balloonText">一覧</p>
+  </div>
+  <div class="FrameTitleLink-titleText">掲載記事</div>
+</a>
+    <a class="SeeMoreLink" href="https://www.nicovideo.jp/recommendnews?ref=nicotop_reconews" >
+  <div class="SeeMoreLink-text">
+    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="icon/arrow/arrow_bold-right" stroke="none" stroke-width="1"><path d="M11.810631,7.6501481 C12.063123,7.8283692 12.063123,8.18392252 11.810631,8.36214363 L6.77263519,11.9101213 C6.46045472,12.13012 6.01421193,11.9212324 6.01373821,11.554568 L6,4.44661267 C5.99952666,4.07950387 6.44671689,3.86928297 6.75984479,4.09017047 L11.810631,7.6501481 Z" id="Path"></path></g></svg>
+    <span>一覧</span>
+  </div>
+</a>
+  </div>
+  <ul class="TextListFrame-contents">
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+        <div class="SkeletonLine TextListFrame-meta"></div>
+      </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+        <div class="SkeletonLine TextListFrame-meta"></div>
+      </li>
+          <li class="TextListFrame-item TextListFrame-itemSkeleton">
+        <div class="SkeletonLine TextListFrame-itemTitle"></div>
+        <div class="SkeletonLine TextListFrame-meta"></div>
+      </li>
+        <script
+      type="text/x-handlebars-template"
+      id="PublishedArticlesContainer-template"
+      data-link-query={&quot;ref&quot;:&quot;nicotop_reconews&quot;}
+    >
+      
+        {{#each items}}
+          <li class="TextListFrame-item">
+            <a href="{{this.link}}" title="{{this.title}}">{{this.title}}</a>
+            {{#if this.meta}}
+              <div class="TextListFrame-meta">{{this.meta}}</div>
+            {{/if}}
+          </li>
+        {{/each}}
+      
+    </script>
+    <div class="TextListFrame-error">
+      <div
+  class="ContentErrorMessage TextListFrame-errorMessage"
+  data-mode="normal"
+>
+  <div class="ContentErrorMessage-icon"></div>
+  <div class="ContentErrorMessage-text">コンテンツの取得に失敗しました</div>
+</div>
+    </div>
+  </ul>
+</div>
+      </div>
+    </div>
+  </section>
+</div>
+</div></section>  <div class="PcUniTop228x1024SideWallLeftAdContainer">
+  <div id="pc_uni_top_228x1024_side_wall_left" class="Ads">
+  
+</div>
+</div>
+  <div class="PcUniTop228x1024SideWallRightAdContainer" data-is-enabled="true">
+  <div id="pc_uni_top_228x1024_side_wall_right" class="Ads">
+  
+</div>
+</div>
+    <div
+  id="WktkEnvironment"
+  class="WktkEnvironment"
+  hidden
+  data-base-url="https://public.api.nicovideo.jp/"
+  data-language="ja-jp"           data-tags="niconico_top"
+></div>
+</div>
+
+  </div>
+
+  <div class="BaseLayout-footer">
+    
+        <footer class="FooterContainer">
+  <div class="FooterContainer-inner">
+    <div class="FooterContainer-contents">
+      <div class="FooterContainer-title">ニコニコについて</div>
+      <div class="FooterContainer-list">
+        <a href="https://site.nicovideo.jp/service_list/?ref=footer">サービス一覧</a>
+        <a href="https://www.nicovideo.jp/rss?ref=footer">RSS（更新情報）一覧</a>
+        <a href="https://license-search.nicovideo.jp/">動画・生放送に使用できる音源の検索</a>
+        <a href="https://ex.nicovideo.jp/base/declaration?ref=footer">宣言</a>
+        <a href="https://site.nicovideo.jp/term/?ref=footer">サイトご利用にあたって</a>        <a href="http://info.nicovideo.jp/base/phishing.html?ref=footer">フィッシング詐欺にご注意</a>                <a href="https://dwango.co.jp/">運営会社</a>
+      </div>
+    </div>
+    <div class="FooterContainer-contents">
+      <div class="FooterContainer-title">お問い合わせ</div>
+      <div class="FooterContainer-list">
+        <a href="https://qa.nicovideo.jp/?ref=footer">総合ヘルプ</a>
+        <a href="https://qa.nicovideo.jp/faq/show/5008?site_domain=default">ご意見・ご要望</a>
+        <a href="https://secure.nicovideo.jp/form/feedback_bugreport">不具合報告</a>
+        <a href="http://rcp-smile.nicovideo.jp/static/rule/">権利者法人の皆様へ</a>
+        <a href="https://ch.nicovideo.jp/start?ref=footer">チャンネル開設</a>
+        <a href="https://site.nicovideo.jp/sales_ads/?ref=footer">広告出稿</a>
+        <a href="https://secure.nicovideo.jp/form/press">取材・プレス</a>
+        <a href="https://dwango.co.jp/recruit/">採用情報</a>
+      </div>
+    </div>
+
+        
+    <div class="FooterContainer-dwango">&copy;DWANGO Co., Ltd.</div>
+    <ul class="FooterContainer-licenses">
+      <li class="FooterContainer-license">
+        <div class="FooterContainer-logoNexTone"></div>
+        <p class="FooterContainer-licenseMeta">
+          NexTone​許諾番号<br>
+          ID000001829
+        </p>
+      </li>
+      <li class="FooterContainer-license">
+        <div class="FooterContainer-logoJasrac"></div>
+        <p class="FooterContainer-licenseMeta">
+          JASRAC許諾番号<br>
+          9013388001Y45123
+        </p>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </div>
+
+  
+  <script type="text/javascript" charset="utf-8" src="https://res.ads.nicovideo.jp/assets/js/ads2.js?ref=www"></script>
+  <script charset="utf-8" src="https://nicovideo.cdn.nimg.jp/uni/scripts/bundle/vendor.js?1628059812" ></script>
+
+  
+  
+    <script charset="utf-8" src="https://nicovideo.cdn.nimg.jp/uni/scripts/bundle/pages_index_TopPage.js?1627968694" ></script>
+
+        <script src="https://secure-dcdn.cdn.nimg.jp/extplayerv/embed/js/api.js"></script>
+  
+              
+
+</body>
+</html>

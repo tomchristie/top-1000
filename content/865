@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html class="text-gray-800 text-sm md:text-base">
+    <head>
+        <title>ToneFuse</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+
+        <link rel="icon" type="image/x-icon" href="/img/favicons/tonefuse.ico">
+
+        <link rel="stylesheet" media="screen" href="https://cp.tonefuse.com/css/tailwind.min.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli:400,700&display=swap" />
+
+        <style>
+            .bg-hero {
+                background-image: url("https://cp.tonefuse.com/img/amplified-header-bg.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .bg-quotes-lg {
+                background-image:
+                    url("https://cp.tonefuse.com/img/amplified-quotes-l-lg.svg"),
+                    url("https://cp.tonefuse.com/img/amplified-quotes-r-lg.svg");
+                background-repeat:
+                    no-repeat,
+                    no-repeat;
+                background-position:
+                    left top,
+                    right bottom;
+            }
+
+            .bg-quotes {
+                background-image:
+                    url("https://cp.tonefuse.com/img/amplified-quotes-l.svg"),
+                    url("https://cp.tonefuse.com/img/amplified-quotes-r.svg");
+                background-repeat:
+                    no-repeat,
+                    no-repeat;
+                background-position:
+                    left top,
+                    right bottom;
+            }
+            /* SOCIAL ICONS IN FOOTER*/
+            #instagramIcon {
+                content: url('/img/footer-icons/social-gray-instagram.png');
+            }
+            #instagramIcon:hover {
+                content: url('/img/footer-icons/social-teal-instagram.png');
+            }
+            #twitterIcon {
+                content: url('/img/footer-icons/social-gray-twitter.png');
+            }
+            #twitterIcon:hover {
+                content: url('/img/footer-icons/social-teal-twitter.png');
+            }
+            #facebookIcon {
+                content: url('/img/footer-icons/social-gray-facebook.png');
+            }
+            #facebookIcon:hover {
+                content: url('/img/footer-icons/social-teal-facebook.png');
+            }
+            #twitchIcon {
+                content: url('/img/footer-icons/social-gray-twitch.png');
+            }
+            #twitchIcon:hover {
+                content: url('/img/footer-icons/social-teal-twitch.png');
+            }
+            #youtubeIcon {
+                content: url('/img/footer-icons/social-gray-youtube.png');
+            }
+            #youtubeIcon:hover {
+                content: url('/img/footer-icons/social-teal-youtube.png');
+            }
+            #discordIcon {
+                content: url('/img/footer-icons/social-gray-discord.png');
+            }
+            #discordIcon:hover {
+                content: url('/img/footer-icons/social-teal-discord.png');
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header class="bg-white py-6">
+    <div class="container mx-auto">
+        <nav class="flex flex-wrap items-center">
+            <div class="mx-auto md:mx-0 mb-4 md:mb-0">
+                <a href="/">
+                    <img style="width: 30%;" src="/img/logo-amplified-horizontal-c+b.png" alt="Bandsintown Amplified">
+                    
+                </a>
+            </div>
+
+            <div class="flex-grow w-3/4 md:w-auto">
+                <div class="flex justify-around md:justify-end">
+                    <a href="#" class="mx-2 hover:text-gray-500" data-toggle-dropdown="dd-register">Sign Up</a>
+                    <a href="#" class="mx-2 hover:text-gray-500" data-toggle-dropdown="dd-login">Log In</a>
+                    <a href="#" class="mx-2 hover:text-gray-500" data-toggle-dropdown="dd-faq">FAQ</a>
+                </div>
+
+                <ul class="hidden bg-white px-2 py-4" id="dd-register">
+                    <li class="mb-2">
+                        <a href="https://publishers.bandsintown.com/register" class="hover:text-teal-500">Display &amp; Video</a>
+                    </li>
+                    <li>
+                        <a href="https://cp.tonefuse.com/register" class="hover:text-teal-500">Performance</a>
+                    </li>
+                </ul>
+
+                <ul class="hidden bg-white px-2 py-4" id="dd-login">
+                    <li class="mb-2">
+                        <a href="https://publishers.bandsintown.com/login" class="hover:text-teal-500">Display &amp; Video</a>
+                    </li>
+                    <li>
+                        <a href="https://cp.tonefuse.com/login" class="hover:text-teal-500">Performance</a>
+                    </li>
+                </ul>
+
+                <ul class="hidden bg-white px-2 py-4" id="dd-faq">
+                    <li class="mb-2">
+                        <a href="https://publishers.bandsintown.com/faq" class="hover:text-teal-500">Display &amp; Video</a>
+                    </li>
+                    <li>
+                        <a href="https://cp.tonefuse.com/faq" class="hover:text-teal-500">Performance</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+        <main>
+    <div class="bg-hero py-8">
+        <div class="container mx-auto py-4 px-8 md:p-0">
+            <h1 class="text-white text-3xl md:text-5xl leading-tight md:w-4/5 font-bold md:pt-24 md:pb-8 mb-6 md:mb-4">
+                High Performance Monetization <br/>
+                Solutions For Music & <br/>
+                Entertainment Websites and Apps
+            </h1>
+        </div>
+    </div>
+
+    <div class="py-10">
+        <div class="container mx-auto p-8 md:p-0">
+            <h2 class="mb-6 text-3xl text-center font-bold">
+                Our Publisher Solutions
+            </h2>
+
+            <div class="flex flex-wrap justify-around">
+                <div class="w-full md:w-2/5 mb-4 px-3">
+                    <h3 class="text-2xl font-bold mb-4">
+                        Amplified Display & Video
+                    </h3>
+
+                    <ul class="list-disc list-outside text-xl px-6 h-auto md:h-48">
+                        <li class="mb-4">CPM based campaigns</li>
+                        <li class="mb-4">High impact, IAB, and video units</li>
+                        <li class="mb-4">Endemic direct and programmatic demand</li>
+                    </ul>
+
+                    <div class="w-full md:w-4/5 md:pl-8 text-sm md:text-base">
+                        <a href="https://publishers.bandsintown.com/register" class="block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Display &amp; Video</a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-2/5 mb-4 px-3">
+                    <h3 class="text-2xl font-bold mb-4">
+                        Amplified Performance
+                    </h3>
+
+                    <ul class="list-disc list-outside text-xl px-6 h-auto md:h-48">
+                        <li class="mb-4">Performance based campaigns</li>
+                        <li class="mb-4">Proprietary native and contextual units</li>
+                        <li class="mb-4">Exclusive music streaming and ticketing demand</li>
+                    </ul>
+
+                    <div class="w-full md:w-4/5 md:pl-8 text-sm md:text-base">
+                        <a href="https://cp.tonefuse.com/register" class="block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Performance</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-linear-gradient-teal-purple">
+        <div class="container mx-auto px-6 md:px-4 py-10 text-white text-center">
+            <h2 class="text-4xl text-center font-bold mb-6">
+                Our Publisher Partners
+            </h2>
+
+            <p class="mb-6 text-2xl">
+                Represent <strong>150+</strong> websites and apps in music & entertainment
+            </p>
+
+            <p class="mb-6 text-2xl">
+                Reach <strong>200M</strong> monthly unique music fans
+            </p>
+
+            <p class="mb-12 text-2xl">
+                Monetize traffic <strong>115+</strong> countries
+            </p>
+
+            <div class="flex flex-wrap items-center justify-around">
+                <img class="my-3 h-10 md:h-auto" src="https://cp.tonefuse.com/img/amplified-azlyrics-logo.png" alt="AZLyrics"/>
+                <img class="my-3 h-8 md:h-auto" src="https://cp.tonefuse.com/img/amplified-billboard-logo.svg" alt="Billboard"/>
+                <img class="my-3 h-16 md:h-auto" src="https://cp.tonefuse.com/img/amplified-songpop-logo.svg" alt="SongPop"/>
+                <img class="my-3 h-8 md:h-auto" src="https://cp.tonefuse.com/img/amplified-discogs-logo.svg" alt="Discogs"/>
+                <img class="my-3 h-8 md:h-auto" src="https://cp.tonefuse.com/img/amplified-ufret-logo.png" alt="U-Fret"/>
+                <img class="my-3 h-8 md:h-auto" src="https://cp.tonefuse.com/img/amplified-utanet-logo.png" alt="Uta-Net"/>
+                <img class="my-3 h-10 md:h-16" src="https://cp.tonefuse.com/img/amplified-vagalume-logo.png" alt="Vagalume"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20">
+        <div class="container mx-auto">
+            <div class="text-sm md:text-base">
+                <div class="bg-quotes-lg p-10 flex flex-wrap justify-around">
+                    <div class="flex-1 md:w-1/2 px-0 md:px-4 xl:px-8 my-4">
+                        <div class="h-auto md:h-full rounded bg-white shadow p-6 mb-8">
+                            <div class="bg-quotes px-10 py-4 mb-8">
+                                <div class="font-bold italic text-2xl mb-2">
+                                    They have excellent support
+                                </div>
+
+                                <p class="text-xl">
+                                    "Songfacts has been working with
+                                    Bandsintown Amplified since 2009, and
+                                    it's been a great partnership. They
+                                    have excellent support, and
+                                    understand the importance of user
+                                    experience."
+                                </p>
+                            </div>
+
+                            <div class="text-right">
+                                <img class="inline-block" src="https://cp.tonefuse.com/img/amplified-songfacts-logo.png" alt="Songfacts"/>
+                            </div>
+                        </div>
+
+                        <a href="https://publishers.bandsintown.com/register" class="md:hidden block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Display &amp; Video</a>
+                    </div>
+
+                    <div class="flex-1 md:w-1/2 px-0 md:px-4 xl:px-8 my-4">
+                        <div class="h-auto md:h-full rounded bg-white shadow p-6 mb-8">
+                            <div class="bg-quotes px-10 py-4">
+                                <div class="font-bold italic text-2xl mb-2">
+                                    Drive evergreen and incremental revenues
+                                </div>
+
+                                <p class="text-xl">
+                                    "Bandsintown's monetization solutions
+                                    are contextually relevant to our
+                                    users and drive evergreen and
+                                    incremental revenues for us
+                                    globally."
+                                </p>
+                            </div>
+
+                            <div class="flex px-10">
+                                <div class="w-3/4">
+                                    <div class="font-bold">Elizabeth Wood</div>
+                                    <div>Business Development Director at AllMusic.com</div>
+                                </div>
+                                <div class="w-1/4">
+                                    <img class="inline-block" src="https://cp.tonefuse.com/img/amplified-allmusic-logo.png" alt="Allmusic"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://cp.tonefuse.com/register" class="md:hidden block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Performance</a>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex flex-wrap justify-around px-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <a href="https://publishers.bandsintown.com/register" class="block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Display &amp; Video</a>
+                    </div>
+
+                    <div class="md:w-2/5 mx-auto">
+                        <a href="https://cp.tonefuse.com/register" class="block text-center bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Performance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-linear-gradient-pink text-white py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl text-center font-bold mb-16">
+                Why Work With Bandsintown?
+            </h2>
+
+            <div class="flex flex-wrap justify-around pt-4 pb-10 mb-12 border-b border-white-50-op">
+                <div class="flex-auto max-w-lg px-12 mb-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 107">
+                        <path fill="#FFF" d="M9.811 70.447c1.666 1.394 3.4 2.37 5.205 2.928l1.874.418.454.134c.704.213 1.142.377 1.316.493.182.122.444.351.785.687l.776.777c3.054 2.928 6.663 4.392 10.826 4.392 2.499 0 4.928-.697 7.287-2.092l-10.826 26.767c-.416 1.115-1.214 1.777-2.394 1.986-1.18.21-2.186-.104-3.019-.94l-7.703-7.947-10.827.418c-1.249 0-2.22-.488-2.914-1.464-.694-.975-.833-2.02-.417-3.136l9.577-23.42zm60.378 0l9.577 23.42c.416 1.116.277 2.162-.417 3.137-.694.976-1.665 1.464-2.914 1.464l-10.827-.418-7.703 7.946c-.833.837-1.84 1.15-3.019.941-1.101-.195-1.87-.785-2.306-1.77L41.666 78.185c2.36 1.395 4.788 2.092 7.287 2.092 4.163 0 7.772-1.464 10.826-4.392l.624-.627c.417-.418.73-.697.937-.837.208-.139.798-.348 1.77-.627l1.874-.418c1.804-.558 3.54-1.534 5.205-2.928zM49.68.29c1.458.349 2.741 1.08 3.852 2.196l.833.837c1.526 1.533 2.602 2.509 3.227 2.927.624.418 2.047.906 4.268 1.464l1.04.209c1.389.418 2.603 1.185 3.644 2.3 1.041 1.115 1.77 2.37 2.186 3.764l.417 1.255.18.714c.474 1.824.865 3.015 1.173 3.573.327.59 1.176 1.582 2.547 2.975l1.096 1.102c1.11 1.116 1.84 2.405 2.187 3.869.347 1.464.381 2.962.104 4.496l-.417 1.045-.175.715c-.438 1.832-.658 3.057-.658 3.677 0 .697.278 2.16.833 4.391l.417 1.255c.277 1.394.243 2.823-.104 4.287-.347 1.463-1.076 2.753-2.187 3.868l-.832.837-.715.792c-1.108 1.25-1.807 2.135-2.096 2.658-.347.627-.798 2.056-1.353 4.287l-.417 1.045c-.416 1.394-1.145 2.649-2.186 3.764-1.04 1.115-2.255 1.882-3.643 2.3l-1.666.419c-1.665.418-2.845.801-3.54 1.15-.693.348-1.665 1.22-2.914 2.614-1.388 1.394-3.054 2.195-4.997 2.404-1.943.21-3.747-.174-5.413-1.15-1.249-.836-2.706-1.254-4.372-1.254s-3.123.418-4.372 1.254c-1.666.976-3.47 1.36-5.413 1.15-1.943-.209-3.574-1.01-4.893-2.404s-2.325-2.266-3.019-2.614c-.694-.349-1.943-.732-3.747-1.15l-1.458-.419c-1.388-.418-2.602-1.185-3.643-2.3-1.041-1.115-1.77-2.37-2.186-3.764l-.417-1.045-.18-.714c-.474-1.825-.865-3.016-1.173-3.573-.347-.627-1.284-1.778-2.81-3.45l-.833-.837c-1.11-1.115-1.84-2.405-2.187-3.868-.347-1.464-.381-2.893-.104-4.287l.417-1.255.254-1.051c.386-1.646.579-2.76.579-3.34 0-.697-.278-2.161-.833-4.392l-.417-1.045c-.277-1.534-.243-3.032.104-4.496.347-1.464 1.076-2.753 2.187-3.869l.832-.836c1.527-1.534 2.464-2.614 2.811-3.241.347-.628.798-2.057 1.353-4.287l.417-1.255c.416-1.394 1.145-2.649 2.186-3.764 1.04-1.115 2.255-1.882 3.643-2.3l1.041-.21.71-.182c1.817-.482 3.003-.91 3.558-1.28.588-.395 1.576-1.282 2.963-2.664l1.097-1.1C27.577 1.37 28.861.638 30.32.29c1.457-.348 2.88-.383 4.268-.104l1.04.418.713.176c1.823.44 3.043.66 3.66.66.694 0 2.151-.278 4.372-.836l1.041-.418c1.388-.279 2.81-.244 4.268.104zM40 16.706c-5.413 0-10.028 1.951-13.845 5.855-3.817 3.903-5.726 8.643-5.726 14.22 0 5.576 1.909 10.316 5.726 14.219 3.817 3.903 8.432 5.855 13.845 5.855S50.028 54.903 53.845 51c3.817-3.903 5.726-8.643 5.726-14.22 0-5.576-1.909-10.316-5.726-14.22-3.817-3.903-8.432-5.854-13.845-5.854z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Premium demand</h3>
+                    <p>
+                        We work with Fortune 500 Advertisers to bring
+                        you unique high quality direct demand
+                    </p>
+                </div>
+
+                <div class="flex-auto max-w-lg px-12 mb-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 108">
+                        <path fill="#FFF" d="M9.993 28.174c.972 0 1.77.312 2.395.936.624.623.936 1.42.936 2.39v63.196h89.94c.972 0 1.77.311 2.394.935.625.624.937 1.42.937 2.39v6.653c0 .97-.312 1.767-.937 2.39-.624.624-1.422.936-2.394.936H6.662c-1.804 0-3.366-.658-4.684-1.975C.659 104.71 0 103.15 0 101.348V31.5c0-.97.312-1.767.937-2.39.624-.624 1.423-.936 2.394-.936h6.662zm86.609 6.652c.971 0 1.77.312 2.394.936.625.623.937 1.42.937 2.39v24.53c0 1.386-.486 2.564-1.457 3.534-.972.97-2.152 1.455-3.54 1.455s-2.567-.485-3.539-1.455l-6.662-6.652L64.748 79.52c-1.388 1.248-2.984 1.871-4.788 1.871-1.805 0-3.4-.623-4.789-1.87L39.973 64.136 30.396 73.7c-.694.693-1.492 1.04-2.394 1.04-.902 0-1.7-.347-2.394-1.04l-4.58-4.574c-.694-.693-1.041-1.49-1.041-2.39 0-.901.347-1.698 1.04-2.39L35.186 50c1.388-1.247 2.984-1.87 4.788-1.87 1.805 0 3.4.623 4.789 1.87L59.96 65.385 75.158 50l-6.662-6.652c-.972-.97-1.458-2.148-1.458-3.534 0-1.386.486-2.564 1.458-3.534.971-.97 2.151-1.455 3.539-1.455h24.567zM114.59 0c.343 0 .625.11.845.33.22.22.33.502.33.844v3.522c2.352 0 4.459.733 6.32 2.2.294.245.465.539.514.881.05.343-.073.636-.367.88l-2.498 2.569c-.196.146-.429.244-.698.293-.27.049-.527 0-.772-.147-.735-.538-1.567-.807-2.498-.807h-4.923c-.588 0-1.09.208-1.507.624-.416.416-.624.941-.624 1.577 0 .44.147.856.44 1.248.294.39.662.66 1.103.807l7.936 2.274c1.42.44 2.633 1.198 3.637 2.275 1.004 1.076 1.665 2.335 1.984 3.778.318 1.443.233 2.898-.257 4.366-.588 1.614-1.592 2.898-3.013 3.851-1.42.954-3.013 1.456-4.776 1.505v3.521c0 .343-.11.624-.33.844-.221.22-.503.33-.846.33h-2.351c-.343 0-.625-.11-.845-.33-.22-.22-.331-.501-.331-.844V32.87c-2.351 0-4.482-.734-6.393-2.202-.245-.244-.392-.538-.44-.88-.05-.342.073-.66.367-.954l2.498-2.494c.196-.147.429-.245.698-.294.27-.049.527.025.772.22.735.49 1.567.734 2.498.734h4.923c.588 0 1.09-.208 1.507-.624.416-.415.624-.941.624-1.577 0-.44-.147-.856-.44-1.247-.295-.392-.662-.66-1.103-.807l-7.568-2.202c-1.666-.489-3.062-1.37-4.189-2.64-1.126-1.273-1.788-2.74-1.984-4.403-.098-1.565.196-3.02.882-4.366.686-1.345 1.666-2.42 2.94-3.228 1.273-.807 2.694-1.21 4.261-1.21h.147V1.174c0-.342.11-.624.33-.844.221-.22.503-.33.846-.33h2.351z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Incremental Revenue</h3>
+                    <p>
+                        We provide proprietary incremental revenue
+                        solutions that complement your existing ad stack
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-around pt-4 pb-10 mb-12 border-b border-white-50-op">
+                <div class="flex-auto max-w-lg px-12 mb-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 108">
+                        <path fill="#FFF" d="M29.21 38.368h11.058c1.978 0 3.591 2.1 3.683 4.735l.004.24v59.682c0 2.67-1.554 4.844-3.509 4.97l-.178.005H29.21c-1.976 0-3.59-2.094-3.683-4.734l-.005-.241V43.34c0-2.664 1.554-4.841 3.51-4.967l.178-.006h11.058zm62.102 0c2.038 0 3.69 2.228 3.688 4.976v59.68c0 2.753-1.65 4.976-3.688 4.976H80.255c-2.036 0-3.688-2.223-3.688-4.975V43.34c0-2.745 1.65-4.973 3.688-4.973zM14.745 56.842c1.978 0 3.59 2.099 3.684 4.728l.004.24v39.794c0 2.67-1.556 4.844-3.51 4.97l-.178.005H3.685c-1.974 0-3.588-2.094-3.68-4.734l-.005-.24V61.816c0-2.666 1.554-4.843 3.507-4.97l.179-.005h11.06zm51.045 0c1.978 0 3.59 2.099 3.683 4.728l.005.24v39.794c0 2.67-1.556 4.844-3.51 4.97l-.178.005H54.73c-1.974 0-3.588-2.094-3.681-4.734l-.004-.24V61.816c0-2.666 1.554-4.843 3.507-4.97l.179-.005H65.79zM7.796 28.422c2.741 0 4.963 2.226 4.963 4.973s-2.222 4.973-4.963 4.973c-2.74 0-4.962-2.226-4.962-4.973s2.222-4.974 4.962-4.974zm56.717 0c2.74 0 4.962 2.226 4.962 4.973s-2.221 4.973-4.962 4.973c-2.741 0-4.963-2.226-4.963-4.973s2.222-4.974 4.963-4.974zM29.636 10.24l.003.002c.591.516.654 1.412.14 2.005l-14.885 17.16c-.512.591-1.406.655-1.997.142l-.003-.002c-.591-.515-.654-1.412-.14-2.004l14.885-17.16c.512-.592 1.406-.655 1.997-.143zm56.717 0l.002.002c.591.516.654 1.412.14 2.005l-14.884 17.16c-.513.591-1.407.655-1.998.142l-.002-.002c-.592-.515-.654-1.412-.14-2.004l14.884-17.16c.512-.592 1.407-.655 1.998-.143zm-43.2.038l.1.104 14.884 17.16c.482.556.457 1.379-.035 1.904l-.105.101c-.556.482-1.377.457-1.9-.035l-.1-.105-14.885-17.16c-.481-.556-.456-1.378.036-1.904l.105-.1.002-.003c.554-.48 1.375-.454 1.897.038zM34.736 0c2.74 0 4.962 2.227 4.962 4.974 0 2.747-2.222 4.973-4.962 4.973-2.741 0-4.963-2.226-4.963-4.973S31.996 0 34.737 0zm55.298 0c2.741 0 4.963 2.227 4.963 4.974 0 2.747-2.222 4.973-4.963 4.973-2.74 0-4.963-2.226-4.963-4.973S87.294 0 90.035 0z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Real-time Reporting</h3>
+                    <p>
+                        Access to detailed insights on performance
+                        and white glove support from your account
+                        manager
+                    </p>
+                </div>
+
+                <div class="flex-auto max-w-lg px-12 mb-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94">
+                        <path fill="#FFF" d="M92.003 72.641L70.505 51.144c-4.24-4.24-10.574-5.066-15.678-2.551l-19.57-19.57v-11.4L11.76 0 .009 11.749l17.624 23.498h11.4l19.57 19.569c-2.496 5.103-1.688 11.437 2.553 15.677L72.653 91.99c2.68 2.68 7.013 2.68 9.675 0l9.675-9.675c2.662-2.68 2.662-7.012 0-9.674zm-31.1-31.336c5.196 0 10.08 2.019 13.751 5.69l3.562 3.562c2.9-1.267 5.654-3.03 8.04-5.416 6.812-6.81 9.125-16.393 6.959-25.095-.404-1.652-2.479-2.22-3.69-1.01l-13.66 13.659-12.464-2.075-2.075-12.464L74.985 4.498c1.211-1.212.624-3.286-1.047-3.709-8.702-2.147-18.285.166-25.077 6.958-5.232 5.232-7.692 12.134-7.564 19.018L56.37 41.837c1.487-.349 3.03-.532 4.535-.532zM41.83 56.358L31.42 45.949 3.442 73.944c-4.59 4.59-4.59 12.025 0 16.614 4.59 4.59 12.025 4.59 16.615 0l22.69-22.69c-1.395-3.653-1.817-7.637-.917-11.51zm-30.071 30.29c-2.424 0-4.406-1.983-4.406-4.406 0-2.442 1.964-4.406 4.406-4.406 2.441 0 4.406 1.964 4.406 4.406 0 2.423-1.965 4.406-4.406 4.406z"/>
+                    </svg>
+
+                    <h3 class="text-2xl font-bold mb-2">Easy Set-Up</h3>
+                    <p>
+                        We provide a unique tag for your page that
+                        takes just minutes to set up
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-around pt-4">
+                <div class="flex-auto max-w-lg px-12 mb-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108">
+                        <g fill="#FFF">
+                        <path d="M98.65 0H40.824c-4.777 0-8.661 3.884-8.661 8.661V32.08H8.739c-4.778 0-8.66 3.885-8.66 8.662v57.83c0 4.777 3.882 8.661 8.66 8.661h43.498c-.052-.264-.12-.518-.153-.79l-1.186-10.186H11.055v-53.2h21.109v23.428c0 4.778 3.885 8.661 8.662 8.661h7.618l-1.28-10.975H43.14V43.056h21.115v6.624l10.976 5.382V40.74c0-4.777-3.884-8.66-8.662-8.66H43.14V10.976h53.193V64.17h-2.53l10.674 5.234c.643.318 1.225.714 1.772 1.15.654-1.218 1.06-2.59 1.06-4.07V8.661c0-4.777-3.883-8.661-8.66-8.661z"/>
+                        <path d="M101.247 75.967L57.312 54.426c-.354-.172-.733-.258-1.111-.258-.515 0-1.025.154-1.458.461-.754.532-1.154 1.437-1.048 2.355l5.657 48.612c.119 1.011.833 1.854 1.812 2.133.228.068.464.1.696.1.754 0 1.487-.343 1.97-.95l14.78-18.505 22.35-7.757c.965-.333 1.63-1.212 1.695-2.23.06-1.015-.494-1.97-1.408-2.42z"/>
+                        </g>
+                    </svg>
+
+                    <h3 class="text-2xl font-bold mb-2">Native Integrations</h3>
+                    <p>
+                        Our solutions match your product's design,
+                        creating a seamless ad experience for users
+                    </p>
+                </div>
+
+                <div class="flex-auto max-w-lg px-12 md:mb-4">
+                    <svg class="mx-auto mb-10 h-20 md:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 100">
+                        <path fill="#FFF" d="M46.68 0c10.063 0 20.084 4.052 27.493 11.117C81.8 18.39 86 27.962 86 38.072c0 11.669-6.131 27.226-14.97 38.092v21.875c0 1.083-.876 1.961-1.956 1.961H30.482c-1.08 0-1.956-.878-1.956-1.96V81.373l-8.674 1.265-.076.01c-2.322.245-4.646-.515-6.375-2.088-1.69-1.536-2.665-3.713-2.692-5.994l-1.746-11.81H6.827c-2.454 0-4.657-1.269-5.891-3.394C-.3 57.237-.313 54.69.9 52.553l7.797-13.76c-.006-.255-.008-.491-.008-.721C8.689 17.079 25.73 0 46.679 0zm1.76 18h-1.877c-.273 0-.498.088-.674.264-.176.175-.264.4-.264.673v2.813h-.117c-1.252 0-2.386.322-3.402.967-1.017.644-1.8 1.504-2.347 2.578-.547 1.074-.782 2.236-.703 3.486.156 1.328.684 2.5 1.583 3.516.9 1.015 2.014 1.719 3.344 2.11l6.041 1.757c.352.117.645.332.88.645.234.312.352.644.352.996 0 .507-.166.927-.499 1.26-.332.331-.733.497-1.202.497h-3.93c-.743 0-1.408-.195-1.994-.585-.196-.157-.401-.215-.616-.176-.215.039-.401.117-.558.234l-1.994 1.992c-.234.235-.332.489-.293.762.04.273.156.508.352.703 1.525 1.172 3.226 1.758 5.103 1.758v2.812c0 .274.088.498.264.674.176.176.4.264.674.264h1.877c.274 0 .499-.088.675-.264.176-.176.264-.4.264-.674V44.25c1.407-.04 2.678-.44 3.812-1.201 1.134-.762 1.936-1.787 2.405-3.076.391-1.172.46-2.334.205-3.487-.254-1.152-.782-2.158-1.583-3.017-.802-.86-1.77-1.465-2.904-1.817l-6.334-1.816c-.352-.117-.646-.332-.88-.645-.235-.312-.352-.644-.352-.996 0-.508.166-.927.498-1.26.333-.332.734-.498 1.203-.498h3.93c.743 0 1.407.215 1.994.645.196.117.4.156.616.117.215-.039.4-.117.557-.234l1.994-2.051c.235-.195.333-.43.294-.703-.04-.274-.176-.508-.41-.703-1.487-1.172-3.168-1.758-5.045-1.758v-2.813c0-.273-.088-.498-.264-.673-.176-.176-.401-.264-.675-.264z"/>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Publisher Driven Mentality</h3>
+                    <p>
+                        We are ourselves a publisher
+                        (bandsintown.com) and are always putting the
+                        independent publisher's needs first
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-20">
+        <div class="container mx-auto text-center px-4">
+            <h3 class="text-3xl font-bold mb-10">
+                Register and start earning more today
+            </h3>
+
+                <div class="flex flex-wrap justify-around">
+                    <div class="my-4 w-full md:w-2/5 md:px-10">
+                    <a href="https://publishers.bandsintown.com/register" class="block bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Display &amp; Video</a>
+                </div>
+
+                <div class="my-4 w-full md:w-2/5 md:px-10">
+                    <a href="https://cp.tonefuse.com/register" class="block bg-teal-500 text-white hover:bg-teal-600 font-bold py-3 rounded">Sign Up for Performance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+        <footer class="bg-gray-800 py-10 text-white">
+    <div class="container mx-auto px-8 md:px-0">
+        <div class="flex flex-wrap justify-between mb-8">
+            <div class="w-40 mb-4">
+                <h4 class="mb-2 font-bold">About</h4>
+                <ul>
+                    <li class="mb-2">
+                        <a href="https://corp.bandsintown.com/">Company</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="http://corp.bandsintown.com/careers">Careers</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://corp.bandsintown.com/news">News + Press</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://corp.bandsintown.com/media-library">Media Library</a>
+                    </li>
+                    <li>
+                        <a href="https://artists.bandsintown.com/support/affiliate-program">Affiliate Program</a>
+                    <li>
+                </ul>
+            </div>
+
+            <div class="w-40 mb-4">
+                <h4 class="mb-2 font-bold">Fans</h4>
+
+                <ul>
+                    <li class="mb-2">
+                        <a href="https://apps.apple.com/us/app/bandsintown-concerts/id471394851">iPhone App</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://play.google.com/store/apps/details?id=com.bandsintown">Android App</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://www.bandsintown.com/">Website</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://news.bandsintown.com/">Blog</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://news.bandsintown.com/charts/">Charts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-40 mb-4">
+                <h4 class="mb-2 font-bold">Pro Services</h4>
+
+                <ul>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/">Artists</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://promoters.bandsintown.com/">Promoters</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://venues.bandsintown.com/">Venues</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://publishers.bandsintown.com/">Publishers</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://amplified.bandsintown.com/">Brands</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-40 mb-4">
+                <h4 class="mb-2 font-bold">Artist Tools</h4>
+
+                <ul>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/posting-to-your-fans">Messaging Fans</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/promoting-your-live-streams">Live Streams</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/events-widget">Widget</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/facebook-tab">Facebook Tab</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/events-promotion-page">Events Promotion Page</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/track-button">Track Button</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/support-button">Support Button</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/support/insights">Insights</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://artists.bandsintown.com/blog">Artist Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-40 mb-4">
+                <h4 class="mb-2 font-bold">Help</h4>
+
+                <ul>
+                    <li class="mb-2">
+                        <a href="http://help.bandsintown.com/">Help Center</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="https://corp.bandsintown.com/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mb-4 text-center">
+            <img class="inline-block" style="width: 279px; height: 50px;" src="https://cp.tonefuse.com/img/2xlogo-publishers-horizontal-white.png" alt="Bandsintown"/>
+        </div>
+
+        <div class="mb-4 text-center">
+            <ul>
+                <li class="inline-block mx-1">
+                    <a href="https://www.instagram.com/bandsintown">
+                        <img id="instagramIcon" height="28" width="28" alt="Instagram"/>
+                    </a>
+                </li>
+
+                <li class="inline-block mx-1">
+                    <a href="https://twitter.com/bandsintown">
+                        <img id="twitterIcon" height="28" width="28" alt="Twitter"/>
+                    </a>
+                </li>
+
+                <li class="inline-block mx-1">
+                    <a href="https://www.facebook.com/Bandsintown/">
+                        <img id="facebookIcon" height="28" width="28" alt="Facebook"/>
+                    </a>
+                </li>
+                <li class="inline-block mx-1">
+                    <a href="https://www.twitch.tv/bandsintown">
+                        <img id="twitchIcon" height="28" width="28" alt="Twitch"/>
+                    </a>
+                </li>
+                <li class="inline-block mx-1">
+                    <a href="https://www.youtube.com/bandsintown">
+                        <img id="youtubeIcon" height="28" width="28" alt="YouTube"/>
+                    </a>
+                </li>
+     
+                <li class="inline-block mx-1">
+                    <a href="https://discord.com/invite/4DrsSGrYAm">
+                        <img id="discordIcon" height="28" width="28" alt="Discord"/>
+                    </a>
+                </li>
+             </ul>
+        </div>
+
+
+        <div class="mb-4 text-center text-gray-700 text-sm">
+            <a href="https://cp.tonefuse.com/amplified-terms-of-service" class="text-gray-700">Amplified Terms of Service</a>,
+            <a href="https://corp.bandsintown.com/privacy" class="text-gray-700">Amplified Privacy Policy</a>,
+            <a href="https://cp.tonefuse.com/tonefuse-terms-of-service" class="text-gray-700">Tonefuse Terms of Service</a>,
+            <a href="https://corp.bandsintown.com/cookie-policy" class="text-gray-700">Cookie  Policy</a>
+        </div>
+
+        <div class="text-center">
+            <p class="text-gray-500 text-sm">
+                Copyright &copy; 2021
+                <a href="//cp.tonefuse.com/">ToneFuse</a>
+                | Powered by ClickFuse
+            </p>
+        </div>
+    </div>
+    
+</footer>
+
+        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+        <script>
+  $('[data-toggle-dropdown]').on('click', function (event) {
+      event.preventDefault();
+
+      const button = event.target;
+      const dropdownSelector = "#" + $(button).data("toggle-dropdown");
+      const dropdown = document.querySelector(dropdownSelector);
+
+      $("#dd-register, #dd-login, #dd-faq").not(dropdownSelector).addClass('hidden');
+
+      Popper.createPopper(button, dropdown, {
+          modifiers: [
+              {
+                  name: 'offset',
+                  options: { offset: [0, 15] },
+              },
+          ],
+      });
+
+      $(dropdown).toggleClass('hidden');
+  });
+
+  $('[data-toggle-dropdown]').on('mouseenter', function (event) {
+      event.preventDefault();
+
+      const button = event.target;
+      const dropdownSelector = "#" + $(button).data("toggle-dropdown");
+      const dropdown = document.querySelector(dropdownSelector);
+
+      $("#dd-register, #dd-login, #dd-faq").addClass('hidden');
+
+      Popper.createPopper(button, dropdown, {
+          modifiers: [
+              {
+                  name: 'offset',
+                  options: { offset: [0, 15] },
+              },
+          ],
+      });
+
+      $(dropdown).toggleClass('hidden');
+  });
+
+  $('[data-toggle-dropdown]').on('mouseleave', function (event) {
+      const button = event.target;
+      const dropdownSelector = "#" + $(button).data("toggle-dropdown");
+
+      $("#dd-register, #dd-login, #dd-faq").not(dropdownSelector).addClass('hidden');
+  });
+
+  $('main').on('click mouseenter', function (event) {
+      $("#dd-register, #dd-login, #dd-faq").addClass('hidden');
+  });
+</script>
+    </body>
+</html>

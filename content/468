@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de-DE">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> bin-layer.de steht zum Verkauf</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/parking_1.css?6.4">
+
+    <!-- script type="text/javascript" src="/js/basics.js.php"></script -->
+</head>
+<body>
+
+<div id="margin">
+
+    <!--- LARGE --->
+    <div id="header" class="d-none d-sm-none d-md-none d-lg-block">
+        <h1><a href="/de/"><em>Willkommen bei </em>bin-layer.de</a></h1>
+
+        <div id="nav">
+            <ul id="lang">
+                <li class="active"><a title="deutsch" href="/de/"><img title="deutsch" src="/img/flags/de.png">&nbsp;DE</a>
+                </li>
+                <li><a title="english" href="/en/"><img title="english" src="/img/flags/gb.png">&nbsp;EN</a></li>
+            </ul>
+
+            <ul>
+                <!--li id="nav_home" class="active"><a href="/de/">Start</a></li-->
+                <li id="nav_buy" class=""><a
+                            href="/de/domainkauf.php">Domainkauf</a></li>
+                <!--li id="nav_wish" class=""><a href="/de/wunschdomain.php">Wunschdomain</a></li-->
+                <li id="nav_escrow" class=""><a
+                            href="/de/treuhandservice.php">Treuhandservice</a></li>
+                <li id="nav_contact" class=""><a
+                            href="/de/kontakt.php">Kontakt</a></li>
+                <li id="nav_buy_now"><a href="/de/#kaufen">Domain kaufen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--- SMALL --->
+    <div class="d-block d-sm-block d-md-block d-lg-none" style="margin-top: -29px">
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a3d784">
+            <a class="navbar-brand" href="/de/">
+                                    <small>bin-layer.de</small>
+                                </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="btn" title="english" href="/en/">
+                    <img title="english" src="/img/flags/gb.png" style="margin-top: -2px">EN
+                </a>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/de/">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/de/domainkauf.php">Domainkauf</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/de/treuhandservice.php">Treuhandservice</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/de/kontakt.php">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/de/#kaufen" style="color: #bc2729">Domain kaufen</a>
+                    </li>
+                    <!-- li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li -->
+                </ul>
+            </div>
+        </nav>
+
+    </div><!--- LARGE --->
+<div id="content" class="d-none d-sm-none d-md-none d-lg-block">
+
+    <div class="col_left">
+        <a href="/de/#kaufen" class="sujet"><span> </span></a>
+        <p>Diese Domain steht zum Verkauf!</p>
+        <iframe src="https://trade2.domainname.de/?setLang=de" width="1" marginwidth="0" height="1" marginheight="0"
+                scrolling="No" frameborder="0" style="border:none;"></iframe>
+            </div>
+
+    <div class="col_right">
+        <p>Die Domain bin-layer.de wird vom Inhaber im Marktplatz angeboten. Sie können diese Domain jetzt
+            erwerben!.</p>
+
+        <p class="focus_buy"><a href="/de/#kaufen" id="buy_btn"
+                                rel="nofollow"><span>Domain jetzt kaufen</span></a></p>
+
+        <p id="quality"><img src="/img/tpl1_quality.png"/></p>
+    </div>
+
+    <div class="cl"></div>
+
+</div> <!-- /content -->
+
+<!--- SMALL --->
+<div class="d-block d-sm-block d-md-block d-lg-none">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <a href="/de/#kaufen" class="sujet-sm">
+                    <span> </span>
+                </a>
+                <p>Diese Domain steht zum Verkauf!</p>
+                <iframe src="https://trade2.domainname.de/?setLang=de" width="1" marginwidth="0" height="1"
+                        marginheight="0" scrolling="No" frameborder="0" style="border:none;"></iframe>
+                            </div>
+            <div class="col-12">
+                <p>Die Domain bin-layer.de wird vom Inhaber im Marktplatz angeboten. Sie können diese Domain
+                    jetzt erwerben!.</p>
+
+                <p class="focus_buy"><a href="/de/#kaufen" id="buy_btn"
+                                        rel="nofollow"><span>Domain jetzt kaufen</span></a></p>
+
+                <p id="quality"><img src="/img/tpl1_quality.png"/></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function loadScript() {
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = '/' + 'js/_' + 'view' + '.p' + 'hp' + '?' + '67849837' + '.' + 'jtasi045ehegs0fo05v3nv6icr';        head.appendChild(script);
+    }
+
+    window.onload = window.setTimeout('loadScript()', 5000);
+</script></div> <!-- /margin -->
+
+<div id="footer" class="d-none d-sm-none d-md-none d-lg-block">
+	<a id="realtime" title="Powered by Domainname.de" href="http://www.domainname.de/" target="_blank"> </a>
+	Der Inhaber dieser Domain parkt diese beim Domain-Parking-Programm.<br />
+</div> <!-- /footer -->
+
+<div class="d-block d-sm-block d-md-block d-lg-none">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12" id="footer">
+				<a id="realtime" title="Powered by Domainname.de" href="http://www.domainname.de/" target="_blank" style="float: left"> </a>
+				<div style="float: left">Der Inhaber dieser Domain parkt diese beim Domain-Parking-Programm.</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/basics.js.php"></script>
+
+<!-- div style="position: absolute; right: 0; bottom: 0; color: #88ACE8; font-size: 9px">0.0027</div -->
+</body>
+</html>

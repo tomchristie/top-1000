@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>专业游戏营销平台</title>
+    <link rel="stylesheet" href="/themes/2020/css/swiper.min.css">
+    <link rel="stylesheet" href="/themes/2020/font/iconfont.css">
+    <script>
+        var userAgent = window.navigator.userAgent.toLowerCase();
+        var ieVersion=/msie (\d+)/.exec(userAgent);
+        if(ieVersion&&ieVersion[1]<10){
+            alert("推荐使用谷歌浏览器，如果使用IE请使用IE9以上版本")
+        }
+    </script>
+    <link href="/themes/2020/css/vendors~entry.min.css?68dac50fdac058c35d16" rel="stylesheet"><link href="/themes/2020/css/entry.min.css?68dac50fdac058c35d16" rel="stylesheet"></head>
+<body class="page hide">
+<header class="page-header">
+    <div class="bl-inner"><a class="logo" href="/"><img src="/themes/2020/imgs/logo.png"></a>
+        <ul class="menu-link">
+            <li><a href="/" target="blank">首页</a></li>
+            <li><a href="/bulletin.html" target="blank">联盟公告</a></li>
+            <li><a href="/advert.html" target="blank">广告模式</a></li>
+            <li><a href="/faq.html" target="blank">常见问题</a></li>
+        </ul>
+        <div class="login-info">
+            <p class="user-info"><span id="login-name" style="cursor:auto;"></span><a href="/user.html" style="color:#fff;margin-left:10px;">个人中心</a><span class="logout" data-type="logout" title="点击退出">退出</span></p><span data-type="login">登录/注册</span>
+        </div>
+    </div>
+</header>
+<div class="page-body">
+    <div class="page-body-bl">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/themes/2020/imgs/banners/1.jpg"></div>
+                <div class="swiper-slide"><img src="/themes/2020/imgs/banners/2.jpg"></div>
+                <div class="swiper-slide"><img src="/themes/2020/imgs/banners/3.jpg"></div>
+                <div class="swiper-slide"><img src="/themes/2020/imgs/banners/4.jpg"></div>
+            </div>
+            <!-- 如果需要分页器-->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="page-body-bl bg-gray bl-notice">
+        <div class="bl-inner">
+            <div class="web_notice_content vote" id="web_notice_content">
+                <div id="scroll_ul_top">
+                    <ul>
+                        <li><a href="./html/bulletin-view-627.html">2021年春节假期佣金推迟支付公告！</a></li>
+<li><a href="./html/bulletin-view-636.html">截至2021年4月18日的佣金已支付</a></li>
+<li><a href="./html/bulletin-view-635.html">截至2021年4月11日的佣金已支付</a></li>
+<li><a href="./html/bulletin-view-634.html">截至2021年4月4日的佣金已支付</a></li>
+<li><a href="./html/bulletin-view-633.html">截至2021年3月28日的佣金已支付</a></li>
+
+                    </ul>
+                </div>
+                <div id="scroll_ul_bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-body-bl bl-lg">
+        <div class="bl-inner">
+            <div class="bl-title">广告类型</div>
+            <div class="bl-desc">适配流量主多重场景，轻量对接快速上线，深度对接长线运营</div>
+            <ul class="ad-list">
+                <li class="ad-item">
+                    <div class="ad-img" style="background-image:url(/themes/2020/imgs/ad_type/1.png)"></div>
+                    <p class="ad-title">CPM弹窗广告</p>
+                    <p class="ad-desc">广告多，正规正版，收益好，单价高</p>
+                </li>
+                <li class="ad-item">
+                    <div class="ad-img" style="background-image:url(/themes/2020/imgs/ad_type/2.png)"></div>
+                    <p class="ad-title">浮窗广告</p>
+                    <p class="ad-desc">右下角富媒体，多轮计费</p>
+                </li>
+                <li class="ad-item">
+                    <div class="ad-img" style="background-image:url(/themes/2020/imgs/ad_type/3.png)"></div>
+                    <p class="ad-title">CPA,CPC,CPS广告</p>
+                    <p class="ad-desc">按用户注册，点击，充值分成计费，多种广告选择</p>
+                </li>
+                <li class="ad-item">
+                    <div class="ad-img" style="background-image:url(/themes/2020/imgs/ad_type/4.png)"></div>
+                    <p class="ad-title">安装广告</p>
+                    <p class="ad-desc">软件捆绑安装，多产品选择，多收益</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-body-bl bg-gray bl-lg">
+        <div class="bl-inner">
+            <div class="bl-title">推荐游戏</div>
+            <div class="bl-desc">优质游戏资源，收益更有保障</div>
+            <div class="games-wrap">
+                <div class="games">
+                    <p class="gt-mobile game-type">移动端</p>
+                    <ul class="game-list">
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_wstl.png)"></div>
+                            <p class="game-title">武圣屠龙</p>
+                            <p class="game-desc">一夫当关 战至终章</p>
+                        </li>
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_rydts.png)"></div>
+                            <p class="game-title">荣耀大天使</p>
+                            <p class="game-desc">荣耀回归，再战勇者大陆</p>
+                        </li>
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_jzxjz.png)"></div>
+                            <p class="game-title">九州仙剑传</p>
+                            <p class="game-desc">新生代国风仙侠手游</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="games">
+                    <p class="gt-pc game-type">PC端</p>
+                    <ul class="game-list">
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_zsjx.png)"></div>
+                            <p class="game-title">战神觉醒</p>
+                            <p class="game-desc">三族大战，跨服争霸</p>
+                        </li>
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_cjzg.png)"></div>
+                            <p class="game-title">裁决战歌</p>
+                            <p class="game-desc">未知的王朝世界，恭候一个新王霸主的到来</p>
+                        </li>
+                        <li class="game-list-item">
+                            <div class="game-img" style="background-image:url(/themes/img/37cs_product_mhj2.png)"></div>
+                            <p class="game-title">蛮荒记2</p>
+                            <p class="game-desc">混沌世界、终极角逐</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <p class="more-text">更多推荐游戏可咨询客服</p>
+                    <p class="more-tag"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer">
+    <div class="footer-link"><a class="footer-link-item">广告资讯</a><a class="footer-link-item">招聘信息</a><a
+            class="footer-link-item">关于联盟</a><a class="footer-link-item">投诉建议</a>
+    </div>
+    <p class="website-tips">版权所有：广州星众信息科技有限公司 <a style="color: #ffffff;margin-left: 10px" href="https://beian.miit.gov.cn"
+                                           target="_blank">粤ICP备14078772号</a></p>
+</footer>
+<div class="log-reg-wrapper" id="log-reg-wrapper">
+    <div class="login-box dialog" v-show="status===1">
+        <div class="dialog-title">登录</div>
+        <login ref="loginDialog"></login>
+        <div class="dialog-footer">还没有帐号？<a class="clr-link" @click="actToRegist">创建新帐号</a></div>
+    </div>
+    <div class="regist-box dialog" v-show="status===2">
+        <div class="dialog-title">注册</div>
+        <regist @hide="actHide"></regist>
+        <div class="dialog-footer">
+            <p>已有帐号？<a class="clr-link" @click="actToLogin">马上登录</a></p>
+        </div>
+    </div>
+</div>
+<div class="aside"><a href="/contact.html" target="_blank">
+    <div class="aside-wchat aside-item"><img src="/themes/2020/imgs/wchat.png">
+        <p>联系客服</p>
+    </div>
+</a>
+    <div class="aside-regist aside-item" data-type="regist"><img src="/themes/2020/imgs/regist.png">
+        <p>立即注册</p>
+    </div>
+</div>
+<script src="/themes/2020/js/jquery.min.js"></script>
+<script src="/themes/2020/js/swiper.min.js"></script>
+<script>
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay: 3000,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+        })
+    }
+</script>
+<script src="/themes/2020/js/scroll.js"></script>
+<script type="text/javascript" src="/themes/2020/js/vendor.min.js?68dac50fdac058c35d19"></script>
+<script type="text/javascript" src="/themes/2020/js/vendors~entry.min.js?68dac50fdac058c35d19"></script>
+<script type="text/javascript" src="/themes/2020/js/entry.min.js?68dac50fdac058c35d19"></script></body>
+</html>

@@ -1,0 +1,3919 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang="en-US">
+<!-- Global HEAD -->
+<head>
+
+    <meta charset="utf-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0"/>
+	<title> Verizon: Wireless, Internet, TV and Phone Services | Official Site</title>
+        <meta name="description" content="Shop Verizon smartphone deals and wireless plans on the largest 4G LTE network. First to 5G. Get Fios for the fastest internet, TV and phone service."/>
+  	 <meta name="keywords" content="homepage, verizon, mobile, verizon internet, fios internet, verizon wireless, verizon plans, verizon wireless plans, verizon phones, verizon residential, verizon fios internet"/>		
+   	 <meta http-equiv="x-dns-prefetch-control" content="on">
+  	 <link rel="dns-prefetch" href="//ss7.vzw.com"/> 
+	 <link rel="dns-prefetch" href="//ss71.vzw.com"/> 
+ 	 <link rel="dns-prefetch" href="//ss72.vzw.com"/> 
+ 	 <link rel="dns-prefetch" href="//ss73.vzw.com"/> 
+  	 <link rel="dns-prefetch" href="//scache.vzw.com"/>
+ 	 <link rel="dns-prefetch" href="//scache1.vzw.com"/>
+     <link rel="dns-prefetch" href="//scache2.vzw.com"/>
+     <link rel="dns-prefetch" href="//scache3.vzw.com"/>
+  	 <link rel="dns-prefetch" href="//verizon.inq.com"/>
+ 	 <link rel="dns-prefetch" href="//static.inq.com"/>
+  	 <link rel="dns-prefetch" href="//media-lax1.inq.com"/>
+  	 <link rel="dns-prefetch" href="//tags.tiqcdn.com"/> 
+  	 <link rel="dns-prefetch" href="//analytics-static.ugc.bazaarvoice.com"/> 
+  	 <link rel="dns-prefetch" href="//gateway.answerscloud.com"/> 
+  	 <link rel="dns-prefetch" href="//verizonwireless.tt.omtrdc.net"/> 
+  	 <link rel="dns-prefetch" href="//dpm.demdex.net"/> 
+  	 <link rel="dns-prefetch" href="//www.verizonwireless.com"/>
+ 	 <link rel="dns-prefetch" href="//sanalytics.verizonwireless.com"/> 
+ 	 <link rel="dns-prefetch" href="//secure.leadback.advertising.com"/> 
+ 	 <link rel="dns-prefetch" href="//www.facebook.com"/>
+ 	 <link rel="dns-prefetch" href="//mobile.vzw.com"/>
+ 	 <link rel="dns-prefetch" href="//fast.fonts.net"/>
+ 	 
+   		 <script type="text/javascript" src="https://www.verizon.com/etc/designs/vzwcom/onedigital-clientlibs-category/js/analytics.js"></script>
+
+<script>
+  var vzwDL = loadCategoryPageDataLayer('{"sourceChannel":"dotcom","perContentImpression":"","testVersion":"","channel":"store","language":"English","flowName":"home page","pageName":"store/prospect/home page","section2":"","section3":"","pageType":"homepage","subFlow":"","displayChannel":"vzw","name":"","channelSession":"","detail":"","lob":"consumer","flowType":""}');
+ </script>
+
+<script type="text/javascript">
+  // new vzdl datalayer
+  (function () {
+
+    function getCookie(cookieName) {
+      var name = cookieName + '=';
+      var cookieArray = document.cookie.split(';');
+      for (var i = 0; i < cookieArray.length; i++) {
+        var cookie = cookieArray[i];
+        while (cookie.charAt(0) == ' ') cookie = cookie.substring(1);
+        if (cookie.indexOf(name) == 0) return cookie.substring(name.length, cookie.length);
+      }
+      return '';
+    }
+
+    function getCondition() {
+      if (location.pathname == '/') {
+        return 'postpaid_homepage';
+      } else if (location.pathname == '/prepaid/') {
+        return 'prepaid_homepage';
+      } else {
+        return 'landing page';
+      }
+    }
+
+    function getPlatform() {
+      if (navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i)) {
+        if (window.innerWidth < 768) {
+          return 'mobile';
+        }
+        return 'tablet';
+      }
+      return 'desktop';
+    }
+
+    var pathName,
+      flowName,
+      intent = 'learn',
+      channel = 'learn',
+      pageName;
+    pathName = "/content/wcms/personal-home".split("/")
+    pathName.splice(0, 3)
+
+    if (pathName.length <= 1) {
+      flowName = pathName[0];
+      pageName = pathName[0];
+
+    } else {
+      flowName = pathName[0];
+      pathName.splice(0, 1)
+      pageName = pathName.join("_")
+    }
+
+    if(pageName.indexOf('personal-home')>-1){
+      pageName = "home page"
+      flowName = "home page"
+      intent = "home page"
+      channel = "home page"
+    }
+
+    var dataLayer = {
+
+      "cmp": {
+        "all": "", // Marketing campaign Code
+      },
+
+      "error": {
+        "code": "", // error code (ex:400,503)
+      },
+
+      "page": {
+        "channel": channel, // site section
+        "channelSession": "",
+        "detail": "",
+        "displayChannel": "vzw",
+        "flow": flowName,
+        "id": getCondition() + ',LP_AC',
+        "name": pageName,
+        "throttle": getPlatform(),
+        "sourceChannel": "vzw",
+        "type": "landing page", // If error or applicable only on AEM Pages
+        "subFlow": "", // For Wireless
+      },
+
+      "event": {
+        "value": "", // Eg: login,scAdd,scOpen,scRemove, purchase,
+      },
+
+      "search": {
+        "term": "",
+        "type": "",
+      },
+
+      "target": {
+        "assetsRequested": "", // Assets Requested (on-hold, don’t populate)
+        "assetAttributes": "", // Asset Attributes (on-hold, don’t populate)
+        "assetsLeveraged": "", // Assets Leveraged (on-hold, don’t populate)
+        "offer": "", // Offer ID
+        "abTest": "",
+        "audience": "",
+        "campaign": "",
+        "experience": "", // AB test experience
+        "message": "", // any message which is shown to customer on the page
+        "offer": "",
+        "cloud": "", // marketing cloud id
+        "sandBox": "", // AB Test Experience Name
+        "evolv": "",
+        "engagement": {
+          "intent": intent, //  kind of flow(ordering, payment etc)
+          "id": "", //  the specific ID of the engagement within the SOI application
+          "offered": "", //  Response to engagement or what the customer is interacting with in an engagement
+        },
+
+      },
+
+      "txn": {
+        "agent": "", // Agent Enterprise ID (10 digit; captured on Nuance chat when customer talks with live agent)
+        "discount": "", // Order Discount in $
+        "productsQualified": "", // PRODUCTS QUALIFIED
+        "productSelected": "", // PRODUCTS SELECTED
+        "discountId": "", // Discount ID / Promo ID entered
+        "id": "", // order ID
+        "offer": "", // Offer ID at order level
+        "autoPay": "", // used to capture autopay enabled and disabled. capture during login along with customer info
+        "offerType": "", // What kind of offer. Eg: Bestmatch, Upsell etc
+        "orderType": "", // Eg: AAL, Upgrade etc
+        "paymentType": "", // Eg: Credit Card, Debit Card etc
+        "rewardOffer": "", // Verizon Up rewards Code
+        "outletId": "", // for POS
+        "cartId": "", // either the channel cart id or shared cart ID
+        "shippingZip": "",
+        "shippingTotal": "", // TotalShipping charge in dollars
+        "status": "", // Eg: order cancelled, pending order, order confirmed etc
+        "total": "", // $$transaction price
+
+        "product": {
+          "owns": { // Existing Products
+            "name": "", // Product ID
+            "sorId": "", // USOC / ISOC
+            "category": "",
+            "qty": "",
+            "offer": "", // offer ID
+            "discount": "", // Discount ID
+            "recurringPrice": "", // eVar32
+            "nonRecurringPrice": "",
+            "line": "",
+            "shared": "" // (Y/N),
+          },
+
+          "current": { // Existing Products
+            "name": "",
+            "sorId": "",
+            "merchCat": "", // where did you see the product (eg: product grid wall pge/ hp /banner etc)
+            "category": "",
+            "offer": "",
+            "discount": "",
+            "qty": "",
+            "quoteid": "", // for POS
+            "recurringPrice": "", //
+            "nonRecurringPrice": "",
+            "line": "",
+            "sku": "",
+            "tradeInQty": "",
+            "tradeInAmt": "",
+            "contractType": "", // Contract Type
+            "rebate": "",
+            "shippingCharge": "", // Shipping charge in dollar
+            "shippingType": "", // Eg: Standard Shipping/pick up from store etc
+            "shared": "" // (Y/N)
+          }
+        },
+
+      },
+
+      "user": {
+        "existingServices": "", // Existing Services
+        "account": "", // hashed account
+        "accountType": "", // Eg: Postpaid, Prepaid, Unlimited
+        "customerRole": getCookie('role'), // captures customer role like accountholder, manager etc
+        "customerType": "", // Wireless - PE,ME,BE
+        "authStatus": getCookie('loggedIn') ? 'authenticated' : 'anonymous',
+        "id": "", // hashed MDN
+        "tenure": "", // from how long user/account tenure with Verizon
+        "prospect": "",
+        "session": getCookie('GLOBALID'), // Global Session ID (session ID carried over from GHP/Landing Page)
+        "chatId": "", // Nuance Chat ID
+        "zip": getCookie('ZIPCODE'),
+        "emcAccountId ": "", // hashed (SHA256) customer identifiers and email addresses that CRM embeds into each email URL
+        "emcEmailId ": "", // hashed (SHA256) customer identifiers and email addresses that CRM embeds into each email URL
+        "emcMdn ": "", // hashed (SHA256) customer identifiers and email addresses that CRM embeds into each email URL
+      },
+
+      "utils": {
+        "StrategyApiKey": "", // Strategy API Key (on-hold, don’t populate for now)
+        "appApiKey": "", // Application API Key (on-hold, don’t populate for now)
+        "pegaCaseId": "", // Pega Case ID/Pega Recommendation ID
+        "athenaSession": "", // For Pega NBA recommendation (If not available, please leave it blank)
+        "outcome": "", // Decision Outcome (‘Y’/’N (when pega offer is shown by default)’/blank)
+        "pegaOffer": "",
+      },
+
+      "platform": {
+        "call": "", // Call ID
+      },
+
+      "content": {
+        "mktgId": "", // Marketing Audience ID
+      },
+
+      "env": {
+        "businessUnit": "wireless", // Busniess Unit (eg: Wireline, Wireless, Cloud)
+        "channel": getPlatform() + " store", // Site Section Level 1
+      },
+
+    };
+    window.vzdl = window.vzdl || dataLayer;
+
+    if(window.VZTAG_IS_READY){
+        window.vztag.api.dispatch("pageView");
+    } else {
+        // Otherwise, wait until we broadcast that we're ready:
+        document.addEventListener("vztagReady", function(){
+            window.vztag.api.dispatch("pageView");
+        });
+    }
+  })();
+</script><script type="text/javascript" src="//assets.adobedtm.com/2ea7ee22c8c2/ece9aa9bcf6f/launch-72284e178e44.min.js"></script>
+    <link rel="stylesheet" href="//www.verizon.com/etc/designs/vzwcom/vzrf/clientlibs/clientlib-base/css/app.css">
+
+<link rel="stylesheet" href="/content/dam/vzwcom/personal-home/css/components.css">
+
+<style>
+.new {
+  display: none;
+}
+</style><META NAME="ROBOTS" content="INDEX,FOLLOW">
+        <link rel="canonical" href="https://www.verizon.com/"/>
+ 
+</head>
+
+
+<script>
+   var productJSON_New = {}</script>
+
+<body>
+    <!--Include Header and Footer--->
+<div class="header globalclientheader"><!-- <link rel="stylesheet" href="/etc/designs/vzwcom/gnav20/core.css" type="text/css"> -->
+         <link rel="stylesheet" href="https://www.verizon.com/etc/designs/vzwcom/gnav20/core.css" type="text/css">
+
+
+     <script>
+           var gnavdl = {
+                         "bu": "wireless",
+                         "options":{"sticky":"true"},
+                         "variation" : "",
+                         "impltype": "ssi",
+                         "appid" : "uhp"
+                    }
+         </script>
+	  <div id="vz-gh20">
+            <div style="position:absolute; top: -200px">
+                 <!--Default Global Navigation if the primary Global Navigation is unable to load-->
+                  <div class="xf-page-unified xfpage page basicpage">
+<div class="gnav20 " data-exp-name="personal-home">
+     <input type="hidden" id="cradle-context" name="cradle-key" value="cradle-url"/></input>
+    <div class="gnav20-sticky-content">    	
+     	
+
+
+
+    
+    
+    <div class="gnav20-apicomponentnewdesign">
+
+<a class="gnav20-header-accessibility" tabindex="0" href="https://www.verizon.com/about/accessibility/overview/">
+	<span>Accessibility Resource Center</span>
+</a>
+<a class="gnav20-header-accessibility" href="javascript:void(0)" tabindex="0" id="gnav20-skip-to-main-content-id">
+	<span>Skip to main content</span>
+</a>
+
+<div class="gnav20-width-wrapper gnav20-new-design  gnav20-promo-bottom" data-gnav20-container="header">	
+	
+	
+	<div class="gnav20-vzhmoverlay"></div>
+	<div class="gnav20-main">
+		
+
+
+
+    
+    
+    <div class="gnav20-gnav-new-design">
+
+<div class="gnav20-desktop" item-title="all">
+	<div class="gnav20-row-one">
+		<div class="gnav20-grid1-wrapper">
+			
+
+
+
+    
+    
+    <div class="gnav20-eyebrow">
+
+<div class="gnav20-eyebrow-link-list" item-title="eyebrow">
+    <div class="gnav20-eyebrow-link-list-item gnav20-two">
+        <a x-cq-linkchecker="skip" href="https://www.verizon.com/" data-stext="Switch to" data-label="Personal" aria-label="Verizon Personal Services HomePage" class="gnav20-main-header gnav20-selected">Personal</a>
+    
+        <a x-cq-linkchecker="skip" href="https://www.verizon.com/business/" data-stext="Switch to" data-label="Business" aria-label="Verizon Business Services HomePage" class="gnav20-main-header ">Business</a>
+    </div>
+	
+    
+	<input type="hidden" id="gnav20-lob-link-label"/>
+</div>
+
+
+
+</div>
+
+
+
+		</div>		
+		<div class="gnav20-utility">		
+			
+
+
+
+    
+    
+    <div class="gnav20-store">
+
+<div class="gnav20-utility-wrapper" item-title="store">
+	<div>
+				
+		<a class="gnav20-subanchor  " aria-label="Stores" href="https://www.verizon.com/stores">
+			
+			Stores
+			
+		</a>			
+		
+	</div>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-localization">
+
+    
+		<div class="gnav20-utility-wrapper " item-title="localization">
+			
+				
+				<a class="gnav20-lang-link gnav20-subanchor" aria-label="Switch to Español language website" data-href="https://espanol.verizon.com/" href="https://espanol.verizon.com/" data-lang="Español" mporgnav="">Español</a>
+					
+			
+		</div>
+    
+
+</div>
+
+
+
+        </div>
+    </div>
+	<div class="gnav20-row-two">
+		<div class="gnav20-grid1-wrapper">
+			
+
+
+
+    
+    
+    <div class="gnav20-logo">
+
+<div class="gnav20-logo-wrapper gnav20-relative-index">
+    <a class="gnav20-logoWhiteBg" href="https://www.verizon.com/" title="Verizon Home Page">
+        <img alt="Verizon Logo" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iNDI4IiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDQyOCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDI1MEg3Ny43MkwxNTUuNDMgNDE2LjY3TDM0OS43MyAwSDQyNy40NUwxOTQuMjkgNTAwSDExNi41OEwwIDI1MFoiIGZpbGw9IiNFRTAwMDAiLz4KPC9zdmc+Cg=="/>
+    </a>
+</div></div>
+
+
+
+		</div>
+		<div class="gnav20-navigation">
+			
+
+
+
+    
+    
+    <div class="gnav20-navigation">
+<div class="gnav20-global-nav-list gnav20-navigation-list" item-title="L1">
+	
+
+
+
+    
+    
+    <div class="gnav20-navigation-item">
+
+	<div class="gnav20-primary-menu gnav20-featured-card">
+		
+			<button id="gnav20-Shop-L1" aria-label="Shop Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-haschild">Shop</button>	
+			<button id="gnav20-Shop-L1" aria-label="Shop Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-goback">Shop</button>
+		
+		
+		<a aria-hidden="true" class="gnav20-menu-label-link" href="https://www.verizon.com/shop/" tabindex="-1">Shop</a>
+
+		<div class="gnav20-sub-header-menu gnav20-sub-menu" style="display:none">
+			<div class="gnav20-nav-utility">
+				<button class="gnav20-nav-search-icon" aria-label="Search Verizon">
+					<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+						<path fill="#000" fillrule="nonzero" d="M17.896 17.101l-5.995-5.994A6.721 6.721 0 0 0 13.5 6.75a6.75 6.75 0 1 0-6.75 6.75c1.661 0 3.18-.603 4.356-1.598l5.995 5.995.795-.796zM6.75 12.375A5.63 5.63 0 0 1 1.125 6.75 5.63 5.63 0 0 1 6.75 1.125a5.63 5.63 0 0 1 5.625 5.625 5.63 5.63 0 0 1-5.625 5.625z">
+						</path>
+					</svg>
+				</button>
+				<button class="gnav20-nav-close" aria-label="Close Nav Panel" tabindex="0">Close</button>
+			</div>
+			<div class="gnav20-content-wrapper  ">
+				<div class="gnav20-featured-card-top-label">
+					Shop
+				</div>
+				
+					<ul class="gnav20-submenu-column gnav20-featured-scroll-area" role="none">
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list normal">
+								
+																	
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-1" class="gnav20-subanchor" href="https://www.verizon.com/shop/" aria-label="Shop all">Shop all
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Shop all
+									</div>											
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-2" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/deals/" aria-label="Deals">Deals
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-2" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Deals menu list" aria-expanded="false" role="button">Deals
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Deals
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-39" class="gnav20-subanchor" href="https://www.verizon.com/deals/" aria-label="Shop all deals">Shop all deals
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shop all deals
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-40" class="gnav20-subanchor" href="https://www.verizon.com/shop/online/free-cell-phones/" aria-label="Free phones">Free phones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Free phones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" data-show-for="loggedIn:true" data-hide-for="role:mobilesecure" id="gnav20-Shop-L3-41" class="gnav20-subanchor" href="https://myvpostpay.verizon.com/ui/hub/ao/myoffers#/" aria-label=" My offers"> My offers
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												 My offers
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-42" class="gnav20-subanchor" href="https://www.verizon.com/deals/smartphones/" aria-label="Smartphones">Smartphones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Smartphones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-43" class="gnav20-subanchor" href="https://www.verizon.com/home/bundles/fios/" aria-label="Fios Home Internet">Fios Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-44" class="gnav20-subanchor" href="https://www.verizon.com/deals/5g-home-internet/" aria-label="5G Home Internet">5G Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												5G Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-45" class="gnav20-subanchor" href="https://www.verizon.com/promos/mobile-and-home/" aria-label="Mobile + Home">Mobile + Home
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Mobile + Home
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-46" class="gnav20-subanchor" href="https://www.verizon.com/bring-your-own-device/" aria-label="Bring your own device">Bring your own device
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Bring your own device
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-47" class="gnav20-subanchor" href="https://www.verizon.com/deals/products/" aria-label="Accessories">Accessories
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Accessories
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-3" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/smartphones/" aria-label="Devices">Devices
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-3" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Devices menu list" aria-expanded="false" role="button">Devices
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Devices
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-1" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/" aria-label="Smartphones">Smartphones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Smartphones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-2" class="gnav20-subanchor" href="https://www.verizon.com/5g/phones/" aria-label="5G phones">5G phones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												5G phones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-3" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/certified-pre-owned/" aria-label="Certified pre-owned">Certified pre-owned
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Certified pre-owned
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-4" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/prepaid/" aria-label="Prepaid phones">Prepaid phones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Prepaid phones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-5" class="gnav20-subanchor gnav20-haschild " aria-label="Featured smartphones">Featured smartphones
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-5" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Featured smartphones menu list" aria-expanded="false" role="button">Featured smartphones
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Featured smartphones
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-14" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/apple-iphone-12-pro-max/" aria-label="Apple iPhone 12 Pro Max">Apple iPhone 12 Pro Max
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-15" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/samsung-galaxy-s21-ultra-5g/" aria-label="Samsung Galaxy S21 Ultra 5G">Samsung Galaxy S21 Ultra 5G
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-16" class="gnav20-subanchor" href="https://www.verizon.com/smartphones/google-pixel-5/" aria-label="Google Pixel 5">Google Pixel 5
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-6" class="gnav20-subanchor" href="https://www.verizon.com/bring-your-own-device/" aria-label="Bring your own device">Bring your own device
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Bring your own device
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-7" class="gnav20-subanchor" href="https://www.verizon.com/featured/shop-phones-devices/" aria-label="Other phones">Other phones
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Other phones
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-8" class="gnav20-subanchor" href="https://www.verizon.com/od/trade-in/#/" aria-label="Trade in your device">Trade in your device
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Trade in your device
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-9" class="gnav20-subanchor" href="https://www.verizon.com/tablets/" aria-label="Tablets &amp; laptops">Tablets &amp; laptops
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Tablets &amp; laptops
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-10" class="gnav20-subanchor" href="https://www.verizon.com/connected-smartwatches/" aria-label="Watches">Watches
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Watches
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-11" class="gnav20-subanchor" href="https://www.verizon.com/internet-devices/" aria-label="Jetpacks &amp; hotspots">Jetpacks &amp; hotspots
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Jetpacks &amp; hotspots
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-4" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/products/" aria-label="Accessories">Accessories
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-4" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Accessories menu list" aria-expanded="false" role="button">Accessories
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Accessories
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-48" class="gnav20-subanchor" href="https://www.verizon.com/products/" aria-label="Shop all accessories">Shop all accessories
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shop all accessories
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-49" class="gnav20-subanchor gnav20-haschild " aria-label="Phone accessories">Phone accessories
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-49" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Phone accessories menu list" aria-expanded="false" role="button">Phone accessories
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Phone accessories
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-17" class="gnav20-subanchor" href="https://www.verizon.com/phone-accessories/" aria-label="Shop all phone accessories">Shop all phone accessories
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-18" class="gnav20-subanchor" href="https://www.verizon.com/products/phone-cases/" aria-label="Cases">Cases
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-19" class="gnav20-subanchor" href="https://www.verizon.com/products/phone-case-bundles/" aria-label="Case bundles">Case bundles
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-20" class="gnav20-subanchor" href="https://www.verizon.com/products/phone-screen-protectors/" aria-label="Screen protectors">Screen protectors
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-21" class="gnav20-subanchor" href="https://www.verizon.com/products/phone-stylus-pens/" aria-label="Stylus pens">Stylus pens
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-50" class="gnav20-subanchor gnav20-haschild " aria-label="Tablet accessories">Tablet accessories
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-50" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Tablet accessories menu list" aria-expanded="false" role="button">Tablet accessories
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Tablet accessories
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-22" class="gnav20-subanchor" href="https://www.verizon.com/tablet-accessories/" aria-label="Shop all tablet accessories">Shop all tablet accessories
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-23" class="gnav20-subanchor" href="https://www.verizon.com/products/tablet-cases/" aria-label="Cases">Cases
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-24" class="gnav20-subanchor" href="https://www.verizon.com/products/tablet-screen-protectors/" aria-label="Screen protectors">Screen protectors
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-25" class="gnav20-subanchor" href="https://www.verizon.com/products/tablet-stylus-pens/" aria-label="Stylus pens">Stylus pens
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-26" class="gnav20-subanchor" href="https://www.verizon.com/products/tablet-keyboards/" aria-label="Keyboards">Keyboards
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-51" class="gnav20-subanchor gnav20-haschild " aria-label="Watch accessories">Watch accessories
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-51" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Watch accessories menu list" aria-expanded="false" role="button">Watch accessories
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Watch accessories
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-27" class="gnav20-subanchor" href="https://www.verizon.com/watch-accessories/" aria-label="Shop all watch accessories">Shop all watch accessories
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-28" class="gnav20-subanchor" href="https://www.verizon.com/connected-smartwatches/" aria-label="Smart watches">Smart watches
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-29" class="gnav20-subanchor" href="https://www.verizon.com/products/watch-bands/" aria-label="Bands">Bands
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-30" class="gnav20-subanchor" href="https://www.verizon.com/products/watch-screen-protectors/" aria-label="Screen protectors">Screen protectors
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-31" class="gnav20-subanchor" href="https://www.verizon.com/products/watch-chargers/" aria-label="Chargers">Chargers
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-52" class="gnav20-subanchor" href="https://www.verizon.com/batteries-and-chargers/" aria-label="Batteries &amp; chargers">Batteries &amp; chargers
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Batteries &amp; chargers
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-53" class="gnav20-subanchor" href="https://www.verizon.com/audio/" aria-label="Headphones &amp; speakers">Headphones &amp; speakers
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Headphones &amp; speakers
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-54" class="gnav20-subanchor" href="https://www.verizon.com/entertainment-store/" aria-label="Gaming gear">Gaming gear
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Gaming gear
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-55" class="gnav20-subanchor" href="https://www.verizon.com/smart-home/" aria-label="Smart home">Smart home
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Smart home
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-56" class="gnav20-subanchor" href="https://www.verizon.com/health/" aria-label="Fitness trackers &amp; health">Fitness trackers &amp; health
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fitness trackers &amp; health
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-57" class="gnav20-subanchor" href="https://www.verizon.com/products/sale/" aria-label="Deals">Deals
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Deals
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-5" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/plans/" aria-label="Plans">Plans
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-5" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Plans menu list" aria-expanded="false" role="button">Plans
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Plans
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-12" class="gnav20-subanchor" href="https://www.verizon.com/plans/" aria-label="Shop all plans">Shop all plans
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shop all plans
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-13" class="gnav20-subanchor" href="https://www.verizon.com/plans/unlimited/" aria-label="Unlimited">Unlimited
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Unlimited
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-14" class="gnav20-subanchor" href="https://www.verizon.com/plans/#shared" aria-label="Shared data">Shared data
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shared data
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-15" class="gnav20-subanchor" href="https://www.verizon.com/prepaid/" aria-label="Prepaid">Prepaid
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Prepaid
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-16" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/international/" aria-label="International services">International services
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												International services
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-17" class="gnav20-subanchor" href="https://www.verizon.com/plans/devices/tablets/" aria-label="Connected devices">Connected devices
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Connected devices
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-18" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/featured/giving-more/" aria-label="Those who serve">Those who serve
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-18" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Those who serve menu list" aria-expanded="false" role="button">Those who serve
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Those who serve
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-1" class="gnav20-subanchor" href="https://www.verizon.com/featured/giving-more/" aria-label="Those who serve overview">Those who serve overview
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-2" class="gnav20-subanchor" href="https://www.verizon.com/featured/teachers/" aria-label="Teacher plans">Teacher plans
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-3" class="gnav20-subanchor" href="https://www.verizon.com/featured/nurses/" aria-label="Nurses plans">Nurses plans
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-4" class="gnav20-subanchor" href="https://www.verizon.com/featured/first-responders/" aria-label="First responders">First responders
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-5" class="gnav20-subanchor" href="https://www.verizon.com/military/" aria-label="Military plans">Military plans
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-19" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/just-kids/" aria-label="Kids plans">Kids plans
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Kids plans
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-20" class="gnav20-subanchor" href="https://www.verizon.com/featured/students/" aria-label="Student plans">Student plans
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Student plans
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-21" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/plans/" aria-label="Other plans">Other plans
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-21" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Other plans menu list" aria-expanded="false" role="button">Other plans
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Other plans
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-6" class="gnav20-subanchor" href="https://www.verizon.com/plans/connected-car/" aria-label="Connected car plans">Connected car plans
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-7" class="gnav20-subanchor" href="https://www.verizon.com/discounts/" aria-label="Employee discounts">Employee discounts
+													</a>
+												</li>
+											</ul>
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-22" class="gnav20-subanchor" href="https://www.verizon.com/bring-your-own-device/" aria-label="Bring your own device">Bring your own device
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Bring your own device
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-6" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/home/" aria-label="Home">Home
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-6" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Home menu list" aria-expanded="false" role="button">Home
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Home
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-23" class="gnav20-subanchor" href="https://www.verizon.com/home/" aria-label="Shop all home solutions">Shop all home solutions
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shop all home solutions
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-24" class="gnav20-subanchor" href="https://www.verizon.com/home/fios-fastest-internet/" aria-label="Fios Home Internet">Fios Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-25" class="gnav20-subanchor" href="https://www.verizon.com/5g/home/" aria-label="5G Home Internet">5G Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												5G Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-26" class="gnav20-subanchor" href="https://www.verizon.com/home/lte-home-internet/" aria-label="LTE Home Internet">LTE Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												LTE Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-27" class="gnav20-subanchor" href="https://www.verizon.com/home/fiostv/" aria-label=" Fios TV"> Fios TV
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												 Fios TV
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-28" class="gnav20-subanchor" href="https://www.verizon.com/home/moving/" aria-label="Moving">Moving
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Moving
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+												<a x-cq-linkchecker="skip" id="Shop-L3-29" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/home/accessories/" aria-label="Accessories">Accessories
+												</a>												
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-29" class="gnav20-subanchor gnav20-goback" href="javascript:void(0)" aria-label="Accessories menu list" aria-expanded="false" role="button">Accessories
+												</a>
+											
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Accessories
+											</div>
+											<ul item-title="L3" class="gnav20-submenu-column gnav20-L3 gnav20-featured-scroll-area" style="display:none;">
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-8" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/" aria-label="Accessories overview">Accessories overview
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-9" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/all-accessories/" aria-label="Shop all accessories">Shop all accessories
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-10" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/cables-connectors/" aria-label="Cables &amp; connectors">Cables &amp; connectors
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-11" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/networking-wifi/" aria-label="Networking &amp; Wi-Fi">Networking &amp; Wi-Fi
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-12" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/remote-controls/" aria-label="TV accessories">TV accessories
+													</a>
+												</li>
+											
+												<li class="gnav20-sub-nav-list normal">
+													<a x-cq-linkchecker="skip" id="gnav20-Shop-L4-13" class="gnav20-subanchor" href="https://www.verizon.com/home/accessories/phone-equipment/" aria-label="Phone equipment">Phone equipment
+													</a>
+												</li>
+											</ul>
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-margin-top">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-7" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/entertainment/" aria-label="Entertainment">Entertainment
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-7" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Entertainment menu list" aria-expanded="false" role="button">Entertainment
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Entertainment
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-30" class="gnav20-subanchor" href="https://www.verizon.com/entertainment/" aria-label="Shop all entertainment">Shop all entertainment
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Shop all entertainment
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-31" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/disneyplus/" aria-label="Disney+, Hulu, ESPN+">Disney+, Hulu, ESPN+
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Disney+, Hulu, ESPN+
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-32" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/discovery-plus/" aria-label="discovery+">discovery+
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												discovery+
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-33" class="gnav20-subanchor" href="https://www.verizon.com/gaming/apple-arcade/" aria-label="Apple Arcade">Apple Arcade
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Apple Arcade
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-34" class="gnav20-subanchor" href="https://www.verizon.com/gaming/google-play/" aria-label="Google Play Pass">Google Play Pass
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Google Play Pass
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-35" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/apple-music/" aria-label="Apple Music">Apple Music
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Apple Music
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-36" class="gnav20-subanchor" href="https://www.verizon.com/gaming/" aria-label="Gaming">Gaming
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Gaming
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-37" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/sling-tv/" aria-label="SLING">SLING
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												SLING
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-38" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/apps/youtube-tv/" aria-label="YouTube TV">YouTube TV
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												YouTube TV
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list normal">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-8" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/solutions-and-services/add-ons/" aria-label="Apps &amp; add-ons">Apps &amp; add-ons
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-8" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Apps &amp; add-ons menu list" aria-expanded="false" role="button">Apps &amp; add-ons
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Apps &amp; add-ons
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-58" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/add-ons/" aria-label="Apps &amp; add-ons overview">Apps &amp; add-ons overview
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Apps &amp; add-ons overview
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-59" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/add-ons/protection-and-security/" aria-label="Protection &amp; security">Protection &amp; security
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Protection &amp; security
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-60" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/add-ons/child-protection-and-safety/" aria-label="Safety">Safety
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Safety
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Shop-L3-61" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/add-ons/voicemail-and-messaging/" aria-label="Mobile">Mobile
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Mobile
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link">
+								
+																	
+									<a x-cq-linkchecker="skip" id="gnav20-Shop-L2-9" class="gnav20-subanchor" href="https://www.verizon.com/business/solutions/small-business/?cmp=int:int:aw:vbg:consumer:nav_shop_business&utm_medium=int&utm_source=int&utm_campaign=consumer&utm_content=aw:vbg:nav_shop_business" aria-label="Business">Business
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Business
+									</div>											
+																		
+									
+																		
+								</div>
+							</li>						
+						
+					</ul>
+				
+				
+				
+			</div>
+			<div class="gnav20-nav-mask">&nbsp;</div>
+		</div>
+	</div>
+
+</div>
+
+
+    
+    
+    <div class="gnav20-navigation-item">
+
+	<div class="gnav20-primary-menu gnav20-featured-card">
+		
+			<button id="gnav20-Why-Verizon-L1" aria-label="Why Verizon Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-haschild">Why Verizon</button>	
+			<button id="gnav20-Why-Verizon-L1" aria-label="Why Verizon Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-goback">Why Verizon</button>
+		
+		
+		<a aria-hidden="true" class="gnav20-menu-label-link" href="https://www.verizon.com/why-verizon/" tabindex="-1">Why Verizon</a>
+
+		<div class="gnav20-sub-header-menu gnav20-sub-menu" style="display:none">
+			<div class="gnav20-nav-utility">
+				<button class="gnav20-nav-search-icon" aria-label="Search Verizon">
+					<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+						<path fill="#000" fillrule="nonzero" d="M17.896 17.101l-5.995-5.994A6.721 6.721 0 0 0 13.5 6.75a6.75 6.75 0 1 0-6.75 6.75c1.661 0 3.18-.603 4.356-1.598l5.995 5.995.795-.796zM6.75 12.375A5.63 5.63 0 0 1 1.125 6.75 5.63 5.63 0 0 1 6.75 1.125a5.63 5.63 0 0 1 5.625 5.625 5.63 5.63 0 0 1-5.625 5.625z">
+						</path>
+					</svg>
+				</button>
+				<button class="gnav20-nav-close" aria-label="Close Nav Panel" tabindex="0">Close</button>
+			</div>
+			<div class="gnav20-content-wrapper  ">
+				<div class="gnav20-featured-card-top-label">
+					Why Verizon
+				</div>
+				
+					<ul class="gnav20-submenu-column gnav20-featured-scroll-area" role="none">
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list normal">
+								
+																	
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-1" class="gnav20-subanchor" href="https://www.verizon.com/why-verizon/" aria-label="Why Verizon overview">Why Verizon overview
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Why Verizon overview
+									</div>											
+																		
+									
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-non-link">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-2" class="gnav20-subanchor gnav20-haschild " aria-label="Network">Network
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-2" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Network menu list" aria-expanded="false" role="button">Network
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Network
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-1" class="gnav20-subanchor" href="https://www.verizon.com/5g/" aria-label="5G overview">5G overview
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												5G overview
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-2" class="gnav20-subanchor" href="https://www.verizon.com/coverage-map/" aria-label="Wireless coverage map">Wireless coverage map
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Wireless coverage map
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-3" class="gnav20-subanchor" href="https://verizon5glabs.com/" aria-label=" 5G Labs" rel="noopener noreferrer" target="_blank"> 5G Labs
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												 5G Labs
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-4" class="gnav20-subanchor" href="https://www.verizon.com/featured/our-network/" aria-label="Network awards">Network awards
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Network awards
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-5" class="gnav20-subanchor" href="https://www.verizon.com/home/fios/" aria-label="Fios">Fios
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-6" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/international/" aria-label="Global coverage">Global coverage
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Global coverage
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-non-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-3" class="gnav20-subanchor gnav20-haschild " aria-label="Get more">Get more
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-3" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Get more menu list" aria-expanded="false" role="button">Get more
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Get more
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-7" class="gnav20-subanchor" href="https://www.verizon.com/shop/" aria-label="Devices &amp; plans">Devices &amp; plans
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Devices &amp; plans
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-8" class="gnav20-subanchor" href="https://www.verizon.com/promos/mobile-and-home/" aria-label="Mobile + Home">Mobile + Home
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Mobile + Home
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-9" class="gnav20-subanchor" href="https://www.verizon.com/entertainment/" aria-label="Entertainment">Entertainment
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Entertainment
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-10" class="gnav20-subanchor" href="https://www.verizon.com/rewards/verizon-up/" aria-label="Verizon Up">Verizon Up
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Verizon Up
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-11" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/verizon-visa-card/?origin=gnavHeader" aria-label="Verizon Visa® Card">Verizon Visa® Card
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Verizon Visa® Card
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-12" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/insurance-and-repair/insurance/" aria-label="Device protection">Device protection
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Device protection
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-13" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/verizon-cloud/" aria-label="Verizon Cloud">Verizon Cloud
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Verizon Cloud
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-14" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/hoyhealth/" aria-label="Health discounts">Health discounts
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Health discounts
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-non-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-4" class="gnav20-subanchor gnav20-haschild " aria-label="Social impact">Social impact
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L2-4" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Social impact menu list" aria-expanded="false" role="button">Social impact
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Social impact
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-15" class="gnav20-subanchor" href="https://www.verizon.com/about/responsibility" aria-label="Responsibility">Responsibility
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Responsibility
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Why-Verizon-L3-16" class="gnav20-subanchor" href="https://www.verizon.com/about/privacy/" aria-label="Privacy">Privacy
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Privacy
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+						
+					</ul>
+				
+				
+				
+			</div>
+			<div class="gnav20-nav-mask">&nbsp;</div>
+		</div>
+	</div>
+
+</div>
+
+
+    
+    
+    <div class="gnav20-navigation-item">
+
+	<div class="gnav20-primary-menu gnav20-featured-card">
+		
+			<button id="gnav20-Support-L1" aria-label="Support Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-haschild">Support</button>	
+			<button id="gnav20-Support-L1" aria-label="Support Menu List" aria-expanded="false" class="gnav20-menu-label gnav20-menu-label-button gnav20-goback">Support</button>
+		
+		
+		<a aria-hidden="true" class="gnav20-menu-label-link" href="https://www.verizon.com/support/" tabindex="-1">Support</a>
+
+		<div class="gnav20-sub-header-menu gnav20-sub-menu" style="display:none">
+			<div class="gnav20-nav-utility">
+				<button class="gnav20-nav-search-icon" aria-label="Search Verizon">
+					<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+						<path fill="#000" fillrule="nonzero" d="M17.896 17.101l-5.995-5.994A6.721 6.721 0 0 0 13.5 6.75a6.75 6.75 0 1 0-6.75 6.75c1.661 0 3.18-.603 4.356-1.598l5.995 5.995.795-.796zM6.75 12.375A5.63 5.63 0 0 1 1.125 6.75 5.63 5.63 0 0 1 6.75 1.125a5.63 5.63 0 0 1 5.625 5.625 5.63 5.63 0 0 1-5.625 5.625z">
+						</path>
+					</svg>
+				</button>
+				<button class="gnav20-nav-close" aria-label="Close Nav Panel" tabindex="0">Close</button>
+			</div>
+			<div class="gnav20-content-wrapper  ">
+				<div class="gnav20-featured-card-top-label">
+					Support
+				</div>
+				
+					<ul class="gnav20-submenu-column gnav20-featured-scroll-area" role="none">
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list normal">
+								
+																	
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-1" class="gnav20-subanchor" href="https://www.verizon.com/support/" aria-label="Support overview">Support overview
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Support overview
+									</div>											
+																		
+									
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-2" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/support/" aria-label="Mobile">Mobile
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-2" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Mobile menu list" aria-expanded="false" role="button">Mobile
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Mobile
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-1" class="gnav20-subanchor" href="https://www.verizon.com/support/" aria-label="Mobile support overview">Mobile support overview
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Mobile support overview
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-2" class="gnav20-subanchor" href="https://www.verizon.com/support/billing-and-payments/" aria-label="Billing &amp; payments">Billing &amp; payments
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Billing &amp; payments
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-3" class="gnav20-subanchor" href="https://www.verizon.com/support/account-management/" aria-label="Account management">Account management
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Account management
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-4" class="gnav20-subanchor" href="https://www.verizon.com/support/phones-and-devices/" aria-label="Device support &amp; setup">Device support &amp; setup
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Device support &amp; setup
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-5" class="gnav20-subanchor" href="https://www.verizon.com/support/services-and-apps/" aria-label="Services &amp; apps">Services &amp; apps
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Services &amp; apps
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-6" class="gnav20-subanchor" href="https://www.verizon.com/plans/international/international-travel/trip-planner-tool/" aria-label="International trip planner">International trip planner
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												International trip planner
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-7" class="gnav20-subanchor" href="https://www.verizon.com/od/cust/orderStatusIndex" aria-label="Order status">Order status
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Order status
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-8" class="gnav20-subanchor" href="https://www.verizon.com/solutions-and-services/my-verizon-mobile/" aria-label="Download My Verizon App">Download My Verizon App
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Download My Verizon App
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-9" class="gnav20-subanchor" href="https://community.verizon.com/" aria-label="Community Forums">Community Forums
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Community Forums
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-column-break">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-3" class="gnav20-subanchor gnav20-haschild " href="https://www.verizon.com/support/" aria-label="Home">Home
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-3" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Home menu list" aria-expanded="false" role="button">Home
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Home
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-10" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/home/" aria-label="Home support overview">Home support overview
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Home support overview
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-11" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/account/" aria-label="Billing &amp; account management">Billing &amp; account management
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Billing &amp; account management
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-12" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/internet/" aria-label="Fios Internet">Fios Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-13" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/tv/" aria-label="Fios TV">Fios TV
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios TV
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-14" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/homephone/" aria-label="Home Phone">Home Phone
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Home Phone
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-15" class="gnav20-subanchor" href="https://www.verizon.com/support/5g/" aria-label="5G Home Internet">5G Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												5G Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-16" class="gnav20-subanchor" href="https://www.verizon.com/support/lte-home-internet/" aria-label="LTE Home Internet">LTE Home Internet
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												LTE Home Internet
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-17" class="gnav20-subanchor" href="https://www.verizon.com/speedtest/" aria-label="Speed Test">Speed Test
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Speed Test
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-18" class="gnav20-subanchor" href="https://www.verizon.com/support/residential/account/manage-service/order-status/" aria-label="Order status">Order status
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Order status
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-19" class="gnav20-subanchor" href="https://m.verizon.com/myverizonmobile/router.aspx?token=launchapp" aria-label="Download My Fios App">Download My Fios App
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Download My Fios App
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-23" class="gnav20-subanchor" href="https://forums.verizon.com/" aria-label="Community Forums">Community Forums
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Community Forums
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list normal">
+								
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-4" class="gnav20-subanchor gnav20-haschild " aria-label="Business">Business
+									</a>
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-4" class="gnav20-subanchor gnav20-goback gnav20-hide-on-desktop" href="javascript:void(0)" aria-label="Business menu list" aria-expanded="false" role="button">Business
+									</a>								
+								
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Business
+									</div>											
+																		
+									<ul item-title="L2" class="gnav20-submenu-column gnav20-featured-scroll-area gnav20-L2 gnav20-mega-column-0" style="display:none">										
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-20" class="gnav20-subanchor" href="https://enterprise.verizon.com/support/" aria-label="Enterprise">Enterprise
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Enterprise
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-21" class="gnav20-subanchor" href="https://www.verizon.com/business/support/index/?cmp=int:int:aw:vbg:consumer:nav_support_fios&utm_medium=int&utm_source=int&utm_campaign=consumer&utm_content=aw:vbg:nav_support_fios" aria-label="Fios Internet &amp; Phone">Fios Internet &amp; Phone
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Fios Internet &amp; Phone
+											</div>
+											
+										</li>
+										
+																			
+										<li class="gnav20-Level-3 gnav20-sub-nav-list normal">
+											
+											
+												<a x-cq-linkchecker="skip" id="gnav20-Support-L3-22" class="gnav20-subanchor" href="https://b2b.verizonwireless.com/content/my-business-portal/support.html?cmp=int:int:aw:vbg:consumer:nav_support_wireless&utm_medium=int&utm_source=int&utm_campaign=consumer&utm_content=aw:vbg:nav_support_wireless" aria-label="Wireless">Wireless
+												</a>
+											
+											<div class="gnav20-submenu-column gnav20-L3 gnav20-featured-card-top-label" style="display:none;">
+												Wireless
+											</div>
+											
+										</li>
+																					
+											
+										
+									</ul>
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link gnav20-column-break">
+								
+																	
+									<a x-cq-linkchecker="skip" id="gnav20-Support-L2-5" class="gnav20-subanchor" href="https://www.verizon.com/support/contact-us/" aria-label="Contact us">Contact us
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Contact us
+									</div>											
+																		
+								</div>
+							</li>						
+																		
+							<li class="gnav20-Level-2 gnav20-sub-nav-list gnav20-bold-link">
+								
+																	
+									<a x-cq-linkchecker="skip" data-hide-for="loggedIn:true,fd:Y,fd:N" id="gnav20-Support-L2-6" class="gnav20-subanchor" href="https://secure.verizon.com/vzauth/UI/Login" aria-label="Sign in">Sign in
+									</a>
+								
+								<div class="gnav20-L2-content-wrapper">						
+									<div class="gnav20-submenu-column gnav20-L2 gnav20-featured-card-top-label" style="display:none">
+										Sign in
+									</div>											
+																		
+									
+																		
+								</div>
+							</li>						
+						
+					</ul>
+				
+				
+				
+			</div>
+			<div class="gnav20-nav-mask">&nbsp;</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+</div></div>
+
+
+
+		</div>
+		<div class="gnav20-utility">		
+			
+
+
+
+    
+    
+    <div class="gnav20-account-utility">
+
+<div class="gnav20-utility-wrapper " item-title="signIn">
+	<input type="hidden" id="vzSignOut" value="ssoauth.verizon.com"/></input>
+	<div class="gnav20-account-box" id="gnav20-account-menu">
+		
+		
+		
+			<button id="gnav20-sign-id" class="gnav20-sign-in gnav20-hasDropdown  " tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+				<span data-href="https://secure.verizon.com/vzauth/UI/Login">
+					<span>
+						Sign in
+					</span>
+				</span>
+			</button>
+		
+
+		
+		<div class="gnav20-dropdown-menu gnav20-hide " id="gnav20-sign-in" aria-expanded="false">
+			<button class="gnav20-close-account-utility" aria-label="close the Sign In Menu" tabindex="0">Close</button>
+			<p class="gnav20-signin-content-title">Sign in</p>
+			<!-- <sly data-sly-list.signInLabels="">
+				<span>
+					<span data-show-for="" data-hide-for="" class="gnav20-dropdown-label"></span>
+				</span>
+			</sly> -->
+			<ul class="gnav20-dropdown">
+				
+					<li class="gnav20-dropdown-list gnav20-hide-on-desktop gnav20-goback">
+						<button class="gnav20-back-to-menu " aria-label="Back to Menu" tabindex="0">Back to Menu</button>
+					</li>
+				
+				<li class="gnav20-dropdown-list ">
+					<a data-hide-for="appid:vpd" class="gnav20-dropdown-list-item" href="https://secure.verizon.com/vzauth/UI/Login" aria-label="Sign in to My Account" tabindex="0">Sign in to My Account</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a data-show-for="appid:vpd" class="gnav20-dropdown-list-item" href="https://www.verizon.com/privacy/secure/your-data" aria-label="Sign in to My Account" tabindex="0">Sign in to My Account</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://secure.verizon.com/account/register/start" aria-label="Register" tabindex="0">Register</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://myvprepay.verizon.com/prepaid/ui/mobile/InstantPay/" aria-label="Prepaid instant pay" tabindex="0">Prepaid instant pay</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://www.verizon.com/od/cust/auth/retrieveFavorites" aria-label="Wishlist" tabindex="0">Wishlist</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://sso.verizonenterprise.com/amserver/sso/login.go" aria-label="Business sign in" tabindex="0">Business sign in</a>
+				</li>
+			</ul>			
+		</div>
+		<div class="gnav20-vzmoverlay"></div>
+	</div>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-search-utility">
+
+	<div class="gnav20-utility-wrapper" item-title="search">
+		<div class="gnav20-search-wrapper">
+			<input type="hidden" id="gnav20-search-context" name="wireless" value="https://www.verizon.com/onesearch/typeahead?q="/></input>
+			<input type="hidden" id="gnav20-search-post-url" name="wireless" value="https://www.verizon.com/onesearch/search?q="/></input>
+			<input type="hidden" id="gnav20-search-api-key" name="wireless" value="5wikkY6ArAIvoxHm3wiS3gbVDcXmt9Ry"/></input>
+			<div id="gnav20-search-escontext" data-json="{&#39;ResidentialShop&#39;:[&#39;verizon.com/home&#39;,&#39;verizon.com/local&#39;,&#39;verizon.com/info&#39;,&#39;/home/storelocator&#39;,&#39;verizon.com/inhome&#39;,&#39;verizon.com/?lid\u003d&#39;],&#39;ResidentialAccessories&#39;:[&#39;verizon.com/home/accessories&#39;],&#39;ResidentialSupport&#39;:[&#39;/support/residential&#39;,&#39;verizon.com/support/consumer&#39;,&#39;forums.verizon.com&#39;,&#39;my.verizon.com/services&#39;,&#39;verizon.com/fiostv/selfinstall&#39;,&#39;verizon.com/whatsnext/residential&#39;,&#39;verizon.com/speedtest&#39;],&#39;ResidentialMyVerizon&#39;:[&#39;/Support&#39;,&#39;tv.verizon.com&#39;,&#39;verizon.com/foryourhome&#39;,&#39;ssoauth.verizon.com&#39;,&#39;verizon.com/fiostv&#39;,&#39;verizon.com/ondemand&#39;,&#39;verizon.com/consumer/myverizon&#39;,&#39;verizon.com/watch&#39;],&#39;EntSupport&#39;:[&#39;enterprise.verizon.com/terms/&#39;,&#39;enterprise.verizon.com/publications/&#39;,&#39;enterprise.verizon.com/support&#39;],&#39;MobileSupport&#39;:[&#39;.com/support&#39;,&#39;.com/solutions-and-services&#39;],&#39;MobileMyVerizon&#39;:[&#39;.com/ui&#39;,&#39;.com/vzw&#39;,&#39;.com/myv&#39;,&#39;.com/blocks&#39;,&#39;.com/my-verizon/&#39;],&#39;MobileAccessories&#39;:[&#39;.com/products&#39;],&#39;EntLearn&#39;:[&#39;enterprise.verizon.com&#39;,&#39;enterprise.verizon.com/products/&#39;,&#39;enterprise.verizon.com/why-verizon/&#39;,&#39;enterprise.verizon.com/solutions/&#39;,&#39;enterprise.verizon.com/resources/&#39;,&#39;enterprise.verizon.com/support/&#39;,&#39;enterprise.verizon.com/campaigns/&#39;,&#39;enterprise.verizon.com/solutions/public-sector/&#39;],&#39;SMBSupport&#39;:[&#39;verizon.com/business/support/&#39;,&#39;b2b.verizonwireless.com/content/&#39;],&#39;MyBusiness&#39;:[&#39;business.verizon.com&#39;,&#39;verizon.com/whatsnext/business/&#39;],&#39;SMBLearn&#39;:[&#39;verizon.com/business/&#39;],&#39;SMBwireless&#39;:[&#39;verizonwireless.com/business/&#39;],&#39;Corporate&#39;:[&#39;verizon.com/about&#39;],&#39;MobileShop&#39;:[&#39;verizon.com/personal-home&#39;,&#39;verizonwireless.com/?intcmp\u003d&#39;]}"></div>
+			<button class="gnav20-search-icon" id="gnav20-search-icon" aria-label="Search Verizon">
+				<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path fill="#000" fillRule="nonzero" d="M17.896 17.101l-5.995-5.994A6.721 6.721 0 0 0 13.5 6.75a6.75 6.75 0 1 0-6.75 6.75c1.661 0 3.18-.603 4.356-1.598l5.995 5.995.795-.796zM6.75 12.375A5.63 5.63 0 0 1 1.125 6.75 5.63 5.63 0 0 1 6.75 1.125a5.63 5.63 0 0 1 5.625 5.625 5.63 5.63 0 0 1-5.625 5.625z">
+					</path>
+				</svg>
+			</button>
+			<div class="gnav20-hide gnav20-tablet-back-drop"></div>
+			<div class="gnav20-hide gnav20-search-container" searchData="results">
+				<div class="gnav20-search-content-wrapper">
+				<form action="" id="gnav20-search-form">
+					<p class="gnav20-search-para">
+						<input type="search" value="" class="gnav20-search-text" name="q" placeholder="Search" autocomplete="off" aria-label="Enter Search Text"/>
+						<a class="gnav20-mobile-search-icon" tabindex="0" role="button" href="javascript:void(0);" aria-label="search verizon"></a>
+						<button class="gnav20-close-icon" aria-label="close search results"></button>
+					</p>
+				</form>
+				</div>
+				<div class=" gnav20-new-search">
+					<div class=" gnav20-center-list gnav20-hide-center-list-desktop">
+						<ul class="gnav20-top-search">
+							<li><span class="gnav20-suggestion-title">Quick links</span></li>
+							<li><a href="https://www.verizon.com/support/covid-19-faqs/">COVID-19 FAQs</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/stores">Find open stores near you</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/deals/">Shop deals</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/internet-devices/">Jetpacks &amp; hotspots</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/plans/">Plans</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/od/trade-in/">Trade in</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/support/upgrade-device/">Upgrade</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/home/fios/">Fios</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gnav20-device-list">
+
+					</div>
+					<div class=" gnav20-center-list gnav20-hide-center-list-tablet">
+						<ul class="gnav20-top-search">
+							<li><span class="gnav20-suggestion-title">Quick links</span></li>
+							<li><a href="https://www.verizon.com/support/covid-19-faqs/">COVID-19 FAQs</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/stores">Find open stores near you</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/deals/">Shop deals</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/internet-devices/">Jetpacks &amp; hotspots</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/plans/">Plans</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/od/trade-in/">Trade in</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/support/upgrade-device/">Upgrade</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/home/fios/">Fios</a>
+							</li>
+						</ul>
+					</div>
+					<div class=" gnav20-right-list">
+						<ul class="gnav20-right-search-list">
+							<li><span class="gnav20-suggestion-title">Featured devices</span></li>
+							<li><a href="https://www.verizon.com/smartphones/apple-iphone-12-pro-max/">Apple iPhone 12 Pro Max</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/apple-iphone-12/">Apple iPhone 12</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/samsung-galaxy-s21-ultra-5g/">Samsung Galaxy S21 Ultra 5G</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/samsung-galaxy-s21-plus-5g/">Samsung Galaxy S21+ 5G</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/google-pixel-5/">Google Pixel 5</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/motorola-one-5g-uw/">Motorola one 5G UW</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+
+
+    
+    
+    <div class="gnav20-unifiedcart">
+
+<div class="gnav20-utility-wrapper" item-title="unifiedCart">
+	
+		
+    <button class="gnav20-cart" aria-label="Shopping Cart Menu" aria-expanded="false">
+		<span class="gnav20-unifiedcart-bubble"></span>
+    </button>
+    <div id="gnav20-my-side-nav" class="gnav20-unified-cart gnav20-hide gnav20-unified-cart-right">
+        <button id="gnav20-cclosex" class="gnav20-closex" aria-label="Close Shopping Cart" tabindex="0">Close</button>
+        <p class="gnav20-cart-content-title">Choose your cart</p>
+        <div class="gnav20-content-lists">
+            
+                <div class="gnav20-content-list">
+                    <div class="gnav20-content-list-flex">
+                        
+                        <div>
+                            <a class="gnav20-content-list-arrow gnav20-mobile-cart-count" href="https://www.verizon.com/rewards/checkcart0/">Mobile solutions</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="gnav20-content-list">
+                    <div class="gnav20-content-list-flex">
+                        
+                        <div>
+                            <a class="gnav20-content-list-arrow gnav20-home-cart-count" href="https://www.verizon.com/inhome/resumecart?xpssource=learn">Home solutions</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+	
+	
+</div></div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="gnav20-mobile  gnav20-stacked-utility" item-title="all">
+	<div class="gnav20-wrapper-logo">
+		
+
+
+
+    
+    
+    <div class="gnav20-logo">
+
+<div class="gnav20-logo-wrapper gnav20-relative-index">
+    <a class="gnav20-logoWhiteBg" href="https://www.verizon.com/" title="Verizon Home Page">
+        <img alt="Verizon Logo" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iNDI4IiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDQyOCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDI1MEg3Ny43MkwxNTUuNDMgNDE2LjY3TDM0OS43MyAwSDQyNy40NUwxOTQuMjkgNTAwSDExNi41OEwwIDI1MFoiIGZpbGw9IiNFRTAwMDAiLz4KPC9zdmc+Cg=="/>
+    </a>
+</div></div>
+
+
+
+	</div>
+    <div class="gnav20-utility">
+        
+
+
+
+    
+    
+    <div class="gnav20-account-utility">
+
+<div class="gnav20-utility-wrapper " item-title="signIn">
+	<input type="hidden" id="vzSignOut" value="ssoauth.verizon.com"/></input>
+	<div class="gnav20-account-box" id="gnav20-account-menu">
+		
+		
+		
+			<button id="gnav20-sign-id" class="gnav20-sign-in gnav20-hasDropdown  " tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">
+				<span data-href="https://secure.verizon.com/vzauth/UI/Login">
+					<span>
+						Sign in
+					</span>
+				</span>
+			</button>
+		
+
+		
+		<div class="gnav20-dropdown-menu gnav20-hide " id="gnav20-sign-in" aria-expanded="false">
+			<button class="gnav20-close-account-utility" aria-label="close the Sign In Menu" tabindex="0">Close</button>
+			<p class="gnav20-signin-content-title">Sign in</p>
+			<!-- <sly data-sly-list.signInLabels="">
+				<span>
+					<span data-show-for="" data-hide-for="" class="gnav20-dropdown-label"></span>
+				</span>
+			</sly> -->
+			<ul class="gnav20-dropdown">
+				
+					<li class="gnav20-dropdown-list gnav20-hide-on-desktop gnav20-goback">
+						<button class="gnav20-back-to-menu " aria-label="Back to Menu" tabindex="0">Back to Menu</button>
+					</li>
+				
+				<li class="gnav20-dropdown-list ">
+					<a data-hide-for="appid:vpd" class="gnav20-dropdown-list-item" href="https://secure.verizon.com/vzauth/UI/Login" aria-label="Sign in to My Account" tabindex="0">Sign in to My Account</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a data-show-for="appid:vpd" class="gnav20-dropdown-list-item" href="https://www.verizon.com/privacy/secure/your-data" aria-label="Sign in to My Account" tabindex="0">Sign in to My Account</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://secure.verizon.com/account/register/start" aria-label="Register" tabindex="0">Register</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://myvprepay.verizon.com/prepaid/ui/mobile/InstantPay/" aria-label="Prepaid instant pay" tabindex="0">Prepaid instant pay</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://www.verizon.com/od/cust/auth/retrieveFavorites" aria-label="Wishlist" tabindex="0">Wishlist</a>
+				</li>
+			
+				
+				<li class="gnav20-dropdown-list ">
+					<a class="gnav20-dropdown-list-item" href="https://sso.verizonenterprise.com/amserver/sso/login.go" aria-label="Business sign in" tabindex="0">Business sign in</a>
+				</li>
+			</ul>			
+		</div>
+		<div class="gnav20-vzmoverlay"></div>
+	</div>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-search-utility">
+
+	<div class="gnav20-utility-wrapper" item-title="search">
+		<div class="gnav20-search-wrapper">
+			<input type="hidden" id="gnav20-search-context" name="wireless" value="https://www.verizon.com/onesearch/typeahead?q="/></input>
+			<input type="hidden" id="gnav20-search-post-url" name="wireless" value="https://www.verizon.com/onesearch/search?q="/></input>
+			<input type="hidden" id="gnav20-search-api-key" name="wireless" value="5wikkY6ArAIvoxHm3wiS3gbVDcXmt9Ry"/></input>
+			<div id="gnav20-search-escontext" data-json="{&#39;ResidentialShop&#39;:[&#39;verizon.com/home&#39;,&#39;verizon.com/local&#39;,&#39;verizon.com/info&#39;,&#39;/home/storelocator&#39;,&#39;verizon.com/inhome&#39;,&#39;verizon.com/?lid\u003d&#39;],&#39;ResidentialAccessories&#39;:[&#39;verizon.com/home/accessories&#39;],&#39;ResidentialSupport&#39;:[&#39;/support/residential&#39;,&#39;verizon.com/support/consumer&#39;,&#39;forums.verizon.com&#39;,&#39;my.verizon.com/services&#39;,&#39;verizon.com/fiostv/selfinstall&#39;,&#39;verizon.com/whatsnext/residential&#39;,&#39;verizon.com/speedtest&#39;],&#39;ResidentialMyVerizon&#39;:[&#39;/Support&#39;,&#39;tv.verizon.com&#39;,&#39;verizon.com/foryourhome&#39;,&#39;ssoauth.verizon.com&#39;,&#39;verizon.com/fiostv&#39;,&#39;verizon.com/ondemand&#39;,&#39;verizon.com/consumer/myverizon&#39;,&#39;verizon.com/watch&#39;],&#39;EntSupport&#39;:[&#39;enterprise.verizon.com/terms/&#39;,&#39;enterprise.verizon.com/publications/&#39;,&#39;enterprise.verizon.com/support&#39;],&#39;MobileSupport&#39;:[&#39;.com/support&#39;,&#39;.com/solutions-and-services&#39;],&#39;MobileMyVerizon&#39;:[&#39;.com/ui&#39;,&#39;.com/vzw&#39;,&#39;.com/myv&#39;,&#39;.com/blocks&#39;,&#39;.com/my-verizon/&#39;],&#39;MobileAccessories&#39;:[&#39;.com/products&#39;],&#39;EntLearn&#39;:[&#39;enterprise.verizon.com&#39;,&#39;enterprise.verizon.com/products/&#39;,&#39;enterprise.verizon.com/why-verizon/&#39;,&#39;enterprise.verizon.com/solutions/&#39;,&#39;enterprise.verizon.com/resources/&#39;,&#39;enterprise.verizon.com/support/&#39;,&#39;enterprise.verizon.com/campaigns/&#39;,&#39;enterprise.verizon.com/solutions/public-sector/&#39;],&#39;SMBSupport&#39;:[&#39;verizon.com/business/support/&#39;,&#39;b2b.verizonwireless.com/content/&#39;],&#39;MyBusiness&#39;:[&#39;business.verizon.com&#39;,&#39;verizon.com/whatsnext/business/&#39;],&#39;SMBLearn&#39;:[&#39;verizon.com/business/&#39;],&#39;SMBwireless&#39;:[&#39;verizonwireless.com/business/&#39;],&#39;Corporate&#39;:[&#39;verizon.com/about&#39;],&#39;MobileShop&#39;:[&#39;verizon.com/personal-home&#39;,&#39;verizonwireless.com/?intcmp\u003d&#39;]}"></div>
+			<button class="gnav20-search-icon" id="gnav20-search-icon" aria-label="Search Verizon">
+				<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+					<path fill="#000" fillRule="nonzero" d="M17.896 17.101l-5.995-5.994A6.721 6.721 0 0 0 13.5 6.75a6.75 6.75 0 1 0-6.75 6.75c1.661 0 3.18-.603 4.356-1.598l5.995 5.995.795-.796zM6.75 12.375A5.63 5.63 0 0 1 1.125 6.75 5.63 5.63 0 0 1 6.75 1.125a5.63 5.63 0 0 1 5.625 5.625 5.63 5.63 0 0 1-5.625 5.625z">
+					</path>
+				</svg>
+			</button>
+			<div class="gnav20-hide gnav20-tablet-back-drop"></div>
+			<div class="gnav20-hide gnav20-search-container" searchData="results">
+				<div class="gnav20-search-content-wrapper">
+				<form action="" id="gnav20-search-form">
+					<p class="gnav20-search-para">
+						<input type="search" value="" class="gnav20-search-text" name="q" placeholder="Search" autocomplete="off" aria-label="Enter Search Text"/>
+						<a class="gnav20-mobile-search-icon" tabindex="0" role="button" href="javascript:void(0);" aria-label="search verizon"></a>
+						<button class="gnav20-close-icon" aria-label="close search results"></button>
+					</p>
+				</form>
+				</div>
+				<div class=" gnav20-new-search">
+					<div class=" gnav20-center-list gnav20-hide-center-list-desktop">
+						<ul class="gnav20-top-search">
+							<li><span class="gnav20-suggestion-title">Quick links</span></li>
+							<li><a href="https://www.verizon.com/support/covid-19-faqs/">COVID-19 FAQs</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/stores">Find open stores near you</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/deals/">Shop deals</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/internet-devices/">Jetpacks &amp; hotspots</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/plans/">Plans</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/od/trade-in/">Trade in</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/support/upgrade-device/">Upgrade</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/home/fios/">Fios</a>
+							</li>
+						</ul>
+					</div>
+					<div class="gnav20-device-list">
+
+					</div>
+					<div class=" gnav20-center-list gnav20-hide-center-list-tablet">
+						<ul class="gnav20-top-search">
+							<li><span class="gnav20-suggestion-title">Quick links</span></li>
+							<li><a href="https://www.verizon.com/support/covid-19-faqs/">COVID-19 FAQs</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/stores">Find open stores near you</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/deals/">Shop deals</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/internet-devices/">Jetpacks &amp; hotspots</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/plans/">Plans</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/od/trade-in/">Trade in</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/support/upgrade-device/">Upgrade</a>
+							</li>
+						
+							
+							<li><a href="https://www.verizon.com/home/fios/">Fios</a>
+							</li>
+						</ul>
+					</div>
+					<div class=" gnav20-right-list">
+						<ul class="gnav20-right-search-list">
+							<li><span class="gnav20-suggestion-title">Featured devices</span></li>
+							<li><a href="https://www.verizon.com/smartphones/apple-iphone-12-pro-max/">Apple iPhone 12 Pro Max</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/apple-iphone-12/">Apple iPhone 12</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/samsung-galaxy-s21-ultra-5g/">Samsung Galaxy S21 Ultra 5G</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/samsung-galaxy-s21-plus-5g/">Samsung Galaxy S21+ 5G</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/google-pixel-5/">Google Pixel 5</a></li>
+						
+							
+							<li><a href="https://www.verizon.com/smartphones/motorola-one-5g-uw/">Motorola one 5G UW</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div></div>
+
+
+    
+    
+    <div class="gnav20-unifiedcart">
+
+<div class="gnav20-utility-wrapper" item-title="unifiedCart">
+	
+		
+    <button class="gnav20-cart" aria-label="Shopping Cart Menu" aria-expanded="false">
+		<span class="gnav20-unifiedcart-bubble"></span>
+    </button>
+    <div id="gnav20-my-side-nav" class="gnav20-unified-cart gnav20-hide gnav20-unified-cart-right">
+        <button id="gnav20-cclosex" class="gnav20-closex" aria-label="Close Shopping Cart" tabindex="0">Close</button>
+        <p class="gnav20-cart-content-title">Choose your cart</p>
+        <div class="gnav20-content-lists">
+            
+                <div class="gnav20-content-list">
+                    <div class="gnav20-content-list-flex">
+                        
+                        <div>
+                            <a class="gnav20-content-list-arrow gnav20-mobile-cart-count" href="https://www.verizon.com/rewards/checkcart0/">Mobile solutions</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="gnav20-content-list">
+                    <div class="gnav20-content-list-flex">
+                        
+                        <div>
+                            <a class="gnav20-content-list-arrow gnav20-home-cart-count" href="https://www.verizon.com/inhome/resumecart?xpssource=learn">Home solutions</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+	
+	
+</div></div>
+
+
+
+        <button id="gnav20-nav-toggle" data-menuitem="vzmobilemenu" tabindex="0" aria-label="Menu for navigation opens a modal overlay">
+		</button>
+    </div>
+    <nav id="gnav20-mobile-menu" class="gnav20-mobile-menu gnav20-hide">
+        <button id="gnav20-closex" class="gnav20-closex" aria-label="close the Menu" tabindex="0">Close</button>
+        <div id="gnav20-ulwrapper">
+			
+			<div class="gnav20-navigation-placeholder"></div>            
+			<div id="gnav20-footerlink">
+				
+
+
+
+    
+    
+    <div class="gnav20-store">
+
+<div class="gnav20-utility-wrapper" item-title="store">
+	<div>
+				
+		<a class="gnav20-subanchor  " aria-label="Stores" href="https://www.verizon.com/stores">
+			
+			Stores
+			
+		</a>			
+		
+	</div>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-localization">
+
+    
+		<div class="gnav20-utility-wrapper " item-title="localization">
+			
+				
+				<a class="gnav20-lang-link gnav20-subanchor" aria-label="Switch to Español language website" data-href="https://espanol.verizon.com/" href="https://espanol.verizon.com/" data-lang="Español" mporgnav="">Español</a>
+					
+			
+		</div>
+    
+
+</div>
+
+
+            
+			</div>
+        </div>
+        
+		
+
+
+
+    
+    
+    <div class="gnav20-eyebrow">
+
+<div class="gnav20-eyebrow-link-list" item-title="eyebrow">
+    <div class="gnav20-eyebrow-link-list-item gnav20-two">
+        <a x-cq-linkchecker="skip" href="https://www.verizon.com/" data-stext="Switch to" data-label="Personal" aria-label="Verizon Personal Services HomePage" class="gnav20-main-header gnav20-selected">Personal</a>
+    
+        <a x-cq-linkchecker="skip" href="https://www.verizon.com/business/" data-stext="Switch to" data-label="Business" aria-label="Verizon Business Services HomePage" class="gnav20-main-header ">Business</a>
+    </div>
+	
+    
+	<input type="hidden" id="gnav20-lob-link-label"/>
+</div>
+
+
+
+</div>
+
+
+
+    </nav>
+</div></div>
+
+
+		
+	</div>
+	<div class="gnav20-width-wrapper-border-bottom"></div>
+	
+	<div>
+
+
+
+    
+    
+    <div class="gnav20-ribbontext">
+<div class="gnav20-promo-ribbon-wrapper gnav20-clearfix ">	
+	<div class="gnav20-promo ">		
+		
+
+
+
+    
+    
+    <div class="gnav20-promotext">
+
+
+<div class="gnav20-promo-ribbon gnav20-medium " item-title="promoRibbon">
+	<div class="gnav20-promo-text gnav20-white-focus">
+		<span>
+			<span style="color: rgb(255,255,255);"><a href="https://www.verizon.com/smartphones/">Get it fast</a> with In-Store &amp; Curbside Pickup or same day delivery.</span>
+			<button class="gnav20-promo-icon" aria-label="Get it fast with In-Store &amp; Curbside Pickup or same day delivery.">
+				<svg focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 14">
+					<g fill="none" fillRule="evenodd">
+						<path stroke="#FFF" d="M7 .938A6.062 6.062 0 0 0 .937 7 6.062 6.062 0 0 0 7 13.063 6.062 6.062 0 0 0 13.063 7 6.062 6.062 0 0 0 7 .937z">
+						</path>
+						<path fill="#FFF" d="M6.211 11.375V6.228h1.576v5.147zM7.789 4.503H6.21V3.09h1.576v1.414z"></path>
+					</g>
+				</svg>
+			</button>
+		</span>
+	</div>
+	<div class="gnav20-modal-content-placeholder" style="display:none;">
+		<h2 class="gnav20-modal-heading" id="gnav20-modal-heading">Shop online or through the My Verizon app and get your orders fast.</h2>
+		<div class="gnav20-modal-sub-heading" id="gnav20-modal-sub-heading"><span>
+    In-Store or Curbside Pickup: (excludes prepaid):
+    <ul style="padding-left:20px;">
+      <li style="list-style: disc !important;">Orders must be placed before 5 PM, Mon – Sat, and Sun before 2 PM (excluding holidays) for same day pickup.</li>
+      <li style="list-style: disc !important;">We'll email you when your order is ready for pickup. Your order will be held for 3 days from the time it's placed.</li>
+      <li style="list-style: disc !important;">Please bring photo ID and credit/debit card only if used as payment.</li>
+      <li style="list-style: disc !important;">In-Store Pickup is available across the U.S. at participating Verizon Wireless stores.</li>
+      <li style="list-style: disc !important;">Curbside Pickup available at select stores.</li>
+    </ul>
+</span><br>
+<span>
+    Same-day delivery: Same-day delivery is available in select areas.
+    <ul style="padding-left:20px;">
+      <li style="list-style: disc !important;">If same-day delivery is available for your order, you’ll be able to choose that option at checkout.</li>
+    </ul>
+</span></div>
+	</div>
+	
+</div></div>
+
+
+
+		<a href="javascript:void(0)" class="gnav20-carousel-button-prev"></a>
+		<a href="javascript:void(0)" class="gnav20-carousel-button-next"></a>		
+	</div>	
+	<div class="gnav20-modal" id="gnav20-modal">
+		<div class="gnav20-modal-overlay" tabindex="-1" data-modal-hide></div>
+		<div class="gnav20-modal-content" aria-labelledby="gnav20-modal-heading" aria-describedby="gnav20-modal-sub-heading" role="dialog">
+			<button id="gnav20-close-icon" class="gnav20-promo-close-icon" tabindex="0" aria-label="Click here or press escape key to Close Modal Dialog" data-modal-hide>
+			</button>
+			<div class="gnav20-modal-content-wrapper"></div>
+		</div>
+	</div>
+</div></div>
+
+
+</div>
+</div>
+<div name="headerEnd" id="gnav20-header-end" role="none" tabindex="-1"></div></div>
+
+
+
+     </div>
+	<div class="gnav20-sticky-header gnav20-with-promo"></div>
+</div>
+
+
+</div>
+</div>
+        </div>
+     </div>
+<!--Include Header Complete-->
+
+
+
+	<div>
+	
+        <main role="main">
+       	<div class="basepagepar parsys"><div class="htmlscript section"><div>     <script>
+      var prospectPromos = {
+        phonePromos: [
+          {
+            header: "The amazing <br>iPhone 11. On us.",
+            subhead: "Colorful. Powerful. Essential. With a new line on Unlimited. Eligible on 64GB. Online only.",
+            cta: "Buy",
+            label: "Buy iPhone 11",
+            url: "/smartphones/apple-iphone-11/",
+            legal: "$599.99 device payment purchase or full retail purchase w/ new smartphone line w/ Unlimited plans req’d. Less $599.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-iphone-11-red-d-0712",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-iphone-11-red-m-0712"
+          },
+          {
+            header: "Get Galaxy S20 FE<br> 5G UW on us.",
+            subhead: "More power, more speed. Get it now with a new line on an Unlimited plan. Online only.",
+            cta: "Buy",
+            label: "Buy Galaxy S20 FE 5G UW ",
+            url: "/smartphones/samsung-galaxy-s20-fe-5g-uw/",
+            legal: "<strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> $699.99 device payment purchase or full retail purchase w/ new smartphone line on Unlimited plans req’d. Less $699.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-navy-d-0701",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-navy-m-0701"
+          },
+          {
+            header: "Motorola one 5G <br>UW ace. On us.",
+            subhead: "5G speed. A faster future for all. Now save with a new line on select Unlimited plans.",
+            cta: "Buy",
+            label: "Buy Moto One 5G",
+            url: "/smartphones/motorola-one-5g-uw-ace/",
+            legal: "<strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> $299.99 device payment purchase or full retail purchase w/ new smartphone line on select Unlimited plans req’d. Less $300 promo credit applied over 24 mos; promo credit ends if eligibility requirements are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-moto-one-5g-ace-grey-d-0708",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-moto-one-5g-ace-grey-m-0708"
+          },
+          {
+            header: "Bring your phone <br>and get $500. ",
+            subhead: "Have a phone you love? Keep it and save when you switch with select Unlimited. Online only.",
+            cta: "Learn more",
+            label: "Learn more about BYOD",
+            url: "/bring-your-own-device/",
+            legal: "$500 via Verizon eGift Card (sent w/in 8 wks). Port-in and activation of 4G LTE/5G phone on select Unlimited plans req’d. Line must remain active for 45 days. $500 chargeback if service canceled w/in 12 mos or eligibility req’s are no longer met. See vzw.com/bring-your-own-device for details. Promo Code: 2021BYOD500.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-byod-samsung-galaxy-s21-d-0801",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-byod-samsung-galaxy-s21-m-0801"
+          }
+        ],
+        accessoryPromos: [
+          {
+            header: "Buy more. Save more. Do more.",
+            subhead: "Get 40% off three regularly priced accessories, 45% off four or 50% off five or more.",
+            cta: "Shop",
+            label: "Shop accessories",
+            url: "/make-your-own-sale/#/",
+            legal: "$19.99 or more full retail price purchase per item req’d. Must purchase 3 or more eligible accessories in a single transaction to qualify for savings. Get 40% off 3 eligible accessories, 45% off 4 eligible accessories, or 50% off 5 or more eligible accessories. Maximum 10 items per customer in a single transaction. Apple AirPods (1st & 2nd Gen), Apple AirPods Pro, Apple Airpods Max, Apple HomePod mini, JBL Bar, JBL Soundbar, smart home, fitness trackers, drones, gaming controllers, network extenders purchases are excluded. Items with a retail price ending in $0.97 are not eligible. Cannot be combined with other offers or discounts. Limited-time offer. While supplies last. Restrictions may apply. Free 2-day shipping for device and accessory order of $49+.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo1-d-0726",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo1-m-0726"
+          },
+          {
+            header: "Beats Studio Buds have arrived.",
+            subhead: "Engineered to deliver premium sound. Compatible with both Apple and Android devices.",
+            cta: "Buy",
+            label: "Buy Beats Studio Buds",
+            url: "/products/beats-studio-buds-true-wireless-noise-cancelling-earphones",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-beats-studio-buds-red-d-0625",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-beats-studio-buds-red-m-0625"
+          },
+          {
+            header: "Get more for less.",
+            subhead: "Shop the latest offers on our best accessories.",
+            cta: "Shop",
+            label: "Shop accessory sales",
+            url: "/products/sale/",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo2-d-0716",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo2-m-0716"
+          },
+          {
+            header: "Accessories that don't break the bank. Or your trust.",
+            subhead: "High standards. Low prices. Starting at $14.99.",
+            cta: "Shop",
+            label: "Shop featured accessories",
+            url: "/featured/save-on-accessories/",
+            legal: "Limited-time offer. While supplies last. Terms apply.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo3-d-0716",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo3-m-0716"
+          }
+        ]
+      };
+
+      var customerPromos = {
+        phonePromos: [
+          {
+            header: "The amazing <br>iPhone 11. On us.",
+            subhead: "Colorful. Powerful. Essential. With a new line on Unlimited. Eligible on 64GB. Online only.",
+            cta: "Buy",
+            label: "Buy iPhone 11",
+            url: "/smartphones/apple-iphone-11/",
+            legal: "$599.99 device payment purchase or full retail purchase w/ new smartphone line w/ Unlimited plans req’d. Less $599.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-iphone-11-red-d-0712",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-iphone-11-red-m-0712"
+          },
+          {
+            header: "Get Galaxy S20 FE <br>5G UW on us.",
+            subhead: "More power, more speed. Get it now with a new line on an Unlimited plan. Online only.",
+            cta: "Buy",
+            label: "Buy Samsung Galaxy S20 FE 5G Ultra wideband",
+            url: "/smartphones/samsung-galaxy-s20-fe-5g-uw/",
+            legal: "<strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> $699.99 device payment purchase or full retail purchase w/ new smartphone line on Unlimited plans req’d. Less $699.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-navy-d-0701",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-navy-m-0701"
+          },
+          {
+            header: "Motorola one 5G <br>UW ace. On us.",
+            subhead: "5G speed. A faster future for all. Now save with a new line on select Unlimited plans.",
+            cta: "Buy",
+            label: "Buy Motorola One ace",
+            url: "/smartphones/motorola-one-5g-uw-ace/",
+            legal: "<strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> $299.99 device payment purchase or full retail purchase w/ new smartphone line on select Unlimited plans req’d. Less $299.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-moto-one-5g-ace-grey-d-0708",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-moto-one-5g-ace-grey-m-0708"
+          },
+          {
+            header: "Galaxy A12. <br>Now on us.",
+            subhead: "Get everything you need and more with this standout phone. With a new smartphone line.",
+            cta: "Buy",
+            label: "Buy Galaxy A12",
+            url: "/smartphones/samsung-galaxy-a12/",
+            legal: "$179.99 device payment purchase or full retail purchase w/ new smartphone line req’d. Less $179.99 promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-a12-black-d-0809",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-phone-samsung-a12-black-m-0809"
+          },
+        ],
+        accessoryPromos: [
+          {
+            header: "Buy more. Save more. Do more.",
+            subhead: "Get 40% off three regularly priced accessories, 45% off four or 50% off five or more.",
+            cta: "Shop",
+            label: "Shop accessories",
+            url: "/make-your-own-sale/#/",
+            legal: "$19.99 or more full retail price purchase per item req’d. Must purchase 3 or more eligible accessories in a single transaction to qualify for savings. Get 40% off 3 eligible accessories, 45% off 4 eligible accessories, or 50% off 5 or more eligible accessories. Maximum 10 items per customer in a single transaction. Apple AirPods (1st & 2nd Gen), Apple AirPods Pro, Apple Airpods Max, Apple HomePod mini, JBL Bar, JBL Soundbar, smart home, fitness trackers, drones, gaming controllers, network extenders purchases are excluded. Items with a retail price ending in $0.97 are not eligible. Cannot be combined with other offers or discounts. Limited-time offer. While supplies last. Restrictions may apply. Free 2-day shipping for device and accessory order of $49+.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo1-d-0726",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo1-m-0726"
+          },
+          {
+            header: "Beats Studio Buds have arrived.",
+            subhead: "Engineered to deliver premium sound. Compatible with both Apple and Android devices.",
+            cta: "Buy",
+            label: "Buy Beats Studio Buds",
+            url: "/products/beats-studio-buds-true-wireless-noise-cancelling-earphones",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-beats-studio-buds-red-d-0625",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-beats-studio-buds-red-m-0625"
+          },
+          {
+            header: "Get more for less.",
+            subhead: "Shop the latest offers on our best accessories.",
+            cta: "Shop",
+            label: "Shop accessory sales",
+            url: "/products/sale/",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo2-d-0716",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo2-m-0716"
+          },
+          {
+            header: "Accessories that don't break the bank. Or your trust.",
+            subhead: "High standards. Low prices. Starting at $14.99.",
+            cta: "Shop",
+            label: "Shop featured accessories",
+            url: "/featured/save-on-accessories/",
+            legal: "Limited-time offer. While supplies last. Terms apply.",
+            dImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo3-d-0716",
+            mImage: "https://ss7.vzw.com/is/image/VerizonWireless/uhp-accessories-promo3-m-0716"
+          }
+        ]
+      };
+    </script></div>
+	</div>
+<div class="htmlscript section"><div> <section id="hero" class="u-colorBackgroundSecondary">
+      <div class="prospect-content bg-video-wrapper Col Col--xs12 height--xs560 height--md600 height--lg640 u-paddingAll--0" style="height: 640px">
+        <div class="Container u-height100 u-flex u-flexColumn u-flexJustifyEnd u-flexAlignContentCenter">
+          <video class="background-video lozad u-showForMediumUp" autoplay playsinline muted preload="auto"
+            data-src="https://ss7.vzw.com/is/content/VerizonWireless/2021/UHP/uhp-hero-p-d-072821.mp4">
+            <p>Sorry, your browser doesn't support embedded videos</p>
+          </video>
+          <video class="background-video lozad u-hideForMediumUp" autoplay playsinline muted preload="auto"
+            data-src="https://ss7.vzw.com/is/content/VerizonWireless/2021/UHP/uhp-hero-p-m-072821.mp4">
+            <p>Sorry, your browser doesn't support embedded videos</p>
+          </video>
+          <div class="Grid u-flexColumn">
+            <span class="hiddenForVideo">
+              <h2
+                class="u-fontDisplay u-screenReaderOnly u-textLineHeightExtraTight u-colorPrimary u-textCenter u-text--xxs32 u-text--xs40 u-text--md64 u-text--xl84 u-marginBottom--xs12 u-marginBottom--md16">
+                Get our best offer on
+                our best 5G phones.
+              </h2>
+              <p class="animateDelay u-fontDisplay u-textLineHeightNormal u-colorPrimary u-textCenter u-text--xs16 u-text--lg20 u-marginBottom--xs32 u-marginBottom--md48" style="--animate-order: 1">
+                When you trade in your broken phone. And <br class="u-hideForLargeUp">
+                we'll help cover the <br class="u-showForLargeUp">
+                costs to switch. With select <br class="u-hideForLargeUp">
+                trade-in and select Unlimited.<sup class="u-text--11">1</sup>
+              </p>
+              <div class="animateDelay button-wrapper u-textCenter" style="--animate-order: 2">
+                <a href="/shop/online/5g-cell-phones/"
+                  class="Button Button--secondary Button--transparent u-text--xs12 u-text--md16 u-fontDisplay u-textBreakNoWrap u-marginBottom--xs132 u-paddingBottom--xs4 u-paddingX--0 u-marginRight--0"
+                  aria-label="Shop 5G phones">
+                  Shop
+                </a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="customer-content bg-video-wrapper Col Col--xs12 height--xs560 height--md600 height--lg640 u-paddingAll--0" style="height: 640px">
+        <div class="Container u-height100 u-flex u-flexColumn u-flexJustifyEnd u-flexAlignContentCenter">
+          <video class="background-video lozad u-showForMediumUp" autoplay playsinline muted preload="auto"
+            data-src="https://ss7.vzw.com/is/content/VerizonWireless/2021/UHP/uhp-hero-c-d-072821.mp4">
+            <p>Sorry, your browser doesn't support embedded videos</p>
+          </video>
+          <video class="background-video lozad u-hideForMediumUp" autoplay playsinline muted preload="auto"
+            data-src="https://ss7.vzw.com/is/content/VerizonWireless/2021/UHP/uhp-hero-c-m-072821.mp4">
+            <p>Sorry, your browser doesn't support embedded videos</p>
+          </video>
+          <div class="Grid u-flexColumn">
+            <span class="hiddenForVideo">
+              <h2
+                class="u-fontDisplay u-screenReaderOnly u-textLineHeightExtraTight u-colorPrimary u-textCenter u-text--xxs32 u-text--xs40 u-text--md64 u-text--xl84 u-marginBottom--xs12 u-marginBottom--md16">
+                Get our best offer on
+                our best 5G phones.
+              </h2>
+              <p class="animateDelay u-fontDisplay u-textLineHeightNormal u-colorPrimary u-textCenter u-text--xs16 u-text--lg20 u-marginBottom--xs32 u-marginBottom--md48" style="--animate-order: 1">
+                When you trade in your broken phone. <br class="u-hideForLargeUp">
+                With select trade-in <br class="u-showForLargeUp">
+                and a new line on <br class="u-hideForLargeUp">
+                select Unlimited plans.<sup class="u-text--11">1</sup>
+              </p>
+              <div class="animateDelay button-wrapper u-textCenter" style="--animate-order: 2">
+                <a href="/shop/online/5g-cell-phones/"
+                  class="Button Button--secondary Button--transparent u-text--xs12 u-text--md16 u-fontDisplay u-textBreakNoWrap u-marginBottom--xs132 u-paddingBottom--xs4 u-paddingX--0 u-marginRight--0"
+                  aria-label="Shop 5G phones">
+                  Shop
+                </a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section></div>
+	</div>
+<div class="htmlscript section"><div> <section id="promo-tabs" class="u-positionRelative">
+    <div class="Container u-positionRelative u-paddingTop--md24">
+      <div class="tabNav" id="fiosTab" name="fiosTab">
+        <div class="tab-nav tab-reduced ">
+          <div class="Tabs">
+            <ul class="Tabs-list" role="tablist">
+              <li role="none" class="Tab is-active">
+                <a role="tab" aria-selected="true" aria-controls="phones-tab" tabindex="0" id="tab-1"
+                  href="#promo-tabs">Mobile</a>
+              </li>
+              <li role="none" class="Tab">
+                <a role="tab" aria-selected="false" aria-controls="fios-tab" tabindex="-1" id="tab-2"
+                  href="#promo-tabs">Home Internet</a>
+              </li>
+              <li role="none" class="Tab">
+                <a role="tab" aria-selected="false" aria-controls="accessories-tab" tabindex="-1" id="tab-3"
+                  href="#promo-tabs">Accessories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="phones-tab" class="tab-content ngd-promo-carousel" role="tabpanel" aria-labelledby="tab-1" data-promo="phonePromos">
+        <div
+          class="Grid u-colorBackgroundSecondary u-paddingTop--xs68 u-paddingBottom--xs48 u-paddingBottom--md64 u-paddingTop--md96 u-flexAlignContentStart--xs u-flexAlignContentStart--md">
+          <div class="Col Col--xs12 Col--md3 u-paddingAll--0"></div>
+          <div class="Col Col--xs12 Col--md9 u-paddingAll--0">
+            <div
+              data-slick='{"cssEase": "ease-in-out", "accessibility": true, "mobileFirst": true, "infinite": true, "focusOnChange": false, "focusOnSelect": true, "slidesToShow": 1, "arrows": false, "prevArrow":"<button class=\"slick-prev slick-arrow Icon Icon--left-arrow u-marginTop--xs0 u-marginTop--lg0\" aria-label=\"Previous\"></button>", "nextArrow":"<button class=\"slick-next slick-arrow Icon Icon--right-arrow u-marginTop--xs0 u-marginTop--lg0\" aria-label=\"Next\"></button>", "dots": true, "responsive":[{"breakpoint": 767,"settings": {"slidesToShow": 2, "arrows": true}}]}'>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="fios-tab" class="tab-content tab-hidden" role="tabpanel" aria-labelledby="tab-2" hidden="true">
+        <div
+          class="Grid u-paddingTop--xs68 u-paddingBottom--xs32 u-paddingBottom--md64 u-paddingTop--md96 u-flex u-flexAlignItemsCenter u-flexJustifyCenter">
+
+          <div class="fios-text Col Col--md3 u-paddingRight--md0">
+            <div>
+              <div
+                class="Grid u-colorBackgroundSecondary u-paddingTop--xs16 u-paddingRight--xs0 u-paddingBottom--xs16 u-paddingLeft--xs0 u-paddingTop--md120 u-paddingRight--md0 u-paddingBottom--md64 u-paddingLeft--md0 u-flexAlignContentStart--xs u-flexAlignContentStretch--md u-flexJustifyCenter--xs u-flexJustifyStart--md u-marginX--xs0 u-marginTop--xs48 u-marginTop--md0 u-marginBottom--xs8 u-marginBottom--md0">
+                <div
+                  class="u-textCenter--xs u-textLeft--md u-paddingX--0 u-paddingTop--xs0 u-flexAlignSelfCenter--md">
+                  <h2
+                    class="u-fontDisplay u-textLineHeightExtraTight u-colorPrimary u-text--xxs24 u-text--xs32 u-marginBottom--xs12 u-marginBottom--md16">
+                    Get a laptop with <br class="u-hideForMediumOnly">
+                    Fios or 5G Home.
+                  </h2>
+                  <p
+                    class="u-fontDisplay u-textLineHeightTight u-colorPrimary u-text--xs16 u-text--xl20 u-marginBottom--xs24 u-marginBottom--md32">
+                    Now get Chromebook 4 on us <br class="u-hideForMediumOnly">
+                    when you switch to Fios Gigabit <br class="u-hideForMediumOnly">
+                    Connection or 5G Home Internet.
+                    <span class="tooltip">
+                      <span class="vzrf-tooltip"
+                        data-tooltip-content="<strong>Samsung</strong>: Offer avail. 7.22.21 – 9.21.21 for a Wi-Fi enabled Samsung Chromebook 4 11.6'' (32GB). Must install and maintain eligible Fios services in good standing for 65 days and redeem offer w/in 60 days thereafter, or by no later than 2.21.22, whichever is first. We reserve the right to charge back the value of the Samsung promotional device(s) or if eligible service is canceled w/in 180 days. Samsung is a registered trademark of Samsung Electronics Co., Ltd.
+                        <br><br>
+                        <strong>Fios:</strong> Offer valid thru 9.21.21 for eligible new customers. Availability varies. Gigabit network connection to your home. Wired speeds up to 940/880 Mbps with avg. speeds betw. 750-940 Mbps download/750-880 Mbps upload. Wired & wireless speeds vary due to device limits, multiple users, network & other factors. See Verizon.com/yourspeed for more info. $99 setup and taxes & terms may apply. Auto Pay & paper-free billing req’d. Subj. to credit approval & may require a deposit. © 2021 Verizon.
+                        <br><br>
+                        <strong>5G Home: 5G Ultra Wideband available only in parts of select cities.</strong> Offer avail. thru 9.21.21 via redemption code for a Samsung Chromebook 4 11.6'' (4GB RAM). Must install and maintain qualifying 5G Home Internet services in good standing for 45 days to redeem. Thereafter, Verizon will email redemption instructions. Must redeem code w/in 60 days after delivery of email or by no later than 11.21.21, whichever is first. Not redeemable or refundable for cash. Samsung is a registered trademark of Samsung Electronics Co., Ltd."
+                        data-tooltip-type="icon"></span>
+                    </span>
+                  </p>
+                  <a href="/home/"
+                    class="Button Button--secondary Button--transparent u-fontDisplay u-textBreakNoWrap u-marginBottom--xs0 u-marginBottom--md24 u-marginRight--0 u-paddingX--0">
+                    Check availability
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fios-img Col Col--md9 u-paddingLeft--md8">
+            <div>
+              <div
+                title="Switch to 5G Home, get a laptop. Get a Samsung Chromebook 4, on us. Work smart and stream fast, all with the power of 5G."
+                class="height--xs320 height--md260 height--lg380 height--xl480 u-colorBackgroundSecondary background-image background-contain lozad u-paddingY--xs16 u-paddingY--lg20 u-flexAlignContentStart--xs u-flexAlignContentStart--md"
+                data-desktop-image="https://ss7.vzw.com/is/image/VerizonWireless/uhp-5g-home-internet-d-042221?&scl=2"
+                data-mobile-image="https://ss7.vzw.com/is/image/VerizonWireless/uhp-5g-home-internet-m-042221?&scl=2">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="accessories-tab" class="tab-content tab-hidden ngd-promo-carousel" role="tabpanel" aria-labelledby="tab-3" data-promo="accessoryPromos" hidden="true">
+        <div
+          class="Grid u-colorBackgroundSecondary u-paddingTop--xs68 u-paddingBottom--xs48 u-paddingBottom--md64 u-paddingTop--md96 u-flexAlignContentStart--xs u-flexAlignContentStart--md">
+          <div class="Col Col--xs12 Col--md3 u-paddingAll--0"></div>
+          <div class="Col Col--xs12 Col--md9 u-paddingAll--0">
+            <div
+              data-slick='{"cssEase": "ease-in-out", "accessibility": true, "mobileFirst": true, "infinite": true, "focusOnChange": false, "focusOnSelect": true, "slidesToShow": 1, "arrows": false, "prevArrow":"<button class=\"slick-prev slick-arrow Icon Icon--left-arrow u-marginTop--xs0 u-marginTop--lg0\" aria-label=\"Previous\"></button>", "nextArrow":"<button class=\"slick-next slick-arrow Icon Icon--right-arrow u-marginTop--xs0 u-marginTop--lg0\" aria-label=\"Next\"></button>", "dots": true, "responsive":[{"breakpoint": 767,"settings": {"slidesToShow": 2, "arrows": true}}]}'>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="home-live-region" class="u-screenReaderOnly" aria-live="polite"></div>
+  </section></div>
+	</div>
+<div class="htmlscript section"><div>     <section id="bottom-promo">
+      <div class="Container height--xs560 height--md560 u-colorBackgroundPrimary background-image background-cover lozad u-flex"
+      data-desktop-image="https://ss7.vzw.com/is/image/VerizonWireless/uhp-hero-gear-gaming-d-080921?&scl=2"
+      data-mobile-image="https://ss7.vzw.com/is/image/VerizonWireless/uhp-hero-gear-gaming-m-080921?&scl=2">
+        <div class="Grid u-flexAlignContentEnd--xs">
+          <div class="Col Col--xs12 u-colorSecondary u-fontDisplay u-textCenter--xs u-textLeft--md u-paddingX--0">
+            <h2 class="u-text--xs48 u-text--md64 u-text--lg76 u-text--xl78 u-textLineHeightTight u-marginBottom--xs12 u-marginBottom--md24">
+              Introducing <br class="u-hideForMediumUp">
+              <span style="color: #ee0000">+gear</span> <br class="u-showForMediumUp">
+              with <br class="u-hideForMediumUp">
+              DrLupo.
+            </h2>
+            <p class="u-text--xs20 u-text--md24 u-textLineHeightNormal u-marginBottom--xs36 u-marginBottom--md48">
+              Our very best gaming gear, inspired by <br class="u-showForSmallUp">
+              the surgical skills of DrLupo himself.
+            </p>
+            <div class="button-wrapper u-marginBottom--xs40 u-marginBottom--md76">
+              <a href="/gaming/gaming-gear/"
+                class="Button Button--transparent Button--secondaryInverse u-colorSecondary u-text--xs12 u-text--md16 u-fontDisplay u-textBreakNoWrap u-marginBottom--0 u-paddingX--0 u-marginRight--0"
+                aria-label="Learn more about our awards">
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section></div>
+	</div>
+<div class="html section"><div>
+  <style></style>
+  <section id="legal" class="u-colorBackgroundPrimary">
+      <div class="Container prospect-content">
+        <div
+          class="Grid u-paddingY--xs16 u-paddingTop--md52 u-paddingBottom--md16 u-flexAlignItemsEnd--xs u-flexJustifyCenter--xs">
+          <div class="Col Col--xs12 u-bottomAlign--xs u-marginX--xs16 u-marginX--md20">
+            <ol>
+              <li class="u-fontText u-textLineHeightLoose u-colorSecondary u-text--11 u-marginBottom--8 u-textLeft">
+                <strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> Up to $1399.99 device payment purchase w/ new smartphone line on select Unlimited plans req’d. Up to $500 Virtual Prepaid Mastercard (sent w/in 8 wks after receipt of final bill from carrier) w/ port-in. Less up to $700 (iPhone) or up to $800 (Android) trade-in/promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR. Trade-in conditions apply.
+              </li>
+          </div>
+        </div>
+      </div>
+      <div class="Container customer-content">
+        <div
+          class="Grid u-paddingY--xs16 u-paddingTop--md52 u-paddingBottom--md16 u-flexAlignItemsEnd--xs u-flexJustifyCenter--xs">
+          <div class="Col Col--xs12 u-bottomAlign--xs u-marginX--xs16 u-marginX--md20">
+            <ol>
+              <li class="u-fontText u-textLineHeightLoose u-colorSecondary u-text--11 u-marginBottom--8 u-textLeft">
+                <strong>5G Ultra Wideband available only in parts of select cities. 5G Nationwide available in 2,700+ cities.</strong> Up to $1399.99 device payment purchase w/ new smartphone line on select Unlimited plans req’d. Up to $500 Virtual Prepaid Mastercard (sent w/in 8 wks after receipt of final bill from carrier) w/ port-in. Less up to $700 (iPhone) or up to $800 (Android) trade-in/promo credit applied over 24 mos; promo credit ends if eligibility req’s are no longer met; 0% APR. Trade-in conditions apply.
+              </li>
+           
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script></script>
+</div>
+
+</div>
+
+</div>
+</main>
+
+	</div>
+
+<!--Include Footer-->
+<div class="footer globalclientfooter"><div id="vz-gf20">
+               <!--Default Global Navigation if the primary Global Navigation is unable to load-->
+               <div class="xf-page-unified xfpage page basicpage">
+<div class="gnav20 " data-exp-name="personal-home">
+     <input type="hidden" id="cradle-context" name="cradle-key" value="cradle-url"/></input>
+    <div class="gnav20-sticky-content">    	
+     	
+
+
+
+    
+    
+    <div class="gnav20-footercontainer">
+<div class="gnav20-footer-container gnav20-white-focus gnav20-mobile-footer-accordion" data-gnav20-container="footer" role="contentinfo">
+	<div class="gnav20-main-container">
+		<div class="gnav20-footer-level-one">
+			<div class="gnav20-footer-wrapper gnav20-four">			
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">Shop</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/smartphones/" target="_">Devices</a></li>
+			
+				<li><a href="https://www.verizon.com/products/" target="_">Accessories</a></li>
+			
+				<li><a href="https://www.verizon.com/plans/" target="_">Plans</a></li>
+			
+				<li><a href="https://www.verizon.com/home/" target="_">Home Internet &amp; TV</a></li>
+			
+				<li><a href="https://www.verizon.com/entertainment/" target="_">Entertainment</a></li>
+			
+				<li><a href="https://www.verizon.com/deals/" target="_">Deals</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">Top Device Brands</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/wireless-devices/samsung/" target="_">Samsung</a></li>
+			
+				<li><a href="https://www.verizon.com/wireless-devices/smartphones/iphone/" target="_">Apple</a></li>
+			
+				<li><a href="https://www.verizon.com/wireless-devices/smartphones/motorola/" target="_">Motorola</a></li>
+			
+				<li><a href="https://www.verizon.com/wireless-devices/smartphones/google/" target="_">Google</a></li>
+			
+				<li><a href="https://www.verizon.com/wireless-devices/amazon/" target="_">Amazon</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">Support</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/support/" target="_">Support overview</a></li>
+			
+				<li><a href="https://www.verizon.com/support/return-policy/" target="_">Return policy</a></li>
+			
+				<li><a href="https://www.verizon.com/support/contact-us/" target="_">Contact us</a></li>
+			
+				<li><a href="https://secure.verizon.com/vzauth/UI/Login" target="_">Sign in</a></li>
+			
+				<li><a href="https://www.verizon.com/solutions-and-services/my-verizon-mobile/">Download My Verizon App</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">About Verizon</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/about" target="_">About us</a></li>
+			
+				<li><a href="https://www.verizon.com/about/careers" target="_">Careers</a></li>
+			
+				<li><a href="https://www.verizon.com/about/news" target="_">News</a></li>
+			
+				<li><a href="https://www.verizon.com/about/responsibility" target="_">Responsibility</a></li>
+			
+				<li><a href="https://www.verizon.com/about/responsibility/verizon-innovative-learning/" target="_">Verizon Innovation Program</a></li>
+			
+				<li><a href="https://www.verizon.com/info/" target="_">Consumer education</a></li>
+			
+				<li><a href="https://www.verizon.com/support/collateraldownload/" target="_">Brochures</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+			</div>
+			<div class="gnav20-footer-wrapper gnav20-four">			
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">Most Popular</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/smartphones/apple-iphone-12-pro-max/" target="_">Apple iPhone 12 Pro Max</a></li>
+			
+				<li><a href="https://www.verizon.com/smartphones/samsung-galaxy-s21-ultra-5g/" target="_">Samsung Galaxy S21 Ultra 5G</a></li>
+			
+				<li><a href="https://www.verizon.com/products/apple-airpods-max-headphones/" target="_">Apple AirPods Max</a></li>
+			
+				<li><a href="https://www.verizon.com/solutions-and-services/disneyplus/" target="_">Disney</a></li>
+			
+				<li><a href="https://www.verizon.com/connected-smartwatches/apple-watch-series-6/" target="_">Apple Watch Series 6</a></li>
+			
+				<li><a href="https://www.verizon.com/home/" target="_">Fios</a></li>
+			
+				<li><a href="https://www.verizon.com/solutions-and-services/verizon-visa-card/?origin=gnavFooter" target="_">Verizon Visa® Card</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading">Top Accessory Brands</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/products/otterbox/" target="_">Otterbox</a></li>
+			
+				<li><a href="https://www.verizon.com/products/zagg/" target="_">ZAGG</a></li>
+			
+				<li><a href="https://www.verizon.com/products/beats/" target="_">Beats</a></li>
+			
+				<li><a href="https://www.verizon.com/products/mophie/" target="_">Mophie</a></li>
+			
+				<li><a href="https://www.verizon.com/products/jbl/" target="_">JBL</a></li>
+			
+				<li><a href="https://www.verizon.com/products/fitbit/" target="_">Fitbit</a></li>
+			
+				<li><a href="https://www.verizon.com/products/gear4/" target="_">Gear 4</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-herofooter">
+
+	<div class="gnav20-hero-wrapper">
+		<div class="gnav20-hero-footer-heading"> Important Consumer Information</div>
+		<div class="gnav20-border-content">			
+			<ul class="gnav20-footer-list">
+				<li><a href="https://www.verizon.com/about/terms-conditions/overview" target="_">Terms &amp; Conditions</a></li>
+			
+				<li><a href="https://ss7.vzw.com/is/content/VerizonWireless/Device-Payment-Agreement-Template" target="_blank">Device Payment Terms &amp; Conditions</a></li>
+			
+				<li><a href="https://www.verizon.com/info/reportsecurityvulnerability/" target="_">Report a security vulnerability</a></li>
+			
+				<li><a href="https://www.verizon.com/legal/notices/customer-agreement/" target="_"> Mobile customer agreement</a></li>
+			
+				<li><a href="https://www.verizon.com/support/residential/announcements/" target="_">Announcements</a></li>
+			
+				<li><a href="https://www.verizon.com/support/radio-emissions/" target="_">Radio frequency emissions</a></li>
+			
+				<li><a href="https://www.ellipsisjetpackrecall.expertinquiry.com/" target="__blank">Recall</a></li>
+			
+				<li><a href="https://www.verizon.com/legal/notices/legal-notices/" target="_">Legal notices</a></li>
+			</ul>				
+		</div>
+	</div>	
+</div>
+
+
+
+				</div>
+				<div class="gnav20-col-wrapper">
+					
+
+
+
+    
+    
+    <div class="gnav20-socialfooter">
+<div class="gnav20-hero-wrapper">
+	<div class="gnav20-hero-footer-heading" aria-label="Follow Verizon menu list">Follow Verizon</div>
+	<div class="gnav20-border-content gnav20-social-icon">
+		<a class="gnav20-social-media" href="https://www.facebook.com/verizon" target="_blank" aria-label="Follow Verizon on Facebook" title="Opens New Window">
+			<span>facebook-official</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+				<path fill="#FFF" d="M17,0H1C0.4,0,0,0.4,0,1v16c0,0.5,0.4,1,1,1h8.6v-7H7.3V8.3h2.3v-2c0-2.3,1.4-3.6,3.5-3.6c1,0,1.8,0.1,2.1,0.1v2.4l-1.4,0
+					c-1.1,0-1.3,0.5-1.3,1.3v1.7h2.7L14.8,11h-2.3v7H17c0.5,0,1-0.4,1-1V1C18,0.4,17.6,0,17,0z"/>
+			</svg>
+		</a>
+		<a class="gnav20-social-media" href="https://twitter.com/verizon" target="_blank" aria-label="Follow Verizon on Twitter" title="Opens New Window">
+			<span>twitter</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+				<path fill="#FFF" d="M15.9,4.3c0.8-0.5,1.3-1.2,1.6-2C16.8,2.7,16,3,15.2,3.1C14.5,2.4,13.6,2,12.5,2c-2,0-3.7,1.6-3.7,3.7c0,0.3,0,0.6,0.1,0.8
+					c-3-0.2-5.7-1.6-7.5-3.8C1.1,3.2,0.9,3.8,0.9,4.5c0,1.3,0.6,2.4,1.6,3C1.9,7.5,1.3,7.3,0.8,7c0,1.8,1.3,3.2,2.9,3.6
+					c-0.3,0.1-0.6,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.8,2.5,3.4,2.5c-1.3,1-2.8,1.6-4.5,1.6c-0.3,0-0.6,0-0.9-0.1
+					c1.8,1.2,3.7,1.9,5.8,1.9c6.7,0,10.4-5.6,10.4-10.4c0-0.2,0-0.3,0-0.5c0.7-0.5,1.3-1.2,1.8-1.9C17.3,4,16.6,4.2,15.9,4.3z"/>
+			</svg>
+		</a>
+		<a class="gnav20-social-media" href="https://www.youtube.com/user/verizon" target="_blank" aria-label="Follow Verizonon Youtube" title="Opens New Window">
+			<span>you-tube</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 18" style="enable-background:new 0 0 18.5 18;" xml:space="preserve">
+				<path fill="#FFF" d="M17.8,4.8C17.6,4,17,3.4,16.2,3.2c-1.4-0.4-7-0.4-7-0.4s-5.6,0-7,0.4C1.4,3.4,0.8,4.1,0.6,4.8C0.2,6.3,0.2,9.2,0.2,9.2
+					s0,2.9,0.4,4.4c0.2,0.7,0.8,1.4,1.6,1.6c1.4,0.4,7,0.4,7,0.4s5.6,0,7-0.4c0.8-0.2,1.4-0.8,1.6-1.6c0.4-1.5,0.4-4.4,0.4-4.4
+					S18.2,6.3,17.8,4.8z M7.4,11.9V6.5l4.7,2.7L7.4,11.9z"/>
+			</svg>
+		</a>
+		<a class="gnav20-social-media" href="https://www.instagram.com/verizon/" target="_blank" aria-label="Follow Verizon on Instagram" title="Opens New Window">
+			<span>instagram</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+				<g>
+					<path fill="#FFF" d="M18,5.3c0-1-0.2-1.6-0.4-2.2c-0.2-0.6-0.5-1.1-1-1.6c-0.5-0.5-1-0.8-1.6-1c-0.6-0.2-1.2-0.4-2.2-0.4C11.8,0,11.4,0,9,0
+						S6.3,0,5.3,0c-1,0-1.6,0.2-2.2,0.4C2.5,0.7,2,1,1.5,1.5s-0.8,1-1,1.6C0.3,3.7,0.1,4.3,0.1,5.3C0,6.2,0,6.6,0,9c0,2.4,0,2.8,0.1,3.7
+						c0,1,0.2,1.6,0.4,2.2c0.2,0.6,0.5,1.1,1,1.6s1,0.8,1.6,1c0.6,0.2,1.2,0.4,2.2,0.4C6.3,18,6.6,18,9,18s2.8,0,3.7-0.1
+						c1,0,1.6-0.2,2.2-0.4c0.6-0.2,1.1-0.5,1.6-1c0.5-0.5,0.8-1,1-1.6c0.2-0.6,0.4-1.2,0.4-2.2c0-1,0.1-1.3,0.1-3.7
+						C18,6.6,18,6.2,18,5.3z M16.3,12.6c0,0.9-0.2,1.4-0.3,1.7c-0.2,0.4-0.4,0.7-0.7,1s-0.6,0.5-1,0.7c-0.3,0.1-0.8,0.3-1.7,0.3
+						c-0.9,0-1.2,0.1-3.6,0.1s-2.7,0-3.6-0.1c-0.9,0-1.4-0.2-1.7-0.3c-0.4-0.2-0.7-0.4-1-0.7s-0.5-0.6-0.7-1c-0.1-0.3-0.3-0.8-0.3-1.7
+						c0-0.9-0.1-1.2-0.1-3.6c0-2.4,0-2.7,0.1-3.6C1.7,4.5,1.9,4,2,3.7c0.2-0.4,0.4-0.7,0.7-1C3,2.3,3.3,2.1,3.7,2C4,1.9,4.5,1.7,5.4,1.7
+						c0.9,0,1.2-0.1,3.6-0.1c2.4,0,2.7,0,3.6,0.1c0.9,0,1.4,0.2,1.7,0.3c0.4,0.2,0.7,0.4,1,0.7s0.5,0.6,0.7,1c0.1,0.3,0.3,0.8,0.3,1.7
+						c0,0.9,0.1,1.2,0.1,3.6C16.4,11.4,16.4,11.7,16.3,12.6z"/>
+					<path fill="#FFF" d="M9,4.4C6.5,4.4,4.4,6.4,4.4,9c0,2.6,2.1,4.6,4.6,4.6s4.6-2.1,4.6-4.6C13.6,6.4,11.6,4.4,9,4.4z M9,12c-1.7,0-3-1.3-3-3
+						c0-1.7,1.3-3,3-3c1.7,0,3,1.3,3,3C12,10.7,10.7,12,9,12z"/>
+					<path fill="#FFF" d="M13.8,3.1c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1C14.9,3.6,14.4,3.1,13.8,3.1z"/>
+				</g>
+			</svg>
+		</a>
+		
+		
+	</div>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-socialfooter">
+<div class="gnav20-hero-wrapper">
+	<div class="gnav20-hero-footer-heading" aria-label="Follow Verizon Fios menu list">Follow Verizon Fios</div>
+	<div class="gnav20-border-content gnav20-social-icon">
+		<a class="gnav20-social-media" href="https://www.facebook.com/Fios/" target="_blank" aria-label="Follow Verizon Fios on Facebook" title="Opens New Window">
+			<span>facebook-official</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+				<path fill="#FFF" d="M17,0H1C0.4,0,0,0.4,0,1v16c0,0.5,0.4,1,1,1h8.6v-7H7.3V8.3h2.3v-2c0-2.3,1.4-3.6,3.5-3.6c1,0,1.8,0.1,2.1,0.1v2.4l-1.4,0
+					c-1.1,0-1.3,0.5-1.3,1.3v1.7h2.7L14.8,11h-2.3v7H17c0.5,0,1-0.4,1-1V1C18,0.4,17.6,0,17,0z"/>
+			</svg>
+		</a>
+		<a class="gnav20-social-media" href="https://twitter.com/verizonfios" target="_blank" aria-label="Follow Verizon Fios on Twitter" title="Opens New Window">
+			<span>twitter</span>
+			<svg focusable="false" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+				<path fill="#FFF" d="M15.9,4.3c0.8-0.5,1.3-1.2,1.6-2C16.8,2.7,16,3,15.2,3.1C14.5,2.4,13.6,2,12.5,2c-2,0-3.7,1.6-3.7,3.7c0,0.3,0,0.6,0.1,0.8
+					c-3-0.2-5.7-1.6-7.5-3.8C1.1,3.2,0.9,3.8,0.9,4.5c0,1.3,0.6,2.4,1.6,3C1.9,7.5,1.3,7.3,0.8,7c0,1.8,1.3,3.2,2.9,3.6
+					c-0.3,0.1-0.6,0.1-1,0.1c-0.2,0-0.5,0-0.7-0.1c0.5,1.5,1.8,2.5,3.4,2.5c-1.3,1-2.8,1.6-4.5,1.6c-0.3,0-0.6,0-0.9-0.1
+					c1.8,1.2,3.7,1.9,5.8,1.9c6.7,0,10.4-5.6,10.4-10.4c0-0.2,0-0.3,0-0.5c0.7-0.5,1.3-1.2,1.8-1.9C17.3,4,16.6,4.2,15.9,4.3z"/>
+			</svg>
+		</a>
+		
+		
+		
+		
+	</div>
+</div></div>
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="gnav20-footer-level-two gnav20-custom-margin-left">
+			
+
+
+
+    
+    
+    <div class="gnav20-logo">
+
+<div class="gnav20-logo-wrapper gnav20-relative-index">
+    <a class="gnav20-logoBlackBg" href="https://www.verizon.com/" title="Verizon Home Page">
+        <img alt="Verizon Logo" src="https://www.verizon.com/content/dam/vzwcom/gnav/global/full_logo_white.png"/>
+    </a>
+</div></div>
+
+
+    
+    
+    <div class="gnav20-footerlink">
+
+
+	<ul class="gnav20-footer-list ">
+		<li><a href="https://www.verizon.com/info/sitemap/" target="_">Site Map</a></li>
+	
+		<li><a href="https://www.verizon.com/about/privacy/" target="_">Privacy policy</a></li>
+	
+		<li><a href="https://www.verizon.com/about/accessibility/overview" target="_">Accessibility</a></li>
+	
+		<li><a href="https://www.verizon.com/about/our-company/open-internet" target="_">Open internet</a></li>
+	
+		<li><a href="https://www.verizon.com/about/terms-conditions/overview" target="_">Terms &amp; conditions</a></li>
+	
+		<li><a href="https://www.verizon.com/home/fios/advertising-sales.html" target="_">Advertise with us</a></li>
+	
+		<li><a href="https://www.verizon.com/about/privacy/do-not-sell-my-info" target="_">Do Not Sell My Personal Information</a></li>
+	
+		<li><a href="https://www.verizon.com/about/privacy/about-our-ads" target="_">About our ads</a></li>
+	</ul>
+
+	<div class="copyright-section">
+		<div class="copyright-text">
+			&copy; <span id="copyright-year">2021</span> Verizon
+		</div>
+    </div>
+</div>
+
+
+
+		</div>
+	</div>
+</div>
+</div>
+
+
+    
+    
+    
+
+
+     </div>
+	<div class="gnav20-sticky-header gnav20-with-promo"></div>
+</div>
+
+
+</div>
+</div>
+       	<!-- <script type="text/javascript" src="/etc/designs/vzwcom/gnav20/personal.js"></script> -->
+
+    <script type="text/javascript" src="https://www.verizon.com/etc/designs/vzwcom/gnav20/personal.js"></script>
+    <script>
+    var agent = navigator.userAgent;
+    console.log(agent)
+    var app = "MY_VZW_APP";
+    if (agent.indexOf(app) >= 0) {
+        var nav = document.querySelectorAll("#vz-gh20, #vz-gf20");
+        for(var i = 0; i < nav.length; ++i) {
+          nav[i].remove();
+        }
+    }
+</script>
+</div>
+<!--Include Footer-->
+
+<script src="/content/dam/vzwcom/personal-home/js/app.js"></script></body>
+</html>

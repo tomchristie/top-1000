@@ -1,0 +1,1532 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="速報、ニュース、スポーツ、野球">
+    <meta name="description" content="最新のニュースをお届けするデイリースポーツのニュースサイト、デイリースポーツonline（DailySportsOnline）です。野球や芸能など、最新情報（速報）、特集情報などをいち早くお届け！他にも写真特集やコラム特集も充実。芸能・スポーツ情報や野球・阪神タイガース・広島カープに関する速報の事ならデイリースポーツonlineにお任せください。">
+
+    <!--格納先調整中ここから-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta property="fb:app_id" content="252180631461653"/>
+    <meta property="fb:pages" content="125026347568601"/>
+    <!--格納先調整中ここまで-->
+    <!-- トップ・ヘッダー設定１  -->
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MGSSCVT"></script>
+
+
+<!-- insurAds -->
+<script async src="https://cdn.insurads.com/bootstrap/QETU2V6W.js"></script>
+
+
+<script type="text/javascript">
+	var PWT={};
+	var pbjs = pbjs || {};
+	pbjs.que = pbjs.que || [];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	var gptRan = false;
+	PWT.jsLoaded = function(){
+		loadGPT();
+	};
+	var loadGPT = function() {
+		if (!gptRan) {
+			gptRan = true;
+			var gads = document.createElement('script');
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+
+			var pbjsEl = document.createElement("script");
+			pbjsEl.type = "text/javascript";
+			pbjsEl.async = true;
+			pbjsEl.src = "https://ads.rubiconproject.com/prebid/12426_dspc.js";
+			var pbjsTargetEl = document.getElementsByTagName("head")[0];
+			pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+		}
+	};
+	setTimeout(loadGPT, 500);
+</script>
+<script type="text/javascript">
+(function() {
+	var purl = window.location.href;
+	var url = '//ads.pubmatic.com/AdServer/js/pwt/156650/2133';
+	var profileVersionId = '';
+	if(purl.indexOf('pwtv=')>0){
+		var regexp = /pwtv=(.*?)(&|$)/g;
+		var matches = regexp.exec(purl);
+		if(matches.length >= 2 && matches[1].length > 0){
+			profileVersionId = '/'+matches[1];
+		}
+	}
+	var wtads = document.createElement('script');
+	wtads.async = true;
+	wtads.type = 'text/javascript';
+	wtads.src = url+profileVersionId+'/pwt.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(wtads, node);
+})();
+</script>
+
+<script>
+var gptAdSlots=[];
+var headerBiddingSlots = [];
+var nonHeaderBiddingSlots = [];
+
+var A9_TIMEOUT = 2000;
+var FAILSAFE_TIMEOUT = 3000;
+</script>
+
+<script>
+googletag.cmd.push(function() {
+	gptAdSlots[0] = googletag.defineSlot('/21662775423/dspc/s_banner/top',[[1,1],[970,250], [728,90]],'dspc-s_banner').addService(googletag.pubads());
+	gptAdSlots[1] = googletag.defineSlot('/21662775423/dspc/rec1/top',[[300,250],'fluid'],'dspc-rec1').addService(googletag.pubads());
+	gptAdSlots[2] = googletag.defineSlot('/21662775423/dspc/rec2/top',[[300,250],[300,600],'fluid'],'dspc-rec2').addService(googletag.pubads());
+	gptAdSlots[3] = googletag.defineSlot('/21662775423/dspc/footer_l/top',[[300,250]],'dspc-footer_l').addService(googletag.pubads());
+	gptAdSlots[4] = googletag.defineSlot('/21662775423/dspc/footer_r/top',[[300,250]],'dspc-footer_r').addService(googletag.pubads());
+	gptAdSlots[5] = googletag.defineSlot('/21662775423/dspc/rec3/top',[[300,250],[300,600],'fluid'],'dspc-rec3').addService(googletag.pubads());
+	gptAdSlots[6] = googletag.defineSlot('/21662775423/dspc/text/1st',['fluid'],'dspc-text1st').addService(googletag.pubads());
+	gptAdSlots[7] = googletag.defineSlot('/21662775423/dspc/text/2nd',['fluid'],'dspc-text2nd').addService(googletag.pubads());
+	gptAdSlots[8] = googletag.defineSlot('/21662775423/dspc/text/3rd',['fluid'],'dspc-text3rd').addService(googletag.pubads());
+	gptAdSlots[9] = googletag.defineSlot('/21662775423/dspc/special/p1wipe',[1,1],'dspc-overlay').addService(googletag.pubads());
+
+	headerBiddingSlots.push(gptAdSlots[0]);
+	headerBiddingSlots.push(gptAdSlots[1]);
+	headerBiddingSlots.push(gptAdSlots[2]);
+	headerBiddingSlots.push(gptAdSlots[3]);
+	headerBiddingSlots.push(gptAdSlots[4]);
+	headerBiddingSlots.push(gptAdSlots[5]);
+	headerBiddingSlots.push(gptAdSlots[9]);
+
+	nonHeaderBiddingSlots.push(gptAdSlots[6]);
+	nonHeaderBiddingSlots.push(gptAdSlots[7]);
+	nonHeaderBiddingSlots.push(gptAdSlots[8]);
+	
+let gamKeyValueJson={
+	"gadpolicy":"true"
+};
+
+// contentsKeyValueJson
+
+Object.keys(gamKeyValueJson).forEach(function (key) {
+	googletag.pubads().setTargeting(key, gamKeyValueJson[key]);
+});
+
+
+
+	googletag.pubads().disableInitialLoad();
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+	
+	if (nonHeaderBiddingSlots.length > 0) {
+		googletag.pubads().refresh(nonHeaderBiddingSlots);
+	}
+	
+});
+</script>
+
+
+<script>
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+apstag.init({
+	pubID:"3483",
+	adServer:"googletag",
+	bidTimeout:3000
+});
+
+var apstagSlots = [{
+	slotID:"dspc-s_banner",
+	slotName:"/21662775423/dspc/s_banner/top",
+	sizes:[728, 90]
+},{
+	slotID:"dspc-rec1",
+	slotName:"/21662775423/dspc/rec1/top",
+	sizes:[300, 250]
+},{
+	slotID:"dspc-rec2",
+	slotName:"/21662775423/dspc/rec2/top",
+	sizes:[300,250]
+},{
+	slotID:"dspc-rec3",
+	slotName:"/21662775423/dspc/rec3/top",
+	sizes:[300,250]
+}, {
+	slotID:"dspc-footer_l",
+	slotName:"/21662775423/dspc/footer_l/top",
+	sizes:[300,250]
+},{
+	slotID:"dspc-footer_r",
+	slotName:"/21662775423/dspc/footer_r/top",
+	sizes:[300,250]
+}];
+</script>
+
+<script>
+function fetchHeaderBids() {
+	var pbLabel = 'color: #fff; background: #2564B3; padding: 1px 4px; border-radius: 3px;';
+	var a9Label = 'color: #EA9624; background: #0B2E35; padding: 1px 4px; border-radius: 3px;';
+
+	var bidders = ['a9', 'prebid'];
+
+	var requestManager = {
+		adserverRequestSent: false,
+	};
+
+	bidders.forEach(function(bidder) {
+		requestManager[bidder] = false;
+	});
+
+	function allBiddersBack() {
+		var allBiddersBack = bidders
+		.map(function(bidder) {return requestManager[bidder]; })
+		.filter(function(bool) {return bool;})
+		.length === bidders.length;
+		return allBiddersBack;
+	}
+
+	function headerBidderBack(bidder) {
+		if (requestManager.adserverRequestSent === true) {
+			return;
+		}
+		if (bidder === 'a9') {
+			requestManager.a9 = true;
+			console.info("%c TAM -DS",a9Label,"info : A9 recieved");
+		} else if (bidder === 'prebid') {
+			requestManager.prebid = true;
+			console.info("%cPrebid-DS",pbLabel,"info : PB recieved");
+		}
+
+		if (allBiddersBack()) {
+			console.info("%cPrebid-DS",pbLabel," info : All Bid recieved");
+			sendAdserverRequest();
+		}
+	}
+
+	function sendAdserverRequest() {
+		if (requestManager.adserverRequestSent === true) {
+			return;
+		}
+
+		if (requestManager.prebid !== true){
+			console.info("%cPrebid-DS",pbLabel,"warn : Timeout");
+		}
+		if (requestManager.a9 !== true){
+			console.info("%c TAM -DS",a9Label,"warn : Timeout");
+		}
+
+		requestManager.adserverRequestSent = true;
+		googletag.cmd.push(function() {
+			apstag.setDisplayBids();
+			googletag.pubads().refresh(headerBiddingSlots);
+		});
+	}
+
+	function requestBids() {
+		googletag.cmd.push(function() {
+			pbjs.que.push(function() {
+				console.info("%cPrebid-DS",pbLabel," info : Prebid ",pbjs.version);
+				pbjs.rp.requestBids({
+					callback: function (bidResponses) {
+						headerBidderBack('prebid');
+					},
+					gptSlotObjects: headerBiddingSlots
+				});
+			});
+		});
+		apstag.fetchBids({
+			slots: apstagSlots,
+			timeout: A9_TIMEOUT
+		}, function(bids) {
+			headerBidderBack('a9');
+		});
+	}
+
+	requestBids();
+
+	setTimeout(function() {
+		sendAdserverRequest();
+	}, FAILSAFE_TIMEOUT);
+}
+
+fetchHeaderBids();
+</script>
+<!-- //Connect Container: daily.co.jp -->
+<script src="//get.s-onetag.com/23945c33-1a50-4ad1-b61a-94120b987a1d/tag.min.js" async defer></script>
+
+
+<!-- nielsen -->
+<script type="text/javascript">
+	<!--Add Static Queue Snippet here-->
+	!function(t,n){
+		t[n]=t[n]||{
+			nlsQ:function(e,o,c,r,s,i){
+				return s=t.document,
+				r=s.createElement("script"),
+				r.async=1,
+				r.src=("http:"===t.location.protocol?"http:":"https:")+"//cdn-gl.imrworldwide.com/conf/"+e+".js#name="+o+"&ns="+n,
+				i=s.getElementsByTagName("script")[0],
+				i.parentNode.insertBefore(r,i),
+				t[o]=t[o]||{
+					g:c,ggPM:function(n,e,c,r,s){
+						(t[o].q=t[o].q||[]).push([n,e,c,r,s])
+					}
+				}
+			, t[o]}
+		}
+	}(window,"NOLBUNDLE");
+	<!--initialize the SDK here -->
+	var sdkInstance = NOLBUNDLE.nlsQ("PB672BFAC-4907-4BAC-B188-88A30E42AAD9", "sdkInstance");
+</script>    <script src="//i.daily.jp/assets/pc/js/lib/jquery.min.js"></script>
+    <script src="//i.daily.jp/assets/pc/js/lib/jquery.cookie.js"></script>
+ <link rel="stylesheet" href="//i.daily.jp/assets/pc/css/style.css?a=122021165511" />
+<link rel="stylesheet" href="//i.daily.jp/assets/pc/css/scoreboard.css?a=252020123338" />
+<script type="text/javascript" src="//i.daily.jp/assets/pc/js/common.js?a=092021170326"></script>
+<script type="text/javascript" src="//i.daily.jp/assets/pc/js/redirect.js?a=172020152918"></script>
+<script type="text/javascript" src="//i.daily.jp/assets/pc/js/list.js?a=252020123210"></script>
+
+    <title>デイリースポーツ online</title>
+  </head>
+
+  <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5DQHNS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5DQHNS');</script>
+<!-- End Google Tag Manager -->
+    <div class="wrapper topPage">
+      <!-- ページヘッダー [start] -->
+      <header class="pageHeader">
+        <!-- ページ情報 [start] -->
+        <div class="pageInfo">
+<!--ここから化当日日時を取得-->
+          <time datetime="2021-08-09" class="date">2021.08.09 - Mon</time>
+<!--ここまで化-->
+          <ul class="keywords">
+
+            <li>
+              <a href="/horse/local/">地方競馬予想</a>
+            </li>
+
+            <li>
+              <a href="/olympic/tokyo2020/">東京五輪</a>
+            </li>
+
+            <li>
+              <a href="https://www.daily.co.jp/sports-movie/">スポーツ最新動画</a>
+            </li>
+
+            <li>
+              <a href="/baseball/carp/">広島カープ</a>
+            </li>
+
+            <li>
+              <a href="/gossip/subculture/">サブカル系</a>
+            </li>
+
+            <li>
+              <a href="/travel/">旅</a>
+            </li>
+            <li>
+              <a href="/fish/index_e.shtml">東釣り</a><a href="/fish/index_w.shtml">西釣り</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ページ情報 [end] -->
+        <!-- メインナビゲーション [start] -->
+        <div class="mainNavigation">
+          <div class="mainNavigation-inner inner-frame">
+            <div class="logo">
+              <a href="/"><img src="//i.daily.jp/assets/pc/img/logo-desktop.png" alt="デイリースポーツonline" /></a>
+            </div>
+            <nav class="navigation-wrapper">
+              <ul class="navigation">
+<li><a href="/gossip/">芸能</a></li><li><a href="/baseball/">野球</a></li><li><a href="/tigers/">阪神</a></li><li><a href="/matome/">まとめ</a></li><li><a href="/soccer/">サッカー</a></li><li><a href="/general/">スポーツ</a></li><li><a href="/golf/">ゴルフ</a></li><li><a href="/ring/">ファイト</a></li><li><a href="/horse/">レース</a></li><li><a href="/opinion-d/">コラム</a></li><li><a href="/movie/">動画</a></li><li><a href="/society/">社会</a></li>              </ul>
+            </nav>
+                        <a hidden class="pageSearchBtn">検索</a>
+          </div>
+        </div>
+        <!-- メインナビゲーション [end] -->
+        <!-- 検索フォーム [start] -->
+  <div class="pageSearchForm" >
+      <form action='https://search.daily.co.jp/cgi-bin/daily/dispatch.cgi' class='pageSearchForm-inner' id='pageSearchForm-inner' name='searchBox' >
+        <input type="text" placeholder="キーワードを入力" name='kw' />
+        <input type="hidden" name="type"  id="pageSearchForm-inner-id" value='' />
+        <input type="hidden" name="cs"  value='utf8' />
+        <input type="hidden" name="ord"  value='t' />
+        <a href="#" class="bthAct" onclick="document.searchBox.type.value='';document.searchBox.submit();" >検索</a>
+        <a href="#" class="bthAct" onclick="document.searchBox.type.value='image';document.searchBox.submit();" >画像検索</a>
+      </form>
+      </div>
+        <!-- 検索フォーム [end] -->
+      </header>
+      <!-- ページヘッダー [end] -->
+      <!-- ヘッダー部広告 [start] -->
+      <aside class="pageAd">
+<div id="headerBanner" class="headerTop">
+<script src="//i.daily.jp/assets/pc/js/lib/jquery.inview.js"></script>
+<script type="text/javascript" src="//i.daily.jp/Koukoku/Images/dspcAds.20200915.01.js"></script>
+
+<!-- ＴＯＰ・スーパーバナー  -->
+<!-- /21662775423/dspc/s_banner/top -->
+<div style="display: flex;justify-content: center;align-items: center;">
+<div id='dspc-s_banner' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-s_banner'); });
+</script>
+</div>
+</div>
+
+</div>      </aside>
+      <!-- ヘッダー部広告 [end] -->
+      <!-- メイン領域 [start] -->
+<!--main-->
+<main class="pageMain">
+  <div class="pageMain-inner inner-frame">
+    <div class="primaryContents">
+
+      <section class="mainNews">
+        <h1 class="ttl"><a href="/newsflash/">主要ニュース</a></h1>
+      <div class="ledeNews">
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014578370.shtml">
+        <article>
+          <h1 class="ttl">水谷隼 美誠「ハグ拒否られ事件」告白</h1>
+          <figure class="thumb portrait ">
+            <img src="//i.daily.jp/gossip/2021/08/09/Images/d_14578424.jpg" data-width="531" data-height="640" />
+          </figure>
+                      <span class="label gossip">芸能</span>
+                  </article>
+      </a>
+    </div>
+        
+      <ul class="linkLists txt-ellipsis">
+      <li class="current" >
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014578370.shtml">
+        <article>
+          <h1>水谷隼 美誠「ハグ拒否られ事件」告白</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014578303.shtml">
+        <article>
+          <h1>歓喜のハグ「一緒に行く」はずだった</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/olympic/tokyo2020/2021/08/09/0014578037.shtml">
+        <article>
+          <h1>バッハ会長が銀ブラ？ネットは「草」</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014577693.shtml">
+        <article>
+          <h1>閉会式「東京の公園」演出総ツッコミ</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014578142.shtml">
+        <article>
+          <h1>シンクロ銅奥野氏「人としてどやねん」</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014577529.shtml">
+        <article>
+          <h1>絶賛の選手村ギョーザは味の素だった</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/gossip/2021/08/09/0014577665.shtml">
+        <article>
+          <h1>マー君卓球三姉妹＆侍戦士で記念写真</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+        <li>
+      <a href="https://www.daily.co.jp/olympic/tokyo2020/2021/08/09/0014578196.shtml">
+        <article>
+          <h1>高藤直寿 金でも家庭内序列は最下位</h1>
+        </article>
+      </a>
+      <span class="frame"></span>
+    </li>
+      </ul>
+          </section>
+
+      <section class="pickupNews">
+        <ul class="lists">
+<li>
+  <a href="/baseball/2021/08/09/0014578011.shtml">
+    <article>
+      <h1 class="ttl"><span>オリックス・中嶋監督　後半戦へ「不安でもあるし、期待でもあるし」</span></h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/e_14578012.jpg" />
+      </figure>
+      <span class="label baseball">野球</span>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/2021/08/09/0014578437.shtml">
+    <article>
+      <h1 class="ttl"><span>世界最強姉妹が大げんか　レスリング川井梨紗子＆友香子「ブチッときて、やってやろうと」</span></h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/e_14578438.jpg" />
+      </figure>
+      <span class="label gossip">芸能</span>
+    </article>
+  </a>
+</li><li>
+  <a href="/tigers/2021/08/09/0014576751.shtml">
+    <article>
+      <h1 class="ttl"><span>阪神・矢野監督「頭下がる」侍ジャパン・稲葉監督の虎戦士起用に感謝</span></h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/tigers/2021/08/09/Images/e_14576752.jpg" />
+      </figure>
+      <span class="label tigers">阪神</span>
+    </article>
+  </a>
+</li><li>
+  <a href="/general/2021/08/09/0014577924.shtml">
+    <article>
+      <h1 class="ttl"><span>パラ、２４日開幕へ準備加速</span></h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/general/2021/08/09/Images/e_14578046.jpg" />
+      </figure>
+      <span class="label general">スポーツ</span>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/movie/2021/08/08/0014575732.shtml">
+    <article>
+      <h1 class="ttl"><span>ＡＫＢの武藤十夢　平和への思いを語る</span></h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/gossip/movie/2021/08/08/Images/e_14575733.jpg" />
+      </figure>
+      <span class="label gossip/movie">芸能動画</span>
+    </article>
+  </a>
+</li>
+               <li class="add">
+                  <a href="https://ec.kobe-np.co.jp/company/kodoku.shtml">
+                    <article>
+                      <h1 class="ttl"><span>紙面購読<br />のご案内</span></h1>
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/information/2021/08/09/Images/b_14576910.jpg" alt="デイリースポーツ　１面" />
+                      </figure>
+                    </article>
+                  </a>
+                </li>
+                
+
+
+
+                <li class="add">
+                  <a href="http://ec.kobe-np.co.jp/e-paper/">
+                    <article>
+                      <h1 class="ttl"><span>電子版購読<br />のご案内</span></h1>
+                      <figure class="thumb portrait">
+                        <img src="//i.daily.jp/img/denshi01.png" />
+                      </figure>
+                    </article>
+                  </a>
+                </li>
+
+
+                
+        </ul>
+      </section>
+      <section class="notice section-wrapper">
+        <h1 class="ttl-section"><span>お知らせ</span></h1>
+              <ul class="blockLists-full">
+                <li>
+                  <a href="/information/2020/05/15/0014047705.shtml">
+                    <article>
+                      <h1>デイリースポーツオンラインの偽サイトにご注意を</h1>
+                    </article>
+                  </a>
+                </li>
+                <li>
+                  <a href="/information/2021/06/23/0012760895.shtml">
+                    <article>
+                      <h1>ＬＩＮＥ公式アカウント「阪神Ｖデイリー」がスタート！</h1>
+                    </article>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.daily.co.jp/horse/keirin/mnk/">
+                    <article>
+                      <h1>8/9～11「松山ミッドナイト競輪」特集</h1>
+                    </article>
+                  </a>
+                </li>      </section>
+
+      <!-- PR記事 [start] -->
+      <aside class="pnl-aside">
+        <ul>
+<!-- /21662775423/dspc/text/1st -->
+		<div id='dspc-text1st' style='min-height: 17px;'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('dspc-text1st'); });
+		</script>
+		</div>
+<!-- /21662775423/dspc/text/2nd -->
+		<div id='dspc-text2nd' style='min-height: 17px;'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('dspc-text2nd'); });
+		</script>
+		</div>
+<li><div class="text2"><a href="https://www.ntt-card.com/apply/kobenp/" target=_blank>デイリー電子版（PC）×NTTグループカード　５００円キャッシュバックキャンペーン！</a></div></li>
+
+<li><div class="text2"><a href="https://www.daily.co.jp/horse/boatrace/17/" target=_blank>8/7～12【宮島ボート】直前予想を公開</a></div></li>
+
+        </ul>
+      </aside>
+      <!-- PR記事 [end] -->
+
+      <div class="categoryNews section-wrapper">
+<section class="categoryNews-item">
+  <h1 class="ttl"><a href="/baseball/">野球</a></h1>
+  <ul class="lists"><li>
+  <a href="/baseball/2021/08/09/0014578011.shtml">
+    <article>
+      <h1>オリックス・中嶋監督　後半戦へ「不安でもあるし、期待でもあるし」</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/b_14578012.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/baseball/2021/08/09/0014577934.shtml">
+    <article>
+      <h1>史上初の４元号甲子園勝利なるか　米子東が開幕戦登場【１０日の甲子園見どころ】</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/b_14577935.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/baseball/2021/08/09/0014577877.shtml">
+    <article>
+      <h1>ロッテ－ヤクルト戦は強風のため中止　１０日に無観客で開催</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/b_14577893.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/baseball/2021/08/09/0014577844.shtml">
+    <article>
+      <h1>オリックス“ラオウ”杉本が２試合連発の勝ち越し弾＆来田は同点打　エキシビション</h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/b_14577846.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/baseball/2021/08/09/0014577839.shtml">
+    <article>
+      <h1>初出場の東明館　加藤主将「ワクワク」「キングダム」作者の母校　天下統一目指す</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/baseball/2021/08/09/Images/b_14577840.jpg" />
+      </figure>
+    </article>
+  </a>
+</li>              </ul></section><section class="categoryNews-item">
+  <h1 class="ttl"><a href="/gossip/">芸能</a></h1>
+  <ul class="lists"><li>
+  <a href="/gossip/2021/08/09/0014578437.shtml">
+    <article>
+      <h1>世界最強姉妹が大げんか　レスリング川井梨紗子＆友香子「ブチッときて、やってやろうと」</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/b_14578438.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/2021/08/09/0014578354.shtml">
+    <article>
+      <h1>卓球・張本「チョレイクレープ」がトレンド入り　「発売して」「買いたい」の声</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/b_14578355.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/2021/08/09/0014578370.shtml">
+    <article>
+      <h1>卓球・水谷隼　伊藤美誠「ハグ拒否られ事件」を告白、あとで謝罪</h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/b_14578424.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/2021/08/09/0014578303.shtml">
+    <article>
+      <h1>卓球・張本　水谷への歓喜のハグは「一緒に行くって」決めてたのに　「早すぎて」と丹羽</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/b_14578304.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/gossip/2021/08/09/0014578283.shtml">
+    <article>
+      <h1>卓球男子　張本＆丹羽のメガネ拭き「手の空いている方が拭く」に水谷は「しっかり拭けよ」</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/gossip/2021/08/09/Images/b_14578284.jpg" />
+      </figure>
+    </article>
+  </a>
+</li>              </ul></section><section class="categoryNews-item">
+  <h1 class="ttl"><a href="/tigers/">阪神</a></h1>
+  <ul class="lists"><li>
+  <a href="/tigers/2021/08/09/0014576751.shtml">
+    <article>
+      <h1>阪神・矢野監督「頭下がる」侍ジャパン・稲葉監督の虎戦士起用に感謝</h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/tigers/2021/08/09/Images/b_14576752.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/tigers/2021/08/09/0014576754.shtml">
+    <article>
+      <h1>侍・梅野　代表活動終え「言葉に表せないくらい勉強になった」</h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/tigers/2021/08/09/Images/b_14576755.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/tigers/2021/08/09/0014576757.shtml">
+    <article>
+      <h1>侍“陰のＭＶＰ”は青柳　ムードメーカー貢献　稲葉監督誕生日に熱唱「うれしかった」</h1>
+      <figure class="thumb portrait">
+        <img src="//i.daily.jp/tigers/2021/08/09/Images/b_14576758.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/tigers/2021/08/09/0014576759.shtml">
+    <article>
+      <h1>阪神・大山　準備ＯＫ猛打ショー！エキシビ絶好調、４戦連続マルチ</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/tigers/2021/08/09/Images/b_14576760.jpg" />
+      </figure>
+    </article>
+  </a>
+</li><li>
+  <a href="/tigers/2021/08/08/0014575090.shtml">
+    <article>
+      <h1>稲葉監督　青柳のムードメーカーぶりに「うれしかった」中継ぎ起用には「申し訳ない」</h1>
+      <figure class="thumb ">
+        <img src="//i.daily.jp/tigers/2021/08/08/Images/b_14575089.jpg" />
+      </figure>
+    </article>
+  </a>
+</li>              </ul></section>      </div>
+
+      <section class="topicNews section-wrapper">
+        <h1 class="ttl-section"><a href="/ranking/">いま話題のニュース</a></h1>
+
+        <div class="grid-2">
+          <ol class="grid-column rankingLists txt-ellipsis">                  <li class="rank-1">
+                    <a href="/gossip/2021/08/09/0014577665.shtml?ph=3">
+                      <article>
+                        <h1>【写真】田中将大 卓球の佳純・美誠・美宇＆侍戦士で記念写真「超豪華」「メンツが凄い」と反響</h1>
+                      </article>
+                    </a>
+                  </li>                  <li class="rank-2">
+                    <a href="/general/2020/01/23/0013055523.shtml?ph=1">
+                      <article>
+                        <h1>【写真】石川佳純 東京へ“戦い方改革”ＩＴデータで「レベルアップにつなげたい」</h1>
+                      </article>
+                    </a>
+                  </li>                  <li class="rank-3">
+                    <a href="/olympic/tokyo2020/2021/07/27/0014537115.shtml?ph=1">
+                      <article>
+                        <h1>【写真】水谷隼、金メダル歓喜のハグも美誠が拒否？「つらかった」</h1>
+                      </article>
+                    </a>
+                  </li></ol><ol class="grid-column rankingLists txt-ellipsis">                  <li class="rank-4">
+                    <a href="/olympic/2016/08/11/0009377779.shtml">
+                      <article>
+                        <h1>瀬戸大也＆伊藤美誠 選手村で意気投合…ともに少女時代ユナファン</h1>
+                      </article>
+                    </a>
+                  </li>                  <li class="rank-5">
+                    <a href="/general/2018/10/06/0011706628.shtml?ph=1">
+                      <article>
+                        <h1>【写真】石川佳純、Ｔリーグ参戦「盛り上がってくれたら」強豪との対戦でレベルアップだ</h1>
+                      </article>
+                    </a>
+                  </li>                  <li class="rank-6">
+                    <a href="/gossip/2019/11/24/0012903538.shtml">
+                      <article>
+                        <h1>松本人志、休業の木下優樹菜に「一線を越えてしまった」泉ピン子「事務所総出はまずい」</h1>
+                      </article>
+                    </a>
+                  </li></ol>        </div>
+      </section>
+
+      <section class="todaySpecial section-wrapper">
+        <h1 class="ttl-section"><span>今日のおすすめ</span></h1>
+        <ul class="lists">
+          <li>
+            <a href="/tigers/today/">阪神今日は何の日</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="topicPhoto section-wrapper">
+        <h1 class="ttl-section"><a href="/ranking/photo_index.shtml">話題の写真ランキング</a></h1>
+        <ol class="photoRankingLists">
+                            <li>
+                    <a href="/gossip/2021/08/09/0014577665.shtml?ph=3">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/gossip/2021/08/09/Images/f_14577668.jpg" />
+                      </figure>
+                    </a>
+                  </li>                  <li>
+                    <a href="/general/2020/01/23/0013055523.shtml?ph=1">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/general/2020/01/23/Images/f_13055524.jpg" />
+                      </figure>
+                    </a>
+                  </li>                  <li>
+                    <a href="/olympic/tokyo2020/2021/07/27/0014537115.shtml?ph=1">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/olympic/tokyo2020/2021/07/27/Images/f_14537116.jpg" />
+                      </figure>
+                    </a>
+                  </li>                  <li>
+                    <a href="/general/2018/10/06/0011706628.shtml?ph=1">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/general/2018/10/06/Images/f_11706629.jpg" />
+                      </figure>
+                    </a>
+                  </li>                  <li>
+                    <a href="/olympic/tokyo2020/2021/08/09/0014578037.shtml?ph=2">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/olympic/tokyo2020/2021/08/09/Images/f_14578104.jpg" />
+                      </figure>
+                    </a>
+                  </li>                  <li>
+                    <a href="/gossip/2021/08/09/0014577283.shtml?ph=3">
+                      <figure class="thumb">
+                        <img src="//i.daily.jp/gossip/2021/08/09/Images/f_14577289.jpg" />
+                      </figure>
+                    </a>
+                  </li>        </ol>
+      </section>
+
+      <section class="columnContent section-wrapper">
+        <h1 class="ttl-section"><a href="/opinion-d/">コラム</a></a></h1>
+        <ul class="blockLists">
+        </ul>
+      </section>
+      <script src="/js/column.js"></script>
+      <script type="text/javascript">
+        <!--
+          columnDisplay(6, "/lib16/column_from_cron.json");
+        -->
+      </script>
+
+      <aside class="add">
+        <div class="banner_336_280">
+<!-- ＴＯＰフッター左 -->
+<div style="float:left;">
+
+<!-- /21662775423/dspc/footer_l/top -->
+<div id='dspc-footer_l' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-footer_l'); });
+</script>
+</div>
+
+</div>
+
+</div><!-- ＴＯＰフッター右 -->
+<div style="position: relative;top: 0;left: 23px; float: left;">
+
+<!-- /21662775423/dspc/footer_r/top -->
+<div id='dspc-footer_r' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-footer_r'); });
+</script>
+</div>
+
+</div><div style="clear: both;"></div>
+
+
+<!-- /21662775423/dspc/special/p1wipe -->
+<div id='dspc-overlay'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('dspc-overlay'); });
+  </script>
+</div>
+      </aside>
+      <aside>
+        <a href="http://uma36.com/?rf=dso" target="blank_">
+          <img src="//i.daily.jp/top/uma36_450-72_04.png" alt="ネット版馬三郎">
+        </a>
+      </aside>
+
+      <section class="information section-wrapper">
+        <h1 class="ttl-section"><span>インフォメーション</span></h1>
+        <ul class="blockLists-full">
+             <ul class="blockLists-full">
+                <li>
+                  <a href="/information/2019/04/01/0012196215.shtml">
+                      馬サブロー　コンビニプリントにて全国でお求めいただけます
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.daily.co.jp/uma_3/index.shtml">
+                      【競馬新聞「馬三郎」】中央競馬全開催最大３６レース予想掲載競馬新聞！
+                  </a>
+                </li>        </ul>
+      </section>
+    </div>
+
+          <div class="secondaryContents">
+
+
+
+            <aside class="add">
+<div class="banner_300_250">
+<!-- ＴＯＰ・右カラム第１レク  -->
+<!-- /21662775423/dspc/rec1/top -->
+<div id='dspc-rec1' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-rec1'); });
+</script>
+</div>
+
+</div>            </aside>
+
+            <aside class="guideLinks">
+              <a href="https://ec.kobe-np.co.jp/company/kodoku.shtml" class="paper">紙面購読</a>
+              <a href="https://www.daily.co.jp/company/back_number.shtml" class="backnumber">バックナンバー</a>
+              <a href="https://ec.kobe-np.co.jp/e-paper/" class="ebook">電子版購読</a>
+            </aside>
+
+          <section class="content-wrapper liveScoreboard">
+              <h2 class="ttl-aside"><a>スコア速報</a></h2>
+              <div class="tab-wrapper grid-3 js-tab">
+
+
+<section class="tab current">
+                  <h1 class="ttl">Ｊ１</h1>
+                  <div class="content">
+
+                    <div class="scoreList baseball">
+<a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">札　幌</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">浦　和</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">札幌ドーム</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">横浜Ｃ</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">名古屋</span><span class="score">0</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ニッパツ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">清　水</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">横浜Ｍ</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">アイスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">神　戸</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">　柏　</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ノエスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">湘　南</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">鹿　島</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">レモンＳ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">Ｃ大阪</span><span class="score">0</span>
+</div>
+<div class="teamB">
+<span class="team">仙　台</span><span class="score">0</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ヨドコウ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">徳　島</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">Ｇ大阪</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ポカリ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">福　岡</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">広　島</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ベススタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">鳥　栖</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">Ｆ東京</span><span class="score">0</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">駅スタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j1/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">大　分</span><span class="score">0</span>
+</div>
+<div class="teamB">
+<span class="team">川　崎</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">昭和電ド</span><span class="inning end">終了</span>
+</div>
+</a>
+                    </div>
+
+                  </div>
+</section>
+
+<section class="tab">
+                  <h1 class="ttl">Ｊ２</h1>
+                  <div class="content">
+
+                    <div class="scoreList baseball">
+<a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">相模原</span><span class="score">0</span>
+</div>
+<div class="teamB">
+<span class="team">栃　木</span><span class="score">0</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ギオンス</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">甲　府</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">磐　田</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ＪＩＴス</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">新　潟</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">大　宮</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">デンカＳ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">秋　田</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">松　本</span><span class="score">4</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ソユスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">京　都</span><span class="score">2</span>
+</div>
+<div class="teamB">
+<span class="team">町　田</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">サンガＳ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">山　形</span><span class="score">3</span>
+</div>
+<div class="teamB">
+<span class="team">千　葉</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ＮＤスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">水　戸</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">東京Ｖ</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">Ｋｓスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">群　馬</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">愛　媛</span><span class="score">1</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">正田スタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">金　沢</span><span class="score"></span>
+</div>
+<div class="teamB">
+<span class="team">長　崎</span><span class="score"></span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">石川西部</span><span class="inning">中止</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">岡　山</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">山　口</span><span class="score">0</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">Ｃスタ</span><span class="inning end">終了</span>
+</div>
+</a><a href="/soccer/result/j2/" class="scoreList-item">
+<div class="score-wrapper">
+<div class="teamA">
+<span class="team">北九州</span><span class="score">1</span>
+</div>
+<div class="teamB">
+<span class="team">琉　球</span><span class="score">2</span>
+</div>
+</div>
+<div class="status">
+<span class="stadium">ミクスタ</span><span class="inning end">終了</span>
+</div>
+</a>
+                    </div>
+
+                  </div>
+</section>
+              </div>
+            </section>
+
+
+            <section class="content-wrapper accessRanking">
+             <h1 class="ttl-aside"><a href="/ranking/">リアルタイムランキング</a></h1>
+              <div>
+                <ol id="accessRanking" class="rankingLists txt-ellipsis accessRanking">
+                </ol>
+                <script>
+                  rankURL="/ranking/lib16/rt_all.json?a=092021212516";
+                  DAILY.getRankingJson({
+//                    url: '/ranking/lib16/rt_all.json',
+                    url: rankURL,
+                    id: '#accessRanking'
+                  });
+                </script>
+              </div>
+            </section>
+
+
+     <aside class="add">
+<div class="banner_300_250">
+<!-- ＴＯＰ・右カラム第２レク  -->
+<!-- /21662775423/dspc/rec2/top -->
+<div id='dspc-rec2' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-rec2'); });
+</script>
+</div>
+
+</div></aside>
+
+
+
+            <section class="content-wrapper recommend">
+              <h1 class="ttl-aside"><span>デイリーおすすめアイテム</span></h1>
+<!-- Rakuten Widget FROM HERE --><script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="0fd6e670.fceab07b.0fd6e671.711c9a1b";rakuten_items="ranking";rakuten_genreId=0;rakuten_size="300x250";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="on";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_pointbackId="_RTmtlk20010050";</script><script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js"></script><!-- Rakuten Widget TO HERE -->
+</section>
+
+
+            <section class="content-wrapper">
+                  <h1 class="ttl-section"><span>写真</span></h1>
+                  <div class="content">
+                    <div id="photoGallery" class="figureCarousel-wrapper">
+                      <div class="figureCarousel">
+                        <div class="figureCarousel-inner">
+
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      DAILY.getPhotoJson({
+                        url: '/lib16/photo_from_cron.json',
+                        id: '#photoGallery'
+                      });
+                    </script>
+
+                  </div>
+            </section>
+
+
+           <section class="content-wrapper accessRanking">
+             <h1 class="ttl-aside"><a href="/ranking/">ランキング(今日)</a></h1>
+              <div>
+                <ol id="accessRanking2" class="rankingLists txt-ellipsis accessRanking">
+                </ol>
+                <script>
+                  rankURL2="/ranking/lib16/ga_all.json?a=092021210152"
+                  DAILY.getRankingJson({
+                    url: rankURL2,
+                    id: '#accessRanking2'
+                  });
+                </script>
+              </div>
+            </section>
+
+
+<section class="content-wrapper topics">
+  <h1 class="ttl-aside"><span>注目トピックス</span></h1>
+  <div>
+    <ul class="blockLists">
+      <li class="unit-no-splite">
+        <a href="/horse/keirin/mnk/">
+          <img src="//i.daily.jp/information/2021/06/04/Images/a_14387112.jpg">
+          <p class="ttl">松山ミッドナイト競輪の予想を無料公開中</p>
+          <p class="txt">8/9～11開催、松山ミッドナイト競輪の全レース予想を無料公開中！</p>
+        </a>
+      </li>
+      <li class="unit-no-splite">
+        <a href="/horse/boatrace/17/">
+          <img src="//i.daily.jp/information/2021/04/02/Images/a_14206197.jpg">
+          <p class="ttl">【宮島ボート】直前予想ページ公開！</p>
+          <p class="txt">8/7～12開催の宮島ボートの直前予想をデイリースポーツオンラインで公開！</p>
+        </a>
+      </li>
+      <li class="unit-no-splite">
+        <a href="/horse/local/43/">
+          <img src="//i.daily.jp/information/2020/09/29/Images/a_13740648.jpg">
+          <p class="ttl">船橋競馬の全レース予想を公開</p>
+          <p class="txt">8/9～13開催　船橋競馬の予想公開　全レースのスピード指数も掲載</p>
+        </a>
+      </li>
+      <li class="unit-no-splite">
+        <a href="/horse/local/51/">
+          <img src="//i.daily.jp/information/2019/11/07/Images/a_11127462.png">
+          <p class="ttl">園田・姫路競馬の予想をWEBで公開</p>
+          <p class="txt">園田競馬の予想をデイリースポーツオンラインで公開。全レースSP指数付き！</p>
+        </a>
+      </li>
+      <li class="unit3">
+        <a href="http://pic-chan.net/lineup/tigers/index.html">
+          
+          <p class="ttl">阪神タイガースプリント</p>
+          <p class="txt">紙面に掲載された厳選写真をお近くのセブン-イレブン、ローソン、ファミリーマート、サークルＫサンクスで！</p>
+        </a>
+      </li>
+      <li class="unit4">
+        <a href="http://pic-chan.net/lineup/g1/index.html">
+          
+          <p class="ttl">競馬Ｇ１プリント</p>
+          <p class="txt">紙面に掲載されたＧ１のレースシーンをお近くのセブン-イレブン、ローソン、ファミリーマート、サークルＫサンクスで！</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <aside class="add fixedAdd">
+<div class="banner_300_250">
+<!-- ＴＯＰ・右カラム第３レク  -->
+<!-- /21662775423/dspc/rec3/top -->
+<div id='dspc-rec3' style="min-height:250px;">
+<script>
+googletag.cmd.push(function() { googletag.display('dspc-rec3'); });
+</script>
+</div>
+
+
+<script>
+var staticMeta = {  
+	"type":"static",
+	"assetid":encodeURIComponent(window.location.href),
+	"section" : "トップ"
+};
+sdkInstance.ggPM("staticstart",staticMeta);
+</script>
+
+</div>
+            </aside>
+
+
+<style>
+.kyd_wc2018_navi li.kyd_wc2018_active::after, .kyd_wc2018_widgeTitle h3:after{
+	display:none;
+}
+.kyd_wc2018_widgeTitle{
+	margin-bottom:0px;
+}
+.kyd_wc2018_widgeTitle h3 {
+	background-color: #333;
+}
+.kyd_wc2018_widgeTitle.kyd_wc2018_widgeTitle-small h3{
+	width:100%;
+
+}
+</style>
+
+
+    </div>
+    <!-- 右サイドメニューEND -->    </div>
+  </div>
+</main>
+<!-- メイン領域 [end] -->
+
+      <!-- ページフッター [start] -->
+
+    <footer class="pageFooter">
+        <div class="pageFooter-inner inner-frame">
+          <div class="primaryContents">
+            <div class="sns-wrapper">
+              <a href="https://www.facebook.com/DailySportsOnline/" class="facebook">Facebook</a>
+              <a href="https://twitter.com/Daily_Online" class="twitter">Twitter</a>
+            </div>
+            <div class="navigation-wrapper">
+  <ul class="navigation-inner">
+    <li class="navigation-item home">
+      <a href="/"><span>ホーム</span></a>
+    </li>
+    <li class="navigation-item gossip">
+      <a href="/gossip/"><span>芸能</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item baseball">
+      <a href="/baseball/"><span>野球</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item tigers">
+      <a href="/tigers/"><span>阪神</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item matome">
+      <a href="/matome/"><span>まとめ</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item soccer">
+      <a href="/soccer/"><span>サッカー</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item general">
+      <a href="/general/"><span>スポーツ</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item golf">
+      <a href="/golf/"><span>ゴルフ</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item ring">
+      <a href="/ring/"><span>ファイト</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item horse">
+      <a href="/horse/"><span>レース</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item opinion-d">
+      <a href="/opinion-d/"><span>コラム</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item movie">
+      <a href="/movie/"><span>動画</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item society">
+      <a href="/society/"><span>社会</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+    <li class="navigation-item company">
+      <a href="/company/"><span>関連サービス</span></a>
+      <ul class="subNavigation">
+      </ul>
+    </li>
+  </ul>
+</div>          </div>
+          <div class="secondaryContents">
+            <div class="menu-wrapper">
+              <ul class="linkLists">
+                <li>
+                  <a href="https://ec.kobe-np.co.jp/company/kodoku.shtml">購読申し込み</a>
+                </li>
+                <li>
+                  <a href="/company/back_number.shtml">バックナンバー申し込み</a>
+                </li>
+                <li>
+                  <a href="/ad/">紙面・WEB広告案内</a>
+                </li>
+                <li>
+                  <a href="/company/corporate.shtml">コンテンツ販売</a>
+                </li>
+                <li>
+                  <a href="/company/">会社案内</a>
+                </li>
+                <li>
+                  <a href="/company/recruit.shtml">採用情報</a>
+                </li>
+                <li>
+                  <a href="/event/">事業案内</a>
+                </li>
+                <li>
+                  <a href="/company/privacy_protection.shtml">プライバシーポリシー</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pageFooter-inner inner-frame relatedLists">
+          <span class="label">【関連サイト】</span>
+          <ul class="links">
+            <li>
+              <a href="//www.kobe-np.co.jp/">神戸新聞NEXT</a>
+            </li>
+            <li>
+              <a href="//maidonanews.jp/">まいどなニュース</a>
+            </li>
+            <li>
+              <a href="//yorozoonews.jp/">よろず～ニュース</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pageFooter-inner inner-frame notesContents">
+          <span class="notes">ホームページに掲載の記事、写真などの無断転載、加工しての使用などは一切禁止します。ご注意下さい。</span>
+          <small class="copyright">(C) デイリースポーツ</small>
+        </div>
+        <a href="#pageTop" class="linkPageTop" hidden>ページトップへ</a>
+
+    </footer>
+      <!-- ページフッター [end] -->
+    </div>
+
+  
+</body>
+</html>

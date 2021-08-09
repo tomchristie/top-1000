@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Reference.com - What's Your Question?</title>
+  <meta property="og:title"
+    content="Reference.com - What's Your Question?" />
+  <meta property="og:site_name" content="Reference.com" />
+  <link rel='canonical' href="https://www.reference.com" />
+<link rel="alternate" type="application/rss+xml" title="Reference.com" href="/rss.xml" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;400;500" rel="stylesheet">
+<link rel="stylesheet" href="/g/theme/iac/qa/bootstrap.min.css" />
+<link href="/g/theme/iac/qa/styles-201020-6.css" rel="stylesheet" />
+<script src="/g/theme/iac/usp-api.min.js"></script>
+
+<style type="text/css">
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+   	-webkit-font-smoothing: antialiased;
+  }
+  
+  
+    body {
+    padding-top:0 !important; /* non sticky nav pages */
+  }
+  
+  main {
+    padding-top:10px;
+  }
+  
+  /* breaks social links - was needed for thin columns but thats removed now */
+  /*.l-mid {*/
+  /*  overflow:hidden;*/
+  /*}*/
+  
+  nav.navbar { z-index:90000; }
+  
+  .pagination-button { display:block; border:none; background:none; }
+  
+  /* 2021-04-09 center on mobile, no diff on desk */
+  .navbar-brand.logo {
+    margin:0; padding:0;
+  }
+  
+  .PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+    min-width:85px; /* add to normal width style - fixes narrow thumb bug in browser */
+  }
+  
+  .PartialCategoryNavigation-popmenu-category-logo { flex-grow: 1; }
+  .PartialCategoryNavigation-popmenu-category-logo svg { width:18px; height:18px; }
+  .pop-menu-item { margin-left:10px; line-height:inherit }
+  .pop-menu-list-item { display:flex; margin-top:10px; }
+  
+  
+  .logo svg { width:auto; height:auto; }
+  
+  /* replace adwrapper in styles */
+  @media (max-width: 768px) {
+    .adwrapper {
+      background:inherit;
+      border:inherit;
+      padding:inherit;
+    }
+    
+    .adbordertop, .adborderbottom {
+     background: #f5f5f5; 
+     border: 1px solid #ddd; 
+     padding: 5px 0 10px;
+    }
+    
+
+      }
+  
+  
+  .PartialCategoryNavigation .drawer-open {
+    left: 0;
+    z-index: 20000;
+  }
+  
+  .PartialTrendingArticles-block {
+    margin-bottom:10px;
+  }
+  
+  
+  @media (min-width: 769px) {
+ 
+    .carousel-overlay {
+      padding-top:15px;
+    }
+    
+    .carousel-overlay .carousel-pagination {
+      width: 90%;
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+    }
+
+  }
+  
+  /*a {*/
+  /*  word-break:break-all;*/
+  /*}*/
+
+  /* small screen desktops */
+  .carousel {
+    border: 1px solid #ddd;
+  }
+  
+  .carousel-item {
+    transition-duration: 1s;
+  }
+  
+  .carousel-link:hover { color:#02020b; }
+  
+  .PartialPageFooter-list { justify-content:center; }
+  
+  @media (max-width: 992px) {
+    .PartialCategoryArticleTiles-categories>div:nth-child(3), .home-page-ad {
+      display:none;
+    }
+    
+    /* override styles - this is for thumbs on mobile home page mid section */
+    .PartialCategoryArticleTiles-categories>div:nth-child(3), .home-page-ad {
+      display:block;
+    }
+    
+    footer .PartialSocialLinks {
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .article-content-body, .non-article-content-body { padding-right:25px; }
+  }
+  
+
+ /* merge into styles */
+  .carousel-overlay h4 { line-height:14px; }
+  .carousel-overlay h1 { margin-top: .2em; }
+  .PartialTrendingArticles-section-title { line-height:16px; }
+  
+  .adtext { text-align:center; }
+
+  /*.google-rs { width:300px; margin:0 auto; }*/
+
+  footer .PartialSocialLinks .share-button-svg {
+    width:24px;
+    height:24px;
+  }
+  footer .PartialSocialLinks .twitter-share-button-svg .twitter-svg svg {
+    width: 12px;
+  }
+  footer .PartialSocialLinks .twitter-share-button-svg .twitter-svg {
+    padding:inherit;
+    margin: -2px 2px 0px 3px;
+  }
+  footer .PartialSocialLinks .fb-share-button-svg .fb-svg svg {
+      height: 12px;
+  }
+  footer .PartialSocialLinks .fb-share-button-svg .fb-svg {
+    padding:inherit;
+    margin: -2px 3px;
+  }
+  
+  .PartialCategoryArticleTiles-category, .PartialCategoryArticleTiles-hero-category {
+    line-height:14px;
+  }
+  
+  
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left:12px;
+    padding-right:4px;
+    margin-top:10px;
+  }
+  
+  .category-group-title {
+    border-top:3px solid #f45a69;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:10px 0;
+  }
+  
+  .category-group-spacer {
+    margin-bottom: 2px;
+  }
+  
+  .category-group-spacer>div {
+    border-top: 1px solid #ddd;
+    width: 159px;
+    margin: 0 auto;
+  }
+  
+  .category-center-thumb-sm { font-size:18px; line-height:21px; }
+  
+  @media(max-width:991px) {
+    .category-group-list { width:100% !important; padding:0 important; }
+    .category-group-list img { height:165px; }
+    /*.category-group-spacer>div { width:335px; }*/
+    /*.PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {*/
+    /*font-size:18px; line-height:22px;*/
+    /*}*/
+  }
+  
+
+  
+.category-middle-hero img {
+   height:267px !important;
+}
+.category-middle img {
+  height: 95px;
+  width: 143px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* use the home page styles for the spacers */
+  .category-group-spacer {
+    margin-bottom: 2px;
+  }
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left:12px;
+    padding-right:4px;
+    margin-top:10px;
+  }
+  .logo-col { display:flex; padding:0; }
+
+  .PartialCategoryArticleTiles-hero-tile img { height:168px; }
+
+  @media (max-width: 768px) {
+  .PartialCategoryArticleTiles-hero-tile img, .PartialCategoryArticleTiles-tile img {
+      height: 118px;
+  }
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    padding-left:0;
+    padding-right:0;
+  }
+  /*.PartialCategoryArticleTiles-hero-tile img, .PartialCategoryArticleTiles-tile img {*/
+  /*    height: 118px;*/
+  /*}*/
+
+  .carousel { border:none; }
+  
+  
+  .category-group-list .PartialCategoryArticleTiles-tile { text-align:center; display:block; }
+  .category-group-spacer>div { width:237px; }
+  
+  .right-sidebar { margin-top:10px; }
+  .PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+    width:85px;
+    height:85px;
+  }
+  
+  }
+  
+  
+
+  @media(max-width:991px) {
+  .PartialCategoryArticleTiles-hero-categories>div { width:100%; }
+  .PartialCategoryArticleTiles-hero-tile img { height:200px; }
+
+  }
+  
+  /*.PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {*/
+  /*  font-size:18px; line-height:22px;*/
+  /*}*/
+  
+.category-middle-hero img {
+   height:235px !important;
+}
+.category-middle img {
+  height: 70px;
+  width: 105px;
+}
+  .category-group-list .PartialCategoryArticleTiles-title {
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .category-middle .PartialTrendingArticles-block { margin-bottom:18px }
+
+
+
+  .PartialPageFooter-list {
+    display:inherit;
+    flex-flow:unset;
+  }
+  footer .PartialPageFooter-list {
+    display:inherit;
+    text-align:center;
+    list-style:none;
+  }
+  
+  
+
+.carousel-indicators {
+  margin-top:10px;
+}
+  
+  .carousel-indicators li {
+    width: 9px;
+    height: 9px;
+    margin: 0 6px;
+  }
+
+  .carousel-indicators li.active {
+      background-color: #92C93B;
+      border-color: #92C93B;
+  }
+  
+  .footer-logo-link svg { margin: 20px 0 0 0; }
+  
+  /*nav.navbar { padding-top:4px; } 2021-04-08 disabled */
+  
+  
+  @media (min-width: 769px) {
+
+    nav.navbar { height:60px; padding-top:1px; }
+    body { padding-top:80px; padding-bottom:0px; }
+
+
+    
+    
+  .footer-logo-link svg {
+    margin-left:20px;
+  }
+    
+  .carousel-overlay .carousel-pagination {
+    border-top: 1px solid #eee;
+    border-bottom:none;
+    padding-bottom: 0;
+    margin-top:20px;
+  }
+
+
+  }
+  
+  
+  .search-bar path {
+    fill:#92C93B;
+  }
+  
+  
+  .PartialSocialLinks .twitter-share-button-svg .twitter-svg svg .tw-a, .PartialSocialLinks .fb-share-button-svg .fb-svg svg .fb-a {
+    fill: #92C93B;
+  }
+  
+  /* mobile hamburger too */
+  .PartialHeader-menu-container path {
+    fill: #92C93B;
+  }
+  
+  .carousel-overlay h4, .PartialCategoryArticleTiles-category, .PartialCategoryArticleTiles-hero-category, .carousel-overlay .carousel-page .carousel-current-page {
+    color:#92C93B;
+  }
+  
+  .carousel-controls path {
+  fill:#92C93B;
+  }
+
+  .PartialTrendingArticles-index {
+    background-color:#92C93B;
+    border-color:#92C93B;
+  }
+  
+  
+  body { padding-bottom:0px; }
+  
+  .PartialArticleAuthor, .PartialArticleAuthor-updated {
+    color:#3C5B74;
+    border-color: #3C5B74;
+  }
+  
+
+  .top-menu { display:none; }
+  .top-menu { padding-left:25px; }
+  .top-menu li { margin-right:35px; }
+  .top-menu a { color:#151515; font-family:"Roboto Condensed", sans-serif; white-space:nowrap;
+  font-size:15px; line-height:20px; text-align:left; text-transform:uppercase; font-weight:normal;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;    align-content: center;  }
+  .top-menu .active-nav>a, .top-menu a:hover { color:#92C93B; }
+  .top-menu a:hover path, .top-menu .active-nav path {
+    fill: #92C93B;
+  }
+  /*.top-menu svg { height:18px; width:18px; }*/ /* set these in the svg directly */
+  /*.top-menu path { fill:#02020B; }*/ /* breaks the icons on some content sites */
+  
+   @media (min-width: 992px) {
+    .top-menu { display:flex; }
+   }
+
+  .category-group-list .PartialCategoryArticleTiles-title { font-size:16px; line-height:19px; }
+  
+  /*.PartialTrendingArticles-block { height:75px !important; } /* breaks bottom articles */
+  
+    /* category header */
+  .category-super-title { display:flex; width:100%; justify-content:center; align-items:center; text-align:center; color:#92C93B; text-transform:uppercase; font-size:24px; line-height:28px; font-family:"Roboto Condensed", sans-serif; margin-bottom:20px; }
+  .category-super-title:before,.category-super-title:after { content:''; border-top:2px solid #DDDDDD; margin:0 20px 0 0; flex: 1 0 20px; }
+  .category-super-title:after { margin: 0 0 0 20px; }
+  
+  .PartialTrendingArticles-section-title { color:333; }
+  
+  .instagram-media { width:80% !important; margin:0 auto !important; }
+  
+  /* mobile menu item height */
+  .PartialCategoryNavigation-category-item {
+    height: 30px;
+  }
+  
+  
+  .product-template {
+    margin-bottom:10px;
+  }
+  .product-template .PartialContentFeed-content-desc, .product-template .pd-above-slide-text, .product-template .pd-below-slide-text {
+    padding:0 0 0 5px;
+  }
+  
+  .product-image img {
+    padding:0;
+    margin:10px auto 0;
+    border:1px solid #ddd;
+    max-width:200px;
+    max-height:200px;
+    object-fit:contain;
+  }
+  .product-image .pd-slide-image-attribution { max-width:200px; margin: 0 auto; }
+  .product-buy-now {
+    text-align: center;
+    font: normal normal bold 16px/19px Roboto Condensed;
+    letter-spacing: 0px;
+    background: #E1CE7A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001a;
+    border-radius: 3px;
+    color: #02020B;
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    vertical-align:middle;
+    width: 100%;
+    border: none;
+  }
+.product-buy-now a, .product-buy-now a:hover { color:#02020b; text-decoration:none; text-transform:uppercase; height:100%; width:100%; padding-top:8px; }
+
+.advertising-disclosure {
+  text-align: center;
+  margin-top:30px;
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #4B4B4B;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+.product-body { flex-direction:row; }
+@media (max-width: 576px) {
+.product-body { flex-direction:column-reverse; }
+}
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* now global 75px */
+.PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+  width: 75px !important;
+  height: 75px !important;
+  min-width: 75px;
+}
+.PartialTrendingArticles-feed-title {
+  align-items: baseline;
+  font-size: 14px;
+  line-height: 20px;
+}
+  
+</style>
+
+<script>
+/*! js-cookie v3.0.0-rc.1 | MIT */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self,function(){var n=e.Cookies,r=e.Cookies=t();r.noConflict=function(){return e.Cookies=n,r}}())}(this,function(){"use strict";function e(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)e[r]=n[r]}return e}var t={read:function(e){return e.replace(/(%[\dA-F]{2})+/gi,decodeURIComponent)},write:function(e){return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,decodeURIComponent)}};return function n(r,o){function i(t,n,i){if("undefined"!=typeof document){"number"==typeof(i=e({},o,i)).expires&&(i.expires=new Date(Date.now()+864e5*i.expires)),i.expires&&(i.expires=i.expires.toUTCString()),t=encodeURIComponent(t).replace(/%(2[346B]|5E|60|7C)/g,decodeURIComponent).replace(/[()]/g,escape),n=r.write(n,t);var c="";for(var u in i)i[u]&&(c+="; "+u,!0!==i[u]&&(c+="="+i[u].split(";")[0]));return document.cookie=t+"="+n+c}}return Object.create({set:i,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var n=document.cookie?document.cookie.split("; "):[],o={},i=0;i<n.length;i++){var c=n[i].split("="),u=c.slice(1).join("=");'"'===u[0]&&(u=u.slice(1,-1));try{var f=t.read(c[0]);if(o[f]=r.read(u,f),e===f)break}catch(e){}}return e?o[e]:o}},remove:function(t,n){i(t,"",e({},n,{expires:-1}))},withAttributes:function(t){return n(this.converter,e({},this.attributes,t))},withConverter:function(t){return n(e({},this.converter,t),this.attributes)}},{attributes:{value:Object.freeze(o)},converter:{value:Object.freeze(r)}})}(t,{path:"/"})});
+
+function page_uuid() { return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8); return v.toString(16); }); }
+
+!function(){var e,o,t=/\+/g,n=/([^&=]+)=?([^&]*)/g,u=function(e){return decodeURIComponent(e.replace(t," "))},m=window.location.search.substring(1);for(e={};o=n.exec(m);)e[u(o[1])]=u(o[2]);["utm_source","utm_subid","utm_campaign","utm_template","utm_medium","utm_term","utm_content"].forEach(function(o){void 0!==e[o]&&(Cookies.remove(o),void 0!==e[o]&&Cookies.set(o,e[o]))})}();
+</script>
+
+
+
+<script>
+
+var settings = JSON.parse("{\"gapi\":45,\"default_o_code\":600605,\"seo_o_code\":600606,\"default_google_client\":\"aj-cat-s\",\"default_google_afs_style_id\":6567741694,\"default_google_rs_style_id\":6567741694,\"default_google_channel\":600605,\"origin_code\":{\"600605\":{\"google_client\":\"aj-cat-s\",\"google_channel\":600605,\"google_afs_style_id\":6567741694,\"google_rs_style_id\":6567741694,\"partner\":\"\"},\"600606\":{\"google_client\":\"aj-cat-s\",\"google_channel\":600606,\"google_afs_style_id\":6567741694,\"google_rs_style_id\":6567741694,\"partner\":\"\"},\"740005\":{\"google_client\":\"aj-platinum-index\",\"google_channel\":740005,\"google_afs_style_id\":6567741694,\"google_rs_style_id\":6567741694,\"partner\":\"dexter\"}}}");
+
+/* set iac specifics for datalayer */
+try {
+  var url = new URL(window.location.href);
+  var utm_content = url.searchParams.get("utm_content");
+  var embedded_qo = null;
+
+  if(utm_content) {
+    // look for utm_content override vars
+    var tmp = utm_content.split(':');
+    if(tmp[0] == 'params') {
+      var var_list = tmp[1].split('&');
+      var allowed_list = ['ad', 'an', 'ag', 'o', 'rch', 'qo'];
+      var_list.forEach(function(a) { 
+        tmp = a.split('=');
+        allowed_list.forEach(function(b) {
+          if(tmp[0] == b) {
+            if(b == 'qo') {
+              embedded_qo = tmp[1];
+            } else {
+              Cookies.set('iac_'+tmp[0], tmp[1]);
+            }
+          }
+        })
+      });
+    }
+  }
+  
+  var o_parm = url.searchParams.get("o");
+  
+  // 2021-06-21 - allow o codes not in the settings
+  // if(typeof(settings.origin_code[o_parm]) == c'undefined') o_parm = settings.default_o_code;
+
+  if(url.searchParams.get("ad")) Cookies.set('iac_ad', url.searchParams.get("ad"));
+  if(url.searchParams.get("an")) Cookies.set('iac_an', url.searchParams.get("an"));
+  if(o_parm) Cookies.set('iac_o', o_parm);
+  if(url.searchParams.get("ag")) Cookies.set('iac_ag', url.searchParams.get("ag"));
+  if(url.searchParams.get("rch")) Cookies.set('iac_rch', url.searchParams.get("rch"));
+
+  var kw_parm = url.searchParams.get("kw");
+  var terms_parm = url.searchParams.get("terms");
+  var style_parm = url.searchParams.get("style"); 
+
+  var appvars = {
+    ad: url.searchParams.get("ad") || Cookies.get('iac_ad') || 'dirN',
+    an: url.searchParams.get("an") || Cookies.get('iac_an'),
+    ag: url.searchParams.get("ag") || Cookies.get('iac_ag'),
+    o: o_parm || Cookies.get('iac_o') || settings.default_o_code,
+    rch: url.searchParams.get("rch") || Cookies.get('iac_rch'),
+
+    utm_medium: Cookies.get('utm_medium'),
+    utm_campaign: Cookies.get('utm_campaign'),
+    utm_subid: Cookies.get('utm_subid'),
+    partner: '',
+    qo: url.searchParams.get("qo") || embedded_qo || 'homepageSearchBox',
+    gclid: url.searchParams.get("gclid")
+  }
+  
+  var SEO_REFERERS = [
+    "google.*",
+    "search.yahoo.*",
+    "bing.*",
+    "baidu.*",
+    "yandex.*",
+    "search.aol.com"
+  ];
+  
+  SEO_REFERERS.forEach(function(a) {
+    var r = document.referrer.search(a);
+    if(r > 0) {
+      appvars.ad = 'SEO';
+      appvars.o = settings.seo_o_code;
+    }
+  });
+
+  if(typeof(settings.origin_code[appvars.o]) != 'undefined') {
+    appvars.google_client = settings.origin_code[appvars.o].google_client;
+    appvars.google_rs_style_id = settings.origin_code[appvars.o].google_rs_style_id;
+    appvars.google_afs_style_id = settings.origin_code[appvars.o].google_afs_style_id;
+    appvars.google_channel = settings.origin_code[appvars.o].google_channel;
+    appvars.partner = settings.origin_code[appvars.o].partner;
+    appvars.afs_ads_to_show = settings.origin_code[appvars.o].afs_ads_to_show;
+    appvars.rs_ads_to_show = settings.origin_code[appvars.o].rs_ads_to_show;
+  } else {
+    appvars.google_client = settings.default_google_client;
+    appvars.google_rs_style_id = settings.default_google_rs_style_id;
+    appvars.google_afs_style_id = settings.default_google_afs_style_id;
+    appvars.google_channel = settings.default_google_channel;
+    appvars.afs_ads_to_show = settings.default_afs_ads_to_show;
+    appvars.rs_ads_to_show = settings.default_rs_ads_to_show;
+    appvars.partner = '';
+  }
+  
+  if(appvars.rch) {
+    appvars.google_channel = appvars.rch;
+  }
+
+  var rs_clk_payload_enc = clk_payload_enc = '';
+  
+
+  /* og data layer style from amg */
+  dataLayer = [{
+    'affiliateid': appvars.o,
+    'acquisitiondivision': appvars.ad,
+    'channel': 'content'
+  }];
+
+
+
+// RTK params
+  window.rtkGPTSlotsTargeting = [[
+    ['ad', appvars.ad],
+    ['an', appvars.an],
+    ['ag', appvars.ag],
+    ['origin', appvars.o],
+    ['channel', 'content'],
+    ['pageType', ''],
+    ['partner', appvars.partner]
+  ]];
+  
+  var jita_tg_params = {};
+  jita_tg_params['ad'] = appvars.ad;
+  jita_tg_params['an'] = appvars.an;
+  jita_tg_params['ag'] = appvars.ag;
+  jita_tg_params['channel'] = 'content';
+  jita_tg_params['pageType'] = '';
+  jita_tg_params['partner'] = appvars.partner;
+  jita_tg_params['origin'] = appvars.o;
+  
+  window.addEventListener("JITA_Ready", function(e) {
+   JITA.setCustomParameters(window.jita_tg_params);
+  });
+  
+  
+  // global search pass params for serach page
+  var ad = '', an = '', o = '', ag = '', qo = '', rch = '';
+  if(appvars.ad) ad = '&ad='+appvars.ad;
+  if(appvars.an) an = '&an='+appvars.an;
+  if(appvars.o) o = '&o='+appvars.o;
+  if(appvars.ag) ag = '&ag='+appvars.ag;
+  if(appvars.qo) qo = '&qo='+appvars.qo;
+  if(appvars.rch) rch = '&rch='+appvars.rch;
+
+  // google rs initialization
+  var rs_qo = '&qo=' + (url.searchParams.get("qo") || 'contentGoogleRelatedSearch');
+  var pageOptions = {
+    pubId : appvars.google_client,
+    relatedSearchTargeting : 'content',
+    resultsPageBaseUrl : 'https://www.reference.com/web?'+ad+an+o+ag+rs_qo+rch,
+    resultsPageQueryParam : 'q',
+    clicktrackUrl: "https://www.reference.com/_rclk" + rs_clk_payload_enc,
+    columns: 1,
+    container: "bottom-afc-related-search",
+    type: "relatedsearch",
+    styleId : appvars.google_rs_style_id,
+    linkTarget: '_blank',
+    channel:appvars.google_channel,
+  };
+  
+  if(kw_parm) pageOptions.kw = kw_parm;
+  if(terms_parm) pageOptions.terms = terms_parm;
+  if(style_parm) pageOptions.styleId = style_parm;
+
+
+  var rs_ads_to_show = 5;
+  if(typeof(appvars.rs_ads_to_show) != 'undefined') rs_ads_to_show = appvars.rs_ads_to_show;
+
+  var rsblock1 = {
+    'container' : 'google-rs-1',
+    'type': 'relatedsearch',
+    'number': rs_ads_to_show,
+    'linkTarget':'_blank',
+
+
+  };
+  
+  var rsblock2 = {
+    'container' : 'google-rs-2',
+    'type': 'relatedsearch',
+    'number': rs_ads_to_show,
+    'linkTarget':'_blank',
+
+
+
+  };
+
+  var blocks, rsblocks = [rsblock1, rsblock2];
+  // end google rs initialization
+  
+  
+  // afs init
+  var afs_ads_to_show = 3;
+  if(typeof(appvars.afs_ads_to_show) != 'undefined') afs_ads_to_show = appvars.afs_ads_to_show;
+
+  var afsPageOptions = {
+   'pubId' : appvars.google_client,
+   'query' : 'Reference.com',
+   'styleId': appvars.google_afs_style_id,
+   'channel': appvars.google_channel,
+   'clicktrackUrl': "https://www.reference.com/_clk" + clk_payload_enc,
+  };
+  var afsAdblock1 = {
+   'number': afs_ads_to_show,
+   'container' : 'afscontainer1',
+  };
+    // end afs init
+} catch(e) { console.log("error on init", e); }
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3KVMC');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+<!-- google RS -->
+<script src="https://www.google.com/adsense/domains/caf.js"></script>
+
+<!-- afs -->
+<script>
+var page_title = '';
+</script>
+
+
+<script type="text/javascript" src="//da8uxjf8z0le8.cloudfront.net/script.js"></script><script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b64aaac305327e6bdeeeae651/e67462c47a6d4f0e79e2166ec.js");</script>
+
+</head>
+
+
+<body>
+    
+  <nav class="navbar bg-white navbar-expand-md navbar-light">
+  
+  <div class="container-xl">
+
+  <div class="col d-block d-lg-none drawer-trigger" style="padding:0; z-index:1000">
+  <div class="PartialHeader-menu-container mobile-hamburger">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 15" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+        .svg-b {
+            clip-path: url(#menu-a);
+        }
+    </style>
+    <clipPath id="menu-a">
+        <rect class="svg-a" width="18" height="15"></rect>
+    </clipPath>
+  </defs>
+  <g class="svg-b">
+  <path class="svg-c" d="M18,.75v1.5a.721.721,0,0,1-.223.527A.721.721,0,0,1,17.25,3H.75a.721.721,0,0,1-.527-.223A.721.721,0,0,1,0,2.25V.75A.721.721,0,0,1,.223.223.721.721,0,0,1,.75,0h16.5a.721.721,0,0,1,.527.223A.721.721,0,0,1,18,.75Z"></path>
+  <path class="svg-c" d="M17.25,15H.75a.724.724,0,0,1-.527-.223A.724.724,0,0,1,0,14.25v-1.5a.724.724,0,0,1,.222-.527A.724.724,0,0,1,.75,12h16.5a.761.761,0,0,1,.75.751v1.5a.761.761,0,0,1-.75.751Zm0-6H.75a.724.724,0,0,1-.527-.222A.724.724,0,0,1,0,8.25V6.75a.724.724,0,0,1,.222-.527A.724.724,0,0,1,.75,6h16.5a.759.759,0,0,1,.75.75v1.5a.759.759,0,0,1-.75.75Z"></path>
+  </g>
+  </svg>
+  </div>
+  </div>
+  
+  
+<nav class="PartialCategoryNavigation">
+<div id="header-menu-control" class="PartialCategoryNavigation-drawer">
+<div class="PartialCategoryNavigation-drawer-header">
+<a class="navbar-brand logo" href="/" data-zone='header' data-provider-source='navigation' data-result-type='logo'><?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="23px" viewBox="0 0 146 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ref-logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reference-logo">
+            <path d="M19.3582307,22.6973684 L18.7485226,22.8486842 L17.5291065,22.8486842 C16.3909791,22.8486842 15.4662645,22.7175452 14.7549349,22.4552632 C14.0436052,22.1929811 13.3627714,21.7188631 12.7124129,21.0328947 L12.7124129,20.5789474 C12.7124129,17.8148985 12.3415109,15.7872872 11.5996957,14.4960526 C10.8578805,13.2048181 9.68420426,12.5592105 8.07863169,12.5592105 L6.15805133,12.5592105 L6.00562431,12.7105263 L6.00562431,21.0328947 L6.31047834,21.6381579 L7.22504042,21.9407895 L8.1700879,21.9407895 L8.32251491,22.0921053 L8.32251491,22.5460526 L8.1700879,22.6973684 L6.70678857,22.6973684 L4.26795636,22.5460526 L1.82912416,22.6973684 L0.152427013,22.6973684 L0,22.5460526 L0,22.0921053 L0.152427013,21.9407895 L1.31087231,21.9407895 L2.22543439,21.6381579 L2.53028842,20.7302632 L2.53028842,3.48026316 L2.22543439,2.57236842 L1.31087231,2.26973684 L0.152427013,2.26973684 L0,2.11842105 L0,1.66447368 L0.152427013,1.51315789 L1.82912416,1.51315789 L4.26795636,1.66447368 L7.92620468,1.51315789 L9.45047481,1.51315789 C10.5682785,1.51315789 11.5844484,1.63420932 12.4990151,1.87631579 C13.4135817,2.11842226 14.2011134,2.4664451 14.8616338,2.92039474 C15.5221541,3.37434438 16.0302391,3.91907577 16.3859039,4.55460526 C16.7415687,5.19013476 16.9193984,5.89122424 16.9193984,6.65789474 C16.9193984,7.26316092 16.7923772,7.84319898 16.5383309,8.39802632 C16.2842846,8.95285365 15.9184634,9.46732219 15.4408564,9.94144737 C14.9632494,10.4155725 14.3941942,10.8291649 13.7336739,11.1822368 C13.0731535,11.5353088 12.3262686,11.8228059 11.4929968,12.0447368 C13.0782456,12.4078966 14.2976496,13.1342051 15.1512451,14.2236842 L16.6755152,20.2763158 L17.2242525,21.3355263 L18.4436686,21.9407895 L19.5106577,21.9407895 L19.6630847,22.0921053 L19.6630847,22.3947368 L19.3582307,22.6973684 Z M13.2001793,6.9 C13.2001793,6.2342072 13.0934815,5.62390628 12.8800826,5.06907895 C12.6666837,4.51425161 12.3618327,4.04013355 11.9655205,3.64671053 C11.5692083,3.25328751 11.0916084,2.95065895 10.5327066,2.73881579 C9.97380476,2.52697263 9.35902195,2.42105263 8.68833974,2.42105263 L7.22504042,2.42105263 L6.31047834,2.72368421 L6.00562431,3.32894737 L6.00562431,11.5 L6.15805133,11.6513158 L8.53591273,11.6513158 C10.0601905,11.6513158 11.2186242,11.2478111 12.0112486,10.4407895 C12.8038731,9.63376789 13.2001793,8.45351654 13.2001793,6.9 L13.2001793,6.9 Z M32.9583067,14.6776316 L23.3858903,14.6776316 L23.2334633,14.9802632 L23.2334633,15.8881579 C23.2334633,17.724132 23.6196079,19.1565738 24.3919086,20.1855263 C25.1642093,21.2144788 26.221026,21.7289474 27.5623905,21.7289474 C28.6598705,21.7289474 29.5896659,21.3859683 30.3518048,20.7 C31.1139437,20.0140317 31.6271095,19.0456203 31.8913176,17.7947368 L32.1352009,17.5526316 L32.3790841,17.5526316 C32.5619974,17.5526316 32.7195038,17.6333325 32.8516078,17.7947368 C32.9837119,17.9561412 33.0497629,18.1780688 33.0497629,18.4605263 C32.907497,19.1464947 32.6534545,19.7668832 32.2876279,20.3217105 C31.9218012,20.8765379 31.4797673,21.3506559 30.9615129,21.7440789 C30.4432584,22.137502 29.8538799,22.4451743 29.1933595,22.6671053 C28.5328392,22.8890362 27.8367628,23 27.1051094,23 C24.808531,23 23.014991,22.3594362 21.7244359,21.0782895 C20.4338807,19.7971427 19.7886128,18.0166781 19.7886128,15.7368421 L19.7886128,15.4342105 C19.7886128,14.3447314 19.9715234,13.3359696 20.3373501,12.4078947 C20.7031767,11.4798199 21.2061808,10.6778543 21.8463775,10.0019737 C22.4865741,9.32609311 23.2588633,8.80153695 24.1632681,8.42828947 C25.0676729,8.05504199 26.0482769,7.86842105 27.1051094,7.86842105 C27.9790287,7.86842105 28.7767221,8.02982295 29.4982135,8.35263158 C30.219705,8.67544021 30.8446495,9.12938304 31.3730658,9.71447368 C31.9014821,10.2995643 32.3181118,11.0006538 32.6229673,11.8177632 C32.9278229,12.6348725 33.09041,13.5377144 33.1107337,14.5263158 L32.9583067,14.6776316 Z M29.7573395,13.4671053 C29.7573395,11.9539398 29.4931353,10.7938637 28.964719,9.98684211 C28.4363027,9.17982053 27.7148221,8.77631579 26.8002554,8.77631579 C25.8856888,8.77631579 25.1133996,9.21008338 24.4833648,10.0776316 C23.85333,10.9451798 23.4570237,12.1758692 23.2944341,13.7697368 L29.4524854,13.7697368 L29.7573395,13.4671053 Z M46.2230434,2.875 C46.2230434,3.27851079 46.0553753,3.64670886 45.7200342,3.97960526 C45.3846931,4.31250166 45.0137911,4.47894737 44.607317,4.47894737 C44.1398719,4.47894737 43.7689698,4.34276452 43.4945998,4.07039474 C43.2202299,3.79802495 43.0830469,3.42982688 43.0830469,2.96578947 L43.0830469,2.875 L44.2110068,1.75526316 C43.784209,1.14999697 43.2049922,0.847368421 42.4733389,0.847368421 C41.7823329,0.847368421 41.2285203,1.09955888 40.8118844,1.60394737 C40.3952485,2.10833586 40.1869337,2.78420629 40.1869337,3.63157895 L40.1869337,8.01973684 L40.3393607,8.17105263 L43.540328,8.17105263 L43.692755,8.32236842 L43.692755,9.07894737 L43.540328,9.23026316 L40.3393607,9.23026316 L40.1869337,9.38157895 L40.1869337,21.0328947 L40.4917877,21.6381579 L41.4063498,21.9407895 L42.6257659,21.9407895 L42.7781929,22.0921053 L42.7781929,22.5460526 L42.6257659,22.6973684 L40.9490687,22.6973684 L38.6016927,22.5460526 L36.2238313,22.6973684 L34.8519882,22.6973684 L34.6995612,22.5460526 L34.6995612,22.0921053 L34.8519882,21.9407895 L35.7665503,21.9407895 L36.6811124,21.6381579 L36.9859664,21.0328947 L36.9859664,9.38157895 L36.8335394,9.23026316 L34.6995612,9.23026316 L34.5471342,9.07894737 L34.5471342,8.625 L34.6995612,8.47368421 L36.6811124,8.17105263 L36.9859664,7.86842105 L36.9859664,4.53947368 C37.148556,3.85350534 37.3975176,3.23311681 37.7328588,2.67828947 C38.0681999,2.12346214 38.4746678,1.64934407 38.9522749,1.25592105 C39.4298819,0.862498033 39.9532094,0.554825671 40.5222731,0.332894737 C41.0913368,0.110963803 41.690877,0 42.3209118,0 L42.4733389,0 C43.5504951,0 44.4447247,0.267321888 45.1560543,0.801973684 C45.8673839,1.33662548 46.2230434,2.02762734 46.2230434,2.875 L46.2230434,2.875 Z M57.5976851,14.6776316 L48.0252686,14.6776316 L47.8728416,14.9802632 L47.8728416,15.8881579 C47.8728416,17.724132 48.2589862,19.1565738 49.0312869,20.1855263 C49.8035877,21.2144788 50.8604044,21.7289474 52.2017688,21.7289474 C53.2992488,21.7289474 54.2290443,21.3859683 54.9911831,20.7 C55.753322,20.0140317 56.2664878,19.0456203 56.530696,17.7947368 L56.7745792,17.5526316 L57.0184624,17.5526316 C57.2013757,17.5526316 57.3588821,17.6333325 57.4909862,17.7947368 C57.6230902,17.9561412 57.6891413,18.1780688 57.6891413,18.4605263 C57.5468754,19.1464947 57.2928329,19.7668832 56.9270062,20.3217105 C56.5611795,20.8765379 56.1191456,21.3506559 55.6008912,21.7440789 C55.0826368,22.137502 54.4932582,22.4451743 53.8327378,22.6671053 C53.1722175,22.8890362 52.4761411,23 51.7444878,23 C49.4479093,23 47.6543694,22.3594362 46.3638142,21.0782895 C45.073259,19.7971427 44.4279911,18.0166781 44.4279911,15.7368421 L44.4279911,15.4342105 C44.4279911,14.3447314 44.6109017,13.3359696 44.9767284,12.4078947 C45.342555,11.4798199 45.8455592,10.6778543 46.4857558,10.0019737 C47.1259525,9.32609311 47.8982416,8.80153695 48.8026464,8.42828947 C49.7070512,8.05504199 50.6876552,7.86842105 51.7444878,7.86842105 C52.618407,7.86842105 53.4161004,8.02982295 54.1375919,8.35263158 C54.8590833,8.67544021 55.4840278,9.12938304 56.0124441,9.71447368 C56.5408604,10.2995643 56.9574901,11.0006538 57.2623456,11.8177632 C57.5672012,12.6348725 57.7297884,13.5377144 57.7501121,14.5263158 L57.5976851,14.6776316 Z M54.3967178,13.4671053 C54.3967178,11.9539398 54.1325136,10.7938637 53.6040973,9.98684211 C53.075681,9.17982053 52.3542004,8.77631579 51.4396337,8.77631579 C50.5250671,8.77631579 49.7527779,9.21008338 49.1227431,10.0776316 C48.4927083,10.9451798 48.0964021,12.1758692 47.9338124,13.7697368 L54.0918638,13.7697368 L54.3967178,13.4671053 Z M71.1672757,10.4407895 C71.1672757,11.1267578 70.9691226,11.6866206 70.5728104,12.1203947 C70.1764982,12.5541688 69.7039792,12.7710526 69.1552392,12.7710526 C68.7894125,12.7710526 68.469319,12.6500012 68.194949,12.4078947 C67.920579,12.1657883 67.7325876,11.8429845 67.630969,11.4394737 L67.630969,11.2881579 L68.7894143,10.1381579 C68.7894143,9.87587588 68.697959,9.65899209 68.5150457,9.4875 C68.3321324,9.31600791 68.0984133,9.23026316 67.8138815,9.23026316 C67.2041704,9.23026316 66.640196,9.66403075 66.1219416,10.5315789 C65.6036872,11.3991271 65.171815,12.6298166 64.826312,14.2236842 L64.826312,21.0328947 L65.131166,21.6381579 L66.0457281,21.9407895 L67.2651442,21.9407895 L67.4175712,22.0921053 L67.4175712,22.5460526 L67.2651442,22.6973684 L65.4969909,22.6973684 L63.2410711,22.5460526 L60.9241805,22.6973684 L59.4913665,22.6973684 L59.3389395,22.5460526 L59.3389395,22.0921053 L59.4913665,21.9407895 L60.4059286,21.9407895 L61.3204907,21.6381579 L61.6253447,21.0328947 L61.6253447,10.1381579 L61.3204907,9.23026316 L60.4059286,8.92763158 L59.6437936,8.92763158 L59.4913665,8.77631579 L59.4913665,8.32236842 L59.6437936,8.17105263 L64.369031,8.17105263 L64.521458,8.32236842 L64.521458,12.2565789 C64.8263135,10.8846423 65.3343985,9.8103109 66.0457281,9.03355263 C66.7570577,8.25679436 67.5699937,7.86842105 68.4845603,7.86842105 C69.2771847,7.86842105 69.9224526,8.10548009 70.4203834,8.57960526 C70.9183141,9.05373044 71.1672757,9.67411897 71.1672757,10.4407895 L71.1672757,10.4407895 Z M84.5234686,14.6776316 L74.9510522,14.6776316 L74.7986252,14.9802632 L74.7986252,15.8881579 C74.7986252,17.724132 75.1847697,19.1565738 75.9570705,20.1855263 C76.7293712,21.2144788 77.7861879,21.7289474 79.1275523,21.7289474 C80.2250323,21.7289474 81.1548278,21.3859683 81.9169667,20.7 C82.6791056,20.0140317 83.1922714,19.0456203 83.4564795,17.7947368 L83.7003627,17.5526316 L83.9442459,17.5526316 C84.1271593,17.5526316 84.2846656,17.6333325 84.4167697,17.7947368 C84.5488738,17.9561412 84.6149248,18.1780688 84.6149248,18.4605263 C84.4726589,19.1464947 84.2186164,19.7668832 83.8527897,20.3217105 C83.4869631,20.8765379 83.0449292,21.3506559 82.5266747,21.7440789 C82.0084203,22.137502 81.4190417,22.4451743 80.7585214,22.6671053 C80.098001,22.8890362 79.4019246,23 78.6702713,23 C76.3736928,23 74.5801529,22.3594362 73.2895977,21.0782895 C71.9990426,19.7971427 71.3537747,18.0166781 71.3537747,15.7368421 L71.3537747,15.4342105 C71.3537747,14.3447314 71.5366853,13.3359696 71.9025119,12.4078947 C72.2683386,11.4798199 72.7713427,10.6778543 73.4115393,10.0019737 C74.051736,9.32609311 74.8240251,8.80153695 75.7284299,8.42828947 C76.6328347,8.05504199 77.6134387,7.86842105 78.6702713,7.86842105 C79.5441905,7.86842105 80.3418839,8.02982295 81.0633754,8.35263158 C81.7848669,8.67544021 82.4098114,9.12938304 82.9382277,9.71447368 C83.4666439,10.2995643 83.8832736,11.0006538 84.1881292,11.8177632 C84.4929847,12.6348725 84.6555719,13.5377144 84.6758956,14.5263158 L84.5234686,14.6776316 Z M81.3225013,13.4671053 C81.3225013,11.9539398 81.0582971,10.7938637 80.5298809,9.98684211 C80.0014646,9.17982053 79.2799839,8.77631579 78.3654173,8.77631579 C77.4508506,8.77631579 76.6785615,9.21008338 76.0485267,10.0776316 C75.4184919,10.9451798 75.0221856,12.1758692 74.859596,13.7697368 L81.0176473,13.7697368 L81.3225013,13.4671053 Z M103.184122,22.6973684 L101.812278,22.6973684 L99.434417,22.5460526 L97.087041,22.6973684 L95.7151979,22.6973684 L95.5627709,22.5460526 L95.5627709,22.0921053 L95.7151979,21.9407895 L96.6297599,21.9407895 L97.544322,21.6381579 L97.8491761,21.0328947 L97.8491761,11.0460526 C97.3817309,9.97674904 96.6196034,9.44210526 95.5627709,9.44210526 C94.7091753,9.44210526 93.9572096,9.74977762 93.3068511,10.3651316 C92.6564926,10.9804855 92.1382459,11.8631521 91.7520955,13.0131579 L91.7520955,21.0328947 L92.0569496,21.6381579 L92.9715116,21.9407895 L93.8860737,21.9407895 L94.0385007,22.0921053 L94.0385007,22.5460526 L93.8860737,22.6973684 L92.5142306,22.6973684 L90.1668546,22.5460526 L87.7889932,22.6973684 L86.4171501,22.6973684 L86.2647231,22.5460526 L86.2647231,22.0921053 L86.4171501,21.9407895 L87.3317122,21.9407895 L88.2462742,21.6381579 L88.5511283,21.0328947 L88.5511283,9.83552632 L88.2462742,9.23026316 L87.3317122,8.92763158 L86.5695771,8.92763158 L86.4171501,8.77631579 L86.4171501,8.32236842 L86.5695771,8.17105263 L91.5996685,8.17105263 L91.7520955,8.32236842 L91.7520955,11.1973684 C92.951194,8.97805908 94.6278744,7.86842105 96.782187,7.86842105 C97.7780484,7.86842105 98.6417929,8.14078675 99.3734462,8.68552632 C100.1051,9.23026588 100.663993,10.0171001 101.050143,11.0460526 L101.050143,21.0328947 L101.354997,21.6381579 L102.269559,21.9407895 L103.184122,21.9407895 L103.336549,22.0921053 L103.336549,22.5460526 L103.184122,22.6973684 Z M117.485362,18.3092105 C117.180506,19.7618494 116.504753,20.9067941 115.458083,21.7440789 C114.411412,22.5813638 113.156442,23 111.693135,23 C109.477852,23 107.730039,22.3594362 106.449646,21.0782895 C105.169253,19.7971427 104.529066,18.0166781 104.529066,15.7368421 L104.529066,15.4342105 C104.529066,14.3447314 104.717057,13.3359696 105.093046,12.4078947 C105.469034,11.4798199 105.997443,10.6778543 106.678287,10.0019737 C107.359131,9.32609311 108.166986,8.80153695 109.101876,8.42828947 C110.036766,8.05504199 111.052936,7.86842105 112.150416,7.86842105 C112.88207,7.86842105 113.552742,7.95920962 114.162453,8.14078947 C114.772164,8.32236933 115.300572,8.5796036 115.747694,8.9125 C116.194815,9.2453964 116.545394,9.6287259 116.79944,10.0625 C117.053487,10.4962741 117.180508,10.975436 117.180508,11.5 C117.180508,12.024564 116.992516,12.4835507 116.616528,12.8769737 C116.240539,13.2703967 115.76802,13.4671053 115.198957,13.4671053 C114.67054,13.4671053 114.223426,13.3208348 113.857599,13.0282895 C113.491772,12.7357442 113.258053,12.3271956 113.156435,11.8026316 L113.156435,11.6513158 L114.741676,10.0776316 L114.741676,9.92631579 C114.192936,9.15964529 113.329191,8.77631579 112.150416,8.77631579 C111.561029,8.77631579 111.017378,8.92763007 110.519447,9.23026316 C110.021517,9.53289625 109.589644,9.95657622 109.223818,10.5013158 C108.857991,11.0460554 108.568383,11.7118382 108.354984,12.4986842 C108.141585,13.2855302 108.034887,14.1631531 108.034887,15.1315789 C108.034887,17.2701861 108.400708,18.9043803 109.132362,20.0342105 C109.864015,21.1640407 110.920832,21.7289474 112.302843,21.7289474 C113.38,21.7289474 114.274229,21.3607493 114.985559,20.6243421 C115.696888,19.8879349 116.154165,18.8842169 116.357402,17.6131579 L116.5708,17.4013158 L116.723227,17.4013158 C116.926464,17.4013158 117.104294,17.4870605 117.256721,17.6585526 C117.409149,17.8300447 117.485362,18.0469285 117.485362,18.3092105 L117.485362,18.3092105 Z M131.847573,14.6776316 L122.275157,14.6776316 L122.12273,14.9802632 L122.12273,15.8881579 C122.12273,17.724132 122.508874,19.1565738 123.281175,20.1855263 C124.053476,21.2144788 125.110292,21.7289474 126.451657,21.7289474 C127.549137,21.7289474 128.478932,21.3859683 129.241071,20.7 C130.00321,20.0140317 130.516376,19.0456203 130.780584,17.7947368 L131.024467,17.5526316 L131.26835,17.5526316 C131.451264,17.5526316 131.60877,17.6333325 131.740874,17.7947368 C131.872978,17.9561412 131.939029,18.1780688 131.939029,18.4605263 C131.796763,19.1464947 131.542721,19.7668832 131.176894,20.3217105 C130.811067,20.8765379 130.369034,21.3506559 129.850779,21.7440789 C129.332525,22.137502 128.743146,22.4451743 128.082626,22.6671053 C127.422105,22.8890362 126.726029,23 125.994376,23 C123.697797,23 121.904257,22.3594362 120.613702,21.0782895 C119.323147,19.7971427 118.677879,18.0166781 118.677879,15.7368421 L118.677879,15.4342105 C118.677879,14.3447314 118.86079,13.3359696 119.226616,12.4078947 C119.592443,11.4798199 120.095447,10.6778543 120.735644,10.0019737 C121.37584,9.32609311 122.14813,8.80153695 123.052534,8.42828947 C123.956939,8.05504199 124.937543,7.86842105 125.994376,7.86842105 C126.868295,7.86842105 127.665988,8.02982295 128.38748,8.35263158 C129.108971,8.67544021 129.733916,9.12938304 130.262332,9.71447368 C130.790748,10.2995643 131.207378,11.0006538 131.512234,11.8177632 C131.817089,12.6348725 131.979676,13.5377144 132,14.5263158 L131.847573,14.6776316 Z M128.646606,13.4671053 C128.646606,11.9539398 128.382402,10.7938637 127.853985,9.98684211 C127.325569,9.17982053 126.604088,8.77631579 125.689522,8.77631579 C124.774955,8.77631579 124.002666,9.21008338 123.372631,10.0776316 C122.742596,10.9451798 122.34629,12.1758692 122.1837,13.7697368 L128.341752,13.7697368 L128.646606,13.4671053 Z" id="Reference" fill="#3C5B74"></path>
+            <path d="M145.70097,4.28239724 C145.70097,4.66305668 145.572039,4.98423326 145.314173,5.24593662 C145.056307,5.50763998 144.71863,5.6384897 144.301133,5.6384897 C144.030988,5.6384897 143.779265,5.57306484 143.545958,5.44221316 C143.31265,5.31136148 143.146882,5.1150869 143.048647,4.85338354 L141.13308,5.78123627 L142.127701,7.74400168 C142.324171,7.67262803 142.532916,7.63694174 142.753944,7.63694174 C143.122324,7.63694174 143.447722,7.76184375 143.730147,8.0116515 C144.012571,8.26145926 144.153782,8.58858355 144.153782,8.9930342 C144.153782,9.37369364 144.024851,9.69487022 143.766985,9.95657358 C143.509118,10.2182769 143.171442,10.3491267 142.753944,10.3491267 C142.385564,10.3491267 142.060167,10.2182769 141.777742,9.95657358 C141.495317,9.69487022 141.354107,9.37369364 141.354107,8.9930342 C141.354107,8.77891327 141.397084,8.58858641 141.483039,8.42204791 C141.568995,8.2555094 141.661088,8.12465968 141.759323,8.02949483 L140.175297,6.49496915 L138.59127,8.02949483 C138.689505,8.12465968 138.781598,8.2555094 138.867554,8.42204791 C138.953509,8.58858641 138.996486,8.77891327 138.996486,8.9930342 C138.996486,9.37369364 138.855276,9.69487022 138.572851,9.95657358 C138.290426,10.2182769 137.965029,10.3491267 137.596649,10.3491267 C137.179151,10.3491267 136.841475,10.2182769 136.583609,9.95657358 C136.325742,9.69487022 136.196811,9.37369364 136.196811,8.9930342 C136.196811,8.58858355 136.338022,8.26145926 136.620446,8.0116515 C136.902871,7.76184375 137.228269,7.63694174 137.596649,7.63694174 C137.842235,7.63694174 138.050981,7.67262803 138.222892,7.74400168 L139.217513,5.78123627 L137.301946,4.85338354 C137.203711,5.1150869 137.037943,5.31136148 136.804635,5.44221316 C136.571328,5.57306484 136.319605,5.6384897 136.04946,5.6384897 C135.631963,5.6384897 135.294286,5.50763998 135.03642,5.24593662 C134.778554,4.98423326 134.649623,4.66305668 134.649623,4.28239724 C134.649623,3.87794659 134.778554,3.55677001 135.03642,3.31885786 C135.294286,3.08094571 135.631963,2.96199142 136.04946,2.96199142 C136.466958,2.96199142 136.798495,3.08094571 137.044081,3.31885786 C137.289668,3.55677001 137.41246,3.87794659 137.41246,4.28239724 L137.41246,4.46083046 L139.585891,4.74632361 L139.917432,2.67649828 C139.156113,2.48616856 138.775459,2.03414226 138.775459,1.32040582 C138.775459,0.915955165 138.90439,0.594778584 139.162256,0.356866437 C139.420122,0.118954289 139.757799,0 140.175297,0 C140.592794,0 140.930471,0.118954289 141.188337,0.356866437 C141.446203,0.594778584 141.575134,0.915955165 141.575134,1.32040582 C141.575134,2.03414226 141.19448,2.48616856 140.433161,2.67649828 L140.764702,4.74632361 L142.938133,4.46083046 L142.938133,4.28239724 C142.938133,3.87794659 143.060925,3.55677001 143.306512,3.31885786 C143.552098,3.08094571 143.883636,2.96199142 144.301133,2.96199142 C144.71863,2.96199142 145.056307,3.08094571 145.314173,3.31885786 C145.572039,3.55677001 145.70097,3.87794659 145.70097,4.28239724 L145.70097,4.28239724 Z" id="*" fill="#92C93B"></path>
+        </g>
+    </g>
+</svg></a>
+<div class="PartialCategoryNavigation-drawer-header-balance"></div>
+<div class="PartialCategoryNavigation-drawer-close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.414 17.414" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+        .b-close {
+            clip-path: url(#a-close);
+        }
+    </style>
+    <clipPath id="a-close">
+        <rect class="svg-a" width="17.414" height="17.414"></rect>
+    </clipPath>
+  </defs>
+  <g class="b-close">
+    <line class="svg-c" x2="16" y2="16" transform="translate(0.707 0.707)"></line>
+    <line class="svg-c" x1="16" y2="16" transform="translate(0.707 0.707)"></line>
+  </g>
+  </svg>
+  
+  </div>
+        </div>
+        <div class="PartialCategoryNavigation-body">
+          
+  <ul class="PartialCategoryNavigation-categories" style="border-top:1px solid #ddd">
+
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/history" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  History</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/business-finance" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Business & Finance</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/geography" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Geography</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/world-view" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  World View</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/science" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Science</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/pets-animals" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Pets & Animals</span></a></div>
+</li>
+
+        
+</ul>
+</div>
+</div>
+</nav>
+
+
+<div class="col logo-col" >
+<a class="navbar-brand logo" data-zone='header' data-provider-source='navigation' data-result-type='logo' href="/"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="23px" viewBox="0 0 146 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ref-logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reference-logo">
+            <path d="M19.3582307,22.6973684 L18.7485226,22.8486842 L17.5291065,22.8486842 C16.3909791,22.8486842 15.4662645,22.7175452 14.7549349,22.4552632 C14.0436052,22.1929811 13.3627714,21.7188631 12.7124129,21.0328947 L12.7124129,20.5789474 C12.7124129,17.8148985 12.3415109,15.7872872 11.5996957,14.4960526 C10.8578805,13.2048181 9.68420426,12.5592105 8.07863169,12.5592105 L6.15805133,12.5592105 L6.00562431,12.7105263 L6.00562431,21.0328947 L6.31047834,21.6381579 L7.22504042,21.9407895 L8.1700879,21.9407895 L8.32251491,22.0921053 L8.32251491,22.5460526 L8.1700879,22.6973684 L6.70678857,22.6973684 L4.26795636,22.5460526 L1.82912416,22.6973684 L0.152427013,22.6973684 L0,22.5460526 L0,22.0921053 L0.152427013,21.9407895 L1.31087231,21.9407895 L2.22543439,21.6381579 L2.53028842,20.7302632 L2.53028842,3.48026316 L2.22543439,2.57236842 L1.31087231,2.26973684 L0.152427013,2.26973684 L0,2.11842105 L0,1.66447368 L0.152427013,1.51315789 L1.82912416,1.51315789 L4.26795636,1.66447368 L7.92620468,1.51315789 L9.45047481,1.51315789 C10.5682785,1.51315789 11.5844484,1.63420932 12.4990151,1.87631579 C13.4135817,2.11842226 14.2011134,2.4664451 14.8616338,2.92039474 C15.5221541,3.37434438 16.0302391,3.91907577 16.3859039,4.55460526 C16.7415687,5.19013476 16.9193984,5.89122424 16.9193984,6.65789474 C16.9193984,7.26316092 16.7923772,7.84319898 16.5383309,8.39802632 C16.2842846,8.95285365 15.9184634,9.46732219 15.4408564,9.94144737 C14.9632494,10.4155725 14.3941942,10.8291649 13.7336739,11.1822368 C13.0731535,11.5353088 12.3262686,11.8228059 11.4929968,12.0447368 C13.0782456,12.4078966 14.2976496,13.1342051 15.1512451,14.2236842 L16.6755152,20.2763158 L17.2242525,21.3355263 L18.4436686,21.9407895 L19.5106577,21.9407895 L19.6630847,22.0921053 L19.6630847,22.3947368 L19.3582307,22.6973684 Z M13.2001793,6.9 C13.2001793,6.2342072 13.0934815,5.62390628 12.8800826,5.06907895 C12.6666837,4.51425161 12.3618327,4.04013355 11.9655205,3.64671053 C11.5692083,3.25328751 11.0916084,2.95065895 10.5327066,2.73881579 C9.97380476,2.52697263 9.35902195,2.42105263 8.68833974,2.42105263 L7.22504042,2.42105263 L6.31047834,2.72368421 L6.00562431,3.32894737 L6.00562431,11.5 L6.15805133,11.6513158 L8.53591273,11.6513158 C10.0601905,11.6513158 11.2186242,11.2478111 12.0112486,10.4407895 C12.8038731,9.63376789 13.2001793,8.45351654 13.2001793,6.9 L13.2001793,6.9 Z M32.9583067,14.6776316 L23.3858903,14.6776316 L23.2334633,14.9802632 L23.2334633,15.8881579 C23.2334633,17.724132 23.6196079,19.1565738 24.3919086,20.1855263 C25.1642093,21.2144788 26.221026,21.7289474 27.5623905,21.7289474 C28.6598705,21.7289474 29.5896659,21.3859683 30.3518048,20.7 C31.1139437,20.0140317 31.6271095,19.0456203 31.8913176,17.7947368 L32.1352009,17.5526316 L32.3790841,17.5526316 C32.5619974,17.5526316 32.7195038,17.6333325 32.8516078,17.7947368 C32.9837119,17.9561412 33.0497629,18.1780688 33.0497629,18.4605263 C32.907497,19.1464947 32.6534545,19.7668832 32.2876279,20.3217105 C31.9218012,20.8765379 31.4797673,21.3506559 30.9615129,21.7440789 C30.4432584,22.137502 29.8538799,22.4451743 29.1933595,22.6671053 C28.5328392,22.8890362 27.8367628,23 27.1051094,23 C24.808531,23 23.014991,22.3594362 21.7244359,21.0782895 C20.4338807,19.7971427 19.7886128,18.0166781 19.7886128,15.7368421 L19.7886128,15.4342105 C19.7886128,14.3447314 19.9715234,13.3359696 20.3373501,12.4078947 C20.7031767,11.4798199 21.2061808,10.6778543 21.8463775,10.0019737 C22.4865741,9.32609311 23.2588633,8.80153695 24.1632681,8.42828947 C25.0676729,8.05504199 26.0482769,7.86842105 27.1051094,7.86842105 C27.9790287,7.86842105 28.7767221,8.02982295 29.4982135,8.35263158 C30.219705,8.67544021 30.8446495,9.12938304 31.3730658,9.71447368 C31.9014821,10.2995643 32.3181118,11.0006538 32.6229673,11.8177632 C32.9278229,12.6348725 33.09041,13.5377144 33.1107337,14.5263158 L32.9583067,14.6776316 Z M29.7573395,13.4671053 C29.7573395,11.9539398 29.4931353,10.7938637 28.964719,9.98684211 C28.4363027,9.17982053 27.7148221,8.77631579 26.8002554,8.77631579 C25.8856888,8.77631579 25.1133996,9.21008338 24.4833648,10.0776316 C23.85333,10.9451798 23.4570237,12.1758692 23.2944341,13.7697368 L29.4524854,13.7697368 L29.7573395,13.4671053 Z M46.2230434,2.875 C46.2230434,3.27851079 46.0553753,3.64670886 45.7200342,3.97960526 C45.3846931,4.31250166 45.0137911,4.47894737 44.607317,4.47894737 C44.1398719,4.47894737 43.7689698,4.34276452 43.4945998,4.07039474 C43.2202299,3.79802495 43.0830469,3.42982688 43.0830469,2.96578947 L43.0830469,2.875 L44.2110068,1.75526316 C43.784209,1.14999697 43.2049922,0.847368421 42.4733389,0.847368421 C41.7823329,0.847368421 41.2285203,1.09955888 40.8118844,1.60394737 C40.3952485,2.10833586 40.1869337,2.78420629 40.1869337,3.63157895 L40.1869337,8.01973684 L40.3393607,8.17105263 L43.540328,8.17105263 L43.692755,8.32236842 L43.692755,9.07894737 L43.540328,9.23026316 L40.3393607,9.23026316 L40.1869337,9.38157895 L40.1869337,21.0328947 L40.4917877,21.6381579 L41.4063498,21.9407895 L42.6257659,21.9407895 L42.7781929,22.0921053 L42.7781929,22.5460526 L42.6257659,22.6973684 L40.9490687,22.6973684 L38.6016927,22.5460526 L36.2238313,22.6973684 L34.8519882,22.6973684 L34.6995612,22.5460526 L34.6995612,22.0921053 L34.8519882,21.9407895 L35.7665503,21.9407895 L36.6811124,21.6381579 L36.9859664,21.0328947 L36.9859664,9.38157895 L36.8335394,9.23026316 L34.6995612,9.23026316 L34.5471342,9.07894737 L34.5471342,8.625 L34.6995612,8.47368421 L36.6811124,8.17105263 L36.9859664,7.86842105 L36.9859664,4.53947368 C37.148556,3.85350534 37.3975176,3.23311681 37.7328588,2.67828947 C38.0681999,2.12346214 38.4746678,1.64934407 38.9522749,1.25592105 C39.4298819,0.862498033 39.9532094,0.554825671 40.5222731,0.332894737 C41.0913368,0.110963803 41.690877,0 42.3209118,0 L42.4733389,0 C43.5504951,0 44.4447247,0.267321888 45.1560543,0.801973684 C45.8673839,1.33662548 46.2230434,2.02762734 46.2230434,2.875 L46.2230434,2.875 Z M57.5976851,14.6776316 L48.0252686,14.6776316 L47.8728416,14.9802632 L47.8728416,15.8881579 C47.8728416,17.724132 48.2589862,19.1565738 49.0312869,20.1855263 C49.8035877,21.2144788 50.8604044,21.7289474 52.2017688,21.7289474 C53.2992488,21.7289474 54.2290443,21.3859683 54.9911831,20.7 C55.753322,20.0140317 56.2664878,19.0456203 56.530696,17.7947368 L56.7745792,17.5526316 L57.0184624,17.5526316 C57.2013757,17.5526316 57.3588821,17.6333325 57.4909862,17.7947368 C57.6230902,17.9561412 57.6891413,18.1780688 57.6891413,18.4605263 C57.5468754,19.1464947 57.2928329,19.7668832 56.9270062,20.3217105 C56.5611795,20.8765379 56.1191456,21.3506559 55.6008912,21.7440789 C55.0826368,22.137502 54.4932582,22.4451743 53.8327378,22.6671053 C53.1722175,22.8890362 52.4761411,23 51.7444878,23 C49.4479093,23 47.6543694,22.3594362 46.3638142,21.0782895 C45.073259,19.7971427 44.4279911,18.0166781 44.4279911,15.7368421 L44.4279911,15.4342105 C44.4279911,14.3447314 44.6109017,13.3359696 44.9767284,12.4078947 C45.342555,11.4798199 45.8455592,10.6778543 46.4857558,10.0019737 C47.1259525,9.32609311 47.8982416,8.80153695 48.8026464,8.42828947 C49.7070512,8.05504199 50.6876552,7.86842105 51.7444878,7.86842105 C52.618407,7.86842105 53.4161004,8.02982295 54.1375919,8.35263158 C54.8590833,8.67544021 55.4840278,9.12938304 56.0124441,9.71447368 C56.5408604,10.2995643 56.9574901,11.0006538 57.2623456,11.8177632 C57.5672012,12.6348725 57.7297884,13.5377144 57.7501121,14.5263158 L57.5976851,14.6776316 Z M54.3967178,13.4671053 C54.3967178,11.9539398 54.1325136,10.7938637 53.6040973,9.98684211 C53.075681,9.17982053 52.3542004,8.77631579 51.4396337,8.77631579 C50.5250671,8.77631579 49.7527779,9.21008338 49.1227431,10.0776316 C48.4927083,10.9451798 48.0964021,12.1758692 47.9338124,13.7697368 L54.0918638,13.7697368 L54.3967178,13.4671053 Z M71.1672757,10.4407895 C71.1672757,11.1267578 70.9691226,11.6866206 70.5728104,12.1203947 C70.1764982,12.5541688 69.7039792,12.7710526 69.1552392,12.7710526 C68.7894125,12.7710526 68.469319,12.6500012 68.194949,12.4078947 C67.920579,12.1657883 67.7325876,11.8429845 67.630969,11.4394737 L67.630969,11.2881579 L68.7894143,10.1381579 C68.7894143,9.87587588 68.697959,9.65899209 68.5150457,9.4875 C68.3321324,9.31600791 68.0984133,9.23026316 67.8138815,9.23026316 C67.2041704,9.23026316 66.640196,9.66403075 66.1219416,10.5315789 C65.6036872,11.3991271 65.171815,12.6298166 64.826312,14.2236842 L64.826312,21.0328947 L65.131166,21.6381579 L66.0457281,21.9407895 L67.2651442,21.9407895 L67.4175712,22.0921053 L67.4175712,22.5460526 L67.2651442,22.6973684 L65.4969909,22.6973684 L63.2410711,22.5460526 L60.9241805,22.6973684 L59.4913665,22.6973684 L59.3389395,22.5460526 L59.3389395,22.0921053 L59.4913665,21.9407895 L60.4059286,21.9407895 L61.3204907,21.6381579 L61.6253447,21.0328947 L61.6253447,10.1381579 L61.3204907,9.23026316 L60.4059286,8.92763158 L59.6437936,8.92763158 L59.4913665,8.77631579 L59.4913665,8.32236842 L59.6437936,8.17105263 L64.369031,8.17105263 L64.521458,8.32236842 L64.521458,12.2565789 C64.8263135,10.8846423 65.3343985,9.8103109 66.0457281,9.03355263 C66.7570577,8.25679436 67.5699937,7.86842105 68.4845603,7.86842105 C69.2771847,7.86842105 69.9224526,8.10548009 70.4203834,8.57960526 C70.9183141,9.05373044 71.1672757,9.67411897 71.1672757,10.4407895 L71.1672757,10.4407895 Z M84.5234686,14.6776316 L74.9510522,14.6776316 L74.7986252,14.9802632 L74.7986252,15.8881579 C74.7986252,17.724132 75.1847697,19.1565738 75.9570705,20.1855263 C76.7293712,21.2144788 77.7861879,21.7289474 79.1275523,21.7289474 C80.2250323,21.7289474 81.1548278,21.3859683 81.9169667,20.7 C82.6791056,20.0140317 83.1922714,19.0456203 83.4564795,17.7947368 L83.7003627,17.5526316 L83.9442459,17.5526316 C84.1271593,17.5526316 84.2846656,17.6333325 84.4167697,17.7947368 C84.5488738,17.9561412 84.6149248,18.1780688 84.6149248,18.4605263 C84.4726589,19.1464947 84.2186164,19.7668832 83.8527897,20.3217105 C83.4869631,20.8765379 83.0449292,21.3506559 82.5266747,21.7440789 C82.0084203,22.137502 81.4190417,22.4451743 80.7585214,22.6671053 C80.098001,22.8890362 79.4019246,23 78.6702713,23 C76.3736928,23 74.5801529,22.3594362 73.2895977,21.0782895 C71.9990426,19.7971427 71.3537747,18.0166781 71.3537747,15.7368421 L71.3537747,15.4342105 C71.3537747,14.3447314 71.5366853,13.3359696 71.9025119,12.4078947 C72.2683386,11.4798199 72.7713427,10.6778543 73.4115393,10.0019737 C74.051736,9.32609311 74.8240251,8.80153695 75.7284299,8.42828947 C76.6328347,8.05504199 77.6134387,7.86842105 78.6702713,7.86842105 C79.5441905,7.86842105 80.3418839,8.02982295 81.0633754,8.35263158 C81.7848669,8.67544021 82.4098114,9.12938304 82.9382277,9.71447368 C83.4666439,10.2995643 83.8832736,11.0006538 84.1881292,11.8177632 C84.4929847,12.6348725 84.6555719,13.5377144 84.6758956,14.5263158 L84.5234686,14.6776316 Z M81.3225013,13.4671053 C81.3225013,11.9539398 81.0582971,10.7938637 80.5298809,9.98684211 C80.0014646,9.17982053 79.2799839,8.77631579 78.3654173,8.77631579 C77.4508506,8.77631579 76.6785615,9.21008338 76.0485267,10.0776316 C75.4184919,10.9451798 75.0221856,12.1758692 74.859596,13.7697368 L81.0176473,13.7697368 L81.3225013,13.4671053 Z M103.184122,22.6973684 L101.812278,22.6973684 L99.434417,22.5460526 L97.087041,22.6973684 L95.7151979,22.6973684 L95.5627709,22.5460526 L95.5627709,22.0921053 L95.7151979,21.9407895 L96.6297599,21.9407895 L97.544322,21.6381579 L97.8491761,21.0328947 L97.8491761,11.0460526 C97.3817309,9.97674904 96.6196034,9.44210526 95.5627709,9.44210526 C94.7091753,9.44210526 93.9572096,9.74977762 93.3068511,10.3651316 C92.6564926,10.9804855 92.1382459,11.8631521 91.7520955,13.0131579 L91.7520955,21.0328947 L92.0569496,21.6381579 L92.9715116,21.9407895 L93.8860737,21.9407895 L94.0385007,22.0921053 L94.0385007,22.5460526 L93.8860737,22.6973684 L92.5142306,22.6973684 L90.1668546,22.5460526 L87.7889932,22.6973684 L86.4171501,22.6973684 L86.2647231,22.5460526 L86.2647231,22.0921053 L86.4171501,21.9407895 L87.3317122,21.9407895 L88.2462742,21.6381579 L88.5511283,21.0328947 L88.5511283,9.83552632 L88.2462742,9.23026316 L87.3317122,8.92763158 L86.5695771,8.92763158 L86.4171501,8.77631579 L86.4171501,8.32236842 L86.5695771,8.17105263 L91.5996685,8.17105263 L91.7520955,8.32236842 L91.7520955,11.1973684 C92.951194,8.97805908 94.6278744,7.86842105 96.782187,7.86842105 C97.7780484,7.86842105 98.6417929,8.14078675 99.3734462,8.68552632 C100.1051,9.23026588 100.663993,10.0171001 101.050143,11.0460526 L101.050143,21.0328947 L101.354997,21.6381579 L102.269559,21.9407895 L103.184122,21.9407895 L103.336549,22.0921053 L103.336549,22.5460526 L103.184122,22.6973684 Z M117.485362,18.3092105 C117.180506,19.7618494 116.504753,20.9067941 115.458083,21.7440789 C114.411412,22.5813638 113.156442,23 111.693135,23 C109.477852,23 107.730039,22.3594362 106.449646,21.0782895 C105.169253,19.7971427 104.529066,18.0166781 104.529066,15.7368421 L104.529066,15.4342105 C104.529066,14.3447314 104.717057,13.3359696 105.093046,12.4078947 C105.469034,11.4798199 105.997443,10.6778543 106.678287,10.0019737 C107.359131,9.32609311 108.166986,8.80153695 109.101876,8.42828947 C110.036766,8.05504199 111.052936,7.86842105 112.150416,7.86842105 C112.88207,7.86842105 113.552742,7.95920962 114.162453,8.14078947 C114.772164,8.32236933 115.300572,8.5796036 115.747694,8.9125 C116.194815,9.2453964 116.545394,9.6287259 116.79944,10.0625 C117.053487,10.4962741 117.180508,10.975436 117.180508,11.5 C117.180508,12.024564 116.992516,12.4835507 116.616528,12.8769737 C116.240539,13.2703967 115.76802,13.4671053 115.198957,13.4671053 C114.67054,13.4671053 114.223426,13.3208348 113.857599,13.0282895 C113.491772,12.7357442 113.258053,12.3271956 113.156435,11.8026316 L113.156435,11.6513158 L114.741676,10.0776316 L114.741676,9.92631579 C114.192936,9.15964529 113.329191,8.77631579 112.150416,8.77631579 C111.561029,8.77631579 111.017378,8.92763007 110.519447,9.23026316 C110.021517,9.53289625 109.589644,9.95657622 109.223818,10.5013158 C108.857991,11.0460554 108.568383,11.7118382 108.354984,12.4986842 C108.141585,13.2855302 108.034887,14.1631531 108.034887,15.1315789 C108.034887,17.2701861 108.400708,18.9043803 109.132362,20.0342105 C109.864015,21.1640407 110.920832,21.7289474 112.302843,21.7289474 C113.38,21.7289474 114.274229,21.3607493 114.985559,20.6243421 C115.696888,19.8879349 116.154165,18.8842169 116.357402,17.6131579 L116.5708,17.4013158 L116.723227,17.4013158 C116.926464,17.4013158 117.104294,17.4870605 117.256721,17.6585526 C117.409149,17.8300447 117.485362,18.0469285 117.485362,18.3092105 L117.485362,18.3092105 Z M131.847573,14.6776316 L122.275157,14.6776316 L122.12273,14.9802632 L122.12273,15.8881579 C122.12273,17.724132 122.508874,19.1565738 123.281175,20.1855263 C124.053476,21.2144788 125.110292,21.7289474 126.451657,21.7289474 C127.549137,21.7289474 128.478932,21.3859683 129.241071,20.7 C130.00321,20.0140317 130.516376,19.0456203 130.780584,17.7947368 L131.024467,17.5526316 L131.26835,17.5526316 C131.451264,17.5526316 131.60877,17.6333325 131.740874,17.7947368 C131.872978,17.9561412 131.939029,18.1780688 131.939029,18.4605263 C131.796763,19.1464947 131.542721,19.7668832 131.176894,20.3217105 C130.811067,20.8765379 130.369034,21.3506559 129.850779,21.7440789 C129.332525,22.137502 128.743146,22.4451743 128.082626,22.6671053 C127.422105,22.8890362 126.726029,23 125.994376,23 C123.697797,23 121.904257,22.3594362 120.613702,21.0782895 C119.323147,19.7971427 118.677879,18.0166781 118.677879,15.7368421 L118.677879,15.4342105 C118.677879,14.3447314 118.86079,13.3359696 119.226616,12.4078947 C119.592443,11.4798199 120.095447,10.6778543 120.735644,10.0019737 C121.37584,9.32609311 122.14813,8.80153695 123.052534,8.42828947 C123.956939,8.05504199 124.937543,7.86842105 125.994376,7.86842105 C126.868295,7.86842105 127.665988,8.02982295 128.38748,8.35263158 C129.108971,8.67544021 129.733916,9.12938304 130.262332,9.71447368 C130.790748,10.2995643 131.207378,11.0006538 131.512234,11.8177632 C131.817089,12.6348725 131.979676,13.5377144 132,14.5263158 L131.847573,14.6776316 Z M128.646606,13.4671053 C128.646606,11.9539398 128.382402,10.7938637 127.853985,9.98684211 C127.325569,9.17982053 126.604088,8.77631579 125.689522,8.77631579 C124.774955,8.77631579 124.002666,9.21008338 123.372631,10.0776316 C122.742596,10.9451798 122.34629,12.1758692 122.1837,13.7697368 L128.341752,13.7697368 L128.646606,13.4671053 Z" id="Reference" fill="#3C5B74"></path>
+            <path d="M145.70097,4.28239724 C145.70097,4.66305668 145.572039,4.98423326 145.314173,5.24593662 C145.056307,5.50763998 144.71863,5.6384897 144.301133,5.6384897 C144.030988,5.6384897 143.779265,5.57306484 143.545958,5.44221316 C143.31265,5.31136148 143.146882,5.1150869 143.048647,4.85338354 L141.13308,5.78123627 L142.127701,7.74400168 C142.324171,7.67262803 142.532916,7.63694174 142.753944,7.63694174 C143.122324,7.63694174 143.447722,7.76184375 143.730147,8.0116515 C144.012571,8.26145926 144.153782,8.58858355 144.153782,8.9930342 C144.153782,9.37369364 144.024851,9.69487022 143.766985,9.95657358 C143.509118,10.2182769 143.171442,10.3491267 142.753944,10.3491267 C142.385564,10.3491267 142.060167,10.2182769 141.777742,9.95657358 C141.495317,9.69487022 141.354107,9.37369364 141.354107,8.9930342 C141.354107,8.77891327 141.397084,8.58858641 141.483039,8.42204791 C141.568995,8.2555094 141.661088,8.12465968 141.759323,8.02949483 L140.175297,6.49496915 L138.59127,8.02949483 C138.689505,8.12465968 138.781598,8.2555094 138.867554,8.42204791 C138.953509,8.58858641 138.996486,8.77891327 138.996486,8.9930342 C138.996486,9.37369364 138.855276,9.69487022 138.572851,9.95657358 C138.290426,10.2182769 137.965029,10.3491267 137.596649,10.3491267 C137.179151,10.3491267 136.841475,10.2182769 136.583609,9.95657358 C136.325742,9.69487022 136.196811,9.37369364 136.196811,8.9930342 C136.196811,8.58858355 136.338022,8.26145926 136.620446,8.0116515 C136.902871,7.76184375 137.228269,7.63694174 137.596649,7.63694174 C137.842235,7.63694174 138.050981,7.67262803 138.222892,7.74400168 L139.217513,5.78123627 L137.301946,4.85338354 C137.203711,5.1150869 137.037943,5.31136148 136.804635,5.44221316 C136.571328,5.57306484 136.319605,5.6384897 136.04946,5.6384897 C135.631963,5.6384897 135.294286,5.50763998 135.03642,5.24593662 C134.778554,4.98423326 134.649623,4.66305668 134.649623,4.28239724 C134.649623,3.87794659 134.778554,3.55677001 135.03642,3.31885786 C135.294286,3.08094571 135.631963,2.96199142 136.04946,2.96199142 C136.466958,2.96199142 136.798495,3.08094571 137.044081,3.31885786 C137.289668,3.55677001 137.41246,3.87794659 137.41246,4.28239724 L137.41246,4.46083046 L139.585891,4.74632361 L139.917432,2.67649828 C139.156113,2.48616856 138.775459,2.03414226 138.775459,1.32040582 C138.775459,0.915955165 138.90439,0.594778584 139.162256,0.356866437 C139.420122,0.118954289 139.757799,0 140.175297,0 C140.592794,0 140.930471,0.118954289 141.188337,0.356866437 C141.446203,0.594778584 141.575134,0.915955165 141.575134,1.32040582 C141.575134,2.03414226 141.19448,2.48616856 140.433161,2.67649828 L140.764702,4.74632361 L142.938133,4.46083046 L142.938133,4.28239724 C142.938133,3.87794659 143.060925,3.55677001 143.306512,3.31885786 C143.552098,3.08094571 143.883636,2.96199142 144.301133,2.96199142 C144.71863,2.96199142 145.056307,3.08094571 145.314173,3.31885786 C145.572039,3.55677001 145.70097,3.87794659 145.70097,4.28239724 L145.70097,4.28239724 Z" id="*" fill="#92C93B"></path>
+        </g>
+    </g>
+</svg></a>
+</div>
+
+
+    <div class="col d-none d-lg-flex">
+      
+    <ul class="navbar-nav top-menu">
+      
+    
+    <li class="nav-item ">
+      <a href="/history" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            History      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/business-finance" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Business & Finance      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/geography" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Geography      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/world-view" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            World View      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/science" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Science      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/pets-animals" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Pets & Animals      </a>
+    </li>
+
+    </ul>
+  </div>
+    
+    <div class="col search-col ask-sub-search-col" style="padding:0">
+    <div class="search-bar">
+      <form class="form-inline my-1 my-lg-0 search-form">
+        <input class="form-control mr-sm-1 search-box" type="text" placeholder="Search" aria-label="Search">
+        <button class="search-submit btn my-1 my-sm-0" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.999 18"
+            preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <style>
+                .magnifier-b {
+                  clip-path: url(#magnifier-a);
+                }
+              </style>
+              <clipPath id="magnifier-a">
+                <rect class="svg-a" width="17.999" height="18"></rect>
+              </clipPath>
+            </defs>
+            <g class="magnifier-b">
+              <path class="svg-c"
+                d="M16.253,17.471a1.716,1.716,0,0,1-1.236-.524l-3.226-3.3a7.4,7.4,0,0,1-4.22,1.318A7.67,7.67,0,0,1,0,7.218,7.67,7.67,0,0,1,7.572-.529a7.67,7.67,0,0,1,7.572,7.747,7.871,7.871,0,0,1-.98,3.8l3.325,3.4a1.819,1.819,0,0,1,0,2.528A1.715,1.715,0,0,1,16.253,17.471ZM7.411,1.589A5.584,5.584,0,0,0,2.118,7.412a5.584,5.584,0,0,0,5.294,5.824,5.585,5.585,0,0,0,5.295-5.824A5.584,5.584,0,0,0,7.411,1.589Z"
+                transform="translate(0 0.529)"></path>
+            </g>
+          </svg>
+        </button>
+        
+        
+<div class="ac_results"
+  style="display:none">
+  <ul>
+  </ul>
+</div>
+
+      </form>
+    </div>
+    </div>
+    
+    </div>
+  </nav>
+<style>
+  /* home only */
+  .PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {
+    font-size:18px;
+    line-height:21px;
+  }
+  
+</style>
+
+
+  <main role="main" class="container-xl">
+    <div class="row">
+      <div class="col-12 col-lg-9 non-article-content-body">
+
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+
+
+<div class="carousel-overlay">
+<h4 class="carousel-cat"></h4>
+<a href='#' class="carousel-link"><h1 class="carousel-title"></h1></a>
+<p class="carousel-body"></p>
+
+
+<div class="carousel-pagination"><div class="carousel-page"><span class="carousel-current-page">2</span> / <span class="carousel-max-page">5</span></div><div class="carousel-controls">
+<a class="" href="#carousel" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" style="margin-top: 4px; margin-right:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="11.928" height="19.586" viewBox="0 0 11.928 19.586"><path class="a" d="M12.8-9.139,4.088-17.854a1.04,1.04,0,0,0-.764-.314,1.04,1.04,0,0,0-.764.314l-.988.988a1.124,1.124,0,0,0-.337.764.967.967,0,0,0,.292.764L8.49-8.375,1.527-1.412a.967.967,0,0,0-.292.764,1.124,1.124,0,0,0,.337.764l.988.988a1.04,1.04,0,0,0,.764.314A1.04,1.04,0,0,0,4.088,1.1L12.8-7.611a.979.979,0,0,0,.359-.764A.979.979,0,0,0,12.8-9.139Z" transform="translate(13.162 1.418) rotate(180)"/></svg></span><span class="sr-only">Previous</span></a>
+
+<a class="" href="#carousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" style="margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="11.928" height="19.586" viewBox="0 0 11.928 19.586"><path class="a" d="M12.8-7.861,4.088.854a1.04,1.04,0,0,1-.764.314A1.04,1.04,0,0,1,2.561.854L1.572-.135A1.124,1.124,0,0,1,1.235-.9a.967.967,0,0,1,.292-.764L8.49-8.625,1.527-15.588a.967.967,0,0,1-.292-.764,1.124,1.124,0,0,1,.337-.764l.988-.988a1.04,1.04,0,0,1,.764-.314,1.04,1.04,0,0,1,.764.314L12.8-9.389a.979.979,0,0,1,.359.764A.979.979,0,0,1,12.8-7.861Z" transform="translate(-1.234 18.418)"/></svg></span><span class="sr-only">Next</span></a>
+</div></div>
+
+</div>
+
+
+
+
+      <div class="active carousel-item " data-interval="20000">
+      <a href='/history/-meaning-GOP-political-history' data-content-id='788894' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444690/26a5224b16f8264caf599fa4e42d51d0.jpg" alt=""/>
+      </a>
+        <span class="category">History</span>
+        <span class="excerpt">Ever wondered why the Republican Party is sometimes referred to as the GOP? We’re taking a look at the term’s origins.</span>
+        <h1>What Does GOP Mean in Politics Now vs. When It Was Conceived?</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/history/book-of-revelation' data-content-id='788884' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444684/2a2cb0bb085b40e7c655e71794719bee.jpg" alt=""/>
+      </a>
+        <span class="category">History</span>
+        <span class="excerpt">The Book of Revelation is meant to be the conclusion of the Bible’s New Testament. Providing an outline for the end of the world, it may also be the Bible’s most controversial section.</span>
+        <h1>The Book of Revelation Explained: An Overview of the End of the World</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/world-view/what-are-tenants-rights-during-eviction' data-content-id='788846' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/443698/a871ebc92c55034e8eca696b11778d59.jpg" alt=""/>
+      </a>
+        <span class="category">World View</span>
+        <span class="excerpt">It’s important to understand tenant rights to learn what steps to take if you’re facing eviction.</span>
+        <h1>What Are a Tenant’s Rights During Eviction?</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/geography/strange-americana-roadside-attractions-western-states' data-content-id='788823' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444644/d38a6a1da533a0aac54f0c43484896c6.jpg" alt=""/>
+      </a>
+        <span class="category">Geography</span>
+        <span class="excerpt">Taking a road trip? We’ve mapped out some must-visit — and rather quirky — roadside attractions in America’s western states.</span>
+        <h1>Strange Americana: The Best Roadside Attractions in America's Western States</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/world-view/woke-definition' data-content-id='788695' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444583/5e33da8ca890e82af9eddfb13001ed89.jpg" alt=""/>
+      </a>
+        <span class="category">World View</span>
+        <span class="excerpt">“Woke” is a colloquial term coined by Black Americans, and its popularity has exploded. So, what is “woke”?</span>
+        <h1>What Does ‘Woke’ Stand For? Woke’s Defintion and More</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/history/America-in-Afghanistan-explained' data-content-id='788739' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444582/8d0ea667e64344f229927edc278fab5e.jpg" alt=""/>
+      </a>
+        <span class="category">History</span>
+        <span class="excerpt">Since 2001, the U.S. military has occupied Afghanistan. As President Biden acts on his promise to send remaining troops home, we’re looking back at the 20 years the U.S. spent there.</span>
+        <h1>United States in Afghanistan: 20 Years of Combat Explained</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/science/climate-change-reveals-lacking-infrastructure-united-states' data-content-id='788690' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/443927/e9f3d79e29327f62817a4a1861e1ba04.jpg" alt=""/>
+      </a>
+        <span class="category">Science</span>
+        <span class="excerpt">Folks are quick to mock Texans when it snows or San Franciscans during a heat wave. But intense weather has revealed sorely lacking infrastructure — and that’s no joke.</span>
+        <h1>Climate Change Is Revealing a Lack of Infrastructure & Preparedness — & It Isn’t Funny</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/science/converting-plastic-into-vanilla-flavoring' data-content-id='788524' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444560/a204c22088ac4cefee5d97a567fc54c0.jpg" alt=""/>
+      </a>
+        <span class="category">Science</span>
+        <span class="excerpt">It’s no secret that plastic waste is harmful to sealife and our planet in general. Now, scientists have discovered a strange, edible solution to this environmental issue.</span>
+        <h1>Trash to Treats: How Scientists Are Turning Plastic Waste Into Vanilla Flavoring</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/history/poseidon-adventures' data-content-id='788514' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444549/e127a9441f7253ebea283b1d00830df9.jpg" alt=""/>
+      </a>
+        <span class="category">History</span>
+        <span class="excerpt">As the ruler of the sea, Poseidon is one of the most iconic Greek gods, so we’re diving into everything you need to know about Zeus’ brother.</span>
+        <h1>Poseidon Adventures: A Deep Dive Into Zeus’ Other Brother</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/history/history-americans-with-disabilities-act' data-content-id='788508' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.reference.com/content/444534/2a46c9cd99970cf295d44530c88bf909.jpg" alt=""/>
+      </a>
+        <span class="category">History</span>
+        <span class="excerpt">July is Disability Pride Month, celebrating people living with disabilities and the Americans With Disabilities Act. Learn more about this important month and the history of the ADA.</span>
+        <h1>Celebrating Disability Pride Month and the History of the ADA</h1>
+      </div></div>
+</div>
+
+
+
+
+
+
+
+
+        <div class="PartialCategoryArticleTiles-categories above-content">
+          <div>
+                
+<a href="/science/full-moon-names" class="PartialCategoryArticleTiles-tile" data-content-id='788502' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/443846/48318571f185dab5ff98e9289a3e870a_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Science</div>
+<div class="PartialCategoryArticleTiles-title">What Moon Is It This Month? A Year-Round Glossary of Named Moons</div>
+</div>
+
+</a>
+                
+</div><div>
+                
+<a href="/world-view/using-a-compass-and-other-camping-hiking-tips" class="PartialCategoryArticleTiles-tile" data-content-id='788484' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444264/0754472aae8d2c6eb1db28531960a70b_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">World View</div>
+<div class="PartialCategoryArticleTiles-title">How to Use a Compass Properly & Other Tips for Camping This Summer</div>
+</div>
+
+</a>
+                
+</div><div>
+                
+<a href="/science/are-artificial-chatbots-future-customer-service" class="PartialCategoryArticleTiles-tile" data-content-id='788478' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444262/dd6d72fd3ab1125c93a8b6405ab4fe9e_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Science</div>
+<div class="PartialCategoryArticleTiles-title">Are Artificial Chatbots the Future of Customer Service?</div>
+</div>
+
+</a>
+                
+</div>        </div>
+        
+<div class="home-page-ad">
+<div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div class="home-page-between-content-ad"><div id="RTK_7DZR"></div></div></div>
+</div>
+
+
+
+
+<div class="PartialCategoryArticleTiles-categories below-content">
+<div>
+                
+<a href="/history/fact-check-moon-landing" class="PartialCategoryArticleTiles-tile" data-content-id='788442' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/443820/5e99cd2d82aeb7e48f4c128216836b0f_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">History</div>
+<div class="PartialCategoryArticleTiles-title">Fact Check: Why Do People Think the Moon Landing Was a Hoax?</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/history/olympics-canceled" class="PartialCategoryArticleTiles-tile" data-content-id='788327' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444425/48ab5f2746939838f69fafb2bc894a25_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">History</div>
+<div class="PartialCategoryArticleTiles-title">5 Times the Olympic Games Were Canceled (& 6 Times They Almost Were)</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/history/history-of-olympic-games" class="PartialCategoryArticleTiles-tile" data-content-id='788294' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/443890/0ff77ea03fdeb6f1e8b271b338285fa5_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">History</div>
+<div class="PartialCategoryArticleTiles-title">Tokyo 2020: Here's How the First Modern Olympics Started 125 Years Ago</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/history/facts-about-shakespeare" class="PartialCategoryArticleTiles-tile" data-content-id='788471' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444260/baa06589e811ad1e56cbc40f6d429469_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">History</div>
+<div class="PartialCategoryArticleTiles-title">All About Shakespeare: 6 Fascinating Facts About the Bard's Life and Works</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/history/franklin-d-roosevelt-history-and-legacy-president" class="PartialCategoryArticleTiles-tile" data-content-id='788458' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444259/94f02a7e5310c1bb3464253683a0ba1a_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">History</div>
+<div class="PartialCategoryArticleTiles-title">Franklin D. Roosevelt: History & Legacy of America's Four-Time President</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/world-view/Eid-al-Adha-festival-past-present" class="PartialCategoryArticleTiles-tile" data-content-id='788272' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/443700/afdae9b192764ad716e92fb456a4322f_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">World View</div>
+<div class="PartialCategoryArticleTiles-title">Festival of Sacrifice: The Past and Present of the Islamic Holiday of Eid al-Adha</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/geography/delta-geography-a35491c5c243bced" class="PartialCategoryArticleTiles-tile" data-content-id='788288' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444235/5a299758969d68fe6e24ab9322098ebd_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Geography</div>
+<div class="PartialCategoryArticleTiles-title">Know Your Body (of Water!): The Differences Between a Bay, a Sound and a Delta</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/science/best-science-podcasts" class="PartialCategoryArticleTiles-tile" data-content-id='788216' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444222/ead6211ff5abce887ba5ab6933576618_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Science</div>
+<div class="PartialCategoryArticleTiles-title">6 Science Podcasts You Should Download Today</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/pets-animals/shark-week-shark-info-for-kids" class="PartialCategoryArticleTiles-tile" data-content-id='788210' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.reference.com/content/444216/167863c39e7e70b4be0c2d1ea8f48f8b_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Pets & Animals</div>
+<div class="PartialCategoryArticleTiles-title">Shark Week 2021: Shark Info for Kids Who Are Fascinated By These Fish</div>
+</div>
+
+</a>
+</div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#92C93B">World View</div>
+<div><a href="/world-view/what-are-tenants-rights-during-eviction" class="PartialCategoryArticleTiles-tile" data-content-id='788846' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.reference.com/content/443698/a871ebc92c55034e8eca696b11778d59.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">What Are a Tenant’s Rights During Eviction?</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/world-view/woke-definition" class="PartialCategoryArticleTiles-tile" data-content-id='788695' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">What Does ‘Woke’ Stand For? Woke’s Defintion and More</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/world-view/using-a-compass-and-other-camping-hiking-tips" class="PartialCategoryArticleTiles-tile" data-content-id='788484' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">How to Use a Compass Properly & Other Tips for Camping This Summer</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/world-view/Eid-al-Adha-festival-past-present" class="PartialCategoryArticleTiles-tile" data-content-id='788272' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Festival of Sacrifice: The Past and Present of the Islamic Holiday of Eid al-Adha</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/world-view/bizarre-baseball-curses-around-world" class="PartialCategoryArticleTiles-tile" data-content-id='788122' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">5 Bizarre Baseball Curses and Superstitions From Around the World</div>
+</div>
+</a>
+
+
+</div></div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#92C93B">Geography</div>
+<div><a href="/geography/strange-americana-roadside-attractions-western-states" class="PartialCategoryArticleTiles-tile" data-content-id='788823' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.reference.com/content/444644/d38a6a1da533a0aac54f0c43484896c6.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Strange Americana: The Best Roadside Attractions in America's Western States</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/geography/delta-geography-a35491c5c243bced" class="PartialCategoryArticleTiles-tile" data-content-id='788288' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Know Your Body (of Water!): The Differences Between a Bay, a Sound and a Delta</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/geography/brood-x-cicadas-appearance" class="PartialCategoryArticleTiles-tile" data-content-id='787426' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Brood X Cicadas Are Here — Find Out Where You Can See Their 17-Year Emergence</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/geography/china-taiwan-tensions-global-relations" class="PartialCategoryArticleTiles-tile" data-content-id='787088' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">What's Going on in Taiwan? How China-Taiwan Tensions Impact Global Relations</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/geography/ireland-vacation-castles" class="PartialCategoryArticleTiles-tile" data-content-id='786852' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Ireland Vacation Castles: Where to Stay and What to Tour</div>
+</div>
+</a>
+
+
+</div></div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#92C93B">History</div>
+<div><a href="/history/-meaning-GOP-political-history" class="PartialCategoryArticleTiles-tile" data-content-id='788894' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.reference.com/content/444690/26a5224b16f8264caf599fa4e42d51d0.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">What Does GOP Mean in Politics Now vs. When It Was Conceived?</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/history/book-of-revelation" class="PartialCategoryArticleTiles-tile" data-content-id='788884' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">The Book of Revelation Explained: An Overview of the End of the World</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/history/America-in-Afghanistan-explained" class="PartialCategoryArticleTiles-tile" data-content-id='788739' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">United States in Afghanistan: 20 Years of Combat Explained</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/history/poseidon-adventures" class="PartialCategoryArticleTiles-tile" data-content-id='788514' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Poseidon Adventures: A Deep Dive Into Zeus’ Other Brother</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/history/history-americans-with-disabilities-act" class="PartialCategoryArticleTiles-tile" data-content-id='788508' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Celebrating Disability Pride Month and the History of the ADA</div>
+</div>
+</a>
+
+
+</div></div>
+</div>
+
+
+
+
+<!-- view more disabled -->
+        <!--<div class="PartialCategoryArticleTiles-load-more-div">-->
+        <!--  <button class="PartialCategoryArticleTiles-load-more">View More</button>-->
+        <!--</div>-->
+    <div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div class="home-page-between-content-ad"><div id="RTK_dOL6"></div></div></div>
+
+    </div>
+
+
+
+
+      <div class="d-lg-block col-12 col-lg-3 right-sidebar">
+
+    <div class="PartialTrendingArticles-body right-float">
+          <div class="PartialTrendingArticles-section-title">Trending Articles</div>
+          <div class="PartialTrendingArticles-body-inner">
+            <a href="/geography/many-cities-united-states-cfb3be08284e6a62" class="PartialTrendingArticles-hero-tile" data-content-id='445404' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">1</div>
+      <img src="https://www.reference.com/content/443181/4bc7c8e3de8134cca0d45c25dae011c4.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">How Many Cities Are There in the United States?</div>
+    </div>
+  </a>  <a href="/world-view/many-tickets-roll-lottery-tickets" class="PartialTrendingArticles-hero-tile" data-content-id='777376' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">2</div>
+      <img src="https://www.reference.com/content/443383/3b5ab383ffe4817eed84c9cec999efd6.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">How Many Tickets Are in a Roll of Lottery Tickets?</div>
+    </div>
+  </a>  <a href="/science/3-centimeters-look-like-88ce0ea961592fb9" class="PartialTrendingArticles-hero-tile" data-content-id='438068' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">3</div>
+      <img src="https://www.reference.com/content/241434/4e2b436d0548488e820330200cc51825.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">How Big Is 3 Centimeters?</div>
+    </div>
+  </a>  <a href="/pets-animals/tech-savvy-pigs-mastering-video-games" class="PartialTrendingArticles-hero-tile" data-content-id='786740' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">4</div>
+      <img src="https://www.reference.com/content/443838/0de28de45a4807be2ec698250f8f2fd4.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">8-Bit Oinkers: These Tech-Savvy Pigs Are Mastering Video Games</div>
+    </div>
+  </a>  <a href="/history/flight-MH370-vanishing-aircraft-mystery" class="PartialTrendingArticles-hero-tile" data-content-id='780107' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">5</div>
+      <img src="https://www.reference.com/content/443471/7475e0349309f9bcbc4b317e191bc228.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">Flight MH370: The Vanishing Aircraft That Became Aviation's Biggest Mystery</div>
+    </div>
+  </a>          </div>
+        </div>
+    <div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div style="min-height:250px; width:300px; margin:0 auto;"><div id="RTK_dOL6"></div></div>
+</div>
+      </div>
+    </div>
+    
+
+
+<style>
+  footer .PartialSocialLinks path { fill:#3C5B74!important; }
+  footer .PartialSocialLinks .share-button-svg { border-color:#3C5B74!important; }
+</style>
+
+<footer class="l-footer content-visible row">
+
+<div class="col-md-2 footer-logo-col">
+  <a href="/" class="footer-logo-link" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="23px" viewBox="0 0 146 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ref-logo</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reference-logo">
+            <path d="M19.3582307,22.6973684 L18.7485226,22.8486842 L17.5291065,22.8486842 C16.3909791,22.8486842 15.4662645,22.7175452 14.7549349,22.4552632 C14.0436052,22.1929811 13.3627714,21.7188631 12.7124129,21.0328947 L12.7124129,20.5789474 C12.7124129,17.8148985 12.3415109,15.7872872 11.5996957,14.4960526 C10.8578805,13.2048181 9.68420426,12.5592105 8.07863169,12.5592105 L6.15805133,12.5592105 L6.00562431,12.7105263 L6.00562431,21.0328947 L6.31047834,21.6381579 L7.22504042,21.9407895 L8.1700879,21.9407895 L8.32251491,22.0921053 L8.32251491,22.5460526 L8.1700879,22.6973684 L6.70678857,22.6973684 L4.26795636,22.5460526 L1.82912416,22.6973684 L0.152427013,22.6973684 L0,22.5460526 L0,22.0921053 L0.152427013,21.9407895 L1.31087231,21.9407895 L2.22543439,21.6381579 L2.53028842,20.7302632 L2.53028842,3.48026316 L2.22543439,2.57236842 L1.31087231,2.26973684 L0.152427013,2.26973684 L0,2.11842105 L0,1.66447368 L0.152427013,1.51315789 L1.82912416,1.51315789 L4.26795636,1.66447368 L7.92620468,1.51315789 L9.45047481,1.51315789 C10.5682785,1.51315789 11.5844484,1.63420932 12.4990151,1.87631579 C13.4135817,2.11842226 14.2011134,2.4664451 14.8616338,2.92039474 C15.5221541,3.37434438 16.0302391,3.91907577 16.3859039,4.55460526 C16.7415687,5.19013476 16.9193984,5.89122424 16.9193984,6.65789474 C16.9193984,7.26316092 16.7923772,7.84319898 16.5383309,8.39802632 C16.2842846,8.95285365 15.9184634,9.46732219 15.4408564,9.94144737 C14.9632494,10.4155725 14.3941942,10.8291649 13.7336739,11.1822368 C13.0731535,11.5353088 12.3262686,11.8228059 11.4929968,12.0447368 C13.0782456,12.4078966 14.2976496,13.1342051 15.1512451,14.2236842 L16.6755152,20.2763158 L17.2242525,21.3355263 L18.4436686,21.9407895 L19.5106577,21.9407895 L19.6630847,22.0921053 L19.6630847,22.3947368 L19.3582307,22.6973684 Z M13.2001793,6.9 C13.2001793,6.2342072 13.0934815,5.62390628 12.8800826,5.06907895 C12.6666837,4.51425161 12.3618327,4.04013355 11.9655205,3.64671053 C11.5692083,3.25328751 11.0916084,2.95065895 10.5327066,2.73881579 C9.97380476,2.52697263 9.35902195,2.42105263 8.68833974,2.42105263 L7.22504042,2.42105263 L6.31047834,2.72368421 L6.00562431,3.32894737 L6.00562431,11.5 L6.15805133,11.6513158 L8.53591273,11.6513158 C10.0601905,11.6513158 11.2186242,11.2478111 12.0112486,10.4407895 C12.8038731,9.63376789 13.2001793,8.45351654 13.2001793,6.9 L13.2001793,6.9 Z M32.9583067,14.6776316 L23.3858903,14.6776316 L23.2334633,14.9802632 L23.2334633,15.8881579 C23.2334633,17.724132 23.6196079,19.1565738 24.3919086,20.1855263 C25.1642093,21.2144788 26.221026,21.7289474 27.5623905,21.7289474 C28.6598705,21.7289474 29.5896659,21.3859683 30.3518048,20.7 C31.1139437,20.0140317 31.6271095,19.0456203 31.8913176,17.7947368 L32.1352009,17.5526316 L32.3790841,17.5526316 C32.5619974,17.5526316 32.7195038,17.6333325 32.8516078,17.7947368 C32.9837119,17.9561412 33.0497629,18.1780688 33.0497629,18.4605263 C32.907497,19.1464947 32.6534545,19.7668832 32.2876279,20.3217105 C31.9218012,20.8765379 31.4797673,21.3506559 30.9615129,21.7440789 C30.4432584,22.137502 29.8538799,22.4451743 29.1933595,22.6671053 C28.5328392,22.8890362 27.8367628,23 27.1051094,23 C24.808531,23 23.014991,22.3594362 21.7244359,21.0782895 C20.4338807,19.7971427 19.7886128,18.0166781 19.7886128,15.7368421 L19.7886128,15.4342105 C19.7886128,14.3447314 19.9715234,13.3359696 20.3373501,12.4078947 C20.7031767,11.4798199 21.2061808,10.6778543 21.8463775,10.0019737 C22.4865741,9.32609311 23.2588633,8.80153695 24.1632681,8.42828947 C25.0676729,8.05504199 26.0482769,7.86842105 27.1051094,7.86842105 C27.9790287,7.86842105 28.7767221,8.02982295 29.4982135,8.35263158 C30.219705,8.67544021 30.8446495,9.12938304 31.3730658,9.71447368 C31.9014821,10.2995643 32.3181118,11.0006538 32.6229673,11.8177632 C32.9278229,12.6348725 33.09041,13.5377144 33.1107337,14.5263158 L32.9583067,14.6776316 Z M29.7573395,13.4671053 C29.7573395,11.9539398 29.4931353,10.7938637 28.964719,9.98684211 C28.4363027,9.17982053 27.7148221,8.77631579 26.8002554,8.77631579 C25.8856888,8.77631579 25.1133996,9.21008338 24.4833648,10.0776316 C23.85333,10.9451798 23.4570237,12.1758692 23.2944341,13.7697368 L29.4524854,13.7697368 L29.7573395,13.4671053 Z M46.2230434,2.875 C46.2230434,3.27851079 46.0553753,3.64670886 45.7200342,3.97960526 C45.3846931,4.31250166 45.0137911,4.47894737 44.607317,4.47894737 C44.1398719,4.47894737 43.7689698,4.34276452 43.4945998,4.07039474 C43.2202299,3.79802495 43.0830469,3.42982688 43.0830469,2.96578947 L43.0830469,2.875 L44.2110068,1.75526316 C43.784209,1.14999697 43.2049922,0.847368421 42.4733389,0.847368421 C41.7823329,0.847368421 41.2285203,1.09955888 40.8118844,1.60394737 C40.3952485,2.10833586 40.1869337,2.78420629 40.1869337,3.63157895 L40.1869337,8.01973684 L40.3393607,8.17105263 L43.540328,8.17105263 L43.692755,8.32236842 L43.692755,9.07894737 L43.540328,9.23026316 L40.3393607,9.23026316 L40.1869337,9.38157895 L40.1869337,21.0328947 L40.4917877,21.6381579 L41.4063498,21.9407895 L42.6257659,21.9407895 L42.7781929,22.0921053 L42.7781929,22.5460526 L42.6257659,22.6973684 L40.9490687,22.6973684 L38.6016927,22.5460526 L36.2238313,22.6973684 L34.8519882,22.6973684 L34.6995612,22.5460526 L34.6995612,22.0921053 L34.8519882,21.9407895 L35.7665503,21.9407895 L36.6811124,21.6381579 L36.9859664,21.0328947 L36.9859664,9.38157895 L36.8335394,9.23026316 L34.6995612,9.23026316 L34.5471342,9.07894737 L34.5471342,8.625 L34.6995612,8.47368421 L36.6811124,8.17105263 L36.9859664,7.86842105 L36.9859664,4.53947368 C37.148556,3.85350534 37.3975176,3.23311681 37.7328588,2.67828947 C38.0681999,2.12346214 38.4746678,1.64934407 38.9522749,1.25592105 C39.4298819,0.862498033 39.9532094,0.554825671 40.5222731,0.332894737 C41.0913368,0.110963803 41.690877,0 42.3209118,0 L42.4733389,0 C43.5504951,0 44.4447247,0.267321888 45.1560543,0.801973684 C45.8673839,1.33662548 46.2230434,2.02762734 46.2230434,2.875 L46.2230434,2.875 Z M57.5976851,14.6776316 L48.0252686,14.6776316 L47.8728416,14.9802632 L47.8728416,15.8881579 C47.8728416,17.724132 48.2589862,19.1565738 49.0312869,20.1855263 C49.8035877,21.2144788 50.8604044,21.7289474 52.2017688,21.7289474 C53.2992488,21.7289474 54.2290443,21.3859683 54.9911831,20.7 C55.753322,20.0140317 56.2664878,19.0456203 56.530696,17.7947368 L56.7745792,17.5526316 L57.0184624,17.5526316 C57.2013757,17.5526316 57.3588821,17.6333325 57.4909862,17.7947368 C57.6230902,17.9561412 57.6891413,18.1780688 57.6891413,18.4605263 C57.5468754,19.1464947 57.2928329,19.7668832 56.9270062,20.3217105 C56.5611795,20.8765379 56.1191456,21.3506559 55.6008912,21.7440789 C55.0826368,22.137502 54.4932582,22.4451743 53.8327378,22.6671053 C53.1722175,22.8890362 52.4761411,23 51.7444878,23 C49.4479093,23 47.6543694,22.3594362 46.3638142,21.0782895 C45.073259,19.7971427 44.4279911,18.0166781 44.4279911,15.7368421 L44.4279911,15.4342105 C44.4279911,14.3447314 44.6109017,13.3359696 44.9767284,12.4078947 C45.342555,11.4798199 45.8455592,10.6778543 46.4857558,10.0019737 C47.1259525,9.32609311 47.8982416,8.80153695 48.8026464,8.42828947 C49.7070512,8.05504199 50.6876552,7.86842105 51.7444878,7.86842105 C52.618407,7.86842105 53.4161004,8.02982295 54.1375919,8.35263158 C54.8590833,8.67544021 55.4840278,9.12938304 56.0124441,9.71447368 C56.5408604,10.2995643 56.9574901,11.0006538 57.2623456,11.8177632 C57.5672012,12.6348725 57.7297884,13.5377144 57.7501121,14.5263158 L57.5976851,14.6776316 Z M54.3967178,13.4671053 C54.3967178,11.9539398 54.1325136,10.7938637 53.6040973,9.98684211 C53.075681,9.17982053 52.3542004,8.77631579 51.4396337,8.77631579 C50.5250671,8.77631579 49.7527779,9.21008338 49.1227431,10.0776316 C48.4927083,10.9451798 48.0964021,12.1758692 47.9338124,13.7697368 L54.0918638,13.7697368 L54.3967178,13.4671053 Z M71.1672757,10.4407895 C71.1672757,11.1267578 70.9691226,11.6866206 70.5728104,12.1203947 C70.1764982,12.5541688 69.7039792,12.7710526 69.1552392,12.7710526 C68.7894125,12.7710526 68.469319,12.6500012 68.194949,12.4078947 C67.920579,12.1657883 67.7325876,11.8429845 67.630969,11.4394737 L67.630969,11.2881579 L68.7894143,10.1381579 C68.7894143,9.87587588 68.697959,9.65899209 68.5150457,9.4875 C68.3321324,9.31600791 68.0984133,9.23026316 67.8138815,9.23026316 C67.2041704,9.23026316 66.640196,9.66403075 66.1219416,10.5315789 C65.6036872,11.3991271 65.171815,12.6298166 64.826312,14.2236842 L64.826312,21.0328947 L65.131166,21.6381579 L66.0457281,21.9407895 L67.2651442,21.9407895 L67.4175712,22.0921053 L67.4175712,22.5460526 L67.2651442,22.6973684 L65.4969909,22.6973684 L63.2410711,22.5460526 L60.9241805,22.6973684 L59.4913665,22.6973684 L59.3389395,22.5460526 L59.3389395,22.0921053 L59.4913665,21.9407895 L60.4059286,21.9407895 L61.3204907,21.6381579 L61.6253447,21.0328947 L61.6253447,10.1381579 L61.3204907,9.23026316 L60.4059286,8.92763158 L59.6437936,8.92763158 L59.4913665,8.77631579 L59.4913665,8.32236842 L59.6437936,8.17105263 L64.369031,8.17105263 L64.521458,8.32236842 L64.521458,12.2565789 C64.8263135,10.8846423 65.3343985,9.8103109 66.0457281,9.03355263 C66.7570577,8.25679436 67.5699937,7.86842105 68.4845603,7.86842105 C69.2771847,7.86842105 69.9224526,8.10548009 70.4203834,8.57960526 C70.9183141,9.05373044 71.1672757,9.67411897 71.1672757,10.4407895 L71.1672757,10.4407895 Z M84.5234686,14.6776316 L74.9510522,14.6776316 L74.7986252,14.9802632 L74.7986252,15.8881579 C74.7986252,17.724132 75.1847697,19.1565738 75.9570705,20.1855263 C76.7293712,21.2144788 77.7861879,21.7289474 79.1275523,21.7289474 C80.2250323,21.7289474 81.1548278,21.3859683 81.9169667,20.7 C82.6791056,20.0140317 83.1922714,19.0456203 83.4564795,17.7947368 L83.7003627,17.5526316 L83.9442459,17.5526316 C84.1271593,17.5526316 84.2846656,17.6333325 84.4167697,17.7947368 C84.5488738,17.9561412 84.6149248,18.1780688 84.6149248,18.4605263 C84.4726589,19.1464947 84.2186164,19.7668832 83.8527897,20.3217105 C83.4869631,20.8765379 83.0449292,21.3506559 82.5266747,21.7440789 C82.0084203,22.137502 81.4190417,22.4451743 80.7585214,22.6671053 C80.098001,22.8890362 79.4019246,23 78.6702713,23 C76.3736928,23 74.5801529,22.3594362 73.2895977,21.0782895 C71.9990426,19.7971427 71.3537747,18.0166781 71.3537747,15.7368421 L71.3537747,15.4342105 C71.3537747,14.3447314 71.5366853,13.3359696 71.9025119,12.4078947 C72.2683386,11.4798199 72.7713427,10.6778543 73.4115393,10.0019737 C74.051736,9.32609311 74.8240251,8.80153695 75.7284299,8.42828947 C76.6328347,8.05504199 77.6134387,7.86842105 78.6702713,7.86842105 C79.5441905,7.86842105 80.3418839,8.02982295 81.0633754,8.35263158 C81.7848669,8.67544021 82.4098114,9.12938304 82.9382277,9.71447368 C83.4666439,10.2995643 83.8832736,11.0006538 84.1881292,11.8177632 C84.4929847,12.6348725 84.6555719,13.5377144 84.6758956,14.5263158 L84.5234686,14.6776316 Z M81.3225013,13.4671053 C81.3225013,11.9539398 81.0582971,10.7938637 80.5298809,9.98684211 C80.0014646,9.17982053 79.2799839,8.77631579 78.3654173,8.77631579 C77.4508506,8.77631579 76.6785615,9.21008338 76.0485267,10.0776316 C75.4184919,10.9451798 75.0221856,12.1758692 74.859596,13.7697368 L81.0176473,13.7697368 L81.3225013,13.4671053 Z M103.184122,22.6973684 L101.812278,22.6973684 L99.434417,22.5460526 L97.087041,22.6973684 L95.7151979,22.6973684 L95.5627709,22.5460526 L95.5627709,22.0921053 L95.7151979,21.9407895 L96.6297599,21.9407895 L97.544322,21.6381579 L97.8491761,21.0328947 L97.8491761,11.0460526 C97.3817309,9.97674904 96.6196034,9.44210526 95.5627709,9.44210526 C94.7091753,9.44210526 93.9572096,9.74977762 93.3068511,10.3651316 C92.6564926,10.9804855 92.1382459,11.8631521 91.7520955,13.0131579 L91.7520955,21.0328947 L92.0569496,21.6381579 L92.9715116,21.9407895 L93.8860737,21.9407895 L94.0385007,22.0921053 L94.0385007,22.5460526 L93.8860737,22.6973684 L92.5142306,22.6973684 L90.1668546,22.5460526 L87.7889932,22.6973684 L86.4171501,22.6973684 L86.2647231,22.5460526 L86.2647231,22.0921053 L86.4171501,21.9407895 L87.3317122,21.9407895 L88.2462742,21.6381579 L88.5511283,21.0328947 L88.5511283,9.83552632 L88.2462742,9.23026316 L87.3317122,8.92763158 L86.5695771,8.92763158 L86.4171501,8.77631579 L86.4171501,8.32236842 L86.5695771,8.17105263 L91.5996685,8.17105263 L91.7520955,8.32236842 L91.7520955,11.1973684 C92.951194,8.97805908 94.6278744,7.86842105 96.782187,7.86842105 C97.7780484,7.86842105 98.6417929,8.14078675 99.3734462,8.68552632 C100.1051,9.23026588 100.663993,10.0171001 101.050143,11.0460526 L101.050143,21.0328947 L101.354997,21.6381579 L102.269559,21.9407895 L103.184122,21.9407895 L103.336549,22.0921053 L103.336549,22.5460526 L103.184122,22.6973684 Z M117.485362,18.3092105 C117.180506,19.7618494 116.504753,20.9067941 115.458083,21.7440789 C114.411412,22.5813638 113.156442,23 111.693135,23 C109.477852,23 107.730039,22.3594362 106.449646,21.0782895 C105.169253,19.7971427 104.529066,18.0166781 104.529066,15.7368421 L104.529066,15.4342105 C104.529066,14.3447314 104.717057,13.3359696 105.093046,12.4078947 C105.469034,11.4798199 105.997443,10.6778543 106.678287,10.0019737 C107.359131,9.32609311 108.166986,8.80153695 109.101876,8.42828947 C110.036766,8.05504199 111.052936,7.86842105 112.150416,7.86842105 C112.88207,7.86842105 113.552742,7.95920962 114.162453,8.14078947 C114.772164,8.32236933 115.300572,8.5796036 115.747694,8.9125 C116.194815,9.2453964 116.545394,9.6287259 116.79944,10.0625 C117.053487,10.4962741 117.180508,10.975436 117.180508,11.5 C117.180508,12.024564 116.992516,12.4835507 116.616528,12.8769737 C116.240539,13.2703967 115.76802,13.4671053 115.198957,13.4671053 C114.67054,13.4671053 114.223426,13.3208348 113.857599,13.0282895 C113.491772,12.7357442 113.258053,12.3271956 113.156435,11.8026316 L113.156435,11.6513158 L114.741676,10.0776316 L114.741676,9.92631579 C114.192936,9.15964529 113.329191,8.77631579 112.150416,8.77631579 C111.561029,8.77631579 111.017378,8.92763007 110.519447,9.23026316 C110.021517,9.53289625 109.589644,9.95657622 109.223818,10.5013158 C108.857991,11.0460554 108.568383,11.7118382 108.354984,12.4986842 C108.141585,13.2855302 108.034887,14.1631531 108.034887,15.1315789 C108.034887,17.2701861 108.400708,18.9043803 109.132362,20.0342105 C109.864015,21.1640407 110.920832,21.7289474 112.302843,21.7289474 C113.38,21.7289474 114.274229,21.3607493 114.985559,20.6243421 C115.696888,19.8879349 116.154165,18.8842169 116.357402,17.6131579 L116.5708,17.4013158 L116.723227,17.4013158 C116.926464,17.4013158 117.104294,17.4870605 117.256721,17.6585526 C117.409149,17.8300447 117.485362,18.0469285 117.485362,18.3092105 L117.485362,18.3092105 Z M131.847573,14.6776316 L122.275157,14.6776316 L122.12273,14.9802632 L122.12273,15.8881579 C122.12273,17.724132 122.508874,19.1565738 123.281175,20.1855263 C124.053476,21.2144788 125.110292,21.7289474 126.451657,21.7289474 C127.549137,21.7289474 128.478932,21.3859683 129.241071,20.7 C130.00321,20.0140317 130.516376,19.0456203 130.780584,17.7947368 L131.024467,17.5526316 L131.26835,17.5526316 C131.451264,17.5526316 131.60877,17.6333325 131.740874,17.7947368 C131.872978,17.9561412 131.939029,18.1780688 131.939029,18.4605263 C131.796763,19.1464947 131.542721,19.7668832 131.176894,20.3217105 C130.811067,20.8765379 130.369034,21.3506559 129.850779,21.7440789 C129.332525,22.137502 128.743146,22.4451743 128.082626,22.6671053 C127.422105,22.8890362 126.726029,23 125.994376,23 C123.697797,23 121.904257,22.3594362 120.613702,21.0782895 C119.323147,19.7971427 118.677879,18.0166781 118.677879,15.7368421 L118.677879,15.4342105 C118.677879,14.3447314 118.86079,13.3359696 119.226616,12.4078947 C119.592443,11.4798199 120.095447,10.6778543 120.735644,10.0019737 C121.37584,9.32609311 122.14813,8.80153695 123.052534,8.42828947 C123.956939,8.05504199 124.937543,7.86842105 125.994376,7.86842105 C126.868295,7.86842105 127.665988,8.02982295 128.38748,8.35263158 C129.108971,8.67544021 129.733916,9.12938304 130.262332,9.71447368 C130.790748,10.2995643 131.207378,11.0006538 131.512234,11.8177632 C131.817089,12.6348725 131.979676,13.5377144 132,14.5263158 L131.847573,14.6776316 Z M128.646606,13.4671053 C128.646606,11.9539398 128.382402,10.7938637 127.853985,9.98684211 C127.325569,9.17982053 126.604088,8.77631579 125.689522,8.77631579 C124.774955,8.77631579 124.002666,9.21008338 123.372631,10.0776316 C122.742596,10.9451798 122.34629,12.1758692 122.1837,13.7697368 L128.341752,13.7697368 L128.646606,13.4671053 Z" id="Reference" fill="#3C5B74"></path>
+            <path d="M145.70097,4.28239724 C145.70097,4.66305668 145.572039,4.98423326 145.314173,5.24593662 C145.056307,5.50763998 144.71863,5.6384897 144.301133,5.6384897 C144.030988,5.6384897 143.779265,5.57306484 143.545958,5.44221316 C143.31265,5.31136148 143.146882,5.1150869 143.048647,4.85338354 L141.13308,5.78123627 L142.127701,7.74400168 C142.324171,7.67262803 142.532916,7.63694174 142.753944,7.63694174 C143.122324,7.63694174 143.447722,7.76184375 143.730147,8.0116515 C144.012571,8.26145926 144.153782,8.58858355 144.153782,8.9930342 C144.153782,9.37369364 144.024851,9.69487022 143.766985,9.95657358 C143.509118,10.2182769 143.171442,10.3491267 142.753944,10.3491267 C142.385564,10.3491267 142.060167,10.2182769 141.777742,9.95657358 C141.495317,9.69487022 141.354107,9.37369364 141.354107,8.9930342 C141.354107,8.77891327 141.397084,8.58858641 141.483039,8.42204791 C141.568995,8.2555094 141.661088,8.12465968 141.759323,8.02949483 L140.175297,6.49496915 L138.59127,8.02949483 C138.689505,8.12465968 138.781598,8.2555094 138.867554,8.42204791 C138.953509,8.58858641 138.996486,8.77891327 138.996486,8.9930342 C138.996486,9.37369364 138.855276,9.69487022 138.572851,9.95657358 C138.290426,10.2182769 137.965029,10.3491267 137.596649,10.3491267 C137.179151,10.3491267 136.841475,10.2182769 136.583609,9.95657358 C136.325742,9.69487022 136.196811,9.37369364 136.196811,8.9930342 C136.196811,8.58858355 136.338022,8.26145926 136.620446,8.0116515 C136.902871,7.76184375 137.228269,7.63694174 137.596649,7.63694174 C137.842235,7.63694174 138.050981,7.67262803 138.222892,7.74400168 L139.217513,5.78123627 L137.301946,4.85338354 C137.203711,5.1150869 137.037943,5.31136148 136.804635,5.44221316 C136.571328,5.57306484 136.319605,5.6384897 136.04946,5.6384897 C135.631963,5.6384897 135.294286,5.50763998 135.03642,5.24593662 C134.778554,4.98423326 134.649623,4.66305668 134.649623,4.28239724 C134.649623,3.87794659 134.778554,3.55677001 135.03642,3.31885786 C135.294286,3.08094571 135.631963,2.96199142 136.04946,2.96199142 C136.466958,2.96199142 136.798495,3.08094571 137.044081,3.31885786 C137.289668,3.55677001 137.41246,3.87794659 137.41246,4.28239724 L137.41246,4.46083046 L139.585891,4.74632361 L139.917432,2.67649828 C139.156113,2.48616856 138.775459,2.03414226 138.775459,1.32040582 C138.775459,0.915955165 138.90439,0.594778584 139.162256,0.356866437 C139.420122,0.118954289 139.757799,0 140.175297,0 C140.592794,0 140.930471,0.118954289 141.188337,0.356866437 C141.446203,0.594778584 141.575134,0.915955165 141.575134,1.32040582 C141.575134,2.03414226 141.19448,2.48616856 140.433161,2.67649828 L140.764702,4.74632361 L142.938133,4.46083046 L142.938133,4.28239724 C142.938133,3.87794659 143.060925,3.55677001 143.306512,3.31885786 C143.552098,3.08094571 143.883636,2.96199142 144.301133,2.96199142 C144.71863,2.96199142 145.056307,3.08094571 145.314173,3.31885786 C145.572039,3.55677001 145.70097,3.87794659 145.70097,4.28239724 L145.70097,4.28239724 Z" id="*" fill="#92C93B"></path>
+        </g>
+    </g>
+</svg>  </a>
+</div>
+
+<div class="col-md-9 footer-link-col">
+  
+    <ul class="PartialPageFooter-list">
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/about" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>About</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/privacy" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Privacy Policy</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/terms" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Terms of Service</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/cookies" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Cookie Policy</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://help.askmediagroup.com/hc/en-us" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Help</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://www.reference.com/privacy#2" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>California Privacy Notice</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://www.reference.com/privacy#5.1" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Do Not Sell My Personal Information</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <span class="PartialPageFooter-item-label copyright">© 2021 Ask Media Group</span>
+      </li>
+    </ul>
+</div>
+
+<div class="col-md-1 footer-social-links">
+  
+
+
+
+
+<div class="PartialSocialLinks-label">Follow Us:</div>
+<div class="PartialSocialLinks">
+<div class="share-button-svg fb-share-button-svg " data-href="" >
+<a class="fb-xfbml-parse-ignore PartialSocialLinks-link" target="_blank"
+href='https://www.facebook.com/Referencedotcom' rel='noopener noreferrer' data-unified-assettype="socialLink" data-zone='footer' data-provider-source='socialLink' data-result-type='socialLink'>
+<div class="fb-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.25 16" preserveAspectRatio="xMidYMid meet">
+<path class="fb-a" d="M6.744-11.344H8.25v-2.544A20.127,20.127,0,0,0,6.056-14,3.427,3.427,0,0,0,2.4-10.241V-8H0v2.844H2.4V2H5.334V-5.156h2.3L8-8H5.334V-9.959C5.334-10.781,5.562-11.344,6.744-11.344Z" transform="translate(0 14)"/>
+</svg>
+</div>
+</a>
+</div>           
+    
+
+<a class="share-button-svg twitter-share-button-svg" target="_blank" data-unified-assettype="socialLink"
+href='https://twitter.com/get_reference' rel='noopener noreferrer' data-zone='footer' data-provider-source='socialLink' data-result-type='socialLink'>
+<div class="twitter-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 12" preserveAspectRatio="xMidYMid meet">
+<path class="tw-a" d="M15,1.425a6.39,6.39,0,0,1-1.542,1.566q.01.131.01.394a8.483,8.483,0,0,1-.362,2.433,8.732,8.732,0,0,1-1.1,2.33,9.2,9.2,0,0,1-1.756,1.973A7.85,7.85,0,0,1,7.8,11.489,9.11,9.11,0,0,1,4.721,12,8.632,8.632,0,0,1,0,10.641a6.679,6.679,0,0,0,.742.038A6.077,6.077,0,0,0,4.559,9.384a3.027,3.027,0,0,1-1.789-.6,2.964,2.964,0,0,1-1.085-1.5,3.953,3.953,0,0,0,.581.047,3.226,3.226,0,0,0,.809-.1A3.033,3.033,0,0,1,1.309,6.183a2.9,2.9,0,0,1-.7-1.927V4.219A3.085,3.085,0,0,0,2,4.6,3.042,3.042,0,0,1,1,3.525,2.916,2.916,0,0,1,.628,2.081,2.933,2.933,0,0,1,1.047.553a8.691,8.691,0,0,0,2.8,2.236,8.668,8.668,0,0,0,3.536.933,3.315,3.315,0,0,1-.076-.694,2.9,2.9,0,0,1,.9-2.142A2.986,2.986,0,0,1,10.384,0,2.985,2.985,0,0,1,12.63.956,6.084,6.084,0,0,0,14.581.225,2.948,2.948,0,0,1,13.23,1.894,6.2,6.2,0,0,0,15,1.425Z"/>
+</svg>
+</div>
+</a>
+    
+</div> <!-- social links -->
+
+
+</div>
+
+</footer>
+
+</main><!-- /.container -->
+
+  
+
+  
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script src="/g/theme/iac/qa/bootstrap.bundle.min.js"></script>
+
+<script>
+$('.search-form').on('submit', function(e) {
+  e.preventDefault();
+  var search = $(this).find('.search-box').val();
+  if(search) {
+    window.location.href = 'https://www.reference.com/web?q='+search+ad+an+o+ag+qo;
+  } else {
+    if($(this).find('.search-box').css('display') == 'none') {
+      // $('.mobile-hamburger').parent().removeClass('d-block').hide();
+      $(this).find('.search-box').toggle('fast');
+    } else {
+      $('.mobile-hamburger').parent().addClass('d-block').show();
+    } 
+  }
+});
+
+// suggested search
+var search_box = $('.search-box');
+search_box.on('keyup', function(e) {
+  
+   var this_search_box = $(this);
+   var query = $(this).val();
+   
+   if($(this).hasClass('ask-top-search-box')) {
+     $(this).toggleClass('ask-top-search-open', true);
+   }
+
+   if(query.length > 0) {
+   
+     $.getJSON('https://amg-ss.ask.com/query?lang='+navigator.language+'&limit=10&q='+query, function(d) {
+       
+        $('.ac_results ul').empty();
+        d[1].forEach(function(e) {
+         var v = e.toString().replace(query, '<span class="suggest">'+query+'</span>');
+         $('.ac_results ul').append('<li><a href="https://www.reference.com/web?q='+encodeURIComponent(e)+ad+an+o+ag+qo+'">'+v+'</a></li>');
+        });
+       
+      // click dimiss handler here 
+        $(document).on('click', function(event) { 
+          var $target = $(event.target);
+          if(!$target.closest('.ac_results').length) {
+            $('.ac_results').hide();
+          }
+
+          $('.ask-top-search-box').removeClass('ask-top-search-open');
+
+          $(document).off('click');
+        });
+       
+       $(this_search_box).parent().find('.ac_results').show();
+     });
+   
+   } else {
+     $('.ac_results').hide();
+     if($(this).hasClass('ask-top-search-box')) {
+       $(this).removeClass('ask-top-search-open');
+     }
+   }
+ });
+ 
+ 
+
+
+// carousel
+var carouselOffset = 0; // mobile counts from zero, desktop from one...
+var idx = $('.carousel-inner .active').index();
+if(idx == 0) carouselOffset = 1;
+
+function update_carousel() {
+  var slide = $('.carousel-inner .active').index() + carouselOffset;
+  var max = $('.carousel-inner .carousel-item').length;
+  var title = $('.carousel-inner .active h1').text();
+  var category = $('.carousel-inner .active .category').text();
+  var excerpt = $('.carousel-inner .active .excerpt').text();
+  var link = $('.carousel-inner .active a').attr('href');
+  
+  $('.carousel-cat').text(category);
+  $('.carousel-title').text(title);
+  $('.carousel-current-page').text(slide);
+  $('.carousel-max-page').text(max);
+  $('.carousel-body').text(excerpt);
+  $('.carousel-link').attr('href', link);
+}
+
+$('#carousel').on('slid.bs.carousel', update_carousel);
+
+update_carousel();
+
+
+$('.drawer-trigger').on('click', function(e) {
+  $('#header-menu-control').addClass('drawer-open');
+});
+
+$('.PartialCategoryNavigation-drawer-close-icon').on('click', function(e) {
+  $('#header-menu-control').removeClass('drawer-open');
+});
+
+
+</script>
+
+
+<script>
+// v7.1
+(function(d, s) {
+  var rtk_pub = 'Tm7t'; // change this to your publisher id
+  var custom_domain = 'delivery.askmediagroup.com'; // change this to your custom domain from rtk
+
+  // find on page - old way - may get sidebars on mobile
+  var rtk_load_list = [];
+  var rtk_load = '';
+   $("[id^=RTK_]").each(function() {
+    // if(!$(this).is(":hidden")) {
+      var id = $(this).attr("load-id") || $(this).attr("id");
+      id = id.replace('RTK_', '');
+
+      if(rtk_load_list.indexOf(id) == -1) {
+        rtk_load_list.push(id);
+      }
+    // }
+  });
+
+  // find in dynamic ads - new way
+  if(typeof ajax_ad_json != 'undefined') {
+    for (a in ajax_ad_json) { 
+      const regex = /RTK_([a-zA-Z0-9]{4})/gm;
+      while ((m = regex.exec(ajax_ad_json[a])) !== null) {
+    
+        if (m.index === regex.lastIndex) {
+            regex.lastIndex++;
+        }
+        
+        if(typeof m[1] != 'undefined') {
+          if(rtk_load_list.indexOf(m[1]) == -1) {
+            rtk_load_list.push(m[1]);
+          }
+        }
+      }
+    }
+  }
+
+  rtk_load = rtk_load_list.join('_');
+  console.log("rtk load is", rtk_load);
+  if(rtk_load != '') {
+    var load_path = "/"+rtk_load;
+    var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.async=1; js.defer=1;
+    js.src = "//"+custom_domain+"/"+rtk_pub+load_path+"/jita.js?dfp=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+}(document, 'script'));
+</script>
+
+
+
+
+<script>
+$('.pagination-button').on('click', function() {
+$('.PartialTrendingArticles-body.mid-rail').show();
+});
+</script>
+
+<!-- Pubdream Analytics -->
+<script async src="/g/assets/js/analytics.js"></script>
+<script>
+  window.pubdream = window.pubdream || [];
+  function pdpush(){window.pubdream.push(arguments);}
+  pdpush('pageview');
+</script>
+
+
+
+
+  <script>
+    // home page more articles /
+    var start_feed = 1;
+    var limit_feed = 6;
+    $('.PartialCategoryArticleTiles-load-more').on('click', function (e) {
+      e.preventDefault();
+      $.getJSON('/homefeed/' + start_feed + '/' + limit_feed + '/feed.json', function (data) {
+        start_feed += limit_feed;
+        data.forEach(function (e) {
+          var ht = `
+
+<div>
+                
+<a href='` + e.url + `' class="PartialCategoryArticleTiles-tile">
+
+<img src="` + e.thumb + `" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<!--<div class="PartialCategoryArticleTiles-category"></div>-->
+<div class="PartialCategoryArticleTiles-title">` + e.post_title + `</div>
+</div>
+
+</a>
+                
+</div>
+      `;
+
+          $('.PartialCategoryArticleTiles-categories').append(ht);
+        });
+      });
+    });
+  </script>
+
+</html>

@@ -1,0 +1,2506 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml" style="--col-count:4;" data-content-login="">
+  <head>
+    
+  
+    <script>
+/*<![CDATA[*/
+
+        (function () {
+            // if (checkIfConsentCookieIsPresent()) {
+            //     return;
+            // }
+
+            if (checkBypassCookiePresent()) {
+                return;
+            }
+
+            if (checkIfCookiesAreWritable()) {
+                redirectToInterceptionPage();
+            } else {
+                // Privacy by Default
+                return;
+            }
+
+            // Help functions
+            function checkIfConsentCookieIsPresent () {
+                var localTCString = getCookie('euconsent-v2');
+                return localTCString && localTCString.length > 0;
+            }
+
+            function checkBypassCookiePresent () {
+                var bypassCookieValue = getCookie('euconsent-bypass');
+                return bypassCookieValue && bypassCookieValue === '1';
+            }
+
+            function getCookie (cname) {
+                var name = cname + '=';
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return '';
+            }
+
+            function checkIfCookiesAreWritable () {
+                try {
+                    // Create cookie
+                    document.cookie = 'cookietest=1';
+                    var ret = document.cookie.indexOf('cookietest=') !== -1;
+
+                    // Delete cookie
+                    document.cookie = 'cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT';
+                    return ret;
+                } catch (e) {
+                    // console.log('cookies are not allowed');
+                    return false;
+                }
+            }
+
+            function redirectToInterceptionPage () {
+                var tcfLandingpageURL = window.location.protocol + '//'+ window.location.host + '/consent-management/';
+                window.location.href =tcfLandingpageURL;
+            }
+        })();
+    
+/*]]>*/
+</script>
+
+  <script>
+/*<![CDATA[*/
+
+	window.startupTS = new Date().getTime();
+	document.querySelector('html').classList.add('withjs');
+
+	document.addEventListener('pageStartup', () => {
+		// IntersectionObserver check to only support new-ish browsers (we had some probs with older iOS browsers and animations)
+		if (('IntersectionObserver' in window) || ('IntersectionObserverEntry' in window) || ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+			document.querySelector('html').classList.add('ce-available');
+		}
+	});
+
+	const event = new CustomEvent('pageStartup', { bubbles: true, cancelable: true, detail: { source: 'index.html' } });
+	document.dispatchEvent(event);
+  
+/*]]>*/
+</script>
+  <meta charset="utf-8" />
+  <title>GMX: E-Mail-Adresse, FreeMail, De-Mail & Nachrichten</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.ui-portal.de/gmx/favicon.ico"/>
+  <meta name="description" content="Portal des FreeMail-Pioniers mit Nachrichten und vielen Services. Kostenlos mit GMX FreeMail: E-Mail-Adresse, 1 GB Mail Speicher, Free SMS."/>
+  <meta name="robots" content="index, follow" />
+  <meta name="templateVersion" content="151.1.10"/>
+  <meta name="frontendStage" content="live"/>
+  <meta name="applicationVersion" content="11.44.2"/>
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <link rel="canonical" href="https://www.gmx.net/"/>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://img.ui-portal.de/search-int/osd/web/ff_gmx_opensearch.xml" title="GMX Suche"/>
+  
+    <link rel="alternate" hreflang="de" href="https://www.gmx.net/" />
+    <link rel="alternate" hreflang="de-AT" href="https://www.gmx.at/" />
+    <link rel="alternate" hreflang="de-CH" href="https://www.gmx.ch/" />
+    <link rel="alternate" hreflang="en" href="https://www.gmx.com/" />
+    <link rel="alternate" hreflang="en-GB" href="https://www.gmx.co.uk/" />
+    <link rel="alternate" hreflang="es" href="https://www.gmx.es/" />
+    <link rel="alternate" hreflang="fr" href="https://www.gmx.fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.gmx.com/" />
+
+  
+    
+    <link rel="preload" as="style" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/homepage.css">
+    <link rel="stylesheet" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/homepage.css">
+
+
+  
+    <script>
+window.PageConfig = {
+  "box1Enabled" : true,
+  "brain" : {
+    "prio" : "undefined"
+  },
+  "cont_pagevariant" : "shortlegacy",
+  "cont_tcflayer" : "0",
+  "country" : "de",
+  "optin" : false,
+  "pageidentifier" : "homepage",
+  "reco" : "optout",
+  "site" : "hp",
+  "slimmedSite" : true,
+  "stage" : "live",
+  "tcf" : true,
+  "unitedFallback" : 100,
+  "vorteilswelt" : true
+};
+</script>
+
+  <script>/*<![CDATA[*/
+window.initialData = {
+  "serviceResponse" : {
+    "response" : {
+      "ad" : "<HTML><HEAD><TITLE><\/TITLE><\/HEAD><BODY topmargin=\"0\" leftmargin=\"0\" style=\"background-color:transparent;overflow:hidden;margin:0;padding:0;\"><div style=\"position:absolute;width:1px;height:0px\"><div id=\"obaButton_6994403582298555824\"><\/div><\/div><uim:ad xmlns:uim=\"urn:publicid:-:UIM:adinfo\" contentunitid=\"4498628\" campaignid=\"3509518\" bannerid=\"11048300\" portal=\"gmx\" category=\"homepage\" section=\"homepage\" tagid=\"initial\" layoutclass=\"b\" width=\"1\" height=\"1\" adsize=\"1x1\" ovkid=\"\"><\/uim:ad>\n<script>\n    if (window.AdService && typeof AdService.adMeta === 'function') {\n        AdService.adMeta({\n            contentunitid: '4498628',\n            campaignid: '3509518',\n            bannerid: '11048300',\n            portal: 'gmx',\n            category: 'homepage',\n            section: 'homepage',\n            tagid: 'initial',\n            layoutclass: 'b',\n            width: '1',\n            height: '1',\n            adsize: '1x1',\n            ovkid: ''\n        });\n    }\n<\/script>\n<script id=\"create\">\n\t/*#create#*/[\n\t\t{\n\t\t\t\"type\": \"sitebar\",\n\t\t\t\"variant\": \"sticky\",\n\t\t\t\"right\": {\n\t\t\t\t\"ad\": \"<!-- prebid --><img src=\\\"https://united.uimserv.net/confirm?lid=6994403582298555824&userid=0&adhost=ad176\\\" alt=\\\"\\\" onload=\\\"AdService.setAdProperty('nextTagId','right');AdService.refresh('right');\\\" />\"\n\t\t\t},\n\t\t\t\"blockClean\": true\n\t\t}\n\t]/*#etaerc#*/\n<\/script><script type=\"text/javascript\">\n(function() {\n  var domId = 'obaButton_6994403582298555824',oba='',btr = 'false',position= 'top-right'||'top-right';\n  if (oba != '' || btr == 'true') {\n    var oba_script = document.createElement('script');\n    oba_script.setAttribute('type','text/javascript');\n    oba_script.setAttribute('charset','utf-8');\n          oba_script.setAttribute('src', 'https://imagesrv.adition.com/banners/42/oba_priv.sjs?oba='+oba+'&domId='+domId+'&btr='+btr+'&pos='+position+'&cid=&aid=93266');\n    \n    document.getElementsByTagName('head')[0].appendChild(oba_script);\n\n  }\n  })();\n<\/script><\/BODY><\/HTML>",
+      "requestHeaders" : {
+        "User-Agent" : "python-httpx/0.18.2",
+        "X-Forwarded-For" : "62.31.28.214"
+      },
+      "requestUrl" : "https://united.uimserv.net/lt?wpt=h&nw=42&ac=1&lt=portal(gmx)category(homepage)section(homepage)tagid(initial)layoutclass(b)&wi=921722655&ref=https://www.gmx.net&browser=&iframe=0&os=&uid_stable=0&external_uid=&optout=1&userid=&prf%5Bportal%5D=gmx&prf%5Bcategory%5D=homepage&prf%5Bsection%5D=homepage&prf%5Btagid%5D=initial&prf%5Blayoutclass%5D=b&prf%5Bdeviceclass%5D=&prf%5Bdeviceclient%5D=browser&prf%5Bcategorytype%5D=&prf%5Bos%5D=&prf%5Bbrowser%5D=&prf%5Biframe%5D=0&prf%5Bsys%5D=&prf%5Bsysv%5D=&prf%5Bcl%5D=&prf%5Bclv%5D=&prf%5Bvpw%5D=&prf%5Bnet%5D=&prf%5Bexternal_uid%5D=&prf%5Bhid%5D=&prf%5Bnguserid%5D=&prf%5Bpagev%5D=2&prf%5Buids%5D=0&prf%5Boptout%5D=1&prf%5Bclktype%5D=&prf%5Bwi%5D=921722655&prf%5Bbrandedbrowser%5D=&prf%5Bdnt%5D=0&prf%5Bpos%5D=1&prf%5Bspecial%5D=&prf%5Btcf_version%5D=1.1&prf%5Bweather_condition%5D=&prf%5Bweather_temp%5D=&prf%5Bbusterid%5D=4584387&prf%5Blegacy%5D=1&prf%5Btcf_pub%5D=,,&prf%5Btcf_pur%5D=,,&prf%5Btcf_spe%5D=,,",
+      "variant" : "sticky",
+      "right" : {
+        "ad" : "<!-- prebid --><img src=\"https://united.uimserv.net/confirm?lid=6994403582298555824&userid=0&adhost=ad176\" alt=\"\" onload=\"AdService.setAdProperty('nextTagId','right');AdService.refresh('right');\" />"
+      },
+      "type" : "sitebar",
+      "blockClean" : true,
+      "uimAd" : "<uim:ad xmlns:uim=\"urn:publicid:-:UIM:adinfo\" contentunitid=\"4498628\" campaignid=\"3509518\" bannerid=\"11048300\" portal=\"gmx\" category=\"homepage\" section=\"homepage\" tagid=\"initial\" layoutclass=\"b\" width=\"1\" height=\"1\" adsize=\"1x1\" ovkid=\"\"><\/uim:ad>"
+    },
+    "agent" : {
+      "os" : "",
+      "osVersion" : "",
+      "browser" : "",
+      "browserVersion" : ""
+    },
+    "_params" : {
+      "ac" : "1",
+      "browser" : "",
+      "category" : "homepage",
+      "external_uid" : "",
+      "iframe" : "0",
+      "layoutclass" : "b",
+      "lt" : "portal(gmx)category(homepage)section(homepage)tagid(initial)layoutclass(b)",
+      "nguserid" : "",
+      "nw" : "42",
+      "optout" : "1",
+      "os" : "",
+      "portal" : "gmx",
+      "prf[brandedbrowser]" : "",
+      "prf[browser]" : "",
+      "prf[busterid]" : "4584387",
+      "prf[category]" : "homepage",
+      "prf[categorytype]" : "",
+      "prf[cl]" : "",
+      "prf[clktype]" : "",
+      "prf[clv]" : "",
+      "prf[deviceclass]" : "",
+      "prf[deviceclient]" : "browser",
+      "prf[dnt]" : "0",
+      "prf[external_uid]" : "",
+      "prf[hid]" : "",
+      "prf[iframe]" : "0",
+      "prf[layoutclass]" : "b",
+      "prf[legacy]" : "1",
+      "prf[net]" : "",
+      "prf[nguserid]" : "",
+      "prf[optout]" : "1",
+      "prf[os]" : "",
+      "prf[pagev]" : "2",
+      "prf[portal]" : "gmx",
+      "prf[pos]" : "1",
+      "prf[section]" : "homepage",
+      "prf[special]" : "",
+      "prf[sys]" : "",
+      "prf[sysv]" : "",
+      "prf[tagid]" : "initial",
+      "prf[tcf_pub]" : ",,",
+      "prf[tcf_pur]" : ",,",
+      "prf[tcf_spe]" : ",,",
+      "prf[tcf_version]" : "1.1",
+      "prf[uids]" : "0",
+      "prf[vpw]" : "",
+      "prf[weather_condition]" : "",
+      "prf[weather_temp]" : "",
+      "prf[wi]" : "921722655",
+      "ref" : "https://www.gmx.net",
+      "section" : "homepage",
+      "uid_stable" : "0",
+      "userid" : "",
+      "wi" : "921722655",
+      "wpt" : "h"
+    }
+  },
+  "logins" : [ {
+    "icon" : "email",
+    "text" : "E-Mail",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "service" : "freemail",
+      "loginErrorURL" : "https://bap.navigator.gmx.net/loginerror",
+      "successURL" : "https://bap.navigator.gmx.net/login",
+      "statistics" : "xRbXFc8VKmF6s/rp6a5qP4z/NdyBHKIvfVNtKKZ/MIzZ6sV0I7t11UL6HiAYcLrIM/Ua97LhhoApcfeuwhgCrf8OzhYyHaHNFxpFfXyh/gNOFasefWiag2osdLwsoaQUjFgl5KRWNZQn/J+Vf5Yq1vzDMmvcNacavpkSKc0VdsoMzKeZnxxL/l2FTNDJCnPcIHjxpzAgCgOro1V2sZbBxg==",
+      "loginFailedURL" : "https://www.gmx.net/logoutlounge/?status=login-failed"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "cloud",
+    "text" : "Cloud",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "successURL" : "https://bap.navigator.gmx.net/login",
+      "loginErrorURL" : "https://status.gmx.net",
+      "loginFailedURL" : "https://www.gmx.net/cloud/login/?error=true",
+      "service" : "freemail",
+      "goto" : "smartdrive",
+      "gotoparams" : "",
+      "usecase" : "",
+      "statistics" : "6b_ztzS3kMtnlpAn5WLapdQW6G0k5WdzeBu2Sg5BJ_ttrMmZYDELoL_1UUvQ5MEdctHLVT9zS88U68gpCINIkUUbIe1-Hasl00jGIB39uFx9rVlXCjAREdeBf3AraPCd2FfSocNvrevz_8OK2aD0E1M2zKNK1EYc1Rrou-hy9mjqAaYmqndBfLDdl873boSbfyzoAcG0EVUBuCQPbwFRbQ"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "demail",
+    "text" : "De-Mail",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "service" : "freemail",
+      "successURL" : "https://bap.navigator.gmx.net/login",
+      "loginErrorURL" : "https://bap.navigator.gmx.net/loginerror",
+      "loginFailedURL" : "https://www.gmx.net/produkte/de-mail/login?error=true",
+      "goto" : "demail",
+      "mc" : "__mc__",
+      "uinguserid" : "__uinguserid__",
+      "statistics" : "/uhGopS2K+8FrY/D9rJczpg/03WvUQVqlQaLGI6gzTg+3BtD8LDQeChVQ9iYnuo9i5/1dxrmWvCtlU7N4heZ9qUusyrPw9yhuR4vZttOPp/xUIULcDcPd345YrLQgQwEDW5WZoujllYDkNHK7cMKZdeoVeHspoQTYhqeKBdmDeczEOymLz1lO/NEF8wIYACY"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "domain",
+    "text" : "Domain",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "goto" : "maildomain_new",
+      "service" : "freemail",
+      "successURL" : "https://bap.navigator.gmx.net/login",
+      "loginErrorURL" : "https://bap.navigator.gmx.net/loginerror",
+      "login" : "Login",
+      "loginFailedURL" : "https://www.gmx.net/logoutlounge/?status=login-failed",
+      "statistics" : "Y5Nxi866gU_4EvNO2dEM-zpUITlXbXYNiXxqdZWQLlpwtu5Wi8XznMdS6yWvagmBxP6W_Ym25nxwel_AuP9NNJROS3lqdd9QkYwxl4Ugq4EB1RTkTNKT3IKQZMsmXcIiYFsGjdGtdt1DyVBi0LLAqkaCHyObEQLU4QYvN8ctqo5412atKMWe243IJwUK3JSY"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "webcent",
+    "text" : "WEB.Cent",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "service" : "cbkgmx",
+      "statistics" : "3lOOokyEwM_4UkmiUvQVun8pMsvLcfIIY_gQS-YzfTrSxFEYqGbdvxJCOkG5zk79yvTG57Npmv4ShJ9Tjus9gjVtXSfwtn-Q6JL9XvAULzvwNhLbKXMw8w18w2hbHBV3q8iLVAZIhSQ88b_m-1mN9TnkpfqS_FABG9wmOWrzO_bUN6FShb4qW0nBpZPyxHFfBIGbAU2f3BcI9Ufu6o1ldQ",
+      "successURL" : "https://vorteile.gmx.net/webcent/halogin/success?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "loginErrorURL" : "https://vorteile.gmx.net/webcent/halogin/failure?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "loginFailedURL" : "https://vorteile.gmx.net/webcent/halogin/bad_password?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "partnerdata" : "goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "customer-center",
+    "text" : "Kundencenter",
+    "loginUrl" : "https://service.gmx.net/de/cgi/login?hal=true",
+    "formHiddenParams" : {
+      "service" : "freemail",
+      "server" : "https://freemail.gmx.net",
+      "successURL" : "https://bap.navigator.gmx.net/login",
+      "goto" : "csc_ha",
+      "loginErrorURL" : "https://meinaccount.gmx.net/?errorCodes=7100",
+      "loginFailedURL" : "https://meinaccount.gmx.net/?errorCodes=7002",
+      "statistics" : "zwQE7uMA5wK3vx7g4WQxFrCtjjcDgSa-oAgo6ZwMWvQ6eWusCyabl3wf2FB7zHJjPoYSsRurBvtlQ7dhqtYx-mRe1AcNlPi7rpIQnfg1_aTpY9-giRoZjtTO3HCaBiqGeyuuL0Jq_ugLDyQmEsl4uYEany2JKBbMtRHwx3IweApcjco_kKOAGXxFRiNf5hllsw3kKfyVs0Tcev-I6PhEeQ"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.gmx.net/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  } ],
+  "bentoFooter" : [ {
+    "href" : "https://passwort.gmx.net/",
+    "text" : "Passwort vergessen"
+  }, {
+    "href" : "https://www.gmx.net/datenschutz/",
+    "text" : "Datenschutz"
+  }, {
+    "href" : "https://hilfe.gmx.net/",
+    "text" : "Hilfe"
+  }, {
+    "href" : "https://www.gmx.net/netid/",
+    "text" : "netID mit GMX"
+  } ],
+  "searchbar" : {
+    "suggestContainerId" : "suggestions",
+    "trackParams" : {
+      "default" : "HP",
+      "suggest" : "HP_sg",
+      "layer" : "wbl_mono_sf"
+    },
+    "suggestAPI" : "//www.gmx.net/s/?sType=web&uiLang=de&host=gmx_net&entryPoint=*&count=10&outEnc=UTF8&jsonp=suggest&q=",
+    "searchURL" : "https://suche.gmx.net/web"
+  }
+};
+/*]]>*/
+</script>
+  
+    <script src="https://dl.gmx.net/tcf/live/v1/js/tcf-api.js"></script>
+
+  <script src="//img.ui-portal.de/pos-cdn/tracklib/4.3.1/tracklib.poly.min.js"></script>
+  
+    
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/js/piNctTracking.js"></script>
+
+
+  <script>
+    /*<![CDATA[*/
+    if (!window.AdService) {
+      window.AdService = []
+    }
+    const paramsObject = {
+      'wi': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.wi,
+      'section': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.section,
+      'portal': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.portal,
+      'category': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.category,
+      'layoutclass': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.layoutclass,
+      'consentlevel': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[consentlevel]'],
+      'weather_condition': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[weather_condition]'],
+      'weather_temp': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[weather_temp]'],
+      'hpeventid': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[busterid]'],
+      'special': window.PageConfig && window.PageConfig.sitespect && window.PageConfig.sitespect.special,
+      'legacy': '1'
+    }
+    window.AdService.push(function() {
+      window.AdService.setParam(paramsObject);
+    });
+    /*]]>*/
+  </script>
+  
+    
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/chunk-vendors.js">
+
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/chunk-common.js">
+
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/homepage.bundle.js">
+
+
+
+  </head>
+  <body data-ad-type="sitebar">
+    <div data-available></div>
+    <div id="app" tabindex="0">
+      <hp-app inline-template>
+        <Page inline-template>
+            <div class="main" :data-fallback="adHandler.fallbackName">
+              
+              <div class="main-content">
+                
+                
+                
+    <hp-header inline-template>
+        <header data-component="header">
+            
+            <div data-wrapper>
+                
+    <a data-part="logo" href="https://www.gmx.net/">
+        <h1 aria-label="GMX: E-Mail-Adresse, FreeMail, De-Mail &amp; Nachrichten">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 40">
+                <path d="m 109.17,18.84 10.66,-17.75 -10.88,0 -5.67,9 -6.1,-9 -11.92,0 12.57,17.73 -12.57,20 11.92,0 6.8,-11.37 8.06,11.37 10.64,0 z M 69.75,1.09 61.66,21.28 53.99,1.09 l -9.67,0 -6.42,37.78 9.77,0 3.16,-21.77 0.1,0 8.66,21.77 3.91,0 9.07,-21.77 0.12,0 2.75,21.77 9.82,0 -5.72,-37.78 z m -49.8,16.71 0,7.68 8,0 C 27.53,29.79 24.27,32 20.05,32 13.63,32 10.16,26.09 10.16,20.25 10.16,14.41 13.49,8.4 19.9,8.4 c 3.94,0 6.76,2.38 8.11,5.95 l 9.26,-3.88 C 34.04,3.47 28.06,0 20.34,0 8.25,0 0,8 0,20.19 0,32 8.2,40 20,40 26.27,40 31.8,37.76 35.46,32.64 38.75,28 39.2,23.28 39.3,17.8 Z" style="fill: rgb(255, 255, 255); fill-opacity: 1;"></path>
+            </svg>
+        </h1>
+    </a>
+
+                
+    <hp-searchbar inline-template>
+        <div data-component="searchbar">
+            <form method="get" novalidate="novalidate" action="https://suche.gmx.net/web" autocomplete="off">
+                <input type="hidden" name="origin" value="HP"/>
+                <label data-accessibility :for="searchbarInput.htmlId">
+                    <span></span>
+                </label>
+                <hp-input v-model="searchbarInput" @formsubmit="searchSubmit" @formreset="searchReset" @input="getSuggestIndex"></hp-input>
+            </form>
+        </div>
+    </hp-searchbar>
+
+                
+    <div data-grid-row="" data-login-area="">
+
+        
+
+        
+        <hp-button data-hidden-in="1col" inline-template="">
+            <a data-component="button" data-importance="ghost" href="https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.header.tarifvergleich" @click="clicked">
+                <slot>Registrieren</slot>
+            </a>
+        </hp-button>
+
+    </div>
+
+            </div>
+            <hp-navigation data-hidden-in="1col" inline-template>
+                <div data-component="navigation" data-hidden-in="1col">
+                    
+                    
+    <ul>
+        <li>
+    <a href="https://gmx.net/mail/#.pc_page.homepage.index.nav.mail">E-Mail &amp; Cloud</a>
+</li><li>
+    <a href="https://www.gmx.net/mail/briefankuendigung/#.pc_page.homepage.index.nav_1.briefankuendigung">Briefankündigung</a>
+</li><li>
+    <a href="https://www.gmx.net/handy/?mc=05560955">Mobilfunk &amp; DSL</a>
+</li><li>
+    <a href="https://www.energie.gmx.net/strom/?offers=fl%2cba%2cko&amp;mc=05576078">Strom</a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=929&amp;mpID=4&amp;site=gmx&amp;region=de&amp;sc=vw_uebersichtsseite/vw_startseite&amp;lpos=text_link&amp;att1=gmx_nhp&amp;durl=https%3A%2F%2Fvorteile.gmx.net%2F">Shop</a>
+</li><li>
+    <a href="https://lotto.gmx.net/?partnerId=1GMHOMHNAV&amp;advertisementId=0NAVIGA000000000LOTSERVALL00000NI1234567891">Lotto</a>
+</li><li>
+    <a href="https://www.gmx.net/versicherung/?mc=01881317">Versicherung</a>
+</li><li>
+    <a href="https://vorteile.gmx.net/webcent/#.hp.int.navi">WEB.Cent</a>
+</li><li>
+    <a href="https://games.gmx.net/?mc=05576604">Games</a>
+</li>
+        <li data-more>
+            <a href="../../../">Mehr</a>
+            <ul></ul>
+        </li>
+    </ul>
+
+                    
+    <div class="partner-links">
+        <div data-service-slot="promo_1"></div>
+        <div data-service-slot="promo_2"></div>
+        <div data-service-slot="promo_3"></div>
+    </div>
+
+                </div>
+            </hp-navigation>
+        </header>
+    </hp-header>
+
+                
+                
+    <div data-content>
+        
+        
+    <section data-layout-columns="4col" data-layout-name="viewport" data-name="viewport" data-tracking-name="viewport">
+        
+    <hp-slider inline-template="" :indicator-position="&#039;right&#039;" :interval="5000" :animation-type="&#039;fade&#039;">
+        <div data-component="slider" data-slide-indicator-position="left" data-animation-type="fade">
+            <div data-part="indicators">
+                <ul>
+                    <li @click="goTo" data-indicator="0">
+    <a href="https://www.gmx.net/magazine/wissen/natur-umwelt/weltklimaberichtklimawandel-folgen-drastisch-36070834" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.gmx.net/image/516/35998516,pd=2,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Weltklimabericht</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="1">
+    <a href="https://www.gmx.net/magazine/politik/wahlen/bundestagswahl/kritik-matroschka-spot-spd-bricht-werbevideo-tabu-wahlkampf-36070760" @mouseenter="goTo">
+        <figure>
+            <img alt="Präsentation der SPD-Bundestagswahlkampagne" src="https://i0.gmx.net/image/116/36071116,pd=3,h=56,w=95/praesentation-spd-bundestagswahlkampagne.jpg" width="95" height="56"/>
+            <figcaption>Bundestagswahl</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="2">
+    <a href="https://www.gmx.net/magazine/news/coronavirus/corona-live-ticker-gesundheitspass-oeffentlichen-orte-frankreich-noetig-35990536" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.gmx.net/image/630/36071630,pd=1,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Corona-Pandemie</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="3">
+    <a href="https://www.gmx.net/magazine/news/coronavirus/ministerpraesidenten-gratis-corona-tests-abschaffen-36070656" @mouseenter="goTo">
+        <figure>
+            <img alt="Coronavirus -Tests weiter kostenlos?" src="https://i0.gmx.net/image/658/36070658,pd=1,h=56,w=95/coronavirus-tests-kostenlos.jpg" width="95" height="56"/>
+            <figcaption>Corona-Tests</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="4">
+    <a href="https://www.gmx.net/magazine/ratgeber/haus-garten/waschzettel-richtig-bedeuten-symbole-kleidung-36052720" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.gmx.net/image/348/36071348,pd=1,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Alltagstipps</figcaption>
+        </figure>
+    </a>
+    
+</li>
+                </ul>
+            </div>
+            
+            <div data-wrapper>
+                <div>
+                    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/wissen/natur-umwelt/weltklimaberichtklimawandel-folgen-drastisch-36070834" data-headline="Weltklimarat schlägt Alarm - und skizziert zwei katastrophale Entwicklungen" data-teaser-id="36070834" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/516/35998516,pd=2,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Weltklimabericht
+                    </span>
+                    <h3>Weltklimarat schlägt Alarm - und skizziert zwei katastrophale Entwicklungen</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/politik/wahlen/bundestagswahl/kritik-matroschka-spot-spd-bricht-werbevideo-tabu-wahlkampf-36070760" data-headline="Kritik nach Matroschka-Spot: SPD bricht mit Werbevideo Tabu im Wahlkampf" data-teaser-id="36070760" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="Präsentation der SPD-Bundestagswahlkampagne" src="https://i0.gmx.net/image/116/36071116,pd=3,h=300,w=530/praesentation-spd-bundestagswahlkampagne.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Bundestagswahl
+                    </span>
+                    <h3>Kritik nach Matroschka-Spot: SPD bricht mit Werbevideo Tabu im Wahlkampf</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/corona-live-ticker-gesundheitspass-oeffentlichen-orte-frankreich-noetig-35990536" data-headline="Frankreich verschärft Kontrollen: Gesundheitspass fast überall nötig" data-teaser-id="35990536" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/630/36071630,pd=1,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        <label data-color="error">Live-Ticker</label>
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>Frankreich verschärft Kontrollen: Gesundheitspass fast überall nötig</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/ministerpraesidenten-gratis-corona-tests-abschaffen-36070656" data-headline="Corona-Gipfel: Mehrere Ministerpräsidenten wollen Gratis-Tests abschaffen" data-teaser-id="36070656" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="Coronavirus -Tests weiter kostenlos?" src="https://i0.gmx.net/image/658/36070658,pd=1,h=300,w=530/coronavirus-tests-kostenlos.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Tests
+                    </span>
+                    <h3>Corona-Gipfel: Mehrere Ministerpräsidenten wollen Gratis-Tests abschaffen</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/ratgeber/haus-garten/waschzettel-richtig-bedeuten-symbole-kleidung-36052720" data-headline="Waschzettel richtig lesen: Das bedeuten die Symbole in der Kleidung" data-teaser-id="36052720" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/348/36071348,pd=1,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        <label data-color="grey">Galerie</label>
+                        Alltagstipps
+                    </span>
+                    <h3>Waschzettel richtig lesen: Das bedeuten die Symbole in der Kleidung</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+                </div>
+            </div>
+        </div>
+    </hp-slider>
+
+    <div data-component="list">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-separator="top" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+    <div data-service-slot="box_1"></div>
+
+    </section>
+
+    <div data-login-sticky-indicator></div>
+    <section data-layout="1col" data-content-login="" data-sticky="">
+        
+    <input type="checkbox" id="loginlayerbutton" data-hidden />
+    <hp-login inline-template>
+        <div data-component="login" data-grid-row>
+            <div data-grid-row>
+                <hp-icon :type="currentLogin.icon" data-login-icon>
+                    <div data-component="icon" data-login-icon>
+                        <svg viewBox="0 2 40 40">
+                            <path d="M40 32V9.9v-.08L28.92 20.9zM11.1 20.92L0 9.82V32zM21.37 25.17L38.94 7.59a3.05 3.05 0 0 0-2-.78H3.09a3.05 3.05 0 0 0-2 .78l17.54 17.58a2 2 0 0 0 2.74 0z"></path>
+                            <path d="M27.27 22.54L23 26.81a4.27 4.27 0 0 1-6 0l-4.25-4.25L.3 35a3.1 3.1 0 0 0 2.79 1.8h33.82a3.11 3.11 0 0 0 2.81-1.8z"></path>
+                        </svg>
+                    </div>
+                </hp-icon>
+                <span data-login-text data-visible-from-up="3col" v-text="currentLogin.text">E-Mail</span>
+            </div>
+
+            <hp-bento :elements="bentoData.elements" :footer="bentoData.footer" @change="onBentoChange"></hp-bento>
+
+            <form data-form-login="" data-grid-row="" method="post" accept-charset="UTF-8" novalidate="novalidate" action="https://service.gmx.net/de/cgi/login?hal=true" id="freemailLoginForm" name="loginForm" :action="currentLogin.loginUrl">
+                <div v-if="currentLogin.formHiddenParams" data-hidden-values>
+                    <input v-if="currentLogin === null" type="hidden" name="service" value="freemail"/><input v-if="currentLogin === null" type="hidden" name="loginErrorURL" value="https://bap.navigator.gmx.net/loginerror"/><input v-if="currentLogin === null" type="hidden" name="successURL" value="https://bap.navigator.gmx.net/login"/><input v-if="currentLogin === null" type="hidden" name="statistics" value="xRbXFc8VKmF6s/rp6a5qP4z/NdyBHKIvfVNtKKZ/MIzZ6sV0I7t11UL6HiAYcLrIM/Ua97LhhoApcfeuwhgCrf8OzhYyHaHNFxpFfXyh/gNOFasefWiag2osdLwsoaQUjFgl5KRWNZQn/J+Vf5Yq1vzDMmvcNacavpkSKc0VdsoMzKeZnxxL/l2FTNDJCnPcIHjxpzAgCgOro1V2sZbBxg=="/><input v-if="currentLogin === null" type="hidden" name="loginFailedURL" value="https://www.gmx.net/logoutlounge/?status=login-failed"/>
+                    <input type="hidden" :name="index" :value="param" v-for="(param, index) in currentLogin.formHiddenParams" />
+                </div>
+                <input type="hidden" name="ibaInfo" :value="ibaInfo" data-formcheck-nocheck="nocheck">
+                <input type="hidden" name="uinguserid" :value="ngUserId" />
+                <input type="hidden" name="tpidHash" :value="tpidHash" />
+                <input type="hidden" name="salt" :value="salt" />
+                <div data-grid-column>
+                    <hp-input v-model="emailInput" inline-template>
+                        <div data-component="input">
+                            <input type="email" v-model="value.inputvalue" required="required" id="freemailLoginUsername" :name="value.name" :placeholder="value.placeholder" placeholder="E-Mail-Adresse" name="username"/>
+                        </div>
+                    </hp-input>
+                    <p v-if="emailLink.text" aria-label="reg"><a v-text="emailLink.text" tabindex="-1" href="https://www.gmx.net/mail/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich" :href="emailLink.href">Kostenlos registrieren!</a></p>
+                </div>
+                <div data-grid-column>
+                    <hp-input v-model="passwordInput" inline-template>
+                        <div data-component="input" :data-with-button="withButton">
+                            <input :id="value.htmlId" type="password" data-type="password" v-model="value.inputvalue" id="freemailLoginPassword" :name="value.name" :placeholder="value.placeholder" placeholder="Passwort" name="password"/>
+                            <hp-button :data-importance="buttonImportance" data-type="icon" @click="togglePasswordVisibility" data-size="l" :data-active="buttonActive">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M19.73,8.91A11.53,11.53,0,0,0,10,3.14,11.17,11.17,0,0,0,.25,9,2.31,2.31,0,0,0,.25,11,11.17,11.17,0,0,0,10,16.86a11.53,11.53,0,0,0,9.78-5.77A2.34,2.34,0,0,0,19.73,8.91ZM10,14a4,4,0,1,1,4-4A4,4,0,0,1,10,14Z" />
+                                </svg>
+                            </hp-button>
+                        </div>
+                    </hp-input>
+                    <p v-if="passwordLink.text" aria-label="reg"><a v-text="passwordLink.text" tabindex="-1" href="https://passwort.gmx.net/" :href="passwordLink.href">Passwort vergessen?</a></p>
+                </div>
+
+                <hp-button inline-template="" data-importance="accent">
+                    <button data-component="button" type="submit" data-size="l" data-importance="accent">
+                        <slot>Login</slot>
+                    </button>
+                </hp-button>
+            </form>
+
+            <p aria-label="netid">
+                <a href="https://www.gmx.net/netid/#.pc_page.homepage.index.loginbox_2.netid">
+                    
+                    
+                        <span data-visible-from-up="2col" data-hidden-from-up="4col">
+                             <svg viewBox="0 0 24 22.65" class="netid">
+                                <path d="M10.72 6.34l1.45-1.41 2.73 2.73L22.6 0 24 1.37l-9.15 9.15-4.13-4.18z" class="netid_checkmark">
+                                </path>
+                                <path d="M21.8 6.2l-1.17 1.17c.67 2.21.52 3.94-1.81 6.26l-2.69 2.7-9.81-9.81L9 3.8c2.89-2.88 5.29-2.67 8.07-1l1.08-1.08C14.74-.59 11.49-.73 8 2.79l-8 8 11.89 11.86 8-8C22.8 11.74 23 9.18 21.8 6.2">
+                                </path>
+                             </svg>
+                        </span>
+                        <span data-visible-from-up="4col">
+                             <img alt="netID" src="https://img.ui-portal.de/homepage/netid/gmx.png">
+                        </span>
+                    
+                </a>
+            </p>
+        </div>
+    </hp-login>
+
+
+    </section>
+
+    <section data-layout-columns="4col" data-layout-name="teasers" data-name="Recommendation" data-tracking-name="threeList">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-visible-in="4col" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            <figure>
+                <img alt="Ex-Biathlon-Star Neuner" src="https://i0.gmx.net/image/494/36070494,pd=4,h=170,w=300/ex-biathlon-star-neuner.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 2 Stunden</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/tv-film/lets-dance-star-single-lola-weippert-freund-getrennt-36070352" data-visible-in="4col" data-headline="&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single" data-teaser-id="36070352">
+            
+            <figure>
+                <img alt="Lola Weippert" src="https://i0.gmx.net/image/376/36070376,pd=2,h=170,w=300/lola-weippert.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="4col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/stars/harald-gloeoeckler-dschungelcamp-bereitet-vor-36070268" data-separator="top" data-headline="Mit dieser Strategie will Harald Glööckler das Dschungelcamp rocken" data-teaser-id="36070268">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>Mit dieser Strategie will Harald Glööckler das Dschungelcamp rocken</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/tv-film/promi-big-brother/promi-big-brother-promiboxen-intellektuellen-superleichtgewicht-rafi-melli-36070282" data-separator="top" data-headline="Melanie Müller, der Lord Voldemort von &quot;Promi Big Brother&quot;?" data-teaser-id="36070282">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        <label>Kolumne</label>
+                        
+                        Promi Big Brother
+                    </span>
+                    <h3>Melanie Müller, der Lord Voldemort von &quot;Promi Big Brother&quot;?</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/stars/us-comedian-trevor-moore-stirbt-41-jahren-36070224" data-separator="top" data-headline="Trauer um US-Star Trevor Moore: Comedian stirbt bei Unfall" data-teaser-id="36070224">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Todesfall
+                    </span>
+                    <h3>Trauer um US-Star Trevor Moore: Comedian stirbt bei Unfall</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/panorama/dixie-fire-zweitgroesster-waldbrand-geschichte-kaliforniens-36070300" data-separator="top" data-headline="&quot;Dixie Fire&quot; ist zweitgrößter Waldbrand in Geschichte Kaliforniens" data-teaser-id="36070300">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Naturkatastrophe
+                    </span>
+                    <h3>&quot;Dixie Fire&quot; ist zweitgrößter Waldbrand in Geschichte Kaliforniens</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/sport/fussball/dfb-pokal/vfl-wolfsburg-trainer-van-bommel-zittern-pokal-wechselfehler-36069934" data-visible-in="4col" data-headline="VfL Wolfsburg und Trainer van Bommel zittern: Pokal-Aus wegen Wechselfehler?" data-teaser-id="36069934">
+            
+            <figure>
+                <img alt="Preußen Münster - VfL Wolfsburg" src="https://i0.gmx.net/image/936/36069936,pd=2,h=170,w=300/preussen-muenster-vfl-wolfsburg.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        DFB-Pokal
+                    </span>
+                    <h3>VfL Wolfsburg und Trainer van Bommel zittern: Pokal-Aus wegen Wechselfehler?</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    
+                    <span>45 Kommentare</span>
+                </footer>
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-visible-in="3col" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/564/36070564,pd=1,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 20 Minuten</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="3col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-separator="top" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/tv-film/lets-dance-star-single-lola-weippert-freund-getrennt-36070352" data-visible-in="3col" data-headline="&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single" data-teaser-id="36070352">
+            
+            <figure>
+                <img alt="Lola Weippert" src="https://i0.gmx.net/image/376/36070376,pd=2,h=170,w=300/lola-weippert.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="2col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-separator="top" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-visible-in="2col" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            <figure>
+                <img alt="Ex-Biathlon-Star Neuner" src="https://i0.gmx.net/image/494/36070494,pd=4,h=170,w=300/ex-biathlon-star-neuner.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 2 Stunden</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    </section>
+
+    <hp-block-navigation inline-template>
+        <div data-component="block-navigation" data-grid-row="" data-name="Freemail">
+            <h2>
+                GMX E-Mail &amp; Cloud
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+    <a href="https://www.gmx.net/mail/freemail/#.pc_page.homepage.index.channel_nav.freemail">FreeMail</a>
+</li><li>
+    <a href="https://www.gmx.net/mail/premium/?mc=03961564">PremiumMail</a>
+</li><li>
+    <a href="https://www.gmx.net/cloud/#.pc_page.homepage.index.channel_nav.cloud">Cloud</a>
+</li><li>
+    <a href="https://www.gmx.net/produkte/apps/#.hp.int.nav.mail_channel ">Apps</a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </hp-block-navigation>
+
+    <section data-layout-columns="4col" data-layout-name="teasers" data-name="Freemail" data-tracking-name="fourWithText" data-has-subtext="">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/mail/briefankuendigung/#.pc_page.homepage.index.channel_2.briefankuendigung" data-headline="Wir feiern Geburtstag" data-teaser-id="34925016" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/042/34925042,pd=3,h=170,w=300.png" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        GMX Briefankündigung
+                    </span>
+                    <h3>Wir feiern Geburtstag</h3>
+                    
+                </header>
+                <p>Die Briefankündigung wird ein Jahr alt und Sie können viele Preise gewinnen!</p>
+                
+                
+            </article>
+        </a>
+
+    <div data-service-slot="box_2"></div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/mail/premium/?mc=03961532" data-headline="E-Mail mit mehr Leistung" data-teaser-id="34254274">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/162/34260162,pd=1,h=170,w=300.png" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        GMX Premium
+                    </span>
+                    <h3>E-Mail mit mehr Leistung</h3>
+                    
+                </header>
+                <p>Mehr Speicherplatz, weniger Werbung &amp; viele Rabatte bei unseren Partnern.</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://vorteile.gmx.net/webcent/#.hp.int.email_channel.webcent" data-headline="Ihre E-Mail hilft beim Sparen" data-teaser-id="35781248">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/238/35781238,pd=2,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        GMX Cashback
+                    </span>
+                    <h3>Ihre E-Mail hilft beim Sparen</h3>
+                    
+                </header>
+                <p>WEB.Cent ist Teil Ihres E-Mail Postfachs. Sparen Sie bei über 1.000 Partnern.</p>
+                
+                
+            </article>
+        </a>
+
+    </section>
+
+    <hp-block-navigation inline-template>
+        <div data-component="block-navigation" data-grid-row="" data-name="Vorteilswelt">
+            <h2>
+                <a href="https://vorteile.gmx.net/#.homepage.vwSlider.vorteilswelt">Vorteilswelt</a>
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+    <a href="https://vorteile.gmx.net/software-mobile/#.homepage.vwSlider.software-mobile">Software &amp; Mobile</a>
+</li><li>
+    <a href="https://vorteile.gmx.net/finanzen/#.homepage.vwSlider.finanzen">Finanzen</a>
+</li><li>
+    <a href="https://vorteile.gmx.net/unterhaltung/#.homepage.vwSlider.unterhaltung">Unterhaltung</a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </hp-block-navigation>
+
+    <section data-layout-columns="4col" data-layout-name="fiveBigMiddle" data-frontend="vorteilswelt" data-name="Vorteilswelt" data-tracking-name="frontend">
+        
+    <div data-service-slot="slider_1_5"></div>
+
+    <div data-service-slot="slider_1_1"></div>
+
+    <div data-service-slot="slider_1_2"></div>
+
+    <div data-service-slot="slider_1_3"></div>
+
+    <div data-service-slot="slider_1_4"></div>
+
+    </section>
+
+    </div>
+
+                
+    <footer data-component="footer">
+        
+    <section data-footer-section="1" data-layout-columns="4col" data-grid-row="">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://hilfe.gmx.net/" data-headline="Hilfe &amp; Kontakt" data-teaser-id="34288520" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/518/34288518,pd=2,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Hilfe &amp; Kontakt</div>
+                </header>
+                <p>Hilfestellung &amp; Anleitung zu Ihrem GMX E-Mail Konto</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://account.gmx.net/#.pc_page.homepage.index.footer_2.kundencenter" data-headline="Kundencenter" data-teaser-id="34288510" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/512/34288512,pd=2,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Kundencenter</div>
+                </header>
+                <p>Ihre Daten und Sicherheits-Einstellungen verwalten</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://passwort.gmx.net/" data-headline="Passwort vergessen" data-teaser-id="34288528" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/522/34288522,pd=2,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Passwort vergessen</div>
+                </header>
+                <p>Ihr Passwort zurücksetzen und ein neues anlegen</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/datenschutz/#.pc_page.homepage.index.footer_4.datenschutz" data-headline="Privatsphäre" data-teaser-id="34288514" data-grid-row="">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/524/34288524,pd=2,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Privatsphäre</div>
+                </header>
+                <p>Alle Informationen zum Datenschutz bei GMX</p>
+                
+                
+            </article>
+        </a>
+
+    </section>
+
+    <section data-footer-section="2">
+        
+        <div>
+            <div>Produkte</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://www.energie.gmx.net/?mc=05574296" target="_blank">
+        
+        Strom + Gas
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/handy/?mc=05560563" target="_blank">
+        
+        Handytarif-Vergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://shop.gmx.net/allnet/enetz2gbcols/?mc=05553002" target="_blank">
+        
+        GMX Handytarife
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/mail/#.pc_page.homepage.index.footer_2.mail" target="_blank">
+        
+        E-Mail-Adresse
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/de-mail/#.hp.int.footer" target="_blank">
+        
+        De-Mail
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/adac/" target="_blank">
+        
+        ADAC mit Prämie
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/antivirus/security/mcafee-multiaccess/?mc=05570282" target="_blank">
+        
+        McAfee Virenschutz
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/mobile/#.hp.int.footer" target="_blank">
+        
+        Apps &amp; mehr
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/handy/dsl?ac=OM.AD.AD003K352764T7073a" target="_blank">
+        
+        DSL-Angebot
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/browser/#.hp.int.footer" target="_blank">
+        
+        Browser gratis
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://service.gmx.net/de/cgi/g.fcgi/products/maildomain/overview?mc=mdh@hp@footer_mdh.startseite" target="_blank">
+        
+        Domain &amp; Hosting
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/fax-online" target="_blank">
+        
+        GMX Fax
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/sms" target="_blank">
+        
+        GMX SMS
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/browser/check/#.hp.int.footer" target="_blank">
+        
+        Browser-Check
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/grusskarten/" target="_blank">
+        
+        GMX Grußkarten
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/verivox/strom/" target="_blank">
+        
+        Strompreisvergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/pc-tuning/" target="_blank">
+        
+        PC-Tuning
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/mediacenter/#.pc_page.homepage.index.footer_19.mediacenter" target="_blank">
+        
+        Cloud
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/readly/?mc=05557914" target="_blank">
+        
+        Magazin-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/film-flatrate/?mc=03954026" target="_blank">
+        
+        Film-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/deezer/?mc=03953050" target="_blank">
+        
+        Musik-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/zattoo/?mc=03956069" target="_blank">
+        
+        TV-Streaming
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/sprachen-lernen/?mc=05571314" target="_blank">
+        
+        Online-Sprachkurse
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/deals/verivox-kfz/w/" target="_blank">
+        
+        Kfz-Vergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/browser/mailcheck/#.hp.int.footer.mailcheck" target="_blank">
+        
+        GMX MailCheck
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/produkte/suche/desktop-suche/#.hp.int.footer.winsuche" target="_blank">
+        
+        Suche für Windows
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Themen</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://www.gmx.net/magazine/news/">
+        
+        News
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/sport/">
+        
+        Sport
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/unterhaltung/">
+        
+        Unterhaltung
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/ratgeber/">
+        
+        Ratgeber
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/auto/">
+        
+        Auto
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Services</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://lotto.gmx.net/webshop/home.htm?partnerId=0GMHOM0HOM&amp;advertisementId=0SERVIC000000000000000000000000000000000000" target="_blank">
+        
+        Lotto
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/reise/routenplaner/">
+        
+        Routenplaner
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/wetter/">
+        
+        Wetter
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/unterhaltung/lifestyle/horoskop/">
+        
+        Horoskop
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/partner/curabox/" rel="sponsored">
+        
+        Pflegehilfsmittel
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/partner/deutscheteilkauf_v2/" rel="sponsored">
+        
+        Immobilien-Teilverkauf
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/services/partnersuche/" rel="nofollow">
+        
+        Partnersuche
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/partner/immobilienboerse/" rel="nofollow">
+        
+        Immobilienbörse
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/services/singletreff/" rel="nofollow">
+        
+        Singletreff
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/reise/feiertage/">
+        
+        Feiertage
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://millionenklick.gmx.net/#C0101041109010101" target="_blank">
+        
+        MillionenKlick
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/gesundheit/bmi-rechner/">
+        
+        BMI-Rechner
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://games.gmx.net/?mc=05575611" target="_blank">
+        
+        Games
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://gewinnspiel.gmx.net/" target="_blank">
+        
+        Gewinnspiel
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Shopping</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://shopping.gmx.net/?origin=hp_footer_shopping" target="_blank">
+        
+        GMX Preisvergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/" target="_blank" rel="nofollow">
+        
+        Vorteilswelt
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://gutscheine.gmx.net/" target="_blank" rel="nofollow">
+        
+        Gutscheine
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://shopping.gmx.net/geschenkefinder?origin=hp_footer_GmxGeschenkefinderTextlink~Desktop" target="_blank">
+        
+        Geschenkefinder
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>WEB.Cent</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/#.hp.int.footer.info" target="_blank">
+        
+        GMX Cashback
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/#.hp.int.footer.top" target="_blank">
+        
+        Top-Angebote
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/shops/browse/#.hp.int.footer.abisz" target="_blank">
+        
+        Alle Shops A-Z
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/shops/lidl/#.hp.int.footer.lidl" target="_blank">
+        
+        LIDL &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/shops/otto/#.hp.int.footer.otto" target="_blank">
+        
+        OTTO &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/shops/douglas/#.hp.int.footer.douglas" target="_blank">
+        
+        Douglas &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.gmx.net/webcent/sammeln/shops/tchibo/#.hp.int.footer.tchibo" target="_blank">
+        
+        Tchibo &amp; WEB.Cent
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Partner</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://www.gmx.net/magazine/services/partnersuche/" rel="nofollow">
+        
+        Partnersuche
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://www.gmx.net/magazine/services/singletreff/" rel="nofollow">
+        
+        Singletreff
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section data-footer-section="3">
+        
+    <ul data-layout-columns="7col">
+        <li>
+    <a href="https://partnerprogramm.otto.de/trck/eclick/49295537d6795869ff31346d68545546" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/052/34263052,pd=3,h=24,w=24.svg" alt="OTTO" width="24" height="24"/>
+        OTTO
+    </a>
+</li><li>
+    <a href="https://www.amazon.de/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=sl2&amp;tag=gmxde-linkliste-21&amp;linkId=8b2127d14bddab7c1313d499cae8ca00" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/982/34262982,pd=3,h=24,w=24.svg" alt="Amazon.de" width="24" height="24"/>
+        Amazon.de
+    </a>
+</li><li>
+    <a href="https://vorteile.gmx.net/webcent/#.hp.int.footer.icon" target="_blank">
+        <img src="https://i0.gmx.net/image/008/34263008,pd=5,h=24,w=24/bonusprogramm.svg" alt="Bonusprogramm" width="24" height="24"/>
+        Bonusprogramm
+    </a>
+</li><li>
+    <a href="http://ka.ilius.net/?mtcmk=915170&amp;fsid=115&amp;kaClkCh4=" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/022/34263022,pd=7,h=24,w=24.svg" alt="LoveScout24" width="24" height="24"/>
+        LoveScout24
+    </a>
+</li><li>
+    <a href="https://online.parship.de/lp/v00/4/U/e/index.html?pscode=01_100_40018_0007_0001_0981_00_AF00ID_GV00ID" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/698/34553698,pd=1,h=24,w=24.svg" alt="Parship" width="24" height="24"/>
+        Parship
+    </a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=931&amp;mpID=4&amp;site=gmx&amp;region=de&amp;sc=HP_Linkliste/Immobilienboerse&amp;durl=https%3A%2F%2Fwww.gmx.net%2Fmagazine%2Fpartner%2Fimmobilienboerse%2F" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/044/34263044,pd=3,h=24,w=24.svg" alt="Immobilienbörse" width="24" height="24"/>
+        Immobilienbörse
+    </a>
+</li><li>
+    <a href="https://www.albamoda.de/?vcp=9bdf3f4bcd64e3&amp;utm_medium=dis&amp;utm_source=uim&amp;utm_campaign=performace-integration&amp;utm_content=logo&amp;utm_term=startseite " target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/690/35464690,pd=2,h=24,w=24/alba-moda.svg" alt="Alba Moda" width="24" height="24"/>
+        Alba Moda
+    </a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=931&amp;mpID=4&amp;site=gmx&amp;region=de&amp;sc=HP_Linkliste/Douglas&amp;durl=https%3A%2F%2Fm.exactag.com%2Fcl.aspx%3FextCa%3D717%26extTcm%3Dde.06a.uimlogo%7C.logo.homepage.000008%26url%3Dhttps%253A%252F%252Fwww.douglas.de%252F%253Ftrac%253Dde.06a.uimlogo..logo.homepage.000008%2526et_sea%253D1" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/700/34553700,pd=2,h=24,w=24/douglas.svg" alt="Douglas" width="24" height="24"/>
+        Douglas
+    </a>
+</li><li>
+    <a href="https://www.bonprix.de/kategorie/damen-mode/?landmark=Entry&amp;bkkz=230000000&amp;typ=POR&amp;anbieter=UIM_CPO&amp;aktion=GMX&amp;version=Homepage_Linkliste" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/988/34262988,pd=3,h=24,w=24/bonprix.svg" alt="bonprix" width="24" height="24"/>
+        bonprix
+    </a>
+</li><li>
+    <a href="https://www.wenz.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=gmx&amp;utm_content=Linkliste&amp;utm_term=Startseite" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/618/34553618,pd=1,h=24,w=24/wenz.svg" alt="WENZ" width="24" height="24"/>
+        WENZ
+    </a>
+</li><li>
+    <a href="https://www.moeve.de/?sPartner=UM&amp;utm_source=uim&amp;utm_medium=linkliste&amp;utm_campaign=uim_performance&amp;utm_content=moeve_home" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/882/36052882,pd=2,h=24,w=24/moeve.svg" alt="Möve" width="24" height="24"/>
+        Möve
+    </a>
+</li><li>
+    <a href="https://www.mona.de/shirts/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=gmx&amp;utm_content=Linkliste&amp;utm_term=Shirts" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/062/34263062,pd=3,h=24,w=24/mona.svg" alt="MONA" width="24" height="24"/>
+        MONA
+    </a>
+</li><li>
+    <a href="https://www.ullapopken.de/?campaign=display/uim/up/de/cooperations/linkliste/gmx&amp;utm_medium=media&amp;utm_source=uim&amp;utm_campaign=uim/up/de&amp;utm_content=linkliste&amp;utm_term=gmx" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/006/34263006,pd=3,h=24,w=24/ulla-popken.svg" alt="Ulla Popken" width="24" height="24"/>
+        Ulla Popken
+    </a>
+</li><li>
+    <a href="https://m.exactag.com/cl.aspx?extProvId=100&amp;extPu=uim&amp;extLi=nt_cpo&amp;extSi=uim&amp;extCr=logo&amp;url=https://www.baur.de/?WKZ=75&amp;IWL=292&amp;NUMSArt=55141231&amp;NUMSArtPc=55141232&amp;AffiliateID=uim&amp;mlid=uim_nt_bnk&amp;kid=7&amp;utm_source=uim&amp;utm_medium=cpo&amp;utm_campaign=nt_cpo&amp;MailingID=nt_cpo&amp;utm_content=logo&amp;utm_term=naktn&amp;ActionID=cpo&amp;cstm1=linkl_gmx&amp;consent_string=312" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/702/34553702,pd=2,h=24,w=24/baur.svg" alt="Baur" width="24" height="24"/>
+        Baur
+    </a>
+</li><li>
+    <a href="https://www.lidl.de?&amp;utm_source=uim&amp;utm_medium=display&amp;utm_campaign=perf_pros_promoline_os&amp;utm_content=desktop_footer&amp;mktc=display" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/064/34263064,pd=4,h=24,w=24/lidl.svg" alt="Lidl" width="24" height="24"/>
+        Lidl
+    </a>
+</li><li>
+    <a href="https://www.klingel.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=gmx&amp;utm_content=logo&amp;utm_term=startseite " target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/510/35092510,pd=2,h=24,w=24/klingel.svg" alt="KLINGEL" width="24" height="24"/>
+        KLINGEL
+    </a>
+</li><li>
+    <a href="https://www.ebay.de/deals?mkrid=707-53477-19255-0&amp;siteid=77&amp;mkcid=1&amp;campid=5337706721&amp;toolid=10001&amp;customid=&amp;mkevt=1" target="_blank" rel="sponsored">
+        <img src="https://i0.gmx.net/image/004/34263004,pd=6,h=24,w=24/ebay.svg" alt="eBay" width="24" height="24"/>
+        eBay
+    </a>
+</li><li>
+    <a href="https://www.happy-size.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=gmx&amp;utm_content=linklist&amp;utm_term=logo" target="_blank">
+        <img src="https://i0.gmx.net/image/848/36052848,pd=3,h=24,w=24/happysize.svg" alt="HAPPYsize" width="24" height="24"/>
+        HAPPYsize
+    </a>
+</li>
+    </ul>
+    
+
+    </section>
+
+    <section data-footer-section="4">
+        
+    <ul>
+        <li>
+    <a href="https://www.gmx.net/internetmadeingermany/">
+        <img src="https://i0.gmx.net/image/844/34263844,pd=2,h=70,w=135.png" alt="Internet made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/e-mail-made-in-germany">
+        <img src="https://i0.gmx.net/image/878/34263878,pd=2,h=70,w=135.png" alt="Email made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/cloud-made-in-germany/#.pc_page.homepage.index.footer_icon.cmig">
+        <img src="https://i0.gmx.net/image/856/34263856,pd=3,h=70,w=135.png" alt="Cloud made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/magazine/unicef/">
+        <img src="https://i0.gmx.net/image/866/34263866,pd=2,h=70,w=135.png" alt="Unicef" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/produkte/de-mail/">
+        <img src="https://i0.gmx.net/image/854/34263854,pd=2,h=70,w=135.png" alt="De-Mail" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.top-employers.com/de/companyprofiles/de/united-internet-ag/" target="_blank">
+        <img src="https://i0.gmx.net/image/522/35637522,pd=1,h=70,w=135.png" alt="Jobs 1und1" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.united-internet.de/" target="_blank">
+        <img src="https://i0.gmx.net/image/834/34263834,pd=2,h=70,w=135.png" alt="Member of United Internet" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/mail/sicherheit/e-mail-siegel/#.pc_page.homepage.index.footer_icon.e-mail-siegel">
+        <img src="https://i0.gmx.net/image/868/34263868,pd=2,h=70,w=135.png" alt="E-Mail Siegel" width="135" height="70"/>
+        
+    </a>
+</li>
+    </ul>
+    
+
+    </section>
+
+    <section data-footer-section="5">
+        
+    <ul>
+        <li>
+    <a href="https://www.gmx.net/sitemap/">
+        
+        Sitemap
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/impressum/">
+        
+        Impressum
+    </a>
+</li><li>
+    <a href="https://agb-server.gmx.net/gmxagb-de">
+        
+        AGB
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/datenschutz/">
+        
+        Datenschutz
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/magazine/in-eigener-sache/jugendschutz/">
+        
+        Jugendschutz
+    </a>
+</li><li>
+    <a href="https://newsroom.gmx.net/">
+        
+        Presse
+    </a>
+</li><li>
+    <a href="https://www.united-internet.de/jobs-karriere/stellenangebote.html?tx_cisocareer_jobsearchform%5BcompanyName%5D%5B%5D=1%261%20Mail%20%26%20Media%20Applications%20SE" target="_blank">
+        
+        Jobs
+    </a>
+</li><li>
+    <a href="https://www.united-internet-media.de/" target="_blank">
+        
+        Werbung
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/mail/">
+        
+        E-Mail
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/angebot/">
+        
+        Angebot
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/nuetzlich/">
+        
+        Nützlich
+    </a>
+</li><li>
+    <a href="https://www.gmx.net/aktuell/">
+        
+        Aktuell
+    </a>
+</li>
+    </ul>
+    <span class="ee"></span>
+
+    </section>
+
+    </footer>
+
+                
+    <hp-layer :delay="300000" inline-template>
+        <section data-component="layer" :data-visible="visible" data-name="inactivityDialog" data-tracking-name="inactivityDialog" data-layout-name="inactivityDialog">
+            <div data-layer></div>
+            <div data-layer-content-wrapper data-grid-column>
+                <div data-close-button @click="visible = false">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div data-layer-content data-grid-row>
+                    <div data-part="left" data-grid-column>
+                        <div data-part="top">
+                            <div data-layer-headline>Wir haben aktuelle News für Sie</div>
+                            <hp-button data-type="icon-text" data-importance="accent" data-size="l" @click="reloadSite">
+                                <hp-icon type="refresh"></hp-icon>
+                                Seite aktualisieren
+                            </hp-button>
+                        </div>
+                        <div data-part="middle">
+                            <div data-sub-headline>Das könnte Sie auch interessieren</div>
+                            <div data-teaser-wrapper data-grid-row>
+                                
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            <figure>
+                <img alt="" src="https://i0.gmx.net/image/564/36070564,pd=1,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 20 Minuten</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    <div data-component="list">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://www.gmx.net/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-separator="top" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+                            </div>
+                        </div>
+                        <div data-part="bottom">
+                            <hp-searchbar data-no-suggest></hp-searchbar>
+                        </div>
+                    </div>
+                    <div data-part="right">
+                        <div data-service-slot="rectangle_layer"></div>
+                    </div>
+                </div>
+                <div data-hide-button @click="hidePermanent"><span>Nicht mehr anzeigen</span></div>
+            </div>
+        </section>
+    </hp-layer>
+
+              </div>
+              
+  <div data-container="right">
+    <div :data-sticky="adHandler.sticky" :data-dynamic="adHandler.dynamicSides" data-ac="right" :data-service-slot="adHandler.rightName"></div>
+  </div>
+
+            </div>
+        </Page>
+      </hp-app>
+    </div>
+    <div data-service-slot="tam"></div>
+    
+    
+    <noscript>
+        <img alt="" width="1" height="1" src="//wa.gmx.net/gmx/gmx/s?name=homepage.startseite.pi.nojs&amp;country=de&amp;portal=gmx"/>
+    </noscript>
+
+    
+    
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/chunk-vendors.js"></script>
+
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/chunk-common.js"></script>
+
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/gmx/homepage.bundle.js"></script>
+
+
+  </body>
+</html>

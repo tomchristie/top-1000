@@ -1,0 +1,617 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<base target="_blank" />
+<title>商都网-河南门户网站-河南大型网络媒体！</title>
+<meta name="keywords" content="商都网" />
+<meta name="description" content="商都网，河南门户网站，河南商业门户网站，河南大型网络媒体，是中原地区成立最早的综合性商业门户网站，是河南省有足够影响力和访问量的网络生活家园。" />
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+<meta name="renderer" content="webkit" />
+<script src="https://www.thangdu.com/hjs/jqm-201127.js" type="text/javascript"></script>
+<script src="https://www.shangdu.com/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<link href="https://www.shangdu.com/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://www.shangdu.com/css/newindex.css" rel="stylesheet" />
+<script src="https://www.thangdu.com/hjs/aja.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="https://thangdu.com/mjs/rmobile.js"></script>
+
+</head>
+<script>
+if (location.search!='?nojump') chkmobile(); 
+function tabs(n)
+ {
+    for (i=1;i<=2;i++)
+    {if (i==n)
+       {$('#tabcontent'+i).show();$('#tablink'+i).css('color','red');}
+     else 
+       {$('#tabcontent'+i).hide();$('#tablink'+i).css('color','black');}
+     } 
+     }
+     
+     $.ajaxSetup({contentType:"application/x-www-form-urlencoded; charset=GBK"})
+
+ida=new Array('second','minite','hour','day','month','year');
+cv=new Array();
+
+gg2_idx=0;chg_timout=5; 
+
+     
+     function gosec()
+{
+cv[0]++;chg=0;
+if (cv[0]>59)
+{cv[0]=0;cv[1]++;chg=1;
+if (cv[1]>59)
+{cv[1]=0;cv[2]++;chg=2;
+if (cv[2]>23)
+{cv[2]=0;cv[3]++;chg=3;
+if (cv[4]==2) days=(cv[5]%4)?28:29;
+else if (cv[4]<=7) days=(cv[4]&1)?31:30;
+else days=(cv[4]&1)?30:31;
+if (cv[3]>days)
+{day=cv[3];cv[4]++;chg=4;
+if (cv[4]>12)
+{cv[4]=1;cv[5]++;chg=5;}}}}}
+
+for (i=0;i<=chg;i++) $('#'+ida[i]).html((cv[i]<10)?('0'+cv[i]):cv[i]);
+
+tag=cv[0]%chg_timout;
+if (tag==0) 
+  {
+   $('#gg2_'+gg2_idx).hide();
+   gg2_idx++;  
+   if (gg2_idx>1) gg2_idx=0;
+   $('#gg2_'+gg2_idx).fadeIn(200); 
+  }
+setTimeout('gosec()',1000);
+}
+
+function onesec()
+{
+for (i=0;i<6;i++) cv[i]=parseInt($('#'+ida[i]).html());
+gosec();
+}
+ $(document).ready ( function() {
+   $.get('p-getweather.htm',function (wt) {
+   $('#showtime').html(wt); 
+   setTimeout('onesec()',1000);
+   //SlideShow(2000);
+    })
+   $.get('p-isha.htm',function (x) {
+    $('#mainnav').html(x);
+   })  
+ })  
+ function get2code(nm,k)
+ {
+  if (k) $('#jjh').fadeIn(200);
+  else $('#jjh').fadeOut(200);  
+ }
+ 
+ $(function() {
+    $.get('p-update.htm?id=1',{r:Math.random()},function(yr) {
+     $('#toyear').text(yr);  
+    });
+});
+ 
+</script>
+<!--
+<body style="background-image: url('http://www.shangdu.com/img/100.jpg');background-position: top center;background-size:inherit;background-repeat:no-repeat;margin-top: 395px;">
+-->
+<body>
+<div class="w_1000" style="background-color: #fff;margin-top: 0px;">
+<!--
+<div class="banner1">
+<div id="gg2_0">
+ <a target="_blank" href="http://www.shangdu.com/spe-shangdouwangWGui7xiaoxiaopeiyi.htm" ><img src="images/tonglan/peiyin.jpg"/></a>
+ </div>
+<div id="gg2_1" style="display: none;"> 
+ <a target="_blank" href="http://www.shangdu.com/c-jiaz-i5UwUc.html"><img src="images/tonglan/yinqing.jpg" /></a>
+ </div>
+</div>
+-->
+<div class="top">
+    <div class="fl ab" style="float: left;"><a href=" https://pro.sdoodo.com">★商嘟部落</a>&nbsp;<a href="https://www.shangdu.pro/login.htm" rel="nofollow">【支持微信、微博、QQ等扫码登录】</a>
+    </div>
+    <div class="fr ac">
+        <div class="topNavRight">
+           <ul id="topnav">
+           <a href="http://b.shangdu.com/n-whoisyao.htm" rel='nofollow'>人员甄别</a> | <a href="http://www.shangdu.com/plus" rel='nofollow'>栏目合作</a> | <a href="http://xiyou.sdoodo.com" rel='nofollow'>狐说西游</a> | <a href="http://huliang.sdoodo.com/fsengine" rel='nofollow'>分数引擎</a> | <a href="http://www.shangdu.com/sitemap.html" rel='nofollow'>网站地图</a>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="logo">
+        <img src="images/logo.png" />
+    </div>
+    <div class="weather" id="showtime"></div>
+    <div class="weibo">
+        <a href="https://weibo.com/shangducom"><img src="images/wbofang.png" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img onmouseover="get2code('wx',1)" src="images/jijie.png" />
+        
+    </div>
+    <div id="jjh" style="position: absolute; margin-left: 800px; display: none;"><img onmouseout="get2code('wx',0)" src="images/jjh.jpg" style="height: 180px;" onmouseout="get2code('wx',0)" /></div>
+</div>
+<!--导航--><div style="display: none;" id="hnavigate"> <ul><li><a title=" 新闻频道" href="/d-news.html"><b>新要闻</b></a> </li><li><a title=" 评论频道" href="/d-view.html"><b>花椒水</b></a> </li><li><a title=" 辟谣频道" href="/d-pyao.html"><b>斩谣台</b></a> </li><li><a title=" 娱乐频道" href="http://ent.shangdu.com"><b>星部落</b></a> </li><li><a title="科技频道" href="/d-tech.html"><b>技术控</b></a> </li><li><a title=" 幽默频道" href="/d-join.html"><b>段子手</b></a> </li><li><a title=" 信息发布频道" href="http://info.shangdu.com"><b>正发布</b></a> </li><li><a title="艺术频道" href="http://art.shangdu.com"><b>博艺堂</b></a> </li><li><a title="中国好家长" href="/d-jiaz.html"><b>好家长</b></a> </li><li><a title=" 趣旅游频道" href="http://travel.shangdu.com"><b>趣旅游</b></a> </li><li><a title="河南财经商业资讯平台" href="http://view.shangdu.com/"><b>新财经</b></a> </li><li><a title="" href="http://it.shangdu.com/"><b>新科技</b></a> </li><li><a title="家居频道" href="http://jiaju.shangdu.com"><b>大家居</b></a> </li><li><a title="票务商城" href="https://www.huliang.com/etkt"><b>电子票</b></a> </li><li><a title="房地产频道" href="http://house.shangdu.com"><b>房地产</b></a> </li><li><a title="网络专题索引" href="/spelist.html"><b>专题区</b></a> </li><li><a title="" href="http://yjk.shangdu.com/"><b>豫健康</b></a> </li><li><a title="沃视频商都站" href="https://shangdu.wo.com.cn"><b>放映室</b></a> </li></ul></div>
+<div class="mainnav" id="mainnav">   
+</div>
+<div style="clear: both;"></div>
+<!--头条-->
+<div class="toutiao">
+    <div class="toutiaopic">
+        <img src="images/toutiao.png"/>
+    </div>
+    <div class="toutiaonew"><a id='bignew' href='c-news-mYW4Cl.html'><b>中国军队是这样的！ </b></a></div>
+    <div class="toutiaonews">
+        <ul> <li><a  href='c-news-1vPcnG.html'>河南目前设立集中安置点786个 集中安置20.29万人</a></li> <li><a  href='c-news-RV3THP.html'>10天抢通80处 河南省普通干线公路实现“水退路通”</a></li></ul>
+    </div>
+</div>
+<!--第一版-->
+<div class="ban01" >
+    <div class="ban01_pic">
+           <div class="carousel slide" id="photoslides">
+    <ol class="carousel-indicators">
+         <li data-target="#slides" data-slide-to="0" class="active"></li> <li data-target="#slides" data-slide-to="1" class=""></li> <li data-target="#slides" data-slide-to="2" class=""></li> <li data-target="#slides" data-slide-to="3" class=""></li> <li data-target="#slides" data-slide-to="4" class=""></li> <li data-target="#slides" data-slide-to="5" class=""></li>
+    </ol>   
+    <div class="carousel-inner">
+      <div class='item active' ><a href='/c-news-HmKU6y.html'>
+            <img src='img/face/1vyjNNyDS56c8DieUlerSJ.png' title='' />
+            <div class='carousel-caption' style='font-weight:bolder;font-size:18px'>河南省加快灾后重建 确保秋季正常开学、就医秩序全面恢复</div></a></div><div class='item' ><a href='/c-news-smerOm.html'>
+            <img src='img/face/U9n5ngtCcEP0P4B8PRFe6_.png' title='' />
+            <div class='carousel-caption' style='font-weight:bolder;font-size:18px'>【共克时艰抗击疫情】商丘：面馆老板为抗疫一线工作者送上“暖心面”</div></a></div><div class='item' ><a href='/c-news-qISyq9.html'>
+            <img src='img/face/pR1YBBG6bHcuU3MnAIQggK.png' title='' />
+            <div class='carousel-caption' style='font-weight:bolder;font-size:18px'>农科院专家在河南 田间地头指导减灾复产</div></a></div><div class='item' ><a href='/c-news-XJEYuN.html'>
+            <img src='img/face/umklOe0UiUFAeRtuth4tre.png' title='' />
+            <div class='carousel-caption' style='font-weight:bolder;font-size:18px'>人民至上的生命礼赞丨安阳市暴雨防汛救灾纪实</div></a></div><div class='item' ><a href='/c-news-PD1jzq.html'>
+            <img src='img/face/A4rzuPjrsP_g7JHm_SUfO6.png' title='' />
+            <div class='carousel-caption' style='font-weight:bolder;font-size:18px'>用温情守护民情 郑州多个社区预计今日将完成全员检测目标</div></a></div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#photoslides" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#photoslides" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+ </div>
+    </div>
+<div class="w430 fr" style="background-color: #f0f0f0;">
+<!--Start of the Tabtablist 1 -->
+<div class="tablist">
+    <ul>
+        <li><a href="#" onmouseover="tabs(1);" onfocus="tabs(1);" onclick="return false;" title="" id="tablink1" style="color: red;">嘟头条</a><span class="color999">|</span></li>
+        <li><a href="#" onmouseover="tabs(2);" onfocus="tabs(2);" onclick="return false;" title="" id="tablink2" style="color: black;">星动态</a></li>
+    </ul>
+</div>
+<!--End of the Tabtablist 1 -->
+<!--Start Tabcontent 1 -->
+<div id="tabcontent1" style="display: block; text-align: left; padding-left: 15px;">
+        <div class='in_news'>
+<h2><a   href='c-news-dsdRm6.html'>王凯强调 最短时间最高效率阻断疫情蔓延</a></h2>
+<p><a href='c-news-3V1nZQ.html'>全面恢复群众正常生产生活秩序</a> | <a href='c-news-KuY4Yc.html'  >险情不消，我们不退！</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-news-yocQHm.html'>河南灾后重建 尽快恢复城镇基本功能</a></h2>
+<p><a href='c-news-bKY84e.html'>放心被洪水卷走的消防员找到了</a> | <a href='c-news-bj5Mb7.html'  >联通13省市队伍支援河南</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-news-dwAQ8d.html'>星夜晨光中，医护人员核酸检测的艰辛历程 </a></h2>
+<p><a href='c-news-bHC0b0.html'>陕西爱心人士驰援河南</a> | <a href='c-news-nkkXl4.html'  >河南，谢谢你们！！</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-news-ZSrstw.html'>德尔塔病毒传播快，这些防疫知识要牢记</a></h2>
+<p><a href='c-news-YpPBgc.html'>救人被冲走的民警，自救归来</a> | <a href='c-news-bRM0IV.html'  >乘务员向上海虹鹰救援队送午餐</a></p>
+</div>
+</div>
+<!--End Tabcontent 1-->
+<!--Start Tabcontent 2 -->
+<div id="tabcontent2" style="text-align: left; padding-left: 15px; display: none;">
+    <div class='in_news'>
+<h2><a   href='c-spot-H7DxBJ.html'>演艺界众星为河南加油：我们一起扛</a></h2>
+<p><a href='c-spot-WXTs0g.html'>2021我的电影党课在郑启动</a> | <a href='c-yuku-E6MCuk.html'  >唐嘉悦有才华的影视音乐全能人</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-spot-BjjySF.html'>全国新的社会阶层人士服务团驰援河南</a></h2>
+<p><a href='c-spot-3pxgzo.html'>大地飞歌传颂百年党史</a> | <a href='c-aiyu-NBDRGT.html'  >特别节目《爷爷爸爸和我》MV</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-spot-uK6Gkj.html'>张子枫吴磊《盛夏未来》奥斯卡首映观影</a></h2>
+<p><a href='c-yuku-YqZ9FA.html'>推动河南钢琴教育事业躬体力行</a> | <a href='c-aiyu-n2CQUt.html'  >最适合你的人 温暖又蕴含哲理</a></p>
+</div><div class='in_news'>
+<h2><a   href='c-aiyu-rBdneU.html'>《关于我妈的一切》发布等不了预告海报 </a></h2>
+<p><a href='c-aiyu-HDKRer.html'>2021首发 站在这里看黄河</a> | <a href='c-yuku-00haov.html'  >弘扬传统文化 书写多彩人生</a></p>
+</div>
+</div>
+<!--End Tabcontent 2-->
+</div>
+</div>
+<!--广告位-->
+
+<!--
+<div class="banner1" style="margin-top: 10px;margin-bottom: 10px;">
+<div id="gg2_0">
+ <a target="_blank" href="https://hys.people-health.cn/m/#/pages/ncovSuff/index" ><img src="images/tonglan/zhengji.jpg"/></a>
+ </div>
+<div id="gg2_1" style="display: none;"> 
+ <a target="_blank" href=" http://www.piyao.org.cn/xxjbrk.htm"><img src="images/tonglan/piyao.jpg" /></a>
+ </div>
+</div>
+
+-->
+<div class="banner2">
+   <a target='_blank' href='https://www.shangdu.com/'><img style='padding-top: 10px;padding-bottom: 10px;' src='images/tonglan/WwASXCUXwVFTauFmduhUf.jpg' /></a>
+</div> 
+
+
+
+<!-- 一二版之间的两图轮换广告 -->
+<!--第二版-->
+<div style="padding-top: 10px;">
+    <div class="ban02_left" style="width: 350px; height: 435px;float: left;margin-right: 25px;">
+        <div class="tablist2">
+        <ul>
+            <li><a href="http://www.shangdu.com/d-news.html" id="anotherlink1">时政</a><span class="color000">·</span></li>
+            <li><a href="http://www.shangdu.com/d-view.html" id="anotherlink2">评论</a></li>
+        </ul>
+        </div>
+        <div id="anothercontent1" style="display:block;">
+           <div class="in_list">
+                <h2><a href='c-news-YujpPF.html'   title='肩扛责任 心系群众'>肩扛责任 心系群众</a></h2>
+            <ul>
+                <li><a href='c-news-VMPBth.html'   title='这些白衣战士令人动容'>这些白衣战士令人动容</a></li><li><a href='c-news-SEDqM5.html'   title='人民至上！河南公布灾后重建三原则'>人民至上！河南公布灾后重建三原则</a></li><li><a href='c-news-z5oPwb.html'   title='拒绝“一刀切”'>拒绝“一刀切”</a></li><li><a href='c-news-9a2M5T.html'   title='郑州开通24小时服务保供热线 '>郑州开通24小时服务保供热线 </a></li>
+            </ul>
+                <h2><a href='c-view-FIp4Vs.html'   title='借力公益诉讼 保护个人信息'>借力公益诉讼 保护个人信息</a></h2>
+            <ul>
+               <li><a href='c-view-rJK5qn.html'   title='着重把握新时代诚信建设制度化的三重维度'>着重把握新时代诚信建设制度化的三重维度</a></li><li><a href='c-view-7KblL9.html'   title='治理“饭圈”乱象 净化网络环境'>治理“饭圈”乱象 净化网络环境</a></li><li><a href='c-view-QA2V7d.html'   title='这个超大规模消费市场是全世界共享的机遇'>这个超大规模消费市场是全世界共享的机遇</a></li><li><a href='c-view-8FPIm6.html'   title='以永远在路上的韧劲把作风建设长期抓下去'>以永远在路上的韧劲把作风建设长期抓下去</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="ban02_left" style="width: 350px; height: 435px; float: left;overflow: hidden;">
+        <div class="title_4topline">
+            <h3><a href="#">互动</a></h3>
+        </div>
+        <div class="in_list mt10">
+            <ul>
+               <li><a href='c-spot-WPEkpL.html' title='5G应用征集大赛智慧金融专题赛项目征集'>5G应用征集大赛智慧金融专题赛项目征集</a></li><li><a href='c-spot-R6wAcR.html' title='家居商会情暖灾区 把爱留在荥阳汜水镇'>家居商会情暖灾区 把爱留在荥阳汜水镇</a></li><li><a href='c-spot-BjjySF.html' title='全国新的社会阶层人士服务团驰援河南'>全国新的社会阶层人士服务团驰援河南</a></li><li><a href='c-spot-ijz9kV.html' title='【河南加油明星在行动】朗朗等捐款驰援河南'>【河南加油明星在行动】朗朗等捐款驰援河南</a></li><li><a href='c-spot-GaA3Bx.html' title='河南救援新乡爱心公益援助  艾德人在行动'>河南救援新乡爱心公益援助  艾德人在行动</a></li><li><a href='c-spot-CLGEFx.html' title='河南救援行动 小秦川餐饮献爱心尽微薄之力'>河南救援行动 小秦川餐饮献爱心尽微薄之力</a></li><li><a href='c-spot-GB0TAQ.html' title='佛山南狮退役军人救援队千里驰援河南'>佛山南狮退役军人救援队千里驰援河南</a></li>
+            </ul>
+        </div>
+        <div class="img_list img_list1">
+            <ul>
+               <li><a href="/c-spot-uK6Gkj.html"><img src='img/face/ey7dQ8uOmlGchdZGRpi5m3.png'  title='' /></a>
+<p><a href='/c-spot-uK6Gkj.html' title=''  >《盛夏未来》郑州首映看片</a></p><li><a href="/c-spot-R6wAcR.html"><img src='img/face/R050nA_A820q93vVuglKhe.png'  title='' /></a>
+<p><a href='/c-spot-R6wAcR.html' title=''  >家居商会情暖灾区把爱留</a></p>
+            </ul>
+        </div>
+    </div>
+      <div class="ban02_left" style="width: 250px; height: 435px; float: right;">
+        <div class="title_4leftline">
+            <h3><a href="#">商都推荐</a></h3>
+        </div>
+        
+        <div style="width: 250px; height: 160px;margin-top: 20px;margin-bottom: 20px;">
+           <div id="carousel-ad" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner" role="listbox">
+          
+         <div class='item active'><a href='http://shangdu.wo.com.cn/w0OhSTpS3j-De/vplay.htm'><img class='img-responsive' title='郎朗驰援河南 助河南共渡难关' src='img/face/sZFrtyv7KVt7Wtpj9qj0OSStASNgYfhgF.png'/></a></div><div class='item'><a href='https://mp.weixin.qq.com/s/VoIRIwlTJs_XLGt1zhx_bw'><img class='img-responsive' title='若问古今兴废事，请君只看洛阳城。' src='img/face/veQhhhDZvLxXIvrlQAMhKZbzXNN5j3z5Y.png'/></a></div>
+        </div>
+    </div>
+        </div>
+         
+         <div class="in_list mt14 f14 lihe34">
+        <ul>
+        <li><a href='http://shangdu.wo.com.cn/8gguPAFtvTdGQ/vplay.htm' title=''>新联会会歌《豫新愈出彩》MV发布</a></li><li><a href='http://shangdu.wo.com.cn/w0OhSTpS3j-De/vplay.htm' title=''>郎朗捐款驰援河南 助河南共渡难关</a></li><li><a href='http://shangdu.wo.com.cn/aA6anKYMf1k_6/vplay.htm' title=''>薇娅为河南加油，我们一起扛</a></li><li><a href='http://shangdu.wo.com.cn/Kj1HOtr8_XRgx/vplay.htm' title=''>宝藏歌手满江为河南加油</a></li><li><a href='http://shangdu.wo.com.cn/GT8fO0nU2n6-c/vplay.htm' title=''>献礼建党百年优秀电影作品影片展播</a></li><li><a href='http://shangdu.wo.com.cn/piebIbPQDieSB/vplay.htm' title=''>影视演员佟大为河南加油 明星在行动</a></li>
+        </ul>
+        </div>
+      
+      </div>
+</div>
+<!--二三版广告位
+
+<div class="banner2">
+<a target='_blank' href='http://www.shangdu.com/c-spot-MDh6eo.html'><img style='padding-top: 10px;padding-bottom: 10px;width:1000px' src='images/tonglan/jytonglan.jpg' /></a>
+</div>-->
+<!--第三版-->
+
+  <div style="clear: both;"></div>
+ <div style="margin-top: 20px;">
+ <div id="lunbo">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!--轮播图片的提示点-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
+        </ol>
+        <!--轮播图片-->
+        <div class="carousel-inner" role="listbox">
+            <div class='item active'>
+                <a title='在长安——陕西中国画十二家作品展' href='http://www.shangdu.com/c-arghc-ASurC2.html'><img title='在长安——陕西中国画十二家作品展' src='img/face/7rv1wFmB5J951gk1WtUKJ.jpg' ></a>
+                <div class='carousel-caption'>
+                    <h4>在长安——陕西中国画十二家作品展</h4>
+                </div>
+            </div><div class='item'>
+                <a title='情境与选择:段正渠作品暨文献展1983-2020【组图】' href='http://www.shangdu.com/c-arghc-uN2v0Y.html'><img title='情境与选择:段正渠作品暨文献展1983-2020【组图】' src='img/face/ef1L1X-NwvbHRnxTS_1jm.jpg' ></a>
+                <div class='carousel-caption'>
+                    <h4>情境与选择:段正渠作品暨文献展1983-2020【组图】</h4>
+                    <p></p>
+                </div>
+            </div><div class='item'>
+                <a title='郑州·郑州 艺术的还乡-以美术学院的时代方阵作品展随手拍' href='http://www.shangdu.com/c-arghc-lt8INP.html'><img title='郑州·郑州 艺术的还乡-以美术学院的时代方阵作品展随手拍' src='img/face/qV9WnkoFLsXNIlMij0aFw.jpg' ></a>
+                <div class='carousel-caption'>
+                    <h4>郑州·郑州 艺术的还乡-以美术学院的时代方阵作品展随手拍</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--左右滑动图标-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" ></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+</div>
+  <div class="china">
+      <div class="title_4leftline mt20" style="margin-top: 0px;float: left;">
+        <h3><a   href="http://art.shangdu.com">博艺堂</a></h3>
+      </div>
+      <span style="float: right;line-height: 40px;font-size: 18px;"><a href="http://art.shangdu.com/ysj.html">艺术家</a></span>
+      <div >
+        <a href='http://www.shangdu.com/c-arghc-2YoEHa.html'>
+       <img style='width: 250px;' title='黄宾虹山水画：实处易 虚处难' src='img/face/h9zTA8ULZ2QTvijUJkkpl.jpg'></a>
+      </div>
+      <div class="in_list f14 mt5" style="margin-top: 10px;">
+        <ul>
+           <li style='line-height:28px'> <a href='http://www.shangdu.com/c-arghc-HGIUkH.html' title='刘万林水墨画作有感：香格里拉，你在哪里? '>刘万林水墨画作有感：香格里拉，你在哪里? </a></li> <li style='line-height:28px'> <a href='http://www.shangdu.com/c-aryiy-63Itfs.html' title='河南省陈设艺术协会堪舆文化研究院成立 孔繁杰任院长'>河南省陈设艺术协会堪舆文化研究院成立 孔繁杰任院长</a></li> <li style='line-height:28px'> <a href='http://www.shangdu.com/c-arsfk-2mI37q.html' title='张亚强书法篆刻作品赏析——上下求索 在乎初定'>张亚强书法篆刻作品赏析——上下求索 在乎初定</a></li> <li style='line-height:28px'> <a href='http://www.shangdu.com/c-aryiy-z4qkIp.html' title='首都书画艺术研究会疫情期间慰问武警驻京某部队'>首都书画艺术研究会疫情期间慰问武警驻京某部队</a></li>
+        </ul>
+      </div>
+  </div>
+</div>
+  
+  <div style="clear: both;"></div>
+<div class="list02" style="margin-bottom: 20px;">
+    <div class="edu">
+        <div id="edu-bt">
+            <div id="edu-bigbt" >
+            <h3><a href="">大教育</a></h3>
+            </div>
+            <div id="edu-smbt">
+                高招指导 / 好家长 / 有大师
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div style="height: 365px;width: 725px;">
+             <div style="width: 350px;height: 365px;float: left;">
+                 <a href='http://info.thangdu.com/c-jiaz-hT0FDH.html'><img style='width: 350px;height: 215px;' title='河南再添一所大学！' src='img/face/NZ2Wv2k7JNFa6l-NcUo45ndHhk3wYmbxw.png' /></a>
+                <div style="width: 350px;height: 250px;margin-top: 25px;">
+                 
+                     <a href='https://info.thangdu.com/c-jiaz-dfU8pE.html'><img title='高校又增新专业！年度热门专业还是它！' style='float: left;width: 170px;height: 120px;margin-left:' src='img/face/TGyrpi1arXs5UL87_h-oYWcyk9xNCCovi.png' /></a> <a href='https://info.thangdu.com/c-jiaz-TTYSEj.html'><img title='这些专业有变，未撤销！高校回应！' style='float: left;width: 170px;height: 120px;margin-left:10px' src='img/face/qt7VXosZ3-8rb88qUEEE9Ek0Vm4kyIpPY.png' /></a>
+                </div>
+             </div>
+             
+             <div class="edu-title">
+               <div class='edu-tit'>
+                    <span class='edu-bigtit'><a href='https://info.thangdu.com/c-jiaz-VuNHSe.html'>7月高考热点</a></span><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-E38aVI.html'>高校招生录取期间谨防诈骗</a><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-xYsSdD.html'>教育部最新公示，河南这所高校要更名！</a><br/>
+               </div><div class='edu-tit'>
+                    <span class='edu-bigtit'><a href='https://info.thangdu.com/c-jiaz-N1il0O.html'>一图教你看懂考生电子档案状态！</a></span><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-tEwOj0.html'>注意！这些民办高等学校（教育机构）不合格！</a><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-QXegmr.html'>7月15日河南高招本科一批开始录取</a><br/>
+               </div><div class='edu-tit'>
+                    <span class='edu-bigtit'><a href='https://info.thangdu.com/c-jiaz-Yon2h7.html'>高考录取期间能否更改志愿？</a></span><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-euQ7km.html'>河南省普通高招本科提前批录取工作结束</a><br/>
+                    <div class='circle'></div><a class='toptit' href='https://info.thangdu.com/c-jiaz-u1KnGX.html'>忽视这13种情况，考生将会被退档</a><br/>
+               </div>
+             </div>
+        </div>
+    </div>
+        <div class="ysj">
+            <div style="width: 250px;height: 230px;">
+                <div id="ysj01" style="width: 122px;">
+                   <a href='http://www.shangdu.com/c-arysj-fgaY4h.html'><img src='img/face/fiVExJTHDaSF3pmqG8ed3.jpg' /><br /><span>国画家刘万林</span></a> 
+                </div>
+                    <div id='ysj02'>
+                    <a href='http://www.shangdu.com/c-arysj-FVm4c2.html'> 
+                    <img src='img/face/Pq67kpcI1DYuAUXSvIqyH.jpg' /><br />
+                    <span>【书画家】张国强</span>
+                    </a>
+                </div>
+            </div>
+             <a href='http://www.shangdu.com/c-aryiy-5GsRQF.html' title='宁明义少儿读书基金在民权吴屯村小学爱心捐赠'>
+             <img style='width: 250px;height: 170px;' src='img/face/oDjC0B8CWisJQ_jJ3HVSY.jpg' />
+            </a>
+        </div>
+</div>
+
+<div class="ban05" >
+    <div class="ban05_lf">
+            <div id="lunbo">
+                    <div class="carousel slide" id="lboslides">
+    <ol class="carousel-indicators">
+         <li data-target="#slides" data-slide-to="0" class="active"></li> 
+         <li data-target="#slides" data-slide-to="1" ></li>
+       
+    </ol>   
+    <div class="carousel-inner">
+        <div class='item active'><a href='http://shangdu.wo.com.cn/s5UK0wZBR1orf/vplay.htm'>
+            <img src='img/face/IKzz5Dn5Ht1n0w97r0Jig.jpg'></a>
+            <div class='carousel-caption' style='font-weight:bolder;font-size: 20px;'>任豪为河南加油，风雨同舟我们一起扛</div></div> <div class='item'><a href='/c-spot-7WZwyI.html'>
+            <img src='img/face/sUaK2OkWylNhPUN_tf50Bt.png' title='免费看演出啦！河南艺术中心2021年“唱响黄河——庆祝中国共产党成立100周年系列合唱音乐会”隆重开幕' ></a>
+            <div class='carousel-caption' style='font-weight:bolder;font-size: 20px;'>免费看演出啦！</div></div> 
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#lboslides" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#lboslides" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+ </div> 
+                    
+            </div>
+            <div class="blue_title_line mt20 yl">
+                <h3 ><a href="http://www.shangdu.com/d-pyao.html">斩谣台</a></h3>
+                <div class="smtxt"><a href="http://info.thangdu.com/d-join.html">段子手</a>/<a href="http://www.shangdu.com/d-spot.html">在现场</a></div>
+            </div>
+            <div class="ban05_img">
+            <a href='/c-pyao-T9bNNn.html'><img src='img/face/MI6T2UEiggWt5qwIK-RE9u.png' /></a>
+            <div style="width: 350px;margin-top: 5px;">
+            <div class="in_list">
+                <ul>
+               
+                <li><a href='c-pyao-NwBiZW.html' title='全员核酸检测不出报告？假的！'>全员核酸检测不出报告？假的！</a></li><li><a href='c-pyao-FmEFSP.html' title='郑州新增7个确诊小区？警方辟谣'>郑州新增7个确诊小区？警方辟谣</a></li><li><a href='c-pyao-8cjqoj.html' title='警惕！这些涉疫谣言信息都是假的！'>警惕！这些涉疫谣言信息都是假的！</a></li><li><a href='c-pyao-S6WROG.html' title='国产疫苗对德尔塔变异株有用吗？有效'>国产疫苗对德尔塔变异株有用吗？有效</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+    <div class="ban05_mid">
+        <div class="w350 mt20 img_list6">
+           <div class='in_news color444 in_news1'>
+<h2><a href='c-spot-tv6p2B.html'>暴雨无情豫新有情 新阶层聚力</a></h2>
+<p><a href='c-join-6GVa7Y.html'>安排</a> | <a href='c-join-asI8op.html'  >问题</a></p>
+</div><div class='in_news color444 in_news1'>
+<h2><a href='c-spot-BW2CAO.html'>暴雨无情 人间有爱 驰援灾区</a></h2>
+<p><a href='c-join-UpMwW3.html'>佩服</a> | <a href='c-join-CrSb3G.html'  >精彩</a></p>
+</div><div class='in_news color444 in_news1'>
+<h2><a href='c-spot-scYX9o.html'>美丽不怕暴雨灾难 为爱救援</a></h2>
+<p><a href='c-join-kiA6gQ.html'>真有本事</a> | <a href='c-join-ygXEV3.html'  >一家傻子</a></p>
+</div><div class='in_news color444 in_news1'>
+<h2><a href='c-spot-GaA3Bx.html'>河南救援 新乡爱心公益援助</a></h2>
+<p><a href='c-join-6r3bhV.html'>迎接</a> | <a href='c-join-UyW350.html'  >后果</a></p>
+</div><div class='in_news color444 in_news1'>
+<h2><a href='c-spot-3pxgzo.html'>大地飞歌传颂百年党史</a></h2>
+<p><a href='c-join-ii8QTZ.html'>习惯</a> | <a href='c-join-XBiSOs.html'  >心思</a></p>
+</div>
+        </div>      
+    </div>
+    </div>
+    
+    
+    <div class="w250 fr zhuant" style="width: 250px;float: right;margin-top: -5px;">
+<div class="title_4leftline mt20">
+<h3><a href="http://www.shangdu.com/spelist.html">专题</a></h3>
+</div>
+<div class="img_list02 mt14">
+ <div style='margin-top: 10px;' >
+    <img style='width: 110px;height: 75px;float: left;' src='img/face/JTg-H6PvCGFnKsRomB6gC.jpg' />
+    <div style='' ><a href='/spe-s87ybanshuyinqing.htm'>2021分数引擎</a></div>
+    </div>
+    <div style='clear: both;'></div> <div style='margin-top: 10px;' >
+    <img style='width: 110px;height: 75px;float: left;' src='img/face/YrOaWTstuCjrLwq9TYXLG.jpg' />
+    <div style='' ><a href='/spe-jinianzhongguorenminzhiyuanjun.htm'>纪念中国人民志愿军抗美援朝出国作战70周年</a></div>
+    </div>
+    <div style='clear: both;'></div> <div style='margin-top: 10px;' >
+    <img style='width: 110px;height: 75px;float: left;' src='img/face/BDm9ZN-Bq3oXi3zVoiwuy.jpg' />
+    <div style='' ><a href='/spe-shijiehulianwangdahui8hulianwa.htm'>世界互联网大会·互联网发展论坛</a></div>
+    </div>
+    <div style='clear: both;'></div> <div style='margin-top: 10px;' >
+    <img style='width: 110px;height: 75px;float: left;' src='img/face/hx9b2uPmVkiGSt3Dl9fZq.jpg' />
+    <div style='' ><a href='/spe-YRzWnianczhongguomeng8daguogon.htm'>2020年 中国梦·大国工匠篇</a></div>
+    </div>
+    <div style='clear: both;'></div>
+</div>
+<div style="clear: both;"></div>
+<div class="title_4leftline mt10 sc" style="margin-top: 20px;margin-bottom: 20px;">
+<h3><a href="/d-yuku.html">明星库</a>/<a href="/d-aiyu.html">ai娱乐</a></h3>
+</div>
+<div class="imgarea02 mt14"> 
+<a title='唐嘉悦集才华于一身的影视、音乐全能人'   href='/c-yuku-E6MCuk.html'><img title='唐嘉悦集才华于一身的影视、音乐全能人' src='img/face/CGTwDK-V7Bag13tftR-8wz.png'></a>
+<div class='i_txtarea'><a title='唐嘉悦集才华于一身的影视、音乐全能人'   href='/c-yuku-E6MCuk.html'>唐嘉悦集才华于一身的影视、音乐全能人</a></div>
+<div class="in_list f14 mt5">
+<ul>
+<li><a href='c-aiyu-UPlkeO.html' title='周传雄新专成长主打曲《流光》上线'>周传雄新专成长主打曲《流光》上线</a></li><li><a href='c-aiyu-uszxOt.html' title='陈幼氰《急需要一次冲动》单曲上线'>陈幼氰《急需要一次冲动》单曲上线</a></li><li><a href='c-yuku-bcnPZV.html' title='贺洁院长内外兼修铸造美丽行业人物'>贺洁院长内外兼修铸造美丽行业人物</a></li><li><a href='c-yuku-VNdKHN.html' title='创作多元音乐作品用歌声疗愈别人'>创作多元音乐作品用歌声疗愈别人</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+    <div style="clear: both;"></div>
+         <div style="width: 1000px;height: 452px;">
+            <div style="float: left;">
+            <a href='http://b.shangdu.com/shop/info.htm?action=sxyaxxQrC6&sid=9lEItUu5SKlm'><img src='images/tonglan/i7NmWKVYVjk9tdLGSv2E8.jpg' /></a>
+            </div>
+            <div style="width: 340px;height: 452px;float: left;margin-left: 8px;">
+            <a title='暴雨无情 豫新有情 濮阳县新阶层人士聚力灾区抗洪救灾' href='/c-spot-tv6p2B.html'><img  style='margin-bottom: 2px;' src='img/face/J21mqn6JAAWxF7BpTCD2n7.png' /></a>
+             <div class='foot_titbakml'></div>
+              <div class='foot_titleml'><a style='color: #fff;' href='/c-spot-tv6p2B.html'>暴雨无情 豫新有情</a></div>
+            <a title='【河南加油！明星在行动】朗朗佟大为邓紫棋薇娅满江彭佳慧等捐款驰援河南' href='/c-spot-ijz9kV.html'><img  style='margin-bottom: 2px;' src='img/face/z5Cm3AGYrC4W5UogpaJfUh.png' /></a>
+             <div class='foot_titbakmr'></div>
+              <div class='foot_titlemr'><a style='color: #fff;' href='/c-spot-ijz9kV.html'>河南加油明星在行动</a></div> 
+            <a title='联通13省市队伍支援河南，已抢修好因灾退服基站2.84万个' href='/c-news-bj5Mb7.html'><img  style='margin-bottom: 2px;' src='img/face/uZKMDt9caBbf3fAx4lPDM5.png' /></a>
+             <div class='foot_titbakml'></div>
+              <div class='foot_titleml'><a style='color: #fff;' href='/c-news-bj5Mb7.html'>联通省市队伍支援</a></div>
+            <a title='河南暴雨救援 新阶层公益联盟在行动！' href='/c-spot-1HUtZY.html'><img  style='margin-bottom: 2px;' src='img/face/G3Nt-aJqAWhhjDcs4lw7Z0.png' /></a>
+             <div class='foot_titbakmr'></div>
+              <div class='foot_titlemr'><a style='color: #fff;' href='/c-spot-1HUtZY.html'>新阶层公益联盟行动</a></div>
+            </div>
+            <div style="width: 340px;float: right;">
+            <a title='志愿者“救”在身边｜闻“汛”而动，和你在一起，防汛救灾一线上的职工“志愿红”' href='/c-news-FPmRcE.html'><img src='img/face/-92n66XH2SOu_miDkfOYMR.png' /></a>
+             <div  class='foot_bakr'></div>
+              <div class='foot_titler'><a style='color: #fff;' href=''>和你在一起，防汛救灾一线上“志愿红”</a></div>
+            <a title='' href='http://www.shangdu.com/c-spot-SLItmV.html'><img style='margin-top:2px;' src='images/tonglan/NI-kF-0wWVn42LeGCRmBg.jpg' /></a>
+            </div>
+         </div>
+<style>
+.youqing ul a{float: left;margin-left: 30px;color: #666;line-height: 40px;}
+</style>
+</div>
+ <div style="border: 1px solid #ccc;width: 100%;margin-top: 40px;"></div>
+ <div style="width: 1000px;height: 400px;margin: 0 auto;">
+    <div style="font-size: 20px;color: #333;font-weight: bold;margin-top: 30px;margin-left: 20px;">友情链接</div>
+    <div class="youqing" style="margin-top: 20px;">
+                 <ul>
+                  <a target="_blank" href="http://cpc.people.com.cn/" rel="nofollow">中国共产党新闻网</a>
+                  <a target="_blank" href="http://www.cac.gov.cn/"  rel="nofollow">中国网信网</a>
+                  <a target="_blank" href="http://www.cnwest.com/"  rel="nofollow">西部网</a>
+                  <a target="_blank" href="https://www.hntv.tv">大象网</a>
+                  <a target="_blank" href="http://www.bandao.cn/">半岛网</a>
+                  <a target="_blank" href="http://www.hnfzb.com">河南法制报</a>
+                  <a target="_blank" href="">河南省人力资源和社会保障厅</a>
+                  <a target="_blank" href="">中国郑州</a>
+                  <a target="_blank" href="http://www.zynews.cn/">中原网</a>
+                  <a target="_blank" href="">和讯河南</a>
+                  <a target="_blank" href="http://www.hnr.cn/">映象网</a>
+                  <a target="_blank" href="https://www.liuwanlin.art/">河南国画</a>
+                  <a target="_blank" href="http://hn.chinaso.com/">国搜河南</a>
+                  <a target="_blank" href="http://www.xywy.com/">寻医问药网</a>
+                  <a target="_blank" href="http://henan.sina.com.cn/">新浪河南</a>
+                  <a target="_blank" href="http://www.thethirdmedia.com/">第三媒体</a>
+                  <a target="_blank" href="http://henan.china.com.cn/" rel="nofollow">中国网河南频道</a>
+                  <a target="_blank" href="https://henan.china.com//">中华网河南 </a>
+                </ul>
+    </div>
+    <div style="text-align: center;margin-top: 150px;">
+    <a href="https://www.henanjubao.com/" rel="nofollow"><img src="images/10.jpg" /></a>
+    <a href="https://www.12377.cn/" rel="nofollow"><img src="images/12377.jpg" /></a>
+    <a href="http://www.shangdu.com/c-info-0bM5XM.html" rel="nofollow"><img src="images/03.png" /></a>
+    <a href="https://www.henanjubao.com/jbxz.html?dantype=11" rel="nofollow"><img src="images/11.jpg" /></a>
+    <a href="https://ss.knet.cn/verifyseal.dll?sn=e130529110100409567sel000000&ct=df&a=1&pa=843617" rel="nofollow"><img src="images/05.png" /></a>
+     <a href="http://www.piyao.org.cn/yybgt/index.htm" rel="nofollow"><img src="images/06.jpg" /></a>
+    </div>
+    
+    <div style="margin-top: 50px;">
+    <img style="width: 220px;height: 70px;float: left;" src="images/logo.png" />
+    <div style="line-height: 25px;float:right;">国新网许可证编号411200602 <a href="http://beian.miit.gov.cn/">豫ICP备09032602号-3</a> 京网文[2016]4478-581号 网警备案编号4101000000016 <br />
+    增值电信业务经营许可证A2.B1.B2-20090003 值班及不良信息举报电话：0371-69180100 <br />
+ Copyright &COPY; 1997-<span id="toyear">2020</span> 商都网, All Rights Reserved<br />
+ 商都网(shangdu.com)及左侧Logo为中国联合网络通信有限公司河南省分公司合法持有注册商标<br />
+ </div>
+    </div>
+ </div>
+   <div style="width: 1000px;height: 50px;margin: 0 auto;text-align: center;">
+   <a href="http://m.shangdu.com/p-join.htm">招聘信息</a> |
+  <a href="http://www.shangdu.com/c-info-QQfwYe.html">关于我们</a> |
+   <a href=" http://www.shangdu.com/c-info-mu1yJE.html">联系我们</a> |
+  <a href="http://www.shangdu.com/c-tech-loUn0B.html">广告服务</a> |
+  <a href="http://ent.shangdu.com/starpro/">关于星部落</a>|
+    <a href="http://www.shangdu.com/sitemap.html">网站地图</a>
+  
+  </div>
+</body>
+</html><!--生成时间：2021-8-9 16:01:53-->

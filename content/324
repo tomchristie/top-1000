@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>慧聪网-中小企业经营服务平台</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="慧聪网（Hc360.Com）B2B电子商务平台，为您提供B2B行业资讯、供应、求购信息，是企业寻求电子商务网络贸易信息的行业门户，聪慧的老板上慧聪！"/>
+  <meta name="keywords" content="慧聪,慧聪网,B2B,电子商务,网上贸易,批发,采购,网上贸易,供求信息,求购信息,供应信息,公司黄页,行业资讯,采购批发,行业门户,hc360"/>
+  <meta name="applicable-device" content="pc"/>
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+
+  <meta name="360-site-verification" content="57047297a7ee1b9f7067022d8b829e5a" />
+<meta charset="UTF-8" content="UDFbIjNALDgHIScMOzd_OCU9An9xB2g99X7gr0ooEIRXdDJ_dKGL7c-w" csrf-param="_csrf_token" method-param="_method" name="csrf-token">
+  <link phx-track-static rel="stylesheet" href="//at.alicdn.com/t/font_2376849_b6qmh45w8t.css"/>
+  <link phx-track-static rel="stylesheet" href="https://style.org.hc360.com/css/chat/bizchatStyle.css"/>
+
+  <style>
+    body{
+      opacity: 0;
+      transition: .5s;
+    }
+    body.loaded{
+      opacity: 1;
+    }
+
+    .content::before{
+      content: "";
+      display: block;
+      width: 70px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #dbdbdb;
+      z-index: 1;
+    }
+
+    .headerBox{
+      overflow: visible;
+    }
+
+    .SearchWrap_cont, .h_search .SearchWrap_record {
+      display: block;
+    }
+
+    .navCon.iphone .fr .codeImg {
+      display: block;
+    }
+    .list.exhibition .img, .list.product .img, .list.product .img {
+      width: 158px;
+      height: 158px;
+      line-height: 158px;
+    }
+    .list.product .img img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    .list.company .img {
+        font-size: 0px;
+        box-sizing: border-box;
+    }
+    .list.company .img a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 68px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .list.company .img img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    .toolbarBox {
+      position: relative;
+    }
+  </style>
+
+  <script src="//style.org.hc360.com/js/build/source/core/jquery.min.js"></script>
+
+  <script src="//style.org.hc360.com/js/build/source/core/hc.common.js"></script>
+  <script src="//style.org.hc360.com/js/build/source/core/jquery.lazyload.1.9.7.js"></script>
+
+      <script>
+        userToken = "SFMyNTY.g2gDdAAAAAFkAAd2aXNpdGlkZAADbmlsbgYA5PHaKnsBYgABUYA.HLDtnKoWBHNMEoEDVPdNsGiCvG6UdG-DxlQ4zrMHdC0"
+        ssouser = {"visitid":null};
+        uid = ssouser.uid;
+        username = ssouser.username;
+      </script>
+
+</head>
+<body data-servertime="1628511597000">
+  <!--顶部广告-->
+
+  <div class="topAdImg" onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Top_BannerAds')" style="background-image:url(//img006.hc360.cn/k2/M07/2E/91/wKhQxGD2Y3WECl9bAAAAAGcOfHo144.jpg)"><a href="http://cppm15.zzpxedu.com/" target="_blank"></a></div>
+
+  <div class="content">
+    <div class="homePageCon">
+      <div class="index-app" id="index-app">
+        <!--顶部条-->
+<div class="toolbarBox">
+  <div class="toolbarCon">
+    <div class="toolbarLeft">
+      <!--
+        <div class="login-status" data-selector="login-before" style="display: block;">
+        <a v-if="!LoginID" onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_login')" href="https://sso.hc360.com/user/login.html?portalID=hcindex&amp;ReturnURL=http%3A%2F%2Fwww.hc360.com" class="login">登录</a>
+        <div v-if="!LoginID" class="topReg">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_signin')" href="https://sso.hc360.com/user/reg.html?sourcetypeid=1517" class="reg" target="_blank">免费注册</a>
+        </div>
+        <p v-if="LoginID" class="userName">{{LoginID}}</p>
+        <a v-if="LoginID" href="http://my.b2b.hc360.com/my/turbine/template/firstview,signout.html" class="exit">退出</a>
+        </div>
+      -->
+    </div>
+    <div class="toolbarRig">
+        <ul>
+            <li><div class="navTitle nArrow">
+                <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_SubmitProduct')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/corcenter%2Cbusiness%2Cstepsupplyfirst.html" target="_blank" class="addProduct">发布商品</a>
+            </div></li>
+            <li>
+
+                <div class="navTitle">
+                    <a href="javascript:void(0);">我的慧聪</a>
+                </div>
+                <div class="navCon w225">
+                    <em></em>
+                    <dl>
+                        <dd>
+                            <h3>我是买家</h3>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_buyer_enterpurchase')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/buycenter,company,buyermain.html" target="_blank">买家工作台</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_buyer_buyproducts')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/transaction%2Corder%2Cbuyerorder_list.html" target="_blank">已买到的产品</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_buyer_releasepurchaseplan')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/firstview,purchaseplan.html" target="_blank">发布采购计划</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_buyer_suppliermanagement')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/buycenter%2Csupplier%2Cmyenprovider.html" target="_blank">供应商管理</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_buyer_leavemessage')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/buycenter%2Cbusinnotes%2Crecwords.html" target="_blank">我的留言</a>
+                        </dd>
+                        <dd>
+                            <h3>我是卖家</h3>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_seller_enterdeal')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/trade,company,trademain.html?pusherpage=main" target="_blank">卖家工作台</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_seller_saleproducts')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/transaction%2Corder%2Csellerorder_list.html" target="_blank">已卖出的产品</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_seller_logistics')" href="https://56.hc360.com/wlorder/index.html" target="_blank">发物流</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_seller_storemanagement')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/corcenter%2Ccompany%2Csitemain.html" target="_blank">管理炫铺</a>
+                            <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_homepage_navigationbar_myhc_seller_leavemessage')" href="https://sso.hc360.com/user/login.html?ReturnURL=http://my.b2b.hc360.com/my/turbine/template/corcenter%2Cbusinnotes%2Crecwords.html" target="_blank">我的留言</a>
+
+
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+        <li>
+          <div class="navTitle">
+            <a href="http://www.hc360.com/map-new.htm" target="_blank">网站导航</a>
+          </div>
+          <div class="navCon navCon2020 siteMap"><em></em><dl><dd><h3>店铺服务</h3><div class="sitemapLink"><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_deal" href="https://b2b.hc360.com/intro/mmtindex.html" target="_blank">慧生意</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_HuiYouCai" href="http://b2b.so.com/ad" target="_blank">慧优采</a><a data-click="UserBehavior_homepage_navigationbar_QQb2b" href="http://b2b.qq.com/entry" target="_blank">慧采购</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_QiYeHao" href="http://champion.hc360.com/champion/vss/p/activity.html?psource=90" target="_blank">企业号</a><a data-click="UserBehavior_homepage_navigationbar_BaiduApplets" href="http://smartprogram.hc360.com/baidutp/" target="_blank">百度小程序</a><a data-click="UserBehavior_homepage_navigationbar_WechatApplets" href="http://madata.hc360.com/app/" target="_blank">微信小程序</a></div></dd><dd><h3>推广服务</h3><div class="sitemapLink"><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_interconnect" href="http://p4p.hc360.com/p4phome/p4p/homepage/p4phomepage.html" target="_blank">互通宝</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_bidking" href="http://info.hc360.com/list/mvb.shtml" target="_blank">标王</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_productandservice_toprank" href="https://b2b.hc360.com/rank/jbtm.html" target="_blank">金榜题名</a></div></dd><dd><h3>经营服务</h3><div class="sitemapLink"><a data-click="UserBehavior_homepage_navigationbar_sitemap_OperatingService_Sendlogistics" href="https://56.hc360.com/wlorder/index.html" target="_blank">发物流</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_OperatingService_AgencyOperating" href="https://b2b.hc360.com/dyy/index.html" target="_blank">代运营</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_OperatingService_HCMicrofinance" href="http://www.dchcloan.com/" target="_blank">慧聪小贷</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_specialchannel_inlandexhibition" href="http://info.chat.hc360.com/zt/zhpd/index.shtml" target="_blank">国内展会</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_specialchannel_famousenterprisebuyer" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购</a><a data-click="UserBehavior_homepage_navigationbar_sitemap_specialchannel_hcnews" href="https://toutiao.hc360.com/" target="_blank">慧聪头条</a></div></dd></dl></div>
+        </li>
+        <li>
+          <div class="navTitle"><a href="javascript:void(0);">掌上慧聪</a></div>
+          <div class="navCon iphone">
+            <em></em>
+            <dl>
+              <dd>
+              <div class="fl">
+                <p class='cur' onclick="$(this).addClass('cur').siblings().removeClass('cur');var index = $(this).index();$('.navCon.iphone .fr div:eq('+index + ')').show().siblings().hide()">慧聪移动官网</p>
+                <p onclick="$(this).addClass('cur').siblings().removeClass('cur');var index = $(this).index();$('.navCon.iphone .fr div:eq('+index + ')').show().siblings().hide()">慧聪网公众号</p>
+                <p onclick="$(this).addClass('cur').siblings().removeClass('cur');var index = $(this).index();$('.navCon.iphone .fr div:eq('+index + ')').show().siblings().hide()">慧聪物流小程序</p>
+
+
+                <!-- <p onclick="$(this).addClass('cur').siblings().removeClass('cur');var index = $(this).index();$('.navCon.iphone .fr div:eq('+index + ')').show().siblings().hide()">慧生意APP</p> -->
+              </div>
+              <div class="fr">
+                <div v-show="qrcodeIndex===0" style='display:block' class="codeImg"><img src="//style.org.hc360.com/images/homepage/2020/hcCode.png"></div> <!-- 慧聪移动官网 -->
+                <div v-show="qrcodeIndex===1" class="codeImg"><img src="//style.org.hc360.com/images/homepage/2020/wscCode.png"></div> <!-- 慧聪网公众号 -->
+                <div v-show="qrcodeIndex===2" class="codeImg"><img src="//b2b.hc360.com/mmt/logistics/images/logistics/56codeimg.jpg"></div> <!-- 慧聪物流小程序 -->
+
+              </div>
+              </dd>
+            </dl>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+        <!--首屏-->
+        <div class="headerBox">
+          <!--logo-->
+          <div class="logo">
+            <a href="javascript:void(0);" onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_HC360Logo')"></a>
+          </div>
+          <!--搜索 搜索浮动 添加样式bounce-out-->
+          <div class="searchBox">
+            <div class="searchCon">
+              <div class="w1170">
+                <div class="hcLogo"><a href="javascript:void(0);"></a></div>
+                <div class="h_search">
+                  <div class="logo_search">
+                    <div class="SearchWrap">
+                      <div class="searchSele" :class="showOption?'seleShow':''">
+                        <div class="seleCon" @click.stop="showSearchOption"><p>{{searchOptionName}}</p><em></em></div>
+                        <ul id="indexList">
+                          <li v-for="(opt,index) in searchOptionObj" :id="opt.option" :class="opt.option===searchOption?'seleCur':''" @click="switchSearchOption(opt.option,index)">{{opt.name}}</li>
+                        </ul>
+                      </div>
+                      <div class="logo_search_l">
+                        <input size="53" placeholder="请输入产品名称" name="keyInput" node-name="searchInput" id="keyInput" maxlength="50" class="txt_key" autocomplete="off" @focus="setFocus" @blur="setBlur" @input="keyInput" @keyup.enter="doSearchBtn" v-model="key">
+                        <label for="w" class="searchdetail"></label>
+                        <div v-show="liveData.length>0 && searchFocus" class="SearchWrap_cont" style="display: none;">
+                          <ul class="bwListContent">
+                            <li v-for="list in liveData" class="bwlist">
+                              <dl>
+                                <dd>
+                                  <div class="picbox">
+                                    <a :href="'//b2b.hc360.com/supplyself/'+list.infoid+'.html'" :title="list.title" target="_blank">
+                                      <img :src="list.picpath">
+                                    </a>
+                                  </div>
+                                  <p class="txtil"><a :href="'//b2b.hc360.com/supplyself/'+list.infoid+'.html'" :title="list.title" target="_blank">{{list.title}}</a></p>
+                                  <p class="pay">&yen;{{list.pricerange}}</p>
+                                </dd>
+                              </dl>
+                            </li>
+                          </ul>
+                          <ul class="cgListContent" style="display: none;">
+                            <li class="active"><span>约147810个结果</span><a href="javascript:void(0);" title="挖掘机">挖掘机</a></li>
+                            <li><span>约6810个结果</span><a href="javascript:void(0);" title="挖掘机械">挖掘机械</a></li>
+                            <li><span>约6810个结果</span><a href="javascript:void(0);" title="挖掘机械">挖掘机械</a></li>
+                          </ul>
+                          <p class="hotSearch_tt">热搜</p>
+                          <div class="hotSearch_word">
+                            <ul class="hotSearch">
+
+
+
+                                  <li><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E6%9C%BA" mc="seller" target="_blank" onmousedown="">自动售货机</a></li>
+
+                                  <li><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E9%92%A2%E7%AE%A1" mc="seller" target="_blank" onmousedown="">钢管</a></li>
+
+                                  <li><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E8%81%9A%E6%B0%A8%E9%85%AF%E4%BF%9D%E6%B8%A9%E7%AE%A1" mc="seller" target="_blank" onmousedown="">聚氨酯保温管</a></li>
+
+                                  <li><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E5%BC%AF%E5%A4%B4" mc="seller" target="_blank" onmousedown="">弯头</a></li>
+
+                                  <li><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1" mc="seller" target="_blank" onmousedown="">无缝钢管</a></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                        <div v-show="searchFocus && liveData.length === 0" class="SearchWrap_record" style="display: none;">
+                          <p v-show="searchHistory.length>0" class="history_title">最近搜过</p>
+                          <div v-show="searchHistory.length>0" class="history_word">
+                            <ul>
+                              <li v-for="sli in searchHistory"><a :href="sli.href" target="_blank">{{sli.key}}</a></li>
+                            </ul>
+                          </div>
+                          <p class="hotSearch_tt">正在热搜中</p>
+                          <div class="hotSearch_word">
+                            <ul class="hotSearch">
+
+
+
+                                  <li><a href="https://s.hc360.com/seller/search.html?kwd=%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E6%9C%BA" mc="seller" target="_blank" onmousedown="">自动售货机</a></li>
+
+                                  <li><a href="https://s.hc360.com/seller/search.html?kwd=%E9%92%A2%E7%AE%A1" mc="seller" target="_blank" onmousedown="">钢管</a></li>
+
+                                  <li><a href="https://s.hc360.com/seller/search.html?kwd=%E8%81%9A%E6%B0%A8%E9%85%AF%E4%BF%9D%E6%B8%A9%E7%AE%A1" mc="seller" target="_blank" onmousedown="">聚氨酯保温管</a></li>
+
+                                  <li><a href="https://s.hc360.com/seller/search.html?kwd=%E5%BC%AF%E5%A4%B4" mc="seller" target="_blank" onmousedown="">弯头</a></li>
+
+                                  <li><a href="https://s.hc360.com/seller/search.html?kwd=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1" mc="seller" target="_blank" onmousedown="">无缝钢管</a></li>
+
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="SearBtn" id="navSearchBtn" @focus="" @click="doSearchBtn"></button>
+                    </div>
+                  </div>
+                  <!---->
+                  <div class="search_record">
+                    <span>热搜：</span>
+
+
+
+ <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E6%9C%BA" target="_blank">自动售货机</a>
+
+、 <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E9%92%A2%E7%AE%A1" target="_blank">钢管</a>
+
+、 <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E8%81%9A%E6%B0%A8%E9%85%AF%E4%BF%9D%E6%B8%A9%E7%AE%A1" target="_blank">聚氨酯保温管</a>
+
+、 <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E5%BC%AF%E5%A4%B4" target="_blank">弯头</a>
+
+、 <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Search_HotSearch')" href="https://s.hc360.com/seller/search.html?kwd=%E6%97%A0%E7%BC%9D%E9%92%A2%E7%AE%A1" target="_blank">无缝钢管</a>
+
+
+                  </div>
+                </div>
+                <div class="fr">
+                  <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_FixedSearch_SubmitProduct')" href="https://sso.hc360.com/user/login.html?ReturnURL=http%3A%2F%2Fmy.b2b.hc360.com%2Fmy%2Fturbine%2Ftemplate%2Fcorcenter%2Cbusiness%2Cstepsupplyfirst.html" target="_blank" class="addProduct">发布商品</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--生意机会-->
+      <div id="product-vue-app" class="businessBox">
+        <div class="businessCon">
+<div class="
+industryTit">
+    <ul>
+        <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening1')" data-name="推荐" class="hot" :class="{current : curCategory==='推荐' }" @click="showDefault"><p>推荐</p>
+        </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening2')" data-name="机械设备" :class="{current : curCategory==='机械设备' }" @click="showCategoryProduct('机械设备')">
+                <p>
+机械设备
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening3')" data-name="包装/印刷" :class="{current : curCategory==='包装/印刷' }" @click="showCategoryProduct('包装/印刷')">
+                <p>
+包装/印刷
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening4')" data-name="建筑/建材" :class="{current : curCategory==='建筑/建材' }" @click="showCategoryProduct('建筑/建材')">
+                <p>
+建筑/建材
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening5')" data-name="食品工业" :class="{current : curCategory==='食品工业' }" @click="showCategoryProduct('食品工业')">
+                <p>
+食品工业
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening6')" data-name="五金/工具" :class="{current : curCategory==='五金/工具' }" @click="showCategoryProduct('五金/工具')">
+                <p>
+五金/工具
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening7')" data-name="仪器仪表" :class="{current : curCategory==='仪器仪表' }" @click="showCategoryProduct('仪器仪表')">
+                <p>
+仪器仪表
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening8')" data-name="电工电气" :class="{current : curCategory==='电工电气' }" @click="showCategoryProduct('电工电气')">
+                <p>
+电工电气
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening9')" data-name="阀" :class="{current : curCategory==='阀' }" @click="showCategoryProduct('阀')">
+                <p>
+阀
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening10')" data-name="轴" :class="{current : curCategory==='轴' }" @click="showCategoryProduct('轴')">
+                <p>
+轴
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening11')" data-name="螺" :class="{current : curCategory==='螺' }" @click="showCategoryProduct('螺')">
+                <p>
+螺
+                </p>
+            </li>
+
+            <li onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_MiddleClass_ClassificationScreening12')" data-name="泵" :class="{current : curCategory==='泵' }" @click="showCategoryProduct('泵')">
+                <p>
+泵
+                </p>
+            </li>
+
+    </ul>
+</div>
+
+          <div class="title">
+            <h2>优商<span>优品</span></h2>
+            <em></em>
+            <a href="javascript:void(0);" data-index="0" class="refresh-items">换一批</a>
+          </div>
+        </div>
+        <div class="businessList" id="items-wrap">
+
+<div class="list extension" onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_AD')">
+
+        <em class="iconType">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#iconding"></use>
+    </svg>
+  </em>
+
+  <div class="img"><a href="https://e.cn.miaozhen.com/r/k=2251412&amp;p=7usMJ&amp;dx=__IPDX__&amp;rt=2&amp;pro=s&amp;ns=__IP__&amp;ni=__IESID__&amp;v=__LOC__&amp;xa=__ADPLATFORM__&amp;tr=__REQUESTID__&amp;o=" target="_blank"><img src="http://img003.hc360.cn/k2/M07/30/96/wKhQxGEQi-mESBdSAAAAALbxXpI646.jpg?imageMogr2/thumbnail/220x"></a></div>
+  <em class="ad">广告</em>
+</div>
+
+
+<div class="list extension" onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_AD')">
+
+        <em class="iconType">
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#iconding"></use>
+    </svg>
+  </em>
+
+  <div class="img"><a href="http://chat.hc360.com/wp/?post_type=e-landing-page&amp;p=24#" target="_blank"><img src="https://b2b.hc360.com/mmt/image/PurchasingAssistantartificial.png?imageMogr2/thumbnail/220x"></a></div>
+  <em class="ad">广告</em>
+</div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/cnxxc" target="_blank">
+廊坊市长宁新型材料有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+廊坊长宁新型材料有限公司成立于2014年，是一家新近崛起的专注于“石墨化碳棒”领域的企业。公司核心产品为：∮6、∮8、∮10、∮13、∮15等不同直径的提纯和非提纯石墨化碳棒；以及其衍生产品如：光谱分析坩埚j,医疗碳棒等。公司年生产各型碳棒的能力为800吨。
+公司承诺
+1、您的每笔业务都配有专项的业务人员及专业的技术人员，全力为您提供您可能需要的解决方案和技术要求；
+2、一切以客户利益为基准，所有产品质量遵照ISO9001 2000质量管理体系，对批量产品的生产运用国际六西格玛质量控制中的CPK管理进行跟踪记录，保证了批量产品的合格率。此外我们具有经认证合格的化验室和计量室，确保原材料达标。我们还拥有完善的售后团队，对您的产品进行一系列的售后追踪，而您的反馈及建议是我们不断成长的动力。
+公司特点
+诚实、守信、产品高性价比
+
+长宁的愿景：创造石墨制品的新奇迹，促进人类社会的文明与进步；
+长宁的信念：企业的发展，没有*，只有更好；
+长宁的宗旨：合理赢利、踏实发展；
+长宁的客户观：一切以客户利益为中心；
+长宁的产品观：高质、精细、高性价比；
+长宁的人才观：忠诚、正直、锐意进取；
+长宁的作风：认真、高效、务实；
+长宁的准则：保证完成任务；
+长宁的司训：诚信立业*言败。
+    </p>
+
+      <p class="p2">生产型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/733448785" target="_blank">
+          <img class="lazyload" data-original="//img002.hc360.cn/k2/M0D/EC/83/GI1ed5fa00589e532C8ad851873330535a.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/733448785" target="_blank">
+          <img class="lazyload" data-original="//img004.hc360.cn/k3/M0D/8F/A4/xub10fe4ca885c4e12377ab78aD47c5ca4.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/733448785" target="_blank">
+          <img class="lazyload" data-original="//img006.hc360.cn/k2/M0A/E5/77/cB22109ae1110DF1250a8CC46822D77CC2.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=51232057" target="_blank" onclick="postSystemSource({ opposite_uid: 51232057, from: 'index_shop', path: '/shop/cnxxc', shop_name: '廊坊市长宁新型材料有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list purchase">
+    <em class="iconType">
+        <svg class="icon svg-icon" aria-hidden="true">
+            <use xlink:href="#iconcaigou-01"></use>
+        </svg>
+    </em>
+
+    <div class="tit">
+      <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Name')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank">SD***？9153701151900024</a></p>
+    </div>
+    <div class="purchaseCon">
+      <div class="top">
+        <p>距报价结束还剩</p>
+        <div class="time stime"
+             data-enddate="1628697599000">
+          <dl>
+            <dd class="red sdd">00</dd>
+            <dd>天</dd>
+            <dd class="red shh">00</dd>
+            <dd>时</dd>
+            <dd class="red smm">00</dd>
+            <dd>分</dd>
+            <dd class="red sss">00</dd>
+            <dd>秒</dd>
+          </dl>
+        </div>
+      </div>
+      <ul>
+        <li>采购数量：6个</li>
+        <li>发布时间：2021-08-09</li>
+        <li>截止时间：2021-08-11</li>
+        <li>收货地区：--</li>
+
+      </ul>
+      <div class="more"><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_More')" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购>></a></div>
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Offer')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank" class="quotedPrice">立即报价</a>
+    </div>
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/jnkangjiask" target="_blank">
+济南康嘉数控设备有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+济南康嘉数控设备有限公司是一家从事数控设备生产汽车脚垫切割机，加工。 公司坚持品质为先，服务为主，把主要精力放在产品研发和售后服务两方面，真正让客户买的放心，用的顺心，并努力提升软实力服务环节，版型数据全程服务，积极解决客户在实际生产过程中发现的问题，在国内外已成功指导国内外几百余家，获得客户和行业一致认可和赞誉
+    </p>
+
+      <p class="p2">生产型</p>
+
+      <p class="p2">服务型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/707974415" target="_blank">
+          <img class="lazyload" data-original="//img007.hc360.cn/k1/M0B/3C/C6/r2h1126AF6245474355627975C9D9101D04.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/707974415" target="_blank">
+          <img class="lazyload" data-original="//img008.hc360.cn/k2/M03/4E/55/1Pl6ba33b8aa2979dba29b1bb7da82C0EE1.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/707974415" target="_blank">
+          <img class="lazyload" data-original="//img004.hc360.cn/k2/M08/4E/55/UYX89c1dcF3cc61d064F3d3FdA659129dB1.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=58584615" target="_blank" onclick="postSystemSource({ opposite_uid: 58584615, from: 'index_shop', path: '/shop/jnkangjiask', shop_name: '济南康嘉数控设备有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/747490911" target="_blank">
+        <img class="lazyload" data-original="//img009.hc360.cn/k2/M0C/1B/4A/IED4CDC6ECDE375748890803C72FEC4013.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/747490911" target="_blank">供应磨粉机磨盘  可多次修复</a>
+      </div>
+
+        <div class="price">&yen;<span>6000</span>/套</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/libangjx" target="_blank">
+张家港市立邦机械有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=11619496" target="_blank" onclick="postSystemSource({ opposite_uid: 11619496, from: 'index_busin', path: '/busin/747490911', busin_name: '供应磨粉机磨盘  可多次修复' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/547715298" target="_blank">
+        <img class="lazyload" data-original="//img001.hc360.cn/m6/M0B/4A/2E/wKhQoVcUhomEJjYEAAAAABGPczM279.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/547715298" target="_blank">山东鑫宇陵县土工膜 一布一膜 复合土工膜</a>
+      </div>
+
+        <div class="price">&yen;<span>4</span>/平方米</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/sdxytggc" target="_blank">
+山东鑫宇土工材料工程有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=26732703" target="_blank" onclick="postSystemSource({ opposite_uid: 26732703, from: 'index_busin', path: '/busin/547715298', busin_name: '山东鑫宇陵县土工膜 一布一膜 复合土工膜' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/730860780" target="_blank">
+        <img class="lazyload" data-original="//img006.hc360.cn/k1/M0A/9F/69/wKhQwF3qA9eEXX_RAAAAAMorfj8462.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/730860780" target="_blank">不锈钢快速接头 KZF防腐蚀液压快插接头 开闭式油管接头 高压不锈钢快速接头</a>
+      </div>
+
+        <div class="price">&yen;<span>120</span>/套</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/wwtj" target="_blank">
+沃维（天津）液压技术有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=66625078" target="_blank" onclick="postSystemSource({ opposite_uid: 66625078, from: 'index_busin', path: '/busin/730860780', busin_name: '不锈钢快速接头 KZF防腐蚀液压快插接头 开闭式油管接头 高压不锈钢快速接头' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/hshcjx" target="_blank">
+河北齐工环保科技有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+公司坐落于美丽的衡水市冀州区，成立于2003年8月，是生产制造环保节能设备的专业厂家。我厂生产的“齐工”牌工业炉窑燃烧系统，采用洁净煤、生物质、天然气等燃料，服务于石膏、煤化、饲料、垃圾焚烧、粮食、陶瓷、复合肥、煤泥、洗衣粉等行业的干燥系统加热设备和净化装置，坚持以科技创新带动产品创新，不断用现代化技术提高产品档次，打造出了多种满足多种新型燃料燃烧使用的节能环保型产品，并获得了一项*发明*和三项*实用新型*。
+     目前，我厂有7大系列，近100多个规格型号的产品，自投放市场以来，深受广大用户的欢迎。产品通过河北省环境保护产品认定评审，获得了河北省环境保护产品认定证书。我厂成为河北省环境保护产业协会会员单位，并在中国化工报、中国冶金报、衡水日报等*报刊做了专题的报道，曾被评为第九届河北省消费者信得过单位、冀州区知识产权优势培育单位、河北省科技型中小企业，所使用的注册商标“齐工”被评为2015年度河北省*商标。
+    </p>
+
+      <p class="p2">生产型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/743370620" target="_blank">
+          <img class="lazyload" data-original="//img005.hc360.cn/k1/M0A/87/79/wKhQw10fEYiEWo2OAAAAAANZRTU307.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/743370620" target="_blank">
+          <img class="lazyload" data-original="//img008.hc360.cn/k1/M09/87/79/wKhQw10fEYSEawKsAAAAAKqMIAY844.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/743370620" target="_blank">
+          <img class="lazyload" data-original="//img009.hc360.cn/k2/M0B/D1/40/wKhQxV6o9oGEBOGjAAAAAOfabfM844.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=61860716" target="_blank" onclick="postSystemSource({ opposite_uid: 61860716, from: 'index_shop', path: '/shop/hshcjx', shop_name: '河北齐工环保科技有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/664633191" target="_blank">
+        <img class="lazyload" data-original="//img005.hc360.cn/k1/M05/3C/BD/Kc5a620720F5DC020F06BEB49893527FF6.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/664633191" target="_blank">宏大   玉米扒皮机玉米脱离撕皮一体机功能全操作简单产量高</a>
+      </div>
+
+        <div class="price">&yen;<span>800</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/zzhdgyjx" target="_blank">
+河南省荥阳市广武镇宏大机械厂
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=55357674" target="_blank" onclick="postSystemSource({ opposite_uid: 55357674, from: 'index_busin', path: '/busin/664633191', busin_name: '宏大   玉米扒皮机玉米脱离撕皮一体机功能全操作简单产量高' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/701590071" target="_blank">
+        <img class="lazyload" data-original="//img000.hc360.cn/k1/M07/39/D5/K8F8C9A2A9BFD4830966EC77269B90D42F.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/701590071" target="_blank">现货301不锈钢钢带 304硬度1/2H 3/4 H EH SH特硬不锈钢带</a>
+      </div>
+
+        <div class="price">&yen;<span>23</span>/千克</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/wxhybxg1688" target="_blank">
+无锡华优不锈钢有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=66190088" target="_blank" onclick="postSystemSource({ opposite_uid: 66190088, from: 'index_busin', path: '/busin/701590071', busin_name: '现货301不锈钢钢带 304硬度1/2H 3/4 H EH SH特硬不锈钢带' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list purchase">
+    <em class="iconType">
+        <svg class="icon svg-icon" aria-hidden="true">
+            <use xlink:href="#iconcaigou-01"></use>
+        </svg>
+    </em>
+
+    <div class="tit">
+      <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Name')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank">强光强磁防爆电筒？9079919000000039</a></p>
+    </div>
+    <div class="purchaseCon">
+      <div class="top">
+        <p>距报价结束还剩</p>
+        <div class="time stime"
+             data-enddate="1628697599000">
+          <dl>
+            <dd class="red sdd">00</dd>
+            <dd>天</dd>
+            <dd class="red shh">00</dd>
+            <dd>时</dd>
+            <dd class="red smm">00</dd>
+            <dd>分</dd>
+            <dd class="red sss">00</dd>
+            <dd>秒</dd>
+          </dl>
+        </div>
+      </div>
+      <ul>
+        <li>采购数量：4把</li>
+        <li>发布时间：2021-08-09</li>
+        <li>截止时间：2021-08-11</li>
+        <li>收货地区：--</li>
+
+      </ul>
+      <div class="more"><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_More')" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购>></a></div>
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Offer')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank" class="quotedPrice">立即报价</a>
+    </div>
+  </div>
+
+
+
+  <div class="list purchase">
+    <em class="iconType">
+        <svg class="icon svg-icon" aria-hidden="true">
+            <use xlink:href="#iconcaigou-01"></use>
+        </svg>
+    </em>
+
+    <div class="tit">
+      <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Name')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340718" target="_blank">不锈钢增压泵</a></p>
+    </div>
+    <div class="purchaseCon">
+      <div class="top">
+        <p>距报价结束还剩</p>
+        <div class="time stime"
+             data-enddate="1628611199000">
+          <dl>
+            <dd class="red sdd">00</dd>
+            <dd>天</dd>
+            <dd class="red shh">00</dd>
+            <dd>时</dd>
+            <dd class="red smm">00</dd>
+            <dd>分</dd>
+            <dd class="red sss">00</dd>
+            <dd>秒</dd>
+          </dl>
+        </div>
+      </div>
+      <ul>
+        <li>采购数量：2台</li>
+        <li>发布时间：2021-08-09</li>
+        <li>截止时间：2021-08-10</li>
+        <li>收货地区：--</li>
+
+      </ul>
+      <div class="more"><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_More')" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购>></a></div>
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Offer')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340718" target="_blank" class="quotedPrice">立即报价</a>
+    </div>
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/750668878" target="_blank">
+        <img class="lazyload" data-original="//img000.hc360.cn/k3/M0D/D8/BA/wN881f22B60256A0CBE2B21fA18C1B7EB2.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/750668878" target="_blank">砖纹金属雕花板外墙保温板聚氨酯外墙隔热装饰一体板轻钢别墅建筑材料</a>
+      </div>
+
+        <div class="price">&yen;<span>45</span>/平方米</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/ourunte2020" target="_blank">
+山东欧润特新型建材有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68564646" target="_blank" onclick="postSystemSource({ opposite_uid: 68564646, from: 'index_busin', path: '/busin/750668878', busin_name: '砖纹金属雕花板外墙保温板聚氨酯外墙隔热装饰一体板轻钢别墅建筑材料' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/zzsjhg2020" target="_blank">
+郑州经济技术开发区森杰化工产品销售处</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+郑州森杰化工是有责任感的诚信公司，公司实力雄厚，管理规范、营销体系完善，恪守商业信誉，是生产及销售于一体的私营独资企业，拥有完整、科学的质量管理体系。本着一颗诚心，竭诚欢迎新老朋友光临惠顾、洽谈、业务、友好合作！经营产品涉及精细化工、化学试剂、印染助剂、农药原料、饲料原料、通用有机试剂、食品配料、颜料、涂料、醇类、硫酸铜、乙二醇、酚类等产品。除本公司自己研发生产的产品外还为多种国内、国际知明品牌化工产品的华中地区代理，为更好的服务客户，公司 在华北、华南、等都设有分公司和办事处。 我们将更加努力服务于广大用户，优异的质量、合理的价格、完善的服务是我们永远追求的目标。 森杰化工自主生产的产品畅销消费者市场，在消费者当中享有较高的地位，公司与多家零售商和代理商建立了长期稳定的合作关系。森杰一直本着注重每一个细节、以高质品优为宗旨、以创新突破求发展的理念一直在稳定的发展.森杰化工竭诚的欢迎新老客户前来参观、洽谈。森杰全体员工欢迎您的到来
+    </p>
+
+      <p class="p2">生产型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/739102021" target="_blank">
+          <img class="lazyload" data-original="//img001.hc360.cn/k1/M0B/CF/6B/wKhQw16RY6GEGn2TAAAAAICF7c4600.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/739102021" target="_blank">
+          <img class="lazyload" data-original="//img010.hc360.cn/k1/M09/B9/B1/wKhQwF6RY6GEOcNMAAAAAIuhhWs291.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/739102021" target="_blank">
+          <img class="lazyload" data-original="//img005.hc360.cn/k2/M08/CF/CB/ayo691c2A01545D0cFB8F24c8D8cBBFA716.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=68588092" target="_blank" onclick="postSystemSource({ opposite_uid: 68588092, from: 'index_shop', path: '/shop/zzsjhg2020', shop_name: '郑州经济技术开发区森杰化工产品销售处' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/518368123" target="_blank">
+        <img class="lazyload" data-original="//img011.hc360.cn/m7/M04/A1/10/wKhQo1aFMkCEGTGVAAAAADDekQc122.png..300x300.png">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/518368123" target="_blank">慧思-木工钻床4四 铰链钻孔机 木工排钻厂家</a>
+      </div>
+
+        <div class="price">&yen;<span>1000</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/huisikeji988" target="_blank">
+邢台慧思科技有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=50754814" target="_blank" onclick="postSystemSource({ opposite_uid: 50754814, from: 'index_busin', path: '/busin/518368123', busin_name: '慧思-木工钻床4四 铰链钻孔机 木工排钻厂家' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/750599384" target="_blank">
+        <img class="lazyload" data-original="//img008.hc360.cn/k1/M03/C9/A0/FnCff0ba1c1e2640088Dc0b0f3aaea1fee9.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/750599384" target="_blank">自熟川粉苕粉机 火锅宽粉机厂家现货</a>
+      </div>
+
+        <div class="price">&yen;<span>11500</span>/套</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/sdthjxzz" target="_blank">
+山东省天华机械制造有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68460151" target="_blank" onclick="postSystemSource({ opposite_uid: 68460151, from: 'index_busin', path: '/busin/750599384', busin_name: '自熟川粉苕粉机 火锅宽粉机厂家现货' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/680319978" target="_blank">
+        <img class="lazyload" data-original="//img001.hc360.cn/k3/M05/32/69/Yfkb5af2955fD1bb6925Da44025f8EE404D.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/680319978" target="_blank">沧州汽车衡厂家生产电子地磅，可量身定制，欢迎前来咨询考察。</a>
+      </div>
+
+        <div class="price">&yen;<span>53680</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/fzhengqi" target="_blank">
+沧州方正电子衡器有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=52020206" target="_blank" onclick="postSystemSource({ opposite_uid: 52020206, from: 'index_busin', path: '/busin/680319978', busin_name: '沧州汽车衡厂家生产电子地磅，可量身定制，欢迎前来咨询考察。' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list purchase">
+    <em class="iconType">
+        <svg class="icon svg-icon" aria-hidden="true">
+            <use xlink:href="#iconcaigou-01"></use>
+        </svg>
+    </em>
+
+    <div class="tit">
+      <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Name')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340582" target="_blank">不锈钢螺栓</a></p>
+    </div>
+    <div class="purchaseCon">
+      <div class="top">
+        <p>距报价结束还剩</p>
+        <div class="time stime"
+             data-enddate="1628870399000">
+          <dl>
+            <dd class="red sdd">00</dd>
+            <dd>天</dd>
+            <dd class="red shh">00</dd>
+            <dd>时</dd>
+            <dd class="red smm">00</dd>
+            <dd>分</dd>
+            <dd class="red sss">00</dd>
+            <dd>秒</dd>
+          </dl>
+        </div>
+      </div>
+      <ul>
+        <li>采购数量：100套</li>
+        <li>发布时间：2021-08-09</li>
+        <li>截止时间：2021-08-13</li>
+        <li>收货地区：江苏省宿迁市</li>
+
+      </ul>
+      <div class="more"><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_More')" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购>></a></div>
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Offer')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340582" target="_blank" class="quotedPrice">立即报价</a>
+    </div>
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/713407807" target="_blank">
+        <img class="lazyload" data-original="//img007.hc360.cn/k1/M09/70/E8/wKhQw1zQ9J6EUYd7AAAAALyO3gc579.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/713407807" target="_blank">安泽C1-1600-150 肩带下料机 皮带下料机 皮带开料机</a>
+      </div>
+
+        <div class="price">&yen;<span>54</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/anze2005" target="_blank">
+东莞市安泽自动化设备有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=22572095" target="_blank" onclick="postSystemSource({ opposite_uid: 22572095, from: 'index_busin', path: '/busin/713407807', busin_name: '安泽C1-1600-150 肩带下料机 皮带下料机 皮带开料机' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/qdthgs" target="_blank">
+北京清大永丰科技有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+北京清大永丰科技有限公司是一家专业从事包装机械的生产、市场销售和售后服务于一体的生产企业。主要产品如：粉剂包装机、颗粒包装机、液体包装机、圆角袋包装机、电子秤等系列产品已在制药、日化、食品、 农药、兽药等行业广泛使用。包装出来的产品袋形美观，机器运行稳定可靠。可自动完成制袋、封合、计量、充填、打码、定袋数分切、计数等工序。符合医药、食品等行业的GMP认证要求。公司产品不仅畅销全国各地，部分产品还远销欧洲、美洲、中东、东南亚等地区，深受国内外客户的好评。
+   公司拥有专业技术人员、工程师、和销售售后服务人员，形成一支高素质年轻化极富团队创新精神的队伍。公司始终以“以人为本，诚信经营，创知名品牌”为宗旨，一如既往为客户提供可靠的产品，完善的服务，共同发展，共创佳绩。 欢迎国内外新老客户光临，互利互惠、携手共进！
+    </p>
+
+      <p class="p2">生产型</p>
+
+      <p class="p2">服务型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/660817326" target="_blank">
+          <img class="lazyload" data-original="//img000.hc360.cn/k2/M07/6A/64/LZ63072040E071E26BDFA64222B0A302D6D.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/660817326" target="_blank">
+          <img class="lazyload" data-original="//img005.hc360.cn/k3/M08/BA/86/DUF96F02DAB8912891F39FDC9C8801D80D5.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/660817326" target="_blank">
+          <img class="lazyload" data-original="//img006.hc360.cn/k3/M0F/7C/33/XEf9c61034ddb86fEccA13fA569c329db7.png..100x100.png">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=10089054" target="_blank" onclick="postSystemSource({ opposite_uid: 10089054, from: 'index_shop', path: '/shop/qdthgs', shop_name: '北京清大永丰科技有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/746369083" target="_blank">
+        <img class="lazyload" data-original="//img009.hc360.cn/k3/M07/DF/3C/wKhQx17-8FiEHHplAAAAABHi9oY124.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/746369083" target="_blank">天拓TZ-1716 切换器 KVM切换器 切换器厂家 切换器价格</a>
+      </div>
+
+        <div class="price">&yen;<span>5780</span>/个</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/linchong001" target="_blank">
+北京天拓明达电子科技有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=19985999" target="_blank" onclick="postSystemSource({ opposite_uid: 19985999, from: 'index_busin', path: '/busin/746369083', busin_name: '天拓TZ-1716 切换器 KVM切换器 切换器厂家 切换器价格' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/750184612" target="_blank">
+        <img class="lazyload" data-original="//img008.hc360.cn/k1/M0E/C2/19/nT770b34b1CD74b15936620Db1189639E5.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/750184612" target="_blank">蓄电池电动平车 厂家常年生产定制 无轨道_手推地平车</a>
+      </div>
+
+        <div class="price">&yen;<span>22000</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/luhangqizhong" target="_blank">
+山东鲁航起重机械有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68534052" target="_blank" onclick="postSystemSource({ opposite_uid: 68534052, from: 'index_busin', path: '/busin/750184612', busin_name: '蓄电池电动平车 厂家常年生产定制 无轨道_手推地平车' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/746673323" target="_blank">
+        <img class="lazyload" data-original="//img006.hc360.cn/k2/M0F/E4/49/wKhQxV8G1riEIG40AAAAAPaJex0945.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/746673323" target="_blank">超越机械 金属抛光机价格 六角滚筒抛光机图片 金属表面去毛刺研磨机厂家规格齐全</a>
+      </div>
+
+        <div class="price">&yen;<span>2500</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/qfscyjxzz" target="_blank">
+曲阜市超越机械制造有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68980712" target="_blank" onclick="postSystemSource({ opposite_uid: 68980712, from: 'index_busin', path: '/busin/746673323', busin_name: '超越机械 金属抛光机价格 六角滚筒抛光机图片 金属表面去毛刺研磨机厂家规格齐全' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/hfjsdzkj" target="_blank">
+安徽柯尔诺传动科技有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+安徽柯尔诺传动科技有限公司是德国马牌（CONTITECH)/欧皮特（OPTIBELT)德国福尔波西格林（FORBO)集团正规授权的战略型经销商，主营德国进口同步带、输送带、三角带、联组带、活络带、多楔带、多角带、圆带以及各类PU特种皮带；同时配套制作同步带、多楔带轮和三角带轮。德国进口皮带是以其一百四十多年的历史，无以伦比的制造工艺精度、超高的产品品质和性能、赢得了世界广大客户由衷的认可和信赖，业界有口皆碑、德国西格林输送带、传动平带、PU\PVC\PE输送带；各式裙边、导条输送带、耐高温毛毡带、铁氟龙带、打孔带、覆层带、带面雕花等特殊工业用皮带；坚持贯彻我司“真诚服务、为客户解决难题、提供高性价比产品”的服务理念，让更多的客户享受我司的服务和产品。公司产品广泛用于自动化设备：智能机械手、物流输送线、食品深加工、木材加工、化工、型材板材、纺织印染、包装机械等行业，本着“合作共赢、互惠互利、真诚服务”的服务理念，得到到越来越多客户好评和信赖。
+    </p>
+
+      <p class="p2">贸易型</p>
+
+      <p class="p2">服务型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/676133241" target="_blank">
+          <img class="lazyload" data-original="//img008.hc360.cn/k2/M07/83/08/wKhQxFoSLOCEeQ-ZAAAAAMmZL5M370.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/676133241" target="_blank">
+          <img class="lazyload" data-original="//img003.hc360.cn/k2/M0C/7B/B0/wKhQxVoSLM6EBRd7AAAAADOn2s0749.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/676133241" target="_blank">
+          <img class="lazyload" data-original="//img008.hc360.cn/k2/M01/83/07/wKhQxFoSLNiEYBtyAAAAACPvcrI388.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=63214959" target="_blank" onclick="postSystemSource({ opposite_uid: 63214959, from: 'index_shop', path: '/shop/hfjsdzkj', shop_name: '安徽柯尔诺传动科技有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/733703899" target="_blank">
+        <img class="lazyload" data-original="//img009.hc360.cn/k2/M00/80/AA/Fae28fd100d3972BB8f324f23de5e94e8C.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/733703899" target="_blank">ZWBD防水型摄像头 远程无线 wifi音视频无线远程看库房 看家 看孩子看宠物 看货物 看车防盗摄像头</a>
+      </div>
+
+        <div class="price">&yen;<span>360</span>/个</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/hbzwwl" target="_blank">
+河北卓为网络科技有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=67045027" target="_blank" onclick="postSystemSource({ opposite_uid: 67045027, from: 'index_busin', path: '/busin/733703899', busin_name: 'ZWBD防水型摄像头 远程无线 wifi音视频无线远程看库房 看家 看孩子看宠物 看货物 看车防盗摄像头' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/709733218" target="_blank">
+        <img class="lazyload" data-original="//img003.hc360.cn/k2/M0E/8D/91/wKhQxVo04COEY00sAAAAAFuk9mg760.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/709733218" target="_blank">胜源齐全 合金钼铸件 合金钼压铸汽车配件</a>
+      </div>
+
+        <div class="price">&yen;<span>9</span>/件</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/njshengyua" target="_blank">
+宁津县胜源五金制品有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=63580899" target="_blank" onclick="postSystemSource({ opposite_uid: 63580899, from: 'index_busin', path: '/busin/709733218', busin_name: '胜源齐全 合金钼铸件 合金钼压铸汽车配件' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/700217923" target="_blank">
+        <img class="lazyload" data-original="//img007.hc360.cn/k3/M0A/FB/00/o1Ld07eF7Bd4AAA109A4F8C676922dC0e94.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/700217923" target="_blank">渔具采购  2018新款碳素鱼竿木溪子 超短竿 袖珍竿 便携杆 渔具用品</a>
+      </div>
+
+        <div class="price">&yen;<span>25</span>/支</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/xxzsyj" target="_blank">
+献县赵氏渔具厂
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=65660025" target="_blank" onclick="postSystemSource({ opposite_uid: 65660025, from: 'index_busin', path: '/busin/700217923', busin_name: '渔具采购  2018新款碳素鱼竿木溪子 超短竿 袖珍竿 便携杆 渔具用品' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/cglwd" target="_blank">
+宁津县星火网链制造有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+宁津县星火网链制造有限公司创业二十年来,以质量求生存,以信誉求发展,经过星火人的艰苦创业,至今已成为专业的网带、网链、帆布带、链板生产厂家。我厂生产的自动化流水线金属传动网带、链条等产品广泛用于玻璃、食品、化纤、医药、电子等行业。 
+  1、食品饼干行业：幅宽180mm-1200mm棉线、尼龙线帆布带、烤炉网带、冷却喷油机网带，平转弯机网链，巧克力涂层机乙形网带。同时生产饼干机械设备喷蛋机乙型网带及肉食输送用乙型网带，进口机器超薄节能网带。及各种膨化食品烘拷网链带。　　 
+  2、玻璃行业退火炉网带、烤花炉网带、输瓶机网带、马赛克网带、规格有曲轴型、直轴型、菱形、双股螺旋型。材质有A3低碳钢、1Cr13耐热钢、1Cr18Ni9Ti钢、0Cr18Ni14Mo2Cu2、耐热耐酸钢等。　 
+  3、方便面及米粉行业：1Cr13耐热钢、1Cr18Ni9Ti钢、0Cr18Ni14Mo2Cu2等。
+  4、各种冷冻食品、蔬菜脱水流水线设备用不锈钢输送链条、网带、支轴等。 
+  5、各种热处理机器用高温炉输送网带一般采用材质为Cr25Ni20Si2、Cr20Ni80、耐高温达1000℃以上。 
+  6、承制其它流水输送设备金属网链带的设计与制造。 用户订购网带时，必须明确网带的螺距、节距、材质、丝号、宽度和长度以便我厂准备生产。 我厂不断引进先进技术，以先进的机械加工实力，注重对材质、热处理等工艺环节的质量控制，产品质量不断提高，以用户至上*为宗旨，以尊重人才，以科学技术求发展，开拓创新为您提供高质量的产品，热诚为广大用户服务，受到广大用户及兄弟厂家大力支持和帮助，在此深表谢意。
+    </p>
+
+      <p class="p2">生产型</p>
+
+      <p class="p2">贸易型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/635790135" target="_blank">
+          <img class="lazyload" data-original="//img001.hc360.cn/k1/M0B/A9/83/wKhQw1jnTIaEY_siAAAAAK-wTHQ820.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/635790135" target="_blank">
+          <img class="lazyload" data-original="//img003.hc360.cn/k1/M01/94/F1/wKhQwFjnTIaERX40AAAAAP3P-QA517.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/635790135" target="_blank">
+          <img class="lazyload" data-original="//img009.hc360.cn/k1/M06/A9/84/wKhQw1jnTIaEWGJmAAAAAM5xUBw295.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=60794210" target="_blank" onclick="postSystemSource({ opposite_uid: 60794210, from: 'index_shop', path: '/shop/cglwd', shop_name: '宁津县星火网链制造有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/shara1989" target="_blank">
+深圳市嘉联达焊接器材有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+本公司深圳地址：深圳市龙华大浪南路248号，惠州地址:惠州市惠城区陈江镇曙光路149号,主营焊割设备，焊接材料，自动焊接小车、电缆线、气表、焊割配件等；公司经营品牌有:上海东升焊机、上海通用焊机、高创自动焊接小车、大西洋/大桥/金桥焊材。公司有专业的服务团队,经营产品广泛用于:钢结构、通迅设备、人防防护设备、工程建设、车厢制造、机电钣金、地铁建设、船舶、自行车以及汽车制造等行业；本公司注重品牌影响力，诚信经营，价格合理。我司重信用、守合同、保证产品质量，以优质服务特色和薄利多销的原则，赢得了广大客户的信任。
+    </p>
+
+      <p class="p2">贸易型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/721625656" target="_blank">
+          <img class="lazyload" data-original="//img005.hc360.cn/k3/M04/81/84/wKhQv11foOGEXJkvAAAAANS3vcg940.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/721625656" target="_blank">
+          <img class="lazyload" data-original="//img002.hc360.cn/k3/M0B/91/80/wKhQx11foOGEIbfvAAAAAPDO1f8279.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/721625656" target="_blank">
+          <img class="lazyload" data-original="//img005.hc360.cn/k3/M0A/91/80/wKhQx11foOGEW6B2AAAAAPkNHNI958.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=67985001" target="_blank" onclick="postSystemSource({ opposite_uid: 67985001, from: 'index_shop', path: '/shop/shara1989', shop_name: '深圳市嘉联达焊接器材有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/xysjswyl" target="_blank">
+荥阳市金狮王游乐设备厂</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+金狮王游乐设备厂是一家专业设计、生产、销售各种规格游乐设备的企业。 本厂诸多产品集安全、新颖、刺激为一体。充分体现了现代游乐行业的新思想、新理念和审美情趣。主要游乐设备产品有：迪斯科转盘、豪华转马、海盗船、豪华自控飞机，无轨火车、太空穿梭、旋转大章鱼、跳床、网红桥，网红滑道，碰碰车、追逐坦克车、充气城堡、小猴拉车等百余种产品。产品的各项指标均达到游乐设备的质量标准。同时，可根据用户的要求，定制用户所需游乐设备及游乐场设施。
+    </p>
+
+      <p class="p2">生产型</p>
+
+      <p class="p2">贸易型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/750333121" target="_blank">
+          <img class="lazyload" data-original="//img009.hc360.cn/k2/M00/D3/19/Azd32847FBBdF16CA48F6ABB38CE08d2F9.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/750333121" target="_blank">
+          <img class="lazyload" data-original="//img008.hc360.cn/k2/M01/D3/3E/wKhQxV61LIaEbHnfAAAAAI-BCz0420.jpg..100x100.jpg">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/750333121" target="_blank">
+          <img class="lazyload" data-original="//img006.hc360.cn/k2/M03/DA/90/wKhQxF61LIaEXyo1AAAAAGkN5gE491.jpg..100x100.jpg">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=59321355" target="_blank" onclick="postSystemSource({ opposite_uid: 59321355, from: 'index_shop', path: '/shop/xysjswyl', shop_name: '荥阳市金狮王游乐设备厂' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/733962578" target="_blank">
+        <img class="lazyload" data-original="//img008.hc360.cn/k3/M0E/A5/34/eIa72f80d437930f19f7f659950388C02E.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/733962578" target="_blank">博云天BYTNJ-5000 全自动粘结指数测定仪厂家</a>
+      </div>
+
+        <div class="price">&yen;<span>18000</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/hbbytgs" target="_blank">
+鹤壁市博云天科技有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=67306221" target="_blank" onclick="postSystemSource({ opposite_uid: 67306221, from: 'index_busin', path: '/busin/733962578', busin_name: '博云天BYTNJ-5000 全自动粘结指数测定仪厂家' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/750334594" target="_blank">
+        <img class="lazyload" data-original="//img011.hc360.cn/k1/M07/DC/F9/wKhQwF9AgSCEAQtPAAAAAGlj6ew793.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/750334594" target="_blank">江西生产轮式洗砂机 自动轮斗洗沙机 矿山砂石用洗砂机规格</a>
+      </div>
+
+        <div class="price">&yen;<span>16590</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/wnjxsb" target="_blank">
+江西伟铭机械设备有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68669431" target="_blank" onclick="postSystemSource({ opposite_uid: 68669431, from: 'index_busin', path: '/busin/750334594', busin_name: '江西生产轮式洗砂机 自动轮斗洗沙机 矿山砂石用洗砂机规格' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/730105522" target="_blank">
+        <img class="lazyload" data-original="//img002.hc360.cn/k1/M0E/B2/BC/oN711015F5FF0A12FFD4FDF89A9A84B124C.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/730105522" target="_blank">聚氨酯旋流器泥 沙泥浆过滤器 厂家定制 水力旋流器 选矿分级旋流器</a>
+      </div>
+
+        <div class="price">&yen;<span>60</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/liuhuawei666" target="_blank">
+河北中引橡塑制品有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=68318029" target="_blank" onclick="postSystemSource({ opposite_uid: 68318029, from: 'index_busin', path: '/busin/730105522', busin_name: '聚氨酯旋流器泥 沙泥浆过滤器 厂家定制 水力旋流器 选矿分级旋流器' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/752422532" target="_blank">
+        <img class="lazyload" data-original="//img002.hc360.cn/k1/M02/F7/17/tycBA5E10347673A1cE324F91F2c0557FA.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/752422532" target="_blank">3吨压路机 压路机厂家</a>
+      </div>
+
+        <div class="price">&yen;<span>100000</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/lutong888886" target="_blank">
+洛阳路通重工机械有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=69173510" target="_blank" onclick="postSystemSource({ opposite_uid: 69173510, from: 'index_busin', path: '/busin/752422532', busin_name: '3吨压路机 压路机厂家' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list purchase">
+    <em class="iconType">
+        <svg class="icon svg-icon" aria-hidden="true">
+            <use xlink:href="#iconcaigou-01"></use>
+        </svg>
+    </em>
+
+    <div class="tit">
+      <p><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Name')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank">电瓶？9061111010100172</a></p>
+    </div>
+    <div class="purchaseCon">
+      <div class="top">
+        <p>距报价结束还剩</p>
+        <div class="time stime"
+             data-enddate="1628697599000">
+          <dl>
+            <dd class="red sdd">00</dd>
+            <dd>天</dd>
+            <dd class="red shh">00</dd>
+            <dd>时</dd>
+            <dd class="red smm">00</dd>
+            <dd>分</dd>
+            <dd class="red sss">00</dd>
+            <dd>秒</dd>
+          </dl>
+        </div>
+      </div>
+      <ul>
+        <li>采购数量：1套</li>
+        <li>发布时间：2021-08-09</li>
+        <li>截止时间：2021-08-11</li>
+        <li>收货地区：--</li>
+
+      </ul>
+      <div class="more"><a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_More')" href="http://info.chat.hc360.com/list/caigou.shtml" target="_blank">名企采购>></a></div>
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Purchase_Offer')" href="//detail.b2b.hc360.com/detail/turbine/template/business,inquiryPriceDetail.html?stid=340580" target="_blank" class="quotedPrice">立即报价</a>
+    </div>
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/731784168" target="_blank">
+        <img class="lazyload" data-original="//img010.hc360.cn/k3/M03/6A/A2/wKhQx1zTxe-EN7W-AAAAAPzTkTM098.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/731784168" target="_blank">三明导热油电加热器口碑商家 导热油加热器</a>
+      </div>
+
+        <div class="price">&yen;<span>13300</span>/副</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/sxrysb336" target="_blank">
+阜新三星热源设备有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=67053488" target="_blank" onclick="postSystemSource({ opposite_uid: 67053488, from: 'index_busin', path: '/busin/731784168', busin_name: '三明导热油电加热器口碑商家 导热油加热器' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/688725556" target="_blank">
+        <img class="lazyload" data-original="//img010.hc360.cn/k1/M0A/C9/74/wKhQwFrsEa6EVoVbAAAAAKJ79CI404.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/688725556" target="_blank">万凯环保油烟净化器 油烟净化器厂家 食堂油烟净化机 食堂油烟净化器 厨房油烟净化设备</a>
+      </div>
+
+        <div class="price">&yen;<span>30000</span>/台</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/wankai080" target="_blank">
+东莞市万凯环保科技有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=65117800" target="_blank" onclick="postSystemSource({ opposite_uid: 65117800, from: 'index_busin', path: '/busin/688725556', busin_name: '万凯环保油烟净化器 油烟净化器厂家 食堂油烟净化机 食堂油烟净化器 厨房油烟净化设备' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+
+  <div class="list product">
+    <em class="iconType">
+                    <svg class="icon svg-icon" aria-hidden="true">
+                        <use xlink:href="#iconyoupin-011"></use>
+                    </svg>
+                </em>
+
+    <div class="img">
+      <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_img')" href="/busin/749547931" target="_blank">
+        <img class="lazyload" data-original="//img000.hc360.cn/k2/M01/81/19/GLa084e4d653339F14783C3ae598e1FBCB.jpg..300x300.jpg">
+      </a>
+    </div>
+    <div class="proCon">
+      <div class="tit">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_Name')" href="/busin/749547931" target="_blank">2020山东尊凯 、苜蓿草捆牛马羊饲料截断苜蓿草料紫花苜蓿谈绿色草捆大捆800斤一包现货供应</a>
+      </div>
+
+        <div class="price">&yen;<span>2350</span>/吨</div>
+
+      <div class="companyName">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Product_CompanyName')"
+           href="/shop/zkgs2018" target="_blank">
+山东尊凯农业开发有限公司
+        </a>
+      </div>
+    </div>
+      <!-- <div class="sendSession">
+        <div class="hea">
+          <img src="//style.org.hc360.com/images/chat/profile-red.png">
+          <em class=""></em>
+        </div>
+        <div class="btn">
+        <a href="/chat?opposite_uid=65172615" target="_blank" onclick="postSystemSource({ opposite_uid: 65172615, from: 'index_busin', path: '/busin/749547931', busin_name: '2020山东尊凯 、苜蓿草捆牛马羊饲料截断苜蓿草料紫花苜蓿谈绿色草捆大捆800斤一包现货供应' })"><em class="iconSession"></em> <span>发起会话</span></a>
+        </div>
+      </div>
+     -->
+  </div>
+
+
+<div class="list company">
+   <em class="iconType">
+      <svg class="icon svg-icon" aria-hidden="true">
+          <use xlink:href="#iconyoushang-01"></use>
+      </svg>
+  </em>
+
+  <div class="name">
+    <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_Name')" href="/shop/kexinxny" target="_blank">
+东莞市科信新能源设备有限公司</a>
+  </div>
+  <div class="intro">
+    <p class="p1">
+科信新能源设备有限公司 位于素有”世界工厂”之称的制造名城-东莞，是一家集研发、生产、销售为一体的高新技术企业，以“科技兴企，诚信为本”为经营理念，一直致力于为客户提供专业的服务，为实现厂、商、客户三赢而努力……
+
+
+
+公司主要生产：闭环除湿型空气能热泵烘干机、加热排湿型空气能热泵烘干机、特别致力于除湿型热泵烘干机的研发和应用，在烘干除湿领域积累了极为丰富的经验，被广泛应用于各大行业，特别是农产品、中药材、海产品以及石膏制品、木材加工等烘干领域；公司凭着多年的制造经验与人才储备，在除湿烘干领域获得多项发明技术认证，产品先后通过环保节能认证、欧共体CE认证、农业机械推广鉴定等多项认证，为高新技术企业，已通过ISO 9001:2015、ISO 14001：2015、GB/T28001-2011等多项管理体系认证，产品畅销全国乃至世界各地，广泛应用于各行业烘干领域。  
+
+ 
+科信团队融汇多项创新技术，遵循环保、安全、高效的行业趋势，以”科技兴企、诚信为本”为经营理念，赤诚地与国内外客户在节能环保领域共同致力，共创辉煌！！
+    </p>
+
+      <p class="p2">生产型</p>
+
+  </div>
+  <div class="pro">
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img1')"
+           href="/busin/739715648" target="_blank">
+          <img class="lazyload" data-original="//img006.hc360.cn/k2/M0C/FD/CB/wKhQxF9sSE2ETJnNAAAAAPB-qaw297.JPG..100x100.JPG">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img2')"
+           href="/busin/739715648" target="_blank">
+          <img class="lazyload" data-original="//img006.hc360.cn/k2/M08/FD/CB/wKhQxF9sSDiEQilrAAAAANfZM9o309.JPG..100x100.JPG">
+        </a>
+      </div>
+
+      <div class="img">
+        <a onclick="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Feeds_Company_img3')"
+           href="/busin/739715648" target="_blank">
+          <img class="lazyload" data-original="//img007.hc360.cn/k3/M0D/F3/A4/wKhQx19sSFKEEP0eAAAAALlmEz4973.JPG..100x100.JPG">
+        </a>
+      </div>
+
+  </div>
+  <!-- <div class="sendSession">
+      <div class="hea">
+      <img src="//style.org.hc360.com/images/chat/profile-red.png">
+      <em class=""></em></div>
+      <div class="btn"><a href="/chat?opposite_uid=50468028" target="_blank" onclick="postSystemSource({ opposite_uid: 50468028, from: 'index_shop', path: '/shop/kexinxny', shop_name: '东莞市科信新能源设备有限公司' })"><em class="iconSession"></em> <span>发起会话</span></a></div>
+  </div>
+  -->
+
+</div>
+
+
+        </div>
+        <div class="changeBtn">
+          <a href="javascript:void(0);" data-index="1" class="refresh-items">换一批</a>
+        </div>
+      </div>
+      <!--底部-->
+      <div class="bottomLinkBox">
+        <!--慧聪服务-->
+        <div class="hcService">
+          <!--友情链接-->
+          <div class="linkWrap">
+            <h3>友情链接:</h3>
+            <p id="fLink">
+              <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_ZOL')" href="http://www.zol.com.cn/" target="_blank">中关村在线</a>
+              <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_ibuychem')" href="http://www.ibuychem.com" target="_blank">买化塑</a>
+              <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_tianyancha')" href="http://www.tianyancha.com/" target="_blank">天眼查</a>
+              <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_panpass')" href="http://www.panpass.com/" target="_blank">防伪溯源</a>
+              <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_hzeyun')" href="http://www.hzeyun.com/" target="_blank">慧正资讯</a>
+            </p>
+          </div>
+          <div class="serviceRig">
+            <ul>
+              <li>
+                <div class="codeImg"><img src="https://style.org.hc360.com/images/Nindex/news2019/codeImg1.png"></div>
+                <h3>慧聪微商城</h3>
+              </li>
+              <li>
+                <div class="codeImg"><img src="//style.org.hc360.com/image/homepage/footer/qrcode/f_gzh_qr_code.jpg"></div>
+                <h3>慧聪网</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="webLink footerBottomLinkBox">
+          <p>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_About')" href="http://www.hcgroup.com/" target="_blank" title="关于慧聪">关于慧聪</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_Organization')" href="http://www.hcgroup.com/cn/lianxi/" target="_blank" title="分支机构">分支机构</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_Navigation')" href="http://www.hc360.com/map-new.htm" target="_blank" title="网站导航">网站导航</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_Channel')" href="https://agent.hc360.com/" target="_blank" title="慧聪渠道">慧聪渠道</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_OnlineService')" href="javascript:void(0);" title="在线客服" class="kf-qrcode">在线客服</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_LegalStatement')" href="http://www.hc360.com/law.htm" target="_blank" title="法律声明">法律声明</a><em>|</em>
+            <!--
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_AD')" href="http://www.hc360.com/ad/ad.htm" target="_blank" title="广告服务">广告服务</a><em>|</em>
+            -->
+            <!-- <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_LinksService')" href="http://www.hc360.com/link.htm" target="_blank" title="友情链接">友情链接</a><em>|</em> -->
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_JoinHC')" href="http://job.hc360.com" target="_blank" title="加入慧聪">加入慧聪</a><em>|</em>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_CustomerServiceCenter')" href="http://www.kf.hc360.com/" target="_blank" title="客服中心">客服中心</a><em>|</em>
+            <a href="/nhots/initials" target="_blank" title="热搜词库">热搜词库</a>
+          </p>
+        </div>
+      </div>
+      <div class="rigSidebar">
+        <a href="javascript:void(0);" class="scrollTop"></a>
+      </div>
+      <div class="footerBox">
+        <div class="copyTxt">
+          <p>京ICP证010051号
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_YPZGZS')" href="https://b2b.hc360.com/images/zgzs.jpg" target="_blank" title="互联网药品信息服务资格证书：(京)-经营性-2014-0015">互联网药品信息服务资格证书：(京)-经营性-2014-0015</a>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_CBWXKZ')" href="https://img00.hc360.com/news/201807/201807121007044557.jpg" target="_blank" title="出版物经营许可证  新出发 京零 字第 昌170012号">出版物经营许可证 新出发 京零 字第 昌170012号</a>
+          </p>
+          <p>京公网安备 11011402011161号&nbsp;&nbsp;
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_BeiAn')" rel="nofollow" href="https://beian.miit.gov.cn" target="_blank" title="京ICP备12006161号">京ICP备12006161号</a>
+            <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_JXZS')" href="https://img003.org.hc360.com/k1/M03/58/05/wKhQw1xuG3SEa5q3AAAAAPMcNsc719.jpg" target="_blank" title="经营证照">经营证照</a>
+          </p>
+        </div>
+        <div class="webLogo">
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_HDFZPW')" href="javascript:void(0);" class="hover1"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_dzsws')" href="http://dzsws.mofcom.gov.cn/article/zcfb/201305/20130500128059.shtml" target="_blank" class="hover3"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_knet')" href="https://ss.knet.cn/verifyseal.dll?sn=2010111200100002874&amp;pa=294005" target="_blank" class="hover4"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_zx110')" href="http://www.zx110.org/" class="hover6"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_itrustInfo')" href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/1634388529.html" target="_blank" class="hover7"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_bjjubao')" href="http://www.bjjubao.org/" target="_blank" class="hover8"></a>
+          <a onmousedown="HC.UBA.sendUserlogsElement('UserBehavior_NewIndex_Footer_Links_itrust')" href="http://www.itrust.org.cn/sincerity2.php?id=1001" target="_blank" class="hover9"></a>
+        </div>
+        <div class="indexes" id="indexes">
+          按字母分类：
+          <a href="/topwords/initials/a" target="_blank" title="A">A</a>
+          <a href="/topwords/initials/b" target="_blank" title="B">B</a>
+          <a href="/topwords/initials/c" target="_blank" title="C">C</a>
+          <a href="/topwords/initials/d" target="_blank" title="D">D</a>
+          <a href="/topwords/initials/e" target="_blank" title="E">E</a>
+          <a href="/topwords/initials/f" target="_blank" title="F">F</a>
+          <a href="/topwords/initials/g" target="_blank" title="G">G</a>
+          <a href="/topwords/initials/h" target="_blank" title="H">H</a>
+          <a href="/topwords/initials/i" target="_blank" title="I">I</a>
+          <a href="/topwords/initials/j" target="_blank" title="J">J</a>
+          <a href="/topwords/initials/k" target="_blank" title="K">K</a>
+          <a href="/topwords/initials/l" target="_blank" title="L">L</a>
+          <a href="/topwords/initials/m" target="_blank" title="M">M</a>
+          <a href="/topwords/initials/n" target="_blank" title="N">N</a>
+          <a href="/topwords/initials/o" target="_blank" title="O">O</a>
+          <a href="/topwords/initials/p" target="_blank" title="P">P</a>
+          <a href="/topwords/initials/q" target="_blank" title="Q">Q</a>
+          <a href="/topwords/initials/r" target="_blank" title="R">R</a>
+          <a href="/topwords/initials/s" target="_blank" title="S">S</a>
+          <a href="/topwords/initials/t" target="_blank" title="T">T</a>
+          <a href="/topwords/initials/u" target="_blank" title="U">U</a>
+          <a href="/topwords/initials/v" target="_blank" title="V">V</a>
+          <a href="/topwords/initials/w" target="_blank" title="W">W</a>
+          <a href="/topwords/initials/x" target="_blank" title="X">X</a>
+          <a href="/topwords/initials/y" target="_blank" title="Y">Y</a>
+          <a href="/topwords/initials/z" target="_blank" title="Z">Z</a>
+          <a href="/topwords/initials/%23" target="_blank" title="&num;">&num;</a>
+        </div>
+        <div class="copy">
+          <p>
+            <span>违法和不良信息举报投诉电话：010-80707000</span>
+            <span class="reportMail">举报邮箱：<a href="mailto:jubaotousu@hc360.com">jubaotousu@hc360.com</a></span>
+          </p>
+          <p>Copyright&copy;2000-2021 hc360.com. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script defer phx-track-static type="text/javascript" src="/chatjs/pc/siderbar-73d57b8646627d8ede8d7ec39cb4a2ae.js?vsn=d"></script>
+<script defer phx-track-static type="text/javascript" src="/chatjs/pc/title_dialog-62f03692ffa8ce8bb8abe193b6c28f87.js?vsn=d"></script>
+<script defer phx-track-static type="text/javascript" src="/chatjs/pc/home-3753e2e4d410df971076ac97d95cc9c2.js?vsn=d"></script>
+<script type="text/javascript" src="//style.org.hc360.com/js/my/scrmqrcode/scrmcode.js"></script>
+<script type="text/javascript" src="//style.org.hc360.com/js/my/scrmqrcode/scrmfooter.js" charset="UTF-8"></script>
+<script src="https://style.org.hc360.com/js/build/source/core/hc.control.js"></script>
+<script src="//at.alicdn.com/t/font_2376849_c405k1wdzlo.js"></script>
+<script>
+  window.onload = function() {
+    setTimeout(function() {
+      _loadCuService()
+      _loadTitleMaskDialog('home')
+    }, 0)
+  }
+</script>
+</body>
+</html>

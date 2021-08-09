@@ -1,0 +1,1982 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/assets/images/11d3fec5ca341028f2a7201f8ee797db.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/images/11d3fec5ca341028f2a7201f8ee797db.ico" type="image/x-icon">
+        <title>Ask.com - What's Your Question?</title>
+  <meta property="og:title"
+    content="Ask.com - What's Your Question?" />
+  <meta property="og:site_name" content="Ask.com" />
+  <link rel='canonical' href="https://www.ask.com" />
+<link rel="alternate" type="application/rss+xml" title="Ask.com" href="/rss.xml" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;400;500" rel="stylesheet">
+<link rel="stylesheet" href="/g/theme/iac/qa/bootstrap.min.css" />
+<link href="/g/theme/iac/qa/styles-201020-6.css" rel="stylesheet" />
+<script src="/g/theme/iac/usp-api.min.js"></script>
+
+<style type="text/css">
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+   	-webkit-font-smoothing: antialiased;
+  }
+  
+  
+    body {
+    padding-top:0 !important; /* non sticky nav pages */
+  }
+  
+  main {
+    padding-top:10px;
+  }
+  
+  /* breaks social links - was needed for thin columns but thats removed now */
+  /*.l-mid {*/
+  /*  overflow:hidden;*/
+  /*}*/
+  
+  nav.navbar { z-index:90000; }
+  
+  .pagination-button { display:block; border:none; background:none; }
+  
+  /* 2021-04-09 center on mobile, no diff on desk */
+  .navbar-brand.logo {
+    margin:0; padding:0;
+  }
+  
+  .PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+    min-width:85px; /* add to normal width style - fixes narrow thumb bug in browser */
+  }
+  
+  .PartialCategoryNavigation-popmenu-category-logo { flex-grow: 1; }
+  .PartialCategoryNavigation-popmenu-category-logo svg { width:18px; height:18px; }
+  .pop-menu-item { margin-left:10px; line-height:inherit }
+  .pop-menu-list-item { display:flex; margin-top:10px; }
+  
+  
+  .logo svg { width:auto; height:auto; }
+  
+  /* replace adwrapper in styles */
+  @media (max-width: 768px) {
+    .adwrapper {
+      background:inherit;
+      border:inherit;
+      padding:inherit;
+    }
+    
+    .adbordertop, .adborderbottom {
+     background: #f5f5f5; 
+     border: 1px solid #ddd; 
+     padding: 5px 0 10px;
+    }
+    
+
+          .logo svg {
+        width: 51.85px;
+        height: 38.75px;
+      } 
+      
+      .logo-col { justify-content:center; }
+      }
+  
+  
+  .PartialCategoryNavigation .drawer-open {
+    left: 0;
+    z-index: 20000;
+  }
+  
+  .PartialTrendingArticles-block {
+    margin-bottom:10px;
+  }
+  
+  
+  @media (min-width: 769px) {
+ 
+    .carousel-overlay {
+      padding-top:15px;
+    }
+    
+    .carousel-overlay .carousel-pagination {
+      width: 90%;
+      position: absolute;
+      bottom: 8px;
+      left: 10px;
+    }
+
+  }
+  
+  /*a {*/
+  /*  word-break:break-all;*/
+  /*}*/
+
+  /* small screen desktops */
+  .carousel {
+    border: 1px solid #ddd;
+  }
+  
+  .carousel-item {
+    transition-duration: 1s;
+  }
+  
+  .carousel-link:hover { color:#02020b; }
+  
+  .PartialPageFooter-list { justify-content:center; }
+  
+  @media (max-width: 992px) {
+    .PartialCategoryArticleTiles-categories>div:nth-child(3), .home-page-ad {
+      display:none;
+    }
+    
+    /* override styles - this is for thumbs on mobile home page mid section */
+    .PartialCategoryArticleTiles-categories>div:nth-child(3), .home-page-ad {
+      display:block;
+    }
+    
+    footer .PartialSocialLinks {
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .article-content-body, .non-article-content-body { padding-right:25px; }
+  }
+  
+
+ /* merge into styles */
+  .carousel-overlay h4 { line-height:14px; }
+  .carousel-overlay h1 { margin-top: .2em; }
+  .PartialTrendingArticles-section-title { line-height:16px; }
+  
+  .adtext { text-align:center; }
+
+  /*.google-rs { width:300px; margin:0 auto; }*/
+
+  footer .PartialSocialLinks .share-button-svg {
+    width:24px;
+    height:24px;
+  }
+  footer .PartialSocialLinks .twitter-share-button-svg .twitter-svg svg {
+    width: 12px;
+  }
+  footer .PartialSocialLinks .twitter-share-button-svg .twitter-svg {
+    padding:inherit;
+    margin: -2px 2px 0px 3px;
+  }
+  footer .PartialSocialLinks .fb-share-button-svg .fb-svg svg {
+      height: 12px;
+  }
+  footer .PartialSocialLinks .fb-share-button-svg .fb-svg {
+    padding:inherit;
+    margin: -2px 3px;
+  }
+  
+  .PartialCategoryArticleTiles-category, .PartialCategoryArticleTiles-hero-category {
+    line-height:14px;
+  }
+  
+  
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left:12px;
+    padding-right:4px;
+    margin-top:10px;
+  }
+  
+  .category-group-title {
+    border-top:3px solid #f45a69;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding:10px 0;
+  }
+  
+  .category-group-spacer {
+    margin-bottom: 2px;
+  }
+  
+  .category-group-spacer>div {
+    border-top: 1px solid #ddd;
+    width: 159px;
+    margin: 0 auto;
+  }
+  
+  .category-center-thumb-sm { font-size:18px; line-height:21px; }
+  
+  @media(max-width:991px) {
+    .category-group-list { width:100% !important; padding:0 important; }
+    .category-group-list img { height:165px; }
+    /*.category-group-spacer>div { width:335px; }*/
+    /*.PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {*/
+    /*font-size:18px; line-height:22px;*/
+    /*}*/
+  }
+  
+
+  
+.category-middle-hero img {
+   height:267px !important;
+}
+.category-middle img {
+  height: 95px;
+  width: 143px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+/* use the home page styles for the spacers */
+  .category-group-spacer {
+    margin-bottom: 2px;
+  }
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left:12px;
+    padding-right:4px;
+    margin-top:10px;
+  }
+  .logo-col { display:flex; padding:0; }
+
+  .PartialCategoryArticleTiles-hero-tile img { height:168px; }
+
+  @media (max-width: 768px) {
+  .PartialCategoryArticleTiles-hero-tile img, .PartialCategoryArticleTiles-tile img {
+      height: 118px;
+  }
+  
+  .category-group-list .PartialCategoryArticleTiles-title {
+    padding-left:0;
+    padding-right:0;
+  }
+  /*.PartialCategoryArticleTiles-hero-tile img, .PartialCategoryArticleTiles-tile img {*/
+  /*    height: 118px;*/
+  /*}*/
+
+  .carousel { border:none; }
+  
+  
+  .category-group-list .PartialCategoryArticleTiles-tile { text-align:center; display:block; }
+  .category-group-spacer>div { width:237px; }
+  
+  .right-sidebar { margin-top:10px; }
+  .PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+    width:85px;
+    height:85px;
+  }
+  
+  }
+  
+  
+
+  @media(max-width:991px) {
+  .PartialCategoryArticleTiles-hero-categories>div { width:100%; }
+  .PartialCategoryArticleTiles-hero-tile img { height:200px; }
+
+  }
+  
+  /*.PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {*/
+  /*  font-size:18px; line-height:22px;*/
+  /*}*/
+  
+.category-middle-hero img {
+   height:235px !important;
+}
+.category-middle img {
+  height: 70px;
+  width: 105px;
+}
+  .category-group-list .PartialCategoryArticleTiles-title {
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .category-middle .PartialTrendingArticles-block { margin-bottom:18px }
+
+
+
+  .PartialPageFooter-list {
+    display:inherit;
+    flex-flow:unset;
+  }
+  footer .PartialPageFooter-list {
+    display:inherit;
+    text-align:center;
+    list-style:none;
+  }
+  
+  
+
+.carousel-indicators {
+  margin-top:10px;
+}
+  
+  .carousel-indicators li {
+    width: 9px;
+    height: 9px;
+    margin: 0 6px;
+  }
+
+  .carousel-indicators li.active {
+      background-color: #cf0000;
+      border-color: #cf0000;
+  }
+  
+  .footer-logo-link svg { margin: 20px 0 0 0; }
+  
+  /*nav.navbar { padding-top:4px; } 2021-04-08 disabled */
+  
+  
+  @media (min-width: 769px) {
+
+    nav.navbar { height:60px; padding-top:1px; }
+    body { padding-top:80px; padding-bottom:0px; }
+
+
+    
+    
+  .footer-logo-link svg {
+    margin-left:20px;
+  }
+    
+  .carousel-overlay .carousel-pagination {
+    border-top: 1px solid #eee;
+    border-bottom:none;
+    padding-bottom: 0;
+    margin-top:20px;
+  }
+
+
+  }
+  
+  
+  .search-bar path {
+    fill:#cf0000;
+  }
+  
+  
+  
+  .carousel-overlay h4, .PartialCategoryArticleTiles-category, .PartialCategoryArticleTiles-hero-category, .carousel-overlay .carousel-page .carousel-current-page {
+    color:#cf0000;
+  }
+  
+  .carousel-controls path {
+  fill:#cf0000;
+  }
+
+  .PartialTrendingArticles-index {
+    background-color:#cf0000;
+    border-color:#cf0000;
+  }
+  
+  
+  body { padding-bottom:0px; }
+  
+  .PartialArticleAuthor, .PartialArticleAuthor-updated {
+    color:#cf0000;
+    border-color: #cf0000;
+  }
+  
+
+  .top-menu { display:none; }
+  .top-menu { padding-left:25px; }
+  .top-menu li { margin-right:35px; }
+  .top-menu a { color:#151515; font-family:"Roboto Condensed", sans-serif; white-space:nowrap;
+  font-size:15px; line-height:20px; text-align:left; text-transform:uppercase; font-weight:normal;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;    align-content: center;  }
+  .top-menu .active-nav>a, .top-menu a:hover { color:#cf0000; }
+  .top-menu a:hover path, .top-menu .active-nav path {
+    fill: #cf0000;
+  }
+  /*.top-menu svg { height:18px; width:18px; }*/ /* set these in the svg directly */
+  /*.top-menu path { fill:#02020B; }*/ /* breaks the icons on some content sites */
+  
+   @media (min-width: 992px) {
+    .top-menu { display:flex; }
+   }
+
+  .category-group-list .PartialCategoryArticleTiles-title { font-size:16px; line-height:19px; }
+  
+  /*.PartialTrendingArticles-block { height:75px !important; } /* breaks bottom articles */
+  
+    /* category header */
+  .category-super-title { display:flex; width:100%; justify-content:center; align-items:center; text-align:center; color:#cf0000; text-transform:uppercase; font-size:24px; line-height:28px; font-family:"Roboto Condensed", sans-serif; margin-bottom:20px; }
+  .category-super-title:before,.category-super-title:after { content:''; border-top:2px solid #DDDDDD; margin:0 20px 0 0; flex: 1 0 20px; }
+  .category-super-title:after { margin: 0 0 0 20px; }
+  
+  .PartialTrendingArticles-section-title { color:333; }
+  
+  .instagram-media { width:80% !important; margin:0 auto !important; }
+  
+  /* mobile menu item height */
+  .PartialCategoryNavigation-category-item {
+    height: 30px;
+  }
+  
+  
+  .product-template {
+    margin-bottom:10px;
+  }
+  .product-template .PartialContentFeed-content-desc, .product-template .pd-above-slide-text, .product-template .pd-below-slide-text {
+    padding:0 0 0 5px;
+  }
+  
+  .product-image img {
+    padding:0;
+    margin:10px auto 0;
+    border:1px solid #ddd;
+    max-width:200px;
+    max-height:200px;
+    object-fit:contain;
+  }
+  .product-image .pd-slide-image-attribution { max-width:200px; margin: 0 auto; }
+  .product-buy-now {
+    text-align: center;
+    font: normal normal bold 16px/19px Roboto Condensed;
+    letter-spacing: 0px;
+    background: #E1CE7A 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001a;
+    border-radius: 3px;
+    color: #02020B;
+    height: 35px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    vertical-align:middle;
+    width: 100%;
+    border: none;
+  }
+.product-buy-now a, .product-buy-now a:hover { color:#02020b; text-decoration:none; text-transform:uppercase; height:100%; width:100%; padding-top:8px; }
+
+.advertising-disclosure {
+  text-align: center;
+  margin-top:30px;
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #4B4B4B;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+.product-body { flex-direction:row; }
+@media (max-width: 576px) {
+.product-body { flex-direction:column-reverse; }
+}
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 768px) {
+
+      .carousel-overlay .carousel-pagination {
+        border-top:none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        margin-top: 8px;
+        position:inherit;
+        width:inherit;
+      }
+      .carousel-overlay { padding-top:0; }
+            
+      .carousel-overlay .carousel-controls {
+        width: 100%;
+        text-align: center;
+        display:flex;
+        justify-content:center;
+      }
+      
+      .carousel-item img { height:200px; }
+    }
+
+
+
+/* now global 75px */
+.PartialTrendingArticles-body.right-float .PartialTrendingArticles-thumbnail {
+  width: 75px !important;
+  height: 75px !important;
+  min-width: 75px;
+}
+.PartialTrendingArticles-feed-title {
+  align-items: baseline;
+  font-size: 14px;
+  line-height: 20px;
+}
+  
+</style>
+
+<script>
+/*! js-cookie v3.0.0-rc.1 | MIT */
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self,function(){var n=e.Cookies,r=e.Cookies=t();r.noConflict=function(){return e.Cookies=n,r}}())}(this,function(){"use strict";function e(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)e[r]=n[r]}return e}var t={read:function(e){return e.replace(/(%[\dA-F]{2})+/gi,decodeURIComponent)},write:function(e){return encodeURIComponent(e).replace(/%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,decodeURIComponent)}};return function n(r,o){function i(t,n,i){if("undefined"!=typeof document){"number"==typeof(i=e({},o,i)).expires&&(i.expires=new Date(Date.now()+864e5*i.expires)),i.expires&&(i.expires=i.expires.toUTCString()),t=encodeURIComponent(t).replace(/%(2[346B]|5E|60|7C)/g,decodeURIComponent).replace(/[()]/g,escape),n=r.write(n,t);var c="";for(var u in i)i[u]&&(c+="; "+u,!0!==i[u]&&(c+="="+i[u].split(";")[0]));return document.cookie=t+"="+n+c}}return Object.create({set:i,get:function(e){if("undefined"!=typeof document&&(!arguments.length||e)){for(var n=document.cookie?document.cookie.split("; "):[],o={},i=0;i<n.length;i++){var c=n[i].split("="),u=c.slice(1).join("=");'"'===u[0]&&(u=u.slice(1,-1));try{var f=t.read(c[0]);if(o[f]=r.read(u,f),e===f)break}catch(e){}}return e?o[e]:o}},remove:function(t,n){i(t,"",e({},n,{expires:-1}))},withAttributes:function(t){return n(this.converter,e({},this.attributes,t))},withConverter:function(t){return n(e({},this.converter,t),this.attributes)}},{attributes:{value:Object.freeze(o)},converter:{value:Object.freeze(r)}})}(t,{path:"/"})});
+
+function page_uuid() { return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8); return v.toString(16); }); }
+
+!function(){var e,o,t=/\+/g,n=/([^&=]+)=?([^&]*)/g,u=function(e){return decodeURIComponent(e.replace(t," "))},m=window.location.search.substring(1);for(e={};o=n.exec(m);)e[u(o[1])]=u(o[2]);["utm_source","utm_subid","utm_campaign","utm_template","utm_medium","utm_term","utm_content"].forEach(function(o){void 0!==e[o]&&(Cookies.remove(o),void 0!==e[o]&&Cookies.set(o,e[o]))})}();
+</script>
+
+
+
+<script>
+
+var settings = JSON.parse("{\"gapi\":7,\"default_o_code\":0,\"seo_o_code\":779176,\"default_google_client\":\"aj-cat\",\"default_google_afs_style_id\":6970689106,\"default_google_rs_style_id\":6970689106,\"default_google_channel\":0,\"origin_code\":{\"0\":{\"google_client\":\"aj-cat\",\"google_channel\":0,\"google_afs_style_id\":6970689106,\"google_rs_style_id\":6970689106,\"partner\":\"\"},\"779176\":{\"google_client\":\"aj-organic-seo\",\"google_channel\":779176,\"google_afs_style_id\":6970689106,\"google_rs_style_id\":6970689106,\"partner\":\"\"},\"740004\":{\"google_client\":\"aj-platinum-index\",\"google_channel\":740004,\"google_afs_style_id\":6970689106,\"google_rs_style_id\":6970689106,\"partner\":\"dexter\"}}}");
+
+/* set iac specifics for datalayer */
+try {
+  var url = new URL(window.location.href);
+  var utm_content = url.searchParams.get("utm_content");
+  var embedded_qo = null;
+
+  if(utm_content) {
+    // look for utm_content override vars
+    var tmp = utm_content.split(':');
+    if(tmp[0] == 'params') {
+      var var_list = tmp[1].split('&');
+      var allowed_list = ['ad', 'an', 'ag', 'o', 'rch', 'qo'];
+      var_list.forEach(function(a) { 
+        tmp = a.split('=');
+        allowed_list.forEach(function(b) {
+          if(tmp[0] == b) {
+            if(b == 'qo') {
+              embedded_qo = tmp[1];
+            } else {
+              Cookies.set('iac_'+tmp[0], tmp[1]);
+            }
+          }
+        })
+      });
+    }
+  }
+  
+  var o_parm = url.searchParams.get("o");
+  
+  // 2021-06-21 - allow o codes not in the settings
+  // if(typeof(settings.origin_code[o_parm]) == c'undefined') o_parm = settings.default_o_code;
+
+  if(url.searchParams.get("ad")) Cookies.set('iac_ad', url.searchParams.get("ad"));
+  if(url.searchParams.get("an")) Cookies.set('iac_an', url.searchParams.get("an"));
+  if(o_parm) Cookies.set('iac_o', o_parm);
+  if(url.searchParams.get("ag")) Cookies.set('iac_ag', url.searchParams.get("ag"));
+  if(url.searchParams.get("rch")) Cookies.set('iac_rch', url.searchParams.get("rch"));
+
+  var kw_parm = url.searchParams.get("kw");
+  var terms_parm = url.searchParams.get("terms");
+  var style_parm = url.searchParams.get("style"); 
+
+  var appvars = {
+    ad: url.searchParams.get("ad") || Cookies.get('iac_ad') || 'dirN',
+    an: url.searchParams.get("an") || Cookies.get('iac_an'),
+    ag: url.searchParams.get("ag") || Cookies.get('iac_ag'),
+    o: o_parm || Cookies.get('iac_o') || settings.default_o_code,
+    rch: url.searchParams.get("rch") || Cookies.get('iac_rch'),
+
+    utm_medium: Cookies.get('utm_medium'),
+    utm_campaign: Cookies.get('utm_campaign'),
+    utm_subid: Cookies.get('utm_subid'),
+    partner: '',
+    qo: url.searchParams.get("qo") || embedded_qo || 'homepageSearchBox',
+    gclid: url.searchParams.get("gclid")
+  }
+  
+  var SEO_REFERERS = [
+    "google.*",
+    "search.yahoo.*",
+    "bing.*",
+    "baidu.*",
+    "yandex.*",
+    "search.aol.com"
+  ];
+  
+  SEO_REFERERS.forEach(function(a) {
+    var r = document.referrer.search(a);
+    if(r > 0) {
+      appvars.ad = 'SEO';
+      appvars.o = settings.seo_o_code;
+    }
+  });
+
+  if(typeof(settings.origin_code[appvars.o]) != 'undefined') {
+    appvars.google_client = settings.origin_code[appvars.o].google_client;
+    appvars.google_rs_style_id = settings.origin_code[appvars.o].google_rs_style_id;
+    appvars.google_afs_style_id = settings.origin_code[appvars.o].google_afs_style_id;
+    appvars.google_channel = settings.origin_code[appvars.o].google_channel;
+    appvars.partner = settings.origin_code[appvars.o].partner;
+    appvars.afs_ads_to_show = settings.origin_code[appvars.o].afs_ads_to_show;
+    appvars.rs_ads_to_show = settings.origin_code[appvars.o].rs_ads_to_show;
+  } else {
+    appvars.google_client = settings.default_google_client;
+    appvars.google_rs_style_id = settings.default_google_rs_style_id;
+    appvars.google_afs_style_id = settings.default_google_afs_style_id;
+    appvars.google_channel = settings.default_google_channel;
+    appvars.afs_ads_to_show = settings.default_afs_ads_to_show;
+    appvars.rs_ads_to_show = settings.default_rs_ads_to_show;
+    appvars.partner = '';
+  }
+  
+  if(appvars.rch) {
+    appvars.google_channel = appvars.rch;
+  }
+
+  var rs_clk_payload_enc = clk_payload_enc = '';
+  
+
+  /* og data layer style from amg */
+  dataLayer = [{
+    'affiliateid': appvars.o,
+    'acquisitiondivision': appvars.ad,
+    'channel': 'content'
+  }];
+
+
+
+// RTK params
+  window.rtkGPTSlotsTargeting = [[
+    ['ad', appvars.ad],
+    ['an', appvars.an],
+    ['ag', appvars.ag],
+    ['origin', appvars.o],
+    ['channel', 'content'],
+    ['pageType', ''],
+    ['partner', appvars.partner]
+  ]];
+  
+  var jita_tg_params = {};
+  jita_tg_params['ad'] = appvars.ad;
+  jita_tg_params['an'] = appvars.an;
+  jita_tg_params['ag'] = appvars.ag;
+  jita_tg_params['channel'] = 'content';
+  jita_tg_params['pageType'] = '';
+  jita_tg_params['partner'] = appvars.partner;
+  jita_tg_params['origin'] = appvars.o;
+  
+  window.addEventListener("JITA_Ready", function(e) {
+   JITA.setCustomParameters(window.jita_tg_params);
+  });
+  
+  
+  // global search pass params for serach page
+  var ad = '', an = '', o = '', ag = '', qo = '', rch = '';
+  if(appvars.ad) ad = '&ad='+appvars.ad;
+  if(appvars.an) an = '&an='+appvars.an;
+  if(appvars.o) o = '&o='+appvars.o;
+  if(appvars.ag) ag = '&ag='+appvars.ag;
+  if(appvars.qo) qo = '&qo='+appvars.qo;
+  if(appvars.rch) rch = '&rch='+appvars.rch;
+
+  // google rs initialization
+  var rs_qo = '&qo=' + (url.searchParams.get("qo") || 'contentGoogleRelatedSearch');
+  var pageOptions = {
+    pubId : appvars.google_client,
+    relatedSearchTargeting : 'content',
+    resultsPageBaseUrl : 'https://www.ask.com/web?'+ad+an+o+ag+rs_qo+rch,
+    resultsPageQueryParam : 'q',
+    clicktrackUrl: "https://www.ask.com/_rclk" + rs_clk_payload_enc,
+    columns: 1,
+    container: "bottom-afc-related-search",
+    type: "relatedsearch",
+    styleId : appvars.google_rs_style_id,
+    linkTarget: '_blank',
+    channel:appvars.google_channel,
+  };
+  
+  if(kw_parm) pageOptions.kw = kw_parm;
+  if(terms_parm) pageOptions.terms = terms_parm;
+  if(style_parm) pageOptions.styleId = style_parm;
+
+
+  var rs_ads_to_show = 5;
+  if(typeof(appvars.rs_ads_to_show) != 'undefined') rs_ads_to_show = appvars.rs_ads_to_show;
+
+  var rsblock1 = {
+    'container' : 'google-rs-1',
+    'type': 'relatedsearch',
+    'number': rs_ads_to_show,
+    'linkTarget':'_blank',
+
+
+  };
+  
+  var rsblock2 = {
+    'container' : 'google-rs-2',
+    'type': 'relatedsearch',
+    'number': rs_ads_to_show,
+    'linkTarget':'_blank',
+
+
+
+  };
+
+  var blocks, rsblocks = [rsblock1, rsblock2];
+  // end google rs initialization
+  
+  
+  // afs init
+  var afs_ads_to_show = 3;
+  if(typeof(appvars.afs_ads_to_show) != 'undefined') afs_ads_to_show = appvars.afs_ads_to_show;
+
+  var afsPageOptions = {
+   'pubId' : appvars.google_client,
+   'query' : 'Ask.com',
+   'styleId': appvars.google_afs_style_id,
+   'channel': appvars.google_channel,
+   'clicktrackUrl': "https://www.ask.com/_clk" + clk_payload_enc,
+  };
+  var afsAdblock1 = {
+   'number': afs_ads_to_show,
+   'container' : 'afscontainer1',
+  };
+    // end afs init
+} catch(e) { console.log("error on init", e); }
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3KVMC');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+<!-- google RS -->
+<script src="https://www.google.com/adsense/domains/caf.js"></script>
+
+<!-- afs -->
+<script>
+var page_title = '';
+</script>
+
+
+<script type="text/javascript" src="//ds8tuylnjknkd.cloudfront.net/script.js"></script><script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b64aaac305327e6bdeeeae651/a396e5678240881b83f01d847.js");</script>
+
+</head>
+
+
+<body>
+    
+<style>
+
+.ask-top { display:none; }
+.ask-search-col { display:none; }
+
+/* put this in svg direct todo - also wrap all of this in media breakpoint so it never shows on mobile */
+@media (min-width: 992px) {
+.logo svg { width:61px; height:45.76px; }
+.fixed-top .logo-col { flex: 0 0 8.333333%; max-width: 8.333333%; }
+
+  body { padding-top:0; }
+  .non-fixed .logo { display:none; }
+  .non-fixed .search-bar form { display:none; }
+  nav.non-fixed { border:none; box-shadow:none; height:70px; }
+  
+  .upper-search-bar { margin:10px 0; }
+  .upper-search-bar svg { width: auto;
+    height: 16px;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .ac_results {
+    width:380px;
+    border-radius:3px;
+  }
+
+
+  .upper-search-bar .search-box, .ask-search-col .search-box, .ask-sub-search-col .search-box { height:45px; border-radius:3px 0 0 3px; margin-right:0!important; width:800px; font-size: 16px; line-height: 18px; padding: 0 16px 0; }
+  .upper-search-bar .search-box::placeholder, .ask-search-col .search-box::placeholder, .ask-sub-search-col .search-box::placeholder { color:#737373; }
+  .upper-search-bar path, .ask-search-col path { fill:#fff; }
+  .upper-search-bar .btn, .ask-search-col .btn {
+    border-radius:0 3px 3px 0; background-color:#408EC9; margin:0;
+    height:45px;
+    width:50px;
+  }
+  .upper-search-bar .form-control:focus, .ask-search-col .form-control:focus { box-shadow:none; }
+  
+  .ask-top { margin-top:25px; display:block; }
+  .ask-top .top-logo svg { width:100px; height:72px; }
+  
+  .fixed-top .search-col { display:none; }
+  
+  .ask-search-col { display:block }
+  .ask-search-col .search-box { /*width:419px;*/ width:380px; }
+  .ask-top-search-box:focus { border-color:#ced4da !important; }
+  .ask-search-col .search-bar { flex-direction:row; }
+  
+  .non-fixed .ask-search-col { display:none; }
+  
+  .ask-top-search-open {
+    border-radius: 3px 0 0 !important;
+  }
+
+  
+  .ac_results_topbar {
+    position: relative;
+	  left: -25px;
+	  width: 800px;
+	  margin: -1px auto 0;
+	  top:auto;
+	  border-radius:0 0 3px 3px;
+  }
+
+  .ac_results_wrap {
+    position:absolute;
+    width:100%;
+  }
+}
+</style>
+<div class="container-xl ask-top">
+<div class="row">
+  <div class="col-12" style="text-align:center">
+  <a class="top-logo" href="/" data-zone='header' data-provider-source='navigation' data-result-type='logo'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.83" height="45.76" viewBox="0 0 119.167 86.617">
+  <title>Ask.com</title>
+  <desc></desc>
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="119.167" height="86.617" fill="none"></rect>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+    </clipPath>
+  </defs>
+  <g id="Ask_Logo_large" data-name="Ask Logo large" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-0.032 -1.474)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path-2)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,0H116.811V87.941H0Z" transform="translate(0.017 0.201)" fill="none"></path>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575" transform="translate(0 0)" fill="#cf0000"></path>
+    <path id="Fill_5" data-name="Fill 5" d="M.528,60.914h0c-.251,0-.408-.056-.48-.172-.093-.149-.049-.4.133-.779.134-.276,24.087-49.288,26.006-53.189A1.392,1.392,0,0,1,27.263,5.9c.4,0,.656.363.709,1,.228,2.741,2.352,30.963,3.259,43.014.221,2.941.357,4.751.368,4.888.075.96-.021,1.222-1.076,1.392-.61.1-4.784.762-5.734.912a2.266,2.266,0,0,1-.343.031c-.532,0-.575-.288-.58-.727-.014-1.18-.106-7.892-.107-7.958L13.2,50.085c-.023.054-3.779,8.824-3.865,9.027-.167.405-.37.5-.9.586-1.578.251-6.89,1.092-7.488,1.18A2.937,2.937,0,0,1,.528,60.914ZM23.69,25.14h0L16,43.095l7.764-1.209-.076-16.745ZM40.005,54.777h0a12.412,12.412,0,0,1-4.74-.816c-1.107-.457-1.261-.8-.915-2.023.25-.882,1.564-5.423,1.577-5.467a3.656,3.656,0,0,0,.752.947A5.737,5.737,0,0,0,39.438,48.8a6.692,6.692,0,0,0,1.4.153,4.225,4.225,0,0,0,3.9-2.077,3.721,3.721,0,0,0,.058-2.775A10.613,10.613,0,0,0,41.483,39.6a11.984,11.984,0,0,1-3.55-4.917,10.371,10.371,0,0,1,.758-7.5c1.5-2.836,4.4-4.569,8.379-5.014a12.081,12.081,0,0,1,1.342-.074,13.9,13.9,0,0,1,4.736.869.848.848,0,0,1,.563,1.219c-.109.316-1.354,3.842-1.732,4.915l-.019.054c-.022-.016-2.293-1.7-3.56-1.77-.1-.005-.2-.008-.293-.008a2.848,2.848,0,0,0-2.375,1.038,3.268,3.268,0,0,0-.551,3.61c.4.722.8,1.289,4.408,4.541A9.525,9.525,0,0,1,52.9,43.07a10.394,10.394,0,0,1-1.134,5.516,11.973,11.973,0,0,1-3.052,3.622,10.318,10.318,0,0,1-4.4,2.122A22.69,22.69,0,0,1,40.005,54.777Zm14.785-2.468h0a.412.412,0,0,1-.338-.107c-.131-.157-.074-.51.046-1.173.06-.327,1.469-7.883,3.1-16.631l.034-.181c2.646-14.19,5.939-31.85,6.018-32.3.18-1.021.49-1.247,1.273-1.369C65.5.454,69.645.014,70.569,0h.057c.4,0,.633.066.761.219.159.19.179.521.069,1.145-.145.812-5.592,29.622-6.213,32.9l-.016.084c.037-.063,1.818-3.043,3.7-6.2,2.158-3.609,4.389-7.341,4.541-7.593a1.411,1.411,0,0,1,1.229-.806l3.46-.349,2.319-.234c.163-.016.277-.027.372-.027a.467.467,0,0,1,.249.052.29.29,0,0,1,.136.254.716.716,0,0,1-.122.38c-.338.551-8.858,14.334-8.943,14.471l.633,1.8c1.318,3.748,4.061,11.547,4.207,11.974.1.279.107.448.038.566s-.252.207-.606.267-4.176.666-5.766.916a2.119,2.119,0,0,1-.324.03c-.383,0-.512-.178-.671-.6-.208-.559-4.717-13.18-4.762-13.307L62.083,50.563c-.124.647-.362.683-.757.743l-.067.01c-1.67.266-5.018.8-5.729.909A5.508,5.508,0,0,1,54.791,52.309Z" transform="translate(16.161 9.16)" fill="#fff"></path>
+    <path id="_" data-name="�" d="M5.357,10.714a5.158,5.158,0,0,1-2.081-.425A5.446,5.446,0,0,1,.425,7.438,5.157,5.157,0,0,1,0,5.357,5.157,5.157,0,0,1,.425,3.276,5.446,5.446,0,0,1,3.276.425,5.157,5.157,0,0,1,5.357,0,5.157,5.157,0,0,1,7.438.425a5.446,5.446,0,0,1,2.851,2.851,5.158,5.158,0,0,1,.425,2.081,5.158,5.158,0,0,1-.425,2.081,5.446,5.446,0,0,1-2.851,2.851A5.158,5.158,0,0,1,5.357,10.714Zm0-9.763A4.322,4.322,0,0,0,3.643,1.3,4.39,4.39,0,0,0,1.3,3.643a4.421,4.421,0,0,0,0,3.427A4.39,4.39,0,0,0,3.643,9.418a4.421,4.421,0,0,0,3.427,0A4.39,4.39,0,0,0,9.418,7.07a4.421,4.421,0,0,0,0-3.427A4.39,4.39,0,0,0,7.07,1.3,4.322,4.322,0,0,0,5.357.95ZM4.421,8.382H3.3V2.261H5.659a2.392,2.392,0,0,1,1.634.475A1.758,1.758,0,0,1,7.819,4.1,1.617,1.617,0,0,1,7.4,5.314a1.754,1.754,0,0,1-1.051.475l1.6,2.59-1.18,0L5.242,5.875H4.421V8.381Zm0-5.171V4.925h.821c.172,0,.346-.007.518-.022A1.567,1.567,0,0,0,6.228,4.8a.8.8,0,0,0,.338-.259.779.779,0,0,0,.13-.475.779.779,0,0,0-.13-.475.8.8,0,0,0-.338-.259,1.441,1.441,0,0,0-.468-.1c-.167-.01-.341-.014-.518-.014Z" transform="translate(108.454 0.907)" fill="#bfbfbf"></path>
+  </g>
+</svg></a>
+</div>
+</div>
+<div class="row">
+  <div class="col-12">
+      <div class="upper-search-bar" style="text-align:center">
+      <form class="form-inline my-1 my-lg-0 search-form" style="display:block">
+        <input class="form-control mr-sm-1 search-box ask-top-search-box" type="text" placeholder="Search..." aria-label="Search"><button class="search-submit btn my-1 my-sm-0" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.999 18"
+            preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <style>
+                .magnifier-b {
+                  clip-path: url(#magnifier-a);
+                }
+              </style>
+              <clipPath id="magnifier-a">
+                <rect class="svg-a" width="17.999" height="18"></rect>
+              </clipPath>
+            </defs>
+            <g class="magnifier-b">
+              <path class="svg-c"
+                d="M16.253,17.471a1.716,1.716,0,0,1-1.236-.524l-3.226-3.3a7.4,7.4,0,0,1-4.22,1.318A7.67,7.67,0,0,1,0,7.218,7.67,7.67,0,0,1,7.572-.529a7.67,7.67,0,0,1,7.572,7.747,7.871,7.871,0,0,1-.98,3.8l3.325,3.4a1.819,1.819,0,0,1,0,2.528A1.715,1.715,0,0,1,16.253,17.471ZM7.411,1.589A5.584,5.584,0,0,0,2.118,7.412a5.584,5.584,0,0,0,5.294,5.824,5.585,5.585,0,0,0,5.295-5.824A5.584,5.584,0,0,0,7.411,1.589Z"
+                transform="translate(0 0.529)"></path>
+            </g>
+          </svg>
+        </button>
+        
+        
+<div class="ac_results_wrap">
+<div class="ac_results ac_results_topbar" style="display:none">
+  <ul>
+  </ul>
+</div>
+</div>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<nav class="navbar bg-white non-fixed navbar-expand-md navbar-light">
+
+  <div class="container-xl">
+
+  <div class="col d-block d-lg-none drawer-trigger" style="padding:0; z-index:1000">
+  <div class="PartialHeader-menu-container mobile-hamburger">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 15" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+        .svg-b {
+            clip-path: url(#menu-a);
+        }
+    </style>
+    <clipPath id="menu-a">
+        <rect class="svg-a" width="18" height="15"></rect>
+    </clipPath>
+  </defs>
+  <g class="svg-b">
+  <path class="svg-c" d="M18,.75v1.5a.721.721,0,0,1-.223.527A.721.721,0,0,1,17.25,3H.75a.721.721,0,0,1-.527-.223A.721.721,0,0,1,0,2.25V.75A.721.721,0,0,1,.223.223.721.721,0,0,1,.75,0h16.5a.721.721,0,0,1,.527.223A.721.721,0,0,1,18,.75Z"></path>
+  <path class="svg-c" d="M17.25,15H.75a.724.724,0,0,1-.527-.223A.724.724,0,0,1,0,14.25v-1.5a.724.724,0,0,1,.222-.527A.724.724,0,0,1,.75,12h16.5a.761.761,0,0,1,.75.751v1.5a.761.761,0,0,1-.75.751Zm0-6H.75a.724.724,0,0,1-.527-.222A.724.724,0,0,1,0,8.25V6.75a.724.724,0,0,1,.222-.527A.724.724,0,0,1,.75,6h16.5a.759.759,0,0,1,.75.75v1.5a.759.759,0,0,1-.75.75Z"></path>
+  </g>
+  </svg>
+  </div>
+  </div>
+  
+  
+<nav class="PartialCategoryNavigation">
+<div id="header-menu-control" class="PartialCategoryNavigation-drawer">
+<div class="PartialCategoryNavigation-drawer-header">
+<a class="navbar-brand logo" href="/" data-zone='header' data-provider-source='navigation' data-result-type='logo'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.83" height="45.76" viewBox="0 0 119.167 86.617">
+  <title>Ask.com</title>
+  <desc></desc>
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="119.167" height="86.617" fill="none"></rect>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+    </clipPath>
+  </defs>
+  <g id="Ask_Logo_large" data-name="Ask Logo large" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-0.032 -1.474)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path-2)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,0H116.811V87.941H0Z" transform="translate(0.017 0.201)" fill="none"></path>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575" transform="translate(0 0)" fill="#cf0000"></path>
+    <path id="Fill_5" data-name="Fill 5" d="M.528,60.914h0c-.251,0-.408-.056-.48-.172-.093-.149-.049-.4.133-.779.134-.276,24.087-49.288,26.006-53.189A1.392,1.392,0,0,1,27.263,5.9c.4,0,.656.363.709,1,.228,2.741,2.352,30.963,3.259,43.014.221,2.941.357,4.751.368,4.888.075.96-.021,1.222-1.076,1.392-.61.1-4.784.762-5.734.912a2.266,2.266,0,0,1-.343.031c-.532,0-.575-.288-.58-.727-.014-1.18-.106-7.892-.107-7.958L13.2,50.085c-.023.054-3.779,8.824-3.865,9.027-.167.405-.37.5-.9.586-1.578.251-6.89,1.092-7.488,1.18A2.937,2.937,0,0,1,.528,60.914ZM23.69,25.14h0L16,43.095l7.764-1.209-.076-16.745ZM40.005,54.777h0a12.412,12.412,0,0,1-4.74-.816c-1.107-.457-1.261-.8-.915-2.023.25-.882,1.564-5.423,1.577-5.467a3.656,3.656,0,0,0,.752.947A5.737,5.737,0,0,0,39.438,48.8a6.692,6.692,0,0,0,1.4.153,4.225,4.225,0,0,0,3.9-2.077,3.721,3.721,0,0,0,.058-2.775A10.613,10.613,0,0,0,41.483,39.6a11.984,11.984,0,0,1-3.55-4.917,10.371,10.371,0,0,1,.758-7.5c1.5-2.836,4.4-4.569,8.379-5.014a12.081,12.081,0,0,1,1.342-.074,13.9,13.9,0,0,1,4.736.869.848.848,0,0,1,.563,1.219c-.109.316-1.354,3.842-1.732,4.915l-.019.054c-.022-.016-2.293-1.7-3.56-1.77-.1-.005-.2-.008-.293-.008a2.848,2.848,0,0,0-2.375,1.038,3.268,3.268,0,0,0-.551,3.61c.4.722.8,1.289,4.408,4.541A9.525,9.525,0,0,1,52.9,43.07a10.394,10.394,0,0,1-1.134,5.516,11.973,11.973,0,0,1-3.052,3.622,10.318,10.318,0,0,1-4.4,2.122A22.69,22.69,0,0,1,40.005,54.777Zm14.785-2.468h0a.412.412,0,0,1-.338-.107c-.131-.157-.074-.51.046-1.173.06-.327,1.469-7.883,3.1-16.631l.034-.181c2.646-14.19,5.939-31.85,6.018-32.3.18-1.021.49-1.247,1.273-1.369C65.5.454,69.645.014,70.569,0h.057c.4,0,.633.066.761.219.159.19.179.521.069,1.145-.145.812-5.592,29.622-6.213,32.9l-.016.084c.037-.063,1.818-3.043,3.7-6.2,2.158-3.609,4.389-7.341,4.541-7.593a1.411,1.411,0,0,1,1.229-.806l3.46-.349,2.319-.234c.163-.016.277-.027.372-.027a.467.467,0,0,1,.249.052.29.29,0,0,1,.136.254.716.716,0,0,1-.122.38c-.338.551-8.858,14.334-8.943,14.471l.633,1.8c1.318,3.748,4.061,11.547,4.207,11.974.1.279.107.448.038.566s-.252.207-.606.267-4.176.666-5.766.916a2.119,2.119,0,0,1-.324.03c-.383,0-.512-.178-.671-.6-.208-.559-4.717-13.18-4.762-13.307L62.083,50.563c-.124.647-.362.683-.757.743l-.067.01c-1.67.266-5.018.8-5.729.909A5.508,5.508,0,0,1,54.791,52.309Z" transform="translate(16.161 9.16)" fill="#fff"></path>
+    <path id="_" data-name="�" d="M5.357,10.714a5.158,5.158,0,0,1-2.081-.425A5.446,5.446,0,0,1,.425,7.438,5.157,5.157,0,0,1,0,5.357,5.157,5.157,0,0,1,.425,3.276,5.446,5.446,0,0,1,3.276.425,5.157,5.157,0,0,1,5.357,0,5.157,5.157,0,0,1,7.438.425a5.446,5.446,0,0,1,2.851,2.851,5.158,5.158,0,0,1,.425,2.081,5.158,5.158,0,0,1-.425,2.081,5.446,5.446,0,0,1-2.851,2.851A5.158,5.158,0,0,1,5.357,10.714Zm0-9.763A4.322,4.322,0,0,0,3.643,1.3,4.39,4.39,0,0,0,1.3,3.643a4.421,4.421,0,0,0,0,3.427A4.39,4.39,0,0,0,3.643,9.418a4.421,4.421,0,0,0,3.427,0A4.39,4.39,0,0,0,9.418,7.07a4.421,4.421,0,0,0,0-3.427A4.39,4.39,0,0,0,7.07,1.3,4.322,4.322,0,0,0,5.357.95ZM4.421,8.382H3.3V2.261H5.659a2.392,2.392,0,0,1,1.634.475A1.758,1.758,0,0,1,7.819,4.1,1.617,1.617,0,0,1,7.4,5.314a1.754,1.754,0,0,1-1.051.475l1.6,2.59-1.18,0L5.242,5.875H4.421V8.381Zm0-5.171V4.925h.821c.172,0,.346-.007.518-.022A1.567,1.567,0,0,0,6.228,4.8a.8.8,0,0,0,.338-.259.779.779,0,0,0,.13-.475.779.779,0,0,0-.13-.475.8.8,0,0,0-.338-.259,1.441,1.441,0,0,0-.468-.1c-.167-.01-.341-.014-.518-.014Z" transform="translate(108.454 0.907)" fill="#bfbfbf"></path>
+  </g>
+</svg></a>
+<div class="PartialCategoryNavigation-drawer-header-balance"></div>
+<div class="PartialCategoryNavigation-drawer-close-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.414 17.414" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+        .b-close {
+            clip-path: url(#a-close);
+        }
+    </style>
+    <clipPath id="a-close">
+        <rect class="svg-a" width="17.414" height="17.414"></rect>
+    </clipPath>
+  </defs>
+  <g class="b-close">
+    <line class="svg-c" x2="16" y2="16" transform="translate(0.707 0.707)"></line>
+    <line class="svg-c" x1="16" y2="16" transform="translate(0.707 0.707)"></line>
+  </g>
+  </svg>
+  
+  </div>
+        </div>
+        <div class="PartialCategoryNavigation-body">
+          
+  <ul class="PartialCategoryNavigation-categories" style="border-top:1px solid #ddd">
+
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/culture" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Culture</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/travel" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Travel</span></a></div>
+</li>
+
+<li class="PartialCategoryNavigation-category pop-menu-list-item">
+<div class="PartialCategoryNavigation-popmenu-category-logo">
+</div>
+<div class="PartialCategoryNavigation-category-item pop-menu-item"><a href="/entertainment" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+<span>
+  Entertainment</span></a></div>
+</li>
+
+        
+</ul>
+</div>
+</div>
+</nav>
+
+
+<div class="col logo-col" >
+<a class="navbar-brand logo" data-zone='header' data-provider-source='navigation' data-result-type='logo' href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.83" height="45.76" viewBox="0 0 119.167 86.617">
+  <title>Ask.com</title>
+  <desc></desc>
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="119.167" height="86.617" fill="none"></rect>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+    </clipPath>
+  </defs>
+  <g id="Ask_Logo_large" data-name="Ask Logo large" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-0.032 -1.474)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path-2)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,0H116.811V87.941H0Z" transform="translate(0.017 0.201)" fill="none"></path>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575" transform="translate(0 0)" fill="#cf0000"></path>
+    <path id="Fill_5" data-name="Fill 5" d="M.528,60.914h0c-.251,0-.408-.056-.48-.172-.093-.149-.049-.4.133-.779.134-.276,24.087-49.288,26.006-53.189A1.392,1.392,0,0,1,27.263,5.9c.4,0,.656.363.709,1,.228,2.741,2.352,30.963,3.259,43.014.221,2.941.357,4.751.368,4.888.075.96-.021,1.222-1.076,1.392-.61.1-4.784.762-5.734.912a2.266,2.266,0,0,1-.343.031c-.532,0-.575-.288-.58-.727-.014-1.18-.106-7.892-.107-7.958L13.2,50.085c-.023.054-3.779,8.824-3.865,9.027-.167.405-.37.5-.9.586-1.578.251-6.89,1.092-7.488,1.18A2.937,2.937,0,0,1,.528,60.914ZM23.69,25.14h0L16,43.095l7.764-1.209-.076-16.745ZM40.005,54.777h0a12.412,12.412,0,0,1-4.74-.816c-1.107-.457-1.261-.8-.915-2.023.25-.882,1.564-5.423,1.577-5.467a3.656,3.656,0,0,0,.752.947A5.737,5.737,0,0,0,39.438,48.8a6.692,6.692,0,0,0,1.4.153,4.225,4.225,0,0,0,3.9-2.077,3.721,3.721,0,0,0,.058-2.775A10.613,10.613,0,0,0,41.483,39.6a11.984,11.984,0,0,1-3.55-4.917,10.371,10.371,0,0,1,.758-7.5c1.5-2.836,4.4-4.569,8.379-5.014a12.081,12.081,0,0,1,1.342-.074,13.9,13.9,0,0,1,4.736.869.848.848,0,0,1,.563,1.219c-.109.316-1.354,3.842-1.732,4.915l-.019.054c-.022-.016-2.293-1.7-3.56-1.77-.1-.005-.2-.008-.293-.008a2.848,2.848,0,0,0-2.375,1.038,3.268,3.268,0,0,0-.551,3.61c.4.722.8,1.289,4.408,4.541A9.525,9.525,0,0,1,52.9,43.07a10.394,10.394,0,0,1-1.134,5.516,11.973,11.973,0,0,1-3.052,3.622,10.318,10.318,0,0,1-4.4,2.122A22.69,22.69,0,0,1,40.005,54.777Zm14.785-2.468h0a.412.412,0,0,1-.338-.107c-.131-.157-.074-.51.046-1.173.06-.327,1.469-7.883,3.1-16.631l.034-.181c2.646-14.19,5.939-31.85,6.018-32.3.18-1.021.49-1.247,1.273-1.369C65.5.454,69.645.014,70.569,0h.057c.4,0,.633.066.761.219.159.19.179.521.069,1.145-.145.812-5.592,29.622-6.213,32.9l-.016.084c.037-.063,1.818-3.043,3.7-6.2,2.158-3.609,4.389-7.341,4.541-7.593a1.411,1.411,0,0,1,1.229-.806l3.46-.349,2.319-.234c.163-.016.277-.027.372-.027a.467.467,0,0,1,.249.052.29.29,0,0,1,.136.254.716.716,0,0,1-.122.38c-.338.551-8.858,14.334-8.943,14.471l.633,1.8c1.318,3.748,4.061,11.547,4.207,11.974.1.279.107.448.038.566s-.252.207-.606.267-4.176.666-5.766.916a2.119,2.119,0,0,1-.324.03c-.383,0-.512-.178-.671-.6-.208-.559-4.717-13.18-4.762-13.307L62.083,50.563c-.124.647-.362.683-.757.743l-.067.01c-1.67.266-5.018.8-5.729.909A5.508,5.508,0,0,1,54.791,52.309Z" transform="translate(16.161 9.16)" fill="#fff"></path>
+    <path id="_" data-name="�" d="M5.357,10.714a5.158,5.158,0,0,1-2.081-.425A5.446,5.446,0,0,1,.425,7.438,5.157,5.157,0,0,1,0,5.357,5.157,5.157,0,0,1,.425,3.276,5.446,5.446,0,0,1,3.276.425,5.157,5.157,0,0,1,5.357,0,5.157,5.157,0,0,1,7.438.425a5.446,5.446,0,0,1,2.851,2.851,5.158,5.158,0,0,1,.425,2.081,5.158,5.158,0,0,1-.425,2.081,5.446,5.446,0,0,1-2.851,2.851A5.158,5.158,0,0,1,5.357,10.714Zm0-9.763A4.322,4.322,0,0,0,3.643,1.3,4.39,4.39,0,0,0,1.3,3.643a4.421,4.421,0,0,0,0,3.427A4.39,4.39,0,0,0,3.643,9.418a4.421,4.421,0,0,0,3.427,0A4.39,4.39,0,0,0,9.418,7.07a4.421,4.421,0,0,0,0-3.427A4.39,4.39,0,0,0,7.07,1.3,4.322,4.322,0,0,0,5.357.95ZM4.421,8.382H3.3V2.261H5.659a2.392,2.392,0,0,1,1.634.475A1.758,1.758,0,0,1,7.819,4.1,1.617,1.617,0,0,1,7.4,5.314a1.754,1.754,0,0,1-1.051.475l1.6,2.59-1.18,0L5.242,5.875H4.421V8.381Zm0-5.171V4.925h.821c.172,0,.346-.007.518-.022A1.567,1.567,0,0,0,6.228,4.8a.8.8,0,0,0,.338-.259.779.779,0,0,0,.13-.475.779.779,0,0,0-.13-.475.8.8,0,0,0-.338-.259,1.441,1.441,0,0,0-.468-.1c-.167-.01-.341-.014-.518-.014Z" transform="translate(108.454 0.907)" fill="#bfbfbf"></path>
+  </g>
+</svg></a>
+</div>
+
+    <div class="col ask-search-col" style="padding:0">
+    <div class="search-bar">
+      <form class="form-inline my-1 my-lg-0 search-form">
+        <input class="form-control mr-sm-1 search-box ask-top-search-box" type="text" placeholder="Search..." aria-label="Search"><button class="search-submit btn my-1 my-sm-0" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.999 18"
+            preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <style>
+                .magnifier-b {
+                  clip-path: url(#magnifier-a);
+                }
+              </style>
+              <clipPath id="magnifier-a">
+                <rect class="svg-a" width="17.999" height="18"></rect>
+              </clipPath>
+            </defs>
+            <g class="magnifier-b">
+              <path class="svg-c"
+                d="M16.253,17.471a1.716,1.716,0,0,1-1.236-.524l-3.226-3.3a7.4,7.4,0,0,1-4.22,1.318A7.67,7.67,0,0,1,0,7.218,7.67,7.67,0,0,1,7.572-.529a7.67,7.67,0,0,1,7.572,7.747,7.871,7.871,0,0,1-.98,3.8l3.325,3.4a1.819,1.819,0,0,1,0,2.528A1.715,1.715,0,0,1,16.253,17.471ZM7.411,1.589A5.584,5.584,0,0,0,2.118,7.412a5.584,5.584,0,0,0,5.294,5.824,5.585,5.585,0,0,0,5.295-5.824A5.584,5.584,0,0,0,7.411,1.589Z"
+                transform="translate(0 0.529)"></path>
+            </g>
+          </svg>
+        </button>
+        
+        
+<div class="ac_results"
+  style="display:none">
+  <ul>
+  </ul>
+</div>
+
+      </form>
+    </div>
+    </div>
+
+    <div class="col d-none d-lg-flex">
+      
+    <ul class="navbar-nav top-menu">
+      
+    
+    <li class="nav-item ">
+      <a href="/culture" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Culture      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/travel" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Travel      </a>
+    </li>
+
+
+    <li class="nav-item ">
+      <a href="/entertainment" data-zone='header' data-provider-source='navigation' data-result-type='navigation'>
+            Entertainment      </a>
+    </li>
+
+    </ul>
+  </div>
+    
+    <div class="col search-col ask-sub-search-col" style="padding:0">
+    <div class="search-bar">
+      <form class="form-inline my-1 my-lg-0 search-form">
+        <input class="form-control mr-sm-1 search-box" type="text" placeholder="Search" aria-label="Search">
+        <button class="search-submit btn my-1 my-sm-0" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17.999 18"
+            preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <style>
+                .magnifier-b {
+                  clip-path: url(#magnifier-a);
+                }
+              </style>
+              <clipPath id="magnifier-a">
+                <rect class="svg-a" width="17.999" height="18"></rect>
+              </clipPath>
+            </defs>
+            <g class="magnifier-b">
+              <path class="svg-c"
+                d="M16.253,17.471a1.716,1.716,0,0,1-1.236-.524l-3.226-3.3a7.4,7.4,0,0,1-4.22,1.318A7.67,7.67,0,0,1,0,7.218,7.67,7.67,0,0,1,7.572-.529a7.67,7.67,0,0,1,7.572,7.747,7.871,7.871,0,0,1-.98,3.8l3.325,3.4a1.819,1.819,0,0,1,0,2.528A1.715,1.715,0,0,1,16.253,17.471ZM7.411,1.589A5.584,5.584,0,0,0,2.118,7.412a5.584,5.584,0,0,0,5.294,5.824,5.585,5.585,0,0,0,5.295-5.824A5.584,5.584,0,0,0,7.411,1.589Z"
+                transform="translate(0 0.529)"></path>
+            </g>
+          </svg>
+        </button>
+        
+        
+<div class="ac_results"
+  style="display:none">
+  <ul>
+  </ul>
+</div>
+
+      </form>
+    </div>
+    </div>
+    
+    </div>
+  </nav>
+<style>
+  /* home only */
+  .PartialCategoryArticleTiles-hero-title, .PartialCategoryArticleTiles-title {
+    font-size:18px;
+    line-height:21px;
+  }
+  
+</style>
+
+
+  <main role="main" class="container-xl">
+    <div class="row">
+      <div class="col-12 col-lg-9 non-article-content-body">
+
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+
+
+<div class="carousel-overlay">
+<h4 class="carousel-cat"></h4>
+<a href='#' class="carousel-link"><h1 class="carousel-title"></h1></a>
+<p class="carousel-body"></p>
+
+<div class="carousel-pagination "> <!-- d-none d-md-flex -->
+<div class='carousel-page d-none d-md-flex'><span class="carousel-current-page"></span> / <span class="carousel-max-page"></span></div>
+<div class="carousel-controls">
+<a class="" href="#carousel" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" style="margin-top: 4px; margin-right:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="11.928" height="19.586" viewBox="0 0 11.928 19.586"><path class="a" d="M12.8-9.139,4.088-17.854a1.04,1.04,0,0,0-.764-.314,1.04,1.04,0,0,0-.764.314l-.988.988a1.124,1.124,0,0,0-.337.764.967.967,0,0,0,.292.764L8.49-8.375,1.527-1.412a.967.967,0,0,0-.292.764,1.124,1.124,0,0,0,.337.764l.988.988a1.04,1.04,0,0,0,.764.314A1.04,1.04,0,0,0,4.088,1.1L12.8-7.611a.979.979,0,0,0,.359-.764A.979.979,0,0,0,12.8-9.139Z" transform="translate(13.162 1.418) rotate(180)"/></svg></span><span class="sr-only">Previous</span></a>
+<div class='carousel-page carousel-page-sm d-inline d-sm-none'><span class="carousel-current-page"></span> / <span class="carousel-max-page"></span></div>
+<a class="" href="#carousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" style="margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="11.928" height="19.586" viewBox="0 0 11.928 19.586"><path class="a" d="M12.8-7.861,4.088.854a1.04,1.04,0,0,1-.764.314A1.04,1.04,0,0,1,2.561.854L1.572-.135A1.124,1.124,0,0,1,1.235-.9a.967.967,0,0,1,.292-.764L8.49-8.625,1.527-15.588a.967.967,0,0,1-.292-.764,1.124,1.124,0,0,1,.337-.764l.988-.988a1.04,1.04,0,0,1,.764-.314,1.04,1.04,0,0,1,.764.314L12.8-9.389a.979.979,0,0,1,.359.764A.979.979,0,0,1,12.8-7.861Z" transform="translate(-1.234 18.418)"/></svg></span><span class="sr-only">Next</span></a>
+</div></div>
+
+</div>
+
+
+
+
+      <div class="active carousel-item " data-interval="20000">
+      <a href='/even-while-social-distancing-you-can-visit-these-atmospheric-video-game-worlds' data-content-id='156794' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/208933/c0303a67128ea48e597d0d5697fa230a.jpg" alt=""/>
+      </a>
+        <span class="category">Entertainment</span>
+        <span class="excerpt">Looking for an immersive experience to combat your real-world anxiety? You’ll love disappearing into these video games.</span>
+        <h1>Visit These Atmospheric Video Game Worlds From The Comfort of Your Own Home</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/travel/travel-europe-summer-obstacle-course' data-content-id='156782' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444704/9e760cffa2fdc5d7a0c8afba632f75a8.jpg" alt=""/>
+      </a>
+        <span class="category">Travel</span>
+        <span class="excerpt">The whole travelling to my native Barcelona thing felt like an obstacle course at times.</span>
+        <h1>I Went to Europe This Summer so That You Don’t Have to — and Trust Me, You Don’t Want to Go</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/entertainment/the-suicide-squad-review-hbo-max' data-content-id='156767' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444674/a3da673873c48e46d8747b92739728d6.jpg" alt=""/>
+      </a>
+        <span class="category">Movies</span>
+        <span class="excerpt">James Gunn’s foray into the DCEU has a stellar cast, fast-paced rhythm and a snappy soundtrack.</span>
+        <h1>“The Suicide Squad” Review: Margot Robbie and Idris Elba Exude Charisma in Antihero Action Romp</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/entertainment/emmy-nominations-year-watching-tv' data-content-id='156699' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444689/6d4e8a02b4c7fc4bdfae01ea768e9c84.jpg" alt=""/>
+      </a>
+        <span class="category">Entertainment</span>
+        <span class="excerpt">New streamers Disney+ and Apple TV+ contributed to our collective need for escapism with shows like “The Mandalorian,” “WandaVision” and “Ted Lasso.”</span>
+        <h1>What the Emmys Tell Us About a Year of Watching TV Continuously</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/culture/nfls-top-earners' data-content-id='156660' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/443463/ef0a9485534226e3e092a22f9ce2fb1b.jpg" alt=""/>
+      </a>
+        <span class="category">Culture</span>
+        <span class="excerpt">When an NFL team makes a high offer, you can bet they expect those players to be worth every penny. Take a look at the highest-paid NFL players of all time.</span>
+        <h1>The NFL's Top Earners of All Time, Ranked</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/culture/student-loan-debt-forgiveness' data-content-id='156257' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/232190/1a781e0052fc816d98aabe2c4c7db1c7.jpg" alt=""/>
+      </a>
+        <span class="category">Culture</span>
+        <span class="excerpt">Forgiving student loan debt seems like a never-ending debate, but there are quite a few reasons it would make a huge difference to so many Americans — and not just those with debt.</span>
+        <h1>Here's Why Forgiving Student Loan Debt Is Great for Graduates — and the Economy</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/culture/equality-act-explained' data-content-id='156147' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444635/f005790aa1ba0bedc6542166d8248231.jpg" alt=""/>
+      </a>
+        <span class="category">Culture</span>
+        <span class="excerpt">Here’s everything you need to know about the Equality Act, the landmark civil rights legislation that aims to protect LGBTQ+ folks — and all Americans.</span>
+        <h1>The Equality Act: Explaining the Anti-Discrimination Protections That May Amend the Civil Rights Act</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/entertainment/mtv-at-40-stars-got-start' data-content-id='156101' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444609/9637e1f9dfadcacb0ae5a6e85acd0512.jpg" alt=""/>
+      </a>
+        <span class="category">Entertainment</span>
+        <span class="excerpt">As the early 1980s were finding their footing, so was an innovative new TV station. In celebration of MTV’s 40th anniversary, we’re taking a look back at some surprising careers the channel launched.</span>
+        <h1>MTV at 40: Stars Who Got Their Start on Music Television</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/culture/ask-roundtable-song-of-summer-2021' data-content-id='156160' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444603/78a6c9f8483e64c3ae13643f6953150c.jpg" alt=""/>
+      </a>
+        <span class="category">Culture</span>
+        <span class="excerpt">We’ve listened (maybe even danced) to Dua Lipa, Nicki Minaj and BTS’ new themes. But we’ve also played our share of Japanese Breakfast and WILLOW.</span>
+        <h1>Ask Roundtable: The Songs of Summer for 2021</h1>
+      </div>      <div class=" carousel-item " data-interval="20000">
+      <a href='/culture/summer-cocktails-mocktails' data-content-id='156074' data-zone='center' data-provider-source='content' data-result-type='carousel'>
+      <img src="https://www.ask.com/content/444595/19a582de8a69ba27ff95b9f5faac105f.jpg" alt=""/>
+      </a>
+        <span class="category">Culture</span>
+        <span class="excerpt">Summer parties often call for refreshing drinks, and these seasonal mocktails and cocktails can really make a splash at your next evening in.</span>
+        <h1>Cheers to Summer: Refreshing Cocktails & Mocktails Worth Mixing This Season</h1>
+      </div></div>
+</div>
+
+
+
+
+
+<style>
+.covid-banner {
+    background: #408EC9;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.covid-banner a, .covid-banner a:hover { color:white; text-decoration: none; }
+
+.covid-banner span:nth-child(1) {
+    border-right: 1px solid white;
+    padding-right: 20px;
+}
+
+.covid-banner span:nth-child(2) {
+    padding-left: 20px;
+}
+.covid-spacer, .covid-chev { display:none; }
+
+@media (max-width: 768px) {
+  .covid-banner { margin:15px auto; font-size:14px; line-height:16px; text-align:left; padding-left:36px; }
+  .covid-banner span:nth-child(2) {
+    padding-left: 0;
+  }
+  .covid-banner span:nth-child(1) {
+    padding-right:0;
+    border:none;
+  }
+  .covid-banner span { display:block; }
+  
+  .covid-spacer { border-bottom:1px solid white; width: 95%;
+    display: block;
+    margin: 10px 0; }
+    
+  .covid-banner span.covid-chev { display:inline; }
+}
+</style>
+<div class="covid-banner">
+    <span><a data-zone='center' data-provider-source='content' data-result-type='covidBanner' href='https://www.ask.com/culture/coronavirus-pandemic-things-to-know'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25.438" viewBox="0 0 25 25.438"><defs><style>.a{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style></defs><g transform="translate(0.5 0.5)"><path class="a" d="M151.723,109.085a7.867,7.867,0,0,1,3.726-1.958" transform="translate(-145.338 -102.695)"/><path class="a" d="M109.77,171.133a7.854,7.854,0,0,1,1.1-2.3" transform="translate(-105.562 -161.201)"/><path class="a" d="M103.948,250.673a7.9,7.9,0,0,1-.228-1.891q0-.191.009-.379" transform="translate(-99.826 -236.641)"/><path class="a" d="M118.428,319.655a7.906,7.906,0,0,1-1.8-2.548" transform="translate(-112.063 -301.78)"/><path class="a" d="M179.318,386.659a7.836,7.836,0,0,1-2.453-.973" transform="translate(-169.176 -366.801)"/><path class="a" d="M258.29,399.454a7.876,7.876,0,0,1-2.571.429" transform="translate(-243.938 -379.855)"/><path class="a" d="M342.158,354.617a7.933,7.933,0,0,1-1.586,1.413" transform="translate(-324.389 -337.344)"/><path class="a" d="M387.725,286.347a7.837,7.837,0,0,1-.925,2.406" transform="translate(-368.218 -272.616)"/><path class="a" d="M404.863,226.233a7.923,7.923,0,0,1,.148,1.53" transform="translate(-385.344 -215.621)"/><path class="a" d="M362.182,147.226a7.934,7.934,0,0,1,.984,1.173" transform="translate(-344.877 -140.714)"/><path class="a" d="M281.995,105.977a7.842,7.842,0,0,1,3.025,1.215" transform="translate(-268.851 -101.605)"/><g transform="translate(10.847 0)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934"/><line class="a" y2="3.373" transform="translate(0.934 1.868)"/></g><g transform="translate(2.856 2.958)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(0 0)"/><line class="a" x2="2.385" y2="2.385" transform="translate(1.594 1.594)"/></g><g transform="translate(1.846 8.502)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(0)"/><line class="a" x2="1.812" y2="0.78" transform="translate(1.792 1.302)"/></g><g transform="translate(16.71 7.47)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(1.401)"/><line class="a" x1="1.551" y2="0.998" transform="translate(0 1.442)"/></g><g transform="translate(15.413 18.005)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(0.489 0.944)"/><line class="a" x1="0.86" y1="1.133" transform="translate(0 0)"/></g><g transform="translate(16.726 2.958)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(2.111 0)"/><line class="a" x1="2.385" y2="2.385" transform="translate(0 1.594)"/></g><g transform="translate(10.847 19.198)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(0 3.373)"/><line class="a" y1="3.373" transform="translate(0.934 0)"/></g><g transform="translate(0 13.698)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934"/><line class="a" y1="0.548" x2="3.328" transform="translate(1.855 0.234)"/></g><g transform="translate(18.759 11.285)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(3.373)"/><line class="a" x1="3.373" transform="translate(0 0.934)"/></g><g transform="translate(17.349 15.438)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(2.622 1.495)"/><line class="a" x1="2.785" y1="1.902" transform="translate(0)"/></g><g transform="translate(2.856 17.502)"><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(0 2.111)"/><line class="a" y1="2.385" x2="2.385" transform="translate(1.594 0)"/></g><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(8.719 6.953)"/><circle class="a" cx="0.649" cy="0.649" r="0.649" transform="translate(13.234 7.368)"/><circle class="a" cx="0.649" cy="0.649" r="0.649" transform="translate(7.111 10.948)"/><circle class="a" cx="0.649" cy="0.649" r="0.649" transform="translate(7.734 14.995)"/><circle class="a" cx="0.649" cy="0.649" r="0.649" transform="translate(15.932 13.127)"/><ellipse class="a" cx="0.934" cy="0.934" rx="0.934" ry="0.934" transform="translate(11.781 15.203)"/><circle class="a" cx="1.193" cy="1.193" r="1.193" transform="translate(11.469 10.585)"/></g></svg> The Latest on the COVID-19 Pandemic <span class='covid-chev'>&#62;&#62;</span></a><div class="covid-spacer"></div></span>
+    <span><a data-zone='center' data-provider-source='content' data-result-type='covidBanner' href='https://www.ask.com/culture/ask-answers-covid19-vaccine'><svg xmlns="http://www.w3.org/2000/svg" width="23.995" height="24" viewBox="0 0 23.995 24"><defs><style>.a{fill:#fff;}</style></defs><path class="a" d="M9.421,8.169l2.611,2.615a.376.376,0,0,1,0,.53l-.53.53a.376.376,0,0,1-.53,0L8.361,9.228,6.238,11.352l2.615,2.615a.376.376,0,0,1,0,.53l-.53.53a.376.376,0,0,1-.53,0l-2.615-2.62L3.941,13.644a3.745,3.745,0,0,0-1.078,3.065L3.2,19.69.084,22.8a.376.376,0,0,0,0,.53l.53.53a.376.376,0,0,0,.53,0l3.108-3.108,2.981.333A3.731,3.731,0,0,0,10.3,20.009l8.526-8.526-6.36-6.36L9.421,8.169ZM23.866,3.8,20.154.084a.376.376,0,0,0-.53,0l-.53.53a.376.376,0,0,0,0,.53L20.421,2.47,18.3,4.593,15.645,1.94l-.8-.8a.376.376,0,0,0-.53,0L12.73,2.732a.376.376,0,0,0,0,.53l.8.8,6.36,6.37.8.8a.376.376,0,0,0,.53,0L22.8,9.631a.376.376,0,0,0,0-.53L19.357,5.657,21.48,3.534,22.807,4.86a.376.376,0,0,0,.53,0l.53-.53a.382.382,0,0,0,0-.534Z" transform="translate(0.025 23.975) rotate(-90)"/></svg> The Latest on the COVID-19 Vaccines <span class='covid-chev'>&#62;&#62;</span></a></span>
+</div>
+
+
+
+
+
+        <div class="PartialCategoryArticleTiles-categories above-content">
+          <div>
+                
+<a href="/travel/famous-filming-locations-movies-us" class="PartialCategoryArticleTiles-tile" data-content-id='156020' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/443454/fe41bb08f95c5ed8a02f39bc04204e7d_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Travel</div>
+<div class="PartialCategoryArticleTiles-title">29 Famous Filming Locations You Can Visit in the United States</div>
+</div>
+
+</a>
+                
+</div><div>
+                
+<a href="/entertainment/coming-soon-everything-streaming-theaters-august-2021" class="PartialCategoryArticleTiles-tile" data-content-id='155925' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444556/58d69aa4675a484fec5ddb5663f1504a_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Entertainment</div>
+<div class="PartialCategoryArticleTiles-title">Coming Soon: Everything to Watch on Netflix, Hulu, HBO Max, Prime and in Theaters in August 2021</div>
+</div>
+
+</a>
+                
+</div><div>
+                
+<a href="/culture/best-music-2021" class="PartialCategoryArticleTiles-tile" data-content-id='155886' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444533/8e427ce7117b0cf005933b4be9a5ade8_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Culture</div>
+<div class="PartialCategoryArticleTiles-title">The Best and Most Talked-About Albums and Songs of 2021 — So Far</div>
+</div>
+
+</a>
+                
+</div>        </div>
+        
+<div class="home-page-ad">
+<div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div class="home-page-between-content-ad"><div id="RTK_SiN9"></div></div></div>
+</div>
+
+
+
+
+<div class="PartialCategoryArticleTiles-categories below-content">
+<div>
+                
+<a href="/entertainment/mario-turns-40-changed-gaming-forever" class="PartialCategoryArticleTiles-tile" data-content-id='155909' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444532/11efb7465f0fa72d7659f6b25ba812d9_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Entertainment</div>
+<div class="PartialCategoryArticleTiles-title">Mario Turns 40: Here's How Nintendo’s Fire-Tossing Plumber Changed Gaming</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/culture/what-really-happened-to-amelia-earhart" class="PartialCategoryArticleTiles-tile" data-content-id='155737' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/231946/3b9ad23fb150ab5588ba73c02b247be2_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Culture</div>
+<div class="PartialCategoryArticleTiles-title">What Really Happened to Amelia Earhart?</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/culture/tokyo-2020-everything-you-need-to-know" class="PartialCategoryArticleTiles-tile" data-content-id='155403' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444486/f402f1b8f089d26162b175086daf984f_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Culture</div>
+<div class="PartialCategoryArticleTiles-title">Tokyo 2020 Olympics: From Postponement to Calls for Cancellation, Here's Everything You Need to Know</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/entertainment/ted-lasso-review-jason-sudeikis" class="PartialCategoryArticleTiles-tile" data-content-id='155400' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444485/80da64f59b3442ca1e505abe4b2c19c0_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">TV</div>
+<div class="PartialCategoryArticleTiles-title">“Ted Lasso” Season 2 Review: The Jason Sudeikis Comedy Doesn’t Beat Its First Season</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/travel/glamping-basics-alternative-to-airbnb" class="PartialCategoryArticleTiles-tile" data-content-id='155411' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444258/e4af9a1dd23015c563f7394b165e3384_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Travel</div>
+<div class="PartialCategoryArticleTiles-title">Can't Find an Airbnb? Try "Glamping" This Summer</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/entertainment/robin-williams-most-iconic-roles" class="PartialCategoryArticleTiles-tile" data-content-id='155373' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444423/16a5f1b0cc170db36ffefa8141c99e8f_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Entertainment</div>
+<div class="PartialCategoryArticleTiles-title">“A Little Spark of Madness”: Revisiting Robin Williams' Most Iconic Roles</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/entertainment/weirdest-minor-league-baseball-team-names" class="PartialCategoryArticleTiles-tile" data-content-id='155387' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444413/ed7ba51eeee592a384f50a022ab6058d_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Entertainment</div>
+<div class="PartialCategoryArticleTiles-title">12 of Our Favorite Weird Minor League Baseball Team Names</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/entertainment/whodunit-movies-tv-shows" class="PartialCategoryArticleTiles-tile" data-content-id='155352' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444303/0d0de4a191de9904acc6cd41420f4c5b_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Entertainment</div>
+<div class="PartialCategoryArticleTiles-title">10 Whodunit Movies and TV Shows for a Light Summer Watch</div>
+</div>
+
+</a>
+</div><div>
+                
+<a href="/culture/carhartt-clothing-workwear" class="PartialCategoryArticleTiles-tile" data-content-id='155347' data-zone='center' data-provider-source='content' data-result-type='articleTiles'>
+
+<img src="https://www.ask.com/content/444274/cc0ed7e8550cbeae6431cabf709d0724_mob.jpg" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-category">Culture</div>
+<div class="PartialCategoryArticleTiles-title">130 Years of Carhartt: How Hip Hop, Unions, and the American Dream Made Carhartt Clothing a Staple</div>
+</div>
+
+</a>
+</div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#CF0000">Culture</div>
+<div><a href="/culture/nfls-top-earners" class="PartialCategoryArticleTiles-tile" data-content-id='156660' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.ask.com/content/443463/ef0a9485534226e3e092a22f9ce2fb1b.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">The NFL's Top Earners of All Time, Ranked</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/culture/student-loan-debt-forgiveness" class="PartialCategoryArticleTiles-tile" data-content-id='156257' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Here's Why Forgiving Student Loan Debt Is Great for Graduates — and the Economy</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/culture/equality-act-explained" class="PartialCategoryArticleTiles-tile" data-content-id='156147' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">The Equality Act: Explaining the Anti-Discrimination Protections That May Amend the Civil Rights Act</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/culture/ask-roundtable-song-of-summer-2021" class="PartialCategoryArticleTiles-tile" data-content-id='156160' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Ask Roundtable: The Songs of Summer for 2021</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/culture/summer-cocktails-mocktails" class="PartialCategoryArticleTiles-tile" data-content-id='156074' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Cheers to Summer: Refreshing Cocktails & Mocktails Worth Mixing This Season</div>
+</div>
+</a>
+
+
+</div></div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#CF0000">Travel</div>
+<div><a href="/travel/travel-europe-summer-obstacle-course" class="PartialCategoryArticleTiles-tile" data-content-id='156782' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.ask.com/content/444704/9e760cffa2fdc5d7a0c8afba632f75a8.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">I Went to Europe This Summer so That You Don’t Have to — and Trust Me, You Don’t Want to Go</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/travel/famous-filming-locations-movies-us" class="PartialCategoryArticleTiles-tile" data-content-id='156020' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">29 Famous Filming Locations You Can Visit in the United States</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/travel/glamping-basics-alternative-to-airbnb" class="PartialCategoryArticleTiles-tile" data-content-id='155411' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Can't Find an Airbnb? Try "Glamping" This Summer</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/travel/virtual-vacation-azores-portugal" class="PartialCategoryArticleTiles-tile" data-content-id='154823' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Ask Getaway: Explore the Hidden Gem That Is the Azores</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/travel/airbnb-rental-perfect-post-pandemic-getaway" class="PartialCategoryArticleTiles-tile" data-content-id='154543' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Is an Airbnb Rental the Perfect COVID-19-Safe Getaway This Summer?</div>
+</div>
+</a>
+
+
+</div></div>
+<div class="category-group-list">
+<div class="category-group-title" style="border-color:#CF0000">Entertainment</div>
+<div><a href="/even-while-social-distancing-you-can-visit-these-atmospheric-video-game-worlds" class="PartialCategoryArticleTiles-tile" data-content-id='156794' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+<img src="https://www.ask.com/content/208933/c0303a67128ea48e597d0d5697fa230a.jpg" />'
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Visit These Atmospheric Video Game Worlds From The Comfort of Your Own Home</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/entertainment/emmy-nominations-year-watching-tv" class="PartialCategoryArticleTiles-tile" data-content-id='156699' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">What the Emmys Tell Us About a Year of Watching TV Continuously</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/entertainment/mtv-at-40-stars-got-start" class="PartialCategoryArticleTiles-tile" data-content-id='156101' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">MTV at 40: Stars Who Got Their Start on Music Television</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/entertainment/coming-soon-everything-streaming-theaters-august-2021" class="PartialCategoryArticleTiles-tile" data-content-id='155925' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Coming Soon: Everything to Watch on Netflix, Hulu, HBO Max, Prime and in Theaters in August 2021</div>
+</div>
+</a>
+
+<div class="category-group-spacer"><div style="border-color:#ddd"></div></div>
+<a href="/entertainment/mario-turns-40-changed-gaming-forever" class="PartialCategoryArticleTiles-tile" data-content-id='155909' data-zone='center'  data-provider-source='content' data-result-type='trendingArticles'>
+
+<div class="PartialCategoryArticleTiles-textwrap">
+<div class="PartialCategoryArticleTiles-title">Mario Turns 40: Here's How Nintendo’s Fire-Tossing Plumber Changed Gaming</div>
+</div>
+</a>
+
+
+</div></div>
+</div>
+
+
+
+
+<!-- view more disabled -->
+        <!--<div class="PartialCategoryArticleTiles-load-more-div">-->
+        <!--  <button class="PartialCategoryArticleTiles-load-more">View More</button>-->
+        <!--</div>-->
+    <div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div class="home-page-between-content-ad"><div id="RTK_zNS5"></div></div></div>
+
+    </div>
+
+
+
+
+      <div class="d-lg-block col-12 col-lg-3 right-sidebar">
+
+    <div class="PartialTrendingArticles-body right-float">
+          <div class="PartialTrendingArticles-section-title">Trending Articles</div>
+          <div class="PartialTrendingArticles-body-inner">
+            <a href="/entertainment/best-graphic-novels-reading-list" class="PartialTrendingArticles-hero-tile" data-content-id='143749' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">1</div>
+      <img src="https://www.ask.com/content/232272/e2b11274cb508810d29b28a9059fa65e.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">The Best Graphic Novels to Add to Your Reading List</div>
+    </div>
+  </a>  <a href="/entertainment/infamous-tv-show-mistakes" class="PartialTrendingArticles-hero-tile" data-content-id='140824' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">2</div>
+      <img src="https://www.ask.com/content/231991/c7fc7e65d40aa5f1bca99eb44dddae34.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">The Most Infamous Mistakes Made on TV Shows</div>
+    </div>
+  </a>  <a href="/entertainment/lebron-james-inspired-change-on-off-court" class="PartialTrendingArticles-hero-tile" data-content-id='155338' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">3</div>
+      <img src="https://www.ask.com/content/232233/f07cb09fd477fbed65d99b6934744d42.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">How LeBron James Has Inspired Change On and Off the Court</div>
+    </div>
+  </a>  <a href="/entertainment/paramount-plus-must-have-streaming-platform" class="PartialTrendingArticles-hero-tile" data-content-id='142878' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">4</div>
+      <img src="https://www.ask.com/content/232195/dd0eee975314e94927c19e86a4761572.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">Paramount Plus Brings Nickelodeon, MTV and CBS to a Must-Have Streaming Platform</div>
+    </div>
+  </a>  <a href="/culture/covid-variants-united-states" class="PartialTrendingArticles-hero-tile" data-content-id='155880' data-zone='right' data-provider-source='content' data-result-type='trendingArticles'>
+    <div class="PartialTrendingArticles-block">
+      <div class="PartialTrendingArticles-index">5</div>
+      <img src="https://www.ask.com/content/232221/b377e855efcf14e8bbdb3ba4fc8cc741.jpg"class="PartialTrendingArticles-thumbnail">
+      <div class="PartialTrendingArticles-feed-title">Here’s What You Need to Know About the Multiple New Coronavirus Strains in the U.S.</div>
+    </div>
+  </a>          </div>
+        </div>
+    <div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div style="min-height:250px; width:300px; margin:0 auto;"><div id="RTK_R485"></div></div>
+</div><div class="adwrapper adbordertop adborderbottom"><div class="adtext">ADVERTISEMENT</div><div style="min-height:250px; width:300px; margin:0 auto;"><div id="RTK_erzF"></div></div>
+</div>
+      </div>
+    </div>
+    
+
+
+<style>
+  footer .PartialSocialLinks path { fill:#cf0000!important; }
+  footer .PartialSocialLinks .share-button-svg { border-color:#cf0000!important; }
+</style>
+
+<footer class="l-footer content-visible row">
+
+<div class="col-md-2 footer-logo-col">
+  <a href="/" class="footer-logo-link" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53.85" height="40.51" viewBox="0 0 119.167 86.617">
+  <title>Ask.com</title>
+  <desc></desc>
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="119.167" height="86.617" fill="none"></rect>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Clip_2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+    </clipPath>
+  </defs>
+  <g id="Ask_Logo_large" data-name="Ask Logo large" clip-path="url(#clip-path)">
+    <g id="Group_3" data-name="Group 3" transform="translate(-0.032 -1.474)">
+      <path id="Clip_2-2" data-name="Clip 2" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575Z" transform="translate(0.032 1.474)" fill="none"></path>
+      <g id="Group_3-2" data-name="Group 3" clip-path="url(#clip-path-2)">
+        <path id="Fill_1" data-name="Fill 1" d="M0,0H116.811V87.941H0Z" transform="translate(0.017 0.201)" fill="none"></path>
+      </g>
+    </g>
+    <path id="Fill_4" data-name="Fill 4" d="M9.876,75.652a34.805,34.805,0,0,0,2.9,2.315,45.868,45.868,0,0,0,16.774,7.175A67.9,67.9,0,0,0,50.576,86.28a81.5,81.5,0,0,0,9.365-1.445,85.9,85.9,0,0,0,12.243-3.587q3.033-1.135,5.978-2.488a82.28,82.28,0,0,0,13.185-7.587q2.106-1.493,4.106-3.125.962-.786,1.884-1.593,1.433-1.255,2.8-2.587c.17-.166.339-.333.506-.5q1.585-1.584,3.056-3.274,1.433-1.649,2.742-3.4a44.774,44.774,0,0,0,8.093-17.063,30.558,30.558,0,0,0-1.191-17.605,27.817,27.817,0,0,0-2.213-4.389,30.344,30.344,0,0,0-4.071-5.2c-.533-.547-1.131-1.01-1.7-1.518-.616-.548-1.26-1.05-1.912-1.551A37.747,37.747,0,0,0,99.2,6.552a48.252,48.252,0,0,0-13.589-5.1A67.431,67.431,0,0,0,66.279.2,79.881,79.881,0,0,0,55.7,1.7a87.147,87.147,0,0,0-12.619,3.67c-1.923.719-3.779,1.5-5.6,2.333a80.771,80.771,0,0,0-16.411,9.9c-1.053.825-2.08,1.692-3.065,2.555-.575.5-1.163,1.028-1.721,1.55A63.7,63.7,0,0,0,11.7,26.413c-1.08,1.24-2.092,2.492-3.065,3.817A44.9,44.9,0,0,0,.885,46.456,30.4,30.4,0,0,0,1.8,64.137c.168.442.349.878.539,1.308a28.208,28.208,0,0,0,1.964,3.68,29.947,29.947,0,0,0,2.539,3.439q.221.259.448.513a31.77,31.77,0,0,0,2.581,2.575" transform="translate(0 0)" fill="#cf0000"></path>
+    <path id="Fill_5" data-name="Fill 5" d="M.528,60.914h0c-.251,0-.408-.056-.48-.172-.093-.149-.049-.4.133-.779.134-.276,24.087-49.288,26.006-53.189A1.392,1.392,0,0,1,27.263,5.9c.4,0,.656.363.709,1,.228,2.741,2.352,30.963,3.259,43.014.221,2.941.357,4.751.368,4.888.075.96-.021,1.222-1.076,1.392-.61.1-4.784.762-5.734.912a2.266,2.266,0,0,1-.343.031c-.532,0-.575-.288-.58-.727-.014-1.18-.106-7.892-.107-7.958L13.2,50.085c-.023.054-3.779,8.824-3.865,9.027-.167.405-.37.5-.9.586-1.578.251-6.89,1.092-7.488,1.18A2.937,2.937,0,0,1,.528,60.914ZM23.69,25.14h0L16,43.095l7.764-1.209-.076-16.745ZM40.005,54.777h0a12.412,12.412,0,0,1-4.74-.816c-1.107-.457-1.261-.8-.915-2.023.25-.882,1.564-5.423,1.577-5.467a3.656,3.656,0,0,0,.752.947A5.737,5.737,0,0,0,39.438,48.8a6.692,6.692,0,0,0,1.4.153,4.225,4.225,0,0,0,3.9-2.077,3.721,3.721,0,0,0,.058-2.775A10.613,10.613,0,0,0,41.483,39.6a11.984,11.984,0,0,1-3.55-4.917,10.371,10.371,0,0,1,.758-7.5c1.5-2.836,4.4-4.569,8.379-5.014a12.081,12.081,0,0,1,1.342-.074,13.9,13.9,0,0,1,4.736.869.848.848,0,0,1,.563,1.219c-.109.316-1.354,3.842-1.732,4.915l-.019.054c-.022-.016-2.293-1.7-3.56-1.77-.1-.005-.2-.008-.293-.008a2.848,2.848,0,0,0-2.375,1.038,3.268,3.268,0,0,0-.551,3.61c.4.722.8,1.289,4.408,4.541A9.525,9.525,0,0,1,52.9,43.07a10.394,10.394,0,0,1-1.134,5.516,11.973,11.973,0,0,1-3.052,3.622,10.318,10.318,0,0,1-4.4,2.122A22.69,22.69,0,0,1,40.005,54.777Zm14.785-2.468h0a.412.412,0,0,1-.338-.107c-.131-.157-.074-.51.046-1.173.06-.327,1.469-7.883,3.1-16.631l.034-.181c2.646-14.19,5.939-31.85,6.018-32.3.18-1.021.49-1.247,1.273-1.369C65.5.454,69.645.014,70.569,0h.057c.4,0,.633.066.761.219.159.19.179.521.069,1.145-.145.812-5.592,29.622-6.213,32.9l-.016.084c.037-.063,1.818-3.043,3.7-6.2,2.158-3.609,4.389-7.341,4.541-7.593a1.411,1.411,0,0,1,1.229-.806l3.46-.349,2.319-.234c.163-.016.277-.027.372-.027a.467.467,0,0,1,.249.052.29.29,0,0,1,.136.254.716.716,0,0,1-.122.38c-.338.551-8.858,14.334-8.943,14.471l.633,1.8c1.318,3.748,4.061,11.547,4.207,11.974.1.279.107.448.038.566s-.252.207-.606.267-4.176.666-5.766.916a2.119,2.119,0,0,1-.324.03c-.383,0-.512-.178-.671-.6-.208-.559-4.717-13.18-4.762-13.307L62.083,50.563c-.124.647-.362.683-.757.743l-.067.01c-1.67.266-5.018.8-5.729.909A5.508,5.508,0,0,1,54.791,52.309Z" transform="translate(16.161 9.16)" fill="#fff"></path>
+    <path id="_" data-name="�" d="M5.357,10.714a5.158,5.158,0,0,1-2.081-.425A5.446,5.446,0,0,1,.425,7.438,5.157,5.157,0,0,1,0,5.357,5.157,5.157,0,0,1,.425,3.276,5.446,5.446,0,0,1,3.276.425,5.157,5.157,0,0,1,5.357,0,5.157,5.157,0,0,1,7.438.425a5.446,5.446,0,0,1,2.851,2.851,5.158,5.158,0,0,1,.425,2.081,5.158,5.158,0,0,1-.425,2.081,5.446,5.446,0,0,1-2.851,2.851A5.158,5.158,0,0,1,5.357,10.714Zm0-9.763A4.322,4.322,0,0,0,3.643,1.3,4.39,4.39,0,0,0,1.3,3.643a4.421,4.421,0,0,0,0,3.427A4.39,4.39,0,0,0,3.643,9.418a4.421,4.421,0,0,0,3.427,0A4.39,4.39,0,0,0,9.418,7.07a4.421,4.421,0,0,0,0-3.427A4.39,4.39,0,0,0,7.07,1.3,4.322,4.322,0,0,0,5.357.95ZM4.421,8.382H3.3V2.261H5.659a2.392,2.392,0,0,1,1.634.475A1.758,1.758,0,0,1,7.819,4.1,1.617,1.617,0,0,1,7.4,5.314a1.754,1.754,0,0,1-1.051.475l1.6,2.59-1.18,0L5.242,5.875H4.421V8.381Zm0-5.171V4.925h.821c.172,0,.346-.007.518-.022A1.567,1.567,0,0,0,6.228,4.8a.8.8,0,0,0,.338-.259.779.779,0,0,0,.13-.475.779.779,0,0,0-.13-.475.8.8,0,0,0-.338-.259,1.441,1.441,0,0,0-.468-.1c-.167-.01-.341-.014-.518-.014Z" transform="translate(108.454 0.907)" fill="#bfbfbf"></path>
+  </g>
+</svg>  </a>
+</div>
+
+<div class="col-md-9 footer-link-col">
+  
+    <ul class="PartialPageFooter-list">
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/about" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>About</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/privacy" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Privacy Policy</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/terms" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Terms of Service</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="/cookies" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Cookie Policy</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://help.askmediagroup.com/hc/en-us" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Help</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://www.ask.com/privacy#2" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>California Privacy Notice</a>
+      </li>
+
+      <li class="PartialPageFooter-item">
+        <a class="PartialPageFooter-item-link" href="https://www.ask.com/privacy#5.1" data-zone='bottom' data-provider-source='navigation' data-result-type='navigation'>Do Not Sell My Personal Information</a>
+      </li>
+
+
+      <li class="PartialPageFooter-item">
+        <span class="PartialPageFooter-item-label copyright">© 2021 Ask Media Group</span>
+      </li>
+    </ul>
+</div>
+
+<div class="col-md-1 footer-social-links">
+  
+
+
+
+
+<div class="PartialSocialLinks-label">Follow Us:</div>
+<div class="PartialSocialLinks">
+<div class="share-button-svg fb-share-button-svg " data-href="" >
+<a class="fb-xfbml-parse-ignore PartialSocialLinks-link" target="_blank"
+href='https://www.facebook.com/Askdotcom' rel='noopener noreferrer' data-unified-assettype="socialLink" data-zone='footer' data-provider-source='socialLink' data-result-type='socialLink'>
+<div class="fb-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.25 16" preserveAspectRatio="xMidYMid meet">
+<path class="fb-a" d="M6.744-11.344H8.25v-2.544A20.127,20.127,0,0,0,6.056-14,3.427,3.427,0,0,0,2.4-10.241V-8H0v2.844H2.4V2H5.334V-5.156h2.3L8-8H5.334V-9.959C5.334-10.781,5.562-11.344,6.744-11.344Z" transform="translate(0 14)"/>
+</svg>
+</div>
+</a>
+</div>           
+    
+
+<a class="share-button-svg twitter-share-button-svg" target="_blank" data-unified-assettype="socialLink"
+href='https://twitter.com/AskDotCom' rel='noopener noreferrer' data-zone='footer' data-provider-source='socialLink' data-result-type='socialLink'>
+<div class="twitter-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 12" preserveAspectRatio="xMidYMid meet">
+<path class="tw-a" d="M15,1.425a6.39,6.39,0,0,1-1.542,1.566q.01.131.01.394a8.483,8.483,0,0,1-.362,2.433,8.732,8.732,0,0,1-1.1,2.33,9.2,9.2,0,0,1-1.756,1.973A7.85,7.85,0,0,1,7.8,11.489,9.11,9.11,0,0,1,4.721,12,8.632,8.632,0,0,1,0,10.641a6.679,6.679,0,0,0,.742.038A6.077,6.077,0,0,0,4.559,9.384a3.027,3.027,0,0,1-1.789-.6,2.964,2.964,0,0,1-1.085-1.5,3.953,3.953,0,0,0,.581.047,3.226,3.226,0,0,0,.809-.1A3.033,3.033,0,0,1,1.309,6.183a2.9,2.9,0,0,1-.7-1.927V4.219A3.085,3.085,0,0,0,2,4.6,3.042,3.042,0,0,1,1,3.525,2.916,2.916,0,0,1,.628,2.081,2.933,2.933,0,0,1,1.047.553a8.691,8.691,0,0,0,2.8,2.236,8.668,8.668,0,0,0,3.536.933,3.315,3.315,0,0,1-.076-.694,2.9,2.9,0,0,1,.9-2.142A2.986,2.986,0,0,1,10.384,0,2.985,2.985,0,0,1,12.63.956,6.084,6.084,0,0,0,14.581.225,2.948,2.948,0,0,1,13.23,1.894,6.2,6.2,0,0,0,15,1.425Z"/>
+</svg>
+</div>
+</a>
+    
+</div> <!-- social links -->
+
+
+</div>
+
+</footer>
+
+</main><!-- /.container -->
+
+  
+
+  
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<script src="/g/theme/iac/qa/bootstrap.bundle.min.js"></script>
+
+<script>
+$('.search-form').on('submit', function(e) {
+  e.preventDefault();
+  var search = $(this).find('.search-box').val();
+  if(search) {
+    window.location.href = 'https://www.ask.com/web?q='+search+ad+an+o+ag+qo;
+  } else {
+    if($(this).find('.search-box').css('display') == 'none') {
+      // $('.mobile-hamburger').parent().removeClass('d-block').hide();
+      $(this).find('.search-box').toggle('fast');
+    } else {
+      $('.mobile-hamburger').parent().addClass('d-block').show();
+    } 
+  }
+});
+
+// suggested search
+var search_box = $('.search-box');
+search_box.on('keyup', function(e) {
+  
+   var this_search_box = $(this);
+   var query = $(this).val();
+   
+   if($(this).hasClass('ask-top-search-box')) {
+     $(this).toggleClass('ask-top-search-open', true);
+   }
+
+   if(query.length > 0) {
+   
+     $.getJSON('https://amg-ss.ask.com/query?lang='+navigator.language+'&limit=10&q='+query, function(d) {
+       
+        $('.ac_results ul').empty();
+        d[1].forEach(function(e) {
+         var v = e.toString().replace(query, '<span class="suggest">'+query+'</span>');
+         $('.ac_results ul').append('<li><a href="https://www.ask.com/web?q='+encodeURIComponent(e)+ad+an+o+ag+qo+'">'+v+'</a></li>');
+        });
+       
+      // click dimiss handler here 
+        $(document).on('click', function(event) { 
+          var $target = $(event.target);
+          if(!$target.closest('.ac_results').length) {
+            $('.ac_results').hide();
+          }
+
+          $('.ask-top-search-box').removeClass('ask-top-search-open');
+
+          $(document).off('click');
+        });
+       
+       $(this_search_box).parent().find('.ac_results').show();
+     });
+   
+   } else {
+     $('.ac_results').hide();
+     if($(this).hasClass('ask-top-search-box')) {
+       $(this).removeClass('ask-top-search-open');
+     }
+   }
+ });
+ 
+ 
+
+
+// carousel
+var carouselOffset = 0; // mobile counts from zero, desktop from one...
+var idx = $('.carousel-inner .active').index();
+if(idx == 0) carouselOffset = 1;
+
+function update_carousel() {
+  var slide = $('.carousel-inner .active').index() + carouselOffset;
+  var max = $('.carousel-inner .carousel-item').length;
+  var title = $('.carousel-inner .active h1').text();
+  var category = $('.carousel-inner .active .category').text();
+  var excerpt = $('.carousel-inner .active .excerpt').text();
+  var link = $('.carousel-inner .active a').attr('href');
+  
+  $('.carousel-cat').text(category);
+  $('.carousel-title').text(title);
+  $('.carousel-current-page').text(slide);
+  $('.carousel-max-page').text(max);
+  $('.carousel-body').text(excerpt);
+  $('.carousel-link').attr('href', link);
+}
+
+$('#carousel').on('slid.bs.carousel', update_carousel);
+
+update_carousel();
+
+
+$('.drawer-trigger').on('click', function(e) {
+  $('#header-menu-control').addClass('drawer-open');
+});
+
+$('.PartialCategoryNavigation-drawer-close-icon').on('click', function(e) {
+  $('#header-menu-control').removeClass('drawer-open');
+});
+
+
+/* ask specific custom bar */
+var last_scrolled = null;
+  $(window).scroll(function() {
+    var scrolled = $(this).scrollTop() > 100;
+    
+    if(last_scrolled != scrolled) {
+  	  $('nav.navbar').toggleClass('non-fixed', !scrolled);
+  	  $('nav.navbar').toggleClass('fixed-top', scrolled);
+  	  last_scrolled = scrolled;
+    }
+  });
+</script>
+
+
+<script>
+// v7.1
+(function(d, s) {
+  var rtk_pub = 'mh1l'; // change this to your publisher id
+  var custom_domain = 'delivery.askmediagroup.com'; // change this to your custom domain from rtk
+
+  // find on page - old way - may get sidebars on mobile
+  var rtk_load_list = [];
+  var rtk_load = '';
+   $("[id^=RTK_]").each(function() {
+    // if(!$(this).is(":hidden")) {
+      var id = $(this).attr("load-id") || $(this).attr("id");
+      id = id.replace('RTK_', '');
+
+      if(rtk_load_list.indexOf(id) == -1) {
+        rtk_load_list.push(id);
+      }
+    // }
+  });
+
+  // find in dynamic ads - new way
+  if(typeof ajax_ad_json != 'undefined') {
+    for (a in ajax_ad_json) { 
+      const regex = /RTK_([a-zA-Z0-9]{4})/gm;
+      while ((m = regex.exec(ajax_ad_json[a])) !== null) {
+    
+        if (m.index === regex.lastIndex) {
+            regex.lastIndex++;
+        }
+        
+        if(typeof m[1] != 'undefined') {
+          if(rtk_load_list.indexOf(m[1]) == -1) {
+            rtk_load_list.push(m[1]);
+          }
+        }
+      }
+    }
+  }
+
+  rtk_load = rtk_load_list.join('_');
+  console.log("rtk load is", rtk_load);
+  if(rtk_load != '') {
+    var load_path = "/"+rtk_load;
+    var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.async=1; js.defer=1;
+    js.src = "//"+custom_domain+"/"+rtk_pub+load_path+"/jita.js?dfp=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+}(document, 'script'));
+</script>
+
+
+
+
+<script>
+$('.pagination-button').on('click', function() {
+$('.PartialTrendingArticles-body.mid-rail').show();
+});
+</script>
+
+<!-- Pubdream Analytics -->
+<script async src="/g/assets/js/analytics.js"></script>
+<script>
+  window.pubdream = window.pubdream || [];
+  function pdpush(){window.pubdream.push(arguments);}
+  pdpush('pageview');
+</script>
+
+
+
+
+  <script>
+    // home page more articles /
+    var start_feed = 1;
+    var limit_feed = 6;
+    $('.PartialCategoryArticleTiles-load-more').on('click', function (e) {
+      e.preventDefault();
+      $.getJSON('/homefeed/' + start_feed + '/' + limit_feed + '/feed.json', function (data) {
+        start_feed += limit_feed;
+        data.forEach(function (e) {
+          var ht = `
+
+<div>
+                
+<a href='` + e.url + `' class="PartialCategoryArticleTiles-tile">
+
+<img src="` + e.thumb + `" />
+<div class="PartialCategoryArticleTiles-textwrap">
+<!--<div class="PartialCategoryArticleTiles-category"></div>-->
+<div class="PartialCategoryArticleTiles-title">` + e.post_title + `</div>
+</div>
+
+</a>
+                
+</div>
+      `;
+
+          $('.PartialCategoryArticleTiles-categories').append(ht);
+        });
+      });
+    });
+  </script>
+
+</html>

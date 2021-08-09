@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script>
+			var forwardingUrl = "/page/bouncy.php?&bpae=GbhGtr8GtVx%2F9buvsQ429ImM0HQtrfpmJbUlkx6rP%2F9Mc5Y5iVSwTUTZqz9rCwbZqNudG3fIlso9B4%2FBu1mv0fl%2Faj9xqQaikd6VbItffWBb3YfgjDWlOYqWU8F1sroy79%2F3cDgpCbnGleDGlP%2BQU46TIZRVRpwJf6Ye9RlAIAkf46EHFZKrpaPi40LReTx8PdgGJBWaBWLKvxkd9Msk3MpZDmbaXtqagKj9ShGazg1DCt1b7R9gAZhQEO8X0N%2FWAU%2BGGhwDZ0GnoWCN2%2BWPlgN%2FIZ0Qtzqme6FqfHnRP8bKyqnW9XqxVnExjTqXfdyQ9zGtXhmZuF8IDU4rZ6OilEJFWrBMk%2B5FgtvlJum0AYZBb%2FTinRalw6mDI%2FTWbNLlNb%2B8yKiqIUtRQHdMbIV6DpWkMe38UBcTsgWhUeNHMa9pVLo4RdY5kCKDrXHDPn4Sz%2Fwq8JI%2FR3DH7c%2BxxNjQFqleeBZ1pp%2BRLTJKF6OKz1QfKdDbWfltJI2W2xRFXGTmpg%3D%3D&redirectType=js";
+			var destinationUrl = "/page/bouncy.php?&bpae=GbhGtr8GtVx%2F9buvsQ429ImM0HQtrfpmJbUlkx6rP%2F9Mc5Y5iVSwTUTZqz9rCwbZqNudG3fIlso9B4%2FBu1mv0fl%2Faj9xqQaikd6VbItffWBb3YfgjDWlOYqWU8F1sroy79%2F3cDgpCbnGleDGlP%2BQU46TIZRVRpwJf6Ye9RlAIAkf46EHFZKrpaPi40LReTx8PdgGJBWaBWLKvxkd9Msk3MpZDmbaXtqagKj9ShGazg1DCt1b7R9gAZhQEO8X0N%2FWAU%2BGGhwDZ0GnoWCN2%2BWPlgN%2FIZ0Qtzqme6FqfHnRP8bKyqnW9XqxVnExjTqXfdyQ9zGtXhmZuF8IDU4rZ6OilEJFWrBMk%2B5FgtvlJum0AYZBb%2FTinRalw6mDI%2FTWbNLlNb%2B8yKiqIUtRQHdMbIV6DpWkMe38UBcTsgWhUeNHMa9pVLo4RdY5kCKDrXHDPn4Sz%2Fwq8JI%2FR3DH7c%2BxxNjQFqleeBZ1pp%2BRLTJKF6OKz1QfKdDbWfltJI2W2xRFXGTmpg%3D%3D&redirectType=meta";
+			var addDetection = true;
+			if (addDetection) {
+				var inIframe = window.self !== window.top;
+				forwardingUrl += "&inIframe=" + inIframe;
+				var inPopUp = (window.opener !== undefined && window.opener !== null && window.opener !== window);
+				forwardingUrl += "&inPopUp=" + inPopUp;
+			}
+			window.location.replace(forwardingUrl);
+		</script>
+		<meta http-equiv="refresh" content="1;url=/page/bouncy.php?&bpae=GbhGtr8GtVx%2F9buvsQ429ImM0HQtrfpmJbUlkx6rP%2F9Mc5Y5iVSwTUTZqz9rCwbZqNudG3fIlso9B4%2FBu1mv0fl%2Faj9xqQaikd6VbItffWBb3YfgjDWlOYqWU8F1sroy79%2F3cDgpCbnGleDGlP%2BQU46TIZRVRpwJf6Ye9RlAIAkf46EHFZKrpaPi40LReTx8PdgGJBWaBWLKvxkd9Msk3MpZDmbaXtqagKj9ShGazg1DCt1b7R9gAZhQEO8X0N%2FWAU%2BGGhwDZ0GnoWCN2%2BWPlgN%2FIZ0Qtzqme6FqfHnRP8bKyqnW9XqxVnExjTqXfdyQ9zGtXhmZuF8IDU4rZ6OilEJFWrBMk%2B5FgtvlJum0AYZBb%2FTinRalw6mDI%2FTWbNLlNb%2B8yKiqIUtRQHdMbIV6DpWkMe38UBcTsgWhUeNHMa9pVLo4RdY5kCKDrXHDPn4Sz%2Fwq8JI%2FR3DH7c%2BxxNjQFqleeBZ1pp%2BRLTJKF6OKz1QfKdDbWfltJI2W2xRFXGTmpg%3D%3D&redirectType=meta" />
+	</head>
+</html>

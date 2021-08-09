@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<meta name="description" content="「@nifty（アット・ニフティ）」インターネット・サービスプロバイダーのご案内。どなたでも楽しめるサービスを提供しています。" />
+<meta name="keywords" content="nifty,ニフティ,@nifty,アット・ニフティ,プロバイダー,インターネット" />
+<meta name="msapplication-starturl" content="https://www.nifty.com/?msapp" />
+<meta name="msapplication-navbutton-color" content="#FF9900" />
+<meta name="msapplication-task" content="name=Mail@nifty;action-uri=https://mail.nifty.com/info/;icon-uri=https://www.nifty.com/favicon.ico" />
+<meta name="msapplication-task" content="name=セカンドメール;action-uri=https://mail.nifty.com/info/mailaccount/;icon-uri=https://www.nifty.com/favicon.ico" />
+<meta name="msapplication-task" content="name=会員サポート;action-uri=http://clink.nifty.com/r/www/top_msapp/?https://support.nifty.com/;icon-uri=https://www.nifty.com/favicon.ico" />
+<meta name="msapplication-task" content="name=会員向けサービス;action-uri=http://clink.nifty.com/r/www/top_msapp/?http://www.nifty.com/member/;icon-uri=https://www.nifty.com/favicon.ico "/>
+<meta name="msapplication-task" content="name=お客様情報／ご利用明細;action-uri=http://clink.nifty.com/r/www/top_msapp/?https://support.nifty.com/support/member/;icon-uri=https://www.nifty.com/favicon.ico "/>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<noscript>
+<meta http-equiv="Refresh" content="0;URL=https://www.nifty.com/text/" />
+</noscript>
+<meta name="slice" scheme="IE" content="off" />
+<meta property="og:title" content="@nifty"><meta property="og:url" content="https://www.nifty.com/"><meta property="og:description" content="「@nifty（アット・ニフティ）」インターネット・サービスプロバイダーのご案内。どなたでも楽しめるサービスを提供しています。"><meta property="og:image" content="https://www.nifty.com/misc_top/images/OGP_pc.png">
+<link rel="shortcut icon" href="https://www.nifty.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://search.nifty.com/search/v9/xml/nifty_websearch_searchbox.xml" title="&quot;@niftyウェブ検索&quot;" />
+<link rel="stylesheet" href="misc_top/css/style_20210719.css" type="text/css" media="all" />
+<link rel="default-slice" href="#News" type="application/x-hatom" />
+<link rel="stylesheet" type="text/css" href="misc_top/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<link rel="stylesheet" type="text/css" href="misc_top/css/ipv6_v4_index.css" />
+<link rel="apple-touch-icon" href="smp/images/apple-touch-icon_170313.png" />
+<link rel="canonical" href="https://www.nifty.com" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.nifty.com/smp/" />
+<link rel="preconnect dns-prefetch" href="//js.rtoaster.jp" />
+<link rel="preconnect dns-prefetch" href="//l.logly.co.jp" />
+<link rel="preconnect dns-prefetch" href="//track.nifty.com" />
+<link rel="preconnect dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="preconnect dns-prefetch" href="//rt.rtoaster.jp" />
+<link rel="preconnect dns-prefetch" href="//tag.nifty.com" />
+<link rel="preconnect dns-prefetch" href="//www.google-analytics.com" />
+<link rel="preconnect dns-prefetch" href="//sso.nifty.com" />
+<link rel="preconnect dns-prefetch" href="//pagead2.googlesyndication.com" />
+<link rel="preconnect dns-prefetch" href="//ads.rubiconproject.com" />
+<link rel="preconnect dns-prefetch" href="//partner.googleadservices.com" />
+<script type="text/javascript">
+//<![CDATA[
+var checkBrowserType=function(){var A=navigator.userAgent;this.IE=(A.indexOf("MSIE")!==-1);this.IENew=(A.indexOf("Trident")!==-1);this.Edge=(A.indexOf("Edge")!==-1);this.Gecko=(A.indexOf("Gecko")!==-1);this.Firefox=(A.indexOf("Firefox")!==-1);this.IE11=(A.indexOf("Trident/7.0")!==-1);this.IE10=(A.indexOf("Trident/6.0")!==-1);this.IE9=(A.indexOf("Trident/5.0")!==-1);this.IE8=(A.indexOf("Trident/4.0")!==-1);this.IE7=(A.indexOf("MSIE 7.")!==-1)&&(A.indexOf("Trident/4.0")===-1)&&(A.indexOf("Trident/5.0")===-1);this.IE6=(A.indexOf("MSIE 6.")!==-1)&&(A.indexOf("Trident/4.0")===-1)&&(A.indexOf("MSIE 7.")===-1);this.IE5=(A.indexOf("MSIE 5.")!==-1);this.IE50=(A.indexOf("MSIE 5.0")!==-1);this.IE4=(A.indexOf("MSIE 4.")!==-1);this.IE3=(A.indexOf("MSIE 3.")!==-1);this.Opera=(A.indexOf("Opera")!==-1);this.Chrome=(A.indexOf("Chrome")!==-1)&&(A.indexOf("Edge")===-1);this.Safari=(A.indexOf("Safari")!==-1)&&(A.indexOf("Chrome")===-1)&&(A.indexOf("Silk")===-1)&&(A.indexOf("Kindle")===-1)&&(A.indexOf("Edge")===-1);this.Safari2=(A.indexOf("Safari")!==-1)&&(A.indexOf("Chrome")===-1)&&(A.indexOf("Version")===-1)&&(A.indexOf("CriOS")===-1)&&(A.indexOf("Silk")===-1)&&(A.indexOf("Edge")===-1);this.NS=(A.indexOf("Netscape")!==-1);this.iPhone=(A.indexOf("iPhone")!==-1);this.iPod=(A.indexOf("iPod")!==-1);this.Android=(A.indexOf("Android")!==-1);this.Android3=(A.indexOf("Android 3")!==-1);this.Android1=(A.indexOf("Android 1")!==-1);this.Android2=(A.indexOf("Android 2")!==-1);this.AndroidTab=(A.indexOf("Android")!==-1)&&(A.indexOf("Mobile")===-1);this.iPad=(A.indexOf("iPad")!==-1);this.Kindle=(A.indexOf("Silk")!==-1)||(A.indexOf("Kindle")!==-1);this.MSafari=(A.indexOf("Mobile")!==-1)&&(A.indexOf("Safari")!==-1);this.FOSMB=(A.indexOf("Mobile")!==-1)&&(A.indexOf("Firefox")!==-1)&&(A.indexOf("Android")===-1);this.FOSTB=(A.indexOf("Tablet")!==-1)&&(A.indexOf("Firefox")!==-1)&&(A.indexOf("Android")===-1);this.MFirefox=(A.indexOf("Mobile")!==-1)&&(A.indexOf("Firefox")!==-1)&&(A.indexOf("Android")!==-1);this.TFirefox=(A.indexOf("Tablet")!==-1)&&(A.indexOf("Firefox")!==-1)&&(A.indexOf("Android")!==-1)};(function(){var B=new checkBrowserType();if(B.iPhone||B.iPod||B.Android1||B.Android2||(B.Android&&B.MSafari)||B.FOSMB||B.MFirefox){if(location.search!=="?pc"){var p=location.search.substr(1)||"top";location.href="https://www.nifty.com/smp/?"+p}}else{if(B.IE6||B.IE5||B.IE50||B.IE4||B.IE3||B.Safari2||B.NS){location.href="https://www.nifty.com/text/"}}})();
+var tsEnvDef=function(){
+	this.grptg="g20160721";
+	this.grp="20";
+	this.ptrn={"pt":[
+		{"name":"test01","val":"01"},
+		{"name":"test02","val":"02"},
+		{"name":"test03","val":"03"},
+		{"name":"test04","val":"04"}
+	]};
+	this.tm=90;
+}
+//]]>
+</script>
+
+<script type="text/javascript" src="misc_top/js/jquery-1.4.2.min-lib.js" charset="Shift_JIS"></script>
+<script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script type="text/javascript" src="misc_top/js/niftop_js_20210719.txt" charset="Shift_JIS"></script>
+<script type="text/javascript" src="//js.rtoaster.jp/Rtoaster.js"></script>
+<script defer type="text/javascript" src="misc_top/js/jstorage.min.js" charset="Shift_JIS"></script>
+<script defer type="text/javascript" src="misc_top/js/atsrch_history_200406.js" charset="Shift_JIS"></script>
+<script type="text/javascript">
+Rtoaster.init("RTA-bc8a-4cbf97a36acb",Rtoaster.Cookie.get("NT_CID"));
+Rtoaster.track({
+"dcw": Rtoaster.Cookie.get("dcw"),
+"dcu": Rtoaster.Cookie.get("dcu"),
+"dcs": Rtoaster.Cookie.get("dcs"),
+"dct": Rtoaster.Cookie.get("dct"),
+"dcl": Rtoaster.Cookie.get("dcl"),
+"nif_shop": Rtoaster.Cookie.get("nif_shop"),
+"nif_travel": Rtoaster.Cookie.get("nif_travel")
+});
+</script>
+<script>
+	window.grumi = {
+		key: '142d0ade-d148-44ad-9a28-172298579d95'
+	};
+</script>
+<script src="//rumcdn.geoedge.be/142d0ade-d148-44ad-9a28-172298579d95/grumi-ip.js" async></script>
+
+<script type="text/javascript">
+//<![CDATA[
+window.NIFTY = window.NIFTY || {};
+window.NIFTY.niftop = window.NIFTY.niftop || {};
+window.NIFTY.niftop.maxPrize = 3000;
+window.NIFTY.niftop.buildDate = "2021/08/09 21:09:52";
+window.NIFTY.niftop.openDate = "2021/07/16 11:00:00";
+window.NIFTY.niftop.closeDate = "2021/09/13 11:00:00";
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+window.NIFKUJI = window.NIFKUJI || {};
+window.NIFKUJI.niftop = window.NIFKUJI.niftop || {};
+window.NIFKUJI.niftop.bonusDay  = "22";
+window.NIFKUJI.niftop.bonusRate = "22";
+window.NIFKUJI.niftop.buildDate = "2021/08/09 21:09:53";
+window.NIFKUJI.niftop.openDate  = "2021/08/01 00:00:00";
+window.NIFKUJI.niftop.closeDate = "2021/08/31 23:59:00";
+//]]>
+</script>
+<!-- PubMatic IdentityHub ※FLUX inclusion -->
+<script type="text/javascript">
+  var PWT = {}; //Initialize Namespace
+  window.pbjs = window.pbjs || { que: [] };
+  window.googletag = window.googletag || { cmd: [] };
+  var gptRan = false;
+  PWT.jsLoaded = function () {
+    //PubMatic pwt.js on load callback is used to load GPT
+    loadGPT();
+  };
+  var loadGPT = function () {
+    //Check the gptRan flag
+    if (!gptRan) {
+      gptRan = true;
+      var gads = document.createElement("script");
+      var useSSL = "https:" == document.location.protocol;
+      gads.src =
+        (useSSL ? "https:" : "http:") +
+        "//securepubads.g.doubleclick.net/tag/js/gpt.js";
+      var node = document.getElementsByTagName("script")[0];
+      node.parentNode.insertBefore(gads, node);
+
+      var pbjsEl = document.createElement("script");
+      pbjsEl.type = "text/javascript";
+      pbjsEl.async = true;
+      pbjsEl.src = "https://flux-cdn.com/client/nifty/nifty.min.js";
+      var pbjsTargetEl = document.getElementsByTagName("head")[0];
+      pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+    }
+  };
+  //Failsafe to call gpt
+  setTimeout(loadGPT, 500);
+</script>
+<script type="text/javascript">
+  (function () {
+    var purl = window.location.href;
+    var url = "//ads.pubmatic.com/AdServer/js/pwt/158115/2581";
+    var profileVersionId = "";
+    if (purl.indexOf("pwtv=") > 0) {
+      var regexp = /pwtv=(.*?)(&|$)/g;
+      var matches = regexp.exec(purl);
+      if (matches.length >= 2 && matches[1].length > 0) {
+        profileVersionId = "/" + matches[1];
+      }
+    }
+    var wtads = document.createElement("script");
+    wtads.async = true;
+    wtads.type = "text/javascript";
+    wtads.src = url + profileVersionId + "/pwt.js";
+    var node = document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(wtads, node);
+  })();
+</script>
+<!-- /PubMatic IdentityHub ※FLUX inclusion -->
+<!-- Define callback function -->
+<script type="text/javascript">
+  window.fluxtag = {
+    readyBids: {
+      prebid: false,
+      amazon: false,
+      google: false,
+    },
+    failSafeTimeout: 3e3,
+    isFn: function isFn(object) {
+      var _t = "Function";
+      var toString = Object.prototype.toString;
+      return toString.call(object) === "[object " + _t + "]";
+    },
+    launchAdServer: function () {
+      if (!fluxtag.readyBids.prebid || !fluxtag.readyBids.amazon) {
+        return;
+      }
+      fluxtag.requestAdServer();
+    },
+    requestAdServer: function () {
+      if (!fluxtag.readyBids.google) {
+        fluxtag.readyBids.google = true;
+        googletag.cmd.push(function () {
+          if (
+            !!pbjs.setTargetingForGPTAsync &&
+            fluxtag.isFn(pbjs.setTargetingForGPTAsync)
+          ) {
+            pbjs.que.push(function () {
+              pbjs.setTargetingForGPTAsync();
+            });
+          }
+          apstag.setDisplayBids();
+          googletag.pubads().refresh();
+        });
+      }
+    },
+  };
+</script>
+<script type="text/javascript">
+  setTimeout(function () {
+    fluxtag.requestAdServer();
+  }, fluxtag.failSafeTimeout);
+</script>
+<!-- /Define callback function -->
+
+<!-- APS head -->
+<script type="text/javascript">
+  !(function (a9, a, p, s, t, A, g) {
+    if (a[a9]) return;
+
+    function q(c, r) {
+      a[a9]._Q.push([c, r]);
+    }
+    a[a9] = {
+      init: function () {
+        q("i", arguments);
+      },
+      fetchBids: function () {
+        q("f", arguments);
+      },
+      setDisplayBids: function () {},
+      targetingKeys: function () {
+        return [];
+      },
+      _Q: [],
+    };
+    A = p.createElement(s);
+    A.async = !0;
+    A.src = t;
+    g = p.getElementsByTagName(s)[0];
+    g.parentNode.insertBefore(A, g);
+  })(
+    "apstag",
+    window,
+    document,
+    "script",
+    "//c.amazon-adsystem.com/aax2/apstag.js"
+  );
+  apstag.init({
+    pubID: "3678",
+    adServer: "googletag",
+    bidTimeout: 1e3,
+  });
+  apstag.fetchBids(
+    {
+      slots: [
+        {
+          slotID: "div-gpt-ad-1443679865978-0",
+          slotName: "/48012543/NIFTY_PC/TOP/RECT",
+          sizes: [[300, 250]],
+        },
+        {
+          slotID: "div-gpt-ad-1443679865978-1",
+          slotName: "/48012543/NIFTY_PC/TOP/RECT_2nd",
+          sizes: [[300, 250]],
+        },
+        {
+          slotID: "div-gpt-ad-1443679865978-3",
+          slotName: "/48012543/NIFTY_PC/TOP/FBNR",
+          sizes: [
+            [728, 90],
+            [950, 180],
+            [970, 250],
+          ],
+        },
+      ],
+    },
+    function (bids) {
+      googletag.cmd.push(function () {
+        fluxtag.readyBids.amazon = true;
+        fluxtag.launchAdServer();
+      });
+    }
+  );
+</script>
+<!-- /APS head -->
+
+<!-- DFP head -->
+<script type="text/javascript">
+  googletag.cmd.push(function () {
+    googletag
+      .defineSlot(
+        "/48012543/NIFTY_PC/TOP/RECT",
+        [[300, 250]],
+        "div-gpt-ad-1443679865978-0"
+      )
+      .addService(googletag.pubads());
+    googletag
+      .defineSlot(
+        "/48012543/NIFTY_PC/TOP/RECT_2nd",
+        [[300, 250]],
+        "div-gpt-ad-1443679865978-1"
+      )
+      .addService(googletag.pubads());
+    googletag
+      .defineSlot(
+        "/48012543/NIFTY_PC/TOP/FBNR",
+        [
+          [950, 180],
+          [728, 90],
+          [970, 250],
+        ],
+        "div-gpt-ad-1443679865978-3"
+      )
+      .addService(googletag.pubads());
+    googletag
+      .defineSlot(
+        "/48012543/NIFTY_PC/TOP/TEXT",
+        [1, 1],
+        "div-gpt-ad-1553586055982-0"
+      )
+      .addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+
+    // Prebidが呼び出せる状態の場合
+    if (
+      !!window.pbFlux &&
+      !!window.pbFlux.prebidBidder &&
+      fluxtag.isFn(window.pbFlux.prebidBidder)
+    ) {
+      pbjs.que.push(function () {
+        window.pbFlux.prebidBidder();
+      });
+    } else {
+      // Prebidが呼び出せない場合、すぐにGAMを呼び出す
+      fluxtag.readyBids.prebid = true;
+      fluxtag.launchAdServer();
+    }
+  });
+</script>
+<!-- /DFP head -->
+
+
+<title>@nifty</title>
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P7B5MN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7B5MN');</script>
+<!-- End Google Tag Manager -->
+
+<p class="skipNav">
+	<a href="#srchForm"><img src="images/space.gif" width="1" height="1" alt="検索へジャンプ " /></a>
+	<a href="#menu"><img src="images/space.gif" width="1" height="1" alt="メニューへジャンプ" /></a>
+	<a href="#mainContents"><img src="images/space.gif" width="1" height="1" alt="ニュース、サービス情報、オリジナル読み物へジャンプ" /></a>
+	<a href="#LoginArea"><img src="images/space.gif" width="1" height="1" alt="ログイン（パーソナル）エリアへジャンプ" /></a>
+	<a href="#niftyInfo"><img src="images/space.gif" width="1" height="1" alt="アット・ニフティからのお知らせへジャンプ" /></a>
+</p>
+
+<script type="text/javascript">
+//<![CDATA[
+setGrp();
+callUserDataCGI();
+fbox($);
+NIFTY.niftop.skin = [["","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["design130215.css","0"],["","0"],["","0"],["","0"],["design151029.css","0"],["design151029.css","0"],["design151029.css","0"],["design151029.css","0"],["design151029.css","0"],["design151029.css","0"],["design151029.css","0"]
+
+];
+setDsn(2);
+//]]>
+</script>
+
+<div id="nifkujiResultArea"></div>
+
+<div id="LMTermsOfUseArea"></div>
+
+<div id="floating-wrap">
+	<div id="floating-head">
+		<div class="hdInr"></div>
+	</div>
+</div>
+
+<div id="wrapper">
+
+<div id="outline">
+
+<div id="head">
+
+<div class="hdInr"><!--
+--></div>
+
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+	var tmp='';
+if(loadCookie("mpri")!=="210719321124"){
+	tmp='<div id="headInfomation" style="background-color:#FFE931;display:none;"><div class="inner"><a href="https://www.nifty.com/promo/point202107/index.htm" onmousedown="return countlink(\'www\',\'toppriority_pr_cli\',this.href);"><img src="/cms_image/niftop/topPriority1/210719321124/0728.png" height="47" width="950" alt="ライフメディア"  title="ライフメディア"   /></a><p class="toppriority_pr_cls" onclick="saveCookie(\'mpri\',\'210719321124\');$(this).parents(\'#headInfomation\').remove();" onmousedown="return countlink(\'www\',\'toppriority_pr_cls\',\'https://www.nifty.com/\');"><span>閉じる</span></p></div></div>';
+}
+	document.write(tmp);
+})();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var getDis=function(){
+	var DisAr = new Array();
+	DisAr[0] = new Array();
+	DisAr[0]["level"] = "7";
+	DisAr[0]["type"] = "quake";
+	DisAr[0]["area"] = "鹿児島湾";
+	DisAr[0]["scale"] = "3";
+	DisAr[0]["opdate"] = new Date(2021, 08 - 1, 08, 08, 49, 0);
+	DisAr[0]["update"] = new Date(2021, 08 - 1, 08, 08, 54, 0);
+	DisAr[1] = new Array();
+	DisAr[1]["level"] = "7";
+	DisAr[1]["type"] = "quake";
+	DisAr[1]["area"] = "台湾付近";
+	DisAr[1]["scale"] = "3";
+	DisAr[1]["opdate"] = new Date(2021, 08 - 1, 05, 06, 50, 0);
+	DisAr[1]["update"] = new Date(2021, 08 - 1, 05, 06, 56, 0);
+	DisAr[2] = new Array();
+	DisAr[2]["level"] = "7";
+	DisAr[2]["type"] = "quake";
+	DisAr[2]["area"] = "茨城県沖";
+	DisAr[2]["scale"] = "3";
+	DisAr[2]["opdate"] = new Date(2021, 08 - 1, 04, 05, 33, 0);
+	DisAr[2]["update"] = new Date(2021, 08 - 1, 04, 05, 40, 0);
+	DisAr[3] = new Array();
+	DisAr[3]["level"] = "6";
+	DisAr[3]["type"] = "quake";
+	DisAr[3]["area"] = "島根県東部";
+	DisAr[3]["scale"] = "4";
+	DisAr[3]["opdate"] = new Date(2021, 08 - 1, 02, 09, 37, 0);
+	DisAr[3]["update"] = new Date(2021, 08 - 1, 02, 09, 42, 0);
+	DisAr[4] = new Array();
+	DisAr[4]["level"] = "7";
+	DisAr[4]["type"] = "quake";
+	DisAr[4]["area"] = "徳島県南部";
+	DisAr[4]["scale"] = "3";
+	DisAr[4]["opdate"] = new Date(2021, 07 - 1, 31, 13, 09, 0);
+	DisAr[4]["update"] = new Date(2021, 07 - 1, 31, 13, 16, 0);
+	return DisAr;
+}
+displayDisaster(new Date(2021, 08 - 1, 09, 21, 09, 0));
+//]]>
+</script>
+
+<div id="chgDsgn" class="chgDsgn" style="display:none;"></div>
+
+<div class="hdBg">
+
+<div class="hdInr">
+
+<div id="header">
+
+	<div class="pkg">
+		<div class="hdmText floatL">
+			<p class="floatL fontS">
+				<span id="nifty_top_homeset" style="behavior:url(#default#homepage)"></span>
+        <p class="ipv4_img" id="ipv4" style="display: none;"><a href="https://csoption.nifty.com/ipv6service/?utm_source=niftop&utm_medium=koteibanner&utm_campaign=v6info"><img src="images/v4v6/img-ipv4.png" alt="v6サービスで接続するには？ IPv4で接続中"></a></p>
+        <p class="ipv6_img" id="ipv6" style="display: none;"><img src="images/v4v6/img-ipv6.png" alt="IPv6で接続中"></p>
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+	var h='';
+	var url = location.href;
+	var bType=new checkBrowserType();
+	var osType=new checkOsType();
+	if(-1===url.indexOf('"') && -1===url.indexOf("'") && bType.IE && osType.Win && !bType.Opera && !$('#nifty_top_homeset').get(0).isHomePage(url)){
+		h='<a href="javascript:void(0);" onmousedown="return countlink(\'www\',\'toptop_home\',\'https://www.nifty.com/\');" onclick="(function(){$(\'#setstartpage\').get(0).style.behavior=\'url(#default#homepage)\';var set=$(\'#setstartpage\').get(0);set.setHomePage(\''+url+'\');if(set.isHomePage(\''+url+'\')){$(\'#setstartpage\').removeAttr(\'onclick\').attr(\'href\',\'https://www.nifty.com/navi/startpage/\');}})();return false;" id="setstartpage" class="arrR mrgR5">ホームページに設定</a>';
+	}
+	else if(bType.Firefox){
+		h='<a href="javascript:void(0);" onmousedown="return countlink(\'www\',\'toptop_home\',\'https://www.nifty.com/\');" onclick="openFFhomeset();" class="arrR mrgR5">ホームページに設定</a>';
+	}
+	else{
+		h='<a href="https://www.nifty.com/navi/startpage/" onmousedown="return countlink(\'www\',\'toptop_home\',this.href);" class="arrR mrgR5">ホームページに設定</a>';
+	}
+	document.write(h);
+})();
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+dspDsn(2);
+//]]>
+</script>
+				<a href="//www.nifty.com/text/" onmousedown="return countlink('www','toptop_text',this.href);" class="arrR">テキスト版</a>
+			</p>
+		</div>
+		<div class="hdmLogin floatR" id="headLoginInfo"></div>
+<script type="text/javascript">
+//<![CDATA[
+NIFTY.niftop.billFlg=1;
+//]]>
+</script>
+
+	</div>
+	<div id="receptionistNumber">
+		<p class="text">
+			<span>入会相談・引越し・光回線への乗換え 0120-50-2210（フリーダイヤル）9時～21時</span>
+		</p>
+	</div>
+</div>
+<!--/#header -->
+
+<hr />
+
+<div id="contentsTop" class="pkg mrgB5">
+
+	<div id="logo">
+		<div class="pkg">
+			<h1><a href="javascript:void(0);" onclick="logoClk();return false;" rel="nofollow"><img src="images/logo_170313.png" alt="アット・ニフティ" width="167" height="43" /></a></h1>
+		</div>
+		<p id="clockInfo" class="time pddL10"></p>
+	</div>
+
+	<!--#unitSrch -->
+	<div id="unitSrch" class="floatL">
+
+		<div class="pkg">
+
+		<!--search -->
+		<div id="search">
+			<!--srchForm -->
+			<form id="srchForm" class="floatL" name="srchForm" action="//search.nifty.com/cgi-bin/gosearch.cgi" onsubmit="return searchExe();">
+				<div id="srcHiddenParm" style="height: 1%;">
+					<input name="cflg" value="検索" type="hidden" />
+					<input name="ss" value="nifty_top_tp" type="hidden" />
+					<input name="select2" value="検索" type="hidden" />
+				</div>
+				<div class="rb srchTxtWrp">
+					<div class="rbinr">
+						<p id="srchInptElmnt" class="pkg">
+							<span id="searchText"><input id="srchTxt" name="Text" class="srchTxt srchSet" type="text" value="" /><!--
+							--></span><input id="srchBtn" type="submit" value="検索" alt="検索" class="srchBtnSet" />
+						</p>
+						<div id="srchAssistBtn"><a href="javascript:void(0);" onclick="sgDispList();return false;" hidefocus="true">キーワード補助を開く</a></div>
+						<!--atsearch1037 start -->
+						<div id="searchHistory">
+							<div id="searchHistoryInner">
+								<div style="display: none;" class="window" id="searchHistoryDisp">
+									<div id="searchHistorySuggest">
+										<ul class="list" style="" id="searchHistoryLists">
+										</ul>
+										<div class="option" id="searchHistoryChange">
+											<p class="pddR10">キーワード入力補助</p>
+											<ul>
+												<li>ON</li>
+												<li><span>－</span> <a onClick="atsrchStyle_sgOnOff(0);" href="javascript:void(0);">OFF</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/atsearch1037 end -->
+						<div id="srchAssist">
+							<div id="srchAssistInner">
+								<div id="srchAssistDisp" class="window" style="display:none;">
+									<!--searchType -->
+									<ul id="searchType" class="pkg">
+										<li><a href="//search.nifty.com/search/" class="focus" title="ウェブを検索します"><span><strong>ウェブ</strong></span></a></li>
+										<li><a href="//search.nifty.com/search/" title="画像を検索します"><span>画像</span></a></li>
+										<li><a href="//search.nifty.com/search/" title="動画を検索します"><span>動画</span></a></li>
+									</ul>
+									<!--/searchType -->
+									<div id="srchAssistSuggest"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<!--/srchForm -->
+			<div id="headerMenu">
+				<ul class="pkg">
+					<li class="headerMail">
+						<a href="https://mail.nifty.com/mailer/">
+							<span class="icn headerMailIcon"></span>
+							<span class="txt">メール</span>
+						</a>
+					</li>
+					<li class="headerSupport">
+						<a href="https://support.nifty.com/support/" target="_blank" rel="noopener">
+							<span class="icn headerSupportIcon"></span>
+							<span class="txt">会員サポート</span>
+						</a>
+					</li>
+					<li class="headerPoint">
+						<a href="https://ssl.lifemedia.jp/register/association/nifty" target="_blank" rel="noopener">
+							<span class="icn headerPointIcon"></span>
+							<span class="txt">ポイント</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<!--/search -->
+
+<script type="text/javascript">
+//<![CDATA[
+var displayKeyword=function(){
+	var kwArray = new Array();
+	kwArray[0] = [{keyword:'池田敏雄',keywordDisp:'池田敏雄',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E6%B1%A0%E7%94%B0%E6%95%8F%E9%9B%84&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'1',countlink:'topchu_w1'},{keyword:'富士通初の16ビットビジネス用パソコン',keywordDisp:'富士通初の16…',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E5%AF%8C%E5%A3%AB%E9%80%9A%E5%88%9D%E3%81%AE16%E3%83%93%E3%83%83%E3%83%88%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E7%94%A8%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'2',countlink:'topchu_w2'},{keyword:'齋藤邦彰',keywordDisp:'齋藤邦彰',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E9%BD%8B%E8%97%A4%E9%82%A6%E5%BD%B0&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'3',countlink:'topchu_w3'},{keyword:'台風情報',keywordDisp:'台風情報',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E5%8F%B0%E9%A2%A8%E6%83%85%E5%A0%B1&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'4',countlink:'topchu_w4'},{keyword:'本橋由香',keywordDisp:'本橋由香',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E6%9C%AC%E6%A9%8B%E7%94%B1%E9%A6%99&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/up.png',updownAlt:'順位上昇',rank:'5',countlink:'topchu_w5'}];
+	kwArray[1] = [{keyword:'斎藤邦彰',keywordDisp:'斎藤邦彰',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E6%96%8E%E8%97%A4%E9%82%A6%E5%BD%B0&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/down.png',updownAlt:'順位下降',rank:'6',countlink:'topchu_w6'},{keyword:'天気予報',keywordDisp:'天気予報',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E5%A4%A9%E6%B0%97%E4%BA%88%E5%A0%B1&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'7',countlink:'topchu_w7'},{keyword:'斉藤邦彰',keywordDisp:'斉藤邦彰',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E6%96%89%E8%97%A4%E9%82%A6%E5%BD%B0&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'8',countlink:'topchu_w8'},{keyword:'ムーミンの日',keywordDisp:'ムーミンの日',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=%E3%83%A0%E3%83%BC%E3%83%9F%E3%83%B3%E3%81%AE%E6%97%A5&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'9',countlink:'topchu_w9'},{keyword:'nhk',keywordDisp:'nhk',url:'https://search.nifty.com/websearch/search?cflg=%E6%A4%9C%E7%B4%A2&select=26&q=nhk&otype=web_nifty_shun_tp',updown:'misc_top/images/synw/stay.png',updownAlt:'変化なし',rank:'10',countlink:'topchu_w10'}];
+	kwArray[2] = [];
+
+	$("#kyrdm0").html("話題：");
+	var makeHTML=function(array,display){
+		var html = '';
+		var cnt = array.length;
+		if(cnt !== 0){
+			html += '\n\t<ol ' + ((display === true) ? '' : 'style="display:none;"') + '>';
+			for(var i = 0;i < cnt;i++ ){
+				html += '\n\t\t<li class="inline">';
+				html += "<img src='" + array[i].updown + "' width='8' height='8' alt='" + array[i].updownAlt + "'/>";
+				if(array[i].rank && array[i].rank !== ''){
+					html += "<img src='misc_top/images/synw/" + array[i].rank + ".png' width='15' height='15' alt='" + array[i].rank + "位' />";
+				}
+	  			html += "<a title='" + array[i].keyword + "' href='" + array[i].url + "' onmousedown='return countlink(\"www\",\"" + array[i].countlink +"\",this.href);'>" + array[i].keywordDisp + "</a>";
+  				html += '</li>';
+			}
+			html += '\n\t</ol>';
+		}
+		return html;
+	}
+	var html = '';
+	var disp = true;
+	html += makeHTML(kwArray[0],disp);
+	disp = (html.length === 0) ? true : false;
+	html += makeHTML(kwArray[1],disp);
+	disp = (html.length === 0) ? true : false;
+	html += makeHTML(kwArray[2],disp);
+
+	$('#synWord2').html(html);
+	$(document).ready( function(){
+		$('#synWord2').innerfade({
+			animationtype: 'slide',
+			speed: 750,
+			timeout: 10000,
+			type: 'sequence',
+			containerheight: '1em'
+		});
+	});
+}//]]>
+</script>
+		<!--synWrap -->
+		<div class="synWrap pkg">
+		<p id="kyrdm0" class="synWordTtl"></p>
+		<div id="synWord2"></div>
+			<script type="text/javascript">
+			//<![CDATA[
+				displayKeyword();
+			//]]>
+			</script>
+		</div>
+		<!--/synWrap -->
+	</div>
+	<!--/#unitSrch -->
+
+</div>
+<!--/#contentsTop -->
+
+<div id="dmenu">
+	<div class="dmenuInr">
+		<div id="carousel" class="carousel">
+			<ul class="pkg"></ul>
+			<a class="carouselPrev" id="carousel_prev" href="#" onmousedown="return countlink('www','topdock_arrow','https://www.nifty.com/');"><span>prev</span></a>
+			<a class="carouselNext" id="carousel_next" href="#" onmousedown="return countlink('www','topdock_arrow','https://www.nifty.com/');"><span>next</span></a>
+			<div class="carouselNav" id="carousel_nav"></div>
+		</div>
+	</div>
+	<noscript>
+	<div class="noscriptMsg">
+		<dl>
+			<dt>@niftyトップページの全機能をご利用いただくには、ブラウザのJava Scriptの設定を「有効」にする必要があります。</dt>
+
+			<dd>代表的なブラウザでの設定方法を<a href="http://clink.nifty.com/r/www/topinfo_js/?http://qa.nifty.com/cs/catalog/faq_qa/qid_11718/1.htm">「JavaScriptを有効にする方法を教えてほしい」</a>でご案内しています。</dd>
+		</dl>
+	</div>
+	</noscript>
+	<!--/ .noscript -->
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var dcJson=function(){
+	return {"nojima":{"str":"NojimaOnline","url":"http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3088959&pid=886039106","cnt":"njm","icn":"cms_image/niftop/dockFavorite/190919281849/nojimaonline_new_pc.png"},"rakuten":{"str":"楽天市場","url":"https://hb.afl.rakuten.co.jp/hgc/0fbcd069.fb2e7bbc.0fbcd06a.f392cb3a/_RTnfty10000001?pc=https%3A%2F%2Fwww.rakuten.co.jp%2F&m=https%3A%2F%2Fwww.rakuten.co.jp%2F","cnt":"rt","icn":"cms_image/niftop/dockFavorite/191001282315/20210804bg_dock_pc.png","dnw":"1"},"amazon":{"str":"<b>アマゾン</b>","url":"https://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=niftopaffili-22","cnt":"am","icn":"cms_image/niftop/dockFavorite/130819142394/bg_dock_amazon_120820.png"},"cecile":{"str":"セシール","url":"https://www.cecile.co.jp/","cnt":"cecile","icn":"cms_image/niftop/dockFavorite/210318317421/cecile_0406_bg_dock_pc.png"},"furusato":{"str":"ふるさと納税","url":"https://lifemedia.jp/service/asearch/allcampaign/160?utm_source=nifty&utm_medium=referral&utm_campaign=pctop_dock","cnt":"furusato","icn":"cms_image/niftop/dockFavorite/201225315097/furusato_pc.png"},"kids":{"str":"キッズ","url":"https://kids.nifty.com/","cnt":"kids","icn":"cms_image/niftop/dockFavorite/200513291970/kids_bg_dock_pc.png"},"syahoo":{"str":"Y!ショッピング","url":"http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3088959&pid=884368997","cnt":"sy","icn":"cms_image/niftop/dockFavorite/130819142392/bg_dock_syahoo_170313.png"},"trakuten":{"str":"楽天トラベル","url":"https://hb.afl.rakuten.co.jp/hgc/15cd0c70.3474117d.15cd0c71.858ded8d/_RTnfty10000005?pc=http%3A%2F%2Ftravel.rakuten.co.jp%2F&m=http%3A%2F%2Ftravel.rakuten.co.jp%2F&link_type=text&ut=eyJwYWdlIjoidXJsIiwidHlwZSI6InRlc3QiLCJjb2wiOjB9","cnt":"rat","icn":"cms_image/niftop/dockFavorite/170607217579/rt72x54.png"},"2ndmail":{"str":"セカンドメール","url":"https://mail.nifty.com/mailer/2nd/","cnt":"2nd","icn":"cms_image/niftop/dockFavorite/130819142411/bg_dock_2ndmail.png"},"security":{"str":"セキュリティ","url":"https://security.nifty.com/","cnt":"sec","icn":"cms_image/niftop/dockFavorite/130819142410/bg_dock_security_130820.png"},"cocolog":{"str":"ブログ","url":"https://www.cocolog-nifty.com/","cnt":"bl","icn":"cms_image/niftop/dockFavorite/130819142409/bg_cocolog.png"},"weather":{"str":"天気予報","url":"https://weather.nifty.com/","cnt":"wt","icn":"cms_image/niftop/dockFavorite/130819142405/bg_dock_weather.png","did":"wDock"},"transit":{"str":"路線情報","url":"https://rescuenow.nifty.com/cs/news-railway/list/1.htm","cnt":"tr","icn":"cms_image/niftop/dockFavorite/130819142404/bg_dock_transit.png","did":"tDock"},"uranai":{"str":"今日の運勢","url":"http://uranai.nifty.com/app/f12seiza/","cnt":"fr","icn":"","did":"uDock"},"youtube":{"str":"YouTube","url":"https://www.youtube.com/","cnt":"yt","icn":"cms_image/niftop/dockFavorite/130819142402/bg_dock_youtube_131128.png"},"nicovideo":{"str":"niconico","url":"http://www.nicovideo.jp/","cnt":"nc","icn":"cms_image/niftop/dockFavorite/130819142401/bg_dock_nicovideo.png"},"wikipedia":{"str":"ウィキペディア","url":"https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8","cnt":"wk","icn":"cms_image/niftop/dockFavorite/130819142400/bg_dock_wikipedia_120820.png"},"bhatena":{"str":"はてブ","url":"http://b.hatena.ne.jp/","cnt":"bh","icn":"cms_image/niftop/dockFavorite/130819142399/bg_dock_bhatena.png"},"facebook":{"str":"Facebook","url":"https://www.facebook.com/","cnt":"fb","icn":"cms_image/niftop/dockFavorite/130819142397/bg_dock_facebook_120820.png"},"twitter":{"str":"Twitter","url":"https://twitter.com/","cnt":"tw","icn":"cms_image/niftop/dockFavorite/130819142396/bg_dock_twitter_120820.png"},"mixi":{"str":"mixi","url":"https://mixi.jp/","cnt":"mx","icn":"cms_image/niftop/dockFavorite/130819142395/bg_dock_mixi.png"},"ayahoo":{"str":"ヤフオク!","url":"http://auctions.yahoo.co.jp/","cnt":"ay","icn":"cms_image/niftop/dockFavorite/130819142391/bg_dock_ayahoo_170313.png"},"cookpad":{"str":"クックパッド","url":"https://cookpad.com/?target= _blank","cnt":"cp","icn":"cms_image/niftop/dockFavorite/130819142390/bg_dock_cookpad.png"}};
+};
+var dcOdrDef = function(){
+	var dOrder = "weather*uranai*cecile*amazon*rakuten*trakuten*kids*youtube*nojima*cocolog*syahoo*2ndmail*security*facebook*cookpad*ayahoo*nicovideo*twitter*wikipedia*transit*bhatena*mixi";
+	return dOrder;
+};
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var getUData=function(code){
+var UArray=new Array();
+UArray["sasori"]=new Array("さそり座","sasori.htm","99","自分から動かなくても、周囲が気づいてフォローしてくれます。","96","88","71","1");
+UArray["otome"]=new Array("おとめ座","otome.htm","98","チームワークが大切。イベントや旅行を計画するのもいいかも。","88","72","48","2");
+UArray["yagi"]=new Array("やぎ座","yagi.htm","94","お誘いが多くて多忙になるけれど、かなり充実した日になります。","66","71","63","3");
+UArray["oushi"]=new Array("おうし座","oushi.htm","93","思い通りに事が運ぶので、良いと思ったことはすぐ実行してみて。","77","87","95","4");
+UArray["uo"]=new Array("うお座","uo.htm","90","チームリーダーになるとき。仕切り役や世話役として活躍して。","86","90","78","5");
+UArray["kani"]=new Array("かに座","kani.htm","88","知的好奇心があふれ、新たなことを求める気持ちがふくらみます。","85","46","51","6");
+UArray["tenbin"]=new Array("てんびん座","tenbin.htm","77","今しかできないことにチャレンジして。良い思い出ができるはず。","65","53","69","7");
+UArray["shishi"]=new Array("しし座","shishi.htm","67","誘われたらＯＫして参加しましょう。気の合う人に出会えます。","71","49","74","8");
+UArray["ohitsuji"]=new Array("おひつじ座","ohitsuji.htm","65","遊びと仕事をバランスよく充実させて、メリハリを作りましょう。","41","56","41","9");
+UArray["mizugame"]=new Array("みずがめ座","mizugame.htm","61","知り合いはたくさんいても、さほど親しくなれず不安になりそう。","58","48","58","10");
+UArray["ite"]=new Array("いて座","ite.htm","60","注目を浴びて人気者になりそう。何かと目立ち得をするでしょう。","55","69","52","11");
+UArray["hutago"]=new Array("ふたご座","hutago.htm","58","身近な人との交流も大切なこと。まずは家族のことを考えてみて。","59","62","55","12");
+return UArray[code] || "";
+}
+var getWTyphStr=function(){
+	var wTmp="";
+	return wTmp;
+};
+var getWTyphTxt=function(){
+	var wTmp="";
+	return wTmp;
+};
+var getUTopics=function(){
+	var uTmp="";
+	uTmp+='<li><a href="http://uranai.nifty.com/" onmousedown="return countlink(\'www\',\'topdock_fr_04\',this.href);">無料占い1,000件以上 本格占いサイト「占い@nifty」</a></li>';
+	uTmp='<ul class="pickup pddT10 dot">' + uTmp + '</ul>';
+	return uTmp;
+}
+var uDt=function(){
+	return "2021年8月9日（月）";
+};
+var cUDt=function(){
+	return "20210809";
+};
+var getWDate = function(){
+	return "2021/08/09 21:00:00";
+};
+var tDt=function(){
+	return "8月9日 21：10";
+};
+var getTTopics=function(){
+	var tTmp = "";
+	return tTmp;
+};
+dcInit();
+//]]>
+</script>
+<div id="chSize">
+	<a href="javascript:void(0);" onclick="clickChSizeIcon();">
+		<span class="chSizeIcon"></span>
+	</a>
+	<div class="chSizeMenu">
+		<div class="borderLayout">
+			<div class="chSizeInr">
+				<ul>
+					<li><a href="javascript:void(0);" onclick="clickChSizeLink('2');" class="chSizeLink scsz2">大サイズ</a></li>
+					<li><a href="javascript:void(0);" onclick="clickChSizeLink('1');" class="chSizeLink scsz1">中サイズ</a></li>
+					<li><a href="javascript:void(0);" onclick="clickChSizeLink('0');" class="chSizeLink scsz0">小サイズ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div id="container">
+
+<hr />
+
+<!--contents -->
+<div id="contents" class="pkg pddB20">
+
+	<div id="navi">
+		<div id="menuB"></div>
+		<div id="rt_isp_niftop_left" style="display:none"></div>
+<script type="text/javascript">
+//<![CDATA[
+var favDf=function(){
+	return "news*weather*game*uranai*myhome*job*onsen*entame*shopping*nojima";
+};
+var getFav=function(){
+	return {"cate":["メディア・情報源","企業・マネー","インターネット・PC","エンターテインメント","ライフスタイル・生活","コミュニティ","外部サービス"],"0":{"1":{"key":"ふるさと納税","url":"https://lifemedia.jp/service/asearch/allcampaign/160?from=special","lid":"furusato","iid":"fav","nw":"0"},"2":{"key":"ニュース","url":"https://news.nifty.com/","lid":"news","iid":"fav","nw":"0"},"3":{"key":"天気","url":"https://weather.nifty.com/","lid":"weather","iid":"fav","nw":"0"},"4":{"key":"地震","url":"https://weather.nifty.com/quake.htm","lid":"rescuenow","iid":"fav","nw":"0"},"5":{"key":"求人","url":"https://job.nifty.com/","lid":"job","iid":"fav","nw":"0"},"6":{"key":"転職","url":"https://tenshoku.nifty.com/","lid":"jobcareers","iid":"fav","nw":"0"},"7":{"key":"派遣","url":"https://part-haken.nifty.com/","lid":"jobhaken","iid":"fav","nw":"0"},"8":{"key":"アルバイト","url":"https://arbeit.nifty.com/","lid":"jobarbeit","iid":"fav","nw":"0"}},"1":{"1":{"key":"法人向けサービス","url":"http://www.nifty.com/biz/","lid":"biz","iid":"fav","nw":"0"},"2":{"key":"企業情報","url":"https://business.nifty.com/","lid":"business","iid":"fav","nw":"0"},"3":{"key":"保険アドバイザー","url":"https://hoken.nifty.com/","lid":"hoken","iid":"fav","nw":"0"},"4":{"key":"NIFTY Card","url":"http://card.nifty.com/","lid":"card","iid":"fav","nw":"0"}},"2":{"1":{"key":"NifMo（スマホ・SIM）","url":"http://nifmo.nifty.com/","lid":"nifmo","iid":"fav","nw":"0"},"2":{"key":"プロバイダーサービス","url":"http://setsuzoku.nifty.com/","lid":"setsuzoku","iid":"fav","nw":"0"},"3":{"key":"メール","url":"https://mail.nifty.com/info/","lid":"mail","iid":"fav","nw":"0"},"4":{"key":"セキュリティ","url":"http://www.nifty.com/security/","lid":"security","iid":"fav","nw":"0"},"5":{"key":"ウイルス対策","url":"http://www.nifty.com/sec24/","lid":"sec24","iid":"fav","nw":"0"},"6":{"key":"有害サイトブロック","url":"http://security.nifty.com/ifilter/","lid":"securityifilter","iid":"fav","nw":"0"},"7":{"key":"ホームページ","url":"http://homepage.nifty.com/","lid":"homepage","iid":"fav","nw":"0"}},"3":{"1":{"key":"ゲーム","url":"https://game.nifty.com/","lid":"game","iid":"fav","nw":"0"},"2":{"key":"占い","url":"https://uranai.nifty.com/","lid":"uranai","iid":"fav","nw":"0"},"3":{"key":"グラビア","url":"http://sexy.nifty.com/","lid":"sexy","iid":"fav","nw":"0"}},"4":{"1":{"key":"温泉","url":"https://onsen.nifty.com/","lid":"onsen","iid":"fav","nw":"0"},"2":{"key":"キッズ","url":"https://kids.nifty.com/","lid":"kids","iid":"fav","nw":"0"}},"5":{"1":{"key":"ブログ","url":"https://www.cocolog-nifty.com/","lid":"cocolog","iid":"fav","nw":"0"},"2":{"key":"何でも調査団","url":"https://chosa.nifty.com/","lid":"chosa","iid":"fav","nw":"0"}},"6":{"1":{"key":"Twitter","url":"https://twitter.com/","lid":"twitter","iid":"fav","nw":"0"},"2":{"key":"Facebook","url":"https://www.facebook.com/","lid":"facebook","iid":"fav","nw":"0"},"3":{"key":"mixi","url":"https://mixi.jp/","lid":"mixi","iid":"fav","nw":"0"},"4":{"key":"YouTube","url":"https://www.youtube.com/","lid":"youtube","iid":"fav","nw":"0"},"5":{"key":"ニコニコ動画","url":"http://www.nicovideo.jp/","lid":"nicovideo","iid":"fav","nw":"0"},"6":{"key":"クックパッド","url":"https://cookpad.com/","lid":"cookpad","iid":"fav","nw":"0"}}};
+};
+var favPri=function(){
+	var fTmp="";
+	return fTmp;
+};
+leftMInit();
+//]]>
+</script>
+
+		<div id="svcListBtn"><a class="text" href="//www.nifty.com/category/" onmousedown="return countlink('www','topnavi_cat',this.href);">サービス一覧</a></div>
+		<div id="leftMenuBnr">
+		<div class="menuBnr"><a href="https://www.nifty.com/anshin/?utm_source=nifty&utm_medium=TOP&utm_campaign=top_leftbanner" target="_blank"><img src="images/bnr_nifty_left_menu_anshin.png" alt="安心・安全のニフティ" /></a></div>
+		<div class="menuBnr"><a href="https://news.nifty.com/info/detail/210630488619/?utm_source=niftytop&utm_medium=leftsideparts_banner&utm_campaign=comment_release" target="_blank"><img src="images/news_comment_bnr.png" alt="@niftyニュース コメント機能" /></a></div>
+		</div>
+
+		<div id="nazoArea" style="display:none"></div>        <div id="niftop_shop_recommend_2"></div>
+
+	</div>
+
+	<hr />
+
+	<!--mainContents -->
+	<div id="mainContents">
+
+
+
+
+
+		<div class="hslice" id="newsArea">
+		<p class="entry-title dispNone">@nifty：ニュース・話題</p>
+		<!--News -->
+		<ul id="News-navi" class="pkg">
+			<li id="News01" class="focus"><a href="https://news.nifty.com/topics/" onmousedown="return countlink('www','topnews_news_tab_02',this.href);" onclick="return tabClick(1);"><span>注目</span></a></li>
+			<li id="News02"><a href="https://news.nifty.com/domestic/" onmousedown="return countlink('www','topnews_dome_tab_01',this.href);" onclick="return tabClick(6);"><span>国内</span></a></li>
+			<li id="News03"><a href="https://news.nifty.com/world/" onmousedown="return countlink('www','topnews_worl_tab_01',this.href);" onclick="return tabClick(5);"><span>海外</span></a></li>
+			<li id="News04"><a href="https://news.nifty.com/economy/" onmousedown="return countlink('www','topnews_econ_tab_01',this.href);" onclick="return tabClick(2);"><span>経済</span></a></li>
+			<li id="News05"><a href="https://news.nifty.com/entame/" onmousedown="return countlink('www','topnews_enta_tab_01',this.href);" onclick="return tabClick(3);"><span>エンタメ</span></a></li>
+			<li id="News06"><a href="https://news.nifty.com/sports/" onmousedown="return countlink('www','topnews_spor_tab_01',this.href);" onclick="return tabClick(4);"><span>スポーツ</span></a></li>
+			<li id="News07"><a href="https://news.nifty.com/technology/" onmousedown="return countlink('www','topnews_techitem_tab_01',this.href);" onclick="return tabClick(7);"><span>IT・ネタ</span></a></li>
+			<li id="News08"><a href="javascript:void(0);" onmousedown="return countlink('www','topnews_thema_tab_01',this.href);" onclick="return tabClick(8);"><span>新型肺炎</span></a></li>
+		</ul>
+		<!--/.News-navi -->
+
+		<div class="box" id="News">
+			<div id="newsArea01" class="pkg pddT10">
+				<div class="floatL news-content entry-content">
+
+					<!--AttNews -->
+					<ul class="dot pddL5 pddT0" id="AttNews">
+<script type="text/javascript">
+//<![CDATA[
+var nTmp='';
+		nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496651/" onmousedown="return countlink(\'www\',\'topnews_news_01\',this.href);">台風9号 岡山の海で船長死亡<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496611/" onmousedown="return countlink(\'www\',\'topnews_news_02\',this.href);">2回接種の入所者28人が感染</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496641/" onmousedown="return countlink(\'www\',\'topnews_news_03\',this.href);">バッハ会長が銀座を訪れる<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/traffic/210809496649/" onmousedown="return countlink(\'www\',\'topnews_news_04\',this.href);">ANAの超大型機が"限定復活"<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496648/" onmousedown="return countlink(\'www\',\'topnews_news_05\',this.href);">サムスントップ仮釈放へ／韓<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jcast/210809496628/" onmousedown="return countlink(\'www\',\'topnews_news_06\',this.href);">五輪閉会式中継で"韓外し"か</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12290/210809496647/" onmousedown="return countlink(\'www\',\'topnews_news_07\',this.href);">大谷にまた外野フライ飛ばず<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496619/" onmousedown="return countlink(\'www\',\'topnews_news_08\',this.href);">堀江氏メダル獲得要因を綴る</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496610/" onmousedown="return countlink(\'www\',\'topnews_news_09\',this.href);">神田愛花アナ過去の求婚告白</a></li>';
+$("#newsArea01 #AttNews").append(nTmp);
+//]]>
+</script>
+					</ul>
+
+				</div>
+				<!--/.floatL -->
+
+				<div class="floatL more-content">
+					<dl id="PhotoNews" class="txtaC box4">
+						<dt class="pddT5"><a href="https://news.nifty.com/topics/mainichi/210809496611/" onclick="saveCookie('phCtlgId','210809496611',200);" onmousedown="return countlink('www','topnews_news_photo',this.href);"><img src="/cms_image/niftop/topicImage2/210809496611/thumb-12159-1189009-domestic.jpg" alt="ワクチン2回接種 入所者感染(毎日新聞)"  title="ワクチン2回接種 入所者感染(毎日新聞)"   /></a></dt>
+						<dd class="fontS"><p><a href="https://news.nifty.com/topics/mainichi/210809496611/" onclick="saveCookie('phCtlgId','210809496611',200);" onmousedown="return countlink('www','topnews_news_photo',this.href);">ワクチン2回接種 入所者感染(毎日新聞)</a></p></dd>
+					</dl>
+<div class="recommendArea Lpickup"><h2>おすすめの記事</h2><ul class="dot pddL5 pddT0">
+<li><a href="https://news.nifty.com/topics/12311/210809496646/" onmousedown="return countlink(\'www\',\'topnews_news_01\',this.href);">坂口杏里さんの"心配"に批判<span class="new">NEW</span></a></li>
+<li><a href="https://news.nifty.com/topics/12290/210809496640/" onmousedown="return countlink(\'www\',\'topnews_news_02\',this.href);">閉会式「追悼ダンス」の想い<span class="new">NEW</span></a></li>
+<li><a href="https://news.nifty.com/topics/jcast/210809496638/" onmousedown="return countlink(\'www\',\'topnews_news_03\',this.href);">閉会式 評価に「逆転現象」</a></li>
+<li><a href="https://news.nifty.com/topics/12251/210809496637/" onmousedown="return countlink(\'www\',\'topnews_news_04\',this.href);">夏場の「冷え」を防ぐ方法</a></li>
+</ul></div>
+					<p class="floatR"><a class="arrR" href="https://news.nifty.com/topics/daily/today/?topnews_readmore=topics">もっと見る</a></p>
+				</div>
+				<!--/.floatL -->
+			</div>
+			<div id="newsArea02" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea03" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea04" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea05" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea06" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea07" class="pkg pddT10" style="display:none;"></div>
+			<div id="newsArea08" class="pkg pddT10" style="display:none;"></div>
+		</div>
+		<!--/#News -->
+		<div id="nAdArea" style="display:none;">
+<!-- /48012543/NIFTY_PC/TOP/TEXT -->
+<div id='div-gpt-ad-1553586055982-0'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1553586055982-0'); });
+</script>
+</div>
+		</div>
+		</div>
+		<!--/.hslice#newsArea -->
+<script type="text/javascript">
+//<![CDATA[
+var writeNew=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content entry-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496651/" onmousedown="return countlink(\'www\',\'topnews_news_01\',this.href);">台風9号 岡山の海で船長死亡<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496611/" onmousedown="return countlink(\'www\',\'topnews_news_02\',this.href);">2回接種の入所者28人が感染</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496641/" onmousedown="return countlink(\'www\',\'topnews_news_03\',this.href);">バッハ会長が銀座を訪れる<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/traffic/210809496649/" onmousedown="return countlink(\'www\',\'topnews_news_04\',this.href);">ANAの超大型機が"限定復活"<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496648/" onmousedown="return countlink(\'www\',\'topnews_news_05\',this.href);">サムスントップ仮釈放へ／韓<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jcast/210809496628/" onmousedown="return countlink(\'www\',\'topnews_news_06\',this.href);">五輪閉会式中継で"韓外し"か</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12290/210809496647/" onmousedown="return countlink(\'www\',\'topnews_news_07\',this.href);">大谷にまた外野フライ飛ばず<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496619/" onmousedown="return countlink(\'www\',\'topnews_news_08\',this.href);">堀江氏メダル獲得要因を綴る</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496610/" onmousedown="return countlink(\'www\',\'topnews_news_09\',this.href);">神田愛花アナ過去の求婚告白</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl id="PhotoNews" class="txtaC box4">';
+nTmp+='</dl>';
+
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2><ul class="dot pddL5 pddT0">';
+
+
+		nTmp+='<li><a href="https://news.nifty.com/topics/12311/210809496646/" onmousedown="return countlink(\'www\',\'topnews_news_01\',this.href);">坂口杏里さんの"心配"に批判<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12290/210809496640/" onmousedown="return countlink(\'www\',\'topnews_news_02\',this.href);">閉会式「追悼ダンス」の想い<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jcast/210809496638/" onmousedown="return countlink(\'www\',\'topnews_news_03\',this.href);">閉会式 評価に「逆転現象」</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12251/210809496637/" onmousedown="return countlink(\'www\',\'topnews_news_04\',this.href);">夏場の「冷え」を防ぐ方法</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/topics/daily/today/?topnews_readmore=topics">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea01").html(nTmp);
+}
+var writePh=function(fFlg){
+var PhData=new Array();
+PhData[0]=new Array();
+PhData[0][0]="210809496611";
+PhData[0][1]="ワクチン2回接種 入所者感染(毎日新聞)";
+PhData[0][2]="https://news.nifty.com/topics/mainichi/210809496611/";
+PhData[0][3]='<img src="/cms_image/niftop/topicImage2/210809496611/thumb-12159-1189009-domestic.jpg" alt="ワクチン2回接種 入所者感染(毎日新聞)"  title="ワクチン2回接種 入所者感染(毎日新聞)"   />';
+var ctlgId="";
+ctlgId=loadCookie("phCtlgId");
+var phHtml="";
+for(var i=0;i<0;i++){
+	if(ctlgId === PhData[i][0]){phHtml=phOutput(PhData[i+1]);break;}
+}
+if(fFlg!==1&&phHtml===""){phHtml=phOutput(PhData[0]);}
+if(phHtml!==""){$("#PhotoNews").html(phHtml);}
+}
+var writeEco=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/tbs/210809496633/" onmousedown="return countlink(\'www\',\'topnews_econ_01\',this.href);">「帰省控え」呼びかけを要請</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12293/210809496630/" onmousedown="return countlink(\'www\',\'topnews_econ_02\',this.href);">ロッテ板ガム復刻発売に反響</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/toyo/210809496618/" onmousedown="return countlink(\'www\',\'topnews_econ_03\',this.href);">離職者少ない大企業TOP100</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12277/210809496598/" onmousedown="return countlink(\'www\',\'topnews_econ_04\',this.href);">伊藤園のネーミングに称賛</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12318/210809496564/" onmousedown="return countlink(\'www\',\'topnews_econ_05\',this.href);">社長が高齢ほど業績悪化鮮明</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/po/210809496547/" onmousedown="return countlink(\'www\',\'topnews_econ_06\',this.href);">数学への自信で1千万円優位?</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/cc/210809496540/" onmousedown="return countlink(\'www\',\'topnews_econ_07\',this.href);">恋人にガンプラ捨てられ絶望</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496536/" onmousedown="return countlink(\'www\',\'topnews_econ_08\',this.href);">五輪スポンサーの明暗分れる</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/toyo/210809496526/" onmousedown="return countlink(\'www\',\'topnews_econ_09\',this.href);">年金繰り下げの損得を検証</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/tbs/210809496633/" onmousedown="return countlink(\'www\',\'topnews_econ_photo\',this.href);"><img src="/cms_image/niftop/economyPhoto/12198-1190327/thumb-12198-1190327-economy.jpg" alt="「帰省控え」呼びかけを要請(TBS)"  title="「帰省控え」呼びかけを要請(TBS)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/tbs/210809496633/" onmousedown="return countlink(\'www\',\'topnews_econ_photo\',this.href);">「帰省控え」呼びかけを要請(TBS)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2>';
+nTmp+='</div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/economy/?topnews_readmore=economy">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea02").html(nTmp);
+}
+var writeEnt=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/12311/210809496646/" onmousedown="return countlink(\'www\',\'topnews_enta_01\',this.href);">坂口杏里さんの"心配"に批判<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/oricon/210809496627/" onmousedown="return countlink(\'www\',\'topnews_enta_02\',this.href);">下田麻美が第1子男児を出産</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12265/210809496623/" onmousedown="return countlink(\'www\',\'topnews_enta_03\',this.href);">藤井二冠が最年少三冠に王手</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496620/" onmousedown="return countlink(\'www\',\'topnews_enta_04\',this.href);">梅津瑞樹コロナ感染で休演</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496619/" onmousedown="return countlink(\'www\',\'topnews_enta_05\',this.href);">堀江氏メダル獲得要因を綴る</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/sirabee/210809496617/" onmousedown="return countlink(\'www\',\'topnews_enta_06\',this.href);">尾木氏が甲子園開催に苦言</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/sirabee/210809496614/" onmousedown="return countlink(\'www\',\'topnews_enta_07\',this.href);">東京で新たに2884人感染確認</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496610/" onmousedown="return countlink(\'www\',\'topnews_enta_08\',this.href);">神田愛花アナ過去の求婚告白</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/nikkansp/210809496609/" onmousedown="return countlink(\'www\',\'topnews_enta_09\',this.href);">桑子アナ間違え無音で再放送</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/12311/210809496646/" onmousedown="return countlink(\'www\',\'topnews_enta_photo\',this.href);"><img src="/cms_image/niftop/entamePhoto/12311-1190015/thumb-12311-1190015-entame.jpg" alt="坂口杏里さんの&quot;心配&quot;に批判(週刊実話Web)"  title="坂口杏里さんの&quot;心配&quot;に批判(週刊実話Web)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/12311/210809496646/" onmousedown="return countlink(\'www\',\'topnews_enta_photo\',this.href);">坂口杏里さんの&quot;心配&quot;に批判(週刊実話Web)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2>';
+nTmp+='</div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/entame/?topnews_readmore=entame">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea03").html(nTmp);
+}
+var writeSpo=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/12290/210809496647/" onmousedown="return countlink(\'www\',\'topnews_spor_01\',this.href);">大谷にまた外野フライ飛ばず<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12290/210809496640/" onmousedown="return countlink(\'www\',\'topnews_spor_02\',this.href);">閉会式「追悼ダンス」の想い<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jcast/210809496628/" onmousedown="return countlink(\'www\',\'topnews_spor_03\',this.href);">五輪閉会式中継で"韓外し"か</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496615/" onmousedown="return countlink(\'www\',\'topnews_spor_04\',this.href);">中日・木下投手を古巣が追悼</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12289/210809496599/" onmousedown="return countlink(\'www\',\'topnews_spor_05\',this.href);">J1神戸ボージャン獲得を発表</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496580/" onmousedown="return countlink(\'www\',\'topnews_spor_06\',this.href);">閉会式つば九郎出演"じたい"</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496574/" onmousedown="return countlink(\'www\',\'topnews_spor_07\',this.href);">五輪関係者 新たに28人陽性</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496556/" onmousedown="return countlink(\'www\',\'topnews_spor_08\',this.href);">松山英樹 猛追も2位に終わる</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496553/" onmousedown="return countlink(\'www\',\'topnews_spor_09\',this.href);">前田健太 7月4日以来の5勝目</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/12290/210809496647/" onmousedown="return countlink(\'www\',\'topnews_spor_photo\',this.href);"><img src="/cms_image/niftop/sportsPhoto/12290-1190485/thumb-12290-1190485-sports.jpg" alt="大谷にまた外野フライ飛ばず(THE DIGEST)"  title="大谷にまた外野フライ飛ばず(THE DIGEST)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/12290/210809496647/" onmousedown="return countlink(\'www\',\'topnews_spor_photo\',this.href);">大谷にまた外野フライ飛ばず(THE DIGEST)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2>';
+nTmp+='</div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/sports/?topnews_readmore=sports">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea04").html(nTmp);
+}
+var writeWor=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496648/" onmousedown="return countlink(\'www\',\'topnews_worl_01\',this.href);">サムスントップ仮釈放へ／韓<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496624/" onmousedown="return countlink(\'www\',\'topnews_worl_02\',this.href);">閉会式で米選手ら葉巻吸う?</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/rcdc/210809496596/" onmousedown="return countlink(\'www\',\'topnews_worl_03\',this.href);">若者は"日本を追い越す"／韓</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496494/" onmousedown="return countlink(\'www\',\'topnews_worl_04\',this.href);">タリバン アフガン3州都制圧</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/rcdc/210808496443/" onmousedown="return countlink(\'www\',\'topnews_worl_05\',this.href);">日本ASの水着に中国人が驚き</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/gna/210808496416/" onmousedown="return countlink(\'www\',\'topnews_worl_06\',this.href);">タイ19983人感染 過去最多</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/wowkorea/210808496401/" onmousedown="return countlink(\'www\',\'topnews_worl_07\',this.href);">NASA「火星環境で生活」募集</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12240/210808496384/" onmousedown="return countlink(\'www\',\'topnews_worl_08\',this.href);">北で権力中枢に高級米を配給</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/wowkorea/210808496339/" onmousedown="return countlink(\'www\',\'topnews_worl_09\',this.href);">韓国選手の無気力な姿に批判</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/jiji/210809496648/" onmousedown="return countlink(\'www\',\'topnews_worl_photo\',this.href);"><img src="/cms_image/niftop/worldPhoto/12145-1190616/thumb-12145-1190616-world.jpg" alt="サムスントップ仮釈放へ／韓(時事通信)"  title="サムスントップ仮釈放へ／韓(時事通信)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/jiji/210809496648/" onmousedown="return countlink(\'www\',\'topnews_worl_photo\',this.href);">サムスントップ仮釈放へ／韓(時事通信)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2>';
+nTmp+='</div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/world/?topnews_readmore=world">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea05").html(nTmp);
+}
+var writeDom=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496643/" onmousedown="return countlink(\'www\',\'topnews_dome_01\',this.href);">五輪関係車両の事故は111件<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/tbs/210809496642/" onmousedown="return countlink(\'www\',\'topnews_dome_02\',this.href);">琵琶湖で水難事故 男性重体<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496641/" onmousedown="return countlink(\'www\',\'topnews_dome_03\',this.href);">バッハ会長が銀座を訪れる<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jiji/210809496634/" onmousedown="return countlink(\'www\',\'topnews_dome_04\',this.href);">菅首相 長崎原爆忌に1分遅刻</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496631/" onmousedown="return countlink(\'www\',\'topnews_dome_05\',this.href);">神奈川で最多の2166人が感染</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496629/" onmousedown="return countlink(\'www\',\'topnews_dome_06\',this.href);">麻生財務相の自宅待機を解除</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496622/" onmousedown="return countlink(\'www\',\'topnews_dome_07\',this.href);">大阪で新たに995人感染確認</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/tbs/210809496616/" onmousedown="return countlink(\'www\',\'topnews_dome_08\',this.href);">調布で車に倒木 親子2人搬送</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496611/" onmousedown="return countlink(\'www\',\'topnews_dome_09\',this.href);">2回接種の入所者28人が感染</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/tbs/210809496642/" onmousedown="return countlink(\'www\',\'topnews_dome_photo\',this.href);"><img src="/cms_image/niftop/domesticPhoto/12198-1190613/thumb-12198-1190613-domestic.jpg" alt="琵琶湖で水難事故 男性重体(TBS)"  title="琵琶湖で水難事故 男性重体(TBS)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/tbs/210809496642/" onmousedown="return countlink(\'www\',\'topnews_dome_photo\',this.href);">琵琶湖で水難事故 男性重体(TBS)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea Lpickup"><h2>おすすめの記事</h2>';
+nTmp+='</div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://news.nifty.com/domestic/?topnews_readmore=domestic">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea06").html(nTmp);
+}
+var writeTechItem=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content"><ul class="dot pddL5 pddT0" id="AttNews"><b style="margin-left:10px;">IT</b>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/jcast/210809496638/" onmousedown="return countlink(\'www\',\'topnews_tech_01\',this.href);">閉会式 評価に「逆転現象」</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210807496282/" onmousedown="return countlink(\'www\',\'topnews_tech_02\',this.href);">専門家"ミドリガメ規制必要"</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/zaikei/210807496190/" onmousedown="return countlink(\'www\',\'topnews_tech_03\',this.href);">乳酸菌の摂取でストレス低減</a></li>';
+nTmp+='</ul><ul class="dot pddL5 pddT0" id="AttNews" style="margin-top:20px;"><b style="margin-left:10px;">ネタ</b>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/traffic/210809496649/" onmousedown="return countlink(\'www\',\'topnews_item_01\',this.href);">ANAの超大型機が"限定復活"<span class="new">NEW</span></a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12277/210809496639/" onmousedown="return countlink(\'www\',\'topnews_item_02\',this.href);">杉本彩が詐欺的商法の"被害"</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12251/210809496637/" onmousedown="return countlink(\'www\',\'topnews_item_03\',this.href);">夏場の「冷え」を防ぐ方法</a></li>';
+nTmp+='</ul></div>';
+nTmp+='<div class="floatL more-content">';
+nTmp+='<dl class="txtaC box4"><dt class="pddT5"><a href="https://news.nifty.com/topics/jcast/210809496638/" onmousedown="return countlink(\'www\',\'topnews_tech_photo\',this.href);"><img src="/cms_image/niftop/technologyPhoto/12144-1190294/thumb-12144-1190294-technology.jpg" alt="閉会式 評価に「逆転現象」(J-CASTニュース)"  title="閉会式 評価に「逆転現象」(J-CASTニュース)"   /></a></dt><dd class="fontS lineh11"><p><a href="https://news.nifty.com/topics/jcast/210809496638/" onmousedown="return countlink(\'www\',\'topnews_tech_photo\',this.href);">閉会式 評価に「逆転現象」(J-CASTニュース)</a></p></dd></dl>';
+nTmp+='<div class="recommendArea koneta"><div class="areaBox"><div class="areaBoxInner pkg"><dl class="dot"><dt class="ttl"><a href="https://koneta.nifty.com/?utm_source=nifty&utm_medium=niftytop&utm_campaign=niftytop_news_neta">IT小ネタ帳</a></dt>';
+nTmp+='<dd><a href="https://koneta.nifty.com/koneta_detail/1141008012091_1.htm?utm_source=nifty&utm_medium=niftytop&utm_campaign=niftytop_news_neta">引っ越しで選ぶ光回線</a></dd>';
+nTmp+='<dd><a href="https://koneta.nifty.com/koneta_detail/1141008012047_1.htm?utm_source=nifty&utm_medium=niftytop&utm_campaign=niftytop_news_neta">光コラボのメリットを解説</a></dd>';
+nTmp+='<dd><a href="https://koneta.nifty.com/koneta_detail/1141008013488_1.htm?utm_source=nifty&utm_medium=niftytop&utm_campaign=niftytop_news_neta">ポイ活で通信費節約方法を解…</a></dd>';
+nTmp+='</dl></div></div></div>';
+nTmp+='<p class="floatR"><a class="arrR" href="https://koneta.nifty.com/?utm_source=nifty&utm_medium=niftytop&utm_campaign=niftytop_news_neta">もっと見る</a></p>';
+nTmp+='</div>';
+$("#newsArea07").html(nTmp);
+}
+var writeThema=function(){
+var nTmp='';
+nTmp+='<div class="floatL news-content thema"><ul class="dot pddL5 pddT0" id="AttNews">';
+		nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496631/" onmousedown="return countlink(\'www\',\'topnews_thema_01\',this.href);">神奈川の新規感染、最多更新の２１６６人…横浜は１１３９人…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496629/" onmousedown="return countlink(\'www\',\'topnews_thema_02\',this.href);">麻生財務相の自宅待機を解除…濃厚接触者に該当せず - 読…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496622/" onmousedown="return countlink(\'www\',\'topnews_thema_03\',this.href);">大阪府の新規感染９９５人、１週間前より５４７人増加 - …</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/12278/210809496620/" onmousedown="return countlink(\'www\',\'topnews_thema_04\',this.href);">梅津瑞樹が新型コロナ感染　朗読劇「逃げ恥」初日休演 - …</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/sirabee/210809496614/" onmousedown="return countlink(\'www\',\'topnews_thema_05\',this.href);">東京都、9日のコロナ新規感染者は2884人　前週比689…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/mainichi/210809496611/" onmousedown="return countlink(\'www\',\'topnews_thema_06\',this.href);">ワクチン2回接種の28人感染　栃木の高齢者施設でクラスタ…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/oricon/210809496607/" onmousedown="return countlink(\'www\',\'topnews_thema_07\',this.href);">入江甚儀が新型コロナ感染　所属事務所が報告「7日夜に発熱…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/tbs/210809496601/" onmousedown="return countlink(\'www\',\'topnews_thema_08\',this.href);">ガーナ選手団の１人がコロナ感染 東京パラリンピック・事前…</a></li>';
+	nTmp+='<li><a href="https://news.nifty.com/topics/yomiuri/210809496597/" onmousedown="return countlink(\'www\',\'topnews_thema_09\',this.href);">首相「ワクチン接種１億回超えた」…「素晴らしい大会になっ…</a></li>';
+nTmp+='</ul></div>';
+nTmp+='</div>';
+$("#newsArea08").html(nTmp);
+}
+$("#News").after('<div id="tmpRecommendArea" style="display:none"><div id="logly-lift-4276955"></div></div>');
+loadNTab();
+getloglytag();//]]>
+</script>
+
+
+		<div class="ad_bnr468">
+		</div>
+
+
+
+		<div id="recommendSvc">
+			<h2 class="hdr">＠niftyのおすすめ</h2>
+			<div class="unit-rec1">
+				<div class="phTxt">
+
+					<div class="ph" style="overflow:hidden;text-align:center;"><a href="https://myhome.nifty.com/hikkoshi/column/article-210325316452/?utm_source=nifty&amp;utm_medium=nifty_top&amp;utm_campaign=henshu-waku&amp;utm_content=txtlink1" onmousedown="return countlink('www','topedttl',this.href);"><img src="/cms_image/niftop/promo-edit/210714320943/pc0809.jpg" height="90" width="120" alt="そもそも印鑑登録って何？引越しの具体的な手続きの流れを紹介"  title="そもそも印鑑登録って何？引越しの具体的な手続きの流れを紹介"   /></a></div>
+					<div class="txt">
+						<p class="ttl"><a href="https://myhome.nifty.com/hikkoshi/column/article-210325316452/?utm_source=nifty&amp;utm_medium=nifty_top&amp;utm_campaign=henshu-waku&amp;utm_content=txtlink1" onmousedown="return countlink('www','topedttl',this.href);">そもそも印鑑登録って何？<br />引越しの具体的な手続きの流れを紹介</a></p>
+						<p>引越しで必要な印鑑登録の住所変更手続き｜印鑑の抹消・登録方法を詳しく解説</p>
+					</div>
+				</div>
+			</div>
+			<div class="unit-rec1">
+				<div class="phTxt">
+
+					<div class="ph" style="overflow:hidden;text-align:center;"><a href="https://koneta.nifty.com/koneta_detail/141009000015_1.htm?utm_source=nifty&amp;utm_medium=TOP&amp;utm_campaign=top_editing_koneta" onmousedown="return countlink('www','topedttl',this.href);"><img src="/cms_image/niftop/promo-edit/210714320942/0808_henshu.jpg" height="90" width="120" alt="落雷がもたらす電化製品の破損を防ぐ4つの対策とは"  title="落雷がもたらす電化製品の破損を防ぐ4つの対策とは"   /></a></div>
+					<div class="txt">
+						<p class="ttl"><a href="https://koneta.nifty.com/koneta_detail/141009000015_1.htm?utm_source=nifty&amp;utm_medium=TOP&amp;utm_campaign=top_editing_koneta" onmousedown="return countlink('www','topedttl',this.href);">落雷がもたらす<br />電化製品の破損を防ぐ4つの対策とは</a></p>
+						<p>気候変動の影響で増加傾向にある落雷が、家電やパソコンなどにも深刻な被害をもたらしています</p>
+					</div>
+				</div>
+			</div>
+			<div class="unit-rec1">
+				<div class="phTxt">
+
+					<div class="ph" style="overflow:hidden;text-align:center;"><a href="https://koneta.nifty.com/koneta_detail/1141008013143_1.htm?utm_source=nifty&amp;utm_medium=TOP&amp;utm_campaign=top_editing_koneta" onmousedown="return countlink('www','topedttl',this.href);"><img src="/cms_image/niftop/promo-edit/210714320941/0807_henshu.jpg" height="90" width="120" alt="ふるさと納税は返礼品だけじゃない！ネット回線の利用料金も節約できます"  title="ふるさと納税は返礼品だけじゃない！ネット回線の利用料金も節約できます"   /></a></div>
+					<div class="txt">
+						<p class="ttl"><a href="https://koneta.nifty.com/koneta_detail/1141008013143_1.htm?utm_source=nifty&amp;utm_medium=TOP&amp;utm_campaign=top_editing_koneta" onmousedown="return countlink('www','topedttl',this.href);">ふるさと納税は返礼品だけじゃない！<br />ネット回線の利用料金も節約できます</a></p>
+						<p>ふるさと納税でもポイ活できる事知ってますか？返礼品だけじゃなく、通信費も節約しちゃいましょう</p>
+					</div>
+				</div>
+			</div>
+		<div class="ad_bnr468">
+		</div>
+		</div>
+
+
+			
+																																											
+																
+		<div id="topdayPickUp" class="M-nifwidget_partner">
+			<div id="topdayPickUp" class="M-nifwidget_partner">
+				<h2 class="hdr">ポイントもらおう<span class="floatR">Powered by <a href="https://lifemedia.jp/" target="_blank"><img src="images/lifemedia_logo.png" alt="lifemedia" width="50px" /></a></span></h2>
+				<div class="-inner">
+					<div class="-row">
+						<div class="-col">
+							<a href="https://www.nifty.com/promo/pointinfo/index.htm" class="-link" target="_blank" onmousedown="return countlink('www','toppick_04',this.href);">
+								<div class="-img_frame">
+									<div class="-cell"><img src="/cms_image/niftop/pickupFrame/210803321946/pointinfo.png" alt="@nifty接続サービスが0円になるかも！？" width="120px" height="120px"></div>
+								</div>
+								<div class="-text_frame">
+									<p class="-text">@nifty接続サービスが0円になるかも！？</p>
+								</div>
+							</a>
+						</div>
+						<div class="-col">
+							<a href="https://lifemedia.jp/shopping/detail/000114462480?utm_source=nifty&amp;utm_medium=referral&amp;utm_campaign=point_corner" class="-link" target="_blank" onmousedown="return countlink('www','toppick_05',this.href);">
+								<div class="-img_frame">
+									<div class="-cell"><img src="/cms_image/niftop/pickupFrame/210803321946/bnr_120.gif" alt="お得なセール開催中！　" width="120px" height="120px"></div>
+								</div>
+								<div class="-text_frame">
+									<p class="-text">お得なセール開催中！　</p>
+								</div>
+							</a>
+						</div>
+						<div class="-col">
+							<a href="https://www.nifty.com/promo/point202107/index.htm" class="-link" target="_blank" onmousedown="return countlink('www','toppick_06',this.href);">
+								<div class="-img_frame">
+									<div class="-cell"><img src="/cms_image/niftop/pickupFrame/210803321946/0720_0831.png" alt="ポイント山分けキャンペーン実施中" width="120px" height="120px"></div>
+								</div>
+								<div class="-text_frame">
+									<p class="-text">ポイント山分けキャンペーン実施中</p>
+								</div>
+							</a>
+						</div>
+								</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="niftop_shop_recommend"></div>
+
+		<div id="newsranking">
+			<h2 class="hdr">ニュースランキング<span class="news_update">21:00 更新</span></h2>
+			<div class="unit-rec1">
+				<div class="list-2clm">
+					<ul class="col colL">
+						<li class="widget_ranking_link rank01">
+							<span class="num">1</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12156-1190007/" onmousedown="return countlink('www','toprank_news_01',this.href);">
+								<p><span>夫の不倫疑惑でLiSAに苦言も</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank02">
+							<span class="num">2</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12104-183973/" onmousedown="return countlink('www','toprank_news_02',this.href);">
+								<p><span>貴島明日香も下半身輪郭露わ</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank03">
+							<span class="num">3</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12156-1189877/" onmousedown="return countlink('www','toprank_news_03',this.href);">
+								<p><span>華也子の&#034;圧縮された胸&#034;話題</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank04">
+							<span class="num">4</span>
+							<a href="https://news.nifty.com/article/economy/business/12277-1189991/" onmousedown="return countlink('www','toprank_news_04',this.href);">
+								<p><span>伊藤園のネーミングに称賛</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank05">
+							<span class="num">5</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12311-1188889/" onmousedown="return countlink('www','toprank_news_05',this.href);">
+								<p><span>綾瀬CMにノーブラ疑惑が浮上</span></p>
+							</a>
+						</li>
+					</ul>
+					<ul class="col colR">
+						<li class="widget_ranking_link rank06">
+							<span class="num">6</span>
+							<a href="https://news.nifty.com/article/sports/athletic/12144-1190435/" onmousedown="return countlink('www','toprank_news_06',this.href);">
+								<p><span>五輪閉会式中継で&#034;韓外し&#034;か</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank07">
+							<span class="num">7</span>
+							<a href="https://news.nifty.com/article/domestic/society/12159-1189009/" onmousedown="return countlink('www','toprank_news_07',this.href);">
+								<p><span>2回接種の入所者28人が感染</span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank08">
+							<span class="num">8</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12184-200144089/" onmousedown="return countlink('www','toprank_news_08',this.href);">
+								<p><span>木村拓哉 疑惑で印象悪化も</span><span class="icon_news badge_up"></span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank09">
+							<span class="num">9</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12104-183587/" onmousedown="return countlink('www','toprank_news_09',this.href);">
+								<p><span>篠原 4年前から離婚を準備か</span><span class="icon_news badge_down"></span></p>
+							</a>
+						</li>
+						<li class="widget_ranking_link rank10">
+							<span class="num">10</span>
+							<a href="https://news.nifty.com/article/entame/showbizd/12311-1189343/" onmousedown="return countlink('www','toprank_news_10',this.href);">
+								<p><span>優樹菜氏に&#034;第3の男&#034;の影か</span><span class="icon_news badge_down"></span></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="kids">
+			<h2 class="hdr"><span><a href="https://kids.nifty.com/?utm_source=nifty&utm_medium=nifty_top&utm_campaign=pcidswaku">
+				キッズのおすすめ</a></span></h2>
+			<div class="box">
+				<div class="pddT10">
+<script src="/misc_top/js/kids_200804.js"></script>
+<link rel="stylesheet" type="text/css" href="/misc_top/css/kids_200902.css" />
+
+<div id="contents_list"></div>				</div>
+			</div>
+		</div>
+		<!--game -->
+		<div class="box" id="gameArea">
+			<div class="title pkg hdr" id="gametopicTitle">
+				<h2 class="floatL pdd5"><a href="https://game.nifty.com?utm_source=nifty&utm_medium=nifty_top&utm_campaign=pcgamewaku">ゲーム</a></h2>
+			</div>
+			<div id ="gametopic" class="pdd10">
+				<ul>
+					<li class="pkg">
+						<p id ="gametopic01" class="floatL mrgR10">
+							<a href="https://nifty.softgames.com/game/solitaire-garden?utm_source=nifty&amp;utm_medium=banner&amp;utm_campaign=topgame_so-solitaire-garden"><img src="/cms_image/niftop/svGame/210514319129/Solitaire_Garden_Nifty_80x60.jpg" height="60" width="80" alt="【無料】ソリティアガーデン"  title="【無料】ソリティアガーデン"   /></a>
+						</p>
+						<p id ="gametopic02">
+							<a href="https://nifty.softgames.com/game/solitaire-garden?utm_source=nifty&amp;utm_medium=banner&amp;utm_campaign=topgame_so-solitaire-garden"><strong>【無料】ソリティアガーデン</strong><br />ソリティアゲームをクリアして、お家とお庭を素敵にリフォーム！</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--/#game -->
+		<!--/#sexy -->
+
+
+	</div>
+	<!--/#mainContents -->
+
+	<hr />
+
+	<!--subContents -->
+	<div id="subContents">
+
+		<!--banner -->
+		<div class="mrgB5" id="subBnr">
+<!-- /48012543/NIFTY_PC/TOP/RECT -->
+<div id='div-gpt-ad-1443679865978-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1443679865978-0'); });
+</script>
+</div>
+		</div>
+
+		<!--CustomArea -->
+		<div id="CustomArea" class="box2 mrgB10">
+
+			<div class="pdd5">
+				<!--cpn -->
+				<div class="cpn">
+
+			<h2 class="hdr"><a href="https://support.nifty.com/support/" target="_blank" rel="noopener">会員サポート</a></h2>
+			<div class="pdd10">
+
+				<!--newsFlash -->
+				<ul class="dot">
+					<li><p><a href="https://support.nifty.com/cs/suptopics/detail/210705480153/1.htm" onmousedown="return countlink('www','topinfo_pre_01',this.href);" target="_blank" rel="noopener">7月1日からの大雨災害に対する支援について</a></p></li>
+					<li><p><a href="https://security.nifty.com/cs/sec24-info/detail/200608034279/1.htm" onmousedown="return countlink('www','topinfo_pre_02',this.href);" target="_blank" rel="noopener">常時安全セキュリティ24から重要なお知らせ</a></p></li>
+					<li><p><a href="https://support.nifty.com/cs/suptopics/detail/200406479962/1.htm" onmousedown="return countlink('www','topinfo_pre_03',this.href);" target="_blank" rel="noopener">新型コロナ感染拡大のお問合せ窓口への影響</a></p></li>
+					<li><p><a href="http://support.nifty.com/support/supinfo/" onmousedown="return countlink('www','topinfo_tro_01',this.href);" rel="nofollow noopener" target="_blank">トラブル・メンテナンス情報</a></p></li>
+				</ul>
+				<!--/newsFlash -->
+			</div>
+			<br />
+			<h2 class="hdr"><a href="https://niftytoposhirase.cocolog-nifty.com/blog/" target="_blank" rel="noopener">ニフティからのお知らせ</a></h2>
+			<div class="pdd10">
+				<!--Customer support -->
+				<ul class="dot">
+					<li><p><a href="https://www.nifty.com/policy/linkcoronaindex.htm" onmousedown="return countlink('www','topinfo_sup_02',this.href);" rel="nofollow">新型コロナウイルス感染症の関連情報まとめ</a></p></li>
+					<li><p><a href="https://www.jaipa.or.jp/topics/2021/01/ftth.php" onmousedown="return countlink('www','topinfo_sup_03',this.href);" rel="nofollow">ISPサービスの不当な勧誘手法への注意(外部)</a></p></li>
+				</ul>
+				<!--/Customer support -->
+			</div>
+			<!--/.pdd10 -->
+
+<a name ="nifkujiarea"></a>
+					<h2 class="hdr">接続会員限定  お楽しみゲーム</h2>
+					<div id="nifkujiArea" class="unit" style="display:none"></div>
+					<div id="takarabakoArea" class="unit" style="display:none"></div>
+<!-- div>
+    <p><a href="http://niftytoposhirase.cocolog-nifty.com/blog/2018/08/post-43ea.html">ニフティ割引スタート記念キャンペーン実施中！</a></p>
+</div -->
+		<!--niftyInfo -->
+		<div class="box" id="niftyInfo">
+
+<!-- /48012543/NIFTY_PC/TOP/RECT_2nd -->
+<div id='div-gpt-ad-1443679865978-1'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1443679865978-1'); });
+</script>
+</div>
+		</div>
+		<!--/#niftyInfo -->
+
+					<!--pointArea -->
+					<div id="pointArea" class="unit unit-point login">
+						<div class="pkg">
+							<img src="images/lifemedia_coin.png" width="45" height="30" align="left"/>
+							<p><strong>ポイントを貯めて<br>@niftyご利用料金を今よりお得に!</strong></p>
+							<div class="point-item">
+								
+								<table border="0" style="border-collapse:collapse">
+									<tr>
+										<td>
+											<ul class="clearfix" style="height: 50px;">
+												<li style="float: none;width: 140px;"><a href="https://lifemedia.jp/shopping/?utm_source=nifty&utm_medium=referral&utm_campaign=pctop_right"  target="_blank" rel="noopener">お買い物で貯める</a></li>
+												<li style="float: none;width: 140px;"><a href="https://lifemedia.jp/enquete/?utm_source=nifty&utm_medium=referral&utm_campaign=pctop_right"   target="_blank" rel="noopener">アンケートで貯める</a></li>
+											</ul>
+										</td>
+										<td>
+											<ul class="clearfix" style="height: 50px;">
+												<li style="float: none;width: 130px;"><a href="https://lifemedia.jp/game/?utm_source=nifty&utm_medium=referral&utm_campaign=pctop_right"      target="_blank" rel="noopener">ゲームで貯める</a></li>
+										
+											</ul>
+										</td>
+									</tr>
+								</table>
+・<a href="https://lifemedia.jp/shopping/?utm_source=nifty&utm_medium=referral&utm_campaign=pctop_right" target="_blank">毎日1名様に1,000P当たる！</a>
+		
+							</div>
+						</div>
+					</div>
+					<!--/pointArea -->
+					<div id="nojimaArea" class="unit">
+						<span>
+							<a href="https://www.nojima.co.jp/support/koneta/?utm_source=nifty&utm_medium=banner&utm_campaign=nojima" target="_blank">
+								<img src="misc_top/images/nojima-koneta-bnr.gif" alt="ノジマ家電小ネタ帳"/>
+							</a>
+						</span>
+					</div>
+					
+					<div id="niftop_shop_recommend_3"></div>
+				</div>
+				<!--/cpn -->
+			</div>
+		</div>
+		<!--/CustomArea -->
+
+	</div>
+	<!--/#subContents -->
+
+</div>
+<!--/#contents -->
+
+<hr />
+
+<div id="btmBnr" class="pddB20 txtaC">
+<!-- /48012543/NIFTY_PC/TOP/FBNR -->
+<div id='div-gpt-ad-1443679865978-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1443679865978-3'); });
+</script>
+</div>
+</div>
+
+<hr />
+
+<div class="btmInfo"><a href="https://inquiry2.nifty.com/webeq/pub/top/topenq" onmousedown="return countlink('www','toprenew_request',this.href);">@niftyトップページについて、ご意見・ご要望をお聞かせください。</a></div>
+
+<hr />
+
+<table id="svclist" class="pkg" border="0" cellspacing="0">
+	<caption><span><a href="//www.nifty.com/category/" onmousedown="return countlink('www','topcategory_01',this.href);">サービス一覧</a></span></caption>
+	<tr>
+		<th class="first"><h3>プロバイダーサービス</h3></th>
+		<th><h3>インターネット・セキュリティ</h3></th>
+		<th><h3>企業・マネー</h3></th>
+		<th><h3>メディア・情報源</h3></th>
+		<th><h3>ライフスタイル・生活</h3></th>
+		<th class="last"><h3>コミュニティ</h3></th>
+	</tr>
+	<tr>
+		<td class="first">
+			<ul class="dot">
+				<li><a href="https://setsuzoku.nifty.com/niftyhikari/" onmousedown="return countlink('www','topcategory_02',this.href);">@nifty光</a></li>
+				<li><a href="https://setsuzoku.nifty.com/docomo/" onmousedown="return countlink('www','topcategory_02',this.href);">@nifty with ドコモ光</a></li>
+				<li><a href="https://setsuzoku.nifty.com/auhikari/" onmousedown="return countlink('www','topcategory_02',this.href);">@nifty auひかり</a></li>
+				<li><a href="https://setsuzoku.nifty.com/10giga/" onmousedown="return countlink('www','topcategory_02',this.href);">v6高速10ギガプラン</a></li>
+				<li><a href="https://nifmo.nifty.com/?utm_source=nifty&amp;utm_medium=house&amp;utm_campaign=house_TOP_NifMo" onmousedown="return countlink('www','topcategory_02',this.href);">NifMo（スマホ・SIM）</a></li>
+			</ul>
+		</td>
+		<td>
+			<ul class="dot">
+				<li><a href="https://365.nifty.com/index.htm" onmousedown="return countlink('www','topcategory_03',this.href);">まかせて365</a></li>
+				<li><a href="https://security.nifty.com/sec24/" onmousedown="return countlink('www','topcategory_03',this.href);">常時安全セキュリティ24</a></li>
+				<li><a href="https://security.nifty.com/pwm/" onmousedown="return countlink('www','topcategory_03',this.href);">@niftyパスワードマネージャー</a></li>
+				<li><a href="https://security.nifty.com/sagiwall/" onmousedown="return countlink('www','topcategory_03',this.href);">@nifty 詐欺ウォール</a></li>
+				<li><a href="https://security.nifty.com/ifilter/" onmousedown="return countlink('www','topcategory_03',this.href);">有害サイトブロック</a></li>
+				<li><a href="https://security.nifty.com/sec24/mobilevpn/" onmousedown="return countlink('www','topcategory_03',this.href);">@nifty VPN wifi</a></li>
+				<li><a href="https://mail.nifty.com/info/" onmousedown="return countlink('www','topcategory_03',this.href);">メール</a></li>
+				<li><a href="https://mail.nifty.com/info/sanrio/index.htm" onmousedown="return countlink('www','topcategory_03',this.href);">サンリオキャラクターアドレス</a></li>
+				<li><a href="http://homepage.nifty.com/" onmousedown="return countlink('www','topcategory_03',this.href);">ホームページ</a></li>
+			</ul>
+		</td>
+		<td>
+			<ul class="dot">
+				<li><a href="https://biz.nifty.com/" onmousedown="return countlink('www','topcategory_04',this.href);">法人向けサービス</a></li>
+				<li><a href="https://business.nifty.com/" onmousedown="return countlink('www','topcategory_04',this.href);">企業情報</a></li>
+				<li><a href="https://hoken.nifty.com/" onmousedown="return countlink('www','topcategory_04',this.href);">保険アドバイザー</a></li>
+				<li><a href="http://card.nifty.com/" onmousedown="return countlink('www','topcategory_04',this.href);">NIFTY Card</a></li>
+			</ul>
+		</td>
+		<td>
+			<ul class="dot">
+				<li><a href="https://news.nifty.com/" onmousedown="return countlink('www','topcategory_05',this.href);">ニュース</a></li>
+				<li><a href="https://weather.nifty.com/" onmousedown="return countlink('www','topcategory_05',this.href);">天気予報</a></li>
+				<li><a href="https://koneta.nifty.com/" onmousedown="return countlink('www','topcategory_05',this.href);">IT小ネタ帳</a></li>
+				<li><a href="https://search.nifty.com/search/" onmousedown="return countlink('www','topcategory_05',this.href);">@search - インターネット検索</a></li>
+			</ul>
+		</td>
+		<td>
+			<ul class="dot">
+				<li><a href="https://lifemedia.jp/" onmousedown="return countlink('www','topcategory_06',this.href);">ポイント（lifemedia)</a></li>
+				<li><a href="https://www.nifty.com/nifweekly/" onmousedown="return countlink('www','topcategory_06',this.href);">お楽しみマガジン</a></li>
+				<li><a href="https://csoption.nifty.com/yutai/" onmousedown="return countlink('www','topcategory_06',this.href);">優待サービス</a></li>
+				<li><a href="https://game.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">ゲーム</a></li>
+				<li><a href="https://uranai.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">占い</a></li>
+				<li><a href="https://sexy.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">グラビア</a></li>
+				<li><a href="https://myhome.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">不動産</a></li>
+				<li><a href="https://tenshoku.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">転職</a></li>
+				<li><a href="https://part-haken.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">パート・派遣</a></li>
+				<li><a href="https://arbeit.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">アルバイト</a></li>
+				<li><a href="https://onsen.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">温泉</a></li>
+				<li><a href="https://kids.nifty.com/" onmousedown="return countlink('www','topcategory_06',this.href);">キッズ</a></li>
+				<li><a href="https://www.nifty.com/anshin/" onmousedown="return countlink('www','topcategory_06',this.href);">安心・安全のニフティ</a></li>
+			</ul>
+		</td>
+		<td class="last">
+			<ul class="dot">
+				<li><a href="https://www.cocolog-nifty.com/" onmousedown="return countlink('www','topcategory_07',this.href);">ブログ</a></li>
+				<li><a href="https://game.nifty.com/" onmousedown="return countlink('www','topcategory_07',this.href);">インターポット（箱庭）</a></li>
+				<li><a href="https://kids.nifty.com/soudan/" onmousedown="return countlink('www','topcategory_07',this.href);">キッズなんでも相談</a></li>
+				<li><a href="https://www.facebook.com/NIFTY.Corporation/" onmousedown="return countlink('www','topcategory_07',this.href);">ニフティ株式会社（公式）Facebook</a></li>
+				<li><a href="https://twitter.com/nifty" onmousedown="return countlink('www','topcategory_07',this.href);">ニフティ【公式】Twitter</a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+
+<!--contentsBtm -->
+<div id="contentsBtm">
+
+	<h3 class="dispNone">ニフティのその他のサービス</h3>
+	<ul class="pkg">
+		<li><a href="https://www.nifty.co.jp/" onmousedown="return countlink('www','topfooter',this.href);">会社概要</a></li>
+		<li><a href="https://www.nifty.co.jp/all/" onmousedown="return countlink('www','topfooter',this.href);">ニュースリリース</a></li>
+		<li><a href="https://biz.nifty.com/" onmousedown="return countlink('www','topfooter',this.href);">法人向けサービス</a></li>
+		<li class="noBrd"><a href="https://recruit.nifty.co.jp/" onmousedown="return countlink('www','topfooter',this.href);">採用情報</a></li>
+	</ul>
+</div>
+<!--/#contentsBtm -->
+
+<hr />
+
+<!--footer -->
+<div id="footer" class="mrgT10 mrgB20 pkg">
+
+<h3 class="dispNone">ニフティについて</h3>
+
+	<p class="floatL">
+		<span><a href="https://www.nifty.co.jp/privacy/" onmousedown="return countlink('www','topfooter',this.href);">個人情報保護ポリシー</a></span>
+		<span><a href="https://www.nifty.com/policy/" onmousedown="return countlink('www','topfooter',this.href);">@nifty規約ページ</a></span>
+		<span><a href="https://www.nifty.com/policy/website.htm" onmousedown="return countlink('www','topfooter',this.href);">ウェブサイト利用ガイドライン</a></span>
+		<span><a href="https://www.nifty.com/policy/kankyo.htm" onmousedown="return countlink('www','topfooter',this.href);">推奨環境</a></span>
+	</p>
+	<address class="floatR fontS">&copy;NIFTY Corporation</address>
+
+</div>
+<!--/#footer -->
+
+</div>
+<!--/#container -->
+
+</div>
+<!--/#outline -->
+
+</div>
+<!--/#wrapper -->
+
+<span id="fdata" style="display:none;"></span>
+<script type="text/javascript">
+//<![CDATA[
+	_nInf();
+//]]>
+</script>
+<img src="//track.nifty.com/tr/wb/wfc/WZP" alt="" width="1" height="1" />
+<noscript><p><img src="misc_top/puser/niftylogo.gif" width="1" height="1" alt="" /></p></noscript>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+	suggestInit();
+	initAtsrchHist();
+	NIFTY.niftop.getTakarabakoUserData();
+	NIFTY.niftop.setNifkujiArea();
+NIFTY.niftop.getRemainderPoint();
+
+	initNAdArea();	initChSize();
+	initFloatingProc();
+	
+		setCookieRtoaster();
+
+		kidsRecommended();
+	window.V6SERVICE.niftop.callIpv6JudgeAPI();
+});
+//]]>
+</script>
+
+<script type="text/javascript" src="//js.rtoaster.jp/Rtoaster.Popup.js"></script>
+<script type="text/javascript">
+Rtoaster.Popup.register("niftop_fblink_osm");
+Rtoaster.recommendNow("rt_isp_niftop_left","niftop_fblink_osm","niftop_shop_recommend","niftop_shop_recommend_2","niftop_shop_recommend_3");
+</script>
+
+
+</body>
+
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+if(-1 != navigator.userAgent.indexOf("Trident/5.0") && -1 != navigator.userAgent.indexOf("Windows NT 6.1")){
+	window.external.msSiteModeCreateJumplist("ヘッドライン");
+	window.external.msSiteModeClearJumplist();
+	window.external.msSiteModeAddJumpListItem("7月1日からの大雨災害に対する支援について", "http://clink.nifty.com/r/www/top_msapp/?https://support.nifty.com/cs/suptopics/detail/210705480153/1.htm", "https://www.nifty.com/favicon.ico");
+	window.external.msSiteModeAddJumpListItem("常時安全セキュリティ24から重要なお知らせ", "http://clink.nifty.com/r/www/top_msapp/?https://security.nifty.com/cs/sec24-info/detail/200608034279/1.htm", "https://www.nifty.com/favicon.ico");
+	window.external.msSiteModeAddJumpListItem("新型コロナ感染拡大のお問合せ窓口への影響", "http://clink.nifty.com/r/www/top_msapp/?https://support.nifty.com/cs/suptopics/detail/200406479962/1.htm", "https://www.nifty.com/favicon.ico");
+	window.external.msSiteModeShowJumplist();
+}
+})();
+
+var adkujiData=function(){
+	var tmp="";
+	return tmp;
+}
+
+var kujiHoliDate=function(){
+	var data; 
+	data = {"date":["","20211223","20211123","20211103","20210811","20210505","20210504","20210503","20210429","20210211","20210101"]};
+	return data;
+};
+//]]>
+</script>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>牛华网</title>
+    <meta name="description" content="牛华网是专业科技生活娱乐门户网站，重点关注全球前沿科技、游戏、电影娱乐及新潮数码，致力于提供实用接地气的产品产业资讯。" />
+    <meta name="keywords" content="牛华网,科技媒体,创业报道,O2O媒体,游戏新闻,数码,手机,电影新闻,娱乐八卦,明星动态,软件,科普,科学探索,IT资讯,IT业界,IT公司报道,IT公司,IT人物,IT评论,PC,软件,软件行业,IT圈">
+    <link rel="stylesheet" href="http://pic.newhua.com/index.5.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="http://pic.newhua.com/index.5.0/css/global.css" />
+    <link rel="stylesheet" href="http://pic.newhua.com/index.5.0/css/index.css" />
+    <link rel="stylesheet" href="http://pic.newhua.com/index.5.0/css/animate.min.css" />
+    <script src="http://pic.newhua.com/index.5.0/js/jquery-1.9.1.min.js"></script>
+    <script src="http://pic.newhua.com/index.5.0/js/uikit.min.js"></script>
+    <script src="http://pic.newhua.com/index.5.0/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<div class="nav-wrapper">
+    <nav class="uk-navbar-container uk-margin nav" uk-navbar>
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo logo" href="http://www.newhua.com/">
+                <img src="http://pic.newhua.com/index.5.0/images/logo.png" alt="牛华网"/>
+            </a>
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="https://x.newhua.com" target="_blank">
+                        探索版
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/news" target="_blank">
+                        资讯
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/video" target="_blank">
+                        视频
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/game/hub" target="_blank">
+                        挑游戏
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/app/hub" target="_blank">
+                        选应用
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/soft/hub" target="_blank">
+                        找软件
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/media/register" target="_blank">
+                        开专栏
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/dev/register" target="_blank">
+                        发产品
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.newhua.com/square" target="_blank">
+                        订阅
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="https://x.newhua.com/app/868" target="_blank"><span class="uk-icon uk-margin-small-right" uk-icon="icon: laptop"></span>客户端</a>
+                </li>
+                <li>
+                    <a href="https://m.newhua.com" target="_blank"><span class="uk-icon uk-margin-small-right" uk-icon="icon: phone"></span>手机版</a>
+                </li>
+                <li>
+                    <button class="uk-button mini-program" type="button">
+                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: mini; ratio: 0.11"></span>小程序
+                    </button>
+                    <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500; delay-hide: 300">
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <span class="tip">打开微信扫一扫</span>
+                            <span class="mini-apps">
+                                <img src="http://pic.newhua.com/index.5.0/images/mini.jpg" alt=""/>
+                            </span>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="focus-zone">
+        <div class="focus-container">
+            <div class="menu">
+                <div class="menu-title">一键直达</div>
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <a href="https://x.newhua.com/popular" target="_blank">
+                            <span uk-icon="icon: popular; ratio: 0.1"></span>
+                            装机必备
+                        </a>
+                    </div>
+                    <div class="menu-item grey">
+                        <a href="https://x.newhua.com/columns" target="_blank">
+                            <span uk-icon="icon: column; ratio: 0.09"></span>
+                            精选专辑
+                        </a>
+                    </div>
+
+                    <div class="menu-item">
+                        <a href="https://x.newhua.com/hot/soft" target="_blank">
+                            <span uk-icon="icon: trend; ratio: 0.1"></span>
+                            下载排行
+                        </a>
+                    </div>
+                    <div class="menu-item grey">
+                        <a href="https://x.newhua.com/hot/news" target="_blank">
+                            <span uk-icon="icon: hot; ratio: 0.1"></span>
+                            热门文章
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="https://x.newhua.com/dev/register" target="_blank">
+                            <span uk-icon="icon: open; ratio: 0.1"></span>
+                            开放平台
+                        </a>
+                    </div>
+                    <div class="menu-item grey">
+                        <a href="https://x.newhua.com/latest" target="_blank">
+                            <span uk-icon="icon: update; ratio: 0.09"></span>
+                            今日更新
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="focus">
+                <div class="imgbox-b"><a class="focus-cover" href="http://www.newhua.com/2021/0310/356172.shtml" target="_blank"><div class="img-tit">免费图片压缩神器——图压，想怎么压你说了算</div></a><img src="https://images.newhua.com/20210208/421977033913139209.jpg"></div>		
+    <div class="imgbox-s">
+    <div class="imbox-s-inner mt-n"><a class="focus-cover" href="http://www.newhua.com/2021/0219/355890.shtml" target="_blank"><div class="img-tit-s">用户体验是个屁</div></a><img src="https://images.newhua.com/20210208/415178107545452546.jpg"></div>
+    <div class="imbox-s-inner mt-n"><a id="focus-cover" href="http://www.newhua.com/2021/0205/355784.shtml" target="_blank"><div class="img-tit-s">苹果MacBook Air对决惠普Spectre x360 13：最后胜出的竟是它？</div></a><img src="https://images.newhua.com/20201020/410127519359172615.jpg"></div>
+    <div class="imbox-s-inner"><a class="focus-cover" href="http://www.newhua.com/2021/0203/355720.shtml" target="_blank"><div class="img-tit-s">苹果iPhone 13最值得期待的新功能盘点：显示屏或成最大亮点</div></a><img src="https://images.newhua.com/20201020/409358510292467717.jpg"></div>
+    <div class="imbox-s-inner"><a class="focus-cover" href="http://www.newhua.com/2021/0203/355721.shtml" target="_blank"><div class="img-tit-s">Galaxy S21 Ultra全面对决iPhone 12 Pro Max：谁是真“机皇”？</div></a><img src="https://images.newhua.com/20201020/409322623634505733.jpg"></div>
+</div>
+            </div>
+        </div>
+        <div class="express">
+            <div class="express-content">
+                <div class="rt"><h2>牛闻联播</h2></div>
+                <div id="con" class="timebox">
+                    <div class="bottomcover" style="z-index: 2;"></div>
+                    <ul style="top: 20px;">
+                        <li class="timeline">
+	<p>
+		<span>21:16:12</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">胡晓明辞任蚂蚁集团 CEO，未来将负责社会公益项目</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>15:08:07</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">反垄断处罚决定书披露：腾讯取得对猿辅导的控制权</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>12:09:15</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">哔哩哔哩上市计划据悉获得香港交易所批准</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>22:54:40</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">百度计划于3月23日在香港交易所上市</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>18:48:06</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">京东2020年第四季度净利润12.14亿元 同比增长72.37%</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>16:12:04</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">LG新能源或为特斯拉制造4680电池，在欧美建新厂</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>15:45:01</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">消息称百度将在周五就香港IPO招股簿记建档 或筹集约35亿美元</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>09:30:53</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">法大大完成D轮9亿元融资，腾讯领投</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>09:30:24</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">iPhone 12 mini或将减产70%</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>22:07:38</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">网易云音乐正寻求在港交所上市 大概率明年正式提交IPO</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>15:36:35</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">消息称哈啰出行计划将在美秘密递交IPO申请</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>17:44:09</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">中国电信：拟申请A股发行并在上海证券交易所主板上市</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>14:47:50</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">传蔚来汽车、理想汽车、小鹏汽车拟赴港上市</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>14:44:17</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">拜腾汽车关联公司再被执行 执行标的总额超680万人民币</a>
+		<em class="shape"></em>
+	</p>
+</li>
+<li class="timeline">
+	<p>
+		<span>09:39:42</span>
+		<a href="https://x.newhua.com/newsflashes" target="_blank">Zoom创始人袁征转让价值逾60亿美元股份</a>
+		<em class="shape"></em>
+	</p>
+</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videos">
+        <div uk-tab>
+            <div class="tab"><a href="https://x.newhua.com/video" target="_blank">视频</a></div>
+        </div>
+        <div class="uk-switcher uk-margin videos-list">
+            <div class="uk-column-1-4">
+                <div class="video-item">
+    <div class="player">
+        <a href="https://x.newhua.com/video/18" target="_blank">
+            <img alt="小米10S正式发布：骁龙870加持，3299元起售" src="https://images.newhua.com/20210208/422462375552352259.jpeg">
+        </a>
+        <div class="time">00:01:23</div>
+    </div>
+    <div class="video-title">
+        <a href="https://x.newhua.com/video/18" target="_blank">
+            小米10S正式发布：骁龙870加持，3299元起售        </a>
+    </div>
+</div>
+<div class="video-item">
+    <div class="player">
+        <a href="https://x.newhua.com/video/16" target="_blank">
+            <img alt="拔牙、植发，明星真正的脸面究竟是什么？" src="https://images.newhua.com/20210208/419833233694523398.jpg">
+        </a>
+        <div class="time">00:04:51</div>
+    </div>
+    <div class="video-title">
+        <a href="https://x.newhua.com/video/16" target="_blank">
+            拔牙、植发，明星真正的脸面究竟是什么？        </a>
+    </div>
+</div>
+<div class="video-item">
+    <div class="player">
+        <a href="https://x.newhua.com/video/15" target="_blank">
+            <img alt="一句话回怼“绑架”式社交" src="https://images.newhua.com/20210208/418833165457817601.jpeg">
+        </a>
+        <div class="time">00:03:59</div>
+    </div>
+    <div class="video-title">
+        <a href="https://x.newhua.com/video/15" target="_blank">
+            一句话回怼“绑架”式社交        </a>
+    </div>
+</div>
+<div class="video-item">
+    <div class="player">
+        <a href="https://x.newhua.com/video/14" target="_blank">
+            <img alt="机器人为何都是女性？" src="https://images.newhua.com/20210208/418831740296232963.jpeg">
+        </a>
+        <div class="time">00:01:00</div>
+    </div>
+    <div class="video-title">
+        <a href="https://x.newhua.com/video/14" target="_blank">
+            机器人为何都是女性？        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="feed">
+            <div uk-tab>
+                <div class="tab"><a href="#">推荐</a></div>
+            </div>
+
+            <div class="uk-switcher uk-margin">
+                <div class="recommend">
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0708/357943.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0708/1625728653678.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0708/357943.shtml" target="_blank">联发科发布天玑5G开放架构，力图为手机用户带来极致使用体验</a></h2>
+                            <p>就在近日，一加在海外正式公布了“天玑1200-AI”，据了解，该平台为一加与联发科联手打造，是此前联发科推出的天玑5G开放架构初次落地。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0805/358271.shtml">改变5G手机市场同质化难题，联发科放“大招”</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0705/357908.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0705/1625500239936.png" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0705/357908.shtml" target="_blank">苏宁易购混改方案公布：江苏国资及多元化产业资本参与战投 </a></h2>
+                            <p>北京时间7月5日晚消息，苏宁易购发布公告，张近东及其一致行动人苏宁控股集团、股东苏宁电器集团拟将上市公司16.96%的股份转让给江苏新新零售创新基金二期（有限合伙）（下称“新新零售基金二期”）。苏宁易购表示，……</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0809/358321.shtml">继创维、方太、海尔之后，818海信与苏宁易购打造超品日</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0702/357874.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0702/1625197241240.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0702/357874.shtml" target="_blank">1亿像素+66W超级快充，2399元起荣耀50 SE全面开售</a></h2>
+                            <p>6月16日，荣耀在上海东方体育中心举行了荣耀50系列新品发布会，正式发布包括荣耀50 SE、荣耀50、荣耀50 Pro、荣耀Earbuds 2 SE在内的多款新品。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0702/357875.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0702/1625196877763.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0702/357875.shtml" target="_blank">阿里宣布组织升级：成立生活服务板块，俞永福分管</a></h2>
+                            <p>北京时间7月2日消息，阿里巴巴集团董事会主席兼首席执行官张勇发出全员信，宣布一系列组织升级决定，旨在面向未来打造更敏捷的新型组织，形成板块生态效应。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0802/358229.shtml">阿里数据中台进化史</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0625/357782.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0625/1624594304539.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0625/357782.shtml" target="_blank">微软发布Windows 11 电脑上原生运行安卓应用成真</a></h2>
+                            <p>美国当地时间6月24日，微软召开在线产品发布会，正式发布Windows 11操作系统，这是微软自推出Windows 10 六年以来首次推出新的操作系统。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0628/357823.shtml">Windows 11：套苹果的皮、摸安卓的鱼</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="special">
+                        <div class="special-title"><a href="http://www.newhua.com" class="icon-bt"></a></div>
+                        <div class="special-content">
+                            <div uk-slider="center: false; autoplay: true; autoplay-interval: 5000">
+
+                                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                                    <ul class="uk-slider-items uk-child-width-1-3 uk-grid">
+                                                                                <li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="http://www.newhua.com/2021/0506/357061.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0506/1620267543799.jpeg" alt="经过数百个设计改进后 SpaceX星际飞船原型SN15成功发射并着陆" /></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title bt"><a href="http://www.newhua.com/2021/0506/357061.shtml" target="_blank">经过数百个设计改进后 SpaceX星际飞船原型SN15成功发射并着陆</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="http://www.newhua.com/2020/1222/354897.shtml" target="_blank"><img src="http://upload.newhua.com/2020/1222/1608621934182.jpg" alt="长征八号，首飞成功" /></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title bt"><a href="http://www.newhua.com/2020/1222/354897.shtml" target="_blank">长征八号，首飞成功</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="http://www.newhua.com/2020/1217/354794.shtml" target="_blank"><img src="http://upload.newhua.com/2020/1217/1608175184233.jpg" alt="嫦娥五号携带2千克月壤成功着陆地球" /></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title bt"><a href="http://www.newhua.com/2020/1217/354794.shtml" target="_blank">嫦娥五号携带2千克月壤成功着陆地球</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="http://www.newhua.com/2020/1124/354346.shtml" target="_blank"><img src="http://upload.newhua.com/2020/1124/1606209217101.jpg" alt="嫦娥5号成功发射奔月：“绕、落、回”战略的“收官之作”" /></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title bt"><a href="http://www.newhua.com/2020/1124/354346.shtml" target="_blank">嫦娥5号成功发射奔月：“绕、落、回”战略的“收官之作”</a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                                <li>
+                                            <div class="uk-card uk-card-default">
+                                                <div class="uk-card-media-top">
+                                                    <a href="http://www.newhua.com/2020/0723/351534.shtml" target="_blank"><img src="http://upload.newhua.com/2020/0723/1595491424378.jpg" alt="中国首次火星探测任务探测器“天问一号”成功发射 " /></a>
+                                                </div>
+                                                <div class="uk-card-body">
+                                                    <h3 class="uk-card-title bt"><a href="http://www.newhua.com/2020/0723/351534.shtml" target="_blank">中国首次火星探测任务探测器“天问一号”成功发射 </a></h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                                                            </ul>
+                                </div>
+
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0624/357770.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0624/1624502072699.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0624/357770.shtml" target="_blank">“杀毒软件之父”麦卡菲死于西班牙监狱中,疑似自杀</a></h2>
+                            <p>据美联社报道，杀毒软件 McAfee 创始人 约翰·麦卡菲(John McAfee)被发现死于西班牙的监狱中，此前不久，因受到金融犯罪指控，西班牙国家法院批准宣布将麦卡菲引渡到美国。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://it.newhua.com/2014/0811/272446.shtml">杀毒软件先驱麦卡菲呼吁人们停用智能手机</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0621/357720.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0621/1624243158594.png" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0621/357720.shtml" target="_blank">拼多多备考618：将实惠进行到底</a></h2>
+                            <p>一年一度的618电商促销大戏又已拉开帷幕，各大平台都卯足了劲要大干一场。与往年不同的是，在市场聚集效应被打破的背景之下，今年的618更精彩，“参赛选手”各自拿出看家本领，进行术与道的正面较量。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0809/358326.shtml">第二届“多多农研科技大赛”启动全球招募  挑战种出高产高营养番茄</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0527/357432.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0531/1622424576752.jpeg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0527/357432.shtml" target="_blank">更美更好玩，OPPO Reno6系列正式发布</a></h2>
+                            <p>2021年5月27日，中国，秦皇岛阿那亚——OPPO正式发布了全新人像视频手机OPPO Reno6系列，不仅人像视频拍摄、外观工艺再次进阶，而且游戏方面也带来更多更好玩的大众化游戏体验。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0729/358166.shtml">柯南主题定制的全智能手表旗舰，OPPO Watch 2 名侦探柯南限定版正式发布</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0526/357400.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0526/1622030098658.jpg" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0526/357400.shtml" target="_blank">拼多多发布2021年Q1财报：开启8亿用户时代 营收同比增长239%</a></h2>
+                            <p>拼多多一季度营收221.67亿元，同比增长239%。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0809/358326.shtml">第二届“多多农研科技大赛”启动全球招募  挑战种出高产高营养番茄</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                                        <div class="post">
+                        <div class="post_con">
+                            <h4><a href="http://www.newhua.com/2021/0520/357280.shtml" target="_blank"><img src="http://upload.newhua.com/2021/0520/1621502202199.png" width="180" height="120" /></a></h4>
+                            <h2 class="tit"><a href="http://www.newhua.com/2021/0520/357280.shtml" target="_blank">苏宁618启动：预售可用购物补贴，5月24日开抢</a></h2>
+                            <p>5月20日消息，苏宁易购618预售将于5月24日0点正式开启。用户抢订好货的同时，还可领取购物补贴，6月1日支付尾款，折扣加倍。</p>
+                            <h3>
+                                <span class="relate">相关：</span>
+                                <span class="rlinks">
+                                                                        <!---->
+                                        <a href="http://www.newhua.com/2021/0721/358080.shtml">驰援郑州：苏宁家乐福紧急调运物资直送救灾地区</a>
+                                                                    </span>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="post" style="display: none">
+                        <ul>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358326.shtml">第二届“多多农研科技大赛”启动全球招募  挑战种出高产高营养番茄</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358322.shtml">UCloud优刻得2021上半年营收同比增长65.20% “自主可控”把握国产化新机遇 </a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358325.shtml">居家实现WHO标准的锻炼，这家健身公司被人民网和体育总局pick</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358324.shtml">优刻得2021上半年营收同比增长65.20% 国产化自研产品突破政企行业</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358323.shtml">土巴兔装修保保障美好生活体验</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358313.shtml">UCloud优刻得2021上半年营收同比增长65.20%增速领跑行业 </a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358314.shtml">云计算市场演变，内资中立安全的UCloud优刻得获得未来利好空间</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358316.shtml">接入工业互联网平台之后，这家青岛企业登上《新闻联播》</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358315.shtml">INSIGHTBOX洞荐门窗 | 用科学重新定义门窗定制</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358317.shtml">接入卡奥斯工业互联网，这家企业被《新闻联播》点赞</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358321.shtml">继创维、方太、海尔之后，818海信与苏宁易购打造超品日</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358320.shtml">猫和老鼠手游在快手发起回忆挑战，1.4亿播放量彰显经典怀旧情怀</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358319.shtml">经济学家在快手：教你看懂经济的大趋势，抓住自己的小机遇</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358318.shtml">快手《奥运一年级》收官，“切条”综艺打开全新追“综”模式</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358311.shtml">2021 PCL夏季赛常规赛第三周落幕，17战队王者归来摘得周冠</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358312.shtml">连夜抢装上千套空调，苏宁易购帮客助力防疫一线</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358310.shtml">UCloud优刻得（688158）上半年营收增长65.20% 政企数字化业务实现高质量增长 </a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358309.shtml">行业重新洗牌：教育硬件赛道+人工智能火爆入局</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358308.shtml">【新品首发】中兴联合中元易尚，首推双网切换中兴随身WiFi 5</a></li>
+                                                        <li><a href="http://www.newhua.com/2021/0809/358307.shtml">全面屏满分答卷来了！小米MIX 4与小米平板5即将回归 万众期待</a></li>
+                                                    </ul>
+                    </div>
+
+                    <div class="more">
+                        <a href="https://x.newhua.com/news" target="_blank">浏览更多<span uk-icon="chevron-double-right"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="columns-content">
+                <div class="iapps">
+                    <div class="grid-tit"><a href="http://www.newhua.com" class="icon-iapp"></a></div>
+                    <div class="iapps_box">
+                        <ul>
+	<h1 class="app_img">
+		<a href="https://x.newhua.com/app/1616" target="_blank" title="另辟蹊径">
+		<img class="uk-border-rounded" src="https://images.newhua.com/20210315/425003939012280329.png" width="60" height="60"></a>
+	</h1>
+<h2><a href="https://x.newhua.com/app/1616" target="_blank" title="另辟蹊径">另辟蹊径</a></h2>
+<p>解锁全球深度旅‪行‬</p>
+<em><a href="https://x.newhua.com/app/1616" target="_blank">下载</a></em>
+</ul>
+<ul>
+	<h1 class="app_img">
+		<a href="https://x.newhua.com/app/1615" target="_blank" title="赫兹">
+		<img class="uk-border-rounded" src="https://images.newhua.com/20210315/425360102660767753.png" width="60" height="60"></a>
+	</h1>
+<h2><a href="https://x.newhua.com/app/1615" target="_blank" title="赫兹">赫兹</a></h2>
+<p>听声音交朋‪友‬</p>
+<em><a href="https://x.newhua.com/app/1615" target="_blank">下载</a></em>
+</ul>
+<ul>
+	<h1 class="app_img">
+		<a href="https://x.newhua.com/app/1614" target="_blank" title="树洞">
+		<img class="uk-border-rounded" src="https://images.newhua.com/20210315/425360537710755849.png" width="60" height="60"></a>
+	</h1>
+<h2><a href="https://x.newhua.com/app/1614" target="_blank" title="树洞">树洞</a></h2>
+<p> 找个懂你的人聊聊天</p>
+<em><a href="https://x.newhua.com/app/1614" target="_blank">下载</a></em>
+</ul>
+<ul>
+	<h1 class="app_img">
+		<a href="https://x.newhua.com/app/1613" target="_blank" title="花小猪打车">
+		<img class="uk-border-rounded" src="https://images.newhua.com/20210315/425000935542489093.png" width="60" height="60"></a>
+	</h1>
+<h2><a href="https://x.newhua.com/app/1613" target="_blank" title="花小猪打车">花小猪打车</a></h2>
+<p> 打车可以更便宜 </p>
+<em><a href="https://x.newhua.com/app/1613" target="_blank">下载</a></em>
+</ul>
+<ul>
+	<h1 class="app_img">
+		<a href="https://x.newhua.com/app/1612" target="_blank" title="滴滴顺风车">
+		<img class="uk-border-rounded" src="https://images.newhua.com/20210315/424998340295917576.png" width="60" height="60"></a>
+	</h1>
+<h2><a href="https://x.newhua.com/app/1612" target="_blank" title="滴滴顺风车">滴滴顺风车</a></h2>
+<p>300城市内跨城互助出行平‪台‬</p>
+<em><a href="https://x.newhua.com/app/1612" target="_blank">下载</a></em>
+</ul>
+
+                    </div>
+                </div>
+
+                <div class="ad">
+                    <a href="https://x.newhua.com" target="_blank">
+                        <img src="http://pic.newhua.com/index.5.0/images/ad.jpg" alt=""/>
+                    </a>
+                </div>
+
+                <div class="topic">
+                    <div class="grid-tit"><a href="http://www.newhua.com" class="icon-bud"></a></div>
+                    <div class="conbox">
+                        <div class="imgnews">
+                                                        <a class="com-cover" href="http://www.newhua.com/2021/0122/355492.shtml" target="_blank"><div class="img-news-tit">苹果AirPods Max全面评测：机身过重售价昂贵  暂时不要买</div></a><img src="http://upload.newhua.com/2021/0205/1612518284873.jpg" />
+                                                    </div>
+                        <div class="comcon">
+                                                        <div class="bud">
+                                <div class="sp-date">
+                                    <p>21</p>
+                                    <span>2020.12</span>
+                                </div>
+                                <div class="budcon">
+                                    <h2><a href="http://www.newhua.com/2020/1221/354849.shtml" target="_blank">三星Galaxy S21新功能展望：外形不变  显示屏和摄像头是最大亮点</a></h2>
+                                    <p>从几个比较关键的领域去谈一下Galaxy S21系列手机相较于Galaxy S20系列手机的改进。</p>
+                                </div>
+                            </div>
+                                                        <div class="bud">
+                                <div class="sp-date">
+                                    <p>13</p>
+                                    <span>2020.11</span>
+                                </div>
+                                <div class="budcon">
+                                    <h2><a href="http://www.newhua.com/2020/1113/354105.shtml" target="_blank">新款MacBook Pro对战MacBook Air：它们之间究竟有哪些区别？</a></h2>
+                                    <p>新款MacBook对比。</p>
+                                </div>
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+
+                <div class="fin">
+                    <div class="grid-tit"><a href="http://www.newhua.com" class="icon-fin"></a></div>
+                    <div class="conbox">
+                        <div class="imgnews">
+                                                        <a class="com-cover" href="http://www.newhua.com/2020/1209/354655.shtml" target="_blank"><div class="img-news-tit">Libra终于要来了，它将对我们产生什么影响？</div></a><img src="http://upload.newhua.com/2020/1209/1607502227749.jpg" />
+                                                    </div>
+                        <div class="finance">
+                                                        <ul>
+                                <h2><a href="http://www.newhua.com/2020/1102/353803.shtml" target="_blank">中国区块链产业风险思考</a></h2>
+                                <p>区块链领域的自主可控不再只是一个可选项，而是一个必选项。</p>
+                            </ul>
+                                                        <ol>
+                                                                <li><a href="http://www.newhua.com/2020/1016/353347.shtml" target="_blank">数字货币交易平台OKex暂停用户提币 部分私钥负责人正配合警方调查</a></li>
+                                                                <li><a href="http://www.newhua.com/2020/0930/353195.shtml" target="_blank">国产DeFi，困在币价里</a></li>
+                                                                <li><a href="http://news.newhua.com/2020/0807/351919.shtml" target="_blank">四大行内测大规模进行，央行数字货币将何时落地？</a></li>
+                                                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toy">
+                    <div class="grid-tit"><a href="http://www.newhua.com" class="icon-toy"></a></div>
+                    <div class="conbox">
+                        <div class="imgnews">
+                                                        <a class="com-cover" href="http://www.newhua.com/2020/1202/354514.shtml" target="_blank">
+                                <div class="img-news-tit">PS5全方位对比Xbox Series X：索尼和微软究竟谁能拔得头筹？</div>
+                            </a>
+                            <img src="http://upload.newhua.com/2020/1209/1607497975294.jpg" />
+                                                    </div>
+                        <div class="comcon">
+                            <ul uk-accordion="collapsible: false">
+                                                                <li>
+                                    <a class="uk-accordion-title" href="http://www.newhua.com/2020/1109/353960.shtml" target="_blank">Xbox Series X全面评测：堪称微...</a>
+                                    <div class="uk-accordion-content">
+                                        <p class="toy-p"><a href="http://www.newhua.com/2020/1109/353960.shtml" target="_blank">Xbox Series X是微软下一代游戏机的先锋。</a></p>
+                                    </div>
+                                </li>
+                                                                <li>
+                                    <a class="uk-accordion-title" href="http://www.newhua.com/2020/1028/353650.shtml" target="_blank">索尼PS5上手评测：主机体积很大 ...</a>
+                                    <div class="uk-accordion-content">
+                                        <p class="toy-p"><a href="http://www.newhua.com/2020/1028/353650.shtml" target="_blank">索尼PS5游戏机开箱。</a></p>
+                                    </div>
+                                </li>
+                                                                <li>
+                                    <a class="uk-accordion-title" href="http://www.newhua.com/2020/0923/352955.shtml" target="_blank">Oculus Quest 2全面评测：便宜又...</a>
+                                    <div class="uk-accordion-content">
+                                        <p class="toy-p"><a href="http://www.newhua.com/2020/0923/352955.shtml" target="_blank">Oculus Quest 2是一款出色的设备，具有很多令人印象深刻的改进功能。</a></p>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="footer">
+        <div class="foot-column">
+            <div class="about-tit"><span></span>关于我们</div>
+            <div class="about">
+                <div class="profile">牛华网重点关注全球前沿科技、游戏、电影娱乐及新潮数码，致力于提供实用接地气的产品产业资讯。</div>
+            </div>
+            <div class="product-box">
+                <div class="pro-container">
+                    <div class="pro-box">
+                        <div class="pro-img">
+                            <a href="https://x.newhua.com/app/868" target="_blank">
+                                <img src="http://pic.newhua.com/index.5.0/images/android-fill.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pro-box">
+                        <div class="pro-img">
+                            <a href="https://x.newhua.com/soft/986" target="_blank">
+                                <img src="http://pic.newhua.com/index.5.0/images/windows-fill.png" alt="牛闻联播Windows版">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pro-box">
+                        <div class="pro-img">
+                            <a href="https://apps.apple.com/cn/app/id1509405603" target="_blank">
+                                <img src="http://pic.newhua.com/index.5.0/images/apple-fill.png" alt="牛闻联播iOS版">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pro-box">
+                        <div class="pro-img">
+                            <a href="https://x.newhua.com/soft/985" target="_blank">
+                                <img src="http://pic.newhua.com/index.5.0/images/finder.png" alt="牛闻联播macOS版">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-column">
+            <div class="product-tit"><span></span>产品矩阵</div>
+            <div class="product">
+                <ul>
+                    <li><a href="http://www.newhua.com" target="_blank">牛华网</a></li>
+                    <li><a href="https://x.newhua.com" target="_blank">探索版</a></li>
+                    <li><a href="https://x.newhua.com/newsflashes" target="_blank">牛闻联播</a></li>
+                    <li><a href="https://m.newhua.com" target="_blank">手机版</a></li>
+                    <li><a href="http://v.newhua.com" target="_blank">微信导航</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-column">
+            <div class="channel-tit"><span></span>频道导航</div>
+            <div class="channel">
+                <ul>
+                    <li><a href="https://x.newhua.com/news" target="_blank">资讯</a></li>
+                    <li><a href="https://x.newhua.com/soft/hub" target="_blank">软件</a></li>
+                    <li><a href="https://x.newhua.com/game/hub" target="_blank">游戏</a></li>
+                    <li><a href="https://x.newhua.com/app/hub" target="_blank">应用</a></li>
+                    <li><a href="https://x.newhua.com/columns" target="_blank">专辑</a></li>
+                    <li><a href="http://www.newhua.com/tech/kuaixun.shtml" target="_blank">快报</a></li>
+                    <li style="display:none;"><a href="http://www.newhua.com/old.shtml" target="_blank">老站</a></li>
+                    <li style="display:none;"><a href="http://news.newhua.com/" target="_blank">新闻中心</a></li>
+                    <li style="display:none;"><a href="http://www.newhua.com/new/" target="_blank">最新资讯</a></li>
+                    <li style="display:none;"><a href="http://digi.newhua.com/" target="_blank">硬件数码</a></li>
+                    <li style="display:none;"><a href="http://games.newhua.com/" target="_blank">游戏竞技</a></li>
+                    <li style="display:none;"><a href="http://mobile.newhua.com/" target="_blank">智能手机</a></li>
+                    <li style="display:none;"><a href="http://soft.newhua.com/" target="_blank">软件应用</a></li>
+                    <li style="display:none;"><a href="http://digi.newhua.com/" target="_blank">硬件数码</a></li>
+                    <li style="display:none;"><a href="http://www.newhua.com/roll/" target="_blank">滚动</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-column">
+            <div class="newhuain-tit"><span></span>牛华 In</div>
+            <div class="newhuain">
+                <ul>
+                    <li><a href="https://weibo.com/newhuawang" target="_blank">新浪微博</a></li>
+                    <li><a href="http://v.newhua.com/1.html" target="_blank">微信公众平台</a></li>
+                    <li><a href="https://mp.sohu.com/profile?xpt=c29odXptdDRvZWF1bG1Ac29odS5jb20=&_f=index_pagemp_1&spm=smpc.content.author.2.1585061188025hVg1Mzi" target="_blank">搜狐号</a></li>
+                    <li><a href="https://www.toutiao.com/c/user/3339797036/#mid=3339808431" target="_blank">头条号</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-column">
+            <div class="contact-tit"><span></span>联系我们</div>
+            <div class="contact">
+                <div class="logo_f"><a href="http://www.newhua.com/" target="_blank"><img src="http://pic.newhua.com/index.5.0/images/logo_foot.png"></a></div>
+                <div class="email">
+                    <ul>
+                        <li>新闻投稿:news@newhua.com</li>
+                        <li>商务合作:biz@newhua.com</li>
+                        <li>主编信箱:xiejun@newhua.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="corp">
+    <div class="frlink">
+        <div class="frlink-tit">友情链接</div>
+        <div class="links">
+            <a href="http://www.52pk.com/" target="_blank" style="margin-left:0">52PK游戏网 </a> |
+            <a href="http://www.chinaz.com" target="_blank">站长之家</a> |
+            <a href="http://www.admin5.com/" target="_blank">站长网</a> |
+            <a href="http://www.ctocio.com.cn/" target="_blank">IT专家网 </a> |
+            <a href="http://www.ithome.com/" target="_blank">IT之家</a> |
+            <a href="http://www.ebrun.com/" target="_blank">亿邦动力网</a> |
+            <a href="http://www.iyiou.com/" target="_blank">亿欧网</a> |
+            <a href="http://www.cyfengchao.com/" target="_blank">烽巢网</a> |
+            <a href="http://www.looktmt.com/" target="_blank">TMT观察网</a> |
+            <a href="http://www.yzmg.com" target="_blank">亿智蘑菇</a> |
+            <a href="http://www.ikanchai.com" target="_blank">砍柴网</a> |
+            <a href="http://www.fengniao.com/" target="_blank">蜂鸟网</a> |
+            <a href="http://www.3533.com/" target="_blank">手机世界</a> |
+            <a href="http://www.uc.cn/" target="_blank">手机浏览器</a> |
+            <a href="http://www.hqbpc.com" target="_blank">华强北电脑网</a> |
+            <a href="http://www.uisdc.com/" target="_blank">优秀网页设计</a> |
+            <a href="https://hao.360.cn/" target="_blank">360安全网址导航</a> |
+            <a href="http://www.1616.net/" target="_blank">1616个人门户</a> |
+            <a href="http://www.sudu.cn/" target="_blank">华夏名网</a> |
+            <a href="http://www.ciotimes.com/" target="_blank">CIO时代网</a> |
+            <a href="http://www.cnzz.cn/" target="_blank">中国站长</a> |
+            <a href="http://www.xmtnews.com/" target="_blank">新媒体观察</a> |
+            <a href="http://www.oneplusbbs.com" target="_blank">一加手机</a> |
+            <a href="https://www.cyw360.com/" target="_blank">创业网</a>
+        </div>
+    </div>
+</div>
+<div class="footerCopyright">
+    <div class="fcinner">
+        <div class="copyright">© 2003-2021 牛华网版权所有.</div>
+        <div class="poweredBy"><a href="http://www.cmstop.com/" target="_blank"><img src="http://pic.newhua.com/index.3.0/icon/poweredBy.png"></a></div>
+        <div class="miitbeian"><a href="http://beian.miit.gov.cn/" target="_blank">苏ICP备11016551号-2</a></div>
+        <div class="beian"><span></span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32132202000111" target="_blank">苏公网安备 32132202000111号</a></div>
+        <div class="footinfo">
+            <ul>
+                <li><a href="#">隐私政策</a></li>
+                <li><a href="#">广告服务</a></li>
+                <li><a href="#">人才招聘</a></li>
+                <li><a href="#">版权声明</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://pic.newhua.com/index.5.0/js/jquery.pause.min.js"></script>
+<script type="text/javascript" src="http://pic.newhua.com/index.5.0/js/scroll.js"></script>
+<script type="text/javascript">
+    window.onload = function() {
+        /*li hover事件追加*/
+        $(".timeline p").hover(
+            function(){
+                $(this).addClass("hover");
+            },
+            function(){
+                $(this).removeClass("hover");
+            }
+        );
+    };
+</script>
+<script>
+    $(window).scroll(function() {
+        var nav = $('.nav-wrapper');
+        //判断向下滑动的距离
+        if($(window).scrollTop()>=100){
+            //将顶部导航栏固定
+            //需要执行显示导航动画操作
+            nav.addClass('nav-active animated fadeInDown');
+        } else {
+            //需要执行隐藏导航的操作
+            nav.removeClass('nav-active animated fadeInDown');
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="keywords" content="淘米网,www.61.com,赛尔号品牌站,赛尔号动画片,赛尔号大电影,赛尔号爆旋精灵,赛尔号游戏,赛尔号,赛尔号玩具,摩尔庄园,功夫派,小花仙" />
+		<meta name="description" content="淘米网(www.61.com)是专为中国儿童打造的综合互动娱乐平台，为孩子们提供摩尔庄园、赛尔号、小花仙等丰富多彩、健康安全的互动娱乐产品，同时淘米网也是儿童健康安全上网的倡导者。" />
+		<link rel="Shortcut Icon" type="image/x-icon" href="//www.61.com/favicon.ico" />
+		<link rel="stylesheet" href="//webres.61.com/common/css/reset.css?20210729191808">
+		<link rel="stylesheet" href="//webres.61.com/common/swiper/css/swiper-4.3.3.min.css">
+		<link rel="stylesheet" href="//webres.61.com/www61com/css/layout.css?20210729191808">
+		<title>淘米网_妈妈放心_孩子欢喜</title>
+		<style type="text/css">
+			.gov-notice {
+				position: fixed;
+				background: #00a5ff;
+				color: #fff;
+				font-size: 14px;
+				width: 500px;
+				right: 0;
+				top: 24px;
+				z-index: 999;
+				padding: .5em 1em;
+			}
+
+			.gov-notice img {
+				width: 40px;
+				float: left;
+				margin-right: 0.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gov-notice">
+			<p><img src="//webres.61.com/www61com/images/gov_notice.jpg" />亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+			<p>扫黑除恶众志成城，平安上海人人参与</p>
+			<p>全国扫黑除恶举报网站：www.12389.gov.cn</p>
+			<p>全国扫黑除恶举报电话：010-12389</p>
+			<p>上海市扫黑除恶举报电话：021-52397077</p>
+			<br />
+			<p>防诈骗提示：近期网上有假冒我公司名义发布“淘米”或“淘米兼职”等App以兼职、返点、返利等形式进行非法集资和诈骗，请大家切勿轻易相信。我公司从未发布过此类App，所有招聘岗位都会通过正规合法的招聘渠道发布。有上当受骗的请及时联系公安机关报警。</p>
+		</div>
+		<div class="topBar">
+    <div class="wrap clearfix">
+        <a href="http://www.61.com" title="淘米网" class="logo"></a>
+        <ol class="nav">
+            <li><a href="http://game.61.com/" target="_blank" title="游戏">游戏</a></li>
+			<li><a href="http://h5.61.com/" target="_blank" title="H5游戏">H5游戏</a></li>
+            <li><a href="http://f.61.com" target="_blank" title="电影">电影</a></li>
+            <li><a href="http://v.61.com" target="_blank" title="动画片">动画片</a></li>
+            <li><a href="https://shop389164303.taobao.com/index.htm" target="_blank" title="淘米周边">淘米周边</a></li>
+        </ol>
+        <ol class="box none">
+            <li><a href="http://account.61.com/register?tmcid=61" target="_blank" title="注册">注册</a></li>
+            <li><a href="http://pay.61.com/buy/paytype?type=cardpay&pos=top" target="_blank" title="充值">充值</a></li>
+            <li><a href="#" id="addf" title="收藏" rel="sidebar" onclick="addFavor('http://www.61.com','淘米网','addf')">收藏</a></li>
+        </ol>
+    </div>
+</div>
+			<div class="wrap bannerbox">
+				<div class="banner">
+										<ol class="slide">
+													<li><a target="_blank" href="http://hua.61.com/events/2021return/"><img src="https://img.2125.com/20200806/img/h001/h40/img20210728161129da6970.jpg" alt=""></a></li>
+													<li><a target="_blank" href="http://xhx.61.com/events/2021return/"><img src="https://img.2125.com/20200806/img/h001/h40/img20210729185952da5220.jpg" alt=""></a></li>
+													<li><a target="_blank" href="http://h5.61.com/game/mxwol/"><img src="https://img.2125.com/20200806/img/h001/h40/img20210712114111da6690.jpg" alt=""></a></li>
+													<li><a target="_blank" href="https://maoyan.com/films/343270"><img src="https://img.2125.com/20200806/img/h001/h39/img20210624140608ae9550.jpg" alt=""></a></li>
+													<li><a target="_blank" href="http://seer.61.com/events/12years/"><img src="https://img.2125.com/20200806/img/h001/h39/img20210616141217853290.jpg" alt=""></a></li>
+													<li><a target="_blank" href="https://taptap417.taobao.com"><img src="https://img.2125.com/20200806/img/h001/h38/img20210422181113b83790.jpg" alt=""></a></li>
+											</ol>
+					<ol class="tip">
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h40/img20210728161147805960.jpg" alt=""></li>
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h40/img20210729190039809930.jpg" alt=""></li>
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h40/img20210712114116805940.jpg" alt=""></li>
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h39/img20210624140618456890.jpg" alt=""></li>
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h39/img20210616141307474670.jpg" alt=""></li>
+													<li><i></i><img src="https://img.2125.com/20200806/img/h001/h38/img20210422181126423250.jpg" alt=""></li>
+											</ol>
+				</div>
+			</div>
+			<div class="wrap">
+				<dl class="news">
+					<dt class="clearfix">
+						<em></em><span>最新动态</span>
+					</dt>
+					<dd>
+												<ol class="clearfix">
+															<li>
+									<a target="_blank" href="http://seer.61.com/events/12years/"><img src="https://img.2125.com/20200806/img/h001/h39/img202106161456140a8390.png" alt=""></a>
+									<a class="temp" href="http://seer.61.com/events/12years/">赛尔号十二周年庆今日上线</a>
+									<a class="sub" href="http://seer.61.com/events/12years/">拿福利赢数码好礼</a>
+								</li>
+															<li>
+									<a target="_blank" href="https://www.iqiyi.com/v_19rsdwmalg.html"><img src="http://img1.2125.com/img/h000/h86/img201606021144076c5600.jpg" alt=""></a>
+									<a class="temp" href="https://www.iqiyi.com/v_19rsdwmalg.html">赛尔号第十季：冰封要塞</a>
+									<a class="sub" href="https://www.iqiyi.com/v_19rsdwmalg.html">独播总播放量破1.5亿</a>
+								</li>
+															<li>
+									<a target="_blank" href="http://www.61.com/news/12395.html"><img src="http://img1.2125.com/img/h000/h85/img20160415114856332740.png" alt=""></a>
+									<a class="temp" href="http://www.61.com/news/12395.html">首家摩尔庄园亲子主题乐园</a>
+									<a class="sub" href="http://www.61.com/news/12395.html">酝酿八年终将揭晓</a>
+								</li>
+															<li>
+									<a target="_blank" href="http://www.61.com/news/12393.html"><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119125918b53000.jpg" alt=""></a>
+									<a class="temp" href="http://www.61.com/news/12393.html">小花仙第五季：小花仙之四时花语春夏</a>
+									<a class="sub" href="http://www.61.com/news/12393.html">全网播放总量破1亿</a>
+								</li>
+													</ol>
+					</dd>
+				</dl>
+				<dl class="ani movie">
+					<dt class="clearfix">
+						<em></em><span>大电影世界</span>
+					</dt>
+					<dd>
+						<dl>
+							<dt class="clearfix">
+								<a href="#" class="mole">摩尔庄园电影系列</a>
+								<a href="#" class="seer">赛尔号大电影系列</a>
+																									<a href="#" class="seer on">赛尔号大电影7</a>
+															</dt>
+							<dd>
+								<div class="clearfix box mole submole none">
+									<a href="javascript:;" data-num="0" class="fx left"><i></i></a>
+									<div class="scroll temp world">
+																				<ol class="clearfix">
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img201507061702565a3200.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/9431/"></a></div>
+													<span>摩尔庄园3：魔幻列车大冒险</span>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img201507061703592e1310.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/7436/"></a></div>
+													<span>摩尔庄园2：海妖宝藏</span>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img201507061705319b9520.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/1166/"></a></div>
+													<span>摩尔庄园：冰世纪</span>
+												</li>
+																					</ol>
+									</div>
+									<a href="javascript:;" data-num="0" class="fx right"><i></i></a>
+								</div>
+								<div class="clearfix box seer none">
+									<a href="javascript:;" data-num="0" class="fx left"><i></i></a>
+									<div class="scroll temp world">
+																				<ol class="clearfix">
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img20150706165445a54960.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/10066/"></a></div>
+													<span>赛尔号大电影4：圣魔之战</span>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img201507061658475c7080.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/9254/"></a></div>
+													<span>赛尔号大电影3：战神联盟</span>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img20150706170022d88810.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/6722/"></a></div>
+													<span>赛尔号大电影2：雷伊与迈尔斯</span>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/img/h000/h74/img20150706170127104390.jpg" alt=""><a target="_blank" href="http://v.61.com/comic/1165/"></a></div>
+													<span>赛尔号大电影：寻找凤凰神兽</span>
+												</li>
+																					</ol>
+									</div>
+									<a href="javascript:;" data-num="0" class="fx right"><i></i></a>
+								</div>
+								<div class="clearfix box seer temp">
+																												<div class="fl"><img src="https://img.2125.com/20200806/img/h001/h36/img20210125141423156320_s.jpg" alt=""><a target="_blank" href="https://www.iqiyi.com/v_19rqxuniok.html"></a></div>
+										<div class="role">
+											<dl>
+												<dt>主角：</dt>
+												<dd>
+													<ol>
+																																											<li>
+																<em><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119110902b56890.png" alt=""></em>
+																<div class="clearfix">
+																	<i><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119125925d98100.png" alt=""></i>
+																	<b></b>
+																	<p><span>米瑞斯</span><br>战神光之星米瑞斯</p>
+																</div>
+															</li>
+																													<li>
+																<em><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119102113c12940.png" alt=""></em>
+																<div class="clearfix">
+																	<i><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119102119a37640.png" alt=""></i>
+																	<b></b>
+																	<p><span>赛小息</span><br>星际探险员赛小息</p>
+																</div>
+															</li>
+																													<li>
+																<em><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119101947a78490.png" alt=""></em>
+																<div class="clearfix">
+																	<i><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191119102000555660.png" alt=""></i>
+																	<b></b>
+																	<p><span>阿铁打</span><br>宇宙战士阿铁打</p>
+																</div>
+															</li>
+																											</ol>
+												</dd>
+											</dl>
+										</div>
+										<div class="fr">
+											<strong>赛尔号大电影7疯狂机器城</strong>
+											<p>上映日期：2021</p>
+											<p>类型：动画 | 冒险 | 喜剧</p>
+											<p>地区：大陆</p>
+											<p>剧情简介：</p>
+											<p>星际探险员赛小息、天才机械师卡璐璐和宇宙战士阿铁打奉命维修飞船，
+却被遥远星系突如其来的神秘爆炸震散，流落四方生死未卜……赛尔先锋精英小队星际探险的航程难道就要在此终止了吗……</p>
+										</div>
+																	</div>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				<dl class="ani hot">
+					<dt class="clearfix">
+						<em></em><span>热播动漫</span>
+					</dt>
+					<dd>
+						<dl>
+							<dt class="clearfix">
+								<a href="#" class="mole">摩尔庄园动画片</a>
+								<a href="#" class="hua">小花仙动画片</a>
+								<a href="#" class="seer on">赛尔号动画片</a>
+							</dt>
+							<dd>
+								<div class="clearfix box mole none">
+									<a href="javascript:;" data-num="0" class="fx left"><i></i></a>
+									<div class="scroll">
+																				<ol class="clearfix">
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img201507061710381f3770.jpg" alt=""></div>
+													<div class="fr">
+														<strong>摩尔庄园第三季</strong>
+														<p>上映日期：2013|剧集：53集全</p>
+														<p>主角：摩乐乐,库拉,么么公主,菩提,RK</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/8116/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img201507061712000a8650.jpg" alt=""></div>
+													<div class="fr">
+														<strong>摩尔庄园第二季</strong>
+														<p>上映日期：2013|剧集：52集全</p>
+														<p>主角：RK,布多多,布少少,么么公主,摩乐乐,瑞琪,库拉,菩提大伯,丫丽</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/2266/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img201507061713376e5350.jpg" alt=""></div>
+													<div class="fr">
+														<strong>摩尔庄园第一季</strong>
+														<p>上映日期：2011|剧集：52集全</p>
+														<p>主角：摩乐乐,库拉,么么公主,菩提,RK</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/1127/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																					</ol>
+									</div>
+									<a href="javascript:;" data-num="0" class="fx right"><i></i></a>
+								</div>
+								<div class="clearfix box hua none">
+									<a href="javascript:;" data-num="0" class="fx left"><i></i></a>
+									<div class="scroll">
+																				<ol class="clearfix">
+																							<li>
+													<div class="fl"><img src="http://img1.2125.com/2017begin/img/h001/h22/img20191122160637715760.png" alt=""></div>
+													<div class="fr">
+														<strong>小花仙第五季</strong>
+														<p>上映日期：2019|剧集：更新至第26集</p>
+														<p>主角：小爱</p>
+														<p></p>
+														<a target="_blank" href="https://www.iqiyi.com/v_19rs63syhg.html"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img1.2125.com/2017begin/img/h001/h22/img201911221606287a7030.jpg" alt=""></div>
+													<div class="fr">
+														<strong>小花仙第四季</strong>
+														<p>上映日期：2018|剧集：更新至第40集</p>
+														<p>主角：夏安安</p>
+														<p></p>
+														<a target="_blank" href="https://www.iqiyi.com/v_19rr12vnyw.html"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img1.2125.com/img/h001/h02/img20170414163658f31540.jpg" alt=""></div>
+													<div class="fr">
+														<strong>小花仙第三季</strong>
+														<p>上映日期：2017|剧集：更新至第40集</p>
+														<p>主角：夏安安</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10144/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706171548894720.jpg" alt=""></div>
+													<div class="fr">
+														<strong>小花仙第二季</strong>
+														<p>上映日期：2015|剧集：更新至第52集</p>
+														<p>主角：夏安安</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10143/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706171704356260.jpg" alt=""></div>
+													<div class="fr">
+														<strong>小花仙第一季</strong>
+														<p>上映日期：2014|剧集：52集全</p>
+														<p>主角：夏安安</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/8431/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																					</ol>
+									</div>
+									<a href="javascript:;" data-num="0" class="fx right"><i></i></a>
+								</div>
+								<div class="clearfix box seer">
+									<a href="javascript:;" data-num="0" class="fx left"><i></i></a>
+									<div class="scroll">
+																				<ol class="clearfix">
+																							<li>
+													<div class="fl"><img src="https://img.2125.com/20200806/img/h001/h36/img202101251205054a1700.png" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第十一季裂空沧海</strong>
+														<p>上映日期：2021|剧集：更新至第30集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="https://www.iqiyi.com/v_1vyk4dcdh4c.html"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img1.2125.com/2017begin/img/h001/h22/img20191119101344257100.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第十季冰封要塞</strong>
+														<p>上映日期：2019|剧集：更新至第30集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="https://www.iqiyi.com/v_19rsdwmalg.html"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img1.2125.com/2017begin/img/h001/h22/img20191119101432033260.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第九季霹雳九重天</strong>
+														<p>上映日期：2018|剧集：更新至第30集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="https://www.iqiyi.com/v_19rr0ejmyo.html"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="https://img1.2125.com/img/h001/h02/img20170414163636154340.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第八季幻梦战记</strong>
+														<p>上映日期：2017|剧集：更新至第16集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10199/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img1.2125.com/img/h000/h99/img201701121705074b9180.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第七季宇宙之眼</strong>
+														<p>上映日期：2016|剧集：更新至第30集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10525/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img1.2125.com/img/h000/h82/img20160205115723431960.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第六季苍穹烈火</strong>
+														<p>上映日期：2016|剧集：更新至第30集</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10134/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706171911623680.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第五季猎天困兽</strong>
+														<p>上映日期：2015|剧集：30集全</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10111/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706172001df6200.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第四季战神风云决</strong>
+														<p>上映日期：2015|剧集：30集全</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/10103/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706172136092100.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第三季光明的救赎</strong>
+														<p>上映日期：2014|剧集：30集全</p>
+														<p>主角：赛小息,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/9652/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706172249068580.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第二季圣者逆袭</strong>
+														<p>上映日期：2013|剧集：40集全</p>
+														<p>主角：赛小息</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/7864/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																							<li>
+													<div class="fl"><img src="http://img.2125.com/img/h000/h74/img20150706172342986510.jpg" alt=""></div>
+													<div class="fr">
+														<strong>赛尔号第一季</strong>
+														<p>上映日期：2012|剧集：52集全</p>
+														<p>主角：赛小息,米咔,卡璐璐,阿铁打</p>
+														<p></p>
+														<a target="_blank" href="http://v.61.com/comic/2020/"><em></em><span>立即观看</span></a>
+													</div>
+												</li>
+																					</ol>
+									</div>
+									<a href="javascript:;" data-num="0" class="fx right"><i></i></a>
+								</div>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				<dl class="game">
+					<dt class="clearfix">
+						<em></em><span>精彩游戏</span>
+					</dt>
+					<dd>
+						<dl>
+							<dt class="clearfix"><i></i><span>网页游戏</span></dt>
+							<dd class="web-game">
+																<ol class="clearfix">
+																			<li>
+											<a class="img-a" href="http://seer.61.com" target="_blank">
+												<img src="http://img1.2125.com/20200806/img/h001/h29/img20200831140625916080.png" />
+											</a>
+											<div class="bottom clearfix">
+												<p class="fl name">赛尔号</p>
+												<a href="http://seer.61.com" class="fr home" target="_blank"></a>
+											</div>
+										</li>
+																			<li>
+											<a class="img-a" href="http://hua.61.com" target="_blank">
+												<img src="http://img1.2125.com/20200806/img/h001/h29/img202008311407169e8900.png" />
+											</a>
+											<div class="bottom clearfix">
+												<p class="fl name">小花仙</p>
+												<a href="http://hua.61.com" class="fr home" target="_blank"></a>
+											</div>
+										</li>
+																			<li>
+											<a class="img-a" href="http://as.61.com" target="_blank">
+												<img src="http://img1.2125.com/20200806/img/h001/h29/img20200831140801f32380.png" />
+											</a>
+											<div class="bottom clearfix">
+												<p class="fl name">创想兵团</p>
+												<a href="http://as.61.com" class="fr home" target="_blank"></a>
+											</div>
+										</li>
+																			<li>
+											<a class="img-a" href="http://seer2.61.com" target="_blank">
+												<img src="http://img1.2125.com/20200806/img/h001/h29/img202008311409177f9450.png" />
+											</a>
+											<div class="bottom clearfix">
+												<p class="fl name">约瑟传说</p>
+												<a href="http://seer2.61.com" class="fr home" target="_blank"></a>
+											</div>
+										</li>
+																			<li>
+											<a class="img-a" href="http://mole.61.com" target="_blank">
+												<img src="http://img1.2125.com/20200806/img/h001/h30/img202009101538031b2210.png" />
+											</a>
+											<div class="bottom clearfix">
+												<p class="fl name">摩尔庄园</p>
+												<a href="http://mole.61.com" class="fr home" target="_blank"></a>
+											</div>
+										</li>
+																	</ol>
+							</dd>
+							<dt class="clearfix"><i></i><span>手机游戏</span></dt>
+							<dd class="phone-game">
+																<ol class="clearfix">
+																			<li class="clearfix">
+											<a class="fl" href="http://xhx.61.com/" target="_blank"><img src="http://img1.2125.com/2017begin/img/h001/h27/img202006111110238e2640.jpg"></a>
+											<div class="fl">
+												<p class="title">小花仙手游</p>
+												<a class="go-other" href="http://xhx.61.com/" target="_blank">进入官网</a>
+											</div>
+										</li>
+																			<li class="clearfix">
+											<a class="fl" href="http://s.61.com/home" target="_blank"><img src="http://img1.2125.com/20200806/img/h001/h29/img20200831141511ce5770.png"></a>
+											<div class="fl">
+												<p class="title">赛尔号手游</p>
+												<a class="go-other" href="http://s.61.com/home" target="_blank">进入官网</a>
+											</div>
+										</li>
+																			<li class="clearfix">
+											<a class="fl" href="http://w.61.com/?tad=innermedia.zhuzhan.free.icon" target="_blank"><img src="http://img1.2125.com/20200806/img/h001/h29/img202008311415443a8700.png"></a>
+											<div class="fl">
+												<p class="title">赛尔号<br>星球大战</p>
+												<a class="go-other" href="http://w.61.com/?tad=innermedia.zhuzhan.free.icon" target="_blank">进入官网</a>
+											</div>
+										</li>
+																			<li class="clearfix">
+											<a class="fl" href="http://hy.61.com/" target="_blank"><img src="http://img1.2125.com/20200806/img/h001/h29/img20200831141608be6540.png"></a>
+											<div class="fl">
+												<p class="title">花语学园</p>
+												<a class="go-other" href="http://hy.61.com/" target="_blank">进入官网</a>
+											</div>
+										</li>
+																	</ol>
+							</dd>
+							<dt class="clearfix"><i></i><span>H5游戏</span></dt>
+							<dd>
+								<div class="swiper3-div">
+									<div class="swiper-container3 swiper-no-swiping">
+										<div class="swiper-wrapper">
+																																		<div class="swiper-slide">
+													<a href="http://h5.61.com/game/jdjh/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img20200818133552f47740.png" />
+														<p class="game-name">剑荡江湖H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/cllr/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h28/img20200807104417c48430.png" />
+														<p class="game-name">丛林猎人H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/jxtw/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img20200825192950984810.png" />
+														<p class="game-name">极限逃亡H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/zsdg/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img202008181700561e4270.jpg" />
+														<p class="game-name">纸上帝国H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/frxx/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img202008181336591d6540.png" />
+														<p class="game-name">凡人修仙传挂机版</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/qyzj/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img20200820151615fd6240.jpg" />
+														<p class="game-name">契约战记H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/wddg/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h29/img20200820152937ae3430.jpg" />
+														<p class="game-name">我的帝国H5</p>
+													</a>
+												</div>
+																							<div class="swiper-slide">
+													<a href="http://h5.61.com/game/xyxz/" target="_blank">
+														<img src="http://img1.2125.com/20200806/img/h001/h30/img20200909095248b62580.png" />
+														<p class="game-name">逍遥修真H5</p>
+													</a>
+												</div>
+																					</div>
+									</div>
+									<div class="h5-swiper-button-prev"></div>
+									<div class="h5-swiper-button-next"></div>
+								</div>
+							</dd>
+						</dl>
+					</dd>
+				</dl>
+				<dl class="brand">
+					<dt class="clearfix">
+						<em></em><span>品牌专区</span>
+					</dt>
+					<dd>
+												<ol class="clearfix">
+															<li><a target="_blank" href="http://seer.61.com/events/12years/"><img src="https://img.2125.com/20200806/img/h001/h39/img20210616145638376280.png" alt=""></a></li>
+															<li><a target="_blank" href="http://www.61.com/hua/"><img src="http://img1.2125.com/2017begin/img/h001/h27/img202006111112275e7270.jpg" alt=""></a></li>
+													</ol>
+					</dd>
+				</dl>
+				<!-- <dl class="toy">
+			<dt class="clearfix">
+				<em></em><span>酷炫玩具</span>
+			</dt>
+			<dd>
+								<ol class="clearfix">
+									        <li><a target="_blank" href="http://www.zega.cn/"><img src="http://img.2125.com/img/h000/h75/img20150722172541cf3970.jpg" alt=""></a></li>
+				    				        <li><a target="_blank" href="http://toy.61.com"><img src="http://img.2125.com/img/h000/h75/img20150722172606c23010.jpg" alt=""></a></li>
+				    				</ol>
+			</dd>
+		</dl> -->
+			</div>
+			<script type="text/javascript" src="//webres.61.com/common/js/common_footer.js"></script>
+			<script src="//webres.61.com/common/js/jquery_1101.js"></script>
+			<script src="//webres.61.com/common/swiper/js/swiper-4.3.3.min.js"></script>
+			<script src="//webres.61.com/www61com/js/public.js?20210729191808"></script>
+			<script src="//webres.61.com/common/js/tempoff.js?v=202107290718"></script>
+			<div style="display:none">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2511be2ec90bdabfd6d7289e5371cc7e";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</div>
+	</body>
+</html>

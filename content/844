@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!--
+ooooo     ooo oooo                     ooooo      ooo               .
+`888'     `8' `888                     `888b.     `8'             .o8
+888       8   888  oooo  oooo d8b      8 `88b.    8   .ooooo.  .o888oo
+888       8   888 .8P'   `888""8P      8   `88b.  8  d88' `88b   888
+888       8   888888.     888          8     `88b.8  888ooo888   888
+`88.    .8'   888 `88b.   888     .o.  8       `888  888    .o   888 .
+`YbodP'    o888o o888o d888b    Y8P o8o        `8  `Y8bod8P'   "888"
+--><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js "> <!--<![endif]-->
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5903420-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {dataLayer.push(arguments);}
+gtag('js', new Date());gtag('config', 'UA-5903420-1', {
+'custom_map': {'dimension1': 'Users',
+'dimension2': 'Gender',
+'dimension3': 'Age'},
+send_page_view: false
+});
+</script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>UKR.NET: Всі новини України, останні новини дня в Україні та Світі</title>
+<meta name="description" content="Свіжі новини України, останні новини з-за кордону, новини політики, економіки, спорту, культури, технологій, шоу-бизнесу...">
+<meta name="keywords" content="новини, україна, відео, новини україни, україна новини, політика, економіка, випадки, технології, спорт, здоров'я, культура, за кордоном, курйози, фоторепортаж, фото, відеорепортаж, відео" />
+<meta name="robots" content="all" />
+<meta name="publisher" content="UkrNet //www.ukr.net" />
+<meta http-equiv="reply-to" content="webmaster@ukr.net" />
+<meta name="distribution" content="global" />
+<meta name="revisit-after" content="1 days" />
+<meta name="google-site-verification" content="kxEm_cVhS0eF5tSyTPA6VJqdPWArTl_6s7cAMQR1YRU" />
+<meta name="referrer" content="always"/><meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /><link rel="stylesheet" href="//upst.fwdcdn.com/css/??normalize.css,chosen.css"/>
+<link rel="stylesheet" href="//upst.fwdcdn.com/css/52/home_main.css">
+<link rel="stylesheet" href="//upst.fwdcdn.com/css/1625212887/top_links.css">
+<link rel="icon" href="//upst.fwdcdn.com/favicon-v3.png" type="image/png" />
+<link rel="shortcut icon" href="//upst.fwdcdn.com/favicon-v3.ico" type="'image/x-icon"/><!-- For iPhone 4 Retina display: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//upst.fwdcdn.com/ukrnet-icon-144x144.png">
+<!-- For iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//upst.fwdcdn.com/ukrnet-icon-72x72.png">
+<!-- For iPhone: -->
+<link rel="apple-touch-icon-precomposed" href="//upst.fwdcdn.com/ukrnet-icon-57x57.png">
+<link rel="canonical" href="//www.ukr.net/ua/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="//www.ukr.net/"/>
+<meta property="og:url" content="//www.ukr.net/ua/"/>
+<meta property="og:title" content="UKR.NET: Всі новини України, останні новини дня в Україні та Світі"/>
+<meta property="og:description" content="Свіжі новини України, останні новини з-за кордону, новини політики, економіки, спорту, культури, технологій, шоу-бизнесу..."/>
+<meta property="og:image" content="//upst.fwdcdn.com/img/top-logo-ua-mod3.gif"/>
+<meta property="og:image:alt" content="новини"/>
+<meta property="og:image:width" content="235"/>
+<meta property="og:image:height" content="69"/>
+<meta property="og:locale" content="uk_UA"/><meta name="ab6be0215542a3d61b80aa9660e5c473" content=""/><script>if((self.parent&&!(self.parent===self))&&(self.parent.frames.length!==0)){self.parent.location=document.location;}</script>
+<script src="//upst.fwdcdn.com/js/23/main/concat.js"></script>
+<script src="//upst.fwdcdn.com/js/136/home_main.js"></script>
+<script type="text/javascript">
+<!--//<![CDATA[
+if (document.location.hash) {
+var src = document.location.hash.substr(1);
+var dst = null;
+switch (true) {
+case (dst = src.match(/^news\/(\w+)\/(?:\d+\/)?$/)) !== null:
+case (dst = src.match(/^news\/top[s]?\/(\w+)\/$/)) !== null:
+document.location.href = '/news/'+dst[1]+'.html';
+break;
+case (dst = src.match(/^news\/last\/(\w+)\/$/)) !== null:
+document.location.href = '/news/'+dst[1]+'/index.html';
+break;
+case (dst = src.match(/^news\/blogs\/(\w+)\/$/)) !== null:
+document.location.href = '/news/'+dst[1]+'/blogs.html';
+break;
+case src.match(/^news\/cluster\//) !== null:
+document.location.href = '/go/'+src;
+break;
+case src.match(/^(?:homeDetails|news)\//) !== null:
+// document.location.href = '/go/'+src;
+if(src.slice(-1) == '/') {
+src = src.substring(0, src.lastIndexOf("/"))
+}
+if(src.indexOf('homeDetails/') > -1){
+var src = src.replace('homeDetails/','news/details/');
+}
+document.location.href = src + '.html';
+break;
+case (dst = src.match(/^(euro2020\/.*)$/)) !== null:
+if (dst[1]) {
+document.location.href = '/'+dst[1];
+}
+break;              
+}
+}
+var RegionsList = [{"id":9,"title":"\u041a\u0438\u0457\u0432"},{"id":1,"title":"\u0412\u0456\u043d\u043d\u0438\u0446\u044f"},{"id":2,"title":"\u0412\u043e\u043b\u0438\u043d\u044c"},{"id":3,"title":"\u0414\u043d\u0456\u043f\u0440\u043e"},{"id":4,"title":"\u0414\u043e\u043d\u0435\u0446\u044c\u043a"},{"id":5,"title":"\u0416\u0438\u0442\u043e\u043c\u0438\u0440"},{"id":6,"title":"\u0417\u0430\u043a\u0430\u0440\u043f\u0430\u0442\u0442\u044f"},{"id":7,"title":"\u0417\u0430\u043f\u043e\u0440\u0456\u0436\u0436\u044f"},{"id":8,"title":"\u0406\u0432\u0430\u043d\u043e-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a"},{"id":10,"title":"\u041a\u0440\u043e\u043f\u0438\u0432\u043d\u0438\u0446\u044c\u043a\u0438\u0439"},{"id":12,"title":"\u041b\u0443\u0433\u0430\u043d\u0441\u044c\u043a"},{"id":13,"title":"\u041b\u044c\u0432\u0456\u0432"},{"id":14,"title":"\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432"},{"id":15,"title":"\u041e\u0434\u0435\u0441\u0430"},{"id":16,"title":"\u041f\u043e\u043b\u0442\u0430\u0432\u0430"},{"id":17,"title":"\u0420\u0456\u0432\u043d\u0435"},{"id":18,"title":"\u0421\u0443\u043c\u0438"},{"id":19,"title":"\u0422\u0435\u0440\u043d\u043e\u043f\u0456\u043b\u044c"},{"id":20,"title":"\u0425\u0430\u0440\u043a\u0456\u0432"},{"id":21,"title":"\u0425\u0435\u0440\u0441\u043e\u043d"},{"id":22,"title":"\u0425\u043c\u0435\u043b\u044c\u043d\u0438\u0446\u044c\u043a\u0438\u0439"},{"id":23,"title":"\u0427\u0435\u0440\u043a\u0430\u0441\u0438"},{"id":24,"title":"\u0427\u0435\u0440\u043d\u0456\u0433\u0456\u0432"},{"id":25,"title":"\u0427\u0435\u0440\u043d\u0456\u0432\u0446\u0456"},{"id":11,"title":"\u041a\u0440\u0438\u043c"}];
+var Bookmarks = {lang : 'ua'};
+var Paths = {base:'//www.ukr.net/',alts:'//upst.fwdcdn.com/',type:'main',lang:'ua',Lang:'Ua',comet_host:'notify.www.ukr.net',old:true};
+var baseurl = '//www.ukr.net/';
+var alturl = '//upst.fwdcdn.com/';
+var basesearchurl = 'https://search.ukr.net/';
+var searchlang='ua';
+var g_adriver_bgr = '';
+var g_adriver_href = '';
+var ar_back_color = '';
+var brandsActiv = false;
+var flashActiv = false;
+var sideWidth;
+var OverOff;
+var zakl_domain = '//zakladki.ukr.net/';
+var zakl_domain_back = '//zakladki.ukr.net/';
+var zakl_css = false;
+var userLoginData = '';
+var f_title_act;
+var at_cplt = false;
+var ecbrData = [];
+var ecbrCash = {};
+var fschema = location.protocol.replace(':', '');
+var ios = false;
+if (navigator) {
+if (navigator.userAgent.match(/(iPad|iPhone|iPod);.*CPU.*OS 7_\d/i)) {
+ios = true;
+}
+}
+var magic_hash = '52|23|136';
+//]]>-->
+</script>
+<script src="//zakladki.ukr.net/bookmarks/js/zakladki_v2.min.js"></script>
+<noscript><style>.lazy {display:none;}</style></noscript>
+</head>
+<body>
+<a id="toTop" href="#gotop" title="Вгору"></a>
+<script>
+$('body').on('mousedown', 'a', Clicks.route);$('body').on('mousedown', 'a[nc]', Clicks.news);
+$('body').on('mousedown', 'a[rc]', Clicks.regnews);
+$('body').on('mousedown', 'a[fc]', Clicks.favorit);
+$('body').on('mousedown', 'a[bc]', Clicks.block);
+$('body').on('mousedown', 'a[lc]', Clicks.lid);
+$('body').on('mousedown', 'li[lc]', Clicks.lid);
+$('body').on('mousedown', 'a[mc]', Clicks.market);
+</script><div class="wrong-browser">
+<span class="message-icon"></span><span class="message"><b>Ваш браузер застарів!</b><br>Ви користуєтеся застарілою версією браузера. Ця версія не підтримує сучасних технологій,<br>через що більшість сторінок порталу відображаються некоректно, а головне - можуть працювати не всі функції.</span>
+</div>
+<script type="text/javascript" src="https://counter.ukr.net/old/1/cnt.php"></script>
+<noscript>
+<div class="noscript"><span class="message">У вас відключено JavaScript. Більшість функцій порталу будуть недоступні</span></div>
+<img src="https://counter.ukr.net/lid/789/cnt.php" width="1" height="1" border="0"/>
+</noscript><!-- Check smart -->
+<div class="wrong-browser" id="check-smart" style="display:none;">
+<span class="message-icon"></span><span class="message"><a href="javascript:void(0)" onclick="gosmart();">Повернутися на мобільну версію</a></span>
+</div>
+<script type="text/javascript">
+if(GetCookie('un_type')){
+$('#check-smart').show();
+}
+function gosmart(){
+DeleteCookie('un_type');
+window.location.href = baseurl;
+}
+</script>
+<!-- End Check smart --><div class="page-wrap">
+<div id="main" class="main">
+<div class="tob-bar">
+<nav class="lang-select">
+<span id="act-lang">Українською</span>
+<div class="leng-dropdown"><span>Українською</span><a href="//www.ukr.net/ru/">на Русском</a></div>
+</nav>
+<div class="username"></div>
+<div class="logout" onclick="User.logout();">Вийти</div>
+</div>
+<div class="left-side">
+<header>
+<div class="top-logo">
+<a href="//www.ukr.net/"><img src="//upst.fwdcdn.com/temp/holidays/10388/logo_ua.gif" width="235" height="69" alt="новини" /></a>
+<h1>Останні новини України</h1>
+<!-- HOLIDAYS BLOCK  -->
+<style>
+.main .left-side header .top-logo {height:auto;}
+.main .left-side aside.left {padding-top:5px;}
+.main .left-side .main-items {margin-top:-40px;}
+</style>
+<div class="holidays-img"><img src="//upst.fwdcdn.com/temp/holidays/10388/title_img_ua.gif" width="235" alt="" /></div>
+<script type="text/javascript">Holydays.init(
+"\u041e\u0441\u0442\u0430\u043d\u043d\u0456 \u043d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438",
+"\u043d\u043e\u0432\u0438\u043d\u0438",
+{"TitleUa":"","TitleImgUa":"\/\/upst.fwdcdn.com\/temp\/holidays\/10388\/title_img_ua.gif","LogoUa":"\/\/upst.fwdcdn.com\/temp\/holidays\/10388\/logo_ua.gif","TitleImgHeightUa":40,"HtmlUa":null},true);</script>
+<!-- END HOLIDAYS BLOCK BLOCK  -->
+</div>
+<form id="search-form" name="search" enctype="application/x-www-form-urlencoded" action="https://www.google.com/search" onsubmit="return go_search();" name="f" method="get" target="_blank">
+<div class="search-block">
+<a style="display: none" href="//www.ukr.net/" id="search-href" target="_blank">search</a>
+<div class="search-input-block">
+<div class="search-text-block"><input type="text" id="search-input" name="q" tabindex="1" autocomplete="off" /></div>
+<div class="search-button-block"><input type="submit" tabindex="2" value="Пошук" /></div>
+<i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i>
+<div class="b-cl-block"></div>
+</div>
+</div>
+<input type="hidden" name="h" value="1"/>
+</form>
+<script>
+if(ios)$('#search-form').removeAttr('target');
+</script>
+<div class="b-cl-block"></div>
+</header>
+<aside class="left">
+<div class="right-border">
+<section class="hot-resources">
+<div id="hot-notlogged">
+<h3>Вибране</h3>
+<div class="col-left"><a class="a0" lc="596" target="_blank" href="https://ua.sinoptik.ua/">Sinoptik</a><a class="a1" lc="582" target="_blank" href="http://orakul.com">Оракул</a><a class="a2" lc="588" target="_blank" href="http://tvgid.ua/">ТВ-гiд</a><a class="a3" lc="590" target="_blank" href="http://kinoafisha.ua/ua/?utm_source=ukr.net&utm_medium=link&utm_campaign=izbranoe">Кіноафіша</a><a class="a4" lc="689" target="_blank" href="http://avtosale.ua">AvtoSale</a><!--noindex--><a class="a5" rel="nofollow" lc="217" bc="2308" target="_blank" href="http://www.booking.com/index.html?aid=375206">Booking</a><!--/noindex--></div><div class="col-right"><!--noindex--><a class="a0" rel="nofollow" lc="826" bc="1978" target="_blank" href="http://rozetka.com.ua/?utm_source=ukr_net_main&utm_medium=banner_logo&utm_campaign=logo_main">Rozetka</a><!--/noindex--><!--noindex--><a class="a1" rel="nofollow" lc="205" bc="7003" target="_blank" href="https://kasta.ua/?utm_campaign=190108_link_new_audience_cac_main_izbrannoe&utm_medium=cpc&utm_source=ukrnet">Kasta</a><!--/noindex--><!--noindex--><a class="a2" rel="nofollow" lc="313" bc="7903" target="_blank" href="https://www.citrus.ua/?utm_source=ukrnet&utm_medium=cpc&utm_campaign=201203_links-general">Цитрус</a><!--/noindex--><!--noindex--><a class="a3" rel="nofollow" lc="237" bc="3518" target="_blank" href="https://makeup.com.ua/?utm_source=ukr.net&utm_medium=izbrannoe">MakeUp</a><!--/noindex--><!--noindex--><a class="a4" rel="nofollow" lc="347" bc="9653" target="_blank" href="https://z.cdn.adpool.bet/go?z=1818442473">Parimatch</a><!--/noindex--><!--noindex--><a class="a5" rel="nofollow" lc="348" bc="9698" target="_blank" href="https://proizd.ua/ua">Proizd.ua</a><!--/noindex--></div>                <div class="b-cl"></div>
+</div>            
+</section><!--noindex--><section class="categories-block"><div class="box" id="153" x-adriver-id="38"><h3>Автосайти</h3><a rel="nofollow" fc="131,AUTO.RIA - Проверено людьми" target="_blank" href="https://auto.ria.com/uk/?utm_source=ukrnet&utm_medium=link_clikukrnet&utm_campaign=favorites&r_audience=partners_buyers&r_source=ukrnet&r_medium=link_clikukrnet&r_campaign=favorites">AUTO.RIA - Перевірено людьми</a> <a rel="nofollow" fc="1577,Машины продают на сайте RST" target="_blank" href="http://rst.ua/">Машини продають на сайтi RST</a> <a rel="nofollow" fc="7658,Автобазар - все машины тут" target="_blank" href="http://ab.ua/?utm_source=ukr.net&amp;amp;utm_medium=text&amp;amp;utm_campaign=ukr.net_">Автобазар - всі машини тут</a> <a rel="nofollow" fc="8063,Авто из США" target="_blank" href="http://atlanticexpress.com.ua/?utm_source=ukr_net&utm_medium=url_top&utm_campaign=auto_us_ukr_net&utm_term=avto_iz_ssha&utm_content=atlantic_express_1">Авто з США</a> <a rel="nofollow" fc="8843,Авто с пробегом. Цены снизили" target="_blank" href="https://vidi-automarket.com.ua/ua/catalog">Авто з пробігом. Ціни знижено</a> <a rel="nofollow" fc="9693,Suzuki VITARA – от 476 900 грн." target="_blank" href="https://suzuki.com.ua/car/1/vitara?utm_source=ukr.net&utm_medium=cpр&utm_content=link&utm_term=&utm_campaign=vitara_fl5_media">Suzuki VITARA – від 476 900 грн.</a> <a rel="nofollow" fc="4893,ОСАГО онлайн" target="_blank" href="https://osago.avtosale.ua/insurance/osago">Автоцивілка онлайн</a> <a rel="nofollow" fc="656,Avtosale - авто по лучшей цене" target="_blank" href="http://avtosale.ua/new_tender/">Avtosale - авто за кращою ціною</a> <a rel="nofollow" fc="9718,EXIST.ua автотовары и сервисы" target="_blank" href="https://exist.ua/?utm_source=ukrnet&utm_medium=banner&utm_campaign=favorites">EXIST.ua автотовари та сервіси</a> <a rel="nofollow" fc="9738,YouTube для автомобилистов" target="_blank" href="https://www.youtube.com/channel/UCxCuNQ9RHHdnXWZ-TuyJHZw?sub_confirmation=1">YouTube для автомобілістів</a> <a rel="nofollow" fc="9683,Авто из Америки - 40%" target="_blank" href="https://autoamerica.com.ua/?utm_source=ukr_net&utm_medium=url_fav&utm_campaign=ukr_net_ppc_40">Авто з Америки - 40%</a> <a rel="nofollow" fc="9753,Новый Nissan от 515 210" target="_blank" href="http://nissan-vidi.com.ua/ua/models/?utm_source=ukr.net&utm_medium=cpc&utm_campaign=ukr.net%2Fmodels">Новий Nissan від 515 210</a> <a rel="nofollow" fc="9758,Pajero Sport от 1049000 грн" target="_blank" href="https://niko-centre.kiev.ua/ua/model/pajero-sport/?utm_source=ukr.net&utm_medium=link_pajero-sport&utm_campaign=pajero-sport-ukr.net&utm_id=pajero-sport-ukr.net">Pajero Sport від 1049000 грн</a> <a rel="nofollow" fc="9763,Новый Nissan Juke от 515210" target="_blank" href="https://nissan-ask.com.ua/ua/auto_models/new-juke/description/?utm_source=Juke_ukr.net&utm_medium=Juke_ukr.net&utm_campaign=Juke_ukr.net&utm_id=Juke_ukr.net">Новий Nissan Juke від 515210</a> <a rel="nofollow" fc="9193,AUTO.RIA - продажа новых авто" target="_blank" href="https://auto.ria.com/uk/newauto/?utm_source=ukrnet&utm_medium=clikukrnet&utm_campaign=new_auto_favorites&r_audience=partners_buyers&r_source=ukr.net&r_medium=clikukrnet&r_campaign=new_auto_favorites">AUTO.RIA - Продаж Нових авто</a></div><div class="box" id="3" x-adriver-id="34"><h3>Нерухомість</h3><a rel="nofollow" fc="44,DOM.ria - Делись правдой" target="_blank" href="https://dom.ria.com/uk/?utm_source=ukrnet&utm_medium=clikukrnet&utm_campaign=favorites&r_audience=partners_buyers&r_source=ukrnet&r_medium=clikukrnet&r_campaign=favorites">DOM.RIA - Ділись правдою</a> <a rel="nofollow" fc="3603,ЛУН - Все новостройки" target="_blank" href="https://lun.ua">ЛУН - Всі новобудови</a> <a rel="nofollow" fc="9643,НЕРУХОМІ - слово эксперта!" target="_blank" href="https://nerukhomi.ua/ukr/novostrojki-kiiv/?utm_source=ukr.net&utm_medium=newbuilds&utm_campaign=secrets_zhk">НЕРУХОМІ - слово експерта!</a> <a rel="nofollow" fc="8793,Вся недвижимость Одессы" target="_blank" href="http://1realty.ua/">Вся нерухомість Одеси</a> <a rel="nofollow" fc="8998,FLATFY - Квартиры ищи" target="_blank" href="https://flatfy.ua">FLATFY - Квартири шукай</a> <a rel="nofollow" fc="5983,DOM.RIA - новостройки Украины" target="_blank" href="https://dom.ria.com/uk/novostroyki/?withoutHeader=1&utm_source=ukrnet&utm_medium=clikukrnet_newbuilds&utm_campaign=newbuildings&r_audience=partners_buyers&r_source=ukr.net&r_medium=link&r_campaign=clikukrnet">DOM.RIA - новобудови України</a></div><div class="box" id="15" x-adriver-id="42"><h3>Бізнес та Фінанси</h3><a rel="nofollow" fc="9413,Займ под залог 1,5% в месяц" target="_blank" href="https://statusfinance.kiev.ua/?utm_source=ukrnet">Позика під заставу 1,5% в міс.</a> <a rel="nofollow" fc="9723,Регистрация ФЛП" target="_blank" href="https://www.bip.net.ua/">Реєстрація ФОП</a></div><div class="box" id="8" x-adriver-id="39"><h3>Жінкам</h3><a rel="nofollow" fc="6908,Парфюмерия" target="_blank" href="https://makeup.com.ua/categorys/3/">Парфумерія</a> <a rel="nofollow" fc="9733,Коллаген и гиалурон для кожи" target="_blank" href="https://vitaworld.com.ua/uk/kollagen-gialuronovaya-kislota-i-hondroprotektory?utm_source=ukr.net&utm_medium=link&utm_campaign=collagen">Колаген і гіалурон для шкіри</a> <a rel="nofollow" fc="4428,Знакомства OnOna.ua" target="_blank" href="http://onona.ua/">Знайомства OnOna.ua</a> <a rel="nofollow" fc="9298,Нумерологические прогнозы" target="_blank" href="https://orakul.com/num/">Нумерологічний прогнози</a> <a rel="nofollow" fc="9508,Автобусные туры в Турцию" target="_blank" href="https://www.accordtour.com/vsi_avtobusni_tury/turechchyna">Автобусні тури в Турцію</a></div><div class="box" id="49" x-adriver-id="47"><h3>Медицина</h3><a rel="nofollow" fc="9483,Импульс Неотложная Помощь" target="_blank" href="http://www.impuls24.com.ua/">Імпульс Невiдкладна Допомога</a> <a rel="nofollow" fc="8128,Медицинский магазин" target="_blank" href="https://med-magazin.ua/?utm_source=ukrnetmedtovary">Медичний магазин</a> <a rel="nofollow" fc="7393,Lisod лечение рака" target="_blank" href="https://www.lissod.com.ua/?f=ukr.net">Lisod лікування раку</a> <a rel="nofollow" fc="9238,Победим катаракту вместе!" target="_blank" href="https://www.ailas.com.ua/metody_lecheniya/hirurgiya_katarakty.html?utm_source=ukr-net-hirurgija-katarakty&utm_medium=link&utm_campaign=udalenie-katarakty">Переможемо катаракту разом!</a> <a rel="nofollow" fc="9293,Айлаз: коррекция зрения Lasik" target="_blank" href="https://www.ailas.com.ua/ukr/metody_lecheniya/lazernaya_korrekciya.html?utm_source=ukr-net-laser&utm_medium=link&utm_campaign=laser">Айлаз: корекція зору Lasik</a> <a rel="nofollow" fc="9428,Ортопедический магазин" target="_blank" href="https://bit.ly/3idlh7f">Ортопедичний магазин</a> <a rel="nofollow" fc="9398,Товары для здоровья" target="_blank" href="https://med-magazin.ua/?utm_source=ukrnetmainpage&utm_campaign=medmag">Товари для здоров'я</a> <a rel="nofollow" fc="9403,Пульсоксиметры" target="_blank" href="https://bit.ly/3nKOLeo">Пульсоксиметри</a> <a rel="nofollow" fc="9588,Источник природного йода" target="_blank" href="http://healthyway.com.ua/uk/chomu-kelp/">Джерело природнього йоду</a> <a rel="nofollow" fc="9593,Омега-3 или рыбий жир?" target="_blank" href="http://healthyway.com.ua/uk/omega-3-abo-ribyachij-zhir/">Омега-3 або риб'ячий жир?</a></div><div class="box" id="20" x-adriver-id="44"><h3>Інтернет магазини</h3><a rel="nofollow" fc="8613,Lampa.ua: люстры, светильники" target="_blank" href="https://www.lampa.ua/?utm_source=ukr.net&utm_medium=referral&utm_campaign=shop">Lampa.ua: люстри, світильники</a> <a rel="nofollow" fc="1231,Магазин электроники" target="_blank" href="http://rozetka.com.ua/?utm_source=ukrnet&utm_medium=links&utm_campaign=rozetka">Магазин електронiки</a> <a rel="nofollow" fc="9383,АГРОМАТ - плитка, сантехника" target="_blank" href="https://shop.agromat.ua/">АГРОМАТ - плитка, сантехніка</a> <a rel="nofollow" fc="9578,Электрика-ШОП–электротовары" target="_blank" href="https://electrica-shop.com.ua/?utm_source=ukr_net_link_sidebar&utm_medium=link_main&utm_campaign=main_link_site">Електрика-ШОП–електротовари</a> <a rel="nofollow" fc="9553,Магазин света E27.UA" target="_blank" href="https://e27.com.ua/ua?utm_source=ukr.net&utm_medium=links&utm_campaign=shop">Магазин світла E27.UA</a> <a rel="nofollow" fc="491,Cекс-шоп заказать анонимно" target="_blank" href="https://sex-shop.ua/">Секс-шоп замовити анонімно</a></div><div class="box" id="1203"><h3>Робота та Освіта</h3><a rel="nofollow" fc="999,WORK.ua – №1 в Украине" target="_blank" href="http://work.ua/?utm_source=ukr.net&utm_medium=advert&utm_campaign=main_rabota">WORK.ua – №1 в Україні</a> <a rel="nofollow" fc="8058,GRC-работа профессионалам" target="_blank" href="http://grc.ua/?utm_source=ukrnet&utm_medium=link&utm_campaign=main_page">GRC.ua-робота професіоналам</a> <a rel="nofollow" fc="7578,Learning.ua - математика" target="_blank" href="https://learning.ua/?utm_source=ukrnet&utm_medium=clikukrnet&utm_campaign=favorites">Learning.ua - математика</a> <a rel="nofollow" fc="9013,Онлайн образование 1-11 класс" target="_blank" href="https://optima.school/?utm_source=ukrnetLink&utm_medium=cpm&utm_campaign=workgr&utm_term=ukrnetLink">Дистанційна освіта 1-11 клас</a> <a rel="nofollow" fc="9573,Славутич проф. обучение" target="_blank" href="https://slav.in.ua/">Славутич професійне навчання</a></div><div class="box" id="4" x-adriver-id="35"><h3>Подорожі</h3><a rel="nofollow" fc="1242,100% туров на Otpusk.com" target="_blank" href="http://www.otpusk.com/?utm_source=ukr.net&utm_medium=cpc&utm_content=general&utm_campaign=ukr.net">100% турів на Otpusk.com</a> <a rel="nofollow" fc="9688,ТОП путешествия на TUI.ua" target="_blank" href="https://www.tui.ua/?utm_source=ukrnet&utm_medium=favorites&utm_campaign=Travel">ТОП подорожі лише на TUI.ua</a> <a rel="nofollow" fc="9748,Забронируй отдых в SUNRISE" target="_blank" href="http://www.tui.ua/sunrise-hotels?utm_source=ukrnet&utm_medium=favorites&utm_campaign=Search_Sunrise">Забронюй відпочинок у Sunrise</a> <a rel="nofollow" fc="1047,Booking - бронирование отелей" target="_blank" href="http://www.booking.com/index.html?aid=338493">Booking - бронювання готелів</a> <a rel="nofollow" fc="8643,Отель Panorama De Luxe" target="_blank" href="https://panoramadeluxe.com/">Готель Panorama De Luxe</a> <a rel="nofollow" fc="8628,Сравнение цен на отели" target="_blank" href="http://www.hotelscombined.com/?a_aid=143217">Порівняння цін на готелі</a> <a rel="nofollow" fc="9513,Видео-путешествия по Европе" target="_blank" href="https://www.youtube.com/akkord-tur?sub_confirmation=1">Відео-подорожі Європою</a> <a rel="nofollow" fc="1237,Отель в Карпатах, Вежа" target="_blank" href="http://vv-hotel.com/">Готель в Карпатах, Вежа</a></div><div class="box" id="5" x-adriver-id="36"><h3>Інтернет</h3><a rel="nofollow" fc="83,Домены и Хостинг Hvosting.ua" target="_blank" href="http://hvosting.ua/">Домени і Хостинг Hvosting.ua</a> <a rel="nofollow" fc="557,NIC.ua - домены и хостинг" target="_blank" href="http://nic.ua">NIC.ua - домени і хостинг</a> <a rel="nofollow" fc="642,Хостинг, VDS, аренда сервера" target="_blank" href="http://www.besthosting.ua/">Хостинг, VPS, оренда сервера</a> <a rel="nofollow" fc="677,СМИ - InternetUA" target="_blank" href="http://internetua.com/">СМИ - InternetUA</a></div><div class="box" id="9" x-adriver-id="40"><h3>Спорт</h3><a rel="nofollow" fc="985,Футбол на Спорт.ua" target="_blank" href="https://sport.ua/football?utm_source=ukrnet-mainpage&utm_medium=ukrnet-link">Футбол на Спорт.ua</a> <a rel="nofollow" fc="9538,Активные туры - горы, сплав" target="_blank" href="https://www.accordtour.com/ukraina_pokhody_v_gory/ukraina">Активні тури - гори, сплав</a> <a rel="nofollow" fc="9648,Большой теннис Украины" target="_blank" href="https://btu.org.ua">Великий теніс України</a></div><div class="box" id="14" x-adriver-id="41"><h3>Держава</h3><a rel="nofollow" fc="276,Верховна Рада Украины" target="_blank" href="http://rada.gov.ua">Верховна Рада України</a> <a rel="nofollow" fc="287,Президент Украины" target="_blank" href="https://www.president.gov.ua/">Президент України</a> <a rel="nofollow" fc="436,Верховный Суд" target="_blank" href="https://court.gov.ua/">Верховний Суд</a> <a rel="nofollow" fc="435,Кабинет Министров Украины" target="_blank" href="https://www.kmu.gov.ua">Кабінет Міністрів України</a> <a rel="nofollow" fc="437,Нацбанк" target="_blank" href="http://www.bank.gov.ua/">Нацбанк</a> <i>&nbsp;</i> <a rel="nofollow" fc="5918,iGov - портал гос. услуг" target="_blank" href="http://igov.org.ua">iGov - портал державних послуг</a> <a rel="nofollow" fc="9023,Сведения о коронавирусе" target="_blank" href="https://covid19.com.ua/">Відомості про коронавірус</a></div></section>                
+<script>
+User.refresh();
+</script>
+<!--/noindex-->                </div>
+<!--noindex--><div hr="4,4813" id="ecbr-4813"><iframe style="width: 200px !important;height: 200px !important;margin-bottom: 5px;"  sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="//go.rcvlink.com/ifr/5ysrIfrF92"  frameborder="0" scrolling="no" width="200" height="200"></iframe></div><div hr="4,4793" id="ecbr-4793"><script>ecbrStart('ecbr-4793', '//a4p.adpartner.pro/jsunit/jsonp?id=6513&unit_id=6513&place_id=6513&himg=200&location=http://ukr.net/');</script></div><div hr="4,5228" id="ecbr-5228"><section class="commercial-left-block"><a bc="1300" href="http://www.europe-stomatolog-centre.com.ua" target="_blank" rel="nofollow"><img width="200" height="150" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/4/5228/head.1.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/4/5228/head.1.jpg"  alt=""/></noscript></a></section></div><div hr="4,5208" id="ecbr-5208"><section class="commercial-left-block"><a bc="9743" href="https://dinnershowbakkara.com/" target="_blank" rel="nofollow"><img width="200" height="150" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/4/5208/head.1.gif" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/4/5208/head.1.gif"  alt=""/></noscript></a></section></div><div hr="4,1623" id="ecbr-1623"><script>ecbrStart('ecbr-1623', '//s.mixadvert.com/show_json/?id=1559');</script></div><div hr="3,763" id="ecbr-763"><section class="commercial-left-block"><div class="title"><a bc="4198" href="http://kinoafisha.ua/" target="_blank" rel="nofollow"><img width="200" height="35" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/3/763/head.80540.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/3/763/head.80540.jpg"  alt=""/></noscript></a></div><div class="commercial-left-content check-long"><div class="items"><div class="item"><div class="img"><a bc="1645" href="https://kinoafisha.ua/ua/films/korocse-govorya?utm_source=ukr.net&utm_medium=informer&utm_campaign=%D0%9A%D0%BE%D1%80%D0%BE%D1%87%D0%B5+%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8F" target="_blank" title="Коротко кажучи" rel="nofollow"><img class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/3/763/c1/08/4f9ed5f8e85b642d1d609b7de063.jpg" alt="" /><noscript><img src="//upst.fwdcdn.com/temp/blocks/3/763/c1/08/4f9ed5f8e85b642d1d609b7de063.jpg" /></noscript><span class="price">купити квитки</span></a></div><div class="item-title"><a bc="1645" title="Коротко кажучи" href="https://kinoafisha.ua/ua/films/korocse-govorya?utm_source=ukr.net&utm_medium=informer&utm_campaign=%D0%9A%D0%BE%D1%80%D0%BE%D1%87%D0%B5+%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D1%8F" target="_blank" class="checkthis"  rel="nofollow">Коротко кажучи</a>       
+</div></div></div></div><a class="prev"></a><a class="next"></a></section></div><div hr="3,4748" id="ecbr-4748"><section class="commercial-left-block"><div class="title"><a bc="" href="http://avtosale.ua/?utm_source=ukr.net&utm_medium=Logo&utm_campaign=informers" target="_blank" rel="nofollow"><img width="200" height="35" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/3/4748/head.4.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/3/4748/head.4.jpg"  alt=""/></noscript></a></div><div class="commercial-left-content check-long"><div class="items"><div class="item"><div class="img"><a bc="" href="http://avtosale.ua/new_tender/?markId=927&modelId=947&utm_source=ukr.net&utm_medium=Hyundai_Tucson&utm_campaign=informers&CarCommercial=2" target="_blank" title="Hyundai Tucson" rel="nofollow"><img class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/3/4748/54/3b/d917adb94728dbf1250eb8a1bd45.jpg" alt="" /><noscript><img src="//upst.fwdcdn.com/temp/blocks/3/4748/54/3b/d917adb94728dbf1250eb8a1bd45.jpg" /></noscript><span class="price">655 000 грн</span></a></div><div class="item-title"><a bc="" title="Hyundai Tucson" href="http://avtosale.ua/new_tender/?markId=927&modelId=947&utm_source=ukr.net&utm_medium=Hyundai_Tucson&utm_campaign=informers&CarCommercial=2" target="_blank" class="checkthis"  rel="nofollow">Hyundai Tucson</a>       
+</div></div></div></div><a class="prev"></a><a class="next"></a></section></div><!--/noindex-->            </aside><script>
+if(GetCookie('cvkCheck'))DeleteCookie('cvkCheck');
+</script><article class="main-items">
+<div id="news_list"><section class="items"><h2><a lc="229" href="//www.ukr.net/news/main.html">Головне</a></h2><!--noindex--><ul class="top-news-list"><li><a href="https://www.eurointegration.com.ua/news/2021/08/9/7126378/" nc="86499472,13,49781726" target="_blank" rel="nofollow">Британія запровадила торгові, фінансові та авіаційні санкції проти режиму Лукашенка</a> <span>(Європейська правда)</span></li><li><a href="https://www.radiosvoboda.org/a/news-shtormove-poperedzhennya/31400933.html" nc="86498930,13,49782625" target="_blank" rel="nofollow">В Україні оголосили штормове попередження на 10 серпня</a> <span>(Радіо Свобода)</span></li><li><a href="https://www.ukrinform.ua/rubric-society/3294658-nabu-rozslidue-stosovno-causa-dvi-spravi-sitnik.html" nc="86498591,13,49779798" target="_blank" rel="nofollow">НАБУ розслідує стосовно Чауса дві справи - Ситник</a> <span>(Укрінформ)</span></li></ul><!--/noindex--><div class="more_news"><a lc="230" href="news/main.html">всі головні події дня</a></div>            <div id="uefa-live" class="ua">
+<a href="">
+<div class="logo">ЧЄ 2020</div>
+<span class="team-left"></span>
+<b>Live</b>
+<span class="team-right"></span>
+</a>
+</div>
+<script>
+News.fifa();
+</script></section><section class="items"><h2><a lc="810" href="//www.ukr.net/news/politics.html">Політика</a></h2><!--noindex--><div class="item"><time>15:23</time><div class="item-title"><a href="https://www.slovoidilo.ua/2021/08/09/novyna/suspilstvo/nastupne-zasidannya-sudu-spravi-mh17-vidbudetsya-6-veresnya" nc="86500373,12,49781030" target="_blank" rel="nofollow">Наступне засідання суду у справі MH17 відбудеться 6 вересня</a> <span>(Слово і Діло)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:22</time><div class="item-title"><a href="https://ua.news/ua/lukashenko-schytaet-chto-eto-on-ostanovyl-vojnu-rf-protyv-ukrayny/" nc="86500356,12,49782780" target="_blank" rel="nofollow">Лукашенко переконаний, що це він зупинив війну РФ проти України</a> <span>(UA.NEWS)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:16</time><div class="item-title"><a href="http://ukr.radio/news.html?newsID=96457" nc="86500203,12,49782675" target="_blank" rel="nofollow">Зеленський готується до візиту у США. Основні очікування від України</a> <span>(Українське радiо)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:10</time><div class="item-title"><a href="https://bykvu.com/ua/bukvy/u-posolstvi-ssha-vidmovilisja-nazvati-jaki-naslidki-chekatimut-na-milovanova-cherez-brehnju-prikordonnikam/" nc="86500070,12,49782577" target="_blank" rel="nofollow">У посольстві США відмовилися назвати, які наслідки чекатимуть на Милованова через брехню прикордонникам</a> <span>(Буквы)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:56</time><div class="item-title"><a href="https://gordonua.com/news/politics/sytnik-est-popytki-davleniya-na-konkurs-na-dolzhnost-glavy-sap-on-nahoditsya-na-pauze-1566630.html" nc="86499728,12,49782343" target="_blank" rel="nofollow">Сытник: Есть попытки давления на конкурс на должность главы САП, он находится на паузе</a> <span>(Гордон)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="796" href="news/politics.html">всі політичні новини України</a></div></section><section class="items"><h2><a lc="811" href="//www.ukr.net/news/economics.html">Економіка</a></h2><!--noindex--><div class="item"><time>15:14</time><div class="item-title"><a href="https://biz.censor.net/news/3281654/natsbank_annuliroval_litsenzii_trem_finkompaniyam_izza_otkaza_ot_proverki" nc="86500153,3,49782638" target="_blank" rel="nofollow">Нацбанк аннулировал лицензии трем финкомпаниям из-за отказа от проверки</a> <span>(Цензор.Нет)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:01</time><div class="item-title"><a href="https://kurkul.com/news/27211-vid-startu-rinku-zemli-v-ukrayini-ukladeno-mayje-5-tisyach-zemelnih-ugod" nc="86499869,3,49782443" target="_blank" rel="nofollow">Від старту ринку землі в Україні укладено майже 5 тисяч земельних угод</a> <span>(Kurkul.com)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:59</time><div class="item-title"><a href="http://agroportal.ua/news/vlast/utverzhdeny-novye-formy-dlya-predostavleniya-dotatsii-fermeram/" nc="86499787,3,49779653" target="_blank" rel="nofollow">Утверждены новые формы для предоставления дотаций фермерам</a> <span>(AgroPortal)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:56</time><div class="item-title"><a href="https://agrarii-razom.com.ua/news-agro/cini-na-ukrainsku-soyu-novogo-vrojayu-u-1-5-razi-perevishuyut-torishni" nc="86499718,3,49775649" target="_blank" rel="nofollow">Ціни на українську сою нового врожаю у 1,5 рази перевищують торішні</a> <span>(Аграрії разом)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:32</time><div class="item-title"><a href="https://biz.ligazakon.net/news/205466_nbu-viznachiv-yak-vdkrivati-rakhunki-dlya-spetsalnogo-dobrovlnogo-deklaruvannya" nc="86499160,3,49776019" target="_blank" rel="nofollow">НБУ визначив, як відкривати рахунки для спеціального добровільного декларування</a> <span>(ЛІГА:ЗАКОН)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="797" href="news/economics.html">всі новини економіки та фінансів</a></div></section><section class="items"><h2><a lc="812" href="//www.ukr.net/news/criminal.html">Події</a></h2><!--noindex--><div class="item"><time>15:22</time><div class="item-title"><a href="https://censor.net/ru/news/3281662/sud_otpustil_pod_nochnoyi_domashniyi_arest_figuranta_dela_ob_ubiyistve_veremiya_byalaya" nc="86500360,2,49782248" target="_blank" rel="nofollow">Суд отпустил под ночной домашний арест фигуранта дела об убийстве Веремия - Бялая</a> <span>(Цензор.Нет)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://www.rbc.ua/rus/news/ukraine-zaderzhali-chlenov-krupneyshey-italyanskoy-1628511497.html" nc="86500318,2,49782753" target="_blank" rel="nofollow">В Украине задержали членов крупнейшей итальянской группировки мафии</a> <span>(РБК-Україна)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:17</time><div class="item-title"><a href="https://368.media/2021/08/09/v-sbu-zablokirovali-konverttsentr-v-odesse-ukravshij-600-mln-griven/" nc="86500232,2,49782043" target="_blank" rel="nofollow">В СБУ заблокировали конвертцентр в Одессе, укравший 600 млн гривен</a> <span>(368.media)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:09</time><div class="item-title"><a href="https://www.slovoidilo.ua/2021/08/09/novyna/pravo/vybux-zhytlovomu-budynku-poznyakax-zaversheno-dosudove-rozsliduvannya" nc="86500047,2,49782665" target="_blank" rel="nofollow">Вибух у житловому будинку на Позняках: завершено досудове розслідування</a> <span>(Слово і Діло)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:03</time><div class="item-title"><a href="https://kyiinfo.com.ua/kp-zhytomyrvodokanal-skynuv-nechystoty-v-richku-cherez-shho-masovo-zagynula-ryba/" nc="86499914,2,49782475" target="_blank" rel="nofollow">КП «Житомирводоканал» скинув нечистоти в річку, через що масово загинула риба</a> <span>(КИЙ-Інфо)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="798" href="news/criminal.html">всі новини подій, аварій, катастроф</a></div></section><section class="items"><h2><a lc="817" href="//www.ukr.net/news/society.html">Суспільство</a></h2><!--noindex--><div class="item"><time>15:23</time><div class="item-title"><a href="https://sprotyv.info/obshchestvo/rf-znishhuie-pravoslavnu-gromadu-v-timchasovo-okupovanomu-krimu-zayava-ombudsmena-ljudmili-denisovoi" nc="86500367,5,49776841" target="_blank" rel="nofollow">РФ знищує православну громаду в тимчасово окупованому Криму — заява омбудсмена Людмили Денісової</a> <span>(Информационное сопротивление)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:22</time><div class="item-title"><a href="https://ua.news/ua/opros-ukraintsev-vyyavil-liderov-prezidentskogo-rejtinga-v-etom-mesyatse/" nc="86500357,5,49781764" target="_blank" rel="nofollow">Опитування українців виявило лідерів президентського рейтингу цього місяця</a> <span>(UA.NEWS)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://novyny.live/odessa/iz-za-uvelicheniia-sil-rf-v-chernom-more-na-ostrove-zmeinyi-proverili-boesposobnost-razvedki-8392.html" nc="86500325,5,49782758" target="_blank" rel="nofollow">Через збільшення сил РФ у Чорному морі: на острові Зміїний перевірили боєздатність розвідки</a> <span>(Новини.LIVE)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://flot2017.com/mehanizirovannaya-brigada-vsu-zavershila-obuchenie-v-ramkah-missii-orbital-foto/" nc="86500336,5,49782765" target="_blank" rel="nofollow">Механизированная бригада ВСУ завершила обучение в рамках миссии «Орбитал» — фото</a> <span>(Флот2017)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:18</time><div class="item-title"><a href="https://kontrakty.ua/article/181141" nc="86500253,5,49778105" target="_blank" rel="nofollow">Военные летчики Воздушных сил армии США прибыли в Винницу для совместных учений</a> <span>(Контракты)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="803" href="news/society.html">всі новини розділу Суспільство</a></div></section><section class="items"><h2><a lc="233" href="//www.ukr.net/news/covid19.html">COVID-19</a></h2><!--noindex--><div class="item"><time>15:25</time><div class="item-title"><a href="http://trassae95.com/all/news/2021/08/09/10-tysyach-doz-vakciny-moderna-pribudut-v-odesskuyu-oblastj-62682.html" nc="86500441,1,49781641" target="_blank" rel="nofollow">10 тысяч доз вакцины Moderna прибудут в Одесскую область</a> <span>(Trassa E-95)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:24</time><div class="item-title"><a href="https://fakty.com.ua/ua/ukraine/20210809-budte-gotovi-do-samoizolyatsiyi-v-posolstvi-nagadaly-pravyla-povernennya-z-chornogoriyi-do-ukrayiny/" nc="86500418,1,49781117" target="_blank" rel="nofollow">Будьте готові до самоізоляції: в посольстві нагадали правила повернення з Чорногорії до України</a> <span>(Факти ICTV)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:22</time><div class="item-title"><a href="https://www.unn.com.ua/uk/exclusive/1939495-porushennya-epidbezpeki-pasazhiriv-reysu-z-gretsiyi-bortprovidniki-litaka-aviakompaniyi-skyup-u-politsiyu-ne-zvertalisya" nc="86500361,1,49782781" target="_blank" rel="nofollow">Порушення епідбезпеки пасажирів рейсу з Греції: бортпровідники літака авіакомпанії SkyUp у поліцію не зверталися</a> <span>(UNN)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:20</time><div class="item-title"><a href="https://newsyou.info/v-ssha-tretyu-dozu-vakciny-ot-covid-19-mogut-utverdit-uzhe-do-konca-avgusta" nc="86500282,1,49774888" target="_blank" rel="nofollow">В США третью дозу вакцины от COVID-19 могут утвердить уже до конца августа</a> <span>(Newsyou)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:19</time><div class="item-title"><a href="http://uzhgorod.net.ua/news/160366" nc="86500276,1,49782725" target="_blank" rel="nofollow">Майже 2,5 тисячі закарпатців отримали щеплення від COVID-19 упродовж минулої доби</a> <span>(Uzhgorod.net.ua)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="234" href="news/covid19.html">Всі новини про коронавірус COVID-19</a></div></section><section class="items regions" id="cat_16"><div class="h2"><a href="javascript:void(0)" onclick="return false;">Київські Новини</a> <span></span> <div class="regions-list"><div class="list-rows"><h2 class="title"><a href="javascript:void(0)" onclick="return false;">Київські Новини</a> <span></span><div class="unshadow"></div></h2><div class="areg"><a href="javascript:News.region(9)">Київ</a></div><div ><a href="javascript:News.region(1)">Вінниця</a></div><div ><a href="javascript:News.region(2)">Волинь</a></div><div ><a href="javascript:News.region(3)">Дніпро</a></div><div ><a href="javascript:News.region(4)">Донецьк</a></div><div ><a href="javascript:News.region(5)">Житомир</a></div><div ><a href="javascript:News.region(6)">Закарпаття</a></div><div ><a href="javascript:News.region(7)">Запоріжжя</a></div><div ><a href="javascript:News.region(8)">Івано-Франківськ</a></div><div ><a href="javascript:News.region(10)">Кропивницький</a></div><div ><a href="javascript:News.region(12)">Луганськ</a></div><div ><a href="javascript:News.region(13)">Львів</a></div><div ><a href="javascript:News.region(14)">Миколаїв</a></div><div ><a href="javascript:News.region(15)">Одеса</a></div><div ><a href="javascript:News.region(16)">Полтава</a></div><div ><a href="javascript:News.region(17)">Рівне</a></div><div ><a href="javascript:News.region(18)">Суми</a></div><div ><a href="javascript:News.region(19)">Тернопіль</a></div><div ><a href="javascript:News.region(20)">Харків</a></div><div ><a href="javascript:News.region(21)">Херсон</a></div><div ><a href="javascript:News.region(22)">Хмельницький</a></div><div ><a href="javascript:News.region(23)">Черкаси</a></div><div ><a href="javascript:News.region(24)">Чернігів</a></div><div ><a href="javascript:News.region(25)">Чернівці</a></div><div ><a href="javascript:News.region(11)">Крим</a></div><i class="b-cl-block"></i></div></div></div><!--noindex--><div class="item"><time>15:23</time><div class="item-title"><a href="https://vechirniy.kyiv.ua/news/55309/" rc="86500386,9,49781333" target="_blank" rel="nofollow">Унікальний проєкт про українську архітектуру радянського періоду показують на станції київського метро: фото</a> <span>(Вечірній Київ)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:19</time><div class="item-title"><a href="https://bigkyiv.com.ua/v-obolonskomu-rajoni-oblashtuyut-novi-zeleni-zony-adresy/" rc="86500264,9,49782187" target="_blank" rel="nofollow">В Оболонському районі облаштують нові зелені зони (АДРЕСИ)</a> <span>(Большой Киев)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:19</time><div class="item-title"><a href="https://24tv.ua/kyivnews/kyivnews/terrorista-yakiy-zahopiv-bank-kiyevi-mogli-vipustiti-novini-kriminal_n1707856" rc="86500278,9,49782727" target="_blank" rel="nofollow">Захоплення банку у Києві: террориста Карімова могли випустити з лікарні</a> <span>(24 канал)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:52</time><div class="item-title"><a href="https://kiev24.com/novosti/30271/na-vixidnix-u-kiyevi-stalosya-ponad-140-dtp/" rc="86499625,9,49782270" target="_blank" rel="nofollow">На вихідних у Києві сталося понад 140 ДТП</a> <span>(Kiev24)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:47</time><div class="item-title"><a href="https://nerukhomi.ua/ukr/news/gorod/u-kievi-taki-znesli-staru-budivlyu-na-libidskij.htm" rc="86499517,9,49782194" target="_blank" rel="nofollow">У Києві таки знесли стару будівлю на Либідській</a> <span>(Нерухомі)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="804" href="https://www.ukr.net/news/kyiv.html">всі новини розділу</a></div><script>News.views('902c324025288960e8e8e97c5a57203f');</script></section><section class="items"><h2><a lc="813" href="//www.ukr.net/news/technologies.html">Технології</a></h2><!--noindex--><div class="item"><time>15:23</time><div class="item-title"><a href="https://hvylya.net/news/235373-ukraiincy-hotyat-oplachivat-kommunalnye-uslugi-zhkh-onlayn" nc="86500380,7,49780244" target="_blank" rel="nofollow">Украиинцы хотят оплачивать коммунальные услуги ЖКХ онлайн</a> <span>(Хвиля)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://internetua.com/opasnaya-tehnologiya-vzryv-bluetooth-naushnikov-privel-k-gibeli-polzovatelya-smi" nc="86500334,7,49782083" target="_blank" rel="nofollow">Опасная технология: взрыв Bluetooth-наушников привел к гибели пользователя, - СМИ</a> <span>(internetua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:19</time><div class="item-title"><a href="https://kurs.com.ua/ua/novost/495325-jpmorgan-prognoziruet-problemi-iz-za-cifrovih-valjut?source=ukrnet" nc="86500280,7,49781040" target="_blank" rel="nofollow">JPMorgan прогнозує проблеми через цифрові валюти</a> <span>(Курс Украины)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:16</time><div class="item-title"><a href="https://prostomob.com/60993-tysyachi-polzovatelej-iphone-trebuyut-otkazatsya-ot-skanirovaniya-smartfonov" nc="86500207,7,49782679" target="_blank" rel="nofollow">Тысячи пользователей iPhone требуют отказаться от сканирования смартфонов</a> <span>(ProstoMob)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://financy.24tv.ua/startapi-golovnih-ekonomik-aziyi-podorozhchayut-do-1-trilyona_n1707684" nc="86500174,7,49782655" target="_blank" rel="nofollow">Регіон з потенціалом: чому стартапи з Азії до 2025 року подорожчають до 1 трильйона доларів</a> <span>(24 канал)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="799" href="news/technologies.html">всі новини інформаційних технологій</a></div></section><section class="items"><h2><a lc="829" href="//www.ukr.net/news/science.html">Наука</a></h2><!--noindex--><div class="item"><time>15:16</time><div class="item-title"><a href="https://ua.interfax.com.ua/news/general/760610.html" nc="86500200,22,49781413" target="_blank" rel="nofollow">Експерти ООН визнали багато кліматичних змін незворотними</a> <span>(Інтерфакс-Україна)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:16</time><div class="item-title"><a href="https://novyny.live/ecology/uchenye-sdelali-trevozhnyi-prognoz-po-klimatu-na-zemle-nagrevaetsia-bystree-chem-schitalos-8389.html" nc="86500205,22,49782677" target="_blank" rel="nofollow">Вчені зробили тривожний прогноз щодо клімату на Землі: нагрівається швидше, ніж вважали</a> <span>(Новини.LIVE)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://root-nation.com/ua/news-ua/it-news-ua/ua-dancing-ghosts-deeper-scan-sky/" nc="86500161,22,49782644" target="_blank" rel="nofollow">Невідомі хмари – «танцюючі примари» – виявлені в далекому космосі</a> <span>(Root Nation)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://tech.24tv.ua/vsesvit-mozhe-pomerti-gigantskiy-chorniy-diri-novini-tehnologiy_n1707748" nc="86500180,22,49782659" target="_blank" rel="nofollow">Всесвіт може заштовхнути нас у чорну діру і ми цього навіть не помітимо</a> <span>(24 канал)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:03</time><div class="item-title"><a href="https://zn.ua/TECHNOLOGIES/nasa-ishchet-ljudej-kotorye-budut-pritvorjatsja-chto-zhivut-na-marse.html" nc="86499916,22,49774576" target="_blank" rel="nofollow">NASA ищет людей, которые будут притворяться, что живут на Марсе</a> <span>(ZN,ua)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="830" href="news/science.html">всі новини науки</a></div></section><section class="items"><h2><a lc="814" href="//www.ukr.net/news/auto.html">Авто</a></h2><!--noindex--><div class="item"><time>15:19</time><div class="item-title"><a href="https://autoportal.ua/news/tuning/38335.html" nc="86500265,20,49782715" target="_blank" rel="nofollow">Toyota RAV4 2021 дебютировал в совершенно новом облике</a> <span>(Autoportal)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:17</time><div class="item-title"><a href="https://www.autocentre.ua/news/novinka/novyj-renault-duster-tretego-pokoleniya-vse-detali-1360465.html" nc="86500228,20,49782688" target="_blank" rel="nofollow">Новый Renault Duster третьего поколения: все детали</a> <span>(Автоцентр)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:16</time><div class="item-title"><a href="https://newsyou.info/v-kieve-zamechen-redkij-kraz-s-podkatnoj-osyu" nc="86500190,20,49782669" target="_blank" rel="nofollow">В Киеве замечен редкий КрАЗ с подкатной осью</a> <span>(Newsyou)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:12</time><div class="item-title"><a href="https://internetua.com/kapitalizaciya-kitaiskih-proizvoditelei-litiya-rezko-vyrosla-na-fone-rosta-prodaj-elektromobilei" nc="86500122,20,49779276" target="_blank" rel="nofollow">Капитализация китайских производителей лития резко выросла на фоне роста продаж электромобилей</a> <span>(internetua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:07</time><div class="item-title"><a href="https://ua.interfax.com.ua/news/economic/760607.html" nc="86499994,20,49782531" target="_blank" rel="nofollow">Роздрібні ціни на автогаз за тиждень зросли ще на 34 коп./літр - "А-95"</a> <span>(Інтерфакс-Україна)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="800" href="news/auto.html">всі автоновини</a></div></section><section class="items"><h2><a lc="355" href="//www.ukr.net/news/olympics_2020.html">Олімпіада 2020</a></h2><!--noindex--><div class="item"><time>15:22</time><div class="item-title"><a href="http://ukurier.gov.ua/uk/news/stav-vidomij-rozmir-prizovih-yaki-otrimayut-ukrayi/" nc="86500345,11,49782693" target="_blank" rel="nofollow">Став відомий розмір призових, які отримають українські спортсмени за виграні нагороди Олімпіади в Токіо</a> <span>(Урядовий Кур'єр)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:22</time><div class="item-title"><a href="https://aspi.com.ua/news/sport/potribni-buli-treneri-zamist-chinovnikiv-zhan-belenyuk-zaklikav-proanalizuvati-pomilki" nc="86500352,11,49782776" target="_blank" rel="nofollow">Потрібні були тренери замість чиновників: Жан Беленюк закликав проаналізувати помилки на Олімпіаді-2020</a> <span>(АСПІ)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:12</time><div class="item-title"><a href="https://suspilne.media/154060-ministr-sportu-gutcajt-pro-cistku-skladu-u-gimnastici-vistup-prizeriv-i-medali-na-igrah-u-tokio/" nc="86500108,11,49782606" target="_blank" rel="nofollow">Міністр спорту Гутцайт – про "чистку" складу у гімнастиці, виступ призерів і медалі на Іграх у Токіо</a> <span>(UA: Cуспільне мовлення)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:08</time><div class="item-title"><a href="https://nv.ua/ukr/opinion/olimpiada-2021-yake-misce-posila-ukrajina-v-medalnomu-zaliku-novini-ukrajini-50176423.html" nc="86500017,11,49777404" target="_blank" rel="nofollow">Ганьба в Токіо? Про що говорить результат України на Олімпійських іграх</a> <span>(НВ)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:38</time><div class="item-title"><a href="https://dw.com/p/3ykNf?maca=ukr-rss-ukrnet-ukr-all-3816-xml" nc="86499295,11,49773831" target="_blank" rel="nofollow">Підсумки Токіо-2020: Олімпіада всупереч усьому</a> <span>(Deutsche Welle)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="356" href="news/olympics_2020.html">всі новини про олімпійські ігри 2020</a></div></section><section class="items"><h2><a lc="815" href="//www.ukr.net/news/sport.html">Спорт</a></h2><!--noindex--><div class="item"><time>15:26</time><div class="item-title"><a href="https://champion.com.ua/football/2021/08/09/879054/sent-etyen-loryan-11-oglyad-matchu" nc="86500455,4,49773001" target="_blank" rel="nofollow">Сент-Етьєн - Лорьян 1:1: огляд матчу. ВІДЕО</a> <span>(Сhampion.com.ua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:25</time><div class="item-title"><a href="https://fanday.net/news/khavbek-fk-lvova-dovgii-futbolisty-vorskly-iz-dvukh-s-polovinoi-momentov-zabili-chetyre-gola" nc="86500439,4,49775749" target="_blank" rel="nofollow">Хавбек ФК Львов Довгий: «Футболисты Ворсклы из двух с половиной моментов забили четыре гола»</a> <span>(FanDay)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://football24.ua/maksimov_ne_zadovoleniy_eseoloyu_yakiy_mav_zaminiti_u_vorskli_naykrashhogo_bombardira_upl_n678339/" nc="86500332,4,49782763" target="_blank" rel="nofollow">Наступник найкращого бомбардира УПЛ розчарував авторитетного тренера</a> <span>(Футбол 24)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:19</time><div class="item-title"><a href="https://sport.ua/news/549225-monako-sparta-prognoz-i-anons-na-match-kvalifikatsii-ligi-chempionov" nc="86500272,4,49782721" target="_blank" rel="nofollow">Монако - Спарта. Прогноз и анонс на матч квалификации Лиги чемпионов</a> <span>(Sport.ua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:17</time><div class="item-title"><a href="https://ua.tribuna.com/football/1100040462.html?utm_source=ukr" nc="86500233,4,49782692" target="_blank" rel="nofollow">Караваев провел 200 матчей в УПЛ</a> <span>(Tribuna.com)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="801" href="news/sport.html">всі спортивні новини:  футбол, бокс, хокей...</a></div></section><section class="items"><h2><a lc="816" href="//www.ukr.net/news/health.html">Здоров’я</a></h2><!--noindex--><div class="item"><time>15:07</time><div class="item-title"><a href="https://medicina.ua/presscenter/articles/therapy/itm/9574/" nc="86499993,14,49782530" target="_blank" rel="nofollow">Врач дала совет, как подготовиться к сдаче анализа крови</a> <span>(Medicina.ua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:04</time><div class="item-title"><a href="https://newsyou.info/yaki-produkti-pozitivno-vplivayut-na-zir" nc="86499929,14,49782483" target="_blank" rel="nofollow">Які продукти позитивно впливають на зір</a> <span>(Newsyou)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:43</time><div class="item-title"><a href="http://svidok.online/fahivtsi-nazvaly-najgirshi-produkty-pry-artry-ti/" nc="86499430,14,49779776" target="_blank" rel="nofollow">Фахівці назвали найгірші продукти при артриті</a> <span>(Свідок)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:30</time><div class="item-title"><a href="https://changeua.com/news/uchenyie-rasskazali-kak-alkogol-vliyaet-na-razvitie-onkologii/" nc="86499065,14,49781885" target="_blank" rel="nofollow">Ученые рассказали, как алкоголь влияет на развитие онкологии</a> <span>(ChangeUA)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:20</time><div class="item-title"><a href="https://grippua.com.ua/ru/persyky-normalyzuiut-protsess-pyshchevarenyia-y-podderzhyvaiut-zdorovoe-krovianoe-davlenye/" nc="86498866,14,49781755" target="_blank" rel="nofollow">Персики нормализуют процесс пищеварения и поддерживают здоровое кровяное давление</a> <span>(ГРИП.UA)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="802" href="news/health.html">всі новини медицини, краси та косметології</a></div></section><section class="items"><h2><a lc="819" href="//www.ukr.net/news/show_business.html">Шоу-бізнес</a></h2><!--noindex--><div class="item"><time>15:20</time><div class="item-title"><a href="https://chasdiy.org/showbusiness/monatik-pokazav-pershi-znimky-z-vidpochynku-zi-sim-ieiu.html" nc="86500287,21,49782733" target="_blank" rel="nofollow">Монатік показав перші знімки з відпочинку зі сім’єю</a> <span>(Час Дій)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:16</time><div class="item-title"><a href="https://lemonade.style/anastasija-prihodko-rozpovila-jak-ij-vdalosja-shudnuti-na-20-kg-za-tri-misjaci-pislja-pologiv/" nc="86500217,21,49779571" target="_blank" rel="nofollow">Анастасія Приходько розповіла, як їй вдалося схуднути на 20 кг за три місяці після пологів</a> <span>(LeMonade)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://vogue.ua/article/fashion/brend/obraz-dnya-kim-kardashyan-v-balaklave-balenciaga.html" nc="86500181,21,49782660" target="_blank" rel="nofollow">Образ дня: Ким Кардашьян в балаклаве Balenciaga</a> <span>(Vogue)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:12</time><div class="item-title"><a href="http://rusjev.net/2021/08/09/vypusknoj-80-h-sharliz-teron-vernulas-v-podrostkovyj-vozrast/" nc="86500101,21,49782602" target="_blank" rel="nofollow">Выпускной 80-х. Шарлиз Терон вернулась в подростковый возраст</a> <span>(Русский Еврей)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:09</time><div class="item-title"><a href="http://broadcast.net.ua/ru/world-cinema/4752-venom-2-karnazh-drugij-ofitsijnij-trejler" nc="86500041,21,49782557" target="_blank" rel="nofollow">«ВЕНОМ 2: КАРНАЖ»: другий офіційний трейлер</a> <span>(Broadcast.net)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="805" href="news/show_business.html">всі новини розділу Шоу-бізнес</a></div></section><section class="items"><h2><a lc="820" href="//www.ukr.net/news/world.html">За кордоном</a></h2><!--noindex--><div class="item"><time>15:19</time><div class="item-title"><a href="https://skeptik.com.ua/lukashenko-sdelal-zayavlenie-o-svoem-prezidentstve/" nc="86500259,6,49781726" target="_blank" rel="nofollow">Лукашенко сделал заявление о своем «президентстве»</a> <span>(SKEPTIC)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://ukranews.com/news/793826-v-turtsii-vzyali-pod-kontrol-pochti-vse-lesnye-pozhary-postradali-864-cheloveka" nc="86500179,6,49782493" target="_blank" rel="nofollow">В Турции взяли под контроль почти все лесные пожары. Пострадали 864 человека</a> <span>(Українські новини)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:05</time><div class="item-title"><a href="https://charter97.org/ru/news/2021/8/9/432560/" nc="86499974,6,49782515" target="_blank" rel="nofollow">За три дня польские пограничники у границы с Беларусью задержали 349 мигрантов</a> <span>(Хартия'97)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:50</time><div class="item-title"><a href="https://risu.ua/u-pakistani-za-bogohulstvo-uvyaznili-8-richnu-ditinu_n120674" nc="86499576,6,49782237" target="_blank" rel="nofollow">У Пакистані за богохульство ув'язнили 8-річну дитину</a> <span>(RISU)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:31</time><div class="item-title"><a href="https://kosatka.media/uk/category/gaz/news/dochka-gazproma-vozobnovila-rabotu-posle-pozhara-na-zavode-na-yamale" nc="86499145,6,49781940" target="_blank" rel="nofollow">Дочка Газпрому відновила роботу після пожежі на заводі на Ямалі</a> <span>(Kosatka.Media)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="806" href="news/world.html">всі новини з-за кордону</a></div></section><section class="items"><h2><a lc="821" href="//www.ukr.net/news/curious.html">Курйози</a></h2><!--noindex--><div class="item"><time>14:45</time><div class="item-title"><a href="https://news.obozrevatel.com/show/people/naskolko-chasto-nuzhno-myitsya-gollivudskie-zvezdyi-udivili-otvetami.htm" nc="86499455,17,49782158" target="_blank" rel="nofollow">Насколько часто нужно мыться: голливудские звезды удивили ответами</a> <span>(Обозреватель)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:18</time><div class="item-title"><a href="https://internetua.com/kot-prines-hozyaike-cvetok-i-stal-zvezdoi-socsetei" nc="86498817,17,49781715" target="_blank" rel="nofollow">Кот принес хозяйке цветок и стал звездой соцсетей</a> <span>(internetua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:13</time><div class="item-title"><a href="https://newsyou.info/originalnye-i-interesnye-vizitnye-kartochki-foto" nc="86498686,17,49781611" target="_blank" rel="nofollow">Оригинальные и интересные визитные карточки (ФОТО)</a> <span>(Newsyou)</span></div><div class="b-cl-block"></div></div><div class="item"><time>14:01</time><div class="item-title"><a href="https://u-news.com.ua/114936-master-otrezala-resnicy-klientke-iz-za-ne-proshedshej-po-karte-oplaty.html" nc="86498406,17,49775081" target="_blank" rel="nofollow">Мастер отрезала ресницы клиентке из-за не прошедшей по карте оплаты</a> <span>(U-News)</span></div><div class="b-cl-block"></div></div><div class="item"><time>13:14</time><div class="item-title"><a href="https://glavcom.ua/scotch/kuriyozy/chto-byvaet-kogda-pytaeshsya-podruzhit-koshku-s-sobakoy-kureznye-foto-774815.html" nc="86497286,17,49780662" target="_blank" rel="nofollow">Что бывает, когда пытаешься подружить кошку с собакой. Курьезные фото</a> <span>(Главком)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="807" href="news/curious.html">всі забавні, курйозні новини</a></div></section><section class="items"><h2><a lc="822" href="//www.ukr.net/news/fotoreportazh.html">Фоторепортаж</a></h2><!--noindex--><div class="item"><time>15:24</time><div class="item-title"><a href="https://censor.net/ru/video_news/3281656/kuritsa_svinya_lev_petuh_pod_op_poyavilas_detskaya_ploschadka_po_motivam_tvorchestva_primachenko_videofotoreportaj" nc="86500414,8,49782815" target="_blank" rel="nofollow">Курица, свинья, лев, петух: под ОП появилась детская площадка по мотивам творчества Примаченко. ВИДЕО+ФОТОрепортаж</a> <span>(Цензор.Нет)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:15</time><div class="item-title"><a href="https://usionline.com/delo-zajceva-belorusskomu-anarhistu-prodlili-domashnij-arest-foto-audio/" nc="86500170,8,49782652" target="_blank" rel="nofollow">Дело Зайцева: белорусскому анархисту продлили домашний арест (фото, аудио)</a> <span>(УСИ)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:13</time><div class="item-title"><a href="https://kiev.segodnya.ua/kiev/kother/v-kieve-prohodyat-voennye-sbory-rezervistov-teroborony-foto-1568073.html" nc="86500135,8,49782624" target="_blank" rel="nofollow">В Киеве проходят военные сборы резервистов теробороны (фото)</a> <span>(Сегодня.ua)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:01</time><div class="item-title"><a href="http://nova.net.ua/brytantsi-pokazaly-velykyi-ekran-ikh-vynyshchuvachiv-foto/" nc="86499859,8,49782436" target="_blank" rel="nofollow">Британці показали великий екран їх винищувачів (ФОТО)</a> <span>(НОВА)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:00</time><div class="item-title"><a href="https://politeka.net/society/339879-nacbank-vvodit-novye-5-griven-kak-oni-vyglyadyat-i-v-chem-ih-osobennost-s-10-avgusta" nc="86499825,8,49782411" target="_blank" rel="nofollow">Новые деньги вводятся в Украине с 10 августа, Нацбанк показал, как выглядит монета (фото)</a> <span>(Politeka)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="808" href="news/fotoreportazh.html">всі фотоновини</a></div></section><section class="items"><h2><a lc="231" href="//www.ukr.net/news/video.html">Відео</a></h2><!--noindex--><div class="item"><time>15:22</time><div class="item-title"><a href="https://novosti-n.org/ukraine/Ygra-malenkogo-kotenka-s-ogromnim-alabaem-popala-na-vydeo--277913" nc="86500350,18,49775758" target="_blank" rel="nofollow">Игра маленького котенка с огромным алабаем попала на видео</a> <span>(Новости N)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:21</time><div class="item-title"><a href="https://www.ua-football.com/sport/basketball/1628508571-dyurant-i-gober-v-top-5-dankov-olimpiady-v-tokio-video.html?utm_source=ukrnet&utm_medium=cpc&utm_campaign=runewsukrnet" nc="86500331,18,49782762" target="_blank" rel="nofollow">Дюрант и Гобер – в топ-5 данков Олимпиады в Токио. ВИДЕО</a> <span>(UA-Футбол)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:20</time><div class="item-title"><a href="https://newsyou.info/rosijskij-trauler-pislya-seri%d1%97-vibuxiv-zgoriv-vshhent-zyavilosya-video" nc="86500285,18,49782732" target="_blank" rel="nofollow">Російський траулер після серії вибухів згорів вщент: з'явилося відео</a> <span>(Newsyou)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:03</time><div class="item-title"><a href="https://kriminal.tv/news/v_poezde_ukrzaliznitsi_pjanyj_muzhchina_pristaval_k_passazhirkam_politsija_i_provodniki_ne_smogli_pomoch_video.html" nc="86499921,18,49777988" target="_blank" rel="nofollow">В поезде "Укрзалізниці" пьяный мужчина приставал к пассажиркам: полиция и проводники не смогли помочь. Видео</a> <span>(Криминал.TV)</span></div><div class="b-cl-block"></div></div><div class="item"><time>15:00</time><div class="item-title"><a href="https://realist.online/news/razbili-pjat-avto-moment-masshtabnoho-dtp-v-kieve-snjali-na-video" nc="86499831,18,49782415" target="_blank" rel="nofollow">Разбили пять авто: момент масштабного ДТП в Киеве сняли на видео</a> <span>(Realist)</span></div><div class="b-cl-block"></div></div><!--/noindex--><div class="more_news"><a lc="232" href="news/video.html">всі відео новини</a></div></section><script>News.init('2688c073f73998be6084fad3ddc6cb5b', 9,'52|23|136');</script></div>
+<!--noindex--><!--/noindex-->            </article>
+</div>
+<aside class="right-side">
+<!--noindex--><section class="right-tabs-block">
+<ul class="right-tabs">
+<li id="sinoptik" lc="823">Погода</li>
+<li id="currency" lc="763">Валюта</li>
+<li id="fuel" lc="224">Пальне</li>
+<li id="orakul" lc="764">Гороскопи</li>
+</ul>
+<div class="tabs-blocks">
+<div class="sinoptik" id="weatherFrame">
+<noscript><iframe width="300" height="118" scrolling="no" frameborder="0" name="weather widget" src="//pinformer.sinoptik.ua/pinformer4.php?lang=ua" marginheight="0" marginwidth="0" id="sinoptik_container" rel="nofollow"></iframe></noscript>
+</div>
+<script language="javascript" type="text/javascript">
+$('#weatherFrame').html('<iframe width="300" height="118" scrolling="no" frameborder="0" name="weather widget" src="//pinformer.sinoptik.ua/pinformer4.php?lang=ua' + (GetCookie('pcity') ? '&pcity='+GetCookie('pcity') : '') + (Paths.old ? '&old=1' : '')+'&rnd='+Core.now()+'" marginheight="0" marginwidth="0" id="sinoptik_container" rel="nofollow"></iframe>');
+</script>
+<div class="currency"><div class="region-list"><span class="act-region">Київ</span><i></i><div class="list"><a href="javascript:Blocks.currency(1)">Вінниця</a><a href="javascript:Blocks.currency(2)">Волинь</a><a href="javascript:Blocks.currency(3)">Дніпро</a><a href="javascript:Blocks.currency(4)">Донецьк</a><a href="javascript:Blocks.currency(5)">Житомир</a><a href="javascript:Blocks.currency(6)">Закарпаття</a><a href="javascript:Blocks.currency(7)">Запоріжжя</a><a href="javascript:Blocks.currency(8)">Івано-Франківськ</a><a href="javascript:Blocks.currency(10)">Кропивницький</a><a href="javascript:Blocks.currency(12)">Луганськ</a><a href="javascript:Blocks.currency(13)">Львів</a><a href="javascript:Blocks.currency(14)">Миколаїв</a><a href="javascript:Blocks.currency(15)">Одеса</a><a href="javascript:Blocks.currency(16)">Полтава</a><a href="javascript:Blocks.currency(17)">Рівне</a><a href="javascript:Blocks.currency(18)">Суми</a><a href="javascript:Blocks.currency(19)">Тернопіль</a><a href="javascript:Blocks.currency(20)">Харків</a><a href="javascript:Blocks.currency(21)">Херсон</a><a href="javascript:Blocks.currency(22)">Хмельницький</a><a href="javascript:Blocks.currency(23)">Черкаси</a><a href="javascript:Blocks.currency(24)">Чернігів</a><a href="javascript:Blocks.currency(25)">Чернівці</a><a href="javascript:Blocks.currency(11)">Крим</a></div></div><div class="time-update">сьогодні о <span>15:29</span></div><div class="table-title"><div class="purchase">Купiвля</div><div class="sale">Продаж</div><div class="nbu">НБУ</div><div class="b-cl-block"></div></div><div class="courses"><table width="203" cellpadding="0" cellspacing="0" border="0"><tr class="grey"><td class="name">USD</td><td class="purchase">26.74</td><td class="sale">26.96</td><td class="nbu">26.8346<td></tr><tr><td class="name">EUR</td><td class="purchase">31.37</td><td class="sale">31.76</td><td class="nbu">31.6756<td></tr><tr class="grey"><td class="name">10 RUB</td><td class="purchase">3.29</td><td class="sale">3.78</td><td class="nbu">3.6659<td></tr></table><div class="logo"><!--a rel="nofollow" href="http://gdeua.hit.gemius.pl/lshitredir/id=0nI1XSt3OVAY81ftnMd5KZaGj_iRbU7LWppHCSOBBnz.37/fastid=knfjyoigkyszgnbaiijybjjtibkw/stparam=obirblnmsc/url=http://minfin.com.ua/deposits/bonus/?utm_source=uknet&utm_medium=ukrnet_cur_branding&utm_campaign=depositbonus" target="_blank"></a--></div><div class="b-cl-block"></div></div>    <div class="curr-kalc-title"><a href="javascript:void(0)">Конвертер валют</a></div>
+<!--div class="curr-kalc-title"><a onclick="Currency.show();" href="javascript:void(0)">Конвертер валют</a></div-->
+<div id="curr-kalc">
+<ul>
+<li class="grey grn">
+<div class="left">грн</div>
+<div class="right"><input min="0" type="text" id="grn" name="grn" onfocus="if(this.value == 0)this.value = ''" disabled onkeyup="Currency.kalc.grn(this, '0.33', '26.74', '31.37')" /></div>
+</li>
+<li class="grey">
+<div class="left">rub</div>
+<div class="right"><b>0.33</b><input min="0" type="text" id="rub" name="rub" disabled onfocus="if(this.value == 0)this.value = ''" onkeyup="Currency.kalc.rub(this, '0.33', '26.74', '31.37')" /></div>
+</li>
+<li>
+<div class="left">usd</div>
+<div class="right"><b>26.74</b><input min="0" type="text" id="usd" name="usd" disabled onfocus="if(this.value == 0)this.value = ''" onkeyup="Currency.kalc.usd(this, '0.33', '26.74', '31.37')" /></div>
+</li>
+<li>
+<div class="left">eur</div>
+<div class="right"><b>31.37</b><input min="0" type="text" id="eur" name="eur" disabled onfocus="if(this.value == 0)this.value = ''" onkeyup="Currency.kalc.eur(this, '0.33', '26.74', '31.37')" /></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="fuel">
+<div class="region-list"><span class="act-region"></span><i></i>
+<div class="list"></div>
+</div>
+<div class="time-update"></div>
+<div class="table">
+<div class="fuel-banner">
+<a bc="3723" rel="nofollow" target="_blank" href="http://rezina.cc/?utm_source=ukr.net&utm_medium=cpd&utm_campaign=banner_shiny-diski_brendirovanie-toplivo&utm_content=120-77"><img src="//upst.fwdcdn.com/img/commercial/fuels-banner-ua.png"></a>
+</div>
+<div class="table-titles">
+<div class="name">Пальне</div>
+<div class="average-price">Середня</div>
+<div class="price-pump">Ціна на заправках</div>
+</div>
+<ul class="fuels"></ul>
+<ul class="prices"></ul>
+<div class="b-cl-block"></div>
+</div>
+<div class="fuel-bottom-banner"><a rel="nofollow" target="_blank" bc="3723" href="http://rezina.cc/?utm_source=ukr.net&utm_medium=cpd&utm_campaign=banner_shiny-diski_brendirovanie-toplivo&utm_content=120-77"><img src="//upst.fwdcdn.com/img/commercial/fuels-banner-bottom-ua.png"></a></div>
+</div><!--/noindex-->
+<div class="orakul">
+<ul>
+<li class="ram" style="width:67px;"><div style="width:67px;"><a title="Овен (21.03 - 20.04)" alt="Aries" href="http://orakul.com/horoscope/astrologic/general/aries/today.html" target="_blank" lc="581">Овен</a></div></li><li class="taurus"><div style="width:67px;"><a title="Телець (21.04 - 21.05)" alt="Taurus" href="http://orakul.com/horoscope/astrologic/general/taurus/today.html" target="_blank" lc="581">Телець</a></div></li><li class="gemini"><div><a title="Близнюки (22.05 - 21.06)" alt="Gemini"  href="http://orakul.com/horoscope/astrologic/general/gemini/today.html" target="_blank" lc="581">Близнюки</a></div></li><li class="cancer"><div><a title="Рак (22.06 - 23.07)" alt="Cancer"  href="http://orakul.com/horoscope/astrologic/general/cancer/today.html" target="_blank" lc="581">Рак</a></div></li><li class="lion" style="width:67px;"><div><a title="Лев (24.07 - 23.08)" alt="Lion"  href="http://orakul.com/horoscope/astrologic/general/lion/today.html" target="_blank" lc="581">Лев</a></div></li><li class="virgin"><div><a title="Дiва (24.08 - 23.09)" alt="Virgo"  href="http://orakul.com/horoscope/astrologic/general/virgo/today.html" target="_blank" lc="581">Дiва</a></div></li><li class="scales"><div style="width:67px;"><a title="Терези (24.09 - 23.10)" alt="Libra"  href="http://orakul.com/horoscope/astrologic/general/libra/today.html" target="_blank" lc="581">Терези</a></div></li><li class="scorpion"><div><a title="Скорпiон (24.10 - 22.11)" alt="Scorpio"  href="http://orakul.com/horoscope/astrologic/general/scorpio/today.html" target="_blank" lc="581">Скорпiон</a></div></li><li class="sagittarius" style="width:67px;"><div><a title="Стрiлець (23.11 - 21.12)" alt="Sagittarius"  href="http://orakul.com/horoscope/astrologic/general/sagittarius/today.html" target="_blank" lc="581">Стрiлець</a></div></li><li class="capricorn"><div><a title="Козоріг (22.12 - 20.01)" alt="Capricorn"  href="http://orakul.com/horoscope/astrologic/general/capricorn/today.html" target="_blank" lc="581">Козоріг</a></div></li><li class="aquarius"><div><a title="Водолій (21.01 - 19.02)" alt="Aquarius"  href="http://orakul.com/horoscope/astrologic/general/aquarius/today.html" target="_blank" lc="581">Водолій</a></div></li><li class="fish"><div><a title="Риби (20.02 - 20.03)" alt="Pisces"  href="http://orakul.com/horoscope/astrologic/general/pisces/today.html" target="_blank" lc="581">Риби</a></div></li>
+</ul>
+<div class="title" style="zoom:1;overflow:hidden;">
+<a href="http://orakul.com/sonnik/" target="_blank" lc="581">Сонник</a>
+<a href="http://orakul.com/imena/" target="_blank" lc="581">Тлумачення імен</a>
+<a href="http://orakul.com/taro/" class="taro" target="_blank" lc="581">Таро</a>
+</div>
+</div>
+<!--noindex-->
+</div>
+</section>
+<script type="text/javascript">    if($.browser.msie && $.browser.version == 6){
+$('#onona-i').html('Я');
+$('#onona-wants').html('Хочу знайти');
+$('#onona-where').html('Де');
+}
+$(".chosen").chosen();$("ul.right-tabs").tabs(".right-tabs-block div.tabs-blocks > div",{current:'active', tabs:''});$('.right-tabs li').each(function(i, obj){ $(obj).bind('click', function() { Blocks.tabs('right_tab', obj.id); }); });Blocks.statistic();Fuel.start();</script>
+<!--/noindex-->
+<!-- Copy and paste this tag in the <head> section of your HTML -->
+<script async='async' src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+</script><script>
+var useragent = document.getElementsByTagName('html')[0];
+if(useragent.className.indexOf('lt-ie7') < 0){
+var topSlot, topSlot4, topSlot5, brandSlot;
+googletag.cmd.push(function() {
+var mapping = googletag.sizeMapping()
+.addSize([1360, 0], [160, 600])
+.addSize([1280, 0], [120, 600])
+.addSize([0, 0], []). build();
+if(screen.width >= 1280){
+brandSlot = googletag.defineSlot('/17774365/ukr.net_brend_resize', [[1, 1], [120, 600], [160, 600]], 'div-gpt-ad-1543833870671-0').defineSizeMapping(mapping).addService(googletag.pubads());    
+}
+topSlot = googletag.defineSlot('/17774365/ukr.net_300x250', [[300, 250], [300, 500], [300, 400], [300, 107]], 'div-gpt-ad-1428656525414-0').addService(googletag.pubads());
+topSlot4 = googletag.defineSlot('/17774365/ukr.net_300x250_ad_unit2_bottom', [[300, 145], [300, 250]], 'div-gpt-ad-1544528258762-0').addService(googletag.pubads());
+topSlot5 = googletag.defineSlot('/17774365/ukr.net_300x250_ad_unit3_bottom', [[300, 600], [300, 250]], 'div-gpt-ad-1544528657150-0').addService(googletag.pubads());
+//bottomSlot = googletag.defineSlot('/17774365/ukr.net_300x250_bottom', [[300, 250], [300, 145]], 'div-gpt-ad-1471423183969-0').addService(googletag.pubads());
+if (window.location.href.indexOf('brand') != 1) {
+var n = 'brand' + window.location.href.split('=')[1];
+googletag.pubads().setTargeting('page', n);
+}googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs(true, true);
+googletag.enableServices();
+});
+}
+</script><!-- Copy and paste these tags in the <body> section of your HTML. Place each tag in the desired location of the associated ad unit -->
+<!-- top ad -->
+<div id="div-gpt-ad-1428656525414-0">
+<script>
+googletag.cmd.push(function() {
+googletag.display('div-gpt-ad-1428656525414-0');
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+if(event.isEmpty === false) {
+//Block load
+$('#div-gpt-ad-1428656525414-0').css('margin','0 0 10px 0');
+}else {
+// Block empty
+$('#div-gpt-ad-1428656525414-0').css('margin','0');
+}
+});
+});
+</script>
+</div>            
+<!--noindex--><!--/noindex-->            <!--noindex--><section class="market"><div class="box" id="16" x-adriver-id="22"><h3>Авто</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://autoshini.com/?utm_source=ukr.net" mc="2268,Шины и диски">Шини та диски</a></div> <div><a rel="nofollow" target="_blank" href="https://pokraska.diskservice.com.ua/" mc="6718,Покраска автодисков">Фарбування автодисків</a></div> <div><a rel="nofollow" target="_blank" href="http://transshina.com.ua" mc="4683,Автошины и диски">Автошини та диски</a></div> <div><a rel="nofollow" target="_blank" href="https://shinadiski.com.ua/" mc="6778,Шины для авто и диски">Шини для авто, диски</a></div> <div><a rel="nofollow" target="_blank" href="https://kiaparts.com.ua/service/contacts" mc="5698,Запчасти Hyundai">Запчастини Hyundai</a></div> <div><a rel="nofollow" target="_blank" href="https://kiaparts.com.ua/service/contacts" mc="6493,Запчасти KIA">Запчастини KIA</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://www.zapchast.com.ua" mc="1327,Поиск запчастей">Пошук запчастин</a></div> <div><a rel="nofollow" target="_blank" href="https://americamotors.com/" mc="6788,Авто из США">Авто з США</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/add_car/" mc="3893,Продать авто">Продати авто</a></div> <div><a rel="nofollow" target="_blank" href="http://rezina.cc/?utm_source=ukr.net&utm_medium=cpc&utm_campaign=link_shiny-diski_ssylka-na-glavnoy&utm_content=text" mc="3288,Авторезина и диски">Авторезина та диски</a></div> <div><a rel="nofollow" target="_blank" href="https://osago.avtosale.ua/insurance/osago" mc="3748,Автострахование онлайн">Автоцивілка онлайн</a></div> <div><a rel="nofollow" target="_blank" href="https://kiaparts.com.ua/service/contacts" mc="6328,Запчасти SsangYong">Запчастини SsangYong</a></div> </div></div><div class="box" id="98"><h3>Автосалони України</h3><div class="left"><div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Renault_winner_obolon-1302/" mc="7108,Renault Киев">Renault Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Vidi_liberti-967/" mc="7313,Инфинити Киев">Інфініті Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Vidi_insite-1120/" mc="7323,Хонда Киев">Хонда Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Ford_niko_megapolis-1303/" mc="7333,Ford Киев">Ford Київ</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Vidi_avtostrada-961/" mc="1996,Toyota Киев">Toyota Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Vidi_armada-993/" mc="7318,Ниссан Киев">Ніссан Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Renault_niko_megapolis-1305/" mc="7328,Renault НИКО Киев">Renault НІКО Київ</a></div> <div><a rel="nofollow" target="_blank" href="http://avtosale.ua/avtosalon/Fiat_niko_megapolis-1304/" mc="7338,Fiat Киев">Fiat Київ</a></div> </div></div><div class="box" id="83"><h3>Гаджети та електроніка</h3><div class="left"><div><a rel="nofollow" target="_blank" href="http://goldnomer.com/vip?utm_source=ukr.net" mc="3128,Золотые номера 77777">Золоті номери 77777</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="http://www.aks.ua/" mc="784,Аксессуары, запчасти">Аксесуари, запчастини</a></div> </div></div><div class="box" id="18" x-adriver-id="23"><h3>Дитячі товари</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://panama.ua/categorys/76271/" mc="5663,Игрушки">Іграшки</a></div> <div><a rel="nofollow" target="_blank" href="https://panama.ua/categorys/77413/" mc="5673,Детская обувь">Дитяче взуття</a></div> <div><a rel="nofollow" target="_blank" href="https://panama.ua/categorys/76454/" mc="5683,Канцтовары детям">Канцтовари дітям</a></div> <div><a rel="nofollow" target="_blank" href="https://www.mykite.com.ua/uk/ryukzaky?utm_source=ukr_net&utm_medium=ukr.net_mother&utm_campaign=link_mother" mc="7228,Рюкзаки и ранцы Kite">Рюкзаки та ранцi Kite</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://panama.ua/categorys/76341/" mc="5668,Детская одежда">Дитячий одяг</a></div> <div><a rel="nofollow" target="_blank" href="https://panama.ua/categorys/76311/" mc="5678,Гигиена малыша">Гігієна малюка</a></div> <div><a rel="nofollow" target="_blank" href="https://kidbutik.ua/ua/?utm_source=ukr-net&utm_medium=link-sale&utm_campaign=21042021" mc="7218,До -70% одежда обувь">До -70% одяг взуття</a></div> <div><a rel="nofollow" target="_blank" href="https://vv.ua/ua/ryukzaki-i-rantsi-shkolnie/?utm_source=ukrnet_ua&utm_medium=referral&utm_campaign=referral_ukrnet_ua" mc="7298,Школьные рюкзаки 2021">Шкільні рюкзаки 2021</a></div> </div></div><div class="box" id="31" x-adriver-id="27"><h3>Дім та інтер'єр</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://www.lampa.ua?utm_source=ukr.net&utm_medium=referral&utm_campaign=lyustry" mc="974,Люстры, светильники">Люстри, світильники</a></div> <div><a rel="nofollow" target="_blank" href="https://diaton.ua/ua/katalog-plivok.html" mc="3928,Пленки - Diaton Studio">Плівки - Diaton Studio</a></div> <div><a rel="nofollow" target="_blank" href="https://artpotolok.kiev.ua/raschet-stoimosti/" mc="7078,Потолки Art Decor">Стелі Art Decor</a></div> <div><a rel="nofollow" target="_blank" href="https://almaz-tech.com.ua/ua/" mc="7258,Алмазное бурение Киев">Алмазне буріння Київ</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="http://lascala.ua/index.php?utm_source=ukr_netdom&utm_medium=link&utm_campaign=ukr_netdom" mc="470,Постельное белье 1+1=3">Постільна білизна 1+1=3</a></div> <div><a rel="nofollow" target="_blank" href="http://www.m-stelya.com.ua/" mc="6873,Натяжные потолки">Натяжні стелі</a></div> <div><a rel="nofollow" target="_blank" href="https://e27.com.ua/ua?utm_source=ukr.net&utm_medium=links&utm_campaign=dom_interier" mc="7188,Свет для дома и улицы">E27: освітлення в дім</a></div> <div><a rel="nofollow" target="_blank" href="https://590.ua/ot/refrigerators" mc="7303,Холодильники, доступные цены">Холодильники, доступні ціни</a></div> </div></div><div class="box" id="29" x-adriver-id="25"><h3>Подарунки</h3><div class="left"><div><a rel="nofollow" target="_blank" href="http://flowers.ua" mc="6648,Доставка Flowers">Flowers-доставка квiти</a></div> <div><a rel="nofollow" target="_blank" href="https://www.accordtour.com/avtobusni_tury_plyazh_i_more" mc="4488,Туры, отдых на море">Тури, відпочинки на морі</a></div> <div><a rel="nofollow" target="_blank" href="http://isex.com.ua/?utm_source=ukr.net&utm_medium=link&utm_campaign=podarki" mc="2278,Секс шоп">Секс шоп</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://buketland.com.ua" mc="6293,BuketLand - цветы">Квіти - BuketLand</a></div> <div><a rel="nofollow" target="_blank" href="https://amurchik.ua/?utm_source=ukrnet&utm_medium=cpm&utm_campaign=pod_intim_igr" mc="7143,Интимные игрушки -50%">Інтимні іграшки -50%</a></div> <div><a rel="nofollow" target="_blank" href="http://Kievflower.com.ua" mc="7343,KFL- доставка цветов">KFL- доставка букетів</a></div> </div></div>        <!-- topSlot4 -->
+<div id="div-gpt-ad-1544528258762-0">
+<script>
+googletag.cmd.push(function() {
+googletag.display('div-gpt-ad-1544528258762-0');
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+if(event.slot.getAdUnitPath() == '/17774365/ukr.net_300x250_ad_unit2_bottom'){
+if(event.isEmpty === false) {
+//Block load
+$('#div-gpt-ad-1544528258762-0').css('margin','0 0 10px 0');
+} else {
+// Block empty
+$('#div-gpt-ad-1544528258762-0').css('margin','0');
+}
+}
+});
+});
+</script>
+</div>
+<div class="box" id="37" x-adriver-id="28"><h3>Одяг, Косметика</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://sex-shop.ua/catalog/seksi_beljo" mc="350,Эротическое белье">Еротична білизна</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://makeup.com.ua/" mc="5648,Косметика">Косметика</a></div> </div></div><div class="box" id="93"><h3>Зоотовари</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://e-zoo.com.ua/ua/prices-drop" mc="7273,Скидки на зоотовары">Знижки на зоотовари</a></div> <div><a rel="nofollow" target="_blank" href="https://e-zoo.com.ua/ua/17-sukhoj-korm-dlya-koshek" mc="7283,Корм для котов">Корм для котів</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://e-zoo.com.ua/ua/15-suhoy-korm-dlya-sobak" mc="7278,Корм для собак">Корм для собак</a></div> <div><a rel="nofollow" target="_blank" href="https://e-zoo.com.ua/ua/154-ot-blokh-i-klesshej" mc="7288,От блох и клещей">Проти бліх та кліщів</a></div> </div></div><div class="box" id="30" x-adriver-id="26"><h3>Спорт і Туризм</h3><div class="left"><div><a rel="nofollow" target="_blank" href="https://www.optics-pro.com.ua/?utm_source=ukrnet&utm_medium=links&utm_campaign=optica" mc="6178,Оптика для охоты">Оптика для полювання</a></div> <div><a rel="nofollow" target="_blank" href="https://ukroptica.com.ua/" mc="7238,Тепловизоры и оптика">Тепловізори і оптика</a></div> </div><div class="right"><div><a rel="nofollow" target="_blank" href="https://www.accordtour.com/ukrayina_rehulyarni_tury/ukrayina" mc="7173,Туры по Украине">Тури по Україні</a></div> <div><a rel="nofollow" target="_blank" href="https://analyticsq1.com/fav_uni/?serial=3406&creative_id=7&anid=trf_ukrnet" mc="7308,Favbet.Бонус 4500 грн">Favbet.Бонус 4500 грн</a></div> </div></div></section><!--/noindex-->            <!--noindex--><div hr="2,1628" id="ecbr-1628"><script>ecbrStart('ecbr-1628', '//trafmag.com/jsarrayposters.php?type=ukrnet&count=10');</script></div><div hr="1,943" id="ecbr-943"><section class="commercial-right-block"><div class="title"><a bc="1472" href="http://makeup.com.ua/?utm_source=ukr.net&utm_medium=banner&utm_content=header&utm_campaign=makeup_prime_block08" target="_blank" rel="nofollow"><img class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/1/943/head.83396.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/1/943/head.83396.jpg"  alt=""/></noscript></a></div><div class="commercial-right-content"><div class="items"><div class="item"><div class="img"><a bc="1473" href="https://makeup.com.ua/product/819358/?utm_source=ukr.net&utm_medium=banner&utm_campaign=makeup_prime_block08" target="_blank" rel="nofollow"><img title="Маска для волос, салонный эффект за 8 секунд - Masil 8 Seconds Salon Hair Mask" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/1/943/ac/7f/b863d46fca48f3e64b009053e992.jpg" alt="" /><noscript><img title="Маска для волос, салонный эффект за 8 секунд - Masil 8 Seconds Salon Hair Mask" src="//upst.fwdcdn.com/temp/blocks/1/943/ac/7f/b863d46fca48f3e64b009053e992.jpg" /></noscript><span title="Маска для волос, салонный эффект за 8 секунд - Masil 8 Seconds Salon Hair Mask" class="price">23 грн</span></a></div><div class="item-title"><a class="checkthis" title="Маска для волос, салонный эффект за 8 секунд - Masil 8 Seconds Salon Hair Mask" bc="1473" href="https://makeup.com.ua/product/819358/?utm_source=ukr.net&utm_medium=banner&utm_campaign=makeup_prime_block08" target="_blank" rel="nofollow">Мас&shy;ка для во&shy;лос, са&shy;лон&shy;ный эф&shy;фект за 8 се&shy;кунд - Masil 8 Seconds Salon Hair Mask</a></div></div></div></div><a class="prev"></a><a class="next"></a></section></div><div hr="2,5233" id="ecbr-5233"><section class="commercial-right-block"><a bc="6568" href="https://answear.ua/s/summer-sale?sort=popularity&utm_medium=display&utm_source=ukr.net&utm_campaign=final_sale_082021&utm_term=300x150" target="_blank" rel="nofollow"><img width="300" height="150" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/2/5233/head.1.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/2/5233/head.1.jpg"  alt=""/></noscript></a></section></div><div hr="2,5193" id="ecbr-5193"><section class="commercial-right-block"><a bc="8728" href="https://sneakerstudio.com.ua/ukr_m_-%D0%97%D0%BD%D0%B8%D0%B6%D0%BA%D0%B8-860.html" target="_blank" rel="nofollow"><img width="300" height="150" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/2/5193/head.1.jpg" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/2/5193/head.1.jpg"  alt=""/></noscript></a></section></div><div hr="2,5238" id="ecbr-5238"><section class="commercial-right-block"><a bc="9768" href="https://www.kyivopen.com/" target="_blank" rel="nofollow"><img width="300" height="150" class="lazy" src="//upst.fwdcdn.com/img/grey-pix.gif" data-original="//upst.fwdcdn.com/temp/blocks/2/5238/head.1.gif" alt=""/><noscript><img src="//upst.fwdcdn.com/temp/blocks/2/5238/head.1.gif"  alt=""/></noscript></a></section></div><div hr="2,1648" id="ecbr-1648"><script>ecbrStart('ecbr-1648', '//servicer.mgid.com/359022/1');</script></div><div hr="2,1926" id="ecbr-1926" data-as="1"><div id="div-gpt-ad-1544528657150-0">
+<script>
+googletag.cmd.push(function() {
+googletag.display('div-gpt-ad-1544528657150-0');
+googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+if(event.slot.getAdUnitPath() == '/17774365/ukr.net_300x250_ad_unit3_bottom'){
+if(event.isEmpty === false) {
+//Block load
+$('#div-gpt-ad-1544528657150-0').css('margin','0 0 10px 0');
+}else {
+// Block empty
+$('#div-gpt-ad-1544528657150-0').css('margin','0');
+}
+}
+});
+});
+</script>
+</div></div><!--/noindex-->        </aside>
+<div class="b-cl-block"></div>
+<footer>
+<ul itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="//www.ukr.net/ua/" itemprop="item" title="новини"><span itemprop="name">Новини</span><meta itemprop="position" content="1"></a></li></ul><span>&bull;</span><a href="//www.ukr.net/contacts/">Підтримка користувачів</a><span>&bull;</span><!--<span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span--><a href="//www.ukr.net/terms/">Конфіденційність</a><span>&bull;</span><a href="//www.ukr.net/news/terms.html">Про стрічку новин</a><span>&bull;</span><a href="//www.ukr.net/add_to_feed/">Підключення до стрічки</a><span>&bull;</span><a href="//www.ukr.net/add_to_adv/">Розміщення рекламних новин</a><span>&bull;</span><!--noindex--><a rel="nofollow" href="http://adline.kiev.ua/" target="_blank">Реклама на порталі</a><!--/noindex-->
+</footer>
+<div id="fldiv"></div>
+</div>
+</div>
+<script>
+$('a.prev, a.next').click(function(){
+var a = $(this).attr('class');
+var b = $(this).parent().parent();
+var c = b.attr('hr').split(',');
+$.get(
+Core.path()+'temp/blocks/'+c[0]+'/'+c[1]+'/items.'+Paths.lang+'.html',
+function (data) {
+b.html(data);
+b.find(".commercial-left-content, .commercial-right-content, .kinostyle-left-content, .autostyle-left-content, .autostyle-right-content, .kinostyle-right-content, .job-left-content, .job-right-content").queue(function(){
+$(this).scrollable({circular:true,mousewheel:false,speed:200});
+var api = $(this).data('scrollable');
+if(a == 'next'){
+api.next(200);
+}else{
+api.prev(200);
+}
+});
+}
+);
+});
+$('i.prev, i.next').click(function(){
+var a = $(this).attr('class');
+var b = $(this).closest("div[hr]");
+var c = b.attr('hr').split(',');
+$.get(
+Core.path()+'temp/blocks/'+c[0]+'/'+c[1]+'/items.'+Paths.lang+'.html',
+function (data) {
+b.html(data);
+b.find(".rotate").queue(function(){
+$(this).scrollable({circular:true,mousewheel:false,speed:200});
+var api = $(this).data('scrollable');
+if(a == 'next'){
+api.next(200);
+}else{
+api.prev(200);
+}
+});
+}
+);
+});
+</script>
+<!-- BRANDING -->
+<script type="text/javascript">
+var bgURL1280, bgURL1366, bgURL1600, back_color_1280, back_color_1366, back_color_1600, brand_exist = false, brand_href = '', crash=1;
+function brandsActivion(){
+brand_href = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.brand_href;
+if (brand_href) {
+bgURL1280 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.bgURL1280;
+bgURL1366 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.bgURL1366;
+bgURL1600 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.bgURL1600;
+back_color_1280 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.back_color_1280;
+back_color_1366 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.back_color_1366;
+back_color_1600 = document.getElementById('google_ads_iframe_/17774365/ukr.net_brend_resize_0__container__').querySelector('iframe').contentWindow.back_color_1600;
+if(brandsActiv && (screen.width >= 1280)){var param = brandsParameters(bgURL1280, bgURL1366, bgURL1600, back_color_1280, back_color_1366, back_color_1600);
+$('body').append('<div id="brands"></div>');
+var brands = $('#brands');
+brands.css({'display':'block', 'height':'2000px','background':'url(' + param[0] + ') no-repeat center top'});
+$('body').css('background',param[1]);
+$('.main').css('z-index','10');var link_DFP = document.createElement('a');
+link_DFP.setAttribute('href', brand_href);
+link_DFP.setAttribute('id', 'takeover_Skin');
+link_DFP.setAttribute('target', '_blank');
+link_DFP.setAttribute('style', 'position: fixed; top:0px; left:0px; bottom:0px; height:100%; width: 100%; z-index:1;')
+document.body.appendChild(link_DFP);window.onresize = function(){
+param = brandsParameters(bgURL1280, bgURL1366, bgURL1600, back_color_1280, back_color_1366, back_color_1600);
+brands.css('background' , 'url(' + param[0] + ') no-repeat center top');
+$('body').css('background',param[1]);
+}
+};} else {
+setTimeout(function(){
+if (crash > 50) return;
+crash++;
+brandsActivion();
+}, 100);
+}
+}
+function brandsParameters(bgURL1280, bgURL1366, bgURL1600, back_color_1280, back_color_1366, back_color_1600){
+var ww = window.innerWidth;
+var result = [];
+if(ww < 1366){
+result = [bgURL1280, back_color_1280];
+}else if(ww >= 1366 && ww < 1600){
+result = [(bgURL1366 ? bgURL1366 : bgURL1280), back_color_1366];
+}else if(ww >= 1600){
+result = [bgURL1600 ? bgURL1600 : (bgURL1366 ? bgURL1366 : bgURL1280), back_color_1600];
+}
+return result;
+}function setbrandsActivion () {
+brandsActiv = true;
+if (!brand_exist) {
+brand_exist = true;
+setTimeout(brandsActivion, 750);
+}
+};
+</script>
+<!-- END BRANDING --><div id="panel_modal_bg" class="panel_modal_bg" style="display:none;"></div>
+<div id="panel_windowsModal">
+<!--noindex-->
+<style type="text/css">.g-off, .off {display:none;}</style>
+<div class="panel_modal panel_modal-special off" id="panel_modal-block">
+<div class="wrap-tl">
+<div class="wrap-tr">
+<div id="panel_modal_t-login_box" class="off title">
+<a rel="nofollow" class="close" title="" href="#" onclick="panel_CloseModal('login_box'); return false;">&nbsp;</a>
+Вход для пользователей
+</div>
+</div>
+</div>
+<div class="wrap">
+<div id="panel_modal-login_box" class="wrap-h off">
+<div class="wrap_cc">
+<form action="https://mail.ukr.net/q/splash" method="post" onsubmit="return login('panel_modal-loginForm');" id="panel_modal-loginForm">
+<input type="hidden" value="#BACK_URL#" id="panel_modal-backURL" name="backURL"/>
+<input type="hidden" value="{login-serial-md5}" id="panel_modal-Challenge" name="Challenge"/>
+<input type="hidden" name="Submit" value="Submit">
+<noscript><div class="g-cl"></div><div class="error"><b>Пожалуйста, включите JavaScript для успешного использования<br/>почты ukr.net.</b></div><div class="g-cl"></div></noscript>
+<div class="row"><div class="t">Логин:</div><input class="txt" type="text" name="Login" id="panel_modal-Login" /><div class="b">@ukr.net</div></div>
+<div class="row"><div class="t">Пароль:</div><input class="txt" type="password" maxlength="16" name="Password" id="panel_modal-Password" /><div class="b"><input type="submit" class="login-bt" value="Войти" /></div></div>
+<div class="rem"><input type="checkbox" value="2" id="level2" name="level" /> <label for="level2">Чужой компьютер</label></div>
+</form>
+<div class="bottom-links"><div class="forget"><a rel="nofollow" href="https://mail.ukr.net/q/password_recovery">Забыли пароль?</a></div><div class="reg"><a rel="nofollow" target="_blank" href="https://mail.ukr.net/q/reg">Регистрация</a></div></div>
+<div class="g-cl">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="wrap-bl"><div class="wrap-br"></div></div>
+</div>
+<!--/noindex-->
+</div><div id="zakl_modals"></div>
+<script type="text/javascript">
+zakl_$('zakl_modals').innerHTML = zakl_html;
+</script>
+<div id="zakl_contextMenu" class="zakl_context_menu contextmenu-folder g-off"></div><!--noindex--><!-- COUNTER -->
+<script language="JavaScript" type="text/javascript">
+//<!--
+d=document;
+n=navigator;var a='';a+='&r='+escape(d.referrer);
+a+='&p='+escape(window.location.href);
+d.cookie="co=1;path=/"+(location.protocol === 'https:' ? ';SameSite=None; Secure' : ''); 
+a+="&c="+(d.cookie?'y':'n');
+d.cookie="co=1; expires=Thu, 01-Jan-70 00:00:01 GMT"+(location.protocol === 'https:' ? ';SameSite=None; Secure' : '');
+fr=(self!=top)?'y':'n';
+a+='&fr='+fr;
+tz=(new Date()).getTimezoneOffset();
+a+='&tz='+tz;
+a+='&j='+(n.javaEnabled()?'y':'n');
+s=screen;
+a+='&s='+s.width+'*'+s.height;
+a+='&d='+(s.colorDepth?s.colorDepth:s.pixelDepth);
+a+='&js=y';
+d.write('<script src="https://counter.ukr.net/c5/cnt.php?rand='+Math.random()+a+'"><\/script>');
+d.write('<script src="https://counter.ukr.net/lid/329/cnt.php?rand='+Math.random()+a+'"><\/script>');
+//-->
+</script>
+<noscript>
+<img src="https://counter.ukr.net/c5/cnt.php?js=n" width="1" height="1" border="0"/>
+<img src="https://counter.ukr.net/lid/329/cnt.php?js=n" width="1" height="1" border="0"/>
+</noscript>
+<!-- /COUNTER --><script type="text/javascript">
+gtag( 'set' , {
+'dimension1' : $.cookie('freemail') ? 'Registered':'Unregistered',
+'dimension2' : $.cookie('g') ? ($.cookie('g')=='0' ? 'm':'f'):'n',
+'dimension3' : $.cookie('a') ? $.cookie('a'):'0'
+});
+gtag('event', 'page_view', {
+page_location: window.location.href,
+page_path: window.location.pathname
+});
+// var _gaq = _gaq || [];
+// _gaq.push(['_setAccount', 'UA-5903420-1']);
+// _gaq.push(['_setCustomVar', 1, 'Users', $.cookie('freemail') ? 'Registered':'Unregistered', 1]);
+// _gaq.push(['_setCustomVar', 2, 'Gender', $.cookie('g') ? ($.cookie('g')=='0' ? 'm':'f'):'n', 1]);
+// _gaq.push(['_setCustomVar', 3, 'Age', $.cookie('a') ? $.cookie('a'):'0', 1]);
+// _gaq.push(['_trackPageview']);
+// _gaq.push(['_trackPageLoadTime']);// (function() {
+//     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+// // })();
+// gtag('event','1', {'Users': $.cookie('freemail') ? 'Registered':'Unregistered'});
+// gtag('event','2', {'Gender': $.cookie('g') ? ($.cookie('g')=='0' ? 'm':'f'):'n'});
+// gtag('event','3', {'Age': $.cookie('a') ? $.cookie('a'):'0'});</script><!--/noindex--><!--  IMG CASH BLOCK  -->
+<!--div id="cashblock"></div-->
+<!--  END IMG CASH BLOCK  --><!-- Брендирование/Баннер-небоскреб левый -->
+<script type='text/javascript'>var wd = window.innerWidth; 
+var size; 
+if (wd >= 1340) { 
+size = 0; 
+} else if (wd >= 1280 && wd < 1340) { 
+size = 1; 
+} else { 
+size = 2; 
+}function go(){ } window.addEventListener('resize', go); </script> <div id='div-gpt-ad-1543833870671-0' style='position: fixed; left: 50%; top: 119px; height: 600px; width: 160px; margin-left: -670px; text-align: right;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1543833870671-0'); });
+</script>
+</div></body>
+</html>

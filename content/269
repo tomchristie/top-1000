@@ -1,0 +1,2231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>中国网--网上中国</title>
+    <meta name="description" content="国家重点新闻网站，拥有十个语种独立新闻采编、报道和发布权；第一时间报道国家重大新闻事件；国情信息库服务全球读者了解中国；国务院新闻办公室发布会独家网络直播发布网站；拥有国内外顶级学者专家资源，独家编发各种相关政策解读。" />
+    <base target="_blank" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="baidu_union_verify" content="3c859366f1b4794094de0a0925f9f6c8" />
+    <meta name="baidu_ssp_verify" content="1c241fc267adf90ea89168c3e9c2f6e7" />
+    <meta name="filetype" content="1" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    
+                    <meta name="catalogs" content="5,001,706">
+            </meta>
+
+    <script type="text/javascript" src="http://images.china.cn/images1/ch/2015china/phone.js">
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="http://www.china.com.cn/2016firsttop/css/reset-1.0.css" />
+    <link type="text/css" rel="stylesheet" href="http://www.china.com.cn/2016firsttop/js/topcss1.css" />
+    <script type="text/javascript" src="http://www.china.com.cn/lib/jquery-1.12.4.min.js">
+    </script>
+
+    <style type="text/css">
+        <!-- 
+        body {
+            background: #FFF;
+        }
+
+        .navigation a {
+            margin: 0 6px;
+        }
+
+        .live1 h1 {
+            padding: 0 15px 0 0px;
+            background: none;
+        }
+
+        .subNav ul {
+            padding-left: 10px;
+        }
+
+        .dropdown {
+            float: left
+        }
+
+        .dropdown dt {
+            width: 65px;
+            cursor: pointer;
+        }
+
+        .dropdown dd {
+            position: absolute;
+            overflow: hidden;
+            width: 400px;
+            display: none;
+            background: #fff;
+            z-index: 200;
+            opacity: 0
+        }
+
+        .dropdown ul {
+            width: 450px;
+            list-style: none;
+        }
+
+        .dropdown li {
+            display: inline;
+            float: left;
+        }
+
+        .dropdown a,
+        .dropdown a:active,
+        .dropdown a:visited {
+            display: block;
+            padding-right: 5px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .sjewm {
+            width: 118px;
+            background-color: #F6F6F6;
+            border: 1px solid #E8E8E8;
+            text-align: center;
+            font-size: 12px;
+            line-height: 32px;
+            font-family: '宋体';
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .adleft {
+            display: none;
+            width: 110px;
+            margin-left: -630px;
+            position: fixed;
+            left: 50%;
+            top: 290px;
+        }
+
+        .adleft span {
+            width: 107px;
+            font-size: 12px;
+            line-height: 20px;
+            background: #e4e4e4;
+            display: block;
+            text-align: right;
+            padding-right: 3px;
+        }
+
+        .adleft span a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .a512 {
+            color: #999;
+        }
+
+        .a512 a {
+            color: #999;
+        }
+
+        .gd2 .gdmenu span {
+            padding: 25px 0 0 0;
+            float: left;
+            font-size: 14px;
+            color: #656565;
+            font-weight: bold;
+        }
+
+        .gd2 .gdmenu span a {
+            font-size: 14px;
+            color: #656565;
+            margin: 0 10px;
+        }
+
+        .gd2 .gdmenu .blue,
+        .gd3 .gdmenu .blue a {
+            color: #336599;
+        }
+
+        .gd2 .gdmenu p {
+            float: right;
+            padding-top: 26px;
+            font-weight: normal;
+            color: #999;
+        }
+
+        .gd2 .gdmenu p a {
+            color: #999;
+        }
+
+        .topNav li {
+            margin-right: 5px;
+            padding-right: 5px;
+        }
+
+        .gd3 .gdblk .blk1 {
+            background: #3A6386;
+            width: 104px;
+            height: 46px;
+            line-height: 46px;
+        }
+
+        .gd3 .gdblk .blk2 {
+            background: #447EAE;
+            width: 104px;
+            height: 46px;
+            line-height: 46px;
+        }
+
+        .gd3 .gdblk .blk3 {
+            background: #215077;
+            width: 104px;
+            height: 46px;
+            line-height: 46px;
+        }
+
+        .gd3 .gdblk .blk1 a,
+        .gd3 .gdblk .blk2 a,
+        .gd3 .gdblk .blk3 a {
+            line-height: 46px;
+        }
+
+        .gd3 .gdadv {
+            width: 320px;
+            height: 92px;
+        }
+
+        .gd3 .gdadv img {
+            width: 320px;
+            height: 92px;
+        }
+
+        .commend1 {
+            width: 490px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .commend1 li {
+            width: 490px;
+            float: left;
+            color: #369;
+            line-height: 25px;
+        }
+
+        .zgzw {
+            padding: 10px 0;
+            text-align: center;
+            color: #989898;
+        }
+
+        .zgzw a {
+            color: #989898;
+        }
+
+        .TPicR {
+            width: 648px;
+            float: right;
+        }
+
+        .commend {
+            height: 50px;
+            background: #EEE;
+        }
+
+        .commend h1 {
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            text-align: center;
+            background: #D11B00;
+            font-size: 14px;
+            color: #fff;
+            line-height: 24px;
+            letter-spacing: 4px;
+            margin-right: 10px;
+        }
+
+        .commend1 {
+            width: 880px;
+            height: 50px;
+            overflow: hidden;
+            padding-left: 25px;
+        }
+
+        .commend1 li {
+            width: 880px;
+            float: left;
+            color: #369;
+            line-height: 25px;
+            zoom: 1;
+            overflow: hidden;
+        }
+
+        .gdmenu .commend1 li a {
+            width: 900px;
+            float: left;
+            color: #369;
+            line-height: 25px;
+        }
+
+        .cmp {
+            width: 40px;
+            height: 50px;
+            float: left;
+        }
+
+        .cmp span {
+            cursor: pointer;
+            display: block;
+            float: left;
+            display: inline;
+            width: 19px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .cmp .cml {
+            background: url(http://images.china.cn/images1/ch/2016firsttop/a6.gif);
+        }
+
+        .cmp .cmr {
+            background: url(http://images.china.cn/images1/ch/2016firsttop/a7.gif);
+        }
+
+        .WC {
+            width: 320px;
+            height: 180px;
+            position: relative;
+        }
+
+        .WC .pic {
+            display: none;
+        }
+
+        .WCMenu {
+            width: 45px;
+            height: 15px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            _bottom: 10px;
+            *bottom: 10px;
+            z-index: 900;
+            display: none;
+        }
+
+        .WCMenu p {
+            float: left;
+            display: inline;
+            width: 4px;
+            height: 4px;
+            overflow: hidden;
+            margin-right: 5px;
+            background: url(http://images.china.cn/images1/ch/2019zw/0704-02.png) no-repeat left top;
+            cursor: pointer;
+        }
+
+        .WCMenu p.cur {
+            background: url(http://images.china.cn/images1/ch/2019zw/0704-01.png) no-repeat left top;
+        }
+        -->
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="topNav">
+            <ul class="w1000 wauto">
+                <li class="fl"><a href="javascript:void(0);" onclick="setHome(this,window.location)">设为首页</a></li>
+
+                <li class="fl ts" style="padding-right:25px;"><a href="javascript:void(0);" onclick="shoucang(document.title,window.location)">加入收藏</a></li>
+
+                <li class="fl"><a target="_blank" href="http://m.china.com.cn/">手机版</a></li>
+
+                <li class="fl"><a target="_blank" href="http://mail.china.com.cn/">邮箱登录</a></li>
+
+                <li class="fl ts" style="padding-right:25px;"><a target="_blank" href="http://hao.china.com.cn/">站点导航</a></li>
+
+                <li class="fl"><a target="_blank" href="http://www.china.com.cn/">梵华网</a></li>
+
+                <li class="fl"><a target="_blank" href="http://cnlive.com/">视讯中国</a></li>
+
+                <li class="fl"><a target="_blank" href="http://cn.china.cn">中国供应商</a></li>
+
+                <li class="fl"><a target="_blank" href="http://digital.china.com.cn/">数字中国</a></li>
+
+                <li class="fl"><a target="_blank" href="http://home.china.com.cn/">联播</a> &#160;<a target="_blank" href="http://fc.china.com.cn/">风采中国</a></li>
+
+                <li class="fl"><a target="_blank" href="http://f.china.com.cn/">中国乡村振兴</a></li>
+
+                <li class="fl"><a target="_blank" href="http://cn.chinagate.cn/">中国发展门户网</a></li>
+
+                <li class="fl last"><a target="_blank" href="http://www.cipg.org.cn/">中国外文局</a>
+
+                    <ul>
+                        <li><a target="_blank" href="http://www.china.com.cn/">中国网</a></li>
+
+                        <li><a target="_blank" href="http://www.beijingreview.com.cn/">北京周报</a></li>
+
+                        <li><a target="_blank" gbkurl="http://www.chinatoday.com.cn/" href="http://www.chinatoday.com.cn/">今日中国</a></li>
+
+                        <li><a target="_blank" href="http://www.rmhb.com.cn/">人民画报</a></li>
+
+                        <li><a target="_blank" href="http://www.peoplechina.com.cn/">人民中国</a></li>
+
+                        <li><a target="_blank" href="http://www.chinareports.org.cn/">中国报道</a></li>
+
+                        <li><a target="_blank" href="http://www.chinacics.org/">传播中心</a></li>
+
+                        <li><a target="_blank" href="http://www.flp.com.cn/main/">外文出版社</a></li>
+
+                        <li><a target="_blank" href="http://www.nwp.com.cn/main/">新世界出版社</a></li>
+
+                        <li><a target="_blank" href="http://zhcb.cipg.org.cn/">朝华出版社</a></li>
+
+                        <li><a target="_blank" href="http://www.newstarpress.com">新星出版社</a></li>
+
+                        <li><a target="_blank" href="http://www.dolphin-books.com.cn/main/">海豚出版社</a></li>
+
+                        <li><a target="_blank" href="http://www.zghbcbs.cn/">中国画报出版社</a></li>
+
+                        <li><a target="_blank" href="http://www.cibtc.com.cn/">国图总公司</a></li>
+
+                        <li><a target="_blank" href="http://www.peacebook.com.hk/peacebook/hk/home.jsp">香港和平图书公司</a></li>
+                        <li><a target="_blank" href="http://cn.sinolingua.com.cn/">华教出版社</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w1000 wauto hauto">
+            <div class="logo fl">
+                <a target="_blank" href="http://www.china.com.cn/"><img src="http://images.china.cn/images1/ch/2015china/images/logo.gif" width="120" height="80" /></a>
+            </div>
+
+            <div class="navigation fl"><a href="http://www.china.org.cn/" target="_blank">English</a>|<a href="http://french.china.org.cn/" target="_blank">Français</a>|<a href="http://german.china.org.cn/" target="_blank">Deutsch</a>|<a href="http://japanese.china.org.cn/" target="_blank">日本語</a>|
+                <a href="http://russian.china.org.cn/" target="_blank">Русский язык</a>|<a href="http://spanish.china.org.cn/" target="_blank">Español</a>|<a href="http://arabic.china.org.cn/" target="_blank">عربي</a>|<a href="http://esperanto.china.org.cn/" target="_blank">Esperanto</a>|<a href="http://korean.china.org.cn/" target="_blank">한국어</a>|<a href="http://big5.china.com.cn/" target="_blank" class="t" id="china">中文繁体</a>|<a target="_blank" href="http://wza.china.com.cn/" class="t">信息无障碍</a>
+            </div>
+
+            <div class="topInfo fr" style="width:850px; padding-top: 0;">
+                <div id="time" class="time fl pt5" style="padding-right:80px; padding-top: 25px;">&#160;</div>
+
+
+
+                <div class="fl pt5 ml10" style="padding-top: 25px;">站内搜索</div>
+
+                <div class="fl" style="padding-top: 20px;">
+                    <form method="get" target="_blank" name="findform" id="findform" action="http://query.china.com.cn/query/cn.html" style="float: left;margin-left:6px; display: inline; padding-top:6px;"><input type="text" name="kw" maxlength="64" id="kw" class="fl" style="border: 1px solid #1D6BBE; height: 18px; width:70px;" /> <input type="submit" value="" class="button2 fl" style="vertical-align:top;" />
+                    </form>
+                </div>
+
+                <div class="library fl pt5" style="width:150px; padding-top: 25px;"><a target="_blank" href="http://cic.china.com.cn/">图片中心</a><a target="_blank" href="http://app.china.com.cn/">客户端</a></div>
+                <div class="library fr pt5" style="width:260px; padding-top: 12px;"><iframe src="http://images.china.cn/images1/ch/2020first/200410-first.html" width="260" height="45" scrolling="no" frameborder="0"></iframe></div>
+            </div>
+        </div>
+
+        <div class="subNav w1000 wauto hauto">
+            <ul class="fl" style="width:160px;">
+                <li><a target="_blank" href="http://news.china.com.cn">新闻</a><a target="_blank" href="http://news.china.com.cn/world/node_7184857.htm">国际</a><a target="_blank" href="http://military.china.com.cn">军事</a>
+                    <a target="_blank" href="http://cppcc.china.com.cn">政协</a>
+                </li>
+                <li><a target="_blank" href="http://v.china.com.cn">视频</a><a target="_blank" href="http://photo.china.com.cn">图片</a><a target="_blank" href="http://www.china.com.cn/zhibo/node_7030498.htm">直播</a><a target="_blank" href="http://fangtan.china.com.cn">访谈</a>
+                </li>
+            </ul>
+
+            <ul class="fl" style="width:195px;">
+                <li><a target="_blank" href="http://finance.china.com.cn">财经</a><a target="_blank" href="http://finance.china.com.cn/money/">理财</a><a target="_blank" href="http://finance.china.com.cn/stock/index.shtml">证券</a><a target="_blank" href="http://business.china.com.cn">商务</a>
+                    <a target="_blank" href="http://iot.china.com.cn/">物联</a>
+                </li>
+                <li><a target="_blank" href="http://auto.china.com.cn">汽车</a><a target="_blank" href="http://tech.china.com.cn">科技</a><a target="_blank" href="http://house.china.com.cn">地产</a>
+                    <a target="_blank" href="http://agri.china.com.cn/">农业</a><a target="_blank" href="http://chuangkr.china.com.cn/">创氪</a>
+
+                </li>
+            </ul>
+
+            <ul class="fl" style="width:198px;">
+                <li><a target="_blank" href="http://guoqing.china.com.cn">国情</a><a target="_blank" href="http://zw.china.com.cn/">政务</a><a target="_blank" href="http://aj.china.com.cn/">应急</a><a target="_blank" href="http://union.china.com.cn/">联盟</a><a target="_blank" href="http://sl.china.com.cn/">丝路</a></li>
+                <li><a target="_blank" href="http://opinion.china.com.cn">观点</a><a target="_blank" href="http://www.china.com.cn/opinion/theory/">理论</a><a target="_blank" href="http://think.china.com.cn/">智库</a><a target="_blank" href="http://sczg.china.com.cn/">双创</a><a target="_blank" href="http://gba.china.com.cn">湾区</a></li>
+            </ul>
+
+            <ul class="fl" style="width:196px;">
+                <li><a target="_blank" href="http://travel.china.com.cn">旅游</a><a target="_blank" href="http://creativity.china.com.cn/">文创</a><a target="_blank" href="http://fashion.china.com.cn/">时尚</a><a target="_blank" href="http://art.china.cn">艺术</a><a target="_blank" href="http://yunhe.china.com.cn/index.htm">运河</a></li>
+                <li><a target="_blank" href="http://cul.china.com.cn/">文化</a><a target="_blank" href="http://ccpd.china.com.cn/">儒学</a><a target="_blank" href="http://ent.china.com.cn">娱乐</a><a target="_blank" href="http://music.china.com.cn/">音乐</a><a target="_blank" href="http://huanghe.china.com.cn/">黄河</a></li>
+            </ul>
+
+            <ul class="fl" style="width:195px;">
+                <li><a href="http://edu.china.com.cn/">教育</a><a target="_blank" href="http://sports.china.com.cn/">体育</a><a target="_blank" href="http://grassland.china.com.cn/">草原</a><a target="_blank" href="http://ocean.china.com.cn/">海洋</a><a target="_blank" href="http://stzg.china.com.cn">生态</a></li>
+                <li><a target="_blank" href="http://health.china.com.cn">健康</a><a target="_blank" href="http://life.china.com.cn/">生活</a><a target="_blank" href="http://food.china.com.cn/">食品</a><a target="_blank" href="http://med.china.com.cn/">医疗</a><a target="_blank" href="http://canjiren.china.com.cn/">助残</a></li>
+            </ul>
+        </div>
+
+        <div class="hotWords w1000 wauto" id="firstpane">
+            <div class="hotword2" style="width:65px;">
+                <dl class="dropdown">
+                    <dt id="two-ddheader" onmouseover="ddMenu(&#39;two&#39;,1)" onmouseout="ddMenu(&#39;two&#39;,-1)">专业平台 +</dt>
+
+                    <dd id="two-ddcontent" onmouseover="cancelHide(&#39;two&#39;)" onmouseout="ddMenu(&#39;two&#39;,-1)" style="width:520px; height:100px; position:absolute; margin-left:0px; margin-top:-30px;">
+                        
+                                                                <ul style="width:520px; height:130px;">
+                                <li><a href="http://dao.china.com.cn/">道家文化</a></li>
+                                <li><a href="http://jilu.china.com.cn/">纪录中国</a></li>
+                                <li><a href="http://jiaju.china.com.cn/">家居</a></li>
+                                <li><a href="http://shineup.china.com.cn/">演艺</a></li>
+                                <li><a href="http://science.china.com.cn/">科学</a></li>
+                                <li><a href="http://xyjj.china.com.cn/">县域经济</a></li>
+                                <li><a href="http://zw.china.com.cn/cmcc5g.html">5G</a></li>
+                                <li><a href="http://gongyi.china.com.cn/index.htm">公益</a></li>
+                                <li><a href="http://tc.china.com.cn/">特产中国</a></li>
+                                <li><a href="http://zgj.china.com.cn/">中国酒</a></li>
+                                    </ul>
+
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="hotword1" style="width:454px;">
+                <div><iframe id="zypt" src="http://www.china.com.cn/node_7241142.htm" width="454" height="30" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+            </div>
+
+            <div class="hotword2" style="width:74px;">
+                <dl class="dropdown">
+                    <dt id="one-ddheader" onmouseover="ddMenu(&#39;one&#39;,1)" onmouseout="ddMenu(&#39;one&#39;,-1)" style="padding-left:3px; text-align:right;">外宣平台 +</dt>
+
+                    <dd id="one-ddcontent" onmouseover="cancelHide(&#39;one&#39;)" onmouseout="ddMenu(&#39;one&#39;,-1)" style="width:480px; position:absolute; margin-left:0px; margin-top:-30px;">
+                        
+                                                                <ul style="width:480px; height:130px; padding:0 5px;">
+                                <li><a href="http://keywords.china.org.cn/index.htm">中国关键词</a></li>
+                                <li><a href="http://wmzh.china.com.cn/">文明中华</a></li>
+                                <li><a href="http://sd.china.com.cn/">新山东</a></li>
+                                <li><a href="http://www.diaoyudao.org.cn/">钓鱼岛</a></li>
+                                <li><a href="http://www.comra.org/">大洋</a></li>
+                                <li><a href="http://hb.china.com.cn">中国湖北</a></li>
+                                <li><a href="http://beijing.china.org.cn/chinese/index.htm">这里是北京</a></li>
+                                <li><a href="http://jiangsu.china.com.cn/">东海资讯</a></li>
+                                <li><a href="http://henan.china.com.cn/">中部纵览</a></li>
+                                <li><a href="http://sc.china.com.cn/">锦绣天府</a></li>
+                                <li><a href="http://union.china.com.cn/yunnan.htm">七彩云南</a></li>
+                                <li><a href="http://zjnews.china.com.cn/">浪潮资讯</a></li>
+                                <li><a href="http://qz.china.com.cn/">衢州有礼</a></li>
+                                <li><a href="http://ccwm.china.com.cn/">妇儿博物馆</a></li>
+                                <li><a href="http://ydyl.china.com.cn">一带一路</a></li>
+                                <li><a href="http://guancha.china.com.cn">“鼓”舞中华</a></li>
+                                <li><a href="http://grassland.china.com.cn/node_1003564.html">大美通辽</a></li>
+                                <li><a href="http://wz.china.com.cn/">新温州</a></li>
+                                <li><a href="http://innovate.china.com.cn"> 创新中国</a></li>
+                                <li><a href="http://otop.china.com.cn/">一乡一品</a></li>
+                                <li><a href="http://hsqz.china.com.cn">海丝泉州</a></li>
+                                <li><a href="http://guizhou.china.com.cn/">多彩贵州</a></li>
+                                <li><a href="http://grassland.china.com.cn/node_1003069.htm">锡林郭勒</a></li>
+                                <li><a href="http://cq.china.com.cn/">两江重庆</a></li>
+                                <li><a href="http://ydah.china.com.cn">韵动安徽</a></li>
+                                <li><a href="http://grassland.china.com.cn/node_1008825.html">江源玉树 </a></li>
+                                <li><a href="http://fj.china.com.cn/">海峡</a></li>
+                                <li><a href="http://ymyy.china.com.cn">益美益阳</a></li>
+                                <li><a href="http://changde.china.com.cn/"> 常德</a></li>
+                                    </ul>
+
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="hotword3" style="width:405px;">
+                <div><iframe id="wxpt" src="http://www.china.com.cn/node_7241143.htm" width="405" height="30" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto">
+            <div class="fl w728"><iframe id="T01" src="http://www.china.com.cn/node_8019290.htm" width="728" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+
+            <div class="fr w250"><iframe id="H01" src="http://www.china.com.cn/node_8019295.htm" width="250" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+        </div>
+
+        <div class="live cb mtb12a">
+            <div class="live1">
+                <h1 class="fl"><a href="http://english.scio.gov.cn/" target="_blank">国新网</a> &nbsp;&nbsp;<a href="http://www.china.com.cn/zhibo/node_7030498.htm" target="_blank">网上直播</a></h1>
+
+                <h2 class="fl"><a target="_blank" href="http://www.china.com.cn/zhibo/node_7243161.htm">国新办发布会</a>　<a target="_blank" href="http://www.china.com.cn/zhibo/node_7243162.htm">政策吹风会</a></h2>
+
+
+                <h3 class="fl"><a href="http://caifang.china.com.cn" target="_blank">采访信息</a>　<a href="http://www.china.com.cn/zhibo/zhuanti/ch-xinwen/node_7245310.htm" target="_blank">往期</a></h3>
+
+                
+                                            <h4 class="fl"><a href="http://www.china.com.cn/zhibo/content_77670714.htm" target="_blank"><strong>4日15:00 国务院联防联控机制就进一步加强疫情防控有关情况举行发布会</strong></a></h4>
+
+                <div class="live2 fl">
+                    
+                                                        <ul>
+                            <li><a href="http://www.china.com.cn/zhibo/content_77669826.htm" target="_blank">4日10:30 中国气象局2021年8月新闻发布会</a></li>
+                            <li><a href="http://www.china.com.cn/zhibo/content_77667241.htm" target="_blank">3日14:00 《房地产蓝皮书2021》发布会暨保障性租赁住房与房地产业发展研讨会</a></li>
+                            <li><a href="http://www.china.com.cn/zhibo/content_77659886.htm" target="_blank">30日15:00 国新办就财政支持全面建成小康社会有关情况举行发布会</a></li>
+                            <li><a href="http://www.china.com.cn/zhibo/content_77657117.htm" target="_blank">29日10:00 国务院政策例行吹风会：进一步深化跨境贸易便利化改革优化口岸营商环境有关情况</a></li>
+                            <li><a href="http://www.china.com.cn/zhibo/content_77652085.htm" target="_blank">27日10:00 中共中央宣传部就“中华民族一家亲 同心共筑中国梦”举行中外记者见面会</a></li>
+                                </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="topNews">
+            <div class="topTxt w728 fl">
+                
+                                            <h1><a href="http://news.china.com.cn/2021-08/09/content_77682805.htm
+">听总书记讲党史故事丨八角楼的灯光</a></h1>
+                        <p>[<a href="http://news.china.com.cn/2021-08/09/content_77682081.htm" target="_blank">习近平总书记关切的文化发展新实践</a>][<a href="http://news.china.com.cn/2021-08/09/content_77682812.htm" target="_blank">东京奥运中国队夺金表情包38帧</a> <a href="http://news.china.com.cn/2021-08/09/content_77682826.htm" target="_blank">这10个瞬间,让人热泪盈眶！</a><a href="http://news.china.com.cn/2021-08/09/content_77682736.htm" target="_blank">这,就是中华体育精神！</a>]</p>
+
+            </div>
+
+            <div class="w250 fr">
+                <a href="http://xitheory.china.com.cn/"><img src="http://images.china.cn/images1/ch/2019first/20190808-01.jpg" width="250" height="70" border="0" /></a>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25">
+            <div class="leftNews w325 fl">
+                <div>
+                    
+                                                    <p><a href="http://news.china.com.cn/2021-08/09/content_77681476.htm" target="_blank">时政微周刊丨总书记的一周</a></p>
+
+                    
+                                                    <p><a href="http://news.china.com.cn/2021-08/09/content_77681231.htm" target="_blank"><a href="http://news.china.com.cn/2021-08/09/content_77681230.htm" target="_blank">国务院港澳办</a> <a href="http://news.china.com.cn/2021-08/09/content_77681231.htm" target="_blank">外交部就美出台涉港备忘录表态</a></a></p>
+                            <p><a href="http://news.china.com.cn/2021-08/09/content_77682683.htm" target="_blank"><a href="http://news.china.com.cn/2021-08/09/content_77682665.htm" target="_blank">7月CPI同比上涨1.0% </a> <a href="http://news.china.com.cn/2021-08/09/content_77682683.htm" target="_blank">极端天气会影响菜价吗?</a></a></p>
+                            <p><a href="http://news.china.com.cn/2021-08/09/content_77682609.htm" target="_blank">河南此次洪涝灾害已致经济损失约1337.15亿元</a></p>
+                            <p><a href="http://news.china.com.cn/2021-08/09/content_77682421.htm" target="_blank"><a href="http://news.china.com.cn/2021-08/09/content_77682421.htm" target="_blank">还职场公平正义</a> <a href="http://news.china.com.cn/2021-08/09/content_77682406.htm" target="_blank">坚决向丑陋的&quot;陪酒文化&quot;说不!</a></a></p>
+                            <p><a href="http://news.china.com.cn/2021-08/09/content_77682400.htm
+" target="_blank">"动物们知道了打架不好，特别不好" 几分真假?</a></p>
+                            <p><a href="http://news.china.com.cn/2021-08/09/content_77682539.htm" target="_blank">美国抗疫全球第一？智库报告揭露美国抗疫真相</a></p>
+
+                </div>
+
+                <div>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 09:50:11 -->
+<p> <a href="http://finance.china.com.cn/news/20210809/5626383.shtml" target="_blank">
+7月份CPI同比涨1%</a>
+ <a href="http://finance.china.com.cn/news/20210809/5626384.shtml" target="_blank">
+PPI同比涨9%</a> </p>
+
+<p> <a href="http://finance.china.com.cn/news/20210809/5626122.shtml" target="_blank">
+31省份上半年投资增速榜单：15地跑赢全国</a></p>
+
+<p> <a href="http://finance.china.com.cn/stock/20210809/5626123.shtml" target="_blank">
+年内债券市场融资规模36.2万亿 绿色债券升温</a> </p>
+
+<p> <a href="http://finance.china.com.cn/industry/20210809/5626117.shtml" target="_blank">
+新能源汽车景气度高涨 车企和锂电巨头齐扩产</a> </p>
+
+
+<!-- 页面碎片 结束 -->
+                </div>
+
+                <div style="padding-bottom:11px;">
+                    
+                                                    <p><a href="http://www.china.com.cn/opinion/2021-08/09/content_77681590.html
+" target="_blank">面对德尔塔，我们仍需坚持接种疫苗</a></p>
+
+                    
+                                                    <p><a href="http://www.china.com.cn/opinion2020/2021-08/09/content_77681621.shtml" target="_blank">燃烧17个昼夜的圣火熄灭，奥运精神永放光芒</a></p>
+                            <p><a href="http://www.china.com.cn/opinion2020/2021-08/09/content_77681535.shtml" target="_blank">完善的科学评价机制让科技成果和科技人才凸显</a></p>
+
+                </div>
+
+                <div style="clear:both;">
+                    
+                                                    <p><a href="http://cppcc.china.com.cn/2021-08/09/content_77681353.htm" target="_blank">最高检发布妨害疫情防控秩序案例</a></p>
+
+                    
+                                                    <p><a href="http://cppcc.china.com.cn/2021-08/09/content_77682459.htm" target="_blank">小心！这14款App涉嫌超范围采集个人隐私</a></p>
+                            <p><a href="http://cppcc.china.com.cn/2021-08/09/content_77682440.htm" target="_blank">请注意！8月份这些地区须防范自然灾害风险</a></p>
+
+                </div>
+            </div>
+
+            <div class="TPicR">
+                <div class="rightPic w660 fr" style="margin-bottom:15px;">
+                    <ul>
+                        <li>
+                            
+                                                                    <a href="http://photo.china.com.cn/2021-08/09/content_77681312.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/11b4f6da-67a4-4fcb-bfdc-91f5f426c447.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://photo.china.com.cn/2021-08/09/content_77681312.htm" target="_blank">同聚五环旗下，共创奥运辉煌——东京奥运会综述</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://photo.china.com.cn/2021-08/09/content_77681311.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/4e6bff06-dbee-45a5-a8cd-9c8b2fff9147.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://photo.china.com.cn/2021-08/09/content_77681311.htm" target="_blank">江苏扬州疫情防控一线直击</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://photo.china.com.cn/2021-08/09/content_77681322.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/c4d63dca-1200-43da-ba3f-6c8b0f98e9fe.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://photo.china.com.cn/2021-08/09/content_77681322.htm" target="_blank">走近海南离岛免税品的“质量把关人”</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://photo.china.com.cn/2021-08/09/content_77681870.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/663852b6-2667-4934-b9b9-cc840c2d3eb3.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://photo.china.com.cn/2021-08/09/content_77681870.htm" target="_blank">云南北移亚洲象安全渡过元江</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://news.china.com.cn/2021-08/09/content_77681069.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/9350521e-46fc-4f91-b548-7543e8a42068.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://news.china.com.cn/2021-08/09/content_77681069.htm" target="_blank">东京奥运会闭幕式举行</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://cppcc.china.com.cn/2021-08/09/content_77681392.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/t2_(65X0X598X351)4ba1d604-a67a-4b18-a9a3-b170c86ee51d.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://cppcc.china.com.cn/2021-08/09/content_77681392.htm" target="_blank">鄂尔多斯：打造高标准农田 促进种植业快速发展</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://photo.china.com.cn/2021-08/09/content_77682056.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/bdf94083-8ba3-4e0c-a29c-865f419327c7.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://photo.china.com.cn/2021-08/09/content_77682056.htm" target="_blank">希望从这里开始——那曲市职业技术学校</a></p>
+
+                        </li>
+
+                        <li>
+                            
+                                                                    <a href="http://union.china.com.cn/txt/2021-08/09/content_41640494.html" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/09/d7f4f612-a9be-4c1e-892c-e5e9a7a294b1.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://union.china.com.cn/txt/2021-08/09/content_41640494.html" target="_blank">吸睛全网 观看超千万 聚焦2021中国·南华第十八届野生菌云上美食节</a></p>
+
+                        </li>
+                    </ul>
+
+                    <div class="pmenu">&#160;</div>
+
+                    <div class="plr"><img src="http://images.china.cn/images1/ch/2016firsttop/a4.gif" id="npl" /><img src="http://images.china.cn/images1/ch/2016firsttop/a5.gif" id="npr" /></div>
+                </div>
+                <div style="width:240px; float:left; margin-right:16px; display:inline;">
+                    
+                        <a href="http://news.china.com.cn/node_8024975.html"><img src="http://images.china.cn/site1000/2021-07/19/2dc916bb-83ef-49ad-b112-95747c948f9c.jpg" border="0" width="240" height="90"> </a>
+
+                </div>
+                <div style="width:135px; float:left; margin-right:16px; display:inline;">
+                    
+                        <a href="http://www.qstheory.cn/zt2020/llxjj/index.htm"><img src="http://images.china.cn/site1000/2020-04/21/af91bd6a-f62e-4a2a-b7f7-3e0c84d1e2b4.jpg" border="0" width="135" height="90"> </a>
+
+                </div>
+                <div style="width:240px; float:left;"><iframe id="dtbn" src="http://www.china.com.cn/node_8018068.htm" width="240" height="90" scrolling="no" frameborder="0"></iframe></div>
+            </div>
+        </div>
+
+        <div class="w1000 hauto wauto mb17">
+            <div class="commend fl" style="width:1000px;">
+                <h1 class="fl"><a href="http://news.china.com.cn/" style="color:#FFFFFF;">推荐点击</a></h1>
+
+                <div class="commend1 fl">
+                    
+                                                        <ul>
+                            <li><p>&nbsp; &nbsp;<span style="color: rgb(255, 0, 0); text-indent: 32px;"><a title="公告" style="color: rgb(255, 0, 0); text-indent: 32px;" href="http://news.china.com.cn/2017-01/01/content_41194569.htm" target="_blank">公告</a>　</span><span style="color: rgb(0, 112, 192);"><a title="领航新征程" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_7253246.htm" target="_blank">领航新征程</a>　<a title="平语近人" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8008036.htm" target="_blank">平语近人</a>　<a title="习主席带领我们强军" style="color: rgb(0, 112, 192);" href="http://v.china.com.cn/zhuanti/node_7252434.htm" target="_blank">习主席带领我们强军</a>　<a title="《习近平谈治国理政》第三卷出版" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8019272.html" target="_blank">《习近平谈治国理政》第三卷出版</a>　<a title="治国理政进行时" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_7233655.htm" target="_blank">治国理政进行时</a>　<a title="决战决胜 脱贫攻坚" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8019423.html" target="_blank">决战决胜 脱贫攻坚</a>　<a title="学习强国" style="color: rgb(0, 112, 192);" href="https://www.xuexi.cn/" target="_blank">学习强国</a>　<a title="全面依法治国" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8020718.html" target="_blank">全面依法治国</a>　<a title="疫镜" style="color: rgb(0, 112, 192);" href="http://www.china.com.cn/yijing/ch/node_8019063.html" target="_blank">疫镜</a><br/> &nbsp; &nbsp;<span style="color: rgb(0, 112, 192); text-indent: 32px;"><a title="回顾" style="color: rgb(0, 112, 192); text-indent: 32px;" href="http://news.china.com.cn/node_8025372.html" target="_blank">最美新时代革命军人</a>　</span><span style="color: rgb(0, 112, 192);"><a title="2021新春走基层" style="color: rgb(0, 112, 192);" href="http://www.china.com.cn/opinion2020/node_8024423.html" target="_blank">红星何以照耀中国</a>　<a title="病毒溯源" style="color: rgb(0, 112, 192);" href="http://www.china.com.cn/opinion2020/node_8025335.htm" target="_blank" se_prerender_url="complete">病毒溯源</a>　<a title="首都健康视频专栏" style="color: rgb(0, 112, 192);" href="http://www.dswxyjy.org.cn/GB/434461/434466/434702/index.html" target="_blank">百年党史天天读</a>　<a title="首都健康视频专栏" style="color: rgb(0, 112, 192);" href="http://cppcc.china.com.cn/node_7225166.htm" target="_blank">首都健康视频</a>　<a title="我的思政课" style="color: rgb(0, 112, 192);" href="http://www.china.com.cn/opinion2020/node_8024692.htm" target="_blank">我的思政课</a>　<a title="雪域欢歌70载" style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8025444.html" target="_blank">雪域欢歌70载</a>　</span><a title="潮涌长三角·共建进行时" href="http://news.china.com.cn/node_8020170.htm" target="_blank" style="color: rgb(0, 112, 192);">学习贯彻五中全会精神</a>　<span style="color: rgb(0, 112, 192);"><a title="中国有约" style="color: rgb(0, 112, 192);" href="https://cn.chinadaily.com.cn/5b753f9fa310030f813cf408/5bd7efdfa3101a87ca8ff812/2021chinadate" target="_blank">中国有约</a></span></span></p></li>
+                            <li><p><span style="color: rgb(255, 0, 0);"><a href="http://news.china.com.cn/2017-01/01/content_41194569.htm" target="_blank">公告</a>　</span><span style="color: rgb(0, 112, 192);"><a href="http://news.china.com.cn/node_7253246.htm" target="_blank">领航新征程</a>　</span><span style="color: rgb(0, 112, 192);"><a href="http://news.china.com.cn/node_8008036.htm" target="_blank">平语近人</a>　</span><span style="color: rgb(0, 112, 192); text-decoration: none;"><a style="color: rgb(0, 112, 192);" href="http://v.china.com.cn/zhuanti/node_7252434.htm" target="_blank">习主席带领我们强军</a>　<a style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8015145.htm" target="_blank">学习贯彻十九届四中全会精神</a>　<a style="color: rgb(0, 112, 192);" href="https://www.xuexi.cn/" target="_blank">学习强国</a>　<a style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_7233655.htm" target="_blank">治国理政进行时</a>　</span><span style="color: rgb(0, 112, 192);"><a style="color: rgb(0, 112, 192);" href="http://news.china.com.cn/node_8019285.htm" target="_blank">弘扬民族精神</a>　</span><a href="http://v.china.com.cn/zhuanti/node_8016396.htm" target="_blank" style="color: rgb(0, 112, 192);">防疫公益歌曲</a>　<a href="http://news.china.com.cn/node_8016524.htm" target="_blank" style="color: rgb(0, 112, 192);">革除滥食野生动物陋习</a>　<a href="http://news.china.com.cn/node_8018019.htm" target="_blank" style="color: rgb(0, 112, 192);">致敬抗疫&quot;无名英雄&quot;</a>　<a href="http://news.china.com.cn/node_8016662.html" target="_blank" style="color: rgb(0, 112, 192);">他说战疫</a>　<a href="http://news.china.com.cn/node_8016560.htm" target="_blank" style="color: rgb(0, 112, 192);">战&quot;疫&quot;一线党旗红</a>　<a href="https://tousu.www.gov.cn/dc/index.htm" target="_blank" style="color: rgb(0, 112, 192);">疫情防控建议</a>　<a href="http://cppcc.china.com.cn/node_7225166.htm" target="_blank" style="color: rgb(0, 112, 192);">首都健康视频</a>　<a href="http://news.china.com.cn/node_8018230.htm " target="_blank" style="color: rgb(0, 112, 192);">奋斗:青春的逆行</a>　<a href="http://news.china.com.cn/node_8019153.htm" target="_blank" style="color: rgb(0, 112, 192);">走向我们的小康生活</a></p></li>
+                                </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="w1000 hauto wauto mb25">
+            <div class="sedNews w325 fl">
+                <div>
+                    
+                                                    <p><span><a href="http://news.china.com.cn/world/node_7184857.htm" target="_blank">中国与世界</a> |</span><a href="http://news.china.com.cn/2021-08/09/content_77681246.htm" target="_blank">专家解读：中拉经贸合作韧性足</a></p>
+
+                    
+                                                    <p class="nmnew"><a href="http://news.china.com.cn/2021-08/09/content_77681234.htm" target="_blank">中国疫苗：巴西抗击疫情的有力武器</a></p>
+                            <p class="nmnew"><a href="http://news.china.com.cn/2021-08/09/content_77681245.htm" target="_blank">外媒：下半年中国经济有望持续稳定复苏</a></p>
+                            <p class="nmnew"><a href="http://news.china.com.cn/2021-08/09/content_77681249.htm" target="_blank">中国申遗36年：从读懂规则到提供中国范例</a></p>
+
+                </div>
+                <div>
+                    
+                                                    <p><span><a href="http://v.china.com.cn/">视频</a>与<a href="http://fangtan.china.com.cn/">访谈</a> |</span><a href="http://v.china.com.cn/news/2021-08/09/content_77681337.htm" target="_blank">中国代表团东京奥运会夺金时刻</a></p>
+
+                    
+                                                    <p class="mmmm"><a href="http://v.china.com.cn/news/2021-08/09/content_77681343.htm" target="_blank">“太空三人组”在空间站看奥运的体验</a></p>
+                            <p class="mmmm"><a href="http://v.china.com.cn/news/2021-08/09/content_77681428.htm" target="_blank">“超级奶爸”悉心照顾小藏羚羊</a></p>
+                            <p class="mmmm"><a href="http://v.china.com.cn/news/2021-08/09/content_77681457.htm" target="_blank">希腊：林火肆虐 威胁古奥林匹克遗址</a></p>
+
+                </div>
+
+                <div>
+                    
+                                                    <p><span>呈现与评说 |</span><a href="https://mp.weixin.qq.com/s/63253IcGEuh9xG_tya5h8g" target="_blank">『2021.08.09』轻松早茶</a></p>
+
+                    
+                                                    <p class="nmnew"><a href="https://v.douyin.com/ec6vqNw/" target="_blank">气愤！网红为拍视频穿救生衣偷救生艇</a></p>
+                            <p class="nmnew"><a href="https://mp.weixin.qq.com/s/jQxb6ffnKG1m6g9IODyK7A" target="_blank">美国这些公共卫生事件，疑点重重！</a></p>
+                            <p class="nmnew"><a href="http://m.china.com.cn/plug/v2/pc.htm?ztId=1854041" target="_blank">唐山：凤凰涅槃 华彩可期</a></p>
+
+                </div>
+            </div>
+
+            <div class="sedPic w660 fr">
+                <ul>
+                    <li>
+                        <h1>
+                            
+                                <span><a href="http://chinamosaic.china.com.cn/2020-09/22/content_76725408.htm" target="_blank">冬奥会</a></span>
+
+                            
+                                 <a href="http://chinamosaic.china.com.cn/index.htm" target="_blank">中国3分钟</a>
+
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://chinamosaic.china.com.cn/2021-08/05/content_77675222.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2018-03/08/fe4a4152-79e7-4998-8b45-1421c8688a89.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://chinamosaic.china.com.cn/2021-08/05/content_77675222.htm" target="_blank">谁在奥运会上搞“小动作”</a></p>
+                                </div>
+
+                    </li>
+
+                    <li>
+                        <h1>
+                            
+                                <span><A title="" href="http://guoqing.china.com.cn/node_8010587.htm" target=_blank>学习V客</A></span>
+
+                            
+                                <A title="" href="http://xitheory.china.com.cn/">中国习观</A>
+
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://xitheory.china.com.cn/2021-08/09/content_77681559.html" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2018-02/16/b9838ea7-37ed-4990-84d7-018aecfe241c.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://xitheory.china.com.cn/2021-08/09/content_77681559.html" target="_blank">推进党的建设新的伟大工程</a></p>
+                                </div>
+
+                    </li>
+
+                    <li>
+                        <h1>
+                            
+                                <span><A title="" href="http://v.china.com.cn/chinese/node_7249700.htm" target=_blank>Hi中国人</A></span>
+
+                            
+                                <A title="" href="http://fangtan.china.com.cn/" target=_blank>中国访谈</A>
+
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://fangtan.china.com.cn/2021-07/27/content_77655206.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-06/25/77d942c2-b9bb-4558-81a2-134dbe72d420.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://fangtan.china.com.cn/2021-07/27/content_77655206.htm" target="_blank">中俄“续约”释放什么信号？</a></p>
+                                </div>
+
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h1>
+                            
+                                <span><A title="" href="http://guoqing.china.com.cn/keywords/node_7250005.htm" target=_blank>中国关键词</A> | <A title="" href="http://xitheory.china.com.cn/node_8020354.htm" target=_blank>中国精神</A></span>
+
+                            
+                                <A title="" href="http://guoqing.china.com.cn/node_8008769.html" target=_blank>中国有数</A>
+
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://xitheory.china.com.cn/2021-07/28/content_77656515.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-07/28/dbb93b2a-7dd8-4c84-839f-854c6f6fe1e1.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://xitheory.china.com.cn/2021-07/28/content_77656515.htm" target="_blank">中国精神——伟大建党精神</a></p>
+                                </div>
+
+                    </li>
+
+                    <li>
+                        <h1>
+                            
+                                <span><a title="" href="http://news.china.com.cn/node_7206134.htm" target="_blank">世相</a> | <a href="http://news.china.com.cn/zhenxiang/node_8009398.htm" target="_blank">帧像</a></span>
+ <a href="http://news.china.com.cn/node_8005004.htm" target="_blank">他说中国</a>
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://news.china.com.cn/txt/2021-07/09/content_77615795.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-07/09/9c6561d7-6825-430f-8858-a9d71f08ee00.png" border="0">
+                                    </a>
+                                    <p><a href="http://news.china.com.cn/txt/2021-07/09/content_77615795.htm" target="_blank">外媒：中国共产党可信可靠</a></p>
+                                </div>
+
+                    </li>
+
+                    <li>
+                        <h1>
+                            
+                                <span><A title="" href="http://v.china.com.cn/news/2021-06/21/content_77578331.htm" target=_blank>最后他说</A></span>
+
+                            
+                                <A title="" href="http://v.china.com.cn/node_7243202.htm" target=_blank>中国范儿</A>
+
+                        </h1>
+
+                        
+                                                            <div>
+                                    <a href="http://v.china.com.cn/2021-08/04/content_77672186.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/04/36d780ba-acd0-4be0-aebf-55c91cc9ebe6.png" border="0">
+                                    </a>
+                                    <p><a href="http://v.china.com.cn/2021-08/04/content_77672186.htm" target="_blank">泉州：一座活着的古城</a></p>
+                                </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25">
+            <div class="fl w660"><iframe id="T02" src="http://www.china.com.cn/node_8019291.htm" width="660" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+
+            <div class="fr w320"><iframe id="H03" src="http://www.china.com.cn/node_8019296.htm" width="320" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25 gqgdbg">
+            <div class="w320 fl mr20 gd1">
+                <div class="gdmenu">
+                    <a href="http://finance.china.com.cn" target="_blank"><img src="http://images.china.cn/images1/ch/2016firsttop/b2.jpg" alt="中国财经" /></a>
+
+                    <p>
+                        <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 00:00:01 -->
+<a href="http://money.china.com.cn" target="_blank">金融</a>｜<a href="http://stock.china.com.cn" target="_blank">证券</a>｜<a href="http://energy.china.com.cn" target="_blank">能源</a>｜<a href="http://medicine.china.com.cn" target="_blank">医药</a>｜<a href="http://consume.china.com.cn" target="_blank">消费</a>
+<!-- 页面碎片 结束 -->
+                    </p>
+                </div>
+
+                <!-- date b -->
+                <div class="gd1">
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 08:27:24 -->
+<div class="pic">
+<a href="http://finance.china.com.cn/news/20210809/5626127.shtml" target="_blank"><img src="http://image.finance.china.cn/www/222_71284_20210809082724.jpg" border="0"></a>
+<p style="opacity: 0.6;"><a href="http://finance.china.com.cn/news/20210809/5626127.shtml" target="_blank">多机构预测7月CPI同比涨幅将低于1%</a></p>
+</div>
+<!-- 页面碎片 结束 -->
+                </div>
+
+                <!-- date e -->
+                <ul>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 07:57:37 -->
+<li> <a href="http://finance.china.com.cn/news/20210809/5626120.shtml" target="_blank">
+强大国内市场潜力释放 稳中加固经济基本盘</a> </li>
+
+<li> <a href="http://finance.china.com.cn/news/20210809/5626231.shtml" target="_blank">
+进出口总值持续增长 外贸韧性将进一步彰显</a> </li>
+
+
+
+
+<!-- 页面碎片 结束 -->
+                </ul>
+            </div>
+
+            <div class="w320 fl gd2">
+                <div class="gdmenu">
+                    <p>
+                        <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 00:00:02 -->
+<a href="http://finance.china.com.cn/bwlj/index.shtml" target="_blank">中国发布</a>｜<a href="http://m.gxfin.com/part/cj/10001010.html" target="_blank">部委例会</a>｜<a href="http://m.gxfin.com/finance/zhibo.html" target="_blank">移动直播</a>
+<!-- 页面碎片 结束 -->
+                    </p>
+                </div>
+
+                <ul class="pic mb8">
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 09:27:29 -->
+<li>
+  <a href="http://finance.china.com.cn/stock/20210809/5626128.shtml" target="_blank">
+<img src="http://image.finance.china.cn/picupload/2021/0809/222_254316523_20210809091105.jpg" width="150" height="92" /></a>
+   <p> <a href="http://finance.china.com.cn/stock/20210809/5626128.shtml" target="_blank">华铁应急深陷罗生门</a> </p>
+</li>
+
+<li>
+  <a href="http://finance.china.com.cn/industry/20210809/5626358.shtml" target="_blank">
+<img src="http://image.finance.china.cn/picupload/2021/0809/222_254316623_20210809092709.jpg" width="150" height="92" /></a>
+   <p> <a href="http://finance.china.com.cn/industry/20210809/5626358.shtml" target="_blank">奢侈品复苏加速度</a> </p>
+</li>
+
+<!-- 页面碎片 结束 -->
+                </ul>
+
+                <ul class="list">
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 15:09:30 -->
+<li> <a href="http://finance.china.com.cn/news/20210809/5626238.shtml" target="_blank">
+稳步扩内需 下半年宏观政策实施空间增大</a> </li>
+
+<li> <a href="http://finance.china.com.cn/stock/20210809/5626119.shtml" target="_blank">
+政策助力养猪企业健康发展 生猪板块小幅反弹</a> </li>
+
+<li> <a href="http://finance.china.com.cn/news/20210809/5626565.shtml" target="_blank">
+国家发改委：8月9日国内汽柴油价格不作调整</a></li>
+
+<li> <a href="http://finance.china.com.cn/industry/20210809/5626203.shtml" target="_blank">
+跨省游叫停后退订潮来袭：旅游业盛夏遇寒流</a> </li>
+
+<li> <a href="http://finance.china.com.cn/stock/20210809/5626153.shtml" target="_blank">
+热门赛道太拥挤？ 机构建议向"相对低位"扩散</a> </li>
+<!-- 页面碎片 结束 -->
+                </ul>
+            </div>
+
+            <div class="w320 fr gd3">
+                <div class="gdmenu"><a href="http://finance.china.com.cn/kc/index.shtml" target="_blank"><span class="blue">中国科创板</span></a>
+
+                    <p>
+                        <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 00:00:03 -->
+<a href="http://m.gxfin.com/investor/company.html" target="_blank">市值管理平台</a>
+<!-- 页面碎片 结束 -->
+                    </p>
+                </div>
+
+                <div class="gdadv1">
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 08:37:10 -->
+<a href="http://finance.china.com.cn/stock/20210809/5626232.shtml" target="_blank">
+<img src="http://image.finance.china.cn/www/222_71324_20210809083710.jpg" width="320" height="180" /></a>
+<p><a href="http://finance.china.com.cn/stock/20210809/5626232.shtml" target="_blank">监管有效性提升 中介机构执业新生态加速形成</a></p>
+
+<!-- 页面碎片 结束 -->
+                </div>
+
+                <ul class="list">
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 07:58:21 -->
+<li> <a href="http://finance.china.com.cn/stock/20210809/5626249.shtml" target="_blank">
+129家药企发布上半年业绩预告 近七成预喜</a> </li>
+
+<li> <a href="http://finance.china.com.cn/stock/20210809/5626237.shtml" target="_blank">
+市场风格趋于平衡 科技成长股酝酿新机</a> </li>
+<!-- 页面碎片 结束 -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25 gqgdbg">
+            <div class="w320 fl mr20 gd1">
+                <div class="gdmenu">
+                    <a href="http://guoqing.china.com.cn/" target="_blank"><img src="http://images.china.cn/images1/ch/2016firsttop/a9.jpg" alt="中国国情" /></a>
+
+                    <p>
+                        
+                            <a href="http://xitheory.china.com.cn/" target="_blank">习观</a> | <a href="http://xitheory.china.com.cn/node_8018308.htm" target="_blank">绘本</a> | <a href="http://xitheory.china.com.cn/node_8020361.htm" target="_blank">词典</a> | 
+
+                        
+                            <a href="http://xitheory.china.com.cn/node_8020358.htm" target="_blank">卡片</a>
+
+                    </p>
+                </div>
+
+                
+                                            <div class="pic">
+                            <a href="http://guoqing.china.com.cn/2021-07/26/content_77644871.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-06/23/3133c6e6-0028-4fbd-bda8-b4de65e58e81.jpg" border="0">
+                            </a>
+                            <p><a href="http://guoqing.china.com.cn/2021-07/26/content_77644871.htm" target="_blank">馆藏中的红色印记|中国网小编带你去看老汽车</a></p>
+                        </div>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681399.htm" target="_blank">东京奥运会圆满落幕 北京冬奥会蓄势待发</a></li>
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681393.htm" target="_blank">中国共产主义青年团团旗、团徽国家标准发布</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="w320 fl gd2">
+                <div id="gqlm1" class="gdmenu">
+                    <p style="padding-top:0px;">
+                        
+                            <span><a href="http://guoqing.china.com.cn/node_8023042.htm  " target="_blank">中国知多少</a>|</span><span><a href="http://guoqing.china.com.cn/node_8023558.htm" target="_blank">智标委</a>|</span><span><a href="http://guoqing.china.com.cn/node_8008769.html " target="_blank">有数</a>|</span><span><a href="http://xitheory.china.com.cn/node_8020354.htm" target="_blank">中国精神</a>|</span>
+
+                        
+                            
+
+                    </p>
+                </div>
+
+                
+                                                <ul class="pic">
+                        <li>
+                            <a href="http://guoqing.china.com.cn/node_8024394.htm " target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-05/28/a8f11f3a-1312-4cdb-b86b-23dad755a7e7.jpg" border="0">
+                            </a>
+                            <p><a href="http://guoqing.china.com.cn/node_8024394.htm " target="_blank">网络媒体革命老区行</a></p>
+                        </li>
+                        <li>
+                            <a href="http://about.china.com.cn/node_8020682.html " target="_blank">
+                                <img src="http://images.china.cn/site1000/2019-06/17/f43394e3-551e-4678-8672-2ed23c252f9b.jpg" border="0">
+                            </a>
+                            <p><a href="http://about.china.com.cn/node_8020682.html " target="_blank">铭记</a></p>
+                        </li>
+                            </ul>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681389.htm" target="_blank">中小学生开展职业体验 职业教育大有可为</a></li>
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681386.htm" target="_blank">饭圈灰色产业链 洗脑+流量经济扭曲饭圈文化</a></li>
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681405.htm" target="_blank">大热的医疗美容，要最佳效果也要防不良后果</a></li>
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681379.htm" target="_blank">“清洗”QQ号出售谋利 5名被告人均被判刑</a></li>
+                        <li><a href="http://guoqing.china.com.cn/2021-08/09/content_77681375.htm" target="_blank">今天北京雨水继续在线 局部地区或伴有风雹</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="w320 fr gd3">
+                <div class="gdmenu"><span class="blue"><a href="http://zw.china.com.cn/" target="_blank">中国政务</a></span>
+
+                    <p>
+                        
+                            <a href="http://zw.china.com.cn/node_8017909.htm" target="_blank">边疆故事</a> | <a href="http://zw.china.com.cn/node_8017954.htm" target="_blank">中小企业</a> | <a href="http://zw.china.com.cn/node_8017905.htm" target="_blank">智疫</a> | <a href="http://zw.china.com.cn/live/node_12002.htm" target="_blank">要闻</a> | 
+
+                    </p>
+                </div>
+
+                <div class="gdadv"><iframe id="zgzw09" src="http://www.china.com.cn/node_8013254.htm" width="320" height="92" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+                
+                                                <ul class="list" style="margin:10px 0 0 0;">
+                        <li><a href="http://zw.china.com.cn/2021-08/09/content_77681957.html" target="_blank">修缮后向公众开放 百年红楼 见证历史</a></li>
+                        <li><a href="http://zw.china.com.cn/2021-08/09/content_77681889.html" target="_blank">浦东:踏上新发展格局下的改革探索新征程</a></li>
+                            </ul>
+
+
+
+                <div class="zgzw">
+                    
+                        <a href="http://cq.china.com.cn/" target="_blank">两江重庆   </a> ｜ <a href="http://www.comra.org/" target="_blank">中国大洋矿产资源研究开发协会</a> ｜ 
+
+                </div>
+                <div style="height:50px;">
+                    <div class="fl" style="width:155px">
+                        
+                                                            <a href="http://guoqing.china.com.cn/node_8020160.htm"><img src="http://images.china.cn/site1000/2020-10/27/c012cff0-48b4-4233-b402-06dd4b630955.jpg" border="0" width="155" height="50"></a>
+
+                    </div>
+                    <div class="fr" style="width:155px">
+                        
+                                                            <a href="http://sm.guoqing.china.com.cn/index.htm"><img src="http://images.china.cn/site1000/2020-02/24/5e9b5ea8-a260-4c78-aac2-3cdd3e6cb672.jpg" border="0" width="155" height="50"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25 gqgdbg">
+            <div class="w320 fl mr20 gd1">
+                <div class="gdmenu">
+                    <a href="http://opinion.china.com.cn/" target="_blank"><img src="http://images.china.cn/images1/ch/2016firsttop/a10.jpg" alt="中国观点" /></a>
+
+                    <p>
+                        
+                            <a href="http://www.china.com.cn/opinion2020/node_8018656.shtml" target="_blank">传习录</a> | <a href="http://www.china.com.cn/opinion/node_8018235.html" target="_blank">中国网评</a> | <a href="http://www.china.com.cn/opinion/node_8009120.html" target="_blank">青年传习社</a> | 
+
+                        
+                            
+
+                    </p>
+                </div>
+
+                
+                                            <div class="pic">
+                            <a href="http://www.china.com.cn/opinion/node_8018235.html" target="_blank">
+                                <img src="http://images.china.cn/site1000/2020-06/12/3eb09902-ea85-4009-8866-fd3a9f82a607.jpg" border="0">
+                            </a>
+                            <p><a href="http://www.china.com.cn/opinion/node_8018235.html" target="_blank">中国网评——与世界对话，让世界读懂中国</a></p>
+                        </div>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://www.china.com.cn/opinion/2021-08/04/content_77671828.html" target="_blank">美国鼓吹病毒溯源阴谋论必反噬其身</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/2021-08/02/content_77667053.html" target="_blank">完善后的香港选举制度突显爱国主义底色</a></li>
+                            </ul>
+
+            </div>
+
+            <div id="gdlm1" class="w320 fl gd2">
+                <div class="gdmenu">
+                    <div class="fl"><span class="gdblue"><a href="http://www.china.com.cn/opinion/theory/index.htm" target="_blank">理论</a>|</span><span><a href="http://www.china.com.cn/opinion/think/index.htm" target="_blank">智库</a></span></div>
+
+                    <div class="fr">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                
+                                                <ul class="pic">
+                        <li>
+                            <a href="http://www.china.com.cn/opinion/theory/2021-08/06/content_77676949.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-08/09/dccda891-ad99-4502-9159-d41498c68f55.jpg" border="0">
+                            </a>
+                            <p><a href="http://www.china.com.cn/opinion/theory/2021-08/06/content_77676949.htm" target="_blank">马克思主义中国化</a></p>
+                        </li>
+                        <li>
+                            <a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681710.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-08/09/a6e1d98e-9e97-46f3-97db-4129a93fbec3.jpg" border="0">
+                            </a>
+                            <p><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681710.htm" target="_blank">助力乡村振兴</a></p>
+                        </li>
+                            </ul>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681676.htm" target="_blank">深刻把握实现中华民族伟大复兴这一主题</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681668.htm" target="_blank">推动中国特色社会主义法治理论创新发展</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681633.htm" target="_blank">深刻领悟习近平总书记的人民情怀</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681653.htm" target="_blank">中国式现代化开创人类文明新形态</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/theory/2021-08/09/content_77681696.htm" target="_blank">从党史中汲取推动法治进步的力量</a></li>
+                            </ul>
+
+                
+                                                <ul class="pic">
+                        <li>
+                            <a href="http://www.china.com.cn/opinion/think/2021-08/09/content_77682522.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-08/09/f00f3378-0a38-4cc2-b329-a9457757cebc.jpg" border="0">
+                            </a>
+                            <p><a href="http://www.china.com.cn/opinion/think/2021-08/09/content_77682522.htm" target="_blank">房地产低碳转型</a></p>
+                        </li>
+                        <li>
+                            <a href="http://www.china.com.cn/opinion/think/2021-08/06/content_77677674.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-08/06/a20abc59-7163-4d07-a699-d25320a40c23.jpg" border="0">
+                            </a>
+                            <p><a href="http://www.china.com.cn/opinion/think/2021-08/06/content_77677674.htm" target="_blank">芯片业大变局</a></p>
+                        </li>
+                            </ul>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://www.china.com.cn/opinion/think/2021-08/09/content_77682523.htm" target="_blank">马庆斌：激发高质量发展活力因子</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/think/2021-08/09/content_77682521.htm" target="_blank">林毅夫：中国未来经济增长具有两大优势</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/think/2021-08/09/content_77682520.htm" target="_blank">从传统到现代，推动金融变革的力量是什么</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/think/2021-08/06/content_77677096.htm" target="_blank">何伟文：经济规律不支持美国地缘战略表述</a></li>
+                        <li><a href="http://www.china.com.cn/opinion/think/2021-08/06/content_77677097.htm" target="_blank">匡贤明：加快构建更亲消费的体制机制</a></li>
+                            </ul>
+
+            </div>
+
+            <div id="hdyk" class="w320 fr gd3">
+                <div class="gdmenu">
+                    <div class="fl"><span class="blue">　议库</span></div>
+
+                    <div class="fr">
+                        <p>
+                            
+                                <a href="http://cppcc.china.com.cn/node_8018546.htm" target="_blank">建言中国</a> | <a href="http://cppcc.china.com.cn/node_8022798.htm" target="_blank">闪议</a> | 
+
+                            
+                                
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cb hdyk">
+                    <div class="WC">
+                        
+                                                            <div class="pic">
+                                    <a href="http://cppcc.china.com.cn/2021-08/06/content_77678156.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-08/06/f9b96dbe-9f30-450b-b730-d714cc03bab7.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://cppcc.china.com.cn/2021-08/06/content_77678156.htm" target="_blank">解决非洲10万人就业:"我的中国梦"在他乡升起</a></p>
+                                </div>
+                                <div class="pic">
+                                    <a href="http://cppcc.china.com.cn/2021-07/22/content_77644148.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-07/23/fcea7430-3fe6-48e9-a877-34d4036839fa.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://cppcc.china.com.cn/2021-07/22/content_77644148.htm" target="_blank">戏"聚"中英:摒弃误解 拥抱理解|世界同心圆05</a></p>
+                                </div>
+                                <div class="pic">
+                                    <a href="http://cppcc.china.com.cn/2021-07/30/content_77662270.htm" target="_blank">
+                                        <img src="http://images.china.cn/site1000/2021-07/30/fa99feb4-f5e4-45eb-9a01-530e4e6f9d67.jpg" border="0">
+                                    </a>
+                                    <p><a href="http://cppcc.china.com.cn/2021-07/30/content_77662270.htm" target="_blank">造梦者“华坚”：别人能行的非洲兄弟也一定行</a></p>
+                                </div>
+
+                        <div class="WCMenu"></div>
+                    </div>
+                    
+                                                        <ul class="list">
+                            <li><a href="http://cppcc.china.com.cn/2021-08/08/content_77680458.htm" target="_blank">中国新一代体育偶像正在“破圈”</a></li>
+                            <li><a href="http://cppcc.china.com.cn/2021-08/07/content_77678976.htm" target="_blank">让高质量发展的支柱更加牢固</a></li>
+                                </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25 gqgdbg">
+            <div class="w320 fl mr20 gd1">
+                <div class="gdmenu">
+                    <a href="http://f.china.com.cn/" target="_blank"><img src="http://images.china.cn/images1/ch/2017first/20210722-02.jpg" style="margin-top:11px;" alt="中国观点" /></a>
+
+                    <p>
+                        
+                            <p><a href="http://f.china.com.cn/node_8025021.htm" target="_blank" title="进程" textvalue="进程">进程</a>|<a title="" href="http://f.china.com.cn/node_8025022.htm" target="_blank">图片</a>|<a title="" href="http://f.china.com.cn/node_8025024.htm" target="_blank">模式</a>|<a title="" href="http://f.china.com.cn/node_8025028.htm" target="_blank">故事</a>|<a title="" href="http://f.china.com.cn/node_8025029.htm" target="_blank">支援</a></p>
+
+                    </p>
+                </div>
+
+                
+                                            <div class="pic">
+                            <a href="http://f.china.com.cn/2021-08/09/content_77681580.htm" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-08/09/t2_(4X4X577X355)2aa0300b-270c-4677-90d8-ab2115c23599.jpg" border="0">
+                            </a>
+                            <p><a href="http://f.china.com.cn/2021-08/09/content_77681580.htm" target="_blank">立秋农事忙</a></p>
+                        </div>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681577.htm" target="_blank">广西柳江：乡村少年圆了足球梦</a></li>
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681581.htm" target="_blank">河北邢台：改善人居环境 建设宜居乡村</a></li>
+                            </ul>
+
+            </div>
+
+
+            <div class="w320 fl gd2">
+                <div class="a512" style="padding-top:26px; height:32px; color:#999;">
+                    
+                        <p><a title="" href="http://cn.chinagate.cn/news/node_7236046.htm" target="_blank">习近平扶贫重要论述</a> | <a title="" href="http://f.china.com.cn/node_8025032.htm" target="_blank">国际合作</a> | <a title="" href="http://south.china.org.cn/#/" target="_blank">南南合作</a> | <a title="" href="http://south.china.org.cn/#/casestudies/caselist?id=236&tag=11" target="_blank">全球案例库</a></p>
+
+                </div>
+
+                
+                                                <ul class="pic">
+                        <li>
+                            <a href="http://cn.chinagate.cn/news/node_8023694.html" target="_blank">
+                                <img src="http://images.china.cn/site1000/2021-05/12/94e8e897-968f-402a-93b4-cef4b92c6616.jpg" border="0">
+                            </a>
+                            <p><a href="http://cn.chinagate.cn/news/node_8023694.html" target="_blank">零碳革命</a></p>
+                        </li>
+                        <li>
+                            <a href="http://f.china.com.cn/2018-12/24/content_74308126.html" target="_blank">
+                                <img src="http://images.china.cn/site1000/2018-12/25/ae81b496-9c1a-4a99-9c3e-b5c8f267bb0e.jpg" border="0">
+                            </a>
+                            <p><a href="http://f.china.com.cn/2018-12/24/content_74308126.html" target="_blank">扶贫故事《心迹》</a></p>
+                        </li>
+                            </ul>
+
+                
+                                                <ul class="list">
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681973.htm" target="_blank">在山海协作中寻找缩小差距的密码</a></li>
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681851.htm" target="_blank">辽宁鞍山帮扶西藏巴青县提升医疗水平</a></li>
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681962.htm" target="_blank">再探曹县：一个内陆农业县的“出圈”之谜 </a></li>
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681848.htm" target="_blank">内蒙古：党建引领促发展 乡村振兴展画卷</a></li>
+                        <li><a href="http://f.china.com.cn/2021-08/09/content_77681969.htm" target="_blank">“90后”插画师，画出美丽乡村</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="w320 fr">
+                
+                    <iframe id="silu" src="http://www.china.com.cn/node_7248774.htm" width="320" height="315" scrolling="no" marginheight="0" frameborder="0"></iframe>
+
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25">
+            <div class="fl w660"><iframe id="T03" src="http://www.china.com.cn/node_8019292.htm" width="660" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+
+            <div class="fr w320"><iframe id="H04" src="http://www.china.com.cn/node_8019297.htm" width="320" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <A title="" href="http://news.china.com.cn/world/node_7208703.htm" target=_blank>国际热点</A>&nbsp;|&nbsp<A title="" href="http://news.china.com.cn/world/node_7208704.htm" target=_blank GBKUrl="http://news.china.com.cn/world/node_7208704.htm">国际圈</A>
+
+                    </span>
+                    <a href="http://news.china.com.cn/world/node_7184857.htm">国 际</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://news.china.com.cn/2021-08/09/content_77681125.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/890e3a84-dd13-4474-9f46-8b51aede5091.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://news.china.com.cn/2021-08/09/content_77681125.htm">日本东京都日增新冠确诊4066例 连续5天逾4000例</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681233.htm">突尼斯实施大规模新冠疫苗接种行动</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681236.htm">巴基斯坦西南部一警车遇袭致2死11伤</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681122.htm">马来西亚放宽完成疫苗接种者管控措施</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681238.htm">起底美国霸权行径：坑盟友的事情没少干</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://military.china.com.cn/node_7252587.htm" target=_blank>军情</A>&nbsp;|<A title="" href="http://military.china.com.cn/node_7252590.htm" target=_blank>独家</A>
+
+                    </span>
+                    <a href="http://military.china.com.cn/">军 事</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://military.china.com.cn/2021-08/09/content_77681099.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/f377982c-d534-4b05-b2fc-b28f5921d086.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://military.china.com.cn/2021-08/09/content_77681099.htm">装甲突击群驰骋大漠 这就是军人的热血与浪漫！</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://military.china.com.cn/2021-08/09/content_77681098.htm">大片来袭！看伞兵战车从天而降</a></li>
+                        <li><a href="http://military.china.com.cn/2021-08/09/content_77681113.htm">战味十足！武警特战队员PK障碍训练场</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681121.htm">阿富汗塔利班同政府军在多个省会城市激战</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681126.htm">缅甸仰光发生多起爆炸枪击事件 致多人伤亡</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <p>
+    <a title="" href="http://news.china.com.cn/node_7183903.htm" target="_blank">图集</a> | <a title="" href="http://news.china.com.cn/node_7247311.htm" target="_blank">专题</a>
+</p>
+
+                    </span>
+                    <a href="http://news.china.com.cn/node_7247305.htm">社 会</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://news.china.com.cn/2021-08/09/content_77681224.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/a3bb03ef-3d70-4fc5-bf65-4d22f1248737.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://news.china.com.cn/2021-08/09/content_77681224.htm">国内油价调整大概率搁浅 为年内第三次</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681148.htm">云南瑞丽市主城区继续居家隔离</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681259.htm">北京加强体育健身场所疫情防控工作</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681140.htm
+">动物园里游客打斗真会引起动物效仿吗？</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681266.htm">食补药补、运动健身 青年人加入养生大军</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <p> <a title="" href="http://cppcc.china.com.cn/node_7185263.htm" target="_blank">全国政协</a> | <a title="" href="http://cppcc.china.com.cn/node_7227325.htm" target="_blank">本网发布</a> | <a href="http://cppcc.china.com.cn/node_7241959.htm" target="_self">今日政协</a></p>
+
+                    </span>
+                    <a href="http://cppcc.china.com.cn/">政 协</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://cppcc.china.com.cn/node_8024610.html">
+                                    <img src="http://images.china.cn/site1000/2021-06/25/t2_(40X0X565X315)c7c80d62-b766-4ec1-a989-4fa1b3b82611.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://cppcc.china.com.cn/node_8024610.html">同心商国是 同行启新程——人民政协庆祝中国共产党成立100周年</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://cppcc.china.com.cn/2021-08/07/content_77678979.htm">河南漯河市政协建言更高水平文明城市建设</a></li>
+                        <li><a href="http://cppcc.china.com.cn/2021-08/07/content_77678977.htm">上海嘉定区政协助推汽车产业发展小记</a></li>
+                        <li><a href="http://cppcc.china.com.cn/2021-08/05/content_77675251.htm">四川乐山市搭建“有事来协商”平台</a></li>
+                        <li><a href="http://cppcc.china.com.cn/2021-08/05/content_77675246.htm">山东省政协召开协商工作经验交流会</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://cul.china.com.cn/node_1007537.htm" target=_blank>要闻</A>&nbsp;丨&nbsp;<A title="" href="http://cul.china.com.cn/node_1007540.htm" target=_blank>文保</A> 丨&nbsp;<A title="" href="http://cul.china.com.cn/node_1007548.htm" target=_blank>产业</A>
+
+                    </span>
+                    <a href="http://cul.china.com.cn/">文 化</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://cul.china.com.cn/2021-08/09/content_41639724.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/f814b850-bf79-498f-a21c-d53a35d07db0.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://cul.china.com.cn/2021-08/09/content_41639724.htm">37国和地区古玻璃文物亮相莫高窟 </a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://cul.china.com.cn/2021-08/09/content_41639878.htm">中国申遗：从读懂规则到为世界提供中国范例</a></li>
+                        <li><a href="http://cul.china.com.cn/2021-08/09/content_41639628.htm">感受千年石窟文化印记 每一页都在述说着故事</a></li>
+                        <li><a href="http://cul.china.com.cn/2021-08/09/content_41639695.htm">北京中轴线申遗 古都之脊重塑北京城</a></li>
+                        <li><a href="http://cul.china.com.cn/2021-08/09/content_41639706.htm">中轴线上那些“重生”的建筑</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            
+
+                    </span>
+                    <a href="http://legal.china.com.cn/" target="_blank">法 治</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://news.china.com.cn/2021-08/09/content_77681250.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/f3a5cf39-956d-4b59-b085-aabcf5664094.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://news.china.com.cn/2021-08/09/content_77681250.htm">孙玉友：在灰烬废墟中寻迹觅凶</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681164.htm">因疫情防控不力 扬州多人被纪委监委处理</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681163.htm">警方：对“阿里女员工被侵害”警情正调查</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681162.htm">湖北荆门掇刀区卫生健康局局长王中平被免职</a></li>
+                        <li><a href="http://news.china.com.cn/2021-08/09/content_77681165.htm">电诈贩毒连窝端！辽宁警方打掉连环犯罪团伙</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 00:00:04 -->
+<span><a href="http://auto.china.com.cn/my.shtml" target="_blank">独家</a>&#160;| <a href="http://315.auto.china.com.cn/" target="_blank">汽车投诉</a>&#160;| <a href="http://auto.china.com.cn/kanche/xinche/index.shtml" target="_blank">新车</a></span> <a href="http://auto.china.com.cn/" target="_blank">汽 车</a>
+<!-- 页面碎片 结束 -->
+                </h1>
+
+                <dl>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 08:09:34 -->
+<dt><a href="http://auto.china.com.cn/jt/20210809/713568.shtml" target="_blank">
+<img src="http://image.auto.china.cn/picupload/2021/0809/180_16471266_20210809080829.jpg" width="150" height="92"></a></dt>
+<dd><a href="http://auto.china.com.cn/jt/20210809/713568.shtml" target="_blank">国内油价调整大概率搁浅 为年内第三次</a></dd>
+<!-- 页面碎片 结束 -->
+                </dl>
+
+                <ul>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 08:33:11 -->
+<li><a href="http://auto.china.com.cn/view/qcq/20210809/713569.shtml" target="_blank">氢能行业驶入快车道 产业链上下游发展迅速</a></li>
+
+<li><a href="http://auto.china.com.cn/news/20210809/713571.shtml" target="_blank">福特启动买断项目 在美削减1000个就业岗位</a></li>
+
+<li><a href="http://auto.china.com.cn/view/qcq/20210809/713570.shtml" target="_blank">内燃机行业迎来创新窗口期</a></li>
+
+<li><a href="http://auto.china.com.cn/news/20210809/713572.shtml" target="_blank">美国制定更严排放法规 环保人士心存担忧</a></li>
+<!-- 页面碎片 结束 -->
+                </ul>
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 00:00:04 -->
+<span><a href="http://tech.china.com.cn/internet/" target="_blank">互联网</a>&#160;| <a href="http://tech.china.com.cn/bc/index.shtml" target="_blank">区块链</a>&#160;| <a href="http://tech.china.com.cn/digi/" target="_blank">数码</a></span><a href="http://tech.china.com.cn" target="_blank">科 技</a>
+<!-- 页面碎片 结束 -->
+                </h1>
+
+                <dl>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 10:23:47 -->
+<dt><a href="http://tech.china.com.cn/game/20210809/379603.shtml" target="_blank">
+<img src="http://image.tech.china.cn/picupload/2021/0809/158_1352358264_20210809101432.jpg" height="90"></a></dt>
+<dd><a href="http://tech.china.com.cn/game/20210809/379603.shtml" target="_blank">游戏防沉迷再升级 计划全平台上线适龄提示</a></dd>
+
+<!-- 页面碎片 结束 -->
+                </dl>
+
+                <ul>
+                    <!-- 页面碎片 开始 -->
+<!-- 2021-08-09 10:08:05 -->
+<li><a href="http://tech.china.com.cn/house/20210809/379597.shtml" target="_blank">广州进一步规范中介机构房源信息发布</a></li>
+
+<li><a href="http://tech.china.com.cn/telecom/20210809/379592.shtml" target="_blank">中国电信今启申购 最高募资近542亿元</a></li>
+
+<li><a href="http://tech.china.com.cn/5g/20210809/379600.shtml" target="_blank">政策利好纷至 5G规模化应用加力提速</a></li>
+
+<li><a href="http://tech.china.com.cn/info/20210809/379607.shtml" target="_blank">数字经济时代应高度重视就业政策</a></li>
+
+
+
+<!-- 页面碎片 结束 -->
+                </ul>
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1>
+                    
+                        <SPAN><A title="" href="http://house.china.com.cn/shendu" target=_blank>深度</A> | <A title="" href="http://house.china.com.cn/zhengce" target=_blank>政策</A> | <A title="" href="http://house.china.com.cn/gongsi" target=_blank>房企</A></SPAN>
+ <a href="http://house.china.com.cn/">地 产</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://house.china.com.cn/2104518.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/20816c8f-699b-479e-ae0a-132fece992fa.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://house.china.com.cn/2104518.htm">统计局：7月CPI同比增长1.0% 居住价格同比增1.1%</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://house.china.com.cn/2104475.htm">惠州新政：惠阳、大亚湾非本地户籍限购一套</a></li>
+                        <li><a href="http://house.china.com.cn/2104480.htm">下半年中国经济有望持续稳定复苏</a></li>
+                        <li><a href="http://house.china.com.cn/2104537.htm">内蒙古二套房公积金贷款利率按同期1.1倍执行</a></li>
+                        <li><a href="http://union.china.com.cn/town/">特色小镇 打造有生命力的中国小镇</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <a href="http://edu.china.com.cn/node_8023751.htm" target="_blank" textvalue="观点">观点</a> | <a href="http://edu.china.com.cn/node_8018725.htm" target="_blank" textvalue="小记者">小记者</a> | <a href="http://edu.china.com.cn/node_8023759.htm" target="_blank">教育部</a>
+
+                    </span>
+                    <a href="http://edu.china.com.cn/">教 育</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://edu.china.com.cn/2021-08/09/content_77681491.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/ead04dde-99c1-4516-a836-41acbc3aa9ab.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://edu.china.com.cn/2021-08/09/content_77681491.htm">违规开展学科培训，北京6家机构和1名个人吃“黄牌”</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://edu.china.com.cn/2021-08/09/content_77681558.htm">游戏防沉迷再升级 计划全平台上线适龄提示</a></li>
+                        <li><a href="http://edu.china.com.cn/2021-08/09/content_77681543.htm">硕士生群体调查：超七成是家庭第一代大学生</a></li>
+                        <li><a href="http://edu.china.com.cn/2021-08/09/content_77681534.htm">技高者多得！首席技师年收入最高可达60万元</a></li>
+                        <li><a href="http://edu.china.com.cn/2021-08/09/content_77681533.htm">七年分三批在14省份落地 新高考的变与不变</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://sports.china.com.cn/zuqiu/index.html" target=_blank GBKUrl="http://sports.china.com.cn/zuqiu/index.html">足球</A>&nbsp;| <A title="" href="http://sports.china.com.cn/zhuanti/index.html" target=_blank>专题</A>&nbsp;| <A title="" href="http://sports.china.com.cn/shipin/index.html" target=_blank>视频</A>
+
+                    </span>
+                    <a href="http://sports.china.com.cn/">体 育</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://sports.china.com.cn/qita/detail2_2021_08/09/2958072.html">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/3158bb9c-a206-4ca5-96c0-edef81034b8d.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://sports.china.com.cn/qita/detail2_2021_08/09/2958072.html">中共中央 国务院致第32届奥运会中国体育代表团的贺电</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://sports.china.com.cn/zhuanti/2021djayh/detail2_2021_08/09/2958160.html">突破！中国田径“力”从何来</a></li>
+                        <li><a href="http://sports.china.com.cn/zhuanti/2021djayh/detail2_2021_08/09/2958132.html">东京奥运会圆满落幕 北京冬奥会蓄势待发</a></li>
+                        <li><a href="http://sports.china.com.cn/zuqiu/detail2_2021_08/09/2958071.html">梅西洒泪告别巴萨：我曾做了一切努力以留下</a></li>
+                        <li><a href="http://sports.china.com.cn/zhuanti/2021djayh/detail2_2021_08/09/2958070.html">中国军团交出境外参赛最佳成绩单</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://ent.china.com.cn/star_list.html" target=_blank>明星</A> | <A title="" href="http://ent.china.com.cn/movie_list.html" target=_blank>电影</A> | <A title="" href="http://ent.china.com.cn/tv_list.html" target=_blank>电视</A>
+
+                    </span>
+                    <a href="http://ent.china.com.cn/">娱 乐</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/07/2955905.html">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/c297627e-6d64-4122-94c8-94b8fec668b3.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/07/2955905.html">以摄影师为主角，《荒野至上》用“新镜头”对接自然</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/06/2954667.html">《我中国少年》 传统文化新传承</a></li>
+                        <li><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/06/2954413.html">《与君歌》8月8日金鹰独播剧场播出</a></li>
+                        <li><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/06/2953689.html">《最美中轴线》小柯郝云等唱响新时代声音</a></li>
+                        <li><a href="http://ent.china.com.cn/xwtt/detail2_2021_08/07/2955906.html">《魔道祖师完结篇》于8月7日登陆腾讯视频</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb25">
+            <iframe id="T04" src="http://www.china.com.cn/node_8019293.htm" width="1000" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe>
+        </div>
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <A title="" href="http://travel.china.com.cn/node_7237677.html" target=_blank>地理中国</A>&nbsp;| <A title="" href="http://travel.china.com.cn/node_7237678.html" target=_blank>环游世界</A>&nbsp;| <A title="" href="http://travel.china.com.cn/node_8011254.html" target=_blank>旅游中国说</A>
+
+                    </span>
+                    <a href="http://travel.china.com.cn/">旅 游</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://travel.china.com.cn/node_8019454.html">
+                                    <img src="http://images.china.cn/site1000/2020-11/18/5ec4ebd6-13fe-4605-b5ca-bb44e551de6f.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://travel.china.com.cn/node_8019454.html">影像重庆</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://travel.china.com.cn/txt/2021-08/09/content_77681782.html">中国申遗36年：从读懂规则到为世界提供范例</a></li>
+                        <li><a href="http://travel.china.com.cn/txt/2021-08/09/content_77681712.html">北京：暂缓延期新审批大型营业性演出活动</a></li>
+                        <li><a href="http://travel.china.com.cn/txt/2021-08/09/content_77681620.html">2000余家影院停摆 电影产业身处酷暑直面寒冬</a></li>
+                        <li><a href="http://travel.china.com.cn/txt/2021-08/09/content_77681612.html">北京大兴机场通报：国内15个城市航班取消</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            
+
+                    </span> <a href="http://fashion.china.com.cn/">时 尚</a></h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://fashion.china.com.cn/2021-08/09/content_77641831.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/9416c9e9-038f-45a5-925f-2d89d8b1b61d.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://fashion.china.com.cn/2021-08/09/content_77641831.htm">老年人为何成为美容院消费“新主力”？</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://fashion.china.com.cn/2021-08/09/content_77681873.htm">关注发际线和身材 95后宝妈“美美哒”</a></li>
+                        <li><a href="http://fashion.china.com.cn/2021-08/09/content_77681864.htm">新国货流行：年轻人消费理性的回归</a></li>
+                        <li><a href="http://fashion.china.com.cn/2021-08/09/content_77681855.htm">严重过敏反应可危及生命 如何识别和急救？</a></li>
+                        <li><a href="http://fashion.china.com.cn/2021-08/09/content_77681614.htm">大热的医疗美容 要最佳效果也要防不良后果</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://art.china.cn/scheme/node_1000497.shtml" target=_blank>何以中国</A> | <A title="" href="http://art.china.cn/node_1005552.shtml" target=_blank>艺讯</A> | <A title="" href="http://art.china.cn/node_1005604.shtml" target=_blank>品牌</A>
+
+                    </span>
+                    <a href="http://art.china.cn/">艺 术</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://art.china.cn/txt/2021-06/23/content_41600235.shtml">
+                                    <img src="http://images.china.cn/site1000/2021-06/25/5842c7af-fb07-4dfc-8e3b-61465afe58ab.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://art.china.cn/txt/2021-06/23/content_41600235.shtml">无声诗里颂千秋——美术经典中的党史主题展</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://art.china.cn/txt/2021-06/21/content_41597600.shtml">中国美术学院美丽中国研究院在杭州成立</a></li>
+                        <li><a href="http://art.china.cn/txt/2021-06/24/content_41601289.shtml">来北展，赴一场“2021：时间漫游”</a></li>
+                        <li><a href="http://art.china.cn/txt/2021-06/21/content_41597047.shtml">到北京画院美术馆，看罗敏笔下的“花间•慢”</a></li>
+                        <li><a href="http://art.china.cn/txt/2021-06/18/content_41596035.shtml">朱德群：抽象画是有形的诗歌</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <A title="" href="http://www.diaoyudao.org.cn/" target=_blank>钓鱼岛官网</A> |&nbsp;<A title="" href="http://www.comra.org/" target=_blank>大洋协会</A> | <A title="" href="http://ocean.china.com.cn/node_7198592.htm" target=_blank>独家</A>
+
+                    </span>
+                    <a href="http://ocean.china.com.cn/">海 洋</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://ocean.china.com.cn/2021-08/09/content_77682335.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/52779192-af9c-4ab0-ae67-57bb443045b5.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://ocean.china.com.cn/2021-08/09/content_77682335.htm">“向阳红03”船圆满完成航次任务</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://ocean.china.com.cn/2021-08/09/content_77682387.htm">南部战区海军组织舰艇编队远海训练</a></li>
+                        <li><a href="http://ocean.china.com.cn/2021-08/09/content_77682367.htm">日本本州东岸近海发生5.3级地震</a></li>
+                        <li><a href="http://ocean.china.com.cn/2021-08/06/content_77677009.htm">自然资源部：建立健全海洋生态预警监测体系</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2021-08/02/content_77668061.htm">集装箱运费暴涨4倍 或持续至21年三季度</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            <A title="" href="http://grassland.china.com.cn/node_547030.htm" target=_blank>热点聚焦</A>&nbsp;| <A title="" href="http://grassland.china.com.cn/node_547021.htm" target=_blank>草原儿女</A> | <A title="" href="http://grassland.china.com.cn/node_547040.htm" target=_blank>草原风光</A>
+
+                    </span>
+                    <a href="http://grassland.china.com.cn/">草 原</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://grassland.china.com.cn/2021-08/06/content_41638971.html">
+                                    <img src="http://images.china.cn/site1000/2021-08/06/a04cdc9c-3a15-4c3b-b74e-f2d34ec9e277.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://grassland.china.com.cn/2021-08/06/content_41638971.html">乌拉盖这处仙境是野生动物的天堂也是摄影师的创作沃土</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://grassland.china.com.cn/2021-08/06/content_41639169.html">这位通辽小伙从科尔沁草原跑到奥运会赛场</a></li>
+                        <li><a href="http://grassland.china.com.cn/2021-08/05/content_41637951.html">夏日里的康宁寺清净庄严，美得脱俗惊艳</a></li>
+                        <li><a href="http://grassland.china.com.cn/2021-08/05/content_41637812.html">江源儿女欢歌热舞，庆祝玉树州成立70周年</a></li>
+                        <li><a href="http://grassland.china.com.cn/2021-08/04/content_41636256.html">天高云淡星光璀璨：在阿尔金山的夏夜里沉醉</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            
+
+                    </span>
+                    <a href="http://aj.china.com.cn/">应 急</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://www.china.com.cn/txt/2021-07/22/content_77644641.htm">
+                                    <img src="http://images.china.cn/site1000/2021-07/22/t2_(0X0X592X338)cb2be087-8e33-4539-aea7-868a29cc0373.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://www.china.com.cn/txt/2021-07/22/content_77644641.htm">临时变更行车路线 突击抽查危化企业</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://www.china.com.cn/txt/2021-08/06/content_77677776.htm">江苏：结束防汛Ⅳ级应急响应 防汛抗台首战告捷</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2021-08/02/content_77668629.htm">辽宁省印发《辽宁省家庭应急物资储备建议清单》</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2021-08/02/content_77668605.htm">追记应急战线“拼命三郎”干部陈军</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2021-07/22/content_77644652.htm">应急管理部调派1800名消防指战员增援河南防汛抢险救灾</a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><span>
+                        
+                            <A title="" href="http://food.china.com.cn/node_8003193.htm" target=_blank>聚焦</A> 丨<A title="" href="http://food.china.com.cn/node_8003194.htm" target=_blank GBKUrl="http://food.china.com.cn/node_8003194.htm">原创</A> 丨<A title="" href="http://food.china.com.cn/node_8003196.htm" target=_blank>公司</A>
+
+                    </span>
+                    <a href="http://food.china.com.cn/">食 品</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="
+http://food.china.com.cn/2021-08/09/content_77681842.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/3c66c2a8-91de-4252-8d3e-ed9e00bb19a0.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="
+http://food.china.com.cn/2021-08/09/content_77681842.htm">茶饮品牌和老字号纷纷杀入 年轻人热捧的“熬夜水”香吗？</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="
+http://food.china.com.cn/2021-08/09/content_77681879.htm">15家门店出食安问题 书亦烧仙草管理现漏洞</a></li>
+                        <li><a href="
+http://food.china.com.cn/2021-08/09/content_77681860.htm">网红餐饮食安痛点引关注 奈雪事件或影响行业</a></li>
+                        <li><a href="
+http://food.china.com.cn/2021-08/09/content_77681888.htm">山寨牛轧糖商家被判侵权 冠生园获赔50万元</a></li>
+                        <li><a href="
+http://food.china.com.cn/2021-08/09/content_77681884.htm">温氏股份7月生猪销售收入同比下降超三成</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            
+
+                    </span>
+                    <a href="http://health.china.com.cn/">健 康</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://health.china.com.cn/2021-08/06/content_41637975.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/06/de03b006-b267-4bd1-be87-ceac4162ae7b.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://health.china.com.cn/2021-08/06/content_41637975.htm">卫健委：疫苗对德尔塔变异株仍有良好预防和保护作用</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://health.china.com.cn/2021-08/09/content_41639669.htm">教育部印发通知多重保障守护学生健康心理</a></li>
+                        <li><a href="http://health.china.com.cn/2021-08/09/content_41639696.htm">应对德尔塔毒株 四川中医药有新举措</a></li>
+                        <li><a href="http://health.china.com.cn/2021-08/09/content_41639499.htm">北京发布中高风险地区人员返京政策</a></li>
+                        <li><a href="http://health.china.com.cn/2021-08/09/content_41639510.htm">上海发布《一次性非医用平面口罩》团体标准</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1><span>
+                        
+                            
+
+                    </span>
+                    <a href="http://union.china.com.cn/" target="_blank">联 盟</a>
+                </h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://www.nanning.china.com.cn/2021-08/09/content_41639950.htm">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/6a42db47-e4df-465d-b0ab-f55deaffef93.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://www.nanning.china.com.cn/2021-08/09/content_41639950.htm">南宁空港口岸首次三天内连续开通三条全货机国际航线</a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://union.china.com.cn/zhuanti/txt/2021-08/09/content_41640018.html">防“疫”未然 庐阳区开展核酸采样应急演练</a></li>
+                        <li><a href="http://union.china.com.cn/txt/2021-08/09/content_41640300.html">云南北移亚洲象安全渡过元江</a></li>
+                        <li><a href="http://business.china.com.cn/2021-08/09/content_41640189.html">海昌海洋公园宣布 中国奥运代表团终身免费游</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2019-10/08/content_75280038.htm"><A href="http://union.china.com.cn/yunnan.htm" target=_blank>七彩云南  旅游天堂</A>&nbsp;&nbsp;<A href="http://yxzg.china.com.cn/" target=_blank>中国•印象</A></a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="w1000 wauto hauto mb40">
+            <div class="fl w660"><iframe id="T05" src="http://www.china.com.cn/node_8019294.htm" width="660" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+
+            <div class="fr w320"><iframe id="H05" src="http://www.china.com.cn/node_8019298.htm" width="320" height="90" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+        </div>
+
+        <div class="boxma">
+            <div class="boxma1">
+                <h1><a href="http://www.china.com.cn/aboutus/node_7219999.htm">本网动态</a></h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://zw.china.com.cn/2021-03/24/content_77342054.html">
+                                    <img src="http://images.china.cn/site1000/2021-04/06/bdc31632-1bf5-4123-8c7a-9cf12bd095db.png" border=0>
+                                </a></dt>
+                            <dd><a href="http://zw.china.com.cn/2021-03/24/content_77342054.html"><b>天津市副市长王卫东一行到访中国网</b></a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://www.china.com.cn/txt/2021-04/23/content_77433383.htm">关于推荐中国网作品参加第三十一届中国新闻奖网络作品初评工作的公示</a></li>
+                        <li><a href="http://cul.china.com.cn/2021-02/11/content_41467907.htm">中国网总编辑王晓辉向全球网友拜年</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2021-02/09/content_77203182.htm">中国网2020年度新闻记者证核验公示名单</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2020-06/05/content_76129219.htm">中国网2020年全国两会内容“落地” 互动产品成亮点</a></li>
+                            </ul>
+
+            </div>
+
+            <div class="fl w320" style="margin-left:20px;">
+                <div class="boxma1">
+                    <h1><a href="http://www.china.org.cn/chinese/">双语资讯</a></h1>
+
+                    
+                                                    <dl>
+                                <dt><a href="http://www.china.org.cn/chinese/2021-07/30/content_77662569.htm">
+                                        <img src="http://images.china.cn/site1000/2021-07/30/t2_(0X0X600X360)9cc3753d-688f-4bc3-b78e-21d9be55c11e.jpg" border=0>
+                                    </a></dt>
+                                <dd>
+                                    <p><a href="http://www.china.org.cn/chinese/2021-07/30/content_77662569.htm" style="line-height:26px;"><b>重庆：动物园里的“清凉夏日”</b></a></p>
+                                </dd>
+                            </dl>
+
+                </div>
+
+                <div class="boxma2">
+                    
+                                                    <dl>
+                                <dt><a href="http://www.china.org.cn/chinese/2021-07/30/content_77662536.htm">比利时王宫迎来暑期开放季</a></dt>
+                                <dd><a href="http://www.china.org.cn/chinese/2021-07/30/content_77662536.htm">People visit Royal Palace of Brussels</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="http://www.china.org.cn/chinese/2021-07/28/content_77657852.htm">第15届莫斯科航展闭幕</a></dt>
+                                <dd><a href="http://www.china.org.cn/chinese/2021-07/28/content_77657852.htm">Int'l Aviation and Space Salon ends in Moscow</a></dd>
+                            </dl>
+
+                </div>
+            </div>
+
+            <div class="boxma1" style="margin-left:20px;">
+                <h1>品牌信息</h1>
+
+                
+                                            <dl>
+                            <dt><a href="http://union.china.com.cn/txt/2021-08/09/content_41640302.html">
+                                    <img src="http://images.china.cn/site1000/2021-08/09/eddc703a-4028-4cc1-ab55-a31495d98cf0.jpg" border=0>
+                                </a></dt>
+                            <dd><a href="http://union.china.com.cn/txt/2021-08/09/content_41640302.html"><b>昆明站“宜家梦想魔盒”快闪体验店首发</b></a></dd>
+                        </dl>
+
+                
+                                                <ul>
+                        <li><a href="http://business.china.com.cn/2021-08/09/content_41640102.html">海尔直驱洗衣机发起不抖挑战赛</a></li>
+                        <li><a href="http://union.china.com.cn/kx/txt/2021-08/09/content_41640258.html">新消费力量崛起 国货品牌走红</a></li>
+                        <li><a href="http://www.china.com.cn/txt/2016-06/24/content_38736414.htm"><A href="http://health.china.com.cn/" target=_blank>中国网健康中国</A>&nbsp;&nbsp;<A href="http://business.china.com.cn/" target=_blank>中国网中国商务</A></a></li>
+                        <li><a href="http://www.china.com.cn/txt/2016-06/24/content_38736364.htm"><A href="http://union.china.com.cn/fashion/" target=_blank>时尚中国 美好生活</A>&nbsp;&nbsp;<A href="http://union.china.com.cn/zhuanti/node_1004497.html" target=_blank>美丽合肥 创新之都</A></a></li>
+                            </ul>
+
+            </div>
+        </div>
+
+        <div class="tCenter w1000 wauto hauto mb30"><iframe id="gdt" name="gdt" src="http://www.china.com.cn/node_7224772.htm" width="963" height="60" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+
+        <div class="Info" style="background:url(http://images.china.cn/images1/ch/2020first/20200421-01.jpg) no-repeat top center">
+            <div style="padding:0 0 20px 50px; width:950px;">
+                <a href="http://www.china.com.cn/aboutus/node_7219999.htm"><img src="http://images.china.cn/images1/ch/2016first/20160627-003.gif" width="143" height="30" border="0" /></a>
+            </div>
+
+            <div class="AboutUs">
+                
+                          中国网是国务院新闻办公室领导，中国外文出版发行事业局管理的国家重点新闻网站。本网通过10个语种11个文版，24小时对外发布信息，是中国进行国际传播、信息交流的重要窗口。
+
+            </div>
+
+            <div class="Map">
+                
+                    <p>      凡本网注明“来源：中国网”的所有作品，均为中国互联网新闻中心合法拥有版权或有权使用的作品，未经本网授权不得转载、摘编或利用其它方式使用上述作品。</p>
+
+            </div>
+
+            <div class="Contact">
+                
+                    <p>电话：0086-10-88828000</p><p>传真：0086-10-88828231</p><p>媒体合作：0086-10-88828175</p><p>品牌活动合作：0086-10-88828063</p><p>广告合作：0086-10-88825631</p>
+
+            </div>
+
+            <div class="Copyright">&#160;</div>
+        </div>
+
+        <div class="footer wauto hauto" style="width:1020px; border-top: none;">
+
+
+            <p class="mb10"><a href="http://www.china.com.cn/aboutus/2020-11/09/content_76891246.htm">中国互联网视听节目服务自律公约</a>&#160;|&#160;<a href="http://www.cyberpolice.cn/">网络110报警服务</a>&#160;|&#160;<a href="http://www.12321.cn/">12321垃圾信息举报中心</a>&#160;|&#160;<a href="http://www.china.com.cn/aboutus/2020-11/16/content_76913922.htm">友情链接</a></p>
+
+            <p>版权所有 中国互联网新闻中心 电话: 86-10-88828000 <a href="http://www.china.com.cn/aboutus/2020-06/11/content_76151953.htm">互联网新闻信息服务许可证10120170004号</a></p>
+
+            <p class="mb10"><a href="http://www.china.com.cn/aboutus/2020-11/09/content_76891258.htm" target="_blank">信息网络传播视听节目许可证:0105123</a>&#160;
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802027341" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://images.china.cn/images1/ch/2018first/20180821-01.png" />京公网安备 11010802027341号</a> <a href="https://beian.miit.gov.cn">京ICP证 040089号-1</a>
+            </p>
+
+            <p class="clearB"><a href="http://www.china.com.cn/aboutus/node_7219999.htm">关于我们</a>&#160;|&#160;<a href="http://union.china.com.cn/node_1002559.html">外宣服务与广告服务</a>&#160;|&#160;
+                违法和不良信息举报电话：010-88828271 <a href="http://www.china.com.cn/aboutus/2020-11/09/content_76891272.htm">举报流程</a> </p>
+
+            <div class="xxjb" style="width:231px;">
+                <a href="http://www.12377.cn/"><img src="http://images.china.cn/images1/ch/2015first/151228-001.jpg" width="231" height="40" /></a>
+            </div>
+
+            <div class="cxwz">
+                <a href="https://search.szfw.org/cert/l/CX20140804008615008710" target="_blank"><img src="http://images.china.cn/images1/ch/cxwz.gif" /></a>
+            </div>
+
+            <div class="kxwz">
+                <!--可信网站图片LOGO安装开始-->
+                <script type="text/javascript" src="http://kxlogo.knet.cn/seallogo.dll?sn=a12052111010021752307708&amp;size=0">
+                </script>
+
+                <!--可信网站图片LOGO安装结束-->
+            </div>
+        </div>
+
+        <div class="rightIfrAdd" style="height:430px;">
+            <div class="sjewm"><img src="http://images.china.cn/images1/ch/2016first/20161103-001.jpg" width="100" height="100" /><br /> 中国网客户端
+            </div>
+
+            <div><iframe id="rightIfrAdd" src="http://www.china.com.cn/node_8019387.html" width="120" height="170" scrolling="no" marginheight="0" frameborder="0"></iframe></div>
+            <div style="text-align:center; padding-top:10px;">
+                <a href="http://www.china.com.cn/node_8013619.html"><img src="http://images.china.cn/images1/ch/2019first/20200106-01.jpg" width="85" height="85" border="0" /></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://www.china.com.cn/2016firsttop/js/topjs3.js">
+    </script>
+
+    <script language="javascript" src="http://images.china.cn/images1/en/en-business/dropdown.js" type="text/javascript">
+    </script>
+
+    <script type="text/javascript">
+        $('.cmp span').fadeTo(0, 0.3).on('mouseenter', function () {
+            $(this).fadeTo(0, 0.7);
+        }).on('mouseleave', function () {
+            $(this).fadeTo(0, 0.3);
+        });
+
+        var cmSum = $('.commend1 li').size() + 1,
+            cmCur = 0,
+            cmAuto = null;
+
+        $('.commend1 ul').css('width', 880 * cmSum).append($('.commend1 li').first().clone());
+
+        $('.cmr').on('click', function () {
+            cmCur += 1;
+            cmRoll();
+        });
+
+        $('.cml').on('click', function () {
+            cmCur -= cmCur > 0 ? 1 : 0;
+            cmRoll();
+        });
+
+        function cmRoll() {
+            $('.commend1 ul').stop(true, true).animate({
+                'margin-left': -880 * cmCur
+            }, function () {
+                if (cmCur >= cmSum - 1) {
+                    $('.commend1 ul').css('margin-left', '0px');
+                    cmCur = 0;
+                }
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+        (function ($) {
+
+            var WCCur = 0, WCSum = $('.WC .pic').size(), wid;
+
+            // Function
+            function changePic1() {
+                $('.WC .pic').hide();
+                $('.WC .pic').eq(WCCur).fadeTo(200, 1);
+                $('.WCMenu p').removeClass('cur');
+                $('.WCMenu p').eq(WCCur).addClass('cur');
+            }
+
+            function autoPic1() {
+                WCCur += 1;
+                WCCur %= WCSum;
+                changePic1();
+            }
+
+            // Action
+            $('.WCpic p').fadeTo(0, 0.7);
+            $('.left').fadeTo(0, 0.7);
+            $('.right').fadeTo(0, 0.7);
+            $('.WC .pic').each(function () {
+                $('.WCMenu').append('<p>&nbsp;<\/p>');
+            });
+            $('.WCMenu p').first().addClass('cur');
+            $('.WC .pic').first().show();
+
+            $('.right').on('click', function () {
+                WCCur += 1;
+                WCCur %= WCSum;
+                changePic1();
+            });
+            $('.left').on('click', function () {
+                WCCur -= 1;
+                WCCur += WCSum;
+                WCCur %= WCSum;
+                changePic1();
+            });
+            $('.WCMenu p').on('click', function () {
+                WCCur = $(this).index();
+                changePic1();
+            });
+            wid = window.setInterval(autoPic1, 5000);
+            $('.WC').on('mouseenter', function () {
+                window.clearInterval(wid);
+            }).on('mouseleave', function () {
+                wid = window.setInterval(autoPic1, 5000);
+            });
+        })(jQuery);
+    </script>
+    <div style="display:none">
+        <script type="text/javascript">
+            document.write(unescape("%3Cscript src='http://cl2.webterren.com/webdig.js?z=12' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+
+
+
+        <script type="text/javascript">
+            wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,1941 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5P2JCN');</script>
+	<!-- End Google Tag Manager -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="shortcut icon" href="https://www.domaintools.com/favicon.ico" type="image/x-icon">	
+	<link rel="icon" href="https://www.domaintools.com/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://www.domaintools.com/assets/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://www.domaintools.com/assets/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://www.domaintools.com/assets/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.domaintools.com/assets/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://www.domaintools.com/assets/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.domaintools.com/assets/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://www.domaintools.com/assets/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.domaintools.com/assets/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://www.domaintools.com/assets/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://www.domaintools.com/assets/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://www.domaintools.com/assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://www.domaintools.com/assets/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.domaintools.com/assets/icons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://www.domaintools.com/assets/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<title>DomainTools | Cyber Threat Intelligence | Threat Investigation Platform</title>
+	
+	
+	
+	<meta name="description" content="Turn domain and DNS data into threat intelligence with DomainTools. Connect network indicators to investigate, profile and map attacker infrastructure."/>
+	
+	<link rel="canonical" href="https://www.domaintools.com" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	
+	<meta property="og:title" content="DomainTools | Cyber Threat Intelligence | Threat Investigation Platform" />
+	
+	
+	<meta property="og:description" content="Turn domain and DNS data into threat intelligence with DomainTools. Connect network indicators to investigate, profile and map attacker infrastructure." />
+	
+	<meta property="og:url" content="https://www.domaintools.com" />
+	<meta property="og:site_name" content="DomainTools" />
+	
+	<meta property="og:image" content="https://www.domaintools.com/assets/images/domaintools-featured-image.jpg" />
+	
+	
+	<meta property="og:image:secure_url" content="https://www.domaintools.com/assets/images/domaintools-featured-image.jpg" />
+	
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+	<meta name="twitter:description" content="Turn domain and DNS data into threat intelligence with DomainTools. Connect network indicators to investigate, profile and map attacker infrastructure." />
+	
+	
+	<meta name="twitter:title" content="DomainTools | Cyber Threat Intelligence | Threat Investigation Platform" />
+	
+	<meta name="twitter:site" content="@DomainTools" />
+	
+	<meta name="twitter:image" content="https://www.domaintools.com/assets/images/domaintools-featured-image.jpg" />
+	
+	<meta name="twitter:creator" content="@DomainTools" />
+	<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.domaintools.com\/","name":"DomainTools","alternateName":"DomainTools","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.domaintools.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+	<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.domaintools.com\/","sameAs":["https:\/\/www.facebook.com\/domaintoolsllc\/","https:\/\/www.linkedin.com\/company\/domaintools","https:\/\/twitter.com\/domaintools"],"@id":"#organization","name":"DomainTools","logo":"https:\/\/www.domaintools.com\/assets\/images\/dt_gear_logo_g.png"}</script>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="dns-prefetch" href="//player.vimeo.com" />
+	<link rel="dns-prefetch" href="//app-abd.marketo.com" />
+	<link rel="stylesheet" href="/assets/styles/styles.css?v=1.1.6">
+	<link rel="stylesheet" href="/assets/styles/styles-navigation.css?v=1.1">
+	<link rel="stylesheet" href="/assets/styles/styles-footer.css?v=1.2">
+	<link rel="stylesheet" href="/assets/styles/styles-widgets.css?v=1.4">
+	<link rel="stylesheet" href="/assets/styles/styles-homepage.css?v=1.1">
+	<meta name="google-site-verification" content="7VnyMZuPi9Rm0XuzoOnXS_TuAJ0oVeB7keYG35j2gDI" />
+	<meta name="google-site-verification" content="c3nGp1cI0hISCNSwnQdCH2Sg2vl8GYf3Xjf6c_xCQEo" />
+	<meta name="ahrefs-site-verification" content="5c7471dd9e77d26ba3357778643d87032b6122b9d0caa13f465d04cc0aba67ce">	
+	<link rel="alternate" type="application/rss+xml" title="DomainTools" href="https://www.domaintools.com/resources/blog/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Breaking Badness | Podcast" href="https://www.domaintools.com/resources/podcasts/feed/" />
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P2JCN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="navbar navbar-inverse navbar-fixed-top first-navbar" id="secondary-nav" aria-label="Secondary Navigation">
+  	<div class="container">
+    	<ul id="secondary-nav-menu" role="menu" aria-labelledby="secondary-nav" class="nav navbar-nav navbar-right">
+      		<li role="none" class="active" style="margin-bottom: 0px;">
+        		<a role="menuitem" class="home" href="/">Home</a>
+      		</li>
+      		<li role="none" style="margin-bottom: 0px;">
+        		<a role="menuitem" class="secondary-nav" href="//research.domaintools.com">Research</a>
+      		</li>
+			<li role="none" class="vertical-rule" style="margin-bottom: 0px;">
+        		<a role="menuitem" class="secondary-nav" href="/support">Support</a>
+      		</li>
+    	</ul>
+  	</div>
+</nav>
+
+<nav class="navbar navbar-default navbar-static-top second-navbar shadow-bottom" role="navigation" id="main-nav" aria-label="Main Navigation">
+  	<div class="container">
+    	<div class="navbar-header">
+      		<button id="toggle-navigation" type="button" role="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse-toggle" aria-haspopup="true" aria-controls="main-navbar-collapse-toggle" aria-label="Toggle Navigation">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="/">
+        		<img alt="DomainTools Logo" src="/assets/icons/domaintools-gear-icon.svg"> <span class="logotype">DOMAIN<span class="logo">TOOLS</span><sup class="registered-trademark">&reg;</sup></span>
+      		</a>
+    	</div>
+		
+		<!-- Navbar -->
+		<div id="main-navbar-collapse-toggle" role="menu" class="collapse navbar-collapse" aria-labelledby="main-nav" style="height: 0px !important;">
+			<div class="navbar-mobile-container">
+				<ul class="nav navbar-nav">
+
+					<!-- Products -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="products-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="products" aria-expanded="false">Products <span class="fa fa-caret-down"></span></a>
+						<div id="products" class="dropdown-menu main" role="menu" aria-labelledby="products-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<span class="nav-label">Enterprise Security Products</span>
+													<ul role="none" class="item" >
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/products/iris" title="Iris Investigation Platform">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-iris.svg" alt="Iris Investigation Platform Icon">
+																	<span class="item-header">Iris Investigation Platform</span>
+																	<span class="item-preview">Identify threats, map adversary infrastructure, and streamline investigations.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/products/api-integration" title="APIs">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-api-integration.svg" alt="APIs Icon">
+																	<span class="item-header">APIs</span>
+																	<span class="item-preview">Easily integrate DomainTools data into existing workflows and solutions.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/products/phisheye" title="PhishEye">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-phishye.svg" alt="PhishEye Icon">
+																	<span class="item-header">PhishEye</span>
+																	<span class="item-preview">Monitor the Internet for suspicious domain names and new registrations.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/products/risk-feeds" title="Risk Feeds">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-risk-score.svg" alt="Risk Feeds Icon">
+																	<span class="item-header">Risk Feeds</span>
+																	<span class="item-preview">Immediately predict the risk level and likely threats associated with a domain.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/products/monitoring" title="Monitoring Products">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-monitoring-products.svg" alt="Monitoring Products Icon">
+																	<span class="item-header">Monitoring Products</span>
+																	<span class="item-preview">Track information and receive alerts as soon as changes are detected.</span>
+																</div>
+															</a>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured item-spacer">
+											
+											<div class="request-a-demo">
+	<span class="nav-featured-header">Request A Demo</span>
+	<p class="nav-featured-text">Discover our products and see what DomainTools can do for your organization.</p>
+	<a class="btn green big main-cta shadow" role="button" href="/demo?utm_source=website&utm_medium=navbar&utm_campaign=demo">
+		<span class="button-cta">Get Started</span>
+		<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+	</a>
+</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Products -->
+
+					<!-- Integrations -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="integrations-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="integrations" aria-expanded="false">Integrations <span class="fa fa-caret-down"></span></a>
+						<div id="integrations" class="dropdown-menu main" role="menu"  aria-labelledby="integrations-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-6 col-sm-6 mixed-column">
+														<span class="nav-label">Context At Scale</span>
+														<ul role="none" class="item">
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations" title="All Integrations">
+																	<div class="col-md-12 item-spacer">
+																		<img class="item-icon" src="/assets/icons/integrations.svg" alt="All Integrations Icon">
+																		<span class="item-header">All Integrations</span>
+																		<span class="item-preview no-wrap">Leverage DomainTools data through partnerships with leading security vendors.</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/siem" title="SIEM">
+																	<div class="col-md-12 item-spacer">
+																		<img class="item-icon" src="/assets/icons/enrich-icon.svg" alt="SIEM Icon">
+																		<span class="item-header">SIEM</span>
+																		<span class="item-preview no-wrap">Enrich your SIEM and SOC capabilities with the DomainTools API integration.</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/soar" title="SOAR">
+																	<div class="col-md-12 item-spacer">
+																		<img class="item-icon" src="/assets/icons/orchestrate-cion.svg" alt="SOAR Icon">
+																		<span class="item-header">SOAR</span>
+																		<span class="item-preview no-wrap">Use DomainTools data to create repeatable workflows and extensible integrations.</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/threat-intelligence" title="Threat Intelligence">
+																	<div class="col-md-12 item-spacer">
+																		<img class="item-icon" src="/assets/icons/investigate-icon.svg" alt="Threat Intelligence Icon">
+																		<span class="item-header">Threat Intelligence</span>
+																		<span class="item-preview no-wrap">Lead enhanced investigations within your preferred threat intelligence platform.</span>
+																	</div>
+																</a>
+															</li>
+															
+														</ul>
+													</div>
+													<div class="col-md-6 col-sm-6 mixed-column-mobile">
+														<span class="nav-label"><span class="featured-integrations">Featured&nbsp;</span>Integrations</span>
+														<ul role="none" class="item">
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/anomali" title="Anomali">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Anomali</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/cortex-xsoar" title="Cortex XSOAR">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Cortex XSOAR</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/crowdstrike" title="CrowdStrike">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">CrowdStrike</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/elastic" title="Elastic">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Elastic</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/ibm-qradar" title="IBM QRadar">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">IBM QRadar</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/ibm-resilient" title="IBM Resilient">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">IBM Resilient</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/maltego" title="Maltego">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Maltego</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/misp" title="MISP">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">MISP</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/splunk" title="Splunk">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Splunk</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/splunk-phantom" title="Splunk Phantom">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">Splunk Phantom</span>
+																	</div>
+																</a>
+															</li>
+															
+															<li role="none">
+																<a role="menuitem" href="//www.domaintools.com/integrations/thehive-and-cortex" title="TheHive And Cortex">
+																	<div class="col-md-12">
+																		<span class="item-header header-spacer">TheHive And Cortex</span>
+																	</div>
+																</a>
+															</li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured">
+
+											<span class="nav-label no-margin">Integration Spotlight</span>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 item-spacer mobile-spacing">
+			
+			<a href="//www.domaintools.com/integrations/splunk" title="Integration Spotlight: Splunk">
+				<div id="integrations-listing--item---link----nav" class="integrations-listing--item---nav">
+					<div class="col-md-5 col-sm-12 col-xs-5 integrations-listing--item---image-container----nav">
+						<img class="img-responsive" src="/assets/images/splunk-thumbnail-logo.jpg" alt="Splunk Logo"/>
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-7 integrations-listing--item--description---nav">
+						<div class="item-header" data-truncate="40">Splunk Integration</div>
+						<span class="integrations-listing--item---cta----nav">Learn More&nbsp;&gt;</span>
+					</div>
+				</div>
+			</a>
+			
+			<a href="//www.domaintools.com/integrations/maltego" title="Integration Spotlight: Maltego">
+				<div id="integrations-listing--item---link----nav" class="integrations-listing--item---nav">
+					<div class="col-md-5 col-sm-12 col-xs-5 integrations-listing--item---image-container----nav">
+						<img class="img-responsive" src="/assets/images/maltego-thumbnail-logo.svg" alt="Maltego Logo"/>
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-7 integrations-listing--item--description---nav">
+						<div class="item-header" data-truncate="40">Maltego Integration</div>
+						<span class="integrations-listing--item---cta----nav">Learn More&nbsp;&gt;</span>
+					</div>
+				</div>
+			</a>
+			
+		</div>
+	</div>
+</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Integrations -->
+
+					<!-- Solutions -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="solutions-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="solutions" aria-expanded="false">Solutions <span class="fa fa-caret-down"></span></a>
+						<div id="solutions" class="dropdown-menu main" role="menu"  aria-labelledby="solutions-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<span class="nav-label">Enterprise Security Capabilities</span>
+													<ul role="none" class="item">
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/threat-intelligence" title="Threat Intel">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-threat-intelligence.svg" alt="Threat Intel Icon">
+																	<span class="item-header">Threat Intel</span>
+																	<span class="item-preview">Gain better visibility and risk assessment with our domain and DNS data.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/forensics-incident-response" title="Forensics &amp; Incident Response">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-forensics-incident-response.svg" alt="Forensics &amp; Incident Response Icon">
+																	<span class="item-header">Forensics &amp; Incident Response</span>
+																	<span class="item-preview">Get real answers and powerful insights for attack response and prevention.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/threat-hunting" title="Threat Hunting">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-threat-hunting.svg" alt="Threat Hunting Icon">
+																	<span class="item-header">Threat Hunting</span>
+																	<span class="item-preview">Improve your threat detection and response time with our threat hunting tools.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/phishing-detection" title="Phishing Detection">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-phishing.svg" alt="Phishing Detection Icon">
+																	<span class="item-header">Phishing Detection</span>
+																	<span class="item-preview">Use proactive monitoring solutions to detect and disrupt phishing activity.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/brand-protection" title="Brand Protection">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-brand-protection.svg" alt="Brand Protection Icon">
+																	<span class="item-header">Brand Protection</span>
+																	<span class="item-preview">Defend your reputation and online assets from cybercriminals.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/solutions/online-fraud-investigation" title="Online Fraud Investigation">
+																<div class="col-md-6 item-spacer">
+																	<img class="item-icon" src="/assets/icons/icon-reputation-scoring.svg" alt="Online Fraud Investigation Icon">
+																	<span class="item-header">Online Fraud Investigation</span>
+																	<span class="item-preview">Fight against cybercrime with our database of domain/IP profile information.</span>
+																</div>
+															</a>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured">
+
+											<span class="nav-label">Featured Topic</span>
+<div class="container-fluid">
+	<div class="row item-spacer">
+		<div class="col-md-12 mobile-spacing">
+						<a href="//www.domaintools.com/resources/white-papers/sans-2021-top-new-attacks-and-threat-report?utm_source=website&utm_medium=navbar&utm_campaign=featured%20solution" title="SANS 2021 Top New Attacks and Threat Report">
+				<div id="solutions-listing--item---link----nav" class="solutions-listing--item---nav">
+					<div class="col-md-5 col-sm-12 col-xs-5 solutions-listing--item---image-container----nav">
+						<img class="img-responsive" src="/assets/images/2021-SANS_Top_New_Attacks_and_Threat_Report_preview.png" alt="SANS 2021 Top New Attacks and Threat Report Thumbnail"/>
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-7 solutions-listing--item--description---nav">
+						<span class="badge--nav">
+    White Paper
+						</span>
+						<div class="item-header" data-truncate="60">SANS 2021 Top New Attacks and Threat Report</div>
+						
+						<span class="solutions-listing--item---cta----nav">Download Now&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+			
+		</div>
+	</div>
+</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Solutions -->
+
+					<!-- Partners -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="partners-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="partners" aria-expanded="false">Partners <span class="fa fa-caret-down"></span></a>
+						<div id="partners" class="dropdown-menu main" role="menu"  aria-labelledby="partners-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<span class="nav-label">Partner Ecosystem</span>
+													<ul role="none" class="item">
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/partners/partner-program" title="Channel Partner Program">
+																<div class="col-md-12 item-spacer">
+																	<img class="item-icon" src="/assets/icons/partner-program-icon.svg" alt="Channel Partner Program Icon">
+																	<span class="item-header">Channel Partner Program</span>
+																	<span class="item-preview no-wrap">Join us in building profitable business and supporting customer success.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/partners/become-a-technology-partner" title="Technology Partners">
+																<div class="col-md-12 item-spacer">
+																	<img class="item-icon" src="/assets/icons/integrations.svg" alt="Technology Partners Icon">
+																	<span class="item-header">Technology Partners</span>
+																	<span class="item-preview no-wrap">Turn threat data into threat intelligence with a DomainTools integration.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/partners/mssp" title="MSSP Partners">
+																<div class="col-md-12 item-spacer">
+																	<img class="item-icon" src="/assets/icons/mssp-icon.svg" alt="MSSP Partners Icon">
+																	<span class="item-header">MSSP Partners</span>
+																	<span class="item-preview no-wrap">Provide customers with faster results and a proactive security posture.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/partners/oem" title="OEM Partners">
+																<div class="col-md-12 item-spacer">
+																	<img class="item-icon" src="/assets/icons/oem-icon.svg" alt="OEM Partners Icon">
+																	<span class="item-header">OEM Partners</span>
+																	<span class="item-preview no-wrap">Differentiate your products with our domain and DNS infrastructure intelligence.</span>
+																</div>
+															</a>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured">
+
+											<span class="nav-label no-margin">Partner Spotlight</span>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<a href="/content/Bandura_Joint_Datasheet.pdf" title="Partner Spotlight: Bandura Cyber" target="blank">
+				<div id="integrations-listing--item---link----nav" class="integrations-listing--item---nav">
+					<div class="col-md-5 col-sm-12 col-xs-5 integrations-listing--item---image-container----nav">
+						<img class="img-responsive" src="/assets/images/bandura-highlight.jpg" alt="Bandura Cyber Logo"/>
+					</div>
+					<div class="col-md-7 col-sm-12 col-xs-7 integrations-listing--item--description---nav">
+						<div class="item-header" data-truncate="40">Bandura Cyber and DomainTools Join Forces</div>
+						<span class="integrations-listing--item---cta----nav">Learn More&nbsp;&gt;</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="featured-nav-items item-spacer spacer-top" style="margin-top: 5px;">
+	<a class="btn blue big main-cta shadow" role="button" title="DomainTools Partner Portal Login" href="https://domaintools.knack.com/partners">
+		<span class="button-cta">PARTNER PORTAL LOGIN</span>
+		<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+	</a>
+</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Partners -->
+
+					<!-- Resources -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="resources-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="resources" aria-expanded="false">Resources <span class="fa fa-caret-down"></span></a>
+						<div id="resources" class="dropdown-menu main" role="menu"  aria-labelledby="resources-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<span class="nav-label">Investigate Our Resources</span>
+													<ul role="none" class="item">
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/webinars" title="Webinars">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/webinars-icon.svg" alt="Webinars Icon">
+																	<span class="item-header">Webinars</span>
+																	<span class="item-preview">Register for expert-led webinars, panel discussions, and on-demand recordings.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/blog" title="Blog">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/blog-icon.svg" alt="Blog Icon">
+																	<span class="item-header">Blog</span>
+																	<span class="item-preview">Explore DomainTools research, infosecurity insights, company updates, and more.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/white-papers" title="White Papers">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/white-paper-icon.svg" alt="White Papers Icon">
+																	<span class="item-header">White Papers</span>
+																	<span class="item-preview">Access cybersecurity industry reports, market research, and strategy papers.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/user-guides" title="User Guides">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/user-guide-icon.svg" alt="User Guides Icon">
+																	<span class="item-header">User Guides</span>
+																	<span class="item-preview">Get answers and guidance on how to use DomainTools products.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/survey-reports" title="Survey Reports">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/survey-reports-icon.svg" alt="Survey Reports Icon">
+																	<span class="item-header">Survey Reports</span>
+																	<span class="item-preview">Learn about cybersecurity trends and challenges from industry surveys.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/domaintools-reports" title="DomainTools Reports">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/domiantools-report-icon.svg" alt="DomainTools Reports Icon">
+																	<span class="item-header">DomainTools Reports</span>
+																	<span class="item-preview">Examine trends in concentrations of badness in domain and DNS datasets.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/case-studies" title="Case Studies">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/case-study-icon.svg" alt="Case Studies Icon">
+																	<span class="item-header">Case Studies</span>
+																	<span class="item-preview">See how real customers use and benefit from DomainTools products and solutions.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/api-documentation" title="API Documentation">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/api-documentation-icon.svg" alt="API Documentation Icon">
+																	<span class="item-header">API Documentation</span>
+																	<span class="item-preview">Obtain all the resources and information you need for the DomainTools API.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/videos" title="Videos">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/videos-icon.svg" alt="Videos Icon">
+																	<span class="item-header">Videos</span>
+																	<span class="item-preview">Watch demonstrations and use case overviews of DomainTools products.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/resources/podcasts" title="Podcasts">
+																<div class="col-md-6 col-sm-6 item-spacer two-column-wrap">
+																	<img class="item-icon" src="/assets/icons/breaking-badness-nav-icon.svg" alt="Podcasts Icon">
+																	<span class="item-header">Podcasts</span>
+																	<span class="item-preview">Listen to security news stories, interviews, and educational discussions.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a  role="menuitem" href="/resources" title="View All Resources">
+																<div class="col-md-6 col-sm-6 item-spacer">
+																	<span class="item-header">View All Resources&nbsp;&gt;</span>
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured">
+
+											<span class="nav-label no-margin">Featured Resources</span>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+						<a href="//www.domaintools.com/resources/webinars/sans-2021-top-new-attacks-and-threat-report-panel-discussion?utm_source=website&utm_medium=navbar&utm_campaign=featured%20resource" title="SANS 2021 Top New Attacks and Threat Report: Panel Discussion">
+				<div id="resources-listing--item---link----nav" class="resources-listing--item---nav">
+					<div class="col-md-4 col-sm-12 col-xs-4 resources-listing--item---image-container----nav" style="background-image:url('/assets/resource_preview/sans-2021-top-new-attacks-threat-report-webinar-preview.jpg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-8 resources-listing--item--description---nav">
+						<span class="badge--nav">
+    Webinar
+						</span>
+						<div class="resources-listing--item---title----nav" data-truncate="40">SANS 2021 Top New Attacks and Threat Report: Panel Discussion</div>
+						
+						<span class="resources-listing--item---cta----nav">Watch Now&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+						<a href="//www.domaintools.com/resources/blog/announcing-the-domaintools-domain-discovery-feed?utm_source=website&utm_medium=navbar&utm_campaign=featured%20resource" title="Announcing the DomainTools Domain Discovery Feed">
+				<div id="resources-listing--item---link----nav" class="resources-listing--item---nav">
+					<div class="col-md-4 col-sm-12 col-xs-4 resources-listing--item---image-container----nav" style="background-image:url('/assets/resource_preview/announcing-the-domaintools-domain-discovery-feed-preview.jpg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-8 resources-listing--item--description---nav">
+						<span class="badge--nav">
+    Product Updates
+						</span>
+						<div class="resources-listing--item---title----nav" data-truncate="40">Announcing the DomainTools Domain Discovery Feed</div>
+						
+						<span class="resources-listing--item---cta----nav">Read More&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+						<a href="//www.domaintools.com/resources/blog/finding-anchordns-c2s-with-iris-investigate?utm_source=website&utm_medium=navbar&utm_campaign=featured%20resource" title="Finding AnchorDNS C2s With Iris Investigate">
+				<div id="resources-listing--item---link----nav" class="resources-listing--item---nav">
+					<div class="col-md-4 col-sm-12 col-xs-4 resources-listing--item---image-container----nav" style="background-image:url('/assets/resource_preview/finding-anchordns-c2s-with-iris-investigate-preview.jpg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-8 resources-listing--item--description---nav">
+						<span class="badge--nav">
+    DomainTools Research
+						</span>
+						<div class="resources-listing--item---title----nav" data-truncate="40">Finding AnchorDNS C2s With Iris Investigate</div>
+						
+						<span class="resources-listing--item---cta----nav">Read More&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+			
+		</div>
+	</div>
+</div>
+<div class="featured-nav-items item-spacer spacer-top" style="margin-top: 5px;">
+	<a class="btn blue big main-cta shadow" role="button" title="Support and Learning" href="/support">
+		<span class="button-cta">Support &amp; Learning</span>
+		<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+	</a>
+</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Resources -->
+
+					<!-- Company -->
+					<li class="dropdown" style="margin-bottom: 0px;">
+						<a href="#" id="company-menu" class="dropdown-toggle nav-spacer" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="company" aria-expanded="false">Company <span class="fa fa-caret-down"></span></a>
+						 <div id="company" class="dropdown-menu main" role="menu"  aria-labelledby="company-menu">
+							<div class="container-fluid">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-8 col-sm-8 nav-main">
+											<div class="container-fluid">
+												<div class="row">
+													<span class="nav-label">Discover Our Company</span>
+													<ul role="none" class="item">
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company" title="About Us">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">About Us</span>
+																	<span class="item-preview no-spacer no-wrap">Learn about the DomainTools mission, history, and team culture.</span>
+																</div>
+															</a>
+														</li>
+														
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/join-our-team" title="Join Our Team">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Join Our Team</span>
+																	<span class="item-preview no-spacer">View our open positions and see what it’s like to work at DomainTools.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/leadership-team" title="Leadership">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Leadership</span>
+																	<span class="item-preview no-spacer">Meet our exceptional executive team of business leaders and industry experts.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/board-of-directors" title="Board of Directors">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Board of Directors</span>
+																	<span class="item-preview no-spacer">Meet the group of dedicated leaders who oversee our business.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/affiliates" title="Affiliates">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Affiliates</span>
+																	<span class="item-preview no-spacer">Get to know the industry organizations we’re proud to be members of.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/press" title="Press Room">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Press Room</span>
+																	<span class="item-preview no-spacer">See DomainTools in the news and read our latest announcements.</span>
+																</div>
+															</a>
+														</li>
+														
+														<li role="none">
+															<a role="menuitem" href="//www.domaintools.com/company/corporate-responsibility" title="Corporate Responsibility">
+																<div class="col-md-6 item-spacer">
+																	<span class="item-header">Corporate Responsibility</span>
+																	<span class="item-preview no-spacer">See how DomainTools gives back and supports the community.</span>
+																</div>
+															</a>
+														</li>
+														
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4 nav-featured">
+
+											<span class="nav-label">In The News</span>
+<div class="container-fluid in-the-news">
+	
+	<div class="row company-listing--item---spacer----nav">
+		<div class="col-md-12 mobile-spacing">
+			<a href="https://www.techradar.com/news/newly-registered-domain-name-tracking-made-easier-with-domaintools-new-feed" title="Newly-registered domain name tracking made easier with DomainTools&#8217; new feed" target="blank">
+				<div id="company-listing--item---link----nav">
+					<div class="col-md-12 company-listing--item---publication----nav">
+						<span class="badge--nav">TechRadar&nbsp;&nbsp;|&nbsp;&nbsp;August 06, 2021</span>
+					</div>
+					<div class="col-md-12 company-listing--item--link---nav no-spacer">
+						<span class="in-the-news-title" data-truncate="60">Newly-registered domain name tracking made easier with DomainTools&#8217; new feed</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="row company-listing--item---spacer----nav">
+		<div class="col-md-12 mobile-spacing">
+			<a href="https://www.crn.com/slide-shows/security/the-20-hottest-cybersecurity-products-at-black-hat-2021/12" title="The 20 Hottest Cybersecurity Products At Black Hat 2021" target="blank">
+				<div id="company-listing--item---link----nav">
+					<div class="col-md-12 company-listing--item---publication----nav">
+						<span class="badge--nav">CRN&nbsp;&nbsp;|&nbsp;&nbsp;August 04, 2021</span>
+					</div>
+					<div class="col-md-12 company-listing--item--link---nav no-spacer">
+						<span class="in-the-news-title" data-truncate="60">The 20 Hottest Cybersecurity Products At Black Hat 2021</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="row company-listing--item---spacer----nav">
+		<div class="col-md-12 mobile-spacing">
+			<a href="https://www.techradar.com/news/warning-these-tax-credit-scam-websites-could-steal-your-identity" title="Warning - these tax credit scam websites could steal your identity" target="blank">
+				<div id="company-listing--item---link----nav">
+					<div class="col-md-12 company-listing--item---publication----nav">
+						<span class="badge--nav">TechRadar&nbsp;&nbsp;|&nbsp;&nbsp;July 30, 2021</span>
+					</div>
+					<div class="col-md-12 company-listing--item--link---nav no-spacer">
+						<span class="in-the-news-title" data-truncate="60">Warning - these tax credit scam websites could steal your identity</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	
+</div>
+<div class="featured-nav-items item-spacer spacer-top" style="margin-top: 5px;">
+	<a class="btn blue big main-cta shadow" role="button" title="DomainTools Career Opportunities" href="/company/join-our-team#open-positions">
+		<span class="button-cta">CAREER OPPORTUNITIES</span>
+		<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+	</a>
+</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- End Company -->
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="cta hidden-sm" style="margin-bottom: 0px;">
+						<a role="menuitem" href="/contact?utm_source=website&utm_medium=navbar&utm_campaign=contact">Contact</a>
+					</li>
+					<li class="login hidden-sm" style="margin-bottom: 0px;">
+						<a href="https://secure.domaintools.com/log-in/?r=http%3A/whois.domaintools.com">Login</a>
+					</li>
+					<li class="login visible-sm-block">
+						<a href="https://secure.domaintools.com/log-in/?r=http%3A/whois.domaintools.com"><i class="fa fa-user fa-lg" aria-label="Login"></i></a>
+					</li>
+					<li id="searchDropdown" class="dropdown search" style="margin-bottom: 0px;">
+						<a href="#" id="search-menu" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-controls="search" aria-expanded="false">
+							<i class="fa fa-search fa-lg" aria-label="Search"></i>
+						</a>
+						<ul id="search" role="search" class="dropdown-menu" aria-labelledby="search-menu">
+							<li role="none">
+								<form method="post" action="//www.domaintools.com/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="params" value="eyJyZXF1aXJlZCI6ImtleXdvcmRzIn0" />
+<input type="hidden" name="ACT" value="12" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="e58988ebb7b25a5421ae866d9a08ad7ad7374442" />
+</div>
+
+								<div class="input-group">
+									<input type="text" name="keywords" id="keywords" value="" class="form-control" placeholder="Site search...">
+									<span class="input-group-btn">
+										<button class="btn btn-default nav-search-button" type="submit" value="submit">Go!</button>
+									</span> 
+								</div>
+								</form>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+    	</div>
+		<!-- End Navbar -->
+  	</div>
+</nav>
+<section class="Enterprise" style="padding-bottom: 0px;">
+  <section class="Enterprise-overview">
+    <section class="enterprise-hero widget-header">
+	<div id="hero">
+		<div class="hero-content-container">
+			<div class="hero-content container">
+				<div class="col-md-12">
+					<h1 class="white">Turn Threat Data Into Threat Intelligence</h1>
+    				<p class="featured white">Connect indicators from your network with nearly every active domain and IP address on the Internet. Learn how this data can inform risk assessments, help profile attackers, guide online fraud investigations, and map cyber activity to attacker infrastructure.</p>
+    				<a role="button" class="btn green big shadow-light main-cta" href="/demo">
+						<span class="button-cta">Request A Demo</span>
+						<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+					</a>
+				</div>
+			</div>
+			
+			<!-- New Enterprise Featured Widget -->
+			<script type="text/javascript">
+$('#enterprise-featured-content').on('slide.bs.carousel', function (e) {
+	/*
+	CC 2.0 License Iatek LLC 2018
+	Attribution required
+	*/
+	var $e = $(e.relatedTarget);
+	var idx = $e.index();
+	console.log("IDX :  " + idx);
+	var itemsPerSlide = 8;
+	var totalItems = $('.item').length;
+	if (idx >= totalItems-(itemsPerSlide-1)) {
+		var it = itemsPerSlide - (totalItems - idx);
+		for (var i=0; i<it; i++) {
+			// append slides to end
+			if (e.direction=="left") {$('.carousel-item').eq(i).appendTo('.carousel-inner');}
+			else {$('.carousel-item').eq(0).appendTo('.carousel-inner');}
+		}
+	}
+});
+</script>
+<div id="enterprise-featured-content" class="enterprise-featured-widget carousel multi-item-carousel" data-keyboard="true" data-wrap="false" data-interval="false" role="listbox" aria-label="Featured Content">
+	<div class="carousel-inner">
+				<div class="item active col-lg-4 col-md-4 col-sm-4 enterprise-featured-widget--item" role="option" aria-labelledby="enterprise-featured-content">
+			<a href="//www.domaintools.com/resources/webinars/time-for-a-fruitful-investigation?utm_source=website&utm_medium=homepage&utm_campaign=featured%20content" title="Time for a Fruitful Investigation" role="button">
+				<div id="enterprise-featured-content--item---link" class="enterprise-featured-content--item">
+					<div class="col-md-4 col-sm-12 col-xs-12 enterprise-featured-content--item---image-container" style="background-image:url('/assets/resource_preview/ioc-august-time-for-a-fruitful-investigation.jpg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-12 enterprise-featured-content--item--description">
+						<span class="enterprise-featured-content--badge">
+    Upcoming Training
+						</span>
+						<div class="enterprise-featured-content--item---title" data-truncate="40">Time for a Fruitful Investigation</div>
+						
+						<span class="enterprise-featured-content--item---cta">Sign me up!&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+		</div>
+				<div class="item col-lg-4 col-md-4 col-sm-4 enterprise-featured-widget--item" role="option" aria-labelledby="enterprise-featured-content">
+			<a href="//www.domaintools.com/resources/white-papers/sans-2021-top-new-attacks-and-threat-report?utm_source=website&utm_medium=homepage&utm_campaign=featured%20content" title="SANS 2021 Top New Attacks and Threat Report" role="button">
+				<div id="enterprise-featured-content--item---link" class="enterprise-featured-content--item">
+					<div class="col-md-4 col-sm-12 col-xs-12 enterprise-featured-content--item---image-container" style="background-image:url('/assets/resource_preview/sans-2021-top-new-attacks-threat-report-preview.jpg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-12 enterprise-featured-content--item--description">
+						<span class="enterprise-featured-content--badge">
+    White Paper
+						</span>
+						<div class="enterprise-featured-content--item---title" data-truncate="40">SANS 2021 Top New Attacks and Threat Report</div>
+						
+						<span class="enterprise-featured-content--item---cta">Download Now&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+		</div>
+				<div class="item col-lg-4 col-md-4 col-sm-4 enterprise-featured-widget--item" role="option" aria-labelledby="enterprise-featured-content">
+			<a href="//www.domaintools.com/resources/podcasts/92-the-game-is-afoot?utm_source=website&utm_medium=homepage&utm_campaign=featured%20content" title="92. The Game is Afoot" role="button">
+				<div id="enterprise-featured-content--item---link" class="enterprise-featured-content--item">
+					<div class="col-md-4 col-sm-12 col-xs-12 enterprise-featured-content--item---image-container" style="background-image:url('/assets/resource_preview/breaking-badness-blog.svg');">
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-12 enterprise-featured-content--item--description">
+						<span class="enterprise-featured-content--badge">
+    Breaking Badness
+						</span>
+						<div class="enterprise-featured-content--item---title" data-truncate="40">92. The Game is Afoot</div>
+						
+						<span class="enterprise-featured-content--item---cta">Listen Now&nbsp;&gt;</span>
+						
+					</div>
+				</div>
+			</a>
+		</div>
+		
+	</div>
+	
+	<a class="left carousel-control enterprise-featured-content--scroll" href="#enterprise-featured-content" data-slide="prev"> 
+		<span class="glyphicon glyphicon-chevron-left"></span> 
+		<span class="sr-only">Previous</span> 
+	</a> 
+	<a class="right carousel-control enterprise-featured-content--scroll" href="#enterprise-featured-content" data-slide="next"> 
+		<span class="glyphicon glyphicon-chevron-right"></span> 
+		<span class="sr-only">Next</span> 
+	</a>
+</div>
+			<!-- End New Enterprise Featured Widget -->
+		
+		</div>
+	</div>
+</section>
+    <section style="padding-bottom:70px; background-color: #fff;">
+	<style type="text/css">
+		.overview-video {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top:;
+			height: 0;
+			overflow: hidden;
+			z-index: 0;
+		}
+		.overview-video iframe {
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+	</style>
+	<div style="padding:30px 0px 25px;text-align: center;">
+		<div class="container">
+			<h2>Empower Your Team With The World's Largest DNS Dataset</h2>
+			<p class="featured grey">Gain insight that is necessary to make the right decision about the risk level of threats to your organization.</p>
+		</div>
+	</div>
+	<div class="container" style="padding-top: 10px;">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10" align="center">
+				<div class="overview-video img-rounded shadow">
+					<iframe class="shadow img-rounded" id="overview-video" src="https://player.vimeo.com/video/390601385?&responsive=1" width="640" height="360" title="DomainTools Cyber Threat Intelligence Overview" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</section>
+    <section style="background-color: #555; padding-bottom:50px;">
+	<div class="shadow-bottom" style="background-color:#333; padding:25px 0px;text-align: center;margin-bottom: 25px;">
+		<h2 class="white" style="padding: 0px;"><img height="65" width="65" src="/assets/icons/icon-iris.svg" alt="Iris Investigation Platform Icon">&nbsp;&nbsp;&nbsp;Iris Investigation Platform</h2>
+	</div>
+	<div class="container" style="padding-top: 25px;">
+		<div class="row">
+			<div class="col-md-6 text-center" style="margin-bottom: 25px;" align="center">
+				<div class="shadow" style="border-radius: 4px; padding-top: 0px !important; background-color: #fff;">
+					<img class="img-responsive shadow-light" src="/assets/images/Screen_Shot_2020-02-05_at_9.39.48_AM_.jpg" alt="DomainTools Iris Overview Video" style="width: 100%; border-radius: 4px;"></img>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<h3 class="white" style="margin-top: 0; padding-bottom: 15px;">Detect. Investigate. Prevent.</h3>
+				<p class="white">DomainTools Iris is a proprietary threat intelligence and investigation platform that combines enterprise-grade domain and DNS-based intelligence with an intuitive web interface.</p>
+				<h4 class="white">Who uses Iris:</h4>
+				<ul class="fa-ul white">
+					<li class="white"><i class="fa-li fa fa-check white"></i>Security analysts and Incident Response teams</li>
+					<li class="white"><i class="fa-li fa fa-check white"></i>Corporate security teams needing domain-based risk assessment</li>
+					<li class="white"><i class="fa-li fa fa-check white"></i>Hunt Teams and Cyber Forensic Investigators</li>
+					<li class="white"><i class="fa-li fa fa-check white"></i>Online Fraud and Brand Fraud Investigators</li>
+				</ul>
+				<div style="text-align: left; padding-top: 25px;">
+					<a role="button" class="btn blue big shadow-light main-cta" href="/products/iris">
+						<span class="button-cta">Discover Iris</span>
+						<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    <section style="background-color: #eee;">
+	<div class="container" style="padding: 75px 20px 0px;">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10" align="center" style="padding-bottom: 15px;">
+				<p class="subtitle grey"><em>"Iris Investigation Platform combines enterprise-grade domain intelligence and risk scoring with passive DNS."</em></p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" align="center">
+				<img style="max-width: 40px; width: 100%; margin: 20px 0px 20px 30px;" alt="1st Star" src="assets/icons/star.svg">
+				<img style="max-width: 40px; width: 100%; margin: 20px 0px 20px 0px;" alt="2nd Star" src="assets/icons/star.svg">
+				<img style="max-width: 40px; width: 100%; margin: 20px 0px 20px 0px;" alt="3rd Star" src="assets/icons/star.svg">
+				<img style="max-width: 40px; width: 100%; margin: 20px 0px 20px 0px;" alt="4th Star" src="assets/icons/star.svg">
+				<img style="max-width: 40px; width: 100%; margin: 20px 30px 20px 0px;" alt="5th Star" src="assets/icons/star.svg">
+				<img style="max-width: 120px; width: 100%;" alt="SC Media Five Star Award Logo" src="assets/images/sc-media-5-star-logo.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="container" style="padding: 30px 20px 75px;">
+		<div class="col-md-12" align="center">
+			<a role="button" class="btn blue" href="https://www.scmagazine.com/review/domaintools-iris-investigation-platform-3-0/" target="blank">Read Product Review</a>
+		</div>
+	</div>
+</section>
+    <section style="background-size: cover; background-image: url(/assets/images/binary-code-scroll.jpg); background-position: top center;">
+    <style type="text/css">
+		#header {background-color: rgba(235, 235, 235, 0.7);}
+		#header2 {background-color: rgba(250, 250, 250, 0.7);}
+	</style>
+    <div class="shadow-bottom" id="header2" style="padding:25px 0px 40px;text-align: center; box-shadow: 0px 15px 30px -20px rgba(0,0,0,.3) !important;">
+		<h2 style="padding: 0px;">Enterprise Security Solutions</h2>
+	</div>
+	
+    <div class="container" style="padding: 75px 40px;">
+			<div class="container-fluid shadow" style="background-color: #fff; border-radius: 4px; padding: 25px;">
+				<div class="container-fluid" style="padding: 5px 25px 0px;">
+					<div class="row" style="padding-bottom: 0px;">
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/threat-intelligence/">
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-threat-intelligence.svg" alt="Threat Intelligence Icon" style="max-width: 75px;">
+										<h3 class="blue">Threat Intelligence</h3>
+										<p class="featured grey">Assess risk of domains and augment malware intel with domain data.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/forensics-incident-response/">
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-forensics-incident-response.svg" alt="Forensics and Incident Response Icon" style="max-width: 75px;">
+										<h3 class="blue">Forensics and Incident Response</h3>
+										<p class="featured grey">Investigate cyber crimes and online fraud by connecting the dots of cyber fingerprints.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/threat-hunting/">
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-threat-hunting.svg" alt="Threat Hunting Icon" style="max-width: 75px;">
+										<h3 class="blue">Threat Hunting</h3>
+										<p class="featured grey">Proactively hunt using Domain and DNS Profile info.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="container-fluid" style="padding: 0px 25px 5px;">
+					<div class="row" style="padding-bottom: 0px;">
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/phishing-detection/">
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-phishing.svg" alt="Phishing Detection Icon" style="max-width: 75px;">
+										<h3 class="blue">Phishing Detection</h3>
+										<p class="featured grey">Phishing prevention can and should start with monitoring the Internet for “phishy” domain name registrations.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/brand-protection/">  
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-brand-protection.svg" alt="Brand Protection Icon" style="max-width: 75px;">
+										<h3 class="blue">Brand Protection</h3>
+										<p class="featured grey">Protect your brand, monitor infringing activity and gather the data to bring down fraudulent sites.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4" style="padding: 10px;">
+							<div>
+								<a href="/solutions/online-fraud-investigation/">  
+									<div class="text-center featured-highlight-grey" style="padding: 10px; border-radius: 4px;">
+										<img src="/assets/icons/icon-reputation-scoring.svg" alt="Online Fraud Investigation Icon" style="max-width: 75px;">
+										<h3 class="blue">Online Fraud Investigation</h3>
+										<p class="featured grey">Find, characterize, and fight perpetrators of ad network fraud and digital piracy.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</section>
+    <section style="background-repeat: repeat; background-image: url(/assets/images/confidence-in-the-data.jpg); background-size: cover; background-position: center center; padding-top: 50px; padding-bottom:10px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="text-center" style="padding-bottom: 20px;">
+					<h2 class="white" style="padding: 0px; margin-top: 0px;">Confidence in the Data</h2>
+					<p class="subtitle white">DomainTools is the world leader in Domain and DNS Intelligence</p>
+				</div>
+				<div class='container-fluid'>
+					<div class="row">
+						<div class="col-md-4 text-center" style="margin-bottom: 40px;">
+							<span  style="margin-bottom: 15px;">
+								<img src="/assets/icons/icon-accurate.svg" alt="Accurate Icon" style="width:100%; max-width: 135px;"/>
+							</span>
+							<br>
+							<h3 class="digit white">Accurate</h3>
+							<p class="featured white" style="line-height: 1.2em;">&gt;95% of currently registered domains</p>
+						</div>
+						<div class="col-md-4 text-center" style="margin-bottom: 40px;">
+							<span  style="margin-bottom: 15px;">
+								<img src="/assets/icons/icon-timely.svg" alt="Timely Icon" style="width:100%; max-width: 135px;"/>
+							</span>
+							<br>
+							<h3 class="digit white">Timely</h3>
+							<p class="featured white" style="line-height: 1.2em;">All newly registered and discovered domains</p>
+						</div>
+						<div class="col-md-4 text-center" style="margin-bottom: 40px;">
+							<span  style="margin-bottom: 15px;">
+								<img src="/assets/icons/icon-comprehensive.svg" alt="Comprehensive Icon" style="width:100%; max-width: 135px;" />
+							</span>
+							<br>
+							<h3 class="digit white">Comprehensive</h3>
+							<p class="featured white" style="line-height: 1.2em;">Nearly 2 decades of historical Whois and pDNS data</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    <section style="background-size: cover; background-image: url(/assets/images/connected-infrastructure-scroll-over-image.jpg); background-position: top center;">
+    <div class="shadow-bottom" id="header2" style="padding:25px 0px 40px;text-align: center; margin-bottom: 25px;">
+		<div class="container">
+			<h2 style="padding: 0px;"><img height="65" width="65" alt="Featured Integrations Icon" src="/assets/icons/integrations.svg">&nbsp;&nbsp;Featured Integrations</h2>
+		</div>
+	</div>
+	<!-- Integrations Widget -->
+<div class="container" style="padding: 50px 25px 75px;">
+	<div class="row">
+		<div class="col-md-12 Products-overview-centerColumn">
+			<div>
+				<div class="row">
+					<div class="container-fluid">
+						<div class="container-fluid">
+							<div class="container-fluid shadow" style="border-radius: 0px 0px 4px 4px; background-color: #fff; padding-bottom: 20px;">
+								
+								<!-- Header Row -->
+								<style type="text/css">
+									a.nav-item.white-blue:focus {
+										background-color: #5eba46;
+										color: #fff;
+										outline: none;
+									}
+									a.white-blue {
+										background-color:#fff;
+										color: #1f87b4;
+										text-transform: uppercase;
+									}
+									a.white-blue:hover {
+										background-color: #5eba46;
+										color: #fff;
+									}
+									@media only screen and (max-width: 767px) {
+										a.widget-nav {
+											width: 100% !important;
+										}
+								</style>
+								
+								<!-- Featured Header -->
+								<div class="row shadow-bottom">
+									<div class="container-fluid">
+										<div class="row" align="center">
+											<ul class="nav nav-tabs">
+												<a class="widget-nav col-md-3 col-sm-12 btn blue nav-item" id="first" role="button" aria-label="View All Integrations" href="/integrations" align="center" style="margin: 0px; padding: 15px 10px; border-radius: 0px;"><li class="active" role="presentation" style="margin: 0px;">View All</li></a>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- End Featured Header -->
+								
+								<!-- End Header Row -->
+								
+								<!-- Content -->
+								
+								<!-- Featured Content -->
+								<div class="tab-content">
+									
+									<!-- Featured Integrations -->
+									<div id="all" class="tab-pane fade in active">
+										<div class="container-fluid" style="padding-top: 25px;">
+	<div class="row">
+		<!-- First Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Splunk -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>	
+    <a href="/integrations/splunk">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/splunk-thumbnail-logo.jpg" title="Splunk">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Splunk -->
+				<!-- Phantom -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/splunk-phantom/">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/splunk-phantom-logo-thumbnail.jpg" title="Splunk Phantom">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Phantom -->
+				<!-- Anomali -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/anomali">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/anomali-thumbnail-logo.jpg" title="Anomali Threatstream">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Anomali -->
+				<!-- Maltego -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/maltego/">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/maltego-thumbnail-logo.svg" title="Maltego">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Maltego -->
+			</div>
+		</div>
+		<!-- End First Row -->
+		<!-- Second Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Cortex XSOAR -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/cortex-xsoar">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/cortex-xsoar-thumbnail-logo.jpg" title="Cortex XSOAR">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Cortex XSOAR -->
+				<!-- Elastic -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/elastic">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/elastic-thumbnail-logo.jpg" title="Elastic">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Elastic -->
+				<!-- MISP -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/misp">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/misp-thumbnail-logo.jpg" title="MISP">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End MISP -->
+				<!-- Crowdstrike -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/crowdstrike">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/crowdstrike-thumbnail-image.jpg" title="Crowdstrike">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End Crowdstrike -->
+			</div>
+		</div>
+		<!-- End Second Row-->
+		<!-- Third Row -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- TheHive And Cortex -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>	
+    <a href="/integrations/thehive-and-cortex">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/thehive-cortex-logo-thumbnail.jpg" title="TheHive And Cortex">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End TheHive And Cortex -->
+				<!-- IBM QRadar -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/ibm-qradar">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/ibm-qradar-thumbnail.jpg" title="IBM QRadar">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- IBM QRadar -->
+				<!-- IBM Resilient -->
+				<div class="col-md-3 col-sm-6" align="center" style="padding: 20px;">
+  <div>
+    <a href="/integrations/ibm-resilient">
+      <div class="featured-highlight" style="padding: 10px; border-radius: 4px;">
+        <img class="img-responsive" src="/assets/images/ibm-resilient-thumbnail.jpg" title="IBM Resilient">
+      </div>
+    </a>
+  </div>
+</div>
+				<!-- End IBM Resilient-->
+			</div>
+		</div>
+		<!-- End Third Row-->
+	</div>
+</div>
+									</div>
+									<!-- End Featured Integrations -->
+								
+								</div>
+								<!-- End Featured Content -->
+								
+								<!-- End Content -->
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Integrations Widget -->
+</section>
+    <section class="section--secondary"> 
+    <div class="container">
+    	
+        <div class="section-resources--header text-center">
+            <h2>Related Resources</h2>
+            <p class="featured grey">Learn more about industry topics and best practices.</p>
+        </div>
+        
+        <div class="resources-listing" style="padding-bottom: 50px;">
+            <div class="row ">
+                
+                                                
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/proactively-deter-threats-with-ip-hotlist-preview.jpg');" >
+                                        <span class="badge shadow">
+                                            
+    Upcoming Webinar
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/webinars/proactively-deter-threats-with-ip-hotlist" data-truncate="60" title="Proactively Deter Threats with IP Hotlist">Proactively Deter Threats with IP Hotlist</a></h3>
+                                        <p data-truncate="100" title="Join Bandura Cyber and DomainTools to learn how the DomainTools IP Hotlist empowers network defenders to proac">
+                                            
+                                                Join Bandura Cyber and DomainTools to learn how the DomainTools IP Hotlist empowers network defenders to proac
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/webinars/proactively-deter-threats-with-ip-hotlist" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="Proactively Deter Threats with IP Hotlist">Proactively Deter Threats with IP Hotlist</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Register Now</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                                                    
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/sans-2021-top-new-attacks-threat-report-webinar-preview.jpg');" >
+                                        <span class="badge shadow">
+                                            
+    Webinar
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/webinars/sans-2021-top-new-attacks-and-threat-report-panel-discussion" data-truncate="60" title="SANS 2021 Top New Attacks and Threat Report: Panel Discussion">SANS 2021 Top New Attacks and Threat Report: Panel Discussion</a></h3>
+                                        <p data-truncate="100" title="Join John Pescatore and DomainTools for a deep dive into the SANS 2021 Top New Attacks and Threat Report.">
+                                            
+                                                Join John Pescatore and DomainTools for a deep dive into the SANS 2021 Top New Attacks and Threat Report.
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/webinars/sans-2021-top-new-attacks-and-threat-report-panel-discussion" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="SANS 2021 Top New Attacks and Threat Report: Panel Discussion">SANS 2021 Top New Attacks and Threat Report: Panel Discussion</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Watch Now</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                                                    
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/ioc-august-time-for-a-fruitful-investigation.jpg');" >
+                                        <span class="badge shadow">
+                                            
+    Upcoming Training
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/webinars/time-for-a-fruitful-investigation" data-truncate="60" title="Time for a Fruitful Investigation">Time for a Fruitful Investigation</a></h3>
+                                        <p data-truncate="100" title="Indicators Over Cocktails — Join Tim Helming for informal demonstrations of DomainTools products and features.">
+                                            
+                                                Indicators Over Cocktails — Join Tim Helming for informal demonstrations of DomainTools products and features.
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/webinars/time-for-a-fruitful-investigation" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="Time for a Fruitful Investigation">Time for a Fruitful Investigation</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Sign me up!</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                                                    
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/breaking-badness-blog.svg');" >
+                                        <span class="badge shadow">
+                                            
+    Breaking Badness
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/podcasts/92-the-game-is-afoot" data-truncate="60" title="92. The Game is Afoot">92. The Game is Afoot</a></h3>
+                                        <p data-truncate="100" title="I Spy With My Little Eye Something Concerning, Hackers Go for the Gold Meddle, and Two Truths and a Lie.">
+                                            
+                                                I Spy With My Little Eye Something Concerning, Hackers Go for the Gold Meddle, and Two Truths and a Lie.
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/podcasts/92-the-game-is-afoot" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="92. The Game is Afoot">92. The Game is Afoot</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Listen Now</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                                                    
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/sans-2021-top-new-attacks-threat-report-preview.jpg');" >
+                                        <span class="badge shadow">
+                                            
+    White Paper
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/white-papers/sans-2021-top-new-attacks-and-threat-report" data-truncate="60" title="SANS 2021 Top New Attacks and Threat Report">SANS 2021 Top New Attacks and Threat Report</a></h3>
+                                        <p data-truncate="100" title="Read this report for a baseline of statistics from reliable sources of breach and malware data as well as summ">
+                                            
+                                                Read this report for a baseline of statistics from reliable sources of breach and malware data as well as summ
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/white-papers/sans-2021-top-new-attacks-and-threat-report" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="SANS 2021 Top New Attacks and Threat Report">SANS 2021 Top New Attacks and Threat Report</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Download Now</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                                                    
+                            <div class="resources-listing--article col-sm-12 col-md-6 col-lg-4">
+                                <div class="resources-listing--item">
+                                    <div class="resources-listing--item--image-container"  style="background-image:url('/assets/resource_preview/breaking-badness-blog.svg');" >
+                                        <span class="badge shadow">
+                                            
+    Breaking Badness
+                                        </span>
+										
+                                    </div>
+                                    <div class="resources-listing--item--description">
+                                        <h3><a class="grey" href="//www.domaintools.com/resources/podcasts/voices-from-infosec-with-paul-vixie" data-truncate="60" title="Voices from Infosec with Paul Vixie">Voices from Infosec with Paul Vixie</a></h3>
+                                        <p data-truncate="100" title="Hear from Paul Vixie, CEO at Farsight Security, on topics including his background and more. ">
+                                            
+                                                Hear from Paul Vixie, CEO at Farsight Security, on topics including his background and more. 
+                                            
+                                        </p>
+                                    </div>
+                                    <a href="//www.domaintools.com/resources/podcasts/voices-from-infosec-with-paul-vixie" class="resources-listing--item--action dark-mode">
+                                        <h3 data-truncate="60" title="Voices from Infosec with Paul Vixie">Voices from Infosec with Paul Vixie</h3>
+                                        
+                                    	<span class="btn btn-default" style="text-transform: uppercase;">Listen Now</span>
+                                    	
+                                    </a>
+                                </div>
+                            </div>
+                        
+				
+            </div>
+        </div>
+    </div>
+</section>
+    <section class='widget-quotes widget grey' style="background-color: #fff !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title-holder">
+          <h2>17 billion records and 6,000 reasons to trust us.</h2>
+          <p class="subtitle grey">But don't just take our word for it...</p>
+        </div>
+        <div class='container-fluid'>
+          <div class="row">
+            
+            <div class="col-md-4 who-uses">
+              <h3 class="blue">Who uses DomainTools?</h3>
+              <br>
+              <p>The largest organizations in the world across all major verticals, including:</p>
+              <p style="padding-left: 20px;"><i class="fa fa-check"></i>Financial Services</p>
+              <p style="padding-left: 20px;"><i class="fa fa-check"></i>Healthcare</p>
+              <p style="padding-left: 20px;"><i class="fa fa-check"></i>Energy and Utilities</p>
+              <p style="padding-left: 20px;"><i class="fa fa-check"></i>Government</p>
+              <p style="padding-left: 20px;"><i class="fa fa-check"></i>Technology</p>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="quote" style="background-color: #eee !important;">
+                <div class="grey">DomainTools provides us with insights that allow us to identify potential threats before they occur.</div>
+              </div>
+              <div class="attribution">
+                <div class="person grey">Global Manager,
+                  <br> Incident Response Center
+                </div>
+                <div class='quote-bubble'></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="quote" style="background-color: #eee !important;">
+                <div class="grey">DomainTools saves our investigators an enormous amount of time which means our clients save a significant amount of money.</div>
+              </div>
+              <div class="attribution">
+                <div class="person grey">Dean Oberholzer,
+                  <br> Consultant, Horizon Forensics
+                </div>
+                <div class='quote-bubble'></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            
+            <div class="customer-stories col-md-8 col-md-offset-4 grey">
+               Learn how organizations leverage DomainTools to power their real-world investigations.
+                <a class="blue" href="/resources/case-studies/">Customer Stories >></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    
+<section style='background-image:url(/assets/hero/domain-and-dns-infrastructure-intelligence.jpg); background-repeat: repeat; background-position: center center; padding: 100px 0px; background-size: cover;'>
+	<div class="container">
+    	<div class="row">
+        	<div class="col-lg-8 col-md-12" align="center">
+            	<h2 class="white" style="line-height: 1.3em;">Assess risk, hunt threats, and profile infrastructure with the world's largest DNS forensics database.</h2>
+            </div>
+            <div class="col-lg-4 col-md-12" align="center" style="margin-top: 30px;">
+            	<a role="button" class="btn green big shadow main-cta" href="/demo">
+					<span class="button-cta">Request A Demo</span>
+					<span class="button-chevron"><i class="fa fa-chevron-right"></i></span>
+				</a>
+         	</div>
+        </div>
+	</div>
+</section>
+
+  </section>
+</section>
+ 
+<footer class="footer-grey">
+	<section class="footer-grey">
+		<div class="container footer-grey" style="margin-top: 50px; margin-bottom: 25px;">
+			<div class="row">
+				<div class="col-md-12 footer-logo" style="margin-bottom: 50px;">
+					<a href="/"><img class="img-responsive" src="/assets/images/domaintools-logo-white.svg" alt="DomainTools Logo - Footer Navigation" style="max-width: 300px; width: 100%; display: inline-block;" /></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12" style="padding: 0px;">
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/products"><span class="footer-section-header">Products</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+<li class="first"><a href="/products/iris/">Iris Investigation Platform</a></li>
+<li><a href="/products/api-integration/">APIs</a></li>
+<li><a href="/products/phisheye/">PhishEye</a></li>
+<li><a href="/products/risk-feeds/">Risk Feeds</a></li>
+<li class="last"><a href="/products/monitoring/">Monitoring Products</a></li>
+</ul>
+					</div>
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/integrations"><span class="footer-section-header">Integrations</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+							
+							<li>
+								<a href="//www.domaintools.com/integrations/siem">SIEM</a>
+							</li>
+							
+							<li>
+								<a href="//www.domaintools.com/integrations/soar">SOAR</a>
+							</li>
+							
+							<li>
+								<a href="//www.domaintools.com/integrations/threat-intelligence">Threat Intelligence</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12" style="padding: 0px;">
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/solutions"><span class="footer-section-header">Solutions</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+<li class="first"><a href="/solutions/threat-intelligence/">Threat Intel</a></li>
+<li><a href="/solutions/forensics-incident-response/">Forensics &amp; Incident Response</a></li>
+<li><a href="/solutions/threat-hunting/">Threat Hunting</a></li>
+<li><a href="/solutions/phishing-detection/">Phishing Detection</a></li>
+<li><a href="/solutions/brand-protection/">Brand Protection</a></li>
+<li class="last"><a href="/solutions/online-fraud-investigation/">Online Fraud Investigation</a></li>
+</ul>
+					</div>
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/partners"><span class="footer-section-header">Partners</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+<li class="first"><a href="/partners/partner-program/">Channel Partner Program</a></li>
+<li><a href="/partners/become-a-technology-partner/">Technology Partners</a></li>
+<li><a href="/partners/mssp/">MSSP Partners</a></li>
+<li class="last"><a href="/partners/oem/">OEM Partners</a></li>
+</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12" style="padding: 0px;">
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/resources"><span class="footer-section-header">Resources</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+<li class="first"><a href="/resources/webinars/">Webinars</a></li>
+<li><a href="/resources/blog/">Blog</a></li>
+<li><a href="/resources/white-papers/">White Papers</a></li>
+<li><a href="/resources/user-guides/">User Guides</a></li>
+<li><a href="/resources/survey-reports/">Survey Reports</a></li>
+<li><a href="/resources/domaintools-reports/">DomainTools Reports</a></li>
+<li><a href="/resources/case-studies/">Case Studies</a></li>
+<li><a href="/resources/api-documentation/">API Documentation</a></li>
+<li><a href="/resources/videos/">Videos</a></li>
+<li class="last"><a href="/resources/podcasts/">Podcasts</a></li>
+</ul>
+					</div>
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<a href="/company"><span class="footer-section-header">Company</span></a>
+						<ul id="nav-sub" class="footer-list-item">
+<li class="first"><a href="/company/join-our-team/">Join Our Team</a></li>
+<li><a href="/company/leadership-team/">Leadership</a></li>
+<li><a href="/company/board-of-directors/">Board of Directors</a></li>
+<li><a href="/company/affiliates/">Affiliates</a></li>
+<li><a href="/company/press/">Press Room</a></li>
+<li class="last"><a href="/company/corporate-responsibility/">Corporate Responsibility</a></li>
+</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12" style="padding: 0px;">
+					<div class="col-md-6 col-sm-6 footer-structure-group" style="margin-bottom: 25px;">
+						<hr class="footer-grey information-hr">
+						<span class="footer-section-header">Information</span>
+						<ul id="nav-sub" class="information-item">
+							<li><a href="//www.domaintools.com/contact/">Contact Us</a></li>
+							<li><a href="//www.domaintools.com/support/">Support</a></li>
+							<li><a href="//www.domaintools.com/company/privacy-policy/">Privacy Policy</a></li>
+							<li><a href="//www.domaintools.com/company/california-privacy-notice/">California Privacy Notice</a></li>
+							<li class="do-not-sell"><a href="//www.domaintools.com/company/california-privacy-notice/do-not-sell/">Do Not Sell My Personal Information</a></li>
+							<li><a href="//www.domaintools.com/company/terms-of-service/">Terms of Service</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container footer-grey">
+			<hr class="footer-grey">
+			<ul>
+				<li><a href="//www.domaintools.com/resources/blog/feed/" aria-label="Subscribe To DomainTools RSS Feed"><i class="fa fa-fw fa-lg fa-rss"></i></a></li>
+				<li><a href="https://www.facebook.com/domaintoolsllc/" aria-label="DomainTools Facebook Page"><i class="fa fa-fw fa-lg fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/domaintools/" aria-label="DomainTools Twitter Page"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/company/domaintools" aria-label="DomainTools LinkedIn Page"><i class="fa fa-fw fa-lg fa-linkedin"></i></a></li>
+			</ul>
+			<ul>
+				<li><a href="//www.domaintools.com/sitemap/">Sitemap</a></li>
+				<li></li>
+				<li><p>© 2021 DomainTools</p></li>
+			</ul>
+		</div>
+	</section>
+</footer> 
+<script src="//player.vimeo.com/api/player.js"></script>
+<script src="/assets/scripts/vendor.js"></script>
+<script src="/assets/scripts/scripts.js"></script>
+ <script>
+    if(document.cookie.indexOf('_dt_dismissed_cookie_prompt') === -1){
+        var banner = document.createElement('div');
+        var msg = `Our website uses cookies.  By continuing to use this website, you agree to the use of these cookies.  To learn more about cookies, how we we use them, and how to revise your cookie settings, please view our <a href="/company/privacy-policy/" target="blank"><span style="color: #67c2ea">Privacy Policy</span></a>.`;
+        banner.className='cookie-modal container-fluid';
+        banner.innerHTML ="<div class='row'><div class='col-md-6 col-md-offset-2'>"+msg+"</div><div class='col-md-1 text-center'><a href='#' class='btn green' role='button' onclick='createCookieAndDismissBanner()'>I Agree</a></div></div>";
+        var createCookieAndDismissBanner = function () {
+            document.cookie = "_dt_dismissed_cookie_prompt=true;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/";
+           document.body.removeChild(document.getElementsByClassName('cookie-modal')[0]);
+           return false;
+        }
+        document.body.append(banner);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!-- header /s -->
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title>		九维网 - 精品网页游戏平台 - 让人们得到快乐
+	</title>
+	<meta name="keywords"
+		content="九维网,网页游戏,网页游戏大全,最新网页游戏,网页游戏平台,webgame,小游戏,新手卡,联合运营,游戏攻略，武林英雄,小李飞刀,天策,武林三国,武林足球经理2,武林足球经理,网页游戏厂商,英雄卡">
+	<meta name="description"
+		content="网页游戏的领航者九维网是从事开发和运营网页游戏的游戏平台,连续多年被评为最佳网页游戏运营商,为广大网友提供武林英雄,小李飞刀,天策,武林三国,武林足球经理2,武林足球经理,商业大亨,德州扑克,卧龙吟,神仙道,明朝时代等多款最新最好的网页游戏产品。">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link href="/css/login_box.css" rel="stylesheet" type="text/css" />
+	<link href="http://www.9wee.com/General/css/ht.css" rel="stylesheet" type="text/css" />
+	<link href="http://static.cache.9wee.com/favicon.ico" rel="bookmark" type="image/x-icon" />
+	<link href="http://static.cache.9wee.com/favicon.ico" rel="icon" type="image/x-icon" />
+	<link href="http://static.cache.9wee.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="http://static.cache.9wee.com/favicon.png" rel="apple-touch-icon" />
+	<!-- modified by zjanhoo start -->
+	<!-- script /s -->
+	<script type="text/javascript" src="/js/new/plugins.min.js"></script>
+	<script type="text/javascript" src="/js/new/wjs.js"></script>
+	<script type="text/javascript" src="/js/new/main.js"></script>
+	<script type="text/javascript" src="/js/new/login.js"></script>
+	<script type="text/javascript">
+		if ((navigator.userAgent.match(/mobile/i))) {
+			//移动端
+			window.onresize = function(){
+				console.log("test");
+				console.log("检查显示器宽度：" + screen.width);
+				console.log("检查body宽度：" + document.body.clientWidth);
+			}
+		} else {
+			//PC端
+		}
+	</script>
+	<!-- script /e -->
+	<link href="http://www.9wee.com/css/index_style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]>
+	<script type="text/javascript" src="/js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript">
+		DD_belatedPNG.fix('.top_logo a, .foot_logo a, .ver-hd a, .dynamic_hd a, .game_item_bd a, .pager_a');
+	</script>
+	<![endif]-->
+	<!-- modified by zjanhoo end -->
+</head>
+
+<body>
+	<div class="com_header" id="com_header"></div>
+	<script type="text/javascript" src="http://www.9wee.com/General/js/new/ht_common.js"></script><!-- header /e -->
+
+<!-- 主体轮播 /s -->
+<div id="slider_box" class="main_slider_wrap" style="height: 750px;">
+	<div class="main_slider" id="main_slider" style="height: 750px;">
+		<div id="main_slider_item">
+			 			 				<a title="足球之路" style='background: #021f46 url(http://i0.9wee.com/202005/18mWm6wk.jpg) center top no-repeat; display: block;height: 750px;' href="http://zqzl.9wee.com/" target="_blank" class="a_slider"></a>
+			 				<a title="武林英雄" style='background: #373742 url(http://i0.9wee.com/202009/29GXh6Uk.jpg) center top no-repeat; display: block;height: 750px;' href="http://hero.9wee.com/" target="_blank" class="a_slider"></a>
+			 		</div>
+		<div class="pager_list">
+			<div class="pager_list_box">
+				 					<a href="javascript: void(0);" class="pager_a"></a>
+				 					<a href="javascript: void(0);" class="pager_a"></a>
+				 			 </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#main_slider .a_slider').soChange({
+			changeTime: 6000,
+			thumbObj: '.pager_list a',
+			thumbNowClass: 'on'
+		});
+	</script>
+</div>
+<!-- 主体轮播 /e -->
+
+<!-- 推荐游戏 /s -->
+	<div class="thebestgame">
+			<div class="thebestgame_hd">
+					<div class="thebestgame_item">
+						<img src="http://www.9wee.com/images/game_1.jpg">
+						<div class="thebestgame_detail">
+                            <a href="http://zqzl.9wee.com/" class="thebestgame_start" >开始游戏</a>
+							<div class="thebestgame_tit"><b>足球之路</b></div>
+                            <div class="thebestgame_con">集经营,养成,策略一体的体育竞技类游戏</div>						
+                        </div>
+					</div>	
+<div class="thebestgame_item">
+					<img style="margin-top: 175px; display: block;" src="http://www.9wee.com/images/game_2.jpg">
+						<div class="thebestgame_detail" style="top: 80px;">
+                            <a href="http://hero.9wee.com/" class="thebestgame_start" >开始游戏</a>
+							<div class="thebestgame_tit"><b>武林英雄</b></div>
+                            <div class="thebestgame_con">国内首款大型武侠角色扮演网页游戏</div>						
+                        </div>
+					</div>	
+<div class="thebestgame_item">
+						<img src="http://www.9wee.com/images/game_3.jpg">
+						<div class="thebestgame_detail">
+                            <a href="http://tc.9wee.com/" class="thebestgame_start" >开始游戏</a>
+							<div class="thebestgame_tit"><b>天 策</b></div>
+                            <div class="thebestgame_con">大型三国题材SLG团队战争策略类网页游戏</div>						
+                        </div>
+					</div>			
+			</div>
+	</div>
+    <div style="width: 100%; height: 50px; background-color: #ededed;"><div></div></div>
+		<!-- 推荐游戏 /e -->
+
+
+	
+   		<!-- 我们的动态 /s -->
+	<div class="dynamic">
+		<div class="dynamicAniLeft" style="left: -532px;"><img src="http://www.9wee.com/images/ren_1.png" alt="Pulpit rock" width="532" height="559"></div>
+		<div class="dynamicAniRight" style="right: -532px;"><img src="http://www.9wee.com/images/ren_2.png" alt="Pulpit rock" width="532" height="559"></div>
+			<div class="dynamic_hd">
+					<div class="dynamic_item">
+						<img src="http://www.9wee.com/images/dynamic_1.png">
+						<div class="dynamic_detail">
+							<div class="dynamic_tit"><b>生日派对户外野营活动</b></div>
+                            <div class="dynamic_con">不仅能锻炼身体，还使得我们的知识面得到增加，涉取相关生活经验，增强了我们团队合作意识，让我们在工作中更加的默契...</div>						
+                        </div>
+					</div>	
+                    <div class="dynamic_item">
+						<img src="http://www.9wee.com/images/dynamic_2.png">
+						<div class="dynamic_detail" style="top:18px;">
+							<div class="dynamic_tit"><b>周年庆九维人齐欢聚</b></div>
+                            <div class="dynamic_con">在这特殊的日子里，我们怀着感恩的心，与各位合作伙伴、玩家在一起，分享属于大家的光荣和梦想。</div>						
+                        </div>
+					</div>	
+                    <div class="dynamic_item">
+						<img src="http://www.9wee.com/images/dynamic_3.png">
+						<div class="dynamic_detail">
+							<div class="dynamic_tit"><b>积极锻炼参与羽毛球大赛</b></div>
+                            <div class="dynamic_con">生命在于运动，运动不但能强身健体，还能陶冶情操，它代表着公平与正义。在运动场里，人人必须遵守规则，否则将被逐出...</div>						
+                        </div>
+					</div>			
+			</div>
+	</div>
+		<!-- 我们的动态 /e -->
+
+		<!-- 友情链接 /s -->
+   <div class="friends">
+        <div class="games_tit">
+			<h2>COOPERATIVE PARTNER</h2>
+        </div>
+		<div id="friendList">
+			<ul class="friendsList">
+													<li><a target="_blank" href="http://www.duoqu.com">多趣网策略页游</a></li>
+									<li><a target="_blank" href="http://web.ali213.net/">游侠网页游戏</a></li>
+									<li><a target="_blank" href="http://www.1y2y.com">网页游戏排行榜</a></li>
+									<li><a target="_blank" href="http://game.yeyou.com">回合制网页游戏</a></li>
+									<li><a target="_blank" href="http://www.juxia.com/">聚侠网</a></li>
+									<li><a target="_blank" href="http://web.ali213.net/">游侠网页游戏</a></li>
+									<li><a target="_blank" href="http://games.sina.com.cn/web">新浪网页游戏</a></li>
+									<li><a target="_blank" href="http://www.eeyy.com">一游网</a></li>
+									<li><a target="_blank" href="http://news.7k7k.com/">7k7k新闻</a></li>
+									<li><a target="_blank" href="http://www.40407.com/">40407网页游戏</a></li>
+									<li><a target="_blank" href="http://www.07073.com/">07073网页游戏</a></li>
+									<li><a target="_blank" href="http://game.china.com/">中华网</a></li>
+									<li><a target="_blank" href="http://web.17173.com/">17173网页游戏</a></li>
+							</ul>
+		</div>
+		<script type="text/javascript">
+			new exScroll({ id: 'friendList', height: 20, speed: 20,	delay: 4000	});
+		</script>
+        <!-- 友情链接 /e -->
+
+</div>
+<!--登录弹出窗开始-->
+<div id="maskLayer" style="display: none;"></div>
+<div id="login_box" style="display: none;">
+    <div class="rrs_box_t"></div>
+    <div class="rrs_box_c">
+    <h5><span>欢迎登录九维网</span><a class="RRSclose loginclose" href="javascript:;"></a></h5>
+      <div class="rrs_con">
+      <form action="http://passport.9wee.com/app/login.php?ac=login" name="formPassportLogin" id="formPassportLogin" method="post"> 
+    <input type="hidden" value="" name="_REFERER">
+        <ul>
+          <li class="save" style="line-height:2.8em;">
+             <p class="login_input01"><input type="text" onclick="clear_text();" id="username" name="username"><a href="http://passport.9wee.com/app/findpsw.php">忘记密码</a></p>
+             <p class="login_input01 login_input02"><input type="password" id="password" name="password"><a href="http://passport.9wee.com/app/register.php">我要注册</a></p>
+			 <p class="login_input01 login_input03">
+				<input type="text" maxlength="4" id="loginVerifyCode" name="code">
+				<img id="imgLoginVerifyCode" alt="点击更换" align="absmiddle" onclick="changeLoginVerifyCode();"
+					class="vcode_img"><a href="javascript:changeLoginVerifyCode();"
+					onclick="changeLoginVerifyCode();" class="vcode_change">看不清</a>
+			</p>
+			<p style="line-height:1.5em;color:#EC6700;padding-top:10px;padding-left:2px;margin-left:-100px;_margin-left:0px;_width:220px;_position: relative;">
+				登录后您可以：查询积分、等级以及个人<br>信息，参加九维在线活动、积分兑换活动</p>
+          </li>
+          <li style="text-align:center;width:416px;padding-left:0px;padding-top:12px;"><input type="submit" value="用户登录" class="btn04"></li>
+        </ul>
+        </form>
+       </div>
+     </div>
+    <div class="rrs_box_b"></div>
+</div>
+<!--登录弹出窗结束-->
+<script type="text/javascript">
+	$(function() {
+		var maskLayer = $('#maskLayer'),
+			floatingLayer2 = $('#login_box'),
+			pageH = $(document.body).height(),
+			pageW = $(document.body).width(),
+			winH = $(window).height(),
+			maxH = Math.max(winH, pageH),
+			floatingLayer2_x  = (pageW - floatingLayer2.width())/2,
+			floatingLayer2_y  = (winH - floatingLayer2.height()) / 2;
+		
+		maskLayer.hide();
+		floatingLayer2.hide();
+
+		$('.loginclose').click(function(){
+			floatingLayer2.hide();
+			maskLayer.hide();
+		});
+
+		window.onresize = function () {
+			dynAniAdapuive();
+		};
+
+		window.onscroll = function () {
+			dynamicAnimation("dynamicAniRight", "left", "375");
+			dynamicAnimation("dynamicAniLeft", "right", "425");
+		};
+
+	});
+
+	function checkLogin()
+	{
+		if(!ret || !ret.loginFlag) {
+			showLogin();
+			return false;
+		}
+		return true;
+	}
+
+	function showLogin()
+	{
+		var maskLayer = $('#maskLayer'),
+			floatingLayer2 = $('#login_box'),
+			pageH = $(document.body).height(),
+			pageW = $(document.body).width(),
+			winH = $(window).height(),
+			maxH = Math.max(winH, pageH),
+			floatingLayer2_x  = (pageW - floatingLayer2.width())/2,
+			floatingLayer2_y  = (winH - floatingLayer2.height()) / 2;
+		
+		maskLayer.show().width(pageW).height(maxH);
+		floatingLayer2.show().css({'top': floatingLayer2_y + 'px','left': floatingLayer2_x + 'px'});
+	}
+	
+	function changeLoginVerifyCode() {
+		var obj = document.getElementById('imgLoginVerifyCode');
+		if (obj) {
+			obj.style.visibility = 'visible';
+			obj.src = 'http://passport.9wee.com/common/verify_code?' + new Date().getTime();
+		}
+	}
+	changeLoginVerifyCode();
+</script>
+<!-- footer /s -->
+<script type="text/javascript">
+	document.write(General_html['foot_con']);
+	copyright();
+</script>
+
+<!--登录弹出窗开始-->
+<div id="maskLayer"></div>
+<div id="login_box" style="display:none;">
+	<div class="rrs_box_t"></div>
+	<div class="rrs_box_c">
+		<h5><span>欢迎登录九维网</span><a class="RRSclose loginclose" href="javascript:;" tabindex="-1"></a></h5>
+		<div class="rrs_con">
+			<form action="http://passport.9wee.com/app/login.php?ac=login" name="formPassportLogin"
+				id="formPassportLogin" method="post">
+				<input type="hidden" value="" name="_REFERER">
+				<ul>
+					<li class="save">
+						<p class="login_input01"><input type="text" onclick="clear_text();" id="username"
+								name="username"><a href="http://passport.9wee.com/app/findpsw.php"
+								tabindex="-1">忘记密码</a></p>
+						<p class="login_input01 login_input02"><input type="password" id="password" name="password"><a
+								href="http://passport.9wee.com/app/register.php" tabindex="-1">我要注册</a></p>
+						<p class="login_input01 login_input03">
+							<input type="text" maxlength="4" id="loginVerifyCode" name="code">
+							<img id="imgLoginVerifyCode" alt="点击更换" align="absmiddle" onclick="changeLoginVerifyCode();"
+								class="vcode_img"><a href="javascript:changeLoginVerifyCode();"
+								onclick="changeLoginVerifyCode();" class="vcode_change">看不清</a>
+						</p>
+						<p style="line-height:1.5em;color:#EC6700;padding-top:10px;padding-left:2px;">
+							登录后您可以：查询等级以及个人<br>信息，参加九维在线活动</p>
+					</li>
+					<li style="text-align:center;width:416px;padding-left:0px;padding-top:12px;">
+						<input type="submit" value="用户登录" class="btn04" onfocus="this.style.zoom = 1.1"
+							onblur="this.style.zoom = 1">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="rrs_box_b"></div>
+</div>
+<!--登录弹出窗结束-->
+<script type="text/javascript">
+	$(function () {
+		var maskLayer2 = $('#maskLayer2'),
+			floatingLayer2 = $('#login_box2'),
+			pageH = $(document.body).height(),
+			pageW = $(document.body).width(),
+			winH = $(window).height(),
+			maxH = Math.max(winH, pageH),
+			floatingLayer2_x = (pageW - floatingLayer2.width()) / 2,
+			floatingLayer2_y = (winH - floatingLayer2.height()) / 2;
+
+		maskLayer2.hide();
+		floatingLayer2.hide();
+
+		$('.loginclose').click(function () {
+			floatingLayer2.hide();
+			maskLayer2.hide();
+		});
+	});
+
+	function checkLogin() {
+		if (!ret || !ret.loginFlag) {
+			showLogin();
+			return false;
+		}
+		return true;
+	}
+
+	function showLogin() {
+		var maskLayer2 = $('#maskLayer2'),
+			floatingLayer2 = $('#login_box2'),
+			pageH = $(document.body).height(),
+			pageW = $(document.body).width(),
+			winH = $(window).height(),
+			maxH = Math.max(winH, pageH),
+			floatingLayer2_x = (pageW - floatingLayer2.width()) / 2,
+			floatingLayer2_y = (winH - floatingLayer2.height()) / 2;
+
+		maskLayer2.show().width(pageW).height(maxH);
+		floatingLayer2.show().css({ 'top': floatingLayer2_y + 'px', 'left': floatingLayer2_x + 'px' });
+	}
+</script>
+
+<!--登录提示窗开始-->
+<div id="maskLayer2"></div>
+<div id="login_box2" style="display:none;">
+	<div class="rrs_box_t"></div>
+	<div class="rrs_box_c">
+		<h5><span>欢迎登录九维网</span><a class="RRSclose loginclose" href="javascript:;"></a></h5>
+		<div class="rrs_con">
+			<form action="https://passport.9wee.com/app/login.php?ac=login" name="formPassportLogin"
+				id="formPassportLogin" method="post">
+				<input type="hidden" value="" name="_REFERER">
+				<ul>
+					<li class="save">
+						<p class="login_input01"><input type="text" onclick="clear_text();" id="username"
+								name="username"><a href="https://passport.9wee.com/app/findpsw.php">忘记密码</a></p>
+						<p class="login_input01 login_input02"><input type="password" id="password" name="password"><a
+								href="https://passport.9wee.com/app/register.php">我要注册</a></p>
+						<p class="login_input01 login_input03">
+							<input type="text" maxlength="4" id="loginVerifyCode" name="code">
+							<img id="imgLoginVerifyCode_tip" alt="点击更换" align="absmiddle"
+								onclick="changeLoginVerifyCode();" class="vcode_img"><a
+								href="javascript:changeLoginVerifyCode();" onclick="changeLoginVerifyCode_tip();"
+								class="vcode_change">看不清</a>
+						</p>
+						<p style="line-height:1.5em;color:#EC6700;padding-top:10px;padding-left:2px;">
+							登录后您可以：查询等级以及个人<br>信息，参加九维在线活动</p>
+					</li>
+					<li style="text-align:center;width:416px;padding-left:0px;padding-top:12px;"><input type="submit"
+							value="用户登录" class="btn04"></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<div class="rrs_box_b"></div>
+</div>
+<!--登录提示窗结束-->
+<script type="text/javascript">
+	function changeLoginVerifyCode() {
+		var obj = document.getElementById('imgLoginVerifyCode');
+		var obj_tip = document.getElementById('imgLoginVerifyCode_tip')
+		if (obj) {
+			obj.style.visibility = 'visible';
+			obj.src = 'http://passport.9wee.com/common/verify_code?' + new Date().getTime();
+		}
+
+		if (obj_tip) {
+			obj_tip.style.visibility = 'visible';
+			obj_tip.src = obj.src;
+		}
+	}
+	changeLoginVerifyCode();
+</script>
+<script type="text/javascript">
+	//google统计代码
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-23294646-5']);
+	_gaq.push(['_setDomainName', '9wee.com']);
+	_gaq.push(['_setAllowHash', 'false']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+
+</html><!-- footer /e -->

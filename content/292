@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://tpc.googlesyndication.com">
+<link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+<link rel="preconnect" href="https://i.musicaimg.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+<script type="text/javascript" async=true>
+ <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+  var adsUserSelect = false;
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'JLe7AS-W8q6WC', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+
+  var cnt = 0;
+  var consentSetInterval = setInterval(function(){
+    cnt += 1;
+    if( cnt >= 50 ){
+      clearInterval(consentSetInterval);
+    } else {
+      if( typeof window.__tcfapi !== 'undefined' ) {
+        clearInterval(consentSetInterval);
+        loadAds();
+      }
+    }
+  },100);
+})();
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+function loadAds(){  
+  window.__tcfapi( 'addEventListener', 2, function( tcData,listenerSuccess ) {
+    if ( listenerSuccess ) {
+      if( !adsUserSelect && (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete' )) {
+        if (!tcData.gdprApplies ) { 
+          adsss(true);
+        } else {  
+          if (tcData.purpose.consents[1] && tcData.vendor.consents[755]) {
+            if (tcData.purpose.consents[3] && tcData.purpose.consents[4]) {
+              adsss(true);
+            }else{
+              adsss(false);
+            }
+          } else {
+            //no ads
+            loadMasTags(false);
+          }
+        }
+      }
+    }
+  });
+}
+
+function adsss(useGooglePersonalization){
+  let script_g = document.createElement('script');
+      script_g.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+      script_g.async = true;
+  document.body.append(script_g);
+  if(useGooglePersonalization) {
+    (adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0;
+    (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
+  } else {
+    (adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;
+    (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
+  }
+  //
+  loadMasTags(useGooglePersonalization);
+  adsUserSelect = true;
+}
+</script>
+<script type="text/javascript" async=true>
+function loadMasTags(useGooglePersonalization){
+  let script_a = document.createElement('script');
+      script_a.src = "https://www.googletagmanager.com/gtag/js?id=UA-5877893-4";
+      script_a.async = true;
+  document.body.append(script_a);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  if(useGooglePersonalization) {
+    gtag('config', 'UA-5877893-4')
+  } else {
+    gtag('config', 'UA-5877893-4', { 'anonymize_ip': true })
+  }
+  
+}
+</script>
+<script src="incsmas/js/esc_200.js?v=3" async></script>
+<title>MUSICA.COM</title>
+<meta name="keywords" content="musica"><meta name="description" content="En musica.com puedes escuchar miles de canciones mientras lees sus letras. Playlists, juegos, artículos de música, vídeos virales..."><meta property="og:title" content="MUSICA.COM" /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.musica.com" /><meta property="og:image" content="https://i.musicaimg.com/mas-musica/musica.png" /><meta property="og:site_name" content="musica.com" /><meta property="og:locale" content="es_ES" /><meta property="og:locale:alternate" content="es_LA" /><meta property="fb:app_id" content="139777552720573" /><meta property="og:description" content="En musica.com puedes escuchar miles de canciones mientras lees sus letras. Playlists, juegos, artículos de música, vídeos virales..." /><link rel="canonical" href="https://www.musica.com/" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://i.musicaimg.com/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://i.musicaimg.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://i.musicaimg.com/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="https://i.musicaimg.com/safari-pinned-tab.svg" color="#56bae5">
+<style>
+html{overflow-y:scroll}
+body{margin:0px;padding:0px;background-color:#f6f6f6;color:#000101}
+body,a,p,td{font-family:verdana;font-size:1em}
+article,article a,article p{font-size:1em}
+ul,li{user-select:none}
+#header{width:100%;height:50px;background-color:#56BAE5;position:fixed;z-index:997}
+#header .msc{width:1000px;height:50px;margin:0px auto;text-align:center}
+#header .head1{float:left;padding:16px 15px 10px 11px;cursor:pointer;margin-right:90px}
+#header .head2{float:right;padding:12px 11px 10px 5px;cursor:pointer}
+#header #head3{padding-top:8px}#header #head3 img{width:270px;height:32px}
+#header .head4{float:right;padding:12px 6px 10px 15px;cursor:pointer;margin-right:4px}
+#header .head4 span{font-family:arial;font-size:20px;color:#fff}
+#header #user{padding-top:9px}
+#header #user{display:none}
+#header #user div {border:2px #fff solid;padding:2px 6px;border-radius:5px;background-color:#000}
+article,section,aside,hgroup,nav,header,footer,figure,figcaption,main{display:block}
+
+section,.rst3{padding:14px 0px 10px 0px}
+footer{text-align:center;padding-bottom:12px}footer aside{display:inline-block;margin:0px 5px 30px 0px}footer aside a{padding:6px 14px;border-radius:4px;color:#fff}footer aside a:hover{color:#eee}footer p:last-child{padding-bottom:16px}footer h3{margin:20px auto 7px auto}
+
+h1{margin:10px 0px 16px 0px;font-size:24px;text-transform:uppercase;font-weight:bold}
+
+h2{margin:6px 0px 10px 0px;font-size:20px;font-weight:bold;color:#333}
+.hachedos{margin:6px 0px 10px 0px;font-size:18px;font-weight:bold;color:#444}
+h3{margin:6px 0px;font-size:16px;font-weight:bold}
+p{margin:2px 0px}
+input,select{font-size:16px}
+a{text-decoration:none;color:#0b3345}
+a:hover{color:#2aa8de}
+img{vertical-align:middle}
+.rst,.ijk,.content{width:100%;border-spacing:0px;border:0px;background-color:#FFFFFF;border-radius:3px}
+.rst td{padding:0px}
+.rst2{width:1000px;margin:auto auto 8px auto}
+.content td{padding:0px}
+ul{list-style-type:none;padding-left:11px;padding-right:0px}
+.tit {font-size:16px;font-family:arial,sans-serif-light;line-height:18px}
+.btnaz{font-weight:bold;color:#2aa8de;border:1px #2aa8de solid;cursor:pointer;margin:3px 0px;border-radius:5px;text-decoration:none;padding:5px;font-size:14px;transition:.3s;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;display:inline-block;position:relative;bottom:2px;user-select:none}
+.bordero{border-color:#cf209a;font-weight:normal!important}
+.btnaz:hover{background-color:#2aa8de;color:#fff}.btnaz>img{background-color:#fff;border-radius:5px;padding:4px 5px 6px 4px}
+.btmini{font-size:12px;margin-top:3px;margin-right:8px}
+#top{height:50px}
+.b_sec{color:#2aa8de;border-width:1px 0 1px 1px;border-color:#2aa8de;border-style:solid;text-align:center;display:inline-block;padding:5px 34px;margin:0px;cursor:pointer}
+.b_sec.active{background-color:#2aa8de;color:#fff}
+#b_tab{display:none;padding:0px 59px}#b_tab ul{margin:0px;padding:0px}
+#b_result{padding:2px 0px}
+.buscador-sticky{position:-webkit-sticky;position:-moz-sticky;position:-o-sticky;position:-ms-sticky;position:sticky;top:50px;z-index:200}
+#buscar{margin:auto auto 8px auto;position:relative;width:1000px;border-top-left-radius:0px;border-top-right-radius:0px}
+#buscar #all{border-bottom-left-radius:5px;border-top-left-radius:5px}
+#buscar #let{border-right:#2aa8de 1px solid;border-bottom-right-radius:5px;border-top-right-radius:5px}
+#buscar .caja{padding:8px 26px}#buscar .caja input{width:888px;margin-left:5px;height:22px;border:#2aa8de 1px solid;border-radius:5px;padding:4px 4px 4px 12px;-webkit-appearance:none}
+ul.listado-letras{margin:0px 0px 4px 0px;list-style-type:none;padding-left:0px}ul.listado-letras li{padding:10px 0px;border-bottom:#EFEFEF 1px solid;display:list-item;position:relative;min-height:60px}ul.listado-letras li:last-child{border-bottom:0px}ul.listado-letras li.li50{height:50px}ul.listado-letras li.new{padding-bottom:15px}ul.listado-letras li.new span{display:block;z-index:2;width:60px;height:12px;position:relative;bottom:7px;background-color:#cf209a;font-size:11px;font-family:arial;color:#f2fcef;-webkit-box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7);-moz-box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7);box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7);text-align:center}.imagen-cancion{position:absolute;float:left}.imagen-cancion>img{position:relative;float:left;margin-right:10px}.info-letra{display:list-item;margin:0 0 0 70px;width:auto}.info-letra{font-size:16px}.info-letra p{font-size:14px;margin-top:4px;font-style:italic;color:#999}
+.titpag{height:24px;text-align:center;padding:5px 3px 3px 3px;border-bottom:1px #e3e3e3 solid}.titpag h1{margin:2px;font-size:16px;font-weight:bold}
+.sombra{margin-bottom:2px;-webkit-box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7);-moz-box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7);box-shadow:3px 3px 5px -2px rgba(0,0,0,0.7)}
+
+.menuletras{margin:0px 11px;padding:5px 0px 1px 0px}.menuletras ul{margin:auto;padding:7px 0px 0px 0px}.menuletras li{display:inline-block;text-align:center;padding:0px 2px 0px 0px}.menuletras .btnaz{padding:5px 6px;border-width:1px}.menuletras .btnaz img{padding:0px 0px 2px 0px}.menuletras nav ul:first-child li:last-child a{width:32px;padding-bottom:4px}
+.ma_le_26{margin-left:26px;margin-right:26px}
+.top-musica{display:inline-block;width:255px;height:60px;margin:4px 0px}.top-musica div{overflow:hidden;display:inline-block}.top-musica div:first-child{width:50px;height:50px;border:1px solid #e3e3e3;border-radius:40px;position:absolute}.top-musica p{position:relative;padding-top:15px;padding-bottom:10px;left:60px;margin-right:64px}.top-musica img{height:50px;width:50px}.top-musica p,.top-musica a{font-size:16px}.imagenle{background-image:url('https://i.musicaimg.com/i6/letras.png')}
+.dotted div{margin:14px auto;border-bottom:1px #cdcdcd dotted;min-height:74px}.dotted div:last-child{margin-bottom:0px;border-bottom:0px}.dotted a:first-child{float:left;margin-right:14px}.dotted div p{margin-top:4px;font-size:14px;color:#999999;font-style:italic}
+#avisoinferior{background-color:#fff;height:120px;padding-left:11px;padding-top:6px;border-top: 1px solid #189a3f}#avisoinferior div{width:1000px;margin:auto}#avisoinferior aside{display:inline-block;margin:7px 3px 0px 0px}#avisoinferior aside a{padding:7px 21px;border-radius:4px;color:#fff;font-size:14px}#avisoinferior aside a:hover{color:#eee}
+#scrollTop{display:none;position:fixed;bottom:244px;right:16px;padding:5px;width:42px;height:auto;z-index:200}#scrollButton{width:34px;z-index:9999;height:34px;padding:2px;background-color:#EDEDED;border:#CDCDCD 1px solid;border-radius:35px;text-align:center;cursor:pointer;font-size:22px;font-weight:600}#scrollButton:hover{background-color:#999;color:#FFF}
+.overall{position:fixed;content:"";top:0;left:0;width:100vw;height:100vh;background:#000;z-index:9998;opacity:.5}#menu_site,#menu_user,#buscador,#solltop{display:none}#menu_site .menudiv{padding:6px 0px}.visible{display:block!important}.site-menu{position:fixed;display:block;left:0;top:0;width:250px;will-change:transform;transition-duration:3.1s;transition-timing-function:linear;transform:translateX(0px);-webkit-transform:translateX(0px);box-shadow:5px 0 10px -5px #000;z-index:9999}.user-menu{position:fixed;display:block;right:20px;top:0;width:250px;will-change:transform;transition-duration:3.1s;transition-timing-function:linear;transform:translateX(0px);-webkit-transform:translateX(0px);box-shadow:5px 0 10px -5px #000;z-index:9999}.search-menu{position:fixed;display:block;top:0;left:0;width:50%;margin:0 25%;height:100vh;overflow-y:auto;background:#FFF;opacity:.9;will-change:transform;transition-duration:3.1s;transition-timing-function:linear;transform:translateX(0px);-webkit-transform:translateX(0px);box-shadow:5px 0 10px -5px #000;z-index:9999}#menu_wrapper{display:none}.menu_content{position:relative;width:100%;top:0;height:100vh;vertical-align:top;background-color:#FFF;overflow-x:hidden;overflow-y:auto;padding:10px}.user-menu .menu-content{right:0}.menu_content::-webkit-scrollbar{width:7px}.menu_content::-webkit-scrollbar-track{background:#f1f1f1}.menu_content::-webkit-scrollbar-thumb{background:#888}.menu_content::-webkit-scrollbar-thumb:hover{background:#555}.menu_content .close,.flags_close{position:absolute;right:0;width:40px;height:40px;color:#CDCDCD;font-weight:600;text-align:center;cursor:pointer}.menu_content .close_user{position:absolute;left:0;width:40px;height:40px;color:#CDCDCD;font-weight:600;text-align:center;cursor:pointer}
+.menudiv{cursor:pointer;border-bottom:1px #CDCDCD solid}
+.menudiv a,.menudiv p{color:#369AC5;font-size:14px;margin:12px 0px 12px 10px;display:inline-block}
+.menudiv img{position:relative;margin-right:5px;margin-bottom:4px}
+.menumusica {padding:8px 15px}
+.siguenos{cursor:default}.siguenos p{margin-right:14px;color:#000}
+
+.generos h2{margin:8px 0px 0px 0px;color:#888}.generos span{font-size:12px;color:#666;display:block;padding-top:1px}.generos li{padding:4px 2px 7px 2px;width:66px}.mas-musica blockquote{font-size:1em;margin:4px 0px 10px 0px;font-family:Open Sans;font-style:italic;color:#555;padding:2em .5em .5em .7em;border-left:6px solid #56bae5;line-height:1.5;position:relative;background:#f6f6f6;text-align:left;border-radius:6px}.mas-musica blockquote::before{font-family:Arial;content:"\201C";color:#56bae5;font-size:4em;position:absolute;left:0;top:-12px}.mas-musica blockquote a{font-size:1em;display:block;color:#555;font-family:Open Sans;font-style:normal;margin-top:.3em;text-decoration:underline}
+</style>
+<meta name="msapplication-TileColor" content="#56bae5">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=yes">
+<meta name="theme-color" content="#56bae5">
+
+</head>
+<body>
+
+
+<header id="header">
+<div class="msc">
+<img onclick="menu()" class="head1" src="https://i.musicaimg.com/i8/menu.svg" onerror="this.onerror=null;this.src='https://i.musicaimg.com/i8/menu.png'" alt="menú de musica.com" width="20" height="18">
+<img onclick="buscar()" class="head2" src="https://i.musicaimg.com/i8/lupa.svg" onerror="this.onerror=null;this.src='https://i.musicaimg.com/i8/lupa.png'" alt="buscar en musica.com" width="25" height="25">
+<img id="nouser" onclick="login('')" class="head4" src="https://i.musicaimg.com/i8/login-3.svg" onerror="this.onerror=null;this.src='https://i.musicaimg.com/i8/login-3.png'" alt="Login" width="29" height="25">
+
+<div id="user" class="head4" onclick="usermenu()"><aside><div><span id="inicial"></span></div></aside></div>
+
+
+<div id="head3"><a href="https://www.musica.com"><img src="https://i.musicaimg.com/id/musica.png" alt="musica.com"></a></div>
+</div>
+</header>
+
+<div id="top"></div>
+
+<div class="buscador-sticky">
+<aside class="ijk" id="buscar">
+<form method="get" action="https://www.musica.com/letras.asp">
+<div class="caja">
+<img src="https://i.musicaimg.com/mas-musica/disquito.png" alt="disquito" width="30" height="32">
+<input type="text" id="t2" name="t2" aria-label="t2" value="" placeholder="Buscar letras, artistas, música" autocomplete="off">
+</div></form>
+<div id="b_tab">
+<ul><li class="b_sec" id="all" onclick="busqueda('all')"><span>Todo</span></li><li class="b_sec" id="gru" onclick="busqueda('gru')"><span>Artistas</span></li><li class="b_sec" id="let" onclick="busqueda('let')"><span>Canciones</span></li></ul>
+<div id="b_result"></div>
+</div>
+</aside>
+</div>
+
+
+
+
+<aside style="width:970px;height:90px;margin:8px auto;text-align:center">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:90px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="8265313433"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</aside>
+
+<div class="rst rst2" style="padding:8px 0px">
+<div class="menuletras ma_le_26">
+<h1>MUSICA.COM</h1><p>Letras de canciones, fotos de artistas, juegos de música, biografías, artículos de música...</p>
+
+
+<nav>
+
+<ul>
+<li><a title="Letras de Canciones" href="https://www.musica.com/letras.asp?letras=canciones" class="btnaz">Letras</a></li>
+<li><a title="TOP música, mejores artistas" href="https://www.musica.com/letras.asp?topmusica=musica" class="btnaz">Top Artistas</a></li>
+<li><a title="Playlists de Canciones" href="https://www.musica.com/letras.asp?playlist=musica" class="btnaz">Playlists</a></li>
+<li><a onclick="buscar()" class="btnaz bordero"><img alt="buscador" src="https://i.musicaimg.com/i8/lupa-azul.svg" onerror="this.onerror=null;this.src='https://i.musicaimg.com/i8/lupa-azul.png'" height="14" width="14"></a></li>
+</ul>
+
+</nav>
+
+<div class="generos">
+<h2>Novedades</h2>
+<ul style="margin-left:-11px">
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-pop"><img src="https://i.musicaimg.com/i12/pop.png" width="30" height="30" alt="Pop"><span>Pop</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-rock"><img src="https://i.musicaimg.com/i12/rock.png" width="30" height="30" alt="Rock"><span>Rock</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-musica-latina"><img src="https://i.musicaimg.com/i12/latina.png" width="30" height="30" alt="Música Látina"><span>Látina</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-hip-hop"><img src="https://i.musicaimg.com/i12/hip-hop.png" width="30" height="30" alt="Hip-Hop"><span>Hip-Hop</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-reggaeton"><img src="https://i.musicaimg.com/i12/reggaeton.png" width="30" height="30" alt="Reggaetón"><span>Reggaetón</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-trap"><img src="https://i.musicaimg.com/i12/trap.png" width="30" height="30" alt="Trap"><span>Trap</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-musica-indie"><img src="https://i.musicaimg.com/i12/indie.png" width="30" height="30" alt="Música Indie"><span>Indie</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=lo-mejor-del-heavy"><img src="https://i.musicaimg.com/i12/heavy.png" width="30" height="30" alt="Heavy"><span>Heavy</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=novedades-musica-electronica"><img src="https://i.musicaimg.com/i12/electronica.png" width="30" height="30" alt="Música Electrónica"><span>Electrónica</span></a></li>
+<li><a href="https://www.musica.com/letras.asp?playlist=musica"><img src="https://i.musicaimg.com/i12/mas.png" width="30" height="30" alt="Más Música"><span>Más</span></a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="rst rst2 rst3">
+<div class="ma_le_26" style="width:550px;display:inline-block">
+<h2 style="margin:12px 0px 0px 0px">TOP Canciones</h2>
+<p style="font-size:0.9em">* Datos de musica.com, no de YouTube</p>
+<ul class="listado-letras" style="margin-bottom:0px"><li><div class="imagen-cancion"><a href="letras.asp?letra=1944739"><img src="https://i.musicaimg.com/letras/100x100/enredados.jpg" class="sombra" width="60" height="60" alt="Enredados"></a></div><a href="letras.asp?letra=1944739"><div class="info-letra">Veo en ti la luz<p>Enredados</p></div></a></li><li><div class="imagen-cancion"><a href="letras.asp?letra=2028040"><img src="https://i.musicaimg.com/letras/100x100/coros-cristianos.jpg" class="sombra" width="60" height="60" alt="Coros Cristianos"></a></div><a href="letras.asp?letra=2028040"><div class="info-letra">No hay Dios tan grande como tú<p>Coros Cristianos</p></div></a></li><li><div class="imagen-cancion"><a href="letras.asp?letra=2549980"><img src="https://i.musicaimg.com/letras/100x100/rauw-alejandro.jpg" class="sombra" width="60" height="60" alt="Rauw Alejandro"></a></div><a href="letras.asp?letra=2549980"><div class="info-letra">Todo De Ti<p>Rauw Alejandro</p></div></a></li><li><div class="imagen-cancion"><a href="letras.asp?letra=2550954"><img src="https://i.musicaimg.com/letras/100x100/bad-bunny.jpg" class="sombra" width="60" height="60" alt="Bad Bunny"></a></div><a href="letras.asp?letra=2550954"><div class="info-letra">Yonaguni<p>Bad Bunny</p></div></a></li><li><div class="imagen-cancion"><a href="letras.asp?letra=1640467"><img src="https://i.musicaimg.com/letras/100x100/canciones-romanticas.jpg" class="sombra" width="60" height="60" alt="Canciones Románticas"></a></div><a href="letras.asp?letra=1640467"><div class="info-letra">Mi fuerza eres tú<p>Canciones Románticas</p></div></a></li></ul>
+<p><a href="https://www.musica.com/letras.asp?letras=canciones" class="btnaz">Letras de canciones</a></p>
+<h2 style="margin:16px 0px 0px 0px;color:#cf209a">Novedades Musicales</h2>
+<ul class="listado-letras" style="margin-bottom:0px"><li class=""><div class="imagen-cancion"><a href="letras.asp?letra=2554665"><img src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/bad-bunny.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/bad-bunny.jpg" class="sombra lazy" width="60" height="60" alt="Bad Bunny"></a></div><a href="letras.asp?letra=2554665"><div class="info-letra">Volví<p>Bad Bunny, Aventura</p></div></a></li><li class=" li50"><div class="imagen-cancion"><a href="letras.asp?letra=2554720"><img src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/180x135/pignoise.jpg" data-srcset="https://i.musicaimg.com/letras/180x135/pignoise.jpg" class="sombra lazy" width="60" height="45" alt="Pignoise" style="padding-bottom:5px"></a></div><a href="letras.asp?letra=2554720"><div class="info-letra">Una Sensación<p>Pignoise</p></div></a></li><li class=""><div class="imagen-cancion"><a href="letras.asp?letra=2554357"><img src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/nicky-jam.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/nicky-jam.jpg" class="sombra lazy" width="60" height="60" alt="Nicky Jam"></a></div><a href="letras.asp?letra=2554357"><div class="info-letra">Miami<p>Nicky Jam</p></div></a></li><li class=""><div class="imagen-cancion"><a href="letras.asp?letra=2554424"><img src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/lasso.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/lasso.jpg" class="sombra lazy" width="60" height="60" alt="Lasso"></a></div><a href="letras.asp?letra=2554424"><div class="info-letra">De mí, de mí, de mí<p>Lasso, José Madero</p></div></a></li><li class=""><div class="imagen-cancion"><a href="letras.asp?letra=2554412"><img src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/intocable.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/intocable.jpg" class="sombra lazy" width="60" height="60" alt="Intocable"></a></div><a href="letras.asp?letra=2554412"><div class="info-letra">Jamás Te Soltaré<p>Intocable</p></div></a></li></ul>
+<p><a href="https://www.musica.com/letras.asp?letras=novedades" class="btnaz">Novedades Musicales</a></p>
+</div>
+<div style="width:330px;display:inline-block;vertical-align:top;padding-top:16px">
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="2916783834"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</div>
+</div>
+
+<aside class="rst rst2 rst3">
+<div class="ma_le_26">
+<div style="width:516px;display:inline-block"><h2>Artistas de actualidad</h2><div class="top-musica"><div><a href="letras.asp?letras=11519" title="Ricardo Arjona"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/ricardo-arjona.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/ricardo-arjona.jpg" alt="Ricardo Arjona"></a></div><a href="letras.asp?letras=11519"><p>Ricardo Arjona</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=47424" title="Becky G"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/becky-g.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/becky-g.jpg" alt="Becky G"></a></div><a href="letras.asp?letras=47424"><p>Becky G</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=165" title="Enrique Iglesias"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/enrique-iglesias.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/enrique-iglesias.jpg" alt="Enrique Iglesias"></a></div><a href="letras.asp?letras=165"><p>Enrique Iglesias</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=53279" title="Bad Bunny"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/bad-bunny.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/bad-bunny.jpg" alt="Bad Bunny"></a></div><a href="letras.asp?letras=53279"><p>Bad Bunny</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=25272" title="Karol G"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/karol-g.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/karol-g.jpg" alt="Karol G"></a></div><a href="letras.asp?letras=25272"><p>Karol G</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=57542" title="Rauw Alejandro"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/rauw-alejandro.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/rauw-alejandro.jpg" alt="Rauw Alejandro"></a></div><a href="letras.asp?letras=57542"><p>Rauw Alejandro</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=9124" title="Luis Fonsi"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/luis-fonsi.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/luis-fonsi.jpg" alt="Luis Fonsi"></a></div><a href="letras.asp?letras=9124"><p>Luis Fonsi</p></a></div><div class="top-musica"><div><a href="letras.asp?letras=4508" title="David Bisbal"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/letras/100x100/david-bisbal.jpg" data-srcset="https://i.musicaimg.com/letras/100x100/david-bisbal.jpg" alt="David Bisbal"></a></div><a href="letras.asp?letras=4508"><p>David Bisbal</p></a></div></div>
+<aside style="width:346px;display:inline-block;vertical-align:top;text-align:center">
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="9115412636"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</aside>
+</div>
+</aside>
+
+<div class="rst rst2">
+<div class="menumusica">
+<h2 class="menuletras">Letras y Música</h2>
+<div class="menuletras">
+
+
+
+<nav>
+
+<ul>
+<li><a title="Letras de Canciones" href="https://www.musica.com/letras.asp?letras=canciones" class="btnaz">Letras</a></li>
+<li><a title="TOP música, mejores artistas" href="https://www.musica.com/letras.asp?topmusica=musica" class="btnaz">Top Artistas</a></li>
+<li><a title="Playlists de Canciones" href="https://www.musica.com/letras.asp?playlist=musica" class="btnaz">Playlists</a></li>
+<li><a onclick="buscar()" class="btnaz bordero"><img alt="buscador" src="https://i.musicaimg.com/i8/lupa-azul.svg" onerror="this.onerror=null;this.src='https://i.musicaimg.com/i8/lupa-azul.png'" height="14" width="14"></a></li>
+</ul>
+
+<ul>
+<li><a href="https://www.musica.com/letras.asp?g=a" class="btnaz">A</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=b" class="btnaz">B</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=c" class="btnaz">C</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=d" class="btnaz">D</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=e" class="btnaz">E</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=f" class="btnaz">F</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=g" class="btnaz">G</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=h" class="btnaz">H</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=i" class="btnaz">I</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=j" class="btnaz">J</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=k" class="btnaz">K</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=l" class="btnaz">L</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=m" class="btnaz">M</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=n" class="btnaz">N</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=o" class="btnaz">O</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=p" class="btnaz">P</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=q" class="btnaz">Q</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=r" class="btnaz">R</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=s" class="btnaz">S</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=t" class="btnaz">T</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=u" class="btnaz">U</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=v" class="btnaz">V</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=w" class="btnaz">W</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=x" class="btnaz">X</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=y" class="btnaz">Y</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=z" class="btnaz">Z</a></li>
+<li><a href="https://www.musica.com/letras.asp?g=1" class="btnaz">#</a></li>
+</ul>
+
+</nav>
+
+</div>
+</div>
+</div>
+
+
+<aside style="width:728px;height:90px;margin:14px auto">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="8306093039"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</aside>
+
+<aside class="rst rst2 rst3">
+<div class="ma_le_26">
+<h2 style="margin-bottom:0px">Más Música</h2>
+<div class="dotted mas-musica" style="width:542px;margin-right:10px;display:inline-block"><div><a href="https://www.musica.com/letras.asp?compartir=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/mas-musica-videos.jpg" data-srcset="https://i.musicaimg.com/mas-musica/mas-musica-videos.jpg" height="60" width="60" alt="Vídeos Virales de Música"></a><a href="https://www.musica.com/letras.asp?compartir=musica">Vídeos Virales<p>Los vídeos de música más compartidos de Internet</p></a></div>
+<div><h3>Letra del día</h3><blockquote>No te preocupes si no te aprueban,<br>cuando te critiquen tú solo di:<br>Soy yo, Soy yo<a href="https://www.musica.com/letras.asp?letra=2219993">'Soy Yo', Bomba Estéreo</a></blockquote></div>
+<div><a href="https://www.musica.com/letras.asp?articulo=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/mas-musica-articulos.jpg" data-srcset="https://i.musicaimg.com/mas-musica/mas-musica-articulos.jpg" height="60" width="60" alt="Artículos de Música"></a><a href="https://www.musica.com/letras.asp?articulo=musica">Artículos de Música<p>Chistes de música, frases, beneficios de la música...</p></a></div><div><a href="https://www.musica.com/letras.asp?puntuaciones=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/puntuar-artistas.jpg" data-srcset="https://i.musicaimg.com/mas-musica/puntuar-artistas.jpg" height="60" width="60" alt="Puntuar Artistas"></a><a href="https://www.musica.com/letras.asp?puntuaciones=musica">Puntuar Artistas<p>Puntúa a diferentes cantantes y grupos para establecer sus índices de popularidad</p></a></div><div><a href="https://www.musica.com/letras.asp?juegos=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/mas-juegos-musica.jpg" data-srcset="https://i.musicaimg.com/mas-musica/mas-juegos-musica.jpg" height="60" width="60" alt="Juegos de Música"></a><a href="https://www.musica.com/letras.asp?juegos=musica">Juegos de Música<p>Trivial de música y juegos de fotos distorsionadas y borrosas de artistas</p></a></div><div><a href="https://www.musica.com/letras.asp?votaciones=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/duelos-artistas.jpg" data-srcset="https://i.musicaimg.com/mas-musica/duelos-artistas.jpg" height="60" width="60" alt="Votaciones Artistas"></a><a href="https://www.musica.com/letras.asp?votaciones=musica">Votaciones Artistas<p>Elige al artista que más te guste para determinar quién es el mejor de todos</p></a></div><div><a href="https://www.musica.com/letras.asp?topsocios=musica"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/top-socios-socias.jpg" data-srcset="https://i.musicaimg.com/mas-musica/top-socios-socias.jpg" height="60" width="60" alt="TOP Socios/as"></a><a href="https://www.musica.com/letras.asp?topsocios=musica">TOP Socios/as<p>Clasificación de los socios y socias que más colaboran en la página</p></a></div>
+<div><aside style="overflow:hidden;margin-bottom:14px">
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="9115412636"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</aside></div>
+<div><a href="https://www.musica.com/letras.asp?foros=saludos"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/mas-musica-saludos.jpg" data-srcset="https://i.musicaimg.com/mas-musica/mas-musica-saludos.jpg" height="60" width="60" alt="Saludos de cantantes y grupos"></a><a href="https://www.musica.com/letras.asp?foros=saludos">Saludos de Artistas<p>Más de 100 artistas recomiendan musica.com: A. Sanz, Bon Jovi, Camila...</p></a></div><div><a href="https://www.musica.com/letras.asp?o=0"><img class="sombra lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/mas-musica/mas-musica-preguntas.jpg" data-srcset="https://i.musicaimg.com/mas-musica/mas-musica-preguntas.jpg" height="60" width="60" alt="Preguntas sobre tus gustos musicales"></a><a href="https://www.musica.com/letras.asp?o=0">Preguntas de Música<p>¿A qué artista te gustaría conocer? ¿En qué década se hizo la mejor música?...</p></a></div></div>
+<aside style="width:310px;display:inline-block;vertical-align:top;text-align:center">
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-1467783483224660"
+     data-ad-slot="2916783834"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle||[]).pauseAdRequests=1;
+(adsbygoogle = window.adsbygoogle||[]).push({});
+</script>
+</aside>
+</div>
+</aside>
+
+
+<footer id="footer" class="rst rst2">
+<p style="line-height:22px;padding:12px 0px 10px 0px;font-weight:bold">MUSICA.COM</p>
+<p class="tit" style="padding:20px 0px 12px 0px">© 2021 MUSICA.COM</p>
+<p style="padding-bottom:16px"><a href="https://www.musica.com/letras.asp?ayuda=faq" style="text-decoration:underline">
+Ayuda</a> | <a href="https://www.musica.com/letras.asp?contacto=ok" style="text-decoration:underline">
+Contacto</a> | <a onclick="window.__tcfapi('displayConsentUi',2, function() {});" style="text-decoration:underline;cursor:pointer">Política de Privacidad</a> | <a href="https://www.musica.com/letras.asp?politicadecookies=ok" style="text-decoration:underline">Política de Cookies</a></p>
+<p>Las letras disponibles tienen propósitos meramente educativos</p>
+<div class="menuletras">
+<h3>Más Ocio</h3>
+<a href="https://www.teletexto.com/teletexto.asp?paises=todos" class="btnaz">Programación TV</a> <a href="https://www.cine.com" class="btnaz">Cine</a> <a href="https://www.videojuegos.com" class="btnaz">Videojuegos</a>
+</div>
+</footer>
+
+
+
+
+<nav id="menu_site" class="site-menu">
+<div class="menu_content">
+<div class="close" onclick="closeall('menu_site')"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i11/close.png" data-srcset="https://i.musicaimg.com/i11/close.png" width="18" height="18" alt="Cerrar"></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com'"><a href="https://www.musica.com"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/musica-s.png" data-srcset="https://i.musicaimg.com/i12/musica-s.png" height="16" width="16" alt="Musica.com"> MUSICA.COM</a></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com/letras.asp?letras=canciones'"><a href="https://www.musica.com/letras.asp?letras=canciones"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/letras-s.png" data-srcset="https://i.musicaimg.com/i12/letras-s.png" height="16" width="16" alt="Letras de Canciones"> Letras de Canciones</a></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com/letras.asp?letras=novedades'"><a href="https://www.musica.com/letras.asp?letras=novedades"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/novedades-s.png" data-srcset="https://i.musicaimg.com/i12/novedades-s.png" height="16" width="16" alt="Novedades"> Novedades Musicales</a></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com/letras.asp?topmusica=musica'"><a href="https://www.musica.com/letras.asp?topmusica=musica"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/artistas-favoritos-s.png" data-srcset="https://i.musicaimg.com/i12/artistas-favoritos-s.png" height="16" width="16" alt="TOP Música"> TOP Artistas</a></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com/letras.asp?playlist=musica'"><a href="https://www.musica.com/letras.asp?playlist=musica"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/playlist-s.png" data-srcset="https://i.musicaimg.com/i12/playlist-s.png" height="16" width="16" alt="Playlists"> Playlists</a></div>
+<div class="menudiv" onclick="window.location='https://www.musica.com/letras.asp?mas=musica'"><a href="https://www.musica.com/letras.asp?mas=musica"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/mas-musica-s.png" data-srcset="https://i.musicaimg.com/i12/mas-musica-s.png" height="16" width="16" alt="Más Música"> Más Música</a></div>
+<div class="menudiv siguenos"><p>Síguenos</p>
+<a href="https://www.facebook.com/musicacom/" rel="nofollow noopener noreferrer" target="_blank"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/facebook-s.png" data-srcset="https://i.musicaimg.com/i12/facebook-s.png" height="16" width="16" alt="facebook"></a>
+<a href="https://twitter.com/musicapuntocom" rel="nofollow noopener noreferrer" target="_blank"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/twitter-s.png" data-srcset="https://i.musicaimg.com/i12/twitter-s.png" height="16" width="16" alt="twitter"></a>
+<a href="https://www.instagram.com/musicapuntocom/" rel="nofollow noopener noreferrer" target="_blank"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/instagram-s.png" data-srcset="https://i.musicaimg.com/i12/instagram-s.png" height="16" width="16" alt="instagram"></a>
+<a href="https://www.youtube.com/musicapuntocom" rel="nofollow noopener noreferrer" target="_blank"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i12/youtube-s.png" data-srcset="https://i.musicaimg.com/i12/youtube-s.png" height="16" width="16" alt="youtube"></a>
+</div>
+<div></div>
+</div>
+</nav>
+<aside id="menu_user" class="user-menu">
+<div class="menu_content" id="menu_content">
+
+</div>
+</aside>
+
+<aside id="avisoinferior">
+
+<div>
+<h3>Compartir esta página en...</h3>
+<aside><a href="https://www.facebook.com/sharer.php?u=https://www.musica.com/&amp;ref=fbl" target="_blank" rel="nofollow noopener noreferrer" style="background-color:#3762A7">Facebook</a></aside>
+<aside><a href="https://twitter.com/share?url=https%3A%2F%2Fwww.musica.com%2F%26ref%3Dtwl&text=" target="_blank" rel="nofollow noopener noreferrer" style="background-color:#0099D5">Twitter</a></aside>
+
+</div>
+
+</aside>
+
+<aside id="scrollTop">
+
+<div id="scrollButton" onclick="scrolltoTop()"><img class="lazy" src="https://i.musicaimg.com/i/transp.gif" data-src="https://i.musicaimg.com/i9/scrolltop.png" data-srcset="https://i.musicaimg.com/i9/scrolltop.png" alt="ir a arriba" width="24" height="24"></div>
+</aside>
+<script>function lazyLoad(){var t=document.querySelectorAll("img.lazy"),a=!1;!1===a&&(a=!0,setTimeout(function(){for(var e=0;e<=t.length-1;e++)lazyImage=t[e],lazyImage.getBoundingClientRect().top<=window.innerHeight&&0<=lazyImage.getBoundingClientRect().bottom&&"none"!==getComputedStyle(lazyImage).display&&(lazyImage.src=lazyImage.dataset.src,lazyImage.srcset=lazyImage.dataset.srcset,lazyImage.classList.remove("lazy"),0===t.length&&(document.removeEventListener("scroll",lazyLoad),window.removeEventListener("resize",lazyLoad))),a=!1},10))}document.addEventListener("readystatechange",function(){"interactive"==document.readyState&&lazyLoad()}),document.addEventListener("scroll",function(){lazyLoad()}),window.addEventListener("resize",function(){lazyLoad()});</script>
+
+</body></html>

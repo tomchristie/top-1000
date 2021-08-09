@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let i;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",i=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")&&this._isValidScriptType(i)?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}_isValidScriptType(e){return!e||""===e||"string"==typeof e&&["text/javascript","text/x-javascript","text/ecmascript","text/jscript","application/javascript","application/x-javascript","application/ecmascript","application/jscript","module"].includes(e.toLowerCase())}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript;n||console.error("WPRocket unable to document.write this: "+t);const i=document.createRange(),r=n.parentElement;let a=e.get(n);void 0===a&&(a=n.nextSibling,e.set(n,a));const o=document.createDocumentFragment();i.setStart(o,0),o.appendChild(i.createContextualFragment(t)),r.insertBefore(o,a)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+			<link rel="shortcut icon" href="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" sizes="180x180" href="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png">
+		<link rel="alternate" type="application/rss+xml" title="Uploading.com RSS Feed" href="https://uploading.com/feed/" />
+	<link rel="alternate" type="application/atom+xml" title="Uploading.com Atom Feed" href="https://uploading.com/feed/atom/" />
+	<link rel="pingback" href="https://uploading.com/xmlrpc.php" />
+	<!--[if lt IE 9]>
+	<script src="https://uploading.com/wp-content/themes/soledad/js/html5.js"></script>
+	<![endif]-->
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Uploading.com - Best General News Website 2021</title><style id="rocket-critical-css">@font-face{font-display:swap;font-family:'FontAwesome';src:url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'),url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(https://uploading.com/wp-content/themes/soledad/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-search:before{content:"\f002"}.fa-close:before{content:"\f00d"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-rss:before{content:"\f09e"}.fa-bars:before{content:"\f0c9"}.fa-pinterest:before{content:"\f0d2"}.fa-linkedin:before{content:"\f0e1"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-angle-down:before{content:"\f107"}.fa-youtube-play:before{content:"\f16a"}.fa-instagram:before{content:"\f16d"}.fa-vk:before{content:"\f189"}.fa-stumbleupon:before{content:"\f1a4"}.penci-owl-carousel{display:none;width:100%;position:relative;z-index:1}.penci-owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y}.penci-owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.penci-owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0px,0px,0px)}.penci-owl-carousel.owl-loaded{display:block}.penci-owl-carousel .owl-item{position:relative;min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}*{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-moz-box-sizing:border-box;outline:none}*,html,body,div,ul,li,h3,form,input,p{margin:0;padding:0}input{background-color:transparent}img{border:0}ul,li{list-style:none}h3{font-size:100%;font-weight:normal}img{max-width:100%;vertical-align:top;height:auto}a img{border:none}body:not(.penci-fawesome-ver5) .penci-faicon{font-family:'FontAwesome';font-weight:normal}html,body{-webkit-font-smoothing:antialiased}body{font-family:'PT Serif',serif;color:#313131;background-color:#FFF;font-size:14px;overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}p{font-size:14px;line-height:28px}a{text-decoration:none;color:#6eb48c;outline:none}h3{font-family:'Raleway',sans-serif;font-style:normal;letter-spacing:1px;font-weight:bold}.container{width:1170px;margin:0 auto}body:not(.penci-fawesome-ver5) .penci-faicon.fa-facebook:before{content:"\f09a"}#main{width:100%}.container.penci_sidebar #main{width:70.94%;padding-right:50px;float:left}.penci-sidebar-content{width:29.06%;float:right}.clear-footer{height:1px;margin-bottom:29px;clear:both;display:block;width:100%}.wrapper-boxed{overflow:hidden}.penci-top-bar{height:32px;background:#313131}.penci-headline{display:block}.headline-title{height:32px;line-height:32px;padding:0 15px;font-size:12px;color:#fff;background:#6eb48c;float:left;text-transform:uppercase;font-family:'Raleway',sans-serif;z-index:10;position:relative;display:inline-block;font-weight:bold}.penci-headline-posts{margin:0 15px 0 49px}.penci-owl-carousel.penci-headline-posts .owl-stage-outer{height:32px!important}.penci-owl-carousel-slider.penci-headline-posts .owl-nav .owl-prev,.penci-owl-carousel-slider.penci-headline-posts .owl-nav .owl-next{width:16px;height:20px;border:none;background:none;display:inline-block;text-align:center;line-height:20px;left:-54px;outline:none;position:absolute;color:#999;opacity:1!important;font-size:18px;padding:0;top:50%;margin-top:-10px}.penci-owl-carousel-slider.penci-headline-posts .owl-nav .owl-next{left:-32px}a.penci-topbar-post-title{color:#fff;font-size:12px;font-family:'Raleway',sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:1px;display:inline-block;white-space:nowrap;line-height:32px;font-weight:bold}.penci-topbar-social{display:inline-block;float:right;z-index:10;position:relative}.penci-topbar-social>div{display:inline-block;vertical-align:top}.penci-topbar-social a{float:left;display:inline-block;vertical-align:top;margin-left:13px;font-size:13px;color:#fff;line-height:32px}.penci-topbar-social a:first-child{margin-left:0}#navigation{background:#fff;height:60px;z-index:9999;width:100%;-webkit-backface-visibility:hidden;border-bottom:1px solid #ECECEC}#navigation.header-layout-bottom{box-shadow:0px 0px 0px transparent;-webkit-box-shadow:0px 0px 0px transparent;-moz-box-shadow:0px 0px 0px transparent;border-top:1px solid #ECECEC}#navigation .container{position:relative;display:table;text-align:center}#navigation .menu{float:left}#navigation ul.menu>li{display:inline-block;position:relative;float:left;margin-right:30px}#navigation .menu>li:last-child{margin-right:0}#navigation .menu li a{font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:1px;color:#313131;line-height:58px;text-transform:uppercase;display:inline-block;position:relative;font-weight:bold;text-decoration:none}#navigation ul.menu>li>a:before{content:"";position:absolute;bottom:18px;left:50%;height:2px;width:0;background:#6eb48c}#navigation .button-menu-mobile{display:none;float:left;line-height:60px;text-align:center;color:#313131;font-size:21px}#logo a{display:inline-block;vertical-align:top}#navigation .menu .sub-menu{visibility:hidden;opacity:0;position:absolute;left:0;z-index:9999;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;-o-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotateX(-90deg);-moz-transform:rotateX(-90deg);-ms-transform:rotateX(-90deg);-o-transform:rotateX(-90deg);transform:rotateX(-90deg);box-shadow:0px 3px 3px rgba(190,190,190,0.6);-webkit-box-shadow:0px 3px 3px rgba(190,190,190,0.6);-moz-box-shadow:0px 3px 3px rgba(190,190,190,0.6);border-top:1px solid #ECECEC;margin-top:0;background:#fff}#navigation ul.menu ul a{margin:0 20px;padding:12px 0;font-size:12px;min-width:200px;line-height:1.4;border-bottom:1px solid #E0E0E0;text-align:left;border-left:none!important;position:relative;overflow:hidden;vertical-align:top}#navigation ul.menu ul li{padding-right:0;margin-right:0;float:none;position:relative;width:100%}#navigation .menu ul.sub-menu>li:last-child>a{border-bottom:none}#navigation .menu li.penci-mega-menu{position:static!important}li.penci-mega-menu>ul.sub-menu{display:none}#sidebar-nav li.penci-mega-menu .penci-content-megamenu{display:none!important}#navigation .menu li.penci-mega-menu>ul.sub-menu{width:100%;padding:0!important;clear:both;display:block}#navigation .penci-megamenu{width:100%;display:table}#navigation .penci-megamenu .penci-content-megamenu{display:table-cell}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts{padding:20px 10px 0 10px}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-row{width:100%;display:none;vertical-align:top}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-row.row-active{display:inline-block}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-post{width:20%;padding:0 10px;float:left;margin-bottom:15px}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts.col-mn-5 .penci-mega-post:nth-child(5n+1){clear:both}.penci-megamenu .penci-image-holder:before{padding-top:66.6667%}#navigation .penci-megamenu .penci-mega-thumbnail{display:block;margin:0 0 17px 0;position:relative}#navigation .penci-megamenu .penci-mega-thumbnail a{width:100%}#navigation .penci-megamenu .penci-mega-thumbnail .mega-cat-name{font-size:10px;background:#6eb48c;text-transform:uppercase;position:absolute;display:inline-block;padding:0 6px;color:#fff;top:0;left:0;letter-spacing:1px;z-index:3;height:18px;font-weight:normal;line-height:18px}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-post a{margin:0;padding:0;min-width:0;border-bottom:none;position:relative}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-thumbnail .mega-cat-name a{font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;color:inherit!important;opacity:1;padding:0;margin:0;text-transform:none;letter-spacing:0}#navigation .penci-megamenu .post-mega-title{text-align:center;margin:0}#navigation .penci-megamenu .post-mega-title a{text-align:center}#navigation .penci-megamenu .penci-mega-date{line-height:1;font-size:12px;color:#999;text-align:center;margin-top:6px}#navigation ul.menu>li.menu-item-has-children>a:after,#navigation ul.menu>li.penci-mega-menu>a:after{font-family:FontAwesome;content:"\f107";margin-left:5px;color:inherit;font-size:13px;font-weight:normal}@media only screen and (min-width:961px){#navigation-sticky-wrapper:not(.is-sticky) .menu .sub-menu{margin-top:-1px}}#sidebar-nav{position:fixed;top:0;height:100%;z-index:99997;width:270px;overflow-y:auto;padding:30px 20px 20px;background:#ffffff;left:0;transform:translateX(-270px);-webkit-transform:translateX(-270px);-moz-transform:translateX(-270px)}@media only screen and (min-width:961px){#sidebar-nav{display:none}}#sidebar-nav::-webkit-scrollbar{width:6px;background:#848484}#sidebar-nav::-webkit-scrollbar-thumb{background-color:#313131;border-radius:0;-webkit-border-radius:0;-moz-border-radius:0}#sidebar-nav::-webkit-scrollbar-corner{background-color:#DEDEDE}#sidebar-nav-logo{padding:0 20px 20px;text-align:center;margin:0 0 15px 0;position:relative}#sidebar-nav-logo:before{content:"";width:60px;height:1px;background:#6eb48c;position:absolute;bottom:0;left:50%;margin-left:-30px}.header-social.sidebar-nav-social{margin:0 0 43px 0;padding:0 10px}.header-social.sidebar-nav-social .inner-header-social:before,.header-social.sidebar-nav-social .inner-header-social:after{content:none}.header-social.sidebar-nav-social a i{color:#313131}#sidebar-nav .menu{margin:0;list-style:none}#sidebar-nav .menu li{display:block;border-bottom:1px solid #DEDEDE;padding:0;margin-bottom:0}#sidebar-nav .menu>li:last-child,#sidebar-nav .menu ul>li:last-child{border-bottom:none}#sidebar-nav .menu li a{font-size:13px;font-weight:normal;letter-spacing:0;text-transform:uppercase;color:#313131;margin:0;position:relative;padding:13px 0 13px 0;display:block;line-height:1.3em;font-family:'Raleway',sans-serif;font-weight:bold}#sidebar-nav .menu li.menu-item-has-children a{padding-right:17px}#sidebar-nav ul.sub-menu{border-top:1px solid #DEDEDE;display:none;padding:10px 0 10px 12px}#sidebar-nav ul.sub-menu li{overflow:hidden;border:none}#sidebar-nav ul.sub-menu li a{margin:0 0 0 0;padding:10px 0}#sidebar-nav .menu li a .indicator{text-decoration:none;position:absolute;top:0;right:0;height:100%;z-index:20;font-size:17px;font-style:normal;text-align:right;padding:11px 0 11px 5px;line-height:1;color:inherit!important;opacity:0.85}#close-sidebar-nav{position:fixed;visibility:hidden;opacity:0;text-decoration:none;top:0;left:0;font-size:1.4em;color:#313131;padding:10px;height:100%;background:rgba(0,0,0,.8);right:0;z-index:99996}#close-sidebar-nav i{display:none;width:24px;height:24px;background-color:#fff;line-height:24px;text-align:center;border-radius:12px;font-size:14px}#top-search{float:right;width:20px;text-align:center}#top-search>a{height:58px;font-size:14px;line-height:58px;color:#313131;background:none;display:block}#top-search>a>i{width:20px}.show-search{position:absolute;left:0;width:100%;top:0;height:58px;background:#fff;text-align:left;z-index:200;display:none}.show-search #searchform input.search-input{padding:15px 35px 15px 0;border:none;position:absolute;top:0;left:0;width:100%;z-index:3;color:#313131;height:58px;line-height:28px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;background:none;font-weight:normal;letter-spacing:1px;font-size:13px}.show-search a.close-search{position:absolute;width:20px;height:60px;display:inline-block;right:0;top:0;z-index:5;text-align:center;line-height:60px;font-size:16px;color:#313131}#header{margin-bottom:60px;position:relative}#header .inner-header{width:100%;background-size:cover;position:relative;background-position:center center;background-repeat:no-repeat}#header .inner-header .container{padding:40px 0;text-align:center;position:relative;overflow:hidden}.header-style-header-3 #header .inner-header .container{display:table}#logo{text-align:center}.container.align-left-logo #logo{text-align:left}.header-social{display:block;text-align:center;margin:20px 0 0}.header-social .inner-header-social{display:inline-block;vertical-align:top;position:relative}.header-social a{float:left;display:inline-block;vertical-align:top;margin-right:13px}.header-social a:last-child{margin-right:0}.header-social a i{font-size:14px;color:#313131}.penci-owl-carousel .owl-nav .owl-prev,.penci-owl-carousel .owl-nav .owl-next{width:34px;height:34px;display:inline-block;vertical-align:top;background:#fff;color:#010101;font-size:18px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;position:absolute;z-index:10;top:50%;margin-top:-18px;left:20px;line-height:34px;text-align:center;opacity:0;border:none}.penci-owl-carousel .owl-nav .owl-prev i,.penci-owl-carousel .owl-nav .owl-next i{line-height:inherit}.penci-owl-carousel .owl-nav .owl-next{left:auto;right:20px}.penci-owl-carousel .owl-dots{position:absolute;bottom:15px;z-index:10;width:100%;text-align:center;left:0}.penci-owl-carousel .owl-dots.disabled{display:none!important}.penci-image-holder{position:relative;width:100%;background:#f5f5f5 url(https://uploading.com/wp-content/themes/soledad/images/no-image.jpg);display:inline-block;vertical-align:top;background-repeat:no-repeat;background-position:center center;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;overflow:hidden}.penci-image-holder:before{display:block;content:"";width:100%;padding-top:66.6667%;background:none!important;box-shadow:none!important}.container.home-featured-boxes{margin-bottom:30px;display:table;margin-top:-30px}.home-featured-boxes .penci-image-holder:before{padding-top:66.75%}ul.homepage-featured-boxes{list-style:none;margin-left:-15px;margin-right:-15px;padding:0!important}ul.homepage-featured-boxes li{width:33.3333%;float:left;display:inline-block;padding:0 15px;margin-bottom:30px}ul.homepage-featured-boxes li .penci-fea-in{position:relative;overflow:hidden}ul.homepage-featured-boxes li .penci-fea-in:before,ul.homepage-featured-boxes li .penci-fea-in:after{position:absolute;left:5px;right:5px;top:5px;bottom:5px;content:'';opacity:0;z-index:5}ul.homepage-featured-boxes li .penci-fea-in:before{border-top:1px solid #fff;border-bottom:1px solid #fff;-webkit-transform:scale(0,1);transform:scale(0,1)}ul.homepage-featured-boxes li .penci-fea-in:after{border-right:1px solid #fff;border-left:1px solid #fff;-webkit-transform:scale(1,0);transform:scale(1,0)}ul.homepage-featured-boxes .penci-fea-in .fea-box-img{position:static;top:0;left:0;width:100%;height:100%;display:block;z-index:1;background-size:cover;background-repeat:no-repeat;background-position:center center}ul.homepage-featured-boxes .penci-fea-in .fea-box-img:after{top:0;left:0;width:100%;height:100%;position:absolute;z-index:2;content:"";background:#000;opacity:0}.header-standard{text-align:center;padding-bottom:17px;position:relative;margin:0 0 19px 0}.header-standard:after{content:"";position:absolute;width:60px;height:1px;background:#6eb48c;display:block;bottom:0;left:50%;margin-left:-30px}.penci-standard-cat{overflow:hidden;display:block;margin-bottom:6px}.header-standard .cat{display:inline-block;position:relative}.penci-hide-tagupdated{display:none!important}.header-standard.header-classic{margin:0 0 26px 0;padding:0}.header-standard.header-classic:after{content:none;display:none}ul.penci-grid{display:inline-block;width:100%;vertical-align:top;padding:0!important;margin:0}.cat>a.penci-cat-name{font-size:13px;color:#6eb48c;line-height:1.2;margin:0 18px 0 0;padding-right:10px;display:inline-block;vertical-align:top;background:none;font-weight:normal;margin-bottom:5px;position:relative;text-decoration:none}.cat>a.penci-cat-name:after{content:"";display:inline-block;border:1px solid;font-size:12px;margin-left:11px;position:absolute;top:50%;margin-top:-3px;width:3px;height:3px;transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg)}.cat>a.penci-cat-name:first-child{margin-left:0}.cat>a.penci-cat-name:last-child{margin-right:0;padding:0}.cat>a.penci-cat-name:last-child:after{content:none;display:none}article.post,article.type-post{margin-bottom:60px}.penci-owl-carousel-slider .owl-dots{position:static;height:10px;clear:both;margin-top:16px;text-align:center}.penci-owl-carousel-slider .owl-dots.disabled{display:none}#searchform input.search-input{border:1px solid #e9e9e9;background:#fff url(https://uploading.com/wp-content/themes/soledad/images/searchsubmit.png) no-repeat 95% 11px;padding:12px 40px 12px 20px;color:#313131;letter-spacing:1px;font-size:12px;font-family:'PT Serif',serif;font-weight:normal}@media only screen and (max-width:1169px){ul.homepage-featured-boxes{margin-left:-8px;margin-right:-8px}ul.homepage-featured-boxes li{padding:0 8px}}@media only screen and (min-width:961px) and (max-width:1169px){.container{width:940px}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-post{width:25%}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts.col-mn-5.mega-row-1 .penci-mega-post:nth-child(5){display:none}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts.col-mn-5 .penci-mega-post:nth-child(5n+1){clear:none}#navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts.col-mn-5 .penci-mega-post:nth-child(4n+1){clear:both}#navigation ul.menu>li{margin-right:16px}}@media only screen and (min-width:961px){#navigation .menu{display:inline-block!important}}@media only screen and (max-width:960px){.penci-top-bar{text-align:center}.penci-topbar-social{float:none}.headline-title,.penci-headline-posts{display:none!important}#navigation .button-menu-mobile{display:inline-block}#navigation .menu{display:none!important}.container.penci_sidebar #main{width:100%;margin:0 0 60px 0;padding:0!important;float:none!important}.penci-sidebar-content{position:static!important;margin-left:0!important;top:auto!important;float:none!important;width:100%!important}}@media only screen and (min-width:768px) and (max-width:960px){.container{width:726px}#logo img{max-width:600px;height:auto}ul.homepage-featured-boxes{margin-left:-10px;margin-right:-10px}ul.homepage-featured-boxes li{padding:0 10px}}@media only screen and (max-width:767px){.container{width:100%}ul.homepage-featured-boxes li{width:100%!important;margin-bottom:20px}#logo img{max-width:100%;height:auto}}@media only screen and (min-width:480px) and (max-width:767px){.container{width:480px}#logo img{max-width:100%;height:auto}}@media only screen and (max-width:479px){.wrapper-boxed>.container{padding-left:20px;padding-right:20px}#navigation,.inner-header{padding-left:10px;padding-right:10px}.penci-owl-carousel .owl-nav .owl-prev{left:10px}.penci-owl-carousel .owl-nav .owl-next{right:10px}.cat>a.penci-cat-name{font-size:11px}#sidebar-nav{width:270px;transform:translateX(-270px);-webkit-transform:translateX(-270px);-moz-transform:translateX(-270px)}}@media screen and (max-width:600px){#sidebar-nav,#close-sidebar-nav{z-index:9999999}#close-sidebar-nav i{display:inline-block}}.penci-gprd-law{padding:7px 15px;color:inherit;font-size:inherit;display:block;text-align:center;background:#f5f5f5}.penci-gprd-law p{font-size:inherit;color:inherit;margin:0;display:inline-block}.penci-gprd-law .penci-gprd-accept,.penci-gprd-law .penci-gprd-more{display:inline-block;padding:0;line-height:1;font-size:inherit;color:inherit;margin-left:10px}.penci-gprd-law .penci-gprd-accept{background:#212121;color:#fff;padding:6px 15px}.penci-gprd-law{position:fixed;z-index:19999;left:0;bottom:0;right:0;width:100%}</style><link rel="preload" href="https://uploading.com/wp-content/cache/min/1/174f994cd1214ea4c613c502e15ea498.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" data-minify="1" />
+	<meta name="description" content="Best General News Website 2021" />
+	<link rel="canonical" href="https://uploading.com/" />
+	<link rel="next" href="https://uploading.com/page/2/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Uploading.com" />
+	<meta property="og:description" content="Best General News Website 2021" />
+	<meta property="og:url" content="https://uploading.com/" />
+	<meta property="og:site_name" content="Uploading.com" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://uploading.com/#website","url":"https://uploading.com/","name":"Uploading.com","description":"Best General News Website 2021","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://uploading.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"CollectionPage","@id":"https://uploading.com/#webpage","url":"https://uploading.com/","name":"Uploading.com - Best General News Website 2021","isPartOf":{"@id":"https://uploading.com/#website"},"description":"Best General News Website 2021","breadcrumb":{"@id":"https://uploading.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://uploading.com/"]}]},{"@type":"BreadcrumbList","@id":"https://uploading.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Uploading.com &raquo; Feed" href="https://uploading.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Uploading.com &raquo; Comments Feed" href="https://uploading.com/comments/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
+</style>
+
+<link rel='preload'   href='//fonts.googleapis.com/css?family=Raleway%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPT+Serif%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPlayfair+Display+SC%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Ccyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin-ext&#038;display=swap&#038;ver=1.0' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" type='text/css' media='all' />
+
+
+
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://uploading.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' src='https://uploading.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type='text/javascript' src='https://uploading.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1627030566' id='stop-user-enumeration-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/plugins/wp-captcha/assets/js/c4wp-public.js?ver=1627030566' id='c4wp-public-js' defer></script>
+<link rel="https://api.w.org/" href="https://uploading.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://uploading.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://uploading.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<style id="penci-custom-style" type="text/css">body{ --pcbg-cl: #fff; --pctext-cl: #313131; --pcborder-cl: #dedede; --pcheading-cl: #313131; --pcmeta-cl: #888888; --pcaccent-cl: #6eb48c; --pcbody-font: 'PT Serif', serif; --pchead-font: 'Raleway', sans-serif; --pchead-wei: bold; } .penci-hide-tagupdated{ display: none !important; } .penci-image-holder, .standard-post-image img, .penci-overlay-over:before, .penci-overlay-over .overlay-border, .penci-grid li .item img, .penci-masonry .item-masonry a img, .penci-grid .list-post.list-boxed-post, .penci-grid li.list-boxed-post-2 .content-boxed-2, .grid-mixed, .penci-grid li.typography-style .overlay-typography, .penci-grid li.typography-style .overlay-typography:before, .penci-grid li.typography-style .overlay-typography:after, .container-single .post-image, .home-featured-cat-content .mag-photo .mag-overlay-photo, .mag-single-slider-overlay, ul.homepage-featured-boxes li .penci-fea-in:before, ul.homepage-featured-boxes li .penci-fea-in:after, ul.homepage-featured-boxes .penci-fea-in .fea-box-img:after, ul.homepage-featured-boxes li .penci-fea-in, .penci-slider38-overlay { border-radius: 10px; -webkit-border-radius: 10px; } .penci-featured-content-right:before{ border-top-right-radius: 10px; border-bottom-right-radius: 10px; } .penci-slider4-overlay, .penci-slide-overlay .overlay-link, .featured-style-29 .featured-slider-overlay, .penci-widget-slider-overlay{ border-radius: 10px; -webkit-border-radius: 10px; } .penci-flat-overlay .penci-slide-overlay .penci-mag-featured-content:before{ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; } .featured-area .penci-image-holder, .featured-area .penci-slider4-overlay, .featured-area .penci-slide-overlay .overlay-link, .featured-style-29 .featured-slider-overlay, .penci-slider38-overlay{ border-radius: ; -webkit-border-radius: ; } .penci-featured-content-right:before{ border-top-right-radius: 10px; border-bottom-right-radius: 10px; } .penci-flat-overlay .penci-slide-overlay .penci-mag-featured-content:before{ border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; } .container-single .post-image{ border-radius: ; -webkit-border-radius: ; } .penci-mega-thumbnail .penci-image-holder{ border-radius: ; -webkit-border-radius: ; } .penci-header-signup-form { padding-top: px; padding-bottom: px; } .penci-slide-overlay .overlay-link, .penci-slider38-overlay, .penci-flat-overlay .penci-slide-overlay .penci-mag-featured-content:before { opacity: ; } .penci-item-mag:hover .penci-slide-overlay .overlay-link, .featured-style-38 .item:hover .penci-slider38-overlay, .penci-flat-overlay .penci-item-mag:hover .penci-slide-overlay .penci-mag-featured-content:before { opacity: ; } .penci-featured-content .featured-slider-overlay { opacity: ; } .featured-style-29 .featured-slider-overlay { opacity: ; } .header-standard .cat a.penci-cat-name { text-transform: uppercase; } .penci-grid .cat a.penci-cat-name, .penci-masonry .cat a.penci-cat-name, .penci-featured-infor .cat a.penci-cat-name, .grid-mixed .cat a.penci-cat-name, .overlay-header-box .cat a.penci-cat-name { text-transform: uppercase; } .penci-grid li.typography-style .overlay-typography { opacity: ; } .penci-grid li.typography-style:hover .overlay-typography { opacity: ; } .container-single .cat a.penci-cat-name { text-transform: uppercase; } .home-featured-cat-content .mag-photo .mag-overlay-photo { opacity: ; } .home-featured-cat-content .mag-photo:hover .mag-overlay-photo { opacity: ; } .inner-item-portfolio:hover .penci-portfolio-thumbnail a:after { opacity: ; }</style><script type="rocketlazyloadscript">
+var penciBlocksArray=[];
+var portfolioDataJs = portfolioDataJs || [];var PENCILOCALCACHE = {};
+		(function () {
+				"use strict";
+		
+				PENCILOCALCACHE = {
+					data: {},
+					remove: function ( ajaxFilterItem ) {
+						delete PENCILOCALCACHE.data[ajaxFilterItem];
+					},
+					exist: function ( ajaxFilterItem ) {
+						return PENCILOCALCACHE.data.hasOwnProperty( ajaxFilterItem ) && PENCILOCALCACHE.data[ajaxFilterItem] !== null;
+					},
+					get: function ( ajaxFilterItem ) {
+						return PENCILOCALCACHE.data[ajaxFilterItem];
+					},
+					set: function ( ajaxFilterItem, cachedData ) {
+						PENCILOCALCACHE.remove( ajaxFilterItem );
+						PENCILOCALCACHE.data[ajaxFilterItem] = cachedData;
+					}
+				};
+			}
+		)();function penciBlock() {
+		    this.atts_json = '';
+		    this.content = '';
+		}</script>
+<script type="application/ld+json">{
+    "@context": "https:\/\/schema.org\/",
+    "@type": "organization",
+    "@id": "#organization",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/uploading.com\/wp-content\/uploads\/2019\/03\/logo.png"
+    },
+    "url": "https:\/\/uploading.com\/",
+    "name": "Uploading.com",
+    "description": "Best General News Website 2021"
+}</script><script type="application/ld+json">{
+    "@context": "https:\/\/schema.org\/",
+    "@type": "WebSite",
+    "name": "Uploading.com",
+    "alternateName": "Best General News Website 2021",
+    "url": "https:\/\/uploading.com\/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https:\/\/uploading.com\/search\/{search_term}",
+        "query-input": "required name=search_term"
+    }
+}</script><link rel="icon" href="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png" sizes="32x32" />
+<link rel="icon" href="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png" />
+<meta name="msapplication-TileImage" content="https://uploading.com/wp-content/uploads/2021/05/Uploading-FAV.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+
+<body data-rsssl=1 class="home blog soledad-ver-7-9-5 pclight-mode">
+<div class="wrapper-boxed header-style-header-3">
+<div class="penci-header-wrap"><header id="header" class="header-header-3 has-bottom-line" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+			<div class="inner-header penci-header-second">
+			<div class="container align-left-logo">
+				<div id="logo">
+					<a href="https://uploading.com/"><img class="penci-mainlogo" src="https://uploading.com/wp-content/uploads/2021/05/Uploading-Logo.png" alt="Uploading.com" width="582" height="113" /></a>									</div>
+
+							</div>
+		</div>
+						<nav id="navigation" class="header-layout-bottom header-3 menu-style-1" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+			<div class="container">
+				<div class="button-menu-mobile header-3"><i class="penci-faicon fa fa-bars" ></i></div>
+				<ul id="menu-menu-page" class="menu"><li id="menu-item-10259" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10259"><a href="https://uploading.com/category/collocation/">Collocation</a></li>
+<li id="menu-item-10261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10261"><a href="https://uploading.com/category/idioms-phrases/">Idioms &#038; Phrases</a></li>
+<li id="menu-item-3940" class="menu-item menu-item-type-taxonomy menu-item-object-category penci-mega-menu menu-item-3940"><a href="https://uploading.com/category/vocab-grammar/">Vocab &#038; Grammar</a>
+<ul class="sub-menu">
+	<li id="menu-item-0" class="menu-item-0"><div class="penci-megamenu">		
+		<div class="penci-content-megamenu">
+			<div class="penci-mega-latest-posts col-mn-5 mega-row-1">
+								<div class="penci-mega-row penci-mega-9 row-active">
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/02/When-do-you-use-a-comma-263x175.jpg" href="https://uploading.com/when-do-you-use-a-comma/" title="When do you use a comma?">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/when-do-you-use-a-comma/" title="When do you use a comma?">When do you use a comma?</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2020-02-05T18:13:01+02:00">February 5, 2020</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/02/The-different-meanings-of-22wrong22-263x175.jpg" href="https://uploading.com/the-different-meanings-of-wrong/" title="The different meanings of &#8220;wrong&#8221;">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/the-different-meanings-of-wrong/" title="The different meanings of &#8220;wrong&#8221;">The different meanings of &#8220;wrong&#8221;</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2020-02-05T17:22:54+02:00">February 5, 2020</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/Noun-Gender-TOEFL-Vocab-Grammar.jpg" href="https://uploading.com/noun-gender-toefl-vocab-grammar/" title="Noun Gender &#8211; TOEFL Vocab &#038; Grammar">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/noun-gender-toefl-vocab-grammar/" title="Noun Gender &#8211; TOEFL Vocab &#038; Grammar">Noun Gender &#8211; TOEFL Vocab &#038; Grammar</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-11T23:22:47+02:00">September 11, 2018</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/phrasal-verbs-health.jpg" href="https://uploading.com/health-phrasal-verbs-meaning-example/" title="Health Phrasal Verbs (Meaning &#038; Example)">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/health-phrasal-verbs-meaning-example/" title="Health Phrasal Verbs (Meaning &#038; Example)">Health Phrasal Verbs (Meaning &#038; Example)</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-10T23:34:38+02:00">September 10, 2018</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/Mastering-Phrasal-Verbs.jpg" href="https://uploading.com/tips-for-learning-english-toefl-ielts-toeic-mastering-phrasal-verbs/" title="Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering Phrasal Verbs">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/tips-for-learning-english-toefl-ielts-toeic-mastering-phrasal-verbs/" title="Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering Phrasal Verbs">Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering&#8230;</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-10T23:27:01+02:00">September 10, 2018</time></p>
+															</div>
+						</div>
+									</div>
+							</div>
+		</div>
+
+		</div></li>
+</ul>
+</li>
+<li id="menu-item-10262" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-10262"><a href="https://uploading.com/category/ielts/">IELTS</a>
+<ul class="sub-menu">
+	<li id="menu-item-10922" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10922"><a href="https://uploading.com/category/ielts/reading-ielts/">Reading</a></li>
+	<li id="menu-item-10921" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10921"><a href="https://uploading.com/category/ielts/listening-ielts/">Listening</a></li>
+	<li id="menu-item-10930" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10930"><a href="https://uploading.com/ielts-writing-study-guide-tips-and-resources/">IELTS Writing</a></li>
+	<li id="menu-item-10920" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10920"><a href="https://uploading.com/category/ielts/ielts-books/">IELTS Books</a></li>
+</ul>
+</li>
+<li id="menu-item-10258" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-10258"><a href="https://uploading.com/category/toefl/">TOEFL</a>
+<ul class="sub-menu">
+	<li id="menu-item-10267" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10267"><a href="https://uploading.com/category/toefl/faq/">FAQ</a></li>
+	<li id="menu-item-10382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10382"><a href="https://uploading.com/toefl-ibt-reading-practice-test-study-guide/">Reading</a></li>
+	<li id="menu-item-10390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10390"><a href="https://uploading.com/toefl-ibt-listening-practice-test-study-guide/">Listening</a></li>
+	<li id="menu-item-589" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-589"><a href="https://uploading.com/category/toefl/speaking/">Speaking</a></li>
+	<li id="menu-item-590" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-590"><a href="https://uploading.com/category/toefl/writing/">Writing</a></li>
+	<li id="menu-item-10266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10266"><a href="https://uploading.com/category/toefl/exam-tips/">Exam tips</a></li>
+	<li id="menu-item-10268" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10268"><a href="https://uploading.com/category/toefl/toefl-books/">TOEFL Books</a></li>
+	<li id="menu-item-10269" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10269"><a href="https://uploading.com/category/toefl/toefl-software/">TOEFL Software</a></li>
+</ul>
+</li>
+<li id="menu-item-10263" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10263"><a href="https://uploading.com/category/toeic/">TOEIC</a></li>
+<li id="menu-item-10304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10304"><a href="https://grematerials.com">GRE</a></li>
+<li id="menu-item-10260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10260"><a href="https://uploading.com/category/english-books/">English Books</a></li>
+<li id="menu-item-5830" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5830"><a href="https://uploading.com/category/online-course/">Online Course</a></li>
+<li id="menu-item-10919" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10919"><a href="https://uploading.com/category/ielts/exam-tips-ielts/">Exam Tips</a></li>
+</ul><div id="top-search" class="pcheader-icon penci-top-search">
+	<a class="search-click"><i class="penciicon-magnifiying-glass"></i></a>
+	<div class="show-search">
+		<form role="search" method="get" class="pc-searchform" action="https://uploading.com/">
+    <div>
+		<input type="text" class="search-input" placeholder="Type and hit enter..." name="s" />
+		<i class="penciicon-magnifiying-glass"></i>
+	</div>
+</form>		<a class="search-click close-search"><i class="penci-faicon fa fa-close" ></i></a>
+	</div>
+</div>				
+			</div>
+		</nav><!-- End Navigation -->
+			
+</header>
+<!-- end #header --></div>
+
+<div class="container home-featured-boxes boxes-weight-normal boxes-size-horizontal">
+	<ul class="homepage-featured-boxes">
+						<li class="penci-featured-ct">
+					<a href="https://uploading.com/top-10-toefl-books-for-toefl-ibt-preparation/">					<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2016/09/Top-10-toefl-books-2020-585x390.png"></div>
+						
+											</div>
+					</a>				</li>
+							<li class="penci-featured-ct">
+					<a href="https://uploading.com/cambridge-ielts-academic-15-full-version-audio-cd-free-download/">					<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/04/Cambridge-IELTS-15-copy-585x390.jpg"></div>
+						
+											</div>
+					</a>				</li>
+							<li class="penci-featured-ct">
+					<a href="https://uploading.com/english-grammar-in-use-5th-edition-2020-by-raymond-murphy/">					<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/06/English-Grammar-In-Use-5th-Edition-585x390.jpg"></div>
+						
+											</div>
+					</a>				</li>
+							<li class="penci-featured-ct">
+					<a href="https://uploading.com/toefl-ibt-reading-practice-test-study-guide/">					<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/07/COMPLETE-IELTS-5-7.5-585x390.png"></div>
+						
+											</div>
+					</a>				</li>
+							<li class="penci-featured-ct">
+					<a href="https://uploading.com/toefl-ibt-listening-practice-test-study-guide/">					<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/07/toefl-listneing-series-585x390.png"></div>
+						
+											</div>
+					</a>				</li>
+							<li class="penci-featured-ct">
+										<div class="penci-fea-in">
+													<div class="fea-box-img penci-image-holder penci-holder-load penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/07/ielts-book-free-download-585x390.png"></div>
+						
+											</div>
+									</li>
+				</ul>
+</div>
+	<div class="container">
+		<div id="main" class="penci-layout-list">
+			<div class="theiaStickySidebar">
+
+				
+				
+					
+					
+					<div class="penci-wrapper-posts-content">
+
+																				<ul class="penci-wrapper-data penci-grid">							
+							<li class="list-post pclist-layout">
+	<article id="post-12431" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/augmented-reality-585x390.jpg" href="https://uploading.com/augmented-reality-is-improving-healthcare-industry/" title="5 Ways Augmented Reality is Improving the Healthcare Industry">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1092" href="https://uploading.com/category/health/"  rel="category tag">Health</a><a class="penci-cat-name penci-cat-1156" href="https://uploading.com/category/tech/"  rel="category tag">Tech</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/augmented-reality-is-improving-healthcare-industry/">5 Ways Augmented Reality is Improving the Healthcare Industry</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-09T10:05:15+02:00">August 9, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-09T10:05:15+02:00">August 9, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>The one industry that has to improve constantly is the medical one because we are all dependent on it, and still, there are diseases that have to be treated in&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12426" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/streaming1-585x390.jpg" href="https://uploading.com/internet-speed-for-4k-streaming/" title="What Internet Speed Is Needed For 4K Streaming?">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1156" href="https://uploading.com/category/tech/"  rel="category tag">Tech</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/internet-speed-for-4k-streaming/">What Internet Speed Is Needed For 4K Streaming?</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-09T09:54:53+02:00">August 9, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-09T09:54:53+02:00">August 9, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Providers need to work on the improvements of the network when it comes to the speed of the internet. The increased demand and advancements of the quality of the content&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12420" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/freelancer-585x390.jpeg" href="https://uploading.com/ways-big-tech-companies-are-handling-remote-work/" title="3 Ways Big Tech Companies Are Handling Remote Work">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1066" href="https://uploading.com/category/business/"  rel="category tag">Business</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/ways-big-tech-companies-are-handling-remote-work/">3 Ways Big Tech Companies Are Handling Remote Work</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-08T11:31:16+02:00">August 8, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-08T11:31:16+02:00">August 8, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Even though the situation with the pandemic is getting under control due to mass vaccination, we can see that a lot of people are still working from their homes. A&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12416" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/06/spain-585x390.jpg" href="https://uploading.com/july-update-for-travellers-going-to-spain/" title="July Update for Travellers Going to and From Spain">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1389" href="https://uploading.com/category/travel/"  rel="category tag">Travel</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/july-update-for-travellers-going-to-spain/">July Update for Travellers Going to and From Spain</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-05T13:41:07+02:00">August 5, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-05T13:41:07+02:00">August 5, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>It’s been well over a year since most of us have been able to take a foreign holiday, and with the success of the vaccine programme rolling across Europe, many&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12410" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/movies-585x390.jpeg" href="https://uploading.com/watch-official-movie-trailers/" title="Where Can I Watch Official Movie Trailers?">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1070" href="https://uploading.com/category/tips/"  rel="category tag">Tips</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/watch-official-movie-trailers/">Where Can I Watch Official Movie Trailers?</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-05T11:41:49+02:00">August 5, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-05T11:41:49+02:00">August 5, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Whether you decide to watch a movie at the cinema or at home, it will in any case require a little attention and organization from you. Which movie will you&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12404" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/cat-585x390.jpeg" href="https://uploading.com/cool-gadgets-for-cat/" title="5 Cool Gadgets Your Cat Will Adore">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-992" href="https://uploading.com/category/pets/"  rel="category tag">Pets</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/cool-gadgets-for-cat/">5 Cool Gadgets Your Cat Will Adore</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-05T11:29:08+02:00">August 5, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-05T11:29:08+02:00">August 5, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Life is wonderful and we should enjoy it. He brings us many beautiful things that we receive every day as a kind of gift. But life is even more beautiful&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12391" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/math-585x390.jpeg" href="https://uploading.com/help-your-child-with-math/" title="How to Help your Child with Math: Tips for Parents Who are Struggle With it">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1210" href="https://uploading.com/category/education/"  rel="category tag">Education</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/help-your-child-with-math/">How to Help your Child with Math: Tips for Parents Who are Struggle With it</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-05T10:58:18+02:00">August 5, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-05T10:58:18+02:00">August 5, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Math lessons become bothering for many parents even before their child goes to school. This is especially true for adults who don’t have the skills and not familiar with math&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12385" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/crypto-585x390.jpeg" href="https://uploading.com/cryptocurrency-mining-hardware/" title="Best Cryptocurrency Mining Hardware 2021">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1156" href="https://uploading.com/category/tech/"  rel="category tag">Tech</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/cryptocurrency-mining-hardware/">Best Cryptocurrency Mining Hardware 2021</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-05T10:26:03+02:00">August 5, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-05T10:26:03+02:00">August 5, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Crypto coins are said to be the currency of the future, and more and more people are choosing to invest in them. Even though buying and selling these coins is&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12378" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/deck-585x390.jpg" href="https://uploading.com/composite-deck-boards/" title="Are Composite Deck Boards Worth The Money?">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1081" href="https://uploading.com/category/house/"  rel="category tag">House</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/composite-deck-boards/">Are Composite Deck Boards Worth The Money?</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-04T15:03:18+02:00">August 4, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-04T15:03:18+02:00">August 4, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>If you’re thinking about adding a deck, you should know that it’s, perhaps, one of the best decisions you could ever make. Why? Well, besides expanding the outdoor living space,&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12367" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/comedians-585x390.jpg" href="https://uploading.com/best-female-stand-up-comedians/" title="8 Best Female Stand Up Comedians">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1367" href="https://uploading.com/category/celebrities/"  rel="category tag">Celebrities</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/best-female-stand-up-comedians/">8 Best Female Stand Up Comedians</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-04T10:17:28+02:00">August 4, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-04T10:17:28+02:00">August 4, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>Whether you’re into Netflix specials or attending live events, stand-up comedy is just what thousands of people need right now. While many of us have seen the Chris Rock’s and&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12360" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/Massage-585x390.jpeg" href="https://uploading.com/types-of-massages/" title="Types of Massages">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1092" href="https://uploading.com/category/health/"  rel="category tag">Health</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/types-of-massages/">Types of Massages</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-04T10:07:35+02:00">August 4, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-04T10:07:35+02:00">August 4, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>With our hectic routines, who doesn’t need a massage these days? Massages have a lot of added benefits as well apart from making our tiredness go away. They are known&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+<li class="list-post pclist-layout">
+	<article id="post-12353" class="item hentry">
+					<div class="thumbnail">
+				
+									<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2021/08/crawl-space-585x390.jpg" href="https://uploading.com/repairing-when-it-comes-to-crawl-space/" title="Repairing Is Important When It Comes to Crawl Space">
+					</a>
+				
+																																				</div>
+		
+		<div class="content-list-right content-list-center">
+			<div class="header-list-style">
+									<span class="cat"><a class="penci-cat-name penci-cat-1081" href="https://uploading.com/category/house/"  rel="category tag">House</a></span>
+				
+				<h2 class="penci-entry-title entry-title grid-title"><a href="https://uploading.com/repairing-when-it-comes-to-crawl-space/">Repairing Is Important When It Comes to Crawl Space</a></h2>
+						<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+			<time class="entry-date published" datetime="2021-08-03T13:23:18+02:00">August 3, 2021</time>		</div>
+															<div class="grid-post-box-meta">
+													<span class="otherl-date-author author-italic author vcard">by <a class="url fn n" href="https://uploading.com/author/aaron-warea-hargreavs/">Aaron Warea-Hargreavs</a></span>
+																			<span class="otherl-date"><time class="entry-date published" datetime="2021-08-03T13:23:18+02:00">August 3, 2021</time></span>
+																													</div>
+							</div>
+
+							<div class="item-content entry-content">
+					<p>If you are living in Washington DC, chances are that your crawl space has been causing you problems for quite some time now. There are some ways to get the&hellip;</p>
+				</div>
+			
+						
+					</div>
+
+	</article>
+</li>
+
+														</ul>							
+														<div class="penci-pagination align-left"><ul class='page-numbers'>
+	<li><span aria-current="page" class="page-numbers current">1</span></li>
+	<li><a class="page-numbers" href="https://uploading.com/page/2/">2</a></li>
+	<li><a class="page-numbers" href="https://uploading.com/page/3/">3</a></li>
+	<li><span class="page-numbers dots">&hellip;</span></li>
+	<li><a class="page-numbers" href="https://uploading.com/page/71/">71</a></li>
+	<li><a class="next page-numbers" href="https://uploading.com/page/2/"><i class="penci-faicon fa fa-angle-right" ></i></a></li>
+</ul>
+</div>																		</div>
+				
+				
+			</div>
+		</div>
+
+			</div>
+
+
+<div class="clear-footer"></div>
+
+
+					<div id="widget-area">
+				<div class="container">
+											<div class="footer-widget-wrapper footer-widget-style-1">
+							<aside id="text-32" class="widget widget_text">			<div class="textwidget"><p>Uploading.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
+<p>Amazon, the Amazon logo, AmazonSupply and the AmazonSupply logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+</div>
+		</aside>						</div>
+						<div class="footer-widget-wrapper footer-widget-style-1">
+													</div>
+						<div class="footer-widget-wrapper footer-widget-style-1 last">
+													</div>
+									</div>
+			</div>
+				<footer id="footer-section" class="penci-footer-social-media penci-lazy" itemscope itemtype="https://schema.org/WPFooter">
+	<div class="container">
+									<div class="footer-logo-copyright footer-not-logo">
+				
+									<div class="footer-menu-wrap" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+					<ul id="menu-menu" class="footer-menu"><li id="menu-item-2560" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2560"><a href="https://uploading.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-2561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2561"><a href="https://uploading.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-2562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2562"><a href="https://uploading.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-11719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11719"><a href="https://uploading.com/sitemap/">Sitemap</a></li>
+</ul>					</div>
+				
+									<div id="footer-copyright">
+						<p>@2021 - All Right Reserved</p>
+					</div>
+													<div class="go-to-top-parent"><a href="#" class="go-to-top"><span><i class="penci-faicon fa fa-angle-up" ></i> <br>Back To Top</span></a></div>
+							</div>
+							<div class="penci-go-to-top-floating"><i class="penci-faicon fa fa-angle-up" ></i></div>
+			</div>
+</footer>
+
+</div><!-- End .wrapper-boxed -->
+	<a id="close-sidebar-nav" class="header-3"><i class="penci-faicon fa fa-close" ></i></a>
+	<nav id="sidebar-nav" class="header-3" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+
+					<div id="sidebar-nav-logo">
+															<a href="https://uploading.com/"><img class="penci-lazy" src="https://uploading.com/wp-content/themes/soledad/images/penci-holder.png" data-src="https://uploading.com/wp-content/uploads/2021/05/Uploading-Logo.png" alt="Uploading.com" /></a>
+												</div>
+		
+					<div class="header-social sidebar-nav-social">
+				<div class="inner-header-social">
+				<a href="https://www.facebook.com/wikistudymaterial" aria-label="Facebook"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-facebook" ></i></a>
+						<a href="https://twitter.com/HumphreyKaraZ" aria-label="Twitter"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-twitter" ></i></a>
+						<a href="https://www.instagram.com/wikistudy/" aria-label="Instagram"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-instagram" ></i></a>
+						<a href="https://www.pinterest.com/wikistudyenglish/" aria-label="Pinterest"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-pinterest" ></i></a>
+						<a href="https://www.linkedin.com/in/wiki-study-4622a1117/" aria-label="Linkedin"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-linkedin" ></i></a>
+						<a href="http://UC5ghtqJozoryjxpO6PqsViw" aria-label="Youtube"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-youtube-play" ></i></a>
+						<a href="https://vk.com/wikitoefl" aria-label="Vk"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-vk" ></i></a>
+						<a href="https://mix.com/wikistudy" aria-label="Stumbleupon"  rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-stumbleupon" ></i></a>
+						<a href="https://feeds.feedburner.com/wikistudy" aria-label="Rss" rel="noreferrer" target="_blank"><i class="penci-faicon fa fa-rss" ></i></a>
+			</div>			</div>
+				
+		
+		<ul id="menu-menu-page-1" class="menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10259"><a href="https://uploading.com/category/collocation/">Collocation</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10261"><a href="https://uploading.com/category/idioms-phrases/">Idioms &#038; Phrases</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category penci-mega-menu menu-item-3940"><a href="https://uploading.com/category/vocab-grammar/">Vocab &#038; Grammar</a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="penci-megamenu">		
+		<div class="penci-content-megamenu">
+			<div class="penci-mega-latest-posts col-mn-5 mega-row-1">
+								<div class="penci-mega-row penci-mega-9 row-active">
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/02/When-do-you-use-a-comma-263x175.jpg" href="https://uploading.com/when-do-you-use-a-comma/" title="When do you use a comma?">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/when-do-you-use-a-comma/" title="When do you use a comma?">When do you use a comma?</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2020-02-05T18:13:01+02:00">February 5, 2020</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2020/02/The-different-meanings-of-22wrong22-263x175.jpg" href="https://uploading.com/the-different-meanings-of-wrong/" title="The different meanings of &#8220;wrong&#8221;">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/the-different-meanings-of-wrong/" title="The different meanings of &#8220;wrong&#8221;">The different meanings of &#8220;wrong&#8221;</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2020-02-05T17:22:54+02:00">February 5, 2020</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/Noun-Gender-TOEFL-Vocab-Grammar.jpg" href="https://uploading.com/noun-gender-toefl-vocab-grammar/" title="Noun Gender &#8211; TOEFL Vocab &#038; Grammar">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/noun-gender-toefl-vocab-grammar/" title="Noun Gender &#8211; TOEFL Vocab &#038; Grammar">Noun Gender &#8211; TOEFL Vocab &#038; Grammar</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-11T23:22:47+02:00">September 11, 2018</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/phrasal-verbs-health.jpg" href="https://uploading.com/health-phrasal-verbs-meaning-example/" title="Health Phrasal Verbs (Meaning &#038; Example)">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/health-phrasal-verbs-meaning-example/" title="Health Phrasal Verbs (Meaning &#038; Example)">Health Phrasal Verbs (Meaning &#038; Example)</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-10T23:34:38+02:00">September 10, 2018</time></p>
+															</div>
+						</div>
+											<div class="penci-mega-post">
+							<div class="penci-mega-thumbnail">
+																								<span class="mega-cat-name">
+																			<a href="https://uploading.com/category/vocab-grammar/">
+											Vocab &amp; Grammar										</a>
+																	</span>
+																								<a class="penci-image-holder penci-lazy" data-src="https://uploading.com/wp-content/uploads/2018/09/Mastering-Phrasal-Verbs.jpg" href="https://uploading.com/tips-for-learning-english-toefl-ielts-toeic-mastering-phrasal-verbs/" title="Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering Phrasal Verbs">
+																									</a>
+							</div>
+							<div class="penci-mega-meta">
+								<h3 class="post-mega-title">
+									<a href="https://uploading.com/tips-for-learning-english-toefl-ielts-toeic-mastering-phrasal-verbs/" title="Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering Phrasal Verbs">Tips for Learning English (TOEFL, IELTS, TOEIC): Mastering&#8230;</a>
+								</h3>
+																<p class="penci-mega-date"><time class="entry-date published" datetime="2018-09-10T23:27:01+02:00">September 10, 2018</time></p>
+															</div>
+						</div>
+									</div>
+							</div>
+		</div>
+
+		</div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-10262"><a href="https://uploading.com/category/ielts/">IELTS</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10922"><a href="https://uploading.com/category/ielts/reading-ielts/">Reading</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10921"><a href="https://uploading.com/category/ielts/listening-ielts/">Listening</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10930"><a href="https://uploading.com/ielts-writing-study-guide-tips-and-resources/">IELTS Writing</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10920"><a href="https://uploading.com/category/ielts/ielts-books/">IELTS Books</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-10258"><a href="https://uploading.com/category/toefl/">TOEFL</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10267"><a href="https://uploading.com/category/toefl/faq/">FAQ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10382"><a href="https://uploading.com/toefl-ibt-reading-practice-test-study-guide/">Reading</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10390"><a href="https://uploading.com/toefl-ibt-listening-practice-test-study-guide/">Listening</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-589"><a href="https://uploading.com/category/toefl/speaking/">Speaking</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-590"><a href="https://uploading.com/category/toefl/writing/">Writing</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10266"><a href="https://uploading.com/category/toefl/exam-tips/">Exam tips</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10268"><a href="https://uploading.com/category/toefl/toefl-books/">TOEFL Books</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10269"><a href="https://uploading.com/category/toefl/toefl-software/">TOEFL Software</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10263"><a href="https://uploading.com/category/toeic/">TOEIC</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10304"><a href="https://grematerials.com">GRE</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10260"><a href="https://uploading.com/category/english-books/">English Books</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5830"><a href="https://uploading.com/category/online-course/">Online Course</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10919"><a href="https://uploading.com/category/ielts/exam-tips-ielts/">Exam Tips</a></li>
+</ul>	</nav>
+
+	<div class="penci-wrap-gprd-law penci-wrap-gprd-law-close penci-close-all">
+		<div class="penci-gprd-law">
+			<p>
+				This website uses cookies to improve your experience. We&#039;ll assume you&#039;re ok with this, but you can opt-out if you wish.				<a class="penci-gprd-accept" href="#">Accept</a>				<a class="penci-gprd-more" href="#">Read More</a>			</p>
+		</div>
+			</div>
+
+
+
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/uploading.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://uploading.com/wp-content/themes/soledad/js/libs-script.min.js?ver=7.9.5' id='penci-libs-js-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/themes/soledad/js/smoothscroll.js?ver=1627030566' id='penci-smoothscroll-js' defer></script>
+<script type='text/javascript' id='main-scripts-js-extra'>
+/* <![CDATA[ */
+var ajax_var_more = {"url":"https:\/\/uploading.com\/wp-admin\/admin-ajax.php","nonce":"537a2c2de7","errorPass":"<p class=\"message message-error\">Password does not match the confirm password<\/p>","login":"Email Address","password":"Password"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/themes/soledad/js/main.js?ver=1627030566' id='main-scripts-js' defer></script>
+<script type='text/javascript' id='penci_ajax_like_post-js-extra'>
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/uploading.com\/wp-admin\/admin-ajax.php","nonce":"537a2c2de7","errorPass":"<p class=\"message message-error\">Password does not match the confirm password<\/p>","login":"Email Address","password":"Password"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/themes/soledad/js/post-like.js?ver=1627030566' id='penci_ajax_like_post-js' defer></script>
+<script type='text/javascript' id='penci_ajax_archive_more_scroll-js-extra'>
+/* <![CDATA[ */
+var SOLEDADLOCALIZE = {"url":"https:\/\/uploading.com\/wp-admin\/admin-ajax.php","nonce":"537a2c2de7","errorPass":"<p class=\"message message-error\">Password does not match the confirm password<\/p>","login":"Email Address","password":"Password"};
+/* ]]> */
+</script>
+<script data-minify="1" type='text/javascript' src='https://uploading.com/wp-content/cache/min/1/wp-content/themes/soledad/js/archive-more-post.js?ver=1627030566' id='penci_ajax_archive_more_scroll-js' defer></script>
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://uploading.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+
+<script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://uploading.com/wp-content/cache/min/1/174f994cd1214ea4c613c502e15ea498.css" media="all" data-minify="1" /><link rel='stylesheet' id='penci-fonts-css'  href='//fonts.googleapis.com/css?family=Raleway%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPT+Serif%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPlayfair+Display+SC%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Ccyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin-ext&#038;display=swap&#038;ver=1.0' type='text/css' media='all' /></noscript></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1628509114 -->

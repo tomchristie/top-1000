@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>青岛新闻网首页</TITLE>
+<META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="baidu-site-verification" content="code-nfk65Aar2E">
+<META name="description" content="青岛地方互联网门户。青岛新闻网拥有在网民中具有高度影响力和号召力的门户论坛社区青青岛。网站下设青岛新闻、民生在线、微博，青岛房产，青岛汽车，青岛美食，青岛旅游等频道，是青岛互联网用户获取信息的媒体平台。">
+<META name="keywords" content="青岛新闻网,青岛新闻,青岛新闻网首页,青岛房产,青岛汽车,青岛财经,青岛旅游,青岛健康,青岛娱乐,青岛美食,青岛健康,青岛分类,青岛招聘,青岛打折,青岛商城,青岛短信,青岛音乐,青岛二手,青岛交友,青岛建站,青岛游戏,青岛摄影,青岛教育,青岛贴图,青岛育儿,青岛搜索,民生在线">
+<LINK rel="bookmark" type="image/x-icon" href="style/bitbugfavicon.ico">
+<LINK rel="shortcut icon" href="style/bitbugfavicon.ico">
+<LINK rel="icon" href="style/bitbugfavicon.ico">
+<SCRIPT type="text/javascript" src="style/jquery-1.12.1.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="style/jquery.cookie.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="style/jquery.lazyload.js"></SCRIPT>
+<LINK rel="stylesheet" type="text/css" href="style/jquery.lazyload.css">
+<LINK rel="stylesheet" type="text/css" href="style/index0622.css">
+<SCRIPT type="text/javascript">
+	var strUrl = document.location.href;
+    if (/iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|android|iPod/i.test(navigator.userAgent.toLowerCase())) {
+		if(strUrl.indexOf("www.") != -1){document.location.href = "http://wap.qingdaonews.com/";}
+    }
+	</SCRIPT>
+</HEAD>
+<BODY>
+<DIV id="nuploc_2481" class="footerAd" style="text-align:center;position:relative"></DIV>
+<DIV class="toolbar">
+<DIV class="qtop">
+<SPAN class="tit">中国领先的地方城市门户</SPAN>
+<DIV class="qtoplink">
+<DIV class="qlogout">
+欢迎您，
+<A href="http://passport.qingdaonews.com/" class="" id="hp" target="_blank">-</A>
+<SPAN>|</SPAN>
+<A href="http://passport.qingdaonews.com/interface/homelogin?act=logout" target="_self">安全退出</A>
+</DIV>
+<DIV class="qlogin">
+<A href="javascript:;" class="qBtn">
+<I class="icon_01"></I>
+<P>登录</P>
+</A>
+<SPAN>|</SPAN>
+<A href="http://passport.qingdaonews.com/register" target="_blank">注册</A>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+<DIV class="qbox">
+<DIV class="pb5"><EM id="qboxtit">登录青岛新闻网通行证账户</EM>
+<LABEL><SPAN>账户：</SPAN>
+<INPUT type="text" id="qusername" class="qboxipt">
+</LABEL>
+</DIV>
+<DIV class="pb5">
+<LABEL><SPAN>密码：</SPAN>
+<INPUT type="password" id="qpassword" class="qboxipt">
+</LABEL>
+<SPAN class="z cGray">
+<INPUT name="qday" type="checkbox" value="14" id="qday">
+&nbsp;两周内免登陆</SPAN> <A href="http://passport.qingdaonews.com/forget" class="fr cGray" target="_blank">忘记密码？</A>
+<BUTTON class="loginbtn" id="qindexlogin">登&#12288;录</BUTTON>
+</DIV>
+<A href="javascript:void(0);" class="qboxcls" target="_self">关闭</A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="header">
+<DIV class="ad_2"><DIV id="nuploc_1459" class="foucsAd" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headLogo">
+<DIV class="logo">
+<A href="//www.qingdaonews.com/"><IMG src="style/logo190603.png" alt="青岛新闻网">
+</A>
+</DIV>
+<DIV class="search">
+<FORM>
+<INPUT type="text" id="query" class="qsearchipt" maxlength="100" placeholder="输入新闻关键词进行搜索..." autocomplete="off">
+<BUTTON type="submit" id="qSubmit2"><I class="icon_03"></I></BUTTON>
+<DIV class="clear"></DIV>
+</FORM>
+</DIV>
+<SCRIPT>
+				$(function(){
+					$("#query").bind("keypress",function(e) {
+						if (e.keyCode == 13) {
+							var sValue = "//www.baidu.com/s?wd=site:qingdaonews.com%20" + $("#query").val();
+							window.open(sValue,"_blank")
+						}
+					});
+					
+					$("#qSubmit2").on("click",function() {
+						var sValue = "//www.baidu.com/s?wd=site:qingdaonews.com%20" + $("#query").val();
+						window.open(sValue,"_blank")
+					});
+				})
+            </SCRIPT>
+<DIV class="app">
+<A href="javascript:;" target="_blank">
+<P>公众号</P><I class="icon_04"></I>
+<IMG src="style/newswx.png" class="q-wx" title="青岛新闻网微信">
+</A>
+<A href="http://app.qingdaonews.com/d/pc/index.html" target="_blank">
+<SPAN></SPAN>
+<P>客户端</P><I class="icon_05"></I>
+<IMG src="style/newsapp.png" class="q-wx" title="青岛新闻客户端">
+</A>
+<A href="http://bus.qingdaonews.com/" target="_blank">
+<P>公交</P><I class="icon_06"></I>
+<IMG src="style/bus.png" class="q-wx" title="青岛新闻公交客户端">
+</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+</DIV>
+<DIV class="main">
+<DIV class="nav" id="nav">
+<DL class="p0">
+<DT><A href="http://news.qingdaonews.com" target="_blank">新闻</A></DT>
+<DD><A href="http://news.qingdaonews.com/qingdao/node_26974.htm" target="_blank">专题</A></DD>
+<DD><A href="http://news.qingdaonews.com/qingdao/node_93394.htm" target="_blank">原创</A></DD>
+<DT><A href="https://club.qingdaonews.com" target="_blank">社区</A></DT>
+<DD><A href="http://pinglun.qingdaonews.com/" target="_blank">评论</A></DD>
+<DD><A href="http://news.qingdaonews.com/qingdao/" target="_blank">青岛</A></DD>
+</DL>
+<DL>
+<DT><A href="http://epaper.qingdaonews.com/" target="_blank">读报</A></DT>
+<DD><A href="http://news.qingdaonews.com/zonghe/node_159234.htm" target="_blank">政情</A></DD>
+<DD><A href="http://ent.qingdaonews.com/" target="_blank">文娱</A></DD>
+<DT><A href="http://minsheng.qingdaonews.com" target="_blank">民生</A></DT>
+<DD><A href="https://club.qingdaonews.com/club_entry_2_2_0_1_0.htm" target="_blank">爆料</A></DD>
+<DD><A href=" http://www.qingdaonews.com/node/node_157461.htm" target="_blank">辟谣</A></DD>
+</DL>
+<DL class="list1">
+<DT><A href="http://yuqing.qingdaonews.com" target="_blank">舆情</A></DT>
+<DT><A href="http://business.qingdaonews.com/" target="_blank">企业</A></DT>
+</DL>
+<DL class="list2">
+<DT><A href="http://house.qingdaonews.com" target="_blank">房产</A></DT>
+<DD><A href="http://jiaju.qingdaonews.com" target="_blank">家居</A></DD>
+<DT><A href="http://house.qingdaonews.com/dianshang" target="_blank">房团</A></DT>
+<DD><A href="https://club.qingdaonews.com/club_entry_20_7_0_1_0.htm" target="_blank">楼市</A></DD>
+</DL>
+<DL class="list2">
+<DT><A href="http://auto.qingdaonews.com" target="_blank">汽车</A></DT>
+<DD><A href="http://dazhe.qingdaonews.com" target="_blank">消费</A></DD>
+<DT><A href="http://auto.qingdaonews.com/ev/EV.htm" target="_blank">新能源</A></DT>
+<DD><A href="http://auto.qingdaonews.com/node/node_91132.htm" target="_blank">测评</A></DD>
+</DL>
+<DL>
+<DT><A href="http://health.qingdaonews.com" target="_blank">健康</A></DT>
+<DD><A href="http://guahao.qingdaonews.com" target="_blank">挂号</A></DD>
+<DD><A href="http://mingyi.qingdaonews.com" target="_blank">名医</A></DD>
+<DT><A href="http://finance.qingdaonews.com" target="_blank">财经</A></DT>
+<DD><A href="http://jd.qingdaonews.com" target="_blank">贷款</A></DD>
+<DD><A href="http://finance.qingdaonews.com/licai" target="_blank">理财</A></DD>
+</DL>
+<DL>
+<DT><A href="http://travel.qingdaonews.com" target="_blank">文旅</A></DT>
+<DD><A href="http://go.travel.qingdaonews.com" target="_blank">出境</A></DD>
+<DD><A href="http://news.qingdaonews.com/node_166472.htm" target="_blank">乡村</A></DD>
+<DT><A href="http://edu.qingdaonews.com" target="_blank">教育</A></DT>
+<DD><A href="http://school.qingdaonews.com/" target="_blank">培训</A></DD>
+<DD><A href="http://kuaiji.qingdaonews.com/" target="_blank">会计</A></DD>
+</DL>
+<DL class="list1 bn">
+<DT><A href="http://food.qingdaonews.com" target="_blank">美食</A></DT>
+<DT><A href="http://baby.qingdaonews.com" target="_blank">育儿</A></DT>
+</DL>
+</DIV>
+<DIV class="ad"><DIV id="nuploc_1460" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="ad">
+<DIV class="ad2"><DIV id="nuploc_1461" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="ad3"><DIV id="nuploc_1475" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="textBox">
+<A href="http://www.qdhuatong.com/catalog/index.php" target="_blank">华通资本投创未来</A>
+<A href="http://business.qingdaonews.com/node/node_166197.htm" target="_blank">青岛地铁迈进"6线"时代</A>
+<A href="http://www.qdbc.net/" target="_blank">青岛市中心血站</A>
+<A href="http://www.sdeyei-h.edu/" target="_blank">青岛眼科医院</A>
+<A href="http://www.qduh.cn/" target="_blank">青岛大学附属医院</A>
+<A href="http://www.0532qdzx.com/new2017/newzt/18_1yue/?bd2-huodong-1162" target="_blank">华韩整形</A>
+<A href="http://finance.qingdaonews.com/canva/infoservice/project/index" target="_blank">青岛金融业招商引资</A>
+<A href="http://www.yitsai.com" target="_blank">意才</A>
+<A href="http://house.qingdaonews.com/xinloupan/show5844.html" target="_blank">大云谷金茂府</A>
+<A href="http://finance.qingdaonews.com/node_165660.htm" target="_blank">国信金控</A>
+</DIV>
+<DIV class="ad"><DIV id="nuploc_1471" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="ad">
+<DIV class="ad2"><DIV id="nuploc_1462" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="ad3"><DIV id="nuploc_1476" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="textBox">
+<A href="http://shinan.qingdaonews.com" target="_blank">市南</A>
+<A href="http://shibei.qingdaonews.com" target="_blank">市北</A>
+<A href="http://licang.qingdaonews.com" target="_blank">李沧</A>
+<A href="http://laoshan.qingdaonews.com" target="_blank">崂山</A>
+<A href="http://xihaian.qingdaonews.com" target="_blank">西海岸</A>
+<A href="http://chengyang.qingdaonews.com/node_150028.htm" target="_blank">城阳</A>
+<A href="http://www.jimonet.cc" target="_blank">即墨</A>
+<A href="http://jiaozhou.qingdaonews.com/" target="_blank">胶州</A>
+<A href="http://www.laixi.gov.cn/n1/index.html" target="_blank">莱西</A>
+<A href="http://gxq.qingdao.gov.cn/" target="_blank">高新区</A>
+<A href="http://qdftz.qingdao.gov.cn/n28356061/index.html" target="_blank">青岛保税港区</A>
+<SPAN> | </SPAN>
+<A href="http://www.xhafz.com/" target="_blank">西海岸发展集团</A>
+<A href="http://business.qingdaonews.com/node/shehuizuzhi.htm" target="_blank">青岛社会组织</A>
+<A href="http://www.qdhuatong.com/catalog/index.php" target="_blank">华通</A>
+<A href="http://www.qdbus.com.cn/" target="_blank">青公交</A>
+<A href="http://www.tsingtao.com.cn" target="_blank">青啤</A>
+<A href="http://www.aucma.com.cn/" target="_blank">澳柯玛</A>
+<A href="http://www.qdsailing.org/" target="_blank">青岛帆船</A>
+<A href="http://qdlg.qingdao.gov.cn/" target="_blank">青岛蓝谷</A>
+<A href="http://119.qingdaonews.com/" target="_blank">青岛消防</A>
+<A href="http://www.qdlzw.cn" target="_blank">廉洁青岛</A>
+<A href="http://www.qingdaonews.com/node/node_163032.htm" target="_blank">慈善e站</A>
+<SPAN> | </SPAN>
+<A href="http://www.qdxc.gov.cn/" target="_blank">青宣网</A>
+<A href="http://yuqing.qingdaonews.com/node_163439.htm" target="_blank">青岛骄傲</A>
+<A href="http://yuqing.qingdaonews.com/node_163040.htm" target="_blank">青岛税务</A>
+<A href="http://www.qingdaonews.com/made/node_163120.htm" target="_blank">青岛制造官网</A>
+<A href="http://news.qingdaonews.com/node_164257.htm" target="_blank">青岛市民营经济发展局</A>
+<A href="http://www.qingdaonews.com/node_165771.htm" target="_blank">青岛市人力资源和社会保障局</A>
+<A href="http://www.qingdaonews.com/node/node_163940.htm" target="_blank">青岛农品官网</A>
+<A href="http://health.qingdaonews.com/node/node_164049.htm" target="_blank">青岛君良烧伤医院</A>
+<A href="http://yuqing.qingdaonews.com/node_166228.htm" target="_blank">国企党建巡礼</A>
+<A href="http://www.qdqss.cn/" target="_blank">政务导航</A>
+<A href="http://www.iqingdao.info/" target="_blank">IQINGDAO</A>
+</DIV>
+ 
+<DIV class="titleTop">
+<H1 style="font-weight:600">
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831874.htm" target="_blank">文化自信更深沉——习近平总书记关切的文化发展新实践</A>
+</H1>
+<DIV class="littleTitle">
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831878.htm" target="_blank">我比任何时候更懂你｜嘉兴南湖的红船是谁租来的？</A>
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831876.htm" target="_blank">演绎大国崛起的伟大传奇——写在东京奥运会闭幕之际</A>
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831879.htm" target="_blank">69秒，超燃！！！</A>
+</DIV>
+</DIV>
+<DIV class="headMain">
+<DIV class="headLeft">
+<DIV id="focus" class="focus">
+<DIV id="focusPic" class="focusList">
+<DIV class="fcon"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831311.htm" target="_blank"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/t2_(6X13X594X405)7f77a4ba-6246-434d-aa5b-757ebf8f7ee7.jpeg"><H3>青岛奥运“天团”，欢迎凯旋！</H3></A></DIV>
+<DIV class="fcon"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831256.htm" target="_blank"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/t2_(1X11X579X396)21df7bc5-d996-4660-8cfc-62f479366b6a.jpeg"><H3>梦想接棒！180天后北京见</H3></A></DIV>
+<DIV class="fcon"><A href="https://club.qingdaonews.com/showAnnounce_2_6295342_1_0.htm" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/ca3632a7-eedc-485a-81d0-18e38fef8272.png"><H3>七旬老汉猥亵11岁少女 因满70岁未执行行拘</H3></A></DIV>
+<DIV class="fcon"><A href="http://news.qingdaonews.com/qingdao/2021-07/22/content_22806215.htm" target="_blank"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-07/22/6ae42cd2-cd5a-4d25-82db-069237d1e21a.png"><H3>【青青岛观察】时尚与烟火气并存的城阳，还差点什么?</H3></A></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="focusNum" id="focusNum">
+<A href="javascript:;" class="on"></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+</DIV>
+<SPAN class="prev"></SPAN>
+<SPAN class="next"></SPAN>
+</DIV>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://h5.qingdaonews.com/c/nacc/kmx7/index.html?" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/08/cd780a0f-615e-433f-ada7-43409e60c980.jpg"></A>
+<A href="http://h5.qingdaonews.com/c/nacc/kmx7/index.html?" target="_blank"><H3>病毒变异，现在的防控措施还有效吗？你关心的问题，权威解读来了 </H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831596.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/a896d7ac-68d1-4773-bf38-b69e789a9590.jpg"></A>
+<A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831596.htm" target="_blank"><H3>家居防护、外出就医需要注意什么？孕产妇防疫指南来了</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://house.qingdaonews.com/news/2021-08/07/content_22829480.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/07/fb78daa2-84ad-47fa-a90d-810db123e91a.jpg"></A>
+<A href="http://house.qingdaonews.com/news/2021-08/07/content_22829480.htm" target="_blank"><H3>实地探访：城阳白云山片区</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/app/content/2021-07/05/content_22782870.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-07/06/496bc34f-999b-4dfc-b47a-5cee102bc824.png"></A>
+<A href="http://www.qingdaonews.com/app/content/2021-07/05/content_22782870.htm" target="_blank"><H3>城阳"网红好物评选"启动 带你走进繁荣时尚新城区</H3></A>
+</DIV>
+</DIV>
+<DIV class="headTab mt40" id="tab1">
+<UL class="tabList">
+<LI class="on">在线直播</LI>
+</UL>
+<DIV class="tabBox">
+<A href="https://live.qingdaonews.com/wap/index.html?id=4072" target="_blank" class="bigImg">
+<H3>【直播实录】线上直播看房 市区海景房约150万</H3>
+<IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/06/0b564caf-00cd-4caa-8915-077a15daed53.jpg">
+</A>
+<UL class="newsList14 mt15">
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=4055" target="_blank">【直播实录】阿朵·李宁运动中心开业盛典</A></LI>
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=4040" target="_blank">【直播实录】臻玺之夜 嘻哈音乐节开唱啦</A></LI>
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=4041" target="_blank">【直播实录】保利时代王者荣耀电竞争霸赛</A></LI>
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=4015" target="_blank">【直播实录】2021青岛轨道交通产业全球生态伙伴大会</A></LI>
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=3966" target="_blank">【直播实录】双利悦府&春雨医生战略合作启动仪式</A></LI>
+<LI><A href="http://live.qingdaonews.com/wap/index.html?id=3925" target="_blank">【直播实录】数字城市发展高峰论坛</A></LI>
+<LI><A href="http://live.qingdaonews.com/wap/index.html?id=3894" target="_blank">【直播实录】西海岸创新科技城彩虹音浪节</A></LI>
+</UL>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<DIV class="headTit">
+<H2><A href="http://news.qingdaonews.com/qingdao/2021-08/08/content_22831234.htm" target="_blank">山东7金全国第一 陈梦贡献"双冠"</A></H2>
+<DIV class="abs">这个火热盛夏，一场无观众却备受关注的夏季奥林匹克盛会，给人类有关“团结”的诠释又下了一个热情又浓厚的注脚。</DIV>
+<H2><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831237.htm" target="_blank">青岛创建全球海洋中心城市底气更足</A></H2>
+<DIV class="abs">近日，自然资源部公布全国42个重点实验室建设名单，山东3个，全部落地青岛，充分体现了青岛作为海洋科研重镇的地位。</DIV>
+<H2><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831251.htm" target="_blank">青岛高铁站再添新成员 济青高铁青岛机场站今启用</A></H2>
+<DIV class="abs">青岛机场站投入运营后将主要承担省内、青岛市区以及日照、济南、潍坊、烟台、威海等方向的机场接驳换乘客流。</DIV>
+</DIV>
+<DIV class="headTag">
+<A href="http://www.12377.cn/" target="_blank">国家网信办举报中心</A>
+<H2><A href="http://news.qingdaonews.com/zonghe/" target="_blank">焦点</A><SPAN>·</SPAN><A href="http://news.qingdaonews.com/qingdao/" target="_blank">青岛</A><SPAN>·</SPAN><B>频道</B></H2>
+</DIV>
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831918.htm" target="_blank">解析山东2021经济“期中考试”答卷 8大发展密码带来好成绩</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831744.htm" target="_blank">国家统计局：7月份CPI同比上涨1.0% 环比上涨0.3%</A></LI>
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831547.htm" target="_blank">河南新增本土确诊病例1例 无症状感染者转确诊病例40例</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832496.htm" target="_blank">济南华联超市回应员工张某涉嫌侵害他人一事：决定予以辞退</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832472.htm" target="_blank">青啤博物馆防疫进行时 扫"青岛一码通"、测温入馆</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832395.htm" target="_blank">因疫情防控措施落实不到位，青岛37家医疗机构被责令暂停开放</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831777.htm" target="_blank">中国体育代表团向山东省委省政府发来感谢信</A></LI>
+<LI><A href="http://mszx.qingdaonews.com/interview/index/id/366" target="_blank">城阳区委副书记、区长解宏劲8月10日14:30做客民生在线</A></LI>
+</UL>
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832342.htm" target="_blank">7月份青岛市CPI同比上涨1.8%，肉蛋菜价格止跌回升</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832033.htm" target="_blank">青岛多个体育场馆对市民免费开放，看好这些时间段！</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832049.htm" target="_blank">坐地铁无需安检 青岛机场站与地铁8号线实现安检互通</A></LI>
+<LI><A href="http://house.qingdaonews.com/news/2021-08/09/content_22832066.htm" target="_blank">淡季很淡！上周青岛新房成交2316套 环比降三成</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831652.htm" target="_blank">今天，济青高铁青岛机场站正式启用！</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832140.htm" target="_blank">青岛科技大学获批3个青岛市工程研究中心</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831774.htm" target="_blank">市北区发布两大项目规划!涉及这些区域 有你关注的吗</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831848.htm" target="_blank">烟台两轮核酸采样检测1300多万人次，结果均为阴性</A></LI>
+</UL>
+<UL class="newsList noBack mt25">
+<LI><SPAN><A href="https://www.qingdaonews.com/" target="_self">新闻</A></SPAN><A href="http://www.qingdaonews.com/content/2021-08/09/content_22831765.htm" target="_blank">工爱山东APP来了！您生活中的好帮手！</A></LI>
+<LI><SPAN><A href="https://www.qingdaonews.com/" target="_self">楼市</A></SPAN><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23002-923.htm" target="_blank">风华正茂白云山短视频大赛 空调|空气净化器免费送</A></LI>
+<LI><SPAN><A href="https://www.qingdaonews.com/" target="_self">楼市</A></SPAN><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23089-6004.htm" target="_blank">地铁口纯新盘！北京城建国誉府89-119㎡洋房首发</A></LI>
+<LI><SPAN><A href="https://www.qingdaonews.com/" target="_self">楼市</A></SPAN><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm" target="_blank">万人线上看房车!直播5大市区热盘 16xxx起引爆楼市</A></LI>
+<LI><SPAN><A href="https://www.qingdaonews.com/" target="_self">楼市</A></SPAN><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/07/item23086-5545.htm" target="_blank">视频看房:白沙湾红盘青特悦海府 155㎡平层220万起</A></LI>
+<LI><SPAN><A href="http://www.qingdaonews.com/" target="_self">楼市</A></SPAN><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/06/item23081-6044.htm" target="_blank">新盘:紫金华府90-170㎡首发 自建体育馆/医养中心</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight">
+<DIV id="adList" class="adList">
+<DIV id="showAd" class="focusList">
+<DIV class="fcon"><A href="http://www.qingdaonews.com/node/node_166985.htm" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/09/aea7139e-9afd-4eac-837b-6973a5df3448.jpg"></A></DIV>
+<DIV class="fcon"><A href="http://www.qingdaonews.com/node/node_167051.htm" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/21/161905e5-f084-4ac8-bfd0-153774d92ff9.jpg"></A></DIV>
+<DIV class="fcon"><A href="http://www.qingdaonews.com/node/node_166975.htm" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-06/30/d19c7820-d773-4a94-a542-323c3493f81c.jpg"></A></DIV>
+<DIV class="fcon"><A href="http://www.qingdaonews.com/node/node_166970.htm" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-06/30/99dff088-e222-4c50-8b9e-2e20a222abd5.jpg"></A></DIV>
+<DIV class="fcon"><A href="http://vote1.qingdaonews.com/branch/news/202002/ACshow/pc.php" target="_blank"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2020-04/14/a25e2ea3-1a3f-45db-93d6-7f59ade63150.jpg"></A></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adNum" id="adNum">
+<A href="javascript:;" class="on"></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+</DIV>
+<SPAN class="prev"></SPAN> <SPAN class="next"></SPAN>
+</DIV>
+<DIV class="bgGray mt15">
+<DIV class="h2Tit"><A href="http://qdfb.shiminjia.com/" target="_blank" class='import'>新闻发布会</A><H2><A href="http://news.qingdaonews.com/zonghe/node_159234.htm" target="_blank">政情</A></H2></DIV>
+<DIV class="imgText mt15">
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831643.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/d1b4d895-dc64-4084-b23a-e1cdeb2ecd44.png"></A>
+<A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22831643.htm" target="_blank"><H4>半年跨千亿级台阶！领跑全省、对标全国、链接全球……外贸马车跑出“青岛加速度”</H4></A>
+</DIV>
+<UL class="newsList14 mt15">
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-08/07/content_22829840.htm" target="_blank">【在昆外国人看昆明】卢克：昆明是展开生物多样性对话的绝佳之地</A></LI>
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-07/31/content_22820085.htm" target="_blank">跑·酷青岛 | 换一种方式打开金沙滩啤酒城，啤酒节也超酷的！</A></LI>
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22832220.htm" target="_blank">风从海上来 | 时间过半，专业实训队做好“接上海”“接青岛”两篇文章</A></LI>
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-07/31/content_22820147.htm" target="_blank">世界需要互利共赢而非零和博弈（观象台）</A></LI>
+<LI><A href="http://news.qingdaonews.com/zonghe/2021-08/09/content_22832287.htm" target="_blank">同品牌同服务比综合类家电平台再低20-50%！青岛人的家电平台“智慧优选”来了</A></LI>
+</UL>
+</DIV>
+<DIV class="headTab mt30" id="tab2">
+<UL class="tabList">
+<LI class="on">
+<A href="http://minsheng.qingdaonews.com/" target="_blank"><H2>民生在线</H2></A></LI>
+<LI>
+</UL>
+<DIV class="tabBox" style="height: 225px">
+<DIV class="imgText">
+<A href="http://mszx.qingdaonews.com/interview/index/id/366" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://minsheng.qingdaonews.com/images/2021-08/08/5bfac9e4-75ea-4736-8412-322548e10e2c.png"></A>
+<A href="http://mszx.qingdaonews.com/interview/index/id/366" target="_blank"><H4>城阳区委副书记、区长解宏劲8月10日14:30做客民生在线</H4></A>
+</DIV>
+<UL class="newsList14">
+<LI><A href="http://minsheng.qingdaonews.com/content/2021-08/04/content_22825566.htm" target="_blank">交通银行青岛分行党委委员、副行长华勐慧网谈实录</A></LI>
+<LI><A href="http://minsheng.qingdaonews.com/content/2021-08/02/content_22821639.htm" target="_blank">8月2日起，青岛各小学试点暑期托管服务，收费标准公开</A></LI>
+<LI><A href="http://minsheng.qingdaonews.com/content/2021-08/02/content_22821638.htm" target="_blank">自动“识别”电动车！青岛部分高层住宅电梯已用上“车阻系统”</A></LI>
+<LI><A href="http://minsheng.qingdaonews.com/content/2021-08/02/content_22821637.htm" target="_blank">召回、下架 青岛对1384批次食品样品抽检 快看哪些不合格？</A></LI>
+</UL>
+</DIV>
+
+</DIV>
+<DIV class="headTab mt15" id="tab3">
+<UL class="tabList">
+<LI class="on">
+<H2>青岛号</H2></LI>
+<LI>
+<A href="http://www.qingdaonews.com/node/node_158735.htm" target="_blank"><H2>自媒体</H2></A></LI>
+</UL>
+<DIV class="tabBox" style="height: 280px">
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2021-05/20/content_22721008.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-05/20/92b5bfc9-8ce7-4d6d-b5d1-6db6e47ff680.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-05/20/content_22721008.htm" target="_blank"><H4>谁说小时候胖点没关系？害人不浅！</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2021-05/18/content_22717630.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-05/18/eba40d91-65bc-40e3-b2a2-4533d339dcb8.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-05/18/content_22717630.htm" target="_blank"><H4>高血压如何控制？用药误区有哪些？什么时候调整用药？</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2021-05/12/content_22709015.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-05/12/c38edef5-40ff-4ac0-b760-c8d127b34de1.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-05/12/content_22709015.htm" target="_blank"><H4>快去打卡！西海岸这8个公园打造“席地而坐”区域</H4></A>
+</DIV>
+</DIV>
+<DIV class="tabBox dn" style="height: 280px">
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2020-02/12/content_21248023.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2020-02/12/a5829750-609e-4f56-bd7b-d57c764fe3e4.png"></A>
+<A href="http://www.qingdaonews.com/content/2020-02/12/content_21248023.htm" target="_blank"><H4>抗击疫情 从我做起 青岛市自媒体联盟倡议</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2019-09/29/content_20790250.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2019-09/29/64afa97c-1b7c-438c-83dc-93cd10e0a400.png"></A>
+<A href="http://www.qingdaonews.com/content/2019-09/29/content_20790250.htm" target="_blank"><H4>真情燃希望 青岛市自媒体协会党支部赴平度大泽山镇结对帮扶</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2019-07/26/content_20569754.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2019-07/26/ccd7a56b-0b80-47ff-b386-c4c9b1645637.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2019-07/26/content_20569754.htm" target="_blank"><H4>新媒体＆新事物研习社第十一期：粉丝从0到100万，青岛抖音大咖揭秘本地抖音号新玩法</H4></A>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig">
+<DIV class="adBig2"><DIV id="nuploc_1463" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="adBig3"><DIV id="nuploc_1477" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt20">
+<DIV class="headLeft">
+<DIV class="h2Tit">
+<A href="https://club.qingdaonews.com/user/login.php" target="_blank" class="cOrg">发帖</A>
+<A href="https://club.qingdaonews.com/club_entry_2_2_0_1_0.htm" target="_blank">青岛论坛</A>
+<A href="https://club.qingdaonews.com/club_entry_1025_2_0_1_0.htm" target="_blank">社会万象</A>
+<H2><A href="https://club.qingdaonews.com" target="_blank">青青岛社区</A></H2>
+</DIV>
+<A href="https://club.qingdaonews.com/showAnnounce_2_6295342_1_0.htm" target="_blank" class="bigImg mt20">
+<H3>七旬老汉猥亵11岁少女</H3>
+<IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/7b1d584e-04a9-482e-9757-506590071966.png">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="https://club.qingdaonews.com/showAnnounce_2_6295223_1_0.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/t2_(7X18X516X357)4bfd5576-9555-4e64-9ba5-cce12a94cbc6.jpg"></A>
+<A href="https://club.qingdaonews.com/showAnnounce_2_6295223_1_0.htm" target="_blank"><H3>青岛金宝贝霸王条款欺人</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="https://club.qingdaonews.com/showAnnounce_2_6294952_1_0.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/06/edb138d1-34a9-48a5-a1b5-292f8366048a.png"></A>
+<A href="https://club.qingdaonews.com/showAnnounce_2_6294952_1_0.htm" target="_blank"><H3>30岁脱产去读MBA，值吗？</H3></A>
+</DIV>
+</DIV>
+<DIV class="h2Tit mt20">
+<H2><A href="https://club.qingdaonews.com/topic_hot.php" target="_blank">社区排行榜</A></H2></DIV>
+<DIV id="clubli">数据加载中...</DIV>
+</DIV>
+<DIV class="headMiddle">
+<DIV class="h2Tit">
+<A href="http://www.qingdaonews.com/node/node_157461.htm" target="_blank">青岛网络辟谣平台</A>
+<H2><A href="http://news.qingdaonews.com/qingdao/" target="_blank">青岛新闻</A></H2></DIV>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22832099.htm" target="_blank">这一全国流窜"洗钱"团伙在青岛“栽了” 13人落网</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831890.htm" target="_blank">清理50余个单元!江苏路街道综合执法中队整治"小广告"</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831813.htm" target="_blank">海牛队集结备战冲甲组 殷铁生总结第一阶段:前3轮是个坎</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831812.htm" target="_blank">前国脚与小海牛同场竞技 海牛公益足球夏令营开营</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831811.htm" target="_blank">青岛疾控专家呼吁：老人不要等，新冠疫苗应打尽打！</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831641.htm" target="_blank">【动新闻】这份视频防疫守则请务必观看收藏下！</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831208.htm" target="_blank">女干警主动冲上抗疫第一线 年轻的她穿上防护服“秒变”志愿者</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/08/content_22831004.htm" target="_blank">黄渤发文告别！网友一波回忆杀，破防了！</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/07/content_22830345.htm" target="_blank">这么大的刀鱼！这么大的鲅鱼！青岛海钓圈这些天嗨了</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/07/content_22830337.htm" target="_blank">“奥运口罩”走红全国 厂家称从未对外销售？</A></LI>
+</UL>
+<DIV class="h2Tit mt30">
+<A href="http://app.qingdaonews.com/d/pc/index.html" target="_blank">青岛新闻客户端</A>
+<H2><A href="http://news.qingdaonews.com/qingdao/node_93394.htm" target="_blank">本网原创</A></H2></DIV>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831311.htm" target="_blank">青岛奥运“天团”，欢迎凯旋！盘点奥运会上的青岛健儿</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/09/content_22831308.htm" target="_blank">【独家】镜头背后的网红大喜哥 她是一个怎样的人？</A></LI>
+<LI><A href="http://h5.qingdaonews.com/c/tuh6/t7ej/index.html" target="_blank">H5 | 网络名人疫情防控公益海报——我倡议 你接力！</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-08/06/content_22827579.htm" target="_blank">【青青岛观察】好戏连台 西海岸打造千亿级影视产业链</A></LI>
+<LI><A href="http://h5.qingdaonews.com/c/tuh6/u8va/index.html" target="_blank">H5 | 青岛市青少年接种新冠疫苗 你想知道的都在这里</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/qingdao/2021-08/05/content_22826045.htm" target="_blank">【青青岛观察】哪里是足球运动的中心 哪里就是城市中心</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-07/30/content_22817657.htm" target="_blank">“青岛蛤蜊”驰援“河南胡辣汤” 救援队归来备战台风</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-07/29/content_22816027.htm" target="_blank">【青青岛观察】人们为什么普遍看好城阳区的楼市？</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-07/29/content_22817616.htm" target="_blank">陈梦圆梦！奥运夺金 青岛小嫚"进化"为新一代"大魔王"</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2021-07/22/content_22806215.htm" target="_blank">【青青岛观察】时尚与烟火气并存的城阳，还差点什么?</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight">
+<DIV class="h2Tit">
+<H2><A href="http://news.qingdaonews.com/qingdao/node_93378.htm" target="_blank">精品栏目</A></H2></DIV>
+<A href="http://www.qingdaonews.com/node/node_157310.htm" target="_blank" class="bigImg mt15">
+<H3>【青岛故事】镜头背后的“网红大喜哥”</H3>
+<IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/1cabf246-cee1-4074-89c8-bdbc32ee9633.jpg">
+</A>
+<A href="http://www.qingdaonews.com/node/node_157310.htm" target="_blank" class="bigImg mt15">
+<H3>【青岛故事】食雕大师把果蔬雕成艺术品</H3>
+<IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-07/21/daf0d19e-3366-4eff-8c68-7c694c5bc3ef.jpg">
+</A>
+<DIV class="headTab mt20" id="tab4">
+<UL class="tabList">
+<LI class="on">
+<H2>在青岛</H2></LI>
+<LI>
+<H2>最新活动</H2></LI>
+</UL>
+<DIV class="tabBox" style="height:340px">
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2021-08/08/content_22830832.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/f4f67a5e-4211-4f90-b8c5-e9c0462ddd55.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/08/content_22830832.htm" target="_blank"><H4>喜旺助力一线防疫 全力保障市场供应</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://www.qingdaonews.com/content/2021-08/02/content_22822266.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/02/6c3cdcd5-8b27-419d-8891-b3ecd59e9ffe.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/02/content_22822266.htm" target="_blank"><H4>青食黑芝麻饼干—藏在山海之间的独特味道</H4></A>
+</DIV>
+<UL class="newsList14">
+<LI><A href="http://www.qingdaonews.com/content/2021-07/26/content_22811843.htm" target="_blank">青岛这个网红打卡地，去了之后才发现...</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-07/26/content_22811756.htm" target="_blank">青岛最近又多了一个节！一直到8月1号！</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-07/26/content_22811744.htm" target="_blank">青岛国际啤酒节超全游玩攻略！看完之后发现...</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-07/26/content_22811841.htm" target="_blank">青岛这个区发布通告</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-07/26/content_22811838.htm" target="_blank">今天起，免费！</A></LI>
+</UL>
+</DIV>
+<DIV class="tabBox dn" style="height: 340px">
+<DIV class="langImg">
+<A href="http://www.qingdaonews.com/app/content/2021-03/05/content_22606179.htm" target="_blank" class="imgBox"><IMG src="http://www.qingdaonews.com/images/2021-03/06/3a9393ab-6407-4473-a44b-455a6d4dcef2.jpg"></A>
+<A href="http://www.qingdaonews.com/app/content/2021-03/05/content_22606179.htm" target="_blank"><H3>说明会报名|乘着空调专列去春游！三重好礼就位，就等你！</H3></A>
+</DIV>
+<DIV class="langImg">
+<A href="http://www.qingdaonews.com/content/2021-03/05/content_22605467.htm" target="_blank" class="imgBox"><IMG src="http://www.qingdaonews.com/images/2021-03/05/b6163691-ff7e-4d8f-8938-c26f955e4fb5.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-03/05/content_22605467.htm" target="_blank"><H3>要爆料，来这儿！青岛新闻网“315金融云维权”平台正式上线</H3></A>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig">
+<DIV class="adBig2"><DIV id="nuploc_1464" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="adBig3"><DIV id="nuploc_1478" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt20">
+<DIV class="headLeft">
+<DIV class="h2Tit">
+<A href="http://yuqing.qingdaonews.com/content/2012-12/27/content_9551330.htm" target="_blank">舆情服务</A>
+<H2><A href="http://yuqing.qingdaonews.com/" target="_blank">舆情精选</A></H2></DIV>
+<DIV class="smallImg mt10">
+<DIV class="smImgBox">
+<A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828846.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://yuqing.qingdaonews.com/images/2021-08/06/c8d49091-cbd7-44ac-8aba-09b2e993348f.jpg"></A>
+<A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828846.htm" target="_blank"><H3>守护市容秩序 建造美丽家园</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828839.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://yuqing.qingdaonews.com/images/2021-08/06/989c5a80-6717-438b-9912-7ba301fcc12a.png"></A>
+<A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828839.htm" target="_blank"><H3>灵珠山街道开展核酸检测应急演练 筑牢疫情防控墙</H3></A>
+</DIV>
+</DIV>
+<UL class="newsList14 mt25">
+<LI class="fb"><A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828837.htm" target="_blank">市北区开展“夏送清凉疫苗接种一线工作者慰问”活动</A></LI>
+</UL>
+<UL class="newsList14">
+<LI><A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828834.htm" target="_blank">西海岸新区红石崖街道迎接退役军人光荣返乡</A></LI>
+<LI><A href="http://yuqing.qingdaonews.com/content/2021-08/06/content_22828823.htm" target="_blank">大学志愿者开展生活垃圾分类宣传活动</A></LI>
+<LI><A href="http://yuqing.qingdaonews.com/content/2021-08/03/content_22824121.htm" target="_blank">即墨区环秀街道“荣军联盟”工作成效显著</A></LI>
+</UL>
+<DIV class="h2Tit mt30">
+<H2><A href="http://www.qingdaonews.com/node/bzgg.htm" target="_blank">本站公告</A></H2></DIV>
+<DIV class="smallImg mt10">
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/08/content_22830832.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/959f1b70-7197-48b2-8a2e-ae59bcade47c.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/08/content_22830832.htm" target="_blank"><H3>喜旺助力一线防疫 全力保障市场供应</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/06/content_22828918.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/06/e970674a-9999-4ded-a824-395612b49c9a.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/06/content_22828918.htm" target="_blank"><H3>青岛八旬老人邮寄感谢信到公交场站，只为这件事……</H3></A>
+</DIV>
+</DIV>
+<UL class="newsList14 mt20">
+<LI class="fb"><A href="http://www.qingdaonews.com/content/2021-08/05/content_22827160.htm" target="_blank">抓实疫情防控 青岛公交织紧织密安全出行防护网</A></LI>
+</UL>
+<UL class="newsList14">
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/04/item23077-5603.htm" target="_blank">红盘速度!5分钟4.6亿!这一次奇迹的名字叫“绿地”</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/03/content_22823562.htm" target="_blank">天津小夫妻来青遇难题，这群青岛人的举动帮大忙！</A></LI>
+<LI><A href="https://live.qingdaonews.com/wap/index.html?id=4051" target="_blank">直播|第31届青岛国际啤酒节崂山会场</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/09/content_22832155.htm" target="_blank">公交“诚信卡”周岁啦！这百名市民可凭卡领礼品</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-07/29/content_22817207.htm" target="_blank">迎"八一" 青岛志愿者听老兵忆峥嵘岁月 传递奋进力量</A></LI>
+</UL>
+</DIV>
+<DIV class="headMiddle">
+<DIV class="h2Tit">
+<A href="http://news.qingdaonews.com/qingdao/node_26974.htm" target="_blank">新闻专题</A>
+<H2><A href="http://pinglun.qingdaonews.com/" target="_blank">青青岛评论</A></H2></DIV>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://pinglun.qingdaonews.com/content/2020-09/04/content_22254247.htm" target="_blank">以改革开放创新做好“六稳”“六保”工作</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://pinglun.qingdaonews.com/content/2020-09/04/content_22254246.htm" target="_blank">牵住英雄的手，记住来时的路，1345份抗战老兵手印背后的故事</A></LI>
+<LI><A href="http://pinglun.qingdaonews.com/content/2020-05/13/content_21726236.htm" target="_blank">国家医保局简化医保办理手续</A></LI>
+<LI><A href="http://m.news.cctv.com/2020/05/10/ARTIzjMi5J8Gh4gcuUKz51H9200510.shtml" target="_blank">评论丨美国在国际法上的双重标准是对国际秩序的冒犯</A></LI>
+<LI><A href="http://pinglun.qingdaonews.com/content/2020-04/05/content_21530314.htm" target="_blank">32张海报，传递温暖的力量</A></LI>
+</UL>
+<DIV class="h2Tit mt30">
+<A href="http://zxwz.qingdao.gov.cn/" target="_blank">网络在线问政</A>
+<H2><A href="http://news.qingdaonews.com/zhongguo/" target="_blank">国内</A><A href="http://news.qingdaonews.com/guoji/" target="_blank">国际</A></H2></DIV>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22832607.htm" target="_blank">河南郑州新增3例无症状，另有35例无症状转确诊</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/guoji/2021-08/09/content_22831960.htm" target="_blank">世卫：新冠病毒不断变异 未来或以星座命名变异毒株</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831959.htm" target="_blank">广西北海发生摆渡船侧翻，目前搜救出13人，2人遇难</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831927.htm" target="_blank">全红婵老家被打卡者“包围”！父亲做法被赞“人间清醒”</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831919.htm" target="_blank">国内油价调整大概率搁浅，为年内第三次</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831917.htm" target="_blank">记者探访餐饮业防疫：把好“入口关”，餐饮外卖严措施</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831916.htm" target="_blank">烟台两轮全员核酸检测结果均为阴性 完成采样检测1300多万人次</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831915.htm" target="_blank">中国共产主义青年团团旗、团徽国家标准发布</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831910.htm" target="_blank">欢迎加入！东风快递发布创意征兵广告</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831912.htm" target="_blank">60元/次！湖北核酸检测再降价</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://news.qingdaonews.com/shehui/2021-08/09/content_22831421.htm" target="_blank">山东这所农村学校“跳”出10个世界冠军</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://news.qingdaonews.com/shehui/2021-08/09/content_22831410.htm" target="_blank">技高者多得！首席技师年收入最高可达60万元</A></LI>
+<LI><A href="http://news.qingdaonews.com/shehui/2021-08/09/content_22831406.htm" target="_blank">白沟致6死起火事故：电路老化引发 4名责任人被控制</A></LI>
+<LI><A href="http://news.qingdaonews.com/shehui/2021-08/09/content_22831404.htm" target="_blank">三个男人因疫“同居”：从尬聊 到一起做饭打游戏</A></LI>
+<LI><A href="http://news.qingdaonews.com/shehui/2021-08/09/content_22831496.htm" target="_blank">离婚“冷静期”初见成效 上半年合肥离婚人数明显减少</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight">
+<DIV class="headTab">
+<UL class="tabList">
+<LI class="on"><H2>地产资讯</H2></LI>
+<LI><H2>&nbsp;</H2></LI>
+</UL>
+<DIV class="tabBox">
+<DIV class="imgText">
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23092-923.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/09/038bd25d-63f8-4476-8a74-b619f4826989.png"></A>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23092-923.htm" target="_blank"><H4>【白云山知识问答】三分钟答题 领大额现金红包！</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/08/725aacbc-149a-41f1-bd0c-cacad21ced50.jpg"></A>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm" target="_blank"><H4>万人线上看房车!直播5大市区热盘 16xxx起引爆楼市</H4></A>
+</DIV>
+<UL class="newsList14">
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/07/item23086-5545.htm" target="_blank">视频看房:青特悦海府155㎡平层220万起</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/05/item23065-923.htm" target="_blank">青岛后海重生之路 新一线海景均价15000</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/04/item23077-5603.htm" target="_blank">红盘速度!5分钟4.6亿!这一次奇迹的名字叫“绿地”</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/05/item23079-4639.htm" target="_blank">"4字头"电梯洋房8月首开 89-155㎡全明户型不限购</A></LI>
+</UL>
+</DIV>
+</DIV>
+<DIV class="headTab mt30">
+<UL class="tabList">
+<LI class="on"><H2>焦点新闻</H2></LI>
+<LI><H2>&nbsp;</H2></LI>
+</UL>
+<DIV class="tabBox" style="height: 310px">
+<DIV class="imgText">
+<A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831936.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/t2_(109X4X508X270)357d3c12-e80a-49e1-8b89-fd2a9e17f910.png"></A>
+<A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831936.htm" target="_blank"><H4>挥别东京 这些奥运赛场内外的故事令人回味</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831508.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2021-08/09/b7e5ced5-bad3-4123-b4a6-280752ec7f48.jpg"></A>
+<A href="http://news.qingdaonews.com/zhongguo/2021-08/09/content_22831508.htm" target="_blank"><H4>四川达州遭暴雨袭击 救援人员紧急转移被困民众</H4></A>
+</DIV>
+<UL class="newsList14">
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/08/content_22830917.htm" target="_blank">南京启动第六轮部分区域大范围核酸检测</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/06/content_22828396.htm" target="_blank">智慧节能、远程会诊…来看看数字经济领域的新动向</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/05/content_22826884.htm" target="_blank">扬州主城区开展第三轮大规模核酸检测</A></LI>
+<LI><A href="http://news.qingdaonews.com/zhongguo/2021-08/03/content_22823054.htm" target="_blank">三组奥运“九宫格”已集齐！</A></LI>
+</UL>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig">
+<DIV class="adBig2"><DIV id="nuploc_1465" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="adBig3"><DIV id="nuploc_1479" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt30">
+<DIV class="headLeft">
+<DIV class="h2Tit">
+<H2>视频</H2></DIV>
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22832240.htm" target="_blank" class="bigImg mt30">
+<I class="icon_29"></I>
+<H3>中国运动员隔离期锻炼集锦 网友：再也不敢说家里没条件健身</H3>
+<IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/09/1410c1f2-823f-4117-a238-403669107173.png">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22832165.htm" target="_blank"><I class="icon_29"></I></A>
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22832165.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/09/303271b9-6d0a-49dc-b99f-3d2453f57659.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22832165.htm" target="_blank"><H3>女子跳楼轻生被同伴抓住头发 特警攀爬至10楼将其救下</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22831664.htm" target="_blank"><I class="icon_29"></I></A>
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22831664.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/09/7ee6e51a-d94c-4938-a102-442ae07b9efa.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/09/content_22831664.htm" target="_blank"><H3>点赞！南京小伙核酸志愿现场收到录取通知书</H3></A>
+</DIV>
+</DIV>
+<UL class="newsList14 mt25">
+<LI class="fb"><A href="http://www.qingdaonews.com/content/2021-08/09/content_22831663.htm" target="_blank">95后女孩在卫生纸上绘连环画 已经画了30多卷</A></LI>
+</UL>
+<UL class="newsList14">
+<LI><A href="http://www.qingdaonews.com/content/2021-08/08/content_22828848.htm" target="_blank">我报警抓我自己？男子举报别人吸毒反被抓</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/07/content_22828845.htm" target="_blank">磨出血泡、伤痕累累 90秒看中国运动员有多努力……</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828843.htm" target="_blank">男子因情感纠纷持西瓜刀劫持女友 民警兵分三路一举将其拿下</A></LI>
+</UL>
+</DIV>
+<DIV class="headMiddle">
+<DIV class="h2Tit">
+<H2><A href="http://ent.qingdaonews.com/" target="_blank">文娱新闻</A></H2></DIV>
+<DIV class="smallImg mt20">
+<DIV class="smImgBox">
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826453.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-08/05/t2_(3X98X293X291)bfe31bd8-f840-4f28-a914-3d430df29158.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826453.htm" target="_blank"><H3>杨紫穿白色印花长裙扮“花仙子”温柔甜美</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826471.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-08/05/t2_(0X113X491X440)d4f7f78c-2231-458e-9417-17ad95682a8f.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826471.htm" target="_blank"><H3>江疏影彩色梦幻泡泡写真曝光 夏日感满满</H3></A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://ent.qingdaonews.com/2021-08/09/content_22832192.htm" target="_blank">于月仙遇车祸去世 警方：车辆与骆驼相撞导致</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831945.htm" target="_blank">《乡村爱情》“谢大脚”扮演者于月仙车祸去世，年仅50岁</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831944.htm" target="_blank">佟丽娅晒庆生照 头戴皇冠甜笑 少女感十足</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831943.htm" target="_blank">击剑冠军孙一文晒东京奥运会金牌 用心讲解奖牌设计细节</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831861.htm" target="_blank">舒淇晒照为冯德伦庆生 两人闪婚后的样子太甜了</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://ent.qingdaonews.com/2021-08/09/content_22831859.htm" target="_blank">不走中性风了？窦靖童留长发女人味十足 不输天后妈王菲</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831785.htm" target="_blank">周润发获荣誉博士学位 一头白发亮相 感谢“香港这个地方”</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831760.htm" target="_blank">东京奥运会落幕 “表情包”吴京终于可以收工了</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831725.htm" target="_blank">陆婷玉化身“薄荷糖” 担任SNH48总选后台特邀MC</A></LI>
+<LI><A href="http://ent.qingdaonews.com/2021-08/09/content_22831662.htm" target="_blank">获粉丝深情表白 罗志祥：会努力回到我原来的位置</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight">
+<DIV class="headTab">
+<UL class="tabList">
+<LI class="on">
+<A href="http://ent.qingdaonews.com/node_91780.htm" target="_blank"><H2>八卦热图</H2></A></LI>
+<LI>
+<H2>&nbsp;</H2></LI>
+</UL>
+<DIV class="tabBox" style=" padding-bottom:7px">
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826171.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-08/05/t2_(0X84X302X313)ad47f890-c5bf-4f87-a8bf-1ee15653d134.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826171.htm" target="_blank"><H4>41岁高圆圆拍美照 肩带意外滑落迅速拉回来</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826169.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-08/05/t2_(0X138X303X368)ea1250f0-0785-47cb-99d2-bd7d06070b40.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-08/05/content_22826169.htm" target="_blank"><H4>刘诗诗齐刘海鲻鱼头造型摩登飒爽 眼神超A</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-07/24/content_22810039.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-07/24/2e3856aa-8968-45a5-9801-135dbed3511c.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-07/24/content_22810039.htm" target="_blank"><H4>冯小刚首导网剧《北辙南辕》播出遭“悬浮”差评</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-07/10/content_22790281.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-07/10/e4255189-2401-4fab-b618-ec9ed1107dc6.png"></A>
+<A href="http://ent.qingdaonews.com/2021-07/10/content_22790281.htm" target="_blank"><H4>宁静晒与丁真合影 擦脸手法霸气又可爱</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-07/10/content_22790289.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-07/10/a817f03b-f468-42da-b62b-9123bfe0b2e0.jpg"></A>
+<A href="http://ent.qingdaonews.com/2021-07/10/content_22790289.htm" target="_blank"><H4>胡歌方辟谣与王晓晨结婚：假的！切勿传谣信谣</H4></A>
+</DIV>
+<DIV class="imgText">
+<A href="http://ent.qingdaonews.com/2021-06/30/content_22777415.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://ent.qingdaonews.com/images/2021-06/30/e9f826db-4d8c-4464-aeb0-3f7690ee840b.png"></A>
+<A href="http://ent.qingdaonews.com/2021-06/30/content_22777415.htm" target="_blank"><H4>六小龄童再扮美猴王 马德华上妆超3小时还原猪八戒</H4></A>
+</DIV>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt30">
+<DIV class="h2Tag">
+<A href="http://www.qingdaonews.com/node/node_161717.htm" target="_blank"><H2>高清看青岛</H2></A>
+<A href="http://www.qingdaonews.com/zbqingdao.htm" target="_blank">直播青岛</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="imgListBig mt10">
+<A href="http://news.qingdaonews.com/qingdao/2021-07/21/content_22804490.htm" target="_blank"><H3>【城市大片】海天之间白云蒸腾 画面清新简约美到极致</H3><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/23/f26571fa-550b-47b3-8e19-0ccb78fa8bfe.jpg"></A>
+</DIV>
+<DIV class="imgListSmall mt10">
+<A href="http://news.qingdaonews.com/qingdao/2021-07/13/content_22793529.htm" target="_blank"><H4>【尝鲜】凉争冰雪甜争蜜 西海岸沙沟村西瓜喜获丰收</H4><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/23/4e391016-befc-47ef-bd5c-eb5397ffea5d.jpg"></A>
+<A href="http://news.qingdaonews.com/qingdao/2021-07/17/content_22799732.htm" target="_blank"><H4>【大片】连日降雨后 北九水溪流奔腾唱着清凉欢乐的歌</H4><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/23/2b5af786-7e11-42bd-b78c-66e0937d38fc.jpg"></A>
+<A href="http://news.qingdaonews.com/qingdao/2021-07/23/content_22807918.htm" target="_blank"><H4>【慢生活】盛夏夜晚感受青岛悠闲慢生活 来台东就对了</H4><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/23/3d4d4627-5cfa-46a1-bf5a-a3ea97e1cec3.jpg"></A>
+<A href="http://news.qingdaonews.com/qingdao/2021-07/16/content_22797932.htm" target="_blank"><H4>【打卡】海风轻拂霓虹闪烁 夏夜星光岛景色无限好</H4><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-07/23/b64a534e-19e0-474d-a67b-de05d8e25404.jpg"></A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig"><DIV id="nuploc_1466" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag house">
+<A href="http://house.qingdaonews.com" target="_blank"><H2>房产</H2></A>
+<A href="http://house.qingdaonews.com/node/dujia.htm" target="_blank">独家news</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/node/houseNews.htm" target="_blank">新闻</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/xinloupan/" target="_blank">新楼盘</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/ershou/" target="_blank">二手房</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/ershou/zulinlist" target="_blank">租赁</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/map/" target="_blank">地图找房</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/xptj" target="_blank">新盘推荐</A><SPAN>丨</SPAN>
+<A href="https://club.qingdaonews.com/club_entry_20_7_0_1_0.htm" target="_blank">楼市论坛</A><SPAN>丨</SPAN>
+<A href="http://house.qingdaonews.com/haiwai" target="_blank">海外房产</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://house.qingdaonews.com/news/2021-08/07/content_22829480.htm" target="_blank" class="bigImg mt20">
+<H3>实地探访：城阳白云山片区</H3>
+<IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/07/fb78daa2-84ad-47fa-a90d-810db123e91a.jpg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://house.qingdaonews.com/content/2021-08/08/content_22830466.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/09/1e57f979-b14f-402a-b204-e990b3c21327.jpg"></A>
+<A href="http://house.qingdaonews.com/content/2021-08/08/content_22830466.htm" target="_blank"><H3>8月青岛 将有36个新盘入市加推</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/08/d0511346-5bc6-4d82-88f2-0802cf1a6c10.jpg"></A>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm" target="_blank"><H3>直播5大市区热盘 16xxx起引爆楼市</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://house.qingdaonews.com/news/2021-08/09/content_22832132.htm" target="_blank">上周青岛二手房成交1211套 热点片区都"小幅降温"</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://house.qingdaonews.com/content/2021-08/08/content_22830466.htm" target="_blank">8月青岛36盘入市加推 西海岸城阳即墨三区占比七成</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/09/content_22831392.htm" target="_blank">瞰新校！青岛市区内多所学校在建或已新建成(多图)</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/09/content_22831358.htm" target="_blank">青岛高铁站添新成员! 济青高铁青岛机场站今日启用</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/09/content_22831369.htm" target="_blank">2021年上半年青岛市交通攻势完成投资203.19亿元</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/08/item23088-923.htm " target="_blank">万人线上看房车!直播5大市区热盘 16xxx起引爆楼市</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23002-923.htm" target="_blank">风华正茂白云山短视频大赛 空调|空气净化器免费送</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://house.qingdaonews.com/news/2021-08/07/content_22829480.htm" target="_blank">聚焦2021青岛楼市"头部风口"! 坐标城阳白云山片区</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/08/content_22830462.htm" target="_blank">房源301套！市北2021第一批产权型人才住房配售啦</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/08/content_22830442.htm" target="_blank">老工业区将焕发生机 楼山片区借力城市更新再启航</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/07/item23086-5545.htm " target="_blank">视频看房:白沙湾红盘青特悦海府 155㎡平层220万起</A></LI>
+<LI><A href="http://house.qingdaonews.com/gb/content/2021-08/09/content_22831432.htm" target="_blank">最新报告:上半年长租房市场回暖 租金整体保持平稳</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit"><A href="http://kfc.qingdaonews.com/" target="_blank">看房车</A><A href="http://house.qingdaonews.com/xinloupan/fczb/index" target="_blank">直播</A><A href="http://house.qingdaonews.com/xinloupan/zixun/daodu" target="_blank">资讯导读</A>
+<H3><A href="http://house.qingdaonews.com/tuangou/" target="_blank">房产商城</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23092-923.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/09/038bd25d-63f8-4476-8a74-b619f4826989.png"></A>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23092-923.htm" target="_blank"><H4>【白云山知识问答】三分钟答题 领大额现金红包！</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23089-6004.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://house.qingdaonews.com/gb/images/2021-08/09/04dab983-8daf-42b2-945e-4c9f4bbdc538.jpg"></A>
+<A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23089-6004.htm" target="_blank"><H4>地铁口纯新盘！北京城建国誉府89-119㎡洋房首发</H4></A>
+</DIV>
+<UL class="newsList14 mt15">
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/09/item23002-923.htm" target="_blank">风华正茂白云山短视频大赛 空调|空气净化器免费送</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/06/item23081-6044.htm" target="_blank">紫金华府90-170㎡首发 自建体育馆</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/05/item23065-923.htm" target="_blank">青岛后海新一线海景均价15000-18000</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/05/item23080-5999.htm" target="_blank">7月青岛住宅销量冠军 保利时代为何火</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/05/item23079-4639.htm" target="_blank">"4字头"电梯洋房将开 89-155㎡不限购</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/04/item23077-5603.htm" target="_blank">5分钟4.6亿!这个奇迹的名字叫“绿地”</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/04/item23078-4918.htm" target="_blank">金科星辰车库全面升级 特惠车位抢购中</A></LI>
+<LI><A href="http://house.qingdaonews.com/xinloupan/zixun/202108/03/item23071-6033.htm" target="_blank">李沧央企纯新盘首开16xxx起 限量200套!</A></LI>
+</UL>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://finance.qingdaonews.com" target="_blank"><H2>财经</H2></A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831408.htm" target="_blank" class="bigImg mt20">
+<H3>2021年上半年青岛市交通攻势完成投资203.19亿元，同比增长13.46%</H3>
+<IMG class="lazy-load" data-original="http://finance.qingdaonews.com/images/2021-08/09/9aef8ca5-569b-49a5-a64e-f6802ee2b572.jpg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831403.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://finance.qingdaonews.com/images/2021-08/09/df202154-b404-4f0f-9c46-5dde6906229c.jpg"></A>
+<A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831403.htm" target="_blank"><H3>青岛“社银通”经办模式再升级！社保、医保、税务118项业务可在4家银行120个网点办理</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831394.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://finance.qingdaonews.com/images/2021-08/09/d2f4b323-8df8-4f89-8692-b69458298781.jpg"></A>
+<A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831394.htm" target="_blank"><H3>上半年青岛民间投资增长16.5%，占全市投资比重为58.8%</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831403.htm" target="_blank">青岛“社银通”经办模式再升级！社保、医保、税务118项业务可在4家银行120个网点办理</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831394.htm" target="_blank">上半年青岛民间投资增长16.5%，占全市投资比重为58.8%</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831391.htm" target="_blank">我国前7个月外贸进出口同比增长24.5%</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831373.htm" target="_blank">2021年上半年青岛市交通攻势完成投资203.19亿元，同比增长13.46%</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/09/content_22831395.htm" target="_blank">投入1100余万元扶持职工创新创造</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/05/content_22826218.htm" target="_blank">1.2万+5000！青岛今年新增1.7万个停车位，首批政府机关共享停车场对外开放</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://finance.qingdaonews.com/content/2021-08/05/content_22826217.htm" target="_blank">数字化、一体化：让审批“极简化”</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/05/content_22826214.htm" target="_blank">青岛市内三区非居民用气价格调整，最高3.41元/立方米！</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/05/content_22826211.htm" target="_blank">青岛发布民营经济“半年报” 贡献全市六成以上税收</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/04/content_22824733.htm" target="_blank">未来5年，青岛力争低保标准城乡统筹</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/04/content_22824732.htm" target="_blank">世界500强榜单，正在被“数字化”改变</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2021-08/04/content_22824728.htm" target="_blank">投资100万元！利通科技拟在青岛设立全资子公司</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://finance.qingdaonews.com/bank/productall_1_0_0_1.html" target="_blank">保险 理财</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://finance.qingdaonews.com/content/2020-04/24/content_21630207.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://finance.qingdaonews.com/images/2020-04/24/be12b1f2-f505-4cc2-b6c4-6a8858b64a7e.png"></A>
+<A href="http://finance.qingdaonews.com/content/2020-04/24/content_21630207.htm" target="_blank"><H4>NO.64 | 青岛微信影响力排行榜（财经）出炉！</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="http://finance.qingdaonews.com/content/2020-02/20/content_21288564.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://finance.qingdaonews.com/images/2020-02/20/36b7ef42-436c-4f08-9c7d-06ce1312cfda.jpg"></A>
+<A href="http://finance.qingdaonews.com/content/2020-02/20/content_21288564.htm" target="_blank"><H4>榜首换新！谁是本期NO.1?</H4></A>
+</DIV>
+<DIV class="h2Tit mt20">
+<H3><A href="http://finance.qingdaonews.com/node/jjpt.htm" target="_blank">专题活动</A></H3></DIV>
+<UL class="newsList14 mt10">
+<LI><A href="http://finance.qingdaonews.com/node_164853.htm" target="_blank">金融有温度 抗疫在行动</A></LI>
+<LI><A href="http://finance.qingdaonews.com/content/2020-01/14/content_21144032.htm" target="_blank">第十二届中国(青岛)财经风云榜揭晓</A></LI>
+<LI><A href="http://finance.qingdaonews.com/node_164094.htm" target="_blank">壮丽70年 金融与国同梦</A></LI>
+</UL>
+<DIV class="ma mt15">
+<IMG src="style/cfq.jpg">
+<H4>青岛财富圈</H4>
+<P>微信扫码关注</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://dazhe.qingdaonews.com" target="_blank"><H2>消费</H2></A>
+<A href="http://dazhe.qingdaonews.com/node/node_38296.htm" target="_blank">打折周报</A>
+<SPAN>丨</SPAN>
+<A href="http://dazhe.qingdaonews.com/node/node_161792.htm" target="_blank">消费观察</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://dazhe.qingdaonews.com/content/2021-08/06/content_22828491.htm" target="_blank" class="bigImg mt20">
+<H3>紫薇花开香满园 快来中山公园邂逅“粉色浪漫”</H3>
+<IMG class="lazy-load" data-original="http://dazhe.qingdaonews.com/images/2021-08/06/e20405ae-1533-42fe-8867-0158eb3e6732.jpeg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://dazhe.qingdaonews.com/content/2021-07/30/content_22818132.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://dazhe.qingdaonews.com/images/2021-07/30/cdaf9f90-0f1d-4914-91e1-2894079962ad.jpg"></A>
+<A href="http://dazhe.qingdaonews.com/content/2021-07/30/content_22818132.htm" target="_blank"><H3>舌尖上的青岛国际啤酒节 上百种美食等你来pick</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://dazhe.qingdaonews.com/content/2021-07/29/content_22816768.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://dazhe.qingdaonews.com/images/2021-07/29/8ccdc2f7-72ac-468d-8362-a55f410b2dc3.jpg"></A>
+<A href="http://dazhe.qingdaonews.com/content/2021-07/29/content_22816768.htm" target="_blank"><H3>黄山海蜇收获季来了 想品尝舌尖上的海蜇美味就到那里去吧</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://dazhe.qingdaonews.com/content/2021-08/09/content_22831067.htm" target="_blank">“奥运口罩”走红全国！ 厂家称从未对外销售?</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/08/content_22829954.htm" target="_blank">升级防疫举措 青岛商超：把好“关口” 营造安心购物环境</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/09/content_22831065.htm" target="_blank">部分海域开海南方海鲜提前上岸 梭子蟹、虾虎大幅降价</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/08/content_22829952.htm" target="_blank">山东人的早餐江湖 全在煎饼里</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/07/content_22829946.htm" target="_blank">今日立秋，金风暖阳晴，秋声始深林</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/07/content_22828509.htm" target="_blank">5秒快速通行 海信广场首度引入自助验码测温设备</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://dazhe.qingdaonews.com/content/2021-08/06/content_22827100.htm" target="_blank">加强门店精细化管理 网红茶饮应杜绝“卫生门”</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/05/content_22826598.htm" target="_blank">8月5日青岛商超及批发市场果蔬等价格</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/05/content_22825515.htm" target="_blank">城阳红岛海蜇丰收季 打捞、分割、盐腌……就差你买回家吃啦！</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/05/content_22825569.htm" target="_blank">.青岛抽检这些食品不合格 快看看有没有你常吃的</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/04/content_22825176.htm" target="_blank">8月4日青岛商超及批发市场果蔬等价格</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2021-08/06/content_22828892.htm" target="_blank">牛进青岛！青岛上半年网络零售额734.7亿 居北方第二位</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://dazhe.qingdaonews.com/node/node_38295.htm" target="_blank">活动进行时</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="https://mp.weixin.qq.com/s/rzMZXbbcU7qBIjjAf6iKqA" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://dazhe.qingdaonews.com/images/2019-05/13/b42bfb3c-d724-4769-8000-70fe7f8193c5.JPG"></A>
+<A href="https://mp.weixin.qq.com/s/rzMZXbbcU7qBIjjAf6iKqA" target="_blank"><H4>格莱美天一财富中心店开业在即 三重福利扫码即送</H4></A>
+</DIV>
+<UL class="newsList14 mt20">
+<LI><A href="http://vip.qingdaonews.com/dazhe/201811/haixi/" target="_blank">家有萌宝值得关注 青岛海信广场造星计划全面启动</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/node_163373.htm" target="_blank">5月19日 与全国首席大咖一起全飞秒Smile</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2018-11/29/content_20250044.htm" target="_blank">周末带娃去哪玩？大型亲子DIY绘包盛宴赶快来报名</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2018-10/30/content_20234504.htm" target="_blank">你和脱单只差这个报名</A></LI>
+<LI><A href="http://dazhe.qingdaonews.com/content/2018-09/20/content_20215040.htm" target="_blank">国庆长卷绘祖国活动报名啦</A></LI>
+<LI><A href="http://vip.qingdaonews.com/2018/xhacys/" target="_blank">西海岸城市穿越赛 等你来战</A></LI>
+</UL>
+<DIV class="line"></DIV>
+<DIV class="ma mt15">
+<IMG src="style/dazhe.png">
+<H4>青岛优惠打折</H4>
+<P>微信扫一扫领福利</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://edu.qingdaonews.com" target="_blank"><H2>教育·育儿</H2></A>
+<A href="http://edu.qingdaonews.com/node/node_145612.htm" target="_blank">青岛教育家</A><SPAN>丨</SPAN>
+<A href="http://kid.qingdaonews.com/" target="_blank">青岛童博会</A><SPAN>丨</SPAN>
+<A href="http://www.gaodun.com/news" target="_blank">会计考试</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831570.htm" target="_blank" class="bigImg mt20">
+<H3>马龙在人民日报撰文：只要心怀热爱，永远都是当打之年！</H3>
+<IMG class="lazy-load" data-original="http://edu.qingdaonews.com/images/2021-08/09/t2_(0X5X248X145)44d85d5c-1fd2-4d52-bf5d-a6f6af8bbdce.jpg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://edu.qingdaonews.com/content/2021-08/07/content_22827005.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://edu.qingdaonews.com/images/2021-08/07/t2_(76X0X529X255)91c88fbd-f9ad-4aad-ac99-a287bb2b3b4c.png"></A>
+<A href="http://edu.qingdaonews.com/content/2021-08/07/content_22827005.htm" target="_blank"><H3>安全不放假！暑期安全小贴士转给师生家长</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://baby.qingdaonews.com/content/2021-08/09/content_22539232.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://baby.qingdaonews.com/images/2021-08/09/9aa87553-c0d8-4e10-9e69-aaf40a9f1b80.jpg"></A>
+<A href="http://baby.qingdaonews.com/content/2021-08/09/content_22539232.htm" target="_blank"><H3>孩子体质差总是生病 如何提高免疫力？</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831566.htm" target="_blank">莱西幼儿园、培训学校停园停课！</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22832233.htm" target="_blank">大力推进“特色高中”发展！山东印发《实施意见》，解读来了！</A></LI>
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22832217.htm" target="_blank">市南区公示消费投诉信息 青岛中域教育、华尔街英语在列</A></LI>
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831625.htm" target="_blank">“拳”力十足！李倩为本届奥运会中国队完美收官！她曾在青岛学习训练过4年</A></LI>
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831618.htm" target="_blank">今年山东高考录取结束！共录取考生 688509人，其中本科294373人</A></LI>
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831594.htm" target="_blank">市南区教育和体育局开展校外培训机构疫情防控及规范办学拉网式排查行动</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831868.htm" target="_blank">美育教育正在摆脱“功利性”</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831867.htm" target="_blank">优质教育资源均衡还得“加把劲”</A></LI>
+<LI><A href="http://edu.qingdaonews.com/content/2021-08/09/content_22831834.htm" target="_blank">明起为12-14岁儿童接种新冠疫苗</A></LI>
+<LI><A href="https://club.qingdaonews.com/showAnnounce_2_6295223_1_0.htm" target="_blank">霸王条款！青岛金宝贝早教退课要扣除30%手续费</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://baby.qingdaonews.com/content/2021-08/09/content_22565524.htm" target="_blank">小儿疝气误区多 别把小肠气不当病</A></LI>
+<LI><A href="http://baby.qingdaonews.com/content/2021-08/09/content_22563855.htm" target="_blank">宝宝牙齿长得不好补钙会有帮助吗？</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3>培训招生</H3></DIV>
+<DIV class="imgText mt15">
+<A href="https://mp.weixin.qq.com/s/uzyApJ5aaLQIMuER6fQbPA" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://edu.qingdaonews.com/images/2021-07/16/24008b14-4846-49d0-a98e-61b7a3aaf6eb.png"></A>
+<A href="https://mp.weixin.qq.com/s/uzyApJ5aaLQIMuER6fQbPA" target="_blank"><H4>快抢！53元/节的马术课让孩子暑假潇洒，让父母钱包安心！</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="https://mp.weixin.qq.com/s/SRzMjLK4Wm7-_q4JXySR-A" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://edu.qingdaonews.com/images/2021-07/16/892e1dd9-0768-4b1a-b6ff-44233916711f.png"></A>
+<A href="https://mp.weixin.qq.com/s/SRzMjLK4Wm7-_q4JXySR-A" target="_blank"><H4>“棒”不棒？运动新体验组团上线！团建聚会亲子趴全靠它！</H4></A>
+</DIV>
+<UL class="newsList14 mt15">
+<LI><A href="https://mp.weixin.qq.com/s/fmdwUx0aWoON1nl0URVoSA" target="_blank">重磅福利 | 一场国家级博物馆巡展！</A></LI>
+<LI><A href="https://mp.weixin.qq.com/s/BNQR0DkSDHAEkdpU3pozVQ" target="_blank">击剑亲子趣味体验邀你来狂欢！</A></LI>
+<LI><A href="https://mp.weixin.qq.com/s/s-mFdpIVn7oU-yDzAshWyw" target="_blank">气场全开，孩子们坐等开课</A></LI>
+<LI><A href="https://mp.weixin.qq.com/s/XvwOsKDAJ3w30KAgNP9rpQ" target="_blank">摘掉眼镜“目”浴阳光不是梦！</A></LI>
+<LI><A href="https://mp.weixin.qq.com/s/Xhit_z0mJuGZyMsFpzL0hg" target="_blank">【福利】2019年海陆空夏令营来啦</A></LI>
+<LI><A href="https://school.qingdaonews.com/c_qd/" target="_blank">寒假做什么！这里有好多的选择！</A></LI>
+<LI><A href="https://school.qingdaonews.com/l_qd_2354/" target="_blank">成人可以学什么？这些来看看！</A></LI>
+<LI><A href="http://school.qingdaonews.com/l_qd_520/" target="_blank">【小语种】看剧再也不用看字幕了</A></LI>
+</UL>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig"><DIV id="nuploc_1467" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://jiaju.qingdaonews.com" target="_blank"><H2>家居</H2></A>
+<A href="http://jiaju.qingdaonews.com/17/01/jpgz/index.htm" target="_blank">在线约工长</A><SPAN>丨</SPAN>
+<A href="http://jiaju.qingdaonews.com/zxzb/" target="_blank">装修招标</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="https://club.qingdaonews.com/showAnnounce_49_4107838_1_0.htm" target="_blank" class="bigImg mt20">
+<H3>业之峰第13届环保家装艺术节</H3>
+<IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2021-03/17/t2_(19X11X591X333)1389ffeb-1a2a-47ec-bb16-b1b9f8b6fb41.png">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2019-08/13/content_20633288.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2019-08/13/08a56046-2603-463d-8061-12922067f49a.png"></A>
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2019-08/13/content_20633288.htm" target="_blank"><H3>新房要有个榻榻米 多功能设计百利而无一害（图）</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2019-08/08/content_20613736.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2019-08/08/652b579d-d260-4af1-98bf-7a908e4831ca.png"></A>
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2019-08/08/content_20613736.htm" target="_blank"><H3>110㎡的三居室 储物空间连走廊都不放过(图)</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-08/06/content_22828203.htm" target="_blank">装修延期一个多月未完工 小城人家承诺近日解决</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-07/26/content_22812087.htm" target="_blank">青岛城阳红星美凯龙 口碑与体验同行</A></LI>
+<LI><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-07/25/content_22810691.htm" target="_blank">开业现场客流爆满，INxpark硬河家居公园新玩法引爆开场</A></LI>
+<LI><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-07/20/content_22804232.htm" target="_blank">200亿！红星地产联手远洋集团开创多赢新格局</A></LI>
+<LI><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-07/15/content_22796833.htm" target="_blank">AO史密斯热水器装上一周就掉了 厨房被砸损失惨重</A></LI>
+<LI><A href="http://jiaju.qingdaonews.com/content_jiaju/2021-06/20/content_22764145.htm" target="_blank">尚品宅配全国第二家轻奢旗舰店新颜绽放 港星吴启华现场送福利</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="https://club.qingdaonews.com/showAnnounce_49_4107838_1_0.htm" target="_blank">业之峰第13届环保家装艺术节震撼来袭</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="https://club.qingdaonews.com/showAnnounce_49_4107907_1_0.htm" target="_blank">【业之峰】新房改造 老房焕新</A></LI>
+<LI><A href="http://club.qingdaonews.com/showAnnounce_49_4104096_1_0.htm" target="_blank">【青岛业之峰】卓越天元重点户型解析</A></LI>
+<LI><A href="http://club.qingdaonews.com/showAnnounce_49_4105411_1_0.htm" target="_blank">业之峰掌握德国装修核心技术，抢订半价基装！</A></LI>
+<LI><A href="http://club.qingdaonews.com/showAnnounce_49_4103857_1_0.htm" target="_blank">【业之峰】高端私人订制来了</A></LI>
+<LI><A href="http://club.qingdaonews.com/showAnnounce_49_4103273_1_0.htm" target="_blank">【绿城留香园 业之峰】185平现代轻奢风</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://jiaju.qingdaonews.com/node_jiaju/node_8647.htm" target="_blank">抢福利</A></H3></DIV>
+<DIV class="hwImgBox">
+<DIV class="imgText">
+<A href="http://club.qingdaonews.com/showAnnounce_49_4088785_1_0.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2018-03/14/aa7582e0-d1e1-4621-a28c-606675ded63c.jpg"></A>
+<DIV class="imgTextInfo">
+<A href="http://club.qingdaonews.com/showAnnounce_49_4088785_1_0.htm" target="_blank"><H5>19.9抢大牌瓷砖</H5></A>
+<SPAN>产品价格仅活动当天现场享有</SPAN>
+<A href="http://club.qingdaonews.com/showAnnounce_49_4088785_1_0.htm" target="_blank" class="btn">立即领取</A>
+</DIV>
+</DIV>
+<DIV class="imgText">
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2018-02/26/content_20098475.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2018-03/14/9691a433-70b1-4bd4-87e7-8ff0b009d875.jpg"></A>
+<DIV class="imgTextInfo">
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2018-02/26/content_20098475.htm" target="_blank"><H5>海博家居瓜分60万现金</H5></A>
+<SPAN>海博家居六店联动</SPAN>
+<A href="http://jiaju.qingdaonews.com/content_jiaju/2018-02/26/content_20098475.htm" target="_blank" class="btn">立即领取</A>
+</DIV>
+</DIV>
+<DIV class="imgText">
+<A href="http://jiaju.qingdaonews.com/19/11/yzf/" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://jiaju.qingdaonews.com/images_jiaju/2018-03/14/5d6bc89f-d285-4f02-875a-af15aa005888.jpg"></A>
+<DIV class="imgTextInfo">
+<A href="http://jiaju.qingdaonews.com/19/11/yzf/" target="_blank"><H5>2019最后一场家居盛宴</H5></A>
+<SPAN>全城预售12.15日开抢</SPAN>
+<A href="http://jiaju.qingdaonews.com/19/11/yzf/" target="_blank" class="btn">立即领取</A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="ma mt25">
+<IMG src="style/jiaju.png">
+<H4>淘青岛家居微信号</H4>
+<P>扫一扫，抢装修福利</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://health.qingdaonews.com" target="_blank"><H2>健康·母婴</H2></A>
+<A href="http://guahao.qingdaonews.com/" target="_blank">挂号</A><SPAN>丨</SPAN>
+<A href="http://health.qingdaonews.com/node/node_155910.htm" target="_blank">医天</A><SPAN>丨</SPAN>
+<A href="http://mingyi.qingdaonews.com/" target="_blank">名医堂</A><SPAN>丨</SPAN>
+<A href="http://health.qingdaonews.com/node/node_161042.htm" target="_blank">金牌科室</A><SPAN>丨</SPAN>
+<A href="http://city.qingdaonews.com/qingdao/guoyizaixian/index" target="_blank">国医在线</A><SPAN>丨</SPAN> 
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://health.qingdaonews.com/content/2021-08/05/content_22826948.htm" target="_blank" class="bigImg mt20">
+<H3>个人体质大不同，想要有效养生，你做对了吗？</H3>
+<IMG class="lazy-load" data-original="http://health.qingdaonews.com/images/2021-08/05/29411140-9506-4778-8055-5f107c8453f7.JPG">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://health.qingdaonews.com/content/2021-08/05/content_22826499.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://health.qingdaonews.com/images/2021-08/05/7e647b23-5110-481e-9082-f67dabe901bb.jpg"></A>
+<A href="http://health.qingdaonews.com/content/2021-08/05/content_22826499.htm" target="_blank"><H3>咳咳咳，总是忍不住清嗓子？末伏+立秋，国医妙法解读换季喉咙痒</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://health.qingdaonews.com/wap/2021-07/27/content_22813772.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://health.qingdaonews.com/images/2021-08/03/t2_(3X9X583X318)cd0b668b-9dcc-4161-8f10-8e84f4601357.jpeg"></A>
+<A href="http://health.qingdaonews.com/wap/2021-07/27/content_22813772.htm" target="_blank"><H3>网红抽脂感染去世,医美需有度,切勿爱美不惜身</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://health.qingdaonews.com/content/2021-08/09/content_22832343.htm" target="_blank">无身体接触，14秒即可感染！“德尔塔”怎么防？</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22832019.htm" target="_blank">群防控、人心齐！这份《防疫三字经》请收好</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22832011.htm" target="_blank">医院绷紧防控弦 让患者安全就医</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22832009.htm" target="_blank">李沧区发现1例入境确诊治愈后复阳人员</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22832005.htm" target="_blank">8月8日0至24时青岛市新型冠状病毒肺炎疫情情况</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830987.htm" target="_blank">疫情期间，家长看护儿童有哪些注意事项？</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830963.htm" target="_blank">孕妈妈们如何缓解那扰人的“孕吐”</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830760.htm" target="_blank">这些居家卫生要点，你做到了吗？</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830758.htm" target="_blank">为运动健儿提供医疗保障 市市立医院收到感谢信</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830756.htm" target="_blank">关节啪啪响怎么办？</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/09/content_22830757.htm" target="_blank">办公场所如何科学合理使用空调?消毒有哪些重点?</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-08/08/content_22830750.htm" target="_blank">热搜第一！林书豪确诊后，特别提醒这件事</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://city.qingdaonews.com/qingdao/guoyizaixian/index" target="_blank">国医在线</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://city.qingdaonews.com/qingdao/guoyizaixian/index" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://health.qingdaonews.com/images/2021-01/20/81a9684b-11c3-404f-bc68-2df2ac1bb574.jpg"></A>
+<A href="http://city.qingdaonews.com/qingdao/guoyizaixian/index" target="_blank"><H4>【国医在线】传承中医精粹 关注百姓健康</H4></A>
+</DIV>
+<UL class="newsList14 mt20">
+<LI><A href="http://health.qingdaonews.com/content/2021-08/05/content_22826948.htm" target="_blank">想要有效养生，你做对了吗？</A></LI>
+<LI><A href="http://www.qingdaonews.com/app/content/2021-07/29/content_22817003.htm" target="_blank">高血压治疗背后的“真相”你知道多少？</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-07/22/content_22807061.htm" target="_blank">儿童常见病愁坏家长！中医治疗有妙招</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-07/15/content_22797249.htm" target="_blank">肝好百病不侵，国医专家送你保肝秘笈</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-07/08/content_22787225.htm" target="_blank">慧控糖，不恐糖！专家助你击破“糖衣炮弹”</A></LI>
+<LI><A href="http://health.qingdaonews.com/content/2021-07/01/content_22778324.htm" target="_blank">家有过敏娃，专家助你打破过敏“包围圈”</A></LI>
+</UL>
+<DIV class="line"></DIV>
+<DIV class="ma mt15">
+<IMG src="style/health.png">
+<H4 class="pt10">有趣，有福利</H4>
+<H4 class="p0">够专业，接地气</H4>
+<P>微信扫一扫关注</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig"><DIV id="nuploc_1468" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://travel.qingdaonews.com" target="_blank"><H2>文旅</H2></A>
+<A href="http://travel.qingdaonews.com/node/node_161447.htm" target="_blank">周末旅行团</A><SPAN>丨</SPAN>
+<A href="http://travel.qingdaonews.com/guonei" target="_blank">国内游</A><SPAN>丨</SPAN>
+<A href="http://travel.qingdaonews.com/wap/wzy" target="_blank">智慧景区</A><SPAN>丨</SPAN>
+<A href="https://club.qingdaonews.com/club_entry_26_17_0_1_0.htm" target="_blank">游山玩水</A><SPAN>丨</SPAN>
+<A href="https://club.qingdaonews.com/club_entry_1160_15_0_1_0.htm" target="_blank">玩崂山</A><SPAN>丨</SPAN>
+<A href="http://news.qingdaonews.com/node_166472.htm" target="_blank">美丽乡村</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://travel.qingdaonews.com/gb/content/2021-08/08/content_22830623.htm" target="_blank" class="bigImg mt20">
+<H3>青岛海钓圈这些天嗨了</H3>
+<IMG class="lazy-load" data-original="http://travel.qingdaonews.com/gb/images/2021-08/08/164bce12-1658-4f43-b77e-0da867533c88.jpg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829555.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://travel.qingdaonews.com/gb/images/2021-08/07/a688b857-b7c9-47e2-99a7-4a6e6f9e01d6.jpeg"></A>
+<A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829555.htm" target="_blank"><H3>盛夏太清景晴明，快来崂山避暑吧！</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://travel.qingdaonews.com/gb/content/2021-07/31/content_22819404.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://travel.qingdaonews.com/gb/images/2021-07/31/f0fb3d6b-f27c-4ba2-9327-6bddb07b1610.jpg"></A>
+<A href="http://travel.qingdaonews.com/gb/content/2021-07/31/content_22819404.htm" target="_blank"><H3>“烟花”散去，夜观巨浪，堪比海洋大片！</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://travel.qingdaonews.com/gb/content/2021-08/09/content_22832268.htm" target="_blank">青岛：地铁穿越水利渡槽 文明在此间交汇</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/09/content_22831595.htm" target="_blank">"必答题"+"附加题" 青岛各景区全升级防疫线</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/09/content_22831575.htm" target="_blank">南方海鲜提前上岸 梭子蟹、虾虎大幅降价</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/09/content_22831572.htm" target="_blank">实拍：夏夜新感觉 这样的情人坝你见过吗</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/08/content_22830650.htm" target="_blank">市南区首轮文旅惠民消费券拉动作用显著</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/08/content_22830639.htm" target="_blank">即墨古城8月逛街日打开有惊喜 邀您来逛</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://travel.qingdaonews.com/gb/content/2021-08/08/content_22830653.htm" target="_blank">立秋 ：云游崂山，身在“伏”中享清“福”</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/08/content_22830612.htm" target="_blank">青岛各景区、影院、文化场馆执行最新疫情防控</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829561.htm" target="_blank">8月7日“立秋”：迟迟白日晚 袅袅秋风生</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829552.htm" target="_blank">野象旅行团：你们牵肠挂肚的象群快到家了</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829509.htm" target="_blank">百年凌霄 绚烂橙红！崂山夏日里的一抹明艳</A></LI>
+<LI><A href="http://travel.qingdaonews.com/gb/content/2021-08/07/content_22829574.htm" target="_blank">十点开抢！50万元文旅惠民消费红包发放！</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://travel.qingdaonews.com/node/node_161447.htm" target="_blank">旅游活动</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://travel.qingdaonews.com/xianlu/382935" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://travel.qingdaonews.com/gb/images/2019-11/18/afbc928c-b7d0-42d2-b090-36f349748a2d.jpg"></A>
+<A href="http://travel.qingdaonews.com/xianlu/382935" target="_blank"><H4>菲律宾宿务薄荷双飞6日</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="http://travel.qingdaonews.com/xianlu/402665" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://travel.qingdaonews.com/gb/images/2019-11/18/3e67df5c-b2b7-48f3-97c2-a3410b443bd3.png"></A>
+<A href="http://travel.qingdaonews.com/xianlu/402665" target="_blank"><H4>周村古城大巴2日游</H4></A>
+</DIV>
+<UL class="newsList14 mt20">
+<LI><A href="http://travel.qingdaonews.com/xianlu/402016" target="_blank">东西欧大全景 德法瑞意15日</A></LI>
+<LI><A href="http://travel.qingdaonews.com/xianlu/401899" target="_blank">潍坊临朐石门坊赏红叶</A></LI>
+<LI><A href="http://travel.qingdaonews.com/xianlu/376365" target="_blank">三清山、婺源篁岭双飞5日</A></LI>
+</UL>
+<DIV class="line"></DIV>
+<DIV class="ma mt15">
+<IMG src="style/wenlv.png">
+<H4>青岛新闻网文旅</H4>
+<P>微信扫码关注</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://auto.qingdaonews.com" target="_blank"><H2>汽车</H2></A>
+<A href="http://auto.qingdaonews.com/content/2017-05/25/content_12053108.htm" target="_blank">买车记</A><SPAN>丨</SPAN>
+<A href="http://mp.weixin.qq.com/mp/homepage?__biz=MzIxMDAwNjMyMw==&hid=6&sn=f4ddd7f3219bfadf2683bf4093146686&scene=18#wechat_redirect" target="_blank">了不起的工匠精神</A><SPAN>丨</SPAN>
+<A href="http://auto.qingdaonews.com/autocenter/ts_0.html" target="_blank">投诉中心</A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://auto.qingdaonews.com/content/2021-08/09/content_22831686.htm" target="_blank" class="bigImg mt20">
+<H3>预售10.69万起值不值？动态试驾第二代CS55PLUS</H3>
+<IMG class="lazy-load" data-original="http://auto.qingdaonews.com/images/2021-08/09/3758f246-ff42-45d8-81f8-9e541a1f060d.jpg">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://auto.qingdaonews.com/content/2021-08/06/content_22828601.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://auto.qingdaonews.com/images/2021-08/06/3bb28d23-5a2e-4adb-9739-5af1e6e998d1.jpg"></A>
+<A href="http://auto.qingdaonews.com/content/2021-08/06/content_22828601.htm" target="_blank"><H3>标准续航500公里+ 汉EV出击20万+中高端纯电市场</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://auto.qingdaonews.com/content/2021-08/05/content_22826853.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://auto.qingdaonews.com/images/2021-08/05/9a47125f-41ed-4a8c-8d40-8df3d1380cdd.jpg"></A>
+<A href="http://auto.qingdaonews.com/content/2021-08/05/content_22826853.htm" target="_blank"><H3>反向输出：见证我国新能源汽车高质量发展之路</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://auto.qingdaonews.com/ev/content/2021-08/09/content_22831143.htm" target="_blank">新增多项功能！广汽埃安AION Y迎来首次OTA升级</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/ev/content/2021-08/09/content_22831129.htm" target="_blank">宝马iX国内到店实拍 年内上市 预计73万元起售</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/ev/content/2021-08/05/content_22825259.htm" target="_blank">小鹏P7新版OTA正式开始推送 小P语音更像真人</A></LI>
+<LI><A href="http://auto.qingdaonews.com/ev/content/2021-08/04/content_22825244.htm" target="_blank">雪佛兰将推全新电动车型 替代Bolt EV/2023年亮相</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/ev/content/2021-08/05/content_22825262.htm" target="_blank">大众ID.5 GTX谍照！可发光LOGO/有望年内正式推出</A></LI>
+<LI><A href="http://auto.qingdaonews.com/ev/content/2021-08/04/content_22825245.htm" target="_blank">法拉利全新敞篷跑车谍照！搭V6混动引擎/明年发布</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22831120.htm" target="_blank">雷克萨斯全新MPV曝光 定位低于LM/售价更亲民</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22831115.htm" target="_blank">奔驰新款GLE外观曝光 年内即将发布/S级同款内饰</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22832058.htm" target="_blank">你过来呀！新一代福睿斯和英朗solo对决</A></LI>
+<LI><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22831111.htm" target="_blank">丰田新赛那实车街拍 搭2.5L混动/下半年国内发布</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22831642.htm" target="_blank">硬磕特斯拉降价！汉推506km版 市值逼近万亿</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://auto.qingdaonews.com/content/2021-08/09/content_22832235.htm" target="_blank">“弗享夏日·关爱随行”哈弗夏季服务节启动</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3><A href="http://auto.qingdaonews.com/ev/EV.htm" target="_blank">新能源</A></H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://auto.qingdaonews.com/ev/content/2020-10/16/content_22395453.htm" target="_blank" class="imgBox photo" style="background:url('http://auto.qingdaonews.com/ev/images/2020-10/19/t0_(11X0X600X259)5b4a705b-0bd9-4a3f-b0ff-27e95cb68e38.jpg') center center;background-size:cover"></A>
+<A href="http://auto.qingdaonews.com/ev/content/2020-10/16/content_22395453.htm" target="_blank"><H4>ID.家族的诞生地 揭秘上汽大众MEB工厂</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="http://auto.qingdaonews.com/ev/content/2020-09/10/content_22284464.htm" target="_blank" class="imgBox photo" style="background:url('http://auto.qingdaonews.com/ev/images/2020-09/10/t0_(4X1X600X263)b5699748-e586-4e2e-bc55-b9c112eac85c.jpg') center center;background-size:cover"></A>
+<A href="http://auto.qingdaonews.com/ev/content/2020-09/10/content_22284464.htm" target="_blank"><H4>纯电动平台 中国车企换道超车取胜之匙</H4></A>
+</DIV>
+<DIV class="imgText mt15">
+<A href="http://auto.qingdaonews.com/ev/content/2020-07/30/content_22096691.htm" target="_blank" class="imgBox photo" style="background:url('http://auto.qingdaonews.com/ev/images/2020-07/30/e6c4c146-c892-4167-a6e2-8aa9bf23a5c0.jpg') center center;background-size:cover"></A>
+<A href="http://auto.qingdaonews.com/ev/content/2020-07/30/content_22096691.htm" target="_blank"><H4>理想汽车今晚将登陆纳斯达克 认购火爆提前上市</H4></A>
+</DIV>
+<DIV class="line"></DIV>
+<DIV class="ma mt15">
+<IMG src="style/auto.png">
+<H4>有趣 | 有料 | 有态度</H4>
+<P>微信扫一扫关注</P>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://business.qingdaonews.com/" target="_blank"><H2 class="qiye">企业</H2></A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headLeft">
+<A href="http://www.qingdaonews.com/content/2021-08/06/content_22828149.htm" target="_blank" class="bigImg mt20">
+<H3>落实防控要求 高新区经济发展部开展重点企业疫情防控专项检查</H3>
+<IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/06/2a788f94-2cff-4fe9-b86b-ea77bab96e99.png">
+</A>
+<DIV class="smallImg">
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/05/content_22826845.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/05/cfce2d15-8eac-4268-8687-14b162b6c58b.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/05/content_22826845.htm" target="_blank"><H3>市北区联合海尔生物打造全国15-17岁新冠疫苗移动接种样板</H3></A>
+</DIV>
+<DIV class="smImgBox">
+<A href="http://www.qingdaonews.com/content/2021-08/04/content_22825328.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-08/04/e6b694c0-1310-482c-a864-4718df410ee6.jpg"></A>
+<A href="http://www.qingdaonews.com/content/2021-08/04/content_22825328.htm" target="_blank"><H3>赋能大学生创客创业创新 第六届日日顺创客训练营正式开营</H3></A>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="headMiddle">
+<UL class="newsList mt20">
+<LI class="fb"><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828936.htm" target="_blank">日日顺供应链定制健身场景方案 赋能用户健康生活方式</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828123.htm" target="_blank">线上赋能激发市场活力 上半年青岛网络零售额全省第一</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828082.htm" target="_blank">聚智汇才创新突破 2021青岛“留创大赛”完美收官</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828055.htm" target="_blank">逐步实现企业研发中心覆盖 青岛出台新政引导科技创新研发</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828899.htm" target="_blank">青岛啤酒助威奥运 为中国健儿加油为全力以赴干杯</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828456.htm" target="_blank">严防死守打赢阻击战 海湾新材料迅速行动筑牢疫情防火墙</A></LI>
+</UL>
+<UL class="newsList mt25">
+<LI class="fb"><A href="http://www.qingdaonews.com/content/2021-08/06/content_22828227.htm" target="_blank">坚持运营安全乘客安全为根基 青岛地铁着力保障安全运行</A></LI>
+</UL>
+<UL class="newsList">
+<LI><A href="http://www.qingdaonews.com/content/2021-08/05/content_22826950.htm" target="_blank">上线一个月20余家青岛企业受益 青深云驿站受广大企业认可</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/05/content_22826809.htm" target="_blank">民营企业进出口2647.7亿元 青岛民营经济半年报出炉</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/05/content_22826669.htm" target="_blank">助力打造对外开放新高地 日本･山东产业合作交流会即将启动</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/05/content_22826625.htm" target="_blank">打造国际交流合作载体 青岛国际客厅更具国际范</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2021-08/05/content_22826606.htm" target="_blank">推动创业所在地经济共同发展 青岛市泰安商会正式揭牌</A></LI>
+</UL>
+</DIV>
+<DIV class="headRight bgGray_2">
+<DIV class="h2Tit">
+<H3>企业名家</H3></DIV>
+<DIV class="imgText mt15">
+<A href="http://www.qingdaonews.com/content/2021-03/06/content_22607605.htm" target="_blank" class="imgBox"><IMG class="lazy-load" data-original="http://www.qingdaonews.com/images/2021-03/06/4523a0c4-9287-4a53-8cce-f4efd2f32496.png"></A>
+<A href="http://www.qingdaonews.com/content/2021-03/06/content_22607605.htm" target="_blank"><H4>全国人大代表周云杰：让国产医疗器械有更多“用武之地”</H4></A>
+</DIV>
+<UL class="newsList14 mt20">
+<LI><A href="http://www.qingdaonews.com/content/2021-02/05/content_22567985.htm" target="_blank">青岛啤酒黄克兴：培育新动能 引领新发展</A></LI>
+<LI><A href="http://www.qingdaonews.com/app/content/2020-11/13/content_22438814.htm" target="_blank">周云杰：卡奥斯要做的是“滚雪球”</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2020-08/20/content_22183341.htm" target="_blank">乔军海：谈浦东社会治理领域里的那些“大胆闯、大胆试”</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2020-06/22/content_21915913.htm" target="_blank">张旭明：在海丽雅，人才带来“无限可能”</A></LI>
+<LI><A href="http://www.qingdaonews.com/content/2020-03/19/content_21438639.htm" target="_blank">青岛酷特智能总裁张蕴蓝：做中国定制第一品牌</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2020-03/02/content_21346162.htm" target="_blank">王端瑞：探索社会组织参与现代城市治理"青岛范本"</A></LI>
+<LI><A href="http://news.qingdaonews.com/qingdao/2020-01/16/content_21155736.htm" target="_blank">靳海涛： 深圳企业家是青岛的“亲人”</A></LI>
+</UL>
+<DIV class="logoList l3">
+<A href="http://www.haier.com/cn/" target="_blank" title="海尔">
+<IMG src="style/icon01.jpg"></A>
+<A href="http://www.qd-metro.com/" target="_blank" title="青岛地铁"><IMG src="style/icon02.jpg"></A>
+<A href="http://www.cwl.gov.cn" target="_blank" title="中国福利彩票"><IMG src="style/icon03.jpg"></A>
+<A href="http://www.189.cn" target="_blank" title="中国电信"><IMG src="style/icon04.jpg"></A>
+<A href="http://www.10086.cn/index/sd/index_531_532.html" target="_blank" title="中国移动"><IMG src="style/icon05.jpg"></A>
+<A href="http://www.chinaunicom.com.cn" target="_blank" title="中国联通"><IMG src="style/icon06.jpg"></A>
+</DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig"><DIV id="nuploc_1480" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headMain mt40 dn">
+<DIV class="h2Tag">
+<A href="" target="_blank"><H2></H2></A>
+<DIV class="clear"></DIV>
+</DIV>
+<UL class="picList">
+</UL>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tag">
+<A href="http://news.qingdaonews.com/zonghe/node_93373.htm" target="_blank"><H2>视觉焦点</H2></A>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV id="focusBig" class="focusBig">
+<DIV id="focusPicBig" class="focusList">
+<DIV class="fcon">
+<DIV class="imgListBig mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-07/31/content_22099648.htm" target="_blank"><H4 class="tit">全球唯一大熊猫三胞胎迎六周岁生日</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-07/31/33119005-c9b9-41b3-9b2d-bea7a31d0933.jpg"></A>
+</DIV>
+<DIV class="imgListSmall mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-07/28/content_22085491.htm" target="_blank"><H4>“备战”啤酒节！金沙滩啤酒城准备咋样了</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-07/28/69ab982c-7c28-4f98-a28f-7d0de71003c6.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-07/22/content_22056163.htm" target="_blank"><H4>抗洪路上 谢谢你们带来的温暖</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-07/22/58eb3741-bf5f-4801-9fca-3b80bdc0df2f.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-07/20/content_22046385.htm" target="_blank"><H4>映日荷花别样红 李村河荷花盛开</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-07/20/e84f87dd-bd8b-4362-b653-815fc1216ec3.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-06/09/content_21854701.htm" target="_blank"><H4>发福的李湘打扮像极了女企业家</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-06/09/t2_(0X71X307X301)e97ca375-1f4a-4ac3-b7a6-38dc8ca9d4e3.jpg"></A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="fcon">
+<DIV class="imgListBig mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-01/19/content_21170585.htm" target="_blank"><H4 class="tit">李小璐亮相机场嘻哈范儿</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/19/t2_(2X23X295X199)30fee78f-8229-4822-8d67-8ef01687a773.jpg"></A>
+</DIV>
+<DIV class="imgListSmall mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-01/19/content_21170586.htm" target="_blank"><H4>40岁萧亚轩皮肤紧致状态好</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/19/t2_(2X48X314X235)03cb01ea-01d5-4551-9bef-05c15702148a.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/15/content_21150280.htm" target="_blank"><H4>李沁晒长发“存货”甜美营业</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/15/t2_(0X1X600X361)f8c3c4a9-bf88-4928-be73-bcaff242a64f.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/15/content_21150279.htm" target="_blank"><H4>李小璐穿贵妇装拍新写真</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/15/t2_(2X17X472X299)69477db9-839c-44b6-98ed-8eb8295c42a0.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/09/content_21120141.htm" target="_blank"><H4>Baby穿藏蓝宫装手折腊梅</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/09/t2_(4X22X304X202)4d8baa0e-7759-4299-92d4-6cbab527fc16.jpg"></A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="fcon">
+<DIV class="imgListBig mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-01/09/content_21120139.htm" target="_blank"><H4 class="tit">刘诗诗手持口红唇色撩人</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/09/t2_(1X0X294X176)c15c9558-ee8e-4694-9ea0-d4d64cf068a3.jpg"></A>
+</DIV>
+<DIV class="imgListSmall mt10">
+<A href="http://news.qingdaonews.com/zonghe/2020-01/06/content_21105240.htm" target="_blank"><H4>董璇分享女儿小酒窝玩雪照</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/06/t2_(2X23X332X221)dca2136b-dc2b-4c4b-b584-f3182dd6292b.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/06/content_21105223.htm" target="_blank"><H4>赵丽颖梳高马尾妆容精致</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/06/t2_(23X12X600X358)1f44bdfd-a58d-498e-aa81-77076d3d0285.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/06/content_21105239.htm" target="_blank"><H4>关晓彤公主裙亮相俏丽迷人</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/06/t2_(8X111X313X294)b42c2c2f-eca4-4a0c-a83a-7c8bbb1d131e.jpg"></A>
+<A href="http://news.qingdaonews.com/zonghe/2020-01/01/content_21083111.htm" target="_blank"><H4>宋妍霏妆容精致颜值吸睛</H4><IMG class="lazy-load" data-original="http://news.qingdaonews.com/images/2020-01/01/t2_(3X53X294X228)c23c1528-e5fa-4d31-a3a2-efdd8b697690.jpg"></A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="focusNum" id="focusNumBig">
+<A href="javascript:;" class="on"></A>
+<A href="javascript:;" class=""></A>
+<A href="javascript:;" class=""></A>
+</DIV>
+<SPAN class="prev"></SPAN> <SPAN class="next"></SPAN>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="adBig"><DIV id="nuploc_1481" style="text-align:center;position:relative"></DIV></DIV>
+<DIV class="headMain mt40">
+<DIV class="h2Tit">
+<A href="http://www.qingdaonews.com/sitemap.htm" target="_blank">青岛新闻网-网站地图</A>
+<H2>青岛新闻网移动新媒体矩阵</H2>
+</DIV>
+<UL class="maList mt25">
+<LI><IMG src="style/newsapp.png">
+<H5>青岛新闻客户端</H5></LI>
+<LI><IMG src="style/newswx.png">
+<H5>青岛新闻网微信</H5></LI>
+<LI><IMG src="style/newswb.png">
+<H5>青岛新闻网微博</H5></LI>
+<LI><IMG src="style/bus.png">
+<H5>青岛公交查询客户端</H5></LI>
+<LI><IMG src="style/zhqd.png">
+<H5>智慧青岛客户端</H5></LI>
+<LI><IMG src="style/wzy.png">
+<H5>微智游</H5></LI>
+<LI><IMG src="style/health.png">
+<H5>青岛新闻网健康</H5></LI>
+<LI><IMG src="style/edu.png">
+<H5>青岛新闻网教育</H5></LI>
+</UL>
+</DIV>
+<DIV class="line mt40"></DIV>
+<DIV class="headMain mt30">
+<UL class="catalog">
+<LI class="logoTit"><IMG src="style/logo190603.png">
+<H3>有责任的媒体</H3></LI>
+<LI>
+<DL>
+<DT><A href="http://news.qingdaonews.com/" target="_blank">新闻</A></DT>
+<DD><A href="http://news.qingdaonews.com/qingdao/" target="_blank">青岛</A></DD>
+<DD><A href="http://news.qingdaonews.com/zonghe/node_93374.htm" target="_blank">图片</A></DD>
+<DD><A href="http://news.qingdaonews.com/zonghe/" target="_blank">时事</A></DD>
+<DD><A href="http://news.qingdaonews.com/shehui/" target="_blank">社会</A></DD>
+<DD><A href="http://ent.qingdaonews.com/" target="_blank">文娱</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="https://club.qingdaonews.com/" target="_blank">社区</A></DT>
+<DD><A href="https://club.qingdaonews.com/club_entry_2_2_0_1_0.htm" target="_blank">青岛论坛</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_1025_2_0_1_0.htm" target="_blank">社会万象</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_39_6_0_1_0.htm" target="_blank">车迷论坛</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_26_15_0_1_0.htm" target="_blank">游山玩水</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_1115_8_0_1_0.htm" target="_blank">教育论坛</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_33_12_0_1_0.htm" target="_blank">健康有约</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://house.qingdaonews.com/" target="_blank">房产</A></DT>
+<DD><A href="http://house.qingdaonews.com/node/houseNews.htm" target="_blank">新闻</A></DD>
+<DD><A href="http://house.qingdaonews.com/xinloupan/search.html" target="_blank">新房</A></DD>
+<DD><A href="http://house.qingdaonews.com/tuangou">优惠</A></DD>
+<DD><A href="http://house.qingdaonews.com/ershou/zulinlist" target="_blank">租赁</A></DD>
+<DD><A href="http://kfc.qingdaonews.com/" target="_blank">看房车</A></DD>
+<DD><A href="http://house.qingdaonews.com/ershou/" target="_blank">二手房</A></DD>
+<DD><A href="http://house.qingdaonews.com/xinloupan/zixun/xptj" target="_blank">新盘推荐</A></DD>
+<DD><A href="https://club.qingdaonews.com/club_entry_20_7_0_1_0.htm" target="_blank">论坛</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://auto.qingdaonews.com/" target="_blank">汽车</A></DT>
+<DD><A href="http://auto.qingdaonews.com/node/node_143714.htm" target="_blank">试驾实拍</A></DD>
+<DD><A href="http://auto.qingdaonews.com/autocenter/ts_0.html" target="_blank">我要投诉</A></DD>
+<DD><A href="http://auto.qingdaonews.com/node/node_91814.htm" target="_blank">行情</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_39_2_0_1_0.htm" target="_blank">车迷论坛</A></DD>
+<DD><A href="http://auto.qingdaonews.com/ev/EV.htm" target="_blank">新能源</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://finance.qingdaonews.com/" target="_blank">财经</A></DT>
+<DD><A href="http://finance.qingdaonews.com/bank/productall_1_0_0_1.html" target="_blank">理财产品</A></DD>
+<DD><A href="http://finance.qingdaonews.com/node/jjpt.htm" target="_blank">论坛峰会</A></DD>
+<DD><A href="http://finance.qingdaonews.com/node/node_43857.htm" target="_blank">理财课堂</A></DD>
+<DD><A href="http://news.qingdaonews.com/node_160270.htm" target="_blank">高端对话</A></DD>
+<DD><A href="http://finance.qingdaonews.com/node/qdcj.htm" target="_blank">财经聚焦</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://health.qingdaonews.com/" target="_blank">健康</A></DT>
+<DD><A href="http://guahao.qingdaonews.com/" target="_blank">挂号</A></DD>
+<DD><A href="http://health.qingdaonews.com/node/node_161042.htm" target="_blank">金牌科室</A></DD>
+<DD><A href="http://mingyi.qingdaonews.com/" target="_blank">名医</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_33_12_0_1_0.htm" target="_blank">健康有约</A></DD>
+<DD><A href="http://health.qingdaonews.com/node/node_155910.htm" target="_blank">医天</A></DD>
+<DD><A href="http://vip.qingdaonews.com/health/201707/lzy/" target="_blank">青岛老钟医</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://edu.qingdaonews.com/" target="_blank">教育</A></DT>
+<DD><A href="http://edu.qingdaonews.com/" target="_blank">快讯</A></DD>
+<DD><A href="http://gaokao.qingdaonews.com/" target="_blank">高考</A></DD>
+<DD><A href="http://kuaiji.qingdaonews.com/" target="_blank">会计</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_1115_8_0_1_0.htm" target="_blank">教育论坛</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://travel.qingdaonews.com/" target="_blank">旅游</A></DT>
+<DD><A href="http://travel.qingdaonews.com/guonei" target="_blank">国内游</A></DD>
+<DD><A href="http://travel.qingdaonews.com/wap/wzy" target="_blank">微智游</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_26_17_0_1_0.htm" target="_blank">旅游论坛</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_1160_15_0_1_0.htm" target="_blank">周边游</A></DD>
+<DD><A href="http://travel.qingdaonews.com/node/node_161447.htm" target="_blank">周末旅行团</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://food.qingdaonews.com/" target="_blank">美食</A></DT>
+<DD><A href="http://in.qingdaonews.com/wap/index.htm" target="_blank">吃遍青岛</A></DD>
+<DD><A href="http://house.qingdaonews.com/user/didi/zqd/jieshao/luntan/index.htm" target="_blank">一起晒晒</A></DD>
+<DD><A href="http://in.qingdaonews.com/wap/node_161049.htm" target="_blank">玩在青岛</A></DD>
+<DD><A href="http://house.qingdaonews.com/user/didi/zqd/jieshao/fuli/index.htm" target="_blank">福利活动</A></DD>
+<DD><A href="http://in.qingdaonews.com/wap/node_161253.htm" target="_blank">母婴探店</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://dazhe.qingdaonews.com/" target="_blank">消费</A></DT>
+<DD><A href="http://dazhe.qingdaonews.com/node/node_36336.htm" target="_blank">资讯</A></DD>
+<DD><A href="http://dazhe.qingdaonews.com/node/node_38296.htm" target="_blank">打折周报</A></DD>
+<DD><A href="http://dazhe.qingdaonews.com/node/node_38295.htm" target="_blank">活动</A></DD>
+<DD><A href="http://club.qingdaonews.com/club_entry_1170_2_0_1_0.htm" target="_blank">我爱打折</A></DD>
+<DD></DD>
+<DD><A href="http://dazhe.qingdaonews.com/node/node_161792.htm" target="_blank">消费观察</A></DD>
+</DL>
+</LI>
+<LI>
+<DL>
+<DT><A href="http://jiaju.qingdaonews.com/" target="_blank">家居</A></DT>
+<DD><A href="http://club.qingdaonews.com/showAnnounce_49_4079713_1_0.htm" target="_blank">验房量房</A></DD>
+<DD><A href="http://club.qingdaonews.com/showAnnounce_49_4080786_1_0.htm" target="_blank">认证商家</A></DD>
+<DD><A href="http://jiaju.qingdaonews.com/zxzb/home/listcase" target="_blank">原创设计</A></DD>
+<DD><A href="http://jiaju.qingdaonews.com/node_jiaju/node_33448.htm" target="_blank">产品测评</A></DD>
+<DD><A href="http://jiaju.qingdaonews.com/17/01/jpgz/index.htm" target="_blank">预约工长</A></DD>
+<DD><A href="http://club.qingdaonews.com/showAnnounce_49_4045644_1_0.htm" target="_blank">全屋宅配</A></DD>
+</DL>
+</LI>
+</UL>
+</DIV>
+<DIV class="headMain">
+<DIV class="urlTit mt30">城市网盟</DIV>
+<DIV class="urlList mt30">
+<A href="http://www.sznews.com/" target="_blank">深圳新闻网</A>
+<A href="http://www.runsky.com/" target="_blank">大连天健网</A>
+<A href="http://www.longhoo.net/" target="_blank">南京龙虎网</A>
+<A href="http://www.cnnb.com.cn/" target="_blank">宁波网</A>
+<A href="http://www.dayoo.com/" target="_blank">广州大洋网</A>
+<A href="http://www.cjn.cn/" target="_blank">武汉长江网</A>
+<A href="http://www.hangzhou.com.cn/" target="_blank">杭州网</A>
+<A href="http://www.changsha.cn/" target="_blank">星辰在线</A>
+<A href="http://www.jiaodong.net/" target="_blank">胶东在线</A>
+<A href="http://www.xmnn.cn/" target="_blank">厦门网</A>
+<A href="http://www.cqnews.net/" target="_blank">重庆华龙网</A>
+<A href="http://www.kunming.cn/" target="_blank">昆明信息港</A>
+<A href="http://www.jznews.com.cn/" target="_blank">荆州新闻网</A>
+<A href="http://www.xsnet.cn/" target="_blank">萧山网</A>
+<A href="http://www.xinjiangnet.com.cn/" target="_blank">新疆网</A>
+<A href="http://www.ahwang.cn/" target="_blank">安徽网</A>
+<A href="http://www.gndaily.com/" target="_blank">客家新闻网</A>
+<A href="http://www.e23.cn/" target="_blank">济南舜网</A>
+<A href="http://www.sjzdaily.com.cn/" target="_blank">石家庄新闻网</A>
+<A href="http://www.xatvs.com/" target="_blank">西安网</A>
+<A href="http://www.my399.com/" target="_blank">哈尔滨新闻网</A>
+<A href="http://www.foshannews.net" target="_blank">佛山新闻网</A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+<DIV class="headMain mt30 pb50">
+<DIV class="urlTit">友情链接</DIV>
+<DIV class="urlList">
+<A href="http://wap.qingdaonews.com/" target="_blank">手机青岛新闻网</A>
+<A href="http://www.qdjizhe.com/" target="_blank">青岛记者网</A>
+<A href="http://www.qtv.com.cn/" target="_blank">青岛网络电视台</A>
+<A href="http://qingdao.iqilu.com/" target="_blank">齐鲁网青岛频道</A>
+<A href="http://www.sdchina.com/" target="_blank">中国山东网</A>
+<A href="http://www.sdnews.com.cn/" target="_blank">鲁网</A>
+<A href="http://www.rznews.cn/" target="_blank">日照新闻网</A>
+<A href="http://www.langya.cn/" target="_blank">琅琊网</A>
+<A href="http://www.dezhoudaily.com/" target="_blank">德州新闻网</A>
+<A href="http://www.baidu.com/" target="_blank">百度</A>
+<A href="http://www.iresearch.cn/" target="_blank">艾瑞网</A>
+<A href="http://www.guancha.cn/" target="_blank">观察者网</A>
+<A href="https://www.chunyuyisheng.com/" target="_blank">春雨医生</A>
+<A href="http://www.newssc.org/" target="_blank">四川新闻网</A>
+<A href="http://365jilin.com" target="_blank">吉和网</A>
+<A href="https://www.gaodun.com" target="_blank">高顿教育</A>
+<A href="http://www.iqingdao.info/" target="_blank">IQINGDAO</A>
+<A href="https://www.guanhai.com.cn/" target="_blank">观海新闻</A>
+</DIV>
+<DIV class="clear"></DIV>
+</DIV>
+</DIV>
+<DIV class="q-ft">
+<DIV class="q-box">
+<DIV class="q-link">
+<SPAN>青岛：0532-82870000</SPAN>
+<SPAN>传真：0532-80921377</SPAN>
+<SPAN class="w240">公安部备案号：37020202000008</SPAN>
+<SPAN><A href="http://www.qingdaonews.com/content/2007-07/26/content_7957.htm" target="_blank">新闻登载许可</A></SPAN>
+<SPAN>全国：4006-187-187</SPAN>
+<SPAN>邮编：266071</SPAN>
+<SPAN class="w240">增值电信许可证：鲁B2-20040044</SPAN>
+<SPAN><A href="https://beian.miit.gov.cn/" target="_blank">鲁B2-20051014-1</A></SPAN>
+</DIV>
+<DIV class="q-ewm">
+<STRONG class="q-ico-3"><IMG src="http://vip.qingdaonews.com/news/nav/images/qdnews.png" class="q-wx" title="青岛新闻网微博"></STRONG>
+<STRONG class="q-ico-2"><IMG src="http://vip.qingdaonews.com/news/nav/images/wx.png" class="q-wx" title="青岛新闻网微信"></STRONG>
+<STRONG><IMG src="http://vip.qingdaonews.com/news/nav/images/qdwb.png" class="q-wx" title="青岛新闻客户端"></STRONG>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="q-linka">
+<DIV class="q-box">
+<STRONG>© 青岛新闻网版权所有</STRONG>
+<A target="_blank" href="http://www.qingdaonews.com/content/2018-02/26/content_20098384.htm">青岛新闻网简介</A>
+<A target="_blank" href="http://news.qingdaonews.com/content/2014-01/07/content_10216710.htm">法律顾问</A>
+<A href="http://www.qingdaonews.com/content/2013-12/01/content_10484173.htm" target="_blank">维权指引</A>
+<A href="http://passport.qingdaonews.com" target="_blank">会员注册</A>
+<A href="http://vip.qingdaonews.com/2014/02/yx/" target="_blank">营销服务</A>
+<A target="_blank" href="mailto:82870000@qingdaonews.com">邮箱</A>
+</DIV>
+</DIV>
+<DIV id="commonFooter">
+<P class="flogo">
+			<A href="http://www.12377.cn/" target="_blank" rel="nofollow"><IMG src="style/zgjb.jpg" border="0"></A>
+			<A href="http://www.sdjubao.cn/" target="_blank" rel="nofollow"><IMG src="style/sdjubao.jpg" border="0"></A>
+			<A href="http://www.qdnet110.gov.cn" target="_blank" rel="nofollow"><IMG src="style/gangting48.jpg" border="0"></A>
+
+		</P>
+</DIV>
+<SCRIPT type="text/javascript" src="style/common.js?v=1001"></SCRIPT>
+<DIV id="js_totop" class="m-gotop"></DIV>
+<SCRIPT type="text/javascript">
+		//广告浮动关闭
+		$(".appAd a").on("click",function(){
+			$(".appAd").hide();
+		})
+		
+		//new tab("tab2");
+		new tab("tab3");
+		new tab("tab4");
+		
+		//焦点图
+		focusImg("focus", "focusPic", "focusNum", 3000,360); // 外层div-id号，图片组id，切换标签id，自动切换时间，焦点图宽度
+		focusImg("focusBig", "focusPicBig", "focusNumBig", 3000,1200);
+		focusImg("adList", "showAd", "adNum", 10000,300);
+		
+		//搜索placeholder
+		jsPlaceHolder("query");
+		//懒加载
+		lazyloadFun({
+			// container:'#container',	//默认body
+			// defa:'lazy-load',	//默认lazy-load
+			cla: 'img.lazy-load' //默认img
+		},function(){
+			if($(window).scrollTop() >= 100){
+	        $('#js_totop').show();
+	      }else{
+	        $('#js_totop').hide();
+	      }
+		});
+		//登录绑定
+		initLogin(".qBtn", ".qboxcls", ".qbox");
+		//回首页
+		toTop(document.getElementById("js_totop"),"click");
+		//toTop(document.getElementById("js_fk"),null);
+	</SCRIPT>
+<SCRIPT language="javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F099a2f2a4f2c2f042dbd360b42309fc4' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+<SCRIPT src="//club.qingdaonews.com/hot_topic_list.php?board_id=2&num=10&newpcindex=1&divid=clubli"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up0.qingdaonews.com/up/loc/2018-2/display1460.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-2/display1461.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up0.qingdaonews.com/up/loc/2018-3/display1475.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-2/display1471.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up2.qingdaonews.com/up/loc/2018-2/display1462.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-3/display1476.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up3.qingdaonews.com/up/loc/2018-2/display1463.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up2.qingdaonews.com/up/loc/2018-3/display1477.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up4.qingdaonews.com/up/loc/2018-2/display1464.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up3.qingdaonews.com/up/loc/2018-3/display1478.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up0.qingdaonews.com/up/loc/2018-2/display1465.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up4.qingdaonews.com/up/loc/2018-3/display1479.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-2/display1466.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up2.qingdaonews.com/up/loc/2018-2/display1467.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up3.qingdaonews.com/up/loc/2018-2/display1468.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up0.qingdaonews.com/up/loc/2018-3/display1480.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-3/display1481.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up4.qingdaonews.com/up/loc/2018-2/display1459.txt" charset="GB2312"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/javascript" src="//up1.qingdaonews.com/up/loc/2018-3/display2481.txt" charset="GB2312"></SCRIPT>
+<SCRIPT>
+if ($(".foucsAd .fcon").length > 0){ 
+ 	$(".foucsAd").css("height","50px");
+}
+</SCRIPT>
+</BODY>
+</HTML>

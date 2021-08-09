@@ -1,0 +1,1061 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+    <title>FotoLog - Magazine 2021</title><style id="rocket-critical-css">.clearfix{*zoom:1}.clearfix:after,.clearfix:before{display:table;content:'';line-height:0}.clearfix:after{clear:both}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}img{border:0}input{color:inherit;font:inherit;margin:0}html input[type="button"],input[type="submit"]{-webkit-appearance:button}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;width:auto\9;height:auto}.td-main-content-wrap{background-color:#fff}.td-container,.tdc-row{width:1068px;margin-right:auto;margin-left:auto}.td-container:before,.tdc-row:before,.td-container:after,.tdc-row:after{display:table;content:'';line-height:0}.td-container:after,.tdc-row:after{clear:both}.td-pb-row{*zoom:1;margin-right:-24px;margin-left:-24px;position:relative}.td-pb-row:before,.td-pb-row:after{display:table;content:''}.td-pb-row:after{clear:both}.td-pb-row [class*="td-pb-span"]{display:block;min-height:1px;float:left;padding-right:24px;padding-left:24px;position:relative}@media (min-width:1019px) and (max-width:1140px){.td-pb-row [class*="td-pb-span"]{padding-right:20px;padding-left:20px}}@media (min-width:768px) and (max-width:1018px){.td-pb-row [class*="td-pb-span"]{padding-right:14px;padding-left:14px}}@media (max-width:767px){.td-pb-row [class*="td-pb-span"]{padding-right:0;padding-left:0;float:none;width:100%}}.td-pb-span12{width:100%}.wpb_row{margin-bottom:0}@media (min-width:1019px) and (max-width:1140px){.td-container,.tdc-row{width:980px}.td-pb-row{margin-right:-20px;margin-left:-20px}}@media (min-width:768px) and (max-width:1018px){.td-container,.tdc-row{width:740px}.td-pb-row{margin-right:-14px;margin-left:-14px}}@media (max-width:767px){.td-container,.tdc-row{width:100%;padding-left:20px;padding-right:20px}.td-pb-row{width:100%;margin-left:0;margin-right:0}}.td-header-wrap{position:relative;z-index:2000}.td-header-row{*zoom:1;font-family:'Open Sans','Open Sans Regular',sans-serif}.td-header-row:before,.td-header-row:after{display:table;content:''}.td-header-row:after{clear:both}.td-header-row [class*="td-header-sp"]{display:block;min-height:1px;float:left;padding-right:24px;padding-left:24px}@media (min-width:1019px) and (max-width:1140px){.td-header-row [class*="td-header-sp"]{padding-right:20px;padding-left:20px}}@media (min-width:768px) and (max-width:1018px){.td-header-row [class*="td-header-sp"]{padding-right:14px;padding-left:14px}}@media (max-width:767px){.td-header-row [class*="td-header-sp"]{padding-right:0;padding-left:0;float:none;width:100%}}.td-header-gradient:before{content:"";background:transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAMBAMAAABRpcpkAAAAD1BMVEUAAAAAAAAAAAAAAAAAAABPDueNAAAABXRSTlMGAhQQCyEd++8AAAAUSURBVAjXY1AAQgMgdABCCBAAQQAT6AFRBPHcWgAAAABJRU5ErkJggg==');width:100%;height:12px;position:absolute;left:0;bottom:-12px;z-index:1}.td-logo{margin:0;padding:0;line-height:inherit;font-size:inherit!important}@media (max-width:767px){#td-header-search-button{display:none}}#td-header-search-button-mob{display:none}@media (max-width:767px){#td-header-search-button-mob{display:block}}@media (min-width:768px){.td-drop-down-search .td-search-form{margin:20px}}.td-header-wrap .td-drop-down-search{position:absolute;top:100%;right:0;visibility:hidden;opacity:0;transform:translate3d(0,20px,0);-webkit-transform:translate3d(0,20px,0);background-color:#fff;-webkit-box-shadow:0 2px 6px rgba(0,0,0,0.2);box-shadow:0 2px 6px rgba(0,0,0,0.2);border-top:0;width:342px}.td-header-wrap .td-drop-down-search .btn{position:absolute;height:32px;min-width:67px;line-height:17px;padding:7px 15px 8px;text-shadow:none;vertical-align:top;right:20px;margin:0!important}.td-header-wrap .td-drop-down-search:before{position:absolute;top:-9px;right:19px;display:block;content:'';width:0;height:0;border-style:solid;border-width:0 5.5px 6px 5.5px;border-color:transparent transparent #4db2ec transparent}.td-header-wrap .td-drop-down-search:after{position:absolute;top:-3px;display:block;content:'';right:0;left:0;margin:0 auto;width:100%;height:3px;background-color:#4db2ec}.td-header-wrap #td-header-search{width:235px;height:32px;margin:0;border-right:0;line-height:17px;border-color:#eaeaea!important}@media (max-width:767px){.td-header-wrap #td-header-search{width:91%;font-size:16px}}.td-banner-wrap-full{position:relative}.td-header-menu-wrap-full{z-index:9998;position:relative}@media (max-width:767px){.td-header-wrap .td-header-menu-wrap-full,.td-header-wrap .td-header-menu-wrap,.td-header-wrap .td-header-main-menu{background-color:#222!important;height:54px!important}.header-search-wrap .td-icon-search{color:#fff!important}}.td-header-wrap .td-header-menu-wrap-full{background-color:#fff}.td-header-main-menu{position:relative;z-index:999;padding-right:48px}@media (max-width:767px){.td-header-main-menu{padding-right:64px;padding-left:2px}}.sf-menu,.sf-menu li{margin:0;list-style:none}@media (max-width:767px){.sf-menu{display:none}}.sf-menu li{float:left;position:relative}.sf-menu .td-menu-item>a{display:block;position:relative}.sf-menu>.current-menu-item{z-index:0}.sf-menu>li>a{padding:0 14px;line-height:48px;font-size:14px;color:#000;font-weight:700;text-transform:uppercase;-webkit-backface-visibility:hidden}@media (min-width:768px) and (max-width:1018px){.sf-menu>li>a{padding:0 9px;font-size:11px}}.sf-menu>.current-menu-item>a{z-index:999}.sf-menu>.current-menu-item>a{background-color:transparent}.sf-menu>li>a:after{background-color:transparent;content:'';width:0;height:3px;position:absolute;bottom:0;left:0;right:0;margin:0 auto;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.sf-menu>.current-menu-item>a:after{background-color:#4db2ec;width:100%}#td-header-menu{display:inline-block;vertical-align:top}.header-search-wrap{position:absolute;top:0;right:0;z-index:999}.header-search-wrap .td-icon-search{display:inline-block;font-size:19px;width:48px;line-height:48px;text-align:center}@media (min-width:768px) and (max-width:1018px){.header-search-wrap .td-icon-search{font-size:15px}}@media (max-width:767px){.header-search-wrap .td-icon-search{height:54px;width:54px;line-height:54px;font-size:22px;margin-right:2px}}#td-outer-wrap{overflow:hidden}@media (max-width:767px){#td-outer-wrap{margin:auto;width:100%;-webkit-transform-origin:50% 200px 0;transform-origin:50% 200px 0}}#td-top-mobile-toggle{display:none}@media (max-width:767px){#td-top-mobile-toggle{display:inline-block;position:relative}}#td-top-mobile-toggle a{display:inline-block}#td-top-mobile-toggle i{font-size:27px;width:64px;line-height:54px;height:54px;display:inline-block;padding-top:1px;color:#fff}.td-menu-background{background-repeat:no-repeat;background-size:cover;background-position:center top;position:fixed;top:0;display:block;width:100%;height:113%;z-index:9999;visibility:hidden;transform:translate3d(-100%,0,0);-webkit-transform:translate3d(-100%,0,0)}.td-menu-background:before{content:'';width:100%;height:100%;position:absolute;top:0;left:0;opacity:0.98;background:#313b45;background:-webkit-gradient(left top,left bottom,color-stop(0%,#313b45),color-stop(100%,#3393b8));background:linear-gradient(to bottom,#313b45 0%,#3393b8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#313b45', endColorstr='#3393b8', GradientType=0)}#td-mobile-nav{padding:0;position:fixed;width:100%;height:calc(100% + 1px);top:0;z-index:9999;visibility:hidden;transform:translate3d(-99%,0,0);-webkit-transform:translate3d(-99%,0,0);left:-1%;font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",sans-serif}.td-js-loaded .td-menu-background,.td-js-loaded #td-mobile-nav{visibility:visible}#td-mobile-nav{height:1px;overflow:hidden}#td-mobile-nav .td-menu-socials{padding:0 65px 0 20px;overflow:hidden;height:60px}.td-mobile-close{position:absolute;right:1px;top:0;z-index:1000}.td-mobile-close .td-icon-close-mobile{height:70px;width:70px;line-height:70px;font-size:21px;color:#fff;top:4px;position:relative}.td-mobile-content{padding:20px 20px 0}.td-mobile-container{padding-bottom:20px;position:relative}.td-mobile-content ul{list-style:none;margin:0;padding:0}.td-mobile-content li{float:none;margin-left:0;-webkit-touch-callout:none}.td-mobile-content li a{display:block;line-height:21px;font-size:21px;color:#fff;margin-left:0;padding:12px 30px 12px 12px;font-weight:bold}.td-mobile-content .current-menu-item>a{color:#73C7E3}.td-mobile-container{opacity:1}.td-search-wrap-mob{padding:0;position:absolute;width:100%;height:auto;top:0;text-align:center;z-index:9999;visibility:hidden;color:#fff;font-family:-apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",sans-serif}.td-search-wrap-mob .td-drop-down-search{opacity:0;visibility:hidden;-webkit-backface-visibility:hidden;position:relative}.td-search-wrap-mob #td-header-search-mob{color:#fff;font-weight:bold;font-size:26px;height:40px;line-height:36px;border:0;background:transparent;outline:0;margin:8px 0;padding:0;text-align:center}.td-search-wrap-mob .td-search-input{margin:0 5%;position:relative}.td-search-wrap-mob .td-search-input span{opacity:0.8;font-size:12px}.td-search-wrap-mob .td-search-input:before,.td-search-wrap-mob .td-search-input:after{content:'';position:absolute;display:block;width:100%;height:1px;background-color:#fff;bottom:0;left:0;opacity:0.2}.td-search-wrap-mob .td-search-input:after{opacity:0.8;transform:scaleX(0);-webkit-transform:scaleX(0)}.td-search-wrap-mob .td-search-form{margin-bottom:30px}.td-search-background{background-repeat:no-repeat;background-size:cover;background-position:center top;position:fixed;top:0;display:block;width:100%;height:113%;z-index:9999;transform:translate3d(100%,0,0);-webkit-transform:translate3d(100%,0,0);visibility:hidden}.td-search-background:before{content:'';width:100%;height:100%;position:absolute;top:0;left:0;opacity:0.98;background:#313b45;background:-webkit-gradient(left top,left bottom,color-stop(0%,#313b45),color-stop(100%,#3393b8));background:linear-gradient(to bottom,#313b45 0%,#3393b8 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#313b45', endColorstr='#3393b8', GradientType=0)}.td-search-close{text-align:right;z-index:1000}.td-search-close .td-icon-close-mobile{height:70px;width:70px;line-height:70px;font-size:21px;color:#fff;position:relative;top:4px;right:0}.td-login-inputs{position:relative}body{font-family:Verdana,BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;font-size:14px;line-height:21px}a{color:#4db2ec;text-decoration:none}ul{padding:0}ul li{line-height:24px;margin-left:21px}h1,h3,h4{font-family:'Roboto',sans-serif;color:#111111;font-weight:400;margin:6px 0}h1>a,h3>a{color:#111111}h1{font-size:32px;line-height:40px;margin-top:33px;margin-bottom:23px}h3{font-size:22px;line-height:30px;margin-top:27px;margin-bottom:17px}h4{font-size:19px;line-height:29px;margin-top:24px;margin-bottom:14px}input[type=submit]{font-family:'Roboto',sans-serif;font-size:13px;background-color:#222222;border-radius:0;color:#fff;border:none;padding:8px 15px;font-weight:500}input[type=text]{font-size:12px;line-height:21px;color:#444;border:1px solid #e1e1e1;width:100%;max-width:100%;height:34px;padding:3px 9px}@media (max-width:767px){input[type=text]{font-size:16px}}input[type=password]{width:100%;position:relative;top:0;display:inline-table;vertical-align:middle;font-size:12px;line-height:21px;color:#444;border:1px solid #ccc;max-width:100%;height:34px;padding:3px 9px;margin-bottom:10px}@media (max-width:767px){input[type=password]{font-size:16px}}.entry-title{word-wrap:break-word}.td-module-thumb{position:relative;margin-bottom:13px}.td-module-thumb .entry-thumb{display:block}.td-module-meta-info{font-family:'Open Sans','Open Sans Regular',sans-serif;font-size:11px;margin-bottom:7px;line-height:1;min-height:17px}.td-post-author-name{font-weight:bold;display:inline-block;position:relative;top:2px}.td-post-author-name a{color:#000}.td-post-author-name span{color:#ccc;margin:0 2px 0 2px;font-weight:normal}.td-post-date{color:#767676;display:inline-block;position:relative;top:2px}.block-title{font-family:'Roboto',sans-serif;font-size:14px;line-height:1;margin-top:0;margin-bottom:26px;border-bottom:2px solid #222222}.block-title span{line-height:17px;display:inline-block;padding:7px 12px 4px;background-color:#222222;color:#fff}.td-block-title span{display:inline-block}.td_block_template_1 .block-title{text-align:left}.td-main-content-wrap{padding-bottom:40px}@media (max-width:767px){.td-main-content-wrap{padding-bottom:26px}}.td-main-page-wrap{padding-top:48px}@media (max-width:767px){.td-main-page-wrap{padding-top:32px}}@font-face{font-family:'newspaper';src:url(https://www.fotolog.com/wp-content/themes/Newspaper/images/icons/newspaper.eot?19);src:url(https://www.fotolog.com/wp-content/themes/Newspaper/images/icons/newspaper.eot?19#iefix) format('embedded-opentype'),url(https://www.fotolog.com/wp-content/themes/Newspaper/images/icons/newspaper.woff?19) format('woff'),url(https://www.fotolog.com/wp-content/themes/Newspaper/images/icons/newspaper.ttf?19) format('truetype'),url(https://www.fotolog.com/wp-content/themes/Newspaper/images/icons/newspaper.svg?19#newspaper) format('svg');font-weight:normal;font-style:normal;font-display:swap}[class^="td-icon-"]:before,[class*=" td-icon-"]:before{font-family:'newspaper';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class*="td-icon-"]{line-height:1;text-align:center;display:inline-block}.td-icon-search:before{content:'\e80a'}.td-icon-mobile:before{content:'\e83e'}.td-icon-close-mobile:before{content:'\e900'}.td-icon-modal-back:before{content:'\e901'}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}.tdc_zone{margin:0}.td-main-content-wrap .tdc_zone{z-index:0}.td_block_wrap{margin-bottom:48px;position:relative;clear:both}@media (max-width:767px){.td_block_wrap{margin-bottom:32px}}.td-fix-index{transform:translateZ(0);-webkit-transform:translateZ(0)}.tdb-template .td-main-content-wrap{padding-bottom:0}.mfp-hide{display:none!important}.white-popup-block{position:relative;margin:0 auto;max-width:500px;min-height:500px;font-family:'Open Sans','Open Sans Regular',sans-serif;text-align:center;color:#fff;vertical-align:top;-webkit-box-shadow:0px 0px 20px 0px rgba(0,0,0,0.2);box-shadow:0px 0px 20px 0px rgba(0,0,0,0.2);padding:0 0 24px;overflow:hidden}.white-popup-block:after{content:'';width:100%;height:100%;position:absolute;top:0;left:0;display:block;background:rgba(0,69,130,0.8);background:-webkit-gradient(left bottom,right top,color-stop(0%,rgba(0,69,130,0.8)),color-stop(100%,rgba(38,134,146,0.8)));background:linear-gradient(45deg,rgba(0,69,130,0.8) 0%,rgba(38,134,146,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a80cb', endColorstr='#42bdcd', GradientType=1);z-index:-2}.white-popup-block:before{content:'';width:100%;height:100%;position:absolute;top:0;left:0;display:block;background-size:cover;background-position:top;background-repeat:no-repeat;z-index:-3}#login_pass{display:none!important}.td-container-wrap{background-color:#fff;margin-left:auto;margin-right:auto}.wpb_button{display:inline-block;font-family:'Open Sans','Open Sans Regular',sans-serif;font-weight:600;line-height:24px;text-shadow:none;border:none;border-radius:0;margin-bottom:21px}body.td-animation-stack-type0 .td-animation-stack .entry-thumb{opacity:0}.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}h1{font-size:2em;margin:0.67em 0}img{border:0}input{color:inherit;font:inherit;margin:0}html input[type="button"],input[type="submit"]{-webkit-appearance:button}input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}.td-header-sp-logo img{margin:auto;position:absolute;top:0;bottom:0;left:0;right:0}.td-main-menu-logo{display:none;float:left;margin-right:10px;height:48px}@media (max-width:767px){.td-main-menu-logo{display:block;margin-right:0;height:0}}.td-main-menu-logo a{line-height:48px}.td-main-menu-logo img{padding:3px 0;position:relative;vertical-align:middle;max-height:48px;width:auto}@media (max-width:767px){.td-main-menu-logo img{margin:auto;bottom:0;top:0;left:0;right:0;position:absolute;padding:0}}@media (max-width:1140px){.td-main-menu-logo img{max-width:180px}}.td-visual-hidden{border:0;width:1px;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute}.td-header-top-menu-full{position:relative;z-index:9999}@media (max-width:767px){.td-header-top-menu-full{display:none}}.td-header-style-10 .td-header-top-menu-full{background-color:#fff;border-bottom:1px solid #e0e0e0}.td-header-style-10 .td-header-top-menu-full .td-header-top-menu{color:#000}.td-header-style-10 .td-header-top-menu-full a{color:#000}.td-header-style-10 .td-logo-wrap-full{min-height:130px;line-height:130px}@media (max-width:767px){.td-header-style-10 .td-logo-wrap-full{line-height:90px;min-height:90px}}.td-header-style-10 .td-logo-wrap-full a{position:relative;z-index:1;line-height:130px;display:inline-block;vertical-align:middle;width:100%}@media (max-width:767px){.td-header-style-10 .td-logo-wrap-full a{line-height:90px}}.td-header-style-10 .td-logo-wrap-full .td-logo{line-height:130px}@media (max-width:767px){.td-header-style-10 .td-logo-wrap-full .td-logo{line-height:90px}}@media (max-width:767px){.td-header-style-10 .td-main-menu-logo .td-main-logo{display:none}}.td-header-style-10 .td-header-sp-logo{text-align:center}.td-header-style-10 .td-header-sp-logo img{z-index:1;display:block;position:relative}.td-header-style-10 .header-search-wrap .td-icon-search{color:#000}@media (max-width:767px){.td-header-style-10 .header-search-wrap .td-icon-search{color:#fff}}.td-header-style-10 .td-header-menu-wrap-full{position:relative}.td-header-style-10 .td-header-main-menu{padding-left:48px}@media (max-width:767px){.td-header-style-10 .td-header-main-menu{padding-left:2px}}.td-header-style-10 #td-header-menu{display:table;margin:0 auto}@media (max-width:767px){.td-header-style-10 #td-header-menu{display:block}}.td-header-top-menu{color:#fff;font-size:11px}.td-header-top-menu a{color:#fff}@media (min-width:1019px) and (max-width:1140px){.td-header-top-menu{overflow:visible}}.td-header-sp-top-menu{line-height:28px;padding:0!important;z-index:1000;float:left}@media (max-width:767px){.td-header-sp-top-menu{display:none!important}}.td-header-sp-top-widget{position:relative;line-height:28px;text-align:right;padding-left:0!important;padding-right:0!important}@media (max-width:767px){.td-header-sp-top-widget{width:100%;text-align:center}}.menu-top-container{display:inline-block;margin-right:16px}.top-header-menu{list-style:none;margin:0;display:inline-block}.top-header-menu li{display:inline-block;position:relative;margin-left:0}.top-header-menu li a{margin-right:16px;line-height:1}.top-header-menu>li{line-height:28px}.top-bar-style-1 .td-header-sp-top-widget{float:right}.td-grid-style-1 .td-meta-info-container{bottom:0}.td-grid-style-1 .td-module-thumb a:last-child:before{bottom:0;content:"";display:block;height:70%;width:100%;position:absolute;z-index:1;background:-webkit-gradient(linear,left top,left bottom,color-stop(40%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0.7)));background:-webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);background:linear-gradient(to bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0)}@media (max-width:767px){.td-grid-style-1 .td-module-thumb a:last-child:before{height:130%!important}}.td-grid-style-1 .td-medium-thumb .td-big-grid-meta{width:80%;margin:20px 0 14px 19px}@media (max-width:767px){.td-grid-style-1 .td-medium-thumb .td-big-grid-meta{margin:0 15px 11px}}.td-grid-style-1 .td-medium-thumb .entry-title{font-size:24px;line-height:30px;font-weight:500}.td-grid-style-1.td-hover-1 .td-module-thumb a:last-child:before{bottom:0;content:"";display:block;height:100%;width:100%;position:absolute}.td-big-grid-post{position:relative;overflow:hidden}.td-big-grid-post .td-meta-info-container{position:absolute;z-index:1;width:100%}.td-big-grid-post .td-meta-align{width:100%}.td-big-grid-post .td-post-author-name a,.td-big-grid-post .td-post-author-name span,.td-big-grid-post .td-post-date{color:#fff;text-shadow:1px 1px 1px rgba(0,0,0,0.3)}.td-big-grid-post .entry-title{margin:0;word-wrap:break-word}.td-big-grid-post .entry-title a{color:#fff;text-shadow:1px 1px 3px rgba(0,0,0,0.2)}.td-big-grid-post .td-module-meta-info{margin:11px 0 20px 20px;min-height:0;z-index:1}@media (max-width:767px){.td-big-grid-post .td-module-meta-info{margin-left:17px}}.td-big-grid-post .td-big-grid-meta{z-index:1}.td-big-grid-post.td-medium-thumb .td-big-grid-meta{font-size:24px}@media (max-width:767px){.td-big-grid-post.td-medium-thumb .td-big-grid-meta{font-size:16px}}@media (max-width:1140px){.td-big-grid-post.td-medium-thumb .td-big-grid-meta .entry-title{line-height:1.3}}@media (min-width:1019px) and (max-width:1140px){.td-big-grid-post.td-medium-thumb .td-big-grid-meta .entry-title{font-size:85%}}@media (min-width:768px) and (max-width:1018px){.td-big-grid-post.td-medium-thumb .td-big-grid-meta .entry-title{font-size:65%}}@media (max-width:767px){.td-big-grid-post.td-medium-thumb .td-big-grid-meta .entry-title{font-size:16px;line-height:21px}}.td-big-grid-post .td-module-thumb{overflow:hidden;margin:0}.td-big-grid-post .td-module-thumb img{max-width:none}@media (min-width:1019px) and (max-width:1140px){.td-big-grid-post .entry-thumb{width:100%}}@media (min-width:768px) and (max-width:1018px){.td-big-grid-post .entry-thumb{width:100%}}@media (max-width:767px){.td-big-grid-post .entry-thumb{width:100%}}.td-big-grid-post .td-module-thumb{background-color:#e5e5e5}.td-big-grid-post .td-post-author-name,.td-big-grid-post .td-post-date{top:0}@media (max-width:767px){.td_block_big_grid_9{margin-left:-20px;margin-right:-20px}}.td_block_big_grid_9 .td-big-grid-post{width:25%;float:left}@media (max-width:767px){.td_block_big_grid_9 .td-big-grid-post{width:50%;margin-bottom:2px}}@media (max-width:600px){.td_block_big_grid_9 .td-big-grid-post{width:100%}}@media (max-width:767px){.td_block_big_grid_9 .td-big-grid-post.td-big-grid-post-0 .td-module-thumb,.td_block_big_grid_9 .td-big-grid-post.td-big-grid-post-2 .td-module-thumb{margin-right:2px}}@media (max-width:600px){.td_block_big_grid_9 .td-big-grid-post.td-big-grid-post-0 .td-module-thumb,.td_block_big_grid_9 .td-big-grid-post.td-big-grid-post-2 .td-module-thumb{margin-right:0}}.td_block_big_grid_9 .td-big-grid-post .entry-title{font-size:21px;line-height:24px;font-weight:bold}.td_block_big_grid_9 .td-big-grid-post .td-module-thumb{margin-right:2px;height:364px}@media (min-width:1019px) and (max-width:1140px){.td_block_big_grid_9 .td-big-grid-post .td-module-thumb{height:330px}}@media (min-width:768px) and (max-width:1018px){.td_block_big_grid_9 .td-big-grid-post .td-module-thumb{height:250px}}@media (max-width:767px){.td_block_big_grid_9 .td-big-grid-post .td-module-thumb{height:140px;margin-right:0}}.td_block_big_grid_9 .td-big-grid-post:last-child .td-module-thumb{margin-right:0}.td_block_big_grid_9 .td-big-grid-post .entry-thumb{margin:0 auto;position:absolute;left:-9999px;right:-9999px;width:auto}@media (max-width:1140px){.td_block_big_grid_9 .td-big-grid-post .entry-thumb{height:100%}}@media (max-width:767px){.td_block_big_grid_9 .td-big-grid-post .entry-thumb{height:auto;width:100%;top:-30px}}@media (min-width:768px) and (max-width:1018px){.td_block_big_grid_9 .td-post-author-name{display:none}}.td_block_big_grid_9.td-grid-style-1 .td-big-grid-meta{margin-bottom:11px;margin-right:20px;width:auto}@media (min-width:768px) and (max-width:1018px){.td_block_big_grid_9.td-grid-style-1 .td-big-grid-meta{margin-bottom:8px;margin-left:10px;margin-right:8px}}@media (max-width:767px){.td_block_big_grid_9.td-grid-style-1 .td-big-grid-meta{margin-bottom:7px}}@media (min-width:768px) and (max-width:1018px){.td_block_big_grid_9.td-grid-style-1 .td-module-meta-info{margin-top:8px;margin-left:10px}}@media (max-width:767px){.td_block_big_grid_9.td-grid-style-1 .td-module-meta-info{margin-bottom:15px;margin-top:7px;margin-left:15px}}.td-block-title span{display:inline-block}.td_block_template_1 .block-title{text-align:left}</style><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="preload" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" /></noscript><link rel="preload" href="https://www.fotolog.com/wp-content/cache/min/1/ada8c25618eded8efdcf81cd022a3b50.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" data-minify="1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://www.fotolog.com/xmlrpc.php" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="canonical" href="https://www.fotolog.com/"/><link rel="next" href="https://www.fotolog.com/page/2/"/><link rel="icon" type="image/png" href="https://www.fotolog.com/wp-content/uploads/2019/11/fotolog-fav.png">
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="FotoLog.com is great and best web magazine in 2021" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="FotoLog - Magazine 2021" />
+	<meta property="og:description" content="FotoLog.com is great and best web magazine in 2021" />
+	<meta property="og:url" content="https://www.fotolog.com/" />
+	<meta property="og:site_name" content="FotoLog" />
+	<meta property="article:modified_time" content="2021-03-07T18:05:09+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.fotolog.com/#website","url":"https://www.fotolog.com/","name":"FotoLog","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.fotolog.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.fotolog.com/#webpage","url":"https://www.fotolog.com/","name":"FotoLog - Magazine 2021","isPartOf":{"@id":"https://www.fotolog.com/#website"},"datePublished":"2019-11-19T11:03:02+00:00","dateModified":"2021-03-07T18:05:09+00:00","description":"FotoLog.com is great and best web magazine in 2021","breadcrumb":{"@id":"https://www.fotolog.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.fotolog.com/"]}]},{"@type":"BreadcrumbList","@id":"https://www.fotolog.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="FotoLog &raquo; Feed" href="https://www.fotolog.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="FotoLog &raquo; Comments Feed" href="https://www.fotolog.com/comments/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+<style id='td-theme-inline-css' type='text/css'>
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style>
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://www.fotolog.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' src='https://www.fotolog.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://www.fotolog.com/wp-content/cache/min/1/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1627991368' id='stop-user-enumeration-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://www.fotolog.com/wp-content/cache/min/1/wp-content/plugins/wp-captcha/assets/js/c4wp-public.js?ver=1627991368' id='c4wp-public-js' defer></script>
+<link rel="https://api.w.org/" href="https://www.fotolog.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.fotolog.com/wp-json/wp/v2/pages/39" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.fotolog.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.fotolog.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<link rel='shortlink' href='https://www.fotolog.com/' />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/shantel-network/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <script type="rocketlazyloadscript">
+        window.tdb_globals = {"wpRestNonce":"9f8ede6e59","wpRestUrl":"https:\/\/www.fotolog.com\/wp-json\/","permalinkStructure":"\/%postname%\/","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50};
+    </script>
+    			<script type="rocketlazyloadscript">
+				window.tdwGlobal = {"adminUrl":"https:\/\/www.fotolog.com\/wp-admin\/","wpRestNonce":"9f8ede6e59","wpRestUrl":"https:\/\/www.fotolog.com\/wp-json\/","permalinkStructure":"\/%postname%\/"};
+			</script>
+			    <script type="rocketlazyloadscript">
+        window.tdaGlobal = {"adminUrl":"https:\/\/www.fotolog.com\/wp-admin\/","wpRestNonce":"9f8ede6e59","wpRestUrl":"https:\/\/www.fotolog.com\/wp-json\/","permalinkStructure":"\/%postname%\/","postId":39};
+    </script>
+    
+<!-- JS generated by theme -->
+
+<script type="rocketlazyloadscript">
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/www.fotolog.com\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=11.2";
+var td_get_template_directory_uri="https:\/\/www.fotolog.com\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="10";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="07b5d5daff";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Button style compiled by theme -->
+
+<style>
+    
+</style>
+
+	<style id="tdw-css-placeholder"></style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+
+<body class="home page-template page-template-page-pagebuilder-latest page-template-page-pagebuilder-latest-php page page-id-39 td-standard-pack global-block-template-1 tdb-template td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+            <div class="td-scroll-up  td-hide-scroll-up-on-mob" style="display:none;"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#" aria-label="Close"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-home-container"><ul id="menu-home" class="td-mobile-main-menu"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-first menu-item-9"><a href="https://www.fotolog.com">Home</a></li>
+<li id="menu-item-37236" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37236"><a href="https://www.fotolog.com/category/business/">Business</a></li>
+<li id="menu-item-820" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-820"><a href="https://www.fotolog.com/category/entertainment/">Entertainment</a></li>
+<li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="https://www.fotolog.com/category/games/">Games</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="https://www.fotolog.com/category/kids/">Kids</a></li>
+<li id="menu-item-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-82"><a href="https://www.fotolog.com/category/net-worth/">Net Worth</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83"><a href="https://www.fotolog.com/category/style/">Style</a></li>
+<li id="menu-item-821" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-821"><a href="https://www.fotolog.com/category/technology/">Technology</a></li>
+<li id="menu-item-822" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-822"><a href="https://www.fotolog.com/category/travel/">Travel</a></li>
+<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://www.fotolog.com/contact-us/">📧 Contact Us</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search">
+		<form method="get" class="td-search-form" action="https://www.fotolog.com/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob" class="td-ajax-search-flex"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style 10
+-->
+
+<div class="td-header-wrap td-header-style-10 ">
+    
+            <div class="td-header-top-menu-full td-container-wrap ">
+            <div class="td-container td-header-row td-header-top-menu">
+                
+    <div class="top-bar-style-1">
+        
+<div class="td-header-sp-top-menu">
+
+
+	<div class="menu-top-container"><ul id="menu-vrh" class="top-header-menu"><li id="menu-item-817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-817"><a href="https://www.fotolog.com/contact-us/">Contact Us</a></li>
+</ul></div></div>
+        <div class="td-header-sp-top-widget">
+    
+    </div>    </div>
+
+<!-- LOGIN MODAL -->
+
+                <div  id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+                    <div class="td-login-wrap">
+                        <a href="#" aria-label="Back" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <form action="#" method="post">
+                            <div class="td-login-inputs"><input class="td-login-input" autocomplete="username" type="text" name="login_email" id="login_email" value="" required><label for="login_email">your username</label></div>
+	                        <div class="td-login-inputs"><input class="td-login-input" autocomplete="current-password" type="password" name="login_pass" id="login_pass" value="" required><label for="login_pass">your password</label></div>
+                            <input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                            </form>
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                            
+                            
+                            
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required><label for="forgot_email">your email</label></div>
+                            <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                            </div>
+        </div>
+    
+    <div class="td-banner-wrap-full td-logo-wrap-full  td-container-wrap ">
+        <div class="td-header-sp-logo">
+            <h1 class="td-logo">			<a class="td-main-logo" href="https://www.fotolog.com/">
+				<img width="400" height="75" src="https://www.fotolog.com/wp-content/uploads/2019/11/fotolog.png" alt=""/>
+				<span class="td-visual-hidden">FotoLog</span>
+			</a>
+		</h1>        </div>
+    </div>
+
+	<div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap td-header-gradient ">
+			<div class="td-container td-header-row td-header-main-menu">
+				<div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-header">
+                <a class="td-main-logo" href="https://www.fotolog.com/">
+            <img src="https://www.fotolog.com/wp-content/uploads/2019/11/fotolog.png" alt="" width="400" height="75"/>
+        </a>
+        </div>
+    <div class="menu-home-container"><ul id="menu-home-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-9"><a href="https://www.fotolog.com">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-37236"><a href="https://www.fotolog.com/category/business/">Business</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-820"><a href="https://www.fotolog.com/category/entertainment/">Entertainment</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-80"><a href="https://www.fotolog.com/category/games/">Games</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-81"><a href="https://www.fotolog.com/category/kids/">Kids</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-82"><a href="https://www.fotolog.com/category/net-worth/">Net Worth</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-83"><a href="https://www.fotolog.com/category/style/">Style</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-821"><a href="https://www.fotolog.com/category/technology/">Technology</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-822"><a href="https://www.fotolog.com/category/travel/">Travel</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-140"><a href="https://www.fotolog.com/contact-us/">📧 Contact Us</a></li>
+</ul></div></div>
+
+
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            <a id="td-header-search-button-mob" href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+        </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://www.fotolog.com/">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+			</div>
+		</div>
+	</div>
+
+    
+</div>
+            </div>
+
+            
+
+<div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
+
+            
+                <div class="tdc-content-wrap">
+                    <div id="tdi_1" class="tdc-zone"><div class="tdc_zone tdi_2  wpb_row td-pb-row"  >
+<style scoped>
+
+/* custom css */
+.tdi_2{
+                    min-height: 0;
+                }
+</style><div id="tdi_3" class="tdc-row"><div class="vc_row tdi_4  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.tdi_4,
+                .tdi_4 .tdc-columns{
+                    min-height: 0;
+                }.tdi_4,
+				.tdi_4 .tdc-columns{
+				    display: block;
+				}.tdi_4 .tdc-columns{
+				    width: 100%;
+				}
+</style><div class="vc_column tdi_6  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.tdi_6{
+                    vertical-align: baseline;
+                }.tdi_6 > .wpb_wrapper,
+				.tdi_6 > .wpb_wrapper > .tdc-elements{
+				    display: block;
+				}.tdi_6 > .wpb_wrapper > .tdc-elements{
+				    width: 100%;
+				}.tdi_6 > .wpb_wrapper > .vc_row_inner{
+				    width: auto;
+				}.tdi_6 > .wpb_wrapper{
+				    width: auto;
+				    height: auto;
+				}
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title tdi_7 td-pb-border-top td_block_template_1 td-fix-index"  data-td-block-uid="tdi_7" >
+<style>
+.td-theme-wrap .tdi_7 .td-pulldown-filter-link:hover,
+            .td-theme-wrap .tdi_7 .td-subcat-item a:hover,
+            .td-theme-wrap .tdi_7 .td-subcat-item .td-cur-simple-item {
+                color: #1e73be;
+            }
+
+            .td-theme-wrap .tdi_7 .block-title > *,
+            .td-theme-wrap .tdi_7 .td-subcat-dropdown:hover .td-subcat-more {
+                background-color: #1e73be;
+            }
+            .td-theme-wrap .td-footer-wrapper .tdi_7 .block-title > * {
+                padding: 6px 7px 5px;
+                line-height: 1;
+            }
+
+            .td-theme-wrap .tdi_7 .block-title {
+                border-color: #1e73be;
+            }
+
+            
+            .td-theme-wrap .tdi_7 .block-title > * {
+                color: #ffffff;
+            }
+            
+            
+            
+            .td-theme-wrap .tdi_7 .td_module_wrap:hover .entry-title a,
+            .td-theme-wrap .tdi_7 .td_quote_on_blocks,
+            .td-theme-wrap .tdi_7 .td-opacity-cat .td-post-category:hover,
+            .td-theme-wrap .tdi_7 .td-opacity-read .td-read-more a:hover,
+            .td-theme-wrap .tdi_7 .td-opacity-author .td-post-author-name a:hover,
+            .td-theme-wrap .tdi_7 .td-instagram-user a {
+                color: #1e73be;
+            }
+
+            .td-theme-wrap .tdi_7 .td-next-prev-wrap a:hover,
+            .td-theme-wrap .tdi_7 .td-load-more-wrap a:hover {
+                background-color: #1e73be;
+                border-color: #1e73be;
+            }
+
+            .td-theme-wrap .tdi_7 .td-read-more a,
+            .td-theme-wrap .tdi_7 .td-weather-information:before,
+            .td-theme-wrap .tdi_7 .td-weather-week:before,
+            .td-theme-wrap .tdi_7 .td-exchange-header:before,
+            .td-theme-wrap .td-footer-wrapper .tdi_7 .td-post-category,
+            .td-theme-wrap .tdi_7 .td-post-category:hover {
+                background-color: #1e73be;
+            }
+</style><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Technology</span></h4></div></div><div class="td_block_wrap td_block_big_grid_9 tdi_8 td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"  data-td-block-uid="tdi_8" ><div id=tdi_8 class="td_block_inner"><div class="td-big-grid-wrapper">
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-0 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/swiss-army-phone/" rel="bookmark" class="td-image-wrap " title="Swiss Army Phone: iPhones Replacing Passports" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/iPhones-Replacing-Passports-356x364.jpg"   alt="" title="Swiss Army Phone: iPhones Replacing Passports" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/swiss-army-phone/" rel="bookmark" title="Swiss Army Phone: iPhones Replacing Passports">Swiss Army Phone: iPhones Replacing Passports</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T13:04:51+01:00" >August 5, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-1 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/know-where-proxy-server-located/" rel="bookmark" class="td-image-wrap " title="How to Know Where a Proxy Server Is Located?" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Proxy-server-356x364.png"   alt="" title="How to Know Where a Proxy Server Is Located?" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/know-where-proxy-server-located/" rel="bookmark" title="How to Know Where a Proxy Server Is Located?">How to Know Where a Proxy Server Is Located?</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/deborah-summerville/">Deborah Summerville</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-02T14:57:11+01:00" >August 2, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-2 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/track-your-childrens-phones-without-them-knowing/" rel="bookmark" class="td-image-wrap " title="Can You Track Your Children’s Phones Without Them Knowing &#8211; 2021 Guide" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/07/Track-Your-Childrens-Phones-Without-Them-Knowing-356x364.jpg"   alt="" title="Can You Track Your Children’s Phones Without Them Knowing &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/track-your-childrens-phones-without-them-knowing/" rel="bookmark" title="Can You Track Your Children’s Phones Without Them Knowing &#8211; 2021 Guide">Can You Track Your Children’s Phones Without Them Knowing &#8211; 2021 Guide</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-07-22T09:44:58+01:00" >July 22, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-3 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/safety-features-for-teen-drivers/" rel="bookmark" class="td-image-wrap " title="Top 10 Safety Features For Teen Drivers To Look For &#8211; 2021 Guide" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/07/Teen-Drivers-356x364.jpg"   alt="" title="Top 10 Safety Features For Teen Drivers To Look For &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/safety-features-for-teen-drivers/" rel="bookmark" title="Top 10 Safety Features For Teen Drivers To Look For &#8211; 2021 Guide">Top 10 Safety Features For Teen Drivers To Look For &#8211; 2021 Guide</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-07-20T10:25:21+01:00" >July 20, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div><div class="clearfix"></div></div></div> <!-- ./block --></div></div></div></div><div id="tdi_9" class="tdc-row"><div class="vc_row tdi_10  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.tdi_10,
+                .tdi_10 .tdc-columns{
+                    min-height: 0;
+                }.tdi_10,
+				.tdi_10 .tdc-columns{
+				    display: block;
+				}.tdi_10 .tdc-columns{
+				    width: 100%;
+				}
+</style><div class="vc_column tdi_12  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.tdi_12{
+                    vertical-align: baseline;
+                }.tdi_12 > .wpb_wrapper,
+				.tdi_12 > .wpb_wrapper > .tdc-elements{
+				    display: block;
+				}.tdi_12 > .wpb_wrapper > .tdc-elements{
+				    width: 100%;
+				}.tdi_12 > .wpb_wrapper > .vc_row_inner{
+				    width: auto;
+				}.tdi_12 > .wpb_wrapper{
+				    width: auto;
+				    height: auto;
+				}
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title tdi_13 td-pb-border-top td_block_template_1 td-fix-index"  data-td-block-uid="tdi_13" >
+<style>
+.td-theme-wrap .tdi_13 .td-pulldown-filter-link:hover,
+            .td-theme-wrap .tdi_13 .td-subcat-item a:hover,
+            .td-theme-wrap .tdi_13 .td-subcat-item .td-cur-simple-item {
+                color: #2f7f14;
+            }
+
+            .td-theme-wrap .tdi_13 .block-title > *,
+            .td-theme-wrap .tdi_13 .td-subcat-dropdown:hover .td-subcat-more {
+                background-color: #2f7f14;
+            }
+            .td-theme-wrap .td-footer-wrapper .tdi_13 .block-title > * {
+                padding: 6px 7px 5px;
+                line-height: 1;
+            }
+
+            .td-theme-wrap .tdi_13 .block-title {
+                border-color: #2f7f14;
+            }
+
+            
+            .td-theme-wrap .tdi_13 .block-title > * {
+                color: #ffffff;
+            }
+            
+            
+            
+            .td-theme-wrap .tdi_13 .td_module_wrap:hover .entry-title a,
+            .td-theme-wrap .tdi_13 .td_quote_on_blocks,
+            .td-theme-wrap .tdi_13 .td-opacity-cat .td-post-category:hover,
+            .td-theme-wrap .tdi_13 .td-opacity-read .td-read-more a:hover,
+            .td-theme-wrap .tdi_13 .td-opacity-author .td-post-author-name a:hover,
+            .td-theme-wrap .tdi_13 .td-instagram-user a {
+                color: #2f7f14;
+            }
+
+            .td-theme-wrap .tdi_13 .td-next-prev-wrap a:hover,
+            .td-theme-wrap .tdi_13 .td-load-more-wrap a:hover {
+                background-color: #2f7f14;
+                border-color: #2f7f14;
+            }
+
+            .td-theme-wrap .tdi_13 .td-read-more a,
+            .td-theme-wrap .tdi_13 .td-weather-information:before,
+            .td-theme-wrap .tdi_13 .td-weather-week:before,
+            .td-theme-wrap .tdi_13 .td-exchange-header:before,
+            .td-theme-wrap .td-footer-wrapper .tdi_13 .td-post-category,
+            .td-theme-wrap .tdi_13 .td-post-category:hover {
+                background-color: #2f7f14;
+            }
+</style><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Health</span></h4></div></div><div class="td_block_wrap td_block_big_grid_9 tdi_14 td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"  data-td-block-uid="tdi_14" ><div id=tdi_14 class="td_block_inner"><div class="td-big-grid-wrapper">
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-0 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/causes-of-rashes/" rel="bookmark" class="td-image-wrap " title="3 Causes of Rashes That Can Surprise You" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/skin-rash-356x364.jpg"   alt="" title="3 Causes of Rashes That Can Surprise You" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/causes-of-rashes/" rel="bookmark" title="3 Causes of Rashes That Can Surprise You">3 Causes of Rashes That Can Surprise You</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/katarine-milan/">Katarine Milan</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-04T15:01:48+01:00" >August 4, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-1 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/benefits-having-health-insurance/" rel="bookmark" class="td-image-wrap " title="What Are the Benefits of Having Health Insurance?" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Benefits-of-Having-Health-Insurance-356x364.jpg"   alt="" title="What Are the Benefits of Having Health Insurance?" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/benefits-having-health-insurance/" rel="bookmark" title="What Are the Benefits of Having Health Insurance?">What Are the Benefits of Having Health Insurance?</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/deborah-summerville/">Deborah Summerville</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-04T11:20:43+01:00" >August 4, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-2 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/common-myths-about-addiction/" rel="bookmark" class="td-image-wrap " title="6 Common Myths about Addiction &#8211; 2021 Guide" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/07/Myths-about-Addiction-356x364.jpg"   alt="" title="6 Common Myths about Addiction &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/common-myths-about-addiction/" rel="bookmark" title="6 Common Myths about Addiction &#8211; 2021 Guide">6 Common Myths about Addiction &#8211; 2021 Guide</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-07-29T14:09:16+01:00" >July 29, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx15 td-animation-stack td-big-grid-post-3 td-big-grid-post td-medium-thumb">
+            <div class="td-module-thumb"><a href="https://www.fotolog.com/signs-of-gambling-addiction/" rel="bookmark" class="td-image-wrap " title="3 Signs of Gambling Addiction &#038; How to Get Help" ><img width="356" height="364" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/07/gambling-1-356x364.jpg"   alt="" title="3 Signs of Gambling Addiction &#038; How to Get Help" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/signs-of-gambling-addiction/" rel="bookmark" title="3 Signs of Gambling Addiction &#038; How to Get Help">3 Signs of Gambling Addiction &#038; How to Get Help</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-07-29T10:22:40+01:00" >July 29, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div><div class="clearfix"></div></div></div> <!-- ./block --></div></div></div></div></div></div>                </div>
+
+                    
+
+<div class="td-container td-pb-article-list ">
+    <div class="td-pb-row">
+                        <div class="td-pb-span12 td-main-content" role="main">
+                    <div class="td-ss-main-content td_block_template_1">
+                        <div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">LATEST ARTICLES</span></h4></div>
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/resource-to-find-concerts-near-me/" rel="bookmark" class="td-image-wrap " title="Best Resource To Find Concerts Near Me" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Best-Resource-To-Find-Concerts-Near-Me-324x160.jpg"   alt="" title="Best Resource To Find Concerts Near Me" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/resource-to-find-concerts-near-me/" rel="bookmark" title="Best Resource To Find Concerts Near Me">Best Resource To Find Concerts Near Me</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-07T06:16:10+01:00" >August 7, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/resource-to-find-concerts-near-me/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/things-to-consider-when-choosing-juicer/" rel="bookmark" class="td-image-wrap " title="7 Things to Consider When Choosing a Juicer &#8211; 2021 Guide" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Choosing-a-Juicer-324x160.jpg"   alt="" title="7 Things to Consider When Choosing a Juicer &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/things-to-consider-when-choosing-juicer/" rel="bookmark" title="7 Things to Consider When Choosing a Juicer &#8211; 2021 Guide">7 Things to Consider When Choosing a Juicer &#8211; 2021 Guide</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-07T01:02:57+01:00" >August 7, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/things-to-consider-when-choosing-juicer/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/wearing-linen-clothing-is-ideal-for-summer/" rel="bookmark" class="td-image-wrap " title="6 Reasons Why Wearing Linen Clothing Is Ideal for Summer" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Linen-Clothing-2-324x160.jpg"   alt="" title="6 Reasons Why Wearing Linen Clothing Is Ideal for Summer" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/wearing-linen-clothing-is-ideal-for-summer/" rel="bookmark" title="6 Reasons Why Wearing Linen Clothing Is Ideal for Summer">6 Reasons Why Wearing Linen Clothing Is Ideal for Summer</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T22:52:15+01:00" >August 6, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/wearing-linen-clothing-is-ideal-for-summer/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/top-fashion-disasters-men-should-avoid/" rel="bookmark" class="td-image-wrap " title="Top 10 Fashion Disasters Men Should Avoid" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Fashion-Disasters-Men-Should-Avoid-324x160.jpg"   alt="" title="Top 10 Fashion Disasters Men Should Avoid" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/top-fashion-disasters-men-should-avoid/" rel="bookmark" title="Top 10 Fashion Disasters Men Should Avoid">Top 10 Fashion Disasters Men Should Avoid</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T19:29:37+01:00" >August 6, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/top-fashion-disasters-men-should-avoid/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/essential-kitchen-items/" rel="bookmark" class="td-image-wrap " title="7 Essential Kitchen Items No Home Cook Should Be Without " ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Kitchen-Items-324x160.jpg"   alt="" title="7 Essential Kitchen Items No Home Cook Should Be Without " /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/essential-kitchen-items/" rel="bookmark" title="7 Essential Kitchen Items No Home Cook Should Be Without ">7 Essential Kitchen Items No Home Cook Should Be Without </a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/katarine-milan/">Katarine Milan</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T14:37:41+01:00" >August 6, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/essential-kitchen-items/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/secret-to-winning-real-money-slots/" rel="bookmark" class="td-image-wrap " title="Is There A Secret To Winning At Real Money Slots &#8211; 2021 Guide" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Winning-At-Real-Money-Slots-324x160.jpg"   alt="" title="Is There A Secret To Winning At Real Money Slots &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/secret-to-winning-real-money-slots/" rel="bookmark" title="Is There A Secret To Winning At Real Money Slots &#8211; 2021 Guide">Is There A Secret To Winning At Real Money Slots &#8211;...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T12:24:55+01:00" >August 6, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/secret-to-winning-real-money-slots/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/find-cheap-meet-and-greet-tickets/" rel="bookmark" class="td-image-wrap " title="Where To Find Cheap Meet And Greet Tickets &#8211; 2021 Guide" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Meet-And-Greet-324x160.jpg"   alt="" title="Where To Find Cheap Meet And Greet Tickets &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/find-cheap-meet-and-greet-tickets/" rel="bookmark" title="Where To Find Cheap Meet And Greet Tickets &#8211; 2021 Guide">Where To Find Cheap Meet And Greet Tickets &#8211; 2021 Guide</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/miyah-bishop/">Miyah Bishop</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T07:54:07+01:00" >August 6, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/find-cheap-meet-and-greet-tickets/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/promotional-code-valid/" rel="bookmark" class="td-image-wrap " title="How Do I Know if a Promotional Code is Valid &#8211; 2021 Guide" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Promo-Code-324x160.jpg"   alt="" title="How Do I Know if a Promotional Code is Valid &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/promotional-code-valid/" rel="bookmark" title="How Do I Know if a Promotional Code is Valid &#8211; 2021 Guide">How Do I Know if a Promotional Code is Valid &#8211;...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T14:50:40+01:00" >August 5, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/promotional-code-valid/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/football-betting-offers/" rel="bookmark" class="td-image-wrap " title="Football Betting Offers: How to Get the Most Bang for Your Buck " ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Football-Betting-Offers-324x160.jpg"   alt="" title="Football Betting Offers: How to Get the Most Bang for Your Buck " /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/football-betting-offers/" rel="bookmark" title="Football Betting Offers: How to Get the Most Bang for Your Buck ">Football Betting Offers: How to Get the Most Bang for Your...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T13:20:18+01:00" >August 5, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/football-betting-offers/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/swiss-army-phone/" rel="bookmark" class="td-image-wrap " title="Swiss Army Phone: iPhones Replacing Passports" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/iPhones-Replacing-Passports-324x160.jpg"   alt="" title="Swiss Army Phone: iPhones Replacing Passports" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/swiss-army-phone/" rel="bookmark" title="Swiss Army Phone: iPhones Replacing Passports">Swiss Army Phone: iPhones Replacing Passports</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/dmitra/">Дмитра Врачарић</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T13:04:51+01:00" >August 5, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/swiss-army-phone/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/types-of-dc-to-dc-converter/" rel="bookmark" class="td-image-wrap " title="What are the Types of DC to DC Converter &#8211; 2021 Guide" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/DC-to-DC-Converter-324x160.jpg"   alt="" title="What are the Types of DC to DC Converter &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/types-of-dc-to-dc-converter/" rel="bookmark" title="What are the Types of DC to DC Converter &#8211; 2021 Guide">What are the Types of DC to DC Converter &#8211; 2021...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/anne-kelly/">Anne Kelly</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T12:14:34+01:00" >August 5, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/types-of-dc-to-dc-converter/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://www.fotolog.com/holiday-home-rental-advice-family-of-five/" rel="bookmark" class="td-image-wrap " title="Holiday Home Rental Advice For A Family Of Five" ><img width="324" height="160" class="entry-thumb" src="https://www.fotolog.com/wp-content/uploads/2021/08/Holiday-Home-324x160.jpg"   alt="" title="Holiday Home Rental Advice For A Family Of Five" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://www.fotolog.com/holiday-home-rental-advice-family-of-five/" rel="bookmark" title="Holiday Home Rental Advice For A Family Of Five">Holiday Home Rental Advice For A Family Of Five</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://www.fotolog.com/author/done-dallas/">Done Dallas</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T11:28:28+01:00" >August 5, 2021</time></span>                <span class="td-module-comments"><a href="https://www.fotolog.com/holiday-home-rental-advice-family-of-five/#respond">0</a></span>            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid--><div class="page-nav td-pb-padding-side"><span class="current">1</span><a href="https://www.fotolog.com/page/2/" class="page" title="2">2</a><a href="https://www.fotolog.com/page/3/" class="page" title="3">3</a><span class="extend">...</span><a href="https://www.fotolog.com/page/282/" class="last" title="282">282</a><a href="https://www.fotolog.com/page/2/"  aria-label="next-page" ><i class="td-icon-menu-right"></i></a><span class="pages">Page 1 of 282</span><div class="clearfix"></div></div>                    </div>
+                </div>
+                    </div> <!-- /.td-pb-row -->
+</div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+
+<!-- Instagram -->
+
+	
+	
+            <div class="tdc-footer-wrap ">
+
+                <!-- Footer -->
+				<div class="td-footer-wrapper td-footer-container td-container-wrap ">
+    <div class="td-container">
+
+	    <div class="td-pb-row">
+		    <div class="td-pb-span12">
+                		    </div>
+	    </div>
+
+        <div class="td-pb-row">
+
+            <div class="td-pb-span4">
+                
+		<aside class="td_block_template_1 widget widget_recent_entries">
+		<h4 class="block-title"><span>Recent Posts</span></h4>
+		<ul>
+											<li>
+					<a href="https://www.fotolog.com/resource-to-find-concerts-near-me/">Best Resource To Find Concerts Near Me</a>
+									</li>
+											<li>
+					<a href="https://www.fotolog.com/things-to-consider-when-choosing-juicer/">7 Things to Consider When Choosing a Juicer &#8211; 2021 Guide</a>
+									</li>
+											<li>
+					<a href="https://www.fotolog.com/wearing-linen-clothing-is-ideal-for-summer/">6 Reasons Why Wearing Linen Clothing Is Ideal for Summer</a>
+									</li>
+											<li>
+					<a href="https://www.fotolog.com/top-fashion-disasters-men-should-avoid/">Top 10 Fashion Disasters Men Should Avoid</a>
+									</li>
+											<li>
+					<a href="https://www.fotolog.com/essential-kitchen-items/">7 Essential Kitchen Items No Home Cook Should Be Without </a>
+									</li>
+					</ul>
+
+		</aside>            </div>
+
+            <div class="td-pb-span4">
+                <div class="td_block_wrap td_block_popular_categories td_block_widget tdi_16 widget widget_categories td-pb-border-top td_block_template_1"  data-td-block-uid="tdi_16" >
+<style>
+/* custom css */
+.td_block_popular_categories{
+                  padding-bottom: 0;
+                }
+</style><div class="td-block-title-wrap"></div><ul class="td-pb-padding-side"><li><a href="https://www.fotolog.com/category/business/"><span class="td-cat-name">Business</span><span class="td-cat-no">725</span></a></li><li><a href="https://www.fotolog.com/category/technology/"><span class="td-cat-name">Technology</span><span class="td-cat-no">487</span></a></li><li><a href="https://www.fotolog.com/category/home/"><span class="td-cat-name">Home</span><span class="td-cat-no">288</span></a></li><li><a href="https://www.fotolog.com/category/health/"><span class="td-cat-name">Health</span><span class="td-cat-no">230</span></a></li><li><a href="https://www.fotolog.com/category/travel/"><span class="td-cat-name">Travel</span><span class="td-cat-no">183</span></a></li><li><a href="https://www.fotolog.com/category/net-worth/"><span class="td-cat-name">Net Worth</span><span class="td-cat-no">182</span></a></li></ul></div>            </div>
+
+            <div class="td-pb-span4">
+                <aside class="td_block_template_1 widget widget_search"><form method="get" class="td-search-form-widget" action="https://www.fotolog.com/">
+    <div role="search">
+        <input class="td-widget-search-input" type="text" value="" name="s" id="s" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="searchsubmit" value="Search" />
+    </div>
+</form></aside><aside class="td_block_template_1 widget widget_pages"><h4 class="block-title"><span>Pages</span></h4>
+			<ul>
+				<li class="page_item page-item-137"><a href="https://www.fotolog.com/contact-us/">Contact Us</a></li>
+			</ul>
+
+			</aside>            </div>
+        </div>
+    </div>
+<div class="td-footer-bottom-full">
+    <div class="td-container">
+        <div class="td-pb-row">
+            <div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://www.fotolog.com/"><img src="https://www.fotolog.com/wp-content/uploads/2019/11/fotolog.png" alt="" title=""  width="400" height="75"/></a></aside></div><div class="td-pb-span9"><aside class="footer-text-wrap"><div class="block-title"><span>ABOUT US</span></div>FotoLog.com is your favorite web Magazine 2020/2021<div class="footer-email-wrap">Contact us: <a href="/cdn-cgi/l/email-protection#345955465f5b525b405b585b53146f554069145359555d581a575b59">markofotolog [at] gmail.com</a></div></aside></div>        </div>
+    </div>
+</div>
+</div>
+                <!-- Sub Footer -->
+				    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                                    </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    &copy; FotoLog.com - 2021 Magazine                </div>
+            </div>
+        </div>
+    </div>
+            </div><!--close td-footer-wrap-->
+			
+</div><!--close td-outer-wrap-->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-152415812-1"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152415812-1');
+</script>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<script type="text/javascript">var jQueryScriptOutputted = false;function initJQuery() {if (typeof(jQuery) == "undefined") {if (!jQueryScriptOutputted) {jQueryScriptOutputted = true;document.write("<scr" + "ipt type=\"text/javascript\" src=\"https://code.jquery.com/jquery-1.8.2.min.js\"></scr" + "ipt>");}setTimeout("initJQuery()", 50);}}initJQuery();</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.addEventListener('DOMContentLoaded', function() {jQuery(document).ready(function() {
+jQuery(".175c8d441510c97f26c70743684aa6ad").click(function() {
+jQuery.post(
+"https://www.fotolog.com/wp-admin/admin-ajax.php", {
+"action": "quick_adsense_onpost_ad_click",
+"quick_adsense_onpost_ad_index": jQuery(this).attr("data-index"),
+"quick_adsense_nonce": "de2e2038d4",
+}, function(response) { }
+);
+});
+});
+});</script>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2021
+        Version: 11.2 (rara)
+        Deploy mode: deploy
+        
+        uid: 611116e6ac4fa
+    -->
+
+    <script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.fotolog.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js' defer></script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js?ver=c19aec6a20dc470dea3def4ce71e04d5' id='tdb_js_posts_autoload-js' defer></script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tagdiv_theme.min.js?ver=11.2' id='td-site-min-js' defer></script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-includes/js/comment-reply.min.js?ver=5.8' id='comment-reply-js' defer></script>
+<script type='text/javascript' src='https://www.fotolog.com/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js?ver=c19aec6a20dc470dea3def4ce71e04d5' id='tdb_js_files_for_front-js' defer></script>
+
+<!-- JS generated by theme -->
+
+<script type="rocketlazyloadscript">
+    
+</script>
+
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.fotolog.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+<script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" /><link rel="stylesheet" href="https://www.fotolog.com/wp-content/cache/min/1/ada8c25618eded8efdcf81cd022a3b50.css" media="all" data-minify="1" /></noscript></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1628509926 -->

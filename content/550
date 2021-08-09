@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TorrentPrivacy</title>
+    <!--[if IE]><script src="/js/v2/main_10/html5.js?ver=1.1.18"></script><![endif]-->
+
+    <!-- favicon -->
+    <link href="favicon.ico" rel="shortcut icon">
+
+    <!-- main style -->
+    <link href="/css/v2/main_10/widgets.css?ver=1.1.18" rel="stylesheet" media="screen">
+    <link href="/css/v2/main_10/all.css?ver=1.1.18" rel="stylesheet" media="screen">
+
+    <!-- style for IE -->
+    <!--[if gte IE 9]><link rel="stylesheet" href="/css/v2/main_10/ie9.css?ver=1.1.18" media="screen, projection"><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/v2/main_10/ie7.css?ver=1.1.18" media="screen, projection"><![endif]-->
+
+    <!-- jquery library -->
+    <script src="/js/v2/main_10/jquery-1.8.2.min.js?ver=1.1.18"></script>
+    <!-- widgets -->
+    <script src="/js/v2/main_10/widgets.js?ver=1.1.18"></script>
+    <!-- main functions -->
+    <script src="/js/v2/main_10/functions.js?ver=1.1.18"></script>
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+<!-- header -->
+<header class="header">
+    <div id="top-sidebar">
+        <div class="max-wrap">
+            <div class="title">Do you like downloading lots of free stuff?</div>
+            <div class="video">
+                <iframe width="444" height="250" src="//www.youtube.com/embed/wOdx8MenKAk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                <p>Sign up now! Tomorrow it could be too late! <span class="top-sidebar-arrow"><img src="/img/top-sidebar-arrow.png"></span></p>
+            </div>
+        </div>
+        <div class="close"></div>
+    </div>
+    <div class="max-wrap">
+        <div class="header-holder">
+            <!-- logo -->
+            <strong class="logo"><a href="/">logo</a></strong>
+
+            <!-- user links -->
+            <ul class="user-links">
+                <li><a href="/index.php?mod=v2_login" class="btn-login">Login</a></li>
+                <li><a href="/index.php?mod=v2_reg" class="btn-register">Registration</a></li>
+            </ul>
+            <!-- user links end -->
+
+            <!-- main navigation -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="active"><a href="#hello">HELLO</a></li>
+                    <li><a href="#use">use</a></li>
+                    <li><a href="#about">servers</a></li>
+                    <li><a href="#moreover">moreover</a></li>
+                </ul>
+            </nav>
+            <!-- main navigation end -->
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- main -->
+<div class="main">
+<!-- intro -->
+<section class=" intro" id="hello">
+    <div class="max-wrap">
+        <div class="intro-heading">
+            <h1>Hide your online activity</h1>
+        </div>
+        <!-- activity -->
+        <div class="activity">
+            <ul class="activity-list">
+                <li class="activity-torrents">
+                    <div class="plus"><span>+</span>
+                        <div class="activity-holder">
+                            <h3>Download Torrents Anonymously</h3>
+                            <p>TorrentPrivacy guarantees your privacy as you surf the web, download torrents, and all other online tasks.  You no longer have to worry about anyone monitoring your connection!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activity-invisible">
+                    <div class="plus"><span>+</span>
+                        <div class="activity-holder">
+                            <h3>Make Your Identity Invisible</h3>
+                            <p>Hide your online identity with one-click traffic encryption.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="activity-blocked">
+                    <div class="plus"><span>+</span>
+                        <div class="activity-holder">
+                            <h3>Access Blocked Websites</h3>
+                            <p>Get access to any website blocked by your ISP.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <img class="image" src="/img/main_10/pic/activity/img-01.jpg" alt="image description" />
+            <div class="bottom">
+                <a class="btn-register btn-large" href="/index.php?mod=v2_reg">Registration</a>
+            </div>
+        </div>
+        <!-- activity end -->
+    </div>
+</section>
+<!-- intro end -->
+
+<!-- serving -->
+<section class="serving">
+    <div class="max-wrap">
+        <div class="serving-heading">
+            <span class="icon-protection"></span>
+            <h2>TorrentPrivacy — is an application able to download torrents anonymously and hide your personal data</h2>
+        </div>
+        <!-- serving holder -->
+        <div class="serving-holder" id="use">
+            <h2>How It Works?</h2>
+            <div class="serving-description">
+                <p>TorrentPrivacy creates a tunnel between your computer and a remote server, which is responsible for pushing your data out to the internet. Your data is also encrypted which means that no one else can read it. None of your data is held by our servers, however. It's that simple! Once you start the program, you can browse with full confidence that none of your activities are being monitored or recorded. Just relax and leave the grunt work up to us.</p>
+            </div>
+            <!-- serving scheme -->
+            <div class="serving-scheme">
+                <!-- serving scheme heading -->
+                <div class="scheme-heading">
+                    <h3>Anonymous BitTorrent Proxy</h3>
+                    <!-- scheme controls -->
+                    <div class="scheme-controls">
+                        <div class="scheme-tumbler">
+                            <div class="bg-wrap">
+                                <i class="icon-off holder-off"></i>
+                            </div>
+                            <a href="" class="tumbler">
+                                <span class="bg-tumbler icon-circle-off"></span>
+                                <span class="bg-tumbler icon-circle-on"></span>
+                            </a>
+                            <div class="bg-wrap">
+                                <i class="icon-on holder-on"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- scheme controls -->
+                </div>
+                <!-- serving scheme heading end -->
+
+                <!-- serving scheme view -->
+                <div class="scheme-view">
+                    <!-- scheme area -->
+                    <div class="scheme-area scheme-area-off">
+                        <img src="/img/main_10/pic/anonimus/img-01.png"  alt="image description">
+                        <div class="position-text">
+                            <span class="position-text-remove">&nbsp;</span>
+                            <strong class="position-text-attention">Attention! It is not safe</strong>
+                            <strong class="position-text-download">Download content</strong>
+                            <strong class="position-text-ip">You IP 62.31.28.214</strong>
+                            <strong class="position-text-you">You</strong>
+                        </div>
+                        <div class="bottom-text">
+                            <p>The above number is your unique internet address; it can be used to trace all of your online activity back to you. With TorrentPrivacy, however, this address is invisible.</p>
+                        </div>
+                    </div>
+                    <!-- scheme area -->
+                    <div class="scheme-area scheme-area-on">
+                        <img src="/img/main_10/pic/anonimus/img-02.png"  alt="image description">
+                        <div class="position-text">
+                            <span class="position-text-remove">In addition, our servers do not store logs of your online activity.</span>
+                            <strong class="position-text-name">TorrentPrivacy</strong>
+                            <strong class="position-text-download">Download content</strong>
+                            <strong class="position-text-ip">You IP is hidden</strong>
+                            <strong class="position-text-you">100% Anonymity</strong>
+                        </div>
+                        <div class="bottom-text">
+                            <p>Our remote servers are located in different countries around the world, which means that your connection can appear to be coming from anywhere!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- serving scheme view -->
+            </div>
+            <!-- serving scheme end -->
+        </div>
+        <!-- serving holder end -->
+    </div>
+</section>
+<!-- serving end -->
+
+<!-- service -->
+
+<!-- about-servers -->
+<section class="about-servers" id="about">
+    <div class="max-wrap">
+        <div class="heading">
+            <h2>Info about our servers</h2>
+            <div class="about-servers-description">
+                <p>TorrentPrivacy is a must for all situations in which you wish to hide your online identity or insure that your activities can't be monitored. Versions of the program are available for both the Windows and Macintosh operating systems.</p>
+            </div>
+        </div>
+
+        <h3>Server load indicator</h3>
+        <!-- servers-list -->
+        <div class="servers-block">
+            <ul class="servers-list">
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-01.png" alt="image description" />
+                    </figure>
+                    <span class="country">NLD-1</span>
+                    <strong>300 Mbit</strong>
+                    <strong><span class="load-percent">20%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-01.png" alt="image description" />
+                    </figure>
+                    <span class="country">NLD-2</span>
+                    <strong>300 Mbit</strong>
+                    <strong><span class="load-percent">53%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-01.png" alt="image description" />
+                    </figure>
+                    <span class="country">NLD-3</span>
+                    <strong>150 Mbit</strong>
+                    <strong><span class="load-percent">45%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-01.png" alt="image description" />
+                    </figure>
+                    <span class="country">NLD-4</span>
+                    <strong>150 Mbit</strong>
+                    <strong><span class="load-percent">18%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-02.png" alt="image description" />
+                    </figure>
+                    <span class="country">USA-1</span>
+                    <strong>300 Mbit</strong>
+                    <strong><span class="load-percent">31%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-02.png" alt="image description" />
+                    </figure>
+                    <span class="country">USA-2</span>
+                    <strong>300 Mbit</strong>
+                    <strong><span class="load-percent">7%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-02.png" alt="image description" />
+                    </figure>
+                    <span class="country">USA-3</span>
+                    <strong>150 Mbit</strong>
+                    <strong><span class="load-percent">100%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+                <li>
+                    <figure>
+                        <img src="/img/main_10/pic/flags/img-03.png" alt="image description" />
+                    </figure>
+                    <span class="country">SWE-3</span>
+                    <strong>300 Mbit</strong>
+                    <strong><span class="load-percent">60%</span> load</strong>
+                    <span class="status"></span>
+                </li>
+            </ul>
+        </div>
+        <!-- servers-list end -->
+        <!-- servers-bottom -->
+        <div class="servers-bottom">
+            <h2>Serving customers since <span class="icon-like"></span> 2007</h2>
+        </div>
+        <!-- servers-bottom end -->
+    </div>
+</section>
+<!-- about-servers end -->
+
+<!-- services -->
+<section class="services" id="moreover">
+    <div class="max-wrap">
+        <h2>Moreover</h2>
+        <!-- services-list -->
+        <ul class="services-list">
+            <li>
+                <figure>
+                    <img src="/img/main_10/pic/services/ico-01.png" alt="image">
+                </figure>
+                <h3><span class="services-title">Satisfaction Guaranteed!</span></h3>
+                <div class="text">
+                    <p>If you dislike our service we will not only return your money back but also buy the same subscription on any other BitTorrent Proxy service your’ll choose.</p>
+                </div>
+            </li>
+            <li class="years">
+                <figure>
+                    <img src="/img/main_10/pic/services/ico-02.png" alt="image">
+                </figure>
+                <h3><span class="services-title">7 years of experience</span></h3>
+                <div class="text">
+                    <p>We were one of the first services of this kind on the market. We have over seven years of experience in providing professional, high quality service to our customers.</p>
+                </div>
+            </li>
+            <li class="downloads">
+                <figure>
+                    <img src="/img/main_10/pic/services/ico-03.png" alt="image">
+                </figure>
+                <h3><span class="services-title">1,000,000 downloads</span></h3>
+                <div class="text">
+                    <p>Since our launch, over one million people have used the TorrentPrivacy service.</p>
+                </div>
+            </li>
+        </ul>
+        <!-- services-list end -->
+    </div>
+</section>
+<!-- services end -->
+
+<!-- registration-block -->
+<section class="registration-block">
+    <div class="max-wrap">
+        <a href="/index.php?mod=v2_reg" class="btn-register btn-large">Registration</a>
+        <h3>Register and learn more about our product.<br> <b>It is not necessary to pay first.</b></h3>
+    </div>
+</section>
+<!-- registration-block end -->
+</div>
+<!-- main end -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="max-wrap">
+        <div class="footer-holder">
+            <span class="copyright">&copy; 2014 TorrentPrivacy.com</span>
+            <!-- footer nav -->
+            <ul class="footer-nav">
+                <li>
+                    <strong>Help center</strong>
+                    <ul>
+                        <li><a href="/index.php?mod=v2_support">Customer Support</a></li>
+                        <li><a href="/index.php?mod=v2_terms">Terms&Conditions</a></li>
+                        <!--<li><a href="/index.php?mod=v2_contacts">Contacts</a></li>-->
+                    </ul>
+                </li>
+                <li class="logos">
+                    <strong>Approved by</strong>
+                    <ul>
+                        <li class="torrentfreak"> <a target="_blank" href="http://torrentfreak.com/vpn-services-that-take-your-anonymity-seriously-2013-edition-130302/">TorrentFreak</a></li>
+                        <!--<li class="torrentreactor"> <a target="_blank" href="http://www.torrentreactor.net/torrent-privacy">TorrentReactor</a></li>-->
+                    </ul>
+                </li>
+            </ul>
+            <!-- footer nav end -->
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+<script type="text/javascript" src="/js/v2/analytics.min.js?ver=1.1.18"></script>
+<script src="/js/v2/jquery.cookie.min.js?ver=1.1.18"></script>
+<script type="text/javascript"><!--
+    document.write(unescape("%3Cscript id='pap_x2s6df8d' src='" + (("https:" == document.location.protocol) ? "https://" : "http://") +
+            "torrentprivacy.postaffiliatepro.com/scripts/trackjs.js' type='text/javascript'%3E%3C/script%3E"));//-->
+</script>
+
+<script type="text/javascript"><!--
+    PostAffTracker.setAccountId('default1');
+    try {
+        PostAffTracker.track();
+    } catch (err) { }
+    //-->
+</script>
+
+    <div class="social-button-share">
+        <div class="item facebook"><img src="/img/facebook.png" title="Facebook" alt="Facebook"/></div>
+        <div class="item twitter"><img src="/img/twitter.png" title="Twitter" alt="Twitter"/></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('.social-button-share').animate({left:"0px"},500);
+            }, 1000)
+            $('.social-button-share .item').hover(function() {
+                $(this).animate({width:"65px"},100);
+            }, function() {
+                $(this).animate({width:"48px"},100);
+            });
+            $('.social-button-share .facebook').click(function(){
+                open("http://www.facebook.com/sharer.php?u=http://torrentprivacy.com","displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
+            });
+            $('.social-button-share .twitter').click(function(){
+                open("https://twitter.com/share?via=torrentprivacy&url=torrentprivacy.com&text=Setting TorrentPrivacy is fast and easy way to secure your traffic.", "displayWindow","width=520,height=300,left=350,top=170,status=no,toolbar=no,menubar=no");
+            });
+        });
+    </script>
+</body>
+</html>

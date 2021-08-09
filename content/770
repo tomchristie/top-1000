@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="KshfurN9GQUJMsWTzoSw5f7Srub3SCijJeJVnL8t">
+
+<title>Fast, Free Image Hosting - ImageBam</title>
+<meta name='description' content='Image Hosting, Image Upload, Picture Hosting'>
+
+<meta name='keywords' content='hosting, webhosting, dedicated servers, image hosting'>
+<link rel="shortcut icon" href="https://www.imagebam.com/favicon.ico" type="image/x-icon">
+<script src="https://www.imagebam.com/js/site_ads.js"></script>
+
+<!-- Styles -->
+<link href="https://www.imagebam.com/css/app.css?1" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+            <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(
+                ['_setAccount', 'UA-2424497-2'],
+                ['_trackPageview']
+            );
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <script src="https://www.imagebam.com/vendor/jquery/jquery.min.js"></script>
+    <script src="https://www.imagebam.com/js/bootstrap.min.js"></script>
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+</head>
+<body>
+
+
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white awn-ignore fixed-top ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.imagebam.com">
+            <img src="https://www.imagebam.com/images/imagebam.png"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="navbar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.imagebam.com">Image Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://sendvid.com/?src=ib_nav" target="_blank">Video Upload</a>
+                </li>
+                
+                                    <li class="nav-item logged-out">
+                        <a class="nav-link" href="https://www.imagebam.com/auth/login">Log in</a>
+                    </li>
+                    <li class="nav-item logged-out">
+                        <a class="nav-link" href="https://www.imagebam.com/auth/register">Sign up</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</nav>
+        <main class="py-5">
+                <div class="container">
+                <div class="main-content dropzone uploader"
+         data-uploader=""
+             data-session-endpoint="https://www.imagebam.com/upload/session"
+             data-upload-endpoint="https://www.imagebam.com/upload"
+             data-complete-endpoint="https://www.imagebam.com/upload/complete"
+        >
+            <script type="text/html" data-preview-template>
+                <div class="dz-preview preview-image">
+                    <div class="image-thumbnail-wrapper">
+                        <img class="image-thumbnail thumbnail" data-dz-thumbnail/>
+                        <img src="https://www.imagebam.com/images/loader.gif" class="image-thumbnail"/>
+                    </div>
+                    <div class="dz-meta">
+                        <a href="javascript:void(0);" class="float-right pl-3 text-dark" data-uploader-remove-item>
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <div class="dz-filename" data-dz-name></div>
+                        <div class="dz-size" data-dz-size></div>
+                        <div class="status">
+                            <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                            <div class="dz-success-mark"><span>✔</span></div>
+                            <div class="dz-error-mark"><span>✘</span></div>
+                            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+            <span data-uploader-error="" style="display: none">Error</span>
+            <span data-uploader-success="" style="display: none">Uploaded</span>
+            <div data-uploader-preview class="uploader-preview"></div>
+            <div class="uploader-zone" data-uploader-drop-area>
+                <div class="prompt dz-message">
+                    <h1>Add files</h1>
+                    <h2 class="d-none d-lg-block">Simply drag and drop or click to select</h2>
+                    <h2 class="d-lg-none d-xs-block">Tap to add file(s)</h2>
+                </div>
+                <div class="more-files-prompt">
+                    <h1>
+                        <span class="icon-wrapper">
+                            <i class="fas icon fa-download"></i>
+                        </span>
+                        Add More Files
+                    </h1>
+                </div>
+            </div>
+            <div class="options container" data-uploader-options>
+                <div class="row">
+                    <div class="column col-md-3 col-lm-6 col-ms-12">
+                        <header class="mt-0">Select Type: (Required)</header>
+                        <div>
+                            <label class="radio">
+                                <input data-uploader-content-type="" name="content-type" type="radio" value="nsfw">
+                                <span class="checkmark"></span>
+                                Adult Content
+                            </label>
+                        </div>
+                        <div>
+                            <label class="radio family-safe-content">
+                                <input data-uploader-content-type="" name="content-type" type="radio" value="sfw">
+                                <span class="checkmark"></span>
+                                Family Safe Content
+                            </label>
+                        </div>
+                    </div>
+                    <div class="column col-md-5 col-lm-6 col-ms-12">
+                        <header>Thumbnail Options:</header>
+                        <div class="select-wrapper">
+                            <select class="form-control" id="thumbnail-size" data-uploader-thumbnail-option="" name="thumbnail-size"><option value="1">100x100 (small)</option><option value="2" selected="selected">180x180 (standard)</option><option value="3">250x250 (large)</option><option value="4">300x300 (extra large)</option></select>
+                        </div>
+                        <div>
+                            <small class="form-text text-muted m-0">The thumbnail size that you would like to be generated</small>
+                        </div>
+                    </div>
+                    <div class="column col-md-3 offset-md-1 col-lm-12">
+                        <header>Gallery Option</header>
+                        <div>
+                            <label class="checkbox" for="gallery">
+                                <input id="gallery" data-uploader-gallery-option="" name="gallery" type="checkbox" value="1">
+                                <span class="checkmark"></span>
+                                Put to the gallery
+                            </label>
+                        </div>
+                        <div class="form-group pt-0">
+                            <input class="form-control" placeholder="Gallery title" id="gallery-title" data-uploader-gallery-option-value-create="" style="display: none" name="gallery-title" type="text" value="">
+                                                    </div>
+                    </div>
+                    <div class="column col-lg-12">
+                        <div class="button">
+                            <button type="button" class="btn btn-primary"
+                                    data-uploader-start="">Upload Now!
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="row benefits pt-5">
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/free.png" alt="Free" class="my-4">
+        <h3 class="card-title">Free</h3>
+        <p class="card-text">Yes, really. 100% Free. Thanks to the amazing IMAGEBAM community!</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/hourglass.png" alt="Forever" class="my-4">
+        <h3 class="card-title">Forever</h3>
+        <p class="card-text">Files are hosted on multiple servers using a CDN to keep them online always</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/flash.png" alt="Fast" class="my-4">
+        <h3 class="card-title">Fast</h3>
+        <p class="card-text">Rapid upload and download speed everywhere in the world</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/locked.png" alt="Secure" class="my-4">
+        <h3 class="card-title">Secure</h3>
+        <p class="card-text">Files are protected by major hosting facilities in multiple countries</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/shield.png" alt="Privacy" class="my-4">
+        <h3 class="card-title">Privacy</h3>
+        <p class="card-text">IMAGEBAM does not collect any of your personal data or share it with anyone</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/lego-cube-or-square.png" alt="Easy" class="my-4">
+        <h3 class="card-title">Easy</h3>
+        <p class="card-text">Anyone can use IMAGEBAM. If you can send an email, you can IMAGEBAM a file</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/world-wide-web.png" alt="Global" class="my-4">
+        <h3 class="card-title">Global</h3>
+        <p class="card-text">Your images and other files can be accesses anytime from anywhere!</p>
+    </div>
+</div>
+ 
+         <div class="col-md-3 col-ms-6 col-12 d-flex benefits-inner">
+    <div class="card text-center card-body flex-fill py-4">
+        <img src="https://www.imagebam.com/images/plus.png" alt="Register" class="my-4">
+        <h3 class="card-title">Register</h3>
+        <p class="card-text">Get member access for FREE. It costs zero and gives you even more features!</p>
+    </div>
+</div>
+ 
+    </div>
+</div>
+
+        </main>
+        <footer class="text-center">
+    <div class="footer-top m-auto text-left">
+        <p class="welcome-text">
+            IMAGEBAM is a free service with more than 10 years of history, empowering people to upload, share and
+            enjoy images online. Hosting millions of files requires massive resources and it simply became too big
+            for our previous hosting platform to handle.
+        </p>
+        <p class="welcome-text">
+            We are pleased to announce we have partnered with a new team that have extensive experience in
+            large-scale hosting, our new gen hardware enables us to continue to provide the high standard of
+            service that you are used to, while preparing us for many billions of files into the future.
+        </p>
+    </div>
+    <div class="footer-links">
+        <a href="https://www.imagebam.com/support" class="text-decoration-none">Help</a> &verbar;
+        <a href="https://www.imagebam.com/report-abuse" class="text-decoration-none">Report Abuse</a> &verbar;
+        <a href="https://www.imagebam.com/tou" class="text-decoration-none">Terms & Privacy</a>
+    </div>
+    <div class="footer-copyright">
+        &copy; Copyright 2021 - All rights reserved
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/imagebamhq" title="Facebook" class="facebook">
+            <i class="fab icon fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/imagebam" title="Twitter" class="twitter">
+            <i class="fab icon fa-twitter"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Modals -->
+<div class="modal fade" id="modal-share" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Share</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center my-5" data-spinner>
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center my-5 hidden" data-error>
+                    <div class="alert alert-danger">Error loading share data. Please reload page and try again.</div>
+                </div>
+                <div class="d-flex justify-content-center my-5 hidden" data-empty-selection-warning>
+                    <div class="alert alert-warning">Please select at least one image.</div>
+                </div>
+                <div class="links hidden" data-values>
+                    <div class="link-inner">
+                        <label class="direct m-0" for="direct">Media URL</label>
+                        <div class="copy-input"><input type="text" name="direct" readonly value=""><button class="copy">Copy</button></div>
+                    </div>
+                    <div class="link-inner">
+                        <label for="bb-code">BB-Code</label>
+                        <div class="copy-input"><input type="text" name="bb-code" readonly value=""><button class="copy">Copy</button></div>
+                    </div>
+                    <div class="link-inner">
+                        <label for="html-code">HTML-Code</label>
+                        <div class="copy-input"><input type="text" name="html-code" readonly value=""><button class="copy">Copy</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade media-manager-modal" id="modal-show-remove-links" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Remove image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="links m-0">
+                    <div class="link-inner">
+                        <label class="direct" for="direct">Removal link</label>
+                        <div class="copy-input">
+                            <input type="text" id="delete-link" readonly value="">
+                            <button class="copy">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="https://www.imagebam.com/js/app.js?v=7"></script>
+
+    
+
+</body>
+</html>

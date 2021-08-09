@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="蓝港,蓝港互动,蓝港影业,linekong,游戏平台,游戏公司,手游公司,手机游戏公司,游戏,游戏中心,游戏平台,手游,手机游戏,手机网游,手游,网游,闹闹天宫,身为一个胖子,我与你的光年距离,光年距离,来到你的世界,花好月又圆,原来你是这样的顾先生,蜀山战纪,蜀山战纪之剑侠传奇,王者战魂,王者之剑,十万个冷笑话,芈月传,王者之剑,苍穹之剑,神之刃,黎明之光,三国演义,西游记,佣兵天下,倚天剑与屠龙刀,蓝港游戏中心,蓝港发行,蓝港研发,蓝港帐号,蓝港客服,蓝港商务,蓝港合作,蓝港招聘">
+    <meta name="description" content="蓝港互动集团旗下，拥有蓝港游戏、蓝港影视两大核心文化娱乐品牌。蓝港互动将以高品质的内容传播文化力量，推动产业发展。">
+    <meta name="author" content="author">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--remove weixin's cache -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>蓝港互动—创造有趣和精彩</title>
+
+    <!--publlic-->
+    <!--[if lt IE 8]>
+    <script src="http://common.8864.com/web/js/browser-tips.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://common.8864.com/web/js/css3-mediaqueries.js"></script>
+    <script src="http://common.8864.com/web/js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!--plugin-->
+    <link href="http://common.8864.com/web/plugins/swiper2/idangerous.swiper.css" rel="stylesheet">
+
+    <!--private-->
+    <link href="./public/public.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="pc">
+    <div class="header-con">
+        <a class="linekong-logo" href="/"><img src="./public/img/logo.png"></a>
+        <div class="lang">
+            <a class="btn">
+                <!--简-->
+                简
+            </a>
+            <div class="con">
+                <a data-type="hans" class="lang-switch">简</a>
+                <a data-type="hant" class="lang-switch">繁</a>
+                <a data-type="eng" class="lang-switch">英</a>
+                <a target="_blank" href="http://linekongkorea.co.kr/?ckattempt=1">韩</a>
+            </div>
+        </div>
+        <!--<a class="login">登陆</a>-->
+        <!--<a target="_blank" href="javascript:alert(&#39;精彩内容暂未开启，敬请期待&#39;)" class="store"><span>商城</span></a>-->
+        <ul class="nav">
+            <li class="active"><a target="_blank" class="nav-btn" href="http://www.linekong.com/">首页
+                    <span class="line"></span></a>
+            </li>
+            <li>
+                <a class="nav-btn">新闻中心<span class="line"></span></a>
+                <div class="nav-dropdown">
+                    <a target="_blank" href="http://www.linekong.com/linekongnews">蓝港动态</a>
+                    <a target="_blank" href="http://www.linekong.com/medianews">蓝港新媒体</a>
+                </div>
+            </li>
+            <li class="game">
+            	<a target="_blank" class="nav-btn" href="http://www.linekong.com/games">游戏产品<span class="line"></span></a>
+                <div class="nav-dropdown">
+                    <a target="_blank" href="http://www.linekong.com/games?type=mobile">手机游戏</a>
+                    <a target="_blank" href="http://www.linekong.com/games?type=pc">网页游戏</a>
+                    <a target="_blank" href="http://www.linekong.com/games?type=client">客户端游戏</a>
+                    <!--<a target="_blank" href="http://www.8864.com/">游戏社区</a>-->
+                    <!--<a target="_blank" href="http://www.linekongkorea.co.kr">韩国分部</a>-->
+                </div>
+            </li>
+            <li class="about">
+            	<a target="_blank" class="nav-btn" href="http://www.linekong.com/about">关于蓝港<span class="line"></span></a>
+            	<div class="nav-dropdown">
+                    <a target="_blank" href="http://www.linekong.com/about?type=introduce">公司介绍</a>
+                    <a target="_blank" href="http://www.linekong.com/about?type=culture">企业文化</a>
+                    <a target="_blank" href="http://www.linekong.com/about?type=event">蓝港大事记</a>
+                    <a target="_blank" href="http://www.linekong.com/about?type=credit">所有荣誉</a>
+                    <a target="_blank" href="http://www.linekong.com/about?type=orca">ORCA</a>
+                </div>
+            </li>
+            <li class="production">
+                <a class="nav-btn">蓝港产品<span class="line"></span></a>
+                <div class="nav-dropdown">
+                    <a target="_blank" href="http://www.linekong.com/games">游戏产品</a>
+                    <a href="javascript:alert(&#39;蓝港影业精彩内容即将呈现，敬请期待！&#39;)">蓝港影业</a>
+                    <a target="_blank" href="http://www.xiaoqing.store">蓝港科技</a>
+                    <!--<a target="_blank" href="javascript:alert(&#39;更多精彩内容，敬请期待！&#39;)">蓝港网络</a>-->
+                </div>
+            </li>            
+            <!--<li class="film"><a class="nav-btn" href="javascript:alert(&#39;蓝港影业精彩内容即将呈现，敬请期待！&#39;)">蓝港影业<span
+                            class="line"></span></a></li>-->
+            <!-- <li class="tech"><a target="_blank" class="nav-btn" href="http://www.xiaoqing.store">蓝港科技<span
+                            class="line"></span></a> -->
+            <li class="investor">
+            	<a target="_blank" class="nav-btn" href="http://www.linekong.com/investor">投资者关系<span class="line"></span></a>
+                <div class="nav-dropdown">
+                	<a target="_blank" href="http://www.linekong.com/investor">公司治理</a>
+                    <a target="_blank" href="http://www.linekong.com/information">信息披露</a>
+                    <a target="_blank" href="http://www.linekong.com/network">投资者日志</a>
+                    <a target="_blank" href="http://www.linekong.com/aboutUs">联系我们</a>
+            	</div>
+            </li>
+            <!--蓝港网络注释隐藏<li class="net"><a target="_blank" class="nav-btn" href="javascript:alert(&#39;更多精彩内容，敬请期待！&#39;)">蓝港网络<span
+                            class="line"></span></a></li>-->
+            <li><a target="_blank" class="nav-btn" href="http://www.linekong.com/business">商务合作<span
+                            class="line"></span></a></li>
+            <!--<li><a target="_blank" class="nav-btn" href="http://www.linekong.com/apologize">十冷致歉声明<span
+                            class="line"></span></a></li>-->
+            <li class="join-us">
+                <a class="nav-btn" target="_blank" href="http://join.linekong.com/">加入我们<span class="line"></span></a>
+                <div class="nav-dropdown">
+                    <a target="_blank" href="http://jobs.linekong.com/">社会招聘</a>
+                    <a target="_blank" href="http://campus.51job.com/lghd2019/index.html">校园招聘</a>
+                    <a target="_blank" href="http://hr.linekong.com/str">认识蓝港</a>
+                    <a target="_blank" href="http://www.linekong.com/lxwm">联系我们</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<header class="mobile">
+    <div class="header-btn">
+        <a class="pop-btn"><img src="./public/img/svg/nav-pop.svg"></a>
+        <a class="linekong-logo"><img src="./public/img/svg/logo-mobile.svg"></a>
+        <!--<a class="login"><img src="./public/img/svg/longin.svg"></a>-->
+    </div>
+    <div class="header-pop">
+        <div class="pop-top">
+            <a class="close" id="closeHeaderPop"><img src="./public/img/svg/close.svg"></a>
+            <div class="lang">
+                
+                <a data-type="hant" class="lang-switch">繁</a>
+                
+                <a target="_blank" href="http://linekongkorea.co.kr/?ckattempt=1">韩</a>
+            </div>
+        </div>
+        <div class="pop-down">
+            <div class="pop-down-con">
+                <a target="_blank" href="http://www.linekong.com/"><span><img
+                                src="./public/img/svg/black/home.svg"></span><em>首页</em></a>
+                <a target="_blank" href="http://www.linekong.com/games"><span><img
+                                src="./public/img/svg/black/game.svg"></span><em>游戏产品</em></a>
+                <a href="javascript:alert(&#39;蓝港影业精彩内容即将呈现，敬请期待！&#39;)"><span><img
+                                src="./public/img/svg/black/film.svg"></span><em>蓝港影业</em></a>
+                <!-- <a target="_blank" href="http://www.xiaoqing.store"><span><img
+                                src="./public/img/svg/black/tech.svg"></span><em>蓝港科技</em></a> -->
+                <!--蓝港网络注释隐藏<a target="_blank" href="javascript:alert(&#39;更多精彩内容，敬请期待！&#39;)"><span><img
+                                src="./public/img/svg/black/net.svg"></span><em>蓝港网络</em></a>-->
+                <a target="_blank" href="http://www.linekong.com/investor"><span><img
+                                src="./public/img/svg/black/investor.svg"></span><em>投资者关系</em></a>
+                <a target="_blank" href="http://www.linekong.com/linekongnews"><span><img
+                                src="./public/img/svg/black/news.svg"></span><em>新闻中心</em></a>
+                <a target="_blank" href="http://bbs.8864.com/kgame-index.html"><span><img
+                                src="./public/img/svg/black/gift.svg"></span><em>礼包</em></a>
+                <a target="_blank" href="http://bbs.8864.com/"><span><img
+                                src="./public/img/svg/black/forum.svg"></span><em>论坛</em></a>
+                <a target="_blank" href="http://bbs.8864.com/forum.php?mod=forumdisplay&amp;fid=111"><span><img
+                                src="./public/img/svg/black/service.svg"></span><em>客服</em></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<link href="./pages/index/index.css" rel="stylesheet">
+
+
+<!--banner-->
+<div class="swiper-container banner">
+    <div class="loading" id="bannerLoad">
+        <div class="loader">Loading...</div>
+    </div>
+    <div class="swiper-wrapper" id="bannerSwiperWrapper">
+        <div class="swiper-slide swiper-no-swiping">
+           <!--  <a target="_blank" href="" class="banner-img" data-little="http://img.linekong.com/lk/2018/08/23/n111000004283595.jpg" data-middle="http://img.linekong.com/lk/2018/08/23/n111000004283636.jpg" data-large="http://img.linekong.com/lk/2018/08/23/n111000004283495.jpg"></a>
+            <p class="videoP"><i class="videoBtn" data-src="http://tdl01.8864.com/lkhd/linekong20180906.mp4"></i></p> -->
+            <!-- <div class="videoplay-wrap" id="videoplayWrap">
+                <video src="" controls="controls" autoplay="autoplay">您的浏览器不支持该视频</video>
+                <a class="videoplay-close" id="videoplayClose"><img src="./pages/index/img/videoplay-close.png" /></a>
+            </div> -->
+            <div class="videoplay-mask" id="videoplayMask"></div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <a class="prev" id="bannerPrev"><span><img src="./pages/index/img/prev.png"/></span></a>
+    <a class="next" id="bannerNext"><span><img src="./pages/index/img/next.png"/></span></a>
+</div>
+
+<!--category-->
+<ul class="category clearfix">
+    
+    <li data-src="http://www.linekong.com/games" class="">
+        <img src="pages/index/img/category0.jpg">
+        <a>蓝港游戏</a>
+        <p>精研，细发<br/>让有趣的游戏，更有趣</p>
+    </li>
+    
+    <li data-src="http://pictures.linekong.com/" class="double">
+        <img src="pages/index/img/category1.jpg">
+        <a>蓝港影业</a>
+        <p>跨越次元壁<br/>打造泛娱乐新生态</p>
+    </li>
+    
+    <li data-src="http://v.qq.com/detail/6/6vi3lz2j9luiryj.html?ptag=baidu.aladdin.tv.pay" class="">
+        <img src="pages/index/img/category2.jpg">
+        <a></a>
+        <p></p>
+    </li>
+    
+</ul>
+
+<!--hot-->
+<div class="hot-recommend">
+    <h3 class="hot-title">热门推荐</h3>
+    <a class="change">换一批</a>
+    <div class="hot-con-wrap">
+        <div class="hot-con"></div>
+        <div class="loading" id="hotLoad">
+            <div class="loader">Loading...</div>
+        </div>
+    </div>
+</div>
+<div class="hot-mobile-out">
+    <h3 class="mobile-title">热门推荐</h3>
+    <div class="hot-mobile-wrap"></div>
+</div>
+
+<!--production-wrap-->
+<div class="production-pc">
+    <div class="pro-con">
+        <h3 class="pro-title">蓝港产品</h3>
+        <ul class="pro-btn">
+            <li>
+                <img src="./public/img/game.png"/>
+                <h3>蓝港游戏</h3>
+                <span></span>
+            </li>
+            <li>
+                <img src="./public/img/film.png"/>
+                <h3>蓝港影业</h3>
+                <span></span>
+            </li>
+        </ul>
+        <div class="pro-detail">
+            <div class="pro-detailin"><div class="pro-item clearfix"><dl><dt>动作手游</dt><dd><a target="_blank" href="https://naonao.qq.com/">闹闹天宫
+
+<span class="ishot"></span>
+
+</a></dd><dd><a target="_blank" href="http://lmzg.8864.com/">黎明之光
+
+
+
+</a></dd><dd><a target="_blank" href="http://y.8864.com/">英雄之剑
+
+
+
+</a></dd><dd><a target="_blank" href="http://k.8864.com/">王者战魂
+
+
+
+</a></dd></dl><dl><dt>角色扮演</dt><dd><a target="_blank" href="http://s.8864.com/">蜀山战纪之剑侠传奇
+
+
+
+</a></dd><dd><a target="_blank" href="http://xx.8864.com/">苍穹之剑
+
+
+
+</a></dd></dl><dl><dt>卡牌手游</dt><dd><a target="_blank" href="http://sw.8864.com/">《十万个冷笑话》番剧版
+
+
+
+</a></dd><dd><a target="_blank" href="http://szr.8864.com/">神之刃
+
+
+
+</a></dd><dd><a target="_blank" href="http://z.8864.com/">后宫甄嬛传
+
+
+
+</a></dd></dl><dl><dt>网页游戏</dt><dd><a target="_blank" href="http://lm.8864.com/">黎明之光
+
+
+
+</a></dd></dl><dl><dt>客户端游戏</dt><dd><a target="_blank" href="http://lm.8864.com/">黎明之光
+
+
+
+</a></dd><dd><a target="_blank" href="http://yt.linekong.com/">倚天剑与屠龙刀
+
+
+
+</a></dd></dl></div><div class="pro-item clearfix"><dl><dt>网剧</dt><dd><a target="_blank" href="https://www.mgtv.com/b/335203/7433800.html?cxid=95kqkw8n6">身为一个胖子
+
+<span class="ishot"></span>
+
+</a></dd><dd><a target="_blank" href="https://v.qq.com/x/cover/6vi3lz2j9luiryj/w0026a3ug12.html?ptag=10523">来到你的世界
+
+<span class="ishot"></span>
+
+</a></dd><dd><a target="_blank" href="https://www.mgtv.com/h/325695.html?fpa=se">我与你的光年距离2
+
+
+
+</a></dd><dd><a target="_blank" href="http://www.le.com/tv/10033258.html?ch=baiduald_ffdsj">我与你的光年距离1
+
+
+
+</a></dd><dd><a class="nohref">花好月又圆
+
+
+
+</a></dd><dd><a class="nohref">原来你是这样的顾先生
+
+
+
+</a></dd><dd><a class="nohref">古乐风华录
+
+
+
+</a></dd><dd><a class="nohref">云海藏山传
+
+
+
+</a></dd><dd><a class="nohref">少女甜
+
+
+
+</a></dd><dd><a class="nohref">2028城市生活
+
+
+
+</a></dd><dd><a class="nohref">哏儿
+
+
+
+</a></dd><dd><a class="nohref">和女儿的日常
+
+
+
+</a></dd></dl><dl><dt>电影</dt><dd><a class="nohref">与你的100次恋爱
+
+
+
+</a></dd><dd><a class="nohref">反转人生
+
+
+
+</a></dd></dl><dl><dt>网络大电影</dt><dd><a class="nohref">蒙圈天使
+
+
+
+</a></dd></dl></div><div class="pro-item clearfix"><dl><dt>智能硬件</dt><dd><a target="_blank" href="http://www.xiaoqing.store">小青AI音箱
+
+
+
+</a></dd></dl><dl><dt>语音互动游戏</dt><dd><a target="_blank" href="http://www.xiaoqing.store">我当宰相
+
+
+
+</a></dd><dd><a target="_blank" href="http://www.xiaoqing.store">猎杀恶魔
+
+
+
+</a></dd><dd><a target="_blank" href="http://www.xiaoqing.store">百万富翁
+
+
+
+</a></dd><dd><a target="_blank" href="http://www.xiaoqing.store">翻牌记忆
+
+
+
+</a></dd><dd><a target="_blank" href="http://www.xiaoqing.store">吃货大作战
+
+
+
+</a></dd></dl></div><div class="pro-item clearfix"><p class="no-con-tips">精彩内容暂未开启敬请期待</p></div></div>
+        </div>
+        <div class="legend">
+            <span class="ishot">热门游戏</span>
+            <span class="isnew">最新游戏</span>
+            <span class="istest">测试游戏</span>
+        </div>
+        <!--<a target="_blank" class="gift-pkg" href="http://bbs.8864.com/kgame-index.html"><img
+                    src="./pages/index/img/get-gift.png"></a>-->
+    </div>
+</div>
+<div class="production-mobile">
+    <h3 class="mobile-title">蓝港产品</h3>
+    <ul class="pro-btn">
+        <li>
+            <img src="./public/img/svg/game-black.svg"/>
+            <h3>蓝港游戏</h3>
+            <span></span>
+        </li>
+        <li>
+            <img src="./public/img/svg/film-black.svg"/>
+            <h3>蓝港影业</h3>
+            <span></span>
+        </li>
+        <li>
+            <img src="./public/img/svg/tech-black.svg"/>
+            <h3>蓝港科技</h3>
+            <span></span>
+        </li>
+        <!--蓝港网络注释隐藏<li>
+            <img src="./public/img/svg/net-black.svg"/>
+            <h3>蓝港网络</h3>
+            <span></span>
+        </li>-->
+    </ul>
+    <div class="pro-con">
+        <div class="pro-item clearfix"><a target="_blank" href="https://naonao.qq.com/">闹闹天宫</a><a target="_blank" href="http://lmzg.8864.com/">黎明之光</a><a target="_blank" href="http://y.8864.com/">英雄之剑</a><a target="_blank" href="http://k.8864.com/">王者战魂</a><a target="_blank" href="http://s.8864.com/">蜀山战纪之剑侠传奇</a><a target="_blank" href="http://xx.8864.com/">苍穹之剑</a><a target="_blank" href="http://sw.8864.com/">《十万个冷笑话》番剧版</a><a target="_blank" href="http://szr.8864.com/">神之刃</a><a target="_blank" href="http://www.linekong.com/games">MORE</a></div><div class="pro-item clearfix"><a target="_blank" href="https://www.mgtv.com/b/335203/7433800.html?cxid=95kqkw8n6">身为一个胖子</a><a target="_blank" href="https://v.qq.com/x/cover/6vi3lz2j9luiryj/w0026a3ug12.html?ptag=10523">来到你的世界</a><a target="_blank" href="https://www.mgtv.com/h/325695.html?fpa=se">我与你的光年距离2</a><a target="_blank" href="http://www.le.com/tv/10033258.html?ch=baiduald_ffdsj">我与你的光年距离1</a><a class="nohref">花好月又圆</a><a class="nohref">原来你是这样的顾先生</a><a class="nohref">古乐风华录</a><a class="nohref">云海藏山传</a><a target="_blank" href="javascript:alert('蓝港影业精彩内容即将呈现，敬请期待！')">MORE</a></div><div class="pro-item clearfix"><a target="_blank" href="http://www.xiaoqing.store">小青AI音箱</a><a target="_blank" href="http://www.xiaoqing.store">我当宰相</a><a target="_blank" href="http://www.xiaoqing.store">猎杀恶魔</a><a target="_blank" href="http://www.xiaoqing.store">百万富翁</a><a target="_blank" href="http://www.xiaoqing.store">翻牌记忆</a><a target="_blank" href="http://www.xiaoqing.store">吃货大作战</a><a target="_blank" href="http://www.fuzegame.com/index.html#game">MORE</a></div><div class="pro-item clearfix"><p class="no-con-tips">精彩内容暂未开启敬请期待</p></div>
+        <a target="_blank" class="gift-pkg" href="http://bbs.8864.com/kgame-index.html">&gt;&gt;领取礼包&lt;&lt;</a>
+    </div>
+</div>
+
+<!--link-->
+<!--<div class="link-wrap">
+    <div class="link clearfix"><dl><dt>集团业务</dt><dd><a target="_blank" href="http://www.linekong.com/games">蓝港游戏</a></dd><dd><a  href="javascript:alert('蓝港影业精彩内容即将呈现，敬请期待！')">蓝港影业</a></dd><dd><a target="_blank" href="http://linekongkorea.co.kr/">蓝港韩国</a></dd></dl><dl><dt>新闻报道</dt><dd><a target="_blank" href="http://www.linekong.com/linekongnews">新闻动态</a></dd><dd><a target="_blank" href="http://www.linekong.com/about?type=credit">所获荣誉</a></dd></dl><dl><dt>账号安全</dt><dd><a target="_blank" href="http://www.8864.com/register.php">注册账号</a></dd><dd><a target="_blank" href="http://www.linekong.com/article-177-9463.shtml">安全密保</a></dd><dd><a target="_blank" href="http://passport.linekong.com/login.do?method=inputLogin">账号管理</a></dd><dd><a target="_blank" href="http://passport.linekong.com/turnModifyPage.do?method=modifyMain1">找回密码</a></dd></dl><dl><dt>服务充值</dt><dd><a target="_blank" href="http://www.sobot.com/chat/pc_new/index.html?sysNum=e6efa4beafc34bcfb47fdceedc0cc132">客服中心</a></dd><dd><a target="_blank" href="http://www.8864.com/charge.php">充值中心</a></dd><dd><a target="_blank" href="https://langang.tmall.com/">购卡指南</a></dd><dd><a target="_blank" href="http://www.linekong.com/jiazhang/index.html">家长监护工程</a></dd><dd><a target="_blank" href="http://bbs.8864.com/forum.php?mod=forumdisplay&fid=111">客服专区</a></dd></dl><dl><dt>关于蓝港</dt><dd><a target="_blank" href="http://www.linekong.com/about">蓝港简介</a></dd><dd><a target="_blank" href="http://www.linekong.com/about?type=culture">企业文化</a></dd><dd><a target="_blank" href="http://www.linekong.com/about?type=event">蓝港大事记</a></dd><dd><a target="_blank" href="http://www.linekong.com/about?type=orca">吉祥物ORCA</a></dd></dl><dl><dt>联系我们</dt><dd><a target="_blank" href="http://www.linekong.com/business">商务合作</a></dd><dd><a target="_blank" href="http://www.linekong.com/aboutUs">投资合作</a></dd><dd><a target="_blank" href="http://www.linekong.com/business">媒体采访</a></dd><dd><a target="_blank" href="http://jobs.linekong.com/">人才招聘</a></dd></dl></div>
+</div>-->
+
+
+<script data-main="pages/index/index.js" defer async="true" src="http://common.8864.com/web/js/require.js"></script>
+<footer class="pc clearfix">
+    <div class="content">
+        <a target="_blank" class="logo" href="/"><img src="./public/img/logo-footer.png"></a>
+        <span><img src="http://www.8864.com/images/add_wen2.png" alt="" /></span>
+        <a target="cyxyv" style="margin-left: 1em;" href="https://v.yunaq.com/certificate?domain=www.linekong.com&from=label&code=90020"> 
+        	<img src="https://aqyzmedia.yunaq.com/labels/label_sm_90020.png">
+        </a>
+        <div class="con-right">
+            <div class="link">
+                <a target="_blank" href="http://www.linekong.com/about?type=introduce">蓝港简介</a>
+                <span></span>
+                <a target="_blank" href="http://www.linekong.com/games">蓝港产品</a>
+                <span></span>
+                <a target="_blank" href="http://jobs.linekong.com/">招贤纳才</a>
+                <span></span>
+                <a target="_blank" href="http://www.linekong.com/business">商务合作</a>
+                <span></span>
+                <a target="_blank" href="http://www.linekong.com/article-239-1.shtml">法律声明</a>
+                <span></span>
+                <a id="service" href="javascript:;">客户服务</a>
+                <span></span>
+                <a target="_blank" href="http://www.linekong.com/article-239-1.shtml">用户协议</a>
+                <span></span>
+                <a id="setHome">设为首页</a>
+                <span></span>
+                <a id="addFavorite">收藏本站</a>
+                <span></span>
+                <a target="_blank" id="guardianship" href="http://www.linekong.com/jiazhang/index.html">家长监护</a>
+            </div>
+            <p class="copyright">Copyright © 2007-2017 linekong.com, All Rights Reserved</p>
+            <p class="record">
+            	<a target="_blank" href="http://img.linekong.com/opm/2019/07/09/n101000000001727.png">蓝港互动集团有限公司 </a>
+            	<a target="_blank" href="http://img.linekong.com/www8864/2016/10/28/n20161028142228.jpg">京网文[2016]5963-798号 </a>
+            	<a target="_blank" href="http://img.linekong.com//opm/2019/07/09/n101000000001228.jpg">京ICP备09017018号-1 </a>
+            	<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502031415">京公安网备11010502031415</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<footer class="mobile clearfix">
+    <div class="content">
+        <!--<a target="_blank" class="logo" href="/"><img src="./public/img/hans/logo-footer.png"></a>-->
+        <a target="_blank" class="logo" href="/"><img src="./public/img/logo-footer.png"></a>
+        <div class="con-right">
+            <h4>蓝港互动集团有限公司</h4>
+            <div class="link clearfix">
+                <a target="_blank" class="intro" href="http://www.linekong.com/about?type=introduce">蓝港简介</a>
+                <span class="line-one"></span>
+                <a target="_blank" class="protocol" href="http://www.linekong.com/article-239-1.shtml">用户协议</a>
+                <span class="line-two"></span>
+                <a target="_blank" href="http://www.linekong.com/article-239-1.shtml">法律声明</a>
+                <span></span>
+                <a id="service" href="javascript:;" onclick="showewm()">客户服务</a>
+            </div>
+            <p class="copyright">京公安网备 11010500</p>
+            <p class="copyright-pad">京网文[2016]5963-798号 京ICP证 070501  京公安网备 11010500</p>
+        </div>
+    </div>
+</footer>
+<div id="kfEwm">
+	<img src="http://www.8864.com/images/kf_ewm.jpg" alt="" />
+</div>
+</body>
+</html>

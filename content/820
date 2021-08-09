@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manta makes it easy to find local businesses in your area using our vast small business directory finder. Let us help you find what you're looking for!">
+<title>America's Local Small Business Directory - Manta</title>
+<link rel="icon" href="https://cc3.manta-r3.com/assets-gz/2e2a97f56/img/favicon.png" type="image/png">
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org", 
+    "@type": "WebSite",
+    "name" : "Manta",
+    "url": "https://www.manta.com/",
+    "headline": "Find great small businesses around the corner and across the country or become one of the 1000 small businesses that will join our community today.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.manta.com/search?search_source=home&search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+</script>
+<script type="application/ld+json"> 
+  {
+    "@context": "http://schema.org", 
+    "@type": "Organization",
+    "url": "https://www.manta.com",
+    "brand": "Manta",
+    "name": "Manta",
+    "Logo": "http://cc3.manta-r3.com/assets-gz/48325c9/img/1620686847807.jpg", 
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Columbus, OH", 
+      "postalCode": "43215",
+      "streetAddress": "800 N. High St " 
+    },
+    "ContactPoint": [
+      {
+        "@type" : "ContactPoint",
+        "telephone" :  "+1 (877) 370-5497",
+        "contactType" : "sales",
+        "contactOption" : "TollFree",
+        "areaServed" : "US"
+      }
+    ],
+    "sameAs" : [
+      "https://www.facebook.com/mantacom/", 
+      "https://www.linkedin.com/company/manta", 
+      "https://twitter.com/Manta"
+    ]
+  } 
+</script>
+        <script rel="gtm-render">
+      var screenWidth = screen.width;
+      var sSz = 'lg';
+      var wsSz = 'lg';
+      var wSz = 'lg';
+      if (screenWidth < 768) {
+        sSz = wsSz = wSz = 'xs';
+      } else if (screenWidth < 992) {
+        sSz = wsSz = wSz = 'sm';
+      } else if (screenWidth < 1200) {
+        sSz = wsSz = wSz = 'md';
+      }
+
+      var gtmData = {
+        ua_property: "UA-10299948-11",
+        googleExperimentId: "",
+        googleExperimentVariation: "-1",
+        pageTitle: "America's Local Small Business Directory - Manta",
+        page_type: "company-content", // TODO: make this work when we do search/browse
+        is_pagespeed: Boolean('false'),
+
+        
+        visitor_id: "576125e3-af98-4eae-a4e0-7c276e232a0d",
+        customer_segment: "consumer",
+        page_depth: "1",
+        scr_win_width: sSz + '-' + wSz,
+
+        
+        treatment: "no-test",
+
+                  altTreatment1: "LM $49 Price Test CONTROL",
+                  altTreatment2: "",
+                  altTreatment3: "",
+        
+        ip: "62.31.28.214",
+
+                  // Older cookies might not have stateAbbrv and countryAbbrv,
+          // so fall back to state and country
+          user_state: "N1",
+          user_country: "GB",
+        
+        url_hash: window.location.hash,
+        timestamp: new Date().toString(),
+        sbi: "false",
+        statusCode: "200",  // TODO: actual status
+      };
+
+              var gtmDataLayer = [gtmData];
+      
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','gtmDataLayer','GTM-R7B4');
+    </script>
+    <script>
+      var gaTrack = function (category, action, label, value, interactive) {
+        if (arguments.length === 1) {
+          // Non-event tracking stuff
+          gtmDataLayer.push(category);
+          return;
+        } else if (arguments.length === 3) {
+          value = 1;
+          interactive = true;
+        }
+        if (arguments.length === 4) {
+          if (typeof value === 'boolean') {
+            interactive = value;
+            value = 1;
+          } else {
+            interactive = true;
+          }
+        }
+
+        // if label is an object, serialize it into name=value pairs
+        if (typeof label === 'object' && !Array.isArray(label)) {
+          var pairs = [];
+          for (var key in label) {
+            pairs.push(key + '=' + label[key]);
+          }
+          label = pairs.join(',');
+        }
+
+        gtmDataLayer.push({
+          eventData: {
+            category: category,
+            action: action,
+            label: label,
+            value: value
+          },
+          event: (interactive ? 'interactive' : 'non-interactive') + ' event'
+        });
+      };
+    </script>
+  <script src="//cc3.manta-r3.com/dist/17070c89/js/cash.min.js"></script>
+<script src="//cc3.manta-r3.com/dist/17070c89/js/js.cookie.min.js" onload="Cookies.defaults = { path: '/', domain: '.manta.com' }"></script>
+<script src="//cc3.manta-r3.com/dist/17070c89/js/axios.min.js" onload="window.axios = window.redaxios"></script>
+<script>var loadScript=(function(d,s,c,e,f){return function(u){if(c[u]){return c[u];}e=d.createElement(s);e.async=!0;e.src=u;f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(e,f);return c[u]=e;};})(document,'script',{});</script>
+<script src="//cc3.manta-r3.com/dist/17070c89/js/simpleLightbox.min.js"></script>
+<link rel="preload" href="//cc3.manta-r3.com/dist/17070c89/css/simpleLightbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="//cc3.manta-r3.com/dist/17070c89/css/simpleLightbox.min.css"></noscript>
+<script>
+  window.__PRELOADED_STATE__ = {
+    toggledFeatures: {"experimentId":"","experimentVariation":"-1","forceGzip":false,"adsenseChannel":"1","scrollTracking":false,"exitTracking":true,"fakeMixpanel":true,"fakeGa":false,"useSubscriptionTestMode":false,"yextAllowDuplicatesMode":false,"allowSurveys":true,"isOffHoursOverride":false,"isBusinessHoursOverride":false,"skipDittoVendorRequests":false,"marketplaceJobs":false,"claimCtaText":"Own This Business?","claimCtaColor":"btn-primary","useLongBundleDesc":false,"isSiteMaintenanceMode":false,"homeyouLeads":false,"updoptProdOverride":false,"enableUpdoptDossier":true,"adsenseSlotMobile":"1160948055","adsenseSlotDesktop":"5730748454","useFapiForSubscriptions":false,"popOverlayOnCheckout":true,"useBuilderToAdd":false,"checkoutTemplate":"checkout","buyerlink_treatmentA":true,"adsenseHeroPlacement":true,"refreshAds":false,"show300x250":true,"showTaboola":true,"showDesktopAdhesionBanner":true,"homeyouWidgetPlacement":"about","newStack":true,"similarBusinessesUp":true,"reducedAdDensity":true,"navAffiliateBusinessCreditAd":true,"trackNumbers":true,"homeyouNumberTest":true,"homeyouTrackingNumber":"+18443361762","unclaimedStatic":true,"includeGMBScan":true,"postponeMerchantScans":true,"embedYextDashboard":true,"showPaywallPage":false,"checkoutPaywallTreatment":"paywall-control","enableWebsiteAddOn":true,"useBriteVerify":true,"useGooglePlacesInClaimBuilder":true,"useGoogleMaps":true,"useGoogleAutocomplete":true,"enableFacebookSignIn":true,"enableGoogleSignIn":true,"logCookieErrors":true,"rightRailDoubleAds":true,"showFroyoAds":true,"triggerDemoScheduler":true,"showCovid":true,"covidShow":true,"es_search":true,"es_related":true,"sendPardotEvents":true,"useNewMemberDashboard":true,"showDetailedDescription":true,"useInternationalSearch":true,"useNewEditPage":true,"useElasticMb":true,"showMarketStats":false,"useNewAnalyticsService":true,"useElasticWorld":true,"showPlaywireAds":true,"requireTermsOfService":true,"useTaboolaAds":false,"usePlaywire":true,"useAdSense":false},
+    referral_source: '',
+    abTreatment: 'no-test',
+    gamNetworkCode: '6009',
+    visitor: {"ip":"62.31.28.214","id":"576125e3-af98-4eae-a4e0-7c276e232a0d","pageDepth":1,"customerSegment":{"threshold":1,"id":"c","label":"consumer"},"smallBusinessInterest":false,"xri":"d8115bb63197104f39f4daed4ce60710"},
+    pageComponents: {},
+    clientIp: '62.31.28.214',
+    isCalifornia: false,
+    isDev: false,
+    env: 'production',
+    member: undefined  };
+</script>
+<script>
+  var cache = {};
+  window.logError = function(e, info) {
+    var lines = e.stack.split('\n');
+    var callsite = lines && lines.length > 0 ? lines[1].match(/(app\.js:\d+:\d+)/) : [];
+    var key = e.message + (callsite && callsite.length > 0 ? ' at ' + callsite[1] : '');
+
+    if (!cache[key]) {
+      try {
+        window.axios && axios.post('/fapi/errors', {
+          message: e.message,
+          stack: e.stack,
+          info: info,
+                    userAgent: (window.navigtator && window.navigator.userAgent) || 'unknown'
+        }).catch(function() {});
+      } catch (e) {
+        // Obviously, this isn't async/await, so it won't catch the
+        // axios call, but I just want to _assure_ we don't throw
+        // from the onerror handler.
+      }
+    }
+  };
+  window.onerror = function(message, source, lineno, colno, error) {
+    // Don't log errors that come from ads and crap like that
+    if (source.indexOf('manta.com') > -1) {
+      logError(error, { source: source, lineno: lineno, colno: colno });
+    }
+  };
+</script>
+<link rel="stylesheet" href="//cc3.manta-r3.com/dist/17070c89/content/css/app.css">
+<link rel="preload" href="//cc3.manta-r3.com/dist/17070c89/content/css/fa.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="//cc3.manta-r3.com/dist/17070c89/content/css/fa.css"></noscript>
+<style>
+  iframe[name=d_ifrm] {
+  display: none;
+  }
+</style>
+<script src="https://btloader.com/tag?o=5150306120761344&upapi=true" async></script>
+  <script>
+    var gaTrackSS = {
+      events: [],
+      attempts: 0,
+
+      addEvent: function(action, label, value, customDimensions, nonInteractive) {
+        this.events.push({category: 'Server Side Tracking', action: action, label: label, value: value, customDimensions: customDimensions, nonInteractive: nonInteractive});
+      },
+
+      sendEvent: function(action, label, value, customDimensions, nonInteractive) {
+        this.addEvent(action, label, value, customDimensions, nonInteractive);
+        this.sendEvents();
+      },
+
+      sendEvents: function() {
+        if (this.gaLoaded()) {
+          clearInterval(this.gaCheck);
+          this._sendEvents();
+        } else {
+          if (!this.gaCheck) {
+            this.gaCheck = setInterval(function() { this.sendEvents() }.bind(this), 1000);
+          } else if (this.attempts >= 10) {
+            clearInterval(this.gaCheck);
+          }
+        }
+      },
+
+      gaLoaded: function() {
+        this.attempts++;
+        return Cookies.get('_ga');
+      },
+
+      _sendEvents: function() {
+        if (this.events.length) {
+          typeof axios === 'function' && axios({
+            url: '/gatrack',
+            method: 'POST',
+            data: this.events,
+            withCredentials: true
+          }).catch(function(e) {
+            logError(e, { events: this.events });
+          });
+          this.events = [];
+        }
+      }
+    };
+  </script>
+  <style>
+    .lazy-img {
+      filter: blur(10px);
+    }
+
+    .bg-image {
+      background-image: url("//cc3.manta-r3.com/dist/17070c89/img/content/hero-homepage-blur.jpg");
+    }
+
+    .hero-img-position {
+      background-size: cover;
+      background-position: 53% bottom;
+    }
+    @media screen and (min-width: 640px) {
+      .bg-image-height {
+        height: 600px;
+      }
+    }
+    @media screen and (min-width: 1100px) {
+      .bg-image-height {
+        height: 700px;
+      }
+    }
+    @media screen and (max-width: 639px) {
+      .bg-image-height {
+        height: 400px;
+      }
+      .mobile-mb-4 {
+        margin-bottom: 1rem;
+      }
+      .search-services-menu {
+        top: 102px;
+        border-bottom: 2px solid #979BA3;
+      }
+      .search-location-menu {
+        top: 50px;
+        width: 100vw;
+        left: -2.75rem;
+        border-bottom: 2px solid #979BA3;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      .bg-image-height {
+        height: 354px;
+      }
+    }
+  </style>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body>
+  <main>
+    <span id="start-of-content"></span>
+    <section 
+      class="bg-image bg-image-height hero-img-position" 
+      data-lazy="//cc3.manta-r3.com/dist/17070c89/img/content/hero-homepage-optim.jpg">
+      <div class="mobile-menu hidden fixed w-screen h-screen bg-white px-6 py-6 z-50">
+  <div class="float-right" onclick="$('.mobile-menu').addClass('hidden'); $('body').removeClass('overflow-hidden')"><i class="text-darks-v1 text-3xl fa fa-times"></i></div>
+  <ul class="text-gray-600 my-16 text-lg">
+  <li class="mb-2 hover:font-bold">
+    <a href="/small-business-marketing">For Businesses</a>
+  </li>
+</ul>
+    <div class="flex flex-col sm:flex-row">
+    <a class="btn bg-primary-light-v1 text-gray-800 font-bold flex-1 mb-4 sm:mb-0 sm:mr-4 py-3" href="/ng?rld=/#!/member/login">Log In</a>
+    <a class="btn bg-primary-v1 text-white font-bold flex-1 py-3" onclick="gaTrack('Nav Bar', 'Link Click', 'Claim My Listing - Main CTA', 1, true)" href="/ng?rld=/#!/add-your-company">Claim My Listing</a>
+  </div>
+</div>
+
+<div class="px-6 h-auto text-white">
+  <div class="justify-between py-3 mx-auto max-w-header flex items-center">
+
+    <div class="flex-1 lg:hidden"></div>
+
+    <div class="flex sm:pr-3">
+  <a href="/" data-test="btn-logo-navbar">
+    <img class="h-6 my-3 sm:mr-3 not-sr-only" src="//cc3.manta-r3.com/dist/17070c89/img/manta_logo_dark-v1.svg" alt="Manta Logo"  width="109" height="25" >
+    <span class="sr-only">Manta Home</span>
+  </a>
+</div>
+    <div class="flex-1"></div>
+
+    <div class="hidden lg:block text-sm">
+      <a data-test="btn-findBusiness-navbar-desktop" class="hover:underline text-nordic-v1 font-bold" href="/small-business-marketing"><span class="px-3">For Businesses</span></a>
+              <a data-test="btn-login-navbar-desktop" class="hover:underline text-nordic-v1 font-bold" href="/member/login"><span class="px-3">Log In</span></a>
+        <a data-test="btn-claim-business-navbar-desktop" onclick="gaTrack('Nav Bar', 'Link Click', 'Claim My Listing - Main CTA', 1, true)" class="btn bg-primary-v1 text-white mx-3 inline-block font-bold" href="/add-your-company">Claim My Listing</a>
+          </div>
+
+    <div onclick="$('.mobile-menu').removeClass('hidden');$('body').addClass('overflow-hidden')" class="flex lg:hidden"><i class="text-2xl fa fa-bars"></i></div>
+
+  </div>
+</div>
+<div class="pl-0 lg:px-6 bg-primary-dark text-white overflow-x-hidden faded faded-x-primary-dark hidden">
+  <div class="py-1 mx-auto max-w-header flex items-center overflow-x-auto">
+    <div class="inline-block py-2 text-sm whitespace-no-wrap ml-5">
+      <a class="cursor-pointer" href="/mb_33_A6_000/professional_services">Business Services<span class="align-top mx-2 text-primary">|</span></a>
+      <a class="cursor-pointer" href="/mb_33_C4_000/restaurants_and_bars">Food & Beverage<span class="h-2 align-top mx-2 text-primary">|</span></a>
+      <a class="cursor-pointer" href="/mb_33_B3_000/consumer_services">Consumer Products & Services<span class="h-2 align-top mx-2 text-primary">|</span></a>
+      <a class="cursor-pointer" href="/mb_33_D0_000/healthcare">Health<span class="h-2 align-top mx-2 text-primary">|</span></a>
+      <a class="cursor-pointer" href="/mb_33_G4_000/information_technology">Tech & Communications<span class="h-2 align-top mx-2 text-primary">|</span></a>
+      <a class="cursor-pointer mr-5" href="/mb_33_E6_000/industrial_machinery">Industrial</a>
+    </div>
+  </div>
+</div>
+
+      <div class="flex justify-center py-4 sm:pt-20 lg:pt-24">
+        <div class="flex flex-col w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-3xl xl:max-w-5xl px-4 sm:px-8">
+          <p class="text-center mb-4 text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-nordic-v1 font-serif">Your New Favorite _____ <span class="block md:inline">is a Search away</span></p>
+          <div class="order-2 sm:order-none rounded text-gray-dark mx-auto inline-block search-component search-component-mobile w-full mb-4">
+            <form name="searchForm">
+  <div class="flex flex-col sm:flex-row px-3 sm:px-0" style="border-radius: 4px 4px 4px 0px;">
+    <div class="flex sm:w-1/2 relative px-3 py-2 bg-white my-1 sm:my-0 rounded sm:rounded-l-lg sm:rounded-r-none">
+      <div class="flex justify-center items-center mr-4 w-5">
+        <span class="text-primary-v1 fa fa-search text-xl"></span>
+      </div>
+      <div class="flex w-full">
+        <label for="header-search" class="sr-only">Search</label>
+        <input
+          id="header-search"
+          name="search"
+          placeholder="I'm looking for..."
+          class="w-full outline-none"
+          onfocus="loadSearchBar('.search-services-menu')"
+          autocomplete="off"
+          value=""
+        />
+      </div>
+      <div class="absolute search-services-menu hidden" style="z-index: 10000">
+        <ul class="p-0 m-0 text-gray-600">
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"
+              ><span class="fa fa-utensils mr-3"></span
+            ></span>
+            <span class="text-small">Restaurants</span>
+          </li>
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"
+              ><span class="fa fa-stethoscope mr-3"></span
+            ></span>
+            <span class="text-small">Doctors</span>
+          </li>
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"
+              ><span class="fa fa-gavel mr-3"></span
+            ></span>
+            <span class="text-small">Lawyers</span>
+          </li>
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"
+              ><span class="fa fa-hammer mr-3"></span
+            ></span>
+            <span class="text-small">Contractors</span>
+          </li>
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"><span class="fa fa-car mr-3"></span></span>
+            <span class="text-small">Automotive</span>
+          </li>
+          <li class="flex flex-row px-4 py-3 hover:bg-gray-200 text-gray-600 border-b border-gray-300 last:border-none sm:border-none truncate">
+            <span class="self-start"
+              ><span class="fa fa-tooth mr-3"></span
+            ></span>
+            <span class="text-small">Dentists</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex py-2 sm:py-0 sm:w-1/2">
+      <div class="flex w-full relative px-3 sm:pl-0 sm:pr-3 py-2 bg-white rounded-l-lg sm:rounded-none">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="24"
+  viewBox="0 0 36 47"
+  fill="none"
+  class="sm:pl-2 sm:border-l sm:mr-2 w-5 sm:w-6 mr-4"
+  aria-labelledby="mapPin"
+>
+  <title id="mapPin"></title>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.24146 18.1348C6.24146 11.724 11.4778 6.49365 17.9783 6.49365C24.4788 6.49365 29.7151 11.724 29.7151 18.1348C29.7151 20.3685 28.9815 22.9195 27.7022 25.615C26.4344 28.2866 24.7147 30.9254 22.946 33.2855C21.1834 35.6375 19.4138 37.6578 18.0826 39.0913L17.9783 39.2034L17.874 39.0913C16.5428 37.6578 14.7732 35.6375 13.0106 33.2855C11.2419 30.9254 9.52223 28.2866 8.25436 25.615C6.97513 22.9195 6.24146 20.3685 6.24146 18.1348ZM15.9132 45.6698C15.9138 45.6703 15.9143 45.6708 17.9783 43.4937L15.9143 45.6708C17.0716 46.7679 18.885 46.7679 20.0423 45.6708L17.9783 43.4937C20.0423 45.6708 20.0428 45.6703 20.0434 45.6698L20.0447 45.6685L20.0485 45.6649L20.06 45.6539L20.0987 45.6168C20.1315 45.5854 20.1778 45.5407 20.2368 45.4832C20.3548 45.3683 20.5237 45.2022 20.7363 44.989C21.1612 44.5627 21.7616 43.9469 22.4792 43.1741C23.9112 41.6322 25.8258 39.4478 27.7474 36.8836C29.663 34.3275 31.6275 31.3383 33.1228 28.1875C34.6067 25.0606 35.7151 21.5949 35.7151 18.1348C35.7151 8.37347 27.7556 0.493652 17.9783 0.493652C8.20097 0.493652 0.241455 8.37347 0.241455 18.1348C0.241455 21.5949 1.34988 25.0606 2.83381 28.1875C4.3291 31.3383 6.2936 34.3275 8.20918 36.8836C10.1308 39.4478 12.0454 41.6322 13.4774 43.1741C14.195 43.9469 14.7954 44.5627 15.2203 44.989C15.4329 45.2022 15.6018 45.3683 15.7198 45.4832C15.7788 45.5407 15.8251 45.5854 15.8578 45.6168L15.8966 45.6539L15.9081 45.6649L15.9119 45.6685L15.9132 45.6698Z"
+    fill="#FF6B61"
+  />
+</svg>
+        <div class="self-center w-full text-gray-800">
+          <label for="header-location" class="sr-only">Location</label>
+                     <input
+            id="header-location"
+            name="location"
+            placeholder="Location"
+            class="w-full outline-none"
+            onfocus="loadSearchBar('.search-location-menu')"
+            autocomplete="off"
+            value="Burntwood, United Kingdom"
+          />
+                   </div>
+        <div class="search-location-menu hidden" style="z-index: 10000">
+          <ul class="m-0 p-0 locations">
+            <li
+              class="px-4 py-3 text-primary-v1 hover:bg-gray-200 cursor-pointer"
+            >
+              <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="24"
+  viewBox="0 0 36 47"
+  fill="none"
+  class="sm:pl-2 sm:border-l sm:mr-2 w-5 sm:w-6 mr-4"
+  aria-labelledby="mapPin"
+>
+  <title id="mapPin"></title>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M6.24146 18.1348C6.24146 11.724 11.4778 6.49365 17.9783 6.49365C24.4788 6.49365 29.7151 11.724 29.7151 18.1348C29.7151 20.3685 28.9815 22.9195 27.7022 25.615C26.4344 28.2866 24.7147 30.9254 22.946 33.2855C21.1834 35.6375 19.4138 37.6578 18.0826 39.0913L17.9783 39.2034L17.874 39.0913C16.5428 37.6578 14.7732 35.6375 13.0106 33.2855C11.2419 30.9254 9.52223 28.2866 8.25436 25.615C6.97513 22.9195 6.24146 20.3685 6.24146 18.1348ZM15.9132 45.6698C15.9138 45.6703 15.9143 45.6708 17.9783 43.4937L15.9143 45.6708C17.0716 46.7679 18.885 46.7679 20.0423 45.6708L17.9783 43.4937C20.0423 45.6708 20.0428 45.6703 20.0434 45.6698L20.0447 45.6685L20.0485 45.6649L20.06 45.6539L20.0987 45.6168C20.1315 45.5854 20.1778 45.5407 20.2368 45.4832C20.3548 45.3683 20.5237 45.2022 20.7363 44.989C21.1612 44.5627 21.7616 43.9469 22.4792 43.1741C23.9112 41.6322 25.8258 39.4478 27.7474 36.8836C29.663 34.3275 31.6275 31.3383 33.1228 28.1875C34.6067 25.0606 35.7151 21.5949 35.7151 18.1348C35.7151 8.37347 27.7556 0.493652 17.9783 0.493652C8.20097 0.493652 0.241455 8.37347 0.241455 18.1348C0.241455 21.5949 1.34988 25.0606 2.83381 28.1875C4.3291 31.3383 6.2936 34.3275 8.20918 36.8836C10.1308 39.4478 12.0454 41.6322 13.4774 43.1741C14.195 43.9469 14.7954 44.5627 15.2203 44.989C15.4329 45.2022 15.6018 45.3683 15.7198 45.4832C15.7788 45.5407 15.8251 45.5854 15.8578 45.6168L15.8966 45.6539L15.9081 45.6649L15.9119 45.6685L15.9132 45.6698Z"
+    fill="#FF6B61"
+  />
+</svg>
+              <span class="small loc-name">Current Location</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="sm:flex items-center justify-center bg-primary-v1 text-white px-3 py-2 overflow-hidden rounded-r-lg">
+        <span class="sr-only">Search</span>
+        <span class="not-sr-only text-white fa fa-search text-xl"></span>
+      </button>
+    </div>
+  </div>
+</form>
+<script>
+  (function () {
+    var loc = localStorage.getItem("locHistory");
+    if (loc) {
+      var li = $(
+        '<li class="px-4 py-3 text-gray-600 hover:bg-gray-200 cursor-pointer border-t border-gray-300 sm:border-none"><span class="fa fa-clock mr-4"></span><span class="small loc-name">Current Location</span></li>'
+      );
+      JSON.parse(loc).forEach(function (l) {
+        if (l.stateAbbrv) {
+          li.find(".loc-name").text(l.formatted);
+          $(".locations").append(li.clone());
+        }
+      });
+    }
+  })();
+  var loadSearchBar = (function () {
+    return function (c) {
+      $(c).removeClass("hidden");
+      loadScript("//cc3.manta-r3.com/dist/17070c89/react/search.bundle.js");
+    };
+  })();
+  $("form[name=searchForm]").on("submit", function (e) {
+    e.preventDefault();
+    var search = $("input[name=search]").val();
+    if (search) {
+      var loc = $("input[name=location]").val();
+      var device = "desktop";
+      if (window.screen.availWidth <= 500) {
+        device = "mobile";
+      } else if (window.screen.availWidth <= 1024) {
+        devie = "tablet";
+      }
+      var parts = loc.split(/[, ]+/);
+      var state = parts.pop();
+      var city = parts.join(" ");
+      window.location =
+        "/search?search_source=nav&search=" +
+        encodeURIComponent(search) +
+        "&city=" +
+        encodeURIComponent(city) +
+        "&state=" +
+        encodeURIComponent(state) +
+        "&device=" +
+        device +
+        "&screenResolution=" +
+        window.screen.availWidth +
+        "x" +
+        window.screen.availHeight;
+    }
+  });
+</script>
+          </div>
+          <h1 class="order-1 mb-8 sm:mb-0 sm:order-none text-darks-v1 text-center mobile-mb-4">America's Small Business Directory</h1>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 sm:py-24 px-8 bg-primary-light-v1 flex justify-center items-center">
+      <div class="flex flex-col sm:flex-row sm:justify-between items-center max-w-page">
+        <div class="sm:w-1/2 text-center sm:text-left mb-8 sm:mb-0 sm:mr-8">
+          <h4 class="text-2xl md:text-3xl text-black font-serif">Calculate Your Home Project Costs</h4>
+          <div class="my-6 leading-6 text-lg font-medium">
+            <p>Getting ready to start some home projects for the summer? Start planning by calculating typical project costs for your area.</p>
+          </div>
+          <div>
+            <button id="cost-calculator" class="btn btn-lg bg-primary-v1 text-white hover:bg-white hover:text-primary-v1 border-2 border-primary-v1 my-6 font-bold" data-test="home-btn-claim">Calculate Your Costs</button>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <img 
+            src="/dist/img/content/homeyou_large_small.png" 
+            class="lazy-img" 
+            width="346" 
+            height="282" 
+            alt="Invoice and calculator demonstrating what the Homeyou cost calculator can provide"
+            loading="lazy"
+            data-lazy="//cc3.manta-r3.com/dist/17070c89/img/content/homeyou_large_optim.png"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="p-8 bg-primary-v1 text-white flex justify-center">
+      <div class="text-center sm:hidden">
+        <p class="font-bold mb-4 lg:mb-0">Search Cities</p>
+        <div class="w-full grid grid-cols-2 gap-8 text-sm ">
+          <a href="/mb_51_ALL_1UH/los_angeles_ca" class="hover:font-bold">Los Angeles</a>
+          <a href="/mb_51_ALL_EEQ/new_york_ny" class="hover:font-bold">New York</a>
+          <a href="/mb_51_ALL_KKS/houston_tx" class="hover:font-bold">Houston</a>
+          <a href="/mb_51_ALL_4C6/chicago_il" class="hover:font-bold">Chicago</a>
+          <a href="/mb_51_ALL_374/miami_fl" class="hover:font-bold">Miami</a>
+          <a href="/mb_51_ALL_2FH/denver_co" class="hover:font-bold">Denver</a>
+          <a href="/mb_51_ALL_G1A/columbus_oh" class="hover:font-bold">Columbus</a>
+          <a href="/mb_51_ALL_KCQ/dallas_tx" class="hover:font-bold">Dallas</a>
+          <a href="/mb_51_ALL_IIV/philadelphia_pa" class="hover:font-bold">Philadelphia</a>
+          <a href="/mb_51_ALL_3DZ/atlanta_ga" class="hover:font-bold">Atlanta</a>
+          <a href="/mb_51_ALL_F0G/charlotte_nc" class="hover:font-bold">Charlotte</a>
+          <a href="/mb_51_ALL_K51/austin_tx" class="hover:font-bold">Austin</a>
+          <a href="/mb_51_ALL_24G/san_francisco_ca" class="hover:font-bold">San Francisco</a>
+        </div>
+      </div>
+      <div class="hidden sm:block max-w-page lg:flex lg:justify-between lg:items-center text-sm text-center">
+        <p class="font-bold mb-4 lg:mb-0">Search Cities</p>
+        <a href="/mb_51_ALL_1UH/los_angeles_ca" class="mx-2 lg:mr-0 hover:font-bold">Los Angeles</a>
+        <a href="/mb_51_ALL_EEQ/new_york_ny" class="mx-2 lg:mr-0 hover:font-bold">New York</a>
+        <a href="/mb_51_ALL_KKS/houston_tx" class="mx-2 lg:mr-0 hover:font-bold">Houston</a>
+        <a href="/mb_51_ALL_4C6/chicago_il" class="mx-2 lg:mr-0 hover:font-bold">Chicago</a>
+        <a href="/mb_51_ALL_374/miami_fl" class="mx-2 lg:mr-0 hover:font-bold">Miami</a>
+        <a href="/mb_51_ALL_2FH/denver_co" class="mx-2 lg:mr-0 hover:font-bold">Denver</a>
+        <a href="/mb_51_ALL_G1A/columbus_oh" class="mx-2 lg:mr-0 hover:font-bold">Columbus</a>
+        <a href="/mb_51_ALL_KCQ/dallas_tx" class="mx-2 lg:mr-0 hover:font-bold">Dallas</a>
+        <a href="/mb_51_ALL_IIV/philadelphia_pa" class="mx-2 lg:mr-0 hover:font-bold">Philadelphia</a>
+        <a href="/mb_51_ALL_3DZ/atlanta_ga" class="mx-2 lg:mr-0 hover:font-bold">Atlanta</a>
+        <a href="/mb_51_ALL_F0G/charlotte_nc" class="mx-2 lg:mr-0 hover:font-bold">Charlotte</a>
+        <a href="/mb_51_ALL_K51/austin_tx" class="mx-2 lg:mr-0 hover:font-bold">Austin</a>
+        <a href="/mb_51_ALL_24G/san_francisco_ca" class="mx-2 lg:mr-0 hover:font-bold">San Francisco</a>
+      </div>
+    </section>
+    <div class="w-full px-12 py-16 sm:py-24 flex flex-col items-center text-nordic-v1">
+      <div class="mb-12 text-center">
+        <h2 class="font-serif text-2xl md:text-3xl mb-4">Small Business Finder</h2>
+        <p>Find the best local businesses in your area </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-lg">
+        <a href="/mb_35_B121A000_000/general_automotive_repair_shops" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1"">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="74" height="58">
+                <use href="/dist/img/home_icons.svg#car-repair-home"></use>
+              </svg>
+            </div>
+            <p>Car Repair</p>
+          </div>
+        </a>
+        <a href="/mb_35_B82C705K_000/plumbing_contractors" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="54" height="45">
+                <use href="/dist/img/home_icons.svg#plumbers-home"></use>
+              </svg>
+            </div>
+            <p>Plumbers</p>
+          </div>
+        </a>
+        <a href="/mb_35_B82C70B4_000/heating_and_air_conditioning_contractors" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="54" height="51">
+                <use href="/dist/img/home_icons.svg#heating-icon"></use>
+              </svg>
+            </div>
+            <p>Heating & A/C</p>
+          </div>
+        </a>
+        <a href="/mb_35_A306F7N1_000/general_practice_attorney_lawyer" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="57" height="51">
+                <use href="/dist/img/home_icons.svg#legal-home-icon"></use>
+              </svg>
+            </div>
+            <p>Legal</p>
+          </div>
+        </a>
+        <a href="/mb_35_A7213000_000/real_estate_agents_and_managers" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="68" height="55">
+                <use href="/dist/img/home_icons.svg#real-state-icon"></use>
+              </svg>
+            </div>
+            <p>Real Estate</p>
+          </div>
+        </a>
+        <a href="/mb_34_B619B_000/grocery_stores" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="49" height="48">
+                <use href="/dist/img/home_icons.svg#grocery-icon"></use>
+              </svg>
+            </div>
+            <p>Grocery</p>
+          </div>
+        </a>
+        <a href="/mb_34_B50D5_000/trucking_except_local" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="65" height="54">
+                <use href="/dist/img/home_icons.svg#trucking-icon"></use>
+              </svg>
+            </div>
+            <p>Trucking</p>
+          </div>
+        </a>
+        <a href="/mb_33_B8_000/consumer_products_and_services" class="py-4 bg-primary-light-v1 w-56 h-32 flex justify-center items-center hover:bg-secondary-light-v1 border-2 border-primary-light-v1 hover:shadow-md hover:border-aquamarine-light-v1">
+          <div class="h-full flex flex-col items-center justify-between">
+            <div class="flex justify-center items-center h-20">
+              <svg width="74" height="18">
+                <use href="/dist/img/home_icons.svg#see-more-icon"></use>
+              </svg>
+            </div>
+            <p>See More</p>
+          </div>
+        </a>
+      </div>
+    </div>   
+  </main>
+  <style>
+  @media (max-width: 360px) {
+    .xs-device {
+      font-size: 0.875rem;
+    }
+    .xs-8 {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+</style>
+<footer>
+  <div class="w-full border-t bg-darks-v1 text-primary-light-v1 pt-8 lg:py-16">
+    <div class="px-4 flex flex-col-reverse lg:flex-row justify-even">
+      <div class="lg:w-col-sm flex justify-between md:mt-6 flex-row-reverse lg:flex-col pb-16 md:pb-10 lg:pb-0">
+          <div>
+            <div class="hidden lg:block">
+              <a href="/" data-test="btn-logo-navbar">
+                <img loading="lazy" width="93" height="22" class="mb-6 mr-3" src="//cc3.manta-r3.com/dist/17070c89/img/manta_logo_dark-v1.svg" alt="Manta Logo">
+                <span class="sr-only">Manta Home</span>
+              </a>
+            </div>
+            <div class="lg:py-0 flex">
+              <a data-test="btn-twitter-footer" href="http://twitter.com/Manta">
+                <span class="w-10 h-10 xs-8 rounded-full border-primary-light-v1 border mr-2 mb-2 cursor-pointer flex justify-center items-center">
+                  <i class="not-sr-only fab fa-twitter text-lg xs-device"></i>
+                  <span class="sr-only">Manta on Twitter</span>
+                </span>
+              </a>
+              <a data-test="btn-facebook-footer" href="http://facebook.com/mantacom">
+                <span class="w-10 h-10 xs-8 rounded-full border-primary-light-v1 border mr-2 mb-2 cursor-pointer flex justify-center items-center">
+                  <i class="not-sr-only fab fa-facebook-f text-lg xs-device"></i>
+                  <span class="sr-only">Manta on Facebook</span>
+                </span>
+              </a>
+              <a data-test="btn-linkedin-footer" href="https://www.linkedin.com/company/manta/">
+                <span class="w-10 h-10 xs-8 rounded-full border-primary-light-v1 border mr-2 mb-2 cursor-pointer flex justify-center items-center">
+                  <i class="not-sr-only fab fa-linkedin text-lg xs-device"></i>
+                  <span class="sr-only">Manta on LinkedIn</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="text-primary-light-v1 xs-device">
+            © 2021 Manta Media Inc.<br>All rights reserved.
+                      </div>
+      </div>
+      <div class="md:hidden border-b border-t border-primary-light-v1 py-4 my-6">
+        <div class="flex flex-row text-primary-light-v1 sm:justify-start justify-center">
+          <a data-test="btn-help-footer-desktop-mobile" href="/resources/faq" class="mr-6">Help</a>
+          <a data-test="btn-privacyPolicy-footer-mobile" href="/resources/manta-privacy-policy" class="mr-6">Privacy</a>
+          <a data-test="btn-termsConditions-footer-mobile" href="/resources/page_terms_conditions" class="mr-6">Terms</a>
+          <a data-test="btn-siteMap-footer-mobile" href="/resources/site-map">Site Map</a>
+        </div>
+      </div>
+      <div class="lg:w-col-lg flex flex-row md:justify-around lg:justify-end justify-center sm:justify-start">
+        <div class="flex flex-col mr-20 lg:mr-40">
+          <span class="font-serif">Manta</span>
+          <div class="flex flex-col mt-6">
+            <a data-test="btn-about-footer-desktop" href="/resources/about" class="hover:font-bold py-1">About</a>
+            <a data-test="btn-reviews-footer-desktop" href="/manta-reviews" class="hover:font-bold py-1">Reviews</a>
+            <a data-test="btn-blog-footer" href="/resources" class="hover:font-bold py-1">Blog</a>
+            <a data-test="btn-careers-footer-desktop" href="/resources/careers" class="hover:font-bold py-1">Careers</a>
+            <a data-test="btn-contact-footer-desktop" href="/resources/contact" class="hover:font-bold py-1">Contact</a>
+          </div>
+        </div>
+        <div class="flex flex-col mr-0 sm:mr-10 lg:mr-40">
+          <span class="font-serif">For Businesses</span>
+          <div class="flex flex-col mt-6">
+            <a data-test="btn-add-company-footer" href="/add-your-company" class="hover:font-bold py-1">Claim Your Listing</a>
+            <a data-test="btn-business-listing-footer" href="/small-business-marketing/listings" class="hover:font-bold py-1">Listings</a>
+            <a data-test="btn-websites-footer" href="/small-business-marketing/websites" class="hover:font-bold py-1">Websites</a>
+            <a data-test="btn-seo-footer" href="/small-business-marketing/seo" class="hover:font-bold py-1">SEO</a>
+            <a data-test="btn-advertise-footer-desktop" href="/advertise" class="hover:font-bold py-1">Advertise With Us</a>
+            <a data-test="btn-pricing-footer" href="/small-business-marketing/pricing" class="hover:font-bold py-1">Pricing</a>
+          </div>
+        </div>
+        <div class="hidden md:block flex flex-col">
+          <span class="font-serif">Legal</span>
+          <div class="flex flex-col mt-6">
+            <a data-test="btn-help-footer-desktop" href="/resources/faq" class="hover:font-bold py-1">Help</a>
+            <a data-test="btn-privacyPolicy-footer-desktop" href="/resources/manta-privacy-policy" class="hover:font-bold py-1">Privacy</a>
+            <a data-test="btn-termsConditions-footer-desktop" href="/resources/page_terms_conditions" class="hover:font-bold py-1">Terms</a>
+            <a data-test="btn-siteMap-footer-desktop" href="/resources/site-map" class="hover:font-bold py-1">Site Map</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </footer>  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/dist/sw.js', { scope: '/' })
+      .then(registration => registration)
+      .catch(error => error);
+  }
+</script>  <script id="lazy-loading-images">
+  const imgTargets = document.querySelectorAll('[data-lazy]');
+  const loadImg = function(entries, observer) {
+    const [entry] = entries;
+    console.log(entry);
+    if(!entry.isIntersecting) return;
+    if(entry.target.classList.contains('bg-image')) {
+      entry.target.style.transition = 'background-image 0.5s ease-in-out';
+      entry.target.style.backgroundImage = `url(${entry.target.dataset.lazy})`;
+      entry.target.classList.remove('bg-image');
+    }
+    if(entry.target.classList.contains('lazy-img')) {
+      console.log(entry);
+      entry.target.src = entry.target.dataset.lazy;
+      entry.target.addEventListener('load', () => {
+        entry.target.classList.remove('lazy-img');
+      })
+    }
+    observer.unobserve(entry.target);
+  }
+  const imgObserver = new IntersectionObserver(loadImg, {
+    root: null,
+    threshold: [0, 1.0],
+    rootMargin: '-50px'
+  })
+  imgTargets.forEach(img => imgObserver.observe(img));
+</script>  <script>
+    (function() {
+      if (screen.width > 767) return;
+      let search = document.querySelector('.search-component');
+      search.querySelectorAll('input').forEach(function(el) {
+        el.addEventListener('click', function() {
+          search.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        });
+      });
+    })();
+
+    let calculator = document.querySelector('#cost-calculator');
+    calculator.addEventListener('click', (e) => {
+      gaTrackSS.sendEvent('Homeyou Calculate Your Costs');
+      window.location = '/cost';
+    });
+  </script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'67c0ff0efa770666',m:'d80f787a273a3d9e31e4e99552d45b284679935b-1628512233-1800-AVJ1NYleHIb6orLreWv+mL9I5rTm++JDGNPpyyRkPIjZt0E+jLI5a/ym9QLBGbdsXloeE+JS+NqkTswCOwmSn0+IPovecB/j8SHqKPqj4nfKTSQacQMtpbYrbjcMeB7X2Q==',s:[0x2b7910be9f,0x2de60de9a6],}})();</script></body>
+</html>

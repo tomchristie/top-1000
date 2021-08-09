@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>口碑</title>
+  <meta name="spm-id" content="koubei">
+  <meta name="description" content="">
+  <meta name="keyword" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="baidu-site-verification" content="BX62Vh5466" />
+  <script>
+    (function(){
+      function isPhone() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            return true;
+        };
+        return false;
+      }
+      if(isPhone()){
+        window.location.replace("https://render.koubei.com/p/f/koubei/index.html?appCh=koubei_m")
+      }
+    })()
+  </script>
+  <link rel="shortcut icon" href="https://t.alipayobjects.com/images/rmsweb/T1DdlgXfhfXXXXXXXX.ico">
+  <link rel="dns-prefetch" href="//zos.alipayobjects.com" />
+  <link rel="dns-prefetch" href="//os.alipayobjects.com" />
+  <link rel="dns-prefetch" href="//gw.alipayobjects.com" />
+  
+<link rel="stylesheet" href="https://gw.alipayobjects.com/os/s/prod/koubei-index/index-f003b.css" /></head>
+<script>
+window.pageStart = new Date().getTime();
+</script>
+<body data-spm="pc-index">
+<div class="main">
+  <div class="koubei-top">
+    <div class="koubei-top-box">
+      <div class="koubei-top-box1">
+        <a href="//b.alipay.com/login.htm" target="_blank">签约管理</a>|
+        <a href="//r.ele.me/alsc-risk-rule-center-fe" target="_blank">规则中心</a>|
+        <a href="//cschannel.alipay.com/newPortal.htm?scene=kb_0020" target="_blank">在线咨询</a>|
+        <a href="//help.koubei.com/" target="_blank">帮助中心</a>|
+        <span>客服/投诉电话：400-826-7710</span>|
+      </div>
+      <div class="koubei-top-box2">
+        <i id="koubei-topImg" class="icn-erwei icon-erweima"></i>
+        <div id="koubei-bigtopImg">
+          <img src="https://zos.alipayobjects.com/rmsportal/ZvdQCtEwUiALntCcxvwt.jpg" alt="">
+          <p>扫码下载口碑掌柜</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="koubei-head">
+    <div class="koubei-head-box">
+      <div>
+        <img src="https://img.alicdn.com/tfs/TB1w_p_bgFY.1VjSZFnXXcFHXXa-359-121.png" alt="">
+      </div>
+      <div>
+        <!-- <a href="//xue.koubei.com" class="koubei-head-margin2" target="_blank">口碑学院</a> -->
+        <!-- <a href="//render.alipay.com/p/z/koubeike/index.html" target="_blank" class="koubei-head-margin1">口碑客</a> -->
+        <a href="//fuwu.koubei.com" class="koubei-head-margin2" target="_blank">服务市场</a>
+        <a href="//open.koubei.com" class="koubei-head-margin2" target="_blank">开放平台</a>
+        <a href="./app" class="koubei-head-margin2" target="_blank" id="JS-appdownload">APP下载</a>
+        <div class="koubei-head-ipv6">
+          <p>网站支持</p>
+          <i class="icon-ipv6"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="koubei-banner">
+    <div class="koubei-slide-wraper">
+      <ul id="J_Slider" class="bxslider">
+        
+          
+            <li>
+              <div class="pic2" style='background:url("https://gw.alipayobjects.com/zos/rmsportal/IoTGZzlFlaXBhYtaYkrR.png@_80q") no-repeat center center;background-size:cover'>
+                <!-- 
+                  <img src="https://gw.alipayobjects.com/zos/rmsportal/cDcznZrMhfzwLFCBUEpB.png"/>
+                 -->
+              </div>
+            </li>
+          
+        
+      </ul>
+    </div>
+    <div class="koubei-banner-fixedbox">
+      <div class="koubei-banner-fixed">
+        <div class="item">
+          <div class="content">
+            <p>我是商家</p>
+            <p>
+              <a href="//e.alipay.com" class="o-color" target="_blank">登录</a>
+              <a href="//auth.alipay.com/login/ant_sso_index.htm" target="_blank">入驻</a>
+            </p>
+          </div>
+        </div>
+        <span class="slice slice-pos1"></span>
+
+        <div class="item">
+          <div class="content">
+            <p>我是服务商</p>
+            <p>
+              <a href="//work.koubei.com" class="o-color" target="_blank">登录</a>
+              <!-- <a href="//kbsales.alipay.com/sign/kpSign.htm" target="_blank">入驻</a> -->
+              <a class="handchange">入驻</a>
+            </p>
+          </div>
+        </div>
+
+        <span class="slice slice-pos2"></span>
+        <div class="item">
+          <div class="content">
+            <p>我是开发者</p>
+            <p>
+              <a href="//open.alipay.com/platform/manageHome.htm?jumpFrom=KOUBEI" class="o-color" target="_blank">登录</a>
+              <a href="//open.koubei.com/#/cooperation?type=guide" target="_blank">入驻</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="koubei-shop koubei-floor" id="koubeiShop">
+    <div class="koubei-section1">
+      <div class="koubei-section1-box">
+        <h1>我是商家</h1>
+
+        <a href="//open.koubei.com/#/solution?type=catering&no=0" class="koubei-section1-card " target="_blank">
+          <div class="koubei-section1-cardbac1">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://zos.alipayobjects.com/rmsportal/acXviXLFTgIScjvRZjyz.jpg" alt="">
+          </div>
+          <div class="koubei-section1-carddescri">
+            <h2>餐饮</h2>
+            <div>口碑平台以数据能力，助力商家进行</div>
+            <div>会员关系沉淀和精准化营销</div>
+          </div>
+        </a>
+
+        <a href="//open.koubei.com/#/solution?type=generic&no=0" class="koubei-section1-card " target="_blank">
+          <div class="koubei-section1-cardbac2">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://zos.alipayobjects.com/rmsportal/pGMxfCvlFexQUbYMeJyT.jpg" alt="">
+          </div>
+          <div class="koubei-section1-carddescri">
+            <h2>泛行业</h2>
+            <div>口碑针对不同行业提供针对性解决</div>
+            <div>方案，包括丽人、KTV、健身等</div>
+          </div>
+        </a>
+
+        <a href="//open.koubei.com/#/solution?type=fastMoving&no=0" class="koubei-section1-card " target="_blank">
+          <div class="koubei-section1-cardbac3">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://zos.alipayobjects.com/rmsportal/DGEchaQyPzdwMvbqzzsk.jpg"  alt="">
+
+          </div>
+          <div class="koubei-section1-carddescri">
+            <h2>快消与零售</h2>
+            <div>依托大数据，精准触达目标用户，用</div>
+            <div>多样化营销带来客流客单增长</div>
+          </div>
+        </a>
+
+        <a href="//open.koubei.com/#/solution?type=synthesis&no=0" class="koubei-section1-card koubei-section1-cardend" target="_blank">
+          <div class="koubei-section1-cardbac4">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://zos.alipayobjects.com/rmsportal/eijKeFVRIkUVawHwwOAa.jpg"  alt="">
+          </div>
+          <div class="koubei-section1-carddescri">
+            <h2>商业综合体</h2>
+            <div>提供更多线上渠道触达用户，让</div>
+            <div>用户感知到“更懂你”的商圈</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="koubei-section2">
+      <div class="koubei-section2-box">
+        <div class="koubei-section2-left">
+          <i class='section2-iconfont icon-guanfangguwen'></i>
+          <h2>官方顾问体系</h2>
+          <p style="margin-top: 20px;">160个地级市近千万名小二，365天</p>
+          <p>提供政策咨询，运营指导等服务</p>
+        </div>
+        <div class="koubei-section2-cent1">
+          <i class='section2-iconfont icon-shengtaifuwu'></i>
+          <h2>生态服务体系</h2>
+          <p style="margin-top: 20px;">携手运营服务商和生态服务者，提供</p>
+          <p>从入驻口碑、支付接入一系列服务</p>
+        </div>
+        <div class="koubei-section2-cent2">
+          <i class='section2-iconfont icon-shanghuchengchang'></i>
+          <h2>商户成长体系</h2>
+          <p style="margin-top: 20px;">口碑学院针对不同商户建立系统化</p>
+          <p>培训体系，帮助商户可持续成长</p>
+        </div>
+        <div class="koubei-section2-right">
+          <i class='section2-iconfont icon-kehufuwu'></i>
+          <h2>客户服务体系</h2>
+          <p style="margin-top: 20px;">通过400电话、智能客服及专业服务</p>
+          <p>团队，为商户提供7*24小时服务</p>
+        </div>
+      </div>
+    </div>
+    <div class="koubei-section3">
+      <div class="koubei-section3-box">
+        <div class="koubei-section3-left">
+          <img src="" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/XTqrdQvmGHHNZHsiZcnJ.png" alt="">
+        </div>
+        <div class="koubei-section3-text">
+          <div>
+            <h2>下载口碑掌柜 对账更轻松</h2>
+            <p style="margin-top:18px;">
+              简易对账——简易对账、入驻开店一体化，简单的操作助力您开店运营自己的生意
+            </p>
+            <p>
+              经营参谋——通过大数据分析，为您的生意提供参谋
+            </p>
+            <p>
+              会员营销——多种营销工具，拉新留存用户
+            </p>
+          </div>
+        </div>
+        <div class="koubei-section3-cent">
+          <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://zos.alipayobjects.com/rmsportal/vLTNJftaFOKJhLnfixdv.png" alt="">
+          <div>
+            <span style="font-size:14px;">扫码下载</span>
+            <span style="margin-left:15px;">
+                <i class='section3-iconfont icon-pingguo1'></i>
+                <p></p>
+                <i class='section3-iconfont icon-anzhuo1' style="margin-left:8px;"></i>
+              </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="koubei-server koubei-floor">
+    <div class="koubei-section4">
+      <div class="koubei-section4-box">
+        <h1>我是服务商</h1>
+        <div class="koubei-section4-text ">
+          <div class="koubei-section4-textdes">
+            <i class="section4-iconfont icon-tuozhan"></i>
+            <h2>拓展商户</h2>
+            <p class="margin-other">● 帮助商户签约入驻口碑</p>
+            <p>● 帮助商户开户门店、管理员工</p>
+          </div>
+          <div class="koubei-section4-textdes">
+            <i class="section4-iconfont icon-mendianweihu"></i>
+            <h2>运营维护</h2>
+            <p>● 帮助商户装修店铺、管理评价、分析数据等</p>
+            <p>● 使用口碑营销工具，帮助商户进行门店营销</p>
+          </div>
+          <div class="koubei-section4-textdes">
+            <i class="section4-iconfont icon-gongjutuiguang"></i>
+            <h2>工具推广</h2>
+            <p>● 推广ISV工具，助力口碑生态合作伙伴和商户</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="koubei-section5">
+      <div class="koubei-section5-box">
+        <div class="koubei-section5-cont">
+          <div class="koubei-section5-contdes">
+            <div class="circle-box">
+              <i class="section5-iconfont icon-qianyuefuwu"></i>
+            </div>
+            <h2>签约口碑</h2>
+          </div>
+          <img src="https://zos.alipayobjects.com/rmsportal/WKjEJtUCCqWbbWNGdnNo.png" alt="">
+          <div class="koubei-section5-contdes">
+            <div class="circle-box">
+              <i class="section5-iconfont icon-mendianfuwu"></i>
+            </div>
+            <h2>服务商户</h2>
+          </div>
+          <img src="https://zos.alipayobjects.com/rmsportal/WKjEJtUCCqWbbWNGdnNo.png"  class="section5-img2"alt="">
+          <div class="koubei-section5-contdes">
+            <div class="circle-box">
+              <i class="section5-iconfont icon-yongjin"></i>
+            </div>
+            <h2>获得佣金</h2>
+          </div>
+        </div>
+        <!-- <h1><a href="//kbsales.alipay.com/sign/kpSign.htm" target="_blank">立即入驻</a></h1> -->
+        <h1><a class="handchange">立即入驻</a></h1>
+        <p style="margin-top:16px;">(直属城市入驻请联系 400-826-7710)</p>
+      </div>
+    </div>
+  </div>
+  <div class="koubei-developer koubei-floor">
+    <div class="koubei-section6 lazyloadback"  data-url="https://zos.alipayobjects.com/rmsportal/SxxHzBJnaRZhjjqYvRXv.jpg@85q">
+      <div class="koubei-section6-box">
+        <h1>我是开发者</h1>
+        <div class="koubei-section6-contleft-box">
+        </div>
+        <div class="koubei-section6-contright-box">
+        </div>
+        <div class="koubei-section6-contleft">
+          <h2>
+            丰富的API接口
+          </h2>
+          <p>通过我们提供的丰富的API接口，开发者可以开发并在应用</p>
+          <p>市场上线各类插件，解决门店管理、支付核销、会员营销、</p>
+          <p>数据分析等方面的问题</p>
+        </div>
+        <div class="koubei-section6-contright">
+          <h2>
+            清晰的盈利模式
+          </h2>
+          <p>开放平台还为各种应用提供了清晰的盈利模式，通过</p>
+          <p>应用市场的销售获得回报</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="koubei-section7">
+    <div class="koubei-section7-box">
+      <div class="koubei-section7-text ">
+        <div class="koubei-section7-textdes">
+          <i class="section4-iconfont icon-tianjiamendian"></i>
+          <h2>基础场景</h2>
+          <p>「门店创建」ISV可在商家授权后，通过接口帮</p>
+          <p>助商家快速线上开店，开店和当面付产品签约</p>
+          <p>一步到位</p>
+        </div>
+        <div class="koubei-section7-textdes">
+          <i class="section4-iconfont icon-yingxiaochangjing"></i>
+          <h2>营销场景</h2>
+          <p>「支付即会员、一键营销、单品营销」ISV开发</p>
+          <p>各种营销工具，帮助商户轻松进行会员营销，</p>
+          <p>精准营销，一键营销及单品营销</p>
+        </div>
+        <div class="koubei-section7-textdes">
+          <i class="section4-iconfont iconsize icon-fuwuchangjing"></i>
+          <h2 class="h-margintop">服务场景</h2>
+          <p>「点菜、排队、预定」ISV可为商家提供点菜、</p>
+          <p>排队、预定、打赏等插件应用，为商户提升服</p>
+          <p>务体验及经营效率</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="koubei-section8">
+    <div class="koubei-section8-box">
+      <ul class="koubei-section8-cont">
+        <a href="//open.koubei.com/#/institute?type=case&no=jdxdc_20160530" target="_blank">
+          <div class="koubei-section8-card koubei-section8-cardback1">
+            <div class="cardmask">
+            </div>
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/myQRtRmalNnAehQkpLSh.jpg" alt="">
+          </div>
+          <div class="koubei-section8-cardtip">
+            扫码点菜
+          </div>
+          <div class="section8-circle-pos">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/zzWlvfyCPNwaWVXpqJiN.png" class="section8-imgpos" alt="">
+          </div>
+          <h1>米客互联</h1>
+          <p>米客扫码点菜助力金鼎轩</p>
+          <p>让服务员减半，客单量倍升</p>
+        </a>
+        <a href="//open.koubei.com/#/institute?type=case&no=cmfe_20170930" target="_blank">
+          <div class="koubei-section8-card koubei-section8-cardback2">
+            <div class="cardmask">
+            </div>
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/kFZkKuGArfeKxjZCRpji.jpg" alt="">
+          </div>
+          <div class="koubei-section8-cardtip">
+            码上付
+          </div>
+          <div class="section8-circle-pos">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/ffWVZMANsptVbVYEYsPp.png" class="section8-imgpos" alt="">
+          </div>
+          <h1>银盒子</h1>
+          <p>柴门饭儿受益口碑码和银盒子码上付</p>
+          <p>每张餐桌都变流量入口，码上付让餐厅抓住流量红利</p>
+        </a>
+        <a href="//open.koubei.com/#/institute?type=case&no=xpxpcs_20171009" class="li-end" target="_blank">
+          <div class="koubei-section8-card koubei-section8-cardback3">
+            <div class="cardmask">
+            </div>
+            <img  src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/DXCgKATfFbKjXWXpscQK.jpg" alt="">
+          </div>
+          <div class="koubei-section8-cardtip">
+            餐饮系统
+          </div>
+          <div class="section8-circle-pos">
+            <img src="https://zos.alipayobjects.com/rmsportal/uhrsSzHbJiscrKi.png" class="lazyloadimg" data-src="https://gw.alipayobjects.com/zos/rmsportal/fmlMYynyymlAQkQirROK.png" class="section8-imgpos" alt="">
+          </div>
+          <h1>辰森世纪</h1>
+          <p>呷哺呷哺携手辰森餐饮系统</p>
+          <p>700家门店营销效率提升50%，操作成本降低30%</p>
+        </a>
+      </ul>
+      <h3><a href="//open.koubei.com/#/cooperation?type=guide" target="_blank">立即接入</a></h3>
+    </div>
+  </div>
+  <div class="koubei-foot">
+    <div class="koubei-foot-box">
+      <ul>
+        <li><a href="//job.alipay.com/index.php" target="_blank">诚征英才</a>|</li>
+        <li><a href="//cshall.alipay.com/takeaway/knowledgeDetail.htm?knowledgeId=201602044898&amp;enctraceid=KAAyndpVuVZdMuGsBNN-8kpHt7kZEPIh74q1wAqYP88" target="_blank">联系我们</a>|</li>
+        <li><a href="//love.alipay.com/donate/index.htm" target="_blank">支付宝E公益</a>|</li>
+        <!-- <li><a href="//xue.koubei.com" target="_blank">口碑学院</a>|</li> -->
+        <li><a href="http://report.12377.cn:13225/typecatalogSelect.html" target="_blank">网上有害信息举报</a></li>
+      </ul>
+      <p>© 杭州口口相传网络技术有限公司版权所有 ICP证：<a href="http://www.beian.miit.gov.cn/" target="_blank">浙B2-20100391</a> 联系地址：杭州市西湖区西溪路556号阿里中心蚂蚁z空间</p>
+    </div>
+  </div>
+  <div class="koubei-floor-nav" id="floornav">
+    <ul>
+      <div>
+        <img src="https://zos.alipayobjects.com/rmsportal/pORYFKIOfcdOsXDeuOdd.png" alt="">
+        <p>
+          顶部
+        </p>
+      </div>
+      <li class="onfloor">
+        <p>我是</p>
+        <p>商家</p>
+
+      </li>
+      <li>
+        <p>我是</p>
+        <p>服务商</p>
+
+      </li>
+      <li>
+        <p>我是</p>
+        <p>开发者</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrap">
+  <div class="supernatant">
+    <div class="supernatant-left"><span>i</span></div>
+    <div class="supernatant-right">
+      <div class="content-top">很抱歉，服务商自助入驻业务暂时关闭，如有疑问请咨询4008267710</div>
+      <div class="content-bottom" id="content-bottom">知道了</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://gw.alipayobjects.com/os/??s/prod/koubei-index/common-c1759.js,s/prod/koubei-index/index-b0323.js"></script></body>
+</html>

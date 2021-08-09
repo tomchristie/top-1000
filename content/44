@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width">
+  <meta name="Author" content="orkut.com">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <title>orkut.com</title>
+
+  <link rel="stylesheet" href="/incl_/css/style_v2.css">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-50336702-2', 'auto');
+    ga('send', 'pageview');
+    ga('require', 'linkid');
+  </script>
+
+  <script type="text/javascript" src="/incl_/js/expand.js"></script>
+</head>
+
+<body>
+
+<!-- BEGIN:  Content -->
+<div id="content">
+
+  <div id="header">
+    <a href="http://www.hello.com/en/index.html"><img class="banner_img" src="/img_/top_header.png"></a>
+  </div>
+
+  <div id="nav_bar">
+    <div id="language">
+      <div class="lang_label">languages:</div>
+      <div class="lang_link">
+        <a href="index.html" class="active">English</a>
+      </div>
+      <div class="lang_link">
+        <a href="index_de.html">Deutsch</a>
+      </div>
+      <div class="lang_link">
+        <a href="index_fr.html">Français</a>
+      </div>
+      <div class="lang_link">
+        <a href="index_es.html">Español</a>
+      </div>
+      <div class="lang_link">
+        <a href="index_tr.html">Türkçe</a>
+      </div>
+      <div class="lang_link">
+        <a href="index_pt.html">Português</a>
+      </div>
+    </div>
+
+    <div class="download">
+      <a href="https://hellonetwork.app.link/VUnS6L9JpG">
+        <img class="hello_icon" src="/img_/hello_app_icon.png">
+        Download hello
+      </a>
+    </div>
+  </div>
+
+  <div id="main">
+
+    <div id="hello_panel" style="display: none">
+      <img src="/img_/hello_ghost.png">
+    </div>
+
+    <div id="orkut_panel">
+      <img src="/img_/orkut_ghost.png">
+    </div>
+
+    <div class="paper">
+      <p><div class="p_header">Hello,</div></p>
+
+      <p>I’m Orkut.</p>
+
+      <p>You may not know me but 13 years ago I started a social network called orkut.com while I was working as an engineer at Google. I'm the guy orkut.com was named after. In 2014 when Google announced that orkut would be shutting down, it was a sad moment for us. orkut had become a community of over 300 million people and was such an amazing adventure for all of us. Nobody wanted to lose what we had created together. We met amazing new people. We went on dates. We found new jobs. We even got married and had kids because of orkut. We made it happen, together.</p>
+
+      <div id="expand"><p><a href="javascript:;" onclick="expandContent()"> Read more...</a></p></div>
+
+      <div id="more_content" style="display: none">
+
+        <p>The world is a better place when we get to know each other, when we are a little less strange to each other. I've been a stranger myself sometimes: I was born in Turkey and grew up in Germany where I was a geeky muslim boy in a class of blondes. Back in Turkey in middle school, I was the funny guy with the German accent. All my life, I have felt like someone on the outs: I was a programmer, I was gay or I was short and had a foreign accent. I haven't always had the easiest journey. But the truth is, I've never had trouble making friends because I love people.</p>
+
+        <p>I think we all should be a little bit friendlier. The world needs it. We are living in a strange time. We hide behind our devices, ignoring the people around us. We stay with locals when we travel abroad but we don't even know our neighbors at home. We click through feeds of updates from our friends from under our covers in the dark. Our lives are splinters of anonymity and isolation. Too often, we are lonely. Too often, we are afraid of what we don't know. Too often, we are hateful toward what we don't understand.</p>
+
+        <p>But I'm hopeful about our world. I'm confident the more we connect, the more beautiful it will become. I created orkut with this in mind. It's also why I created the world's first social network when I was a grad student at Stanford, and it's why I have dedicated my life to helping people connect with each other.</p>
+
+        <p>So to all my friends, thank you for making orkut such a loving community. I'm so blessed to share this world with you. As a token of gratitude, I am making a new social network just for you. I'm not so good at goodbyes, so I'm calling it hello. hello is the next generation of orkut.</p>
+
+        <div id="hide"><p><a href="#content" onclick="hideContent()"> ... show less </a></p></div>
+
+      </div>
+
+      <a href="https://hellonetwork.app.link/VUnS6L9JpG">
+        <img class="hello_icon_p" src="/img_/hello_app_icon.png">
+      </a>
+      <div class="p_header">What is hello?</div>
+
+      <p>hello is the first social network built on loves, not likes. I designed hello to help you connect with people who share your passions.</p>
+
+      <p>hello connects us all. Think about it: you can say "hello" in any language and people will understand. "Hello" is probably the most widely spoken word in the world after "Okay." Aló, halo, ʾāllo, alô, hallo, alló, hello. Fear and hatred have no place when you make such a simple and friendly gesture to someone else. So come join me, and make some new friends. Say hello, and love your world.</p>
+
+      <p>stay beautiful,<br>
+      <img id="sig" src="/img_/orkut_signature.png" alt="signature"><br>
+      - Orkut</p>
+    </div>
+  </div>
+ </div>
+
+  <div id="join">
+    <div id="join_left">
+      <img src="/img_/app_demo.gif">
+    </div>
+
+    <div id="join_right">
+      <div id="join_r1"><img src="/img_/hello_logo_black.png"></div>
+      <div id="join_r2">connect with people who share your interests</div>
+      <div id="join_r3"><a href="https://hellonetwork.app.link/VUnS6L9JpG">
+        <img src="/img_/join_hello_button_en.png"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <a href="http://www.hello.com/en/index.html"><img class="banner_img" src="/img_/bottom_footer.png"></a>
+  </div>
+</div>
+<!-- END:  Content -->
+
+</body>
+</html>

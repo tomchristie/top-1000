@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.w3.org/1999/xhtml" style="--col-count:4;" data-content-login="">
+  <head>
+    
+  
+    <script>
+/*<![CDATA[*/
+
+        (function () {
+            // if (checkIfConsentCookieIsPresent()) {
+            //     return;
+            // }
+
+            if (checkBypassCookiePresent()) {
+                return;
+            }
+
+            if (checkIfCookiesAreWritable()) {
+                redirectToInterceptionPage();
+            } else {
+                // Privacy by Default
+                return;
+            }
+
+            // Help functions
+            function checkIfConsentCookieIsPresent () {
+                var localTCString = getCookie('euconsent-v2');
+                return localTCString && localTCString.length > 0;
+            }
+
+            function checkBypassCookiePresent () {
+                var bypassCookieValue = getCookie('euconsent-bypass');
+                return bypassCookieValue && bypassCookieValue === '1';
+            }
+
+            function getCookie (cname) {
+                var name = cname + '=';
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var ca = decodedCookie.split(';');
+
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+
+                    while (c.charAt(0) === ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) === 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return '';
+            }
+
+            function checkIfCookiesAreWritable () {
+                try {
+                    // Create cookie
+                    document.cookie = 'cookietest=1';
+                    var ret = document.cookie.indexOf('cookietest=') !== -1;
+
+                    // Delete cookie
+                    document.cookie = 'cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT';
+                    return ret;
+                } catch (e) {
+                    // console.log('cookies are not allowed');
+                    return false;
+                }
+            }
+
+            function redirectToInterceptionPage () {
+                var tcfLandingpageURL = window.location.protocol + '//'+ window.location.host + '/consent-management/';
+                window.location.href =tcfLandingpageURL;
+            }
+        })();
+    
+/*]]>*/
+</script>
+
+  <script>
+/*<![CDATA[*/
+
+	window.startupTS = new Date().getTime();
+	document.querySelector('html').classList.add('withjs');
+
+	document.addEventListener('pageStartup', () => {
+		// IntersectionObserver check to only support new-ish browsers (we had some probs with older iOS browsers and animations)
+		if (('IntersectionObserver' in window) || ('IntersectionObserverEntry' in window) || ('intersectionRatio' in window.IntersectionObserverEntry.prototype)) {
+			document.querySelector('html').classList.add('ce-available');
+		}
+	});
+
+	const event = new CustomEvent('pageStartup', { bubbles: true, cancelable: true, detail: { source: 'index.html' } });
+	document.dispatchEvent(event);
+  
+/*]]>*/
+</script>
+  <meta charset="utf-8" />
+  <title>WEB.DE - E-Mail-Adresse kostenlos, FreeMail, De-Mail & Nachrichten</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.ui-portal.de/webde/favicon.ico"/>
+  <meta name="description" content="Das beliebteste Internetportal Deutschlands mit Angeboten rund um Suche, Kommunikation, Information und Services."/>
+  <meta name="robots" content="index, follow" />
+  <meta name="templateVersion" content="151.1.10"/>
+  <meta name="frontendStage" content="live"/>
+  <meta name="applicationVersion" content="11.44.2"/>
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <link rel="canonical" href="https://web.de/"/>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://img.ui-portal.de/search-int/osd/web/ff_webde_opensearch.xml" title="WEB.DE Suche"/>
+  
+  
+    
+    <link rel="preload" as="style" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/homepage.css">
+    <link rel="stylesheet" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/homepage.css">
+
+
+  
+    <script>
+window.PageConfig = {
+  "box1Enabled" : true,
+  "brain" : {
+    "prio" : "undefined"
+  },
+  "cont_pagevariant" : "shortlegacy",
+  "cont_tcflayer" : "0",
+  "country" : "de",
+  "optin" : false,
+  "pageidentifier" : "homepage",
+  "reco" : "optout",
+  "site" : "hp",
+  "slimmedSite" : true,
+  "stage" : "live",
+  "tcf" : true,
+  "unitedFallback" : 100,
+  "vorteilswelt" : true
+};
+</script>
+
+  <script>/*<![CDATA[*/
+window.initialData = {
+  "serviceResponse" : {
+    "response" : {
+      "ad" : "<HTML><HEAD><TITLE><\/TITLE><\/HEAD><BODY topmargin=\"0\" leftmargin=\"0\" style=\"background-color:transparent;overflow:hidden;margin:0;padding:0;\"><div style=\"position:absolute;width:1px;height:0px\"><div id=\"obaButton_6994403221347763632\"><\/div><\/div><uim:ad xmlns:uim=\"urn:publicid:-:UIM:adinfo\" contentunitid=\"4498627\" campaignid=\"4543889\" bannerid=\"14101881\" portal=\"webde\" category=\"homepage\" section=\"homepage\" tagid=\"initial\" layoutclass=\"b\" width=\"1\" height=\"1\" adsize=\"1x1\" ovkid=\"\"><\/uim:ad>\n<script>\n    if (window.AdService && typeof AdService.adMeta === 'function') {\n        AdService.adMeta({\n            contentunitid: '4498627',\n            campaignid: '4543889',\n            bannerid: '14101881',\n            portal: 'webde',\n            category: 'homepage',\n            section: 'homepage',\n            tagid: 'initial',\n            layoutclass: 'b',\n            width: '1',\n            height: '1',\n            adsize: '1x1',\n            ovkid: ''\n        });\n    }\n<\/script>\n<script id=\"create\">\n\t/*#create#*/[\n\t\t{\n\t\t\t\"type\": \"video-scroll\",\n\t\t\t\"middle\": {\n\t\t\t\t\"ad\": \"<script>\\n\\t(new Image()).src = 'https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\\n\\tvar adview0=encodeURIComponent('https://united.uimserv.net/event?e=2821&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=17490');\\n\\tvar adview25=encodeURIComponent('https://united.uimserv.net/event?e=2822&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=33876');\\n\\tvar adview50=encodeURIComponent('https://united.uimserv.net/event?e=2823&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=1111');\\n\\tvar adview75=encodeURIComponent('https://united.uimserv.net/event?e=2824&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=1100');\\n\\tvar adview100=encodeURIComponent('https://united.uimserv.net/event?e=2825&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=33871');\\n<\\/script>\\n<script> document.write('<iframe src=\\\"https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1350x380_videoscrooll_otto_bruecke/index_tam8.html?clicktag=https%3A%2F%2Funited.uimserv.net%2Fredi%3Flid%3D6994403221347763632%26optout%3D1%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D0%26sid%3D4498627%26kid%3D4543889%26bid%3D14101881%26c%3D39068%26keyword%3D%26clickurl%3Dhttps%253A%252F%252Fad1.adfarm1.adition.com%252Fredi%253Fsid%253D4590934%2526gdpr%253D0%2526gdpr_consent%253D%2526kid%253D4544494%2526bid%253D14104317&adview0='+adview0+'&adview25='+adview25+'&adview50='+adview50+'&adview75='+adview75+'&adview100='+adview100+'\\\" width=\\\"100%\\\" height=\\\"380\\\" frameborder=\\\"0\\\" border=\\\"0\\\" scrolling=\\\"no\\\" marginwidth=\\\"0\\\" marginheight=\\\"0\\\" style=\\\"width:100%;\\\"><\\/iframe>');<\\/script>\\n\\n<script>\\n\\t(function () {\\n\\t\\tlet videoNotEnded = true;\\n\\t\\tfunction videoIntersectionObserve(observeElem) {\\n\\t\\t\\tconst playRatio = 0.7;\\n\\t\\t\\tconst options = {\\n\\t\\t\\t\\tthreshold: playRatio\\n\\t\\t\\t};\\n\\t\\t\\tconst handleIntersect = function (entrys, observer) {\\n\\t\\t\\t\\tentrys.forEach(function (entryElem) {\\n\\t\\t\\t\\t\\tif (entryElem.intersectionRatio >= playRatio) {\\n\\t\\t\\t\\t\\t\\tconsole.log('UIM_VIDEO_CONTROL_PLAY');\\n\\t\\t\\t\\t\\t\\tvideoNotEnded && observeElem.contentWindow.postMessage('{\\\"action\\\":\\\"UIM_VIDEO_CONTROL_PLAY\\\"}', '*');\\n\\t\\t\\t\\t\\t} else {\\n\\t\\t\\t\\t\\t\\tconsole.log('UIM_VIDEO_CONTROL_PAUSE');\\n\\t\\t\\t\\t\\t\\tvideoNotEnded && observeElem.contentWindow.postMessage('{\\\"action\\\":\\\"UIM_VIDEO_CONTROL_PAUSE\\\"}', '*');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t});\\n\\t\\t\\t};\\n\\t\\t\\tconst observer = new IntersectionObserver(handleIntersect, options);\\n\\t\\t\\tobserver.observe(observeElem);\\n\\t\\t}\\n\\t\\tvideoIntersectionObserve(document.getElementById('uim-mejs-video'));\\n\\t\\twindow.addEventListener('message', function (event) {\\n\\t\\t\\tif (event.origin === 'https://adimg.uimserv.net') {\\n\\t\\t\\t\\tconst data = JSON.parse(event.data);\\n\\t\\t\\t\\tif (data.sender === 'UIM_VIDEO_PLAYER' && data.event === 'UIM_VIDEO_EVENT_ENDED') {\\n\\t\\t\\t\\t\\tconsole.log(data.event);\\n\\t\\t\\t\\t\\tvideoNotEnded = false;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t});\\n\\t}());\\n<\\/script>\",\n\t\t\t\t\"fallback\": {\n\t\t\t\t\t\"column2Ad\": \"<script>\\n\\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/690x380px_videoscroll_otto_bruecke_fallback.jpg';\\n\\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\\n\\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\\n\\tvar imagesize = ['690','380'];\\n\\tvar viewpixel = [''];\\n\\tvar bgcolor = '';\\n\\tvar bgurl = '';\\n\\t/* ab hier nichts aendern */\\n\\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\\n\\tif (tcfkonform && viewpixel) {\\n\\t\\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\\n\\t\\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\\n\\t}\\n\\t\\n\\tdocument.write('<a href=\\\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\\\" target=\\\"_blank\\\"><img src=\\\"'+fallbackimage+'\\\" width=\\\"'+imagesize[0]+'\\\" height=\\\"'+imagesize[1]+'\\\" style=\\\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\\\" alt=\\\"\\\" /><\\/a>');\\n\\n\\tAdService.getParam(['deviceclient','wi'], function(params){\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\\n\\t\\t}\\n\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\tsessionStorage.setItem('initial_imp', params.wi);\\n\\t\\t}\\n\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\\n\\t\\t\\tvar elems = document.getElementsByTagName('a');\\n\\t\\t\\tfor (var i=0; i<elems.length; i++) {\\n\\t\\t\\t\\telems[i].onclick = function() {\\n\\t\\t\\t\\t\\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\\n\\t\\t\\t\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\t\\t\\t\\tsessionStorage.setItem('initial_click', params.wi);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t};\\n\\t\\t\\t}\\n\\t\\t}\\n\\t});\\n<\\/script>\",\n\t\t\t\t\t\"column3Ad\":  \"<script>\\n\\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/1020x380px_videoscroll_otto_bruecke_fallback.jpg';\\n\\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\\n\\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\\n\\tvar imagesize = ['1020','380'];\\n\\tvar viewpixel = [''];\\n\\tvar bgcolor = '';\\n\\tvar bgurl = '';\\n\\t/* ab hier nichts aendern */\\n\\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\\n\\tif (tcfkonform && viewpixel) {\\n\\t\\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\\n\\t\\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\\n\\t}\\n\\t\\n\\tdocument.write('<a href=\\\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\\\" target=\\\"_blank\\\"><img src=\\\"'+fallbackimage+'\\\" width=\\\"'+imagesize[0]+'\\\" height=\\\"'+imagesize[1]+'\\\" style=\\\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\\\" alt=\\\"\\\" /><\\/a>');\\n\\n\\tAdService.getParam(['deviceclient','wi'], function(params){\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\\n\\t\\t}\\n\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\tsessionStorage.setItem('initial_imp', params.wi);\\n\\t\\t}\\n\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\\n\\t\\t\\tvar elems = document.getElementsByTagName('a');\\n\\t\\t\\tfor (var i=0; i<elems.length; i++) {\\n\\t\\t\\t\\telems[i].onclick = function() {\\n\\t\\t\\t\\t\\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\\n\\t\\t\\t\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\t\\t\\t\\tsessionStorage.setItem('initial_click', params.wi);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t};\\n\\t\\t\\t}\\n\\t\\t}\\n\\t});\\n<\\/script>\",\n\t\t\t\t\t\"column4Ad\":  \"<script>\\n\\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/1350x380px__videoscroll_otto_bruecke_fallback.jpg';\\n\\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\\n\\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\\n\\tvar imagesize = ['1350','380'];\\n\\tvar viewpixel = [''];\\n\\tvar bgcolor = '';\\n\\tvar bgurl = '';\\n\\t/* ab hier nichts aendern */\\n\\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\\n\\tif (tcfkonform && viewpixel) {\\n\\t\\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\\n\\t\\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\\n\\t}\\n\\t\\n\\tdocument.write('<a href=\\\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\\\" target=\\\"_blank\\\"><img src=\\\"'+fallbackimage+'\\\" width=\\\"'+imagesize[0]+'\\\" height=\\\"'+imagesize[1]+'\\\" style=\\\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\\\" alt=\\\"\\\" /><\\/a>');\\n\\n\\tAdService.getParam(['deviceclient','wi'], function(params){\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\\n\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\\n\\t\\t}\\n\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\tsessionStorage.setItem('initial_imp', params.wi);\\n\\t\\t}\\n\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\\n\\t\\t\\tvar elems = document.getElementsByTagName('a');\\n\\t\\t\\tfor (var i=0; i<elems.length; i++) {\\n\\t\\t\\t\\telems[i].onclick = function() {\\n\\t\\t\\t\\t\\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\\n\\t\\t\\t\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\t\\t\\t\\tsessionStorage.setItem('initial_click', params.wi);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t};\\n\\t\\t\\t}\\n\\t\\t}\\n\\t});\\n<\\/script>\"\n\t\t\t\t}\n\t\t\t},\n\t\t\t\"wall\": {\n\t\t\t\t\"ad\": \"<script>\\n\\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1280x818_videoscroll_otto_motiv_wall/1280x818_videoscroll_otto_motiv_wall.hyperesources/1280x818_videoscroll_otto_motiv_bg.jpg';\\n\\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\\n\\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\\n\\tvar imagesize = ['100%','100%'];\\n\\tvar viewpixel = ['', 'https://ad1.adfarm1.adition.com/banner?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317&ts=6994403221347763632'];\\n\\tvar bgcolor = '';\\n\\tvar bgurl = '';\\n\\t/* ab hier nichts aendern */\\n\\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\\n\\tif (tcfkonform && viewpixel) {\\n\\t\\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\\n\\t\\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\\n\\t}\\n\\t\\n\\tdocument.write('<a href=\\\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\\\" target=\\\"_blank\\\" style=\\\"position: absolute; width: '+imagesize[0]+'; height: '+imagesize[1]+'; background-image: url('+fallbackimage+'); background-size: cover;\\\"><\\/a>');\\n\\n\\tAdService.getParam(['deviceclient','wi'], function(params){\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\\n\\t\\t\\tvar elems = document.getElementsByTagName('a');\\n\\t\\t\\tfor (var i=0; i<elems.length; i++) {\\n\\t\\t\\t\\telems[i].onclick = function() {\\n\\t\\t\\t\\t\\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\\n\\t\\t\\t\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\t\\t\\t\\tsessionStorage.setItem('initial_click', params.wi);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t};\\n\\t\\t\\t}\\n\\t\\t}\\n\\t});\\n<\\/script>\",\n\t\t\t\t\"fallback\": \"<script>\\n\\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1280x818_videoscroll_otto_motiv_wall/1280x818_videoscroll_otto_motiv_wall.hyperesources/1280x818_videoscroll_otto_motiv_bg.jpg';\\n\\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\\n\\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\\n\\tvar imagesize = ['100%','100%'];\\n\\tvar viewpixel = ['', 'https://ad1.adfarm1.adition.com/banner?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317&ts=6994403221347763632'];\\n\\tvar bgcolor = '';\\n\\tvar bgurl = '';\\n\\t/* ab hier nichts aendern */\\n\\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\\n\\tif (tcfkonform && viewpixel) {\\n\\t\\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\\n\\t\\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\\n\\t}\\n\\t\\n\\tdocument.write('<a href=\\\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\\\" target=\\\"_blank\\\" style=\\\"position: absolute; width: '+imagesize[0]+'; height: '+imagesize[1]+'; background-image: url('+fallbackimage+'); background-size: cover;\\\"><\\/a>');\\n\\n\\tAdService.getParam(['deviceclient','wi'], function(params){\\n\\t\\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\\n\\t\\t\\tvar elems = document.getElementsByTagName('a');\\n\\t\\t\\tfor (var i=0; i<elems.length; i++) {\\n\\t\\t\\t\\telems[i].onclick = function() {\\n\\t\\t\\t\\t\\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\\n\\t\\t\\t\\t\\t\\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\tif (typeof(Storage) !== 'undefined') {\\n\\t\\t\\t\\t\\t\\tsessionStorage.setItem('initial_click', params.wi);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t};\\n\\t\\t\\t}\\n\\t\\t}\\n\\t});\\n<\\/script>\"\n\t\t\t},\n\t\t\t\"showFallback\": {\n\t\t\t\t\"os\": {\n\t\t\t\t\t\"ios\": true\n\t\t\t\t},\n\t\t\t\t\"clean\": true,\n\t\t\t\t\"tcf\": {\n\t\t\t\t\t\"publisher\": [1,2,3,4,7]\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t]/*#etaerc#*/\n<\/script>\n<script type=\"text/javascript\">\n(function() {\n  var domId = 'obaButton_6994403221347763632',oba='',btr = 'false',position= 'top-right'||'top-right';\n  if (oba != '' || btr == 'true') {\n    var oba_script = document.createElement('script');\n    oba_script.setAttribute('type','text/javascript');\n    oba_script.setAttribute('charset','utf-8');\n          oba_script.setAttribute('src', 'https://imagesrv.adition.com/banners/42/oba_priv.sjs?oba='+oba+'&domId='+domId+'&btr='+btr+'&pos='+position+'&cid=&aid=92983');\n    \n    document.getElementsByTagName('head')[0].appendChild(oba_script);\n\n  }\n  })();\n<\/script><\/BODY><\/HTML>",
+      "middle" : {
+        "ad" : "<script>\n\t(new Image()).src = 'https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\n\tvar adview0=encodeURIComponent('https://united.uimserv.net/event?e=2821&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=17490');\n\tvar adview25=encodeURIComponent('https://united.uimserv.net/event?e=2822&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=33876');\n\tvar adview50=encodeURIComponent('https://united.uimserv.net/event?e=2823&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=1111');\n\tvar adview75=encodeURIComponent('https://united.uimserv.net/event?e=2824&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=1100');\n\tvar adview100=encodeURIComponent('https://united.uimserv.net/event?e=2825&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=33871');\n<\/script>\n<script> document.write('<iframe src=\"https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1350x380_videoscrooll_otto_bruecke/index_tam8.html?clicktag=https%3A%2F%2Funited.uimserv.net%2Fredi%3Flid%3D6994403221347763632%26optout%3D1%26gdpr%3D0%26gdpr%5Fconsent%3D%26gdpr%5Fpd%3D0%26userid%3D0%26sid%3D4498627%26kid%3D4543889%26bid%3D14101881%26c%3D39068%26keyword%3D%26clickurl%3Dhttps%253A%252F%252Fad1.adfarm1.adition.com%252Fredi%253Fsid%253D4590934%2526gdpr%253D0%2526gdpr_consent%253D%2526kid%253D4544494%2526bid%253D14104317&adview0='+adview0+'&adview25='+adview25+'&adview50='+adview50+'&adview75='+adview75+'&adview100='+adview100+'\" width=\"100%\" height=\"380\" frameborder=\"0\" border=\"0\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" style=\"width:100%;\"><\/iframe>');<\/script>\n\n<script>\n\t(function () {\n\t\tlet videoNotEnded = true;\n\t\tfunction videoIntersectionObserve(observeElem) {\n\t\t\tconst playRatio = 0.7;\n\t\t\tconst options = {\n\t\t\t\tthreshold: playRatio\n\t\t\t};\n\t\t\tconst handleIntersect = function (entrys, observer) {\n\t\t\t\tentrys.forEach(function (entryElem) {\n\t\t\t\t\tif (entryElem.intersectionRatio >= playRatio) {\n\t\t\t\t\t\tconsole.log('UIM_VIDEO_CONTROL_PLAY');\n\t\t\t\t\t\tvideoNotEnded && observeElem.contentWindow.postMessage('{\"action\":\"UIM_VIDEO_CONTROL_PLAY\"}', '*');\n\t\t\t\t\t} else {\n\t\t\t\t\t\tconsole.log('UIM_VIDEO_CONTROL_PAUSE');\n\t\t\t\t\t\tvideoNotEnded && observeElem.contentWindow.postMessage('{\"action\":\"UIM_VIDEO_CONTROL_PAUSE\"}', '*');\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t};\n\t\t\tconst observer = new IntersectionObserver(handleIntersect, options);\n\t\t\tobserver.observe(observeElem);\n\t\t}\n\t\tvideoIntersectionObserve(document.getElementById('uim-mejs-video'));\n\t\twindow.addEventListener('message', function (event) {\n\t\t\tif (event.origin === 'https://adimg.uimserv.net') {\n\t\t\t\tconst data = JSON.parse(event.data);\n\t\t\t\tif (data.sender === 'UIM_VIDEO_PLAYER' && data.event === 'UIM_VIDEO_EVENT_ENDED') {\n\t\t\t\t\tconsole.log(data.event);\n\t\t\t\t\tvideoNotEnded = false;\n\t\t\t\t}\n\t\t\t}\n\t\t});\n\t}());\n<\/script>",
+        "fallback" : {
+          "column2Ad" : "<script>\n\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/690x380px_videoscroll_otto_bruecke_fallback.jpg';\n\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\n\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\n\tvar imagesize = ['690','380'];\n\tvar viewpixel = [''];\n\tvar bgcolor = '';\n\tvar bgurl = '';\n\t/* ab hier nichts aendern */\n\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\n\tif (tcfkonform && viewpixel) {\n\t\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\n\t\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\n\t}\n\t\n\tdocument.write('<a href=\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\" target=\"_blank\"><img src=\"'+fallbackimage+'\" width=\"'+imagesize[0]+'\" height=\"'+imagesize[1]+'\" style=\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\" alt=\"\" /><\/a>');\n\n\tAdService.getParam(['deviceclient','wi'], function(params){\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\n\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\n\t\t}\n\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\tsessionStorage.setItem('initial_imp', params.wi);\n\t\t}\n\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\n\t\t\tvar elems = document.getElementsByTagName('a');\n\t\t\tfor (var i=0; i<elems.length; i++) {\n\t\t\t\telems[i].onclick = function() {\n\t\t\t\t\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\n\t\t\t\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t\t\t}\n\t\t\t\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\t\t\t\tsessionStorage.setItem('initial_click', params.wi);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t}\n\t});\n<\/script>",
+          "column3Ad" : "<script>\n\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/1020x380px_videoscroll_otto_bruecke_fallback.jpg';\n\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\n\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\n\tvar imagesize = ['1020','380'];\n\tvar viewpixel = [''];\n\tvar bgcolor = '';\n\tvar bgurl = '';\n\t/* ab hier nichts aendern */\n\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\n\tif (tcfkonform && viewpixel) {\n\t\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\n\t\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\n\t}\n\t\n\tdocument.write('<a href=\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\" target=\"_blank\"><img src=\"'+fallbackimage+'\" width=\"'+imagesize[0]+'\" height=\"'+imagesize[1]+'\" style=\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\" alt=\"\" /><\/a>');\n\n\tAdService.getParam(['deviceclient','wi'], function(params){\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\n\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\n\t\t}\n\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\tsessionStorage.setItem('initial_imp', params.wi);\n\t\t}\n\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\n\t\t\tvar elems = document.getElementsByTagName('a');\n\t\t\tfor (var i=0; i<elems.length; i++) {\n\t\t\t\telems[i].onclick = function() {\n\t\t\t\t\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\n\t\t\t\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t\t\t}\n\t\t\t\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\t\t\t\tsessionStorage.setItem('initial_click', params.wi);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t}\n\t});\n<\/script>",
+          "column4Ad" : "<script>\n\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/fallback/1350x380px__videoscroll_otto_bruecke_fallback.jpg';\n\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\n\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\n\tvar imagesize = ['1350','380'];\n\tvar viewpixel = [''];\n\tvar bgcolor = '';\n\tvar bgurl = '';\n\t/* ab hier nichts aendern */\n\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\n\tif (tcfkonform && viewpixel) {\n\t\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\n\t\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\n\t}\n\t\n\tdocument.write('<a href=\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\" target=\"_blank\"><img src=\"'+fallbackimage+'\" width=\"'+imagesize[0]+'\" height=\"'+imagesize[1]+'\" style=\"border-style: none; display: block; position: absolute; transform: translateX(-50%);\" alt=\"\" /><\/a>');\n\n\tAdService.getParam(['deviceclient','wi'], function(params){\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi)) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t(new Image()).src = 'https://united.uimserv.net/event?e=4620&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=65209'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t} else if (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_imp') != params.wi) {\n\t\t\t(new Image()).src ='https://united.uimserv.net/confirm?lid=6994403221347763632&userid=0&adhost=ad176';\n\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4622&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=48828';\n\t\t}\n\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\tsessionStorage.setItem('initial_imp', params.wi);\n\t\t}\n\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\n\t\t\tvar elems = document.getElementsByTagName('a');\n\t\t\tfor (var i=0; i<elems.length; i++) {\n\t\t\t\telems[i].onclick = function() {\n\t\t\t\t\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\n\t\t\t\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t\t\t}\n\t\t\t\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\t\t\t\tsessionStorage.setItem('initial_click', params.wi);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t}\n\t});\n<\/script>"
+        }
+      },
+      "requestHeaders" : {
+        "User-Agent" : "python-httpx/0.18.2",
+        "X-Forwarded-For" : "62.31.28.214"
+      },
+      "requestUrl" : "https://united.uimserv.net/lt?wpt=h&nw=42&ac=1&lt=portal(webde)category(homepage)section(homepage)tagid(initial)layoutclass(b)&wi=151357465&ref=https://web.de&browser=&iframe=0&os=&uid_stable=0&external_uid=&optout=1&userid=&prf%5Bportal%5D=webde&prf%5Bcategory%5D=homepage&prf%5Bsection%5D=homepage&prf%5Btagid%5D=initial&prf%5Blayoutclass%5D=b&prf%5Bdeviceclass%5D=&prf%5Bdeviceclient%5D=browser&prf%5Bcategorytype%5D=&prf%5Bos%5D=&prf%5Bbrowser%5D=&prf%5Biframe%5D=0&prf%5Bsys%5D=&prf%5Bsysv%5D=&prf%5Bcl%5D=&prf%5Bclv%5D=&prf%5Bvpw%5D=&prf%5Bnet%5D=&prf%5Bexternal_uid%5D=&prf%5Bhid%5D=&prf%5Bnguserid%5D=&prf%5Bpagev%5D=2&prf%5Buids%5D=0&prf%5Boptout%5D=1&prf%5Bclktype%5D=&prf%5Bwi%5D=151357465&prf%5Bbrandedbrowser%5D=&prf%5Bdnt%5D=0&prf%5Bpos%5D=1&prf%5Bspecial%5D=&prf%5Btcf_version%5D=1.1&prf%5Bweather_condition%5D=&prf%5Bweather_temp%5D=&prf%5Bbusterid%5D=4543889&prf%5Blegacy%5D=1&prf%5Btcf_pub%5D=,,&prf%5Btcf_pur%5D=,,&prf%5Btcf_spe%5D=,,",
+      "showFallback" : {
+        "os" : {
+          "ios" : true
+        },
+        "clean" : true,
+        "tcf" : {
+          "publisher" : [ 1, 2, 3, 4, 7 ]
+        }
+      },
+      "type" : "video-scroll",
+      "wall" : {
+        "ad" : "<script>\n\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1280x818_videoscroll_otto_motiv_wall/1280x818_videoscroll_otto_motiv_wall.hyperesources/1280x818_videoscroll_otto_motiv_bg.jpg';\n\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\n\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\n\tvar imagesize = ['100%','100%'];\n\tvar viewpixel = ['', 'https://ad1.adfarm1.adition.com/banner?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317&ts=6994403221347763632'];\n\tvar bgcolor = '';\n\tvar bgurl = '';\n\t/* ab hier nichts aendern */\n\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\n\tif (tcfkonform && viewpixel) {\n\t\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\n\t\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\n\t}\n\t\n\tdocument.write('<a href=\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\" target=\"_blank\" style=\"position: absolute; width: '+imagesize[0]+'; height: '+imagesize[1]+'; background-image: url('+fallbackimage+'); background-size: cover;\"><\/a>');\n\n\tAdService.getParam(['deviceclient','wi'], function(params){\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\n\t\t\tvar elems = document.getElementsByTagName('a');\n\t\t\tfor (var i=0; i<elems.length; i++) {\n\t\t\t\telems[i].onclick = function() {\n\t\t\t\t\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\n\t\t\t\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t\t\t}\n\t\t\t\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\t\t\t\tsessionStorage.setItem('initial_click', params.wi);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t}\n\t});\n<\/script>",
+        "fallback" : "<script>\n\tvar fallbackimage = 'https://advideo.uimserv.net/otto/2021/Video-Scroll-Event/Anlieferung_20210728/1280x818_videoscroll_otto_motiv_wall/1280x818_videoscroll_otto_motiv_wall.hyperesources/1280x818_videoscroll_otto_motiv_bg.jpg';\n\tvar clickurl = 'https://ad1.adfarm1.adition.com/redi?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317';\n\tvar landingpage = 'https://www.otto.de/?selektion=(und.(ref.topics.e6786b2c-da39-4b79-a658-19ee268aed50).(~.(v.1)))';\n\tvar imagesize = ['100%','100%'];\n\tvar viewpixel = ['', 'https://ad1.adfarm1.adition.com/banner?sid=4590934&gdpr=0&gdpr_consent=&kid=4544494&bid=14104317&ts=6994403221347763632'];\n\tvar bgcolor = '';\n\tvar bgurl = '';\n\t/* ab hier nichts aendern */\n\tvar tcfkonform = (',,'.indexOf(',1,') != -1 && ',,'.indexOf(',2,') != -1 && ',,'.indexOf(',3,') != -1 && ',,'.indexOf(',4,') != -1 && ',,'.indexOf(',7,') != -1);\n\tif (tcfkonform && viewpixel) {\n\t\tif (!Array.isArray(viewpixel)) {viewpixel = [viewpixel];}\n\t\tviewpixel.forEach( function(pixel) { (new Image()).src = pixel; } );\n\t}\n\t\n\tdocument.write('<a href=\"https://united.uimserv.net/redi?lid=6994403221347763632&optout=1&gdpr=0&gdpr_consent=&gdpr_pd=0&userid=0&sid=4498627&kid=4543889&bid=14101881&c=39068&keyword=&clickurl='+(tcfkonform ? clickurl : landingpage)+'\" target=\"_blank\" style=\"position: absolute; width: '+imagesize[0]+'; height: '+imagesize[1]+'; background-image: url('+fallbackimage+'); background-size: cover;\"><\/a>');\n\n\tAdService.getParam(['deviceclient','wi'], function(params){\n\t\tif ((!tcfkonform || params.deviceclient === 'browser_clean') && (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi)) {\n\t\t\tvar elems = document.getElementsByTagName('a');\n\t\t\tfor (var i=0; i<elems.length; i++) {\n\t\t\t\telems[i].onclick = function() {\n\t\t\t\t\tif (typeof(Storage) === 'undefined' || sessionStorage.getItem('initial_click') != params.wi) {\n\t\t\t\t\t\t(new Image()).src ='https://united.uimserv.net/event?e=4621&l=6994403221347763632&n=42&b=14101881&c=4543889&cu=4498627&cs=32442'.replace('ad11p.adfarm1.adition.com','united.uimserv.net');\n\t\t\t\t\t}\n\t\t\t\t\tif (typeof(Storage) !== 'undefined') {\n\t\t\t\t\t\tsessionStorage.setItem('initial_click', params.wi);\n\t\t\t\t\t}\n\t\t\t\t};\n\t\t\t}\n\t\t}\n\t});\n<\/script>"
+      },
+      "uimAd" : "<uim:ad xmlns:uim=\"urn:publicid:-:UIM:adinfo\" contentunitid=\"4498627\" campaignid=\"4543889\" bannerid=\"14101881\" portal=\"webde\" category=\"homepage\" section=\"homepage\" tagid=\"initial\" layoutclass=\"b\" width=\"1\" height=\"1\" adsize=\"1x1\" ovkid=\"\"><\/uim:ad>"
+    },
+    "agent" : {
+      "os" : "",
+      "osVersion" : "",
+      "browser" : "",
+      "browserVersion" : ""
+    },
+    "_params" : {
+      "ac" : "1",
+      "browser" : "",
+      "category" : "homepage",
+      "external_uid" : "",
+      "iframe" : "0",
+      "layoutclass" : "b",
+      "lt" : "portal(webde)category(homepage)section(homepage)tagid(initial)layoutclass(b)",
+      "nguserid" : "",
+      "nw" : "42",
+      "optout" : "1",
+      "os" : "",
+      "portal" : "webde",
+      "prf[brandedbrowser]" : "",
+      "prf[browser]" : "",
+      "prf[busterid]" : "4543889",
+      "prf[category]" : "homepage",
+      "prf[categorytype]" : "",
+      "prf[cl]" : "",
+      "prf[clktype]" : "",
+      "prf[clv]" : "",
+      "prf[deviceclass]" : "",
+      "prf[deviceclient]" : "browser",
+      "prf[dnt]" : "0",
+      "prf[external_uid]" : "",
+      "prf[hid]" : "",
+      "prf[iframe]" : "0",
+      "prf[layoutclass]" : "b",
+      "prf[legacy]" : "1",
+      "prf[net]" : "",
+      "prf[nguserid]" : "",
+      "prf[optout]" : "1",
+      "prf[os]" : "",
+      "prf[pagev]" : "2",
+      "prf[portal]" : "webde",
+      "prf[pos]" : "1",
+      "prf[section]" : "homepage",
+      "prf[special]" : "",
+      "prf[sys]" : "",
+      "prf[sysv]" : "",
+      "prf[tagid]" : "initial",
+      "prf[tcf_pub]" : ",,",
+      "prf[tcf_pur]" : ",,",
+      "prf[tcf_spe]" : ",,",
+      "prf[tcf_version]" : "1.1",
+      "prf[uids]" : "0",
+      "prf[vpw]" : "",
+      "prf[weather_condition]" : "",
+      "prf[weather_temp]" : "",
+      "prf[wi]" : "151357465",
+      "ref" : "https://web.de",
+      "section" : "homepage",
+      "uid_stable" : "0",
+      "userid" : "",
+      "wi" : "151357465",
+      "wpt" : "h"
+    }
+  },
+  "logins" : [ {
+    "icon" : "email",
+    "text" : "E-Mail",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "server" : "https://freemail.web.de",
+      "service" : "freemail",
+      "loginErrorURL" : "https://navigator.web.de/loginerror",
+      "successURL" : "https://navigator.web.de/login",
+      "statistics" : "kR8BWaubR5/vA1KhqEY3LOBuNIy/0UiyKfW8gXUbkE9ajaE5dqAorbuXCwUU2zxykOEv9JD/9AWh+zAJ//a2WMHWIInMjKb8hXoy+K0iQyeWYypnCpnWoUOpQvJbItZGvle7mgDbprFKgW+XoPP4IpcUuEqAWHDTB1pM3aH/wNA=",
+      "loginFailedURL" : "https://web.de/logoutlounge/?status=login-failed"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "cloud",
+    "text" : "Online-Speicher",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "successURL" : "https://navigator.web.de/login",
+      "loginErrorURL" : "https://status.web.de",
+      "loginFailedURL" : "https://web.de/online-speicher/login/?error=true",
+      "service" : "freemail",
+      "goto" : "nl_smartdrive",
+      "statistics" : "mW7nxYShT5atP3HYXD1C0zWJ0if2bwIc_nCCdjXc1XvdkO5tPAlgI5aBhSVyxQdqq5o6uiVb2VRf8nUZzqO7MZSFHroM7-zUwivwtVFHKXrkbDte4tCFL5Dud44dACPUH1a3sgCmUGH2otLSN0cUDJVik2rH1IZHAN7w6xNd1pQVAE8kRAe3EopfDTq4Y3hJ"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "demail",
+    "text" : "De-Mail",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "service" : "freemail",
+      "server" : "https://freemail.web.de",
+      "successURL" : "https://navigator.web.de/login",
+      "loginErrorURL" : "https://navigator.web.de/loginerror",
+      "loginFailedURL" : "https://produkte.web.de/de-mail/login/error",
+      "goto" : "demail",
+      "mc" : "__mc__",
+      "uinguserid" : "__uinguserid__",
+      "statistics" : "GHUy3ftnPpY1cshcS++OYJM3l/RsTJTkljiN8pZcscliQFgvYFSam/khGfguJe6mSm1T7G3XfpF78yGUHn0JF+v6TZnuIR6ZPZU5/q5+gBwkdFUziP/LSZtzZqQ694XVQcT5+FzsdYfUTlgaU7t0f+azg4C2XyIEjwLBsFmYFxA="
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "domain",
+    "text" : "Domain",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "goto" : "mdh",
+      "service" : "freemail",
+      "successURL" : "https://navigator.web.de/login",
+      "loginErrorURL" : "https://navigator.web.de/loginerror",
+      "loginFailedURL" : "https://web.de/logoutlounge/?status=login-failed",
+      "statistics" : "xNGbf2F5E-0aNjuYuM4HvHFcMs1cm219fuHLACxwXwIMsSvXYwcS5sQIXgWBQKldu1vW9LqQuCWFyUPnoZTJiFTVYYtq5P7lnuF5wHZSljDqeBEbsMlY_EWAyOq_0ksO_6W1_tHxVd8VbB-NV8imqXLXpgfPVN9icqCSRfWOKAQ="
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "webcent",
+    "text" : "WEB.Cent",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "service" : "cbkwebde",
+      "statistics" : "SD7VNiwmYEo762DeZQs2mzIcOW6-qGafDQ5ZfcUR43mehdbFCNcgRQI0kqiS8VDKpAe3Xe-jiapq8qDaL0j72ZJK8esuCPEPP49U2Sp86Od2ZbcpT5YpqCNvkhppdnm9sG0RRqT_VsLRPMdXgX-uy3Adk_m984-Yz7x-Y9bbvHFE83wmGJBtslOxYJRkIKFe",
+      "successURL" : "https://vorteile.web.de/webcent/halogin/success?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "loginErrorURL" : "https://vorteile.web.de/webcent/halogin/failure?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "loginFailedURL" : "https://vorteile.web.de/webcent/halogin/bad_password?goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true",
+      "partnerdata" : "goto=sammeln&isInterstitialLoginAndProcess=false&isStaticPageLogin=true"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  }, {
+    "icon" : "customer-center",
+    "text" : "Kundencenter",
+    "loginUrl" : "https://login.web.de/login",
+    "formHiddenParams" : {
+      "service" : "freemail",
+      "server" : "https://produkte.web.de",
+      "successURL" : "https://navigator.web.de/login",
+      "goto" : "csc_ha",
+      "loginErrorURL" : "https://mein.web.de/?errorCodes=7100",
+      "loginFailedURL" : "https://mein.web.de/?errorCodes=7002",
+      "statistics" : "MHp-fN8RYftCpmxpMkV0TQA0VsMKPnsFRsDPgYq1JaLZb07lK71HrOtvNrlsAZrJpoNlz9w7kaQ7EvT_CHIFZ_KIFgFVkvPa0sOx_AiK-03G07jvOZVFWiOXVfC85vXK5SmLyyIewiG_0wNoqqNVob8DuP8oaEh6gjUV79MG1LvdvTibl6FdIY0ifJqPKyyu"
+    },
+    "credentials" : [ {
+      "input" : {
+        "name" : "username",
+        "placeholder" : "E-Mail-Adresse"
+      },
+      "link" : {
+        "href" : "https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich",
+        "text" : "Kostenlos registrieren!"
+      }
+    }, {
+      "input" : {
+        "name" : "password",
+        "placeholder" : "Passwort"
+      },
+      "link" : {
+        "href" : "https://passwort.web.de/",
+        "text" : "Passwort vergessen?"
+      }
+    } ]
+  } ],
+  "bentoFooter" : [ {
+    "href" : "https://passwort.web.de/",
+    "text" : "Passwort vergessen"
+  }, {
+    "href" : "https://web.de/datenschutz/",
+    "text" : "Datenschutz"
+  }, {
+    "href" : "https://hilfe.web.de/",
+    "text" : "Hilfe"
+  }, {
+    "href" : "https://web.de/netid/",
+    "text" : "netID mit WEB.DE"
+  } ],
+  "searchbar" : {
+    "suggestContainerId" : "suggestions",
+    "trackParams" : {
+      "default" : "HP",
+      "suggest" : "HP_sg",
+      "layer" : "wbl_mono_sf"
+    },
+    "suggestAPI" : "//web.de/s/?sType=web&uiLang=de&host=webde&entryPoint=*&count=10&outEnc=UTF-8&jsonp=suggest&q=",
+    "searchURL" : "https://suche.web.de/web"
+  }
+};
+/*]]>*/
+</script>
+  
+    <script src="https://dl.web.de/tcf/live/v1/js/tcf-api.js"></script>
+
+  <script src="//img.ui-portal.de/pos-cdn/tracklib/4.3.1/tracklib.poly.min.js"></script>
+  
+    
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/js/piNctTracking.js"></script>
+
+
+  <script>
+    /*<![CDATA[*/
+    if (!window.AdService) {
+      window.AdService = []
+    }
+    const paramsObject = {
+      'wi': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.wi,
+      'section': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.section,
+      'portal': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.portal,
+      'category': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.category,
+      'layoutclass': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params.layoutclass,
+      'consentlevel': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[consentlevel]'],
+      'weather_condition': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[weather_condition]'],
+      'weather_temp': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[weather_temp]'],
+      'hpeventid': window.initialData.serviceResponse && window.initialData.serviceResponse._params && window.initialData.serviceResponse._params['prf[busterid]'],
+      'special': window.PageConfig && window.PageConfig.sitespect && window.PageConfig.sitespect.special,
+      'legacy': '1'
+    }
+    window.AdService.push(function() {
+      window.AdService.setParam(paramsObject);
+    });
+    /*]]>*/
+  </script>
+  
+    
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/chunk-vendors.js">
+
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/chunk-common.js">
+
+    <link rel="preload" as="script" href="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/homepage.bundle.js">
+
+
+
+  </head>
+  <body data-ad-type="video-scroll">
+    <div data-available></div>
+    <div id="app" tabindex="0">
+      <hp-app inline-template>
+        <Page inline-template>
+            <div class="main" :data-fallback="adHandler.fallbackName">
+              
+              <div class="main-content">
+                
+                
+                
+    <hp-header inline-template>
+        <header data-component="header">
+            
+            <div data-wrapper>
+                
+    <a data-part="logo" href="https://web.de/">
+        <h1 aria-label="WEB.DE - E-Mail-Adresse kostenlos, FreeMail, De-Mail &amp; Nachrichten">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+                <path fill="#FFD800" d="M49 56H7c-3.85 0-7-3.15-7-7V7c0-3.85 3.15-7 7-7h42c3.85 0 7 3.15 7 7v42c0 3.85-3.15 7-7 7z"></path>
+                <path fill="#333333" d="M12.628 17.196c.45.166 1.048-.134 1.481-.211.43-.075 2.19-.47 1.857-.069-.187.226-.67.227-1.1.353-.597.176-1.555.275-1.592 1.043-.085 1.827 2.755.612 3.587.315 2.255-.785 4.84-.92 7.122-1.301 2.532-.421 5.135-.46 7.691-.558 2.69-.103 5.584-.216 8.227.157.704.099 1.37.177 2.086.252.62.064 1.928.633 2.48.372.501-.237.274-.83.533-1.133.373-.435 1.108-.36.597-1.29-.389-.708-1.808-.938-2.542-.794-.073-.447.269-.249.359-.481.13-.335.13-.852-.088-1.224-.394-.677-2.266-.917-2.267-.916-4.491-.723-12.572-1.503-21.173-.5-1.427.167-3.931.345-5.393.937-.647.262-.637.268-.717.692-.077.603.213 1.306.938 1.156 1.389-.286 3.843-.683 4.546-.862 3.469-.883 15.015-.711 16.502-.358.919.196 5.968.362 6.089 1.286-11.782-.488-16.28-.483-26.859.774-.884.146-1.415.339-2.112.575-.859.289-1.44 1.346-.252 1.785z"></path>
+                <path fill="#333333" d="M28.208 9.892c.412.036 3.667.133 3.854-1.14.106-.722-.608-1.894-.813-2.106-.27-.223-.865 1.722-1.015-.191-.024-.312-.104-.795-.251-1.09-.074-.148-.165-.256-.275-.256a.388.388 0 0 0-.18.062c-.094.061-.228.259-.295.425-.184.454-.265 2.209-.72 2.238-.495.032-.48-1.124-.414-1.46.011-.055-.001-.068-.023-.063-.047.013-.062.022-.1.035-.297.114-.636.459-.661.484-.466.478-1.096 1.725-.778 2.299.331.593 1.323.732 1.671.763zM50.887 34.98c-.035-.249-.108-.402-.277-.631-.613-.839-3.495-1.401-3.496-1.391-1.447-.316-3.114-.588-4.975-.815.265-1.258-.012-3.579-.019-4.386.037-1.441.007-5.166-.102-6.108-.083-.885-.201-1.272-.686-2.004-.348-.523-.455-1.034-1.257-.953-.73.073-.999 1.086-.874 1.702l.314 1.253c.131.259.485 8.386.405 9.094.007.343-.025.785-.035 1.159-1.897-.18-3.96-.319-6.169-.416l.087-.069c1.057-.822.691-1.914.514-3.104-.241-1.905-.057-7.311-.284-7.962-.154-.51-.588-.804-.966-1.193-.466-.48-1.051-.627-1.588-.076-.527.478.132 7.304.169 10.302.048.628-.092 1.415.158 2.022-.204-.008-5.628-.121-6.084-.113.006-.106-.065-.241-.116-.344-.136-.275-.328-.917-.383-1.217a12.788 12.788 0 0 1-.187-1.729c-.041-1.24.074-5.076.212-6.08.155-1.11.746-3.068-1.179-2.637-.208.047-1.228.173-1.501.388-.317.249-.286.873-.298 1.218-.045 1.31-.19 5.438-.182 6.43.01.833.159 1.905.464 2.718.186.494.737.986 1.313 1.297-1.059.029-2.079.063-2.441.083-1.788.1-3.159.199-4.495.33l-.017-.064c-.224-.69.098-3.538.718-8.879.15-1.288-.077-1.339-.861-2.065-.45-.417-.831-.698-1.613-.071-.496.398-.367.909-.452 1.483-.297 2.003-.73 5.149-.914 7.188-.052.563.027 1.851.171 2.632.013.037.008.078.026.118-.776.104-1.557.218-2.438.353-2.146.333-4.043.415-5.332.993-.792.357-.837.475-1.024.764a.752.752 0 0 0-.099.341c-.002.022.016.307.038.391a1.056 1.056 0 0 0 .715.76c.098.031.695.081.758.087 1.44.145 2.233-.205 3.641-.76 6.975-2.783 26.934-1.94 31.33-1.109 1.909.38 4.856.778 6.683 1.825.298.163.577.282.832.359.128.039.251.058.364.085.28.066.578.006.628-.004.1-.019.197-.048.285-.086.177-.075.32-.184.388-.316.049-.095.11-.278.139-.429a1.518 1.518 0 0 0-.008-.364z"></path>
+                <path fill="#333333" d="M9.143 40.979H7.29l1.632 8.332h2.144l1.247-5.64 1.259 5.64h2.144l1.713-8.332h-1.736l-1.049 6.375-1.364-6.375h-1.806l-1.387 6.351-.944-6.351zm14.609 0h-5.209v8.332h5.326v-1.399h-3.566v-2.074h3.042V44.44h-3.042v-2.063h3.45v-1.398h-.001zm1.485 0v8.332h3.1c1.958 0 2.89-.932 2.89-2.331 0-1.783-1.573-1.981-1.573-1.981s1.119-.478 1.119-1.865c0-1.399-.897-2.156-2.75-2.156h-2.786v.001zm1.76 3.508v-2.203h.583c1.037 0 1.457.349 1.457 1.084 0 .746-.42 1.119-1.282 1.119h-.758zm0 3.52v-2.249h1.072c.897 0 1.387.35 1.387 1.095 0 .746-.454 1.154-1.492 1.154h-.967zm6.258 1.421c.536 0 .909-.373.909-.897 0-.536-.373-.862-.886-.862-.536 0-.921.338-.921.886.001.489.304.873.898.873zm2.419-8.449v8.332h2.074c2.867 0 4.335-1.631 4.335-4.242 0-2.552-1.294-4.091-4.16-4.091h-2.249v.001zm1.76 6.934v-5.536h.478c1.608 0 2.389.956 2.389 2.808 0 1.841-.757 2.727-2.377 2.727h-.49v.001zm11.18-6.934h-5.209v8.332h5.326v-1.399h-3.566v-2.074h3.042V44.44h-3.042v-2.063h3.449v-1.398z"></path>
+            </svg>
+        </h1>
+    </a>
+
+                
+    <hp-searchbar inline-template>
+        <div data-component="searchbar">
+            <form method="get" novalidate="novalidate" action="https://suche.web.de/web" autocomplete="off">
+                <input type="hidden" name="origin" value="HP"/>
+                <label data-accessibility :for="searchbarInput.htmlId">
+                    <span></span>
+                </label>
+                <hp-input v-model="searchbarInput" @formsubmit="searchSubmit" @formreset="searchReset" @input="getSuggestIndex"></hp-input>
+            </form>
+        </div>
+    </hp-searchbar>
+
+                
+    <div data-grid-row="" data-login-area="">
+
+        
+
+        
+        <hp-button data-hidden-in="1col" inline-template="">
+            <a data-component="button" data-importance="ghost" href="https://web.de/email/tarifvergleich/#.pc_page.homepage.index.header.tarifvergleich" @click="clicked">
+                <slot>Registrieren</slot>
+            </a>
+        </hp-button>
+
+    </div>
+
+            </div>
+            <hp-navigation data-hidden-in="1col" inline-template>
+                <div data-component="navigation" data-hidden-in="1col">
+                    
+                    
+    <ul>
+        <li>
+    <a href="https://web.de/email/#.pc_page.homepage.index.nav.mail">E-Mail &amp; Cloud</a>
+</li><li>
+    <a href="https://web.de/email/briefankuendigung/#.pc_page.homepage.index.nav_1.briefankuendigung">Briefankündigung</a>
+</li><li>
+    <a href="https://web.de/handy/?mc=05504539">Mobilfunk &amp; DSL</a>
+</li><li>
+    <a href="https://www.energie.web.de/strom/?offers=fl%2cba%2cko&amp;mc=05576077">Strom</a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=929&amp;mpID=4&amp;site=webde&amp;region=de&amp;sc=vw_uebersichtsseite/vw_startseite&amp;lpos=text_link&amp;att1=webde_nhp&amp;durl=https%3A%2F%2Fvorteile.web.de%2F">Shop</a>
+</li><li>
+    <a href="https://lotto.web.de/?partnerId=1WEHOMHNAV&amp;advertisementId=0NAVIGA000000000LOTSERVALL00000NI1234567891">Lotto</a>
+</li><li>
+    <a href="https://web.de/versicherung/?mc=01881318">Versicherung</a>
+</li><li>
+    <a href="https://vorteile.web.de/webcent/#.hp.int.navi">WEB.Cent</a>
+</li>
+        <li data-more>
+            <a href="../../">Mehr</a>
+            <ul></ul>
+        </li>
+    </ul>
+
+                    
+    <div class="partner-links">
+        <div data-service-slot="promo_1"></div>
+        <div data-service-slot="promo_2"></div>
+        <div data-service-slot="promo_3"></div>
+    </div>
+
+                </div>
+            </hp-navigation>
+        </header>
+    </hp-header>
+
+                
+                
+    <div data-content>
+        
+    <div data-login-sticky-indicator></div>
+    <section data-layout="1col" data-content-login="" data-sticky="">
+        
+    <input type="checkbox" id="loginlayerbutton" data-hidden />
+    <hp-login inline-template>
+        <div data-component="login" data-grid-row>
+            <div data-grid-row>
+                <hp-icon :type="currentLogin.icon" data-login-icon>
+                    <div data-component="icon" data-login-icon>
+                        <svg viewBox="0 2 40 40">
+                            <path d="M40 32V9.9v-.08L28.92 20.9zM11.1 20.92L0 9.82V32zM21.37 25.17L38.94 7.59a3.05 3.05 0 0 0-2-.78H3.09a3.05 3.05 0 0 0-2 .78l17.54 17.58a2 2 0 0 0 2.74 0z"></path>
+                            <path d="M27.27 22.54L23 26.81a4.27 4.27 0 0 1-6 0l-4.25-4.25L.3 35a3.1 3.1 0 0 0 2.79 1.8h33.82a3.11 3.11 0 0 0 2.81-1.8z"></path>
+                        </svg>
+                    </div>
+                </hp-icon>
+                <span data-login-text data-visible-from-up="3col" v-text="currentLogin.text">E-Mail</span>
+            </div>
+
+            <hp-bento :elements="bentoData.elements" :footer="bentoData.footer" @change="onBentoChange"></hp-bento>
+
+            <form data-form-login="" data-grid-row="" method="post" accept-charset="UTF-8" novalidate="novalidate" action="https://login.web.de/login" id="freemailLoginForm" name="fm" :action="currentLogin.loginUrl">
+                <div v-if="currentLogin.formHiddenParams" data-hidden-values>
+                    <input v-if="currentLogin === null" type="hidden" name="server" value="https://freemail.web.de"/><input v-if="currentLogin === null" type="hidden" name="service" value="freemail"/><input v-if="currentLogin === null" type="hidden" name="loginErrorURL" value="https://navigator.web.de/loginerror"/><input v-if="currentLogin === null" type="hidden" name="successURL" value="https://navigator.web.de/login"/><input v-if="currentLogin === null" type="hidden" name="statistics" value="kR8BWaubR5/vA1KhqEY3LOBuNIy/0UiyKfW8gXUbkE9ajaE5dqAorbuXCwUU2zxykOEv9JD/9AWh+zAJ//a2WMHWIInMjKb8hXoy+K0iQyeWYypnCpnWoUOpQvJbItZGvle7mgDbprFKgW+XoPP4IpcUuEqAWHDTB1pM3aH/wNA="/><input v-if="currentLogin === null" type="hidden" name="loginFailedURL" value="https://web.de/logoutlounge/?status=login-failed"/>
+                    <input type="hidden" :name="index" :value="param" v-for="(param, index) in currentLogin.formHiddenParams" />
+                </div>
+                <input type="hidden" name="ibaInfo" :value="ibaInfo" data-formcheck-nocheck="nocheck">
+                <input type="hidden" name="uinguserid" :value="ngUserId" />
+                <input type="hidden" name="tpidHash" :value="tpidHash" />
+                <input type="hidden" name="salt" :value="salt" />
+                <div data-grid-column>
+                    <hp-input v-model="emailInput" inline-template>
+                        <div data-component="input">
+                            <input type="email" v-model="value.inputvalue" required="required" id="freemailLoginUsername" :name="value.name" :placeholder="value.placeholder" placeholder="E-Mail-Adresse" name="username"/>
+                        </div>
+                    </hp-input>
+                    <p v-if="emailLink.text" aria-label="reg"><a v-text="emailLink.text" tabindex="-1" href="https://web.de/email/tarifvergleich/#.pc_page.homepage.index.loginbox.tarifvergleich" :href="emailLink.href">Kostenlos registrieren!</a></p>
+                </div>
+                <div data-grid-column>
+                    <hp-input v-model="passwordInput" inline-template>
+                        <div data-component="input" :data-with-button="withButton">
+                            <input :id="value.htmlId" type="password" data-type="password" v-model="value.inputvalue" id="freemailLoginPassword" :name="value.name" :placeholder="value.placeholder" placeholder="Passwort" name="password"/>
+                            <hp-button :data-importance="buttonImportance" data-type="icon" @click="togglePasswordVisibility" data-size="l" :data-active="buttonActive">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                    <path d="M19.73,8.91A11.53,11.53,0,0,0,10,3.14,11.17,11.17,0,0,0,.25,9,2.31,2.31,0,0,0,.25,11,11.17,11.17,0,0,0,10,16.86a11.53,11.53,0,0,0,9.78-5.77A2.34,2.34,0,0,0,19.73,8.91ZM10,14a4,4,0,1,1,4-4A4,4,0,0,1,10,14Z" />
+                                </svg>
+                            </hp-button>
+                        </div>
+                    </hp-input>
+                    <p v-if="passwordLink.text" aria-label="reg"><a v-text="passwordLink.text" tabindex="-1" href="https://passwort.web.de/" :href="passwordLink.href">Passwort vergessen?</a></p>
+                </div>
+
+                <hp-button inline-template="" data-importance="primary">
+                    <button data-component="button" type="submit" data-size="l" data-importance="primary">
+                        <slot>Login</slot>
+                    </button>
+                </hp-button>
+            </form>
+
+            <p aria-label="netid">
+                <a href="https://web.de/netid/#.pc_page.homepage.index.loginbox_2.netid">
+                    
+                    
+                        <span data-visible-from-up="2col" data-hidden-from-up="4col">
+                             <svg viewBox="0 0 24 22.65" class="netid">
+                                <path d="M10.72 6.34l1.45-1.41 2.73 2.73L22.6 0 24 1.37l-9.15 9.15-4.13-4.18z" class="netid_checkmark">
+                                </path>
+                                <path d="M21.8 6.2l-1.17 1.17c.67 2.21.52 3.94-1.81 6.26l-2.69 2.7-9.81-9.81L9 3.8c2.89-2.88 5.29-2.67 8.07-1l1.08-1.08C14.74-.59 11.49-.73 8 2.79l-8 8 11.89 11.86 8-8C22.8 11.74 23 9.18 21.8 6.2">
+                                </path>
+                             </svg>
+                        </span>
+                        <span data-visible-from-up="4col">
+                             <img alt="netID" src="https://img.ui-portal.de/homepage/netid/webde.png">
+                        </span>
+                    
+                </a>
+            </p>
+        </div>
+    </hp-login>
+
+
+    </section>
+
+        
+    <section data-layout-columns="4col" data-layout-name="viewport" data-name="viewport" data-tracking-name="viewport">
+        
+    <hp-slider inline-template="" :indicator-position="&#039;right&#039;" :interval="5000" :animation-type="&#039;fade&#039;">
+        <div data-component="slider" data-slide-indicator-position="left" data-animation-type="fade">
+            <div data-part="indicators">
+                <ul>
+                    <li @click="goTo" data-indicator="0">
+    <a href="https://web.de/magazine/wissen/natur-umwelt/weltklimaberichtklimawandel-folgen-drastisch-36070834" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.web.de/image/516/35998516,pd=2,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Weltklimabericht</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="1">
+    <a href="https://web.de/magazine/politik/wahlen/bundestagswahl/kritik-matroschka-spot-spd-bricht-werbevideo-tabu-wahlkampf-36070760" @mouseenter="goTo">
+        <figure>
+            <img alt="Präsentation der SPD-Bundestagswahlkampagne" src="https://i0.web.de/image/116/36071116,pd=3,h=56,w=95/praesentation-spd-bundestagswahlkampagne.jpg" width="95" height="56"/>
+            <figcaption>Bundestagswahl</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="2">
+    <a href="https://web.de/magazine/news/coronavirus/corona-live-ticker-gesundheitspass-oeffentlichen-orte-frankreich-noetig-35990536" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.web.de/image/630/36071630,pd=1,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Corona-Pandemie</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="3">
+    <a href="https://web.de/magazine/news/coronavirus/ministerpraesidenten-gratis-corona-tests-abschaffen-36070656" @mouseenter="goTo">
+        <figure>
+            <img alt="Coronavirus -Tests weiter kostenlos?" src="https://i0.web.de/image/658/36070658,pd=1,h=56,w=95/coronavirus-tests-kostenlos.jpg" width="95" height="56"/>
+            <figcaption>Corona-Tests</figcaption>
+        </figure>
+    </a>
+    
+</li><li @click="goTo" data-indicator="4">
+    <a href="https://web.de/magazine/ratgeber/haus-garten/waschzettel-richtig-bedeuten-symbole-kleidung-36052720" @mouseenter="goTo">
+        <figure>
+            <img alt="" src="https://i0.web.de/image/348/36071348,pd=1,h=56,w=95.jpg" width="95" height="56"/>
+            <figcaption>Alltagstipps</figcaption>
+        </figure>
+    </a>
+    
+</li>
+                </ul>
+            </div>
+            
+            <div data-wrapper>
+                <div>
+                    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/wissen/natur-umwelt/weltklimaberichtklimawandel-folgen-drastisch-36070834" data-headline="Weltklimarat schlägt Alarm - und skizziert zwei katastrophale Entwicklungen" data-teaser-id="36070834" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/516/35998516,pd=2,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Weltklimabericht
+                    </span>
+                    <h3>Weltklimarat schlägt Alarm - und skizziert zwei katastrophale Entwicklungen</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/politik/wahlen/bundestagswahl/kritik-matroschka-spot-spd-bricht-werbevideo-tabu-wahlkampf-36070760" data-headline="Kritik nach Matroschka-Spot: SPD bricht mit Werbevideo Tabu im Wahlkampf" data-teaser-id="36070760" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="Präsentation der SPD-Bundestagswahlkampagne" src="https://i0.web.de/image/116/36071116,pd=3,h=300,w=530/praesentation-spd-bundestagswahlkampagne.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Bundestagswahl
+                    </span>
+                    <h3>Kritik nach Matroschka-Spot: SPD bricht mit Werbevideo Tabu im Wahlkampf</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/corona-live-ticker-gesundheitspass-oeffentlichen-orte-frankreich-noetig-35990536" data-headline="Frankreich verschärft Kontrollen: Gesundheitspass fast überall nötig" data-teaser-id="35990536" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/630/36071630,pd=1,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        <label data-color="error">Live-Ticker</label>
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>Frankreich verschärft Kontrollen: Gesundheitspass fast überall nötig</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/ministerpraesidenten-gratis-corona-tests-abschaffen-36070656" data-headline="Corona-Gipfel: Mehrere Ministerpräsidenten wollen Gratis-Tests abschaffen" data-teaser-id="36070656" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="Coronavirus -Tests weiter kostenlos?" src="https://i0.web.de/image/658/36070658,pd=1,h=300,w=530/coronavirus-tests-kostenlos.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Tests
+                    </span>
+                    <h3>Corona-Gipfel: Mehrere Ministerpräsidenten wollen Gratis-Tests abschaffen</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/ratgeber/haus-garten/waschzettel-richtig-bedeuten-symbole-kleidung-36052720" data-headline="Waschzettel richtig lesen: Das bedeuten die Symbole in der Kleidung" data-teaser-id="36052720" data-article-overlay="bottomfull">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/348/36071348,pd=1,h=300,w=530.jpg" width="530" height="300">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        <label data-color="grey">Galerie</label>
+                        Alltagstipps
+                    </span>
+                    <h3>Waschzettel richtig lesen: Das bedeuten die Symbole in der Kleidung</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+                </div>
+            </div>
+        </div>
+    </hp-slider>
+
+    <div data-component="list">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-separator="top" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+    <div data-service-slot="box_1"></div>
+
+    </section>
+
+    <section data-layout-columns="4col" data-layout-name="teasers" data-name="Recommendation" data-tracking-name="threeList">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-visible-in="4col" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            <figure>
+                <img alt="Ex-Biathlon-Star Neuner" src="https://i0.web.de/image/494/36070494,pd=4,h=170,w=300/ex-biathlon-star-neuner.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 2 Stunden</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/tv-film/lets-dance-star-single-lola-weippert-freund-getrennt-36070352" data-visible-in="4col" data-headline="&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single" data-teaser-id="36070352">
+            
+            <figure>
+                <img alt="Lola Weippert" src="https://i0.web.de/image/376/36070376,pd=2,h=170,w=300/lola-weippert.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="4col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/stars/harald-gloeoeckler-dschungelcamp-bereitet-vor-36070268" data-separator="top" data-headline="Mit dieser Strategie will Harald Glööckler das Dschungelcamp rocken" data-teaser-id="36070268">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>Mit dieser Strategie will Harald Glööckler das Dschungelcamp rocken</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/tv-film/promi-big-brother/promi-big-brother-promiboxen-intellektuellen-superleichtgewicht-rafi-melli-36070282" data-separator="top" data-headline="Melanie Müller, der Lord Voldemort von &quot;Promi Big Brother&quot;?" data-teaser-id="36070282">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        <label>Kolumne</label>
+                        
+                        Promi Big Brother
+                    </span>
+                    <h3>Melanie Müller, der Lord Voldemort von &quot;Promi Big Brother&quot;?</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/stars/us-comedian-trevor-moore-stirbt-41-jahren-36070224" data-separator="top" data-headline="Trauer um US-Star Trevor Moore: Comedian stirbt bei Unfall" data-teaser-id="36070224">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Todesfall
+                    </span>
+                    <h3>Trauer um US-Star Trevor Moore: Comedian stirbt bei Unfall</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/panorama/dixie-fire-zweitgroesster-waldbrand-geschichte-kaliforniens-36070300" data-separator="top" data-headline="&quot;Dixie Fire&quot; ist zweitgrößter Waldbrand in Geschichte Kaliforniens" data-teaser-id="36070300">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Naturkatastrophe
+                    </span>
+                    <h3>&quot;Dixie Fire&quot; ist zweitgrößter Waldbrand in Geschichte Kaliforniens</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/sport/fussball/dfb-pokal/vfl-wolfsburg-trainer-van-bommel-zittern-pokal-wechselfehler-36069934" data-visible-in="4col" data-headline="VfL Wolfsburg und Trainer van Bommel zittern: Pokal-Aus wegen Wechselfehler?" data-teaser-id="36069934">
+            
+            <figure>
+                <img alt="Preußen Münster - VfL Wolfsburg" src="https://i0.web.de/image/936/36069936,pd=2,h=170,w=300/preussen-muenster-vfl-wolfsburg.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        DFB-Pokal
+                    </span>
+                    <h3>VfL Wolfsburg und Trainer van Bommel zittern: Pokal-Aus wegen Wechselfehler?</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    
+                    <span>45 Kommentare</span>
+                </footer>
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-visible-in="3col" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/564/36070564,pd=1,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 18 Minuten</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="3col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-separator="top" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/tv-film/lets-dance-star-single-lola-weippert-freund-getrennt-36070352" data-visible-in="3col" data-headline="&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single" data-teaser-id="36070352">
+            
+            <figure>
+                <img alt="Lola Weippert" src="https://i0.web.de/image/376/36070376,pd=2,h=170,w=300/lola-weippert.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Stars
+                    </span>
+                    <h3>&quot;Let&#039;s Dance&quot;-Star Lola Weippert ist wieder Single</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+    <div data-component="list" data-visible-in="2col">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-separator="top" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-visible-in="2col" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            <figure>
+                <img alt="Ex-Biathlon-Star Neuner" src="https://i0.web.de/image/494/36070494,pd=4,h=170,w=300/ex-biathlon-star-neuner.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 2 Stunden</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    </section>
+
+    <hp-block-navigation inline-template>
+        <div data-component="block-navigation" data-grid-row="" data-name="Freemail">
+            <h2>
+                WEB.DE E-Mail &amp; Cloud
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+    <a href="https://web.de/email/#.pc_page.homepage.index.channel_nav.mail">FreeMail</a>
+</li><li>
+    <a href="https://produkte.web.de/premium/?mc=03961566">PremiumMail</a>
+</li><li>
+    <a href="https://web.de/online-speicher/#.pc_page.homepage.index.channel_nav.online-speicher">Online-Speicher</a>
+</li><li>
+    <a href="https://produkte.web.de/apps/#.hp.int.nav.mail_channel   ">Apps</a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </hp-block-navigation>
+
+    <section data-layout-columns="4col" data-layout-name="teasers" data-name="Freemail" data-tracking-name="fourWithText" data-has-subtext="">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/email/briefankuendigung/#.pc_page.homepage.index.channel_2.briefankuendigung" data-headline="Wir feiern Geburtstag" data-teaser-id="34924930" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/936/34924936,pd=2,h=170,w=300.png" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        WEB.DE Briefankündigung
+                    </span>
+                    <h3>Wir feiern Geburtstag</h3>
+                    
+                </header>
+                <p>Die Briefankündigung wird ein Jahr alt und Sie können viele Preise gewinnen!</p>
+                
+                
+            </article>
+        </a>
+
+    <div data-service-slot="box_2"></div>
+
+        <a data-component="teaser" type="hp-teaser" href="https://produkte.web.de/premium/?mc=03961528" data-headline="E-Mail mit noch mehr Leistung" data-teaser-id="34243608">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/540/34257540,pd=1,h=170,w=300.png" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        WEB.DE Premium
+                    </span>
+                    <h3>E-Mail mit noch mehr Leistung</h3>
+                    
+                </header>
+                <p>Mehr Speicherplatz, weniger Werbung &amp; viele Rabatte bei unseren Partnern.</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://vorteile.web.de/webcent/#.hp.int.email_channel.webcent" data-headline="Ihr Postfach hilft beim Sparen" data-teaser-id="35781196">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/190/35781190,pd=2,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        WEB.DE Bonusprogramm
+                    </span>
+                    <h3>Ihr Postfach hilft beim Sparen</h3>
+                    
+                </header>
+                <p>WEB.Cent ist Teil Ihres E-Mail Postfachs. Sparen Sie online bei über 1.000 Partnern.</p>
+                
+                
+            </article>
+        </a>
+
+    </section>
+
+    <hp-block-navigation inline-template>
+        <div data-component="block-navigation" data-grid-row="" data-name="Vorteilswelt">
+            <h2>
+                <a href="https://vorteile.web.de/#.homepage.vwSlider.vorteilswelt">Vorteilswelt</a>
+            </h2>
+            <nav>
+                <ul>
+                    <li>
+    <a href="https://vorteile.web.de/software-mobile/#.homepage.vwSlider.internet-mobile">Software &amp; Mobile</a>
+</li><li>
+    <a href="https://vorteile.web.de/finanzen/#.homepage.vwSlider.finanzen-versicherung">Finanzen</a>
+</li><li>
+    <a href="https://vorteile.web.de/unterhaltung/#.homepage.vwSlider.unterhaltung-lifestyle">Unterhaltung</a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </hp-block-navigation>
+
+    <section data-layout-columns="4col" data-layout-name="fiveBigMiddle" data-frontend="vorteilswelt" data-name="Vorteilswelt" data-tracking-name="frontend">
+        
+    <div data-service-slot="slider_1_5"></div>
+
+    <div data-service-slot="slider_1_1"></div>
+
+    <div data-service-slot="slider_1_2"></div>
+
+    <div data-service-slot="slider_1_3"></div>
+
+    <div data-service-slot="slider_1_4"></div>
+
+    </section>
+
+    </div>
+
+                
+    <footer data-component="footer">
+        
+    <section data-footer-section="1" data-layout-columns="4col" data-grid-row="">
+        
+        <a data-component="teaser" type="hp-teaser" href="https://hilfe.web.de/" data-headline="Hilfe &amp; Kontakt" data-teaser-id="34285476" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/444/34285444,pd=1,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Hilfe &amp; Kontakt</div>
+                </header>
+                <p>Hilfestellung &amp; Anleitung zu Ihrem WEB.DE E-Mail Konto</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://account.web.de/#.pc_page.homepage.index.footer_2.kundencenter" data-headline="Kundencenter" data-teaser-id="34285474" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/448/34285448,pd=1,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Kundencenter</div>
+                </header>
+                <p>Ihre Daten und Sicherheits-Einstellungen verwalten</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://passwort.web.de/" data-headline="Passwort vergessen" data-teaser-id="34285472" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/450/34285450,pd=1,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Passwort vergessen</div>
+                </header>
+                <p>Altes Passwort zurücksetzen und ein neues anlegen</p>
+                
+                
+            </article>
+        </a>
+
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/datenschutz/#.pc_page.homepage.index.footer_4.datenschutz" data-headline="Privatsphäre" data-teaser-id="34285480" data-grid-row="" target="_blank">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/872/34226872,pd=2,h=80,w=80.svg" width="80" height="80">
+                
+            </figure>
+            <article>
+                <header>
+                    
+                    
+                    <div>Privatsphäre</div>
+                </header>
+                <p>Alle Informationen zum Datenschutz bei WEB.DE</p>
+                
+                
+            </article>
+        </a>
+
+    </section>
+
+    <section data-footer-section="2">
+        
+        <div>
+            <div>Produkte</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://www.energie.web.de/?mc=05574295" target="_blank">
+        
+        Strom + Gas
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/email/#.pc_page.homepage.index.footer_1.freemail">
+        
+        E-Mail kostenlos
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/de-mail/#.hp.int.footer">
+        
+        De-Mail
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/handy/dsl?ac=OM.AD.AD008K351364T7073a" target="_blank">
+        
+        DSL-Angebot
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/handy/?mc=05504097" target="_blank">
+        
+        Handytarif-Vergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://shop.web.de/allnet/enetz2gbcols/?mc=05503051" target="_blank">
+        
+        WEB.DE Handytarife
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/antivirus/security/mcafee-multiaccess/?mc=05570281" target="_blank">
+        
+        McAfee Virenschutz
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/adac/" target="_blank">
+        
+        ADAC
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/browser/#.hp.int.footer" target="_blank">
+        
+        Internet-Browser
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/homepage-mail/?mc=05552276" target="_blank">
+        
+        Eigene Homepage
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/webde_sms/" target="_blank">
+        
+        SMS &amp; Co.
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/apps/#.hp.int.footer" target="_blank">
+        
+        Apps &amp; mehr
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/mailcheck/#.hp.int.footer" target="_blank">
+        
+        MailCheck
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/verivox/strom/" target="_blank">
+        
+        Strompreis-Vergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/zattoo/?mc=05559782" target="_blank">
+        
+        TV-Streaming
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/email/tipps/#.pc_page.homepage.index.footer_16.freemail_tipp" target="_blank">
+        
+        WEB.DE Tipp
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/mailcheck/#.hp.int.footer" target="_blank">
+        
+        WEB.DE Add-On
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/readly/?mc=05557913" target="_blank">
+        
+        Magazin-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/film-flatrate/?mc=03954025" target="_blank">
+        
+        Film-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/musik-flatrate/?mc=03953052" target="_blank">
+        
+        Musik-Flatrate
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/sprachen-lernen/?mc=05571313" target="_blank">
+        
+        Sprachen lernen
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/deals/verivox-kfz/w/" target="_blank">
+        
+        Kfz-Vergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://produkte.web.de/suche/desktop-suche/#.hp.int.footer.winsuche" target="_blank">
+        
+        Suche für Windows
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Themen</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://web.de/magazine/news/">
+        
+        News
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/sport/">
+        
+        Sport
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/unterhaltung/">
+        
+        Unterhaltung
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/ratgeber/">
+        
+        Ratgeber
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/auto/">
+        
+        Auto
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/unterhaltung/comic/">
+        
+        Comics
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Services</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://lotto.web.de/webshop/home.htm?partnerId=0WEHOM0HOM&amp;advertisementId=0SERVIC000000000000000000000000000000000000" target="_blank">
+        
+        Lotto
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/partner/curabox/" rel="sponsored">
+        
+        Pflegehilfsmittel
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/partner/deutscheteilkauf_v2/" rel="sponsored">
+        
+        Immobilien-Teilverkauf
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/services/partnersuche/" rel="nofollow">
+        
+        Partnersuche
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/partner/immobilienboerse/" rel="nofollow">
+        
+        Immobilienbörse
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/services/singletreff/" rel="nofollow">
+        
+        Singletreff
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/reise/feiertage/">
+        
+        Feiertage
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://millionenklick.web.de/#C0101041109010101" target="_blank">
+        
+        MillionenKlick
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/gesundheit/bmi-rechner/">
+        
+        BMI-Rechner
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://games.web.de/?mc=05575610" target="_blank">
+        
+        Games
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://gewinnspiel.web.de/" target="_blank">
+        
+        Gewinnspiel
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Shopping</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://shopping.web.de/?origin=hp_footer_shopping">
+        
+        Preisvergleich
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/#.hp.int.footer.shopping" target="_blank" rel="follow">
+        
+        WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/kreditkarte/ " target="_blank" rel="follow">
+        
+        Kreditkarten
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/" target="_blank" rel="follow">
+        
+        Vorteilswelt
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://gutscheine.web.de/" target="_blank" rel="follow">
+        
+        Gutscheincodes
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=929&amp;mpID=4&amp;site=webde&amp;region=de&amp;sc=vw_uebersichtsseite/homepage&amp;lpos=text_link&amp;att1=apollo&amp;durl=https%3A%2F%2Fvorteile.web.de%2Fdeals%2Fapollo%2Ffm%2F" target="_blank" rel="follow">
+        
+        Brillen &amp; Kontaktlinsen
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=929&amp;mpID=4&amp;site=webde&amp;region=de&amp;sc=vw_uebersichtsseite/homepage&amp;lpos=text_link&amp;att1=adac_plus&amp;durl=https%3A%2F%2Fvorteile.web.de%2Fdeals%2Fadac%2Fplus%2Ffm%2F" target="_blank" rel="follow">
+        
+        ADAC Plus-Mitgliedschaft
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>WEB.Cent</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/#.hp.int.footer.info" target="_blank">
+        
+        WEB.DE Bonusprogramm
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/#.hp.int.footer.top" target="_blank">
+        
+        Top-Angebote
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/shops/browse/#.hp.int.footer.abisz" target="_blank">
+        
+        Alle Shops A-Z
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/shops/lidl/#.hp.int.footer.lidl" target="_blank">
+        
+        LIDL &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/shops/otto/#.hp.int.footer.otto " target="_blank">
+        
+        OTTO &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/shops/douglas/#.hp.int.footer.douglas" target="_blank">
+        
+        Douglas &amp; WEB.Cent
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://vorteile.web.de/webcent/sammeln/shops/tchibo/#.hp.int.footer.tchibo" target="_blank">
+        
+        Tchibo &amp; WEB.Cent
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+        <div>
+            <div>Partner</div>
+            
+            <ul>
+                <li>
+    
+    
+    <a href="https://web.de/magazine/services/partnersuche/" rel="follow">
+        
+        Partnersuche
+    </a>
+
+</li><li>
+    
+    
+    <a href="https://web.de/magazine/services/singletreff/" target="_blank">
+        
+        Singletreff
+    </a>
+
+</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section data-footer-section="3">
+        
+    <ul data-layout-columns="7col">
+        <li>
+    <a href="https://partnerprogramm.otto.de/trck/eclick/49295537d6795869f0d6edfb0bf43098" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/052/34263052,pd=3,h=24,w=24.svg" alt="OTTO" width="24" height="24"/>
+        OTTO
+    </a>
+</li><li>
+    <a href="https://www.amazon.de/ref=as_li_ss_tl?ie=UTF8&amp;linkCode=sl2&amp;tag=webde-linkliste-21&amp;linkId=ac604cdf75867251095c9ee88f32ba21" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/982/34262982,pd=3,h=24,w=24.svg" alt="Amazon.de" width="24" height="24"/>
+        Amazon.de
+    </a>
+</li><li>
+    <a href="https://www.albamoda.de/?vcp=9bdf3f4bcd64e3&amp;utm_medium=dis&amp;utm_source=uim&amp;utm_campaign=performace-integration&amp;utm_content=logo&amp;utm_term=startseite " target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/690/35464690,pd=2,h=24,w=24/alba-moda.svg" alt="Alba Moda" width="24" height="24"/>
+        Alba Moda
+    </a>
+</li><li>
+    <a href="https://vorteile.web.de/webcent/#.hp.int.footer.icon" target="_blank">
+        <img src="https://i0.web.de/image/008/34263008,pd=5,h=24,w=24/bonusprogramm.svg" alt="Bonusprogramm" width="24" height="24"/>
+        Bonusprogramm
+    </a>
+</li><li>
+    <a href="http://ka.ilius.net/?mtcmk=915166&amp;fsid=115&amp;kaClkCh4=" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/022/34263022,pd=7,h=24,w=24.svg" alt="LoveScout24" width="24" height="24"/>
+        LoveScout24
+    </a>
+</li><li>
+    <a href="https://online.parship.de/lp/v00/4/U/e/index.html?pscode=01_100_40036_0007_0001_0981_00_AF00ID_GV00ID" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/698/34553698,pd=1,h=24,w=24.svg" alt="Parship" width="24" height="24"/>
+        Parship
+    </a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=931&amp;mpID=4&amp;site=webde&amp;region=de&amp;sc=HP_Linkliste/Immobilienboerse&amp;durl=https%3A%2F%2Fweb.de%2Fmagazine%2Fpartner%2Fimmobilienboerse%2F" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/044/34263044,pd=3,h=24,w=24.svg" alt="Immobilienbörse" width="24" height="24"/>
+        Immobilienbörse
+    </a>
+</li><li>
+    <a href="https://t.uimserv.net/drp_r/?md=uid&amp;et=WR&amp;evtid=864&amp;mediaID=931&amp;mpID=4&amp;site=gmx&amp;region=de&amp;sc=HP_Linkliste/Douglas&amp;durl=https%3A%2F%2Fm.exactag.com%2Fcl.aspx%3FextCa%3D717%26extTcm%3Dde.06a.uimlogo%7C.logo.homepage.000008%26url%3Dhttps%253A%252F%252Fwww.douglas.de%252F%253Ftrac%253Dde.06a.uimlogo..logo.homepage.000008%2526et_sea%253D1" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/700/34553700,pd=2,h=24,w=24/douglas.svg" alt="Douglas" width="24" height="24"/>
+        Douglas
+    </a>
+</li><li>
+    <a href="https://www.bonprix.de/kategorie/damen-mode/?landmark=Entry&amp;bkkz=230000000&amp;typ=POR&amp;anbieter=UIM_CPO&amp;aktion=WEB&amp;version=Homepage_Linkliste" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/988/34262988,pd=3,h=24,w=24/bonprix.svg" alt="bonprix" width="24" height="24"/>
+        bonprix
+    </a>
+</li><li>
+    <a href="https://www.wenz.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=web&amp;utm_content=Linkliste&amp;utm_term=Startseite" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/618/34553618,pd=1,h=24,w=24/wenz.svg" alt="WENZ" width="24" height="24"/>
+        WENZ
+    </a>
+</li><li>
+    <a href="https://www.moeve.de/?sPartner=UM&amp;utm_source=uim&amp;utm_medium=linkliste&amp;utm_campaign=uim_performance&amp;utm_content=moeve_home" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/882/36052882,pd=2,h=24,w=24/moeve.svg" alt="Möve" width="24" height="24"/>
+        Möve
+    </a>
+</li><li>
+    <a href="https://www.mona.de/shirts/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=web&amp;utm_content=Linkliste&amp;utm_term=Shirts" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/062/34263062,pd=3,h=24,w=24/mona.svg" alt="MONA" width="24" height="24"/>
+        MONA
+    </a>
+</li><li>
+    <a href="https://www.ullapopken.de/?campaign=display/uim/up/de/cooperations/linkliste/web&amp;utm_medium=media&amp;utm_source=uim&amp;utm_campaign=uim/up/de&amp;utm_content=linkliste&amp;utm_term=web" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/006/34263006,pd=3,h=24,w=24/ulla-popken.svg" alt="Ulla Popken" width="24" height="24"/>
+        Ulla Popken
+    </a>
+</li><li>
+    <a href="https://m.exactag.com/cl.aspx?extProvId=100&amp;extPu=uim&amp;extLi=nt_cpo&amp;extSi=uim&amp;extCr=logo&amp;url=https://www.baur.de/?WKZ=75&amp;IWL=291&amp;NUMSArt=55141221&amp;NUMSArtPc=55141222&amp;AffiliateID=uim&amp;mlid=uim_nt_bnk&amp;kid=7&amp;utm_source=uim&amp;utm_medium=cpo&amp;utm_campaign=nt_cpo&amp;MailingID=nt_cpo&amp;utm_content=logo&amp;utm_term=naktn&amp;ActionID=cpo&amp;cstm1=linkl_web&amp;consent_string=312" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/702/34553702,pd=2,h=24,w=24/baur.svg" alt="Baur" width="24" height="24"/>
+        Baur
+    </a>
+</li><li>
+    <a href="https://www.lidl.de?&amp;utm_source=uim&amp;utm_medium=display&amp;utm_campaign=perf_pros_promoline_os&amp;utm_content=desktop_footer&amp;mktc=display" target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/064/34263064,pd=4,h=24,w=24/lidl.svg" alt="Lidl" width="24" height="24"/>
+        Lidl
+    </a>
+</li><li>
+    <a href="https://www.klingel.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=web&amp;utm_content=logo&amp;utm_term=startseite " target="_blank" rel="nofollow">
+        <img src="https://i0.web.de/image/538/35092538,pd=2,h=24,w=24/klingel.svg" alt="KLINGEL" width="24" height="24"/>
+        KLINGEL
+    </a>
+</li><li>
+    <a href="https://www.ebay.de/deals?mkrid=707-53477-19255-0&amp;siteid=77&amp;mkcid=1&amp;campid=5337706713&amp;toolid=10001&amp;customid=&amp;mkevt=1 " target="_blank" rel="sponsored">
+        <img src="https://i0.web.de/image/004/34263004,pd=6,h=24,w=24/ebay.svg" alt="eBay" width="24" height="24"/>
+        eBay
+    </a>
+</li><li>
+    <a href="https://www.happy-size.de/?vcp=9bdf3f4bcd64e3&amp;utm_source=uim&amp;utm_medium=dis&amp;utm_campaign=web&amp;utm_content=linklist&amp;utm_term=logo" target="_blank">
+        <img src="https://i0.web.de/image/848/36052848,pd=3,h=24,w=24/happysize.svg" alt="HAPPYsize" width="24" height="24"/>
+        HAPPYsize
+    </a>
+</li>
+    </ul>
+    
+
+    </section>
+
+    <section data-footer-section="4">
+        
+    <ul>
+        <li>
+    <a href="https://web.de/internetmadeingermany/">
+        <img src="https://i0.web.de/image/596/34262596,pd=2,h=70,w=135.png" alt="Internet made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/magazine/in-eigener-sache/web-de-marke-jahrhunderts-16683028">
+        <img src="https://i0.web.de/image/594/34262594,pd=2,h=70,w=135.png" alt="Marke des Jahrhunderts" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/e-mail-made-in-germany/#.pc_page.homepage.index.footer_icon.emig">
+        <img src="https://i0.web.de/image/606/34262606,pd=2,h=70,w=135.png" alt="Email made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/cloud-made-in-germany/#.pc_page.homepage.index.footer_icon.cmig">
+        <img src="https://i0.web.de/image/600/34262600,pd=3,h=70,w=135.png" alt="Cloud made in Germany" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://produkte.web.de/de-mail/">
+        <img src="https://i0.web.de/image/598/34262598,pd=2,h=70,w=135.png" alt="De-Mail" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/magazine/unicef/">
+        <img src="https://i0.web.de/image/602/34262602,pd=2,h=70,w=135.png" alt="Unicef" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.united-internet.de/" target="_blank">
+        <img src="https://i0.web.de/image/592/34262592,pd=2,h=70,w=135.png" alt="Member of United Internet" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://www.top-employers.com/de/companyprofiles/de/united-internet-ag/" target="_blank">
+        <img src="https://i0.web.de/image/458/35637458,pd=2,h=70,w=135.png" alt="Jobs 1und1" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/email/sicherheit/email-siegel/#.pc_page.homepage.index.footer_icon.email-siegel">
+        <img src="https://i0.web.de/image/604/34262604,pd=2,h=70,w=135.png" alt="E-Mail Siegel" width="135" height="70"/>
+        
+    </a>
+</li><li>
+    <a href="https://web.de/magazine/in-eigener-sache/webde-beliebteste-nachrichten-website-jahres-2016-32051610">
+        <img src="https://i0.web.de/image/608/34262608,pd=2,h=70,w=135.png" alt="Website des Jahres" width="135" height="70"/>
+        
+    </a>
+</li>
+    </ul>
+    
+
+    </section>
+
+    <section data-footer-section="5">
+        
+    <ul>
+        <li>
+    <a href="https://web.de/sitemap/">
+        
+        Sitemap
+    </a>
+</li><li>
+    <a href="https://web.de/impressum/">
+        
+        Impressum
+    </a>
+</li><li>
+    <a href="https://agb-server.web.de/webdeagb">
+        
+        AGB
+    </a>
+</li><li>
+    <a href="https://web.de/datenschutz/">
+        
+        Datenschutz
+    </a>
+</li><li>
+    <a href="https://web.de/magazine/in-eigener-sache/jugendschutz/">
+        
+        Jugendschutz
+    </a>
+</li><li>
+    <a href="https://newsroom.web.de/">
+        
+        Presse
+    </a>
+</li><li>
+    <a href="https://www.united-internet.de/jobs-karriere/stellenangebote.html?tx_cisocareer_jobsearchform%5BcompanyName%5D%5B%5D=1%261%20Mail%20%26%20Media%20Applications%20SE" target="_blank">
+        
+        Jobs
+    </a>
+</li><li>
+    <a href="https://www.united-internet-media.de/" target="_blank">
+        
+        Werbung
+    </a>
+</li><li>
+    <a href="https://web.de/email/">
+        
+        E-Mail
+    </a>
+</li><li>
+    <a href="https://web.de/angebot/">
+        
+        Angebot
+    </a>
+</li><li>
+    <a href="https://web.de/nuetzlich/">
+        
+        Nützlich
+    </a>
+</li><li>
+    <a href="https://web.de/aktuell/">
+        
+        Aktuell
+    </a>
+</li><li>
+    <a href="https://web.de/magazine/news/">
+        
+        News
+    </a>
+</li>
+    </ul>
+    <span class="ee"></span>
+
+    </section>
+
+    </footer>
+
+                
+    <hp-layer :delay="300000" inline-template>
+        <section data-component="layer" :data-visible="visible" data-name="inactivityDialog" data-tracking-name="inactivityDialog" data-layout-name="inactivityDialog">
+            <div data-layer></div>
+            <div data-layer-content-wrapper data-grid-column>
+                <div data-close-button @click="visible = false">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div data-layer-content data-grid-row>
+                    <div data-part="left" data-grid-column>
+                        <div data-part="top">
+                            <div data-layer-headline>Wir haben aktuelle News für Sie</div>
+                            <hp-button data-type="icon-text" data-importance="primary" data-size="l" @click="reloadSite">
+                                <hp-icon type="refresh"></hp-icon>
+                                Seite aktualisieren
+                            </hp-button>
+                        </div>
+                        <div data-part="middle">
+                            <div data-sub-headline>Das könnte Sie auch interessieren</div>
+                            <div data-teaser-wrapper data-grid-row>
+                                
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/news/coronavirus/us-radiomoderator-wetterte-fauci-impfungen-starb-covid-19-36069994" data-headline="US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19" data-teaser-id="36069994">
+            
+            <figure>
+                <img alt="" src="https://i0.web.de/image/564/36070564,pd=1,h=170,w=300.jpg" width="300" height="170">
+                
+            </figure>
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Corona-Pandemie
+                    </span>
+                    <h3>US-Radiomoderator wetterte gegen Fauci und Impfungen - nun starb er an COVID-19</h3>
+                    
+                </header>
+                
+                
+                <footer>
+                    
+                    <span>vor 18 Minuten</span>
+                    
+                </footer>
+            </article>
+        </a>
+
+    <div data-component="list">
+        
+        
+        <ul>
+            <li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/musik/schlager/schlagerstar-margot-eskens-schwer-demenz-erkrankt-36070618" data-separator="top" data-headline="&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt" data-teaser-id="36070618">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Schlagerstar
+                    </span>
+                    <h3>&quot;Sie hat ihr Leben gelebt&quot;: Schlagerstar Margot Eskens schwer an Demenz erkrankt</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/unterhaltung/adel/britische-royals/naechste-skandal-herzogin-meghans-bruder-laestert-big-brother-36070896" data-separator="top" data-headline="&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;" data-teaser-id="36070896">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Royals
+                    </span>
+                    <h3>&quot;Sie ist sehr oberflächlich&quot;: Meghans Bruder lästert bei &quot;Big Brother&quot;</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/politik/greta-thunberg/thunberg-skandinavischem-vogue-cover-kritik-fashion-36070320" data-separator="top" data-headline="Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion" data-teaser-id="36070320">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Politik
+                    </span>
+                    <h3>Thunberg auf skandinavischem &quot;Vogue&quot;-Cover - Kritik an Fast Fashion</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li><li>
+    
+    
+        <a data-component="teaser" type="hp-teaser" href="https://web.de/magazine/sport/wintersport/biathlon/herzchen-kleine-fuesse-baby-news-ex-biathlon-star-neuner-36070492" data-separator="top" data-headline="Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner" data-teaser-id="36070492">
+            
+            
+            <article>
+                <header>
+                    <span>
+                        
+                        
+                        Nachwuchs
+                    </span>
+                    <h3>Drei Herzchen und kleine Füße: Baby-News bei Ex-Biathlon-Star Neuner</h3>
+                    
+                </header>
+                
+                
+                
+            </article>
+        </a>
+
+</li>
+        </ul>
+    </div>
+
+                            </div>
+                        </div>
+                        <div data-part="bottom">
+                            <hp-searchbar data-no-suggest></hp-searchbar>
+                        </div>
+                    </div>
+                    <div data-part="right">
+                        <div data-service-slot="rectangle_layer"></div>
+                    </div>
+                </div>
+                <div data-hide-button @click="hidePermanent"><span>Nicht mehr anzeigen</span></div>
+            </div>
+        </section>
+    </hp-layer>
+
+              </div>
+              
+            </div>
+        </Page>
+      </hp-app>
+    </div>
+    <div data-service-slot="tam"></div>
+    
+    
+    <noscript>
+        <img alt="" width="1" height="1" src="//wa.web.de/webde/webde/s?name=homepage.startseite.pi.nojs&amp;country=de&amp;portal=webde"/>
+    </noscript>
+
+    
+    
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/chunk-vendors.js"></script>
+
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/chunk-common.js"></script>
+
+    <script src="https://js.ui-portal.de/homepage/res/legacy/1.15.0-rc15/webde/homepage.bundle.js"></script>
+
+
+  </body>
+</html>

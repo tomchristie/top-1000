@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="copyright" content="Copyright JIJI PRESSLTD Ltd. All Rights Reserved." />
+<meta name="keywords" content="ニュース,時事ドットコム,時事通信社" />
+<meta name="description" content="時事ドットコム：時事通信社が運営するニュースサイト　政治・経済・社会・国際・スポーツ・エンタメなどのニュースに加え、社会的な関心が高い事象については特集も掲載します" />
+<meta name="title" content="時事ドットコム：時事通信社が運営するニュースサイト" />
+<meta name="robots" content="noarchive">
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "WebSite",
+	"name" : "時事ドットコム",
+	"url": "https://www.jiji.com/",
+	"sameAs": [
+		"https://twitter.com/jijicom",
+		"https://www.facebook.com/wwwjijicom/"
+	],
+	"alternateName" : "時事ドットコム",
+	"image": {"@type": "ImageObject","url": "https://www.jiji.com/img/jijicom_og_image.png", "height": 630,"width": 1200},
+	"publisher": {
+		"@type": "Organization",
+		"name": "時事通信社",
+		"logo": {
+		"@type": "ImageObject",
+			"url": "https://www.jiji.com/img/jijicom_amp.png",
+			"width": 600,
+			"height": 60
+		}
+	}
+}
+</script>
+<meta property="fb:app_id" content="1530007017305928" />
+<meta property="fb:pages" content="1530007017305928" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:site_name" content="時事ドットコム" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://www.jiji.com/img/jijicom_og_image.png" />
+<meta property="og:title" content="時事ドットコム：時事通信社が運営するニュースサイト" />
+<meta property="og:description" content="時事ドットコム：時事通信社が運営するニュースサイト　政治・経済・社会・国際・スポーツ・エンタメなどのニュースに加え、社会的な関心が高い事象については特集も掲載します" />
+<meta property="og:url" content="https://www.jiji.com/" />
+<meta property="twitter:account_id" content="4503599627439296" />
+<meta name="twitter:site" content="@jijicom">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="時事ドットコム：時事通信社が運営するニュースサイト" />
+<meta name="twitter:description" content="時事ドットコム：時事通信社が運営するニュースサイト　政治・経済・社会・国際・スポーツ・エンタメなどのニュースに加え、社会的な関心が高い事象については特集も掲載します" />
+<meta name="twitter:image" content="https://www.jiji.com/img/sns-logo.jpg" />
+<meta name="twitter:url" content="https://www.jiji.com/" />
+<meta name="mixi-check-robots" CONTENT="noimage">
+
+<!-- pc head css -->
+<link rel="preload" as="style" href="/news2/common/css/jiji2.css">
+<link rel="preload" as="font" href="/news2/common/webfonts/fonts.woff?x7sz4" type="font/woff">
+<link rel="preload" as="style" href="/news2/common/css/fonts.css">
+<link rel="preload" href="/img/logo.svg" as="image" type="image/svg+xml">
+<!-- /pc head css -->
+ 
+<!-- pc head js -->
+<link rel="preload" as="script" href="/news2/common/js/jquery-2.2.4.min.js">
+<link rel="preload" as="script" href="/news/common/js/jquery.cookie.js">
+<link rel="preload" as="script" href="/news2/common/js/jc_common_1.js">
+<!-- /pc head js -->
+
+
+<link rel="canonical" href="https://www.jiji.com/"/>
+<!-- moble URL start -->
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.jiji.com/sp/" >
+<!-- moble URL end -->
+<link rel="alternate" type="application/rss+xml" title="時事ドットコムアクセスランキング" href="https://www.jiji.com/rss/ranking.rdf" />
+<link rel="shortcut icon" type="image/x-icon" href="https://www.jiji.com/favicon.ico" />
+<link rel="preconnect dns-prefetch" href="//securepubads.g.doubleclick.net" crossorigin>
+<link rel="preconnect dns-prefetch" href="//www.google-analytics.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//tpc.googlesyndication.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//www.googletagservices.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//fonts.googleapis.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//flux-cdn.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//c.amazon-adsystem.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//static.chartbeat.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//www.facebook.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//tagger.opecloud.com" crossorigin>
+<link rel="preconnect dns-prefetch" href="//jen.jiji.com">
+
+<link rel="apple-touch-icon" href="https://www.jiji.com/img/top_logo_square.png" />
+<title>時事ドットコム：時事通信社が運営するニュースサイト</title>
+<meta name="viewport" content="width=1100, minimum-scale=0.1">
+
+<link rel="stylesheet" href="/news2/common/css/jiji2.css" type="text/css">
+<link rel="stylesheet" href="/news2/common/css/fonts.css" type="text/css">
+
+
+<script src="/news2/common/js/jquery-2.2.4.min.js"></script>
+<script src="/news/common/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="/news2/common/js/jc_common_1.js" type="text/javascript"></script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T9VJVBN');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-1063805-1', 'auto', 'jijiga');
+  ga('jijiga.require', 'linkid');
+  ga('jijiga.require', 'GTM-533HPW6');
+  ga('jijiga.send', 'pageview');
+</script>
+
+<script>
+$(function(){
+    // iPhone6 Plus Landscape Viewport
+    if(navigator.userAgent.indexOf('iPhone') > 0){
+        if(window.devicePixelRatio == 3) {
+
+		var metalist = document.getElementsByTagName('meta');
+		for(var i = 0; i < metalist.length; i++) {
+		    var name = metalist[i].getAttribute('name');
+		    if(name && name.toLowerCase() === 'viewport') {
+		        metalist[i].setAttribute('content', 'width=1010,initial-scale=0.6');
+		        break;
+		    }
+		}
+        }
+     }else if(navigator.userAgent.indexOf('iPad') > 0){
+	var metalist = document.getElementsByTagName('meta');
+	for(var i = 0; i < metalist.length; i++) {
+	    var name = metalist[i].getAttribute('name');
+	    if(name && name.toLowerCase() === 'viewport') {
+	        metalist[i].setAttribute('content', 'width=1020');
+	        break;
+	    }
+	}
+     }
+});
+</script>
+
+<!-- Google Advertisement header start -->
+<!-- Google Advertisement header start -->
+<script>
+window.__AB_TEST_ALLOCATION_MAP__ = {'A': 50,'B': 50};!function(){var _=!0,o="__ab_test_user_group_num__",a=1e6,n=Math.round(Math.random()*a);if("localStorage"in window&&null!==window.localStorage){var r=window.localStorage;o in r?n=r[o]:r[o]=n}else n=-1;var i="DEFAULT";if(-1!==n){var e=window.__AB_TEST_ALLOCATION_MAP__,l=0;for(var w in e)if(l+=e[w],l>n/a*100){i=w;break}window.__AB_TEST_USER_GROUP_NAME__=i,_&&console.log("Test Group: "+i)}}();
+</script>
+<!-- DFP head -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+</script>
+<!-- /DFP head -->
+
+<!-- 1plusX -->
+<script>
+try {
+ //1plusXに対してキーバリュー情報取得処理を行う際のhttpリクエストタイムアウト指定値(ms)を定義
+ var TAGGER_TIMEOUT = 1000;
+ var googletag = window.googletag || {};
+ googletag.cmd = googletag.cmd || [];
+ // 1plusXの処理を利用する、しないを定義するフラグ値
+ var do1plusXTargeting = true;
+ (function (url) {
+   //1plusXに対してキーバリュー情報取得が必要なslotがない場合は何も実施しない
+   if (!do1plusXTargeting) {
+     return;
+   }
+   //1plusXに対してキーバリュー情報取得完了後に実行するコールバック関数
+   var accessDg = function (res) {
+     //googletag.cmd.push未実行時のみ実施。
+     if (res) {
+       googletag.cmd.push(function () {
+         //ページレベルでkey-value設定実施。1plusXからのキーバリュー情報が取得できた場合のみsetTargetingを実施
+         if (res !== null) {
+           if (res["s"] !== null && res["s"].length > 0) {
+             //1plusxのオーディエンス用（res['s']の部分）
+             googletag.pubads().setTargeting("opeaud", res["s"]);
+           }
+           if (res["t"] !== null && res["t"].length > 0) {
+             //1plusxのトピック用（res['t']の部分）
+             googletag.pubads().setTargeting("opectx", res["t"]);
+           }
+         }
+       });
+     }
+   };
+   //1plusxに対して、キーバリュー情報の取得処理開始（HTTP Request）
+   try {
+     fetch(url + "?url=" + encodeURIComponent(window.location.href), {
+       referrerPolicy: "no-referrer-when-downgrade",
+       mode: "cors",
+       credentials: "include",
+       //応答コードが200の時のみ、正常完了とする。それ以外はサーバエラー扱いにする。
+     })
+       .then(function (response) {
+         if (response.status === 200) {
+           return response.json();
+         } else {
+           throw new Error("server error.");
+         }
+       })
+       .then(function (res) {
+         //通信正常完了時
+         accessDg(res);
+       });
+   } catch (error) {
+     //fetchエラー処理
+     console.log(error);
+   }
+ })("https://mediaconsortium.profiles.tagger.opecloud.com/api/v1"); //1plusxのHTTP Request先
+} catch (e) {}
+</script>
+<!-- /1plusX -->
+
+<!-- Define callback function -->
+<script>
+var readyBids = {
+ prebid: false,
+ amazon: false,
+ google: false
+};
+var failSafeTimeout = 3e3;
+var launchAdServer = function () {
+ if (!readyBids.amazon || !readyBids.prebid) {
+   return;
+ }
+ requestAdServer();
+};
+var requestAdServer = function () {
+ readyBids.google = true;
+ googletag.cmd.push(function () {
+   pbjs.que.push(function () {
+     pbjs.setTargetingForGPTAsync();
+   });
+   slots = googletag.pubads().getSlots();
+   googletag.pubads().refresh(slots, {changeCorrelator: false});
+ });
+};
+</script>
+<!-- /Define callback function -->
+
+<!-- FLUX head -->
+<script async src="https://flux-cdn.com/client/jiji/flux_jiji_TM.min.js" onerror="googletag.cmd.push(function () { readyBids.prebid = true; launchAdServer(); });"></script>
+<script>
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+</script>
+<!-- /FLUX head -->
+
+<!-- APS head -->
+<script async src="https://c.amazon-adsystem.com/aax2/apstag.js" onerror="googletag.cmd.push(function () { readyBids.amazon = true; launchAdServer(); });"></script>
+<script>
+var apstag = apstag || {};
+(function(a9, a){
+ function q(c,r){ a[a9]._Q.push([c,r]); }
+ a[a9] = {
+   init: function(){ q('i', arguments) },
+   fetchBids: function(){ q('f', arguments) },
+   _Q: []
+ };
+})('apstag', window);
+apstag.init({
+ pubID: '3762',
+ adServer: 'googletag',
+ bidTimeout: 1e3
+});
+var apsslots = [
+   {
+     slotID: 'pc-billboard',
+     slotName: '/60445660/www/PC/pc_billboard',
+     sizes: [[970,250],[728,90]]
+   }, {
+     slotID: 'pc-1rec',
+     slotName: '/60445660/www/PC/pc_1rec',
+     sizes: [[300,250],[300,600]]
+   }, {
+     slotID: 'pc-2rec',
+     slotName: '/60445660/www/PC/pc_2rec',
+     sizes: [[300,600]]
+   }
+];
+if (window.__AB_TEST_USER_GROUP_NAME__ == 'A') {
+ apsslots.push(
+   {
+     slotID: 'pc-art-u',
+     slotName: '/60445660/www/PC/pc_art_u',
+     sizes: [[300, 250], [336, 280]]
+   }
+ );
+}else{
+ apsslots.push(
+   {
+     slotID: 'pc-kijishita-R',
+     slotName: '/60445660/www/test/PC/pc_kijishita_R',
+     sizes: [[300, 250]]
+   },{
+     slotID: 'pc-kijishita-L',
+     slotName: '/60445660/www/test/PC/pc_kijishita_L',
+     sizes: [[300, 250]]
+   }
+ );
+}
+apstag.fetchBids({
+ slots: apsslots
+ }, function (bids) {
+   googletag.cmd.push(function () {
+     apstag.setDisplayBids();
+     readyBids.amazon = true;
+     launchAdServer();
+   });
+ }
+);
+</script>
+<!-- /APS head -->
+
+<script>
+googletag.cmd.push(function () {
+ googletag.defineSlot('/60445660/www/PC/pc_billboard', [[1,1],[970,250],[728,90]],'pc-billboard').addService(googletag.pubads());
+ googletag.defineSlot('/60445660/www/PC/pc_1rec', [[300,250],[300,500],[300,600]],'pc-1rec').addService(googletag.pubads());
+ //googletag.defineSlot('/60445660/www/PC/pc_art_u', [[680, 280],[660, 280], [300, 250], [336, 280], [250, 250]], 'pc-art-u').addService(googletag.pubads());
+ if (window.__AB_TEST_USER_GROUP_NAME__ == 'A') {
+   googletag.defineSlot('/60445660/www/PC/pc_art_u', [[680, 280],[660, 280], [300, 250], [336, 280], [250, 250]], 'pc-art-u').addService(googletag.pubads());
+ }else{
+   googletag.defineSlot('/60445660/www/test/PC/pc_kijishita_R', [[300, 250]], 'pc-kijishita-R').addService(googletag.pubads());
+   googletag.defineSlot('/60445660/www/test/PC/pc_kijishita_L', [[300, 250]], 'pc-kijishita-L').addService(googletag.pubads());
+ }
+ googletag.defineSlot('/60445660/www/PC/pc_title', [[640, 70], [680, 70]], 'pc-title').addService(googletag.pubads());
+ googletag.defineSlot('/60445660/www/PC/pc_2rec', [[300,600]],'pc-2rec').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+ googletag.defineSlot('/60445660/www/PC/pc_footer', [[490,160],[640,360],[680,360]],'pc-footer').addService(googletag.pubads());
+ googletag.defineSlot('/60445660/www/PC/pc_middle', [[660,200],[680,200],[680, 360],[660, 280]],'pc-middle').addService(googletag.pubads());
+ googletag.pubads().setTargeting( 'page', 'top' );
+ googletag.pubads().enableSingleRequest();
+ googletag.pubads().disableInitialLoad();
+ <!--async-->
+ googletag.enableServices();
+ pbjs.que.push(function() {
+   prebidBidder();
+ });
+});
+setTimeout(function () {
+ if (readyBids.google === false) {
+   requestAdServer();
+ }
+}, failSafeTimeout);
+</script>
+
+
+<!-- Google Advertisement header end -->
+<!-- Google Advertisement header end -->
+
+<!-- Style_Cookie_Check_for_Index -->
+<script type="text/javascript">
+  //device check
+  if (jijicom_device_check() == 'SP'){
+    window.location.href = '/sp/';
+  }
+</script>
+<!-- Style_Cookie_Check_for_Index -->
+
+</head>
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9VJVBN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	
+<header id="PageHeader">
+  <div class="upside">
+    <!-- トップ用 -->
+    <div class="upsideLogo"><h1 class="SiteLogo"><a href="/"><img height="" width="" alt="時事ドットコム" src="/img/logo.svg"></a></h1></div>
+    <div class="upsideRight">
+      <nav class="upsideMenu">
+        <ul class="upsideNavi">
+          <li class="upsideNavi__none"><a href="/jc/tokyo2020">東京五輪</a></li>
+          <li class="upsideNavi__single">
+            <a href="/jc/list?g=news">新着記事</a>
+            <ul class="upsideNavi__secondlevel">
+              <li><a href="/jc/v7">トピックス</a></li>
+            </ul>
+          </li>
+          <li class="upsideNavi__none"><a href="/jc/rensai">連載</a></li>
+          <li class="upsideNavi__single">
+            <a href="/jc/v">特集</a>
+            <ul class="upsideNavi__secondlevel">
+              <li><a href="/jc/list?g=cyr">深層探訪</a></li>
+              <li><a href="/jc/graphics">図解</a></li>
+            </ul>
+          </li>
+          <!--<li class="upsideNavi__none"> <a href="/jc/r">ランキング</a></li>-->
+          <li class="upsideNavi__single"> <a href="/jc/p">写真・動画</a>
+            <ul class="upsideNavi__secondlevel">
+              <li><a href="/jc/p">写真ニュース</a></li>
+              <li><a href="/jc/movie?g=news">ニュース動画</a></li>
+              <li><a href="/jc/movie?g=trend">トレンド動画</a></li>
+              <li><a href="/jc/d3">写真特集</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="upsideDate">2021年8月9日(月)</div>
+      <!-- お天気START -->
+      <div id="Weather"></div>
+      <!-- ///// お天気END -->
+      <form method="get" class="searchForm" action="/jc/search"> <input type="search" placeholder="記事／キーワード" value="" name="q" class="searchField" /> <input type="submit" value="Search" /> </form>
+    </div>
+  </div>
+
+	
+<nav>
+  <ul class="MainGNavi">
+    <li class="MainGNavi__single top"> <a href="/">トップ</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/list?g=mng">朝刊・夕刊の見出し</a></li>
+        <li><a href="https://jen.jiji.com/">ENGLISH</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/c?g=pol">政治</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/v7?id=seikaiweb">政界Web</a></li>
+        <li><a href="/jc/v7?id=2020tnc">点描・永田町</a></li>
+        <li><a href="/jc/v7?id=202008sengohosyu">戦後保守政治の裏側</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/c?g=int">国際</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/list?g=afp">ワールドEYE</a></li>
+        <li><a href="/jc/v7?id=world-column">地球コラム</a></li>
+        <li><a href="/jc/v7?id=chesanno">崔さんの眼</a></li>
+        <li><a href="/jc/v7?id=chinawatch">中国ウォッチ</a></li>
+        <li><a href="/jc/v7?id=wonsan">洞察☆中国</a></li>
+        <li><a href="/jc/v7?id=19cec">新次元の中国経済</a></li>
+        <li><a href="/jc/v2?id=2017franceactu">ふらんす</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/c?g=soc">社会</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/list?g=obt">おくやみ</a></li>
+        <li><a href="/jc/v7?id=2019inkk">教育最前線</a></li>
+        <li><a href="/jc/v7?id=2019med">メディカルサロン</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__economy"> <a href="/jc/c?g=eco">経済</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/market">マーケット</a></li>
+        <li><a href="https://equity.jiji.com/">エクイティ</a></li>
+        <li><a href="/jc/market?g=stock">株価</a></li>
+        <li><a href="/jc/list?g=bw">BWリリース</a></li>
+        <li><a href="/jc/market?g=exchange">外為</a></li>
+        <li><a href="/jc/list?g=prt">PRTIMES</a></li>
+        <li><a href="/jc/market?g=future">商品</a></li>
+        <li><a href="/jc/v7?id=2019ege">江上剛　コラム</a></li>
+        <li><a href="/jc/market?g=trust">投信</a></li>
+        <li><a href="/jc/list?g=leaders">トップの視点</a></li>
+        <li><a href="/jc/list?g=myview">私の相場観</a></li>
+        <li><a href="/jc/v7?id=keizaihyaku">けいざい百景</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__sports"> <a href="/jc/c?g=spo">スポーツ</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/tokyo2020">東京五輪</a></li>
+        <li><a href="/jc/v7?id=sportsstories">スポーツストーリーズ</a></li>
+        <li><a href="/jc/score">記録速報</a></li>
+        <li><a href="/jc/v4?id=spword20200502">スポーツの言葉考</a></li>
+        <li><a href="/jc/c?g=bsb">野球</a></li>
+        <li><a href="/jc/v4?id=shimuraohtani18">二刀流大谷を追う</a></li>
+        <li><a href="/jc/c?g=scr">サッカー</a></li>
+        <li><a href="/jc/sumo">土俵百景</a></li>
+        <li><a href="/jc/c?g=hsb">高校野球</a></li>
+        <li><a href="/jc/v7?id=202008olytec">五輪のミカタ</a></li>
+        <li><a href="/jc/tokushu?g=rgb">ラグビー</a></li>
+        <li><a href="/jc/tokushu?g=powerofwords">スポーツ名言・名場面</a></li>
+        <li><a href="/jc/tsn">JSPOスポーツニュース</a></li>
+        <li class="none"></li>
+        <li><a href="/jc/eplayer">スポーツ動画</a></li>
+        <li class="none"></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/c?g=ent">エンタメ</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/list?g=cnp">韓流</a></li>
+        <li><a href="/jc/ak">ＡＫＢ４８</a></li>
+        <li><a href="/jc/ti?p=yatogame3&g=yatogame" target="_blank">八十亀ちゃん</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/list?g=jfn">地域</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="/jc/list?g=jfn">にっぽんもぎたて便</a></li>
+        <li><a href="/jc/list?g=jti">トップインタビュー</a></li>
+        <li><a href="/jc/list?g=jmp">自治体便り</a></li>
+        <li><a href="/jc/tokushu?g=tokyo2020_hosttown">ホストタウン情報</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__single"> <a href="/jc/list?g=newitem">ライフ</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="https://www.afpbb.com/category/jiji-trend">JIJI Trend</a></li>
+        <li><a href="/jc/list?g=newitem">新商品</a></li>
+        <li><a href="/jc/v2?id=2018toyosunews">お魚情報</a></li>
+        <li><a href="/jc/car">クルマ</a></li>
+        <li><a href="/jc/g">なんでもランキング</a></li>
+      </ul>
+    </li>
+    <li class="MainGNavi__none yotei"><a href="/jc/calendar">予定</a></li>
+    <li class="MainGNavi__medical medical"> <a href="https://medical.jiji.com/">メディカル</a>
+      <ul class="MainGNavi__second-level">
+        <li><a href="https://medical.jiji.com/column/articles/?c=1">一流に学ぶ</a></li>
+        <li><a href="https://medical.jiji.com/topics/">ピックアップ</a></li>
+        <li><a href="https://medical.jiji.com/doctor/">ニュースドクターズガイド</a></li>
+        <li><a href="https://medical.jiji.com/medical/">家庭の医学</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+	
+	
+
+  <div id="PageHeaderInner">
+    <div id='pc-billboard'>
+      <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('pc-billboard'); });
+      </script>
+    </div>
+  </div>
+</header>
+
+
+	<div id="Contents">
+    	<div class="clearfix" id="ContentsInner">
+
+			<!--左カラム-->
+        	<div id="Main">
+
+	<div class="HomeTop">
+		<section class="HomeTopics">
+			<div id="tabs">
+				<div id="panel1" class="panel clearfix">
+					
+
+
+
+
+
+<div class="TopicsPhoto">
+<a href="/jc/article?k=2021080900295&g=int">
+<img class="aovr" alt="閉会式、葉巻で「リラックス」？　禁煙の国立競技場―東京五輪" src="/news/handmade/file/images/top_photo/pctop210809-4.jpg" width="260" height="">
+<span>閉会式、葉巻で「リラックス」？　禁煙の国立競技場―東京五輪</span>
+</a>
+</div> <ul class="TopicsList">
+<li><a href="/jc/article?k=2021080900438&g=int&utm_source=top&utm_medium=topics&utm_campaign=edit">サムスントップを仮釈放　「経済状況を考慮」<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">3</span></span>
+</a></li>
+<li><a href="/jc/article?k=2021080900411&g=spo&utm_source=top&utm_medium=topics&utm_campaign=edit">酷暑への対応遅く　割を食ったアスリート<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">6</span></span>
+</a></li>
+<li><a href="/jc/article?k=2021080900375&g=pol&utm_source=top&utm_medium=topics&utm_campaign=edit">麻生財務相、自宅待機を解除　運転手感染も<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">14</span></span>
+</a></li>
+<li><a href="/jc/article?k=2021080800216&g=int&utm_source=top&utm_medium=topics&utm_campaign=edit">大会運営は「合格点」　韓国メディア<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">35</span></span>
+</a></li>
+<li><a href="/jc/article?k=2021080900235&g=spo&utm_source=top&utm_medium=topics&utm_campaign=edit">敗れても勝者に敬意　記憶に残った選手たち<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">6</span></span>
+</a></li>
+</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<aside class="tokyo2020banner"><a href="/jc/tokyo2020"><img src="/2020tokyo/images/all/BN_TOKYO2020PC01.gif"></a></aside>
+
+	<div class="ArticleAd">
+		<!-- /60445660/www/top/title -->
+		<div id='pc-title'>
+			<script>
+				googletag.cmd.push(function() { googletag.display('pc-title'); });
+			</script>
+		</div>
+		<!-- /60445660/www/top/title -->
+	</div>
+
+	<div class="clearfix" id="BoxHomeTop">
+		<!--トップページ「特集」-->
+		<section class="Recommend">
+			<div class="Title clearfix">
+				<h2><a href="/jc/v">特集</a></h2>
+			</div>
+			<div class="RecommendInner">
+<ul>
+	<li>
+<a href="/jc/v4?id=20210804lonvaca0001">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="「大滝」と「大瀧」の足跡たどって" src="/news/handmade/file/images/ichioshi-photo4/longvaca_218.jpg"></div>
+	<div class="ThumbText">「大滝」と「大瀧」の足跡たどって</div>
+</a>
+</li>
+<li>
+<a href="/jc/v4?id=20210806seikaiweb0001">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="夫婦別姓、じわり推進論" src="/news/handmade/file/images/ichioshi-photo4/20210806_seikai_218.jpg"></div>
+	<div class="ThumbText">夫婦別姓、じわり推進論</div>
+</a>
+</li>
+<li>
+<a href="/jc/v4?id=202108keizaihyaku0180001">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="五輪の裏でサイバー熱戦" src="/news/handmade/file/images/ichioshi-photo4/toku-keizai18_218-3.jpg"></div>
+	<div class="ThumbText">五輪の裏でサイバー熱戦</div>
+</a>
+</li>
+<li>
+<a href="/jc/v4?id=tetsuin0040001">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="森高千里の名曲を聴きながら" src="/news/handmade/file/images/ichioshi-photo4/watarase_218_2.jpg"></div>
+	<div class="ThumbText">森高千里の名曲を聴きながら</div>
+</a>
+</li>
+<li>
+<a href="/jc/article?k=2021080501072&amp;g=int">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="習主席、独裁反対論に警告" src="/news/handmade/file/images/ichioshi-photo4/20210805_chinawatch_218-140.jpg"></div>
+	<div class="ThumbText">習主席、独裁反対論に警告</div>
+</a>
+</li>
+<li>
+<a href="/jc/v4?id=20210731tsurumatsu0001">
+	<div class="ThumbImg"><img width="218" height="140" class="aovr" alt="勘三郎“三男”、歌舞伎座で大役に" src="/news/handmade/file/images/ichioshi-photo4/tsurumatsu_218_2.jpg"></div>
+	<div class="ThumbText">勘三郎“三男”、歌舞伎座で大役に</div>
+</a>
+</li>
+</ul>
+</div>
+
+		</section>
+		<!--トップページ「特集」-->
+	</div>
+
+	<div class="FeatureBanner">
+	<!--<img width="650" height="50" class="aovr" alt="" src="/news2/common/img/dummy/dummyAD11.gif">-->
+</div>
+
+	<div id="BoxGenre">
+
+		<!--アクセスランキング-->
+		<section class="Ranking BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2><a href="/jc/r">アクセスランキング</a></h2>
+				<ul class="TitleLink clearfix"><li><a href="/jc/r">一覧へ</a></li></ul>
+			</div>
+			<div class="RankingContents">
+<dl class="clearfix RankingBlock">
+	<dt class="RankingTop"><span>1</span></dt>
+<dd><a href="/jc/article?k=2021080800225&g=soc">秋篠宮さま五輪閉会式に　天皇陛下の名代で</a></dd>
+<dt class="RankingTop"><span>2</span></dt>
+<dd><a href="/jc/article?k=2021080900295&g=int">閉会式、葉巻で「リラックス」？　禁煙の国立競技場―東京五輪</a></dd>
+<dt class="RankingTop"><span>3</span></dt>
+<dd><a href="/jc/article?k=2021080900285&g=pol">長崎原爆忌、１分遅刻　あいさつ読み飛ばさず―菅首相</a></dd>
+<dt><span>4</span></dt>
+<dd><a href="/jc/article?k=2021080300237&g=pol">【点描・永田町】支持率下落で狂った再選戦略</a></dd>
+<dt><span>5</span></dt>
+<dd><a href="/jc/article?k=2021080800210&g=int">光と影、見詰めた世界　バトンは北京、パリへ―東京五輪閉幕</a></dd>
+</dl>
+</div>
+
+		</section>
+		<!--アクセスランキング-->
+
+		<!--国際-->
+		<section class="Kokusai BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>国際</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=int">国際トップ</a></li>
+ <li><a href="/jc/c?g=cov">新型コロナ</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=202008Belarus">ベラルーシ選手</a></li>
+ <li><a href="/jc/v7?id=20181101korea">日韓関係</a></li>
+ <li><a href="/jc/v7?id=1808taisai">台湾問題</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=1906hongkong">香港問題</a></li>
+ <li><a href="/jc/list?g=int">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080900082&g=int">
+						<img width="213" class="aovr" alt="先行き見えず不満　ベラルーシからの移民たち―リトアニア" src="/news2/kiji_photos/202108/20210809ax01S_top.jpg">
+						<span>先行き見えず不満　ベラルーシからの移民たち―リトアニア</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080900082&g=int">先行き見えず不満　ベラルーシからの移民たち―リト…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900453&g=int">タリバン、北部を重点攻略　政府側の戦力そぐ―アフ…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900488&g=int">円、１１０円台前半　ロンドン外為</a></li>
+					<li><a href="/jc/article?k=2021080900438&g=int">サムスントップの仮釈放認める　経済への影響「考慮…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900448&g=int">中ロが合同軍事演習　米軍撤収のアフガンにらみ</a></li>
+					<li><a href="/jc/article?k=2021080900352&g=int">円、１１０円台前半　ロンドン外為</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--国際-->
+
+		<!--ワールドEYE-->
+		<section class="afp BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>ワールドEYE</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/v7?id=2021ccp100">中国共産党１００年</a></li>
+ <li><a href="/jc/v7?id=world-column">地球コラム</a></li>
+ <li><a href="/jc/list?g=ws">ウォールストリートジャーナル</a></li>
+ <li><a href="/jc/list?g=afp">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=20210806041875a&g=afp">
+						<img width="213" class="aovr" alt="トランプ氏が米サッカー女子非難　金逃したのは「左翼」のせい" src="/news2/afpnj/photos/AFP041875_top.jpg">
+						<span>トランプ氏が米サッカー女子非難　金逃したのは「左翼」のせい</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=20210806041875a&g=afp">トランプ氏が米サッカー女子非難　金逃したのは「左…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=20210806041874a&g=afp">ビル・ゲイツ氏、エプスタイン元被告との付き合いは…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=20210806041873a&g=afp">ＦＢ、広告調査プロジェクトのアカウント停止　非難…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=20210806041872a&g=afp">旅券破り当局に抵抗したベラルーシ反体制派幹部、初…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=20210806041871a&g=afp">リアーナさんの資産１８６０億円、副業で成功　米フ…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=20210806041870a&g=afp">メーガン妃、４０歳に　女性の復職支援を呼び掛け<span class="PhotoIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--ワールドEYE-->
+
+		<!--政治-->
+		<section class="Seiji BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>政治</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=pol">政治トップ</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=201808oknwc">沖縄基地問題</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=1909cabinetkaizo">菅内閣</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=20200331emergency">緊急事態宣言</a></li>
+ <li><a href="/jc/v?p=cabinet2020_0916">閣僚名簿</a></li>
+ <li><a href="/jc/v2?id=ssds202108">首相動静</a></li>
+ <li><a href="/jc/list?g=pol">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080900285&g=pol">
+						<img width="213" class="aovr" alt="長崎原爆忌、１分遅刻　あいさつ読み飛ばさず―菅首相" src="/news2/kiji_photos/202108/20210809at35S_top.jpg">
+						<span>長崎原爆忌、１分遅刻　あいさつ読み飛ばさず―菅首相</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080900406&g=pol">衆院三重４区に鈴木氏擁立　自民県連</a></li>
+					<li><a href="/jc/article?k=2021080900285&g=pol">長崎原爆忌、１分遅刻　あいさつ読み飛ばさず―菅首…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900132&g=pol">首相動静（８月９日）</a></li>
+					<li><a href="/jc/article?k=2021080900375&g=pol">麻生財務相、自宅待機を解除　濃厚接触者に当たらず</a></li>
+					<li><a href="/jc/article?k=2021080900319&g=pol">宣言知事、人出抑制へ対策要請　西村担当相とテレビ…</a></li>
+					<li><a href="/jc/article?k=2021080900233&g=pol">菅首相、五輪「開催国の責任果たした」　ワクチン接…<span class="PhotoIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--政治-->
+		
+		<!--特集-->
+		<!--編集部セレクション-->
+<section class="RecommendUnderlayer selection">
+<div class="Title clearfix"><p>コラム・連載</p></div>
+<div class="RecommendUnderlayerInner">
+<ul><li>
+<a href="/jc/article?k=2021080300237&amp;g=pol">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/20210803sketch-nagata218-140.jpg" alt="支持率下落で狂った再選戦略" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">支持率下落で狂った再選戦略</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=20210801won0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/grandma-share-218-140.jpg" alt="中国の新しい互助「シェアリングおばあちゃん」" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">中国の新しい互助「シェアリングおばあちゃん」</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=20210727world0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/tok-126_218.jpg" alt="「汚いパリ」◆写真続々投稿、抗議デモ" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">「汚いパリ」◆写真続々投稿、抗議デモ</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=20210801mat0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/whatkindpeople-218-140.jpg" alt="ぼったくり男爵◆バッハ会長ってどんな人？" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">ぼったくり男爵◆バッハ会長ってどんな人？</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=202107dinokisha0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/toku-dinokisha_218-2.jpg" alt="圧倒的な存在感◆大恐竜展訪問記" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">圧倒的な存在感◆大恐竜展訪問記</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=202107keizaihyaku0170001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/keizaihyaku017_218.jpg" alt="リゾートでリモートは夢のまた夢？" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">リゾートでリモートは夢のまた夢？</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=20210727tsuitosakai0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/idol_218.jpg" alt="アイドルに込めた日常性" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">アイドルに込めた日常性</div>
+</a>
+</li><li>
+<a href="/jc/v4?id=202107tokyoemblem0001">
+<div class="ThumbImg"><img src="/news/handmade/file/images/ichioshi-photo4/tok-jpp021568385.jpg" alt="東京五輪エンブレム制作者に聞く" width="161" height="103" class="aovr"></div>
+<div class="ThumbText">東京五輪エンブレム制作者に聞く</div>
+</a>
+</li></ul>
+</div>
+</section>
+<!--編集部セレクション-->
+		<!--特集-->
+		
+		<!--経済-->
+		<section class="Keizai BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>経済</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=eco">経済トップ</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=202106mitsubishiel">三菱電機不正</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=20210421tosihiba">東芝問題</a></li>
+ <li data-keyword="1"><a href="/jc/list?g=leaders">トップの視点</a></li>
+ <li><a href="/jc/list?g=myview">私の相場観</a></li>
+ <li><a href="/jc/list?g=eco">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="Market clearfix">
+					<ul class="clearfix">
+						<li class="mr15">ドル/円<span class="Money">109.76
+- 109.81
+</span><span class=""></span><span class="MarketData">18:00
+</span></li>
+						<li>日経平均<span class="Money">27820.04
+</span><span class="NumericDown">+91.92
+</span><span class="MarketData">15:15
+</span></li>
+					</ul>
+					<div class="MarketSearch">
+						<form autocomplete="" action="/jc/m_search" method="get" name="" class="" id="">
+							<input type="text" maxlength="128" size="25" onclick="if(this.value == '株価検索：企業名／コード入力') { this.value = ''; }" onfocus="if(this.value == '株価検索：企業名／コード入力') { this.value = ''; }" onblur="if(this.value == '') { this.value = '株価検索：企業名／コード入力'; }" value="株価検索：企業名／コード入力" name="text" class="" id="">
+							<input type="submit" onmousedown="" value="" class="" id="">
+						</form>
+					</div>
+				</div>
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080700403&g=eco">
+						<img width="213" class="aovr" alt="解熱鎮痛剤、販売５割増　ワクチン副反応で服用―新型コロナ" src="/news2/kiji_photos/202108/20210807ax05S_top.jpg">
+						<span>解熱鎮痛剤、販売５割増　ワクチン副反応で服用―新型コロナ</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080700403&g=eco">解熱鎮痛剤、販売５割増　ワクチン副反応で服用―新…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080700566&g=eco">群馬で豚熱　５０００頭殺処分<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080700453&g=eco">独メトロ、日本撤退　関東にスーパー１０店―１０月…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080601275&g=eco">第一生命ＨＤ、豪生保会社を買収　２２年めど、７３…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080601271&g=eco">豪生保会社を買収　２２年めど、７３０億円で―第一…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080601259&g=eco">お盆休み、人出抑制を　経済界に協力要請―西村再生…<span class="PhotoIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--経済-->
+
+		<!--社会-->
+		<section class="Shakai BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>社会</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=soc">社会トップ</a></li>
+ <li data-keyword="1"><a href="/jc/c?g=cov">新型コロナ</a></li>
+ <li data-keyword="1"><a href="/jc/v7?id=202008atomicbomb">原爆の日</a></li>
+ <li><a href="/jc/v7?id=20210706atamidoseki">熱海土石流</a></li>
+ <li><a href="/jc/c?g=wth">台風・大雨情報</a></li>
+ <li><a href="/jc/koushitsu?">皇室特集</a></li>
+ <li><a href="/jc/list?g=soc">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080900234&g=soc">
+						<img width="213" class="aovr" alt="平和祈り、２年ぶり「万灯流し」　「密」回避で灯籠流さず―長崎" src="/news2/kiji_photos/202108/20210809at48S_top.jpg">
+						<span>平和祈り、２年ぶり「万灯流し」　「密」回避で灯籠流さず―長崎</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080900314&g=soc">国内感染、新たに１万２０７３人　東京２８８４人、…</a></li>
+					<li><a href="/jc/article?k=2021080900234&g=soc">平和祈り、２年ぶり「万灯流し」　「密」回避で灯籠…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900235&g=soc">敗れても勝者に敬意　記憶に残った選手たち―東京五…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900465&g=soc">「また世界のどこかで」　帰国選手見送りも―施設撤…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900376&g=soc">藤井二冠、三冠に王手　将棋・叡王戦―王位戦、竜王…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900172&g=soc">核禁止条約、早期批准訴え　長崎「最後の被爆地に」…<span class="PhotoIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--社会-->
+		
+		<div class="RakutenAd clearfix">
+			<!-- /60445660/www/PC/pc_art_u -->
+			<div id='pc-art-u'>
+				<script>
+					if (window.__AB_TEST_USER_GROUP_NAME__ == 'A') {
+						googletag.cmd.push(function() { googletag.display('pc-art-u'); });
+					}
+				</script>
+			</div>
+			<div id='pc-kijishita-L'>
+				<script>
+					if (window.__AB_TEST_USER_GROUP_NAME__ == 'B') {
+						googletag.cmd.push(function() { googletag.display('pc-kijishita-L'); });
+					}
+				</script>
+			</div>
+			<div id='pc-kijishita-R'>
+				<script>
+					if (window.__AB_TEST_USER_GROUP_NAME__ == 'B') {
+					googletag.cmd.push(function() { googletag.display('pc-kijishita-R'); });
+				}
+				</script>
+			</div>
+		</div>
+
+		<!--スポーツ-->
+		<section class="Sport BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>スポーツ</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=spo">スポーツトップ</a></li>
+ <li data-keyword="1"><a href="/jc/tokyo2020">東京五輪・パラリンピック</a></li>
+ <li><a href="/jc/c?g=scr">サッカー</a></li>
+ <li><a href="/jc/c?g=bsb">野球</a></li>
+ <li><a href="/jc/list?g=spo">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080900235&g=spo">
+						<img width="213" class="aovr" alt="敗れても勝者に敬意　記憶に残った選手たち―東京五輪" src="/news2/kiji_photos/202108/20210809fl10S_top.jpg">
+						<span>敗れても勝者に敬意　記憶に残った選手たち―東京五輪</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080900519&g=spo">Ｊ１リーグ戦第２３節・Ｃ大阪―仙台</a></li>
+					<li><a href="/jc/article?k=2021080900518&g=spo">福岡、５連敗で止める　Ｊリーグ・福岡―広島</a></li>
+					<li><a href="/jc/article?k=2021080900517&g=spo">鹿島が逆転勝ち　Ｊリーグ・湘南―鹿島<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080900515&g=spo">錦織は５５位　男子テニス世界ランク</a></li>
+					<li><a href="/jc/article?k=2021080900512&g=spo">互いに決め手欠く　Ｊリーグ・Ｃ大阪―仙台</a></li>
+					<li><a href="/jc/article?k=2021080900511&g=spo">川崎が快勝　Ｊリーグ・大分―川崎</a></li>
+				</ul>
+			</div>
+		</section>
+		<!--スポーツ-->
+
+		<div class="RakutenAd">
+		</div>
+
+		<!--エンタメニュース-->
+		<section class="Entertainment BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>エンタメ</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/c?g=ent">エンタメトップ</a></li>
+ <li><a href="/jc/ak">ＡＫＢ４８</a></li>
+ <li><a href="/jc/list?g=ent">動画一覧</a></li>
+ <li><a href="/jc/list?g=etm">ニュース一覧</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<div class="BoxGenreInnerPhoto">
+					<a href="/jc/article?k=2021080700498&g=etm">
+						<img width="213" class="aovr" alt="柚希礼音「会えなくても心はつながっている」　ファンに感謝、最新シングルで「メッセージ」" src="/news2/kiji_photos/202108/20210807en10_top.jpg">
+						<span>柚希礼音「会えなくても心はつながっている」　ファンに感謝、最新シングルで「メッセージ」</span>
+					</a>
+				</div>
+				<ul>
+					<li><a href="/jc/article?k=2021080700498&g=etm">柚希礼音「会えなくても心はつながっている」　ファ…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080401390&g=etm">彩風咲奈「コンビで切磋琢磨」　大劇場お披露目で「…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080401185&g=etm">鷲見玲奈アナ「隅々まで見て」　ファースト写真集に…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021073001602&g=etm">仲里依紗、「しんちゃん」ゲスト声優「夢がかなった…<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/ent?p=g210473">柚希礼音、ファンの支えに感謝「会えなくても心はつ…<span class="CameraIcon"></span></a></li>
+					<li><a href="/jc/ent?p=g210472">菅田将暉、沢田研二とのＷ主演は「すごく光栄」<span class="CameraIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--エンタメニュース-->
+
+		<div class="RakutenAd">
+			<!-- Google Advertisement Rakuten start -->
+			<!-- www/PC/pc_middle -->
+			<div id='pc-middle'>
+				<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('pc-middle'); });
+				</script>
+			</div>
+			<!-- Google Advertisement Rakuten end -->
+		</div>
+
+		<section class="Douga BoxGenreBlock clearfix">
+<div class="BoxMovieTopLeft">
+<section class="Movie">
+	<div class="Title clearfix">
+		<h2><a href="/jc/p">写真ニュース</a></h2>
+	</div>
+	<div class="BoxGenreInner clearfix">
+		<div class="BoxGenreInnerPhoto MovieTumb">
+			<a href="/jc/p?id=20210809210056-0038860897">
+				<span class="MovieImgBox">
+					<img class="aovr" alt="「スーサイド・スクワッド」試写会" src="/news/photos/photo_news/images/450/view0038860897.jpg" width="186">
+				</span>
+				<span>「スーサイド・スクワッド」試写会</span>
+			</a>
+		</div>
+	</div>
+</section>
+</div>
+<div class="BoxMovieTopRight">
+	<section class="Movie">
+		<div class="Title clearfix">
+			<h2><a href="/jc/movie">動画ニュース</a></h2>
+		</div>
+		<div class="BoxGenreInner clearfix">
+			<div class="BoxGenreInnerPhoto MovieTumb">
+				<iframe class="lazyload" id="ytplayer" type="text/html" width="329" height="186" data-src="https://www.youtube.com/embed/Du2X4PXAjz4?theme=light&rel=0&vq=hd720&showinfo=0&modestbranding=1&color=white&iv_load_policy=1&autoplay=0" frameborder="0" allowfullscreen></iframe>
+				<a href="/jc/movie?p=n002855">
+					<span>高田主将「期待に応えたかった」　バスケット女子　</span>
+				</a>
+			</div>
+		</div>
+	</section>
+</div>
+</section>
+
+
+		<!--おくやみ-->
+		<section class="Okuyami BoxGenreBlock">
+			<div class="Title clearfix">
+				<h2>おくやみ</h2>
+				<ul class="TitleLink clearfix">
+ <li class="Fast"><a href="/jc/d4?p=tit021&d=d4_ftcc">追悼 2021</a></li>
+ <li><a href="/jc/list?g=obt">一覧へ</a></li>
+</ul>
+
+			</div>
+			<div class="BoxGenreInner clearfix">
+				<ul>
+					<li><a href="/jc/article?k=2021080601077&g=obt">大森敬允氏死去（元読売新聞社常務、元東京メディア制作社長）</a></li>
+					<li><a href="/jc/article?k=2021080600591&g=obt">木下雄介投手が死去、２７歳　７月の練習中に倒れる―プロ野球・中日<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080600346&g=obt">サトウサンペイさん死去、９１歳　漫画家「フジ三太郎」<span class="PhotoIcon"></span></a></li>
+					<li><a href="/jc/article?k=2021080401143&g=obt">竹内正人さん死去　元プロ野球巨人選手</a></li>
+					<li><a href="/jc/article?k=2021080400436&g=obt">大村平氏死去（元航空幕僚長、元空将）</a></li>
+					<li><a href="/jc/article?k=2021080300945&g=obt">歌手、俳優の本郷直樹さん死去<span class="PhotoIcon"></span></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--おくやみ-->
+
+		<div class="ArticleAd">
+						<div class="BigAd">
+				<!-- Google Advertisement Fbc start -->
+					<!-- www/PC/pc-footer -->
+					<div id='pc-footer'>
+					<script type='text/javascript'>
+					googletag.cmd.push(function() { googletag.display('pc-footer'); });
+					</script>
+					</div>
+				<!-- Google Advertisement Fbc end -->
+			</div>
+
+		</div>
+	</div>
+</div>
+            <!--左カラム-->
+
+            <!--右カラム-->
+			<div id="Sub" class="Normal">
+
+    <div class="ArticleAdSide">
+
+		<!-- Google Advertisement LargeRectangle start -->
+			<!-- www/PC/pc_1rec -->
+			<div id='pc-1rec'>
+			<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('pc-1rec'); });
+			</script>
+			</div>
+		<!-- Google Advertisement LargeRectangle end -->
+
+	</div>
+
+	<aside class="covid">
+ <div class="AsideTitle">
+   <h2 class="Title clearfix"><p class="fleft"><i class="fa fa-check fa-1x"></i><a href="/jc/c?g=cov">新型コロナウイルス最新情報</a></p></h2>
+ </div>
+ <div class="notice">
+ <a href="/jc/c?g=cov#cov_table">
+   <p>感染者<b>+14,472人</b>　総計<b> 1,032,249人</b></p>
+   <p><span>※8月8日現在、クルーズ船客ら除く</span></p>
+ </a>
+</div>
+</aside>
+
+
+	<!-- tokyo2020 parts -->
+	<aside class="tokyo2020parts_result">
+<div class="TYOside_resultWaku">
+	<h2>東京五輪　注目の競技結果</h2>
+	<dl class="TYOside_result">
+		<dt style="text-align-last: center;">8/8</dt><dd><a href="/jc/tokyo2020?s=data&amp;page_id=og2020_slh_result_slh_res_slh_BKBWTEAM5-------------FNL-000100--.html">バスケットボール女子決勝（日本人選手出場）</a></dd>
+		<dt style="text-align-last: center;">8/7</dt><dd><a href="/jc/tokyo2020?s=data&amp;page_id=og2020_slh_result_slh_res_slh_BSBMBBLTEAM9----------FNL-000100--.html">野球決勝（日本人選手出場）</a></dd>
+		<dt style="text-align-last: center;">8/5</dt><dd><a href="/jc/tokyo2020?s=data&amp;page_id=og2020_slh_result_slh_res_slh_TTEWTEAM--------------FNL-00010000.html">卓球女子団体決勝（日本人選手出場）</a></dd>
+		<dt style="text-align-last: center;">7/28</dt><dd><a href="/jc/tokyo2020?s=data&amp;page_id=og2020_slh_result_slh_cum_slh_GARM1AA---------------FNL---------.html">体操男子個人総合決勝（日本人選手出場）</a></dd>
+		<dt style="text-align-last: center;">7/26</dt><dd><a href="/jc/tokyo2020?s=data&amp;page_id=og2020_slh_result_slh_res_slh_TTEXDOUBLES-----------FNL-000100--.html">卓球混合ダブルス決勝（日本人選手出場）</a></dd>
+	</dl>
+</div>
+</aside>
+
+	<!-- 五輪メダル数枠 -->
+<aside class="tokyo2020parts_medals">
+<div id="TYO_medalist">
+	<div class="Title">
+		<h2><a href="/jc/tokyo2020?s=data&page_id=og2020_slh_medals_slh_index.html">東京五輪メダルランキング</a><a href="/jc/tokyo2020?s=data&page_id=og2020_slh_medals_slh_index.html" class="fright">一覧へ</a></h2>
+	</div>
+	<table class="TYO_medalTB" width="100%">
+		<tbody>
+			<tr>
+			<th></th>
+			<th></th>
+			<th class="goldMedal"></th>
+			<th class="silverMedal"></th>
+			<th class="copperCMedal"></th>
+			</tr>
+			<tr>
+<td>1</td>
+<td><img class="TKOflag" src="https://web.joyfru.jiji.com/jijicom/web/tokyo2020odf/img/flags/usa.png" alt="米国">米国</td>
+<td>39</td>
+<td>41</td>
+<td>33</td>
+</tr>
+<tr>
+<td>2</td>
+<td><img class="TKOflag" src="https://web.joyfru.jiji.com/jijicom/web/tokyo2020odf/img/flags/chn.png" alt="中国">中国</td>
+<td>38</td>
+<td>32</td>
+<td>18</td>
+</tr>
+<tr>
+<td>3</td>
+<td><img class="TKOflag" src="https://web.joyfru.jiji.com/jijicom/web/tokyo2020odf/img/flags/jpn.png" alt="日本">日本</td>
+<td>27</td>
+<td>14</td>
+<td>17</td>
+</tr>
+		</tbody>
+	</table>
+	<div class="Update"><div class="Updatedate">更新日時：8月8日17時40分</div></div>
+</div>
+</aside>
+<!-- //五輪メダル数枠 -->
+
+	<!-- tokyo2020 parts -->
+
+	<aside class="novel">
+ <p>連載スタート！　＊毎週土曜日更新</p>
+ <a href="/jc/v7?id=novelfsight01">
+   <img src="/news/handmade/file/images/ichioshi-photo5/novelfsight01-300x50.jpg" width="300" height="50">
+ </a>
+</aside>
+
+    <!--フォーカス-->
+	<aside class="Focus Pattern6">
+	<div class="AsideTitle">
+		<h3 class="Title clearfix">
+        	<p class="fleft">フォーカス</p>
+        </h3>
+	</div>
+    <div class="FocusInner">
+    	<ul class="clearfix"><li><a href="/jc/v7?id=202108kawamuramedal">
+<img width="65" height="65" class="aovr" alt="メダルかじり市長陳謝" src="/news/handmade/file/images/focus-photo/pcf-jpp038789678.jpg">
+<span>メダルかじり市長陳謝</span></a></li>
+<li><a href="/jc/d4?p=wbj218&amp;d=d4_tko">
+<img width="65" height="65" class="aovr" alt="誇れる銀新たな時代" src="/news/handmade/file/images/focus-photo/pcf-jpp038848485.jpg">
+<span>誇れる銀<br />新たな時代</span></a></li>
+<li><a href="/jc/d4?p=218imn&amp;d=d4_golf">
+<img width="65" height="65" class="aovr" alt="絶対距離感モネが銀" src="/news/handmade/file/images/focus-photo/pcf-0807inami.jpg">
+<span>絶対距離感<br />モネが銀</span></a></li>
+<li><a href="/jc/d4?p=khs107&amp;d=d4_oo">
+<img width="65" height="65" class="aovr" alt="閉幕　東京からパリへ" src="/news/handmade/file/images/focus-photo/focus-jpp038854122.jpg">
+<span>閉幕　東京からパリへ</span></a></li>
+<li><a href="/jc/v7?id=202008atomicbomb">
+<img width="65" height="65" class="aovr" alt="「最後の被爆地に」" src="/news/handmade/file/images/focus-photo/pcf-jpp038858409.jpg">
+<span>「最後の<br />被爆地に」</span></a></li>
+<li><a href="/jc/v7?id=201811carlosghosn">
+<img width="65" height="65" class="aovr" alt="逃亡劇を初めて詳述" src="/news/handmade/file/images/focus-photo/focus-carlosghosn_65.jpg">
+<span>逃亡劇を<br />初めて詳述</span></a></li>
+<li><a href="/jc/bunshun?id=47686">
+<img width="65" height="65" class="aovr" alt="警察も頼る復元のワザ" src="/news/handmade/file/images/focus-photo/pcfocus-bunshun47686_65.jpg">
+<span>警察も頼る<br />復元のワザ</span></a></li>
+<li><a href="/jc/d4?p=orp217&amp;d=d4_ftdd">
+<img width="65" height="65" class="aovr" alt="お姫様はメダリスト" src="/news/handmade/file/images/focus-photo/pcf-jpp038584820.jpg">
+<span>お姫様は<br />メダリスト</span></a></li>
+<li><a href="/jc/d4?p=tit021&amp;d=d4_ftcc">
+<img width="65" height="65" class="aovr" alt="木下投手２７歳死去" src="/news/handmade/file/images/focus-photo/pcf-tit021kinoshita.jpg">
+<span>木下投手<br />２７歳死去</span></a></li>
+<li><a href="https://www.afpbb.com/category/jiji-trend">
+<img width="65" height="65" class="aovr" alt="ロシア新型ステルス機" src="/news/handmade/file/images/focus-photo/focus-rmp323_65.jpg">
+<span>ロシア新型ステルス機</span></a></li>
+<li><a href="/jc/d4?p=skn017&amp;d=d4_mili2">
+<img width="65" height="65" class="aovr" alt="韓国海軍詳細解説" src="/news/handmade/file/images/focus-photo/focus-skn017_65.jpg">
+<span>韓国海軍<br />詳細解説</span></a></li>
+<li><a href="/jc/v7?id=ohtani18">
+<img width="65" height="65" class="aovr" alt="代打で登場も申告敬遠" src="/news/handmade/file/images/focus-photo/pcf_20210806_ohtani01.jpg">
+<span>代打で登場<br />も申告敬遠</span></a></li>
+</ul>
+</div>
+</aside>
+    <!--フォーカス-->
+
+	<div class="ArticleAdSide">
+		<!-- Google Advertisement 2ndRec start -->
+		<!-- www/top/2ndRec -->
+		<div id='pc-2rec'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('pc-2rec'); });
+		</script>
+		</div>
+		<!-- Google Advertisement 2ndRec end -->
+	</div>
+
+	<aside class="SideSns">
+		<ul class="shareBOX">
+			<a href="https://www.facebook.com/wwwjijicom/" target="_blank" title="Facebook">
+				<li class="shareBT fbl"><i class="fab fa-facebook-f"></i></li>
+			</a>
+			<li class="shareBT crcl">時事通信<span style="font-size:70%;">の</span>SNS</li>
+			<a href="https://twitter.com/jijicom" target="_blank" title="Twitter">
+				<li class="shareBT twitt"><i class="fab fa-twitter"></i></li>
+			</a>
+		</ul>
+	</aside>
+
+	<aside class="SideRanking3" style="">
+ <div class="AsideTitle">
+   <h3 class="Title clearfix"><p class="fleft"><i class="fa fa-check fa-1x"></i>注目記事</p></h3>
+ </div>
+ <div class="AsideInnerBox Red">
+   <ul>
+     <li data-title="auto"><a href="/jc/article?k=2021080800225&g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '1');"><p>秋篠宮さま五輪閉会式に　天皇陛下の名代で</p></a><a class="cat" href="/jc/list?g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '2');"><span>社会</span></a></li>
+<li data-title="auto"><a href="/jc/article?k=2021080800221&g=pol" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '3');"><p>衆院選へ「協議」始まらず　動かぬ立民、共産が揺さぶり<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">50</span></span>
+</p></a><a class="cat" href="/jc/list?g=pol" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '4');"><span>政治</span></a></li>
+<li data-title="auto"><a href="/jc/article?k=2021080900172&g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '5');"><p>核禁止条約、早期批准訴え　長崎「最後の被爆地に」―７６回目の原爆の日<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">9</span></span>
+</p></a><a class="cat" href="/jc/list?g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '6');"><span>社会</span></a></li>
+<li data-title="auto"><a href="/jc/article?k=2021080300237&g=pol" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '7');"><p>【点描・永田町】支持率下落で狂った再選戦略<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">87</span></span>
+</p></a><a class="cat" href="/jc/list?g=pol" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '8');"><span>政治</span></a></li>
+<li data-title="auto"><a href="/jc/article?k=2021080700627&g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '9');"><p>ネコ腎臓病薬、製品化に向け開発再開へ　クラウドファンディングで資金調達も　東大大学院・宮崎徹教授インタビュー<span class="comment_count_wrap"><span class="comment_icon"></span><span class="comment_count">13</span></span>
+</p></a><a class="cat" href="/jc/list?g=soc" onclick="ga('jijiga.send' , 'event' , ' hotnews_click' , 'click ' , $(this).text() , '10');"><span>社会</span></a></li>
+   </ul>
+ </div>
+</aside>
+
+
+	<div class="ArticleAdSide">
+		<!-- Google Advertisement 2ndRec start -->
+		<!-- www/top/2ndRec -->
+		<div id='pc-2rec'>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('pc-2rec'); });
+		</script>
+		</div>
+		<!-- Google Advertisement 2ndRec end -->
+	</div>
+
+	<aside class="SpecialBox Pattern5">
+<div class="AsideTitle">
+	<h3 class="Title clearfix">
+		<p class="fleft">人気記事アーカイブ</p>
+		<a class="fright" href="/jc/v">特集トップ</a>
+	</h3>
+</div>
+<div class="AsideInnerBox">
+	<ul class="clearfix">
+		<li>
+<a class="clearfix" href="/jc/v4?id=dohyouhyakei-0108_202107210001">
+	<img width="126" height="" src="/news/handmade/file/images/ichioshi-photo4/arcdohyou-108_180.jpg" alt="白鵬の暴走" class="aovr">
+	<p>白鵬の暴走</p>
+	<p>と無意味な苦言</p>
+</a>
+</li>	
+<li>
+<a class="clearfix" href="/jc/article?k=2021072700890&g=pol">
+	<img width="126" height="" src="/news/handmade/file/images/ichioshi-photo4/arc-tenbyo.jpg" alt="注目“山口のドン”" class="aovr">
+	<p>注目“山口のドン”</p>
+	<p>林氏くら替え出馬</p>
+</a>
+</li>	
+<li>
+<a class="clearfix" href="/jc/v4?id=20210507spacejet0001">
+	<img width="126" height="" src="/news/handmade/file/images/ichioshi-photo4/arc-210507spacej.jpg" alt="「Ｂ29を迎撃せよ」" class="aovr">
+	<p>「Ｂ29を迎撃せよ」</p>
+	<p>幻の軍用機研究所</p>
+</a>
+</li>	
+<li>
+<a class="clearfix" href="/jc/v4?id=20210701snack0001">
+	<img width="126" height="" src="/news/handmade/file/images/ichioshi-photo4/nka-nightfly210712.jpg" alt="シンガポールの" class="aovr">
+	<p>シンガポールの</p>
+	<p>灯消えた夜の街で</p>
+</a>
+</li>	
+	</ul>
+</div>
+</aside>
+
+
+    <!--きょうは何の日？-->
+	<aside class="Whatday">
+	<div class="AsideTitle">
+		<h3 class="Title clearfix">
+        	<p class="fleft">今日は何の日？</p>
+        </h3>
+	</div>
+    <div class="AsideInnerBox Brown">
+		<a class="clearfix" href="/jc/daily">
+        	<img class="aovr" alt="非自民・非共産の8党派による細川連立政権が誕生。自民党が戦後初めて下野" src="/news/daily_contents/08/image/120/00569759.jpg">
+            <p><span>1993年</span>非自民・非共産の8党派による細川連立政権が誕生。自民党が戦後初めて下野</p>
+        </a>
+    </div>
+</aside>
+
+    <!--きょうは何の日？-->
+
+    <!--日本語検定-->
+    <aside class="Nihongokentei">
+<div class="AsideTitle">
+	<h3 class="TitleBlue">きょうの日本語検定&#12288;正しいのはどれ？</h3>
+	</div>
+<div class="NihongokenteiInner">
+    	<h4>【（　）部分を漢字で書くと？】<br/>地球の軌道は、太陽を一つの焦点とする（ダ）円である。[1級]</h4>
+	<ol>
+		<li class="NihongokenteiA"><a href="/jc/e?g=e07&d=20210809&ans=1">楕</a></li>
+		<li class="NihongokenteiB"><a href="/jc/e?g=e07&d=20210809&ans=2">惰</a></li>
+		<li class="NihongokenteiC"><a href="/jc/e?g=e07&d=20210809&ans=3">堕</a></li>
+	</ol>
+</div>
+<span><a href="https://www.nihongokentei.jp/exam/" target="_blank">日本語検定受検申込みはこちら！</a></span>
+</aside>
+
+    <!--日本語検定-->
+
+    <!--にっぽんもぎたて便-->
+    <aside class="Mogitate Pattern6">
+	<div class="AsideTitle">
+		<h3 class="Title clearfix">
+        	<p class="fleft">地域の情報</p>
+        </h3>
+	</div>
+    <div class="AsideInnerBox">
+    	<ul>
+
+
+<li><a href="/jc/article?k=2021080500758&amp;g=jfn">屋内トレーニング足袋を開発　健康づくりと地場産業振興に―徳島県鳴門市
+</a></li>
+
+
+<li><a href="/jc/article?k=2021080400430&amp;g=jfn">「雪室米」の弁当販売　福井県勝山市</a></li>
+
+
+
+
+
+
+<li><a href="/jc/list?g=jmp">地域発ホットニュース【自治体便り】</a></li>
+
+
+
+
+	</ul>
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+    <!--にっぽんもぎたて便-->
+
+    <!--ふるさと納税関連ニュース-->
+	<style type="text/css">
+.yayoi_ad_box2 {
+	width:300px;
+	height:190px;
+    border: 1px solid #ddd;
+	text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yayoi_ad_box2 img:hover {
+	opacity: 0.7;
+}
+.yayoi_ad_unit2 {
+	padding-top: 15px;
+    	font-size: 95%;
+	font-weight:normal;
+	color:#000000;		
+}	
+</style>	
+
+	
+<div class="yayoi_ad_box2">
+
+<a href="/jc/ti?p=situation/index&amp;g=kanagawa2021"><img src="/news/handmade/file/images/yatogame/4kanagawa2021.jpg" style="padding-left:25px" 
+
+alt=""></a>
+	
+<div class="yayoi_ad_unit2"><a href="/jc/ti?p=index&amp;g=kanagawa2021">【PR】神奈川県私大医学部特集</a></div>	
+	
+</div>
+	
+<style type="text/css">
+.yayoi_ad_box {
+	width:300px;
+	height:190px;
+    border: 1px solid #ddd;
+	text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.yayoi_ad_box img:hover {
+	opacity: 0.7;
+}
+.yayoi_ad_unit {
+	padding-top: 15px;
+    	font-size: 90%;
+	font-weight:normal;
+	color:#000000;		
+}	
+</style>	
+
+	
+<div class="yayoi_ad_box">
+
+<a href="/jc/ti?p=jura&amp;g=jura"><img src="/news/handmade/file/images/yatogame/jura_jiji_com_banner_250_140.jpg" style="padding-left:25px" alt=""></a>
+	
+<div class="yayoi_ad_unit"><a href="/jc/ti?p=jura&amp;g=jura">【PR】恐竜展in名古屋　特設ページ公開中！</a></div>	
+	
+</div>
+    <!--ふるさと納税関連ニュース-->
+
+    
+
+	<!-- tokyo2020 -->
+	<aside>
+<!--------- 五輪サイド誘導枠 ------------------------->
+<ul class="TKGside">
+<h2><a href="/jc/tokyo2020">特設 東京五輪 ▶</a></h2>
+
+<!-- 001  -->
+<li>
+<a href="/jc/d4?p=tjm217&amp;d=d4_ftdd">
+<div class="TKGsidebox">
+<div class="TKGside_thumb">
+<figure class="TKGside_thumb_wrapper">
+<img src="/2020tokyo/images/all/210809tkt-jpp038600326.jpg" alt="東京五輪　日本人メダリスト">
+</figure>
+</div>
+<div class="TKGsidebox_text">
+<p class="TKGsidecap">日本の全メダリスト<br />ブーケと笑顔もう一度</p>
+</div>
+</div>
+</a>
+</li>
+<!--  001end -->
+
+
+
+
+<!-- 002  -->
+<li>
+<a href="/jc/v7?id=202107variangle">
+<div class="TKGsidebox">
+<div class="TKGside_thumb">
+<figure class="TKGside_thumb_wrapper">
+<img src="/2020tokyo/images/all/210808fyk-jpp038711711.jpg" alt="新写真特集">
+</figure>
+</div>
+<div class="TKGsidebox_text">
+<p class="TKGsidecap">新写真特集★多彩なテーマとアングルで</p>
+</div>
+</div>
+</a>
+</li>
+<!--  002end -->
+
+<!-- 003  -->
+<li>
+<a href="/jc/v7?id=202107playback">
+<div class="TKGsidebox">
+<div class="TKGside_thumb">
+<figure class="TKGside_thumb_wrapper">
+<img src="/2020tokyo/images/all/210809iym-jpp038829184.jpg" alt="野口みずきさんが見た札幌の女子マラソン">
+</figure>
+</div>
+<div class="TKGsidebox_text">
+<p class="TKGsidecap">野口みずきさんが見た<br />札幌の女子マラソン</p>
+</div>
+</div>
+</a>
+</li>
+<!--  003end -->
+
+<!-- 004  -->
+<li>
+<a href="/jc/tokyo2020?s=athlete&amp;t=oly&amp;o=JPN">
+<div class="TKGsidebox">
+<div class="TKGside_thumb">
+<figure class="TKGside_thumb_wrapper">
+<img src="/2020tokyo/images/all/210807susaki.jpg" alt="東京五輪　選手名鑑">
+</figure>
+</div>
+<div class="TKGsidebox_text">
+<p class="TKGsidecap">戦績　寸評<br />ＳＮＳガイド</p>
+</div>
+</div>
+</a>
+</li>
+<!--  004end -->
+
+
+</ul>
+<!--------- 五輪サイド誘導枠 ここまで------------------------->
+</aside>
+
+	<!-- tokyo2020 -->
+
+</div>
+            <!--右カラム-->
+
+        </div>
+    </div>
+    
+	<!--フッター-->
+		<div id="ContentEnd">
+	<div class="clearfix" id="ToTop"><a href="#PageHeader">ページの先頭へ</a></div>
+	<div id="ContentEndTop">
+		<div class="ContentEndTopInner clearfix">
+			<div class="Book">
+	            	<a href="http://www.jaro.or.jp/">
+	                    <dl>
+	                        <dt>【JAROってなんじゃろ？】</dt>
+	                        <dd>JAROは、これからも広告・表示のフェアプレイを推進してます。詳しくはこちら。</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book">
+	            	<a href="https://www.jiji.co.jp/service/e-world/">
+	                    <dl>
+	                        <dt>【e-World Premium】</dt>
+	                        <dd>「国際情報電子書籍」<br />７月号の特集は「人権と向き合う」。中国の香港や新疆ウイグル自治区、北朝鮮、ベラルーシなどの状況に焦点を合わせる。</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book">
+	            	<a href="https://www.jiji.co.jp/service/agrio/">
+	                    <dl>
+	                        <dt>【農林水産業のデジタル情報誌】</dt>
+	                        <dd>デジタル情報誌「Agrio」は２０１４年３月創刊。「６次産業化」「輸出」「ＴＰＰ対策」などをテーマに週１回発行。農林水産ビジネスのヒントも満載です。</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book mr0">
+	            	<a href="https://medical.jiji.com/">
+	                    <dl>
+	                        <dt>【時事メディカル】</dt>
+	                        <dd>医療情報サイト「時事メディカル」が伝える最新の医療ニュースに加え、気になる慢性疾患や流行中の感染症など時宜にかなった情報を日々、紹介します。</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book">
+	            	<a href="https://bookpub.jiji.com/book/b437097.html">
+	                    <dl>
+	                        <dt>【新刊】「怒る上司のトリセツ」 </dt>
+	                        <dd>あなたの周りの「困った人」に、振り回されていませんか？ 理不尽な怒りは相手の問題で、あなたの問題ではありません。怒りは「初期消火」が肝心。怒りのストーリーを見極めて、上手に対処しましょう。  </dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book">
+	            	<a href="https://www.jiji.co.jp/service/file/">
+	                    <dl>
+	                        <dt>【新刊】</dt>
+	                        <dd>社団法人・地方行財政調査会の「全国知事・市町村長ファイル2021-2022」発売開始！</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book">
+	            	<a href="https://www.jiji.co.jp/service/senmon/">
+	                    <dl>
+	                        <dt>【専門情報誌】</dt>
+	                        <dd>教育・福祉・地方行政・税務・ビジネスの最前線にいるあなたに新聞が書かない情報を！</dd>
+	                    </dl>
+	                </a>
+			</div>
+			<div class="Book mr0">
+	            	<a href="https://financial.jiji.com/service/important_factinfo.html
+">
+	                    <dl>
+	                        <dt>【重要事実情報】</dt>
+	                        <dd>「売買管理支援情報」とも呼ばれる当情報サービスは、インサイダー取引の防止や、株式投資情報として活用できます。Webサービスの他、データ提供サービスも。</dd>
+	                    </dl>
+	                </a>
+			</div>
+
+			<div class="Img">
+				<a href="https://barrons.jiji.com/?utm_source=jijicom&amp;utm_medium=banner&amp;utm_campaign=listed_in_services">
+					<img class="lazyload" src="/img/dummy1x1navy.jpg" data-src="/ad/img/jijicom_300x60.jpg" width="235" height="47" alt="バロンズ・ダイジェスト">
+				</a>
+			</div>
+
+			<div class="Img">
+				<a href="https://equity.jiji.com/">
+					<img class="lazyload" src="/img/dummy1x1navy.jpg" data-src="/ad/img/jijiequity_300_60.jpg" width="235" height="47" alt="時事エクイティ">
+				</a>
+			</div>
+
+			<div class="Img">
+				<a href="https://financial.jiji.com/service/finance_business.html?utm_source=jijicom&amp;utm_medium=banner&amp;utm_campaign=2107">
+					<img class="lazyload" src="/img/dummy1x1navy.jpg" data-src="/ad/img/jfs_fb_jijicom_300x60.png" width="235" height="47" alt="金融財政ビジネス">
+				</a>
+			</div>
+
+			<div class="Img mr0">
+				<a href="http://www.jamp.jiji.com/ad/sympo/2020/04/repo/">
+					<img class="lazyload" src="/img/dummy1x1navy.jpg" data-src="/ad/img/ijamp_ja_300_60.png" width="235" height="47" alt="iJAMP 自治体実務セミナーレポート">
+				</a>
+			</div>
+
+		</div>
+	</div>
+            
+	<div id="ContentEndBottom">
+		<dl>
+			<dt>時事通信の商品・サービス　ラインナップ</dt>
+			<dd>
+				<ul class="clearfix">
+					<li><a href="/hall/">時事通信ホール</a></li>
+					<li><a href="http://naijyo.or.jp/">内外情勢調査会</a></li>
+					<li><a href="https://www.jiji.co.jp/service/yoron/">世論調査・内閣支持率</a></li>
+					<li><a href="https://bookpub.jiji.com/">時事通信出版局</a></li>
+					<li><a href="http://jijiweb.jiji.com/info/asia_info.html">時事速報</a></li>
+					<li><a href="https://www.jiji.co.jp/service/jijitopseminar">時事トップセミナー</a></li>
+					<li><a href="http://kouensupport.jiji.com/">講演サポート.com</a></li>
+					<li><a href="https://www.jiji.co.jp/service/senmon/">専門情報誌</a></li>
+					<li><a href="http://jamp.jiji.com/info/">iJAMP時事行政情報モニター</a></li>
+
+				</ul>
+       		</dd>
+       	</dl>
+	</div>
+</div>
+<!-- DISPLAY on SP ICON -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		var mobile_url = '/sp/';
+		var m_url = mobile_url.substr(0,6);
+		var dmmy_tmplvar = '<tmpl_';
+		//UA check
+		if (jijicom_UA_check() == 'SP'){
+			if ( m_url != dmmy_tmplvar ) {
+				if ( mobile_url != '' ) {
+					$('.SwitchSP').show();
+				}
+			}
+		}
+	});
+	function SwitchSp(){
+		$.cookie( "jijicom_device_cookie" , "SP" ,{ expires: 1000 , path: '/'});
+		//window.location.reload( true );
+		location.href = '/sp/';
+	}
+</script>
+
+<!-- DISPLAY on SP ICON -->
+<div class="SwitchSP" style="display:none;">
+	<a href="javascript:void(0)" onclick="SwitchSp(); return false;">スマートフォン版へ</a>
+</div>
+
+<footer>
+	<div class="FooterInner clearfix">
+        <div id="FooterLogo"><a href="/"><img width="212" height="72" alt="時事通信社" src="/news2/common/img/footer-logo.gif"></a></div>
+        <ul class="clearfix">
+            <li><a href="https://www.jiji.co.jp/">会社案内</a></li>
+            <li><a href="https://www.jiji.co.jp/service/">個人・法人向けサービス</a></li>
+            <li><a href="https://www.jiji.co.jp/recruit">採用情報</a></li>
+            <li><a href="https://www.jiji.co.jp/policy/privacy">個人情報保護方針</a></li>
+            <li><a href="javascript:footerwin('/policy/disclaimer.html')">著作権・免責</a></li>
+            <li><a href="javascript:footerwin('/policy/link.html')">リンク</a></li>
+            <li><a href="javascript:footerwin('/policy/rss.html')">RSS規約</a></li>
+            <li><a href="javascript:footerwin('/webpush/unsubscribe.html')">通知解除</a></li>
+            <li><a href="https://www.jiji.co.jp/contact/">お問い合わせ</a></li>
+			<li><a href="javascript:footerwin('/policy/privacypolicy.html')">プライバシーポリシー</a></li>
+<li><div id="datasign_privacy_notice__527404bb"><input type="hidden" class="opn_link_text" value="オンラインプライバシー通知"><script class="__datasign_privacy_notice__" src="//as.datasign.co/js/opn.js" data-hash="527404bb" async></script></div></li>
+
+        </ul>
+    </div>
+</footer>
+
+<!-- weather js -->
+<script type="text/javascript">
+  (function() {
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            sc.src = '/news2/forecast/js/4410_2.js';
+            var stat = $.cookie('FORECAST');
+            if(stat){
+              if (stat != ''){
+                sc.src = '/news2/forecast/js/' + stat + '_2.js';
+              }
+            }
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sc, s);
+          })();
+</script>
+<!-- /weather js -->
+	<!--フッター-->
+
+	<script src="/news2/common/js/lazysizes.min.js"></script>
+
+<!-- 1plusX start -->
+<script src="https://tagger.opecloud.com/mediaconsortium/v2/tagger.js" async type="text/javascript"></script>
+<noscript><img src="https://tagger.opecloud.com/mediaconsortium/v2/noscript-image.gif" alt=""></noscript>
+<!-- 1plusX end -->
+
+<!--rubiconproject.com start-->
+<iframe id="multisync-iframe" height="0" width="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=dfp&endpoint=apac" style="border: 0px; display: none;"></iframe>
+<!--rubiconproject.com end-->
+
+<!--chatbeat start-->
+<script src="/news2/common/js/chartbeat.js"></script>
+<!--chatbeat end-->
+
+<script>
+var userAgent = window.navigator.userAgent.toLowerCase();
+if(userAgent.indexOf('safari') != -1) {
+	var frame;
+	frame = document.createElement('iframe');
+	frame.src = 'https://jen.jiji.com/cookie.html';
+	frame.style.display = 'none';
+	frame.id = 'itp';
+	document.body.appendChild(frame);
+}
+</script>
+
+<script>
+  (function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    if (urlParams.has("ref")){
+      if (urlParams.get("ref") === "article"){
+        var sc = document.createElement('script');
+        sc.type = 'text/javascript';
+        sc.src = '/news2/common/js/index_iframe.js';
+        document.body.appendChild(sc);
+
+        var head = document.getElementsByTagName("head")[0];
+        var base = document.createElement("base");
+        base.setAttribute("target","_top");
+        head.appendChild(base);
+      }
+    }
+  })();
+</script>
+
+</body></html>

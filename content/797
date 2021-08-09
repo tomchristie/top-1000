@@ -1,0 +1,3071 @@
+<!doctype html>
+<html lang="ko" class="main_page"><!-- 2018.07.24 kmy 추가 -->
+<head>
+<meta charset="utf-8">
+<meta name="Referrer" content="always">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="refresh" content="300" url="https://www.asiae.co.kr"/>
+<meta name="NaverBot" content="All"/>
+<meta name="NaverBot" content="index,follow"/>
+<meta name="Yeti" content="All"/>
+<meta name="Yeti" content="index,follow"/>
+<meta name="robots" content="max-image-preview:large">
+<meta property="fb:pages" content="155418931138303" />
+<meta property="fb:app_id" content="105855619478324" />
+<meta property="og:image" content="https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png" />
+<meta property="og:image:width" content="1100" />
+<meta property="og:image:height" content="628" />
+<meta property="og:site_name" content="아시아경제" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="article:author" content="https://www.facebook.com/asiaeconomy" />
+<meta property="article:publisher" content="https://www.facebook.com/asiaeconomy" />
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.asiae.co.kr">
+<meta property="og:title" content="아시아경제 : 내일을 바꾸는 힘">
+<meta property="og:description" content="보이지 않는 진실까지 담습니다 - 빠르고 정확한 뉴스, 아시아경제">
+<meta name="title" content="아시아경제 : 내일을 바꾸는 힘">
+<meta name="description" content="보이지 않는 진실까지 담습니다 - 빠르고 정확한 뉴스, 아시아경제" />
+<meta name="keywords" content="아시아경제, 뉴스, 신문, 보도, 속보, 이슈, 투자, 경제, 재테크, 부동산, 정치, 사회, 국제, 문화, IT, 연예, 스포츠, 오피니언, 만화, News, Newspaper, Korea, South Korea" />
+<meta name="msvalidate.01" content="6BA948A1DBB30EE8C64BB7A1A83A6ECC" />
+<meta name="google-site-verification" content="K7B_a7g-EZfyZCwhwDTmZo6EaVBCZHiqFXzItp-N710" />
+
+<link rel="shortcut icon" href="https://cwstatic.asiae.co.kr/icns/asiae.ico?20210803" type="image/x-ico"/>
+<link rel="image_src" href="https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png" />
+<link rel="canonical" href="https://www.asiae.co.kr"/>
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://cm.asiae.co.kr"/>
+<link rel="alternate" href="//www.asiae.co.kr/news/rss/asia_rss.htm" type="application/rss+xml" title="아시아경제 속보 [RSS]" />
+
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/css/main_2019.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/css/slick.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/css/lightslider.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/css/jquery.mCustomScrollbar.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/css/swiper.min.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="//cwcode.asiae.co.kr/asiae_v2/font/font.css?20210803"/>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.0/dist/aos.css"><!-- 20200818 top_button-->
+
+<script type="text/javascript" src="https://view.asiae.co.kr/js/jquery-1.11.1.min.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/main_all.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/common.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/aside.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/slick.min.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/lightslider.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/swiper.min.js?20210623"></script>
+<script type="text/javascript" src="//cwcode.asiae.co.kr/asiae_v2/js/jquery.mCustomScrollbar.concat.min.js?20210623"></script>
+<script type="text/javascript" src="https://view.asiae.co.kr/js/jquery.ulslide.js?20210623"></script>
+<script type="text/javascript" src="https://view.asiae.co.kr/js/asia_header_sns.js?20210623"></script>
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script><!-- 20200818 top_button-->
+
+
+<script type="text/javascript">
+var href = $(location).attr('href');
+var mCheck = href.indexOf('?mobile=Y');
+if(mCheck == -1)
+{
+	var UserAgent = navigator.userAgent;
+	if( !UserAgent.match(/SHW-M380K/i) && (UserAgent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null ))
+	{
+		location.href = 'https://cm.asiae.co.kr';
+	}
+	else
+	{
+		var protocol = $(location).attr('protocol');
+		var host = $(location).attr('host');
+		if(!protocol.match('https') && !host.match('amgcms.asiae.co.kr'))
+		{
+			location.href = 'https://www.asiae.co.kr';
+		}
+	}
+}
+</script>
+
+<!--DCM_TITLE--><title>아시아경제 : 내일을 바꾸는 힘</title><!--/DCM_TITLE-->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N856J92');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+
+<body >
+
+<!-- 20200818 top_button-->
+<script>
+
+</script>
+<!-- 20200818 top_button-->
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N856J92"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+	<div class="skip">
+		<a href="#container"><span>본문 바로가기</span></a>
+	</div>
+
+	<div id="main_wrap">
+
+	<!-- header -->
+		<div class="main_header">
+			<!-- top_head -->
+			<div class="top_head">
+				<!-- 상단 타이틀, 검색,sns영역 -->
+				<div class="area_fstare">
+					<div class="top_fstarea">
+												<a href="javascript:;" class="btn_hamburger" id="btn_main_menu" onclick="ga('send', 'event', 'gnb', 'click', '전체메뉴');" title="전체메뉴바로가기">전체메뉴클릭</a>
+																		<h1 class="btn_logo"><a href="//www.asiae.co.kr" title="아시아경제"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/mtop_logo01.png" alt="아시아경제"/></a></h1>
+
+						<div class="right_toputili">
+							<!-- 검색영역 -->
+							<div class="search_wrap">
+								<form name="mySSForm1" method="post" action="//www.asiae.co.kr/search/index.htm" onsubmit="javascript:return checkSearchSubmit(this); this.blur();">
+								<input type="hidden" name="udt" value="1">
+								<fieldset class="inner">
+									<legend>검색하기영역</legend>
+									<a href="javascript:;" onclick="ga('send', 'event', 'gnb', 'click', '검색');" class="btn_search" title="검색하기">검색하기</a>
+									<div class="header_sear">
+										<span class="t_wrap"><input type="text" name="sn" id="search1" autocomplete="off" class="inp_txt inp_focus" value="뉴스검색"></span>
+										<input class="btn_s" type="image" src="//cwstatic.asiae.co.kr/asiae_v2/common/icon_seoon.png" alt="검색">
+										<ul class="autoform" id="query_result1" style="display:none;"></ul>
+									</div>
+								</fieldset>
+								</form>
+							</div>
+							<!--// 검색영역 -->
+
+							<!-- sns -->
+							<div class="sns_box">
+								<a href="https://www.facebook.com/asiaeconomy?_rdr=p" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '페이스북');" title="페이스북 바로가기" class="btn_facebook" rel="noreferrer noopener">페이스북</a>
+								<a href="https://twitter.com/asiae_daily" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '트위터');" title="트위터 바로가기" class="btn_twitter" rel="noreferrer noopener">트위터</a>
+								<a href="https://pf.kakao.com/_CkZed" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '카카오');" title="카카오플러스친구 바로가기" class="btn_kakao" rel="noreferrer noopener">카카오플러스친구</a>
+								<a href="javascript:;" onclick="javascript:LoginPageJump();ga('send', 'event', 'gnb', 'click', '로그인');" title="로그인하기" class="btn_frind" alt="로그인하기">로그인하기</a>
+								<a href="https://user.asiae.co.kr/new_login/logout.htm?udt=1" title="로그아웃하기" class="btn_logout" style="display:none;">로그아웃하기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// 상단 타이틀, 검색,sns영역// -->
+
+				<!-- gnb 메뉴-->
+				<div class="area_top">
+					<div class="gnb_wrap">
+						<ul class="gnb_m">
+														<li class="link_gnb1">
+								<a href="//www.asiae.co.kr/section/politics" onclick="ga('send', 'event', 'gnb', 'click', '정치');" title="정치">
+									<span class="ir_wa">정치</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb2">
+								<a href="//www.asiae.co.kr/section/economy" onclick="ga('send', 'event', 'gnb', 'click', '경제');" title="경제">
+									<span class="ir_wa">경제</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb3">
+								<a href="//www.asiae.co.kr/section/industry-IT" onclick="ga('send', 'event', 'gnb', 'click', '산업IT');" title="산업·IT">
+									<span class="ir_wa">산업·IT</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb4">
+								<a href="//www.asiae.co.kr/section/stock" onclick="ga('send', 'event', 'gnb', 'click', '증권');" title="증권">
+									<span class="ir_wa">증권</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb5">
+								<a href="//www.asiae.co.kr/section/realestate" onclick="ga('send', 'event', 'gnb', 'click', '부동산');" title="부동산">
+									<span class="ir_wa">부동산</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb6">
+								<a href="//www.asiae.co.kr/section/world" onclick="ga('send', 'event', 'gnb', 'click', '국제');" title="국제">
+									<span class="ir_wa">국제</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb7">
+								<a href="//www.asiae.co.kr/section/society" onclick="ga('send', 'event', 'gnb', 'click', '사회');" title="사회">
+									<span class="ir_wa">사회</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb8">
+								<a href="//www.asiae.co.kr/section/life" onclick="ga('send', 'event', 'gnb', 'click', '라이프');" title="라이프">
+									<span class="ir_wa">라이프</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+							<li class="link_gnb9">
+								<a href="//www.asiae.co.kr/section/opinion" onclick="ga('send', 'event', 'gnb', 'click', '오피니언');" title="오피니언">
+									<span class="ir_wa">오피니언</span>
+									<span class="bar_gnb"><span class="inner_bar"></span></span>
+								</a>
+							</li>
+													</ul>
+
+						<div class="rig_menu">
+							<ul>
+																<li class="link_gnb10">
+									<a href="//www.asiae.co.kr/project-issue-list/project-issue" onclick="ga('send', 'event', 'gnb', 'click', '기획이슈');" title="기획이슈">
+										<span class="ir_wa">기획·이슈</span>
+									</a>
+								</li>
+								<li class="link_gnb11">
+									<a href="//www.asiae.co.kr/section/golf" onclick="ga('send', 'event', 'gnb', 'click', '골프');" title="골프">
+										<span class="ir_wa">골프</span>
+									</a>
+								</li>
+								<li class="link_gnb12">
+									<a href="//www.asiae.co.kr/section/entertainment-sports" onclick="ga('send', 'event', 'gnb', 'click', '연예스포츠');" title="연예스포츠">
+										<span class="ir_wa">연예·스포츠</span>
+									</a>
+								</li>
+								<li class="link_gnb13">
+									<a href="//www.asiae.co.kr/section/photo-video" onclick="ga('send', 'event', 'gnb', 'click', '포토영상');" title="포토영상">
+										<span class="ir_wa">포토·영상</span>
+									</a>
+								</li>
+															</ul>
+						</div>
+						<div class="rig_menu">
+							<ul>
+								<li class="link_gnb14">
+									<a href="https://nc.asiae.co.kr" title="뉴스컬처" target="_blank" rel="noreferrer noopener" onclick="ga('send', 'event', 'gnb', 'click', '뉴스컬처');">
+										<span class="ir_wa">뉴스컬처</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- gnb 메뉴-->
+			</div>
+			<!--// top_head -->
+
+						<div class="breaknews_wrap">
+				<div class="area_breaknews">
+
+					<!-- gnb_banner -->
+						<!--p class="toon_gnb"><a href="//www.asiae.co.kr/news/toon_main.htm?utm_source=main_banner&utm_medium=pc&utm_campaign=toon" title="두번 봐도 재밌는 레전드 꿀잼 만화"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/toon_gnbbanner.png" alt="두번 봐도 재밌는 레전드 꿀잼 만화" /></a></p-->
+					
+<!-- <a href="https://www.asiae.co.kr/fortune/" target="_blank" class="btn_saju01"  onclick="ga('send', 'event', '메인운세', 'click', '하드코딩배너');"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/gnb_position_ft02.jpg" alt="내인생 대운, 사주 확인"></a> -->
+
+<SCRIPT type="text/javascript" SRC="https://a1.asiae.co.kr/RealMedia/ads/adstream_jx.ads/www.asiae.co.kr/a_main@Position4"></script>
+					<!--// gnb_banner -->
+
+					<p class="data_txt">
+						<span>2021.08.09</span>(월)
+					</p>
+
+					<strong class="real_newstit"><a href="//www.asiae.co.kr/realtime/" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '실시간뉴스');" title="실시간뉴스바로가기">실시간뉴스</a></strong>
+					<div class="roll_box">
+						<ul id="sokboPlayer">
+							
+<li><a href="//www.asiae.co.kr/article/2021080921305567308" alt="일본, 주간 신규확진 3.7배 증가">일본, 주간 신규확진 3.7배 증가</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080921291164028" alt="진중권, 박원순 유족 측 고소에 &quot;쫄 거라 봤나…최고강도로 가라&quot;">진중권, 박원순 유족 측 고소에 &quot;쫄 거라 봤나…최고강도로 가라&quot;</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080921261361429" alt="서울시, 오후 9시까지 342명 확진…1주 전보다 50명↑">서울시, 오후 9시까지 342명 확진…1주 전보다 50명↑</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080921204156790" alt="이철우 도지사, 이재용 부회장 가석방 결정 환영 ">이철우 도지사, 이재용 부회장 가석방 결정 환영 </a></li>
+<li><a href="//www.asiae.co.kr/article/2021080921181453833" alt="18~49세 백신 사전예약 10부제 첫날, '먹통' 없었다…&quot;접속 원활&quot;">18~49세 백신 사전예약 10부제 첫날, '먹통' 없었다…&quot;접속 원활&quot;</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080920542932872" alt="하태경, 국민의힘 분열론에 &quot;분위기 좋았는데…이러다 훅 간다&quot;">하태경, 국민의힘 분열론에 &quot;분위기 좋았는데…이러다 훅 간다&quot;</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080920562935193" alt="이란 코로나 신규확진·사망 연일 최다">이란 코로나 신규확진·사망 연일 최다</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080920522129054" alt="인사말 오독에 지각까지…스가, 원폭 추모식서 잇단 논란">인사말 오독에 지각까지…스가, 원폭 추모식서 잇단 논란</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080920480026970" alt="송영길·이낙연 '만찬 회동'…원팀 다짐 속 묘한 긴장감">송영길·이낙연 '만찬 회동'…원팀 다짐 속 묘한 긴장감</a></li>
+<li><a href="//www.asiae.co.kr/article/2021080920432423858" alt="[종합] 딸 방치하고 남친과 외박…3살 아동 숨지게 한 엄마 구속영장">[종합] 딸 방치하고 남친과 외박…3살 아동 숨지게 한 엄마 구속영장</a></li>
+						</ul>
+					</div>
+
+					<a href="https://core.asiae.co.kr" target="_blank" class="btn_df01" title="아시아경제CORE" onclick="ga('send', 'event', 'gnb', 'click', '아경CORE');"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/gnb_core_corp.jpg" alt="아시아경제CORE"></a>					<div class="utile_btnw">
+						<!-- <a href="//www.asiae.co.kr/fortune/" title="운세ㆍ사주" class="btn_unsae" onclick="ga('send', 'event', 'gnb_운세', 'click', '사주운세');">운세ㆍ사주</a> -->
+						<!-- 운세ㆍ사주 배너 2019.10.18 교체-->
+						<SCRIPT type="text/javascript" SRC="https://a1.asiae.co.kr/RealMedia/ads/adstream_jx.ads/www.asiae.co.kr/a_main@Position1"></script>
+						<!-- 운세ㆍ사주 배너 2019.10.18 교체//-->
+						<a href="//noon.asiae.co.kr/" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', 'NOON');" title="지면보기 바로가기" class="btn_noon">지면보기</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 전체메뉴 레이어 부분 -->
+			
+			<div class="menu_all main_menu_all" id="menu_all_id">
+				
+<div class="top_fstarea02">
+	<a href="javascript:void(0)" id="btn_memu_close_id" class="btn_laycls">닫기버튼</a>
+	<h1 class="btn_logo"><a href="//www.asiae.co.kr" title="아시아경제바로가기"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/mtop_logo01.png" alt="아시아경제바로가기" /></a></h1>
+
+	<div class="right_toputili">
+		<!-- sns -->
+		<div class="sns_box">
+			<a href="https://www.facebook.com/asiaeconomy?_rdr=p" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '페이스북');" title="페이스북 바로가기" class="btn_facebook">페이스북</a>
+			<a href="https://twitter.com/asiae_daily" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '트위터');" title="트위터 바로가기" class="btn_twitter">트위터</a>
+			<a href="https://pf.kakao.com/_CkZed" target="_blank" onclick="ga('send', 'event', 'gnb', 'click', '카카오');" title="카카오플러스친구 바로가기" class="btn_kakao">카카오플러스친구</a>
+			<a href="javascript:;" onclick="javascript:LoginPageJump();ga('send', 'event', 'gnb', 'click', '로그인');" title="로그인하기" class="btn_frind" alt="로그인하기">로그인하기</a>
+			<a href="https://user.asiae.co.kr/new_login/logout.htm?udt=1" title="로그아웃하기" class="btn_logout" style="display:none;">로그아웃하기</a>
+		</div>
+	</div>
+</div>
+				<div class="menu_all_box">
+					<!-- <a href="javascript:;" onclick="javascript:void(0);" id="btn_memu_close_id" class="btn_laycls" title="닫기버튼">닫기버튼</a> -->
+					<div class="menu_all_inner">
+						<!-- <div class="h2_titwrap">
+							<h2>전체서비스</h2>
+						</div> -->
+
+						<div class="all_layme_area">
+							<div class="area_depth01">
+
+								<!-- 정치 메뉴 -->
+								<div class="depth_listw01">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/politics" title="정치 바로가기">정치</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/bluehouse" title="청와대 바로가기">청와대</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/party" title="정당 바로가기">정당</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/government-department" title="정부부처 바로가기">정부부처 </a></dd>
+										<dd><a href="//www.asiae.co.kr/list/nationaldefense-diplomacy" title="국방·외교 바로가기">국방·외교</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/political-general" title="일반 바로가기">일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/politics-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+								<!-- 경제 메뉴 -->
+								<div class="depth_listw02">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/economy" title="경제 바로가기">경제</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/finance" title="금융 바로가기">금융</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/economic-policy" title="정책 바로가기">정책</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/economic-general" title="일반 바로가기">일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/financial-technology" title="재테크 바로가기">재테크</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/virtual-money" title="가상화폐 바로가기">가상화폐</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/economy-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+								<!-- 산업·IT 메뉴 -->
+								<div class="depth_listw03">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/industry-IT" title="산업·IT 바로가기">산업·IT</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/enterprise-CEO" title="기업·CEO 바로가기">기업·CEO</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/smb-venture" title="중기·벤처 바로가기">중기·벤처</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/automobile" title="자동차 바로가기">자동차</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/distribution" title="유통 바로가기">유통</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/IT" title="IT·통합 바로가기">IT·통합</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/science" title="과학 바로가기">과학</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/techwave" title="4차산업 바로가기">4차산업</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/industry-IT-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+								<!-- 증권 메뉴 -->
+								<div class="depth_listw04">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/stock" title="증권 바로가기">증권</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/market-condition" title="시황 바로가기">시황</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/feature" title="특징주 바로가기">특징주</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/item-disclosure" title="종목·공시 바로가기">종목·공시</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/derivation-bond-foreignexchange" title="파생·채권·외환 바로가기">파생·채권·외환</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/global-rawmaterials" title="글로벌·원자재 바로가기">글로벌·원자재</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/stock-etc" title="기타 바로가기">기타</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/stock-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+								<!-- 부동산 메뉴 -->
+								<div class="depth_listw06">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/realestate" title="부동산 바로가기">부동산</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/realestate-policy" title="정책 바로가기">정책</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/development-sell" title="개발·분양 바로가기">개발·분양</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/trend" title="업계동향 바로가기">업계동향</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/realestate-general" title="일반 바로가기">일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/realestate-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+								<!-- 국제 메뉴 -->
+								<div class="depth_listw07">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/world" title="국제 바로가기">국제</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/world-stockmarket" title="국제증시 바로가기">국제증시</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/world-economy" title="국제경제 바로가기">국제경제</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/world-general" title="국제일반 바로가기">국제일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/world-topic" title="해외화제 바로가기">해외화제 </a></dd>
+										<dd><a href="//www.asiae.co.kr/list/world-all" title="전체뉴스 바로가기">전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+							</div>
+							<div class="area_depth02">
+
+								<!-- 사회 메뉴 -->
+								<div class="depth_listw08">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/society" title="사회 바로가기">사회</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/affair-incident" title="사건사고 바로가기" >사건사고</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/education" title="교육 바로가기" >교육</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/person" title="인물 바로가기" >인물</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/social-general" title="일반 바로가기" >일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/region" title="지역 바로가기" >지역</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/honam" title="호남 바로가기" >호남</a></dd><!-- 2018.08.13 kmy 추가 -->
+										<dd><a href="//www.asiae.co.kr/list/yeongnam" title="영남 바로가기" >영남</a></dd><!-- 2019.11.27 추가 -->
+										<dd><a href="//www.asiae.co.kr/list/society-all" title="전체뉴스 바로가기" >전체뉴스</a></dd>
+																			</dl>
+									<!-- 기획이슈 : 2020.01.06 이동 -->
+									<div class="one_title">
+																				<h3 class="h3_title"><a href="//www.asiae.co.kr/project-issue-list/project-issue" title="기획·이슈 바로가기" >기획·이슈</a></h3>
+																			</div>
+								</div>
+
+								<!-- 라이프 메뉴 -->
+								<div class="depth_listw09">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/life" title="라이프 바로가기" >라이프</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/style" title="스타일 바로가기" >스타일</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/beauty-health" title="뷰티·헬스 바로가기" >뷰티·헬스</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/travel-leisure" title="여행·레저 바로가기" >여행·레저</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/performance-exhibit" title="공연·전시 바로가기" >공연·전시</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/book" title="책 바로가기" >책</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/life-general" title="일반 바로가기" >일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/living-food" title="리빙푸드 바로가기" >리빙푸드</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/edu-asia" title="에듀아시아 바로가기" >에듀아시아</a></dd><!-- 2018.08.13 kmy 추가 -->
+										<dd><a href="//www.asiae.co.kr/list/drink-eat" title="드링킷 바로가기" >드링킷</a></dd>
+																			</dl>
+									<!-- 많이 본 뉴스 메뉴 : 2020.01.06 이동 -->
+									<div class="one_title">
+																				<h3 class="h3_title"><a href="//www.asiae.co.kr/ranking/all" title="많이 본 뉴스 바로가기" >많이 본 뉴스</a></h3>
+																			</div>
+								</div>
+
+								<!-- 오피니언 메뉴 -->
+								<div class="depth_listw10">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/opinion" title="오피니언 바로가기" >오피니언</a></dt>
+										<dd><a href="//www.asiae.co.kr/opinion-list/opinion-column" title="칼럼 바로가기" >칼럼</a></dd>
+										<dd><a href="//www.asiae.co.kr/opinion-list/satirical-cartoon" title="만평 바로가기" >만평</a></dd>
+																			</dl>
+									<!-- 운세 메뉴 : 2020.01.06 이동 -->
+									<div class="one_title">
+										<h3 class="h3_title"><a href="//www.asiae.co.kr/fortune/" target="_blank" title="운세 바로가기">운세</a></h3>
+									</div>
+								</div>
+
+								<!-- 연예·스포츠 메뉴 -->
+								<div class="depth_listw11">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/entertainment-sports" title="연예·스포츠 바로가기" >연예·스포츠</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/entertainment-star" title="연예스타 바로가기" >연예스타</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/sports" title="스포츠 바로가기" >스포츠</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/foreignnews" title="해외뉴스 바로가기" >해외뉴스</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/entertainment-sports-all" title="전체뉴스 바로가기" >전체뉴스</a></dd>
+																			</dl>
+									<div class="one_title">
+										<h3 class="h3_title"><a href="https://dk.asiae.co.kr" target="_blank" title="드링킷 바로가기">드링킷</a></h3>
+									</div>
+								</div>
+
+								<!-- 포토·영상 -->
+								<div class="depth_listw12">
+									<!-- 포토·영상: 2018.07.27 kmy_메뉴수정 -->
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/photo-video" title="포토·영상 바로가기" >포토·영상</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/slideshow" title="포토슬라이드 바로가기" >포토슬라이드</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/photonews" title="포토뉴스 바로가기" >포토뉴스</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/video" title="동영상 바로가기" >동영상</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/graphic-news" title="그래픽뉴스 바로가기" >그래픽뉴스</a></dd><!-- 2018.08.13 kmy 추가 -->
+																			</dl>
+									<div class="one_title">
+										<h3 class="h3_title"><a href="https://core.asiae.co.kr" target="_blank" title="아시아경제CORE 바로가기">아시아경제CORE</a></h3>
+									</div>
+								</div>
+
+								<!-- 골프 메뉴 -->
+								<div class="depth_listw13">
+									<dl>
+																				<dt class="h3_title"><a href="//www.asiae.co.kr/section/golf" title="골프 바로가기" >골프</a></dt>
+										<dd><a href="//www.asiae.co.kr/list/golf-project" title="기획 바로가기" >기획</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/lesson" title="레슨 바로가기" >레슨</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/golf-column" title="칼럼 바로가기" >칼럼</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/golf-human" title="휴먼 바로가기" >휴먼</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/equipment" title="용품 바로가기" >용품</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/golf-photo" title="포토 바로가기" >포토</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/golf-general" title="일반 바로가기" >일반</a></dd>
+										<dd><a href="//www.asiae.co.kr/list/golf-all" title="전체뉴스 바로가기" >전체뉴스</a></dd>
+																			</dl>
+								</div>
+
+							</div>
+
+							<div class="area_lastbtn">
+								<div class="fl_btn">
+									<a href="//military.asiae.co.kr" target="_blank" class="btn_yang" title="양낙규의 디펜스클럽 바로가기" ><span>양낙규의 디펜스클럽</span></a>
+									<a href="https://www.asiae.co.kr/fortune/" target="_blank"class="btn_saju02" title="승진·재물·건강운 사주로 확인! 바로가기"><span>승진·재물·건강운 사주로 확인!</span></a>
+								</div>
+
+								<div class="fr_btn">
+									<a href="//www.asiae.co.kr/company/notice_list.htm?sbk=notice_asia" class="btn_noti" title="공지·사고 바로가기" target="_blank"><span>공지·사고</span></a>
+									<span class="icon_bar">|</span>
+									<a href="//www.asiae.co.kr/event/" class="btn_event" title="이벤트·행사 바로가기" target="_blank"><span>이벤트·행사</span></a>
+									<span class="icon_bar">|</span>
+									<a href="//noon.asiae.co.kr/" target="_blank" class="btn_noon" title="NOON지면보기 바로가기" ><span>NOON지면보기</span></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>			<!--// 전체메뉴 레이어 부분 -->
+					</div>
+		<!--//header End -->
+
+<script type="text/javascript">
+if( getCookie( 'snsid' ) != '' && getCookie( 'islogin' ) == '1' )
+{
+	$('.btn_frind').attr('href', 'https://user.asiae.co.kr/mypage/');
+	$('.btn_frind').attr('onclick', 'javascript:;');
+	$('.btn_frind').attr('title', '마이페이지');
+	$('.btn_logout').show();
+}
+
+
+var page_name = 'new_main';
+if(page_name!='sitemap' && page_name!='error_page'){
+	jQuery(function($) {
+		$('#sokboPlayer').ulslide({
+			 axis: 'y'				// x, y
+			,affect: 'slide'		// slide, fade
+			,slidetag: 'li'
+			,duration: 500
+			,width: 300
+			,height: 34
+			,autoslide: 4000
+			,mouseover: true
+		});
+	});
+}
+
+
+////////////////////////////////////
+// 검색
+////////////////////////////////////
+jQuery(function($) {
+	$('#search1').on('focus', function(){
+		if($('#search1').val()=='뉴스검색'){
+			$('#search1').val('');
+		}
+	});
+
+	$('#search1').on('blur', function(){
+		$('#query_result1').hide();
+		if($('#search1').val()==''){
+			$('#search1').val('뉴스검색');
+			$('.header_sear').hide();
+			$('.btn_searchon').attr('class', 'btn_search');
+		}
+	});
+});
+
+function checkSearchSubmit(obj)
+{
+	if( obj.sn.value && obj.sn.value != '뉴스검색' )
+	{
+		return true;
+	}
+	else
+	{
+		alert('검색어를 입력하세요.');
+		return false;
+	}
+}
+////////////////////////////////////
+// 검색
+////////////////////////////////////
+
+adURL = "https://a1.asiae.co.kr/RealMedia/ads/adstream_mjx.ads/www.asiae.co.kr/a_main@x90,Top1";
+adURL = adURL.replace(/@/, "/1" + ((String)(Math.random())).substring (2, 11) + "@");
+document.write ('<SCR' + 'IPT LANG' + 'UAGE="JAVAS' + 'CRIPT1.1" SRC="' + adURL + '"> </SCR' + 'IPT>');
+
+
+/* top_news */
+$(function (){
+	$('.item_area').slick({
+		infinite: true,
+		autoplay: true, //자동슬라이드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		slidesToShow: 1
+	});
+});
+
+/* inside slide */
+$(function (){
+	$('.ins_slide').slick({
+		infinite: true,
+		autoplay: true, //자동슬라이드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		slidesToShow: 1
+	});
+});
+
+/* 아시아경제서비스 */
+$(function (){
+	$('.ser_list').slick({
+		infinite: true,
+		autoplay: true, //자동슬라이드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		slidesToShow: 1
+	});
+});
+
+/* 아시아경제 기획·이슈 */
+$(function (){
+	$('.plan_slide').slick({
+		infinite: true,
+		autoplay: true, //자동슬라이드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		slidesToShow: 4
+	});
+});
+
+$(document).ready(function() {
+	var itemSlider = $('#item_photo').lightSlider({
+		item:4,
+		loop:false,
+		slideMove:4,
+		//easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+		speed:600,
+		slideMargin:0,
+		controls: false,
+		pager: false
+	});
+	$('.main_photo .btn_prev').on('click', function () {
+		itemSlider.goToPrevSlide();
+	});
+	$('.main_photo .btn_next').on('click', function () {
+		itemSlider.goToNextSlide();
+	});
+});
+
+/* 셀렉트박스 */
+$(document).ready(function() {
+	//$(".dropdown img.flag").addClass("flagvisibility");
+
+	$(".dropdown dt a").click(function() {
+		$(".dropdown dd").toggle();
+		$(this).toggleClass("active");
+	});
+
+	$(".dropdown dd ul li a").click(function() {
+		var text = $(this).html();
+		$(".dropdown dt a span").html(text);
+		$(".dropdown dd").hide();
+		$(".dropdown dt a").toggleClass("active");
+	});
+
+	function getSelectedValue(id) {
+		return $("#" + id).find("dt a span.value").html();
+	}
+
+	/* side_remote 활성화, 비활성화 제어 */
+	$(".side_remote a.link_top").click(function() {
+		$("a.link_bottom").addClass("btn_show");
+		$("span.link_bottom").removeClass("btn_show");
+	});
+
+	$(".side_remote a.link_bottom").click(function() {
+		$(this).removeClass("btn_show");
+		$("span.link_bottom").addClass("btn_show");
+	});
+});
+
+AOS.init({
+  duration: 1200,
+});
+</SCRIPT>
+<!-- container -->
+<div id="container">
+	<!-- content -->
+	<div class="content">
+			<!-- 2020.02.04 코로나 특집 -->
+						<!-- 2020.02.04 코로나 특집 -->
+			<!-- 2021 4.7재보궐 -->
+			<!-- <div class="vote2021_sp">  -->
+				<!-- <div class="cr_inner"><a href="//www.asiae.co.kr/news/election/2021/" target="_blank" title="4.7 재보궐 선거 이슈체크!"><img src="https://cwstatic.asiae.co.kr/asiae_v2/common/2021vote_sp.jpg" alt="4.7 재보궐 선거 이슈체크!"></a></div>
+			</div> -->
+			<!--// 2021 4.7재보궐 -->
+				<!-- 뉴스콘텐츠1 -->
+				<div class="cm_cont01">
+					<!-- Left_Content Area -->
+					<div class="cl_cont">
+						<!-- TOP기사-->
+						
+			<div class="top_news">
+				<div class="item_area">
+										<div>
+						<a href="//www.asiae.co.kr/article/2021080919221398203" target="" title="이재용, 13일 가석방재수감 207일만에 나온다">
+							
+							<span class="thumb">
+								<img src="https://cwcontent.asiae.co.kr/asiaresize/275/2021080915305169795_1628490651.png" alt="이재용, 13일 가석방재수감 207일만에 나온다" />
+							</span>
+							<span class="txt_box">
+								이재용, 13일 가석방<br>재수감 207일만에 나온다
+								<em>법무부 "국가적 경제상황과 글로벌 환경 고려"…총 810명, 광복절 가석방 허가</em>
+							</span>
+						</a>
+					</div>
+					<div>
+						<a href="//www.asiae.co.kr/article/2021080917081121003" target="" title="모더나 공급 '반토막'추석 전 국민 70% 1차접종 목표 빨간불">
+							
+							<span class="thumb">
+								<img src="https://cwcontent.asiae.co.kr/asiaresize/275/2021080523331366106_1628173993.jpg" alt="모더나 공급 '반토막'추석 전 국민 70% 1차접종 목표 빨간불" />
+							</span>
+							<span class="txt_box">
+								모더나 공급 '반토막'<br>추석 전 국민 70% 1차접종 목표 빨간불
+								<em>정부, mRNA 백신 접종간격 6주로 늘려 급한 불 꺼</em>
+							</span>
+						</a>
+					</div>
+					<div>
+						<a href="//www.asiae.co.kr/article/2021080909404340113" target="" title="문재인 정부, 임기말 예산600兆 넘는다">
+							
+							<span class="thumb">
+								<img src="https://cwcontent.asiae.co.kr/asiaresize/275/2021080913351315803A_1.jpg" alt="문재인 정부, 임기말 예산600兆 넘는다" />
+							</span>
+							<span class="txt_box">
+								문재인 정부, 임기말 예산<br>600兆 넘는다
+								<em>文 "내년 확장 재정 유지" 주문…4년 만에 171조 이상 증가 가능성 커</em>
+							</span>
+						</a>
+					</div>
+					<div>
+						<a href="//www.asiae.co.kr/article/2021080911313351781" target="" title="서울 아파트 매매 하루 10여건금융위기 때보다 심한 거래절벽">
+							
+							<span class="thumb">
+								<img src="https://cwcontent.asiae.co.kr/asiaresize/275/2021080913021930614A_1.jpg" alt="서울 아파트 매매 하루 10여건금융위기 때보다 심한 거래절벽" />
+							</span>
+							<span class="txt_box">
+								서울 아파트 매매 하루 10여건<br>금융위기 때보다 심한 거래절벽
+								<em>지난달 전체 거래량의 27분의 1…다세대·연립·단독 등도 거래실종</em>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+						<!--// TOP기사-->
+ 
+						<!-- 메인편집 주요기사 상위5번부터 -->
+						<div class="section">
+							<!-- 뉴스 리스트 -->
+									<ul class="news_list">
+						<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080919480750413"  target="" title="'이재용 가석방' 법무부 &quot;과거에도 추가 수사·재판 중 가석방 사례있어&quot;">
+						'이재용 가석방' 법무부 "과거에도 추가 수사·재판 중 가석방 사례있어"
+					</a>
+				</dt>
+				
+								<dd class="desc">
+					
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080919463547142" title="이재용 부회장 13일 가석방 확정…한시름 놓은 삼성그룹">이재용 부회장 13일 가석방 확정…한시름 놓은 삼성그룹</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080919203495563" title="국민의힘 &quot;이재용, 경제 발전 기여하고 사회적 책임 다해야&quot;">국민의힘 "이재용, 경제 발전 기여하고 사회적 책임 다해야"</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080919562461235" title="윤석열, 이재용 부회장 가석방 허가에 &quot;존중한다&quot;">윤석열, 이재용 부회장 가석방 허가에 "존중한다"</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080920055673139" title="최재형 &quot;이재용, 국가 경제 책임감 가져야&quot;…엄격한 준법경영 당부">최재형 "이재용, 국가 경제 책임감 가져야"…엄격한 준법경영 당부</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080919421039196"  target="" title="정부 &quot;모더나, 백신 공급 차질 사과…계약위반이라 판단하긴 어려워&quot;">
+						정부 "모더나, 백신 공급 차질 사과…계약위반이라 판단하긴 어려워"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080921181453833"  target="" title="18~49세 백신 사전예약 10부제 첫날, '먹통' 없었다…&quot;접속 원활&quot;">
+						18~49세 백신 사전예약 10부제 첫날, '먹통' 없었다…"접속 원활"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080920072878625"  target="" title="'사자명예훼손' 전두환 항소심 출석…11시간 만에 귀가">
+						'사자명예훼손' 전두환 항소심 출석…11시간 만에 귀가
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080920072878625" title="'사자명예훼손' 전두환 항소심 출석…11시간 만에 귀가">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080915065969678_1628489218.jpg" alt="'사자명예훼손' 전두환 항소심 출석…11시간 만에 귀가" />
+					</a>
+				</dd>
+								<dd class="desc  pt10">
+								<strong class="interval">
+				 5·18 광주 민주화 운동 당시 군부의 헬기사격 사실을 부정하며 목격자의 명예를 훼손한 혐의를 받는 전두환씨가 9일 광주지법에서 열린 항소심 재판에 출석한 뒤 약 11시간 만에 귀가했다. 전씨는 이날 오전 8시...
+			</strong>
+					
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080916520184463"  target="" title="법원, '내란선동' 이석기 전 통진당 의원 등 7명 재심 청구 기각">
+						법원, '내란선동' 이석기 전 통진당 의원 등 7명 재심 청구 기각
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080917532895535"  target="" title="靑 &quot;방역·경제·민생 함께 지킨다는 의지 천명&quot;">
+						靑 "방역·경제·민생 함께 지킨다는 의지 천명"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>		</ul>							<!--// 뉴스 리스트 -->
+
+							<!-- 메인편집 주요이미지1-1, 주요기사 -->
+											<!-- 메인편집 주요이미지1-1 -->
+				<div class="le_lstpho">
+					<a href="//www.asiae.co.kr/article/2021080911125025782" title="'나홀로 하락' 성남도 전셋값 반등하나…&quot;물량 소진&quot;" target="">
+						<span class="thumb">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/252/2021080113464558657_1627793205.jpg" alt="'나홀로 하락' 성남도 전셋값 반등하나…&quot;물량 소진&quot;" />
+						</span>
+						<strong class="txt">'나홀로 하락' 성남도 전셋값 반등하나…"물량 소진"</strong>
+					</a>
+				</div>
+				<!--// 메인편집 주요이미지1-1 -->							
+				<!-- 메인편집 주요기사 -->
+				<ul class="news_list">
+								<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080920480026970"  target="" title="송영길·이낙연 '만찬 회동'…원팀 다짐 속 묘한 긴장감">
+						송영길·이낙연 '만찬 회동'…원팀 다짐 속 묘한 긴장감
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080919144189409"  target="" title="스가, 올림픽 자화자찬 &quot;日이라서 가능했다&quot;">
+						스가, 올림픽 자화자찬 "日이라서 가능했다"
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080919144189409" title="스가, 올림픽 자화자찬 &quot;日이라서 가능했다&quot;">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080919123370103_1628503953.jpg" alt="스가, 올림픽 자화자찬 &quot;日이라서 가능했다&quot;" />
+					</a>
+				</dd>
+								<dd class="desc  pt10">
+								<strong class="interval">
+				 스가 요시히데 일본 총리는 코로나19이라는 어려움 속에서도 도쿄올림픽을 문제없이 잘 개최했으며 국제사회로부터 호평을 받았다는 인식을 표명했다. 일본 여론도 올림픽 개최 자체에 대해서는 긍정적으로 반응...
+			</strong>
+					
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080915394992280"  target="" title="2학기 개학 직후 4단계도 부분 등교…9월6일부터 2/3까지">
+						2학기 개학 직후 4단계도 부분 등교…9월6일부터 2/3까지
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080915394992280" title="2학기 개학 직후 4단계도 부분 등교…9월6일부터 2/3까지">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021070809220425049_1625703724.jpg" alt="2학기 개학 직후 4단계도 부분 등교…9월6일부터 2/3까지" />
+					</a>
+				</dd>
+								<dd class="desc  pt10">
+								<strong class="interval">
+				 교육부가 2학기 등교를 확대하기 위해 거리두기 단계별 학교 밀집도를 조정했다. 개학 직후부터는 4단계인 지역도 유치원생과 초등학교 1·2학년, 고3은 매일 등교한다. 중학생은 1/3, 고등학생은 1/2까지 등교한...
+			</strong>
+					
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910105387982"  target="" title="獨 규정 위반땐 최대 673억원">
+						<span class="label_txt txt_blue">스포츠 댓글 폐지 1년</span>獨 규정 위반땐 최대 673억원
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080910105387982" title="獨 규정 위반땐 최대 673억원">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080915524065301A_1.jpg" alt="獨 규정 위반땐 최대 673억원" />
+					</a>
+				</dd>
+								<dd class="desc">
+								<strong class="interval">
+				 대한탁구협회는 지난 6일 대표 선수들에 대한 악의적인 댓글 등에 강경 대응할 것이라고 밝혔다. 경우...
+			</strong>
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080509483275807" title="올림픽 '악플테러'… SNS로 전이">올림픽 '악플테러'… SNS로 전이</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080610412106790" title="벌금 80만원뿐… 이젠 그마저도">벌금 80만원뿐… 이젠 그마저도</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080909541040764"  target="" title="게임체인저 '카카오' 뜨면 시총이 뒤바뀐다">
+						게임체인저 '카카오' 뜨면 시총이 뒤바뀐다
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080909541040764" title="게임체인저 '카카오' 뜨면 시총이 뒤바뀐다">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080913250495240A_1.jpg" alt="게임체인저 '카카오' 뜨면 시총이 뒤바뀐다" />
+					</a>
+				</dd>
+								<dd class="desc">
+								<strong class="interval">
+				카카오뱅크가 상장하면서 시가총액에 지각변동이 일어나고 있다. 카카오뱅크는 시총 11위로 코스피에 성...
+			</strong>
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080911310848628" title="카카오뱅크, 상장 이틀만에 시총 40조원 돌파...장중 9위">카카오뱅크, 상장 이틀만에 시총 40조원 돌파...장중 9위</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080607521972786" title="카카오가 韓 톱3 기업이 된 세 가지 이유[시론] ">카카오가 韓 톱3 기업이 된 세 가지 이유[시론] </a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910225577596"  target="" title="오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 ">
+						오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080915481778627"  target="" title="마이크 사용 최재형, 선거법 위반 논란…캠프 &quot;사실 관계 파악 중&quot;">
+						마이크 사용 최재형, 선거법 위반 논란…캠프 "사실 관계 파악 중"
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080915481778627" title="마이크 사용 최재형, 선거법 위반 논란…캠프 &quot;사실 관계 파악 중&quot;">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080915445569856_1628491495.jpg" alt="마이크 사용 최재형, 선거법 위반 논란…캠프 &quot;사실 관계 파악 중&quot;" />
+					</a>
+				</dd>
+								<dd class="desc">
+								<strong class="interval">
+				 최재형 전 감사원장이 공직선거법을 위반했다는 논란이 9일 제기됐다. 최 전 원장 캠프는 사실 관계를 ...
+			</strong>
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080914352206251" title="안민석 &quot;최재형, 증조부·조부 친일 해명하라…독립운동가 후손 코스프레&quot;">안민석 "최재형, 증조부·조부 친일 해명하라…독립운동가 후손 코스프레"</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080914183117471" title="최재형 &quot;당 대표 권위 훼손 안 된다…역량 결집할 것&quot;">최재형 "당 대표 권위 훼손 안 된다…역량 결집할 것"</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>				</ul>
+				<!--// 메인편집 주요기사 -->
+							<!--// 메인편집 주요이미지1-1, 주요기사 -->
+						</div>
+					</div>
+					<!--// Left_Content Area -->
+
+					<!--Right_Content Area -->
+					<div class="cr_cont">
+						<div class="section">
+							<!-- 뉴스스탠드 방금속보, 영상뉴스1 -->
+							
+				<div class="quick_news">
+					<h2>
+						<a href="//www.asiae.co.kr/article/2021080919463547142" title="이재용, 13일 가석방 확정…한시름 놓은 삼성그룹">이재용, 13일 가석방 확정…한시름 놓은 삼성그룹</a>
+					</h2>
+				</div>
+				<!--// 뉴스스탠드 방금속보1 -->
+				<!-- 뉴스스탠드 방금속보2-5 -->
+				<div class="news_list2 bx_line">
+					<ul class="u_list">
+						<li>
+							<a href="//www.asiae.co.kr/article/2021080912180347286" title="마지막날 역전… 美도 버거웠던 中과의 금메달 경쟁">마지막날 역전… 美도 버거웠던 中과의 금메달 경쟁</a>
+						</li>
+						<li>
+							<a href="//www.asiae.co.kr/article/2021080912052131782" title="GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩">GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩</a>
+						</li>
+						<li>
+							<a href="//www.asiae.co.kr/article/2021080914000703138" title="윤희숙, 이재명에 &quot;이런 후보 처음…도덕성 문제&quot;">윤희숙, 이재명에 "이런 후보 처음…도덕성 문제"</a>
+						</li>
+						<li>
+							<a href="//www.asiae.co.kr/article/2021080915202282139" title="&quot;우리 선수들 어디에?&quot; 올림픽 폐막식 '韓 패싱' 논란">"우리 선수들 어디에?" 올림픽 폐막식 '韓 패싱' 논란</a>
+						</li>
+					</ul>
+					<!-- 뉴스스탠드 영상뉴스1 -->
+					<a href="//www.asiae.co.kr/article/2021080908000260429" title="&quot;막말 계속하면 안 돼&quot;" class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080908514897324A_1.jpg" alt="&quot;막말 계속하면 안 돼&quot;" />
+												<span class="txt">"막말 계속하면 안 돼"</span>
+					</a>
+					<!--// 뉴스스탠드 영상뉴스1 -->
+				</div>
+							<!--// 뉴스스탠드 방금속보, 영상뉴스1 -->
+
+							<!-- 메인편집 주요기사, 뉴스스탠드 영상뉴스2 -->
+									<div class="news_list2">
+			<ul class="u_list">
+				<li>
+					<a href="//www.asiae.co.kr/article/2021080919154592871" target="" title="박원순 유족 측, 진중권 등 사자명예훼손 고소">
+						박원순 유족 측, 진중권 등 사자명예훼손 고소					</a>
+				</li>
+				<li>
+					<a href="//www.asiae.co.kr/article/2021080919411235008" target="" title="'美 압박 직면' 중·러, 합동 군사훈련 시작">
+						'美 압박 직면' 중·러, 합동 군사훈련 시작					</a>
+				</li>
+				<li>
+					<a href="//www.asiae.co.kr/article/2021080916500175426" target="" title="&quot;블링컨, 北에 대화 촉구하며 다른 옵션 고려 표명&quot;">
+						"블링컨, 北에 대화 촉구하며 다른 옵션 고려 표명"					</a>
+				</li>
+				<li>
+					<a href="//www.asiae.co.kr/article/2021080913290415733" target="" title="&quot;美 임대료 상승이 장기 인플레 가능성 높인다&quot;">
+						"美 임대료 상승이 장기 인플레 가능성 높인다"					</a>
+				</li>
+			</ul>
+			<!-- 뉴스스탠드 영상뉴스2 -->
+			<a href="//www.asiae.co.kr/article/2021080911224409987" title="정숙함·속도감 모두 장착" class="thumb">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080911242745577A_1.jpg" alt="정숙함·속도감 모두 장착" />
+								<span class="txt">정숙함·속도감 모두 장착</span>
+			</a>
+			<!--// 뉴스스탠드 영상뉴스2 -->
+		</div>
+							<!--// 메인편집 주요기사, 뉴스스탠드 영상뉴스2 -->
+							<!-- 메인편집 주요이미지2 1-3 -->
+							                <div class="main_mody">
+                    <ul>
+										<li>
+						<a href="//www.asiae.co.kr/article/2021080910361460389" title="17일간의 대장정 끝…외신이 꼽은 올림픽 명장면은? " class="thumb">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080913321069418_1628483530.jpg" alt="17일간의 대장정 끝…외신이 꼽은 올림픽 명장면은? " />
+							<span class="txt"><em>17일간의 대장정 끝…외신이 꼽은 올림픽 명장면은? </em></span>
+						</a>
+					</li>
+					<li>
+						<a href="//www.asiae.co.kr/article/2021080911184575093" title="'D-2' 삼성 갤럭시 언팩, 숨은 카메라·S펜·방수 기능… 폴더블폰 대세화 승부  " class="thumb">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080911213315953A_1.jpg" alt="'D-2' 삼성 갤럭시 언팩, 숨은 카메라·S펜·방수 기능… 폴더블폰 대세화 승부  " />
+							<span class="txt"><em>'D-2' 삼성 갤럭시 언팩, 숨은 카메라·S펜·방수 기능… 폴더블폰 대세화 승부  </em></span>
+						</a>
+					</li>
+					<li class="on">
+						<a href="//www.asiae.co.kr/article/2021080910584886952" title="전광훈, 올해도 광복절 대규모 집회 예고…집단감염 '또' 불붙나 " class="thumb">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021061618112383197_1623834684.jpg" alt="전광훈, 올해도 광복절 대규모 집회 예고…집단감염 '또' 불붙나 " />
+							<span class="txt"><em>전광훈, 올해도 광복절 대규모 집회 예고…집단감염 '또' 불붙나 </em></span>
+						</a>
+					</li>
+                    </ul>
+                </div>							<!--// 메인편집 주요이미지2 1-3 -->
+						</div>
+
+						<div class="aside">
+							<div class="aside_one">
+
+								<!-- 아시아경제 인사이드 -->
+								
+<div class="inside_w">
+	<div class="ins_slide">
+		
+		<div class="item_b">
+			<a href="http://www.asiae.co.kr/event/2020/4thindustry/index.htm?utm_source=asiae&utm_medium=insidebanner&utm_campaign=asiaedu" target="" title="K디지털 국비지원 교육">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080510370384277A_1.jpg" alt="K디지털 국비지원 교육" />
+			</a>
+		</div>
+
+		<div class="item_b">
+			<a href="https://www.asiae.co.kr/article/2021072611393272107" target="" title="2021 아시아경제 ESG 공공기관 대상">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021072613165296536A_1.jpg" alt="2021 아시아경제 ESG 공공기관 대상" />
+			</a>
+		</div>
+
+		<div class="item_b">
+			<a href="https://www.asiae.co.kr/event/2021/construction/" target="_blank" title="16회 건설종합대상">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021071413483464309A_1.jpg" alt="16회 건설종합대상" />
+			</a>
+		</div>
+
+		<div class="item_b">
+			<a href="https://dk.asiae.co.kr/" target="_blank" title="드링킷">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2019122715560666307A_1.jpg" alt="드링킷" />
+			</a>
+		</div>
+	</div>
+</div>
+
+        <div class="img_bann">
+			<SCRIPT LANGUAGE=JavaScript>
+			<!--
+			OAS_RICH("Top1");
+			//-->
+			</SCRIPT>
+        </div>
+		<!-- 광고영역 -->
+		<!-- <a href="#none" title="이미지" class="img_bann">
+			<img src="https://ssl.pstatic.net/tveta/libs/1251/1251502/a1ef1465cadd19f5a5a4_20190806111459328.png" alt="이미지" />
+		</a> -->
+		<!--// 광고영역 -->
+
+
+								<!--// 아시아경제 인사이드 -->
+
+							</div>
+
+							<div class="aside_two">
+								<!-- 뉴스스탠드 집중클릭4-7, hot뉴스 -->
+									<ul class="nch_photo">
+				<li>
+			<a href="//www.asiae.co.kr/article/2021080909464176078" title="올림픽 효과 없었다 ">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080910471851606A_1.jpg" alt="올림픽 효과 없었다 ">
+				<span class="txt">
+				<em>올림픽 효과 없었다 </em>
+				</span>
+			</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080914001106914" title="의도적으로 쓰러트린 물병?">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080915063623337A_1.jpg" alt="의도적으로 쓰러트린 물병?">
+				<span class="txt">
+				<em>의도적으로 쓰러트린 물병?</em>
+				</span>
+			</a>
+		</li>		<li class="on">
+			<a href="//www.asiae.co.kr/article/2021080718073876266" title="&quot;신유빈 선수 지켜주세요&quot;">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080719433321521A_1.jpg" alt="&quot;신유빈 선수 지켜주세요&quot;">
+				<span class="txt">
+				<em>"신유빈 선수 지켜주세요"</em>
+				</span>
+			</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080909213685581" title="전신 98%가 '타투'">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080909363080383A_1.jpg" alt="전신 98%가 '타투'">
+				<span class="txt">
+				<em>전신 98%가 '타투'</em>
+				</span>
+			</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080907315532969" title="결국 오열">
+				<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2021080907390824435A_1.jpg" alt="결국 오열">
+				<span class="txt">
+				<em>결국 오열</em>
+				</span>
+			</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080810255020653" title="韓을 보면  中이 보인다">
+				<img src="https://cwcontent.asiae.co.kr/asiaresize/269/2021080809585768013_1628384336.jpg" alt="韓을 보면  中이 보인다">
+				<span class="txt">
+				<em>韓을 보면  中이 보인다</em>
+				</span>
+			</a>
+		</li>	</ul>								<!--// 뉴스스탠드 집중클릭4-7, hot뉴스 -->
+								<!-- 깨알뉴스, 뉴스스탠드 집중클릭1-3-->
+									<div class="list_txt">
+		<ul>
+					<li>
+			<a href="//www.asiae.co.kr/article/2021080909365511111" title="&quot;알바생도 맞았는데&quot; 백신 접종 차별에 두 번 운다">"알바생도 맞았는데" 백신 접종 차별에 두 번 운다</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080716061094242" title="아내 계좌에 꽂힌 '수상한' 3천만원 …무죄 판결 받아">아내 계좌에 꽂힌 '수상한' 3천만원 …무죄 판결 받아</a>
+		</li>		<li class="on">
+			<a href="//www.asiae.co.kr/article/2021080621270524340" title="日농부 &quot;韓선수들 때문에 후쿠시마산 파 안 팔려&quot; ">日농부 "韓선수들 때문에 후쿠시마산 파 안 팔려" </a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080915091991839" title="유치 경쟁은 옛말…적자 올림픽에 '회의론' 솔솔">유치 경쟁은 옛말…적자 올림픽에 '회의론' 솔솔</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080721070499198" title="금메달 따면 '8억원'…나라별 포상금 얼마나 다를까?">금메달 따면 '8억원'…나라별 포상금 얼마나 다를까?</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080917364469159" title="&quot;감옥이다&quot; 올림픽서 확진된 선수들, 격리소에 '부글'">"감옥이다" 올림픽서 확진된 선수들, 격리소에 '부글'</a>
+		</li>		</ul>
+		<ul>
+					<li class="on">
+			<a href="//www.asiae.co.kr/article/2021080810510973946" title="남편 불륜 의심…통화 몰래 녹음한 30대 아내 선처">남편 불륜 의심…통화 몰래 녹음한 30대 아내 선처</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080821024652059" title="'4강 진출' 여자배구 대표팀 포상금 4억 받는다">'4강 진출' 여자배구 대표팀 포상금 4억 받는다</a>
+		</li>		<li>
+			<a href="//www.asiae.co.kr/article/2021080611502145983" title="&quot;미래가 불안해서요&quot; 취준생도 직장인도 뛰어든다">"미래가 불안해서요" 취준생도 직장인도 뛰어든다</a>
+		</li>		</ul>
+	</div>
+								<!-- 깨알뉴스, 뉴스스탠드 집중클릭1-3-->
+							</div>
+
+							<!-- 아시아경제 영상 -->
+									<div class="aside_wsty01">
+			<h2 class="tit_h2">
+				<a href="//www.asiae.co.kr/list/video" title="아시아경제 영상">아시아경제 <em>영상</em></a>
+			</h2>
+			<a href="https://www.youtube.com/channel/UC8WLOh6UrALDSQ6ZmPjXJ9A" class="btn_youtube" title="아시아경제 YouTube 채널구독" target="_blank">YouTube 채널구독</a>
+
+			<div class="vod_box">
+				<ul>
+							<li>
+				<a href="//www.asiae.co.kr/visual-view/video/2021080810381442012" title="[현장영상] &quot;우리가 진실을 밝힐게&quot; 故손정민 사건 100일…시민들 '추모'" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021080810185868050_1628385538.jpeg" alt="[현장영상] &quot;우리가 진실을 밝힐게&quot; 故손정민 사건 100일…시민들 '추모'">
+					<em class="ico i_play">동영상재생 아이콘</em>
+				</a>
+				<div class="txt_b">
+					<a href="//www.asiae.co.kr/visual-view/video/2021080810381442012" title="[현장영상] &quot;우리가 진실을 밝힐게&quot; 故손정민 사건 100일…시민들 '추모'"> "우리가 진실을 밝힐게" 故손정민 사건 100일…시민들 '추모'</a>
+				</div>
+			</li>			<li>
+				<a href="//www.asiae.co.kr/visual-view/video/2021080615334892345" title="[현장영상] &quot;석방해야&quot; vs &quot;반대한다&quot; 이재용 '8·15 가석방' 논의…시민 생각은" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021080615314167303_1628231501.jpeg" alt="[현장영상] &quot;석방해야&quot; vs &quot;반대한다&quot; 이재용 '8·15 가석방' 논의…시민 생각은">
+					<em class="ico i_play">동영상재생 아이콘</em>
+				</a>
+				<div class="txt_b">
+					<a href="//www.asiae.co.kr/visual-view/video/2021080615334892345" title="[현장영상] &quot;석방해야&quot; vs &quot;반대한다&quot; 이재용 '8·15 가석방' 논의…시민 생각은"> "석방해야" vs "반대한다" 이재용 '8·15 가석방' 논의…시민 생각은</a>
+				</div>
+			</li>				</ul>
+			</div>
+		</div>							<!--// 아시아경제 영상 -->
+
+							<!-- 서비스배너 -->
+							<!-- <div class="ad_52050" style="background-color:#1c273f;">
+	<a href="https://www.asiae.co.kr/fortune/index.htm?utm_source=banner&utm_medium=pc_main&utm_campaign=fortune" target="">
+		<img src="https://cwcontent.asiae.co.kr/amgimagelink/98/2019092316045695616A_1.jpg" alt="">
+	</a>
+</div> -->
+<!-- 2019.10.18 광고태그로 교체 -->
+<SCRIPT type="text/javascript" SRC="https://a1.asiae.co.kr/RealMedia/ads/adstream_jx.ads/www.asiae.co.kr/a_main@Position2"></script>
+<!-- 2019.10.18 광고태그로 교체// -->							<!--// 서비스배너 -->
+
+							<!-- 메인편집 주요이미지2 4-7 -->
+							<div class="pnews_bx">
+	<div class="pnews_lst01">
+		<ul>
+			
+			<li>
+				<a href="//www.asiae.co.kr/article/2021080911224409987" title="전기? 가솔린? 장점만 섞었다! 최강 PHEV BMW 530e[타볼레오]" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021080913511829370A_1.jpg" alt="전기? 가솔린? 장점만 섞었다! 최강 PHEV BMW 530e[타볼레오]" />
+				</a>
+				<a href="//www.asiae.co.kr/article/2021080911224409987" title="전기? 가솔린? 장점만 섞었다! 최강 PHEV BMW 530e[타볼레오]">
+					<span title="전기? 가솔린? 장점만 섞었다! 최강 PHEV BMW 530e[타볼레오]" class="tit_link">전기? 가솔린? 장점만 섞었다!<br>최강 PHEV BMW 530e[타볼레오]</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="//www.asiae.co.kr/article/2021080909365511111" title="사회복무요원들 &quot;알바생도 맞는데&quot; 백신 접종 차별에 두 번 웁니다" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021022609581896484_1614301098.jpg" alt="사회복무요원들 &quot;알바생도 맞는데&quot; 백신 접종 차별에 두 번 웁니다" />
+				</a>
+				<a href="//www.asiae.co.kr/article/2021080909365511111" title="사회복무요원들 &quot;알바생도 맞는데&quot; 백신 접종 차별에 두 번 웁니다">
+					<span title="사회복무요원들 &quot;알바생도 맞는데&quot; 백신 접종 차별에 두 번 웁니다" class="tit_link">사회복무요원들 "알바생도 맞는데"<br>백신 접종 차별에 두 번 웁니다</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="pnews_lst02">
+		<ul>
+			
+			<li>
+				<a href="//www.asiae.co.kr/article/2021080908593938884" title="4단계·폭염·올림픽 더 뜨거워진 배달전쟁" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021080913305757646A_1.jpg" alt="4단계·폭염·올림픽 더 뜨거워진 배달전쟁" />
+				</a>
+				<a href="//www.asiae.co.kr/article/2021080908593938884" title="4단계·폭염·올림픽 더 뜨거워진 배달전쟁">
+					<span title="4단계·폭염·올림픽 더 뜨거워진 배달전쟁" class="tit_link">4단계·폭염·올림픽<br>더 뜨거워진 배달전쟁</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="//www.asiae.co.kr/article/2021080912052131782" title="GTX 호재 탄 평촌 집값 거침없다 경기 외곽도 들썩" class="thumb">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021080809344267979_1628382882.jpg" alt="GTX 호재 탄 평촌 집값 거침없다 경기 외곽도 들썩" />
+				</a>
+				<a href="//www.asiae.co.kr/article/2021080912052131782" title="GTX 호재 탄 평촌 집값 거침없다 경기 외곽도 들썩">
+					<span title="GTX 호재 탄 평촌 집값 거침없다 경기 외곽도 들썩" class="tit_link">GTX 호재 탄 평촌 집값 거침없다<br>경기 외곽도 들썩</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+							<!--// 메인편집 주요이미지2 4-7 -->
+
+							<!-- 오피니언 -->
+							
+							<div class="opinion_b">
+								<h2 class="tit_h2">
+									<a href="//www.asiae.co.kr/section/opinion" title="오피니언">오피니언</a>
+								</h2>
+
+								<div class="opinion_list">
+									<ul class="opinion_slide">
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080914251253224" title="[광장]랜섬웨어 대유행 '랜데믹 시대', 이젠 안보 위협">
+												<strong>랜섬웨어 대유행 '랜데믹 시대', 이젠 안보 위협</strong>
+												<span class="txt">지금 사이버 공간은 마치 ‘랜데믹(랜섬웨어+팬데믹)’이라는 표현을 써도 과언이 아닐 정도로 수년 동안 ...</span>
+											</a>
+										</li>
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080822004695597" title="[톺아보기]여가부 폐지론, 막으면 끝나나">
+												<strong>여가부 폐지론, 막으면 끝나나</strong>
+												<span class="txt">여성가족부(이하 ‘여가부’) 폐지 주장이 또 나왔다. 여가부가 젠더 이슈를 수단으로 해 젠더 갈등을 조...</span>
+											</a>
+										</li>
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080819484126424" title="[W포럼] 코로나 더불어살기 전략 가능할까">
+												<strong> 코로나 더불어살기 전략 가능할까</strong>
+												<span class="txt">수도권 4단계 거리두기가 연장됐지만 코로나 확진자 수치는 연일 기록을 세우고 있다. ‘변이 바이러스 ...</span>
+											</a>
+										</li>
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080607521972786" title="[시론] 카카오가 韓 톱3 기업이 된 세 가지 이유">
+												<strong> 카카오가 韓 톱3 기업이 된 세 가지 이유</strong>
+												<span class="txt">2021년 8월 자수성가형 창업자 김범수 카카오 의장이 우리나라 주식부자 1위가 됐다는 뉴스는 한국 자본...</span>
+											</a>
+										</li>
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080514132448487" title="[시시비비]EU 탄소국경세 도입의 시사점">
+												<strong>EU 탄소국경세 도입의 시사점</strong>
+												<span class="txt">유럽연합(EU)은 지난달 14일 탄소국경세 제도 도입 계획을 발표했다. 이는 2050년 탄소 중립을 목표로 ...</span>
+											</a>
+										</li>
+										<li class="op_item">
+											<a href="//www.asiae.co.kr/article/opinion-column/2021080515325177808" title="[이목희의 호모폴리티쿠스] 이낙연과 대선 패러다임">
+												<strong> 이낙연과 대선 패러다임</strong>
+												<span class="txt">이낙연 전 더불어민주당 대표의 여론조사 지지율 부침은 흥미로운 분석 대상이다. 올해 초 그는 당선권...</span>
+											</a>
+										</li>
+									</ul>
+
+									<button type="button" class="swiper-button-prev">이전</button>
+									<button type="button" class="swiper-button-next">다음</button>
+								</div>
+
+								<!-- 2020.10.15 kmy 스크립트 추가 -->
+								<script type="text/javascript">
+									var top_thumb = new Swiper('.opinion_list', {
+										slidesPerView: 2,
+										loop: true,
+										wrapperClass: 'opinion_slide',
+										slideClass:'op_item',
+										navigation: {
+											nextEl: '.swiper-button-next',
+											prevEl: '.swiper-button-prev'
+										},
+										autoplay: {
+											delay: 4000
+										}
+									});
+								</script>
+
+								<div class="inbudong">
+									<div class="f_l">
+										<a href="//www.asiae.co.kr/opinion-list/opinion-column" title="아경 칼럼" class="fst">아경 칼럼</a>
+										<a href="//www.asiae.co.kr/opinion-list/satirical-cartoon" title="만평">만평</a>
+									</div>
+
+									<div class="f_r">
+										<a href="//www.asiae.co.kr/news/list.htm?sec=0731" title="인사" class="fst">인사</a>
+										<a href="//www.asiae.co.kr/news/list.htm?sec=0732" title="부고">부고</a>
+										<a href="//www.asiae.co.kr/news/list.htm?sec=0733" title="동정">동정</a>
+									</div>
+								</div>
+							</div>
+
+							<!--// 오피니언 -->
+
+							<div class="grid_mod">
+								<!-- 오늘의 증시 -->
+											<div class="aside_wsty02">
+				<h2 class="tit_h2">
+					<a href="//www.asiae.co.kr/section/stock" title="오늘의 증시">오늘의 <em>증시</em></a>
+				</h2>
+				<div class="data">
+					<strong>08.09 15:30</strong> 장종료				</div>
+
+				<table>
+					<colgroup>
+						<col style="width:24%;" />
+						<col />
+						<col style="width:26%;" />
+						<col style="width:27%;" />
+					</colgroup>
+					<tbody>
+						
+	<tr>
+		<th scope="row"><a href="//www.asiae.co.kr/section/stock" title="코스피">코스피</a></th>
+		<td class="num">3,260.42</td>
+		<td class="d_num c_blue"><em class="i_blut i_blue">하락</em>9.94</td>
+		<td class="percent c_blue">-0.30%</td>
+	</tr>
+
+
+	<tr>
+		<th scope="row"><a href="//www.asiae.co.kr/section/stock" title="코스닥">코스닥</a></th>
+		<td class="num">1,060.00</td>
+		<td class="d_num c_red"><em class="i_blut i_red">상승</em>0.20</td>
+		<td class="percent c_red">+0.02%</td>
+	</tr>
+
+					</tbody>
+				</table>
+				<a href="//www.asiae.co.kr/common/comp_kind/comp_kind2014.htm" target="_blank" title="전종목 시세보기" class="btn_go">
+					<span>전종목 시세보기</span>
+				</a>
+			</div>
+								<!--// 오늘의 증시 -->
+
+								<!-- 코로나 모듈 -->
+									
+	<!-- 코로나차트 0422 -->
+	<div class="aside_wsty03">
+		<h2 class="tit_h2">
+			국내 코로나19 현황
+			<div class="tit_cbtn"><img src="https://cwstatic.asiae.co.kr/asiae_v2/corona/ico_question.png" alt="question" />
+				<span class="cbox"> 출처 : 보건복지부, 질병관리청</br>접종률 : (1차 접종인원/대한민국 인구 약 5,182만)x100</span>
+			</div>
+		</h2>
+		<div class="data">
+			<strong>08.09 00시</strong> 기준
+		</div>
+
+		<table>
+			<colgroup>
+				<col style="width:50%;" />
+				<col style="width:*;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">일일 확진(누계)</th>
+					<td class="d_num c_red"><em class="i_blut i_red">상승</em>1,492 <span class="c_black">(212,448)</span></td>
+				</tr>
+				<tr>
+					<th scope="row">백신 접종률</th>
+					<td class="d_num c_red">40.40%</td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="//www.asiae.co.kr/project-issue-list/issue/2020012309594695715A" title="" class="btn_go">
+			<span>관련기사 보기</span>
+		</a>
+	</div>
+	<!--// 코로나차트 0422 -->								<!-- //코로나 모듈 -->
+
+								<!-- 드링킷 임시삭제-->
+																<!--// 드링킷-->
+							</div>
+
+							<!-- 아시아경제서비스 운세 -->
+							<!-- 2019.10.18 광고태그로 교체 -->
+<div class="lucky_mod">
+	<!-- <h2 class="tit_h2">
+		<a href="//www.asiae.co.kr/fortune/index.htm" title="오프라인 사주를 온라인으로!">오프라인 사주를 온라인으로!</a>
+	</h2>
+	<div class="good_item">
+		<ul>
+			<li>
+				<a href="//www.asiae.co.kr/fortune/saju.htm?v=OVERALL" onclick="ga('send', 'event', '운세', 'click', '정통사주');" target="_blank" title="아시아경제 운세 나의전성기는 언제? 사주를 알면 인생이 보인다! 전통사주 보기">
+					<img src="https://cwstatic.asiae.co.kr/asiae_v2/common/lucky_temp.png" alt="아시아경제 운세 나의전성기는 언제? 사주를 알면 인생이 보인다! 전통사주 보기"/>
+				</a>
+			</li>
+		</ul>
+	</div> -->
+	<SCRIPT type="text/javascript" SRC="https://a1.asiae.co.kr/RealMedia/ads/adstream_jx.ads/www.asiae.co.kr/a_main@Position3"></script>
+</div>
+<!-- 2019.10.18 광고태그로 교체// -->							<!--// 아시아경제서비스 운세-->
+
+						</div>
+					</div>
+					<!--// Right_Contents_Area -->
+				</div>
+				<!--// 뉴스콘텐츠1-->
+
+
+				<div class="cm_cont02">
+				<!-- 아시아경제 기획·이슈 -->
+				
+			<div class="plan_w">
+				<h2>아시아경제 기획·이슈</h2>
+
+				<div class="plan_list">
+					<div class="plan_slide">
+								<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/issue/2021072011235675165A" title="[도쿄올림픽 폐막] 파리 대회를 기약하며">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021072011235675165A_2.jpg" alt="[도쿄올림픽 폐막] 파리 대회를 기약하며">
+					</span>
+					<strong>
+						[도쿄올림픽 폐막] 파리 대회를 기약하며
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021070814095267321A" title="최석진의 법조스토리">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021070814095267321A_1.jpg" alt="최석진의 법조스토리">
+					</span>
+					<strong>
+						최석진의 법조스토리
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021062314440113791A" title="불량코인의 늪">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021062314440113791A_1.jpg" alt="불량코인의 늪">
+					</span>
+					<strong>
+						불량코인의 늪
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021061511293893046A" title="요즘, 신입">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021061511293893046A_1.jpg" alt="요즘, 신입">
+					</span>
+					<strong>
+						요즘, 신입
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021051313334229873A" title="보이스피싱 대해부">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021051313334229873A_1.jpg" alt="보이스피싱 대해부">
+					</span>
+					<strong>
+						보이스피싱 대해부
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021052014411929474A" title="법정서 드러난 가상화폐의 민낯">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021052014411929474A_1.jpg" alt="법정서 드러난 가상화폐의 민낯">
+					</span>
+					<strong>
+						법정서 드러난 가상화폐의 민낯
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2021042015034984115A" title="황재호 교수의 외교 오딧세이">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2021042015034984115A_1.jpg" alt="황재호 교수의 외교 오딧세이">
+					</span>
+					<strong>
+						황재호 교수의 외교 오딧세이
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2019070813533115982A" title="자동차 이야기 \'타볼레오\'">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2020111307434798652_1605221028.jpg" alt="자동차 이야기 \'타볼레오\'">
+					</span>
+					<strong>
+						자동차 이야기 '타볼레오'
+					</strong>
+				</a>
+			</div>		<div class="item_b">
+				<a href="//www.asiae.co.kr/project-issue-list/project/2019071916214072824A" title="히든業스토리">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/108/2019071916214072824A_1.jpg" alt="히든業스토리">
+					</span>
+					<strong>
+						히든業스토리
+					</strong>
+				</a>
+			</div>					</div>
+				</div>
+
+				<a href="//www.asiae.co.kr/project-issue-list/project-issue" title="전체보기" class="btn_more">
+					전체보기
+				</a>
+			</div>
+				<!--// 아시아경제 기획·이슈 -->
+				</div>
+
+				<!-- 뉴스콘텐츠2 -->
+				<div class="cm_cont03">
+					<!-- Left_Contents_Area -->
+					<div class="cl_cont">
+						<div class="section">
+						<!-- 메인편집 주요이미지1-2, 주요기사 -->
+						
+
+<!-- 메인편집 주요이미지1-2 -->
+<h2 class="top_tit">NEWS CHECK</h2>
+<div class="news_article">
+	<a href="//www.asiae.co.kr/article/2021080911241824407" target="" title="가격만 뛸라…탄소배출권 제3자 거래 없던 일로?" class="thumb">
+		<img src="https://cwcontent.asiae.co.kr/asiaresize/200/2021080913333082546A_1.jpg" alt="가격만 뛸라…탄소배출권 제3자 거래 없던 일로?">
+	</a>
+	<div class="t_area">
+		<a href="//www.asiae.co.kr/article/2021080911241824407" target="" title="가격만 뛸라…탄소배출권 제3자 거래 없던 일로?" >가격만 뛸라…탄소배출권 제3자 거래 없던 일로?</a>
+		<span class="txt">
+			환경부 "제3자 수익 극대화시 가격만 올릴 우려, 의견수렴 진행 중" 내부에서도 부정적 기류 변화  다배출업종 '가격 안정성' 확보 꼽아…가격 급등 제어장치 없다면 반대 업계 "거래유동성 활성화 범위 안에서 제3자 참여 이뤄져야"  ...		</span>
+	</div>
+</div>
+<!--// 메인편집 주요이미지1-2 -->
+
+						
+<!--  메인편집 주요기사 스크롤형 -->
+<div class="scro_b scro_hi412">
+	<!-- mCustomScrollbar -->
+	<div id="content-2" class="js_scroll mCustomScrollbar">
+		<div class="inner">
+
+			<ul class="news_list">
+							<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080911240921115"  target="" title="추미애 &quot;보수 연합에 맞서 '더불어민주당·열린민주당' 통합해야&quot;">
+						추미애 "보수 연합에 맞서 '더불어민주당·열린민주당' 통합해야"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080911345269025"  target="" title="살얼음판 걷는 이준석·윤석열… &quot;지도부 공격 전략?&quot; vs &quot;단순 의견 교환&quot;">
+						살얼음판 걷는 이준석·윤석열… "지도부 공격 전략?" vs "단순 의견 교환"
+					</a>
+				</dt>
+				
+								<dd class="desc">
+					
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080909221695424" title="이준석, 윤석열에 경고…&quot;잘못 생각해 주도권 싸움 나서면 갈수록 태산&quot;">이준석, 윤석열에 경고…"잘못 생각해 주도권 싸움 나서면 갈수록 태산"</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080911141943955" title="윤석열 또 저격한 이재명 캠프… 尹측 &quot;집안 단속 먼저 해라&quot;">윤석열 또 저격한 이재명 캠프… 尹측 "집안 단속 먼저 해라"</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910490923571"  target="" title="임기내내 확장재정…차기정부 시작부터 1000兆 부채 부담">
+						임기내내 확장재정…차기정부 시작부터 1000兆 부채 부담
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080910490923571" title="임기내내 확장재정…차기정부 시작부터 1000兆 부채 부담">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080515434165713_1628145821.jpg" alt="임기내내 확장재정…차기정부 시작부터 1000兆 부채 부담" />
+					</a>
+				</dd>
+								<dd class="desc">
+								<strong class="interval">
+				정부 예산이 사상 처음으로 600조원을 넘길 가능성이 커진 것은 코로나19 위기 대응이 계기가 됐다. 자영업자 등 취약계층 지원 대상과 규모가 늘어나면서 재...
+			</strong>
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080909404340113" title="문 정부, 임기말 예산 600兆 넘는다">문 정부, 임기말 예산 600兆 넘는다</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080911292345316"  target="" title="중도 외연확장엔 '뚝심' 경선 편향논란은 '근심'">
+						중도 외연확장엔 '뚝심' 경선 편향논란은 '근심'
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080911292345316" title="중도 외연확장엔 '뚝심' 경선 편향논란은 '근심'">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080210113259650_1627866692.jpg" alt="중도 외연확장엔 '뚝심' 경선 편향논란은 '근심'" />
+					</a>
+				</dd>
+								<dd class="desc">
+								<strong class="interval">
+				 "민주라는 이름만 빼고 다 바꿀 수 있어야 한다"(4월 15일 당 대표 출마 선언 때) ‘당명 빼고 다 바꾸...
+			</strong>
+					
+			   <ul class="related_new">
+
+				   <li><a href="//www.asiae.co.kr/article/2021080910031845355" title="메타버스에서 아바타로 대선 토론?…송영길 &quot;부탁해보겠다&quot;">메타버스에서 아바타로 대선 토론?…송영길 "부탁해보겠다"</a></li>
+
+				   <li><a href="//www.asiae.co.kr/article/2021080909384325505" title="송영길 &quot;핵 ICBM 현실화될 수 있다…즉각 북미대화 필요&quot;">송영길 "핵 ICBM 현실화될 수 있다…즉각 북미대화 필요"</a></li>
+
+			   </ul>
+
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910350552473"  target="" title="4인가구 '585.1만원 이하' 미취업 청년에 '최대 300만원' 구직수당">
+						4인가구 '585.1만원 이하' 미취업 청년에 '최대 300만원' 구직수당
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080914231947736"  target="" title="'아내 폭행 혐의' 이정훈 강동구청장 형사처분 면해">
+						'아내 폭행 혐의' 이정훈 강동구청장 형사처분 면해
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080913221210553"  target="" title="북한, &quot;코로나19·대북제재 장기화·수해 '삼중고' 전쟁 버금 가는 상황&quot;">
+						북한, "코로나19·대북제재 장기화·수해 '삼중고' 전쟁 버금 가는 상황"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item1">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080908304376102"  target="" title="'15년 장수 제품' 애플 셋톱박스…혁신 부재에 위기론">
+						'15년 장수 제품' 애플 셋톱박스…혁신 부재에 위기론
+					</a>
+				</dt>
+								<dd class="thumb">
+					<a href="//www.asiae.co.kr/article/2021080908304376102" title="'15년 장수 제품' 애플 셋톱박스…혁신 부재에 위기론">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2016052708420175269_1.jpg" alt="'15년 장수 제품' 애플 셋톱박스…혁신 부재에 위기론" />
+					</a>
+				</dd>
+								<dd class="desc  pt10">
+								<strong class="interval">
+				 2007년 첫 출시 이후 약 15년의 제품 역사를 자랑하는 애플의 셋톱박스 '애플TV'가 온라인 스트리밍 중심의 시장 변화 속에서 한계에 직면했다는 비판이 나왔다. 9일 블룸버그통신의 마크 거만은 '파워 온' 뉴스...
+			</strong>
+					
+				</dd>
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910440203863"  target="" title="불붙은 경매시장…인천 아파트 낙찰가율 118.5% ‘역대 최고’">
+						불붙은 경매시장…인천 아파트 낙찰가율 118.5% ‘역대 최고’
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080911153254368"  target="" title="中, 바이든의 홍콩 비판에 &quot;악랄한 표현으로 중국 내정에 또 간섭&quot;">
+						中, 바이든의 홍콩 비판에 "악랄한 표현으로 중국 내정에 또 간섭"
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080911080381081"  target="" title="베트남, 하루 확진자 1만명 육박…글로벌 공급망 타격">
+						베트남, 하루 확진자 1만명 육박…글로벌 공급망 타격
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			<li>
+			<dl  class="news_item2">
+				<dt>
+					<a href="//www.asiae.co.kr/article/2021080910411785102"  target="" title="식당 근로자 임금 15달러 첫 돌파...인플레 장기화 우려 ">
+						식당 근로자 임금 15달러 첫 돌파...인플레 장기화 우려 
+					</a>
+				</dt>
+				
+				
+			</dl>
+			</li>			</ul>
+		</div>
+	</div>
+</div>
+<!--//  메인편집 주요기사 스크롤형 -->
+
+						<!-- 메인편집 주요이미지1-2, 주요기사 -->
+						</div>
+					</div>
+					<!--// Left_Contents_Area -->
+
+					<!-- Right_Contents_Area -->
+					<div class="cr_cont">
+						<div class="fav_news">
+							<!-- 가장 많이 본 뉴스 -->
+							
+	<div class="rank_news">
+		<h2>
+			<a href="//www.asiae.co.kr/ranking/all" title="가장 많이본 뉴스">가장 많이본 뉴스</a>
+		</h2>
+
+		<div class="tab_rank">
+		<ul>
+			<li class="on"><a href="#tabContent01" title="">1-5</a></li>
+			<li class=""><a href="#tabContent02" title="">6-10</a></li>
+			<li class=""><a href="#tabContent03" title="">11-15</a></li>
+			<li class=""><a href="#tabContent04" title="">16-20</a></li>
+		</ul>
+		</div>
+
+
+		 <div id="tabContent01" class="tab_cont" style="display: none;">
+			<ul class="list_b">
+								<li>
+					<span class="num">01</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909494607153" title="김응용 회장 &quot;韓야구 반성해야...초등학생도 방역 수칙 지킨다&quot;">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080909343568879_1628469275.jpeg" alt="김응용 회장 &quot;韓야구 반성해야...초등학생도 방역 수칙 지킨다&quot;" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909494607153" title="김응용 회장 &quot;韓야구 반성해야...초등학생도 방역 수칙 지킨다&quot;">
+							김응용 회장 "韓야구 반성해야...초등학생도 방역 수칙 지킨다"
+						</a>
+						<span>
+							<em class="name">연예·스포츠</em>
+							<em class="data">08.09 09:51</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">02</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080907512434961" title="단돈 3500원…침 뱉고 1시간이면 어떤 코로나 걸렸는지 알 수 있다">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080907471968581_1628462839.jpg" alt="단돈 3500원…침 뱉고 1시간이면 어떤 코로나 걸렸는지 알 수 있다" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080907512434961" title="단돈 3500원…침 뱉고 1시간이면 어떤 코로나 걸렸는지 알 수 있다">
+							단돈 3500원…침 뱉고 1시간이면 어떤 코로나 걸렸는지 알 수 있다
+						</a>
+						<span>
+							<em class="name">국제</em>
+							<em class="data">08.09 07:49</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">03</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080911313351781" title="서울 아파트 매매 하루 10여건…금융위기 때보다 심한 거래절벽">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080911061269261_1628474772.jpg" alt="서울 아파트 매매 하루 10여건…금융위기 때보다 심한 거래절벽" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080911313351781" title="서울 아파트 매매 하루 10여건…금융위기 때보다 심한 거래절벽">
+							서울 아파트 매매 하루 10여건…금융위기 때보다 심한 거래절벽
+						</a>
+						<span>
+							<em class="name">부동산</em>
+							<em class="data">08.09 11:29</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">04</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909404340113" title="문 정부, 임기말 예산 600兆 넘는다">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080911071869268_1628474838.jpg" alt="문 정부, 임기말 예산 600兆 넘는다" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909404340113" title="문 정부, 임기말 예산 600兆 넘는다">
+							문 정부, 임기말 예산 600兆 넘는다
+						</a>
+						<span>
+							<em class="name">경제</em>
+							<em class="data">08.09 12:44</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">05</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080918515662798" title="법무부 810명 8·15 광복절 가석방 … 이재용 부회장 포함">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021061808010985412_1623970870.png" alt="법무부 810명 8·15 광복절 가석방 … 이재용 부회장 포함" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080918515662798" title="법무부 810명 8·15 광복절 가석방 … 이재용 부회장 포함">
+							법무부 810명 8·15 광복절 가석방 … 이재용 부회장 포함
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 18:50</em>
+						</span>
+					</p>
+				</li>			</ul>
+		</div>
+
+		<div id="tabContent02" class="tab_cont" style="display: none;">
+			<ul class="list_b">
+								<li>
+					<span class="num">06</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909221695424" title="이준석, 윤석열에 경고…&quot;잘못 생각해 주도권 싸움 나서면 갈수록 태산&quot;">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080913543269458_1628484872.jpg" alt="이준석, 윤석열에 경고…&quot;잘못 생각해 주도권 싸움 나서면 갈수록 태산&quot;" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909221695424" title="이준석, 윤석열에 경고…&quot;잘못 생각해 주도권 싸움 나서면 갈수록 태산&quot;">
+							이준석, 윤석열에 경고…"잘못 생각해 주도권 싸움 나서면 갈수록 태산"
+						</a>
+						<span>
+							<em class="name">정치</em>
+							<em class="data">08.09 11:30</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">07</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080912052131782" title="GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080911135669306_1628475237.jpg" alt="GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080912052131782" title="GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩">
+							GTX 호재 탄 평촌 집값 거침없다…경기 외곽도 들썩
+						</a>
+						<span>
+							<em class="name">부동산</em>
+							<em class="data">08.09 12:04</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">08</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080821364080345" title="&quot;고교 유도부 선배 4명이 후배에 폭력…전치 32주 중상 입어&quot;">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080821131368391_1628424794.jpg" alt="&quot;고교 유도부 선배 4명이 후배에 폭력…전치 32주 중상 입어&quot;" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080821364080345" title="&quot;고교 유도부 선배 4명이 후배에 폭력…전치 32주 중상 입어&quot;">
+							"고교 유도부 선배 4명이 후배에 폭력…전치 32주 중상 입어"
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.08 21:39</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">09</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909365511111" title="“알바생들도 맞는다는데…” 백신 접종 차별에 두 번 우는 사회복무요원들">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021022609581896484_1614301098.jpg" alt="“알바생들도 맞는다는데…” 백신 접종 차별에 두 번 우는 사회복무요원들" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909365511111" title="“알바생들도 맞는다는데…” 백신 접종 차별에 두 번 우는 사회복무요원들">
+							“알바생들도 맞는다는데…” 백신 접종 차별에 두 번 우는 사회복무요원들
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 12:30</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">10</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080914472884749" title="정은경 &quot;AZ백신 18세 이상 허가…백신 수급·유행 상황 따라 허가 범위 내 접종 가능&quot; ">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021061808010985412_1623970870.png" alt="정은경 &quot;AZ백신 18세 이상 허가…백신 수급·유행 상황 따라 허가 범위 내 접종 가능&quot; " />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080914472884749" title="정은경 &quot;AZ백신 18세 이상 허가…백신 수급·유행 상황 따라 허가 범위 내 접종 가능&quot; ">
+							정은경 "AZ백신 18세 이상 허가…백신 수급·유행 상황 따라 허가 범위 내 접종 가능" 
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 14:45</em>
+						</span>
+					</p>
+				</li>			</ul>
+		</div>
+
+		<div id="tabContent03" class="tab_cont" style="display: none;">
+			<ul class="list_b">
+								<li>
+					<span class="num">11</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080821302573495" title="태풍 '루핏' 간접영향 동해안 큰 비…영동은 밤까지">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080111073958528_1627783659.jpg" alt="태풍 '루핏' 간접영향 동해안 큰 비…영동은 밤까지" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080821302573495" title="태풍 '루핏' 간접영향 동해안 큰 비…영동은 밤까지">
+							태풍 '루핏' 간접영향 동해안 큰 비…영동은 밤까지
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.08 21:28</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">12</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080910225577596" title="오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 ">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080910153069073_1628471731.jpg" alt="오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 " />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080910225577596" title="오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 ">
+							오늘부터 8PM '클릭전쟁'…백신 사전예약 10부제, 먹통 해결할까 
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 11:33</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">13</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080907264913415" title="&quot;전광훈 광복절 집회 막아달라&quot; 코로나 시국에 집회 예고…시민들 '분통'">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2020081716223829121_1597648959.jpg" alt="&quot;전광훈 광복절 집회 막아달라&quot; 코로나 시국에 집회 예고…시민들 '분통'" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080907264913415" title="&quot;전광훈 광복절 집회 막아달라&quot; 코로나 시국에 집회 예고…시민들 '분통'">
+							"전광훈 광복절 집회 막아달라" 코로나 시국에 집회 예고…시민들 '분통'
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 07:25</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">14</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080915202282139" title="&quot;우리 선수들은 왜 안 보이죠?&quot;…도쿄올림픽 폐막식 '韓 패싱' 논란">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080914431669587_1628487796.jpg" alt="&quot;우리 선수들은 왜 안 보이죠?&quot;…도쿄올림픽 폐막식 '韓 패싱' 논란" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080915202282139" title="&quot;우리 선수들은 왜 안 보이죠?&quot;…도쿄올림픽 폐막식 '韓 패싱' 논란">
+							"우리 선수들은 왜 안 보이죠?"…도쿄올림픽 폐막식 '韓 패싱' 논란
+						</a>
+						<span>
+							<em class="name">국제</em>
+							<em class="data">08.09 15:21</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">15</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909565584197" title="갤럭시 S21 울트라 지원금 다시 70만원…아이폰12 미니도 풀려">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021040608041966878_1617663859.jpg" alt="갤럭시 S21 울트라 지원금 다시 70만원…아이폰12 미니도 풀려" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909565584197" title="갤럭시 S21 울트라 지원금 다시 70만원…아이폰12 미니도 풀려">
+							갤럭시 S21 울트라 지원금 다시 70만원…아이폰12 미니도 풀려
+						</a>
+						<span>
+							<em class="name">산업·IT</em>
+							<em class="data">08.09 09:55</em>
+						</span>
+					</p>
+				</li>			</ul>
+		</div>
+
+		<div id="tabContent04" class="tab_cont" style="display: none;">
+			<ul class="list_b">
+								<li>
+					<span class="num">16</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080908000260429" title="김근식 &quot;홍준표, 최재형과 품격 차이…막말 계속하면 지지층 최재형에 옮겨갈 것&quot;">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080413242563395_1628051065.jpeg" alt="김근식 &quot;홍준표, 최재형과 품격 차이…막말 계속하면 지지층 최재형에 옮겨갈 것&quot;" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080908000260429" title="김근식 &quot;홍준표, 최재형과 품격 차이…막말 계속하면 지지층 최재형에 옮겨갈 것&quot;">
+							김근식 "홍준표, 최재형과 품격 차이…막말 계속하면 지지층 최재형에 옮겨갈 것"
+						</a>
+						<span>
+							<em class="name">정치</em>
+							<em class="data">08.09 08:05</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">17</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080908322682188" title="이준석 &quot;尹이 당행사 보이콧 동참 요청한 것으로 알고 있어...그리고선 '후쿠시마 발언'&quot;">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080908222968645_1628464949.jpeg" alt="이준석 &quot;尹이 당행사 보이콧 동참 요청한 것으로 알고 있어...그리고선 '후쿠시마 발언'&quot;" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080908322682188" title="이준석 &quot;尹이 당행사 보이콧 동참 요청한 것으로 알고 있어...그리고선 '후쿠시마 발언'&quot;">
+							이준석 "尹이 당행사 보이콧 동참 요청한 것으로 알고 있어...그리고선 '후쿠시마 발언'"
+						</a>
+						<span>
+							<em class="name">정치</em>
+							<em class="data">08.09 09:08</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">18</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080907543047367" title="생수 24병 주문하고 &quot;싱거워요&quot;…'별점테러' 남긴 손님">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080908590268746_1628467142.png" alt="생수 24병 주문하고 &quot;싱거워요&quot;…'별점테러' 남긴 손님" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080907543047367" title="생수 24병 주문하고 &quot;싱거워요&quot;…'별점테러' 남긴 손님">
+							생수 24병 주문하고 "싱거워요"…'별점테러' 남긴 손님
+						</a>
+						<span>
+							<em class="name">사회</em>
+							<em class="data">08.09 08:00</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">19</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080909213685581" title="&quot;너희 기쁘라고 한 것 아냐&quot; 전신 98% 타투 모델 악플러에 일침">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080909122268781_1628467942.png" alt="&quot;너희 기쁘라고 한 것 아냐&quot; 전신 98% 타투 모델 악플러에 일침" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080909213685581" title="&quot;너희 기쁘라고 한 것 아냐&quot; 전신 98% 타투 모델 악플러에 일침">
+							"너희 기쁘라고 한 것 아냐" 전신 98% 타투 모델 악플러에 일침
+						</a>
+						<span>
+							<em class="name">국제</em>
+							<em class="data">08.09 09:28</em>
+						</span>
+					</p>
+				</li>				<li>
+					<span class="num">20</span>
+										<p class="thumb">
+						<a href="//www.asiae.co.kr/article/2021080912180347286" title="'마지막 날 1개 차이 역전' 美도 버거운 中과의 금메달 경쟁">
+							<img src="https://cwcontent.asiae.co.kr/asiaresize/171/2021080911522469363_1628477544.jpg" alt="'마지막 날 1개 차이 역전' 美도 버거운 中과의 금메달 경쟁" />
+						</a>
+					</p>
+					<p class="txt">
+						<a href="//www.asiae.co.kr/article/2021080912180347286" title="'마지막 날 1개 차이 역전' 美도 버거운 中과의 금메달 경쟁">
+							'마지막 날 1개 차이 역전' 美도 버거운 中과의 금메달 경쟁
+						</a>
+						<span>
+							<em class="name">국제</em>
+							<em class="data">08.09 13:18</em>
+						</span>
+					</p>
+				</li>			</ul>
+		</div>
+	</div>
+
+							<!--// 가장 많이 본 뉴스 -->
+
+							<!-- 포토 인기뉴스 -->
+									<div class="photo_rank">
+			<h2>
+				<a href="//www.asiae.co.kr/ranking/photo-video" title="포토·영상 인기뉴스">포토 인기뉴스</a>
+			</h2>
+			<ul class="pho_listb">
+				
+		<li class="big_pho">
+			<a href="//www.asiae.co.kr/visual-view/2021080915000343059" title="">
+				<img src="https://cwcontent.asiae.co.kr/asiaresize/218/2021080914571369624_1628488633.jpg" alt="" />
+				<strong>
+					<span class="t_wrap">
+						<em>1</em>
+						 '발리 여신'
+					</span>
+				</strong>
+			</a>
+		</li>
+		<li class="sm_pho02">
+			<a href="//www.asiae.co.kr/visual-view/2021080915223405943" title="">
+				<img src="https://cwcontent.asiae.co.kr/asiaresize/20/2021080915173469723_1628489855.jpg" alt="" />
+				<strong>
+					<span class="t_wrap">
+						<em>2</em>
+						 유은혜, 2학기 학사 운영 방안 발
+					</span>
+				</strong>
+			</a>
+		</li>
+		<li class="sm_pho02">
+			<a href="//www.asiae.co.kr/visual-view/2021080915055680975" title="">
+				<img src="https://cwcontent.asiae.co.kr/asiaresize/20/2021080915020569646_1628488925.jpg" alt="" />
+				<strong>
+					<span class="t_wrap">
+						<em>3</em>
+						 김소연 '독보적 카리스마'
+					</span>
+				</strong>
+			</a>
+		</li>			</ul>
+		</div>
+
+							<!--// 포토 인기뉴스 -->
+						</div>
+					</div>
+					<!--// Right_Contents_Area -->
+				</div>
+				<!--// 뉴스콘텐츠2 -->
+
+
+
+				<!-- 연예·스포츠 -->
+				<div class="cm_cont05">
+					<div class="inner_b">
+													<h2><a href="//www.asiae.co.kr/section/entertainment-sports" title="연예·스포츠">연예·스포츠</a></h2>
+												<div class="section01">
+							<!-- Left -->
+							<div class="cl_cont">
+								<!-- 주요이미지1-3 -->
+								
+<div class="news_article">
+	<a href="//www.asiae.co.kr/article/2021080909455467016" target="" title="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들" class="thumb">
+		<img src="https://cwcontent.asiae.co.kr/asiaresize/275/2021080812355168197_1628393752.jpg" alt="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들">
+	</a>
+	<div class="t_area">
+		<a href="//www.asiae.co.kr/article/2021080909455467016" title="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들">
+			김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들		</a>
+	</div>
+</div>
+
+								<!--// 주요이미지1-3 -->
+							</div>
+							<!--// Left -->
+
+							<!-- Right -->
+							<div class="cr_cont">
+								<!-- 많이본뉴스 연예스포츠1-5 -->
+								
+		<div class="aside_pho">
+			<ul>
+						<li class="big_pho">
+				<a href="//www.asiae.co.kr/article/2021080909494607153" title="김응용 회장 &quot;韓야구 반성해야...초등학생도 방역 수칙 지킨다&quot;">
+					<em class="number">1</em>
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/93/2021080909343568879_1628469275.jpeg" alt="김응용 회장 &quot;韓야구 반성해야...초등학생도 방역 수칙 지킨다&quot;">
+					</span>
+					<span class="t_area">
+					김응용 회장 "韓야구 반성해야...초등학생도 방역 수...
+					</span>
+				</a>
+			</li>
+			<li class="big_pho">
+				<a href="//www.asiae.co.kr/article/2021080909083807472" title="눈물의 고별식 메시 &quot;커리어에서 가장 힘든 순간&quot; (종합)">
+					<em class="number">2</em>
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/93/2021080911020569231_1628474525.jpg" alt="눈물의 고별식 메시 &quot;커리어에서 가장 힘든 순간&quot; (종합)">
+					</span>
+					<span class="t_area">
+					눈물의 고별식 메시 "커리어에서 가장 힘든 순간" (종...
+					</span>
+				</a>
+			</li>
+			<li class="sm_pho">
+				<a href="//www.asiae.co.kr/article/2021080907315532969" title="눈물 흘린 메시 &quot;커리어에서 가장 힘든 순간&quot;">
+					<em class="number">3</em>
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/93/2021080907152568511_1628460925.jpg" alt="눈물 흘린 메시 &quot;커리어에서 가장 힘든 순간&quot;">
+					</span>
+					<span class="t_area">
+					눈물 흘린 메시 "커리어에서 가장 힘든 순간"
+					</span>
+				</a>
+			</li>
+			<li class="sm_pho">
+				<a href="//www.asiae.co.kr/article/2021080915000343059" title=" '발리 여신'">
+					<em class="number">4</em>
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/93/2021080914571369624_1628488633.jpg" alt=" '발리 여신'">
+					</span>
+					<span class="t_area">
+					 '발리 여신'
+					</span>
+				</a>
+			</li>
+			<li class="sm_pho">
+				<a href="//www.asiae.co.kr/article/2021080915055680975" title=" 김소연 '독보적 카리스마'">
+					<em class="number">5</em>
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/93/2021080915020569646_1628488925.jpg" alt=" 김소연 '독보적 카리스마'">
+					</span>
+					<span class="t_area">
+					 김소연 '독보적 카리스마'
+					</span>
+				</a>
+			</li>
+			</ul>
+		</div>
+								<!--// 많이본뉴스 연예스포츠1-5 -->
+							</div>
+							<!--// Right -->
+						</div>
+
+						<!-- 연예스포츠 최신 -->
+						<div class="section02">
+									<!-- Left -->
+		<div class="cl_cont">
+			<ul class="e_pholst">
+				
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080915055680975" title="[포토] 김소연 '독보적 카리스마'">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080915020569646_1628488925.jpg" alt="[포토] 김소연 '독보적 카리스마'">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080915055680975" title="[포토] 김소연 '독보적 카리스마'">
+						 김소연 '독보적 카리스마'
+					</a>
+					<span>
+						 배우 김소연이 화보 사진을 공개했다. 그는 8일 인스타그램에 여러 장의 사진을 올렸다. 사진 속에는 모델로 활동 중인...
+					</span>
+				</p>
+			</li>
+
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080915000846103" title="김정배 차관, 인천공항 찾아 올림픽 선수단 환영">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021060111590959767_1622516349.jpg" alt="김정배 차관, 인천공항 찾아 올림픽 선수단 환영">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080915000846103" title="김정배 차관, 인천공항 찾아 올림픽 선수단 환영">
+						김정배 차관, 인천공항 찾아 올림픽 선수단 환영
+					</a>
+					<span>
+						김정배 문화체육관광부 제2차관은 9일 오후 7시 55분 인천국제공항에서 2020 도쿄올림픽을 마치고 입국하는 국가대표 선...
+					</span>
+				</p>
+			</li>
+
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080915000343059" title="[포토] '발리 여신'">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080914571369624_1628488633.jpg" alt="[포토] '발리 여신'">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080915000343059" title="[포토] '발리 여신'">
+						 '발리 여신'
+					</a>
+					<span>
+						 그룹 애프터스쿨 출신 가희가 발리에서 섹시한 수영복 몸매를 뽐냈다. 가희는 9일 자신의 인스타그램에 한 개의 영상을...
+					</span>
+				</p>
+			</li>
+			</ul>
+		</div>
+		<!--// Left -->
+
+		<!-- Right -->
+		<div class="cr_cont">
+			<ul class="e_pholst">
+				
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080909083807472" title="눈물의 고별식 메시 &quot;커리어에서 가장 힘든 순간&quot; (종합)">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080911020569231_1628474525.jpg" alt="눈물의 고별식 메시 &quot;커리어에서 가장 힘든 순간&quot; (종합)">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080909083807472" title="눈물의 고별식 메시 &quot;커리어에서 가장 힘든 순간&quot; (종합)">
+						눈물의 고별식 메시 "커리어에서 가장 힘든 순간" (종합)
+					</a>
+					<span>
+						 리오넬 메시가 지난 20여 년간 몸담은 FC바르셀로나를 떠나면서 연 기자회견에서 결국 눈물을 흘렸다. 8일(현지시간) ...
+					</span>
+				</p>
+			</li>
+
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080909455467016" title="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080812355168197_1628393752.jpg" alt="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080909455467016" title="김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들">
+						김연경·이대훈…도쿄에서 태극마크 내려놓는 영웅들
+					</a>
+					<span>
+						 국민들을 웃고 울게 만들었던 17일간의 올림픽 대장정을 마치고 태극마크를 내려놓는 스포츠 영웅들이 있다. 여자 배구...
+					</span>
+				</p>
+			</li>
+
+			<li>
+							<p class="thumb">
+				<a href="//www.asiae.co.kr/article/2021080910165031645" title="이제 우리의 눈은 파리를 향한다">
+					<img src="https://cwcontent.asiae.co.kr/asiaresize/37/2021080910295169139_1628472592.jpg" alt="이제 우리의 눈은 파리를 향한다">
+				</a>
+			</p>
+				<p class="t_area">
+					<a href="//www.asiae.co.kr/article/2021080910165031645" title="이제 우리의 눈은 파리를 향한다">
+						이제 우리의 눈은 파리를 향한다
+					</a>
+					<span>
+						이제 선수들의 눈은 파리를 향한다. 도쿄의 경험을 교훈 삼아 더 나은 성적을 준비한다. 대한체육회는 종목 단체와 협의...
+					</span>
+				</p>
+			</li>
+			</ul>
+		</div>
+		<!--// Right -->
+
+						</div>
+						<!--// 연예스포츠 최신 -->
+
+						<!-- 인기뉴스 전체보기 버튼-->
+						<a href="//www.asiae.co.kr/ranking/entertainment-sports" title="인기뉴스 전체보기" class="btn_more">
+							인기뉴스 전체보기
+						</a>
+						<!--// 인기뉴스 전체보기 버튼-->
+					</div>
+				</div>
+				<!--// 연예·스포츠 -->
+
+				<!--Family Site -->
+				<div class="main_photo_wrap">
+									<div class="main_photo_box">
+						<h2>Family Site</h2>
+						<!-- NC_NRN_Box -->
+			            <div class="nc_nrn">
+			                <div class="thumb_area">
+			                    <div id="top_thumb">
+			                        <ul class="nc_area">
+			                        	<li class="nc_box">
+			<div>
+				<a href="https://nc.asiae.co.kr/view.htm?idxno=2021080917310660574" target="_blank" title="'무한도전' 김태호PD, 노홍철·비와 넷플릭스 예능 제작" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080917285070049_1628497730.jpg" alt="'무한도전' 김태호PD, 노홍철·비와 넷플릭스 예능 제작"/>
+					</span>
+					<em class="txt_sm nc_txt">뉴스컬처</em>
+					<strong class="tit">
+					'무한도전' 김태호PD, 노홍철·비와 넷플릭스 예능 제작
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://nc.asiae.co.kr/view.htm?idxno=2021080916464563767" target="_blank" title="온앤오프, 1번부터 5번 트랙까지 여름종결자" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080916031069965_1628492590.jpg" alt="온앤오프, 1번부터 5번 트랙까지 여름종결자"/>
+					</span>
+					
+					<strong class="tit">
+					온앤오프, 1번부터 5번 트랙까지 여름종결자
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://nc.asiae.co.kr/view.htm?idxno=2021080909545864867" target="_blank" title="[포토뉴스]'여름 쏙' 저격하는 온앤오프" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080916024669964_1628492567.jpg" alt="[포토뉴스]'여름 쏙' 저격하는 온앤오프"/>
+					</span>
+					
+					<strong class="tit">
+					[포토뉴스]'여름 쏙' 저격하는 온앤오프
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://nc.asiae.co.kr/view.htm?idxno=2021080915160344169" target="_blank" title="'싱크홀' 로카르노 호평→亞13개국 판매" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080915554169948_1628492140.jpg" alt="'싱크홀' 로카르노 호평→亞13개국 판매"/>
+					</span>
+					
+					<strong class="tit">
+					'싱크홀' 로카르노 호평→亞13개국 판매
+					</strong>
+				</a>
+			</div>
+</li><li class="nc_box">
+			<div>
+				<a href="https://dk.asiae.co.kr/article/2021080410261964777" target="_blank" title="지평 막걸리와 쉐이크 쉑이 만나면? " rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080509084664534_1628122125.jpg" alt="지평 막걸리와 쉐이크 쉑이 만나면? "/>
+					</span>
+					<em class="txt_sm dk_txt">드링킷</em>
+					<strong class="tit">
+					지평 막걸리와 쉐이크 쉑이 만나면? 
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://dk.asiae.co.kr/article/2021072908092164527" target="_blank" title="머리카락이 쭈뼛! 뒤통수가 서늘해지는 공포 영화" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080520510766063_1628164267.jpg" alt="머리카락이 쭈뼛! 뒤통수가 서늘해지는 공포 영화"/>
+					</span>
+					
+					<strong class="tit">
+					머리카락이 쭈뼛! 뒤통수가 서늘해지는 공포 영화
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://dk.asiae.co.kr/article/2021080114542801787" target="_blank" title="뜨거운 여름을 짜릿하게! 코카콜라 썸머 굿즈" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080116121558778_1627801936.png" alt="뜨거운 여름을 짜릿하게! 코카콜라 썸머 굿즈"/>
+					</span>
+					
+					<strong class="tit">
+					뜨거운 여름을 짜릿하게! 코카콜라 썸머 굿즈
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://dk.asiae.co.kr/article/2021080216150109897" target="_blank" title="현지 감성 듬뿍 담긴 을지로 베트남 음식 맛집" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080313395861871_1627965598.jpg" alt="현지 감성 듬뿍 담긴 을지로 베트남 음식 맛집"/>
+					</span>
+					
+					<strong class="tit">
+					현지 감성 듬뿍 담긴 을지로 베트남 음식 맛집
+					</strong>
+				</a>
+			</div>
+</li>			                        	
+		<li class="nc_box">
+
+			<div>
+				<a href="https://lk.asiae.co.kr/article/2021080317322900476" target="_blank" title="소코도모를 닮은 모양 ‘뫼비우스의 띠’" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021072910515855281_1627523518.png" alt="소코도모를 닮은 모양 ‘뫼비우스의 띠’"/>
+					</span>
+					<em class="txt_sm lk_txt">라이킷</em>
+					<strong class="tit">
+					소코도모를 닮은 모양 ‘뫼비우스의 띠’
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://lk.asiae.co.kr/article/2021080511030385178" target="_blank" title="올림픽 종목에 ‘칼퇴’가? 주목받는 그림 문자" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021080511003765057_1628128838.png" alt="올림픽 종목에 ‘칼퇴’가? 주목받는 그림 문자"/>
+					</span>
+					
+					<strong class="tit">
+					올림픽 종목에 ‘칼퇴’가? 주목받는 그림 문자
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://lk.asiae.co.kr/article/2021051817322734238" target="_blank" title="남자, 피부를 보호하다" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021051410465535813_1620956815.png" alt="남자, 피부를 보호하다"/>
+					</span>
+					
+					<strong class="tit">
+					남자, 피부를 보호하다
+					</strong>
+				</a>
+			</div>
+
+			<div>
+				<a href="https://lk.asiae.co.kr/article/2021072209324037435" target="_blank" title="애플워치, 도대체 왜 쓰는 거죠?" rel="nofollow">
+					<span class="thumb">
+						<img src="https://cwcontent.asiae.co.kr/asiaresize/272/2021072309100146431_1626999001.png" alt="애플워치, 도대체 왜 쓰는 거죠?"/>
+					</span>
+					
+					<strong class="tit">
+					애플워치, 도대체 왜 쓰는 거죠?
+					</strong>
+				</a>
+			</div>
+
+		</li>
+			                        </ul>
+			                    </div>
+
+			                    <button type="button" class="swiper-button-prev btn_prev">
+			                        <span>이전</span>
+			                    </button>
+			                    <button type="button" class="swiper-button-next btn_next">
+			                        <span>다음</span>
+			                    </button>
+			                </div>
+
+
+			            	</div>
+
+				            <script type="text/javascript">
+				                var top_thumb = new Swiper('#top_thumb', {
+				                    slidesPerView: 1,
+				                    loop: true,
+				                    wrapperClass: 'nc_area',
+				                    slideClass:'nc_box',
+				                    pagination: {
+				                        el: '.thumb_tab',
+				                        clickable: true
+				                    },
+				                    navigation: {
+				                        nextEl: '.swiper-button-next',
+				                        prevEl: '.swiper-button-prev'
+				                    },
+				                    autoplay: {
+				                        delay: 4000,
+				                    }
+				                });
+				            </script>
+			            <!--// NC_NRN_Box -->
+
+						<!-- 셀렉트박스 부분 -->
+						<div class="in_box">
+							<fieldset>
+								<legend>검색영역</legend>
+								<dl class="dropdown">
+							        <dt>
+							        	<a href="javascript:;"><span>사이트 바로가기</span></a>
+							        </dt>
+							        <dd>
+							            <div class="inner">
+						            		<div class="s_b">
+									            <ul>
+									                <li>
+									                	<a href="https://nc.asiae.co.kr" title="뉴스컬처" target="_blank" class="txt_b" rel="nofollow">
+									                		<strong><em>뉴스컬처</em></strong>
+									                	</a>
+									                </li>
+									                <li>
+									                	<a href="https://www.youtube.com/channel/UChNA0DhntejS8QzU2BW39zQ" title="엔씨엘" target="_blank" class="txt_b" rel="nofollow">
+									                		<strong><em>엔씨엘</em></strong>
+									                	</a>
+									                </li>
+									                <li>
+									                	<a href="https://www.youtube.com/channel/UC3pk0eDcZx_oYGCWNyJpjMQ" title="나돌" target="_blank" class="txt_b" rel="nofollow">
+									                		<strong><em>나돌</em></strong>
+									                	</a>
+									                </li>
+									                <li>
+									                	<a href="https://dk.asiae.co.kr" title="드링킷" target="_blank" class="txt_b">
+									                		<strong><em>드링킷</em></strong>
+									                	</a>
+									                </li>
+									                <li>
+									                	<a href="https://lk.asiae.co.kr" title="라이킷" target="_blank" class="txt_b" rel="nofollow">
+									                		<strong><em>라이킷</em></strong>
+									                	</a>
+									                </li>
+									            </ul>
+								        	</div>
+										</div>
+							        </dd>
+							    </dl>
+							</fieldset>
+						</div>
+						<!--// 셀렉트박스 부분 -->
+					</div>
+
+				</div>
+				<!--// Family Site -->
+
+				<!-- Dable Module -->
+				<!-- <div class="cm_cont06">
+					<div class="inner_b"> -->
+						<!-- Begin Dable 하A_가로5Ca_EMPTY / For inquiries, visit http://dable.io -->
+						<!-- <div id="dablewidget_plqQAWlO" data-widget_id="plqQAWlO">
+						<script>
+						(function(d,a,b,l,e,_) {
+						if(d[b]&&d[b].q)return;d[b]=function(){(d[b].q=d[b].q||[]).push(arguments)};e=a.createElement(l);
+						e.async=1;e.charset='utf-8';e.src='//static.dable.io/dist/plugin.min.js';
+						_=a.getElementsByTagName(l)[0];_.parentNode.insertBefore(e,_);
+						})(window,document,'dable','script');
+						dable('setService', 'asiae.co.kr');
+						dable('sendLogOnce');
+						dable('renderWidget', 'dablewidget_plqQAWlO');
+						</script>
+						</div> -->
+						<!-- End 하A_가로5Ca_EMPTY / For inquiries, visit http://dable.io -->
+					<!-- </div>
+				</div> -->
+				<!--// Dable Module -->
+
+	</div>
+	<!-- content// -->
+</div>
+<!-- container -->
+
+<!-- footer_service -->
+<!-- 공지/이벤트/하단네비 -->
+
+<!--f_main-->
+<div class="footer_service f_main">
+<div class="f_service">
+  <div class="f_service_wrap">
+    <div class="notice">
+      <a href="//www.asiae.co.kr/company/board-list/notice/" class="n_tit" title="공지/사고">공지/사고</a><a href="//www.asiae.co.kr/company/board-view/notice/2020062915210403702A" class="n_lst" target="" title="이용약관 및 개인정보처리방침 개정 안내">이용약관 및 개인정보처리방침 개정 안내</a>    </div>
+    <div class="event">
+      <a href="//www.asiae.co.kr/event" class="e_tit" title="이벤트/행사">이벤트/행사</a><ul id="eventPlayer"><li><a href="https://www.asiae.co.kr/event/2021/construction/" class="e_lst" target="_blank" title="제 16회 아시아건설종합대상">제 16회 아시아건설종합대상</a></li><li><a href="http://www.asiae.co.kr/event/2020/4thindustry/index.htm" class="e_lst" target="_blank" title="[K-디지털] 디지털 핵심 실무인재 양성사업 연수...">[K-디지털] 디지털 핵심 실무인재 양성사업 연수...</a></li></ul>
+    </div>
+    <div class="menu_btn">
+      <a href="javascript:;" class="open" onclick="javascript:footerNav();">전체 서비스보기<em></em></a>
+    </div>
+	<script type="text/javascript">
+	function footerNav()
+	{
+		if($('.f_event_nav_all').css('display') == 'none')
+		{
+			$('.f_event_nav_all').show();
+			$('.menu_btn a').removeClass('open');
+			$('.menu_btn a').addClass('close');
+			$('.menu_btn a').html('전체 서비스닫기<em></em>');
+		}
+		else
+		{
+			$('.f_event_nav_all').hide();
+			$('.menu_btn a').removeClass('close');
+			$('.menu_btn a').addClass('open');
+			$('.menu_btn a').html('전체 서비스보기<em></em>');
+		}
+	}
+
+jQuery(function($) {
+	$('#eventPlayer').ulslide({
+		 axis: 'y'				// x, y
+		,affect: 'slide'		// slide, fade
+		,slidetag: 'li'
+		,duration: 500
+		,width: 230
+		,height: 61
+		,autoslide: 4000
+		,mouseover: true
+	});
+});
+	</script>
+  </div>
+</div>
+
+<!-- -->
+<div class="f_event_nav_all" style="display:none;">
+	<div class="all_laymewr">
+
+		<div class="all_layme_area">
+			<div class="area_depth01">
+
+				<!-- 정치 메뉴 -->
+				<div class="depth_listw01">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/politics" title="정치 바로가기" alt="정치 바로가기">정치</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/bluehouse" title="청와대 바로가기" alt="청와대 바로가기">청와대</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/party" title="정당 바로가기" alt="정당 바로가기">정당</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/government-department" title="정부부처 바로가기" alt="정부부처 바로가기">정부부처 </a></dd>
+						<dd><a href="//www.asiae.co.kr/list/nationaldefense-diplomacy" title="국방·외교 바로가기" alt="국방·외교 바로가기">국방·외교</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/political-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/politics-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+				<!-- 경제 메뉴 -->
+				<div class="depth_listw02">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/economy" title="경제 바로가기" alt="경제 바로가기">경제</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/finance" title="금융 바로가기" alt="금융 바로가기">금융</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/economic-policy" title="정책 바로가기" alt="정책 바로가기">정책</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/economic-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/financial-technology" title="재테크 바로가기" alt="재테크 바로가기">재테크</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/virtual-money" title="가상화폐 바로가기">가상화폐</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/economy-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+				<!-- 산업·IT 메뉴 -->
+				<div class="depth_listw03">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/industry-IT" title="산업·IT 바로가기" alt="산업·IT 바로가기">산업·IT</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/enterprise-CEO" title="기업·CEO 바로가기" alt="기업·CEO 바로가기">기업·CEO</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/smb-venture" title="중기·벤처 바로가기" alt="중기·벤처 바로가기">중기·벤처</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/automobile" title="자동차 바로가기" alt="자동차 바로가기">자동차</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/distribution" title="유통 바로가기" alt="유통 바로가기">유통</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/IT" title="IT·통합 바로가기" alt="IT·통합 바로가기">IT·통합</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/science" title="과학 바로가기" alt="과학 바로가기">과학</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/techwave" title="4차산업 바로가기">4차산업</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/industry-IT-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+				<!-- 증권 메뉴 -->
+				<div class="depth_listw04">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/stock" title="증권 바로가기" alt="증권 바로가기">증권</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/market-condition" title="시황 바로가기" alt="시황 바로가기">시황</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/feature" title="특징주 바로가기" alt="특징주 바로가기">특징주</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/item-disclosure" title="종목·공시 바로가기" alt="종목·공시 바로가기">종목·공시</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/derivation-bond-foreignexchange" title="파생·채권·외환 바로가기" title="파생·채권·외환 바로가기">파생·채권·외환</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/global-rawmaterials" title="글로벌·원자재 바로가기" alt="글로벌·원자재 바로가기">글로벌·원자재</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/stock-etc" title="기타 바로가기" alt="기타 바로가기">기타</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/stock-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+				<!-- 부동산 메뉴 -->
+				<div class="depth_listw06">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/realestate" title="부동산 바로가기" alt="부동산 바로가기">부동산</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/realestate-policy" title="정책 바로가기" alt="정책 바로가기">정책</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/development-sell" title="개발·분양 바로가기" alt="개발·분양 바로가기">개발·분양</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/trend" title="업계동향 바로가기" alt="업계동향 바로가기">업계동향</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/realestate-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/realestate-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+				<!-- 국제 메뉴 -->
+				<div class="depth_listw07">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/world" title="국제 바로가기" alt="국제 바로가기">국제</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/world-stockmarket" title="국제증시 바로가기" alt="국제증시 바로가기">국제증시</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/world-economy" title="국제경제 바로가기" alt="국제경제 바로가기">국제경제</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/world-general" title="국제일반 바로가기" alt="국제일반 바로가기">국제일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/world-topic" title="해외화제 바로가기" alt="해외화제 바로가기">해외화제 </a></dd>
+						<dd><a href="//www.asiae.co.kr/list/world-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+				</div>
+
+			</div>
+			<div class="area_depth02">
+
+				<!-- 사회 메뉴 -->
+				<div class="depth_listw08">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/society" title="사회 바로가기" alt="사회 바로가기">사회</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/affair-incident" title="사건사고 바로가기" alt="사건사고 바로가기">사건사고</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/education" title="교육 바로가기" alt="교육 바로가기">교육</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/person" title="인물 바로가기" alt="인물 바로가기">인물</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/social-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/region" title="지역 바로가기" alt="지역 바로가기">지역</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/honam" title="호남 바로가기" alt="호남 바로가기">호남</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/yeongnam" title="영남 바로가기" alt="영남 바로가기">영남</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/society-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+					<!-- 기획이슈 : 2020.01.06 이동 -->
+					<div class="one_title">
+												<h3 class="h3_title"><a href="//www.asiae.co.kr/project-issue-list/project-issue" title="기획·이슈 바로가기" >기획·이슈</a></h3>
+											</div>
+				</div>
+
+				<!-- 라이프 메뉴 -->
+				<div class="depth_listw09">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/life" title="라이프 바로가기" alt="라이프 바로가기">라이프</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/style" title="스타일 바로가기" alt="스타일 바로가기">스타일</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/beauty-health" title="뷰티·헬스 바로가기" alt="뷰티·헬스 바로가기">뷰티·헬스</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/travel-leisure" title="여행·레저 바로가기" alt="여행·레저 바로가기">여행·레저</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/performance-exhibit" title="공연·전시 바로가기" alt="공연·전시 바로가기">공연·전시</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/book" title="책 바로가기" alt="책 바로가기">책</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/life-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/living-food" title="리빙푸드 바로가기" alt="리빙푸드 바로가기">리빙푸드</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/edu-asia" title="에듀아시아 바로가기" alt="에듀아시아 바로가기">에듀아시아</a></dd><!-- 2018.08.13 kmy 추가 -->
+						<dd><a href="//www.asiae.co.kr/news/list/drink-eat" title="드링킷 바로가기" >드링킷</a></dd>
+											</dl>
+					<!-- 많이 본 뉴스 메뉴 : 2020.01.06 이동 -->
+					<div class="one_title">
+												<h3 class="h3_title"><a href="//www.asiae.co.kr/ranking/all" title="많이 본 뉴스 바로가기" >많이 본 뉴스</a></h3>
+											</div>
+				</div>
+
+				<!-- 오피니언 메뉴 -->
+				<div class="depth_listw10">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/opinion" title="오피니언 바로가기" alt="오피니언 바로가기">오피니언</a></dt>
+						<dd><a href="//www.asiae.co.kr/opinion-list/opinion-column" title="칼럼 바로가기" alt="칼럼 바로가기">칼럼</a></dd>
+						<dd><a href="//www.asiae.co.kr/opinion-list/satirical-cartoon" title="만평 바로가기" alt="만평 바로가기">만평</a></dd>
+											</dl>
+					<!-- 운세 메뉴 : 2020.01.06 이동 -->
+					<div class="one_title">
+						<h3 class="h3_title"><a href="//www.asiae.co.kr/fortune/" target="_blank" title="운세 바로가기">운세</a></h3>
+					</div>
+				</div>
+
+				<!-- 연예·스포츠 -->
+				<div class="depth_listw11">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/entertainment-sports" title="연예·스포츠 바로가기" alt="연예·스포츠 바로가기">연예·스포츠</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/entertainment-star" title="연예스타 바로가기" alt="연예스타 바로가기">연예스타</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/sports" title="스포츠 바로가기" alt="스포츠 바로가기">스포츠</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/foreignnews" title="해외뉴스 바로가기" alt="해외뉴스 바로가기">해외뉴스</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/entertainment-sports-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+					<div class="one_title">
+						<h3 class="h3_title"><a href="https://dk.asiae.co.kr" target="_blank" title="드링킷">드링킷</a></h3>
+					</div>
+				</div>
+
+				<!-- 포토·영상 -->
+				<div class="depth_listw12">
+					<!-- 포토·영상: 2018.07.27 kmy_메뉴수정 -->
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/photo-video" title="포토·영상 바로가기" alt="포토·영상 바로가기">포토·영상</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/slideshow" title="포토슬라이드 바로가기" alt="포토슬라이드 바로가기">포토슬라이드</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/photonews" title="포토뉴스 바로가기" alt="포토뉴스 바로가기">포토뉴스</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/video" title="동영상 바로가기" alt="동영상 바로가기">동영상</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/graphic-news" title="그래픽뉴스 바로가기" alt="그래픽뉴스 바로가기">그래픽뉴스</a></dd><!-- 2018.08.13 kmy 추가 -->
+											</dl>
+					<div class="one_title">
+						<h3 class="h3_title"><a href="https://core.asiae.co.kr" target="_blank" title="아시아경제CORE 바로가기">아시아경제CORE</a></h3>
+					</div>
+				</div>
+
+				<!-- 골프 메뉴 -->
+				<div class="depth_listw13">
+					<dl>
+												<dt class="h3_title"><a href="//www.asiae.co.kr/section/golf" title="골프 바로가기" alt="골프 바로가기">골프</a></dt>
+						<dd><a href="//www.asiae.co.kr/list/golf-project" title="기획 바로가기" alt="기획 바로가기">기획</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/lesson" title="레슨 바로가기" alt="레슨 바로가기">레슨</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/golf-column" title="칼럼 바로가기" alt="칼럼 바로가기">칼럼</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/golf-human" title="휴먼 바로가기" alt="휴먼 바로가기">휴먼</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/equipment" title="용품 바로가기" alt="용품 바로가기">용품</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/golf-photo" title="포토 바로가기" alt="포토 바로가기">포토</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/golf-general" title="일반 바로가기" alt="일반 바로가기">일반</a></dd>
+						<dd><a href="//www.asiae.co.kr/list/golf-all" title="전체뉴스 바로가기" alt="전체뉴스 바로가기">전체뉴스</a></dd>
+											</dl>
+
+					<!-- 2020.01.06 이동 -->
+					<!-- <div class="one_title">
+						<h3 class="h3_title"><a href="https://www.asiae.co.kr/inam/" title="국가자산관리연구원 바로가기" target="_blank">국가자산관리연구원</a></h3>
+					</div> -->
+				</div>
+
+			</div>
+
+			<div class="area_lastbtn">
+				<div class="fl_btn">
+					<a href="//military.asiae.co.kr" target="_blank" class="btn_yang" title="양낙규의 디펜스클럽 바로가기"><span>양낙규의 디펜스클럽</span></a>
+					<a href="https://www.asiae.co.kr/fortune/" target="_blank" class="btn_saju02" title="승진·재물·건강운 사주로 확인!"><span>승진·재물·건강운 사주로 확인!</span></a>
+				</div>
+
+				<div class="fr_btn">
+					<a href="//www.asiae.co.kr/company/board-list/notice/" class="btn_noti" title="공지·사고 바로가기" target="_blank"><span>공지·사고</span></a>
+					<span class="icon_bar">|</span>
+					<a href="//www.asiae.co.kr/event/" class="btn_event" title="이벤트·행사 바로가기" target="_blank"><span>이벤트·행사</span></a>
+					<span class="icon_bar">|</span>
+					<a href="http://noon.asiae.co.kr/" target="_blank" class="btn_noon" title="NOON지면보기 바로가기" alt="NOON지면보기 바로가기"><span>NOON지면보기</span></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- -->
+
+</div>
+<!-- footer_service// -->
+
+		<!-- section_footer -->
+		<div class="section_footer">
+			<div class="aside">
+				<div class="area_user">
+					<ul>
+						<li><a href="//www.asiae.co.kr/company/" title="회사소개 바로가기" >회사소개</a></li>
+						<li><a href="//www.asiae.co.kr/company/board-list/ir/" title="회사공고 바로가기" >회사공고</a></li>
+						<li><a href="//www.asiae.co.kr/company/ad-join/" title="광고문의 바로가기" >광고문의</a></li>
+						<li><a href="//www.asiae.co.kr/company/ad-join/" title="제휴문의 바로가기" >제휴문의</a></li>
+						<li><a href="//www.asiae.co.kr/company/subs-faq/" title="구독문의 바로가기" >구독문의</a></li>
+						<li><a href="//www.asiae.co.kr/company/suggest/" title="기사제보 바로가기" >기사제보</a></li>
+						<li><a href="https://user.asiae.co.kr/recruit2017/index.htm" title="채용정보 바로가기" >채용정보</a></li>
+						<li><a href="//www.asiae.co.kr/company/policy/privacy/" title="개인정보처리방침 바로가기" ><b>개인정보처리방침</b></a></li>
+						<li><a href="//www.asiae.co.kr/sitemap/" title="사이트맵 바로가기" >사이트맵</a></li>
+						<li><a href="//www.asiae.co.kr/company/solution/" title="고충처리 바로가기" >고충처리</a></li>
+					</ul>
+					<a href="//www.asiae.co.kr/company/firstclub/" title="퍼스트클럽 바로가기" class="btn_firstclub">퍼스트클럽 <span class="icon_arr03">&#62;</span></a>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="area_footer">
+					<dl class="info_t01">
+						<dt>아시아경제</dt>
+						<dd>
+							<address>서울특별시 중구 충무로 29 아시아미디어타워 10-11층</address>
+							<span class="t_txt01">인터넷신문등록번호 : 서울 아00058</span>
+							<span class="t_txt02">등록일 : 2005.09.13</span>
+							<span class="t_txt03">발행·편집인 : 이의철</span><br/>
+							<span class="t_txt04">청소년보호책임자 : 조병무</span>
+							<span class="t_txt05">전화번호 : 02) 2200-2114</span>
+						</dd>
+					</dl>
+
+					<p class="info_lst">
+						<span class="t_txt10">아시아경제의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다.</span>
+						<span class="t_txt11"><strong>ⓒ 아시아경제</strong> All rights reserved.</span>
+					</p>
+				</div>
+			</div>
+			
+	<script type="text/javascript">
+	var UserAgent = navigator.userAgent;
+	if ( !UserAgent.match(/SHW-M380K/i) && (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null ))
+	{
+			var goto_m='<div class="goto_m"><a href="https://cm.asiae.co.kr" title="모바일 화면 보기" rel="nofollow">모바일 화면 보기<i class="arrow right"></i></a></div>';
+			$('.section_footer').append(goto_m);
+
+
+	}
+	</script>
+		</div>
+		<!--// section_footer End -->
+</div>
+
+
+
+<!-- add -->
+<span itemscope="" itemtype="http://schema.org/Organization">
+<link itemprop="url" href="https://www.asiae.co.kr" />
+<a itemprop="sameAs" href="https://m.post.naver.com/my.nhn?memberNo=11466887"></a>
+<a itemprop="sameAs" href="https://www.facebook.com/asiaeconomy"></a>
+<a itemprop="sameAs" href="https://twitter.com/asiae_daily"></a>
+<a itemprop="sameAs" href="https://tv.naver.com/asiae"></a>
+<a itemprop="sameAs" href="https://www.youtube.com/channel/UC8WLOh6UrALDSQ6ZmPjXJ9A"></a>
+</span>
+<!-- //add -->
+
+<!-- 20200818 top_button-->
+<div class="btn_pageup"data-aos="fade-up"><a href="javascript:window.scrollTo(0,0)"></a></div>
+<!-- 20200818 top_button-->
+
+<script type="text/javascript" src="//www.asiae.co.kr/js/jquery.scrollBanner.js?20210623"></script>
+
+<!-- Google Analytics Script Start -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-6047287-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- Google Analytics Script End -->
+<script type="text/javascript" src="https://aka.asiae.co.kr/scripts/AKACollect.js?u=20210809212956"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,997 @@
+﻿<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PZGPNNV');</script>
+    <!-- End Google Tag Manager -->
+    <!--    California State Template
+        Version 6.0.1
+
+    Based on Twitter Bootstrap
+    -->
+    <meta charset="utf-8">
+
+    <title>www.ca.gov | California State Portal</title>
+    <link rel='stylesheet' id='caweb-color-style-css' href='https://california.azureedge.net/cdt/CAgovPortal/offline/dialog_cagov-final.css' type='text/css' media='all' />
+
+    <meta name="Author" content="State of California" />
+    <meta name="Description" content="State of California" />
+    <meta name="Keywords" content="California, government" />
+
+    <!-- head content, for all pages -->
+    <!-- Use highest compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <!-- for Blackberry, AvantGo -->
+    <meta name="MobileOptimized" content="320">
+    <!-- for Windows mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600|Source+Sans+Pro:400,700" rel="stylesheet">
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/css/cagov.core.css">
+
+    <link rel="stylesheet" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/css/colorscheme-oceanside.css">
+
+    <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="https://california.azureedge.net/cdt/statetemplate/6.0.5/js/libs/selectivizr-min.js"></script>
+    <![endif]-->
+    <!-- Load jQuery from CDN with fallback to local copy -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script>
+        //Fall back to local copy if no jquery found
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='https://california.azureedge.net/cdt/statetemplate/6.0.5/js/libs/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    <!-- Load jQuery migrate from CDN with fallback to local copy -->
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.min.js"></script>
+    <script>
+        //Fall back to local copy if no jQuery migrate found
+        if (typeof jQuery.migrateWarnings == 'undefined') { // or typeof jQuery.fn.live == 'undefined'
+            document.write(unescape("%3Cscript src='https://california.azureedge.net/cdt/statetemplate/6.0.5/js/libs/jquery-migrate.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
+    </script>
+
+
+    <!-- apple touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="100x100" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-precomposed.png">
+    <link rel="icon" sizes="192x192" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-192x192.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" href="https://california.azureedge.net/cdt/statetemplate/6.0.5/images/apple-touch-icon.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Activate ClearType for Mobile IE -->
+    <!--[if IE]>
+    <meta http-equiv="cleartype" content="on">
+    <![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://california.azureedge.net/cdt/statetemplate/6.0.5/js/libs/html5shiv.min.js"></script>
+      <script src="https://california.azureedge.net/cdt/statetemplate/6.0.5/js/libs/respond.min.js"></script>
+    <![endif]-->
+    <!--Main Banner-->
+    <script src="https://california.azureedge.net/cdt/CAgovPortal/js/cagovapplets.js" type="text/javascript"></script>
+
+
+
+    <!--Featured Services-->
+    <script>
+        function myFunction() {
+            processJsonData.showHomePageServices(4, 'featuredServicesListing', 31, 1173, 1122, 1177, 'en', 'https://www.ca.gov/service/', 'https://www.ca.gov/agency/');
+        }
+        setTimeout(myFunction, 750);
+    </script>
+
+
+
+    <!--Open Data Script-->
+    <script>
+        var datasetURL = "https://data.ca.gov/api/3/action/package_list";
+
+        var loadFlag = false;
+        var loadCount = 0;
+        var datasetCount = 0;
+
+        function loadResults() {
+            if (loadCount === 0) {
+
+                var datasetXhr = new XMLHttpRequest();
+                datasetXhr.open("GET", datasetURL, true);
+                datasetXhr.onreadystatechange = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        var datasetObj = JSON.parse(this.responseText);
+                        var datasetCount = datasetObj.result.length;
+                        console.log(datasetCount);
+                        document.getElementById("numberOfDatasets").innerHTML = datasetCount;
+                    }
+                };
+                datasetXhr.setRequestHeader('Content-Type', 'application/json');
+                datasetXhr.withCredentials = false;
+                datasetXhr.send();
+            }
+            loadCount += 1;
+            if (loadFlag === false) {
+                if (datasetCount > 0) {
+                    loadFlag = true;
+                }
+                if (loadCount >= 50) {
+                    loadFlag = true;
+                }
+                window.setTimeout(loadResults, 100); /* this checks the flag every 100 milliseconds*/
+            }
+        }
+        loadResults();
+    </script>
+
+
+    <style>
+        footer .copyright span {
+            display: none;
+        }
+
+        .explore-invite {
+            background-color: #0d1013;
+            opacity: 1;
+        }
+
+        #data-background {
+            background: linear-gradient(90deg, #e9edf7 0%, #e0ecf8 28%);
+        }
+
+
+        /*----- v5.5.4 Adjustments ------- */
+        @media (max-width: 992px) and (min-width: 768px) {
+            .first-level-link {
+                padding-right: 5px !important;
+                padding-left: 0px !important;
+            }
+        }
+
+        /*----- v5.5.3 Adjustments ------- */
+        .utility-header .container .group .settings-links {
+            padding-left: 0px;
+        }
+        /*Logo Adjustments*/
+        .branding .header-organization-banner img {
+            max-width: 200px !important;
+        }
+
+        .fixed.compact .header-organization-banner img {
+            max-width: 155px;
+            max-height: 55px;
+        }
+
+        .list-unstyled details-page-social-icons a, .details-page-social-icons a {
+            background-image: none !important;
+        }
+
+
+        /*----- v5.5.2 Adjustments ------- */
+        @media (max-width: 992px ) and (min-width: 768px) {
+            .branding {
+                width: 100%;
+            }
+
+            .main-navigation {
+                width: 100%;
+                padding-left: 180px;
+            }
+
+            .branding .header-organization-banner img {
+                max-width: 155px;
+            }
+            /*Search adjustment*/
+            .featured-search.active {
+                top: 90px;
+            }
+        }
+
+        @media (min-width: 992px ) {
+            .main-navigation {
+                padding-left: 250px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .main-navigation {
+                padding-left: 250px;
+            }
+            /*Search adjustment*/
+        }
+
+        .sub-nav.open {
+            overflow: hidden;
+        }
+
+
+        /*Service Tiles adjustments*/
+        .service-tile .teaser .title {
+            color: #fff;
+        }
+
+        .service-tile .teaser {
+            background-color: #0d1013;
+            opacity: 1;
+        }
+
+        /* Underline adjustments */
+        .et_pb_slides a {
+            background-image: none !important;
+        }
+
+        .et-pb-slider-arrows a {
+            background-image: none !important;
+        }
+
+        /*Custom Search adjustments  */
+        .gsc-search-button {
+            background: transparent;
+        }
+
+            .gsc-search-button span.ca-gov-icon-search {
+                color: #777;
+            }
+        /* End of 5.5.2 adjustments */
+
+        .nav-media img {
+            height: auto;
+            max-width: 100% !important;
+        }
+
+        li.utility-geo-locator {
+            display: none !important;
+        }
+
+        .card.card-default a.lead {
+            font-size: 1.3em !important;
+        }
+
+        .gssb_c .gsc-completion-container {
+            margin-top: -.1%
+        }
+
+        .card {
+            margin-bottom: 1.5rem;
+        }
+
+        ol.breadcrumb {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .btn-more.inverse {
+            background-color: #0d1013;
+        }
+
+        ul.list-inline.list-unstyled.details-page-social-icons {
+            padding: 0;
+            line-height: 0;
+            list-style-type: none;
+            display: flex;
+            margin-left: -10px;
+        }
+
+        .panel-group .panel-heading .panel-title {
+            margin-bottom: -10px;
+        }
+
+        ul.utility-links.social-media-links {
+            margin-left: 0 !important;
+        }
+
+        a[title="CA.gov"] {
+            display: none;
+        }
+
+
+        #ssb-container {
+            top: 70%;
+            margin-right: -8px;
+        }
+
+        #ssb-btn-0 {
+            background: rgba(0,0,0,.4);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #ssb-container ul li span {
+            padding-right: 10px;
+        }
+
+        .search-container .search-textfield {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+
+        /*---------------------------------767--max------------------------------------------*/
+        @media (max-width: 767px) {
+            .card, .panel {
+                margin-bottom: 5px;
+            }
+
+            #photoAttributes {
+                display: none;
+            }
+
+            .pagename {
+                visibility: hidden;
+            }
+
+            .et_pb_fullwidth_slider_0.et_pb_slider {
+                height: auto !important;
+            }
+
+            #data-background {
+                height: 600px;
+            }
+        }
+
+
+        /*---------------------------------------------------------768----min------------------*/
+        @media (min-width: 768px) {
+            ul.utility-links.social-media-links {
+                margin-left: 0px;
+            }
+
+            #data-background {
+                height: 300px;
+            }
+        }
+
+        #pagetitle {
+            float: left;
+            color: #f5f5f5;
+            top: 12%;
+            right: 1%;
+            padding-top: 20px;
+            text-shadow: 2px 2px #000000;
+            cursor: default;
+            position: absolute;
+        }
+
+        #photoAttributes {
+            float: left;
+            color: #f5f5f5;
+            padding-top: 20px;
+            text-shadow: 2px 2px #000000;
+            cursor: default;
+            position: absolute;
+        }
+
+        .search-container .search-textfield {
+            background-color: #fff;
+        }
+
+        @media (min-width: 768px) {
+            .ask-button.btn-primary {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZGPNNV" style="display:none;visibility:hidden;width:0px;height:0px;" title="Google Tag Manager Addon"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header role="banner" id="header" class="global-header fixed">
+        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+
+        <div class="alert alert-info alert-dismissible alert-banner" role="alert" style="background-color: #fff9ec">
+            <div class="container py-4">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <span class="alert-text text-dark">
+
+                    <span id="surveyLink">&nbsp;</span><br />
+
+                    <script>
+                        function randomString() {
+                            var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                            var result = '';
+                            for (let i = 32; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+                            return result;
+                        }
+
+                        function showSurvey() {
+                            /*                        var oddOrEven = Math.round(Math.random());
+                                                    if (oddOrEven === 0) {
+                                                        document.getElementById("surveyLink").innerHTML = 'Please take 2 minutes to complete our <a href="https://www.surveymonkey.com/r/GFDXW5B?source=ca&src=' + randomString() + '" class="text-dark underline"><strong>COVID-19 survey</strong></a>.';
+                                                    } */
+                            //                        else {
+                            document.getElementById("surveyLink").innerHTML = 'Please take 5 minutes to complete our <a href="https://www.surveymonkey.com/r/YF8KGLW?source=ca&src=' + randomString() + '" class="text-dark underline"><strong>California COVID-19 vaccine survey</strong></a>.';
+                            //}
+                        }
+
+                        showSurvey();
+                    </script>
+
+                    For more information on COVID in California, please visit <a href="https://COVID19.CA.gov" class="text-dark underline"><strong>COVID19.CA.gov</strong></a>.
+                </span>
+            </div>
+        </div>
+
+        <!-- Include Utility Header -->
+        <div class="utility-header">
+            <div class="container">
+                <div class="group flex-row">
+                    <div class="social-media-links">
+                        <a href="/" title="Home" class="utility-home-icon ca-gov-icon-home"><span class="sr-only">Home</span></a><a class="utility-social-facebook ca-gov-icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ca.gov%2F&display=popup" title="Share via Facebook" target="_blank"><span class="sr-only">Facebook</span></a><a class="utility-social-twitter ca-gov-icon-twitter" href="https://twitter.com/intent/tweet?text=CA.Gov%20:%20Services&amp;url=https%3A%2F%2Fwww.ca.gov%2FServices" title="Share via Twitter" target="_blank"><span class="sr-only">Twitter</span></a>
+                    </div>
+                    <div class="settings-links">
+
+                        <a class="utility-custom-1" href="/agencysearch/">State Agencies</a>
+
+                        <button type="button" class="btn btn-xs btn-primary collapsed" onclick="showAddLocation()" aria-expanded="false"><span class="ca-gov-icon-compass" aria-hidden="true"></span> <span class="located-city-name">Set Location</span></button>
+
+                        <a class="utility-contact-us" href="/contact/">Contact Us</a>
+
+                        <a id="caweb-gtrans-custom" target="_blank" href="/translate/"><span class="ca-gov-icon-globe"></span>&nbsp; Translate</a>
+
+                        <button class="btn btn-xs btn-primary collapsed" data-toggle="collapse" data-target="#siteSettings" aria-controls="siteSettings">
+                            <span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-settings section section-standout collapse collapsed" onclick="" id="locationSettings">
+            <button type="button" class="close" data-toggle="collapse" data-target="#locationSettings" aria-expanded="false" aria-controls="locationSettings" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            <div class="form-group form-inline">
+                <label for="locationInput">Saving your California location allows us to provide you with more relevant information.</label><br />
+                <input type="text" class="form-control" id="locationInput" placeholder="Enter Zip Code or City" value="" style="margin-right: 3px;margin-top: 2px;">
+                <button type="button" onclick="processZipCity();" class="btn btn-default btn-md" style="margin-right: 3px;margin-top: 3px;">Set Location</button>
+                <button id="locationClear" onclick="clearSelectedLocation();" type="button" class="btn btn-default btn-md" style="margin-right: 10px;margin-top: 3px;">Clear</button>
+                <button type="button" class="btn btn-default btn-md" onclick="getMyLocationDetails();" style="margin-top: 3px;">Use My Location</button>
+            </div>
+        </div>
+
+
+        <!-- Settings Bar -->
+        <div class="site-settings section section-standout collapse collapsed" id="siteSettings">
+            <div class="container p-y">
+
+
+                <div class="btn-group btn-group-justified-sm" aria-label="contrastMode">
+                    <div class="btn-group"><button type="button" class="btn btn-standout disableHighContrastMode">Default</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout enableHighContrastMode">High Contrast</button></div>
+                </div>
+
+                <div class="btn-group" aria-label="textSizeMode">
+                    <div class="btn-group"><button type="button" class="btn btn-standout resetTextSize">Reset</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout dyslexicFont">Dyslexic Font</button></div>
+                </div>
+                <button type="button" class="close" data-toggle="collapse" data-target="#siteSettings" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+        </div>
+
+        <!-- Include Branding -->
+        <!-- header branding -->
+        <div class="branding">
+            <div class="header-organization-banner"><a href="/"><img src="https://california.azureedge.net/cdt/statetemplate/global/images/logo-and-bear.png" alt="CA.gov logo" /></a></div>
+        </div>
+
+        <!-- Include Mobile Controls -->
+        <!-- mobile navigation controls -->
+        <div class="mobile-controls">
+            <span class="mobile-control-group mobile-header-icons">
+                <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+            </span>
+            <div class="mobile-control-group main-nav-icons">
+                <button class="mobile-control toggle-search">
+                    <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
+                </button>
+                <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="navigation" data-toggle="collapse" data-target="#navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="navigation-search">
+            <!-- Include Navigation -->
+            <!--
+            Step 2
+            Select Navigation Type:
+
+            Options are: megadropdown dropdown singlelevel
+            -->
+
+            <nav id="navigation" class="main-navigation megadropdown auto-highlight">
+                <ul id="nav_list" class="top-level-nav">
+                    <li class="nav-item">
+                        <a href="/services/" class="first-level-link"><span class="ca-gov-icon-gears" aria-hidden="true"></span>Getting Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/doingbusiness/" class="first-level-link"><span class="ca-gov-icon-briefcase" aria-hidden="true"></span>Doing Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/working/" class="first-level-link"><span class="ca-gov-icon-idea" aria-hidden="true"></span>Working</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/learning/" class="first-level-link"><span class="ca-gov-icon-graduate" aria-hidden="true"></span>Learning</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/living/" class="first-level-link"><span class="ca-gov-icon-state" aria-hidden="true"></span>Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/visiting/" class="first-level-link"><span class="ca-gov-icon-camera" aria-hidden="true"></span>Visiting</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/government/" class="first-level-link"><span class="ca-gov-icon-capitol" aria-hidden="true"></span>Government</a>
+                    </li>
+                    <li class="nav-item" id="nav-item-search">
+                        <button class="first-level-link"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</button>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div id="head-search" class="search-container featured-search fade">
+
+                <div class="container">
+                    <form id="Search" class="pos-rel" action="/serp/">
+                        <span class="sr-only" id="SearchInput">Custom Google Search</span>
+                        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search this website" class="height-50 border-0 p-x-sm w-100 search-textfield" />
+                        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
+                        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-decoration"></div>
+    </header>
+
+
+
+
+    <div id="main-content" class="main-content">
+
+
+        <div class="ask-group hidden-print">
+            <div class="panel-group" id="askGroup" aria-label="Highlighted Available Activities">
+                <div class="panel">
+                    <a href="/agencysearch/" class="btn btn-primary ask-button collapsed ask-how"><span class="ca-gov-icon-online-services" aria-hidden="true"></span>Find State Agencies</a>
+                </div>
+
+                <div class="panel ">
+                    <a href="/services/" class="btn btn-primary ask-button collapsed"><span class="ca-gov-icon-people" aria-hidden="true"></span>Find State Services</a>
+                </div>
+
+                <div class="panel ">
+                    <a href="/contact/#faq" class="btn btn-primary ask-button collapsed"><span class="ca-gov-icon-lightbulb" aria-hidden="true"></span>Common Questions</a>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            //makes the browser wait to display the page until it's fully loaded.
+            // Use it if page contains primary or slideshow banner to make sure page content loads smouthly
+            jQuery('body').css('opacity', 0);
+            jQuery(window).load(function () {
+                jQuery("body").fadeTo("slow", 1);
+                jQuery("#twitter-widget-1").removeAttr("frameborder");
+            });
+        </script>
+
+
+
+
+
+        <div class="header-single-banner hidden-print d-block et_pb_section_0 enabled hidden-xs" style="background-blend-mode: overlay; background-color: rgba(195, 195, 195, 1);">
+
+            <div class="explore-invite hidden-xs">
+                <div style="" id="photoAttributes">
+                    <span id="spanCaption" style="font-size: 1.3em;"></span><br>
+
+                    <span id="abbrCopy" style="font-size:1em;"></span>
+                </div>
+
+                <div class="pagename text-right" style="" id="pagetitle">
+                    <span style="font-size:1em;">The official homepage</span><br>
+                    <span style="font-size: 1.3em;">of the State of California</span>
+                </div>
+
+                <div class="text-center" role="heading" aria-level="1">
+                    <a href=""><span class="explore-title">Explore</span><span class="ca-gov-icon-arrow-down" aria-hidden="true"></span></a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!-- END Banner-->
+
+
+
+        <main class="main-primary mt-lg-0 mt-md-0 mt-sm-3 mt-xs-3">
+
+
+            <!--Section tiles-->
+            <div class="section section-understated collapsed" style="height:1px;overflow:hidden" id="featuredServicesListing">
+                <div class="service-group clearfix" style=" background-color: #000000">
+                    <!-- BEGIN TILES -->
+                    <div id="featured-service-tab-1" tabindex="0" class="service-tile" data-tile-id="panel-1" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+                    <div id="featured-service-tab-2" tabindex="0" class="service-tile" data-tile-id="panel-2" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+                    <div id="featured-service-tab-3" tabindex="0" class="service-tile" data-tile-id="panel-3" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+                    <div id="featured-service-tab-4" tabindex="0" class="service-tile" data-tile-id="panel-4" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+
+                    <!-- END TILES -->
+                    <!-- BEGIN PANELS -->
+
+                    <div id="featured-service-panel-1" class="service-tile-panel" data-tile-id="panel-1" style="background-color:#909090;"></div>
+                    <div id="featured-service-panel-2" class="service-tile-panel" data-tile-id="panel-2" style="background-color:#909090;"></div>
+                    <div id="featured-service-panel-3" class="service-tile-panel" data-tile-id="panel-3" style="background-color:#909090;"></div>
+                    <div id="featured-service-panel-4" class="service-tile-panel" data-tile-id="panel-4" style="background-color:#909090;"></div>
+                    <!-- END PANELS -->
+                </div>
+
+                <div class="more-button" style=" background-color: #000000">
+                    <div class="more-content fake-service-group" style="filter: blur(6px);"></div>
+                    <a href="/services/" class="btn-more inverse"><span class="more-title">More Services</span><span class="ca-gov-icon-arrow-down more-icon" aria-hidden="true"></span></a>
+                </div>
+            </div>
+            <div id="serviceDataHolder" style="color:#000000;background-color: #000000;height:1px;overflow:hidden;font-size:1px;"></div>
+            <!--/ END Section tiles-->
+            <!--Section Image-->
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://covid19.ca.gov/"><img src="https://california.azureedge.net/cdt/CAgovPortal/images/slow-spread-where-a-mask.jpg" alt="Do our part to keep California healthy" title="Wear a Mask. Slow the Spread." class="img-fluid w-100" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--/ End Section Image-->
+            <!--Section CA Governor-->
+            <div class="section-primary">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <figure class="bg-primary-gradient p-a border-0">
+                                <div class="media">
+                                    <div class="d-flex m-r-md">
+                                        <!-- Figure Image -->
+                                        <img class="rounded-circle width-80 height-80" src="https://california.azureedge.net/cdt/statetemplate/global/images/gov-seal.png" alt="California Governor Seal">
+                                        <!-- Figure Image -->
+                                    </div>
+                                    <div class="media-body">
+                                        <!-- Figure Info -->
+                                        <h2 class="h4 m-0">Gavin Newsom</h2>
+                                        <div class="d-block">
+                                            <span class="font-size-13">California Governor</span>
+
+                                        </div>
+                                        <div class="m-t-sm m-b-0 brd-bottom brd-primary-dark brd-dotted-1 w-100"></div>
+                                        <a href="https://www.gov.ca.gov/" class="font-size-12">Visit Governor's Website</a>
+                                        <!-- End Figure Info -->
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="bg-primary-gradient p-a border-0">
+                                <div class="media">
+                                    <div class="d-flex m-r-md">
+                                        <!-- Figure Image -->
+                                        <img class="rounded-circle width-80 height-80" src="https://california.azureedge.net/cdt/statetemplate/global/images/ca-seal.png" alt="California  Seal">
+                                        <!-- Figure Image -->
+                                    </div>
+                                    <div class="media-body">
+                                        <!-- Figure Info -->
+                                        <h2 class="h4 m-0">Eleni Kounalakis</h2>
+                                        <div class="d-block">
+                                            <span class="font-size-13">California Lt. Governor</span>
+
+                                        </div>
+                                        <div class="m-t-sm m-b-0 brd-bottom brd-primary-dark brd-dotted-1 w-100"></div>
+                                        <a href="https://ltg.ca.gov/" class="font-size-12">Visit Lieutenant Governor's Website</a>
+                                        <!-- End Figure Info -->
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Section CA Governor-->
+            <!--Section Stats-->
+            <div class="section-impact">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="stat-counter text-accent9">
+                                <span class="number-counter text-3-5rem">39</span><span class="unit text-3-5rem">+</span>
+                            </div>
+                            <p class="text-center text-accent9">Million people as of July 2015</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="stat-counter text-accent-s1">
+                                <span class="number-counter text-3-5rem">5</span><span class="unit text-3-5rem">th</span>
+                            </div>
+                            <p class="text-center text-accent-s1">Largest Economy in the World</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stat-counter text-accent-s2">
+                                <span class="number-counter text-3-5rem">65</span><span class="unit text-3-5rem">+</span>
+                            </div>
+                            <p class="text-center text-accent-s2">Million annual visitors</p>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stat-counter text-accent-p1">
+                                <span class="number-counter  text-3-5rem">19</span><span class="unit text-3-5rem">+</span>
+                            </div>
+                            <p class="text-center text-accent-p1">Million civilians in Labor Force</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Section Stats-->
+            <!--Section Disaster Resources-->
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4"><img class="img-fluid rounded" alt="recovery" src="https://california.azureedge.net/cdt/CAgovPortal/images/recovery.jpg" /></div>
+                    <div class="col-md-8">
+                        <h2 class="pt-0 mt-0">Disaster Resources</h2>
+                        <p>California has been hit with devastating wildfires and other natural disasters in both the northern and southern parts of the state. If you need more information about recovery or resources visit the following resources:</p>
+                        <a href="https://response.ca.gov/" class="btn btn-primary">response.ca.gov</a>
+                        <a href="http://wildfirerecovery.org/" class="ml-4 btn btn-primary">wildfirerecovery.org</a>
+                        <a href="https://www.disasterassistance.gov/" class="ml-4 btn btn-primary">disasterassistance.gov</a>
+                    </div>
+                </div>
+            </div>
+            <!--/ End Section Disaster Resources-->
+            <!--Section Data Portal-->
+            <div id="data-background">
+                <div class="container py-4">
+                    <div class="row text-center">
+                        <div class="col-md-5">
+                            <div style="width: 100%;">
+                                <div style="font-size: 72px; color: #046b99!important; font-weight:500; line-height:72px; text-align:center;"><span id="numberOfDatasets">1500+</span></div>
+                                <div style="font-size: 35px;color: #9c5c31!important;text-align: center;">Data Sets</div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="h1 color-p2">California believes in the power of unlocking government data.</h2>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <p class="lead">
+                                We invite all to explore our Open Data Portal and create innovative solutions leveraging California’s data.
+                            </p>
+                            <a href="https://data.ca.gov/" class="btn btn-default btn-next"><span>Visit Open Data Portal</span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--/ End Section Data Portal-->
+            <!--Section Twitter News -->
+            <div class="container pb-5">
+                <h2>Trending News</h2>
+                <div class="group">
+
+                    <script type="text/javascript">
+
+                        window.addEventListener('load', function loadTwitterScript() {
+                            $.getScript('//platform.twitter.com/widgets.js');
+
+                        });
+                    </script>
+                    <script defer src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    <div style="height:1600px;  display:inherit; overflow: hidden;">
+
+
+                        <div class="third"> <a class="twitter-timeline" data-partner="tweetdeck" data-tweet-limit="6" show-replies="false" data-chrome="noborders noheader" data-aria-polite="assertive" href="https://twitter.com/CaliforniaOffi2/lists/ca-portal-homepage">A Twitter list compiled for CA.gov</a></div>
+
+                        <div class="third"> <a class="twitter-timeline" data-partner="tweetdeck" data-tweet-limit="6" show-replies="false" data-chrome="noborders noheader" data-aria-polite="assertive" href="https://twitter.com/CaliforniaOffi2/lists/ca-portal-homepage-2">A Second Twitter list compiled for CA.gov</a></div>
+
+                        <div class="third"> <a class="twitter-timeline" data-partner="tweetdeck" data-tweet-limit="6" show-replies="false" data-chrome="noborders noheader" data-aria-polite="assertive" href="https://twitter.com/CaliforniaOffi2/lists/ca-portal-homepage-3">A Third Twitter list compiled for CA.gov</a></div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="text-center pt-3"><a href="https://twitter.com/CAgovernor/lists/executive-branch" class="btn btn-secondary btn-sm">See More News</a></div>
+            </div>
+
+            <!--/ End Section Twitter News-->
+            <!--Section Useful Linkss-->
+            <div class="section section-impact p-b-lg">
+                <div class="container">
+                    <div class="row group">
+
+                        <div class="quarter">
+                            <div style="text-align:center;font-size:4rem;color:#999999;margin: 0px;padding:0px;height:72px;"><span class="ca-gov-icon-capitol" aria-hidden="true"></span></div>
+                            <h2 class="h3" style="padding-top: 5px; margin-top: 5px;">Campaigns</h2>
+                            <ul class="list-standout">
+                                <li><a href="https://registertovote.ca.gov/" class="text-white">Register to Vote</a></li>
+                                <li><a href="https://saveourwater.com/" class="text-white">Save Our Water</a></li>
+                                <li><a href="https://www.caiso.com/informed/Pages/Notifications/Default.aspx" class="text-white">Flex Alert</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="quarter">
+                            <div style="text-align:center;font-size:4rem;color:#999999;margin: 0px;padding:0px;height:72px;"><span class="ca-gov-icon-loud-speaker" aria-hidden="true"></span></div>
+                            <h2 class="h3" style="padding-top: 5px; margin-top: 5px;">Alerts</h2>
+                            <ul class="list-standout">
+                                <li><a href="https://www.chp.ca.gov/News-Alerts/AMBER-Alert" class="text-white">Amber Alert</a></li>
+                                <li><a href="http://calalerts.org/" class="text-white">Cal Alerts</a></li>
+                                <li><a href="http://myhazards.caloes.ca.gov/" class="text-white">My Hazards</a></li>
+                            </ul>
+                        </div>
+                        <div class="quarter">
+                            <div style="text-align:center;font-size:4rem;color:#999999;margin: 0px;padding:0px;height:72px;"><span class="ca-gov-icon-state" aria-hidden="true"></span></div>
+                            <h2 class="h3" style="padding-top: 5px; margin-top: 5px;">About</h2>
+                            <ul class="list-standout">
+                                <li><a href="https://www.gov.ca.gov/" class="text-white">Governor</a></li>
+                                <li><a href="https://www.ltg.ca.gov/" class="text-white">Lt. Governor</a></li>
+                                <li><a href="https://data.ca.gov/" class="text-white">California Data</a></li>
+                            </ul>
+                        </div>
+                        <div class="quarter">
+                            <div style="text-align:center;font-size:4rem;color:#999999;margin: 0px;padding:0px;height:72px;"><span class="ca-gov-icon-contact-us" aria-hidden="true"></span></div>
+                            <h2 class="h3" style="padding-top: 5px; margin-top: 5px;">Support</h2>
+                            <ul class="list-standout">
+                                <li>&nbsp;<a class="text-white" href="/agencysearch/">State Directory</a></li>
+                                <!--<li>&nbsp;<a class="text-white" href="/website-feedback/">Feedback Survey</a></li>-->
+                                <li>&nbsp;<a class="text-white" href="/help/">Technical Issues</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/ END Section Useful Linkss-->
+        </main>
+    </div>
+
+
+    <!-- Global Footer -->
+    <footer id="footer" class="global-footer">
+        <div class="container">
+            <div class="row">
+                <div class="three-quarters">
+                    <ul class="footer-links">
+                        <li><a href="#skip-to-content">Back to Top</a></li>
+                        <li><a href="/sitemap/">Sitemap</a></li>
+                        <li><a href="/accessibility/">Accessibility</a></li>
+                        <li><a href="/use/">Conditions of Use</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="/contact/">Contact Us</a></li>
+                        <!--<li><a href="/website-feedback/">Website Feedback</a></li>-->
+                    </ul>
+                </div>
+                <div class="quarter text-right">
+                    <ul class="socialsharer-container">
+                        <li><a href="https://www.flickr.com/groups/californiagovernment" target="_blank"><span class="ca-gov-icon-flickr"></span><span class="sr-only">flickr</span></a></li>
+                        <li><a href="https://www.pinterest.com/cagovernment/" target="_blank"><span class="ca-gov-icon-pinterest"></span><span class="sr-only">pinterest</span></a></li>
+                        <li><a href="https://www.youtube.com/user/californiagovernment" target="_blank"><span class="ca-gov-icon-youtube"></span><span class="sr-only">youtube</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
+        </div>
+    </footer>
+
+    <!-- Extra Decorative Content -->
+    <div class="decoration-last">&nbsp;</div>
+    <!-- Load template core -->
+
+    <div class="footer container" style="padding-top:0px;padding-left:45px;"><span class="ca-gov-icon-certificate" style="font-size:1.5em; color: #046b99; vertical-align: sub;" aria-hidden="true"></span><a class="certificate collapsed" href="/documents/WebsiteAccessibilityCert-ca.gov.pdf" target="_blank" rel="noopener noreferrer">Website Accessibility Certification</a></div>
+
+
+    <script src="https://california.azureedge.net/cdt/statetemplate/6.0.5/js/cagov.core.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Backward compatability fix for removing wrapper on new "sections"
+            $('.main-primary > .section').closest('div.wrapper').removeClass('wrapper');
+        });
+    </script>
+    <script type="text/javascript" src="https://california.azureedge.net/cdt/CAgovPortal/js/js4geo.js"></script>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_77584.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+    <script async="" src="https://cse.google.com/cse.js?cx=001779225245372747843:mdsmtl_vi1a"></script>
+    <script async="" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+
+    <script>
+        // Fix Twitter feed iframes accessibility
+        setTimeout(function () {
+            if (document.getElementById('twitter-widget-0') !== null) {
+                document.getElementById('twitter-widget-0').removeAttribute("frameborder");
+                document.getElementById('twitter-widget-0').removeAttribute("allowtransparency");
+                document.getElementById('twitter-widget-0').removeAttribute("scrolling");
+            }
+            if (document.getElementById('twitter-widget-1') !== null) {
+                document.getElementById('twitter-widget-1').removeAttribute("frameborder");
+                document.getElementById('twitter-widget-1').removeAttribute("allowtransparency");
+                document.getElementById('twitter-widget-1').removeAttribute("scrolling");
+            }
+            if (document.getElementById('twitter-widget-2') !== null) {
+                document.getElementById('twitter-widget-2').removeAttribute("frameborder");
+                document.getElementById('twitter-widget-2').removeAttribute("allowtransparency");
+                document.getElementById('twitter-widget-2').removeAttribute("scrolling");
+            }
+            // document.getElementById('rufous-sandbox').removeAttribute("frameborder");
+            // document.getElementById('rufous-sandbox').removeAttribute("allowtransparency");
+            // document.getElementById('rufous-sandbox').removeAttribute("scrolling");
+            // document.querySelector('[title="Twitter settings iframe"]').removeAttribute("frameborder");
+            // document.querySelector('[title="Twitter settings iframe"]').removeAttribute("allowtransparency");
+            // document.querySelector('[title="Twitter settings iframe"]').removeAttribute("scrolling");
+            document.getElementsByClassName("SandboxRoot").css("overflow", "hidden");
+        }, 4000);
+    </script>
+    </body>
+</html>

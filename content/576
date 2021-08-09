@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Citi Waiting Room</title>
+    <style>
+     body {
+        margin: 0;
+        padding: 0;
+        font-family: Interstate_Light, sans-serif, Arial, sans-serif;
+      }
+      .header {
+        background-image: linear-gradient(#00bdf2, #004785);
+        width: 100%;
+        height: 60px;
+      }
+      .footer {
+        background-color: #000000;
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        bottom: 0;
+      }
+      .top-bar {
+        background-image: linear-gradient(#313431, #000000);
+        height: 20px;
+        width: 100%;
+      }
+      .main-content {
+        margin-top: 80px;
+        margin-left: 60px;
+      }
+      .peak-message {
+        margin-right: 45%;
+        font-size: 15px;
+        line-height: 1.5em;
+      }
+      .citi-logo {
+        width: 65px;
+        height: auto;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .search-logo {
+        float: right;
+        margin-top: 25px;
+        margin-right: 15px;
+        width: 15px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        float: right;
+        margin: 0;
+        margin-top: 10px;
+        margin-right: 15px;
+      }
+
+      ul li {
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .footer-links {
+        margin-bottom: 20px;
+      }
+
+      .footer-divider {
+        margin-left: 15px;
+        margin-right: 15px;
+        opacity: 0.5;
+      }
+      .citi-copyright {
+        color: white;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 15px;
+      }
+    </style>
+    </head>
+<body>
+<header class="header">
+  <img
+    class="citi-logo"
+    alt="Citi"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAABQCAMAAAD84m1YAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA8UExURQAAAP////////////////////////////////////8AAP////8AAP8AAP8AAP8AAP8AAP////////8AAPRMt0QAAAASdFJOUwAPv2Ek3XGgS++ah2njORm9+cTYNegAAANUSURBVGje7ZrZkuogEIah2ZqQFd//XSfxGBMICeAIWnWmL62i/eyNzh8JeZv1bduMXXdbrOvGpm178hHr2/EWsrE6UN90t3Prmno8wyXJyjNUCcp4S7Ox/xqU8jhDDsodp1yymlu+NYUy1N1esa6vFZZumXPDkothWCZgVyU4gWqZp8mxIoYQ0Jsr55iii7nWN0VT1frO20gcWx++LcXSpXj2cbwznBmJb2AJo1BJryveOWaEYRKA/5LlpBiltjxS9DsaAxyREybor1jCYWHCWsuTz3JBmRYCiDGZfRTvCgRrwzBeF66njSQMCJk4F3nzpYuliP9DCcO4qeoe5xXOsVQwk+gsmDE2SZW1VzBuHY87GLkc0K/eAeGpLmIwAR9SLWkCMyc4a6fb7GS4xGFIu/NyTxQVHCXhigK+9Z5IgQmUvMB7tSnyBTAzhwYhGPkKmDlVnBLyLTBF7H+A4YvRj8NQNLA61WDQJ0K5Gm77yMP0E0auH7ENiz9PyjQUBpN1TSt+MvKfg8HYC9u+GDefKUGROujPwakEw/SZw0lWhnne/kEDWhMGtb00wevBsMnaNJryMMzG7bEwF4dBm2KyCgw/1ItQxhgl3Bqukyavj4CtrUMZ+FkKwSReB0kw0kXh3h72OH/RTW+EofskTceFS94bDUkVmH1gNJ6MIEmqwOwDM4UXdC4UqQOzb+uzpZiSSjDq0LzXVhRmdw/wT8PsspT2FFUSZtdL+HEYlbULFoaBvPItC7NNGfNNMOzzMLn1+wfzVzPim7rpq+bM5nuiH4eRNrNoSsLwzHWm7D6jM5u71qYnPg6z34HPunuv7pV9VBHRjRwnqAXDwk/G7lOcqgTjhMYqf9pQ5VKmwbBXYVxBxH2jsGmOmAWzyyuqLBVCeWLrKv5SVFvjax6HgWP1ITzbIg2GiqNMBQAiVbkiIaEGGKK8/xjMU664/pVyFVHAaKamh1OcBeJpIvr8XIbaidHYQIJyFRTUTL4OzMU1i0ppbVd48m+8DIWcXsqEJmnohapmW5Oy3h2cC/YCSSKMJxA6Eyfvrcr6Rwb/JY9MvbU3CTAkEmbCzNExfu1sQmwajBNgbSh5HWZxtryK0/Pv0wIUO9x4dLNTD1KBmA/7fxeKnfwBa4f9pAJiB4cAAAAASUVORK5CYII="
+  />
+</header>
+<div class="main-content">
+  <!--<h1 class="heading">Technical Issue</h1> -->
+  <p class="peak-message">
+    It looks like you are not the account holder. If a Citi account holder wants to grant you access to their account information,
+    visit the <a href="https://urldefense.com/v3/__https://sandbox.developerhub.citi.com/us/home__;!!GjvTz_vk!GWwsa1LtIwjXsoXe4rrjp3Q5plHCuH9-U7rvRhyuxs7vUNFt79zy_X7xEtTznA$">Citi Developer Portal</a> to try our APIs and contact our <a href="https://urldefense.com/v3/__https://sandbox.developerhub.citi.com/contact-api-partnership-sales__;!!GjvTz_vk!GWwsa1LtIwjXsoXe4rrjp3Q5plHCuH9-U7rvRhyuxs7vUNFt79zy_X52sv_OsA$">Open Banking Business Development Team</a>
+  </p>
+</div>
+<footer class="footer">
+  <img
+    class="citi-logo"
+    alt="Citi"
+   src="data:image/png;base64,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" />
+   <hr class="footer-divider">
+  </footer>
+</body>
+</html>

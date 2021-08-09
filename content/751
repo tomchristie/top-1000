@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>モバイルショッピングならau PAY マーケット</title>
+<meta name="y_key" content="c2015bfe5b097941" />
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="copyright" content="&copy; 2007 DeNA Corp." />
+<link rel="canonical" href="http://bidders.jp/" />
+<script LANGUAGE="JavaScript" src="/js/jquery-1.7.2.min.js"></script>
+<script LANGUAGE="JavaScript" src="/js/src01.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/import.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/ph4.css" media="all" />
+<script type="text/javascript">
+UAcheck();
+
+$(document).ready(function(){
+	if(isLogin()) {
+		$("#logOutBtn").addClass("active");
+		$("#logInBtn").removeClass("active");
+	} else {
+		$("#logInBtn").addClass("active");
+		$("#logOutBtn").removeClass("active");
+	}
+});
+</script>
+</head>
+<body id="index-page" onLoad="refresh()">
+<div id="wrap">
+
+<div id="headerBox">
+<img width="1" height="1" src="/dap/sv/paa2?e=arg090121" />
+<script language="JavaScript"><!--
+var s_pageName="[MAIN]:商品を探す:トップ"
+var s_server=""
+var s_channel=""
+var s_pageType=""
+var s_prop1=""+window.location.hostname
+var s_prop2=""
+var s_prop3=""
+var s_prop4=""
+var s_prop5=""
+var s_prop6=""
+var s_prop7=""
+var s_prop8=""
+var s_prop9=""+window.location.protocol+window.location.host+window.location.pathname+window.location.search+window.location.hash
+var s_prop10=""
+/* E-commerce Variables */
+var s_campaign=""
+var s_state=""
+var s_zip=""
+var s_events=""
+var s_products=""
+var s_purchaseID=""
+var s_eVar1=""+window.location.hostname
+var s_eVar2=""
+var s_eVar3=""
+var s_eVar4=""
+var s_eVar5=""
+var s_eVar10="[MAIN]:商品を探す:トップ"
+//--></script><script language="JavaScript" src="/js/s_code_remote.js"></script>
+</div>
+
+<div id="pcb_header">
+	<div class="header_wrap">
+		<div class="logo">
+			<img src="/image/myclb/cb/dena_shopping01.png" alt="au PAY マーケット" />
+		</div>
+	</div>
+</div>
+
+
+<div id="container">
+
+	<div id="head-mybox">
+		<p id="message"><script type="text/javascript">showNickNameTop0701016();</script></p>
+	</div>
+
+	<div class="contentBox border paddingT30">
+
+		<div class="contentBoxin" id="logInBtn">
+		<div class="bg_btn mb10">
+		<p><a href="/mypage/index.html?aff_id=psf051"><img src="/image/login/btn_login.png" width="662" height="83" alt="ビッダーズ出店店舗様ログイン" /></a></p>
+		</div>
+		
+		<div class="textBox">
+		<p><a href="/mypage/index.html?aff_id=psf052">ビッダーズ会員の方はこちら</a></p>
+		</div>
+		</div>
+
+		<div class="contentBoxin" id="logOutBtn">
+		<div class="bg_btn2">
+		<ul>
+		<li><a href="/mypage/index.html" rel="nofollow"><img src="/image/login/btn_mypage.png" width="321" height="83" alt="マイページ" /></a></li>
+		<li><a href="/dap/sv/Logout?" rel="nofollow"><img src="/image/login/btn_logout.png" width="321" height="83" alt="ログアウト" /></a></li>
+		</ul>
+		<p class="txt">※ご本人でない場合は<a href="/dap/sv/Logout?">こちら</a></p>
+		</div>
+		</div>
+
+		<div class="contentBoxin2">
+		<div class="bg_btn">
+		<ul>
+		<li style="float:none;"><a href="https://wowma.jp?aff_id=psf053" target="_blank"><img src="/image/login/btn_dena.png" width="318" height="62" alt="au PAY マーケット" /></a>
+		<span>ショッピング総合</span></li>
+		</ul>
+		</div>
+		</div>
+
+	</div><!-- //contentBox -->
+
+</div><!-- //container -->
+
+
+<div id="footer">
+	<div id="footer_wrap">
+		<ul>
+			<li><a href="https://wowma.jp/tutorial/kiyaku_top.html" rel="nofollow">会員規約</a>&nbsp;|&nbsp;</li>
+			<li><a href="http://www.au-cl.co.jp/" target="_blank" rel="nofollow">会社概要</a>&nbsp;|&nbsp;</li>
+			<li><a href="/dap/sv/aff1?id=CBWG&dir=/cb/index.html" target="_blank">au PAY マーケットに出店</a>&nbsp;|&nbsp;</li>
+			<li><a href="https://wowma.jp/tutorial/privacy.html" rel="nofollow">プライバシーポリシー</a></li>
+		</ul>
+	</div>
+	<div id="copy">
+		<p>au PAY マーケットはauコマース＆ライフ株式会社とKDDI株式会社が運営する総合オンラインマーケットです。</p>
+		<p><span>&copy;</span> 2016 KDDI/au Commerce &amp; Life, Inc.</p>
+	</div>
+</div>
+
+
+
+</div><!-- //wrap -->
+</body>
+</html>

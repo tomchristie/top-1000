@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>泡泡网_PCPOP.com - 新科技•购鲜活</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="泡泡网是中国领先的数码和消费电子网站,以最具亲和力的方式,面向最广泛的数码及消费电子用户和爱好者,提供专业的资讯、互动、购买在内的全面服务。">
+  <meta name="baidu-site-verification" content="oBkTkAdndE">
+  <meta name="mobile-agent" content="format=xhtml; url=http://m.pcpop.com/">
+  <link rel="stylesheet" href="http://cdn.static.pcpop.com/pc/channel/home_page/swiper/idangerous.swiper.css">
+  <link rel="stylesheet" href="http://cdn.static.pcpop.com/pc/channel/home_page/font/iconfont.css">
+  <link rel="stylesheet" href="http://cdn.static.pcpop.com/pc/channel/home_page/css/commen.css">
+  <link rel="stylesheet" href="http://cdn.static.pcpop.com/pc/channel/home_page/css/index.css">
+  
+  <script src="http://ashow.pcpop.com/a/h455.js" type="text/javascript"></script>
+  <script>
+    /*
+     *移动端跳转判断
+     */
+    function GetCookieVal(offset) {
+      var endstr = document.cookie.indexOf(";", offset);
+      if (endstr == -1)
+        endstr = document.cookie.length;
+      return unescape(document.cookie.substring(offset, endstr));
+    }
+
+    function GetCookie(name) {
+      var arg = name + "=";
+      var alen = arg.length;
+      var clen = document.cookie.length;
+      var i = 0;
+      while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+          return GetCookieVal(j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+      }
+      return null;
+    }
+    var browser = {
+      versions: function () {
+        var u = navigator.userAgent,
+          app = navigator.appVersion;
+        return { //移动终端浏览器版本信息
+          trident: u.indexOf('Trident') > -1, //IE内核
+          presto: u.indexOf('Presto') > -1, //opera内核
+          webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+          gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+          mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+          ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+          android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+          iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+          iPad: u.indexOf('iPad') > -1, //是否iPad
+          webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+          winphone: u.indexOf('Windows Phone') > -1 //Windows Phone
+        };
+      }(),
+      language: (navigator.browserLanguage || navigator.language).toLowerCase(),
+      appcookie: GetCookie('wap_pcpop')
+    }
+    var hascookie = browser.appcookie;
+    var ref = document.referrer;
+    if (ref.toLocaleLowerCase().indexOf("m.pcpop.com") != -1) {
+      hascookie = "pc";
+    }
+
+    if ((hascookie == null) && (browser.versions.android || browser.versions.iPhone || browser.versions.winphone)) {
+      location.href = 'http://m.pcpop.com/';
+    } else if ((hascookie != "pc") && (browser.versions.android || browser.versions.iPhone || browser.versions
+        .winphone)) {
+      location.href = "http://m.pcpop.com/";
+    }
+  </script>
+  <script>
+    function addfavorite() {
+      var url = location.href;
+      var explorer = window.navigator.userAgent;
+      try {
+        if (explorer.indexOf("Chrome") >= 0) {
+          alert("您的浏览器不支持此功能，请使用快捷键Ctrl+D手工加入收藏夹");
+          return;
+        }
+        if (document.all) {
+          window.external.addFavorite(url, document.title);
+        } else if (window.sidebar) {
+          window.sidebar.addPanel(document.title, url, "");
+        }
+      } catch (Err) {
+        alert("您的浏览器不支持此功能，请使用快捷键Ctrl+D手工加入收藏夹");
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+   <style>
+    #ad_760_21 img{
+    width:840px}
+    </style>
+<div>
+  <input type="hidden" id="pageid" value="226">
+  <div class="top">
+    <div class="w1200 clearfix">
+      <div class="fl nav-left">
+        <a href="javascript:addfavorite()"><span class="iconfont iconnav_icon_collect_normal"></span>收藏</a>
+        <a href="http://m.pcpop.com/"><span class="iconfont iconnav_icon_wap"></span>手机版</a>
+        <div class="sq-load">
+          盛拓传媒旗下网站
+          <span class="iconfont iconnav_icon_zhankai"></span>
+          <div class="down-box">
+            <div class="down">
+              <a href="http://www.it168.com" target="_blank">IT168</a>
+              <a href="http://www.itpub.net" target="_blank">ITPUB</a>
+              <a href="http://edu.itpub.net" target="_blank">ITPUB学院</a>
+              <a href="http://wenku.it168.com" target="_blank">IT文库</a>
+              <a href="http://www.chinaunix.net" target="_blank">ChinaUnix</a>
+              <a href="http://shike.it168.com" target="_blank">试客</a>
+              <a href="http://www.hallofix.com" target="_blank">哈喽维修</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fr nav-right">
+        <ul>
+          <li>
+            <a target="_blank"
+              href="https://widget.weibo.com/dialog/follow.php?fuid=1662223823&refer=www.pcpop.com&language=zh_cn&type=widget_page&vsrc=app_followbutton&backurl=http%3A%2F%2Fwww.pcpop.com%2F&rnd=1542112414374">
+              <i class=""></i>
+              <span>官方微博</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="iconfont iconnav_share_icon_weixin"></i>
+              <span>官方微信号</span>
+            </a>
+            <div class="qr-code">
+              <img src="./images/qrcode.png" alt="">
+              <span>扫描二维码</span>
+            </div>
+          </li>
+          <li style="display:none">
+            <a href="#">
+              <i class="iconfont iconnav_share_icon_app"></i>
+              <span>APP</span>
+            </a>
+            <div class="qr-code">
+              <img src="./images/er.png" alt="">
+              <span>扫描二维码</span>
+            </div>
+          </li>
+          <li style="display:none">
+            <a href="http://user.it168.com/pcpop/login?domain=www.pcpop.com">
+              <i class="iconfont iconnav_login"></i>
+              <span>登录</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div class="ad w1200 clearfix">
+    <div id="ad_960_1" style="float:left;margin-top:10px;">
+      <script>
+        LG('ad_960_1');
+      </script>
+    </div>
+    <div id="ad_200_1" style="float:right;display:none;margin-top:10px;">
+      <script>
+        LG('ad_200_1');
+      </script>
+    </div>
+  </div>
+  <div class="ad w1200 clearfix">
+    <div id="ad_960_2" style="float:left;margin-top:10px;b">
+      <script>
+        LG('ad_960_2');
+      </script>
+    </div>
+    <div id="ad_200_2" style="float:right;display:none;margin-top:10px;">
+      <script>
+        LG('ad_200_2');
+      </script>
+    </div>
+  </div>
+  <div class="ad w1200 clearfix">
+    <div id="ad_960_3" style="float:left;margin-top:10px;;">
+      <script>
+        LG('ad_960_3');
+      </script>
+    </div>
+    <div id="ad_200_3" style="float:right;display:none;margin-top:10px;">
+      <script>
+        LG('ad_200_3');
+      </script>
+    </div>
+  </div>
+  <!-- 广告 END -->
+  <div class="logo-module">
+    <div class="logo w1200 clearfix">
+      <div class="fl">
+        <img src="./images/home_logo.png" alt="">
+      </div>
+      <div class="fl">
+        <img src="./images/home_slogan.png" alt="">
+      </div>
+    </div>
+    <div class="allNav w1200">
+      <ul class="clearfix">
+        <li><a href="http://mobile.pcpop.com/" target="_blank">手机</a><i></i></li>
+        <li>
+          <span>电脑</span>
+          <ol>
+            <li><a href="http://nb.pcpop.com/" target="_blank">笔记本</a></li>
+            <li><a href="http://pc.pcpop.com/" target="_blank">台式机</a></li>
+          </ol>
+        </li>
+        <li><a href="http://home.pcpop.com/" target="_blank">家电</a> <i></i></li>
+        <li>
+          <span>DIY硬件</span>
+          <ol>
+            <li><a href="http://diy.pcpop.com/" target="_blank">硬件</a></li>
+            <li><a href="http://mb.pcpop.com/" target="_blank">主板</a></li>
+            <li><a href="http://lcd.pcpop.com/" target="_blank">显示器</a></li>
+            <li><a href="http://memory.pcpop.com/" target="_blank">存储</a></li>
+            <li><a href="http://gpu.pcpop.com/" target="_blank">显卡</a></li>
+          </ol>
+        </li>
+        <li><a href="http://game.pcpop.com/" target="_blank">电竞游戏</a><i></i></li>
+        <!-- <li><a href="http://tu.pcpop.com/" target="_blank">图赏</a></li> -->
+        <li><a href="http://ilife.pcpop.com" target="_blank">科技生活</a><i></i></li>
+        <li>
+          <span>数码</span>
+          <ol>
+            <li><a href="http://speaker.pcpop.com/" target="_blank">音频</a></li>
+            <li><a href="http://dc.pcpop.com/" target="_blank">影像</a></li>
+            <li><a href="http://printer.pcpop.com/" target="_blank">打印机</a></li>
+          </ol>
+        </li>
+        <li><a href="http://product.pcpop.com/" target="_blank">产品库</a><i></i></li>
+        <li>
+          <span>事件专题</span>
+          <ol>
+            <li><a href="http://zt.pcpop.com/" target="_blank">专题</a></li>
+            <li><a href="http://zhibo.pcpop.com/" target="_blank">直播</a></li>
+            <li><a href="http://pcdown.pcpop.com/" target="_blank">应用市场</a></li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div id="ad_760_11" class="w1200" style="display:none; margin-bottom:10px;">
+    <script>
+      LG('ad_760_11');
+    </script>
+  </div>
+  <div id="ad_760_12" class="w1200" style="display:none; margin-bottom:10px;">
+    <script>
+      LG('ad_760_12');
+    </script>
+  </div>
+  <div id="ad_760_13" class="w1200" style="display:none; margin-bottom:10px;">
+    <script>
+      LG('ad_760_13');
+    </script>
+  </div>
+  <!-- 广告 END -->
+  <div class="m1 w1200 clearfix">
+    <!-- 左边 -->
+    <div class="fl">
+      <div class="banner">
+        <div class="swiper-container swiper-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="http://www.pcpop.com/article/6516448.shtml" id="m1_p1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3534/3534081.png_s-w320" alt="OPPO夹心式安全电池到底有多安全？极端测试一看便知"></div><p>OPPO夹心式安全电池到底有多安全？极端测试一看便知</p></a></div><div class="swiper-slide"><a href="http://www.pcpop.com/article/6521562.shtml" id="m1_p2" target="_blank"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3556/3556579/3/3556/3556579.jpeg_s-w320" alt="英特尔持续投入电竞产业：希望爱玩的你赢的更精彩！"></div><p>英特尔持续投入电竞产业：希望爱玩的你赢的更精彩！</p></a></div><div class="swiper-slide"><a href="http://www.pcpop.com/article/6515699.shtml" id="m1_p3" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3530/3530740.jpg_s-w320" alt="唐伯虎，你能点中realme GT大师版吗？——聊聊“套娃”"></div><p>唐伯虎，你能点中realme GT大师版吗？——聊聊“套娃”</p></a></div><div class="swiper-slide"><a href="http://www.pcpop.com/article/6522774.shtml" id="m1_p4" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3562/3562074.png_s-w320" alt="短小精悍！iGame“Mini”系列显卡专为ITX而生"></div><p>短小精悍！iGame“Mini”系列显卡专为ITX而生</p></a></div><div class="swiper-slide"><a href="http://www.pcpop.com/article/6521871.shtml" id="m1_p5" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3557/3557771.jpg_s-w320" alt="七彩虹B560ITX版型银白超飒 双色主板正式发布"></div><p>七彩虹B560ITX版型银白超飒 双色主板正式发布</p></a></div><div class="swiper-slide"><a href="http://www.pcpop.com/article/6516638.shtml" id="m1_p6" target="_blank"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3540/3540036/3/3540/3540036.jpeg_s-w320" alt="强劲硬核带你玩出精彩！机械师F117毒药游戏本评测"></div><p>强劲硬核带你玩出精彩！机械师F117毒药游戏本评测</p></a></div><div class="swiper-slide"><a href="http://tu.pcpop.com/pic-6517325.shtml" id="m1_p7" target="_blank"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3540/3540039/3/3540/3540039.jpeg_s-w320" alt="高颜值实力派！机械师F117毒药游戏本欣赏"></div><p>高颜值实力派！机械师F117毒药游戏本欣赏</p></a></div>
+          </div>
+          <div class="pagination"></div>
+        </div>
+      </div>
+      <ul class="banner-list clearfix">
+        <li style="width:180px"><a href="http://www.pcpop.com/article/6522797.shtml" id="m2_p1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3562/3562244.png_s-w200" alt="8月攒机佳选：RX6600XT游戏主机配置单推荐"></div><p>8月攒机佳选：RX6600XT游戏主机配置单推荐</p></a></li><li style="width:180px"><a href="http://www.pcpop.com/article/6522717.shtml" id="m2_p2" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3561/3561789.png_s-w200" alt="3000元内有哪些高“质价比”的旗舰手机？"></div><p>3000元内有哪些高“质价比”的旗舰手机？</p></a></li>
+      </ul>
+    </div>
+    <!-- 中间 -->
+    <div class="fl">
+      <ul class="middle-list">
+        <li class="title"><a href="http://www.pcpop.com/article/6523487.shtml" id="m3_p1" target="_blank"><i>手机</i><span>鸿蒙OS 2.0升级用户已经达到5000万</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523473.shtml" id="m3_p2" target="_blank"><i></i><span>三星推出全新入门级手机，采用自家猎户座芯片</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523438.shtml" id="m3_p3" target="_blank"><i></i><span>华为畅享10S/荣耀9X等开启HarmonyOS 2内测招募</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523400.shtml" id="m3_p4" target="_blank"><i></i><span>魅族两款新机入网，骁龙870直屏旗舰或以魅蓝回归</span></a></li>
+      </ul>
+      <ul class="middle-list">
+        <li class="title"><a href="http://www.pcpop.com/article/6523446.shtml" id="m4_p1" target="_blank"><i>笔记本</i><span>荣耀RTX2060游戏本6299元：游戏比3050Ti强</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523443.shtml" id="m4_p2" target="_blank"><i></i><span>小米平板5 Pro跑分曝光，搭载骁龙870处理器</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523054.shtml" id="m4_p3" target="_blank"><i></i><span>HTC新平板曝光，配备紫光芯片</span></a></li>
+      </ul>
+      <ul class="middle-list">
+        <li class="title"><a href="http://www.pcpop.com/article/6522106.shtml" id="m5_p1" target="_blank"><i>家电</i><span>全面解决家居清洁问题，石头手持无线吸尘器H7能帮你</span></a></li><li class=""><a href="http://www.pcpop.com/article/6521995.shtml" id="m5_p2" target="_blank"><i></i><span>小米官宣！小米OLED 电视二代将同小米MIX4一起发布</span></a></li>
+      </ul>
+      <ul class="middle-list">
+        <li class="title"><a href="http://www.pcpop.com/article/6523488.shtml" id="m6_p1" target="_blank"><i>精选</i><span>支持眼部与头部智能识别 佳能XF605摄像机曝光</span></a></li><li class=""><a href="http://www.pcpop.com/article/6523483.shtml" id="m6_p2" target="_blank"><i></i><span>第一名毫不意外居然还是它！2020全球相机占有率排名公布</span></a></li>
+      </ul>
+    </div>
+    <!-- 右边 -->
+    <div class="fl">
+      <div class="information">
+        <div class="title clearfix">
+          <i></i>
+          <p>PCPOP资讯</p>
+        </div>
+        <ul>
+          <li class="clearfix"><a href="http://www.pcpop.com/article/6523488.shtml" id="m7_p1" target="_blank"><i></i><span>支持眼部识别佳能XF605摄像机曝光</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523483.shtml" id="m7_p2" target="_blank"><i></i><span>2020全球相机占有率排名公布</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523482.shtml" id="m7_p3" target="_blank"><i></i><span>传感器占有率排名三星仅占2成</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523459.shtml" id="m7_p4" target="_blank"><i></i><span>尼康第一季财政报告业绩公布</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523456.shtml" id="m7_p5" target="_blank"><i></i><span>佳能又注册三支f/1.4广角镜设计专利</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523447.shtml" id="m7_p6" target="_blank"><i></i><span>华为Mate 50将搭载5G骁龙898</span><span>数码影像·08.09</span></a></li><li class="clearfix"><a href="http://www.pcpop.com/article/6523445.shtml" id="m7_p7" target="_blank"><i></i><span>红米上架新款显示器，27英寸2K分辨率</span><span>Lcd·08.09</span></a></li>
+        </ul>
+      </div>
+      <div class="publish">
+        <div class="title">
+          <i class="iconfont iconhome_icon_live"></i>
+          <span>品牌发布</span>
+        </div>
+        <div class="swiper-container swiper-publish">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><div class="over"><a href="http://zhibo.pcpop.com/667.html" target="_blank" ><img src="http://zhibo.pcpop.com//images/1/0x0/202107281203060706b9712e80ba19abe218d64f67589ca53c.jpeg" alt=""></a></div><div class="state clearfix"><p>华为旗舰新品发布会</p><i>已结束</i></div></div><div class="swiper-slide"><div class="over"><a href="http://zhibo.pcpop.com/666.html" target="_blank" ><img src="http://zhibo.pcpop.com//images/1/0x0/2021072210155807589b379a03df0d240bf0efb91aefee4eea.jpeg" alt=""></a></div><div class="state clearfix"><p>中兴Axon 30 5G 27日线上发布会直播</p><i>已结束</i></div></div><div class="swiper-slide"><div class="over"><a href="http://zhibo.pcpop.com/665.html" target="_blank" ><img src="http://zhibo.pcpop.com//images/1/0x0/20210723113357075730095a6bb887e89be729a1887d7d4057.jpeg" alt=""></a></div><div class="state clearfix"><p>OPPO Watch2 超能代表发布会</p><i>已结束</i></div></div><div class="swiper-slide"><div class="over"><a href="http://zhibo.pcpop.com/664.html" target="_blank" ><img src="http://zhibo.pcpop.com//images/1/0x0/202107121052360736721caa2f2cb8f3c4b25043b7b70f8c1f.jpeg" alt=""></a></div><div class="state clearfix"><p>你好，自然美 S10系列全新发布</p><i>已结束</i></div></div><div class="swiper-slide"><div class="over"><a href="http://zhibo.pcpop.com/663.html" target="_blank" ><img src="http://zhibo.pcpop.com//images/1/0x0/2021062416535006505aa45ad14774405e13f574cedf244d94.jpeg" alt=""></a></div><div class="state clearfix"><p>小米电视6 画质双旗舰见面会</p><i>已结束</i></div></div>
+          </div>
+        </div>
+        <div class="contrast">
+          <i id="left" class="iconfont iconhome_live_right"></i>
+          <i id="right" class="iconfont iconhome_live_right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <script>
+    LG('J9770');
+  </script>
+  <script>
+    LG('J9782');
+  </script>
+  <div id="ad_960_22" class="w1200" style="display:none; margin-bottom:10px;">
+    <script>
+      LG('ad_960_22');
+    </script>
+  </div>
+  <!-- 广告 END -->
+  <!-- 评测·导购·行情 -->
+  <div class="m2 w1200 clearfix">
+    <div class="fl">
+      <div class="line">
+        <div class="title">
+          <i class="iconfont iconhome_icon_pingce"></i>
+          <span>评测·导购·行情</span>
+        </div>
+      </div>
+      <div class="clearfix content">
+        <div class="fl">
+          <div class="evaluate clearfix"><a href="http://www.pcpop.com/article/6522731.shtml"  id="m8_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3561/3561863.png_s-w230" alt=""></div><div class="text fr"><p>RTX2060游戏本并不落伍 价格适合依旧值得拥有</p><div class="author clearfix">导购<i>·</i>张帆<span class="fr">2021-08-06</span></div></div></a></div><div class="pic pic-small"><ul class="clearfix"><li><a href="http://www.pcpop.com/article/6522582.shtml" id="m8_p2" target="_blank"><div class="play-icon"></div><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3561/3561119.png_s-w230" alt=""></div><p>OPPO Watch 2系列全智能手表正式首销</p></a></li><li><a href="http://www.pcpop.com/article/6522349.shtml" id="m8_p3" target="_blank"><div class="play-icon"></div><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3560/3560047.png_s-w230" alt=""></div><p>华为和荣耀为何要在OLED屏上</p></a></li></ul></div>
+        </div>
+        <div class="fr">
+          <div class="new">
+            <div class="title"><a href="http://www.pcpop.com/article/6521985.shtml" id="m9_p1" target="_blank">跟RTX2060比，RTX3050Ti游戏性能到底如何？</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__5_20_1.htm"  target="_blank">评测</a><i></i><a href="http://www.pcpop.com/article/6521996.shtml" id="m9_p2" target="_blank">消失的奥秘！OPPO下一代屏下摄像头全解析</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_864_000000422_6_22_1.htm"  target="_blank">行情</a><i></i><a href="http://www.pcpop.com/article/6521900.shtml" id="m9_p3" target="_blank">配备RTX30系甜品卡 天选2娱乐学习皆能手</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855__291_305_1.htm"  target="_blank">导购</a><i></i><a href="http://www.pcpop.com/article/6521583.shtml" id="m9_p4" target="_blank">以旧换新享优惠，石头科技实力回馈老客户</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5_005900050_291_305_1.htm"  target="_blank">导购</a><i></i><a href="http://www.pcpop.com/article/6521391.shtml" id="m9_p5" target="_blank">三千元档热门手机推荐，每一款都值得关注</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_864_000000422_291_305_1.htm"  target="_blank">导购</a><i></i><a href="http://www.pcpop.com/article/6522076.shtml" id="m9_p6" target="_blank">ROG魔霸5R暑期力推：配备RX6800M显卡，够强！</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_864_000000422_6_22_1.htm"  target="_blank">行情</a><i></i><a href="http://www.pcpop.com/article/6522069.shtml" id="m9_p7" target="_blank">畅享RX6800M强大！ROG魔霸5R游戏本热卖</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5_005900050_6_286_1.htm"  target="_blank">行情</a><i></i><a href="http://www.pcpop.com/article/6521127.shtml" id="m9_p8" target="_blank">一加9限时“真香”攻略，到手价只需3399元起</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_864_000000422_5_20_1.htm"  target="_blank">评测</a><i></i><a href="http://www.pcpop.com/article/6520871.shtml" id="m9_p9" target="_blank">优化电脑必学：带你玩转i7-11800H游戏本</a></li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="title">
+          <i class="iconfont iconhome_icon_tushang"></i>
+          <span>图赏专区</span>
+        </div>
+      </div>
+      <div class="pic pic-all">
+        <ul class="clearfix">
+          <li><a href="http://tu.pcpop.com/pic-6519220.shtml" id="m13_p1" target="_blank"><div class="over"><img src="http://sy1.img.pcpop.com/article/3/3546/3546377.jpg_s-w230" alt=""></div><p>石头手持无线吸尘器H7图赏 大吸力更干净</p></a></li><li><a href="http://tu.pcpop.com/pic-6518563.shtml" id="m13_p2" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3543/3543410.jpg_s-w230" alt=""></div><p>“鳞片”加身更显硬核 Redmi K40游戏增强版逆鳞特别款图赏</p></a></li><li><a href="http://tu.pcpop.com/pic-6518372.shtml" id="m13_p3" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3542/3542738.jpg_s-w230" alt=""></div><p>华硕天选2欣赏：英特尔H45游戏本超值之选</p></a></li><li><a href="http://tu.pcpop.com/pic-6518231.shtml" id="m13_p4" target="_blank"><div class="over"><img src="http://sy1.img.pcpop.com/article/3/3542/3542265.jpg_s-w230" alt=""></div><p>OPPO A93s图赏：高颜值轻薄机身+长续航加持</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column fr">
+      <div class="title clearfix">
+        <i></i>
+        <p>PCPOP栏目</p>
+      </div>
+      <ul class="nav clearfix">
+        <li class="bright">有问必答</li>
+        <li>数说</li>
+        <li>POP最惠买</li>
+      </ul>
+      <div class="nav-content">
+        <!-- 有问必答 -->
+        <ul>
+          <li class="bright"><a href="http://www.pcpop.com/article/6198613.shtml" id="m10_p1" target="_blank"><p class="title">有问必答：为何创维G71系列会被称为“AI娱乐电视”</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/2/2120/2120885.png_s-w230" alt=""></div><div class="fr"><p>在传统电视领域，不可否认作为老牌国产品牌的创维积累了非常雄厚的实力，而当来到全新智能交互时代，电视已经不仅仅只是“实体播放器”这么简单以及功能单一，所以同其他数码电子以及家电产品一样，创维也提出了"智能AI"战略，而近期推出的G71系列就是基于AI的全新力作。</p><span>评测<i>·</i>申沛</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6168181.shtml" id="m10_p2" target="_blank"><p class="title">有问必答：10bit专业显示器的必要性！告别色彩断层有这些妙招</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1989/1989320.jpg_s-w230" alt=""></div><div class="fr"><p>很多摄影人对8bit、10bit都不陌生，无论是单反相机、专业显示器，还是PS上，都会涉及到色深（位深）选择，但色深对作品的实际影响，却知之甚少。因此，在选择后期修图显示器时，摄影人的期许大多是不偏色，却忽略了10bit的重要性。色深不够最直观的影响就是色彩断层，这个现象在人像、风光和商业摄影中尤为常见。今天就给大家讲讲10bit显示器对于处理色彩断层的重要性。</p><span>动态<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6155390.shtml" id="m10_p3" target="_blank"><p class="title">专业显示器就只是广色域吗？它的价值究竟在哪？</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1916/1916390.jpg_s-w230" alt=""></div><div class="fr"><p>近年来，广色域作为专业显示器的一个重要指标，受到了不少摄影人的追捧。但在实际使用时却遇到了困惑：windows桌面应用以及大部分浏览器不支持色彩管理，花大几千买的广色域显示器似乎不能发挥价值，还会给后期修图带来困扰，这种情况下广色域还有必要吗？其实，这是你对广色域和专业显示器产生了一些误解！究竟什么情况需要广色域，专业摄影显示器等于广色域显示器吗？这些问题，小编今天一并给你解答！</p><span>动态<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6137426.shtml" id="m10_p4" target="_blank"><p class="title">有问必答：在家太无聊？这个摄影利器让你在家也能玩转摄影</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1824/1824621.jpg_s-w230" alt=""></div><div class="fr"><p>突然袭来的一场疫情，让原本欢乐的春节变得惶恐。过了立春，原本是很多影友开始策划采风外拍，或是学习课程的时候，因为这场疫情大家只能宅在家中。其实现在正是学习摄影技巧、选购2020摄影装备的好时候，大家可别虚度！</p><span>动态<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6126377.shtml" id="m10_p5" target="_blank"><p class="title">有问必答：10bit是什么？摄影后期修图需要10bit显示器吗？</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1775/1775764.jpg_s-w230" alt=""></div><div class="fr"><p>在选购后期修图显示器时，很多影友可能都会注意到一个专业参数——10bit，也有不少商家会拿10bit面板作为专业摄影显示器的宣传卖点之一。但可能对于相当一部分人来说，10bit面板只是一个看起来很高端的参数，其背后实际代表着什么、对于摄影后期效果能带来多大提升却一知半解，所以这次也是借着这篇文章来对10bit显示器做一个全方位的答疑解惑。</p><span>新闻<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6126381.shtml" id="m10_p6" target="_blank"><p class="title">有问必答：后期修图有必要选专业摄影显示器吗？看看它和笔记本的对比</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1775/1775811.jpg_s-w230" alt=""></div><div class="fr"><p>关于摄影后期修图，玩摄影的应该都不陌生，不少影友甚至不惜花大价钱报班学习，但技巧都掌握了，修出的图却总是差点意思，差距可能就出在修图设备上：摄影老师都用专业摄影显示器，而你还在用笔记本修图。笔记本修图时往往会出现偏色等问题，严重影响后期修图的质量和效率：</p><span>新闻<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6126382.shtml" id="m10_p7" target="_blank"><p class="title">有问必答：选择摄影修图显示器时，色准和4K分辨率谁更重要？</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1775/1775827.png_s-w230" alt=""></div><div class="fr"><p>现在越来越多的摄影人意识到买台专业修图显示器的必要性，毕竟用显示器大屏处理摄影作品可比笔记本体验更好。在选择摄影后期显示器时，显示器的色准和分辨率作为影响显示效果的重要性能，也成为了大家主要对比的参数。但现在能同时满足专业色准和4K高分辨率的专业显示器价格都在4000元以上，对部分摄影爱好者来说超出预算。那么，在预算有限，两者不可兼得的情况下，对于摄影人而言，色准和4K分辨率究竟谁更重要呢？今天就来聊聊这个话题。</p><span>新闻<i>·</i>吴文</span></div></div></a></li>
+        </ul>
+        <ul style="display: none">
+          <li class="bright"><a href="http://www.pcpop.com/article/6498012.shtml" id="m11_p1" target="_blank"><p class="title">海尔智家小件618开售2小时全网销额破3亿！</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3422/3422822.jpg_s-w230" alt=""></div><div class="fr"><p>2021年618年中大促拉开序幕，截止到18日凌晨2点，海尔智家小件全网销额已突破3亿元，销量销额同比增幅31%。其中，游戏链群雷神小微再获专业游戏本品牌全网第一；卫玺智能马桶盖开盘即超去年全天，并凭借单品类进入卫浴行业前十；语音链群也持续引爆，实现网器销量同比5倍速增长。</p><span>新闻<i>·</i>吴文</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6490411.shtml" id="m11_p2" target="_blank"><p class="title">智能除菌沐浴更健康 海尔物联网除菌浴霸X7U1体验</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3389/3389705.png_s-w230" alt=""></div><div class="fr"><p>海尔物联网除菌浴霸X7U1是一款集照明、取暖、除湿、换气等多种功能于一体的智能浴霸，功能全面，但是价格却只有1299元，带来了更高的性价比。</p><span>评测<i>·</i>李军工</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6456805.shtml" id="m11_p3" target="_blank"><p class="title">海尔三翼鸟亮相AWE 涵盖多场景解决方案</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3215/3215588.jpeg_s-w230" alt=""></div><div class="fr"><p>3月23日，2021中国家电及消费电子博览会正式召开。海尔智家携带场景品牌三翼鸟首次亮相AWE。</p><span>新闻<i>·</i>刘明鹏</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6431507.shtml" id="m11_p4" target="_blank"><p class="title">海尔小优智能音箱有这些功能 用好它更方便</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3083/3083431.jpeg_s-w230" alt=""></div><div class="fr"><p>科技能给我们带来更加便利的生活，在科技的支持下，许多日常生活场景都会变得更加方便、美好。拥有一套智能家居设备是提升生活体验的重要途径，海尔围绕着智能家居打造了一系列智能产品，搭配海尔小优智能音箱，可以实现更完美的智能生活。</p><span>新闻<i>·</i>刘明鹏</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6323127.shtml" id="m11_p5" target="_blank"><p class="title">海尔智家小件IP亮相海尔智家北京001号店</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/2/2625/2625289.png_s-w230" alt=""></div><div class="fr"><p>9月11号，海尔智家北京001号体验中心于北京市朝阳区干杨树甲16号院8号楼底商105号盛大开业。海尔智家坚持用智慧场景套购为用户提供衣食住娱全方位智家解决方案，希望带给人们更智能的生活体验。此外，海尔智家小件IP——智小兜同时亮相，希望整合海尔全产品生态链群，建立深度的用户连接。</p><span>新闻<i>·</i>张帆</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6191454.shtml" id="m11_p6" target="_blank"><p class="title">口腔健康不可少 海尔小鲸鱼系列便携式冲牙器体验</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/2/2090/2090230.png_s-w230" alt=""></div><div class="fr"><p>作为由专业医疗公司出品的冲牙器，海尔便携式冲牙器可以算是集续航、水容量、压力控制、便携性等诸多优点于一身的产品， 5月7日京东首发229元的售价也让它拥有了足够的性价比，作为一款能够帮助全家维护口腔健康、提升生活幸福感的产品，这样的冲牙器让你心动了吗？</p><span>评测<i>·</i>李军工</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6164642.shtml" id="m11_p7" target="_blank"><p class="title">紫外线杀菌更安全 海尔卫玺V6-5229智能马桶盖首发</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1972/1972805.png_s-w230" alt=""></div><div class="fr"><p>一场疫情，让我们对居家卫生有了新的认识，日常生活中，我们不但要注意常规的手部、面部卫生，同时也应该注意卫生间的清洁。无论是当年的SARS还是现在的新冠肺炎，都能够通过“粪口传播”，当年SARS时很难针对“粪口传播”进行大范围的预防，不过到了现在，不但科技进步了，大家对于生活的品质也有了很大的提升，我们只需要选择一款合适的智能马桶就可以阻隔“粪口传播”的途径，给家人更健康的生活空间。</p><span>新闻<i>·</i>张帆</span></div></div></a></li>
+        </ul>
+        <ul style="display: none">
+          <li class="bright"><a href="http://www.pcpop.com/article/6308167.shtml" id="m12_p1" target="_blank"><p class="title">POP最惠买：2020开学季的DIY攒机安利</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/2/2564/2564416.jpg_s-w230" alt=""></div><div class="fr"><p>随着开学的脚步越发临近，对于很多大学新生来说配备一台电脑在大学期间使用就成为了一个比较纠结的选择。而在电脑的选择中，除了笔记本，那还可以选择攒一台台式机带到大学的生活中。那么今天这篇《POP最惠买：开学季的DIY攒机安利》就为各位带来一些攒机配置。</p><span>导购<i>·</i>陈梓泓</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6303788.shtml" id="m12_p2" target="_blank"><p class="title">POP最惠买：这些千元卡也能流畅吃鸡</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/2/2548/2548642.jpg_s-w230" alt=""></div><div class="fr"><p>对近期打算装机的朋友们来说，千元级别的GTX1650、1660既能畅玩大部分热门游戏，短期内也不会因为新品发布而有明显降价，作为主力或者过渡显卡都会是不错的选择。</p><span>导购<i>·</i>陈沐梁</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6040486.shtml" id="m12_p3" target="_blank"><p class="title">减轻旅行负担 相机搭配怎样的镜头适合一镜走天下？</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1229/1229022.jpeg_s-w230" alt=""></div><div class="fr"><p>如今正值假期出游的好季节，也特别适合出去旅游。而对于旅行拍照这件事，相信有不少人往往会将自己所有的摄影装备全部塞进背包里，无论它们会不会在旅行过程中用得上。然而殊不知过重的背包会让你的旅行体验大打折扣，因此，想要更好的旅行拍照体验，必须要学会给自己的背包“减负”。所以对于绝大部分人来说，没有什么比轻松自在更重要吧，所以如果你不是专业摄影师，但又想在拍出好照片的同时还省力，那么为你的相机选择一支适合“一镜走天下”的镜头绝对是个不错的选择。</p><span>导购<i>·</i>申沛</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6029797.shtml" id="m12_p4" target="_blank"><p class="title">POP最惠买：游戏发烧新选择 RTX 2080 SUPER显卡精品推荐</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1129/1129726.png_s-w230" alt=""></div><div class="fr"><p>NVIDIA第三款SUPER系列显卡GeForce RTX 2080 SUPER已于近期正式上市。相比之前的GeForce RTX 2080，全新的GeForce RTX 2080 SUPER可谓加量不加价，性能稳步提升，价格却不变，非公版的上市建议零售价依然为5699元起，称得上是发烧级显示市场上的新星，相当值得广大高端玩家们拥有。此次，我们精心推荐了几款大厂出品的非公版力作，有意攒机的玩家们可作参考。</p><span>新闻<i>·</i>张帆</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6013892.shtml" id="m12_p5" target="_blank"><p class="title">POP最惠买：让桌面更简洁，三款电竞一体机推荐</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/1/1032/1032541.jpeg_s-w230" alt=""></div><div class="fr"><p>虽然说一体机没有笔记本或者台式机那么常见，作为介于笔记本和台式机的另一种形态，一体机本身也有不少的优点。例如一体机的占用空间更少，线材更简洁，使用起来更省心等。</p><span>导购<i>·</i>刘明鹏</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6003241.shtml" id="m12_p6" target="_blank"><p class="title">POP最优品： 攒新机畅玩一夏！华硕主板618大促每满100最高减20元</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/0/971/971395.png_s-w230" alt=""></div><div class="fr"><p>“千呼万唤始出来”，终于到了6月18日，重头大戏将于今日正式开演。为了吸引消费者驻足，各大品牌电竞硬件纷纷加大了优惠力度，想要升级电脑的朋友，亦可以借机选购性能不错的主板。那么什么样的主板值得入手呢?当然，好用还不贵的主板自然易受到用户青睐。说到好用的主板必然要提到知名品牌华硕。华硕主板凭借自身出色的性能表现和个性化的外观设计，广受用户认可和好评。而且，在今天这个特殊的日子里，华硕主板年中大促活动进入高潮阶段，诸多爆款型号在直降秒杀的基础上更可叠加每满100最高减20元活动，优惠幅度非常诱人，让你轻松享好价。好用不贵的主板品牌我替你找到了!</p><span>导购<i>·</i>张帆</span></div></div></a></li><li class=""><a href="http://www.pcpop.com/article/6000400.shtml" id="m12_p7" target="_blank"><p class="title">POP最优品：助你畅玩一夏 雷神游戏电脑618劲爆推荐</p><div class="content clearfix"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/0/957/957733.jpg_s-w230" alt=""></div><div class="fr"><p>6月总是让人满怀期待，不仅有一年一度618购物狂欢节，同时期待已久的暑假也将一同到来!每年618期间都是玩家们购买游戏电脑的好时机，想来很多小伙伴也都准备把握住这个机会。特别是刚刚结束高考的同学，应该已经忍耐很久了吧!如果你有购买游戏电脑打算，小编强烈推荐专业电竞品牌雷神911系列产品。性能强劲已经是911系列产品的专有名词，外观颜值也颇具特色。不仅如此，618将至各种优惠又怎么少得了?快一起来看看吧!</p><span>导购<i>·</i>张帆</span></div></div></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div id="ad_760_21" class="w1200">
+    <script>
+      LG('ad_760_21');
+    </script>
+  </div>
+  <!-- 广告 END -->
+  <!-- 手机 -->
+  <div class="m3 w1200 clearfix">
+
+    <div class="line clearfix">
+      <div class="title fl">
+        <i class="iconfont iconhome_icon_shouji"></i>
+        <span>手机</span>
+      </div>
+      <div class="classify fl">
+        <a href="http://5g.pcpop.com/">5G</a><i>·</i>
+        <a href="http://photo.pcpop.com/">拍照</a><i>·</i>
+        <a href="http://youxi.pcpop.com/">手游</a>
+      </div>
+    </div>
+
+    <div class="fl">
+      <div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6523398.shtml"  id="m14_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3564/3564551.jpeg_s-w230" alt=""></div><div class="text fr"><p>三星Galaxy Z Flip 3配置曝光，骁龙888+双屏幕</p><div class="author clearfix">新闻<i>·</i>刘明鹏<span class="fr">2021-08-09</span></div></div></a></div><div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6523275.shtml"  id="m14_p2" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3564/3564025.png_s-w230" alt=""></div><div class="text fr"><p>联发科迅鲲1300T芯片规格曝光，与天玑1100基本一致</p><div class="author clearfix">新闻<i>·</i>陈沐梁<span class="fr">2021-08-09</span></div></div></a></div>
+    </div>
+
+    <div class="fl">
+      <div class="new">
+        <div class="title"><a href="http://www.pcpop.com/article/6523207.shtml" id="m15_p1" target="_blank">小米 MIX 4 屏幕参数曝光：6.67 英寸双曲屏</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523055.shtml" id="m15_p2" target="_blank">谷歌 Pixel 5a 手机曝光：配备骁龙 765G</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522993.shtml" id="m15_p3" target="_blank">小米11出现 WIFI问题机器可换新机，赠半年延保</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522758.shtml" id="m15_p4" target="_blank">魅族18系列限时优惠开启 最高立减900</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_5__4_8_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522537.shtml" id="m15_p5" target="_blank">OPPO签约上汽集团，推动汽车与手机深度互融</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522384.shtml" id="m15_p6" target="_blank">摩托罗拉edge轻奢版发布：6.99mm/163g极致轻薄</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522382.shtml" id="m15_p7" target="_blank">摩托罗拉edge s pro发布：骁龙870+5倍潜望，2399元起</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_5_005900050_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522243.shtml" id="m15_p8" target="_blank">荣耀Magic3系列诞生全过程曝光，提前感受新特性</a></li>
+      </div>
+    </div>
+
+    <div class="fr">
+      <div class="recommend">
+        <div class="title">
+          <i></i>
+          <p>编辑推荐</p>
+        </div>
+        <div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010239168/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8605393.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010239168/Detail.html" target="_blank">荣耀 50 Pro</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010239168/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010239168/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010239168/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010239168/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010239168/PriceShop.html" target="_blank">网上购买</a></div></div><div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010239161/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8605354.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010239161/Detail.html" target="_blank">OPPO Reno6 Pro+ 12GB+256GB</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010239161/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010239161/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010239161/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010239161/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010239161/PriceShop.html" target="_blank">网上购买</a></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- 笔记本 -->
+  <div class="m3 w1200 clearfix">
+
+    <div class="line clearfix">
+      <div class="title fl">
+        <i class="iconfont iconhome_icon_bijiben"></i>
+        <span>笔记本</span>
+      </div>
+      <div class="classify fl">
+        <a href="http://pc.pcpop.com/" target="_blank">台式机</a><i>·</i>
+        <a href="http://game.pcpop.com/" target="_blank">电竞游戏</a><i>·</i>
+        <a href="http://gnb.pcpop.com/" target="_blank">游戏本</a><i>·</i>
+        <a href="http://pad.pcpop.com/" target="_blank">平板</a>
+      </div>
+    </div>
+
+    <div class="fl">
+      <div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6523041.shtml"  id="m16_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3562/3562963.jpg_s-w230" alt=""></div><div class="text fr"><p>小米平板 5 包装盒亮相：黑白两种配色</p><div class="author clearfix">新闻<i>·</i>陈梓泓<span class="fr">2021-08-08</span></div></div></a></div><div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6522995.shtml"  id="m16_p2" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3562/3562930.jpg_s-w230" alt=""></div><div class="text fr"><p>荣耀平板 V7 Pro 预热：全球首发迅鲲 1300T</p><div class="author clearfix">新闻<i>·</i>陈梓泓<span class="fr">2021-08-07</span></div></div></a></div>
+    </div>
+
+    <div class="fl">
+      <div class="new">
+        <div class="title"><a href="http://www.pcpop.com/article/6522986.shtml" id="m17_p1" target="_blank">英特尔新一代NUC曝光，有可能采用自家独显</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_677__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522982.shtml" id="m17_p2" target="_blank">不止手写笔，小米平板5也将配备键盘</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_677__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522453.shtml" id="m17_p3" target="_blank">小米平板5官宣，配备手写笔支持</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_4_005500045_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522429.shtml" id="m17_p4" target="_blank">曝realme轻薄本即将发布，搭载i5-1135G7</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_4_005500045_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522258.shtml" id="m17_p5" target="_blank">雷神IGER 小白轻薄全能本发布，首发价3999元起</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_677_000000228_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522120.shtml" id="m17_p6" target="_blank">联想小新平板平行视窗功能即将上线</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_677__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6521773.shtml" id="m17_p7" target="_blank">ColorOS 12跨屏互联功能曝光，OPPO首款平板即将发布</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_677_000000228_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6521266.shtml" id="m17_p8" target="_blank">官方宣布，联想平板全系产品升级为两年质保</a></li>
+      </div>
+    </div>
+
+    <div class="fr">
+      <div class="recommend">
+        <div class="title">
+          <i></i>
+          <p>编辑推荐</p>
+        </div>
+        <div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010236597/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8592986.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010236597/Detail.html" target="_blank">华为 MateBook X Pro 2020款  i7-10510U+16G+1T</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010236597/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010236597/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010236597/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010236597/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010236597/PriceShop.html" target="_blank">网上购买</a></div></div><div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010238437/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8601920.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010238437/Detail.html" target="_blank">戴尔 成就500013.3英寸英特尔酷睿i5窄边框轻薄笔记本电脑十代i5-10210U8G512GMX2502G高色域银</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010238437/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010238437/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010238437/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010238437/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010238437/PriceShop.html" target="_blank">网上购买</a></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- 家电 -->
+  <div class="m3 w1200 clearfix">
+    <div class="line clearfix">
+      <div class="title fl">
+        <i class="iconfont iconhome_icon_jiadian"></i>
+        <span>家电</span>
+      </div>
+      <div class="classify fl">
+        <a href="http://tv.pcpop.com/" target="_blank">电视</a><i>·</i>
+        <a href="http://projector.pcpop.com/" target="_blank">投影机</a>
+      </div>
+    </div>
+
+    <div class="fl">
+      <div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6517726.shtml"  id="m18_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3539/3539782.jpg_s-w230" alt=""></div><div class="text fr"><p>​游戏玩家的终极梦想，有它就实现一半了！</p><div class="author clearfix">行情<i>·</i>陈梓泓<span class="fr">2021-07-27</span></div></div></a></div><div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6517255.shtml"  id="m18_p2" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3537/3537709.jpg_s-w230" alt=""></div><div class="text fr"><p>首款Mini-LED智慧屏，华为智慧屏V75 Super官宣</p><div class="author clearfix">新闻<i>·</i>陈沐梁<span class="fr">2021-07-26</span></div></div></a></div>
+    </div>
+
+    <div class="fl">
+      <div class="new">
+        <div class="title"><a href="http://www.pcpop.com/article/6517254.shtml" id="m19_p1" target="_blank">华为智慧屏V 75 Super将于7月29日发布</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6517236.shtml" id="m19_p2" target="_blank">小米推出扫拖机器人新品，带自动集尘功能</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855__5_14_1.htm"  target="_blank">评测</a><i></i><a href="http://www.pcpop.com/article/6517085.shtml" id="m19_p3" target="_blank">全新升级更好用，石头手持无线吸尘器H7评测</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855__291_305_1.htm"  target="_blank">导购</a><i></i><a href="http://www.pcpop.com/article/6516935.shtml" id="m19_p4" target="_blank">畅玩次时代主机！你需要这些新产品</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_855__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6515420.shtml" id="m19_p5" target="_blank">米家智能电饭煲3L登场：众筹价449元​​​​</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855_000000384_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6514337.shtml" id="m19_p6" target="_blank">米家智能电饭煲3L要来了，众筹价449元</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855_005000080_4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6508639.shtml" id="m19_p7" target="_blank">小米电视6至尊版与小米电视ES全渠道开售</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_855__4_12_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6507189.shtml" id="m19_p8" target="_blank">下一个进入日常生活的必备家电，可能是这一类产品</a></li>
+      </div>
+    </div>
+
+    <div class="fr">
+      <div class="recommend">
+        <div class="title">
+          <i></i>
+          <p>编辑推荐</p>
+        </div>
+
+        <div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010236410/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8592119.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010236410/Detail.html" target="_blank">创维 55A5</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010236410/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010236410/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010236410/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010236410/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010236410/PriceShop.html" target="_blank">网上购买</a></div></div><div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/010238910/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8604101.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/010238910/Detail.html" target="_blank">TCL 75X9 8K QLED电视</a><ul class="clearfix"><li><a href="http://product.pcpop.com/010238910/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/010238910/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/010238910/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/010238910/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/010238910/PriceShop.html" target="_blank">网上购买</a></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- 硬件 -->
+  <div class="m3 w1200 clearfix">
+    <div class="line clearfix">
+      <div class="title fl">
+        <i class="iconfont iconhome_icon_yingjian"></i>
+        <span>硬件</span>
+      </div>
+      <div class="classify fl">
+        <a href="http://gpu.pcpop.com/" target="_blank">显卡</a><i>·</i>
+        <a href="http://case.pcpop.com/" target="_blank">机电散</a><i>·</i>
+        <a href="http://cpu.pcpop.com/" target="_blank">CPU</a><i>·</i>
+        <a href="http://mouse.pcpop.com/" target="_blank">键鼠外设</a>
+      </div>
+    </div>
+
+    <div class="fl">
+      <div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6522387.shtml"  id="m20_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3560/3560238.jpg_s-w230" alt=""></div><div class="text fr"><p>威刚DDR5内存新品发布，频率首次突破万兆</p><div class="author clearfix">新闻<i>·</i>陈沐梁<span class="fr">2021-08-06</span></div></div></a></div><div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6521654.shtml"  id="m20_p2" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3556/3556898.png_s-w230" alt=""></div><div class="text fr"><p>英睿达P5 Plus固态硬盘发布，采用最新176层NAND闪存</p><div class="author clearfix">新闻<i>·</i>陈沐梁<span class="fr">2021-08-04</span></div></div></a></div>
+    </div>
+
+    <div class="fl">
+      <div class="new">
+        <div class="title"><a href="http://www.pcpop.com/article/6521413.shtml" id="m21_p1" target="_blank">AMD 锐龙5000G系列处理器正式开售，1899元起</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_6__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6521295.shtml" id="m21_p2" target="_blank">雷电五协议曝光，速度将可能达到80Gbps</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_9__4_13_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6521182.shtml" id="m21_p3" target="_blank">影驰ChinaJoy精彩回顾：最新MOD主机展出，现场答题赢显卡</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_6__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6520607.shtml" id="m21_p4" target="_blank">AMD新一代CPU插槽曝光，确认采取LGA形态</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_6__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6520555.shtml" id="m21_p5" target="_blank">Z690主板曝光，插槽确认大改</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_7__4_12_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6520401.shtml" id="m21_p6" target="_blank">7月内存、闪存价格小幅上涨，预计第四季度回落</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_6__4_7_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6520393.shtml" id="m21_p7" target="_blank">英特尔12代酷睿偷跑，3GHz主频性能追平11代i9</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_13__4_8_1.htm"  target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6520392.shtml" id="m21_p8" target="_blank">惠普收购金士顿HyperX外设品牌，全新中文名公布</a></li>
+      </div>
+    </div>
+
+    <div class="fr">
+      <div class="recommend">
+        <div class="title">
+          <i></i>
+          <p>编辑推荐</p>
+        </div>
+        <div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/001018481/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8564038.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/001018481/Detail.html" target="_blank">影驰 GTX 1070Ti GAMER</a><ul class="clearfix"><li><a href="http://product.pcpop.com/001018481/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/001018481/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/001018481/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/001018481/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/001018481/PriceShop.html" target="_blank">网上购买</a></div></div><div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/001000277/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8459406.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/001000277/Detail.html" target="_blank">华硕 ROG STRIX-GTX1080-A8G-GAMING 1670-1835MHz 8G/10010MHz GDDR5 PCI-E3.0显卡</a><ul class="clearfix"><li><a href="http://product.pcpop.com/001000277/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/001000277/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/001000277/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/001000277/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/001000277/PriceShop.html" target="_blank">网上购买</a></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- 综合 -->
+  <div class="m3 w1200 clearfix">
+    <div class="line clearfix">
+      <div class="title fl">
+        <i class="iconfont iconhome_icon_zonghe"></i>
+        <span>综合</span>
+      </div>
+    </div>
+
+    <div class="fl">
+      <div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6523444.shtml"  id="m22_p1" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3564/3564744.jpg_s-w230" alt=""></div><div class="text fr"><p>小巧的人像神镜！七工匠推出APS-C画幅50mm F0.95镜头</p><div class="author clearfix">新闻<i>·</i>申沛<span class="fr">2021-08-09</span></div></div></a></div><div class="evaluate evaluate-main clearfix"><a href="http://www.pcpop.com/article/6523432.shtml"  id="m22_p2" target="_blank"><div class="over fl"><img src="http://sy0.img.pcpop.com/article/3/3564/3564673.png_s-w230" alt=""></div><div class="text fr"><p>新能源车竞争激烈！沃尔沃XC40纯电版降至28万6</p><div class="author clearfix">新闻<i>·</i>张帆<span class="fr">2021-08-09</span></div></div></a></div>
+    </div>
+
+    <div class="fl">
+      <div class="new">
+        <div class="title"><a href="http://www.pcpop.com/article/6523433.shtml" id="m23_p1" target="_blank">包括35-150mm f/2-2.8 腾龙两支新大光圈变焦镜头曝光</a></div><ul><li class="clearfix "><a href="http://www.pcpop.com/common/Article_2_006100113_4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523430.shtml" id="m23_p2" target="_blank">学佳能采用外变焦？索尼今年或更新两支大三元GM镜头</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_862__4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523421.shtml" id="m23_p3" target="_blank">雪佛兰畅巡米奇太空版14.99万元：续航410公里</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_862__4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523388.shtml" id="m23_p4" target="_blank">领克06将推新外观：粉色车身配上野莓紫撞色轮毂</a></li><li class="clearfix h17"><a href="http://www.pcpop.com/common/Article_862__4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523353.shtml" id="m23_p5" target="_blank">吉利第4代帝豪预售订单突破10000台</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_862__4_8_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523308.shtml" id="m23_p6" target="_blank">小鹏汽车首批11座高速超充站上线</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_17_006000059_4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6523246.shtml" id="m23_p7" target="_blank">小米高端智能音箱预热：蕴藏澎湃声音能量</a></li><li class="clearfix "><a href="http://www.pcpop.com/common/Article_862__4_7_1.htm" target="_blank">新闻</a><i></i><a href="http://www.pcpop.com/article/6522575.shtml" id="m23_p8" target="_blank">超长续航加持！OPPO Watch 2开启首销</a></li>
+      </div>
+    </div>
+
+    <div class="fr">
+      <div class="recommend">
+        <div class="title">
+          <i></i>
+          <p>编辑推荐</p>
+        </div>
+        <div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/000365744/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/5715681.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/000365744/Detail.html" target="_blank">罗技 G710+</a><ul class="clearfix"><li><a href="http://product.pcpop.com/000365744/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/000365744/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/000365744/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/000365744/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/000365744/PriceShop.html" target="_blank">网上购买</a></div></div><div class="product clearfix"><div class="fl"><a href="http://product.pcpop.com/001008527/Detail.html" target="_blank"><img src="http://img.product.it168.com/product/8509217.jpg_product-120x120" alt=""></a></div><div class="fr"><a href="http://product.pcpop.com/001008527/Detail.html" target="_blank">技嘉 AB350M-Gaming 3 主板 (AMD B350/Socket AM4)</a><ul class="clearfix"><li><a href="http://product.pcpop.com/001008527/Comment.html" target="_blank">点评</a></li><li><a href="http://product.pcpop.com/001008527/Article.html" target="_blank">评测</a></li><li><a href="http://product.pcpop.com/001008527/Detail.html" target="_blank">参数</a></li><li><a href="http://product.pcpop.com/001008527/PriceShop.html" target="_blank">报价</a></li></ul><a class="shop" href="http://product.pcpop.com/001008527/PriceShop.html" target="_blank">网上购买</a></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="link">
+      <div class="w1200">
+        <div class="link-box">
+          <span>盛拓传媒</span>
+          <a href="http://www.it168.com/">IT168</a>
+          <a href="http://www.pcpop.com/">泡泡网</a>
+          <a href="http://www.itpub.net/">ITPUB</a>
+          <a href="http://edu.itpub.net/">ITPUB学院</a>
+          <a href="http://www.chinaunix.net/">ChinaUnix</a>
+          <a href="http://hallofix.com/">哈喽维修</a>
+        </div>
+        <div class="link-box">
+          <span>友情链接</span>
+          <a href="http://www.autohome.com.cn/">汽车之家</a>
+          <a href="http://www.che168.com/">二手车之家</a>
+          <a href="http://car.autohome.com.cn/">汽车报价</a>
+          <a href="http://product.it168.com/">IT168产品报价</a>
+          <a href="http://digi.163.com/">网易数码</a>
+          <a href="http://digi.it.sohu.com/">搜狐数码</a>
+          <a href="http://www.techweb.com.cn/">Techweb</a>
+          <a href="http://www.mydrivers.com/">驱动之家</a>
+          <a href="http://www.tgbus.com/">电玩巴士</a>
+          <a href="http://www.jiguo.com/">极果酷玩</a>
+          <a href="http://yunos.com/">YunOS</a>
+          <a href="https://www.duba.com/?f=it168">金山导航</a>
+          <a href="http://www.kepuchina.cn/">科普中国网</a>
+          <a href="http://www.xingcheshixian.com/">行车视线</a>
+<a href="https://tech.ifeng.com/">凤凰网科技</a>
+<a href="https://www.ofweek.com/">OFweek维科网</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="w1200">
+        <div class="link-box tip"><a href="http://www.pcpop.com/site/about/index.shtml">关于我们</a>|<a
+            href="http://www.pcpop.com/site/about/tgzn.shtml">投稿指南</a>|<a
+            href="http://www.pcpop.com/site/about/server3.shtml">站点地图</a>|<a
+            href="http://www.pcpop.com/site/about/contact.shtml">联系我们</a>|<a
+            href="http://www.pcpop.com/site/about/friend.shtml">合作网站</a>|<a
+            href="http://www.pcpop.com/site/about/law1.shtml">法律声明</a></div>
+        <div class="about tip"><span>北京盛拓优讯信息技术有限公司.版权所有</span> <span>中华人民共和国增值电信业务经营许可证
+            编号：京B2-20170206</span> | <span>北京市公安局海淀分局网监中心备案编号：11010802020132</span></div>
+        <div class="auth tip"><a href="http://www.it168.com/images/gddsjmxkz.png">广播电视节目制作经营许可证：编号（京）字第07177号</a> <a
+            href="http://img5.pcpop.com/ArticleImages/0x0/4/4394/00439444932919811.jpg">信息系统安全等级保护备案：11010813655-00001</a>
+          <a href="http://img5.pcpop.com/ArticleImages/0x0/4/4362/00436215424187466.png">网络文化经营许可证：京网文(2018)
+            1456-138号</a> <a href="http://www.it168.com/images/yyzz.png">工商营业执照</a></div>
+        <div class="auth tip"><a href="http://beian.miit.gov.cn">备案号：京ICP备16024965号-9</a></div>
+        <div class="report tip">违法和不良信息举报电话:010-59548436,010-59544810,17352615567,17816876620,niuxiaotong@pcpop.com,jiachanjuan@126.com</div>
+        <div class="tip" style="margin: 0;height: 50px;margin-top: 5px;"><a style="display: inline-block;" href="http://www.12377.cn/"><img
+              src="http://cdn.static.pcpop.com/pc/index/images/12377.jpg" alt=""></a>
+            <a style="display: inline-block;" href="http://www.it168.com/jubao.html" target="_blank"><img
+              src="http://cdn.static.pcpop.com/pc/index/images/wcnjubao.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+<div style="position:fixed;left:0;bottom: 0px;width: 200px;height: 303px;z-index:99999;/* border: 1px solid #f2f2f2; */">
+  <img style="display:block;width:100%;height:100%;" src="http://www.it168.com/intro110.jpg">
+      <span id="closeIntro" style="position:absolute;width:30px;height:30px;border-radius: 30px;top:-10px;right:-10px;border: 1px solid #ccc;text-align: center;line-height: 30px;background: #fff;color: #999;">×</span>
+    </div>
+-->
+  <div id="ad_tongji" style="display:none">
+    <script>
+      LG('ad_tongji');
+    </script>
+    <script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1277787077&web_id=1277787077"></script>
+  </div>
+  <script>
+    BLA();
+  </script>
+  <script src="http://cdn.static.pcpop.com/pc/channel/home_page/js/jquery.1.12.4.js"></script>
+  <script src="http://cdn.static.pcpop.com/pc/channel/home_page/swiper/idangerous.swiper.js"></script>
+  <script src="http://cdn.static.pcpop.com/pc/channel/home_page/js/index.js"></script>
+<script>
+        
+        $(function(){
+    $("#closeIntro").click(function(){
+        $(this).closest("div").hide();
+    });
+});
+        </script>
+  <script language="javascript">
+    function  ad_focus_load()  {
+            if  (typeof  (farr)  !=  'undefined'  &&  farr.length  >  0)  {
+                var  s_c  =  $('.swiper-wrapper');
+                var  s_c_lis  =  s_c.find('div');
+                var  s_len  =  s_c_lis.length;
+                var  len  =  farr.length;
+                var  s  =  0,  e  =  7;
+                if  (len  +  s_len  >  7)  {
+                    s  =  7  -  len;
+                }
+                else  {
+                    s  =  s_len,  e  =  len  +  s_len;
+                }
+                var  n  =  0;
+                for  (var  i  =  s;  i  <  e;  i++)  {
+                    var  html  =  farr[n].replace('∑',  '');
+                    var  title  =  $(html).attr("title");
+                    html  =  $(html).css('display',  'block')[0].outerHTML;
+                    html  +=  '<p  class="botom-tip"><span>'  +  title  +  '</span></p>';
+                    if  (i  <  s_len)  {
+                        s_c_lis[i].innerHTML  =  html;
+                    }  else  {
+                        s_c.append('<div  class="swiper-slide">'  +  html  +  '</div>');
+                    }
+                    n++;
+                }
+            }
+        }
+        ad_focus_load();
+    function ad_top_load() {
+      if (typeof (isAd_ad_960_1) == "undefined") isAd_ad_960_1 = 0;
+      if (typeof (isAd_ad_960_2) == "undefined") isAd_ad_960_2 = 0;
+      if (typeof (isAd_ad_960_3) == "undefined") isAd_ad_960_3 = 0;
+      if (typeof (isAd_ad_200_1) == "undefined") isAd_ad_200_1 = 0;
+      if (typeof (isAd_ad_200_2) == "undefined") isAd_ad_200_2 = 0;
+      if (typeof (isAd_ad_200_3) == "undefined") isAd_ad_200_3 = 0;
+
+      if (isAd_ad_960_1 == 0 && isAd_ad_200_1 == 0) {
+        document.getElementById("ad_960_1").style.display = "none";
+        document.getElementById("ad_200_1").style.display = "none";
+      }
+      if (isAd_ad_960_2 == 0 && isAd_ad_200_2 == 0) {
+        document.getElementById("ad_960_2").style.display = "none";
+        document.getElementById("ad_200_2").style.display = "none";
+      }
+      if (isAd_ad_960_3 == 0 && isAd_ad_200_3 == 0) {
+        document.getElementById("ad_960_3").style.display = "none";
+        document.getElementById("ad_200_3").style.display = "none";
+      }
+    }
+  //  ad_top_load();
+  </script>
+<!--
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4875cc4ab76a7d7c11c93855dfbdfcdd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+-->
+</div>
+</body>
+
+<!-- popindexjs -->
+
+</html>

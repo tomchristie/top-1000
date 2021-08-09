@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-73ab015134d74153791",applicationID:"432897163"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1210.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+		<link rel="alternate" type="application/rss+xml" title="Legacy.com RSS Feed" href="https://www.legacy.com/feed/" />
+	<link rel="alternate" type="application/atom+xml" title="Legacy.com Atom Feed" href="https://www.legacy.com/feed/atom/" />
+	<link rel="pingback" href="https://www.legacy.com/xmlrpc.php" />
+	<!--[if lt IE 9]>
+	<script src="https://www.legacy.com/wp-content/themes/soledad/js/html5.js"></script>
+	<![endif]-->
+	<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create','UA-3821886-7', 'legacy.com');
+ga('send', 'pageview');
+</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v16.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Legacy.com | Where Life Stories Live On</title>
+	<meta name="description" content="Legacy.com is a global network of online obituaries that provides timely news of death and allows users to pay respect and celebrate life." />
+	<link rel="canonical" href="https://www.legacy.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Legacy.com | Where Life Stories Live On" />
+	<meta property="og:description" content="Legacy.com is a global network of online obituaries that provides timely news of death and allows users to pay respect and celebrate life." />
+	<meta property="og:url" content="https://www.legacy.com/" />
+	<meta property="og:site_name" content="Legacy.com" />
+	<meta property="article:modified_time" content="2021-07-13T18:17:52+00:00" />
+	<meta property="og:image" content="https://www.legacy.com/wp-content/uploads/2020/01/family-hero-2.jpg" />
+	<meta property="og:image:width" content="530" />
+	<meta property="og:image:height" content="245" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="Legacy.com is a global network of online obituaries that provides timely news of death and allows users to pay respect and celebrate life." />
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="3 minutes">
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.legacy.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Legacy.com &raquo; Feed" href="https://www.legacy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Legacy.com &raquo; Comments Feed" href="https://www.legacy.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.legacy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<!-- legacy.com is managing ads with Advanced Ads – https://wpadvancedads.com/ --><script>
+						advanced_ads_ready=function(){var fns=[],listener,doc=typeof document==="object"&&document,hack=doc&&doc.documentElement.doScroll,domContentLoaded="DOMContentLoaded",loaded=doc&&(hack?/^loaded|^c/:/^loaded|^i|^c/).test(doc.readyState);if(!loaded&&doc){listener=function(){doc.removeEventListener(domContentLoaded,listener);window.removeEventListener("load",listener);loaded=1;while(listener=fns.shift())listener()};doc.addEventListener(domContentLoaded,listener);window.addEventListener("load",listener)}return function(fn){loaded?setTimeout(fn,0):fns.push(fn)}}();
+						</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='codepeople-search-in-place-advanced-style-css'  href='https://www.legacy.com/wp-content/plugins/search-in-place-advanced/css/codepeople_shearch_in_place.css?ver=5.0.78' type='text/css' media='all' />
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='https://www.legacy.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=2.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='anwp-pg-styles-css'  href='https://www.legacy.com/wp-content/plugins/anwp-post-grid-for-elementor/public/css/styles.min.css?ver=0.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.legacy.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://www.legacy.com/wp-includes/css/dist/block-library/theme.min.css?ver=5.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='uagb-block-css-css'  href='https://www.legacy.com/wp-content/plugins/ultimate-addons-for-gutenberg/dist/blocks.style.css?ver=1.22.4' type='text/css' media='all' />
+<link rel='stylesheet' id='unslider-css-css'  href='https://www.legacy.com/wp-content/plugins/advanced-ads-slider/public/assets/css/unslider.css?ver=1.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='slider-css-css'  href='https://www.legacy.com/wp-content/plugins/advanced-ads-slider/public/assets/css/slider.css?ver=1.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='uagb-slick-css-css'  href='https://www.legacy.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/css/slick.css?ver=1.22.4' type='text/css' media='all' />
+<link rel='stylesheet' id='penci-fonts-css'  href='//fonts.googleapis.com/css?family=PT+Serif%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CPlayfair+Display+SC%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7CMontserrat%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%7COpen+Sans%3A300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C800%2C800italic%26subset%3Dlatin%2Ccyrillic%2Ccyrillic-ext%2Cgreek%2Cgreek-ext%2Clatin-ext&#038;ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='penci_style-css'  href='https://www.legacy.com/wp-content/themes/soledad/style.css?ver=7.2.3' type='text/css' media='all' />
+<link rel='stylesheet' id='cff-css'  href='https://www.legacy.com/wp-content/plugins/custom-facebook-feed/assets/css/cff-style.css?ver=2.19.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-font-awesome-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.legacy.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='codepeople-search-in-place-advanced-js-extra'>
+/* <![CDATA[ */
+var codepeople_search_in_place_advanced = {"own_only":"0","result_number":"0","more":"More Results","empty":"0 results","char_number":"3","root":"\/\/www.legacy.com\/wp-admin\/","home":"https:\/\/www.legacy.com","summary_length":"20","operator":"or","lang":"en","highlight_colors":["#B5DCE1","#F4E0E9","#D7E0B1","#F4D9D0","#D6CDC8","#F4E3C9","#CFDAF0","#F4EFEC"],"areas":["div.hentry","#content","#main","div.content","#middle","#container","#wrapper","article",".elementor","body"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/search-in-place-advanced/js/codepeople_shearch_in_place.js?ver=5.0.78' id='codepeople-search-in-place-advanced-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-slider/public/assets/js/unslider.min.js?ver=1.4.6' id='unslider-js-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-slider/public/assets/js/jquery.event.move.js?ver=1.4.6' id='unslider-move-js-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-slider/public/assets/js/jquery.event.swipe.js?ver=1.4.6' id='unslider-swipe-js-js'></script>
+<script type='text/javascript' id='ga_events_main_script-js-extra'>
+/* <![CDATA[ */
+var ga_options = {"link_clicks_delay":"120","gtm":"0","anonymizeip":"0","advanced":"1","snippet_type":"universal","tracking_id":"UA-3821886-7","gtm_id":"","domain":"legacy.com","scroll_elements":[],"click_elements":[{"name":"submit-obit-button","type":"class","category":"SubmitObit","action":"Click","label":"clicktoSubmit","value":"","bounce":"false"}]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/wp-google-analytics-events/js/main.js?ver=1.0' id='ga_events_main_script-js'></script>
+<script type='text/javascript' id='advanced-ads-advanced-js-js-extra'>
+/* <![CDATA[ */
+var advads_options = {"blog_id":"1","privacy":{"enabled":false,"state":"not_needed"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js?ver=1.24.2' id='advanced-ads-advanced-js-js'></script>
+<script type='text/javascript' id='advanced-ads-responsive-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_responsive = {"reload_on_resize":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-responsive/public/assets/js/script.js?ver=1.9' id='advanced-ads-responsive-js'></script>
+<script type='text/javascript' id='advanced_ads_pro/visitor_conditions-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_pro_visitor_conditions = {"referrer_cookie_name":"advanced_ads_pro_visitor_referrer","referrer_exdays":"365","page_impr_cookie_name":"advanced_ads_page_impressions","page_impr_exdays":"3650"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-pro/modules/advanced-visitor-conditions/inc/conditions.min.js?ver=2.8.1' id='advanced_ads_pro/visitor_conditions-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-pro/assets/advanced-ads-pro.js?ver=2.8.1' id='advanced-ds-pro/front-js'></script>
+<script type='text/javascript' id='advanced-ads-pro/cache_busting-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_pro_ajax_object = {"ajax_url":"https:\/\/www.legacy.com\/wp-admin\/admin-ajax.php","lazy_load_module_enabled":"1","lazy_load":{"default_offset":500,"offsets":[]},"moveintohidden":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-pro/modules/cache-busting/inc/base.min.js?ver=2.8.1' id='advanced-ads-pro/cache_busting-js'></script>
+<link rel="https://api.w.org/" href="https://www.legacy.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.legacy.com/wp-json/wp/v2/pages/581" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.legacy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.legacy.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.1" />
+<link rel='shortlink' href='https://www.legacy.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.legacy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.legacy.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.legacy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.legacy.com%2F&#038;format=xml" />
+<!-- HFCM by 99 Robots - Snippet # 12: Homepage DataLayer -->
+<script>
+    var dataLayer = [];
+    var viewport = window.innerWidth + 'x' + window.innerHeight;
+    dataLayer.push({'ViewportDimension': viewport});
+    dataLayer.push({'Affiliate': 'Legacy'});
+    dataLayer.push({'PageName': 'home-ns'});
+    dataLayer.push({'ProductName': 'obit-ns'});
+    dataLayer.push({'AnalyticPageCategory':'homepage'});
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 41: Connatix Homepage Head -->
+<script>!function(n){if(!window.cnx){window.cnx={},window.cnx.cmd=[];var t=n.createElement('iframe');t.display='none',t.onload=function(){var n=t.contentWindow.document,c=n.createElement('script');c.src='//cd.connatix.com/connatix.player.js',c.setAttribute('async','1'),c.setAttribute('type','text/javascript'),n.body.appendChild(c)},n.head.appendChild(t)}}(document);</script>
+<!-- /end HFCM by 99 Robots -->
+<style>
+.search-in-place {background-color: #F9F9F9;}
+.search-in-place {border: 1px solid #DDDDDD;}
+.search-in-place .item{border-bottom: 1px solid #DDDDDD;}.search-in-place .label{color:#333333;}
+.search-in-place .label{text-shadow: 0 1px 0 #FFFFFF;}
+.search-in-place .label{
+				background: #ECECEC;
+				background: -moz-linear-gradient(top,  #F9F9F9 0%, #ECECEC 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F9F9F9), color-stop(100%,#ECECEC));
+				background: -webkit-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: -o-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: -ms-linear-gradient(top,  #F9F9F9 0%,#ECECEC 100%);
+				background: linear-gradient(to bottom,  #F9F9F9 0%,#ECECEC 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#ECECEC',GradientType=0 );
+			}
+.search-in-place .item.active{background-color:#FFFFFF;}
+</style><style id="wplmi-inline-css" type="text/css"> span.wplmi-user-avatar { width: 16px;display: inline-block !important;flex-shrink: 0; } img.wplmi-elementor-avatar { border-radius: 100%;margin-right: 3px; } 
+
+</style>
+<script>advads_items = { conditions: {}, display_callbacks: {}, display_effect_callbacks: {}, hide_callbacks: {}, backgrounds: {}, effect_durations: {}, close_functions: {}, showed: [] };</script><style type="text/css" id="legac-layer-custom-css"></style><script type="text/javascript">
+		var advadsCfpQueue = [];
+		var advadsCfpAd = function( adID ){
+			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
+		};
+		</script>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TDQHZW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- OneTrust Cookies Consent Notice start -->
+
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="9b83ccca-692f-4fe4-aad7-485756c63854"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+<script src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js"" type="text/javascript" charset="UTF-8" ccpa-opt-out-ids="C0002,C0003,C0004,C0005" ccpa-opt-out-geo="ca" ccpa-opt-out-lspa="true"></script><style type="text/css"> @font-face {font-family: "opensans-bold-webfont";src: local("opensans-bold-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/opensans-bold-webfont.woff") format("woff");} @font-face {font-family: "opensans-bolditalic-webfont";src: local("opensans-bolditalic-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/opensans-bolditalic-webfont.woff") format("woff");} @font-face {font-family: "opensans-italic-webfont";src: local("opensans-italic-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/opensans-italic-webfont.woff") format("woff");} @font-face {font-family: "opensans-regular-webfont";src: local("opensans-regular-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/opensans-regular-webfont.woff") format("woff");} @font-face {font-family: "ptserif-bold-webfont";src: local("ptserif-bold-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/ptserif-bold-webfont.woff") format("woff");} @font-face {font-family: "ptserif-bolditalic-webfont";src: local("ptserif-bolditalic-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/ptserif-bolditalic-webfont.woff") format("woff");} @font-face {font-family: "ptserif-italic-webfont";src: local("ptserif-italic-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/ptserif-italic-webfont.woff") format("woff");} @font-face {font-family: "ptserif-regular-webfont";src: local("ptserif-regular-webfont"), url("https://www.legacy.com/wp-content/uploads/2019/11/ptserif-regular-webfont.woff") format("woff");}		h1, h2, h3, h4, h5, h6, h2.penci-heading-video, #navigation .menu li a, .penci-photo-2-effect figcaption h2, .headline-title, a.penci-topbar-post-title, #sidebar-nav .menu li a, .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider
+		.pencislider-container .pencislider-content .pencislider-button,
+		.author-quote span, .penci-more-link a.more-link, .penci-post-share-box .dt-share, .post-share a .dt-share, .author-content h5, .post-pagination h5, .post-box-title, .penci-countdown .countdown-amount, .penci-countdown .countdown-period, .penci-pagination a, .penci-pagination .disable-url, ul.footer-socials li a span,
+		.penci-button,.widget input[type="submit"],.penci-user-logged-in .penci-user-action-links a, .widget button[type="submit"], .penci-sidebar-content .widget-title, #respond h3.comment-reply-title span, .widget-social.show-text a span, .footer-widget-wrapper .widget .widget-title,.penci-user-logged-in .penci-user-action-links a,
+		.container.penci-breadcrumb span, .container.penci-breadcrumb span a, .penci-container-inside.penci-breadcrumb span, .penci-container-inside.penci-breadcrumb span a, .container.penci-breadcrumb span, .container.penci-breadcrumb span a, .error-404 .go-back-home a, .post-entry .penci-portfolio-filter ul li a, .penci-portfolio-filter ul li a, .portfolio-overlay-content .portfolio-short .portfolio-title a, .home-featured-cat-content .magcat-detail h3 a, .post-entry blockquote cite,
+		.post-entry blockquote .author, .tags-share-box.hide-tags.page-share .share-title, .widget ul.side-newsfeed li .side-item .side-item-text h4 a, .thecomment .comment-text span.author, .thecomment .comment-text span.author a, .post-comments span.reply a, #respond h3, #respond label, .wpcf7 label, #respond #submit,
+		div.wpforms-container .wpforms-form.wpforms-form .wpforms-field-label,div.wpforms-container .wpforms-form.wpforms-form input[type=submit], div.wpforms-container .wpforms-form.wpforms-form button[type=submit], div.wpforms-container .wpforms-form.wpforms-form .wpforms-page-button,
+		.wpcf7 input[type="submit"], .widget_wysija input[type="submit"], .archive-box span,
+		.archive-box h1, .gallery .gallery-caption, .contact-form input[type=submit], ul.penci-topbar-menu > li a, div.penci-topbar-menu > ul > li a, .featured-style-29 .penci-featured-slider-button a, .pencislider-container .pencislider-content .pencislider-title, .pencislider-container
+		.pencislider-content .pencislider-button, ul.homepage-featured-boxes .penci-fea-in.boxes-style-3 h4 span span, .pencislider-container .pencislider-content .pencislider-button, .woocommerce div.product .woocommerce-tabs .panel #respond .comment-reply-title, .penci-recipe-index-wrap .penci-index-more-link a, .penci-menu-hbg .menu li a, #sidebar-nav .menu li a, .penci-readmore-btn.penci-btn-make-button a,
+		.bos_searchbox_widget_class #flexi_searchbox h1, .bos_searchbox_widget_class #flexi_searchbox h2, .bos_searchbox_widget_class #flexi_searchbox h3, .bos_searchbox_widget_class #flexi_searchbox h4,
+		.bos_searchbox_widget_class #flexi_searchbox #b_searchboxInc .b_submitButton_wrapper .b_submitButton:hover, .bos_searchbox_widget_class #flexi_searchbox #b_searchboxInc .b_submitButton_wrapper .b_submitButton,
+		.penci-featured-cat-seemore.penci-btn-make-button a, .penci-menu-hbg-inner .penci-hbg_sitetitle { font-family: 'PT Serif', serif; font-weight: normal; }
+		.featured-style-29 .penci-featured-slider-button a, #bbpress-forums #bbp-search-form .button{ font-weight: bold; }
+						.header-slogan .header-slogan-text{ font-family: 'Open Sans', sans-serif;  }
+				#navigation .menu li a, .penci-menu-hbg .menu li a, #sidebar-nav .menu li a { font-family: 'PT Serif', serif; font-weight: normal; }
+		.penci-hide-tagupdated{ display: none !important; }
+			.header-slogan .header-slogan-text { font-style:normal; }
+							h1, h2, h3, h4, h5, h6, #sidebar-nav .menu li a, #navigation .menu li a, a.penci-topbar-post-title, .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button,
+		.headline-title, .author-quote span, .penci-more-link a.more-link, .author-content h5, .post-pagination h5, .post-box-title, .penci-countdown .countdown-amount, .penci-countdown .countdown-period, .penci-pagination a, .penci-pagination .disable-url, ul.footer-socials li a span,
+		.penci-sidebar-content .widget-title, #respond h3.comment-reply-title span, .widget-social.show-text a span, .footer-widget-wrapper .widget .widget-title, .error-404 .go-back-home a, .home-featured-cat-content .magcat-detail h3 a, .post-entry blockquote cite, .pencislider-container .pencislider-content .pencislider-title, .pencislider-container
+		.pencislider-content .pencislider-button, .post-entry blockquote .author, .tags-share-box.hide-tags.page-share .share-title, .widget ul.side-newsfeed li .side-item .side-item-text h4 a, .thecomment .comment-text span.author, .thecomment .comment-text span.author a, #respond h3, #respond label, .wpcf7 label,
+		div.wpforms-container .wpforms-form.wpforms-form .wpforms-field-label,div.wpforms-container .wpforms-form.wpforms-form input[type=submit], div.wpforms-container .wpforms-form.wpforms-form button[type=submit], div.wpforms-container .wpforms-form.wpforms-form .wpforms-page-button,
+		#respond #submit, .wpcf7 input[type="submit"], .widget_wysija input[type="submit"], .archive-box span,
+		.archive-box h1, .gallery .gallery-caption, .widget input[type="submit"],.penci-button, .widget button[type="submit"], .contact-form input[type=submit], ul.penci-topbar-menu > li a, div.penci-topbar-menu > ul > li a, .penci-recipe-index-wrap .penci-index-more-link a, #bbpress-forums #bbp-search-form .button, .penci-menu-hbg .menu li a, #sidebar-nav .menu li a, .penci-readmore-btn.penci-btn-make-button a, .penci-featured-cat-seemore.penci-btn-make-button a, .penci-menu-hbg-inner .penci-hbg_sitetitle { font-weight: bold; }
+						.featured-area .penci-image-holder, .featured-area .penci-slider4-overlay, .featured-area .penci-slide-overlay .overlay-link, .featured-style-29 .featured-slider-overlay, .penci-slider38-overlay{ border-radius: ; -webkit-border-radius: ; }
+		.penci-featured-content-right:before{ border-top-right-radius: ; border-bottom-right-radius: ; }
+		.penci-flat-overlay .penci-slide-overlay .penci-mag-featured-content:before{ border-bottom-left-radius: ; border-bottom-right-radius: ; }
+				.container-single .post-image{ border-radius: ; -webkit-border-radius: ; }
+				.penci-mega-thumbnail .penci-image-holder{ border-radius: ; -webkit-border-radius: ; }
+				#navigation .menu li a, .penci-menu-hbg .menu li a, #sidebar-nav .menu li a { font-weight: 400; }
+									#header .inner-header .container { padding:40px 0; }
+	
+			#logo a { max-width:360px; }
+		@media only screen and (max-width: 960px) and (min-width: 768px){ #logo img{ max-width: 100%; } }
+							.wp-caption p.wp-caption-text, .penci-featured-caption { position: static; background: none; padding: 11px 0 0; color: #888; }
+		.wp-caption:hover p.wp-caption-text, .post-image:hover .penci-featured-caption{ opacity: 1; transform: none; -webkit-transform: none; }
+						.widget ul li, .grid-mixed, .penci-post-box-meta, .penci-pagination.penci-ajax-more a.penci-ajax-more-button, .widget-social a i, .penci-home-popular-posts, .header-header-1.has-bottom-line, .header-header-4.has-bottom-line, .header-header-7.has-bottom-line, .container-single .post-entry .post-tags a,.tags-share-box.tags-share-box-2_3,.tags-share-box.tags-share-box-top, .tags-share-box, .post-author, .post-pagination, .post-related, .post-comments .post-title-box, .comments .comment, #respond textarea, .wpcf7 textarea, #respond input,
+		div.wpforms-container .wpforms-form.wpforms-form input[type=date], div.wpforms-container .wpforms-form.wpforms-form input[type=datetime], div.wpforms-container .wpforms-form.wpforms-form input[type=datetime-local], div.wpforms-container .wpforms-form.wpforms-form input[type=email], div.wpforms-container .wpforms-form.wpforms-form input[type=month], div.wpforms-container .wpforms-form.wpforms-form input[type=number], div.wpforms-container .wpforms-form.wpforms-form input[type=password], div.wpforms-container .wpforms-form.wpforms-form input[type=range], div.wpforms-container .wpforms-form.wpforms-form input[type=search], div.wpforms-container .wpforms-form.wpforms-form input[type=tel], div.wpforms-container .wpforms-form.wpforms-form input[type=text], div.wpforms-container .wpforms-form.wpforms-form input[type=time], div.wpforms-container .wpforms-form.wpforms-form input[type=url], div.wpforms-container .wpforms-form.wpforms-form input[type=week], div.wpforms-container .wpforms-form.wpforms-form select, div.wpforms-container .wpforms-form.wpforms-form textarea,
+		.wpcf7 input, .widget_wysija input, #respond h3, #searchform input.search-input, .post-password-form input[type="text"], .post-password-form input[type="email"], .post-password-form input[type="password"], .post-password-form input[type="number"], .penci-recipe, .penci-recipe-heading, .penci-recipe-ingredients, .penci-recipe-notes, .penci-pagination ul.page-numbers li span, .penci-pagination ul.page-numbers li a, #comments_pagination span, #comments_pagination a, body.author .post-author, .tags-share-box.hide-tags.page-share, .penci-grid li.list-post, .penci-grid li.list-boxed-post-2 .content-boxed-2, .home-featured-cat-content .mag-post-box, .home-featured-cat-content.style-2 .mag-post-box.first-post, .home-featured-cat-content.style-10 .mag-post-box.first-post, .widget select, .widget ul ul, .widget input[type="text"], .widget input[type="email"], .widget input[type="date"], .widget input[type="number"], .widget input[type="search"], .widget .tagcloud a, #wp-calendar tbody td, .woocommerce div.product .entry-summary div[itemprop="description"] td, .woocommerce div.product .entry-summary div[itemprop="description"] th, .woocommerce div.product .woocommerce-tabs #tab-description td, .woocommerce div.product .woocommerce-tabs #tab-description th, .woocommerce-product-details__short-description td, th, .woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li, .woocommerce .widget_shopping_cart .total, .woocommerce.widget_shopping_cart .total, .woocommerce .woocommerce-product-search input[type="search"], .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span, .woocommerce div.product .product_meta, .woocommerce div.product .woocommerce-tabs ul.tabs, .woocommerce div.product .related > h2, .woocommerce div.product .upsells > h2, .woocommerce #reviews #comments ol.commentlist li .comment-text, .woocommerce table.shop_table td, .post-entry td, .post-entry th, #add_payment_method .cart-collaterals .cart_totals tr td, #add_payment_method .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals tr td, .woocommerce-cart .cart-collaterals .cart_totals tr th, .woocommerce-checkout .cart-collaterals .cart_totals tr td, .woocommerce-checkout .cart-collaterals .cart_totals tr th, .woocommerce-cart .cart-collaterals .cart_totals table, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce table.shop_table a.remove, .woocommerce form .form-row .input-text, .woocommerce-page form .form-row .input-text, .woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message, .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register, .woocommerce form.checkout table.shop_table, .woocommerce-checkout #payment ul.payment_methods, .post-entry table, .wrapper-penci-review, .penci-review-container.penci-review-count, #penci-demobar .style-toggle, #widget-area, .post-entry hr, .wpb_text_column hr, #buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text], #buddypress ul.item-list, #buddypress .profile[role=main], #buddypress select, #buddypress div.pagination .pagination-links span, #buddypress div.pagination .pagination-links a, #buddypress div.pagination .pag-count, #buddypress div.pagination .pagination-links a:hover, #buddypress ul.item-list li, #buddypress table.forum tr td.label, #buddypress table.messages-notices tr td.label, #buddypress table.notifications tr td.label, #buddypress table.notifications-settings tr td.label, #buddypress table.profile-fields tr td.label, #buddypress table.wp-profile-fields tr td.label, #buddypress table.profile-fields:last-child, #buddypress form#whats-new-form textarea, #buddypress .standard-form input[type=text], #buddypress .standard-form input[type=color], #buddypress .standard-form input[type=date], #buddypress .standard-form input[type=datetime], #buddypress .standard-form input[type=datetime-local], #buddypress .standard-form input[type=email], #buddypress .standard-form input[type=month], #buddypress .standard-form input[type=number], #buddypress .standard-form input[type=range], #buddypress .standard-form input[type=search], #buddypress .standard-form input[type=password], #buddypress .standard-form input[type=tel], #buddypress .standard-form input[type=time], #buddypress .standard-form input[type=url], #buddypress .standard-form input[type=week], .bp-avatar-nav ul, .bp-avatar-nav ul.avatar-nav-items li.current, #bbpress-forums li.bbp-body ul.forum, #bbpress-forums li.bbp-body ul.topic, #bbpress-forums li.bbp-footer, .bbp-pagination-links a, .bbp-pagination-links span.current, .wrapper-boxed .bbp-pagination-links a:hover, .wrapper-boxed .bbp-pagination-links span.current, #buddypress .standard-form select, #buddypress .standard-form input[type=password], #buddypress .activity-list li.load-more a, #buddypress .activity-list li.load-newest a, #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, #bbpress-forums div.bbp-template-notice.info, #bbpress-forums #bbp-search-form #bbp_search, #bbpress-forums .bbp-forums-list, #bbpress-forums #bbp_topic_title, #bbpress-forums #bbp_topic_tags, #bbpress-forums .wp-editor-container, .widget_display_stats dd, .widget_display_stats dt, div.bbp-forum-header, div.bbp-topic-header, div.bbp-reply-header, .widget input[type="text"], .widget input[type="email"], .widget input[type="date"], .widget input[type="number"], .widget input[type="search"], .widget input[type="password"], blockquote.wp-block-quote, .post-entry blockquote.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .post-entry pre, .wp-block-pullquote:not(.is-style-solid-color), .post-entry hr.wp-block-separator, .wp-block-separator, .wp-block-latest-posts, .wp-block-yoast-how-to-block ol.schema-how-to-steps, .wp-block-yoast-how-to-block ol.schema-how-to-steps li, .wp-block-yoast-faq-block .schema-faq-section{ border-color: #ccd0d2; }
+		.penci-recipe-index-wrap h4.recipe-index-heading > span:before, .penci-recipe-index-wrap h4.recipe-index-heading > span:after{ border-color: #ccd0d2; opacity: 1; }
+		.tags-share-box .single-comment-o:after, .post-share a.penci-post-like:after{ background-color: #ccd0d2; }
+		.penci-grid .list-post.list-boxed-post{ border-color: #ccd0d2 !important; }
+		.penci-post-box-meta.penci-post-box-grid:before, .woocommerce .widget_price_filter .ui-slider .ui-slider-range{ background-color: #ccd0d2; }
+		.penci-pagination.penci-ajax-more a.penci-ajax-more-button.loading-posts{ border-color: #ccd0d2 !important; }
+		.penci-vernav-enable .penci-menu-hbg{ box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; }
+		.penci-vernav-enable.penci-vernav-poleft .penci-menu-hbg{ border-right: 1px solid #ccd0d2; }
+		.penci-vernav-enable.penci-vernav-poright .penci-menu-hbg{ border-left: 1px solid #ccd0d2; }
+		
+			.penci-menuhbg-toggle:hover .lines-button:after, .penci-menuhbg-toggle:hover .penci-lines:before, .penci-menuhbg-toggle:hover .penci-lines:after,.tags-share-box.tags-share-box-s2 .post-share-plike{ background: #006699; }
+		a, .post-entry .penci-portfolio-filter ul li a:hover, .penci-portfolio-filter ul li a:hover, .penci-portfolio-filter ul li.active a, .post-entry .penci-portfolio-filter ul li.active a, .penci-countdown .countdown-amount, .archive-box h1, .post-entry a, .container.penci-breadcrumb span a:hover, .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .wpb_text_column blockquote:before, .wpb_text_column blockquote cite, .wpb_text_column blockquote .author, .penci-pagination a:hover, ul.penci-topbar-menu > li a:hover, div.penci-topbar-menu > ul > li a:hover, .penci-recipe-heading a.penci-recipe-print, .main-nav-social a:hover, .widget-social .remove-circle a:hover i, .penci-recipe-index .cat > a.penci-cat-name, #bbpress-forums li.bbp-body ul.forum li.bbp-forum-info a:hover, #bbpress-forums li.bbp-body ul.topic li.bbp-topic-title a:hover, #bbpress-forums li.bbp-body ul.forum li.bbp-forum-info .bbp-forum-content a, #bbpress-forums li.bbp-body ul.topic p.bbp-topic-meta a, #bbpress-forums .bbp-breadcrumb a:hover, #bbpress-forums .bbp-forum-freshness a:hover, #bbpress-forums .bbp-topic-freshness a:hover, #buddypress ul.item-list li div.item-title a, #buddypress ul.item-list li h4 a, #buddypress .activity-header a:first-child, #buddypress .comment-meta a:first-child, #buddypress .acomment-meta a:first-child, div.bbp-template-notice a:hover, .penci-menu-hbg .menu li a .indicator:hover, .penci-menu-hbg .menu li a:hover, #sidebar-nav .menu li a:hover, .penci-rlt-popup .rltpopup-meta .rltpopup-title:hover{ color: #006699; }
+		.penci-home-popular-post ul.slick-dots li button:hover, .penci-home-popular-post ul.slick-dots li.slick-active button, .post-entry blockquote .author span:after, .error-image:after, .error-404 .go-back-home a:after, .penci-header-signup-form, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce div.product .entry-summary div[itemprop="description"]:before, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote .author span:after, .woocommerce div.product .woocommerce-tabs #tab-description blockquote .author span:after, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, #top-search.shoping-cart-icon > a > span, #penci-demobar .buy-button, #penci-demobar .buy-button:hover, .penci-recipe-heading a.penci-recipe-print:hover, .penci-review-process span, .penci-review-score-total, #navigation.menu-style-2 ul.menu ul:before, #navigation.menu-style-2 .menu ul ul:before, .penci-go-to-top-floating, .post-entry.blockquote-style-2 blockquote:before, #bbpress-forums #bbp-search-form .button, #bbpress-forums #bbp-search-form .button:hover, .wrapper-boxed .bbp-pagination-links span.current, #bbpress-forums #bbp_reply_submit:hover, #bbpress-forums #bbp_topic_submit:hover, #buddypress .dir-search input[type=submit], #buddypress .groups-members-search input[type=submit], #buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover, #buddypress input[type=submit]:hover, #buddypress div.pagination .pagination-links .current, #buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a, #buddypress div.item-list-tabs ul li a:hover, #buddypress table.notifications thead tr, #buddypress table.notifications-settings thead tr, #buddypress table.profile-settings thead tr, #buddypress table.profile-fields thead tr, #buddypress table.wp-profile-fields thead tr, #buddypress table.messages-notices thead tr, #buddypress table.forum thead tr, #buddypress input[type=submit] { background-color: #006699; }
+		.penci-pagination ul.page-numbers li span.current, #comments_pagination span { color: #fff; background: #006699; border-color: #006699; }
+		.footer-instagram h4.footer-instagram-title > span:before, .woocommerce nav.woocommerce-pagination ul li span.current, .penci-pagination.penci-ajax-more a.penci-ajax-more-button:hover, .penci-recipe-heading a.penci-recipe-print:hover, .home-featured-cat-content.style-14 .magcat-padding:before, .wrapper-boxed .bbp-pagination-links span.current, #buddypress .dir-search input[type=submit], #buddypress .groups-members-search input[type=submit], #buddypress button:hover, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress div.generic-button a:hover, #buddypress .comment-reply-link:hover, #buddypress input[type=submit]:hover, #buddypress div.pagination .pagination-links .current, #buddypress input[type=submit], #searchform.penci-hbg-search-form input.search-input:hover, #searchform.penci-hbg-search-form input.search-input:focus { border-color: #006699; }
+		.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { border-top-color: #006699; }
+		.penci-slider ol.penci-control-nav li a.penci-active, .penci-slider ol.penci-control-nav li a:hover, .penci-related-carousel .owl-dot.active span, .penci-owl-carousel-slider .owl-dot.active span{ border-color: #006699; background-color: #006699; }
+		.woocommerce .woocommerce-message:before, .woocommerce form.checkout table.shop_table .order-total .amount, .woocommerce ul.products li.product .price ins, .woocommerce ul.products li.product .price, .woocommerce div.product p.price ins, .woocommerce div.product span.price ins, .woocommerce div.product p.price, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote:before, .woocommerce div.product .woocommerce-tabs #tab-description blockquote:before, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote cite, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote .author, .woocommerce div.product .woocommerce-tabs #tab-description blockquote cite, .woocommerce div.product .woocommerce-tabs #tab-description blockquote .author, .woocommerce div.product .product_meta > span a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce ul.cart_list li .amount, .woocommerce ul.product_list_widget li .amount, .woocommerce table.shop_table td.product-name a:hover, .woocommerce table.shop_table td.product-price span, .woocommerce table.shop_table td.product-subtotal span, .woocommerce-cart .cart-collaterals .cart_totals table td .amount, .woocommerce .woocommerce-info:before, .woocommerce div.product span.price, .penci-container-inside.penci-breadcrumb span a:hover { color: #006699; }
+		.standard-content .penci-more-link.penci-more-link-button a.more-link, .penci-readmore-btn.penci-btn-make-button a, .penci-featured-cat-seemore.penci-btn-make-button a{ background-color: #006699; color: #fff; }
+		.penci-vernav-toggle:before{ border-top-color: #006699; color: #fff; }
+				ul.homepage-featured-boxes .penci-fea-in h4 span span, ul.homepage-featured-boxes .penci-fea-in.boxes-style-3 h4 span span { font-size: 14px; }
+						.penci-top-bar, ul.penci-topbar-menu ul.sub-menu, div.penci-topbar-menu > ul ul.sub-menu { background-color: #ffffff; }
+				.headline-title { background-color: #ffffff; }
+																						@media only screen and (min-width: 961px){.sticky-wrapper:not( .is-sticky ) #navigation{ height: 84px !important; }.sticky-wrapper:not( .is-sticky ) #navigation .menu>li>a,.sticky-wrapper:not( .is-sticky ) .main-nav-social{ line-height: calc( 84px - 2px ) !important; }.sticky-wrapper:not( .is-sticky ) #navigation ul.menu > li > a:before,.sticky-wrapper:not( .is-sticky ) #navigation .menu > ul > li > a:before{ bottom: calc( 84px/2 - 18px ) !important; }.sticky-wrapper:not( .is-sticky ) #top-search > a,.sticky-wrapper:not( .is-sticky ) #top-search > a{ height: calc( 84px - 2px ) !important;line-height: calc( 84px - 2px ) !important; }.sticky-wrapper:not( .is-sticky ) #top-search.shoping-cart-icon > a > span{ top: calc( 84px/2 - 18px ) !important; }.sticky-wrapper:not( .is-sticky ) #navigation .penci-menuhbg-toggle,.sticky-wrapper:not( .is-sticky ) #navigation .show-search,.sticky-wrapper:not( .is-sticky ) .show-search #searchform input.search-input{ height: calc( 84px - 2px ) !important; }.sticky-wrapper:not( .is-sticky ) .show-search a.close-search{ height: 84px !important;line-height: 84px !important; }.sticky-wrapper:not( .is-sticky ) #navigation.header-6 #logo img{ max-height: 84px !important; }body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation ul.menu > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-6 ul.menu > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-6 .menu > ul > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-10 ul.menu > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-10 .menu > ul > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-11 ul.menu > li > .sub-menu, body.rtl #navigation-sticky-wrapper:not(.is-sticky) #navigation.header-11 .menu > ul > li > .sub-menu{ top: 83px; }.sticky-wrapper:not( .is-sticky ) #navigation.header-6.menu-item-padding,.sticky-wrapper:not( .is-sticky ) #navigation.header-6.menu-item-padding ul.menu > li > a{ height: 84px; }}							#navigation ul.menu > li > a:before, #navigation .menu > ul > li > a:before{ content: none; }
+						#navigation .menu li a { color:  #999999; }
+				#navigation .menu li a:hover, #navigation .menu li.current-menu-item > a, #navigation .menu > li.current_page_item > a, #navigation .menu li:hover > a, #navigation .menu > li.current-menu-ancestor > a, #navigation .menu > li.current-menu-item > a { color:  #999999; }
+		#navigation ul.menu > li > a:before, #navigation .menu > ul > li > a:before { background: #999999; }
+																	#navigation ul.menu > li > a, #navigation .menu > ul > li > a { font-size: 16px; }
+				#navigation ul.menu ul a, #navigation .menu ul ul a { font-size: 14px; }
+											.header-slogan .header-slogan-text { color:  #00141e; }
+				.header-slogan .header-slogan-text:before, .header-slogan .header-slogan-text:after { background:  #00141e; }
+				#navigation .menu .sub-menu li a { color:  #999999; }
+				#navigation .menu .sub-menu li a:hover, #navigation .menu .sub-menu li.current-menu-item > a, #navigation .sub-menu li:hover > a { color:  #006699; }
+				#navigation.menu-style-2 ul.menu ul:before, #navigation.menu-style-2 .menu ul ul:before { background-color: #006699; }
+				#top-search > a, #navigation .button-menu-mobile { color: #00141e; }
+		.show-search #searchform input.search-input::-webkit-input-placeholder{ color: #00141e; }
+		.show-search #searchform input.search-input:-moz-placeholder { color: #00141e; opacity: 1;}
+		.show-search #searchform input.search-input::-moz-placeholder {color: #00141e; opacity: 1; }
+		.show-search #searchform input.search-input:-ms-input-placeholder { color: #00141e; }
+		.show-search #searchform input.search-input{ color: #00141e; }
+				.show-search a.close-search { color: #00141e; }
+				.penci-featured-content .feat-text h3 a, .featured-style-35 .feat-text-right h3 a, .featured-style-4 .penci-featured-content .feat-text h3 a, .penci-mag-featured-content h3 a, .pencislider-container .pencislider-content .pencislider-title { text-transform: none; letter-spacing: 0; }
+											.penci-header-signup-form { padding-top: px; }
+	.penci-header-signup-form { padding-bottom: px; }
+											.header-social a i, .main-nav-social a {   color: #00141e; }
+				.header-social a:hover i, .main-nav-social a:hover, .penci-menuhbg-toggle:hover .lines-button:after, .penci-menuhbg-toggle:hover .penci-lines:before, .penci-menuhbg-toggle:hover .penci-lines:after {   color: #b49561; }
+				#close-sidebar-nav { background-color: #fefdfd; }
+		.open-sidebar-nav #close-sidebar-nav { opacity: 0.85; }
+				#close-sidebar-nav i { background-color: #ffffff; }
+				#close-sidebar-nav i { color: #00141e; }
+					.header-social.sidebar-nav-social a i, #sidebar-nav .menu li a, #sidebar-nav .menu li a .indicator { color: #00141e; }
+				#sidebar-nav .menu li a:hover, .header-social.sidebar-nav-social a:hover i, #sidebar-nav .menu li a .indicator:hover, #sidebar-nav .menu .sub-menu li a .indicator:hover{ color: #003d5b; }
+		#sidebar-nav-logo:before{ background-color: #003d5b; }
+				#sidebar-nav .menu li, #sidebar-nav ul.sub-menu, #sidebar-nav #logo + ul {   border-color: #ccd0d2; }
+						.penci-slide-overlay .overlay-link, .penci-slider38-overlay { opacity: ; }
+	.penci-item-mag:hover .penci-slide-overlay .overlay-link, .featured-style-38 .item:hover .penci-slider38-overlay { opacity: ; }
+	.penci-featured-content .featured-slider-overlay { opacity: ; }
+										.featured-style-29 .featured-slider-overlay { opacity: ; }
+														.penci-standard-cat .cat > a.penci-cat-name { color: #b49561; }
+		.penci-standard-cat .cat:before, .penci-standard-cat .cat:after { background-color: #b49561; }
+				.header-standard > h2 a { color: #00141e; }
+				.header-standard > h2 a { color: #00141e; }
+				.header-standard > h2 a:hover { color: #b49561; }
+					.standard-content .penci-post-box-meta .penci-post-share-box a:hover, .standard-content .penci-post-box-meta .penci-post-share-box a.liked { color: #b49561; }
+				.header-standard .post-entry a:hover, .header-standard .author-post span a:hover, .standard-content a, .standard-content .post-entry a, .standard-post-entry a.more-link:hover, .penci-post-box-meta .penci-box-meta a:hover, .standard-content .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .standard-content-special .author-quote span, .standard-content-special .format-post-box .post-format-icon i, .standard-content-special .format-post-box .dt-special a:hover, .standard-content .penci-more-link a.more-link { color: #b49561; }
+		.standard-content .penci-more-link.penci-more-link-button a.more-link{ background-color: #b49561; color: #fff; }
+		.standard-content-special .author-quote span:before, .standard-content-special .author-quote span:after, .standard-content .post-entry ul li:before, .post-entry blockquote .author span:after, .header-standard:after { background-color: #b49561; }
+		.penci-more-link a.more-link:before, .penci-more-link a.more-link:after { border-color: #b49561; }
+				.penci-grid li .item h2 a, .penci-masonry .item-masonry h2 a, .grid-mixed .mixed-detail h2 a, .overlay-header-box .overlay-title a { text-transform: none; }
+				.penci-grid li .item h2 a, .penci-masonry .item-masonry h2 a { letter-spacing: 0; }
+					.penci-grid .cat a.penci-cat-name, .penci-masonry .cat a.penci-cat-name { color: #b49561; }
+		.penci-grid .cat a.penci-cat-name:after, .penci-masonry .cat a.penci-cat-name:after { border-color: #b49561; }
+				.penci-post-box-meta .penci-post-share-box a { color: #00141e; }
+				.penci-post-share-box a.liked, .penci-post-share-box a:hover { color: #006699; }
+				.penci-grid li .item h2 a, .penci-masonry .item-masonry h2 a, .grid-mixed .mixed-detail h2 a { color: #00141e; }
+				.penci-grid li .item h2 a:hover, .penci-masonry .item-masonry h2 a:hover, .grid-mixed .mixed-detail h2 a:hover { color: #006699; }
+				.overlay-post-box-meta .overlay-share a:hover, .overlay-author a:hover, .penci-grid .standard-content-special .format-post-box .dt-special a:hover, .grid-post-box-meta span a:hover, .grid-post-box-meta span a.comment-link:hover, .penci-grid .standard-content-special .author-quote span, .penci-grid .standard-content-special .format-post-box .post-format-icon i, .grid-mixed .penci-post-box-meta .penci-box-meta a:hover { color: #b49561; }
+		.penci-grid .standard-content-special .author-quote span:before, .penci-grid .standard-content-special .author-quote span:after, .grid-header-box:after, .list-post .header-list-style:after { background-color: #b49561; }
+		.penci-grid .post-box-meta span:after, .penci-masonry .post-box-meta span:after { border-color: #b49561; }
+		.penci-readmore-btn.penci-btn-make-button a{ background-color: #b49561; color: #fff; }
+				.penci-grid li.typography-style .overlay-typography { background-color: #00141e; }
+		.penci-grid li.typography-style .overlay-typography { opacity: ; }
+	.penci-grid li.typography-style:hover .overlay-typography { opacity: ; }
+					.penci-grid li.typography-style .item .main-typography h2 a:hover { color: #b49561; }
+					.penci-grid li.typography-style .grid-post-box-meta span a:hover { color: #006699; }
+							.overlay-header-box .cat > a.penci-cat-name:hover { color: #b49561; }
+									
+				.penci-sidebar-content.style-5 .penci-border-arrow { border-color: #313131; }
+		.penci-sidebar-content.style-12 .penci-border-arrow,.penci-sidebar-content.style-10 .penci-border-arrow,
+		.penci-sidebar-content.style-5 .penci-border-arrow .inner-arrow{ border-bottom-color: #313131; }
+	
+			.penci-sidebar-content.style-10 .penci-border-arrow{ border-top-color: #313131; }
+					.penci-sidebar-content.style-7 .penci-border-arrow .inner-arrow:before, .penci-sidebar-content.style-9 .penci-border-arrow .inner-arrow:before { background-color: #b49561; }
+				.penci-sidebar-content .penci-border-arrow:after { border-color: #ffffff; }
+						.penci-sidebar-content .penci-border-arrow:before, .penci-sidebar-content.style-2 .penci-border-arrow:after { content: none; display: none; }
+					.widget ul.side-newsfeed li .side-item .side-item-text h4 a:hover, .widget a:hover, .penci-sidebar-content .widget-social a:hover span, .widget-social a:hover span, .penci-tweets-widget-content .icon-tweets, .penci-tweets-widget-content .tweet-intents a, .penci-tweets-widget-content
+		.tweet-intents span:after, .widget-social.remove-circle a:hover i , #wp-calendar tbody td a:hover{ color: #006699; }
+		.widget .tagcloud a:hover, .widget-social a:hover i, .widget input[type="submit"]:hover,.penci-user-logged-in .penci-user-action-links a:hover,.penci-button:hover, .widget button[type="submit"]:hover { color: #fff; background-color: #006699; border-color: #006699; }
+		.about-widget .about-me-heading:before { border-color: #006699; }
+		.penci-tweets-widget-content .tweet-intents-inner:before, .penci-tweets-widget-content .tweet-intents-inner:after { background-color: #006699; }
+		.penci-owl-carousel.penci-tweets-slider .owl-dots .owl-dot.active span, .penci-owl-carousel.penci-tweets-slider .owl-dots .owl-dot:hover span { border-color: #006699; background-color: #006699; }
+					ul.footer-socials li a i{ font-size: 24px; }
+		ul.footer-socials li a svg{ width: 24px; }
+						#footer-section .footer-menu li a { font-size: 18px; }
+					#footer-copyright * { font-style: normal; }
+														#widget-area { background-color: #000000; }
+				.footer-widget-wrapper, .footer-widget-wrapper .widget.widget_categories ul li, .footer-widget-wrapper .widget.widget_archive ul li,  .footer-widget-wrapper .widget input[type="text"], .footer-widget-wrapper .widget input[type="email"], .footer-widget-wrapper .widget input[type="date"], .footer-widget-wrapper .widget input[type="number"], .footer-widget-wrapper .widget input[type="search"] { color: #00141e; }
+									.footer-widget-wrapper a, .footer-widget-wrapper .widget ul.side-newsfeed li .side-item .side-item-text h4 a, .footer-widget-wrapper .widget a, .footer-widget-wrapper .widget-social a i, .footer-widget-wrapper .widget-social a span { color: #00141e; }
+		.footer-widget-wrapper .widget-social a:hover i{ color: #fff; }
+				.footer-widget-wrapper .penci-tweets-widget-content .icon-tweets, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents a, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents span:after, .footer-widget-wrapper .widget ul.side-newsfeed li .side-item
+		.side-item-text h4 a:hover, .footer-widget-wrapper .widget a:hover, .footer-widget-wrapper .widget-social a:hover span, .footer-widget-wrapper a:hover, .footer-widget-wrapper .widget-social.remove-circle a:hover i { color: #fefdfd; }
+		.footer-widget-wrapper .widget .tagcloud a:hover, .footer-widget-wrapper .widget-social a:hover i, .footer-widget-wrapper .mc4wp-form input[type="submit"]:hover, .footer-widget-wrapper .widget input[type="submit"]:hover,.footer-widget-wrapper .penci-user-logged-in .penci-user-action-links a:hover, .footer-widget-wrapper .widget button[type="submit"]:hover { color: #fff; background-color: #fefdfd; border-color: #fefdfd; }
+		.footer-widget-wrapper .about-widget .about-me-heading:before { border-color: #fefdfd; }
+		.footer-widget-wrapper .penci-tweets-widget-content .tweet-intents-inner:before, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents-inner:after { background-color: #fefdfd; }
+		.footer-widget-wrapper .penci-owl-carousel.penci-tweets-slider .owl-dots .owl-dot.active span, .footer-widget-wrapper .penci-owl-carousel.penci-tweets-slider .owl-dots .owl-dot:hover span {  border-color: #fefdfd;  background: #fefdfd;  }
+					ul.footer-socials li a:hover i { background-color: #006699; border-color: #006699; }
+					ul.footer-socials li a span { color: #ccd0d2; }
+				ul.footer-socials li a:hover span { color: #006699; }
+						#footer-section { background-color: #00141e; }
+				#footer-section .footer-menu li a { color: #ccd0d2; }
+				#footer-section .footer-menu li a:hover { color: #006699; }
+				#footer-section, #footer-copyright * { color: #ccd0d2; }
+				#footer-section .go-to-top i, #footer-section .go-to-top-parent span { color: #ccd0d2; }
+				#footer-section .go-to-top:hover span, #footer-section .go-to-top:hover i { color: #006699; }
+				.penci-go-to-top-floating { background-color: #006699; }
+					#footer-section a { color: #006699; }
+				.container-single .penci-standard-cat .cat > a.penci-cat-name { color: #b49561; }
+		.container-single .penci-standard-cat .cat:before, .container-single .penci-standard-cat .cat:after { background-color: #b49561; }
+				.container-single .single-post-title { text-transform: none; letter-spacing: 1px; }
+				@media only screen and (min-width: 769px){  .container-single .single-post-title { font-size: 36px; }  }
+						.post-entry h1, .wpb_text_column h1, .elementor-text-editor h1 { font-size: 42px; }
+				.post-entry h2, .wpb_text_column h2, .elementor-text-editor h2 { font-size: 24px; }
+				.post-entry h3, .wpb_text_column h3, .elementor-text-editor h3 { font-size: 20px; }
+				.post-entry h4, .wpb_text_column h4, .elementor-text-editor h4 { font-size: 18px; }
+				.post-entry h5, .wpb_text_column h5, .elementor-text-editor h5 { font-size: 14px; }
+				.post-entry h6, .wpb_text_column h6, .elementor-text-editor h6 { font-size: 12px; }
+				.post-entry, .post-entry p, .wpb_text_column p { font-size: 18px; }
+												.container-single .header-standard .post-title { color: #00141e; }
+					.tags-share-box.tags-share-box-2_3 .post-share .count-number-like, .tags-share-box.tags-share-box-2_3 .post-share a,
+		.container-single .post-share a, .page-share .post-share a { color: #00141e; }
+				.container-single .post-share a:hover, .container-single .post-share a.liked, .page-share .post-share a:hover { color: #003d5b; }
+				.tags-share-box.tags-share-box-2_3 .post-share .count-number-like,
+		.post-share .count-number-like { color: #006699; }
+		
+				.comment-content a, .container-single .post-entry a, .container-single .format-post-box .dt-special a:hover, .container-single .author-quote span, .container-single .author-post span a:hover, .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .wpb_text_column blockquote:before, .wpb_text_column blockquote cite, .wpb_text_column blockquote .author, .post-pagination a:hover, .author-content h5 a:hover, .author-content .author-social:hover, .item-related h3 a:hover, .container-single .format-post-box .post-format-icon i, .container.penci-breadcrumb.single-breadcrumb span a:hover { color: #006699; }
+		.container-single .standard-content-special .format-post-box, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button { border-color: #006699; }
+		ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, #respond h3.comment-reply-title span:before, #respond h3.comment-reply-title span:after, .post-box-title:before, .post-box-title:after, .container-single .author-quote span:before, .container-single .author-quote
+		span:after, .post-entry blockquote .author span:after, .post-entry blockquote .author span:before, .post-entry ul li:before, #respond #submit:hover,
+		div.wpforms-container .wpforms-form.wpforms-form input[type=submit]:hover, div.wpforms-container .wpforms-form.wpforms-form button[type=submit]:hover, div.wpforms-container .wpforms-form.wpforms-form .wpforms-page-button:hover,
+		.wpcf7 input[type="submit"]:hover, .widget_wysija input[type="submit"]:hover, .post-entry.blockquote-style-2 blockquote:before,.tags-share-box.tags-share-box-s2 .post-share-plike {  background-color: #006699; }
+		.container-single .post-entry .post-tags a:hover { color: #fff; border-color: #006699; background-color: #006699; }
+					.post-entry a, .container-single .post-entry a{ color: #006699; }
+																											
+		
+									.home-featured-cat-content .mag-photo .mag-overlay-photo { opacity: ; }
+	.home-featured-cat-content .mag-photo:hover .mag-overlay-photo { opacity: ; }
+													.inner-item-portfolio:hover .penci-portfolio-thumbnail a:after { opacity: ; }
+												
+	
+			#menu-alternate-nav-1 span.et_pb_more_button.et_pb_button {
+background-color:#069;
+color:#fff;
+font-family:open sans;
+text-transform:capitalize;
+font-weight:600;
+padding:10px 20px 10px 45px;
+border:#069;
+border-radius:5px;
+background-image:url(https://www.legacy.com/wp-content/uploads/2019/12/SearchIconFlipped.png);
+background-repeat:no-repeat;
+background-position:16px 10px;
+}
+
+@media only screen and (min-width:961px) and (max-width:1169px) {
+#navigation ul.menu>li.megamenu>ul.sub-menu,.container,.featured-area.magazine-slider,.featured-area.style-1,.featured-area.style-4 {
+width:1170px;
+}
+}
+
+.wp-block-button.aligncenter {
+    text-align: center !important;
+}
+
+h4.tile-title,p.tile-desc {
+margin:10px;
+}
+
+article.page.type-page {
+margin-bottom:1px;
+}
+
+.post-entry h4,.tile-text,.wpb_text_column h4,h2.has-text-align-center.subscribe-text {
+font-family:open sans;
+}
+
+.penci-google-adsense.penci-google-adsense-footer {
+width:100%;
+padding-bottom:10px;
+padding-top:10px;
+margin-bottom:2px;
+}
+
+#header {
+margin-bottom:0;
+}
+
+.footer-social-remove-circle ul.footer-socials li a i,.footer-social-remove-circle ul.footer-socials li a:hover i {
+color:#fff;
+}
+
+button,button#submit,input {
+border-radius:5px;
+border:0;
+font-size:16px;
+}
+
+input {
+background-color:#fff;
+font-family:open sans;
+width:300px;
+margin-bottom:7px;
+border-color:#fff;
+}
+
+input[type=text] {
+color:#404f57;
+padding-left:10px;
+margin-left:5px;
+}
+
+button,button#submit {
+font-weight:700;
+}
+
+button#submit,input {
+height:45px;
+box-shadow:0 2px 4px 0 rgba(0,0,0,.3);
+}
+
+button#submit {
+background-color:#000;
+color:#fff;
+margin-top:5px;
+width:125px;
+}
+
+button {
+width:327px;
+height:48px;
+color:#404f57;
+background-color:#fff;
+line-height:24px;
+font-family:open sans;
+}
+
+@media screen and (max-width:676px) {
+button.obit-submit {
+width:290px;
+}
+}
+
+.widget ul.side-newsfeed li .order-border-number {
+display:none;
+}
+
+form#covid {
+border-bottom:1px solid #e1e1e1;
+padding-bottom:40px;
+}
+
+#footer-logo a img {
+height:32px;
+text-align:center;
+}
+
+.uagb-post-grid .uagb-post__title {
+text-align:left;
+font-family:PT Serif;
+overflow:hidden;
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+}
+
+.container.penci-breadcrumb {
+margin-top:30px;
+}
+
+.uagb-post-grid .uagb-post__excerpt {
+text-align:left;
+font-family:open sans;
+}
+
+.uagb-post__inner-wrap,body.author .post-author {
+border:solid 1px rgba(2,20,30,.2);
+box-shadow:0 1px rgba(48,49,51,.15);
+border-radius:5px;
+}
+
+.uagb-post-grid .uagb-post__image img {
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+}
+
+.legac-adlabel {
+text-align:center;
+}
+
+.legac-adlabel,.prefix-adlabel {
+font-size:12px;
+font-family:open sans;
+color:#8c959a;
+}
+
+#custom_html-4,#custom_html-5,#custom_html-6 {
+border:solid 1px #404f57;
+border-radius:5px;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+.penci-image-holder,.wp-block-image.home-image img {
+border-radius:5px;
+}
+
+p.has-text-color.has-text-align-center.has-medium-font-size.search-text {
+font-family:open sans;
+font-weight:700;
+max-width:325px;
+margin:auto;
+}
+
+h2.has-text-color.has-text-align-center.home-h2 {
+font-family:open sans;
+font-size:20px;
+letter-spacing:2.25px;
+}
+
+#footer-copyright * {
+font-family:open sans;
+}
+
+.wp-block-cover.alignfull.has-background-dim-20.has-background-dim.hero {
+border-radius:0;
+border:0;
+}
+
+.clear-footer {
+margin-bottom:10px;
+}
+
+#navigation .menu>ul>li,#navigation ul.menu>li {
+margin-right:15px;
+}
+
+.penci-promo-item img,.wp-block-cover,.wp-block-cover-image,img.alignnone.size-medium.wp-image-18677 {
+border-radius:5px;
+}
+
+.entry-content p {
+line-height:30px;
+}
+
+.widget ul li {
+font-family:Open Sans;
+}
+
+#navigation ul.menu ul a,.author-content h5 a,.header-standard,.header-standard .author-post,.wp-block-button,.wp-block-uagb-icon-list-child.uagb-icon-list-repeater.uagb-icon-list__wrapper.obit-desk,section.wp-block-uagb-columns.uagb-columns__wrap.uagb-columns__background-undefined.uagb-columns__stack-none.uagb-columns__valign-undefined.uagb-columns__gap-10.alignundefined.uagb-block-30881a93.hours,section.wp-block-uagb-columns.uagb-columns__wrap.uagb-columns__background-undefined.uagb-columns__stack-none.uagb-columns__valign-undefined.uagb-columns__gap-10.alignundefined.uagb-block-6e6261d5 {
+font-family:open sans;
+}
+
+.widget ul li a {
+font-size:18px;
+}
+
+.cat>a.penci-cat-name,.penci-grid .cat a.penci-cat-name,.penci-masonry .cat a.penci-cat-name {
+font-size:14px;
+font-family:Open Sans;
+font-weight:700;
+text-transform:uppercase;
+letter-spacing:1.5px;
+}
+
+.featured-style-29 .penci-featured-slider-button a,.penci-featured-slider-button a {
+font-family:Open Sans;
+text-transform:capitalize;
+border-radius:5px;
+letter-spacing:normal;
+}
+
+.post-box-meta-single {
+padding-top:6px;
+}
+
+.author-content p {
+font-family:open Sans;
+}
+
+.penci-grid li .item h2 a,.penci-masonry .item-masonry h2 a {
+font-size:22px;
+}
+
+.penci-border-arrow .inner-arrow {
+border-style:none;
+font-family:Open sans;
+line-height:18px;
+letter-spacing:2.25px;
+}
+
+.penci-sidebar-content .penci-border-arrow .inner-arrow {
+color:#b49561;
+text-align:left;
+font-size:18px;
+font-weight:700;
+padding-left:0;
+margin-left:0;
+}
+
+.container-single .post-entry a,.post-entry a {
+text-decoration:underline;
+}
+
+.author-content h5 a {
+text-transform:capitalize;
+}
+
+body:not(.penci-fawesome-ver5) .penci-faicon {
+font-size:18px;
+}
+
+.penci-sidebar-content .widget #searchform input.search-input,.show-search #searchform input.search-input,.widget #searchform input.search-input {
+font-size:18px;
+font-family:open sans;
+}
+
+#main>div>div.penci-category-description.align-center>p>em,.entry-content p {
+font-size:18px;
+}
+
+@media only screen and (max-width:767px) {
+.penci-sidebar-content {
+display:none;
+}
+}
+
+#ot-sdk-btn.optanon-show-settings,button#ot-sdk-btn.ot-sdk-show-settings {
+background-color:#00141e;
+border:0;
+color:#eee;
+font-family:open sans;
+}
+
+h4.widget-title.penci-border-arrow {
+margin-left:0;
+}
+
+.archive-box {
+margin-top:30px;
+}
+
+.title-bar h1 {
+text-transform:capitalize;
+}
+
+.category-36678 .container.penci-breadcrumb,.category-36678 .penci-cat-name,.category-39405 .container.penci-breadcrumb,.category-39405 .penci-cat-name {
+visibility:hidden;
+}
+
+ul.share-buttons {
+list-style:none;
+padding:0;
+}
+
+ul.share-buttons li {
+display:inline;
+}
+
+ul.share-buttons .sr-only {
+position:absolute;
+clip:rect(1px 1px 1px 1px);
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden;
+}
+
+.category-36678 div.newer>a>span,.category-36678 div.newer>div>span,.category-36678 div.older a>span,.category-39405 div.newer>a>span,.category-39405 div.newer>div>span,.category-39405 div.older a>span {
+font-size:22px;
+color:#b49561;
+}
+
+.category-36678 .penci-image-holder,.category-39405 .penci-image-holder {
+margin-top:10px;
+height:255px;
+}
+
+@media screen and (max-width:600px) {
+.category-39405 .content-list-right.content-list-center .item-content.entry-content p.has-text-color {
+font-size:15px;
+}
+}
+
+.category-39405 .penci-image-holder.small-fix-size {
+height:80px;
+width:120px;
+margin-top:3px;
+}
+
+.category-36678 .penci-grid li .item .cat,.category-39405 .penci-grid li .item .cat,.penci-masonry .item-masonry .cat {
+height:1px;
+}
+
+@media screen and (max-width:600px) {
+.category-36678 .content-list-right.content-list-center .item-content.entry-content p.has-text-color {
+font-size:15px;
+}
+}
+
+.category-36678 .penci-image-holder.small-fix-size {
+height:80px;
+width:120px;
+margin-top:3px;
+}
+
+.wp-block-uagb-advanced-heading.obit-desk {
+letter-spacing:2.5px;
+line-height:20px;
+}
+
+.obit-desk {
+font-family:open sans;
+line-height:24px;
+}
+
+.uagb-slick-carousel.home-style {
+padding-top:0;
+}
+
+p.has-text-color.has-text-align-center.has-small-font-size.more-options {
+font-family:open sans;
+font-size:16px;
+line-height:24px;
+margin-top:8px;
+}
+
+p.has-text-color.has-text-align-center.has-small-font-size.more-options a {
+font-size:16px;
+}
+
+p.has-text-color.hours {
+font-family:open sans;
+line-height:24px;
+}
+
+@media screen and (max-width:676px) {
+p.has-text-color.video-text {
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+p.has-text-color.has-small-font-size.obit-desk {
+font-size:14px;
+line-height:20px;
+}
+
+p.has-text-color.obit-desk {
+font-size:17px;
+line-height:24px;
+}
+}
+
+@media screen and (max-width:676px) {
+section.wp-block-uagb-columns.uagb-columns__wrap.uagb-columns__background-undefined.uagb-columns__stack-none.uagb-columns__valign-undefined.uagb-columns__gap-10.alignundefined.uagb-block-30881a93.hours {
+font-size:17px;
+}
+
+p.has-text-align-center.obit-desk,ul.obit-desk {
+font-size:17px;
+line-height:24px;
+}
+
+p.has-text-color.hours {
+font-size:17px;
+}
+
+img.wp-image-57947 {
+height:26px;
+width:204px;
+}
+}
+
+.Select-State {
+font-size:18px;
+font-family:open sans;
+color:#7F898E;
+border:1px solid #dadada;
+border-radius:5px;
+padding-left:10px;
+height:56px;
+width:468px;
+}
+
+@media screen and (max-width:676px) {
+.Select-State {
+width:317px;
+height:56px;
+}
+}
+
+a#floral-direct {
+width:288px;
+height:48px;
+padding-top:15px;
+}
+
+a#memorial-tree {
+width:350px;
+height:55px;
+padding-top:17px;
+}
+
+@media screen and (max-width:676px) {
+a#memorial-tree {
+width:275px;
+height:56px;
+}
+}
+
+@media screen and (max-width:768px) {
+a#memorial-tree {
+width:240px;
+height:50px;
+line-height:18px;
+padding-top:15px;
+font-size:16px;
+}
+																												.penci-block-vc .style-5.penci-border-arrow { border-color: #313131; }
+				.penci-block-vc .style-5.penci-border-arrow .inner-arrow{ border-bottom-color: #313131; }
+										.penci-block-vc .style-7.penci-border-arrow .inner-arrow:before, .penci-block-vc.style-9 .penci-border-arrow .inner-arrow:before { background-color: #b49561; }
+										.penci-block-vc .penci-border-arrow:after { border-color: #ffffff; }
+																.penci-block-vc .penci-border-arrow:before, .penci-block-vc .style-2.penci-border-arrow:after { content: none; display: none; }
+			.wp-block-button.aligncenter {
+    text-align: center !important;
+}
+			.wrapper-boxed, .wrapper-boxed.enable-boxed{background-position:center !important;background-size:cover !important;background-repeat:repeat !important; }
+		
+	
+								.penci-page-header-wrap .penci-page-header-title {font-weight:600;}
+		@media only screen and (min-width: 961px){
+				
+																}
+		</style><script>
+var penciBlocksArray=[];
+var portfolioDataJs = portfolioDataJs || [];var PENCILOCALCACHE = {};
+		(function () {
+				"use strict";
+		
+				PENCILOCALCACHE = {
+					data: {},
+					remove: function ( ajaxFilterItem ) {
+						delete PENCILOCALCACHE.data[ajaxFilterItem];
+					},
+					exist: function ( ajaxFilterItem ) {
+						return PENCILOCALCACHE.data.hasOwnProperty( ajaxFilterItem ) && PENCILOCALCACHE.data[ajaxFilterItem] !== null;
+					},
+					get: function ( ajaxFilterItem ) {
+						return PENCILOCALCACHE.data[ajaxFilterItem];
+					},
+					set: function ( ajaxFilterItem, cachedData ) {
+						PENCILOCALCACHE.remove( ajaxFilterItem );
+						PENCILOCALCACHE.data[ajaxFilterItem] = cachedData;
+					}
+				};
+			}
+		)();function penciBlock() {
+		    this.atts_json = '';
+		    this.content = '';
+		}</script>
+<script type="application/ld+json">{
+    "@context": "https:\/\/schema.org\/",
+    "@type": "organization",
+    "@id": "#organization",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/www.legacy.com\/wp-content\/uploads\/2019\/11\/legacy-com-logo-a.png"
+    },
+    "url": "https:\/\/www.legacy.com\/",
+    "name": "Legacy.com",
+    "description": "Where life stories live on."
+}</script><script type="application/ld+json">{
+    "@context": "https:\/\/schema.org\/",
+    "@type": "WebSite",
+    "name": "Legacy.com",
+    "alternateName": "Where life stories live on.",
+    "url": "https:\/\/www.legacy.com\/",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https:\/\/www.legacy.com\/search\/{search_term}",
+        "query-input": "required name=search_term"
+    }
+}</script>
+<!-- Schema & Structured Data For WP v1.9.73 - -->
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Obituaries","url":"https:\/\/www.legacy.com\/obituaries\/local"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Obituaries and Guest Books","url":"https:\/\/www.legacy.com\/search"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Browse by Location","url":"https:\/\/www.legacy.com\/obituaries\/local"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Submit an Obituary","url":"https:\/\/www.legacy.com\/submit-an-obituary-to-a-newspaper\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Funeral Homes","url":"https:\/\/www.legacy.com\/funeral-homes\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Search by Location","url":"https:\/\/www.legacy.com\/funeral-homes\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Send Flowers","url":"https:\/\/sympathy.legacy.com\/en-us\/funeral-flowers\/gallery\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Newspapers","url":"https:\/\/www.legacy.com\/search-obituaries-in-local-newspapers\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"U.S. Newspapers","url":"https:\/\/www.legacy.com\/search-obituaries-in-local-newspapers\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"International Newspapers","url":"https:\/\/www.legacy.com\/search-international-newspaper-obituaries\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Send Flowers","url":"https:\/\/sympathy.legacy.com\/en-us\/funeral-flowers\/gallery\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Plant Memorial Trees","url":"https:\/\/www.legacy.com\/trees\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Funeral Flowers","url":"https:\/\/sympathy.legacy.com\/en-us\/funeral-flowers\/gallery\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Charitable Donations","url":"https:\/\/www.legacy.com\/obituaries\/legacy\/condolences-charities.aspx"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"News & Advice","url":"https:\/\/www.legacy.com\/category\/news\/celebrity-deaths\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"News Obituaries","url":"https:\/\/www.legacy.com\/category\/news\/celebrity-deaths\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Coronavirus Memorial Tributes","url":"https:\/\/www.legacy.com\/category\/news\/covid19-memorial\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Coronavirus Info & Resources","url":"https:\/\/www.legacy.com\/tag\/covid-19-updates\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Planning Resources","url":"https:\/\/www.legacy.com\/tag\/planning\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Sympathy Advice","url":"https:\/\/www.legacy.com\/tag\/sympathy\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Honoring a Life","url":"https:\/\/www.legacy.com\/tag\/remembering\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Living with Grief","url":"https:\/\/www.legacy.com\/tag\/grieving\/"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","@id":"https:\/\/www.legacy.com\/#Alternate Nav","name":"Search","url":"https:\/\/www.legacy.com\/search"}]},
+
+{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"https:\/\/www.legacy.com#website","headline":"Legacy.com","name":"Legacy.com","description":"Legacy.com is a global network of online obituaries that provides timely news of death and allows users to pay respect and celebrate life.","url":"https:\/\/www.legacy.com"},
+
+{"@context":"https:\/\/schema.org","@type":"NewsMediaOrganization","@id":"https:\/\/www.legacy.com#Organization","name":"Legacy.com","url":"https:\/\/www.legacy.com","sameAs":["https:\/\/www.facebook.com\/Legacycom","https:\/\/twitter.com\/LegacyObits","https:\/\/www.youtube.com\/channel\/UCiDwa95bWaCGX2sM4E-a8GA"],"logo":{"@type":"ImageObject","url":"https:\/\/www.legacy.com\/wp-content\/uploads\/2020\/04\/LegacyCom-Color.png","width":"600","height":"206"},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","telephone":"+1 888 397 9494","url":"https:\/\/www.legacy.com\/contact\/"}}]
+</script>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+ var gptAdSlots = [];
+  googletag.cmd.push(function() {
+   var mapping1 = googletag.sizeMapping().
+   addSize([0, 0], []).
+   addSize([320, 400], [[320, 50], [320, 100], [300, 250]]).
+   addSize([599, 400], [[320, 50], [320, 100], [300, 250], [400, 250]]).   
+   addSize([600, 600], [[600, 250], [400, 250], [300, 250]]).
+   addSize([750, 600], [[728, 90], [600, 250], [300, 250]]).
+   addSize([980, 600], [[970, 250], [970, 90], [728, 90], [600, 250], [300, 250]]).build();
+    
+     googletag.defineSlot('/423686928/prod/obit-ns/home-ns/custom-inline-1', [[300, 250], [400, 250], [728, 90], [320, 50], [320, 100], [600, 250]], 'div-gpt-ad-1585098068688-0').
+       defineSizeMapping(mapping1).
+       addService(googletag.pubads());	
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().setTargeting('country', ['US']).setTargeting('corp', ['0']).setTargeting('cobrand', ['Legacy']).setTargeting('affstate', ['0']);
+    googletag.enableServices();
+  });
+</script>				<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none}}</style>
+							<style id="uagb-style-frontend">.uagb-block-727b3759.wp-block-uagb-advanced-heading .uagb-heading-text{text-align: center;margin-bottom: 0;}.uagb-block-727b3759 .uagb-separator-wrap{text-align: center;}.uagb-block-727b3759.wp-block-uagb-advanced-heading .uagb-desc-text{text-align: center;}.uagb-block-727b3759 .uagb-heading-text{font-weight: 600;font-size: 48px;line-height: 64px;}.uagb-block-727b3759 .uagb-desc-text{font-family: "Open Sans";font-weight: 400;font-size: 22px;line-height: 32px;}.uagb-block-0d6f47ed .uagb-post__items{margin-right: -8px;margin-left: -8px;}.uagb-block-0d6f47ed .uagb-post__items article{padding-right: 8px;padding-left: 8px;margin-bottom: 14px;}.uagb-block-0d6f47ed .uagb-post__inner-wrap{background: #fefdfd;padding: 20px;text-align: center;}.uagb-block-0d6f47ed .uagb-post__image{margin-bottom: 15px;}.uagb-block-0d6f47ed .uagb-post__title{margin-bottom: 15px;}.uagb-block-0d6f47ed .uagb-post-grid-byline{margin-bottom: 15px;}.uagb-block-0d6f47ed .uagb-post__excerpt{margin-bottom: 25px;}.uagb-block-0d6f47ed .uagb-post__image:before{background-color: #ffffff;opacity: 0.5;}.uagb-block-0d6f47ed .uagb-post__inner-wrap > .uagb-post__image:first-child{margin-top: -20px;margin-left: -20px;margin-right: -20px;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post__title{color: #3b3b3b;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post__title a{color: #3b3b3b;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post-grid-byline{font-family: "Open Sans";font-weight: 600;color: #777777;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post-grid-byline .uagb-post__author{font-family: "Open Sans";font-weight: 600;color: #777777;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post-grid-byline .uagb-post__author a{font-family: "Open Sans";font-weight: 600;color: #777777;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post__cta{color: #ffffff;background: #333333;border-width: 1px;border-style: none;}.uagb-block-0d6f47ed .uagb-post__text .uagb-post__cta a{color: #ffffff;padding: 5px 10px;}.uagb-block-0d6f47ed .slick-arrow{border-color: #aaaaaa;border-width: 1px;border-radius: 5px;}.uagb-block-0d6f47ed .slick-arrow span{color: #aaaaaa;font-size: 20px;width: 20px;height: 20px;}.uagb-block-0d6f47ed .slick-arrow svg{fill: #aaaaaa;width: 20px;height: 20px;}.uagb-block-0d6f47ed.uagb-post-grid ul.slick-dots li.slick-active button:before{color: #aaaaaa;}.uagb-block-0d6f47ed.uagb-slick-carousel ul.slick-dots li button:before{color: #aaaaaa;}.uagb-block-985bc929.uagb-section__wrap{padding-top: 20px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;border-radius: 5px;margin-right: auto;margin-left: auto;border-style: solid;border-width: 1px;max-width: 100%;}.uagb-block-985bc929 > .uagb-section__video-wrap{opacity: 0.5;}.uagb-block-985bc929 > .uagb-section__inner-wrap{max-width: 1140px;}.uagb-block-985bc929.wp-block-uagb-section{box-shadow: 0 0    ;}.uagb-block-985bc929 > .uagb-section__overlay{background-color: #00141e;border-radius: 5px;}.uagb-block-009ad708.uagb-columns__wrap{padding-top: 20px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;}.uagb-block-009ad708 .uagb-columns__video-wrap{opacity: 0.5;}.uagb-block-009ad708 > .uagb-columns__inner-wrap{max-width: 1170px;}.uagb-block-009ad708 .uagb-column__inner-wrap{padding: 10px;}.uagb-block-009ad708 .uagb-columns__shape-top .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-009ad708 .uagb-columns__shape-bottom .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-009ad708.wp-block-uagb-columns{box-shadow: 0 0    ;}.uagb-block-6ca5d7af.uagb-column__wrap{border-radius: 5px;border-style: solid;border-width: 1px;border-color: #4b575d;width: 65%;}.uagb-block-5a6d4e4b.uagb-column__wrap{padding-left: 15px;width: 33.33%;}.uagb-block-1c0c8ae1.wp-block-uagb-advanced-heading .uagb-heading-text{text-align: left;color: #b49561;margin-bottom: 15px;}.uagb-block-1c0c8ae1 .uagb-separator-wrap{text-align: left;}.uagb-block-1c0c8ae1.wp-block-uagb-advanced-heading .uagb-desc-text{text-align: left;}.uagb-block-1c0c8ae1 .uagb-heading-text{font-family: "Open Sans";font-weight: 700;font-size: 20px;}.uagb-block-873f5e98 .uagb-marketing-btn__title-wrap{margin-bottom: 0;}.uagb-block-873f5e98 .uagb-marketing-btn__icon-wrap{width: 20px;height: 20px;margin-right: 10px;}.uagb-block-873f5e98 .uagb-marketing-btn__icon-wrap svg{fill: #ffffff;}.uagb-block-873f5e98 p.uagb-marketing-btn__prefix{color: #333;}.uagb-block-873f5e98 .uagb-marketing-btn__link{padding-left: 20px;padding-right: 20px;padding-top: 13px;padding-bottom: 13px;border-style: solid;border-width: 1px;border-color: #333;border-radius: 5px;background: rgb(180,149,97);}.uagb-block-873f5e98 h6.uagb-marketing-btn__title{color: #ffffff;}.uagb-block-873f5e98 .uagb-marketing-btn__title{font-family: "Open Sans";font-weight: 700;font-size: 20px;}.uagb-block-873f5e98 .uagb-marketing-btn__prefix{font-size: 14px;}.uagb-block-db083fcd.uagb-columns__wrap{padding-top: 20px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;}.uagb-block-db083fcd .uagb-columns__video-wrap{opacity: 0.5;}.uagb-block-db083fcd > .uagb-columns__inner-wrap{max-width: 1170px;}.uagb-block-db083fcd .uagb-column__inner-wrap{padding: 20px;}.uagb-block-db083fcd .uagb-columns__shape-top .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-db083fcd .uagb-columns__shape-bottom .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-db083fcd.wp-block-uagb-columns{box-shadow: 0 0    ;}.uagb-block-c8680ae4.uagb-column__wrap{background-position: center center;background-attachment: scroll;background-repeat: no-repeat;background-size: cover;}.uagb-block-c8680ae4 > .uagb-column__overlay{opacity: 0;}.uagb-block-aee1db1b.uagb-section__wrap{padding-top: 20px;padding-bottom: 0;padding-left: 20px;padding-right: 20px;}.uagb-block-aee1db1b > .uagb-section__video-wrap{opacity: 0.5;}.uagb-block-aee1db1b > .uagb-section__inner-wrap{max-width: 1170px;}.uagb-block-aee1db1b.wp-block-uagb-section{box-shadow: 0 0    ;}.uagb-block-aee1db1b > .uagb-section__overlay{background-color: #f2f3f4;}.uagb-block-e91bc7ee.wp-block-uagb-advanced-heading .uagb-heading-text{text-align: center;color: #404f57;margin-bottom: 15px;}.uagb-block-e91bc7ee .uagb-separator-wrap{text-align: center;}.uagb-block-e91bc7ee.wp-block-uagb-advanced-heading .uagb-desc-text{text-align: center;}.uagb-block-e91bc7ee .uagb-heading-text{font-family: "PT Serif";font-weight: 700;font-size: 42px;}.uagb-block-028b9e32.uagb-columns__wrap{padding-top: 20px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;}.uagb-block-028b9e32 .uagb-columns__video-wrap{opacity: 0.5;}.uagb-block-028b9e32 > .uagb-columns__inner-wrap{max-width: 1170px;}.uagb-block-028b9e32 .uagb-column__inner-wrap{padding: 10px;}.uagb-block-028b9e32 .uagb-columns__shape-top .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-028b9e32 .uagb-columns__shape-bottom .uagb-columns__shape-fill{fill: rgba(51,51,51,1);}.uagb-block-028b9e32.wp-block-uagb-columns{box-shadow: 0 0    ;}.uagb-block-9674bd5a.uagb-column__wrap{margin-top: 0;border-radius: 5px;}.uagb-block-ecd41bc1.uagb-column__wrap{margin-top: 0;border-radius: 5px;}.uagb-block-2a414cbb.uagb-column__wrap{border-radius: 5px;}.uagb-block-4df18c80.uagb-section__wrap{padding-top: 20px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;}.uagb-block-4df18c80 > .uagb-section__video-wrap{opacity: 0.5;}.uagb-block-4df18c80 > .uagb-section__inner-wrap{max-width: 1140px;}.uagb-block-4df18c80.wp-block-uagb-section{box-shadow: 0 0    ;}.uagb-block-4df18c80 > .uagb-section__overlay{background-color: #fbf9f7;}@media only screen and (max-width: 976px) {.uagb-block-6ca5d7af.uagb-column__wrap{width: 100%;}.uagb-block-873f5e98 .uagb-marketing-btn__icon-wrap{width: 20px;height: 20px;}.uagb-block-873f5e98 .uagb-marketing-btn__title{font-size: 20px;}.uagb-block-873f5e98 .uagb-marketing-btn__prefix{font-size: 14px;}.uagb-block-db083fcd.uagb-columns__wrap{padding-left: 20px;}.uagb-block-0eddc3d2.uagb-column__wrap{margin-left: 24px;}.uagb-block-c8680ae4.uagb-column__wrap{margin-right: 24px;}.uagb-block-e91bc7ee .uagb-heading-text{font-size: 32px;}.uagb-block-9674bd5a.uagb-column__wrap{margin-left: 0;}.uagb-block-2a414cbb.uagb-column__wrap{margin-right: 24px;}}@media only screen and (max-width: 767px) {.uagb-block-727b3759 .uagb-heading-text{font-size: 40px;line-height: 48px;}.uagb-block-727b3759 .uagb-desc-text{font-size: 16px;line-height: 24px;}.uagb-block-0d6f47ed .uagb-post__inner-wrap{padding: px;}.uagb-block-985bc929.uagb-section__wrap{padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;}.uagb-block-6ca5d7af.uagb-column__wrap{width: 100%;}.uagb-block-5a6d4e4b.uagb-column__wrap{padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;}.uagb-block-873f5e98 .uagb-marketing-btn__icon-wrap{width: 20px;height: 20px;}.uagb-block-873f5e98 .uagb-marketing-btn__title{font-size: 16px;}.uagb-block-873f5e98 .uagb-marketing-btn__prefix{font-size: 14px;}.uagb-block-0eddc3d2.uagb-column__wrap{margin-left: 0;}.uagb-block-c8680ae4.uagb-column__wrap{margin-right: 0;}}</style>
+				<link href="//fonts.googleapis.com/css?family=Open Sans:400,600,700%7CPT Serif:700&amp;subset=latin" rel="stylesheet"></head>
+
+<body class="home page-template-default page page-id-581 ie theme--soledad elementor-default elementor-kit-33262 aa-prefix-legac-">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDQHZW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->	<a id="close-sidebar-nav" class="header-6"><i class="penci-faicon fa fa-close" ></i></a>
+	<nav id="sidebar-nav" class="header-6" role="navigation"  >
+
+					<div id="sidebar-nav-logo">
+									<a href="https://www.legacy.com/"><img class="penci-lazy" src="https://www.legacy.com/wp-content/themes/soledad/images/penci-holder.png" data-src="https://www.legacy.com/wp-content/uploads/2019/11/legacy-com-logo-a.png" alt="Legacy.com" /></a>
+							</div>
+		
+					<div class="header-social sidebar-nav-social">
+				<div class="inner-header-social">
+			<a href="https://www.facebook.com/Legacycom" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-facebook" ></i></a>
+				<a href="https://twitter.com/LegacyObits" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-twitter" ></i></a>
+										<a href="https://www.youtube.com/legacycom" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-youtube-play" ></i></a>
+																												</div>			</div>
+		
+		<ul id="menu-alternate-nav" class="menu"><li id="menu-item-177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-177"><a href="https://www.legacy.com/obituaries/local">Obituaries</a>
+<ul class="sub-menu">
+	<li id="menu-item-178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178"><a href="https://www.legacy.com/search">Obituaries and Guest Books</a></li>
+	<li id="menu-item-940" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-940"><a href="https://www.legacy.com/obituaries/local">Browse by Location</a></li>
+	<li id="menu-item-179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="https://www.legacy.com/submit-an-obituary-to-a-newspaper/">Submit an Obituary</a></li>
+</ul>
+</li>
+<li id="menu-item-181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"><a href="https://www.legacy.com/funeral-homes/">Funeral Homes</a>
+<ul class="sub-menu">
+	<li id="menu-item-941" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-941"><a href="https://www.legacy.com/funeral-homes/">Search by Location</a></li>
+	<li id="menu-item-942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-942"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Send Flowers</a></li>
+</ul>
+</li>
+<li id="menu-item-492" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-492"><a href="https://www.legacy.com/search-obituaries-in-local-newspapers/">Newspapers</a>
+<ul class="sub-menu">
+	<li id="menu-item-493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-493"><a href="https://www.legacy.com/search-obituaries-in-local-newspapers/">U.S. Newspapers</a></li>
+	<li id="menu-item-494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-494"><a href="https://www.legacy.com/search-international-newspaper-obituaries/">International Newspapers</a></li>
+</ul>
+</li>
+<li id="menu-item-182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-182"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Send Flowers</a>
+<ul class="sub-menu">
+	<li id="menu-item-70032" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70032"><a href="https://www.legacy.com/trees/">Plant Memorial Trees</a></li>
+	<li id="menu-item-378" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-378"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Funeral Flowers</a></li>
+	<li id="menu-item-196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-196"><a href="https://www.legacy.com/obituaries/legacy/condolences-charities.aspx">Charitable Donations</a></li>
+</ul>
+</li>
+<li id="menu-item-227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227"><a href="https://www.legacy.com/category/news/celebrity-deaths/">News &#038; Advice</a>
+<ul class="sub-menu">
+	<li id="menu-item-14821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14821"><a href="https://www.legacy.com/category/news/celebrity-deaths/">News Obituaries</a></li>
+	<li id="menu-item-20126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20126"><a href="https://www.legacy.com/category/news/covid19-memorial/">Coronavirus Memorial Tributes</a></li>
+	<li id="menu-item-17805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17805"><a href="https://www.legacy.com/tag/covid-19-updates/">Coronavirus Info &#038; Resources</a></li>
+	<li id="menu-item-12828" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12828"><a href="https://www.legacy.com/tag/planning/">Planning Resources</a></li>
+	<li id="menu-item-12830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12830"><a href="https://www.legacy.com/tag/sympathy/">Sympathy Advice</a></li>
+	<li id="menu-item-12831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12831"><a href="https://www.legacy.com/tag/remembering/">Honoring a Life</a></li>
+	<li id="menu-item-12829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12829"><a href="https://www.legacy.com/tag/grieving/">Living with Grief</a></li>
+</ul>
+</li>
+<li id="menu-item-1115" class="et_pb_more_button et_pb_button mag-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-1115"><a href="https://www.legacy.com/search"><span class="et_pb_more_button et_pb_button">Search</span></a></li>
+</ul>	</nav>
+<div class="wrapper-boxed header-style-header-6">
+<div class="penci-header-wrap"><header id="header" class="header-header-6 has-bottom-line"  >
+							<nav id="navigation" class="header-layout-bottom header-6 menu-style-1" role="navigation"  >
+			<div class="container">
+				<div class="button-menu-mobile header-6"><i class="penci-faicon fa fa-bars" ></i></div>
+				<div id="logo">
+		<a href="https://www.legacy.com/">
+		<img class="penci-logo" src="https://www.legacy.com/wp-content/uploads/2019/11/legacy-com-logo-a.png" alt="Legacy.com"/>
+			</a>
+	</div><ul id="menu-alternate-nav-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-177"><a href="https://www.legacy.com/obituaries/local">Obituaries</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-178"><a href="https://www.legacy.com/search">Obituaries and Guest Books</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-940"><a href="https://www.legacy.com/obituaries/local">Browse by Location</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-179"><a href="https://www.legacy.com/submit-an-obituary-to-a-newspaper/">Submit an Obituary</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-181"><a href="https://www.legacy.com/funeral-homes/">Funeral Homes</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-941"><a href="https://www.legacy.com/funeral-homes/">Search by Location</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-942"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Send Flowers</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-492"><a href="https://www.legacy.com/search-obituaries-in-local-newspapers/">Newspapers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-493"><a href="https://www.legacy.com/search-obituaries-in-local-newspapers/">U.S. Newspapers</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-494"><a href="https://www.legacy.com/search-international-newspaper-obituaries/">International Newspapers</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-182"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Send Flowers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70032"><a href="https://www.legacy.com/trees/">Plant Memorial Trees</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-378"><a href="https://sympathy.legacy.com/en-us/funeral-flowers/gallery/">Funeral Flowers</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-196"><a href="https://www.legacy.com/obituaries/legacy/condolences-charities.aspx">Charitable Donations</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-227"><a href="https://www.legacy.com/category/news/celebrity-deaths/">News &#038; Advice</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14821"><a href="https://www.legacy.com/category/news/celebrity-deaths/">News Obituaries</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20126"><a href="https://www.legacy.com/category/news/covid19-memorial/">Coronavirus Memorial Tributes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17805"><a href="https://www.legacy.com/tag/covid-19-updates/">Coronavirus Info &#038; Resources</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12828"><a href="https://www.legacy.com/tag/planning/">Planning Resources</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12830"><a href="https://www.legacy.com/tag/sympathy/">Sympathy Advice</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12831"><a href="https://www.legacy.com/tag/remembering/">Honoring a Life</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12829"><a href="https://www.legacy.com/tag/grieving/">Living with Grief</a></li>
+</ul>
+</li>
+<li class="et_pb_more_button et_pb_button mag-icon menu-item menu-item-type-custom menu-item-object-custom menu-item-1115"><a href="https://www.legacy.com/search"><span class="et_pb_more_button et_pb_button">Search</span></a></li>
+</ul>
+				
+			</div>
+		</nav><!-- End Navigation -->
+			</header>
+<!-- end #header -->
+
+</div>
+<div class="container container-single-page container-default-page penci_is_nosidebar">
+	<div id="main" class="penci-main-single-page-default ">
+		<div class="theiaStickySidebar">
+							<article id="post-581" class="post-581 page type-page status-publish hentry">
+				
+			<div class="penci-hide-tagupdated">
+			<span class="author-italic author vcard">by <a class="url fn n" href="https://www.legacy.com/author/sbyce/">Steph Byce</a></span>
+			<time class="entry-date published" datetime="2019-11-20T16:45:59-06:00">November 20, 2019</time>		</div>
+		
+	
+	<div class="post-entry blockquote-style-1">
+		<div class="inner-post-entry entry-content">
+			<!-- HFCM by 99 Robots - Snippet # 42: Connatix Homepage Body -->
+<script id="55257844e0694491944ce274e30406fa">  cnx.cmd.push(function() {    cnx({      playerId: "56953fda-fad8-4c43-b16d-37cfd0df5922"    }).render("55257844e0694491944ce274e30406fa");  });</script>
+<!-- /end HFCM by 99 Robots -->
+
+<div class="wp-block-cover alignfull has-background-dim-40 has-black-background-color has-background-dim hero" style="min-height:660px"><img loading="lazy" width="1440" height="500" class="wp-block-cover__image-background wp-image-61341" alt="" src="https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1.png" data-object-fit="cover" srcset="https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1.png 1440w, https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1-800x278.png 800w, https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1-1000x347.png 1000w, https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1-768x267.png 768w, https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1-1170x406.png 1170w, https://www.legacy.com/wp-content/uploads/2021/01/legacy-hero-1-585x203.png 585w" sizes="(max-width: 1440px) 100vw, 1440px" /><div class="wp-block-cover__inner-container">
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-727b3759"><h2 class="uagb-heading-text"><strong>Where life stories live on.</strong></h2><p class="uagb-desc-text">Find and share obituaries from local communities everywhere.</p></div>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<center><form action="https://www.legacy.com/search" method="GET"><input id="first" name="firstName" type="text" placeholder="First Name"><input id="last" name="lastName" type="text" placeholder="Last Name"><br> <button id="submit" type="submit"><img src="https://www.legacy.com/wp-content/uploads/2021/01/hero-search.png" style="padding-right: 10px;">Search</button></form></center>
+
+
+
+<p class="has-text-align-center more-options has-text-color has-small-font-size" style="color:#ffffff"><a href="https://www.legacy.com/search">More Options &gt;</a></p>
+
+
+
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center home-h2 has-text-color" id="h-today-s-obituary-news" style="color:#b49561">TODAY&#8217;S OBITUARY NEWS</h2>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+			<div class="uagb-post-grid home-style uagb-post__image-position-top uagb-block-0d6f47ed    uagb-post__arrow-outside uagb-slick-carousel" data-total="616">
+
+				<div class="uagb-post__items uagb-post__columns-3 is-carousel uagb-post__columns-tablet-1 uagb-post__columns-mobile-1 uagb-post__carousel_equal-height">
+
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/markie-post-1950-2021-night-court-star/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-800x534.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1-263x175.jpg 263w, https://www.legacy.com/wp-content/uploads/2021/08/Markie-Post-1000x667-1.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/markie-post-1950-2021-night-court-star/" target="_self" rel="bookmark noopener noreferrer">Markie Post (1950–2021), “Night Court” star</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						She was also known for &#8220;The Fall Guy&#8221; and &#8220;Hearts Afire.&#8221;					</div>
+			</div>
+								</div>
+									</article>
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/paul-johnson-1971-2021-dj-and-producer-known-for-get-get-down/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-800x533.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-1536x1024.jpg 1536w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-2048x1365.jpg 2048w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-1170x780.jpg 1170w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-1920x1280.jpg 1920w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Paul-Johnson-1000x667-1-263x175.jpg 263w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/paul-johnson-1971-2021-dj-and-producer-known-for-get-get-down/" target="_self" rel="bookmark noopener noreferrer">Paul Johnson (1971–2021), DJ and producer known for “Get Get Down”</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						His music was influential on musicians including Daft Punk.					</div>
+			</div>
+								</div>
+									</article>
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/kelli-hand-1965-2021-dj-and-producer-known-as-k-hand/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-800x534.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1-263x175.jpg 263w, https://www.legacy.com/wp-content/uploads/2021/08/Kelli-Hand-1000x667-1.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/kelli-hand-1965-2021-dj-and-producer-known-as-k-hand/" target="_self" rel="bookmark noopener noreferrer">Kelli Hand (1965–2021), DJ and producer known as K-Hand</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						She was called the “first lady of Detroit techno.”					</div>
+			</div>
+								</div>
+									</article>
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/richard-trumka-1949-2021-longtime-afl-cio-president/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-800x534.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1-263x175.jpg 263w, https://www.legacy.com/wp-content/uploads/2021/08/Richard-Trumka-1000x667-1.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/richard-trumka-1949-2021-longtime-afl-cio-president/" target="_self" rel="bookmark noopener noreferrer">Richard Trumka (1949–2021), longtime AFL-CIO president</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						Trumka was known for his passionate pro-labor stance and attacks on corporate America.					</div>
+			</div>
+								</div>
+									</article>
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/arthur-french-1931-2021-actor-known-for-broadway-roles-crooklyn/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-800x534.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1-263x175.jpg 263w, https://www.legacy.com/wp-content/uploads/2021/08/Arthur-French-1000x667-1.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/arthur-french-1931-2021-actor-known-for-broadway-roles-crooklyn/" target="_self" rel="bookmark noopener noreferrer">Arthur French (1931–2021), actor known for Broadway roles, “Crooklyn”</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						He made his Broadway debut in the 1971 musical “Ain’t Supposed to Die a Natural Death.”					</div>
+			</div>
+								</div>
+									</article>
+								<article >
+										<div class="uagb-post__inner-wrap">
+															<div class='uagb-post__image'>
+				<a href="https://www.legacy.com/news/celebrity-deaths/razzy-bailey-1939-2021-chart-topping-country-singer/" target="_self" rel="bookmark noopener noreferrer"><img width="900" height="600" src="https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-900x600.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-900x600.jpg 900w, https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-800x534.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-768x512.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-585x390.jpg 585w, https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1-263x175.jpg 263w, https://www.legacy.com/wp-content/uploads/2021/08/Razzy-Bailey-1000x667-1.jpg 1000w" sizes="(max-width: 900px) 100vw, 900px" />				</a>
+			</div>
+						<div class='uagb-post__text'> 
+				<h4 class="uagb-post__title">
+					<a href="https://www.legacy.com/news/celebrity-deaths/razzy-bailey-1939-2021-chart-topping-country-singer/" target="_self" rel="bookmark noopener noreferrer">Razzy Bailey (1939–2021), chart-topping country singer</a>
+				</h4>
+			</div>
+						<div class='uagb-post__text'> 
+			<div class="uagb-post-grid-byline">
+							</div>
+			</div>
+							<div class='uagb-post__text'> 
+					<div class="uagb-post__excerpt">
+						Razzy Bailey was a country singer and guitarist who had a string of No. 1 hits in the early 1980s.&hellip;					</div>
+			</div>
+								</div>
+									</article>
+								</div>
+							</div>
+			
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter is-style-outline legacy-button"><a class="wp-block-button__link has-text-color has-background" href="https://www.legacy.com/category/news/celebrity-deaths/" style="border-radius:5px;background-color:#ffffff;color:#404f57"><strong>View All News Stories</strong></a></div>
+
+
+
+<div style="height:48px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color uagb-block-985bc929"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<section class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-tablet uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined uagb-block-009ad708"><div class="uagb-columns__overlay"></div><div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-6ca5d7af"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe loading="lazy" title="R.I.P. June 2021: Celebrities &amp; Newsmakers Who Died | Legacy.com" width="1170" height="658" src="https://www.youtube.com/embed/cqCXQgu76D0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-5a6d4e4b"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div style="height:45px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-1c0c8ae1 video-header"><h3 class="uagb-heading-text">LEGACY VIDEOS</h3><p class="uagb-desc-text"></p></div>
+
+
+
+<p class="video-text has-text-color" style="color:#ffffff">We look back on some of the lives of celebrities and newsmakers who died in June 2021. Our video tribute includes musical theater actress Karla Burns; Jambi from Pee-Wee’s Playhouse, John Paragon and many more.</p>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-marketing-button uagb-marketing-btn__outer-wrap uagb-marketing-btn__align-left uagb-marketing-btn__align-text-center uagb-marketing-btn__icon-before uagb-block-873f5e98"><div class="uagb-marketing-btn__wrap"><a href="https://www.legacy.com/videos/" class="uagb-marketing-btn__link" target="" rel="noopener noreferrer"><div class="uagb-marketing-btn__title-wrap"><div class="uagb-marketing-btn__icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512"><path d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg></div><h6 class="uagb-marketing-btn__title">View More Videos</h6></div><div class="uagb-marketing-btn__prefix-wrap"><p class="uagb-marketing-btn__prefix"></p></div></a></div></div>
+</div></div>
+</div></section>
+</div></section>
+
+
+
+<div style="height:48px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<section class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-center uagb-columns__gap-20 alignwide uagb-block-db083fcd home-style"><div class="uagb-columns__overlay"></div><div class="uagb-columns__inner-wrap uagb-columns__columns-2">
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-0eddc3d2"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div class="wp-block-cover has-background-dim-40 has-black-background-color has-background-dim has-background-dim-NaN img-cta" style="min-height:300px"><img loading="lazy" width="1500" height="1500" class="wp-block-cover__image-background wp-image-532" alt="" src="https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements.jpg" data-object-fit="cover" srcset="https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements.jpg 1500w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-100x100.jpg 100w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-220x220.jpg 220w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-768x768.jpg 768w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-480x480.jpg 480w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-1170x1170.jpg 1170w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Make-funeral-arrangements-585x585.jpg 585w" sizes="(max-width: 1500px) 100vw, 1500px" /><div class="wp-block-cover__inner-container">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter legacy-button"><a class="wp-block-button__link has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background" href="https://www.legacy.com/category/news/covid19-memorial/" style="border-radius:5px"><strong>Their Lives Remembered</strong></a></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-text-align-center tile-text has-very-light-gray-color has-text-color has-medium-font-size"><strong>View tributes to those who have died in the coronavirus pandemic.</strong></p>
+
+
+
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+</div></div>
+
+
+
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-image uagb-block-c8680ae4"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div class="wp-block-cover has-background-dim-40 has-black-background-color has-background-dim has-background-dim-NaN img-cta" style="min-height:300px"><img loading="lazy" width="1546" height="532" class="wp-block-cover__image-background wp-image-69373" alt="" src="https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home.jpg" style="object-position:66% 74%" data-object-fit="cover" data-object-position="66% 74%" srcset="https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home.jpg 1546w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-800x275.jpg 800w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-1000x344.jpg 1000w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-768x264.jpg 768w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-1536x529.jpg 1536w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-1170x403.jpg 1170w, https://www.legacy.com/wp-content/uploads/2021/05/United-States-Home-585x201.jpg 585w" sizes="(max-width: 1546px) 100vw, 1546px" /><div class="wp-block-cover__inner-container">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter is-style-default legacy-button"><a class="wp-block-button__link has-very-dark-gray-color has-very-light-gray-background-color has-text-color has-background" href="https://www.legacy.com/search-obituaries-in-local-newspapers/" style="border-radius:5px"><strong>Local Obituaries</strong></a></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-text-align-center tile-text has-very-light-gray-color has-text-color has-medium-font-size"><strong>Legacy partners with top newspapers across the United States.</strong></p>
+
+
+
+<p class="has-text-align-center has-large-font-size"></p>
+</div></div>
+</div></div>
+</div></section>
+
+
+
+<div style="height:63px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color alignfull uagb-block-aee1db1b"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap"><div style="margin-left: auto; margin-right: auto; text-align: center; " id="legac-384600332"><!-- /423686928/prod/obit-ns/home-ns/custom-inline-1 -->
+<div id='div-gpt-ad-1585098068688-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1585098068688-0'); });
+  </script>
+</div>
+</div><br style="clear: both; display: block; float: none;"/></div></section>
+
+
+
+<div style="height:46px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center home-h2 has-text-color" id="h-advice-resources" style="color:#b49561">ADVICE &amp; RESOURCES</h2>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-e91bc7ee home-style" id="uagb-adv-heading-3bad44b4-f1c3-4b65-b672-44b725ea118c"><h4 class="uagb-heading-text">Find Help When Someone Has Died</h4><p class="uagb-desc-text"></p></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<section class="wp-block-uagb-columns uagb-columns__wrap uagb-columns__background-undefined uagb-columns__stack-mobile uagb-columns__valign-undefined uagb-columns__gap-10 alignundefined uagb-block-028b9e32 home-tile"><div class="uagb-columns__overlay"></div><div class="uagb-columns__inner-wrap uagb-columns__columns-3">
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-9674bd5a home-tile"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div class="wp-block-image home-image"><figure class="aligncenter size-large"><a href="https://www.legacy.com/tag/covid-19-updates/"><img loading="lazy" width="480" height="480" src="https://www.legacy.com/wp-content/uploads/2020/04/remote-funeral-1a-getty.jpg" alt="" class="wp-image-18262" srcset="https://www.legacy.com/wp-content/uploads/2020/04/remote-funeral-1a-getty.jpg 480w, https://www.legacy.com/wp-content/uploads/2020/04/remote-funeral-1a-getty-300x300.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" /></a></figure></div>
+
+
+
+<h4 class="tile-title" id="h-covid-19-funeral-questions"><a href="https://www.legacy.com/tag/covid-19-updates/">Covid-19 Funeral Questions</a></h4>
+
+
+
+<p class="tile-desc">How is the pandemic affecting funerals and mourning? </p>
+</div></div>
+
+
+
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-ecd41bc1 home-tile"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div class="wp-block-image home-image"><figure class="aligncenter size-full"><a href="https://www.legacy.com/advice/guide-to-writing-an-obituary/"><img loading="lazy" width="480" height="480" src="http://www.legacy.com/wp-content/uploads/2020/01/obituary-writing-480.jpg" alt="" class="wp-image-12711" srcset="https://www.legacy.com/wp-content/uploads/2020/01/obituary-writing-480.jpg 480w, https://www.legacy.com/wp-content/uploads/2020/01/obituary-writing-480-300x300.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" /></a></figure></div>
+
+
+
+<h4 class="tile-title" id="h-write-an-obituary"><a href="https://www.legacy.com/advice/guide-to-writing-an-obituary/">Write an Obituary</a></h4>
+
+
+
+<p class="tile-desc">How to honor someone&#8217;s life with the right words? Here&#8217;s a step-by-step guide.</p>
+</div></div>
+
+
+
+<div class="wp-block-uagb-column uagb-column__wrap uagb-column__background-undefined uagb-block-2a414cbb home-tile"><div class="uagb-column__overlay"></div><div class="uagb-column__inner-wrap">
+<div class="wp-block-image home-image"><figure class="aligncenter size-large"><a href="https://www.legacy.com/advice/coping-with-grief-and-loss/"><img loading="lazy" width="480" height="480" src="https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-480x480.jpg" alt="" class="wp-image-533" srcset="https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-480x480.jpg 480w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-100x100.jpg 100w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-220x220.jpg 220w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-768x768.jpg 768w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-1170x1170.jpg 1170w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future-585x585.jpg 585w, https://www.legacy.com/wp-content/uploads/2019/11/homepage-Plan-for-the-future.jpg 1500w" sizes="(max-width: 480px) 100vw, 480px" /></a></figure></div>
+
+
+
+<h4 class="tile-title" id="h-find-grief-support"><a href="https://www.legacy.com/advice/coping-with-grief-and-loss/">Find Grief Support</a></h4>
+
+
+
+<p class="tile-desc">Find comfort and healing after the death of someone important to you.</p>
+</div></div>
+</div></section>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter is-style-outline legacy-button"><a class="wp-block-button__link has-text-color has-background" href="https://www.legacy.com/category/advice/" style="border-radius:5px;background-color:#ffffff;color:#404f57"><strong>More Advice &amp; Support</strong></a></div>
+
+
+
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color alignfull uagb-block-4df18c80"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="has-text-align-center subscribe-text" id="h-get-breaking-news-alerts-today-s-headlines-in-your-inbox">Get breaking news alerts &amp; today&#8217;s headlines in your inbox.</h2>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter is-style-fill legacy-button"><a class="wp-block-button__link has-very-light-gray-color has-text-color has-background" href="https://www.legacy.com/news/legacy-newsletter-sign-up-today/" style="border-radius:5px;background-color:#2c2730"><strong>Subscribe</strong></a></div>
+</div></section>
+					</div>
+	</div>
+
+	
+			<div class="post-comments no-comment-yet" id="comments">
+	</div> <!-- end comments div -->
+	
+</article>					</div>
+	</div>
+
+
+<!-- END CONTAINER -->
+</div>
+
+<div class="clear-footer"></div>
+
+<div class="container penci-google-adsense penci-google-adsense-footer">
+</div>
+
+
+
+<footer id="footer-section" class="penci-footer-social-media penci-lazy footer-social-remove-circle footer-social-remove-text"  >
+	<div class="container">
+					<div class="footer-socials-section">
+				<ul class="footer-socials">
+											<li><a href="https://www.facebook.com/Legacycom" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-facebook" ></i><span>Facebook</span></a></li>
+																<li><a href="https://twitter.com/LegacyObits" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-twitter" ></i><span>Twitter</span></a></li>
+																																														<li><a href="https://www.youtube.com/legacycom" rel="nofollow" target="_blank"><i class="penci-faicon fa fa-youtube-play" ></i><span>Youtube</span></a></li>
+																																																																																																																																																</ul>
+			</div>
+									<div class="footer-logo-copyright footer-not-gotop">
+									<div id="footer-logo">
+						<a href="https://www.legacy.com/">
+							<img class="penci-lazy" src="https://www.legacy.com/wp-content/themes/soledad/images/penci2-holder.png" data-src="https://www.legacy.com/wp-content/uploads/2019/11/legacy-nospace-highres-white.png" alt="Footer Logo" />
+						</a>
+					</div>
+				
+									<div class="footer-menu-wrap" role="navigation"  >
+					<ul id="menu-about" class="footer-menu"><li id="menu-item-14825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14825"><a href="https://www.legacy.com/about-us/">ABOUT US</a></li>
+<li id="menu-item-14826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14826"><a href="https://www.legacy.com/careers/">CAREERS</a></li>
+<li id="menu-item-14827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14827"><a href="https://www.legacy.com/news-press/">NEWS &#038; PRESS</a></li>
+<li id="menu-item-14828" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14828"><a href="https://www.legacy.com/contact/">CONTACT US</a></li>
+<li id="menu-item-14829" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14829"><a href="https://www.legacy.com/faq/">FAQ</a></li>
+<li id="menu-item-14830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14830"><a href="https://www.legacy.com/privacy-policy/">PRIVACY POLICY</a></li>
+<li id="menu-item-14831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14831"><a href="https://www.legacy.com/terms-of-use/">TERMS OF USE</a></li>
+</ul>					</div>
+				
+									<div id="footer-copyright">
+						<p>©2020 Legacy.com All rights reserved.</p>
+					</div>
+											</div>
+					</div>
+</footer>
+
+</div><!-- End .wrapper-boxed -->
+
+<div id="fb-root"></div>
+<script>
+		var advanced_ads_ga_UID = 'cwalsh';
+		var advanced_ads_ga_anonymIP = true;
+advanced_ads_check_adblocker=function(t){function e(t){(window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(t){return setTimeout(t,16)}).call(window,t)}var n=[],a=null;return e(function(){var t=document.createElement("div");t.innerHTML="&nbsp;",t.setAttribute("class","ad_unit ad-unit text-ad text_ad pub_300x250"),t.setAttribute("style","width: 1px !important; height: 1px !important; position: absolute !important; left: 0px !important; top: 0px !important; overflow: hidden !important;"),document.body.appendChild(t),e(function(){var e=window.getComputedStyle&&window.getComputedStyle(t),o=e&&e.getPropertyValue("-moz-binding");a=e&&"none"===e.getPropertyValue("display")||"string"==typeof o&&-1!==o.indexOf("about:");for(var i=0;i<n.length;i++)n[i](a);n=[]})}),function(t){if(null===a)return void n.push(t);t(a)}}(),function(){var t=function(t,e){this.name=t,this.UID=e,this.analyticsObject=null;var n=this,a={hitType:"event",eventCategory:"Advanced Ads",eventAction:"AdBlock",eventLabel:"Yes",nonInteraction:!0,transport:"beacon"};this.analyticsObject="string"==typeof GoogleAnalyticsObject&&"function"==typeof window[GoogleAnalyticsObject]&&window[GoogleAnalyticsObject],!1===this.analyticsObject?(!function(t,e,n,a,o,i,d){t.GoogleAnalyticsObject=o,t[o]=t[o]||function(){(t[o].q=t[o].q||[]).push(arguments)},t[o].l=1*new Date,i=e.createElement(n),d=e.getElementsByTagName(n)[0],i.async=1,i.src="https://www.google-analytics.com/analytics.js",d.parentNode.insertBefore(i,d)}(window,document,"script",0,"_advads_ga"),_advads_ga("create",n.UID,"auto",this.name),advanced_ads_ga_anonymIP&&_advads_ga("set","anonymizeIp",!0),_advads_ga(n.name+".send",a)):(window.console&&window.console.log("Advanced Ads Analytics >> using other's variable named `"+GoogleAnalyticsObject+"`"),window[GoogleAnalyticsObject]("create",n.UID,"auto",this.name),window[GoogleAnalyticsObject]("set","anonymizeIp",!0),window[GoogleAnalyticsObject](n.name+".send",a))};advanced_ads_check_adblocker(function(e){e&&"string"==typeof advanced_ads_ga_UID&&advanced_ads_ga_UID&&new t("advadsTracker",advanced_ads_ga_UID)})}();</script><!-- Custom Facebook Feed JS -->
+<script type="text/javascript">var cffajaxurl = "https://www.legacy.com/wp-admin/admin-ajax.php";
+var cfflinkhashtags = "true";
+</script>
+<!-- HFCM by 99 Robots - Snippet # 8: CCPA & GDPR compliance -->
+<!-- OneTrust Cookies Settings button start -->
+<button id="ot-sdk-btn" class="ot-sdk-show-settings" style="width: 100%;"> Cookie Settings</button>
+<!-- OneTrust Cookies Settings button end -->
+<!-- /end HFCM by 99 Robots -->
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://www.legacy.com/wp-admin/admin-ajax.php";
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/slick.min.js?ver=1.22.4' id='uagb-slick-js-js'></script>
+<script type='text/javascript' id='uagb-post-js-js-extra'>
+/* <![CDATA[ */
+var uagb_data = {"ajax_url":"https:\/\/www.legacy.com\/wp-admin\/admin-ajax.php","uagb_masonry_ajax_nonce":"9b0c0b8321"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/post.js?ver=1.22.4' id='uagb-post-js-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/ultimate-addons-for-gutenberg/assets/js/imagesloaded.min.js?ver=1.22.4' id='uagb-imagesloaded-js'></script>
+<script type='text/javascript' id='advanced-ads-layer-footer-js-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_layer_settings = {"layer_class":"legac-layer"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-layer/public/assets/js/layer.js?ver=1.6.5' id='advanced-ads-layer-footer-js-js'></script>
+<script type='text/javascript' id='advanced-ads-sticky-footer-js-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_sticky_settings = {"check_position_fixed":"","sticky_class":"legac-sticky"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-sticky-ads/public/assets/js/sticky.js?ver=1.7.10' id='advanced-ads-sticky-footer-js-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/themes/soledad/js/libs-script.min.js?ver=7.2.3' id='penci-libs-js-js'></script>
+<script type='text/javascript' id='main-scripts-js-extra'>
+/* <![CDATA[ */
+var ajax_var_more = {"url":"https:\/\/www.legacy.com\/wp-admin\/admin-ajax.php","nonce":"041c5d4df3","errorPass":"<p class=\"message message-error\">Password does not match the confirm password<\/p>","login":"Email Address","password":"Password"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/themes/soledad/js/main.js?ver=7.2.3' id='main-scripts-js'></script>
+<script type='text/javascript' id='penci_ajax_like_post-js-extra'>
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/www.legacy.com\/wp-admin\/admin-ajax.php","nonce":"041c5d4df3","errorPass":"<p class=\"message message-error\">Password does not match the confirm password<\/p>","login":"Email Address","password":"Password"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/themes/soledad/js/post-like.js?ver=7.2.3' id='penci_ajax_like_post-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-includes/js/comment-reply.min.js?ver=5.7.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/custom-facebook-feed/assets/js/cff-scripts.js?ver=2.19.1' id='cffscripts-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.5' id='page-links-to-js'></script>
+<script type='text/javascript' id='advadsTrackingHandle-js-extra'>
+/* <![CDATA[ */
+var advadsTracking = {"ajaxurl":"https:\/\/www.legacy.com\/wp-admin\/admin-ajax.php","ajaxActionName":"aatrack-records","method":"onrequest","blogId":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.legacy.com/wp-content/plugins/advanced-ads-tracking/public/assets/js/script.js?ver=1.20.2' id='advadsTrackingHandle-js'></script>
+<script type='text/javascript' src='https://www.legacy.com/wp-includes/js/wp-embed.min.js?ver=5.7.1' id='wp-embed-js'></script>
+<script>window.advads_has_ads = [["17978","ad",null],["1439","ad",null]];
+
+( window.advanced_ads_ready || jQuery( document ).ready ).call( null, function() {if ( window.advanced_ads_pro ) {advanced_ads_pro.process_passive_cb();} else if ( window.console && window.console.log ) {console.log('Advanced Ads Pro: cache-busting can not be initialized');} });</script><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;left: -100%;" height="0" width="0"><symbol id="icon-anwp-pg-calendar" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"/></symbol><symbol id="icon-anwp-pg-clock" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M8 8h3v2H7c-.55 0-1-.45-1-1V4h2v4zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"/></symbol><symbol id="icon-anwp-pg-comment-discussion" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/></symbol><symbol id="icon-anwp-pg-device-camera" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 3H7c0-.55-.45-1-1-1H2c-.55 0-1 .45-1 1-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM6 5H2V4h4v1zm4.5 7C8.56 12 7 10.44 7 8.5S8.56 5 10.5 5 14 6.56 14 8.5 12.44 12 10.5 12zM13 8.5c0 1.38-1.13 2.5-2.5 2.5S8 9.87 8 8.5 9.13 6 10.5 6 13 7.13 13 8.5z"/></symbol><symbol id="icon-anwp-pg-eye" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></symbol><symbol id="icon-anwp-pg-pencil" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"/></symbol><symbol id="icon-anwp-pg-person" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.5a5.5 5.5 0 00-3.096 10.047 9.005 9.005 0 00-5.9 8.18.75.75 0 001.5.045 7.5 7.5 0 0114.993 0 .75.75 0 101.499-.044 9.005 9.005 0 00-5.9-8.181A5.5 5.5 0 0012 2.5zM8 8a4 4 0 118 0 4 4 0 01-8 0z"/></symbol><symbol id="icon-anwp-pg-play" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M14 8A7 7 0 110 8a7 7 0 0114 0zm-8.223 3.482l4.599-3.066a.5.5 0 000-.832L5.777 4.518A.5.5 0 005 4.934v6.132a.5.5 0 00.777.416z"/></symbol><symbol id="icon-anwp-pg-tag" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7.685 1.72a2.49 2.49 0 00-1.76-.726H3.48A2.5 2.5 0 00.994 3.48v2.456c0 .656.269 1.292.726 1.76l6.024 6.024a.99.99 0 001.402 0l4.563-4.563a.99.99 0 000-1.402L7.685 1.72zM2.366 7.048a1.54 1.54 0 01-.467-1.123V3.48c0-.874.716-1.58 1.58-1.58h2.456c.418 0 .825.159 1.123.467l6.104 6.094-4.702 4.702-6.094-6.114zm.626-4.066h1.989v1.989H2.982V2.982h.01z"/></symbol><symbol id="icon-anwp-pg-trash" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M16 1.75V3h5.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H8V1.75C8 .784 8.784 0 9.75 0h4.5C15.216 0 16 .784 16 1.75zm-6.5 0a.25.25 0 01.25-.25h4.5a.25.25 0 01.25.25V3h-5V1.75z"/><path d="M4.997 6.178a.75.75 0 10-1.493.144L4.916 20.92a1.75 1.75 0 001.742 1.58h10.684a1.75 1.75 0 001.742-1.581l1.413-14.597a.75.75 0 00-1.494-.144l-1.412 14.596a.25.25 0 01-.249.226H6.658a.25.25 0 01-.249-.226L4.997 6.178z"/><path d="M9.206 7.501a.75.75 0 01.793.705l.5 8.5A.75.75 0 119 16.794l-.5-8.5a.75.75 0 01.705-.793zm6.293.793A.75.75 0 1014 8.206l-.5 8.5a.75.75 0 001.498.088l.5-8.5z"/></symbol></svg>					<script type="text/javascript" id="0d6f47ed">
+						document.addEventListener("DOMContentLoaded", function(){
+							( function( $ ) {
+								var cols = parseInt( '3' );
+								var $scope = $( '.uagb-block-0d6f47ed' ).find( '.is-carousel' );
+
+								if ( cols >= $scope.children().length ) {
+									return;
+								}
+								var slider_options = {
+									'slidesToShow' : cols,
+									'slidesToScroll' : 1,
+									'autoplaySpeed' : 2000,
+									'autoplay' : Boolean( '1' ),
+									'infinite' : Boolean( '1' ),
+									'pauseOnHover' : Boolean( '1' ),
+									'speed' : 500,
+									'arrows' : Boolean( '1' ),
+									'dots' : Boolean( '1' ),
+									'rtl' : Boolean( '' ),
+									'prevArrow' : '<button type=\"button\" data-role=\"none\" class=\"slick-prev\" aria-label=\"Previous\" tabindex=\"0\" role=\"button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 256 512\"><path d=\"M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z\"></path></svg><\/button>',
+									'nextArrow' : '<button type=\"button\" data-role=\"none\" class=\"slick-next\" aria-label=\"Next\" tabindex=\"0\" role=\"button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 256 512\"><path d=\"M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z\"></path></svg><\/button>',
+									'responsive' : [
+										{
+											'breakpoint' : 1024,
+											'settings' : {
+												'slidesToShow' : 1,
+												'slidesToScroll' : 1,
+											}
+										},
+										{
+											'breakpoint' : 767,
+											'settings' : {
+												'slidesToShow' : 1,
+												'slidesToScroll' : 1,
+											}
+										}
+									]
+								};
+
+								$scope.imagesLoaded( function() {
+									$scope.slick( slider_options );
+								});
+
+								var enableEqualHeight = ( '1' )
+
+								if( enableEqualHeight ){
+									$scope.imagesLoaded( function() {
+										UAGBPostCarousel._setHeight( $scope );
+									});
+
+									$scope.on( 'afterChange', function() {
+										UAGBPostCarousel._setHeight( $scope );
+									} );
+								}
+
+							} )( jQuery );
+						});
+					</script>
+					<script type="text/javascript">var advads_tracking_ads = {};var advads_tracking_urls = [];var advads_gatracking_uids = [];var advads_tracking_methods = [];var advads_tracking_parallel = [];var advads_tracking_linkbases = [];var advads_gatracking_allads = [];var advads_gatracking_anonym = true;</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"NRJS-73ab015134d74153791","applicationID":"432897163","transactionName":"ZAMDZkoEWRIDW0BeWV1JIFFMDFgPTUhVUFM=","queueTime":0,"applicationTime":441,"atts":"SEQAEAIeShw=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

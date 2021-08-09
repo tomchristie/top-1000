@@ -1,0 +1,3020 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Overblog - Les meilleurs blogs et la meilleure plateforme de blog</title>
+
+    <meta name="description" content="Le portail d&#039;OverBlog ! Le meilleur de l&#039;info et des articles de nos blogueurs ! Créez facilement et gratuitement un blog sur OverBlog ! Forums, communautés et annuaire de blog sur OverBlog !">
+
+    
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name": "Overblog",
+      "url" : "https://www.over-blog.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://assets.over-blog-kiwi.com/b/blog/bundles/overblogblogblog/images/logo-overblog-big.png?v1.4.8.0",
+        "width": 550,
+        "height": 210
+      }
+    }
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="https://assets.over-blog.com/b/site/bundles/build/js/es5-shim.min.js?1.0.0"></script>
+      <script src="https://assets.over-blog.com/b/site/bundles/build/js/html5shiv.min.js?1.0.0"></script>
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="https://assets.over-blog.com/b/site/favicon.png?1.0.0">
+    <link rel="stylesheet" href="https://assets.over-blog.com/b/site/bundles/build/css/build.css?1.0.0">
+
+    
+    <!--[if lt IE 9]>
+      <script src="https://assets.over-blog.com/b/site/bundles/build/js/respond.min.js?1.0.0"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,400italic,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,900">
+
+    <script>
+      dataLayer = [{
+        'source'   : 'OVERBLOG_PORTAL',
+      }];
+    </script>
+    <script>
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://cdn.api.getjad.io/library/6783/OverBlogKiwi";
+        s.setAttribute('importance', 'high');
+        s.onload = function(){
+          function setupSlideIn() {
+              var divSlidein = document.createElement("div");
+              divSlidein.id = 'slidein';
+              document.body.appendChild(divSlidein);
+          }
+
+          if( document.readyState !== 'loading' ) {
+              setupSlideIn();
+          } else {
+              document.addEventListener('DOMContentLoaded', setupSlideIn, false);
+          }
+        };
+        var g = document.getElementsByTagName("head")[0];
+        g.parentNode.insertBefore(s, g);
+
+        // targeting
+        var jadTargeting = {};
+        var noTargetingKeys = ['slots'];
+        for (var k in dataLayer[0]) {
+            if (noTargetingKeys.indexOf(k) === -1) {
+                if (typeof dataLayer[0][k] === 'string') {
+                    jadTargeting[k] = [dataLayer[0][k]];
+                } else if (Array.isArray(dataLayer[0][k])) {
+                    jadTargeting[k] = dataLayer[0][k];
+                } else {
+                    // unknow type
+                }
+            }
+        }
+
+        jadElementsMapping = {
+            "adsense-before-page": "adsense-before-page",
+            footer: "cod-adsense-bottom",
+            footer_2: "adsense-list-cod",
+            footer_3: "mobile-footer",
+            header: "user-728",
+            header_2: "mobile-header",
+            mtf_leaderboard: "mag-728-90",
+            mtf_leaderboard_2: "adsense-home",
+            mtf_leaderboard_3: "PUB 728x90",
+            mtf_leaderboard_4: "blog-directory-728",
+            mtf_leaderboard_5: "md-atf-728-90",
+            rectangle_atf: "cod-adsense-top",
+            rectangle_atf_2: "sidebar-atf-300-600",
+            rectangle_atf_3: "sidebar-mtf-300-250",
+            rectangle_mtf: "autopromo-300-250",
+            rectangle_btf: "md-btf-300-600",
+            slidein: "slidein",
+        };
+
+        window.jad = window.jad || {};
+        jad.cmd = jad.cmd || [];
+
+        jad.cmd.push(function() {
+          jad.public.setConfig({
+              debug: false,
+              page: '/6783/OverBlogKiwi/portail',
+              targeting: jadTargeting,
+              prebidTargeting: jadTargeting,
+              elementsMapping: jadElementsMapping,
+              cappingByPosition: [{
+                  position: "interstitial",
+                  ttl: 86400,
+                  limit: 10,
+              }, {
+                  position: "slidein",
+                  ttl: 86400,
+                  limit: 10,
+              }],
+              cmp: {
+                  name: 'didomi',
+                  siteId: 'e23a01f6-a508-4e71-8f50-c1a9cae7c0d0',
+                  noticeId: '3FCZAAB8',
+                  paywall: {
+                      clientId: 'AVvF60FpOZcS6UoBe6sf8isBLYwzuLgMQCnNdE-FvpoW_OhR8P6zERqhyuIBGPOxqrTHKxv7QxsXnfck',
+                      planId: 'P-1PX20425XC513033RMBQZVRI',
+                      tosUrl: 'https://www.over-blog.com/terms-of-sale',
+                      touUrl: 'https://www.over-blog.com/terms-of-use',
+                      privacyUrl: 'https://www.over-blog.com/privacy-policy'
+                  },
+                  includeCmp: true
+              }
+          });
+          jad.public.loadPositions();
+          jad.public.displayPositions();
+        })
+      </script>
+  </head>
+  <body class="Body">
+      
+<header class="Header">
+
+  <div class="Header-container u-container">
+
+    <div class="Header-wrapper">
+      <div class="Header-smallButton--nav u-visible--xs u-visible--sm">
+        <a href="#" class="Header-smallButton js-nav">
+            <i class=" fa fa-bars"></i>
+
+        </a>
+      </div>
+
+      <div class="Header-logo">
+        <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F">
+          <img class="Header-overblogImg" src="https://assets.over-blog.com/b/site/bundles/build/images/logo.png?1.0.0" srcset="https://assets.over-blog.com/b/site/bundles/build/images/logo@2x.png?1.0.0 2x">
+        </span>
+      </div>
+
+      <div class="Header-controls">
+
+        <form method="post" action="/search" class="Header-search HeaderSearch js-hide-on-scroll--down">
+          <div class="c-input-container c-input-container--raw">
+            <input name="query" type="text" class="c-input HeaderSearch-input"
+              placeholder="Recherche"
+              required>
+          </div>
+          <button class="HeaderSearch-submit">  <i class=" fa fa-search"></i>
+</button>
+        </form>
+
+        <div class="Header-language Languages js-dropdown">
+          <div class="Languages-current">
+            <img class="Languages-current-flag" src="https://assets.over-blog.com/b/site/bundles/build/images/flags/fr.png?1.0.0">
+              <i class="Languages-current-caret fa fa-angle-down"></i>
+
+          </div>
+          <div class="Languages-dropdown">
+            <div class="Languages-arrow"></div>
+            <ul class="Languages-list">
+                                        <li class="Languages-language">
+                <a href="//en.over-blog.com" class="Language-link u-link">
+                  <img class="Languages-flag"
+                       src="https://assets.over-blog.com/b/site/bundles/build/images/flags/en.png?1.0.0"><!--
+                  -->English
+                </a>
+              </li>
+                                        <li class="Languages-language">
+                <a href="//www.over-blog.com" class="Language-link u-link">
+                  <img class="Languages-flag"
+                       src="https://assets.over-blog.com/b/site/bundles/build/images/flags/fr.png?1.0.0"><!--
+                  -->français
+                </a>
+              </li>
+                                        <li class="Languages-language">
+                <a href="//de.over-blog.com" class="Language-link u-link">
+                  <img class="Languages-flag"
+                       src="https://assets.over-blog.com/b/site/bundles/build/images/flags/de.png?1.0.0"><!--
+                  -->Deutsch
+                </a>
+              </li>
+                                        <li class="Languages-language">
+                <a href="//es.over-blog.com" class="Language-link u-link">
+                  <img class="Languages-flag"
+                       src="https://assets.over-blog.com/b/site/bundles/build/images/flags/es.png?1.0.0"><!--
+                  -->español
+                </a>
+              </li>
+                                        <li class="Languages-language">
+                <a href="//it.over-blog.com" class="Language-link u-link">
+                  <img class="Languages-flag"
+                       src="https://assets.over-blog.com/b/site/bundles/build/images/flags/it.png?1.0.0"><!--
+                  -->italiano
+                </a>
+              </li>
+                        </ul>
+          </div>
+        </div>
+
+        <div class="Header-connexionButtons">
+          <p class="Header-label--login u-visible--xs">Vous avez déjà un Overblog, connectez vous</p>
+          <a class="Header-button--login c-button c-button--primary" href="https://connect.over-blog.com/fr/login">
+              <i class=" fa fa-sign-in"></i>
+ <span class="u-hidden--sm">Connexion</span>
+          </a>
+
+          <p class="Header-label--createBlog u-visible--xs">Pas encore inscrit ? Creez un Overblog!</p>
+          <span class="Header-button--createBlog c-button c-button--secondary" onclick="document.location.href='https://www.over-blog.com/creation'">
+              <i class=" fa fa-plus-circle"></i>
+ <span class="u-hidden--sm">Créer mon blog</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="Header-smallButton--user u-visible--xs">
+        <a href="#" class="Header-smallButton js-connexion">
+            <i class=" fa fa-user"></i>
+
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+    <div class="Jumbotron">
+    <div class="u-container">
+      <div class="Jumbotron-title">
+        Publiez vos idées facilement
+      </div>
+      <div class="Jumbotron-text">
+        Rejoignez gratuitement des millions d’utilisateurs sur la 1ere plateforme européenne de blog
+      </div>
+      <div class="Jumbotron-button">
+        <a class="c-button c-button--secondary" href="https://www.over-blog.com/creation">
+          Créez votre blog maintenant
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function displayJumbotron(isConnected) {
+      if (!isConnected) {
+        document.querySelector(".Jumbotron").className += " Jumbotron--visible"
+      }
+    }
+  </script>
+  <script src="https://connect.over-blog.com/ping?jsonp=displayJumbotron"></script>
+  <div class="u-container">
+    
+            
+  <div class="Content u-row">
+
+    <div class="Content-menu u-col-md-2">
+              
+  
+
+  <nav class="Nav">
+    <div class="rwd-menuwrapper">
+      <ul class="Menu">
+        <li>
+          <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F Menu-element Menu-element--selected">
+              <i class="Menu-icon fa fa-newspaper"></i>
+ <span class="Menu-label">Les plus lus</span>
+              <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+          </span>
+        </li>
+        
+    <li>
+          <a
+        class="Menu-element Menu-element--television-film "
+        href="https://www.over-blog.com/mag/cinema-tv">
+
+          <i class="Menu-icon fa fa-film"></i>
+ <span class="Menu-label">Cinéma &amp; TV</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--music "
+        href="https://www.over-blog.com/mag/musique">
+
+          <i class="Menu-icon fa fa-music"></i>
+ <span class="Menu-label">Musique</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--entertainment "
+        href="https://www.over-blog.com/mag/loisirs-culture">
+
+          <i class="Menu-icon fa fa-ticket-alt"></i>
+ <span class="Menu-label">Loisirs &amp; Culture</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--home-cooking "
+        href="https://www.over-blog.com/mag/cuisine-deco">
+
+          <i class="Menu-icon fa fa-utensils"></i>
+ <span class="Menu-label">Cuisine</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--home-deco "
+        href="https://www.over-blog.com/mag/deco">
+
+          <i class="Menu-icon fa fa-paint-brush"></i>
+ <span class="Menu-label">Déco</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--glamour "
+        href="https://www.over-blog.com/mag/mode-beaute">
+
+          <i class="Menu-icon fa fa-eye"></i>
+ <span class="Menu-label">Mode &amp; Beauté</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--celebrities "
+        href="https://www.over-blog.com/mag/people">
+
+          <i class="Menu-icon fa fa-gem"></i>
+ <span class="Menu-label">People</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--high-tech "
+        href="https://www.over-blog.com/mag/high-tech">
+
+          <i class="Menu-icon fa fa-desktop"></i>
+ <span class="Menu-label">High Tech</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--business "
+        href="https://www.over-blog.com/mag/business">
+
+          <i class="Menu-icon fa fa-briefcase"></i>
+ <span class="Menu-label">Business</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--sport "
+        href="https://www.over-blog.com/mag/sport">
+
+          <i class="Menu-icon fa fa-futbol"></i>
+ <span class="Menu-label">Sport</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+    <li>
+          <a
+        class="Menu-element Menu-element--society "
+        href="https://www.over-blog.com/mag/societe">
+
+          <i class="Menu-icon fa fa-university"></i>
+ <span class="Menu-label">Société</span>
+          <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+      </a>
+      </li>
+
+        
+<li class="Menu-separator">
+    <a class="Menu-element" href="https://www.over-blog.com/top">
+      <i class="Menu-icon fa fa-trophy"></i>
+
+    <span class="Menu-label">Top des blogs</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="https://www.over-blog.com/community/list">
+      <i class="Menu-icon fa fa-users"></i>
+
+    <span class="Menu-label">Communautés</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="https://www.over-blog.com/blogs">
+      <i class="Menu-icon fa fa-book"></i>
+
+    <span class="Menu-label">Annuaire des blogs</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="/premium">
+      <i class="Menu-icon fa fa-star"></i>
+
+    <span class="Menu-label">Offre Premium</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="/features/social-hub">
+      <i class="Menu-icon fa fa-cog"></i>
+
+    <span class="Menu-label">Fonctionnalités</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="http://staff-fr.over-blog.com" target="_blank">
+      <i class="Menu-icon fa fa-bullhorn"></i>
+
+    <span class="Menu-label">Le blog du staff</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="/about-us/background">
+      <i class="Menu-icon fa fa-info-circle"></i>
+
+    <span class="Menu-label">A propos de nous</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+<li>
+    <a class="Menu-element" href="/faq/create-blog-for-free">
+      <i class="Menu-icon fa fa-question-circle"></i>
+
+    <span class="Menu-label">FAQ</span>
+      <i class="Menu-arrow u-visible--xs u-visible--sm fa fa-angle-right"></i>
+
+  </a>
+  </li>
+      </ul>
+      <div class="Social">
+        <span class="js-b16 45CBCBC0C22D1F1F444A4243414F4F4719424F4E1FBFC443C141484F4C Social-link Social-link--facebook" target="_blank">
+            <i class="Social-icon fab fa-facebook-f"></i>
+
+        </span>
+        <span class="js-b16 45CBCBC0C22D1F1FCBCC46CBCB43C119424F4E1F4FC443C141484F4C Social-link Social-link--twitter" target="_blank">
+            <i class="Social-icon fab fa-twitter"></i>
+
+        </span>
+      </div>
+    </div>
+  </nav>
+          </div>
+
+    <main class="Content-main Main u-col-lg-7 u-col-md-10">
+                <div class="u-visible--xs Main-320x50">
+                <div class="Placeholder ">
+      <div  id="mobile-header"  style="width : 320px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(670 && width > 670 || 0 && width < 0){
+        document.getElementById('mobile-header').remove()
+      }
+    </script>
+
+          </div>
+            
+  <div class="Home-728x90 u-container--gutter u-container--gutterTop u-visible--sm u-visible--md">
+        <div class="Placeholder ">
+      <div  id="md-atf-728-90"  style="width : 728px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(1360 && width > 1360 || 670 && width < 670){
+        document.getElementById('md-atf-728-90').remove()
+      }
+    </script>
+
+  </div>
+
+  <div class="Main-title MainTitle MainTitle--home">
+    <div class="MainTitle-title">Articles les plus lus</div>
+</div>
+
+      
+                  
+  
+  
+<article
+  class="u-container--gutter Article  Article--large js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--television-film">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/9xBdJfC6nFm_7h5-X-ATQojfnkw=/400x400/smart/filters:no_upscale()/image%2F0953084%2F20210727%2Fob_bcdd2f_ici-tout-commence-preview.jpg"
+        alt="Les résumés en avance de Ici tout commence jusqu&#039;au 27 août (Spoilers)."
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--television-film">
+        <span class="Article-figureLabelText">Cinéma &amp; TV</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.leblogtvnews.com/2020/10/les-resumes-des-prochains-episodes-de-ici-tout-commence-sur-tf1-spoilers.html"
+                      target="_blank"
+          >
+          <span>Les résumés en avance de Ici tout commence jusqu&#039;au 27 août (Spoilers).</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/6fQjlVlMH0RUzcufpFV4IR1ndLw=/400x400/smart/filters:no_upscale()/image%2F0889339%2F20210423%2Fob_cab46f_favicon.png" alt="Pascal ">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/889339.html">Pascal </a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-03T21:23:30+02:00">
+    3 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Ci-dessous, les courts résumés des prochains épisodes du feuilleton à succès Ici tout commence, diffusé sur TF1. Mercredi 4, épisode 198 : Sylvie décide de s’enfuir alors que Laetitia fait une découverte inquiétante. Célia trouve une solution séduisante pour oublier Jérémy. Teyssier admet qu’il s’est trompé, mais son mea culpa </div>
+          </div>
+</article>
+
+      <div class="ArticleSlider js-slider u-container--gutter">
+      <a class="ArticleSlider-button ArticleSlider-button--prev js-prev u-hidden--xs">  <i class=" fa fa-angle-left"></i>
+</a>
+      <a class="ArticleSlider-button ArticleSlider-button--next js-next u-hidden--xs">  <i class=" fa fa-angle-right"></i>
+</a>
+      <div class="ArticleSlider-wrapper">
+        <div class="ArticleSlider-container js-row-0 js-container">
+                  <div class="ArticleSlider-row js-row">          <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--home-cooking">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/dUpBZDeznHlhiNpLTiQ-yDin4RQ=/400x400/smart/filters:no_upscale()/image%2F0931995%2F20210807%2Fob_56aa45_wraps-veggie-1.jpg"
+        alt="WRAPS APERITIFS VEGGIE "
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--home-cooking">
+        <span class="Article-figureLabelText">Cuisine</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.lespetitsplaisirsdedoro.fr/2021/07/wraps-aperitifs-veggie.html"
+                      target="_blank"
+          >
+          <span>WRAPS APERITIFS VEGGIE </span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/DCrhBkS-6jB2gi0wCCUg8ZkgMJ0=/400x400/smart/filters:no_upscale()/image%2F0870326%2F20210113%2Fob_f36015_received-781654299097655.jpeg" alt="Doro">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/870326.html">Doro</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-07T10:20:57+02:00">
+    7 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--society">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/_7fiJir_w7KAf1oEK6K2PnnKT2k=/400x400/smart/filters:no_upscale()/image%2F1044304%2F20210807%2Fob_4ab244_6-7.jpg"
+        alt="Une infirmière et un chirurgien posent une bombe sur le plateau de BFM Alpes : « On se demande où sont les patients Covid »"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--society">
+        <span class="Article-figureLabelText">Société</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.wikistrike.com/2021/08/une-infirmiere-et-un-chirurgien-posent-une-bombe-sur-le-plateau-de-bfm-alpes-on-se-demande-ou-sont-les-patients-covid.html"
+                      target="_blank"
+          >
+          <span>Une infirmière et un chirurgien posent une bombe sur le plateau de BFM Alpes : « On se demande où sont les patients Covid »</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/TkquVyvYSofDDPl3HeEqFe5O5WE=/400x400/smart/filters:no_upscale()/fdata%2F4234231%2F%2Favatar-user-3543517-tmpphpv76W9u.png" alt="wikistrike.com">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/971740.html">wikistrike.com</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-07T10:32:41+02:00">
+    7 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--sport">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/shZjmCQYaJ8AhzfbQ1PVWWjWzfI=/400x400/smart/filters:no_upscale()/image%2F1187386%2F20210807%2Fob_162116_deauville.jpg"
+        alt="Quinté+ - Dimanche 8 Août à Deauville"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--sport">
+        <span class="Article-figureLabelText">Sport</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.le-turf-de-laurence.com/2021/08/quinte-dimanche-8-aout-a-deauville.html"
+                      target="_blank"
+          >
+          <span>Quinté+ - Dimanche 8 Août à Deauville</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/kdMtYdO9Ppu1-8MsgVqCCe2QkAo=/400x400/smart/filters:no_upscale()/fdata%2F5636290%2F%2Favatar-user-4945577-tmpphpgPxC5h.gif" alt="Laurence">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1105788.html">Laurence</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-07T17:18:00+02:00">
+    7 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--home-deco">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/A5RtxELrLETELqr4-0JER_N4TMY=/400x400/smart/filters:no_upscale()/image%2F1463723%2F20210807%2Fob_32cce2_2021-08-07-12-01-53.jpg"
+        alt="Mettre les voiles"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--home-deco">
+        <span class="Article-figureLabelText">Déco</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://chezelisa.over-blog.com/2021/08/mettre-les-voiles.html"
+                      target="_blank"
+          >
+          <span>Mettre les voiles</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/3prwdS1sRQUzAJIu3PuDRtRmkLI=/400x400/smart/filters:no_upscale()/fdata%2F0180108%2F%2Favatar-user-67073-tmpphpwM7duK.gif" alt="Elisa">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1362816.html">Elisa</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-07T13:48:18+02:00">
+    7 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+          </div>                  <div class="ArticleSlider-row js-row">          <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--high-tech">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/mcRz86Ll2ZrIatEu1dIJUx34GI0=/400x400/smart/filters:no_upscale()/image%2F2036207%2F20210806%2Fob_1e6814_1.jpg"
+        alt="Espagne : Découverte d&#039;un sarcophage Wisigoth vieux de 1 400 ans sur une villa romaine !"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--high-tech">
+        <span class="Article-figureLabelText">High Tech</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://apprentiarcheologue.over-blog.com/2021/08/espagne-decouverte-d-un-sarcophage-wisigoth-vieux-de-1-400-ans-sous-une-villa-romaine.html"
+                      target="_blank"
+          >
+          <span>Espagne : Découverte d&#039;un sarcophage Wisigoth vieux de 1 400 ans sur une villa romaine !</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://assets.over-blog.com/b/site/bundles/overblogfront/images/default-avatar.jpg?1.0.0" alt="Enzo">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1843487.html">Enzo</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-07T15:59:57+02:00">
+    7 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--business">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/CF7CqOglk8AzyJvJUOYynCV_XHg=/400x400/smart/filters:no_upscale()/image%2F1172884%2F20210808%2Fob_89f367_mdz-cartes-a-pinces-les-solides.png"
+        alt="Maths : Les cartes à pinces sur les Solides "
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--business">
+        <span class="Article-figureLabelText">Business</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://maitressedzecolles.fr/2021/08/maths-les-cartes-a-pinces-sur-les-solides.html"
+                      target="_blank"
+          >
+          <span>Maths : Les cartes à pinces sur les Solides </span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/6JudajIT6cqpMkesh4uB1OpO9rw=/400x400/smart/filters:no_upscale()/fdata%2F2179262%2F%2Favatar-user-1488548-tmpphpqK64Ng.gif" alt="Maitresse D zécolles">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1092186.html">Maitresse D zécolles</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-08T22:56:52+02:00">
+    8 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--glamour">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/n37yBnYn9AvIS5lJgTmbDhMrKkE=/400x400/smart/filters:no_upscale()/image%2F1484085%2F20210806%2Fob_dc5cc2_tarla09blogisahv.jpg"
+        alt="Un si beau jour ..."
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--glamour">
+        <span class="Article-figureLabelText">Mode &amp; Beauté</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.creationsisahv.com/2021/08/un-si-beau-jour.html"
+                      target="_blank"
+          >
+          <span>Un si beau jour ...</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/h5fHs5il0sgtxRTQOQE91sofruU=/400x400/smart/filters:no_upscale()/image%2F1484085%2F20150221%2Fob_b71ee6_logoisa.jpg" alt="Isabelle Haccourt Vautier">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1384351.html">Isabelle Haccourt Vautier</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-06T12:21:10+02:00">
+    6 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+                                      <div class="ArticleSlider-col">
+            
+
+<article
+  class="u-container--gutter Article  Article--alt Article--slider js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--music">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/9vFExZMjhVvEUKLU5PZgupheRlE=/400x400/smart/filters:no_upscale()/image%2F0868093%2F20210804%2Fob_4d81ed_press-release.jpg"
+        alt="GEORGE MICHAEL NEWS EVOLUE ... EN DUO "
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--music">
+        <span class="Article-figureLabelText">Musique</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://www.george-michael-news.com/2021/08/george-michael-news-evolue.html"
+                      target="_blank"
+          >
+          <span>GEORGE MICHAEL NEWS EVOLUE ... EN DUO </span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://assets.over-blog.com/b/site/bundles/overblogfront/images/default-avatar.jpg?1.0.0" alt="Frédérique">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/812590.html">Frédérique</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-06T19:40:03+02:00">
+    6 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          </div>
+</article>
+          </div>
+          </div>                </div>
+      </div>
+    </div>
+  
+
+  <div class="Main-title MainTitle">
+    <h2 class="MainTitle-title">Articles populaires</h2>
+</div>
+
+  <div class="u-row">
+      <div class="u-col-sm-4">
+      
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/J5sGSNE-x27mOQowHF03OELCmU8=/400x400/smart/filters:no_upscale()/image%2F1044945%2F20160628%2Fob_9fe1a5_trim-positif-bateau-a-moteur.JPG"
+        alt="Conseils d&#039;Experts - tout sur le Trim, si nécessaire, et pourtant si peu utilisé"
+      >
+          </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.actunautique.com/2016/06/conseils-d-experts-tout-sur-le-trim-si-necessaire-et-pourtant-si-peu-utilise.html"
+                      target="_blank"
+          >
+          <span>Conseils d&#039;Experts - tout sur le Trim, si nécessaire, et pourtant si peu utilisé</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/6qAxeUl9fxnT74JSGPUyJLJ9gLM=/400x400/smart/filters:no_upscale()/fdata%2F4568732%2F%2Favatar-user-3878018-tmpphpXtg8Td.jpeg" alt="ActuNautique.com">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/972329.html">ActuNautique.com</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2020-05-06T16:10:12+02:00">
+    6 mai 2020
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">=&gt; Les Cahiers Techniques du Nautisme Le Trim est un correcteur d&#039;assiette installé sur les bateaux à moteur équipés de motorisations hors-bord ou d&#039;embases Z-Drive. Il permet de changer l&#039;assiette du bateau, et donc d&#039;augmenter ou de réduire la surface mouillée de la carène ; de gagner ainsi en performance ou en confort, selon la vitesse et</div>
+          </div>
+</article>
+    </div>
+      <div class="u-col-sm-4">
+      
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/m5vxzFg_Z51Pl29q3s5B9TDlGAI=/400x400/smart/filters:no_upscale()/image%2F1029935%2F20210609%2Fob_f5fc8f_roxanegriff3008.jpg"
+        alt="LE JOURNAL GRATUIT DU PARIEUR - 09 AOUT 2021 - COUPLE DU JOUR DU TIERCE EN COUVERTURE - JO"
+      >
+          </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://coupsurplacedujour.over-blog.com/2019/02/couple-du-jour-du-tierce-en-couverture.html"
+                      target="_blank"
+          >
+          <span>LE JOURNAL GRATUIT DU PARIEUR - 09 AOUT 2021 - COUPLE DU JOUR DU TIERCE EN COUVERTURE - JO</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/x4poBOfUmKErsZXiGcC3-OWse0c=/400x400/smart/filters:no_upscale()/image%2F1029935%2F20160515%2Fob_aacab4_roxane-griff-3008.jpg" alt="Neptunae">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/958837.html">Neptunae</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-07-27T17:15:00+02:00">
+    27 juil. 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">COUPLE DU JOUR DU TIERCE EN COUVERTURE LE JOURNAL GRATUIT DU PARIEUR 5 - 7 X 13 8 11 3 16 2 14 15 Si course favori solide 1 - 15 X 10 4 12 9 Si course difficile course ouverte ________________________________________________________________________________________________________ MON PRONO QUINTE AVEC LES ASTRES ET LA Chance MERCI DE RESPECTER MON </div>
+          </div>
+</article>
+    </div>
+      <div class="u-col-sm-4">
+      
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/jhNuiQImIVcztwDX_xtuujwJxIY=/400x400/smart/filters:no_upscale()/image%2F0931870%2F20210805%2Fob_ceab31_images-pour-web-78.jpg"
+        alt="&quot;R1-C3 | PRIX DES LYCOPODES  06 AOU 2021 À 20H15 HIPPODROME DE CABOURG (R1) 16 PARTANTS - 40000€ - 2750 MÈTRES - SABLE&quot;"
+      >
+          </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.wolnihippisme.com/2021/08/r1-c3-prix-des-lycopodes-06-aou-2021-a-20h15-hippodrome-de-cabourg-r1-16-partants-40000-2750-metres-sable.html"
+                      target="_blank"
+          >
+          <span>&quot;R1-C3 | PRIX DES LYCOPODES  06 AOU 2021 À 20H15 HIPPODROME DE CABOURG (R1) 16 PARTANTS - 40000€ - 2750 MÈTRES - SABLE&quot;</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/YK0Zrb57RHpNRhiCEGeQq4PIxFs=/400x400/smart/filters:no_upscale()/fdata%2F1114564%2F%2Favatar-user-119175-tmpphp3L3FB7.jpg" alt="wolni">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/870212.html">wolni</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-05T20:30:00+02:00">
+    5 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Veille de la course R1-C3 | PRIX DES LYCOPODES 06 AOU 2021 À 20H15 HIPPODROME DE CABOURG (R1) 16 PARTANTS - 40000€ - 2750 MÈTRES - SABLE BASES 7 - 4 - 9 - 14 Associés 3 - 10 - 8 - 15 AN CAS DE NP 11 - 2 arrivée 8 - 4 - 14 - 3 - 7 C’est en vous inscrivant à la NewsLetter que vous recevrez tous les jours les pronos gratuitement dans votre bo</div>
+          </div>
+</article>
+    </div>
+  </div>
+
+
+  <div class="Main-title MainTitle">
+    <h3 class="MainTitle-title">Articles à découvrir</h3>
+</div>
+
+  
+
+      
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--music">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/veIIAbeKYa_qg0v0KLHhFj86cqY=/400x400/smart/filters:no_upscale()/image%2F0553979%2F20210809%2Fob_4ab2ab_gpe.JPG"
+        alt="Recherche voix de femmes et d&#039;hommes"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--music">
+        <span class="Article-figureLabelText">Musique</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://quintessence-metz.fr/2021/08/recherche-voix-de-femmes-et-d-hommes.html"
+                      target="_blank"
+          >
+          <span>Recherche voix de femmes et d&#039;hommes</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/jgBHl8hfiEgZcSCIdTYoD-loaq0=/400x400/smart/filters:no_upscale()/image%2F0553979%2F201307%2Fob_c74c8da8ec7b33eeb74f1b6e8aaea05d_logo-2.jpg" alt="Quintessence">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/525312.html">Quintessence</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T11:13:51+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Après de longs mois compliqués, ponctués par des rendez-vous masqués ou &quot;zoomés&quot;, nous préparons la rentrée de septembre et espérons en la joie de retrouvailles. Afin de renforcer tous ses pupitres, l&#039;ensemble vocal Quintessence (15 ans d&#039;existence) recherche choristes. Si vous êtes motivé-e pour rejoindre cet ensemble animé par la reche</div>
+          </div>
+</article>
+        
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--entertainment">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/c3MDzRNUNi0Laq6kdsGvAX2t3ck=/400x400/smart/filters:no_upscale()/image%2F0806607%2F20160331%2Fob_6db950_testatina-decameron.jpg"
+        alt="Lettre aux cinéastes et cinéphiles    2/5"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--entertainment">
+        <span class="Article-figureLabelText">Loisirs &amp; Culture</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://ecrit.en.liberte.over-blog.com/2016/04/lettre-aux-cineastes-et-cinephiles-2-3.html"
+                      target="_blank"
+          >
+          <span>Lettre aux cinéastes et cinéphiles    2/5</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/UIMcreiQpdJPbmkmhskSnne9TK4=/400x400/smart/filters:no_upscale()/image%2F0806607%2F20141229%2Fob_a2cc81_cerveau-intro.jpg" alt="modimodi">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/757683.html">modimodi</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T11:32:00+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">J&#039;aime le cinéma. Quand je me rends dans une salle, je me rends au spectacle. J&#039;attends tout d&#039;une projection. Je veux être mis en mouvement interne et transporté. Je ne garde jamais d&#039;affiche, je conserve au fond de moi les images. Le style est plus important que la technique, car c&#039;est lui qui touche à mon imaginaire et enrichit ma sensibilit</div>
+          </div>
+</article>
+        
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--glamour">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/UK3rtS8AMlBOqrBgnkOzW449-Fw=/400x400/smart/filters:no_upscale()/image%2F1015367%2F20210809%2Fob_9c8381_p1270782.JPG"
+        alt="Rimbaud"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--glamour">
+        <span class="Article-figureLabelText">Mode &amp; Beauté</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.bauds.fr/2021/08/rimbaud.html"
+                      target="_blank"
+          >
+          <span>Rimbaud</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/p8n-ixhGhINOxxuz-5gUuIma6oo=/400x400/smart/filters:no_upscale()/fdata%2F2210075%2F%2Favatar-user-1519361-tmpphpQ7bH55.gif" alt="bauds">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/945564.html">bauds</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T11:21:20+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Statuette offerte en cadeau à mon départ de Charleville à la fin du siècle dernier. (sculpteur Hervé Tonglet)
+New photo added to shared album</div>
+          </div>
+</article>
+  
+<div class="u-container--gutter u-visible--sm u-visible--md">
+      <div class="Placeholder c-box">
+      <div  id="adsense-home"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(1360 && width > 1360 || 670 && width < 670){
+        document.getElementById('adsense-home').remove()
+      }
+    </script>
+
+</div>
+
+<div class="u-row">
+            <div class="u-col-sm-4">
+        
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--celebrities">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/Aj0V1QJGZafBqhhGgqs4pVapvQY=/400x400/smart/filters:no_upscale()/image%2F0667908%2F20210805%2Fob_57e61d_43635da7fe4e4633a28df3e161a5d8e653e8be.jpg"
+        alt="REDRUM - Compagnie Gérard Gérard"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--celebrities">
+        <span class="Article-figureLabelText">People</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://francoua-garrigues.over-blog.fr/2021/08/redrum-compagnie-gerard-gerard.html"
+                      target="_blank"
+          >
+          <span>REDRUM - Compagnie Gérard Gérard</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/lJluVFHaLlddk21Bq6HUKynfzFo=/400x400/smart/filters:no_upscale()/image%2F0631675%2F20201120%2Fob_1c54e5_014.jpg" alt="Françoua Garrigues">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/631675.html">Françoua Garrigues</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-03T23:59:00+02:00">
+    3 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">REDRUM (Enquête théâtrale farfelue / Théâtre de rue) Compagnie Gérard Gérard / LABEL RUE / EUREK&#039;ART Avec Jean-Baptiste Epiard, Françoua Garrigues, Cécile Guérin, Alexandre Moisescot et Claire Schumm Pierre Insolites 2ème édition (visites-spectacles du patrimoine en Occitanie) - Nîmes Août 2021
+Ecriture et Répétitions :
+Porte d&#039;Augu</div>
+          </div>
+</article>
+      </div>
+                <div class="u-col-sm-4">
+        
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--high-tech">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/WqmV7sEFZdV3mEaqWWgt1sfmoGQ=/400x400/smart/filters:no_upscale()/image%2F1500412%2F20210809%2Fob_4f02d8_machine-a-sous-mobile-deep-descent-rel.jpg"
+        alt="Descente dans les profondeurs de l&#039;océan avec la nouvelle machine à sous mobile Relax Gaming"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--high-tech">
+        <span class="Article-figureLabelText">High Tech</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.jeuxcasinomobile.net/2021/08/descente-dans-les-profondeurs-de-l-ocean-avec-la-nouvelle-machine-a-sous-mobile-relax-gaming.html"
+                      target="_blank"
+          >
+          <span>Descente dans les profondeurs de l&#039;océan avec la nouvelle machine à sous mobile Relax Gaming</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/oAJ0nCgj1WsLROj0Eh-RTkOTEPE=/400x400/smart/filters:no_upscale()/fdata%2F4703594%2F%2Favatar-user-4012880-tmpphprqx81j.jpeg" alt="jeuxcasinomobile">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1399821.html">jeuxcasinomobile</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T10:57:04+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Le populaire développeur de jeux de casino en ligne Relax Gaming vient de lancer un nouveau joyau des profondeurs de l’océan avec son dernier titre de machine à sous Deep Descent. Deep Descent offre plus de 3000 combinaisons gagnantes possibles et un RTP (taux de redistribution aux joueurs) de 95%. Jouer à la machine à sous Deep Descent La m</div>
+          </div>
+</article>
+      </div>
+                <div class="u-col-sm-4">
+        
+  
+<article
+  class="u-container--gutter Article  Article--alt js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--business">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/DMUErT9MdVVhvZ-4u_kv9g3WyHA=/400x400/smart/filters:no_upscale()/image%2F1495419%2F20210805%2Fob_23e808_thierry-henry-amazon-ligue1.jpg"
+        alt="Media / Streaming : Amazon s&#039;offre un super consultant pour la diffusion de la Ligue 1 !"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--business">
+        <span class="Article-figureLabelText">Business</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://newpubmarketing.over-blog.fr/2021/08/media/streaming-amazon-s-offre-un-super-consultant-pour-la-diffusion-de-la-ligue-1.html"
+                      target="_blank"
+          >
+          <span>Media / Streaming : Amazon s&#039;offre un super consultant pour la diffusion de la Ligue 1 !</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://assets.over-blog.com/b/site/bundles/overblogfront/images/default-avatar.jpg?1.0.0" alt="new pub marketing">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1395075.html">new pub marketing</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T09:49:00+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Alors que le géant du commerce en ligne a décroché le mois dernier 80% de la Ligue 1 de football pour 250 millions d&#039;euros par an jusqu&#039;en 2024, le site vient de lever le voile sur les nouveaux visages qui incarneront tout au long de la saison le championnat sur sa plateforme Amazon Prime. A commencer par le champion du monde Thierry Henry . Le </div>
+          </div>
+</article>
+      </div>
+      </div>
+
+      
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--sport">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/fnvDiItUklHeCMpUDBbfjxSVOww=/400x400/smart/filters:no_upscale()/image%2F1372734%2F20210809%2Fob_b56fea_dscf7512.jpg"
+        alt="Le MOURRE FROID"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--sport">
+        <span class="Article-figureLabelText">Sport</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="https://www.abrg05.fr/2021/08/le-mourre-froid.html"
+                      target="_blank"
+          >
+          <span>Le MOURRE FROID</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/rkkfcgsl4x8rWlcVNhn8oQqeX2g=/400x400/smart/filters:no_upscale()/image%2F1278734%2F20201016%2Fob_266285_logo-6-copie.png" alt="Amicale Baliseurs Randonneurs Gapençais.">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/1278734.html">Amicale Baliseurs Randonneurs Gapençais.</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T11:09:12+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Dimanche 8 Août 2021. Le MOURRE FROID , notre Olympiade ! On aurait pu penser que l’orage de la veille compliquerait la journée, mais non, soleil et ciel bleu ce matin. Prapic - Saut du Laïre et montée classique par le sentier jusqu’à la cabane de la Barre (avec moutons et berger). Puis hors sentier pour bifurquer dans la prairie des sagne</div>
+          </div>
+</article>
+        
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--society">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/mewG_u31trl_CfLsVQvAm9rbTHk=/400x400/smart/filters:no_upscale()/image%2F1034110%2F20210809%2Fob_fbf926_manzanares-bateau.jpg"
+        alt="La question d&#039;Azael : est-ce qu&#039;un quelconque président à le droit d&#039;avoir 1 million de $ cash dans sa maison ? Certaines des réponses..."
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--society">
+        <span class="Article-figureLabelText">Société</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://elsie-news.over-blog.com/2021/08/la-question-d-azael-est-ce-qu-un-quelconque-president-a-le-droit-d-avoir-1-million-de-cash-dans-sa-maison-certaines-des-reponses.htm"
+                      target="_blank"
+          >
+          <span>La question d&#039;Azael : est-ce qu&#039;un quelconque président à le droit d&#039;avoir 1 million de $ cash dans sa maison ? Certaines des réponses...</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/Nv1RT9YtTTaydMxbhHEwPcX34G0=/400x400/smart/filters:no_upscale()/fdata%2F0515804%2F%2Favatar-user-65137-tmpphpj5ftaa.jpeg" alt="siel">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/962593.html">siel</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T11:33:00+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">Manzanares le bateau affrété par ACRA transportant du sucre à la cocaïne en provenance de COLOMBIE
+... à cette question illustre le degré élevé de corruption et de niaiserie ( absence de bon sens) dans la société haïtienne. Certaines personnes déclarent que : 1- JOVENEL était déjà millionnaire avant d&#039;être président ( la même fabl</div>
+          </div>
+</article>
+        
+  
+<article
+  class="u-container--gutter Article  js-Article--delegate"
+  data-delegate=".Article-titleLink">
+  <figure class="Article-figure Magazine--home-cooking">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/wQs9WPFVdJBn6aY0EzV9Mm7C53I=/400x400/smart/filters:no_upscale()/image%2F0945713%2F20210809%2Fob_72f5e2_225547909-1141013399724373-21141434134.jpg"
+        alt="Bruschetta jambon chorizo"
+      >
+              <figcaption class="Article-figureLabel Article-figureLabel--home-cooking">
+        <span class="Article-figureLabelText">Cuisine</span>
+      </figcaption>
+      </span>
+</figure>
+
+  <div class="Article-content">
+    <header class="Article-header">
+      <p class="Article-title">
+        <a
+          class="Article-titleLink  js-ellipsis"
+          href="http://petitbohnium.over-blog.com/2021/08/bruschetta-jambon-chorizo.html"
+                      target="_blank"
+          >
+          <span>Bruschetta jambon chorizo</span>
+        </a>
+      </p>
+              <div class="Article-metadata">
+                      <div class="Metadata Metadata--blogger">
+              
+  <div class="Blogger">
+                <img class="Blogger-avatar u-hidden--xs" src="https://image.over-blog.com/Z58F0KyXTnFAIDZaDWaJUuGq2WE=/400x400/smart/filters:no_upscale()/fdata%2F4433620%2F%2Favatar-user-3742906-tmpphpQpxwUO.jpeg" alt="petitbohnium">
+    <i class="u-visible--xs u-visible--inline fa fa-user"></i>
+
+      
+    
+          <a class="Blogger-nickname" href="https://www.over-blog.com/user/882753.html">petitbohnium</a>
+      </div>
+
+            </div>
+                                <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <time datetime="2021-08-09T10:22:04+02:00">
+    9 août 2021
+  </time>
+
+            </div>
+                  </div>
+          </header>
+          <div class="Article-description js-ellipsis">J&#039;aime réaliser ce genre de recette pour le soir lorsque je ne suis pas inspirée pour cuisiner. Ce genre de recette est toujours un moment de fête à la maison. Avec cette recette je vous annonce que je fais partie du jury du défi Tartines et Bruschettas organisé par Stéphane sur Recettes.de . Je vous présente les membres du jury : Alaro de </div>
+          </div>
+</article>
+  
+  <div class="Main-title MainTitle">
+      <div class="MainTitle-breadcrumb">
+      <div class="Breadcrumb">
+  </div>
+    </div>
+    <h4 class="MainTitle-title">Catégories de l&#039;annuaire</h4>
+</div>
+
+<div class="u-container u-container--gutter c-box c-box--padded">
+  <div class="u-row">
+    <div class="u-col-xs-12">
+      <ul class="Directory-categories">
+                <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-not-for-profit-charities-causes">
+              Associations &amp; ONG
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F494FCB1E444FC11EC0C14F4446CB1E42454AC146CB4643C21E424AC3C243C21F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (77), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F494FCB1E444FC11EC0C14F4446CB1E42454AC146CB4643C21E424AC3C243C21F43C44349434E4349CBC2 DirectoryCategory-tags"><!--
+                -->evenements (60), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F494FCB1E444FC11EC0C14F4446CB1E42454AC146CB4643C21E424AC3C243C21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (59), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F494FCB1E444FC11EC0C14F4446CB1E42454AC146CB4643C21E424AC3C243C21F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (51), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F494FCB1E444FC11EC0C14F4446CB1E42454AC146CB4643C21E424AC3C243C21FC0C143C2C243 DirectoryCategory-tags"><!--
+                -->presse (43),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-autos-vehicles">
+              Automobiles &amp; Véhicules
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4AC3CB4FC21EC4434546424843C21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4AC3CB4FC21EC4434546424843C21F4AC3CB4F4E4F41464843 DirectoryCategory-tags"><!--
+                -->automobile (12), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4AC3CB4FC21EC4434546424843C21FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (11), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4AC3CB4FC21EC4434546424843C21F4AC34B46 DirectoryCategory-tags"><!--
+                -->audi (11), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4AC3CB4FC21EC4434546424843C21F4246CBC14F4349 DirectoryCategory-tags"><!--
+                -->citroen (10),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-beauty-health-fitness">
+              Beauté, Santé &amp; Remise en forme
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F41434AC3CBC61E45434A48CB451E4446CB4943C2C21F41434AC3CB43 DirectoryCategory-tags"><!--
+                -->beaute (110), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F41434AC3CBC61E45434A48CB451E4446CB4943C2C21FC24A49CB43 DirectoryCategory-tags"><!--
+                -->sante (94), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F41434AC3CBC61E45434A48CB451E4446CB4943C2C21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (79), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F41434AC3CBC61E45434A48CB451E4446CB4943C2C21F424543C443C3C5 DirectoryCategory-tags"><!--
+                -->cheveux (52), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F41434AC3CBC61E45434A48CB451E4446CB4943C2C21F4E4ACAC34648484A4C43 DirectoryCategory-tags"><!--
+                -->maquillage (47),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-food-drink">
+              Cuisine
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444F4F4B1E4BC14649471F4B43C2C243C1CBC2 DirectoryCategory-tags"><!--
+                -->desserts (700), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444F4F4B1E4BC14649471F4349CBC14343C2 DirectoryCategory-tags"><!--
+                -->entrees (497), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444F4F4B1E4BC14649471F4B43C2C243C1CB DirectoryCategory-tags"><!--
+                -->dessert (469), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444F4F4B1E4BC14649471FC0484ACBC2 DirectoryCategory-tags"><!--
+                -->plats (386), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444F4F4B1E4BC14649471F4C4ACB434AC3C5 DirectoryCategory-tags"><!--
+                -->gateaux (322),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-celebrities">
+              Célébrités
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4243484341C146CB4643C21F4EC3C246CAC343 DirectoryCategory-tags"><!--
+                -->musique (11), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4243484341C146CB4643C21F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (9), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4243484341C146CB4643C21FC0454FCB4FC2 DirectoryCategory-tags"><!--
+                -->photos (8), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4243484341C146CB4643C21FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (8), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4243484341C146CB4643C21FC4464B434F DirectoryCategory-tags"><!--
+                -->video (8),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-jobs-education-studies">
+              Emploi, Enseignement &amp; Etudes
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4D4F41C21E434BC3424ACB464F491EC2CBC34B4643C21F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4D4F41C21E434BC3424ACB464F491EC2CBC34B4643C21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4D4F41C21E434BC3424ACB464F491EC2CBC34B4643C21F4546C2CB4F46C143 DirectoryCategory-tags"><!--
+                -->histoire (22), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4D4F41C21E434BC3424ACB464F491EC2CBC34B4643C21F42C348CBC3C143 DirectoryCategory-tags"><!--
+                -->culture (21), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4D4F41C21E434BC3424ACB464F491EC2CBC34B4643C21F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (19),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-entrepreneurship">
+              Entreprenariat
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349CBC143C0C1434943C3C1C24546C01F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (8), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349CBC143C0C1434943C3C1C24546C01F444FC14E4ACB464F49 DirectoryCategory-tags"><!--
+                -->formation (7), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349CBC143C0C1434943C3C1C24546C01F424F4E4EC34946424ACB464F49 DirectoryCategory-tags"><!--
+                -->communication (5), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349CBC143C0C1434943C3C1C24546C01F43424F494F4E4643 DirectoryCategory-tags"><!--
+                -->economie (5), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349CBC143C0C1434943C3C1C24546C01F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (5),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-companies-brands">
+              Entreprises &amp; Marques
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F424F4EC04A494643C21E41C14A494BC21F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (10), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F424F4EC04A494643C21E41C14A494BC21F424F4E4EC34946424ACB464F49 DirectoryCategory-tags"><!--
+                -->communication (10), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F424F4EC04A494643C21E41C14A494BC21F4349CBC143C0C146C243 DirectoryCategory-tags"><!--
+                -->entreprise (7), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F424F4EC04A494643C21E41C14A494BC21F43C44349434E4349CB DirectoryCategory-tags"><!--
+                -->evenement (7), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F424F4EC04A494643C21E41C14A494BC21F4E4A494A4C434E4349CB DirectoryCategory-tags"><!--
+                -->management (7),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-environment-organic">
+              Environnement &amp; Bio
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349C446C14F494E4349CB1E4FC14C4A4946421F4349C446C14F4949434E4349CB DirectoryCategory-tags"><!--
+                -->environnement (68), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349C446C14F494E4349CB1E4FC14C4A4946421F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (65), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349C446C14F494E4349CB1E4FC14C4A4946421F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (55), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349C446C14F494E4349CB1E4FC14C4A4946421FC1434243CBCB43C2 DirectoryCategory-tags"><!--
+                -->recettes (50), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4349C446C14F494E4349CB1E4FC14C4A4946421F4F46C2434AC3C5 DirectoryCategory-tags"><!--
+                -->oiseaux (36),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-family-kids">
+              Famille &amp; Enfants
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444A4E4648C61E47464BC21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (174), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444A4E4648C61E47464BC21F444A4E46484843 DirectoryCategory-tags"><!--
+                -->famille (106), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444A4E4648C61E47464BC21F42C346C2464943 DirectoryCategory-tags"><!--
+                -->cuisine (79), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444A4E4648C61E47464BC21F43C44349434E4349CBC2 DirectoryCategory-tags"><!--
+                -->evenements (72), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444A4E4648C61E47464BC21F4CC14FC2C243C2C243 DirectoryCategory-tags"><!--
+                -->grossesse (59),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-movies-tv-videos">
+              Films, TV &amp; Vidéos
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4FC44643C21ECBC41EC4464B434FC21F424649434E4A DirectoryCategory-tags"><!--
+                -->cinema (90), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4FC44643C21ECBC41EC4464B434FC21F4446484EC2 DirectoryCategory-tags"><!--
+                -->films (59), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4FC44643C21ECBC41EC4464B434FC21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (56), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4FC44643C21ECBC41EC4464B434FC21F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (56), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4FC44643C21ECBC41EC4464B434FC21F424F4E434B4643 DirectoryCategory-tags"><!--
+                -->comedie (40),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-humor-comedy">
+              Humour
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F45C34E4FC11E424F4E434BC61F45C34E4FC3C1 DirectoryCategory-tags"><!--
+                -->humour (91), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F45C34E4FC11E424F4E434BC61F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (35), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F45C34E4FC11E424F4E434BC61FC04F4846CB46CAC343 DirectoryCategory-tags"><!--
+                -->politique (31), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F45C34E4FC11E424F4E434BC61F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (30), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F45C34E4FC11E424F4E434BC61FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (28),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-gaming-video-gaming">
+              Jeux &amp; Jeux Vidéo
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4C4A4E46494C1EC4464B434F1E4C4A4E46494C1F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (71), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4C4A4E46494C1EC4464B434F1E4C4A4E46494C1F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (66), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4C4A4E46494C1EC4464B434F1E4C4A4E46494C1F4D43C3C5132120C4464B434F DirectoryCategory-tags"><!--
+                -->jeux video (44), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4C4A4E46494C1EC4464B434F1E4C4A4E46494C1FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4C4A4E46494C1EC4464B434F1E4C4A4E46494C1F4D43C3C5132120C4464B434FC2 DirectoryCategory-tags"><!--
+                -->jeux videos (26),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-lgbt">
+              LGBT
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F484C41CB1F484C41CB DirectoryCategory-tags"><!--
+                -->lgbt (4), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F484C41CB1F4546C2CB4F46C143 DirectoryCategory-tags"><!--
+                -->histoire (3), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F484C41CB1F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (2), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F484C41CB1FC143C4C3431321204B43132120C0C143C2C243 DirectoryCategory-tags"><!--
+                -->revue de presse (2), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F484C41CB1FC04F4846CB46CAC343 DirectoryCategory-tags"><!--
+                -->politique (2),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-lifestyle">
+              Lifestyle
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F48464443C2CBC648431F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (445), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F48464443C2CBC648431F4EC3C246CAC343 DirectoryCategory-tags"><!--
+                -->musique (280), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F48464443C2CBC648431F42C346C2464943 DirectoryCategory-tags"><!--
+                -->cuisine (208), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F48464443C2CBC648431F424649434E4A DirectoryCategory-tags"><!--
+                -->cinema (169), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F48464443C2CBC648431F45C34E4FC3C1 DirectoryCategory-tags"><!--
+                -->humour (159),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-literature-comics-poetry">
+              Littérature, BD &amp; Poésie
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4846CB43C14ACBC3C1431E424F4E4642C21EC04F43CBC1C61FC04F43C24643 DirectoryCategory-tags"><!--
+                -->poesie (264), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4846CB43C14ACBC3C1431E424F4E4642C21EC04F43CBC1C61F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (216), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4846CB43C14ACBC3C1431E424F4E4642C21EC04F43CBC1C61F414B DirectoryCategory-tags"><!--
+                -->bd (171), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4846CB43C14ACBC3C1431E424F4E4642C21EC04F43CBC1C61FC04F434E43C2 DirectoryCategory-tags"><!--
+                -->poemes (153), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4846CB43C14ACBC3C1431E424F4E4642C21EC04F43CBC1C61F4846CBCB43C14ACBC3C143 DirectoryCategory-tags"><!--
+                -->litterature (136),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-home-crafting-diy">
+              Maison, Déco &amp; Bricolage
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F454F4E431E42C14A44CB46494C1E4B46C61F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (1246), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F454F4E431E42C14A44CB46494C1E4B46C61F424FC3CBC3C143 DirectoryCategory-tags"><!--
+                -->couture (953), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F454F4E431E42C14A44CB46494C1E4B46C61F41C14F4B43C14643 DirectoryCategory-tags"><!--
+                -->broderie (459), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F454F4E431E42C14A44CB46494C1E4B46C61F42C346C2464943 DirectoryCategory-tags"><!--
+                -->cuisine (440), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F454F4E431E42C14A44CB46494C1E4B46C61F424AC1CB43C2 DirectoryCategory-tags"><!--
+                -->cartes (416),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-marketing-social-media">
+              Marketing &amp; Réseaux Sociaux
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4AC14743CB46494C1EC24F42464A481E4E434B464A1F43424F494F4E4643 DirectoryCategory-tags"><!--
+                -->economie (40), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4AC14743CB46494C1EC24F42464A481E4E434B464A1F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (31), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4AC14743CB46494C1EC24F42464A481E4E434B464A1F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4AC14743CB46494C1EC24F42464A481E4E434B464A1F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (26), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4E4AC14743CB46494C1EC24F42464A481E4E434B464A1F4E4AC14743CB46494C DirectoryCategory-tags"><!--
+                -->marketing (22),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-fashion-art-design">
+              Mode, Art &amp; Design
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444AC245464F491E4AC1CB1E4B43C2464C491F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (329), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444AC245464F491E4AC1CB1E4B43C2464C491F494A46481321204AC1CB DirectoryCategory-tags"><!--
+                -->nail art (205), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444AC245464F491E4AC1CB1E4B43C2464C491F43C5C04FC246CB464F49C2 DirectoryCategory-tags"><!--
+                -->expositions (184), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444AC245464F491E4AC1CB1E4B43C2464C491F4E4F4B43 DirectoryCategory-tags"><!--
+                -->mode (161), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F444AC245464F491E4AC1CB1E4B43C2464C491F4EC3C246CAC343 DirectoryCategory-tags"><!--
+                -->musique (150),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-music-entertainment">
+              Musique &amp; Divertissements
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4EC3C246421E4349CB43C1CB4A46494E4349CB1F4EC3C246CAC343 DirectoryCategory-tags"><!--
+                -->musique (146), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4EC3C246421E4349CB43C1CB4A46494E4349CB1F424F494243C1CBC2 DirectoryCategory-tags"><!--
+                -->concerts (102), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4EC3C246421E4349CB43C1CB4A46494E4349CB1F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (82), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4EC3C246421E4349CB43C1CB4A46494E4349CB1F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (77), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F4EC3C246421E4349CB43C1CB4A46494E4349CB1FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (58),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-photography">
+              Photographie
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC0454FCB4F4CC14AC045C61F4A49464E4AC3C5 DirectoryCategory-tags"><!--
+                -->animaux (84), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC0454FCB4F4CC14AC045C61F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (73), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC0454FCB4F4CC14AC045C61F494ACBC3C143 DirectoryCategory-tags"><!--
+                -->nature (72), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC0454FCB4F4CC14AC045C61F444843C3C1C2 DirectoryCategory-tags"><!--
+                -->fleurs (59), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC0454FCB4F4CC14AC045C61FC04AC6C24A4C43C2 DirectoryCategory-tags"><!--
+                -->paysages (58),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-politics">
+              Politique
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC04F4846CB4642C21FC04F4846CB46CAC343 DirectoryCategory-tags"><!--
+                -->politique (367), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC04F4846CB4642C21F43424F494F4E4643 DirectoryCategory-tags"><!--
+                -->economie (201), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC04F4846CB4642C21F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (169), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC04F4846CB4642C21F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (166), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC04F4846CB4642C21FC24F424643CB43 DirectoryCategory-tags"><!--
+                -->societe (143),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-religions-beliefs">
+              Religions &amp; Croyances
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC14348464C464F49C21E414348464344C21F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (27), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC14348464C464F49C21E414348464344C21FC0C14643C143C2 DirectoryCategory-tags"><!--
+                -->prieres (26), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC14348464C464F49C21E414348464344C21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (26), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC14348464C464F49C21E414348464344C21FC2C046C146CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->spiritualite (20), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC14348464C464F49C21E414348464344C21FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (14),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-sports">
+              Sport
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC2C04FC1CBC21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (386), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC2C04FC1CBC21FC143C2C348CB4ACBC2 DirectoryCategory-tags"><!--
+                -->resultats (222), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC2C04FC1CBC21F4943CCC2 DirectoryCategory-tags"><!--
+                -->news (173), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC2C04FC1CBC21FC4464B434FC2 DirectoryCategory-tags"><!--
+                -->videos (149), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FC2C04FC1CBC21F424F4EC043CB46CB464F49C2 DirectoryCategory-tags"><!--
+                -->competitions (129),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-tech-science">
+              Technologie &amp; Science
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCB4342451EC24246434942431F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (52), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCB4342451EC24246434942431F4AC0C0C14FC0C1464ACB464F491321204BC3132120424A454643C11321204B43C213212042454AC14C43C2 DirectoryCategory-tags"><!--
+                -->appropriation du cahier des charges (50), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCB4342451EC24246434942431F4649444FC14E4ACB46CAC343 DirectoryCategory-tags"><!--
+                -->informatique (40), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCB4342451EC24246434942431F4649CB43C14943CB DirectoryCategory-tags"><!--
+                -->internet (33), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCB4342451EC24246434942431F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (28),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-travel-places-events">
+              Tourisme, Lieux et Événements
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCBC14AC443481EC0484A4243C21E43C44349CBC21F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (216), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCBC14AC443481EC0484A4243C21E43C44349CBC21FC44FC64A4C43C2 DirectoryCategory-tags"><!--
+                -->voyages (204), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCBC14AC443481EC0484A4243C21E43C44349CBC21FCB454A46484A494B43 DirectoryCategory-tags"><!--
+                -->thailande (202), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCBC14AC443481EC0484A4243C21E43C44349CBC21F4AC14C4349CB464943 DirectoryCategory-tags"><!--
+                -->argentine (195), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1FCBC14AC443481EC0484A4243C21E43C44349CBC21F4AC3C2CBC14A484643 DirectoryCategory-tags"><!--
+                -->australie (195),...<!--
+          --></span>
+                  </li>
+              <li class="Directory-category u-col-xs-6 u-col-sm-4">
+          <a href="https://www.over-blog.com/blogs/categorie-economy-finance-legal">
+              Économie, Finance &amp; Droit
+          </a><br />
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F43424F494F4EC61E4446494A4942431E48434C4A481F4A42CBC34A4846CB43 DirectoryCategory-tags"><!--
+                -->actualite (200), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F43424F494F4EC61E4446494A4942431E48434C4A481FC04F4846CB46CAC343 DirectoryCategory-tags"><!--
+                -->politique (192), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F43424F494F4EC61E4446494A4942431E48434C4A481F4A42CBC34A4846CB43C2 DirectoryCategory-tags"><!--
+                -->actualites (171), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F43424F494F4EC61E4446494A4942431E48434C4A481FC24F424643CB43 DirectoryCategory-tags"><!--
+                -->societe (156), <!--
+          --></span>
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F424ACB434C4FC1C61FCB4A4C1F43424F494F4EC61E4446494A4942431E48434C4A481F4B46C443C1C2 DirectoryCategory-tags"><!--
+                -->divers (141),...<!--
+          --></span>
+                  </li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+
+    </main>
+
+
+    <aside class="Content-sidebar Sidebar u-col-lg-3 u-col-lg-offset-0 u-col-md-offset-2 u-col-md-10">
+      <div class="Sidebar-container">
+              
+
+<div class="rwd-sidebarcontainer">
+  
+<div class="SidebarBox SidebarBox--social SidebarBox--facebook u-container--gutter">
+  <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FOverblog&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=231701373546196"
+    class="SidebarBox-iframe"></iframe>
+</div>
+        <div class="u-container--gutter u-visible--lg">
+            <div class="Placeholder ">
+      <div  id="sidebar-atf-300-600"  style="width : 300px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(0 && width > 0 || 1360 && width < 1360){
+        document.getElementById('sidebar-atf-300-600').remove()
+      }
+    </script>
+
+      </div>
+    
+<div class="RecentPopular
+            Tabs
+            js-tabs
+            u-container
+            u-container--gutter">
+
+  <div class="RecentPopular-titles u-row Tabs-header">
+
+    <div class="Tabs-title
+                Tabs-title--selected
+                RecentPopular-recentArticlesTitle
+                u-col-xs-6">
+
+      <a class="Tabs-titleLink" href="#recent">
+          <i class=" fa fa-clock"></i>
+ Récents
+      </a>
+    </div>
+
+    <div class="Tabs-title
+                RecentPopular-mostRedTitle
+                u-col-xs-6">
+
+      <a class="Tabs-titleLink" href="#popular">
+          <i class=" fa fa-fire"></i>
+ Populaires
+      </a>
+    </div>
+
+  </div>
+
+  <div class="Tabs-contentContainer">
+    <div id="recent" class="Tabs-content">
+      
+<div class="SidebarList u-row">
+          <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/Ojf3BvkXWgzvFcN6PHoPrJJS4Uk=/400x400/smart/filters:no_upscale()/image%2F0999439%2F20210806%2Fob_ef8606_dsc01079.JPG"
+        alt="Chalabre: vues "
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="https://genevieve-lehoux.over-blog.com/2021/08/chalabre-vues.html" class="js-ellipsis" target="_blank">
+                Chalabre: vues 
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    6 août 2021
+  </span>
+
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+          <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/s3pizYe5X1fLhqbWzD3aLj_GMZc=/400x400/smart/filters:no_upscale()/image%2F0537895%2F20210407%2Fob_3c9346_laika.png"
+        alt="Nos toutous à l&#039;adoption"
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="https://refugeanimalierdupaysdelanderneau.over-blog.com/2019/08/nos-toutous-a-l-adoption.html" class="js-ellipsis" target="_blank">
+                Nos toutous à l&#039;adoption
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    8 août 2021
+  </span>
+
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+          <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/fVaAFy1R0Vd1JMd815KtdCAqlUU=/400x400/smart/filters:no_upscale()/image%2F0580098%2F20210808%2Fob_0a08aa_image-0580098-20210628-ob-0b82e5-0.jpg"
+        alt="ATELIER D&#039;ÉCRITURE N ° 328 : THÈME &quot; Poussières &quot; LISTE DES MOTS..."
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="https://plume-de-poete.over-blog.com/2021/08/atelier-d-ecriture-n-328-theme-poussieres-liste-des-mots.html" class="js-ellipsis" target="_blank">
+                ATELIER D&#039;ÉCRITURE N ° 328 : THÈME &quot; Poussières &quot; LISTE DES MOTS...
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    8 août 2021
+  </span>
+
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+          <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/nVHzjehO1YtF-Nkz2iQOlWWPI_I=/400x400/smart/filters:no_upscale()/image%2F0638148%2F20200713%2Fob_a1d6c6_ciel-etoileimage-from-torange-biz-fr.jpg"
+        alt="ANNIVERSAIRE : NINA BERBEROVA, née le 8 août 1901."
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="http://le-lecturamak.over-blog.com/2021/08/anniversaire-nina-berberova-nee-le-8-aout-1901.html" class="js-ellipsis" target="_blank">
+                ANNIVERSAIRE : NINA BERBEROVA, née le 8 août 1901.
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    7 août 2021
+  </span>
+
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+     </div>
+
+    <div id="popular" class="Tabs-content Tabs-content--hidden">
+      
+<div class="SidebarList u-row">
+      
+    <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/A5wvKovxCbreIVkQbpBXl1PmiHo=/400x400/smart/filters:no_upscale()/image%2F0687452%2F20141207%2Fob_68fb7a_images-21.jpg"
+        alt="RÈGLE DU RUMMIKUB"
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="http://soleil365.over-blog.com/2014/12/regle-du-rummikub.html" class="js-ellipsis" target="_blank">
+                RÈGLE DU RUMMIKUB
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    7 déc. 2014
+  </span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      
+    <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/AO5hSkxf3PTnXqzTk7J2TbpQYRk=/400x400/smart/filters:no_upscale()/image%2F0780719%2F20210807%2Fob_b72519_confinement-irlande1.jpg"
+        alt="Ceux qui ont mis la panique dans la pandémie de la Covid doivent s&#039;excuser pour les erreurs qui ont gâché la vie de millions de personnes (The Sun)"
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="http://le-blog-sam-la-touch.over-blog.com/2021/08/ceux-qui-ont-mis-la-panique-dans-la-pandemie-de-covid-doivent-s-excuser-pour-les-erreurs-qui-ont-gache-la-vie-de-millions-de-personn" class="js-ellipsis" target="_blank">
+                Ceux qui ont mis la panique dans la pandémie de la Covid doivent s&#039;excuser pour les erreurs qui ont gâché la vie de millions de personnes (The Sun)
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    7 août 2021
+  </span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      
+    <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/lqCXlPB0X5ednfdvNgoVqqEtv3c=/400x400/smart/filters:no_upscale()/http%3A%2F%2Fwww.calendrier-lunaire.net%2Fmodule%2FLYWR2YW5jZWQtNzktdjEtMTQ1ODQ4OTQyOC4zNjY2LSMxNTA5MWYtNDQwLSNkZWVhYjQtMTQ1ODQ4OTQyOC0xLTM.png"
+        alt="Calendrier lunaire beauté pour se couper les cheveux, s&#039;épiler etc  2021"
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="http://coeva.over-blog.com/article-calendrier-lunaire-pour-se-couper-les-cheveux-et-s-epiler-87990853.ht" class="js-ellipsis" target="_blank">
+                Calendrier lunaire beauté pour se couper les cheveux, s&#039;épiler etc  2021
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    15 juil. 2021
+  </span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      
+    <div class="Article-container
+                u-container u-container--gutter
+                u-col-xs-12
+                u-col-sm-6
+                u-col-lg-12">
+      <div
+        class="u-container--gutter Article Article--small js-Article--delegate"
+        data-delegate=".Article-titleLink">
+        <figure class="Article-figure ">
+  <span class="Article-figureLink">
+          <img
+        class="Article-figureImage"
+        src="https://image.over-blog.com/dnU4mqttUb-EieEj_hfz9qVrM7M=/400x400/smart/filters:no_upscale()/image%2F0974611%2F20210724%2Fob_32ad71_pass-sanitaire.jpg"
+        alt="Communiqué : contrôle des pass-sanitaires ? les policiers municipaux ont autre chose à faire !"
+      >
+          </span>
+</figure>
+
+        <div class="Article-content">
+          <div class="Article-header">
+            <h2 class="Article-title">
+              <a href="http://www.sdpm.net/2021/07/communique-controle-des-pass-sanitaires-les-policiers-municipaux-ont-autre-chose-a-faire.html" class="js-ellipsis" target="_blank">
+                Communiqué : contrôle des pass-sanitaires ? les policiers municipaux ont autre chose à faire !
+              </a>
+            </h2>
+          </div>
+          <div class="Article-metadata">
+            <div class="Metadata Metadata--date">
+                <i class=" fa fa-calendar-alt"></i>
+
+                <span>
+    24 juil. 2021
+  </span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+     </div>
+  </div>
+
+</div>
+
+        <div class="u-container--gutter u-visible--lg">
+            <div class="Placeholder ">
+      <div  id="sidebar-mtf-300-250"  style="width : 300px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(0 && width > 0 || 1360 && width < 1360){
+        document.getElementById('sidebar-mtf-300-250').remove()
+      }
+    </script>
+
+      </div>
+            <div class="u-container--gutter u-visible--lg">
+            <div class="Placeholder ">
+      <div  id="sidebar-btf-300-250"  style="width : 300px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(0 && width > 0 || 1360 && width < 1360){
+        document.getElementById('sidebar-btf-300-250').remove()
+      }
+    </script>
+
+      </div>
+  </div>
+    <div class="u-container--gutter Ads-300x600 u-visible--md">
+          <div class="Placeholder ">
+      <div  id="md-btf-300-600"  style="width : 300px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(1360 && width > 1360 || 1024 && width < 1024){
+        document.getElementById('md-btf-300-600').remove()
+      }
+    </script>
+
+    </div>
+            </div>
+    </aside>
+
+            <div class="BottomFixedAd u-visible--xs">
+              <div class="Placeholder ">
+      <div  id="mobile-footer"  style="width : 320px; margin : 0 auto"  ></div>
+    </div>
+    <script>
+      var width = window.innerWidth || document.body.clientWidth;
+      if(670 && width > 670 || 0 && width < 0){
+        document.getElementById('mobile-footer').remove()
+      }
+    </script>
+
+        </div>
+      </div>
+
+  </div>
+  <footer class="Footer c-box">
+  <div class="Footer-content u-container">
+  <div class="u-row">
+    <div class="u-col-md-offset-2 u-col-md-10">
+
+      <div class="u-row">
+        <div class="u-col-xs-12 u-col-sm-6 ">
+          <div class="ob-h4 Footer-title">Overblog</div>
+          <p class="Footer-paragraph">
+            OverBlog est une plateforme de blogs, active et en pleine évolution. <br/>Créez un blog, sans connaissance technique, et retrouvez tout ce que vous publiez ! Créer votre blog n’a jamais été aussi simple.
+          </p>
+        </div>
+        <div class="u-col-xs-12 u-col-sm-6 ">
+          <div class="ob-h4 Footer-title">Aide</div>
+          <ul class="Footer-list">
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1F4FC443C141484F4C19C3C243C1C44F46424319424F4E1F47494FCC48434B4C43414AC243">
+                    Manuel
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1F4FC443C141484F4C19C3C243C1C44F46424319424F4E1F47494FCC48434B4C43414AC243">
+                    Contactez nous
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1F4FC443C141484F4C19C3C243C1C44F46424319424F4E1F444FC1C34EC21F212C222520261EC0C14FC04FC243CD1EC349431E464B13B22213BA2643">
+                    Boite à idées
+                  </span>
+                </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="u-row">
+        <div class="u-col-md-6">
+          <div class="u-row">
+            <div class="u-col-xs-12 u-col-sm-6 u-col-md-12">
+              <div class="ob-h4 Footer-title">A propos</div>
+              <ul class="Footer-list">
+                                  <li class="Footer-elementList">
+                    <a href="https://www.over-blog.com/about-us/background">
+                      Qui sommes nous ?
+                    </a>
+                  </li>
+                  <li class="Footer-elementList">
+                    <a href="https://www.over-blog.com/premium">
+                      L&#039;Offre Overblog
+                    </a>
+                  </li>
+                                <li class="Footer-elementList">
+                    <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F44434ACBC3C143C21F434AC1491E4E4F4943C6">
+                      Rémunération en droits d&#039;auteur
+                    </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC02D1F1FCCCCCC19CC4341434B464A1944C11F">
+                    Webedia
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1F4FC443C141484F4C19C3C243C1C44F46424319424F4E1F">
+                    Manuel d&#039;Utilisation
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="u-col-xs-12 u-col-sm-6 u-col-md-12">
+              <div class="ob-h4 Footer-title">Qui utilise OverBlog ?</div>
+              <ul class="Footer-list">
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1F42C1434ACB46C443C2">
+                    Les créatifs
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1F4349CB45C3C2464AC2CB1E4A494B1E454F4141C646C2CBC2">
+                    Les passionnés
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1F46494448C343494243C1C2">
+                    Les influenceurs
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1FB1C3C2464943C2C243C21E484F424A481E4C4FC443C1494E4349CBC21E4A494B1E4FC14C4A4946CD4ACB464F49C2">
+                    Les entreprises, collectivités et associations
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1F43C5C043C1CBC2">
+                    Les experts
+                  </span>
+                </li>
+                <li class="Footer-elementList">
+                  <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1FCC454F1EC3C2431E4FC443C11E41484F4C1FC64FC3">
+                    Vous !
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="u-col-md-6">
+          <div class="ob-h4 Footer-title">12 conseils pour bien débuter son blog et booster son trafic</div>
+          <ul class="Footer-list">
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F42454F4FC2431E4A491E434B46CB4FC1464A481E48464943">
+                Adoptez une ligne éditoriale
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F4649CBC14F4BC342431E4EC6C2434844">
+                Présentez-vous
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21FC0C3414846C2451E43C54248C3C246C4431E424F49CB4349CB">
+                Publiez souvent, et des articles exclusifs
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21FC04642471E4A1E4C4F4F4B1ECB46CB4843">
+                Choisissez bien vos titres
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F464848C3C2CBC14ACB431EC64FC3C11E4AC1CB46424843C2">
+                Illustrez vos textes
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F46494248C34B431E43C5CB43C1494A481E48464947C2">
+                Faites des liens
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F43494C4A4C431E46491E424F49C443C1C24ACB464F49">
+                Engagez la conversation
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21FC2454AC1431ECC46CB451EC64FC3C11E44C14643494BC2">
+                Partagez avec vos amis
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21FC2434F1E4FC0CB464E46CD431EC64FC3C11E4AC1CB46424843C2">
+                Optimisez vos articles pour leur référencement
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F4C43CB1EC64FC3C11E41484F4C1E4846C2CB434B1E46491E41484F4C1E4B46C14342CB4FC14643C2">
+                Faites-vous référencer sur les annuaires et listes de blogs
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F4C43CB1E4A1E42C3C2CB4F4E1E4B4F4E4A46491E494A4E43">
+                Procurez-vous un nom de domaine
+              </span>
+            </li>
+            <li class="Footer-elementList">
+              <span class="js-b16 45CBCBC0C22D1F1FCCCCCC194FC443C11E41484F4C19424F4E1F2A211EC2434F1ECB46C0C21F41431EC04ACB464349CB">
+                Soyez patient
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="Footer-bottomBand BottomBand">
+
+    <div class="u-container BottomBand-rightLinks">
+          <a class="rwd-footercontainer" href="https://www.over-blog.com/legal-notice">Mentions légales</a>
+      <a class="rwd-footercontainer" href="https://www.over-blog.com/terms-of-use">Conditions d’Utilisation</a>
+      <a class="rwd-footercontainer" href="https://www.over-blog.com/terms-of-sale">CGV</a>
+      <a class="rwd-footercontainer" href="https://www.over-blog.com/cookies">Cookies</a>
+      <a class="rwd-footercontainer" href="https://www.over-blog.com/privacy-policy">Données personnelles</a>
+          <a class="rwd-footercontainer" href="javascript:Didomi.notice.show();">Préférences cookies</a>
+    </div>
+    <div class="u-container">
+      <span class="rwd-footercontainer">OverBlog © Copyright 2004-2021.</span>
+      <span class="rwd-footercontainer">Tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+    <script src="https://assets.over-blog.com/b/site/bundles/build/js/build.js?1.0.0" async></script>
+        <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer', "GTM-WG3SK3P");
+    </script>
+    <script>
+      (function(){
+        var hasGABeenLoaded = false;
+
+        function loadGA(hasDidomiConsent){
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-5354236-49', {
+              cookieDomain: 'www.over-blog.com',
+              cookieExpires: 34164000,
+              allowLinker: true
+          });
+
+          if(hasDidomiConsent){
+            ga('set', 'allowAdPersonalizationSignals', false)
+          }else{
+            ga('set', 'allowAdFeatures', false)
+          }
+
+          ga('require', 'GTM-NG49JTP');
+          ga('require', 'linkid', 'linkid.js');
+          ga('set', 'anonymizeIp', true);
+          ga('set', 'dimension1', 'overblog');
+          ga('set', 'dimension2', 'fr');
+          ga('set', 'dimension10', hasDidomiConsent);
+          ga('send', 'pageview');
+
+          hasGABeenLoaded = true
+        }
+
+        var loadGATimeoutID = setTimeout(function(){
+          loadGA()
+        }, 1000);
+
+        window.didomiOnReady = window.didomiOnReady || [];
+        window.didomiOnReady.push(function (Didomi) {
+          clearTimeout(loadGATimeoutID);
+
+          function getDidomiConsent(didomiId){
+            var consents = false;
+            if (Didomi.isConsentRequired()) {
+              consents = Didomi.getUserConsentStatusForVendor(didomiId);
+            } else {
+              consents = true;
+            }
+            return consents;
+          }
+
+          var hasGADidomiConsent = getDidomiConsent("google") && getDidomiConsent("c:googleana-XMqagawa");
+
+          if(!hasGABeenLoaded){
+            loadGA(hasGADidomiConsent);
+          }
+
+                  });
+      })();
+
+    </script>
+  </body>
+</html>

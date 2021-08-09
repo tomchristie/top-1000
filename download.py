@@ -12,8 +12,7 @@ with open("top1000.txt") as top1000:
             print(row_count, url, exc)
         else:
             print(row_count, url, r.status_code)
-
-        with open(f"content/{row_count}", "wb") as content_file:
-            content_file.write(r.content)
-        with open(f"headers/{row_count}", "w") as headers_file:
-            headers_file.write(repr(r.headers.raw))
+            with open(f"content/{row_count}", "wb") as content_file:
+                content_file.write(r.content)
+            with open(f"headers/{row_count}", "w") as headers_file:
+                headers_file.write(repr(r.headers.raw))

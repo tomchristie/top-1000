@@ -1,0 +1,496 @@
+
+<!doctype html>
+<html class="fw-ten">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>partypoker</title>
+    <meta name="apple-mobile-web-app-title" content="partypoker" />
+    <meta name="description" />
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        function boot() {
+            const lang = getCookie('lang') || 'en';
+            return fetch(`/${lang}/api/clientconfig`, {
+                cache: 'no-store',
+                headers: {
+                    'x-bwin-browser-url': location.href,
+                    'x-bwin-browser-referrer': document.referrer
+                },
+                credentials: 'same-origin'
+            })
+            .then(res => res.json())
+                .then(config => window['clientConfig'] = config)
+            .catch(err => console.error(err));
+        }
+        window['_boot'] = boot();
+    </script>
+
+    
+<style>
+.jackpot-widget-container {
+	.scrollable-games {
+        padding: 10px 0 !important;
+        }
+}
+</style>
+<style>
+.embed-overlay-popup .theme-bg-popup .egv-pop-btn-left {
+ cursor:pointer;
+}
+
+.embed-overlay-popup .theme-bg-popup .egv-pop-btn-right {
+    cursor:pointer;
+
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="facebook-domain-verification" content="wiix84osyzq8402ca4f0b20jp9c7h0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+@media screen and (orientation:portrait) { 
+  .slick-slide > .ng-scope{
+    height: auto!important;
+    padding-bottom: 0!important;
+    position: relative;
+  }
+  .slick-slide .teaser-image{
+    height: auto!important;
+  }
+  .slick-slide .terms{
+    bottom: 120px;
+  }  
+}
+</style>
+<script type="text/javascript">
+var storeJumioRibbonLastUrl = function()
+{
+     var loc= window.location.href;
+     var d = new Date();
+     var currentDomain = "";
+     d.setTime(d.getTime() + (1*24*60*60*1000));
+     var expires = 'expires='+ d.toUTCString();
+	 if(window.clientConfig.m2Page !== undefined)
+	 {
+	 currentDomain = window.clientConfig.m2Page.domain;
+	 }
+	 else {
+	 currentDomain = window.clientConfig.vnPage.domain;
+	 }
+     document.cookie = 'jumioRibbonPrevLoc= '+ loc + ';'+ expires +';path=/; domain='+ currentDomain;
+     return true;
+}
+</script>
+<script type="text/javascript" id="mm">
+setTimeout(function appendTarget(){
+var mmLinks = document.getElementsByClassName('dropdown nav-item');
+          if(mmLinks.length>0){
+                    menuToggle();
+			}else{
+                   setTimeout(appendTarget, 500)
+              }
+       }, 500)
+
+setTimeout(function appendBm(){
+bottomNavLinks = document.getElementsByTagName('vn-bottom-nav');
+          if(bottomNavLinks.length>0){
+                    bottomAttach();
+			}else{
+                   setTimeout(appendBm, 500)
+              }
+       }, 500)
+
+function bottomAttach(){
+document.querySelector('vn-bottom-nav').addEventListener('click', function(){menuToggle()})
+}
+
+function menuToggle(){
+	if(clientConfig.vnDevice.isMobile || clientConfig.vnDevice.isTablet){
+		var mobileMenulinks = document.getElementsByClassName('dropdown nav-item')
+              for(i=0;i<mobileMenulinks.length;i++){mobileMenulinks[i].addEventListener('click', function(event){
+			var myLinks = document.getElementsByClassName('dropdown nav-item')
+				for(i=0;i<myLinks.length;i++){
+					if(myLinks[i] != event.target.parentElement){
+                     			myLinks[i].classList.remove('open');
+					}
+				}
+				event.target.parentElement.classList.add('open');
+		})}
+	}
+}
+</script>
+<style>
+.lobby {
+    margin-top: 3.3em !important;
+}
+</style>
+<script>
+    function DisplayNoneById(id) {
+        document.getElementById(id).style.display = "none";
+    }
+</script>
+<style>
+td.cdk-column-startDate::first-letter {
+    text-transform: uppercase;
+}
+.mat-table-theme .table tbody td .reg-cal-group .btn-sm {
+    font-size: 14px !important;
+}
+</style>
+<script type="text/javascript">
+{
+document.cookie = "appinf=unknown; domain=partypoker.it; path=/";
+}
+</script>
+<script type="text/javascript">window.external = window.external || {}</script>
+<script type="text/javascript">
+if (window.location.href.indexOf("tournament-calendar") != -1){
+var handle = setInterval(getScheduleId, 10);
+
+function getScheduleId(){
+    var getScheduleId = document.getElementById('schedule');
+    if(getScheduleId){
+        var childrenGroup = document.getElementsByClassName('row mb-4 mb-md-0')[0];
+        if(childrenGroup){
+            if(childrenGroup.childNodes[2]){childrenGroup.childNodes[2].style.display = 'none';}
+            if(childrenGroup.childNodes[4]){childrenGroup.childNodes[4].style.display = 'none';}
+            if(childrenGroup.childNodes[5]){childrenGroup.childNodes[5].style.display = 'none';}
+        }
+    }
+}
+}
+</script>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"> <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+
+<style>
+
+</style><link rel="dns-prefetch" href="//www.googletagmanager.com" /><link rel="dns-prefetch" href="//fonts.gstatic.com" /><link rel="dns-prefetch" href="//fonts.googleapis.com" /><link rel="dns-prefetch" href="//www.facebook.com" /><link rel="dns-prefetch" href="//connect.facebook.net" /><link rel="dns-prefetch" href="//sdk-cdn.optimove.net" /><link rel="dns-prefetch" href="//gvctracksdk.optimove.net" /><link rel="dns-prefetch" href="//media.itsfogo.com" /><link rel="dns-prefetch" href="//scmedia.itsfogo.com" /><meta name="format-detection" content="telephone=no" /><script src="//content.iivt.com/ciwic/adobe_target/sdk/live/alloy.js"  id="dynacon-alloy-js" defer></script><script src="//content.iivt.com/ciwic/adobe_target/232/at.js"  id="dynacon-at-js" defer></script><script src="https://scmedia.itsfogo.com/$-$/197300d037cb48b084a42a42d24d326b.js" id="zendes" async></script><style id="css-overrides" type="text/css">#offers .card-footer small.text-footer {
+    font-size: 9px;
+    line-height: 1.4;
+    display: block;
+}
+
+#leaderboard  .btn-sm {
+    font-size: .875rem;
+    line-height: 1.5;
+    height:auto
+  }
+
+.upcoming-tournaments-wrapper .btn-dark {
+background:#000;
+color:#fff;
+line-height:1;
+height:auto;
+}
+
+
+.upcoming-tournaments-wrapper .btn-dark:hover {
+background:#111;
+color:#fff;
+}
+
+.btn.btn-outline-dark, .btn.btn-outline-dark:not([href]):not([tabindex]):not(.bf-btn) {
+    background-color: rgba(0,0,0,0);
+    background-image: none;
+    border-color: #0f0f10;
+    color: #0f0f10;
+}
+
+.download-p .pc-t-h-cont h5 {
+    color: #fff;
+}
+
+.download-p .pc-banner .pc-header {
+    z-index:2;
+}
+.loginplugin .login-content-messages .pc-component .pc-txt p {
+   text-align: center;
+}
+
+.v2-login-form .content-message .pc-txt a:not(.btn):not(.message-close):not(.offer-button):not(.footer-content-message-text) {
+   color: var(--theme-info) !important;
+}
+
+.v2-login-form .login-content-messages .content-message {
+   background: none;
+   padding: 0;
+}
+
+.v2-login-form.loginplugin .login-content-messages {
+  box-shadow: 0 0 0 0 #000;
+  margin: 0;
+  order: 0;
+}
+.bonus-icon {
+    background: url('https://scmedia.itsfogo.com/$-$/d829ea56044d461db4a0caf41c67b625.png')  no-repeat center center transparent;
+    background-size: contain;
+}
+.bonus-icon.sports,
+.bonus-icon.sportsbook {
+        background-image: url('https://scmedia.itsfogo.com/$-$/cf45d2172cae468ea8d300af46350a5e.png');
+}
+
+.bonus-icon.casino,
+.bonus-icon.spins {
+        background-image: url('https://scmedia.itsfogo.com/$-$/ee08b80a59d64d14bc87866113aa8329.png') 
+    }
+
+.bonus-icon.poker {
+        background-image: url('https://scmedia.itsfogo.com/$-$/2e79097c81dc47abb5aae4ded1324329.png');
+    }
+
+.bonus-icon.promotions {
+        background-image: url('https://scmedia.itsfogo.com/$-$/b9df1a87f2e14ac9ad78a93ee5039794.png');
+    }
+
+.bonus-icon.cashback {
+        background-image: url('https://scmedia.itsfogo.com/$-$/0121e96addb5464f9dc92b57724b8e31.png');
+    }
+
+.bonus-icon.missions {
+        background-image: url('https://scmedia.itsfogo.com/$-$/db10462633c440238e57d5835e06dddc.png');
+    }
+
+.bonus-icon.raf {
+        background-image: url('https://scmedia.itsfogo.com/$-$/3e06633dce4442d28ea87608c35d73a9.png');
+    }
+.brand-logo {
+        background: url('https://scmedia.itsfogo.com/$-$/3c29bb693aab46538beb5b0a2e9983bc.svg') no-repeat center transparent;
+        background-size: contain;
+}
+
+@media (max-width: 374px) {.navbar-switch-logo.brand-logo {background-image: url('https://scmedia.itsfogo.com/$-$/f89a62236d5d426d83df7721a28e0d50.svg');} }
+
+.grecaptcha-badge { visibility: hidden; }
+#onetrust-consent-sdk a,
+#onetrust-consent-sdk a:focus,
+#onetrust-consent-sdk button,
+#onetrust-consent-sdk button:focus,
+#onetrust-consent-sdk .ot-cat-item:focus,
+#onetrust-consent-sdk .category-menu-switch-handler:focus,
+#onetrust-pc-sdk .ot-chkbox input:focus+label:before {
+    outline-width: 0 !important;
+}
+
+#onetrust-pc-sdk .ot-hlst-cntr .ot-link-btn,
+#onetrust-pc-sdk .ot-hlst-cntr .ot-link-btn:hover,
+#onetrust-pc-sdk a.category-host-list-handler,
+#onetrust-pc-sdk a.category-host-list-handler:hover {
+    text-decoration: underline;
+}
+
+#onetrust-pc-sdk .pc-header,
+#onetrust-pc-sdk .ot-pc-header {
+    background: #0f0f10 !important;
+}
+
+#onetrust-pc-sdk .pc-header #pc-title,
+#onetrust-pc-sdk .ot-pc-header #ot-pc-title { 
+    color: #acaca6 !important;
+}
+
+#onetrust-pc-sdk #close-pc-btn-handler.pc-close-button.ot-close-icon,
+#onetrust-pc-sdk #close-pc-btn-handler.ot-close-icon {
+    filter: invert(1);
+    background-color: transparent !important;
+}
+
+#onetrust-pc-sdk .pc-logo,
+#onetrust-pc-sdk .ot-pc-logo {
+    background: url('https://scmedia.itsfogo.com/$-$/3c29bb693aab46538beb5b0a2e9983bc.svg') !important;
+    background-size: 50% !important;
+    background-position: left center !important;
+    background-repeat: no-repeat !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk #pc-title:after,
+#onetrust-consent-sdk #onetrust-pc-sdk #ot-pc-title:after {
+    background-color: transparent !important;
+}
+
+#onetrust-consent-sdk #onetrust-pc-sdk .active-group,
+#onetrust-consent-sdk #onetrust-pc-sdk .ot-active-menu {
+    border-color: #e8490c !important;
+}
+
+#onetrust-banner-sdk #onetrust-accept-btn-handler,
+#onetrust-banner-sdk #onetrust-reject-all-handler,
+#onetrust-consent-sdk #onetrust-pc-sdk button:not(.ot-link-btn):not(.ot-host-box):not(.ot-close-icon):not(#clear-filters-handler),
+#onetrust-consent-sdk #onetrust-pc-sdk .ot-leg-btn-container .ot-active-leg-btn {
+    background-color: #e8490c !important;
+    border-color: #e8490c !important;
+    color: #fff !important;
+}
+
+#onetrust-pc-sdk .toggle .checkbox input:checked+label:after,
+#onetrust-pc-sdk .ot-toggle .checkbox input:checked+label:after {
+    background: #e8490c !important;
+}
+
+#onetrust-pc-sdk .ot-tgl input:checked+.ot-switch .ot-switch-nob:before {
+    background: #e8490c !important;
+}
+
+#onetrust-pc-sdk .ot-desc-cntr {
+    outline: none !important;
+}
+
+#onetrust-pc-sdk .ot-pc-footer-logo {
+  display: none;
+}
+
+@media (max-width: 640px) {
+#onetrust-pc-sdk.otPcTab #ot-content {
+        height: calc(100% - 208px) !important;
+    }
+}
+
+@media (max-width: 425px) {
+    #onetrust-pc-sdk .ot-always-active-group .ot-tgl-cntr {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #onetrust-pc-sdk .ot-pc-header .ot-title-cntr {
+        width: 85%
+    }
+    #onetrust-pc-sdk .ot-pc-header #ot-pc-title {
+        font-size: 1em;
+        padding-right: 1.5em;
+    }
+    #onetrust-pc-sdk .ot-pc-header .ot-pc-logo {
+        background-size: contain !important;
+        min-width: 60px;
+    }
+}
+
+#onetrust-pc-sdk .ot-pc-header #ot-pc-title:before {
+    content: none;
+}</style><link rel="apple-touch-icon" sizes="180x180" href="https://scmedia.itsfogo.com/$-$/25becbb147f44424936cbcc31b03dae3.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://scmedia.itsfogo.com/$-$/abc40f4b840c4b78ba39c93d124daa0d.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://scmedia.itsfogo.com/$-$/392c0d8e18fd438bade62e5bd5420765.png">
+<link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">
+<link rel="mask-icon" href="https://scmedia.itsfogo.com/$-$/2a32e7cbc86c40149a026d37ff683f0b.svg" color="#e8490c">
+<link rel="shortcut icon" href="https://scmedia.itsfogo.com/$-$/d3d1105252604fcca2378613b064fade.ico">
+<meta name="msapplication-TileColor" content="#e8490c">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#0f0f10">
+    <link rel="canonical" href="https://www.partypoker.it" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta http-equiv="cleartype" content="on" />
+    <base href="/" />
+
+
+    
+<style>.splash,.splash-loading-spinner{position:absolute;z-index:9999;left:0}.betstation-inactivity-screen{display:none}.theme-coral-betstation .betstation-inactivity-screen,.theme-ladbrokes-betstation .betstation-inactivity-screen{display:flex}.splash{--splash-bg:#0f0f10;--splash-spinner-top:calc(50% + 35vh/2);background:var(--splash-bg);height:100%;opacity:1;overflow:hidden;top:0;width:100%}.splash-loading-wrapper{align-items:center;display:flex;flex-direction:column;height:100%;justify-content:center;text-align:center;width:100%}.splash-loading-logo{height:35vh;max-width:330px;width:70vw}.splash-loading-spinner,.splash-loading-spinner:after{border-radius:50%;width:3rem;height:3rem}.splash-loading-spinner{margin:auto;border:.5rem solid rgba(232,73,12,.2);border-left-color:#e8490c;outline:1px solid hsla(0,0%,100%,0);transform:translateZ(0);animation:loadingspinnerrotate 1.1s linear infinite;bottom:0;box-sizing:border-box;right:0;top:var(--splash-spinner-top)}.splash-loading-spinner.alt-loading-spinner{border-color:rgba(15,15,16,.5) rgba(15,15,16,.5) rgba(15,15,16,.5) #0f0f10}@media (max-width:959.98px){.splash{--splash-spinner-top:calc(50% + 55vh / 2)}.splash .splash-loading-wrapper{justify-content:flex-start!important}.splash .splash-loading-wrapper .splash-loading-logo{height:30vh;max-width:200px;width:40vw}.splash .splash-loading-wrapper .splash-loading-spinner{border:.2rem solid rgba(232,73,12,.2);border-left:.2em solid #e8490c;height:2.5em;width:2.5em}}.app-root{display:none}@keyframes loadingspinnerrotate{0%{transform:rotate(0)}to{transform:rotate(1turn)}}.splash.splash-x-product{--splash-bg:#fff;--splash-spinner-top:0}</style>
+
+</head>
+<body>
+    
+
+
+<script type="text/javascript">var dataLayer = [];</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
+(window,document,'script','dataLayer','GTM-N48RN3R');
+</script>
+<noscript><iframe height='0' width='0' style='display:none;visibility:hidden' src='//www.googletagmanager.com/ns.html?id=GTM-N48RN3R' /></noscript>
+
+
+
+<vn-app>
+</vn-app>
+
+<noscript>&lt;p&gt;Per la piena funzionalit&amp;agrave; e la migliore esperienza possibile per l&#39;utente, questa app richiede Javascript. &amp;Egrave; possibile che il tuo browser o il tuo dispositivo non supportino Javascript o che Javascript sia disabilitato.&lt;/p&gt;
+&lt;br /&gt;</noscript>
+
+
+    
+
+    
+<script type="module" src="/ClientDist/polyfills-es2015.3b612ae7561b06b62ade.js"></script><script type="module" src="/ClientDist/vendor-es2015.6506a937d213d2a908bf.js"></script><script type="module" src="/ClientDist/main-es2015.da6d7c0e9b8cd1e1a10e.js"></script><script type="module" src="/ClientDist/locales/it-es2015.696e2655ecc978c86e71.js"></script><script nomodule="" defer="" type="text/javascript" src="/ClientDist/polyfills-es5.179dc4253813eb6339a0.js"></script><script nomodule="" defer="" type="text/javascript" src="/ClientDist/vendor-es5.6506a937d213d2a908bf.js"></script><script nomodule="" defer="" type="text/javascript" src="/ClientDist/main-es5.da6d7c0e9b8cd1e1a10e.js"></script><script nomodule="" defer="" type="text/javascript" src="/ClientDist/locales/it-es5.696e2655ecc978c86e71.js"></script>
+
+    
+
+
+<script type="text/javascript">
+window.afterViewInitScripts = {};
+</script>
+
+    <!-- Rendered: 2021-08-09T12:25:56.6115180Z -->
+</body>
+</html>

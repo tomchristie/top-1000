@@ -1,0 +1,645 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>辞典・百科事典の検索サービス - Weblio辞書</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="description" content="Weblioは560の専門辞書や国語辞典、百科事典から一度に検索する辞書サイトです。">
+<meta name="keywords" content="辞書,国語辞典,国語辞書,辞典,百科事典,画像,図鑑,事典,用語">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="manifest" href="https://www.weblio.jp/manifest.json">
+<link rel="icon" sizes="144x144" href="https://weblio.hs.llnwd.net/e7/img/favicon/www.png">
+<link rel="apple-touch-icon" href="https://weblio.hs.llnwd.net/e7/img/favicon/www/safari/apple-touch-icon.png">
+<meta name="msapplication-square70x70logo" content="https://weblio.hs.llnwd.net/e7/img/favicon/www/ie/site-tile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://weblio.hs.llnwd.net/e7/img/favicon/www/ie/site-tile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://weblio.hs.llnwd.net/e7/img/favicon/www/ie/site-tile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://weblio.hs.llnwd.net/e7/img/favicon/www/ie/site-tile-310x310.png" />
+<meta name="robots" content="all">
+<meta name="robots" content="noydir">
+<meta name="robots" content="noodp"><link rel="alternate" type="application/rss+xml" title="ROR" href="https://www.weblio.jp/sitemap_www_index.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.weblio.jp/index.rdf">
+<link rel="stylesheet" type="text/css"  href="https://weblio.hs.llnwd.net/e7/css/www/index/common.css?tst=2021080616" media="all">
+<link rel="stylesheet" type="text/css"  href="https://weblio.hs.llnwd.net/e7/css/www/index/pc.css?tst=2021080616" media="all">
+<!-- DataLayer -->
+<script>
+    
+    dataLayer = [{
+        
+        'splitTest': 'B'
+    }];
+</script>
+<!-- /DataLayer -->
+<!-- Start Google Tag Manager -->
+<script>
+    (function(w,d,s,l,i) {
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCM52W');
+</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/include/jquery.min-1.4.4.js?tst=2021080616" charset="UTF-8"></script>
+<script type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/include/jquery-ui.min-1.8.js?tst=2021080616" charset="UTF-8"></script>
+<script type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/www/libs/jquery.matchHeight.js?tst=2021080616" charset="UTF-8"></script>
+<script defer type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/www/common.js?tst=2021080616" charset="UTF-8"></script>
+<script defer type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/www/index.js?tst=2021080616" charset="UTF-8"></script>
+<script type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/include/Ads.js?tst=2021080616" charset="UTF-8"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script type="text/javascript">
+googletag.cmd.push(function() {
+
+    googletag.defineSlot('/2211331/Weblio_PC_www_RightTop_300_600', [300, 600], 'div-gpt-ad-1536650998557-0').addService(googletag.pubads());
+  
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});
+</script>
+<script src="https://yads.c.yimg.jp/js/ytag.js"></script>
+<script>
+  window.yjDataLayer = window.yjDataLayer || [];
+  function ytag() {yjDataLayer.push(arguments);}
+  ytag({"type": "ycl_cookie"});
+  ytag({"type": "ycl_cookie_extended"});
+</script>
+</head>
+
+<body id="gDef" class="lDef">
+<div class="wrapper">
+<!-- Start Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCM52W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="header">
+<nav class="nav-global-wrap">
+<ul class="nav-global">
+
+<li class="item is-current">
+<p class="nav-text"><a class="nav-link" href="https://www.weblio.jp/" title="国語辞典"
+ onmousedown="return redirect(this, 'https://www.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">国語辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://thesaurus.weblio.jp/" title="類語・対義語辞典"
+ onmousedown="return redirect(this, 'https://thesaurus.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">類語・対義語辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://ejje.weblio.jp/" title="英和・和英辞典"
+ onmousedown="return redirect(this, 'https://ejje.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">英和・和英辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://cjjc.weblio.jp" title="中国語辞典"
+ onmousedown="return redirect(this, 'https://cjjc.weblio.jp?wpm_category=www&wpm_action=header&wpm_label=navi');">中国語辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://kjjk.weblio.jp/" title="韓国語辞典"
+ onmousedown="return redirect(this, 'https://kjjk.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">韓国語辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://kobun.weblio.jp/" title="古語辞典"
+ onmousedown="return redirect(this, 'https://kobun.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">古語辞典</a></p>
+</li>
+
+<li class="item">
+<p class="nav-text js-nav-btn"><a class="nav-link" href="#">その他辞書</a><i class="nav-arrow"></i></p>
+<div class="nav-global-in-wrap">
+<ul class="nav-global-in">
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://fjjf.weblio.jp/" title="フランス語辞典"
+ onmousedown="return redirect(this, 'https://fjjf.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">フランス語辞典</a></p>
+</li>
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://njjn.weblio.jp/" title="インドネシア語辞典"
+ onmousedown="return redirect(this, 'https://njjn.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">インドネシア語辞典</a></p>
+</li>
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://tjjt.weblio.jp/" title="タイ語辞典"
+ onmousedown="return redirect(this, 'https://tjjt.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">タイ語辞典</a></p>
+</li>
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://vjjv.weblio.jp/" title="ベトナム語辞典"
+ onmousedown="return redirect(this, 'https://vjjv.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">ベトナム語辞典</a></p>
+</li>
+<li class="item">
+<p class="nav-text"><a class="nav-link" href="https://shuwa.weblio.jp/" title="手話辞典"
+ onmousedown="return redirect(this, 'https://shuwa.weblio.jp/?wpm_category=www&wpm_action=header&wpm_label=navi');">手話辞典</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</nav>
+<div class="mainvisual">
+<h1 class="mainvisual-title">収録辞書500以上。国内最大級のオンライン辞書</h1>
+<div class="mainvisual-logo">
+<figure class="mainvisual-logo-image">
+<img src="https://weblio.hs.llnwd.net/e7/img/www/logo@2x.svg" alt="辞典・百科事典の検索サービス - Weblio辞書">
+</figure>
+<p class="mainvisual-logo-text">国語辞典</p>
+</div>
+</div>
+
+<!-- 検索ボックス -->
+<div class="search-area">
+<div class="search-area-inner">
+<p class="search-area-title">調べたいことばを検索しよう</p>
+<form action="https://www.weblio.jp/content_find" method="get" name="f">
+<div class="form-group">
+<div class="input-group">
+<input type="text" maxlength="2048" name="query" class="form-control form-search" placeholder="言葉を入力して検索する" autofocus>
+<div class="input-group-append">
+<button class="btn-search" type="submit"><i class="ico-search"></i></button>
+</div>
+</div>
+</div>
+<div class="form-group">
+<ul class="form-list-check">
+<li>
+<div class="form-check">
+<input type="radio" name="searchType" class="formSelect" id="search-radio-01" value="exact" checked>
+<label class="form-label" for="search-radio-01">と一致する</label>
+</div>
+</li>
+<li>
+<div class="form-check">
+<input type="radio" name="searchType" class="formSelect" id="search-radio-02" value="prefix" >
+<label class="form-label" for="search-radio-02">で始まる</label>
+</div>
+</li>
+<li>
+<div class="form-check">
+<input type="radio" name="searchType" class="formSelect" id="search-radio-03" value="contains" >
+<label class="form-label" for="search-radio-03">を含む</label>
+</div>
+</li>
+<li>
+<div class="form-check">
+<input type="radio" name="searchType" class="formSelect" id="search-radio-04" value="suffix" >
+<label class="form-label" for="search-radio-04">で終わる</label>
+</div>
+</li>
+<li style="flex-grow: 2">
+<div class="form-check">
+<input type="radio" name="searchType" class="formSelect" id="search-radio-05" value="text" >
+<label class="form-label" for="search-radio-05">を解説文に含む</label>
+</div>
+</li>
+</ul>
+</div>
+</form>
+</div>
+</div></header>
+<div class="contents">
+<div class="container">
+<div class="container-top">
+
+<div class="box-advertising">
+<div class="advertising ad-02">
+<div class="sideAdBunner">
+<!-- /2211331/Weblio_PC_www_RightTop_300_600 -->
+<div id='div-gpt-ad-1536650998557-0' style='height:600px; width:300px;'>
+<script type="text/javascript">
+<!--
+adScS('cp912.js');
+//-->
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="box-top-01">
+<div class="box-title-01 box-title-center">
+<p class="title-sub">新しく生まれたことばをチェック</p>
+<h2 class="title-main title-news">新着のことば</h2>
+</div>
+<ul class="list-tag-01">
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A9%E3%83%B3%E8%8A%B8" title="ブーメラン芸" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%96%E3%83%BC%E3%83%A1%E3%83%A9%E3%83%B3%E8%8A%B8?wpm_category=update&wpm_action=top&wpm_label=keyword');">ブーメラン芸</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E5%91%A8%E5%9B%9E%E3%83%97%E3%83%AC%E3%82%A4" title="周回プレイ" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E5%91%A8%E5%9B%9E%E3%83%97%E3%83%AC%E3%82%A4?wpm_category=update&wpm_action=top&wpm_label=keyword');">周回プレイ</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E3%81%94%E7%84%A1%E4%BA%8B%E3%81%A7" title="ご無事で" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%94%E7%84%A1%E4%BA%8B%E3%81%A7?wpm_category=update&wpm_action=top&wpm_label=keyword');">ご無事で</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E7%9B%B4%E8%A1%8C%E7%9B%B4%E5%B8%B0" title="直行直帰" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E7%9B%B4%E8%A1%8C%E7%9B%B4%E5%B8%B0?wpm_category=update&wpm_action=top&wpm_label=keyword');">直行直帰</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E4%BD%95%E3%81%9F%E3%81%A3%E3%81%A6" title="何たって" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E4%BD%95%E3%81%9F%E3%81%A3%E3%81%A6?wpm_category=update&wpm_action=top&wpm_label=keyword');">何たって</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E5%90%8C%E6%97%A5%E3%81%AE%E6%AE%B5%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84" title="同日の段ではない" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E5%90%8C%E6%97%A5%E3%81%AE%E6%AE%B5%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%84?wpm_category=update&wpm_action=top&wpm_label=keyword');">同日の段ではない</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E5%98%98%E3%81%8A%E3%81%A3%E3%81%97%E3%82%83%E3%81%84" title="嘘おっしゃい" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E5%98%98%E3%81%8A%E3%81%A3%E3%81%97%E3%82%83%E3%81%84?wpm_category=update&wpm_action=top&wpm_label=keyword');">嘘おっしゃい</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E8%A8%80%E3%81%A3%E3%81%9F%E3%81%9D%E3%81%B0%E3%81%8B%E3%82%89" title="言ったそばから" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E8%A8%80%E3%81%A3%E3%81%9F%E3%81%9D%E3%81%B0%E3%81%8B%E3%82%89?wpm_category=update&wpm_action=top&wpm_label=keyword');">言ったそばから</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E4%B8%89%E8%8D%89%E5%9B%9B%E6%9C%A8" title="三草四木" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E4%B8%89%E8%8D%89%E5%9B%9B%E6%9C%A8?wpm_category=update&wpm_action=top&wpm_label=keyword');">三草四木</a>
+<li class="item"><a class="tag" href="https://www.weblio.jp/content/%E8%A1%92%E3%81%84" title="衒い" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E8%A1%92%E3%81%84?wpm_category=update&wpm_action=top&wpm_label=keyword');">衒い</a>
+</ul>
+<p class="link-cmn-right"><a class="link-cmn-01" href="https://www.weblio.jp/update-keywords/" title="最近追加されたことばを全て見る" onmousedown="return redirect(this, 'https://www.weblio.jp/update-keywords/?wpm_category=update&wpm_action=top&wpm_label=main');">最近追加されたことばを全て見る</a></p>
+</div>
+<div class="box-top-01" id="ancLink04">
+<div class="box-title-01 box-title-center">
+<p class="title-sub">みんなが注目</p>
+<h2 class="title-main title-trending">急上昇のことば</h2>
+</div>
+<div class="box-trending">
+<p class="box-trending-badge">急上昇！</p>
+<div class="slider-trending-wrap">
+<button type="button" class="slider-prev slider-trending-prev" onclick="ga('send', 'event', 'hotword', 'button', 'left');">Previous</button>
+<div class="slider-trending">
+<div class="item" id="slide0">
+<a class="link" href="https://www.weblio.jp/content/%E3%81%A1%E3%81%8B%E3%81%A3%E3%81%B1%21" title="ちかっぱ!" onmousedown="return redirect( this, 'https://www.weblio.jp/content/%E3%81%A1%E3%81%8B%E3%81%A3%E3%81%B1%21?wpm_category=hotword&wpm_action=top&wpm_label=keyword');">
+<p class="text">ちかっぱ!</p>
+</a>
+</div>
+<div class="item" id="slide1">
+<a class="link" href="https://www.weblio.jp/content/%E6%9C%89%E7%B5%82%E3%81%AE%E7%BE%8E%E3%82%92%E9%A3%BE%E3%82%8B" title="有終の美を飾る" onmousedown="return redirect( this, 'https://www.weblio.jp/content/%E6%9C%89%E7%B5%82%E3%81%AE%E7%BE%8E%E3%82%92%E9%A3%BE%E3%82%8B?wpm_category=hotword&wpm_action=top&wpm_label=keyword');">
+<p class="text">有終の美を飾る</p>
+</a>
+</div>
+<div class="item" id="slide2">
+<a class="link" href="https://www.weblio.jp/content/%E3%81%8D%E3%81%AE%E3%81%93%E3%82%8B" title="きのこる" onmousedown="return redirect( this, 'https://www.weblio.jp/content/%E3%81%8D%E3%81%AE%E3%81%93%E3%82%8B?wpm_category=hotword&wpm_action=top&wpm_label=keyword');">
+<p class="text">きのこる</p>
+</a>
+</div>
+<div class="item" id="slide3">
+<a class="link" href="https://www.weblio.jp/content/%E3%82%AB%E3%82%AA%E3%82%B9" title="カオス" onmousedown="return redirect( this, 'https://www.weblio.jp/content/%E3%82%AB%E3%82%AA%E3%82%B9?wpm_category=hotword&wpm_action=top&wpm_label=keyword');">
+<p class="text">カオス</p>
+</a>
+</div>
+<div class="item" id="slide4">
+<a class="link" href="https://www.weblio.jp/content/%E3%83%8A%E3%83%A8%E3%83%B3%E4%BA%8B%E4%BB%B6" title="ナヨン事件" onmousedown="return redirect( this, 'https://www.weblio.jp/content/%E3%83%8A%E3%83%A8%E3%83%B3%E4%BA%8B%E4%BB%B6?wpm_category=hotword&wpm_action=top&wpm_label=keyword');">
+<p class="text">ナヨン事件</p>
+</a>
+</div>
+</div>
+<button type="button" class="slider-next slider-trending-next" onclick="ga('send', 'event', 'hotword', 'button', 'right');">Next</button>
+</div>
+<div class="slider-trending-thumbnail">
+<div class="item" slide-index="0"><p class="text">ちかっぱ!</p></div>
+<div class="item" slide-index="1"><p class="text">有終の美を...</p></div>
+<div class="item" slide-index="2"><p class="text">きのこる</p></div>
+<div class="item" slide-index="3"><p class="text">カオス</p></div>
+<div class="item" slide-index="4"><p class="text">ナヨン事件</p></div>
+</div>
+</div>
+</div>
+<div class="box-top-01">
+<div class="box-title-01">
+<h2 class="title-main title-champion">ことば検索ランキング</h2>
+</div>
+<ul class="list-ranking-01">
+<li class="item"><span class="ranking rank-01">1位</span><a class="link" href="https://www.weblio.jp/content/%E3%81%A1%E3%81%8B%E3%81%A3%E3%81%B1%21" title="ちかっぱ!" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%A1%E3%81%8B%E3%81%A3%E3%81%B1%21?wpm_category=ranking&wpm_action=top&wpm_label=keyword1');">ちかっぱ!</a></li>
+<li class="item"><span class="ranking rank-02">2位</span><a class="link" href="https://www.weblio.jp/content/%E3%83%88%E3%83%AA%E3%82%B3%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC" title="トリコロールカラー" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%88%E3%83%AA%E3%82%B3%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%AB%E3%83%A9%E3%83%BC?wpm_category=ranking&wpm_action=top&wpm_label=keyword2');">トリコロールカラー</a></li>
+<li class="item"><span class="ranking rank-03">3位</span><a class="link" href="https://www.weblio.jp/content/%E6%9C%89%E7%B5%82%E3%81%AE%E7%BE%8E%E3%82%92%E9%A3%BE%E3%82%8B" title="有終の美を飾る" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E6%9C%89%E7%B5%82%E3%81%AE%E7%BE%8E%E3%82%92%E9%A3%BE%E3%82%8B?wpm_category=ranking&wpm_action=top&wpm_label=keyword3');">有終の美を飾る</a></li>
+<li class="item"><span class="ranking">4位</span><a class="link" href="https://www.weblio.jp/content/%E3%81%8D%E3%81%AE%E3%81%93%E3%82%8B" title="きのこる" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%8D%E3%81%AE%E3%81%93%E3%82%8B?wpm_category=ranking&wpm_action=top&wpm_label=keyword4');">きのこる</a></li>
+<li class="item"><span class="ranking">5位</span><a class="link" href="https://www.weblio.jp/content/%E3%81%94%E7%84%A1%E4%BD%93%E3%81%AA" title="ご無体な" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%94%E7%84%A1%E4%BD%93%E3%81%AA?wpm_category=ranking&wpm_action=top&wpm_label=keyword5');">ご無体な</a></li>
+<li class="item"><span class="ranking">6位</span><a class="link" href="https://www.weblio.jp/content/%E3%82%AB%E3%82%AA%E3%82%B9" title="カオス" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%82%AB%E3%82%AA%E3%82%B9?wpm_category=ranking&wpm_action=top&wpm_label=keyword6');">カオス</a></li>
+<li class="item"><span class="ranking">7位</span><a class="link" href="https://www.weblio.jp/content/%E3%81%8A%E3%81%8A%E3%80%81%E4%B8%87%E7%89%A9%E3%81%AE%E7%A5%9E%E3%82%88" title="おお、万物の神よ" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%8A%E3%81%8A%E3%80%81%E4%B8%87%E7%89%A9%E3%81%AE%E7%A5%9E%E3%82%88?wpm_category=ranking&wpm_action=top&wpm_label=keyword7');">おお、万物の神よ</a></li>
+<li class="item"><span class="ranking">8位</span><a class="link" href="https://www.weblio.jp/content/%E3%83%8A%E3%83%A8%E3%83%B3%E4%BA%8B%E4%BB%B6" title="ナヨン事件" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%8A%E3%83%A8%E3%83%B3%E4%BA%8B%E4%BB%B6?wpm_category=ranking&wpm_action=top&wpm_label=keyword8');">ナヨン事件</a></li>
+<li class="item"><span class="ranking">9位</span><a class="link" href="https://www.weblio.jp/content/%E3%81%AF%E3%81%A8%E3%81%93" title="はとこ" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%AF%E3%81%A8%E3%81%93?wpm_category=ranking&wpm_action=top&wpm_label=keyword9');">はとこ</a></li>
+<li class="item"><span class="ranking">10位</span><a class="link" href="https://www.weblio.jp/content/%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9" title="バイアス" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9?wpm_category=ranking&wpm_action=top&wpm_label=keyword10');">バイアス</a></li>
+</ul>
+<p class="link-cmn-right"><a class="link-cmn-01" href="https://www.weblio.jp/ranking/" title="検索ランキング TOP 50 をすべて見る" onmousedown="return redirect(this, 'https://www.weblio.jp/ranking/?wpm_category=ranking&wpm_action=top&wpm_label=top');">検索ランキング TOP 50 をすべて見る</a></p>
+</div>
+<div class="box-top-01" id="ancLink07">
+<div class="box-title-01">
+<h2 class="title-main title-calendar">8月9日のことば</h2>
+</div>
+<ul class="list-words day-event">
+<li class="item"><dl class="words"><dt class="head">長崎原爆忌／長崎原爆の日／原爆犠牲者慰霊平和祈念式典（日本）<dd class="detail"><a class="link" class="link" href="https://www.weblio.jp/content/1945%E5%B9%B4" title="1945年" onmousedown="return redirect(this, 'https://www.weblio.jp/content/1945%E5%B9%B4?wpm_category=today&wpm_action=top&wpm_label=keyword')">1945年</a>8月9日午前11時2分に、米軍の<a class="link" href="https://www.weblio.jp/content/B-29_%28%E8%88%AA%E7%A9%BA%E6%A9%9F%29" title="B-29_(航空機)" onmousedown="return redirect(this, 'https://www.weblio.jp/content/B-29_%28%E8%88%AA%E7%A9%BA%E6%A9%9F%29?wpm_category=today&wpm_action=top&wpm_label=keyword')">B-29爆撃機</a>「<a class="link" href="https://www.weblio.jp/content/%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%BC" title="ボックスカー" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AB%E3%83%BC?wpm_category=today&wpm_action=top&wpm_label=keyword')">ボックスカー</a>」により、<a class="link" href="https://www.weblio.jp/content/%E3%83%97%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A6%E3%83%A0" title="プルトニウム" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%97%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A6%E3%83%A0?wpm_category=today&wpm_action=top&wpm_label=keyword')">プルトニウム</a><a class="link" href="https://www.weblio.jp/content/%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE" title="原子爆弾" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE?wpm_category=today&wpm_action=top&wpm_label=keyword')">原子爆弾</a>「<a class="link" href="https://www.weblio.jp/content/%E3%83%95%E3%82%A1%E3%83%83%E3%83%88%E3%83%9E%E3%83%B3" title="ファットマン" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%95%E3%82%A1%E3%83%83%E3%83%88%E3%83%9E%E3%83%B3?wpm_category=today&wpm_action=top&wpm_label=keyword')">ファットマン</a>」が<a class="link" href="https://www.weblio.jp/content/%E9%95%B7%E5%B4%8E%E5%B8%82" title="長崎市" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E9%95%B7%E5%B4%8E%E5%B8%82?wpm_category=today&wpm_action=top&wpm_label=keyword')">長崎市</a>に投下された。これにより、およそ7万人の人々が死亡し、市街は壊滅。<a class="link" href="https://www.weblio.jp/content/%E9%95%B7%E5%B4%8E%E5%B8%82%E3%81%B8%E3%81%AE%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE%E6%8A%95%E4%B8%8B" title="長崎市への原子爆弾投下" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E9%95%B7%E5%B4%8E%E5%B8%82%E3%81%B8%E3%81%AE%E5%8E%9F%E5%AD%90%E7%88%86%E5%BC%BE%E6%8A%95%E4%B8%8B?wpm_category=today&wpm_action=top&wpm_label=keyword')">長崎市への原子爆弾投下</a>参照</dd></dt></dl></li><li class="item"><dl class="words"><dt class="head"><a class="link" class="link" href="https://www.weblio.jp/content/%E9%87%8E%E7%90%83" title="野球" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E9%87%8E%E7%90%83?wpm_category=today&wpm_action=top&wpm_label=keyword')">野球</a>の日（日本）<dd class="detail">8月9日の8と9が「やきゅう」と読め、また、<a class="link" href="https://www.weblio.jp/content/%E9%AB%98%E6%A0%A1%E9%87%8E%E7%90%83" title="高校野球" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E9%AB%98%E6%A0%A1%E9%87%8E%E7%90%83?wpm_category=today&wpm_action=top&wpm_label=keyword')">高校野球</a>の期間中でもあることから。</dd><dd class="detail">スポーツ用品の<a class="link" href="https://www.weblio.jp/content/%E3%83%9F%E3%82%BA%E3%83%8E" title="ミズノ" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%9F%E3%82%BA%E3%83%8E?wpm_category=today&wpm_action=top&wpm_label=keyword')">ミズノ</a>が制定。</dd></dt></dl></li><li class="item"><dl class="words"><dt class="head"><a class="link" class="link" href="https://www.weblio.jp/content/%E5%8A%B4%E5%83%8D" title="労働" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E5%8A%B4%E5%83%8D?wpm_category=today&wpm_action=top&wpm_label=keyword')">はたらく</a>の日（日本）<dd class="detail">8月9日の8と9が「はたらく」と読めるため。</dd></dt></dl></li><li class="item"><dl class="words"><dt class="head">独立記念日（<a class="link" class="link" href="https://www.weblio.jp/content/%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB" title="シンガポール" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%82%B7%E3%83%B3%E3%82%AC%E3%83%9D%E3%83%BC%E3%83%AB?wpm_category=today&wpm_action=top&wpm_label=keyword')">シンガポール</a>）<dd class="detail"><a class="link" href="https://www.weblio.jp/content/1965%E5%B9%B4" title="1965年" onmousedown="return redirect(this, 'https://www.weblio.jp/content/1965%E5%B9%B4?wpm_category=today&wpm_action=top&wpm_label=keyword')">1965年</a>8月9日に<a class="link" href="https://www.weblio.jp/content/%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2" title="マレーシア" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%9E%E3%83%AC%E3%83%BC%E3%82%B7%E3%82%A2?wpm_category=today&wpm_action=top&wpm_label=keyword')">マレーシア</a>から独立。</dd></dt></dl></li>
+</ul>
+<p class="link-cmn-right"><a class="link-cmn-01" href="https://www.weblio.jp/wkpja/content/8%E6%9C%889%E6%97%A5_8%E6%9C%889%E6%97%A5%E3%81%AE%E6%A6%82%E8%A6%81" title="8月9日のことばをすべて見る" onmousedown="return redirect(this, 'https://www.weblio.jp/wkpja/content/8%E6%9C%889%E6%97%A5_8%E6%9C%889%E6%97%A5%E3%81%AE%E6%A6%82%E8%A6%81?wpm_category=today&wpm_action=top&wpm_label=top')">8月9日のことばをすべて見る</a></p>
+</table>
+</div>
+<div class="box-top-01">
+<div class="box-title-01">
+<h2 class="title-main title-papers">注目の時事用語</h2>
+</div>
+<ul class="list-words new-keyword">
+<li class="item">
+<dl class="words">
+<dt class="head">言葉の「違い」とは</dt>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E8%AD%A6%E8%A6%96%E5%BA%81%E3%81%A8%E8%AD%A6%E5%AF%9F%E5%BA%81%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E3%81%AF" title="警視庁と警察庁の違いとは" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E8%AD%A6%E8%A6%96%E5%BA%81%E3%81%A8%E8%AD%A6%E5%AF%9F%E5%BA%81%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E3%81%AF?wpm_category=news&wpm_action=top&wpm_label=society');">警視庁と警察庁の違いとは</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E7%94%9F%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%81%A8%E3%83%9B%E3%82%A4%E3%83%83%E3%83%97%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E3%81%AF" title="生クリームとホイップの違いとは" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E7%94%9F%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%81%A8%E3%83%9B%E3%82%A4%E3%83%83%E3%83%97%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E3%81%AF?wpm_category=news&wpm_action=top&wpm_label=society');">生クリームとホイップの違いとは</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E7%B3%B8%E3%81%93%E3%82%93%E3%81%AB%E3%82%83%E3%81%8F%E3%81%A8%E3%81%97%E3%82%89%E3%81%9F%E3%81%8D%E3%81%AE%E9%81%95%E3%81%84" title="糸こんにゃくとしらたきの違い" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E7%B3%B8%E3%81%93%E3%82%93%E3%81%AB%E3%82%83%E3%81%8F%E3%81%A8%E3%81%97%E3%82%89%E3%81%9F%E3%81%8D%E3%81%AE%E9%81%95%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=society');">糸こんにゃくとしらたきの違い</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%84%E3%81%8F%E3%82%89%E3%81%A8%E3%81%99%E3%81%98%E3%81%93%E3%81%AE%E9%81%95%E3%81%84" title="いくらとすじこの違い" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%84%E3%81%8F%E3%82%89%E3%81%A8%E3%81%99%E3%81%98%E3%81%93%E3%81%AE%E9%81%95%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=society');">いくらとすじこの違い</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%83%8F%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%A8%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E3%81%AE%E9%81%95%E3%81%84" title="ハイヤーとタクシーの違い" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%8F%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%A8%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E3%81%AE%E9%81%95%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=society');">ハイヤーとタクシーの違い</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%83%84%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%80%E3%83%96%E3%83%AB%E3%81%AE%E9%81%95%E3%81%84" title="ツインとダブルの違い" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%83%84%E3%82%A4%E3%83%B3%E3%81%A8%E3%83%80%E3%83%96%E3%83%AB%E3%81%AE%E9%81%95%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=society');">ツインとダブルの違い</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E9%95%B7%E8%8A%8B%E3%81%A8%E5%B1%B1%E8%8A%8B%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91%E6%96%B9" title="長芋と山芋の違いと使い分け方" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E9%95%B7%E8%8A%8B%E3%81%A8%E5%B1%B1%E8%8A%8B%E3%81%AE%E9%81%95%E3%81%84%E3%81%A8%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91%E6%96%B9?wpm_category=news&wpm_action=top&wpm_label=society');">長芋と山芋の違いと使い分け方</a></dd>
+</dl>
+</li>
+<li class="item">
+<dl class="words">
+<dt class="head">きになる日本語</dt>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%95%E3%82%8C%E3%81%9F%E3%81%84" title="されたい" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%95%E3%82%8C%E3%81%9F%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=culture');">されたい</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%9F%E3%81%8B%E3%82%92%E3%81%8F%E3%81%8F%E3%82%8B" title="たかをくくる" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%9F%E3%81%8B%E3%82%92%E3%81%8F%E3%81%8F%E3%82%8B?wpm_category=news&wpm_action=top&wpm_label=culture');">たかをくくる</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%8A%E3%81%93%E3%81%8C%E3%81%BE%E3%81%97%E3%81%84" title="おこがましい" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%8A%E3%81%93%E3%81%8C%E3%81%BE%E3%81%97%E3%81%84?wpm_category=news&wpm_action=top&wpm_label=culture');">おこがましい</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%A6%E3%81%AF" title="つきましては" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%A4%E3%81%8D%E3%81%BE%E3%81%97%E3%81%A6%E3%81%AF?wpm_category=news&wpm_action=top&wpm_label=culture');">つきましては</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%95%E3%82%82%E3%81%82%E3%82%8A%E3%81%AA%E3%82%93" title="さもありなん" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%95%E3%82%82%E3%81%82%E3%82%8A%E3%81%AA%E3%82%93?wpm_category=news&wpm_action=top&wpm_label=culture');">さもありなん</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E4%BD%93%E3%81%9F%E3%82%89%E3%81%8F" title="体たらく" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E4%BD%93%E3%81%9F%E3%82%89%E3%81%8F?wpm_category=news&wpm_action=top&wpm_label=culture');">体たらく</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%A9%E3%81%A9%E3%82%81%E8%89%B2" title="どどめ色" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%A9%E3%81%A9%E3%82%81%E8%89%B2?wpm_category=news&wpm_action=top&wpm_label=culture');">どどめ色</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%BE%E3%81%A7%E3%81%82%E3%82%8B" title="まである" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%BE%E3%81%A7%E3%81%82%E3%82%8B?wpm_category=news&wpm_action=top&wpm_label=culture');">まである</a></dd>
+<dd class="detail"><a class="link" href="https://www.weblio.jp/content/%E3%81%B5%E3%81%98%E3%81%93" title="ふじこ" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E3%81%B5%E3%81%98%E3%81%93?wpm_category=news&wpm_action=top&wpm_label=culture');">ふじこ</a></dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="box-top-01">
+<div class="box-title-01">
+<h2 class="title-main title-seasonal">季節のことば</h2>
+</div>
+<ul class="list-words">
+<li class="item">
+<dl class="words">
+<dt class="head">二十四節気：立秋（りっしゅう）</dt>
+<dd class="detail">
+<p class="text">二十四節気の第１４節目で、太陽の黄経が１５０度の時点に来たことを示します。</p>
+<p><a class="link" href="https://www.weblio.jp/content/%E7%AB%8B%E7%A7%8B" title="立秋" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E7%AB%8B%E7%A7%8B?wpm_category=season&wpm_action=top&wpm_label=keyword')">&raquo;立秋とは</a></p>
+<p><a class="link" href="https://www.weblio.jp/content/%E4%BA%8C%E5%8D%81%E5%9B%9B%E7%AF%80%E6%B0%97" title="二十四節気" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E4%BA%8C%E5%8D%81%E5%9B%9B%E7%AF%80%E6%B0%97?wpm_category=season&wpm_action=top&wpm_label=keyword')">&raquo;二十四節気とは</a></p>
+</dd>
+</dl>
+</li>
+<li class="item">
+<dl class="words">
+<dt class="head">七十二候：「涼風至」（りょうふう いたる）</dt>
+<dd class="detail">
+<p class="text">立秋の初候。8月7日～8月11日ごろ。<br>「涼しい風が立ち始める」気候を意味します。</p>
+<a class="link" href="https://www.weblio.jp/content/%E4%B8%83%E5%8D%81%E4%BA%8C%E5%80%99" title="七十二候" onmousedown="return redirect(this, 'https://www.weblio.jp/content/%E4%B8%83%E5%8D%81%E4%BA%8C%E5%80%99?wpm_category=season&wpm_action=top&wpm_label=keyword')">&raquo;七十二候とは</a>
+</dd>
+</dl>
+</li>
+<li class="item">
+<dl class="words">
+<dt class="head">誕生石</p>
+<dd class="detail">
+<p class="text">サードオニキス、ベリドット</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="box-top-01">
+<div class="box-title-01">
+<h2 class="title-main title-search">ことばを探す</h2>
+</div>
+<div id="js-tab-pc">
+<div class="list-tab-btn-wrap">
+<button class="controller btn-prev" type="button" onclick="ga('send','event','category','button','left');">Previous</button>
+<div class="list-tab-btn">
+<div class="item"><p class="tab-btn" data-tab-btn="1">カテゴリ</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="2">索引</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="3">固有名詞</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="4">成句</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="5">種類別</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="6">品詞別</p></div>
+<div class="item"><p class="tab-btn" data-tab-btn="7">名文の言葉</p></div>
+</div>
+<button class="controller btn-next" type="button" onclick="ga('send','event','category','button','right');">Next</button>
+</div>
+<div class="list-tab-box">
+<div class="tab-box" data-tab-box="1">
+<div class="tab-box-in"><ul class="list-text-character two-col"><li class="item"><a class="character" href="https://www.weblio.jp/cat/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/?wpm_category=cat&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/business" title="ビジネス" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/business?wpm_category=cat&wpm_action=top&wpm_label=business');">ビジネス</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/occupation" title="業界用語" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/occupation?wpm_category=cat&wpm_action=top&wpm_label=occupation');">業界用語</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/computer" title="コンピュータ" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/computer?wpm_category=cat&wpm_action=top&wpm_label=computer');">コンピュータ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/train" title="電車" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/train?wpm_category=cat&wpm_action=top&wpm_label=train');">電車</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/automobile" title="自動車" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/automobile?wpm_category=cat&wpm_action=top&wpm_label=automobile');">自動車</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/ship" title="船" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/ship?wpm_category=cat&wpm_action=top&wpm_label=ship');">船</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/engineering" title="工学" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/engineering?wpm_category=cat&wpm_action=top&wpm_label=engineering');">工学</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/architecture" title="建物・不動産" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/architecture?wpm_category=cat&wpm_action=top&wpm_label=architecture');">建物・不動産</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/academic" title="学問" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/academic?wpm_category=cat&wpm_action=top&wpm_label=academic');">学問</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/culture" title="文化" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/culture?wpm_category=cat&wpm_action=top&wpm_label=culture');">文化</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/life" title="生活" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/life?wpm_category=cat&wpm_action=top&wpm_label=life');">生活</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/healthcare" title="ヘルスケア" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/healthcare?wpm_category=cat&wpm_action=top&wpm_label=healthcare');">ヘルスケア</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/hobby" title="趣味" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/hobby?wpm_category=cat&wpm_action=top&wpm_label=hobby');">趣味</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/sports" title="スポーツ" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/sports?wpm_category=cat&wpm_action=top&wpm_label=sports');">スポーツ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/nature" title="生物" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/nature?wpm_category=cat&wpm_action=top&wpm_label=nature');">生物</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/food" title="食品" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/food?wpm_category=cat&wpm_action=top&wpm_label=food');">食品</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/people" title="人名" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/people?wpm_category=cat&wpm_action=top&wpm_label=people');">人名</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/dialect" title="方言" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/dialect?wpm_category=cat&wpm_action=top&wpm_label=dialect');">方言</a></li><li class="item"><a class="character" href="https://www.weblio.jp/cat/dictionary" title="辞書・百科事典" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/dictionary?wpm_category=cat&wpm_action=top&wpm_label=dictionary');">辞書・百科事典</a></li></ui></div>
+</div>
+<div class="tab-box" data-tab-box="2">
+<div class="tab-box-in"><ul class="list-text-character five-col"><li class="item"><a class="character" href="https://www.weblio.jp/category/aa" title="あ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/aa?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">あ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ii" title="い" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ii?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">い</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/uu" title="う" onmousedown="return redirect(this, 'https://www.weblio.jp/category/uu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">う</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ee" title="え" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ee?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">え</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/oo" title="お" onmousedown="return redirect(this, 'https://www.weblio.jp/category/oo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">お</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ka" title="か" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ka?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">か</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ki" title="き" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ki?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">き</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ku" title="く" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ku?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">く</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ke" title="け" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ke?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">け</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ko" title="こ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ko?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">こ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/sa" title="さ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/sa?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">さ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/shi" title="し" onmousedown="return redirect(this, 'https://www.weblio.jp/category/shi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">し</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/su" title="す" onmousedown="return redirect(this, 'https://www.weblio.jp/category/su?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">す</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/se" title="せ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/se?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">せ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/so" title="そ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/so?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">そ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ta" title="た" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ta?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">た</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/chi" title="ち" onmousedown="return redirect(this, 'https://www.weblio.jp/category/chi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ち</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/tsu" title="つ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/tsu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">つ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/te" title="て" onmousedown="return redirect(this, 'https://www.weblio.jp/category/te?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">て</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/to" title="と" onmousedown="return redirect(this, 'https://www.weblio.jp/category/to?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">と</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/na" title="な" onmousedown="return redirect(this, 'https://www.weblio.jp/category/na?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">な</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ni" title="に" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ni?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">に</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/nu" title="ぬ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/nu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぬ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ne" title="ね" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ne?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ね</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/no" title="の" onmousedown="return redirect(this, 'https://www.weblio.jp/category/no?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">の</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ha" title="は" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ha?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">は</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/hi" title="ひ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/hi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ひ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/fu" title="ふ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/fu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ふ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/he" title="へ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/he?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">へ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ho" title="ほ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ho?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ほ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ma" title="ま" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ma?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ま</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/mi" title="み" onmousedown="return redirect(this, 'https://www.weblio.jp/category/mi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">み</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/mu" title="む" onmousedown="return redirect(this, 'https://www.weblio.jp/category/mu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">む</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/me" title="め" onmousedown="return redirect(this, 'https://www.weblio.jp/category/me?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">め</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/mo" title="も" onmousedown="return redirect(this, 'https://www.weblio.jp/category/mo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">も</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ya" title="や" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ya?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">や</a></li><li class="item">&nbsp;</li><li class="item"><a class="character" href="https://www.weblio.jp/category/yu" title="ゆ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/yu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ゆ</a></li><li class="item">&nbsp;</li><li class="item"><a class="character" href="https://www.weblio.jp/category/yo" title="よ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/yo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">よ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ra" title="ら" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ra?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ら</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ri" title="り" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ri?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">り</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ru" title="る" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ru?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">る</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/re" title="れ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/re?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">れ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ro" title="ろ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ro?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ろ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/wa" title="わ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/wa?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">わ</a></li><li class="item">&nbsp;</li><li class="item"><a class="character" href="https://www.weblio.jp/category/wo" title="を" onmousedown="return redirect(this, 'https://www.weblio.jp/category/wo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">を</a></li><li class="item">&nbsp;</li><li class="item"><a class="character" href="https://www.weblio.jp/category/nn" title="ん" onmousedown="return redirect(this, 'https://www.weblio.jp/category/nn?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ん</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ga" title="が" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ga?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">が</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/gi" title="ぎ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/gi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぎ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/gu" title="ぐ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/gu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぐ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ge" title="げ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ge?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">げ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/go" title="ご" onmousedown="return redirect(this, 'https://www.weblio.jp/category/go?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ご</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/za" title="ざ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/za?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ざ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/zi" title="じ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/zi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">じ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/zu" title="ず" onmousedown="return redirect(this, 'https://www.weblio.jp/category/zu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ず</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ze" title="ぜ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ze?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぜ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/zo" title="ぞ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/zo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぞ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/da" title="だ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/da?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">だ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/di" title="ぢ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/di?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぢ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/du" title="づ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/du?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">づ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/de" title="で" onmousedown="return redirect(this, 'https://www.weblio.jp/category/de?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">で</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/do" title="ど" onmousedown="return redirect(this, 'https://www.weblio.jp/category/do?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ど</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/ba" title="ば" onmousedown="return redirect(this, 'https://www.weblio.jp/category/ba?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ば</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/bi" title="び" onmousedown="return redirect(this, 'https://www.weblio.jp/category/bi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">び</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/bu" title="ぶ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/bu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぶ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/be" title="べ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/be?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">べ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/bo" title="ぼ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/bo?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぼ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/pa" title="ぱ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/pa?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぱ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/pi" title="ぴ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/pi?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぴ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/pu" title="ぷ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/pu?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぷ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/pe" title="ぺ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/pe?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぺ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/po" title="ぽ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/po?wpm_category=sakuin&wpm_action=top&wpm_label=hiragana');">ぽ</a></li></ul></div><div class="tab-box-in"><ul class="list-text-character five-col"><li class="item"><a class="character" href="https://www.weblio.jp/category/a" title="Ａ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/a?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ａ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/b" title="Ｂ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/b?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｂ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/c" title="Ｃ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/c?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｃ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/d" title="Ｄ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/d?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｄ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/e" title="Ｅ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/e?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｅ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/f" title="Ｆ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/f?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｆ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/g" title="Ｇ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/g?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｇ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/h" title="Ｈ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/h?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｈ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/i" title="Ｉ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/i?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｉ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/j" title="Ｊ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/j?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｊ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/k" title="Ｋ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/k?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｋ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/l" title="Ｌ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/l?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｌ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/m" title="Ｍ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/m?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｍ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/n" title="Ｎ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/n?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｎ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/o" title="Ｏ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/o?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｏ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/p" title="Ｐ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/p?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｐ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/q" title="Ｑ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/q?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｑ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/r" title="Ｒ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/r?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｒ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/s" title="Ｓ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/s?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｓ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/t" title="Ｔ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/t?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｔ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/u" title="Ｕ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/u?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｕ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/v" title="Ｖ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/v?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｖ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/w" title="Ｗ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/w?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｗ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/x" title="Ｘ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/x?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｘ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/y" title="Ｙ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/y?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｙ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/z" title="Ｚ" onmousedown="return redirect(this, 'https://www.weblio.jp/category/z?wpm_category=sakuin&wpm_action=top&wpm_label=alphabet');">Ｚ</a></li></ul></div><div class="tab-box-in"><ul class="list-text-character five-col"><li class="item"><a class="character" href="https://www.weblio.jp/category/1" title="１" onmousedown="return redirect(this, 'https://www.weblio.jp/category/1?wpm_category=sakuin&wpm_action=top&wpm_label=number');">１</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/2" title="２" onmousedown="return redirect(this, 'https://www.weblio.jp/category/2?wpm_category=sakuin&wpm_action=top&wpm_label=number');">２</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/3" title="３" onmousedown="return redirect(this, 'https://www.weblio.jp/category/3?wpm_category=sakuin&wpm_action=top&wpm_label=number');">３</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/4" title="４" onmousedown="return redirect(this, 'https://www.weblio.jp/category/4?wpm_category=sakuin&wpm_action=top&wpm_label=number');">４</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/5" title="５" onmousedown="return redirect(this, 'https://www.weblio.jp/category/5?wpm_category=sakuin&wpm_action=top&wpm_label=number');">５</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/6" title="６" onmousedown="return redirect(this, 'https://www.weblio.jp/category/6?wpm_category=sakuin&wpm_action=top&wpm_label=number');">６</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/7" title="７" onmousedown="return redirect(this, 'https://www.weblio.jp/category/7?wpm_category=sakuin&wpm_action=top&wpm_label=number');">７</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/8" title="８" onmousedown="return redirect(this, 'https://www.weblio.jp/category/8?wpm_category=sakuin&wpm_action=top&wpm_label=number');">８</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/9" title="９" onmousedown="return redirect(this, 'https://www.weblio.jp/category/9?wpm_category=sakuin&wpm_action=top&wpm_label=number');">９</a></li><li class="item"><a class="character" href="https://www.weblio.jp/category/0" title="０" onmousedown="return redirect(this, 'https://www.weblio.jp/category/0?wpm_category=sakuin&wpm_action=top&wpm_label=number');">０</a></li><li class="item extra-col"><a class="character" href="https://www.weblio.jp/category/sign" title="記号" onmousedown="return redirect(this, 'https://www.weblio.jp/category/sign?wpm_category=sakuin&wpm_action=top&wpm_label=sign');">記号</a></li></ul></div>
+</div>
+<div class="tab-box" data-tab-box="3">
+<div class="tab-box-in"><ul class="list-text-character five-col"><li class="item"><a class="character" href="https://www.weblio.jp/ontology/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/?wpm_category=ontology&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E3%81%A7%E3%81%8D%E3%81%94%E3%81%A8_1" title="できごと" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E3%81%A7%E3%81%8D%E3%81%94%E3%81%A8_1?wpm_category=ontology&wpm_action=top&wpm_label=できごと_1');">できごと</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E7%97%85%E6%B0%97%E3%83%BB%E5%81%A5%E5%BA%B7_1" title="病気･健康" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E7%97%85%E6%B0%97%E3%83%BB%E5%81%A5%E5%BA%B7_1?wpm_category=ontology&wpm_action=top&wpm_label=病気・健康_1');">病気･健康</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E5%8B%95%E7%89%A9%E3%81%AB%E4%BB%98%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E5%90%8D%E5%89%8D_1" title="動物に付けられた名前" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E5%8B%95%E7%89%A9%E3%81%AB%E4%BB%98%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E5%90%8D%E5%89%8D_1?wpm_category=ontology&wpm_action=top&wpm_label=動物に付けられた名前_1');">動物に付けられた名前</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E6%9E%B6%E7%A9%BA%E3%81%AE%E5%90%8D%E5%89%8D_1" title="架空の名前" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E6%9E%B6%E7%A9%BA%E3%81%AE%E5%90%8D%E5%89%8D_1?wpm_category=ontology&wpm_action=top&wpm_label=架空の名前_1');">架空の名前</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E6%96%B9%E5%BC%8F%E3%83%BB%E8%A6%8F%E5%89%87_1" title="方式・規則" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E6%96%B9%E5%BC%8F%E3%83%BB%E8%A6%8F%E5%89%87_1?wpm_category=ontology&wpm_action=top&wpm_label=方式・規則_1');">方式・規則</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E8%89%B2_1" title="色" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E8%89%B2_1?wpm_category=ontology&wpm_action=top&wpm_label=色_1');">色</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E8%A3%BD%E5%93%81_1" title="製品" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E8%A3%BD%E5%93%81_1?wpm_category=ontology&wpm_action=top&wpm_label=製品_1');">製品</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E5%AE%97%E6%95%99%E3%83%BB%E4%BF%A1%E4%BB%B0_1" title="宗教・信仰" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E5%AE%97%E6%95%99%E3%83%BB%E4%BF%A1%E4%BB%B0_1?wpm_category=ontology&wpm_action=top&wpm_label=宗教・信仰_1');">宗教・信仰</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E5%BB%BA%E7%89%A9%E3%83%BB%E6%96%BD%E8%A8%AD_1" title="建物・施設" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E5%BB%BA%E7%89%A9%E3%83%BB%E6%96%BD%E8%A8%AD_1?wpm_category=ontology&wpm_action=top&wpm_label=建物・施設_1');">建物・施設</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E8%A9%95%E4%BE%A1%E3%83%BB%E7%B4%9A_1" title="評価・級" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E8%A9%95%E4%BE%A1%E3%83%BB%E7%B4%9A_1?wpm_category=ontology&wpm_action=top&wpm_label=評価・級_1');">評価・級</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E6%99%82%E9%96%93%E8%A1%A8%E7%8F%BE_1" title="時間表現" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E6%99%82%E9%96%93%E8%A1%A8%E7%8F%BE_1?wpm_category=ontology&wpm_action=top&wpm_label=時間表現_1');">時間表現</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E4%BA%BA%E5%90%8D_1" title="人名" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E4%BA%BA%E5%90%8D_1?wpm_category=ontology&wpm_action=top&wpm_label=人名_1');">人名</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E5%9C%B0%E5%9F%9F%E3%83%BB%E5%9C%B0%E5%90%8D_1" title="地域・地名" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E5%9C%B0%E5%9F%9F%E3%83%BB%E5%9C%B0%E5%90%8D_1?wpm_category=ontology&wpm_action=top&wpm_label=地域・地名_1');">地域・地名</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E7%B5%84%E7%B9%94%E3%83%BB%E5%9B%A3%E4%BD%93_1" title="組織・団体" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E7%B5%84%E7%B9%94%E3%83%BB%E5%9B%A3%E4%BD%93_1?wpm_category=ontology&wpm_action=top&wpm_label=組織・団体_1');">組織・団体</a></li><li class="item"><a class="character" href="https://www.weblio.jp/ontology/%E8%87%AA%E7%84%B6_1" title="自然" onmousedown="return redirect(this, 'https://www.weblio.jp/ontology/%E8%87%AA%E7%84%B6_1?wpm_category=ontology&wpm_action=top&wpm_label=自然_1');">自然</a></li></ui></div>
+</div>
+<div class="tab-box" data-tab-box="4">
+<div class="tab-box-in"><ul class="list-text-character two-col"><li class="item"><a class="character" href="https://www.weblio.jp/phrase/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/?wpm_category=phrase&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/phrase/%E6%95%85%E4%BA%8B%E6%88%90%E8%AA%9E_1" title="故事成語" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/%E6%95%85%E4%BA%8B%E6%88%90%E8%AA%9E_1?wpm_category=phrase&wpm_action=top&wpm_label=故事成語_1');">故事成語</a></li><li class="item"><a class="character" href="https://www.weblio.jp/phrase/%E3%81%93%E3%81%A8%E3%82%8F%E3%81%96_1" title="ことわざ" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/%E3%81%93%E3%81%A8%E3%82%8F%E3%81%96_1?wpm_category=phrase&wpm_action=top&wpm_label=ことわざ_1');">ことわざ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/phrase/%E6%85%A3%E7%94%A8%E5%8F%A5_1" title="慣用句" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/%E6%85%A3%E7%94%A8%E5%8F%A5_1?wpm_category=phrase&wpm_action=top&wpm_label=慣用句_1');">慣用句</a></li><li class="item"><a class="character" href="https://www.weblio.jp/phrase/%E5%9B%9B%E5%AD%97%E7%86%9F%E8%AA%9E_1" title="四字熟語" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/%E5%9B%9B%E5%AD%97%E7%86%9F%E8%AA%9E_1?wpm_category=phrase&wpm_action=top&wpm_label=四字熟語_1');">四字熟語</a></li><li class="item"><a class="character" href="https://www.weblio.jp/phrase/%E5%8F%A4%E5%85%B8%E3%81%AE%E8%A8%80%E8%91%89_1" title="古典の言葉" onmousedown="return redirect(this, 'https://www.weblio.jp/phrase/%E5%8F%A4%E5%85%B8%E3%81%AE%E8%A8%80%E8%91%89_1?wpm_category=phrase&wpm_action=top&wpm_label=古典の言葉_1');">古典の言葉</a></li></ui></div>
+</div>
+<div class="tab-box" data-tab-box="5">
+<div class="tab-box-in"><ul class="list-text-character two-col"><li class="item"><a class="character" href="https://www.weblio.jp/word-group/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/?wpm_category=word-group&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84_1" title="スポーツ" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84_1?wpm_category=word-group&wpm_action=top&wpm_label=スポーツ_1');">スポーツ</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9_1" title="ビジネス" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9_1?wpm_category=word-group&wpm_action=top&wpm_label=ビジネス_1');">ビジネス</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E3%83%98%E3%83%AB%E3%82%B9%E3%82%B1%E3%82%A2_1" title="ヘルスケア" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E3%83%98%E3%83%AB%E3%82%B9%E3%82%B1%E3%82%A2_1?wpm_category=word-group&wpm_action=top&wpm_label=ヘルスケア_1');">ヘルスケア</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E9%9F%B3_1" title="音" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E9%9F%B3_1?wpm_category=word-group&wpm_action=top&wpm_label=音_1');">音</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%AD%A6%E5%95%8F_1" title="学問" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%AD%A6%E5%95%8F_1?wpm_category=word-group&wpm_action=top&wpm_label=学問_1');">学問</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%B0%97%E8%B1%A1_1" title="気象" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%B0%97%E8%B1%A1_1?wpm_category=word-group&wpm_action=top&wpm_label=気象_1');">気象</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E7%B5%8C%E6%B8%88_4" title="経済" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E7%B5%8C%E6%B8%88_4?wpm_category=word-group&wpm_action=top&wpm_label=経済_4');">経済</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%BB%BA%E8%A8%AD_1" title="建設" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%BB%BA%E8%A8%AD_1?wpm_category=word-group&wpm_action=top&wpm_label=建設_1');">建設</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E8%A8%80%E8%91%89_1" title="言葉" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E8%A8%80%E8%91%89_1?wpm_category=word-group&wpm_action=top&wpm_label=言葉_1');">言葉</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E4%BA%A4%E9%80%9A_1" title="交通" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E4%BA%A4%E9%80%9A_1?wpm_category=word-group&wpm_action=top&wpm_label=交通_1');">交通</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E8%88%AA%E7%A9%BA_1" title="航空" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E8%88%AA%E7%A9%BA_1?wpm_category=word-group&wpm_action=top&wpm_label=航空_1');">航空</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%B7%A5%E6%A5%AD_4" title="工業" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%B7%A5%E6%A5%AD_4?wpm_category=word-group&wpm_action=top&wpm_label=工業_4');">工業</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E7%94%A3%E6%A5%AD_4" title="産業" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E7%94%A3%E6%A5%AD_4?wpm_category=word-group&wpm_action=top&wpm_label=産業_4');">産業</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6_3" title="自然科学" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6_3?wpm_category=word-group&wpm_action=top&wpm_label=自然科学_3');">自然科学</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E7%A4%BE%E4%BC%9A_4" title="社会" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E7%A4%BE%E4%BC%9A_4?wpm_category=word-group&wpm_action=top&wpm_label=社会_4');">社会</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%AE%97%E6%95%99_1" title="宗教" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%AE%97%E6%95%99_1?wpm_category=word-group&wpm_action=top&wpm_label=宗教_1');">宗教</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%83%85%E5%A0%B1_6" title="情報" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%83%85%E5%A0%B1_6?wpm_category=word-group&wpm_action=top&wpm_label=情報_6');">情報</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%A4%8D%E7%89%A9_2" title="植物" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%A4%8D%E7%89%A9_2?wpm_category=word-group&wpm_action=top&wpm_label=植物_2');">植物</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E9%A3%9F%E7%89%A9_1" title="食物" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E9%A3%9F%E7%89%A9_1?wpm_category=word-group&wpm_action=top&wpm_label=食物_1');">食物</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E4%BA%BA%E6%96%87_1" title="人文" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E4%BA%BA%E6%96%87_1?wpm_category=word-group&wpm_action=top&wpm_label=人文_1');">人文</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%94%BF%E6%B2%BB_4" title="政治" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%94%BF%E6%B2%BB_4?wpm_category=word-group&wpm_action=top&wpm_label=政治_4');">政治</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E7%94%9F%E6%B4%BB_1" title="生活" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E7%94%9F%E6%B4%BB_1?wpm_category=word-group&wpm_action=top&wpm_label=生活_1');">生活</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E7%94%9F%E7%89%A9_4" title="生物" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E7%94%9F%E7%89%A9_4?wpm_category=word-group&wpm_action=top&wpm_label=生物_4');">生物</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%9C%B0%E7%90%86_5" title="地理" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%9C%B0%E7%90%86_5?wpm_category=word-group&wpm_action=top&wpm_label=地理_5');">地理</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E9%9B%BB%E6%B0%97_1" title="電気" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E9%9B%BB%E6%B0%97_1?wpm_category=word-group&wpm_action=top&wpm_label=電気_1');">電気</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%96%87%E5%8C%96_5" title="文化" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%96%87%E5%8C%96_5?wpm_category=word-group&wpm_action=top&wpm_label=文化_5');">文化</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%B3%95_4" title="法" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%B3%95_4?wpm_category=word-group&wpm_action=top&wpm_label=法_4');">法</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%8A%B4%E5%83%8D_1" title="労働" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%8A%B4%E5%83%8D_1?wpm_category=word-group&wpm_action=top&wpm_label=労働_1');">労働</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E6%9C%8D%E9%A3%BE_2" title="服飾" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E6%9C%8D%E9%A3%BE_2?wpm_category=word-group&wpm_action=top&wpm_label=服飾_2');">服飾</a></li><li class="item"><a class="character" href="https://www.weblio.jp/word-group/%E5%8C%96%E5%AD%A6_9" title="化学" onmousedown="return redirect(this, 'https://www.weblio.jp/word-group/%E5%8C%96%E5%AD%A6_9?wpm_category=word-group&wpm_action=top&wpm_label=化学_9');">化学</a></li></ui></div>
+</div>
+<div class="tab-box" data-tab-box="6">
+<div class="tab-box-in"><ul class="list-text-character two-col"><li class="item"><a class="character" href="https://www.weblio.jp/parts-of-speech/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/parts-of-speech/?wpm_category=parts-of-speech&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/parts-of-speech/%E5%8B%95%E8%A9%9E_1" title="動詞" onmousedown="return redirect(this, 'https://www.weblio.jp/parts-of-speech/%E5%8B%95%E8%A9%9E_1?wpm_category=parts-of-speech&wpm_action=top&wpm_label=動詞_1');">動詞</a></li><li class="item"><a class="character" href="https://www.weblio.jp/parts-of-speech/%E4%BF%AE%E9%A3%BE%E8%AA%9E_1" title="修飾語" onmousedown="return redirect(this, 'https://www.weblio.jp/parts-of-speech/%E4%BF%AE%E9%A3%BE%E8%AA%9E_1?wpm_category=parts-of-speech&wpm_action=top&wpm_label=修飾語_1');">修飾語</a></li><li class="item"><a class="character" href="https://www.weblio.jp/parts-of-speech/%E4%BD%93%E8%A8%80_1" title="体言" onmousedown="return redirect(this, 'https://www.weblio.jp/parts-of-speech/%E4%BD%93%E8%A8%80_1?wpm_category=parts-of-speech&wpm_action=top&wpm_label=体言_1');">体言</a></li></ui></div>
+</div>
+<div class="tab-box" data-tab-box="7">
+<div class="tab-box-in"><ul class="list-text-character two-col"><li class="item"><a class="character" href="https://www.weblio.jp/masterpieces/" title="すべて" onmousedown="return redirect(this, 'https://www.weblio.jp/masterpieces/?wpm_category=masterpiece&wpm_action=top&wpm_label=all');">すべて</a></li><li class="item"><a class="character" href="https://www.weblio.jp/masterpieces/" title="法令関連" onmousedown="return redirect(this, 'https://www.weblio.jp/masterpieces/?wpm_category=masterpiece&wpm_action=top&wpm_label=horei');">法令関連</a></li><li class="item"><a class="character" href="https://www.weblio.jp/masterpieces/" title="教典・経典" onmousedown="return redirect(this, 'https://www.weblio.jp/masterpieces/?wpm_category=masterpiece&wpm_action=top&wpm_label=kyoten');">教典・経典</a></li><li class="item"><a class="character" href="https://www.weblio.jp/masterpieces/" title="文学作品" onmousedown="return redirect(this, 'https://www.weblio.jp/masterpieces/?wpm_category=masterpiece&wpm_action=top&wpm_label=bungaku');">文学作品</a></li></ul></div>
+</div>
+</div>
+</div>
+</div>
+<div class="box-top-01">
+<div class="box-title-01 box-title-center">
+<h2 class="title-main title-bell">お知らせ</h2>
+</div>
+<a class="twitter-timeline" data-lang="en" data-height="450" data-dnt="true" data-chrome="nofooter transparent" href="https://twitter.com/www_weblio?ref_src=twsrc%5Etfw">Tweets by weblio</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="box-top-01">
+<div class="box-application">
+<div class="item">
+<a class="application app-01" href="https://play.google.com/store/apps/details?id=jp.weblio.smpapp.www" target="_blank" rel="noopener noreferrer">
+<figure class="icon">
+<img src="https://weblio.hs.llnwd.net/e7/img/www/ico_application_01.png" width="60" height="60" alt="Weblio国語辞典アプリ" loading="lazy">
+</figure>
+<p class="text">Weblio<br>国語辞典アプリ</p>
+</a>
+</div>
+<div class="item">
+<a class="application app-02" href="https://play.google.com/store/apps/details?id=jp.weblio.smpapp.ejje" target="_blank" rel="noopener noreferrer">
+<figure class="icon">
+<img src="https://weblio.hs.llnwd.net/e7/img/www/ico_application_02.png" width="76" height="76" alt="Weblio英和辞典・和英辞典アプリ" loading="lazy">
+</figure>
+<p class="text">Weblio<br>英和辞典・和英辞典アプリ</p>
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-container">
+<p class="footer-title">Weblioをご覧のユーザーのみなさまへ</p>
+<p class="footer-text">
+Weblioでは、統合型辞書検索のほかに、「類語辞典」や「英和・和英辞典」、「手話辞典」を利用することができます。辞書、類語辞典、英和・和英辞典、手話辞典は連動しており、それぞれの検索結果へのリンクが表示されます。また、解説記事の本文中では、Weblioに登録されている他のキーワードへのリンクが自動的に貼られます。解説文で登場した分からないキーワードや気になるキーワードは、1クリックで検索結果を表示することができます。
+</p>
+</div>
+</div>
+
+<div class="footer-inner">
+<div class="footer-container">
+<p class="footer-title">Weblio辞書のカテゴリ一覧</p>
+<ul class="footer-list">
+<li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/" title="カテゴリトップ" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/?wpm_category=cat&wpm_action=footer&wpm_label=cat');">カテゴリトップ</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/ship" title="船" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/ship?wpm_category=cat&wpm_action=footer&wpm_label=ship');">船</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/healthcare" title="ヘルスケア" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/healthcare?wpm_category=cat&wpm_action=footer&wpm_label=healthcare');">ヘルスケア</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/dialect" title="方言" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/dialect?wpm_category=cat&wpm_action=footer&wpm_label=dialect');">方言</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/business" title="ビジネス" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/business?wpm_category=cat&wpm_action=footer&wpm_label=business');">ビジネス</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/engineering" title="工学" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/engineering?wpm_category=cat&wpm_action=footer&wpm_label=engineering');">工学</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/hobby" title="趣味" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/hobby?wpm_category=cat&wpm_action=footer&wpm_label=hobby');">趣味</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/dictionary" title="辞書・百科事典" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/dictionary?wpm_category=cat&wpm_action=footer&wpm_label=dictionary');">辞書・百科事典</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/occupation" title="業界用語" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/occupation?wpm_category=cat&wpm_action=footer&wpm_label=occupation');">業界用語</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/architecture" title="建物・不動産" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/architecture?wpm_category=cat&wpm_action=footer&wpm_label=architecture');">建物・不動産</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/sports" title="スポーツ" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/sports?wpm_category=cat&wpm_action=footer&wpm_label=sports');">スポーツ</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/sub-area/people/tltdb" title="タレント出身地検索" onmousedown="return redirect(this, 'https://www.weblio.jp/sub-area/people/tltdb?wpm_category=tltdb&wpm_action=footer&wpm_label=area');">タレント出身地検索</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/computer" title="コンピュータ" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/computer?wpm_category=cat&wpm_action=footer&wpm_label=computer');">コンピュータ</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/academic" title="学問" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/academic?wpm_category=cat&wpm_action=footer&wpm_label=academic');">学問</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/nature" title="生物" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/nature?wpm_category=cat&wpm_action=footer&wpm_label=nature');">生物</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/info/dict_list.jsp" title="登録辞書一覧" onmousedown="return redirect(this, 'https://www.weblio.jp/info/dict_list.jsp?wpm_category=dict&wpm_action=footer&wpm_label=dictlist');">登録辞書一覧</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/train" title="電車" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/train?wpm_category=cat&wpm_action=footer&wpm_label=train');">電車</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/culture" title="文化" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/culture?wpm_category=cat&wpm_action=footer&wpm_label=culture');">文化</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/food" title="食品" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/food?wpm_category=cat&wpm_action=footer&wpm_label=food');">食品</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/info/partner_logo.jsp" title="参加元一覧" onmousedown="return redirect(this, 'https://www.weblio.jp/info/partner_logo.jsp?wpm_category=dict&wpm_action=footer&wpm_label=dictlogo');">参加元一覧</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/automobile" title="自動車・バイク" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/automobile?wpm_category=cat&wpm_action=footer&wpm_label=automobile');">自動車・バイク</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/life" title="生活" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/life?wpm_category=cat&wpm_action=footer&wpm_label=life');">生活</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/cat/people" title="人名" onmousedown="return redirect(this, 'https://www.weblio.jp/cat/people?wpm_category=cat&wpm_action=footer&wpm_label=people');">人名</a></p></li><li><p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/column/cat/" title="金融コラム一覧" onmousedown="return redirect(this, 'https://www.weblio.jp/column/cat/?wpm_category=column&wpm_action=footer&wpm_label=column');">金融コラム一覧</a></p></li></ul>
+</div>
+</div>
+
+<div class="footer-inner">
+<div class="footer-container">
+<p class="footer-title">Weblio辞書をご利用の方へ</p>
+<ul class="footer-list">
+<li>
+<p class="footer-text"><a class="footer-link" href="https://help.weblio.jp/www/jpdictionary/j_info/j_i_cdictionary/h0019" title="Weblio辞書のご案内"
+ onmousedown="return redirect(this, 'https://help.weblio.jp/www/jpdictionary/j_info/j_i_cdictionary/h0019?wpm_category=www&wpm_action=footer&wpm_label=guide');">Weblio辞書のご案内</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://help.weblio.jp/www/jpdictionary/j_guide/j_g_cdictionary/h0026" title="ご利用方法"
+ onmousedown="return redirect(this, 'https://help.weblio.jp/www/jpdictionary/j_guide/j_g_cdictionary/h0026?wpm_category=www&wpm_action=footer&wpm_label=guide');">ご利用方法</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://help.weblio.jp/www" title="ヘルプ"
+ onmousedown="return redirect(this, 'https://help.weblio.jp/www?wpm_category=www&wpm_action=footer&wpm_label=guide');">ヘルプ</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/info/terms.jsp" title="ご利用規約"
+ onmousedown="return redirect(this, 'https://www.weblio.jp/info/terms.jsp?wpm_category=guide&wpm_action=footer&wpm_label=terms');">ご利用規約</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/info/privacy.jsp" title="プライバシーポリシー"
+ onmousedown="return redirect(this, 'https://www.weblio.jp/info/privacy.jsp?wpm_category=guide&wpm_action=footer&wpm_label=privacy');">プライバシーポリシー</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://help.weblio.jp/feedback" title="お問い合わせ"
+ onmousedown="return redirect(this, 'https://help.weblio.jp/feedback?wpm_category=www&wpm_action=footer&wpm_label=guide');">お問い合わせ</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/info/sitemap.jsp" title="サイトマップ"
+ onmousedown="return redirect(this, 'https://www.weblio.jp/info/sitemap.jsp?wpm_category=guide&wpm_action=footer&wpm_label=sitemap');">サイトマップ</a></p>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="footer-inner">
+<div class="footer-container">
+<p class="footer-title">運営会社の紹介</p>
+<ul class="footer-list">
+<li>
+<p class="footer-text"><a class="footer-link" href="https://gras-group.co.jp/" title="運営会社サイト" 
+ onmousedown="return redirect(this, 'https://gras-group.co.jp/?wpm_category=www&wpm_action=footer&wpm_label=official');">運営会社サイト</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://gras-group.co.jp/company/" title="会社情報" 
+ onmousedown="return redirect(this, 'https://gras-group.co.jp/company/?wpm_category=www&wpm_action=footer&wpm_label=official');">会社情報</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://gras-group.co.jp/careers/" title="採用情報"
+ onmousedown="return redirect(this, 'https://gras-group.co.jp/careers/?wpm_category=www&wpm_action=footer&wpm_label=recruit');">採用情報</a></p></li>
+</ul>
+</div>
+</div>
+
+<div class="footer-inner">
+<div class="footer-container">
+<p class="footer-title">ウェブリオのサービス</p>
+<div class="footer-list">
+
+<ul>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://www.weblio.jp/" title="Weblio国語辞典"
+ onmousedown="return redirect(this, 'https://www.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">Weblio国語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://thesaurus.weblio.jp/" title="類語・対義語辞典"
+ onmousedown="return redirect(this, 'https://thesaurus.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">類語・対義語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://ejje.weblio.jp/" title="英和辞典・和英辞典"
+ onmousedown="return redirect(this, 'https://ejje.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">英和辞典・和英辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://translate.weblio.jp/" title="Weblio 翻訳"
+ onmousedown="return redirect(this, 'https://translate.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">Weblio翻訳</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://cjjc.weblio.jp/" title="中国語辞典"
+ onmousedown="return redirect(this, 'https://cjjc.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">中国語辞典</a></p>
+</li>
+</ul>
+
+<ul>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://kjjk.weblio.jp/" title="韓国語辞典"
+ onmousedown="return redirect(this, 'https://kjjk.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">韓国語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://fjjf.weblio.jp/" title="フランス語辞典"
+ onmousedown="return redirect(this, 'https://fjjf.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">フランス語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://njjn.weblio.jp/" title="インドネシア語辞典"
+ onmousedown="return redirect(this, 'https://njjn.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">インドネシア語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://tjjt.weblio.jp/" title="タイ語辞典"
+ onmousedown="return redirect(this, 'https://tjjt.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">タイ語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://vjjv.weblio.jp/" title="ベトナム語辞典"
+ onmousedown="return redirect(this, 'https://vjjv.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">ベトナム語辞典</a></p>
+</li>
+</ul>
+
+<ul>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://kobun.weblio.jp/" title="古語辞典"
+ onmousedown="return redirect(this, 'https://kobun.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">古語辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://shuwa.weblio.jp/" title="手話辞典"
+ onmousedown="return redirect(this, 'https://shuwa.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">手話辞典</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="http://www.sophia-it.com/" title="IT用語辞典バイナリ"
+ onmousedown="return redirect(this, 'http://www.sophia-it.com?wpm_category=www&wpm_action=footer&wpm_label=service');">IT用語辞典バイナリ</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://eikaiwa.weblio.jp/column/" title="Weblio英会話コラム"
+ onmousedown="return redirect(this, 'https://eikaiwa.weblio.jp/column/?wpm_category=www&wpm_action=footer&wpm_label=service');">英会話コラム</a></p>
+</li>
+</ul>
+
+<ul>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://eikaiwa.weblio.jp/" title="Weblio英会話"
+ onmousedown="return redirect(this, 'https://eikaiwa.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">Weblio英会話</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://qa.weblio.jp/" title="英語の質問箱"
+ onmousedown="return redirect(this, 'https://qa.weblio.jp/?wpm_category=www&wpm_action=footer&wpm_label=service');">英語の質問箱</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://uwl.weblio.jp/vocab-index" title="語彙力診断"
+ onmousedown="return redirect(this, 'https://uwl.weblio.jp/vocab-index?wpm_category=www&wpm_action=footer&wpm_label=service');">語彙力診断</a></p>
+</li>
+<li>
+<p class="footer-text"><a class="footer-link" href="https://uwl.weblio.jp/speaking-test" title="スピーキングテスト"
+ onmousedown="return redirect(this, 'https://uwl.weblio.jp/speaking-test?wpm_category=www&wpm_action=footer&wpm_label=service');">スピーキングテスト</a></p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="footer-copyright">
+<p class="copyright">&copy;2021&nbsp;GRAS Group, Inc.</p>
+<ul>
+<li><a class="rss" href="https://www.weblio.jp/index.rdf" title="RSS"><img src="https://weblio.hs.llnwd.net/e7/img/www/ico_rss@2x.png" alt="RSS"></a></li>
+<li class="icon-dice"><span class="server6"></span></li>
+<li class="icon-dice"><span class="server1"></span></li>
+</ul>
+</div>
+
+</footer>
+<script type="text/javascript" src="https://weblio.hs.llnwd.net/e7/script/include/free_or_premium_registration_cookie.js?tst=2021080616"></script>
+<script>
+deleteFreeOrPremiumRegistrationCookie(false, 'conversion_free_reg03ee56fc5f60ec2332bef51eb777a36d', 'weblio.jp');
+deleteFreeOrPremiumRegistrationCookie(false, 'conversion_premium_reg03ee56fc5f60ec2332bef51eb777a36d', 'weblio.jp');
+</script>
+
+</div>
+</body>
+</html>

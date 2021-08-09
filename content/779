@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+      <title>
+      Важные события и последние новости в мире за сегодня -
+                                          Redtram Новости                              </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="IddHsDXCR7aKoOioreJwEsldjxErfrp6ble4zC-BpyM" />
+
+  
+      <meta name="description" content="Последние и важные новости мира сегодня. Все главные и ключевые новости. Читайте все основные новости по категориям на одной странице!">
+  
+  
+  
+                    <link rel="alternate" hreflang="uk" href="https://ua.redtram.com/">
+                        <link rel="alternate" hreflang="kk" href="https://kz.redtram.com/">
+            
+      <link rel="canonical" href="https://rus.redtram.com/">
+  
+  <link rel="preconnect" href="https://mc.webvisor.org">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://stats.g.doubleclick.net">
+  <link rel="dns-prefetch" href="https://mc.webvisor.org">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://stats.g.doubleclick.net">
+
+  
+
+      <link href="//img.redtram.com/favicon.png" rel="shortcut icon">
+    <link href="//img.redtram.com/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="/news-catalog/public/css/main-2.css?i=56">
+
+      <script src="/news-catalog/public/js/merged/main-with-jquery-3.merged.js?i=2"></script>
+    <script>
+    (function() {
+        /*
+         * Скрываем теги <time> with datetime attribute
+         */
+        var style = document.createElement('style');
+            style.innerHTML = 'time[datetime] { visibility: hidden; };';
+        document.head.append(style);
+    })();
+
+      $(document).ready(function() {
+          var i, j, more_cnt, w = 0, first_load = true, menu = [];
+
+          // Show/Hide menu for mobile devices
+          $('#menu-toggle').on('click', function() {
+              $('body').toggleClass('displacement');
+              $('#nav').toggleClass('displacement');
+          });
+
+          $('html').on('click', function() {
+              $('#menu-more').addClass('hidden');
+          });
+
+          $('#search-toggle').on('click', function() {
+              $(this).toggleClass('pressed');
+              $('#header').toggleClass('search-pressed');
+          });
+
+          // Trigger resize for initialization
+          $(window).trigger('resize');
+
+          $('time[datetime]').
+            each(function(k, v) {
+                try {
+                    if (!$(v).attr('format') || !$(v).attr('datetime'))
+                        return true;
+                    var f = $(v).attr('format'),
+                        d = $(v).attr('datetime'),
+                        d_ = new Date(Date.parse(d.replace(' ', 'T') + '+03:00'));
+
+                    if (d_ == 'Invalid Date')
+                        return true;
+
+                    var dd = d_.getDate() > 9 ? d_.getDate() : '0'+ d_.getDate(),
+                        mm = Number(d_.getMonth()+1) > 9 ? ''+Number(d_.getMonth()+1) : '0'+ Number(d_.getMonth()+1),
+                        yyyy = d_.getFullYear();
+
+                    var HH = d_.getHours() > 9 ? d_.getHours() : '0'+ d_.getHours(),
+                        MM = d_.getMinutes() > 9 ? d_.getMinutes() : '0'+ d_.getMinutes();
+
+                    f = f.replace('dd', dd);
+                    f = f.replace('mm', mm);
+                    f = f.replace('yyyy', yyyy);
+                    f = f.replace('HH', HH);
+                    f = f.replace('MM', MM);
+
+                    $(v).html(f);
+                } catch (e) { console.log(e); }
+            }).
+            css('visibility', 'visible')
+        ;
+      });
+  </script>
+
+  
+          <script data-ad-client="ca-pub-7020121108677267" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+  </head>
+<body class="">
+      <!--3FC5A70E2D3B5A03655CE332AA3825AF-->
+    
+  <header id="header" class="wrapper">
+          <a class="logo" href="/">RedTram</a>
+              <ul class="client">
+        <li>
+          <a class="buy-traffic" target="_blank" rel="noopener"
+             href="https://client.redtram.com/partners/">Заработок на сайте</a>
+        </li>
+        <li>
+          <a class="sale-traffic" target="_blank" rel="noopener"
+             href="https://client.redtram.com/markets/">Покупка трафика</a>
+        </li>
+        <li>
+          <a class="traffic-exchange" target="_blank" rel="noopener"
+             href="https://client.redtram.com/exchange/">Обмен трафиком</a>
+        </li>
+      </ul>
+        <div id="menu-toggle" class="menu-toggle"></div>
+          <a class="login" href="//client.redtram.com/" target="_blank" rel="noopener">Вход</a>
+    
+          <a class="fb-button" href="https://www.facebook.com/client.redtram" target="_blank" rel="nofollow noopener"></a>
+    
+    <div id="search-toggle" class="search-toggle"></div>
+    <form id="search" class="search " method="get" action="/search/">
+      <fieldset>
+        <input type="text" name="q" value="" placeholder="Поиск" aria-label="Поиск">
+        <button type="submit">Найти</button>
+      </fieldset>
+    </form>
+  </header>
+
+  <div id="nav" class="nav wrapper">
+    <ul class="menu ">
+                        <li class="">
+                <a href="/news/politics/">Политика</a>
+                </li>
+                        <li class="">
+                <a href="/news/community/">Общество</a>
+                </li>
+                        <li class="">
+                <a href="/news/incidents/">События</a>
+                </li>
+                        <li class="">
+                <a href="/news/economic-business/">Экономика</a>
+                </li>
+                        <li class="">
+                <a href="/news/technology/">Наука и IT</a>
+                </li>
+                        <li class="">
+                <a href="/news/showbiz/">Шоу бизнес</a>
+                </li>
+                        <li class="">
+                <a href="/news/sport/">Спорт</a>
+                </li>
+                        <li class="">
+                <a href="/lifestyle/">Стиль жизни</a>
+                </li>
+          </ul>
+
+          <ul class="breadcrumbs wrapper">
+        <li><a href="/">Главная</a></li>
+              </ul>
+    
+              
+          <ul class="languages ">
+                  <li>
+            <a class="ru" href="//rus.redtram.com/">RU</a>
+          </li>
+                      <li>
+              <a class="ua" href="//ua.redtram.com/">UA</a>
+            </li>
+                    <li>
+            <a class="kz" href="//kz.redtram.com/">KZ</a>
+          </li>
+                              </ul>
+      </div>
+
+  
+      <section class="s-main">
+  <div class="wrapper">
+    <div class="b-content">
+      <div class="b-flex">
+        <div id="main-observable" class="b-flex-2">
+          <div class="b-container">
+                        <div class="b-news big-hor">
+              <p class="n-image">
+                <a href="/news/community/604613925/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604613925s.jpg"
+                       width="200" height="200"
+                       alt="Столицу граничащей с Таджикистаном афганской провинции захватили талибы">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/news/community/604613925/">Столицу граничащей с Таджикистаном афганской провинции захватили талибы</a>
+              </p>
+              <p class="n-desc">
+                  КАБУЛ. КАЗИНФОРМ - Движение "Талибан" объявило в воскресенье о захвате города Талукан, административного центра северной провинц
+              </p>
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 00:25">09.08.21, 00:25</time>
+                <a href="/sources/inform.kz/" target="_blank">inform.kz</a>
+              </div>
+            </div>
+
+            <h2>Важные новости сегодня</h2>
+            <div class="b-flex">
+                                            <div class="b-flex-1">
+                  <ul>
+                                              <li class="b-news small-hor">
+                          <p class="n-title">
+                            <time format="HH:MM" datetime="2021-08-09 02:54">02:54</time>
+                            <a href="/news/sport/604615426/">Обыгравшая Аверину израильская гимнастка отреагировала на протесты россиян</a>
+                          </p>
+                          <p class="n-desc">
+                              Израильская гимнастка Линой Ашрам отреагировала на протесты...
+                          </p>
+                        </li>
+                                              <li class="b-news small-hor">
+                          <p class="n-title">
+                            <time format="HH:MM" datetime="2021-08-09 00:25">00:25</time>
+                            <a href="/news/incidents/604613923/">На Актюбинском заводе ферросплавов возник пожар</a>
+                          </p>
+                          <p class="n-desc">
+                              АКТОБЕ. КАЗИНФОРМ - На заводе в Актобе возник пожар, передает...
+                          </p>
+                        </li>
+                                        </ul>
+                </div>
+              
+                                            <div class="b-flex-1">
+                  <ul>
+                                              <li class="b-news small-hor">
+                          <p class="n-title">
+                            <time format="HH:MM" datetime="2021-08-08 22:51">22:51</time>
+                            <a href="/news/community/604613575/">Единственный способ защиты от мутаций коронавируса назвали в ВОЗ</a>
+                          </p>
+                          <p class="n-desc">
+                              Только вакцинация способна защитить человека от мутаций...
+                          </p>
+                        </li>
+                                              <li class="b-news small-hor">
+                          <p class="n-title">
+                            <time format="HH:MM" datetime="2021-08-08 22:22">22:22</time>
+                            <a href="/lifestyle/604613536/">Названы опасные для здоровья витамины</a>
+                          </p>
+                          <p class="n-desc">
+                              Переизбыток некоторых витаминов может нанести вред организму,...
+                          </p>
+                        </li>
+                                        </ul>
+                </div>
+                          </div>
+          </div>
+        </div>
+        <div id="main-observer" class="b-flex-1">
+          <div class="b-container">
+            <div class="b-latest-news">
+              <h1>Последние новости</h1>
+              <ul class="latest-news">
+                                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:26">13:26</time>
+                    <a href="//rus.redtram.com/go/604629784/">Кумар Аксакалов привился Cпутником-V</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:26">13:26</time>
+                    <a href="//rus.redtram.com/go/604629782/">Облыс әкімі коронавирусқа қарсы екпе салдырды</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:26">13:26</time>
+                    <a href="//rus.redtram.com/go/604629780/">Дождь, град, шквалистый ветер: какая погода будет в СКО в ближайшие дни</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629746/">"Дельта-штамм" может стать конечной точкой вируса – профессор</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629744/">Внесены изменения в правила прикомандирования госслужащих РК</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629743/">"Рождены, чтобы побеждать". Parimatch стал официальным партнером "Челси"</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629737/">На грани закрытия - еще один казахстанский вуз лишен лицензии</a>
+                  </li>
+                                  <li class="">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629735/">Конверт с тремя пулями адресовали Папе Римскому</a>
+                  </li>
+                                  <li class="hidden">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629734/">"Белое платье, белая фата" - невеста сбежала со свадьбы в Павлодаре, испугавшись штрафа</a>
+                  </li>
+                                  <li class="hidden">
+                    <time format="HH:MM" datetime="2021-08-09 13:24">13:24</time>
+                    <a href="/news/technology/604629732/">Аким СКО привился от коронавируса</a>
+                  </li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="b-flex-1">
+          <div class="b-container">
+            <div class="b-news-rating">
+              <h3>Популярные новости</h3>
+              <ul class="news-rating">
+                                      <li>
+                      <a href="/lifestyle/604461119/" target="_blank" rel="nofollow">В Центре восстановления леопарда на Кавказе родились два котёнка</a>
+                    </li>
+                                      <li>
+                      <a href="/news/community/604550402/" target="_blank" rel="nofollow">Минприроды провело кадровые перестановки в сочинском нацпарке и заповеднике "Утриш"</a>
+                    </li>
+                                      <li>
+                      <a href="/news/community/604610027/" target="_blank" rel="nofollow">Площадь особо охраняемых природных территорий Кубани увеличили на 2,5 тысячи гектаров</a>
+                    </li>
+                                      <li>
+                      <a href="/news/economic-business/604612626/" target="_blank" rel="nofollow">НАБУ-Кавказ принял участие в совещании по строительству курорта "Лаго-Наки"</a>
+                    </li>
+                                      <li>
+                      <a href="/lifestyle/604532283/" target="_blank" rel="nofollow">В будущем COVID-19 будет восприниматься как обычный насморк</a>
+                    </li>
+                                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- adapt -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7020121108677267"
+           data-ad-slot="6290210750"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({ });
+      </script>
+      </div>
+</section>
+  
+  <section class="s-events">
+  <div class="wrapper">
+    <div class="b-title">
+      <h2>События в стране</h2>
+                                  <a class="btn-category-news" href="/news/politics/">Новости мира</a>
+            </div>
+    <div class="b-content">
+      <div class="b-flex">
+
+                  <div class="b-flex-1">
+          <div class="b-container">
+
+            <div class="b-news big-ver">
+              <p class="n-image">
+                <a href="//rus.redtram.com/go/604629784/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604629784s.jpg"
+                       width="200" height="200"
+                       alt="Кумар Аксакалов привился Cпутником-V">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="//rus.redtram.com/go/604629784/">Кумар Аксакалов привился Cпутником-V</a>
+              </p>
+              <p class="n-desc">
+                  
+              </p>
+
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:26">09.08.21, 13:26</time>
+                <a href="/sources/7152.kz/" target="_blank">7152.kz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                  <div class="b-flex-1">
+          <div class="b-container">
+            <ul>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="//rus.redtram.com/go/604629782/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629782s.jpg"
+                             width="70" height="70"
+                             alt="Облыс әкімі коронавирусқа қарсы екпе салдырды">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="//rus.redtram.com/go/604629782/">Облыс әкімі коронавирусқа қарсы екпе салдырды</a>
+                    </p>
+                    <p class="n-desc">
+                        
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:26">09.08.21, 13:26</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="//rus.redtram.com/go/604629780/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629780s.jpg"
+                             width="70" height="70"
+                             alt="Дождь, град, шквалистый ветер: какая погода будет в СКО в ближайшие дни">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="//rus.redtram.com/go/604629780/">Дождь, град, шквалистый ветер: какая погода будет в СКО в ближайшие дни</a>
+                    </p>
+                    <p class="n-desc">
+                        
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:26">09.08.21, 13:26</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/politics/604629698/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629698s.jpg"
+                             width="70" height="70"
+                             alt="Класковский: Трава способна прорастать и сквозь асфальт">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/politics/604629698/">Класковский: Трава способна прорастать и сквозь асфальт</a>
+                    </p>
+                    <p class="n-desc">
+                        9 августа 2020 года на избирательных участках выстроились...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                    </div>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+
+        <div class="b-flex-2">
+          <div class="b-flex b-container">
+                          <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/politics/604629697/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629697s.jpg"
+                               width="70" height="70"
+                               alt="Великобритания вводит санкции против белорусского калия и нефтепродуктов. И Гуцериева">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/politics/604629697/">Великобритания вводит санкции против белорусского калия и нефтепродуктов. И Гуцериева</a>
+                      </p>
+                      <p class="n-desc">
+                          Новые санкции Великобритании распространяются на:Сферу...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/community/604629679/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629679s.jpg"
+                               width="70" height="70"
+                               alt="Нацбанк вводит памятную монету К 30-летию независимости Украины">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/community/604629679/">Нацбанк вводит памятную монету "К 30-летию независимости Украины"</a>
+                      </p>
+                      <p class="n-desc">
+                          Номинал монеты - пять грн Завтра Как отмечается, на аверсе...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+
+                          <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/community/604629678/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629678s.jpg"
+                               width="70" height="70"
+                               alt="Москаль: Медведчук победит в ЕСПЧ, у меня нет никаких сомнений в этом">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/community/604629678/">Москаль: Медведчук победит в ЕСПЧ, у меня нет никаких сомнений в этом</a>
+                      </p>
+                      <p class="n-desc">
+                          Народный депутат Украины, глава политсовета партии...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/community/604629675/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629675s.jpg"
+                               width="70" height="70"
+                               alt="Маркосян о Медведчуке: Все его идеи для Украины всегда были актуальными, интересными и перспективными">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/community/604629675/">Маркосян о Медведчуке: Все его идеи для Украины всегда были актуальными, интересными и перспективными</a>
+                      </p>
+                      <p class="n-desc">
+                          Политический эксперт Об этом пишет Елена Маркосян на своей...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+          </div>
+        </div>
+
+                  <div class="b-flex-2">
+          <div class="b-container">
+            <ul>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/community/604629676/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629676s.jpg"
+                             width="70" height="70"
+                             alt="Януковича в розыск: НАБУ собирается обратиться в Интерпол по делу беглого президента">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/community/604629676/">Януковича в розыск: НАБУ собирается обратиться в Интерпол по делу беглого президента</a>
+                    </p>
+                    <p class="n-desc">
+                        НАБУ попросит Интерпол объявить экс-президента в...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/community/604629674/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629674s.jpg"
+                             width="70" height="70"
+                             alt="Москаль об освобождении четырех женщин из ОРДЛО: Их готовы были отдать Медведчуку, но Ермак заблокировал и сказал: Только мне">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/community/604629674/">Москаль об освобождении четырех женщин из ОРДЛО: Их готовы были отдать Медведчуку, но Ермак заблокировал и сказал: "Только мне"</a>
+                    </p>
+                    <p class="n-desc">
+                        Освобождение четырех украинок, которые уже несколько лет...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                    </div>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+
+                  <div class="b-flex-2">
+          <div class="b-container">
+            <div class="b-news big-hor">
+              <p class="n-image">
+                <a href="/news/economic-business/604629667/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604629667s.jpg"
+                       width="200" height="200"
+                       alt="Госстат: 67% украинцев считают себя бедными">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/news/economic-business/604629667/">Госстат: 67% украинцев считают себя бедными</a>
+              </p>
+              <p class="n-desc">
+                  Средним классом себя считает лишь 1% 67,1% украинских...
+              </p>
+
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:23">09.08.21, 13:23</time>
+                <a href="/sources/zikua.tv/" target="_blank">zikua.tv</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="s-technology">
+  <div class="wrapper">
+    <div class="b-title">
+      <h2>Технологии</h2>
+      <a class="btn-category-news" href="/news/technology/">Новости науки и технологий</a>
+    </div>
+    <div class="b-content">
+      <div class="b-flex">
+        <div class="b-flex-2">
+          <div class="b-flex b-container">
+
+                        <div class="b-flex-1">
+              <div class="b-news big-ver">
+                <p class="n-image">
+                  <a href="/news/technology/604629746/">
+                    <img class="lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                         data-src="//img200-rus.redtram.com/news/604629746s.jpg"
+                         width="200" height="200"
+                         alt="Дельта-штамм может стать конечной точкой вируса – профессор">
+                  </a>
+                </p>
+                <p class="n-title">
+                  <a href="/news/technology/604629746/">"Дельта-штамм" может стать конечной точкой вируса – профессор</a>
+                </p>
+                <p class="n-desc">
+                    В будущем, COVID-19 будет лишь еще одной "простудой", сообщает zakon.kz. Об этом заявил...
+                </p>
+                <div class="n-info">
+                  <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                  <a href="/sources/zakon.kz/" target="_blank">zakon.kz</a>
+                </div>
+              </div>
+            </div>
+
+                        <div class="b-flex-1">
+              <ul>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/technology/604629744/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629744s.jpg"
+                             width="70" height="70"
+                             alt="Внесены изменения в правила прикомандирования госслужащих РК">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/technology/604629744/">Внесены изменения в правила прикомандирования госслужащих РК</a>
+                    </p>
+                    <p class="n-desc">
+                        Опубликовано постановление правительства Казахстана от 4...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/technology/604629743/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629743s.jpg"
+                             width="70" height="70"
+                             alt="Рождены, чтобы побеждать. Parimatch стал официальным партнером Челси">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/technology/604629743/">"Рождены, чтобы побеждать". Parimatch стал официальным партнером "Челси"</a>
+                    </p>
+                    <p class="n-desc">
+                        9 августа Parimatch Tech стал официальным партнером ФК...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/technology/604629737/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629737s.jpg"
+                             width="70" height="70"
+                             alt="На грани закрытия - еще один казахстанский вуз лишен лицензии">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/technology/604629737/">На грани закрытия - еще один казахстанский вуз лишен лицензии</a>
+                    </p>
+                    <p class="n-desc">
+                        Гуманитарно-технический институт "Акмешит" на грани закрытия....
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                    </div>
+                  </li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+
+                <div class="b-flex-1">
+          <div class="b-container">
+            <div class="b-news big-ver">
+              <p class="n-image">
+                <a href="/news/technology/604629735/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604629735s.jpg"
+                       width="200" height="200"
+                       alt="Конверт с тремя пулями адресовали Папе Римскому">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/news/technology/604629735/">Конверт с тремя пулями адресовали Папе Римскому</a>
+              </p>
+              <p class="n-desc">
+                  Конверт с тремя пистолетными пулями, предназначавшийся Папе Римскому Франциску, обнаружили в...
+              </p>
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                <a href="/sources/zakon.kz/" target="_blank">zakon.kz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="b-flex-1">
+          <div class="b-container">
+            <ul>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/news/technology/604629734/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604629734s.jpg"
+                           width="70" height="70"
+                           alt="Белое платье, белая фата - невеста сбежала со свадьбы в Павлодаре, испугавшись штрафа">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/news/technology/604629734/">"Белое платье, белая фата" - невеста сбежала со свадьбы в Павлодаре, испугавшись штрафа</a>
+                  </p>
+                  <p class="n-desc">
+                      За прошедшие выходные в Павлодаре было выявлено 11 нарушений...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                  </div>
+                </li>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/news/technology/604629732/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604629732s.jpg"
+                           width="70" height="70"
+                           alt="Аким СКО привился от коронавируса">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/news/technology/604629732/">Аким СКО привился от коронавируса</a>
+                  </p>
+                  <p class="n-desc">
+                      Аким Северо-Казахстанской области Кумар Аксакалов привился от...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                  </div>
+                </li>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/news/technology/604629730/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604629730s.jpg"
+                           width="70" height="70"
+                           alt="Дожди и жара - прогноз погоды на 10 августа в Казахстане">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/news/technology/604629730/">Дожди и жара - прогноз погоды на 10 августа в Казахстане</a>
+                  </p>
+                  <p class="n-desc">
+                      Синоптики предоставили прогноз погоды в Казахстане на 10...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:24">09.08.21, 13:24</time>
+                  </div>
+                </li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- adapt -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7020121108677267"
+           data-ad-slot="6290210750"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({ });
+      </script>
+      </div>
+</section>
+  
+  <section class="s-showbiz">
+  <div class="wrapper">
+    <div class="b-title">
+      <h2>Шоу бизнес</h2>
+      <a class="btn-category-news" href="/news/showbiz/">Новости сплетни скандалы</a>
+    </div>
+    <div class="b-content">
+      <div class="b-flex">
+        <div class="b-flex-4">
+          <div class="b-flex b-container">
+                        <div class="b-flex-1">
+              <div class="b-news big-ver">
+                <p class="n-image">
+                  <a href="/news/showbiz/604629201/">
+                    <img class="lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                         data-src="//img200-rus.redtram.com/news/604629201s.jpg"
+                         width="200" height="200"
+                         alt="Трисс Меригольд из Ведьмака в одном плаще засветила бедра в провокационной позе ">
+                  </a>
+                </p>
+                <p class="n-title">
+                  <a href="/news/showbiz/604629201/">Трисс Меригольд из Ведьмака в одном плаще засветила бедра в провокационной позе </a>
+                </p>
+                <p class="n-desc">
+                    Британская актриса Анна Шаффер сыграла в сериале Ведьмак Трисс Меригольд, поделилась...
+                </p>
+                <div class="n-info">
+                  <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:07">09.08.21, 13:07</time>
+                  <a href="/sources/stars.glavred.info/" target="_blank">stars.glavred.info</a>
+                </div>
+              </div>
+            </div>
+
+                        <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604629190/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629190s.jpg"
+                               width="70" height="70"
+                               alt="МакSим переводят в обычную палату ">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604629190/">МакSим переводят в обычную палату </a>
+                      </p>
+                      <p class="n-desc">
+                          Певица МакSим больше месяца проходила лечение осложнений...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:07">09.08.21, 13:07</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604629181/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629181s.jpg"
+                               width="70" height="70"
+                               alt="Отец Бритни Спирс угрожает снова оправить дочь в психбольницу ">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604629181/">Отец Бритни Спирс угрожает снова оправить дочь в психбольницу </a>
+                      </p>
+                      <p class="n-desc">
+                          Отец Бритни Спирс недавно выступил в суде и на очередном...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:07">09.08.21, 13:07</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604629168/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629168s.jpg"
+                               width="70" height="70"
+                               alt="Светлана Лобода без лифчика посветила аппетитной грудью в отпуске ">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604629168/">Светлана Лобода без лифчика посветила аппетитной грудью в отпуске </a>
+                      </p>
+                      <p class="n-desc">
+                          Певица Светлана Лобода в своем Instagram сверкнула грудью и...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:07">09.08.21, 13:07</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+
+                        <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604629146/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629146s.jpg"
+                               width="70" height="70"
+                               alt="Анастасия Приходько рассказала, как ей удалось похудеть на 20 кг за три месяца после родов">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604629146/">Анастасия Приходько рассказала, как ей удалось похудеть на 20 кг за три месяца после родов</a>
+                      </p>
+                      <p class="n-desc">
+                          24 августа в 17:40 телеканал «Украина» покажет праздничное...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:06">09.08.21, 13:06</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604627742/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604627742s.jpg"
+                               width="70" height="70"
+                               alt="Употребление следующего напитка даже один раз в день может утроить риск инсульта">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604627742/">Употребление следующего напитка даже один раз в день может утроить риск инсульта</a>
+                      </p>
+                      <p class="n-desc">
+                          Врачи говорят, что лучший способ избежать инсульта – это...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:28">09.08.21, 12:28</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604627736/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604627736s.jpg"
+                               width="70" height="70"
+                               alt="Натуральные способы борьбы с целлюлитом, которые вы ещё не испробовали">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604627736/">Натуральные способы борьбы с целлюлитом, которые вы ещё не испробовали</a>
+                      </p>
+                      <p class="n-desc">
+                          Каким бы непривлекательным он ни был, целлюлит встречается у...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:28">09.08.21, 12:28</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+
+                        <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604627297/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604627297s.jpg"
+                               width="70" height="70"
+                               alt="Не просто богатая избалованная наследница: Дочь Мадонны появилась на обложке популярного глянца">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604627297/">Не просто богатая избалованная наследница: Дочь Мадонны появилась на обложке популярного глянца</a>
+                      </p>
+                      <p class="n-desc">
+                          Лурдес Леон намерена доказать миру, что она – нечто большое,...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:17">09.08.21, 12:17</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/news/showbiz/604430464/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604430464s.jpg"
+                               width="70" height="70"
+                               alt="Пoлинa Гaгapинa шoкиpoвaлa poccиян cвoим cтpaнным видoм">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/news/showbiz/604430464/">Пoлинa Гaгapинa шoкиpoвaлa poccиян cвoим cтpaнным видoм</a>
+                      </p>
+                      <p class="n-desc">
+                          Пeвицa Пoлинa Гaгapинa шoкиpoвaлa poccиян cвoим cтpaнным...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-02 06:07">02.08.21, 06:07</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="s-sport">
+  <div class="wrapper">
+    <div class="b-title">
+      <h2>Спорт</h2>
+      <a class="btn-category-news" href="/news/sport/">Новости спорта</a>
+    </div>
+    <div class="b-content">
+      <div class="b-flex">
+
+
+                  <div class="b-flex-1">
+          <div class="b-container">
+            <div class="b-news big-ver">
+              <p class="n-image">
+                <a href="/news/sport/604629456/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604629456s.jpg"
+                       width="200" height="200"
+                       alt="Свитолина вернулась на пятое место в рейтинге WTA">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/news/sport/604629456/">Свитолина вернулась на пятое место в рейтинге WTA</a>
+              </p>
+              <p class="n-desc">
+                  Украинская теннисистка поднялась на одну позицию. Свитолина обошла в рейтинге Бьянку...
+              </p>
+
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:15">09.08.21, 13:15</time>
+                <a href="/sources/gordonua.com/" target="_blank">gordonua.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                  <div class="b-flex-2">
+          <div class="b-container">
+            <ul>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/sport/604629005/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604629005s.jpg"
+                             width="70" height="70"
+                             alt="Какие награды получат украинские олимпийцы за медали в Токио">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/sport/604629005/">Какие награды получат украинские олимпийцы за медали в Токио</a>
+                    </p>
+                    <p class="n-desc">
+                        Трое спортсменов из Львова, которые завоевали медали на...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:02">09.08.21, 13:02</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/sport/604628284/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604628284s.jpg"
+                             width="70" height="70"
+                             alt="Сначала Гурбанов, потом Керкез">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/sport/604628284/">Сначала Гурбанов, потом Керкез</a>
+                    </p>
+                    <p class="n-desc">
+                        Определились время начала пресс-конференций главных тренеров...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:40">09.08.21, 12:40</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/sport/604628283/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604628283s.jpg"
+                             width="70" height="70"
+                             alt="Манчестер Юнайтед может сделать неожиданный выбор полузащитника на матч против Лидса">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/sport/604628283/">Манчестер Юнайтед может сделать неожиданный выбор полузащитника на матч против Лидса</a>
+                    </p>
+                    <p class="n-desc">
+                        До начала сезона «Манчестер Юнайтед» в премьер-лиге против...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:40">09.08.21, 12:40</time>
+                    </div>
+                  </li>
+                                  <li class="b-news small-hor">
+                    <p class="n-image">
+                      <a href="/news/sport/604628280/">
+                        <img class="lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                             data-src="//img90-rus.redtram.com/news/604628280s.jpg"
+                             width="70" height="70"
+                             alt="«АЕЛ, зная Карабах, даже дома играл с опаской»">
+                      </a>
+                    </p>
+                    <p class="n-title">
+                      <a href="/news/sport/604628280/">«АЕЛ, зная Карабах, даже дома играл с опаской»</a>
+                    </p>
+                    <p class="n-desc">
+                        Бывший форвард азербайджанского «Карабаха» Кянан Керимов...
+                    </p>
+                    <div class="n-info">
+                      <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:40">09.08.21, 12:40</time>
+                    </div>
+                  </li>
+                            </ul>
+          </div>
+        </div>
+
+                  <div class="b-flex-1">
+          <div class="b-container">
+            <div class="b-news big-ver">
+              <p class="n-image">
+                <a href="/news/sport/604623378/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604623378s.jpg"
+                       width="200" height="200"
+                       alt=" «Зенит» с Клаудиньо - Дзюба на скамейке? ">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/news/sport/604623378/"> «Зенит» с Клаудиньо - Дзюба на скамейке? </a>
+              </p>
+              <p class="n-desc">
+                  Эксперт bobsoccer.ru рассуждает об изменениях в «Зените». Приобретение Клаудиньо стало самым...
+              </p>
+
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 10:24">09.08.21, 10:24</time>
+                <a href="/sources/sport-weekend.com/" target="_blank">sport-weekend.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- adapt -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7020121108677267"
+           data-ad-slot="6290210750"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({ });
+      </script>
+      </div>
+</section>
+
+      <section class="s-lifestyle">
+  <div class="wrapper">
+    <div class="b-title">
+      <h2>Стиль жизни</h2>
+      <a class="btn-category-news" href="/lifestyle/">Путешествия отдых</a>
+    </div>
+    <div class="b-content">
+      <div class="b-flex">
+        <div class="b-flex-2">
+          <div class="b-flex b-container">
+
+                          <div class="b-flex-1">
+              <div class="b-news big-ver">
+                <p class="n-image">
+                  <a href="/lifestyle/604629020/">
+                    <img class="lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                         data-src="//img200-rus.redtram.com/news/604629020s.jpg"
+                         width="200" height="200"
+                         alt="Тест: как хорошо вы знаете сериалы Netflix?">
+                  </a>
+                </p>
+                <p class="n-title">
+                  <a href="/lifestyle/604629020/">Тест: как хорошо вы знаете сериалы Netflix?</a>
+                </p>
+                <p class="n-desc">
+                    Стриминговое ТВ окончательно закрепилось в нашей жизни в год пандемии, и Netflix — один из...
+                </p>
+
+                <div class="n-info">
+                  <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:03">09.08.21, 13:03</time>
+                  <a href="/sources/pchela.news/" target="_blank">pchela.news</a>
+                </div>
+              </div>
+            </div>
+
+                          <div class="b-flex-1">
+              <ul>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/lifestyle/604629004/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604629004s.jpg"
+                               width="70" height="70"
+                               alt="Масло для волос: как выбирать и применять">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/lifestyle/604629004/">Масло для волос: как выбирать и применять</a>
+                      </p>
+                      <p class="n-desc">
+                          Частое использование плоек, фена, регулярные покраски,...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 13:02">09.08.21, 13:02</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/lifestyle/604628922/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604628922s.jpg"
+                               width="70" height="70"
+                               alt="Алина Кабаева: Ляйсан Утяшева не имеет права комментировать позорное судейство в Токио">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/lifestyle/604628922/">Алина Кабаева: Ляйсан Утяшева не имеет права комментировать позорное судейство в Токио</a>
+                      </p>
+                      <p class="n-desc">
+                          После того, как наши гимнастки впервые остались без...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:59">09.08.21, 12:59</time>
+                      </div>
+                    </li>
+                                      <li class="b-news small-hor">
+                      <p class="n-image">
+                        <a href="/lifestyle/604628918/">
+                          <img class="lazy"
+                               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                               data-src="//img90-rus.redtram.com/news/604628918s.jpg"
+                               width="70" height="70"
+                               alt="Мэр Екатеринбурга рассказал, на что потратят миллионы, сэкономленные на Дне города">
+                        </a>
+                      </p>
+                      <p class="n-title">
+                        <a href="/lifestyle/604628918/">Мэр Екатеринбурга рассказал, на что потратят миллионы, сэкономленные на Дне города</a>
+                      </p>
+                      <p class="n-desc">
+                          Глава Екатеринбурга Алексей Орлов заявил, что деньги,...
+                      </p>
+                      <div class="n-info">
+                        <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:59">09.08.21, 12:59</time>
+                      </div>
+                    </li>
+                                </ul>
+            </div>
+          </div>
+        </div>
+
+                <div class="b-flex-1">
+          <div class="b-container">
+            <div class="b-news big-ver">
+              <p class="n-image">
+                <a href="/lifestyle/604628914/">
+                  <img class="lazy"
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                       data-src="//img200-rus.redtram.com/news/604628914s.jpg"
+                       width="200" height="200"
+                       alt="Учёные нашли дешёвое лекарство, уничтожающее коронавирус">
+                </a>
+              </p>
+              <p class="n-title">
+                <a href="/lifestyle/604628914/">Учёные нашли дешёвое лекарство, уничтожающее коронавирус</a>
+              </p>
+              <p class="n-desc">
+                  Международная группа исследователей заявила, что препарат «Фенофибрат» и его активная форма...
+              </p>
+
+              <div class="n-info">
+                <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:59">09.08.21, 12:59</time>
+                <a href="/sources/u-mama.ru/" target="_blank">u-mama.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+                <div class="b-flex-1">
+          <div class="b-container">
+            <ul>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/lifestyle/604628909/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604628909s.jpg"
+                           width="70" height="70"
+                           alt="Екатеринбурженка завоевала титул «Миссис Великая Русь-2021» — фото">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/lifestyle/604628909/">Екатеринбурженка завоевала титул «Миссис Великая Русь-2021» — фото</a>
+                  </p>
+                  <p class="n-desc">
+                      В Санкт-Петербурге прошёл финал конкурса красоты «Миссис...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:59">09.08.21, 12:59</time>
+                  </div>
+                </li>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/lifestyle/604628873/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604628873s.jpg"
+                           width="70" height="70"
+                           alt="Вакцинация от COVID-19 во время беременности. Новые данные">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/lifestyle/604628873/">Вакцинация от COVID-19 во время беременности. Новые данные</a>
+                  </p>
+                  <p class="n-desc">
+                      Британский Королевский колледж акушеров и гинекологов...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:58">09.08.21, 12:58</time>
+                  </div>
+                </li>
+                              <li class="b-news small-hor">
+                  <p class="n-image">
+                    <a href="/lifestyle/604628808/">
+                      <img class="lazy"
+                           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+                           data-src="//img90-rus.redtram.com/news/604628808s.jpg"
+                           width="70" height="70"
+                           alt="Упругие ягодицы без приседаний, выпадов и дополнительного инвентаря за 10 минут">
+                    </a>
+                  </p>
+                  <p class="n-title">
+                    <a href="/lifestyle/604628808/">Упругие ягодицы без приседаний, выпадов и дополнительного инвентаря за 10 минут</a>
+                  </p>
+                  <p class="n-desc">
+                      «Как накачать попу дома быстро и эффективно?» — один из самых...
+                  </p>
+                  <div class="n-info">
+                    <time format="dd.mm.yyyy, HH:MM" datetime="2021-08-09 12:54">09.08.21, 12:54</time>
+                  </div>
+                </li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+      <section>
+      <div class="wrapper">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- mainpage-under-daynews -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7020121108677267"
+             data-ad-slot="8812084931"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({ });
+        </script>
+      </div>
+    </section>
+  
+
+  <footer id="footer" class="wrapper">
+          <ul>
+        <li>
+          <a href="//client.redtram.com/o-kompanii-redtram/">О компании</a>
+        </li>
+        <li>
+          <a href="//client.redtram.com/advertiser/">Реклама</a>
+        </li>
+        <li>
+          <a  href="/pages/license/">Пользовательское соглашение</a>
+        </li>
+        <li>
+          <a href="https://client.redtram.com/publish/">Сотрудничество</a>
+        </li>
+        <li>
+          <a href="//client.redtram.com/contacts/">Связаться с нами</a>
+        </li>
+        <li>
+          <a href="/archive/">Архив новостей</a>
+        </li>
+      </ul>
+      <ul class="info">
+        <li>
+          <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%77%65%62%6d%61%73%74%65%72@%72%65%64%74%72%61%6d.%63%6f%6d">Написать веб-мастеру</a>
+        </li>
+        <li class="copyright">
+          &copy; 2004-2021 Redtram, Ltd.
+        </li>
+      </ul>
+      </footer>
+
+  <div id="overlay" class="overlay"></div>
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-3357981-9', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3357981-16"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-3357981-16');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "/js/yandex-metrica-watch/tag.js", "ym");
+       //"https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"
+
+       ym(62337025, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+       ym(48894710, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+
+    </script>
+    <noscript><div>
+        <img src="https://mc.yandex.ru/watch/62337025" style="position:absolute; left:-9999px;" alt="" />
+        <img src="https://mc.yandex.ru/watch/48894710" style="position:absolute; left:-9999px;" alt="" />
+    </div></noscript>
+    
+    <!-- /Yandex.Metrika counter -->
+
+    
+
+
+
+<script type="text/javascript">
+  <!--
+  var _acic={dataProvider:10};(function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="//www.acint.net/aci.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
+  //-->
+</script>
+
+
+
+  <script type="text/javascript">
+    (function(w,d,s,u,c,p,r) {
+      w[c]=w[c]||function(){(w[c].q=w[c].q||[]).push(arguments)},
+      p=d.createElement(s),r=d.getElementsByTagName(s)[0];
+      p.src=u;p.async=1;r.parentNode.insertBefore(p,r);
+    })(window,document,'script','https://infocode.tech/audience/?init=yes','rta');
+  </script>
+
+  
+  <!-- 62.244.25.75 -->
+</body>
+</html>

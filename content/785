@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PHP: Hypertext Preprocessor</title>
+
+ <link rel="shortcut icon" href="https://www.php.net/favicon.ico">
+ <link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/releases/feed.php" title="PHP Release feed">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/feed.atom" title="PHP: Hypertext Preprocessor">
+
+ <link rel="canonical" href="https://www.php.net/index.php">
+ <link rel="shorturl" href="https://www.php.net/index">
+ <link rel="alternate" href="https://www.php.net/index" hreflang="x-default">
+
+
+
+<link rel="stylesheet" type="text/css" href="/cached.php?t=1539771603&amp;f=/fonts/Fira/fira.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/cached.php?t=1539765004&amp;f=/fonts/Font-Awesome/css/fontello.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/cached.php?t=1606338002&amp;f=/styles/theme-base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/cached.php?t=1627831203&amp;f=/styles/theme-medium.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/cached.php?t=1429259403&amp;f=/styles/home.css" media="screen">
+
+ <!--[if lte IE 7]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie7.css" media="screen">
+ <![endif]-->
+
+ <!--[if lte IE 8]>
+ <script>
+  window.brokenIE = true;
+ </script>
+ <![endif]-->
+
+ <!--[if lte IE 9]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie9.css" media="screen">
+ <![endif]-->
+
+ <!--[if IE]>
+ <script src="https://www.php.net/js/ext/html5.js"></script>
+ <![endif]-->
+
+ <base href="https://www.php.net/index.php">
+
+
+</head>
+<body class="home ">
+
+<nav id="head-nav" class="navbar navbar-fixed-top">
+  <div class="navbar-inner clearfix">
+    <a href="/" class="brand"><img src="/images/logos/php-logo.svg" width="48" height="24" alt="php"></a>
+    <div id="mainmenu-toggle-overlay"></div>
+    <input type="checkbox" id="mainmenu-toggle">
+    <ul class="nav">
+      <li class=""><a href="/downloads">Downloads</a></li>
+      <li class=""><a href="/docs.php">Documentation</a></li>
+      <li class=""><a href="/get-involved" >Get Involved</a></li>
+      <li class=""><a href="/support">Help</a></li>
+      <li class="">
+        <a href="/releases/8.0/index.php">
+          <img src="/images/php8/logo_php8.svg" alt="php8" height="22" width="60">
+        </a>
+      </li>
+    </ul>
+    <form class="navbar-search" id="topsearch" action="/search.php">
+      <input type="hidden" name="show" value="quickref">
+      <input type="search" name="pattern" class="search-query" placeholder="Search" accesskey="s">
+    </form>
+  </div>
+  <div id="flash-message"></div>
+</nav>
+<nav id="trick"><div><dl>
+<dt><a href='/manual/en/getting-started.php'>Getting Started</a></dt>
+	<dd><a href='/manual/en/introduction.php'>Introduction</a></dd>
+	<dd><a href='/manual/en/tutorial.php'>A simple tutorial</a></dd>
+<dt><a href='/manual/en/langref.php'>Language Reference</a></dt>
+	<dd><a href='/manual/en/language.basic-syntax.php'>Basic syntax</a></dd>
+	<dd><a href='/manual/en/language.types.php'>Types</a></dd>
+	<dd><a href='/manual/en/language.variables.php'>Variables</a></dd>
+	<dd><a href='/manual/en/language.constants.php'>Constants</a></dd>
+	<dd><a href='/manual/en/language.expressions.php'>Expressions</a></dd>
+	<dd><a href='/manual/en/language.operators.php'>Operators</a></dd>
+	<dd><a href='/manual/en/language.control-structures.php'>Control Structures</a></dd>
+	<dd><a href='/manual/en/language.functions.php'>Functions</a></dd>
+	<dd><a href='/manual/en/language.oop5.php'>Classes and Objects</a></dd>
+	<dd><a href='/manual/en/language.namespaces.php'>Namespaces</a></dd>
+	<dd><a href='/manual/en/language.errors.php'>Errors</a></dd>
+	<dd><a href='/manual/en/language.exceptions.php'>Exceptions</a></dd>
+	<dd><a href='/manual/en/language.generators.php'>Generators</a></dd>
+	<dd><a href='/manual/en/language.attributes.php'>Attributes</a></dd>
+	<dd><a href='/manual/en/language.references.php'>References Explained</a></dd>
+	<dd><a href='/manual/en/reserved.variables.php'>Predefined Variables</a></dd>
+	<dd><a href='/manual/en/reserved.exceptions.php'>Predefined Exceptions</a></dd>
+	<dd><a href='/manual/en/reserved.interfaces.php'>Predefined Interfaces and Classes</a></dd>
+	<dd><a href='/manual/en/context.php'>Context options and parameters</a></dd>
+	<dd><a href='/manual/en/wrappers.php'>Supported Protocols and Wrappers</a></dd>
+</dl>
+<dl>
+<dt><a href='/manual/en/security.php'>Security</a></dt>
+	<dd><a href='/manual/en/security.intro.php'>Introduction</a></dd>
+	<dd><a href='/manual/en/security.general.php'>General considerations</a></dd>
+	<dd><a href='/manual/en/security.cgi-bin.php'>Installed as CGI binary</a></dd>
+	<dd><a href='/manual/en/security.apache.php'>Installed as an Apache module</a></dd>
+	<dd><a href='/manual/en/security.sessions.php'>Session Security</a></dd>
+	<dd><a href='/manual/en/security.filesystem.php'>Filesystem Security</a></dd>
+	<dd><a href='/manual/en/security.database.php'>Database Security</a></dd>
+	<dd><a href='/manual/en/security.errors.php'>Error Reporting</a></dd>
+	<dd><a href='/manual/en/security.variables.php'>User Submitted Data</a></dd>
+	<dd><a href='/manual/en/security.hiding.php'>Hiding PHP</a></dd>
+	<dd><a href='/manual/en/security.current.php'>Keeping Current</a></dd>
+<dt><a href='/manual/en/features.php'>Features</a></dt>
+	<dd><a href='/manual/en/features.http-auth.php'>HTTP authentication with PHP</a></dd>
+	<dd><a href='/manual/en/features.cookies.php'>Cookies</a></dd>
+	<dd><a href='/manual/en/features.sessions.php'>Sessions</a></dd>
+	<dd><a href='/manual/en/features.xforms.php'>Dealing with XForms</a></dd>
+	<dd><a href='/manual/en/features.file-upload.php'>Handling file uploads</a></dd>
+	<dd><a href='/manual/en/features.remote-files.php'>Using remote files</a></dd>
+	<dd><a href='/manual/en/features.connection-handling.php'>Connection handling</a></dd>
+	<dd><a href='/manual/en/features.persistent-connections.php'>Persistent Database Connections</a></dd>
+	<dd><a href='/manual/en/features.commandline.php'>Command line usage</a></dd>
+	<dd><a href='/manual/en/features.gc.php'>Garbage Collection</a></dd>
+	<dd><a href='/manual/en/features.dtrace.php'>DTrace Dynamic Tracing</a></dd>
+</dl>
+<dl>
+<dt><a href='/manual/en/funcref.php'>Function Reference</a></dt>
+	<dd><a href='/manual/en/refs.basic.php.php'>Affecting PHP's Behaviour</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.audio.php'>Audio Formats Manipulation</a></dd>
+	<dd><a href='/manual/en/refs.remote.auth.php'>Authentication Services</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.cmdline.php'>Command Line Specific Extensions</a></dd>
+	<dd><a href='/manual/en/refs.compression.php'>Compression and Archive Extensions</a></dd>
+	<dd><a href='/manual/en/refs.crypto.php'>Cryptography Extensions</a></dd>
+	<dd><a href='/manual/en/refs.database.php'>Database Extensions</a></dd>
+	<dd><a href='/manual/en/refs.calendar.php'>Date and Time Related Extensions</a></dd>
+	<dd><a href='/manual/en/refs.fileprocess.file.php'>File System Related Extensions</a></dd>
+	<dd><a href='/manual/en/refs.international.php'>Human Language and Character Encoding Support</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.image.php'>Image Processing and Generation</a></dd>
+	<dd><a href='/manual/en/refs.remote.mail.php'>Mail Related Extensions</a></dd>
+	<dd><a href='/manual/en/refs.math.php'>Mathematical Extensions</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.nontext.php'>Non-Text MIME Output</a></dd>
+	<dd><a href='/manual/en/refs.fileprocess.process.php'>Process Control Extensions</a></dd>
+	<dd><a href='/manual/en/refs.basic.other.php'>Other Basic Extensions</a></dd>
+	<dd><a href='/manual/en/refs.remote.other.php'>Other Services</a></dd>
+	<dd><a href='/manual/en/refs.search.php'>Search Engine Extensions</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.server.php'>Server Specific Extensions</a></dd>
+	<dd><a href='/manual/en/refs.basic.session.php'>Session Extensions</a></dd>
+	<dd><a href='/manual/en/refs.basic.text.php'>Text Processing</a></dd>
+	<dd><a href='/manual/en/refs.basic.vartype.php'>Variable and Type Related Extensions</a></dd>
+	<dd><a href='/manual/en/refs.webservice.php'>Web Services</a></dd>
+	<dd><a href='/manual/en/refs.utilspec.windows.php'>Windows Only Extensions</a></dd>
+	<dd><a href='/manual/en/refs.xml.php'>XML Manipulation</a></dd>
+	<dd><a href='/manual/en/refs.ui.php'>GUI Extensions</a></dd>
+</dl>
+<dl>
+<dt>Keyboard Shortcuts</dt><dt>?</dt>
+<dd>This help</dd>
+<dt>j</dt>
+<dd>Next menu item</dd>
+<dt>k</dt>
+<dd>Previous menu item</dd>
+<dt>g p</dt>
+<dd>Previous man page</dd>
+<dt>g n</dt>
+<dd>Next man page</dd>
+<dt>G</dt>
+<dd>Scroll to bottom</dd>
+<dt>g g</dt>
+<dd>Scroll to top</dd>
+<dt>g h</dt>
+<dd>Goto homepage</dd>
+<dt>g s</dt>
+<dd>Goto search<br>(current page)</dd>
+<dt>/</dt>
+<dd>Focus search box</dd>
+</dl></div></nav>
+<div id="goto">
+    <div class="search">
+         <div class="text"></div>
+         <div class="results"><ul></ul></div>
+   </div>
+</div>
+
+
+
+<div id="intro" class="clearfix">
+  <div class="container">
+      <div class="row clearfix">
+    <div class="blurb">
+      <p>PHP is a popular general-purpose scripting language that is especially suited to web development.</p>
+      <p>Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</p>
+    </div>
+    <div class="download">
+      <h3>Download</h3><ul>
+
+            <li><a class='download-link' href='/downloads.php#v8.0.9'>8.0.9</a><span class='dot'>&middot;</span><a class='notes' href='/ChangeLog-8.php#8.0.9'>Release Notes</a><span class='dot'>&middot;</span><a class='notes' href='/migration80'>Upgrading</a></li>
+
+            <li><a class='download-link' href='/downloads.php#v7.4.22'>7.4.22</a><span class='dot'>&middot;</span><a class='notes' href='/ChangeLog-7.php#7.4.22'>Release Notes</a><span class='dot'>&middot;</span><a class='notes' href='/migration74'>Upgrading</a></li>
+
+            <li><a class='download-link' href='/downloads.php#v7.3.29'>7.3.29</a><span class='dot'>&middot;</span><a class='notes' href='/ChangeLog-7.php#7.3.29'>Release Notes</a><span class='dot'>&middot;</span><a class='notes' href='/migration73'>Upgrading</a></li>
+</ul>
+    </div>
+  </div>  </div>
+</div>
+
+
+<div id="layout" class="clearfix">
+  <section id="layout-content">
+<div class='home-content'><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-08-05T15:16:40+00:00">05 Aug 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-08-05-2" id="2021-08-05-2">PHP 8.1.0 Beta 2 available for testing</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+      <p>
+        The PHP team is pleased to announce the first beta release of PHP 8.1.0, Beta 2.
+        This continues the PHP 8.1 release cycle, the rough outline of which is specified in the
+        <a href="https://wiki.php.net/todo/php81">PHP Wiki</a>.
+      </p>
+      <p>For source downloads of PHP 8.1.0, Beta 2 please visit the <a href="https://downloads.php.net/~ramsey">download page</a>.</p>
+      <p>Please carefully test this version and report any issues found in the <a href="http://bugs.php.net">bug reporting system</a>.</p>
+      <p><b>Please DO NOT use this version in production, it is an early test version.</b></p>
+      <p>
+        For more information on the new features and other changes, you can read the
+        <a href="https://github.com/php/php-src/blob/php-8.1.0beta2/NEWS">NEWS</a> file,
+        or the <a href="https://github.com/php/php-src/blob/php-8.1.0beta2/UPGRADING">UPGRADING</a>
+        file for a complete list of upgrading notes. These files can also be found in the release archive.
+      </p>
+      <p>The next release will be Beta 3, planned for Aug 19 2021.</p>
+      <p>The signatures for the release can be found in <a href="https://gist.github.com/ramsey/50a79dda00c1b669ac121c89d45ee46d">the manifest</a> or on <a href="https://qa.php.net/">the QA site</a>.</p>
+      <p>Thank you for helping us make PHP better.</p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-29T15:35:12+00:00">29 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-29-2" id="2021-07-29-2">PHP 7.4.22 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.22. This is a bug fix release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.22 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.22">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-29T13:26:00+00:00">29 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-29-1" id="2021-07-29-1">PHP 8.0.9 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.9. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.9 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.9">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-22T17:22:51+02:00">22 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-22-1" id="2021-07-22-1">PHP 8.1.0 Beta 1 available for testing</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+      <p>
+        The PHP team is pleased to announce the first beta release of PHP 8.1.0, Beta 1.
+        This continues the PHP 8.1 release cycle, the rough outline of which is specified in the
+        <a href="https://wiki.php.net/todo/php81">PHP Wiki</a>.
+      </p>
+      <p>For source downloads of PHP 8.1.0 Beta 1 please visit the <a href="https://downloads.php.net/~ramsey">download page</a>.</p>
+      <p>Please carefully test this version and report any issues found in the <a href="http://bugs.php.net">bug reporting system</a>.</p>
+      <p><b>Please DO NOT use this version in production, it is an early test version.</b></p>
+      <p>
+        For more information on the new features and other changes, you can read the
+        <a href="https://github.com/php/php-src/blob/php-8.1.0beta1/NEWS">NEWS</a> file,
+        or the <a href="https://github.com/php/php-src/blob/php-8.1.0beta1/UPGRADING">UPGRADING</a>
+        file for a complete list of upgrading notes. These files can also be found in the release archive.
+      </p>
+      <p>The next release will be Beta 2, planned for Aug 5 2021.</p>
+      <p>The signatures for the release can be found in <a href="https://gist.github.com/ramsey/01daaa0d42d3cf002f64d51d21fd8789">the manifest</a> or on <a href="https://qa.php.net/">the QA site</a>.</p>
+      <p>Thank you for helping us make PHP better.</p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-08T14:46:42+00:00">08 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-08-1" id="2021-07-08-1">PHP 8.1.0 Alpha 3 available for testing</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+      <p>
+        The PHP team is pleased to announce the third testing release of PHP 8.1.0, Alpha 3.
+        This continues the PHP 8.1 release cycle, the rough outline of which is specified in the
+        <a href="https://wiki.php.net/todo/php81">PHP Wiki</a>.
+      </p>
+      <p>For source downloads of PHP 8.1.0 Alpha 3 please visit the <a href="https://downloads.php.net/~ramsey">download page</a>.</p>
+      <p>Please carefully test this version and report any issues found in the <a href="http://bugs.php.net">bug reporting system</a>.</p>
+      <p><b>Please DO NOT use this version in production, it is an early test version.</b></p>
+      <p>
+        For more information on the new features and other changes, you can read the
+        <a href="https://github.com/php/php-src/blob/php-8.1.0alpha3/NEWS">NEWS</a> file,
+        or the <a href="https://github.com/php/php-src/blob/php-8.1.0alpha3/UPGRADING">UPGRADING</a>
+        file for a complete list of upgrading notes. These files can also be found in the release archive.
+      </p>
+      <p>The next release will be Beta 1, planned for Jul 22 2021.</p>
+      <p>The signatures for the release can be found in <a href="https://gist.github.com/ramsey/9697f41b83679fb638823fdf1e0b509c">the manifest</a> or on <a href="https://qa.php.net/">the QA site</a>.</p>
+      <p>Thank you for helping us make PHP better.</p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-01T14:45:46+00:00">01 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-01-3" id="2021-07-01-3">PHP 7.4.21 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.21. This is a security release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.21 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.21">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-01T11:20:10+00:00">01 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-01-2" id="2021-07-01-2">PHP 8.0.8 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.8. This is a security release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.8 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.8">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-07-01T09:31:12+00:00">01 Jul 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-07-01-1" id="2021-07-01-1">PHP 7.3.29 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.3.29. This is a security release.</p>
+
+<p>All PHP 7.3 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.3.29 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.3.29">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-06-24T14:42:06+00:00">24 Jun 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-06-24-1" id="2021-06-24-1">PHP 8.1.0 Alpha 2 available for testing</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+     <p>The PHP team is pleased to announce the second testing release of PHP 8.1.0, Alpha 2. This continues the PHP 8.1 release cycle, the rough outline of which is specified in the <a href="https://wiki.php.net/todo/php81">PHP Wiki</a>.</p>
+     
+     <p>For source downloads of PHP 8.1.0 Alpha 2 please visit the <a href="https://downloads.php.net/~patrickallaert/">download page</a>.</p>
+     
+     <p>Please carefully test this version and report any issues found in the <a href="http://bugs.php.net">bug reporting system</a>.</p>
+     
+     <p><strong>Please DO NOT use this version in production, it is an early test version.</strong></p>
+     
+     <p>For more information on the new features and other changes, you can read the <a href="https://github.com/php/php-src/blob/php-8.1.0alpha2/NEWS">NEWS</a> file, or the <a href="https://github.com/php/php-src/blob/php-8.1.0alpha2/UPGRADING">UPGRADING</a> file for a complete list of upgrading notes. These files can also be found in the release archive.</p>
+     
+     <p>The next release will be Alpha 3, planned for 8 Jul 2021.</p>
+     
+     <p>The signatures for the release can be found in <a href="https://gist.github.com/patrickallaert/9ebb69f3dba393e0c7f0f553ed16d8b7">the manifest</a> or on <a href="https://qa.php.net/">the QA site</a>.</p>
+     
+     <p>Thank you for helping us make PHP better.</p>
+     
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-06-10T15:17:28+00:00">10 Jun 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-06-10-1" id="2021-06-10-1">PHP 8.1.0 Alpha 1 available for testing</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+     <p>The PHP team is pleased to announce the first testing release of PHP 8.1.0, Alpha 1. This starts the PHP 8.1 release cycle, the rough outline of which is specified in the <a href="https://wiki.php.net/todo/php81">PHP Wiki</a>.</p>
+     <p>For source downloads of PHP 8.1.0 Alpha 1 please visit the <a href="https://downloads.php.net/~patrickallaert/">download page</a>.</p>
+     <p>Please carefully test this version and report any issues found in the <a href="http://bugs.php.net/">bug reporting system</a>.</p>
+     <p><strong>Please DO NOT use this version in production, it is an early test version.</strong></p>
+     <p>For more information on the new features and other changes, you can read the <a href="https://github.com/php/php-src/blob/php-8.1.0alpha1/NEWS">NEWS</a> file, or the <a href="https://github.com/php/php-src/blob/php-8.1.0alpha1/UPGRADING">UPGRADING</a> file for a complete list of upgrading notes. These files can also be found in the release archive.</p>
+     <p>The next release will be Alpha 2, planned for 24 Jun 2021.</p>
+     <p>The signatures for the release can be found in the <a href="https://gist.github.com/ramsey/3f57be524e4469343b3d7db332c048e0">manifest</a> or on the <a href="https://qa.php.net/">QA site</a>.</p>
+     <p>Thank you for helping us make PHP better.</p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-06-03T22:08:39+00:00">03 Jun 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-06-03-2" id="2021-06-03-2">PHP 8.0.7 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.7. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.7 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.7">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-06-03T10:26:20+00:00">03 Jun 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-06-03-1" id="2021-06-03-1">PHP 7.4.20 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.20. This is a bug fix release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.20 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.20">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-05-06T13:41:40+00:00">06 May 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-05-06-2" id="2021-05-06-2">PHP 8.0.6 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+<p>The PHP development team announces the immediate availability of PHP 
+8.0.6. This release reverts a bug related to PDO_pgsql that was 
+introduced in PHP 8.0.5.</p>
+
+<p>PHP 8.0 users that use PDO_pgsql are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.6 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.6">ChangeLog</a>.
+</p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-05-06T10:12:09+00:00">06 May 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-05-06-1" id="2021-05-06-1">PHP 7.4.19 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP
+7.4.19. This release reverts a bug related to PDO_pgsql that was
+introduced in PHP 7.4.18.</p>
+
+<p>PHP 7.4 users that use PDO_pgsql are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.19 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.19">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-04-30T07:18:54+00:00">30 Apr 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-04-30-1" id="2021-04-30-1">PHP 7.4.18 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.18. This is a security release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.18 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.18">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-04-29T13:43:58+00:00">29 Apr 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-04-29-2" id="2021-04-29-2">PHP 8.0.5 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.5. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.5 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.5">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-04-29T10:26:18+00:00">29 Apr 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-04-29-1" id="2021-04-29-1">PHP 7.3.28 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.3.28. This is a security release.</p>
+
+<p>All PHP 7.3 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.3.28 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.3.28">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-03-30T19:14:46+00:00">30 Mar 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-03-30-1" id="2021-03-30-1">PHP releases on hold</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div>
+     <p>
+     As <a href="https://news-web.php.net/php.internals/113838">announced</a>
+     on the php.internals mailing list, a pair of
+     <a href="https://github.com/php/php-src/commit/c730aa26bd52829a49f2ad284b181b7e82a68d7d">malicious</a>
+     <a href="https://github.com/php/php-src/commit/2b0f239b211c7544ebc7a4cd2c977a5b7a11ed8a">commits</a>
+     were made in the PHP source code repository over the weekend.
+     <i>These commits were immediately noticed and reverted,
+     and thus <b>never reached end users</b>.</i>
+     The investigation into the root cause and exact scope of the
+     compromise is still ongoing, therefore releases will be put
+     on hold for two weeks assuming no further issues are discovered.
+     </p>
+     
+     <p>
+     Thank you for bearing with us while we endeavor to ensure that
+     PHP is a stable and reliable platform for web development.
+     </p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-03-04T19:12:13+00:00">04 Mar 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-03-04-2" id="2021-03-04-2">PHP 8.0.3 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.3. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.3 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.3">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-03-04T18:23:48+00:00">04 Mar 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-03-04-1" id="2021-03-04-1">PHP 7.4.16 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.16. This is a bug fix release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.16 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.16">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-02-04T12:02:55+00:00">04 Feb 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-02-04-3" id="2021-02-04-3">PHP 8.0.2 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.2. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.2 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.2">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-02-04T11:17:26+00:00">04 Feb 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-02-04-2" id="2021-02-04-2">PHP 7.4.15 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.4.15. This is a security release.</p>
+
+<p>All PHP 7.4 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.4.15 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.4.15">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-02-04T10:52:11+00:00">04 Feb 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-02-04-1" id="2021-02-04-1">PHP 7.3.27 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.3.27. This is a security release.</p>
+
+      <p>All PHP 7.3 users are encouraged to upgrade to this version.</p>
+
+      <p>For source downloads of PHP 7.3.27 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+      Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+      The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.3.27">ChangeLog</a>.
+      </p>
+    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-01-07T15:44:37+00:00">07 Jan 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-01-07-3" id="2021-01-07-3">PHP 8.0.1 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 8.0.1. This is a bug fix release.</p>
+
+<p>All PHP 8.0 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 8.0.1 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-8.php#8.0.1">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><article class="newsentry">
+  <header class="title">
+    <time datetime="2021-01-07T10:31:37+00:00">07 Jan 2021</time>
+    <h2 class="newstitle">
+      <a href="https://www.php.net/archive/2021.php#2021-01-07-2" id="2021-01-07-2">PHP 7.3.26 Released!</a>
+    </h2>
+  </header>
+  <div class="newscontent">
+    <div><p>The PHP development team announces the immediate availability of PHP 7.3.26. This is a security release.</p>
+
+<p>All PHP 7.3 users are encouraged to upgrade to this version.</p>
+
+<p>For source downloads of PHP 7.3.26 please visit our <a href="https://www.php.net/downloads.php">downloads page</a>,
+Windows source and binaries can be found on <a href="https://windows.php.net/download/">windows.php.net/download/</a>.
+The list of changes is recorded in the <a href="https://www.php.net/ChangeLog-7.php#7.3.26">ChangeLog</a>.
+</p>    </div>
+  
+  </div>
+</article><p class="archive"><a href="/archive/">Older News Entries</a></p></div>    </section><!-- layout-content -->
+    
+<aside class="tips">
+    <div class="inner">
+<div class="panel">  <a href="/conferences" class="headline" title="Upcoming conferences">Upcoming conferences</a><div class="body"><ul><li><a href='https://www.php.net/conferences/index.php#id2021-07-13-1' title='PHP Conference Japan 2021 Online'>PHP Conference Japan 2021 Online</a></li><li><a href='http://php.net/conferences/index.php#id2021-06-21-1' title='International PHP Conference Munich 2021'>International PHP Conference Munich 2021</a></li><li><a href='https://www.php.net/conferences/index.php#id2021-04-28-1' title='Web Summer Camp 2021'>Web Summer Camp 2021</a></li></ul></div></div>
+    <p class='panel'><a href='/cal.php'>User Group Events</a></p>
+    <p class='panel'><a href='/thanks.php'>Special Thanks</a></p>
+    <p class='panel social-media'>
+      <span class='headline'>Social media</span>
+      <div class='body'>
+        <ul>
+          <li>
+            <a href="https://twitter.com/official_php">
+              <i class="icon-twitter"></i>
+              @official_php
+            </a>
+          </li>
+        </ul>
+      </div>
+    </p>
+</div>
+</aside>
+
+  </div><!-- layout -->
+
+  <footer>
+    <div class="container footer-content">
+      <div class="row-fluid">
+      <ul class="footmenu">
+        <li><a href="/copyright.php">Copyright &copy; 2001-2021 The PHP Group</a></li>
+        <li><a href="/my.php">My PHP.net</a></li>
+        <li><a href="/contact.php">Contact</a></li>
+        <li><a href="/sites.php">Other PHP.net sites</a></li>
+        <li><a href="/privacy.php">Privacy policy</a></li>
+        <li><a href="https://github.com/php/web-php/blob/master/index.php">View Source</a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+    <div class='elephpants'><div class=images></div></div>
+ <!-- External and third party libraries. -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/cached.php?t=1421837618&amp;f=/js/ext/modernizr.js"></script>
+<script src="/cached.php?t=1421837618&amp;f=/js/ext/hogan-2.0.0.min.js"></script>
+<script src="/cached.php?t=1421837618&amp;f=/js/ext/typeahead.min.js"></script>
+<script src="/cached.php?t=1421837618&amp;f=/js/ext/mousetrap.min.js"></script>
+<script src="/cached.php?t=1421837618&amp;f=/js/search.js"></script>
+<script src="/cached.php?t=1607972402&amp;f=/js/common.js"></script>
+
+<a id="toTop" href="javascript:;"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="/images/to-top@2x.png"></a>
+
+</body>
+</html>

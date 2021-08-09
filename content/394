@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800&display=swap" rel="stylesheet">
+    <style>	
+        .the-end-modal{
+            width: 50%;
+            margin: 0 auto;
+        }
+        .the-end-modal p {
+            font-family: 'Open Sans',sans-serif;
+            padding: 10px 40px;	
+        }
+        .close-btn{
+        display:none;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #00bf4c;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: #fff;
+            margin: 20px auto;
+        }
+        
+        @media (max-width: 768px) { 
+        .modal-container{
+            height: 100%;
+                font-size: 30px;
+        }
+        .the-end-modal{
+            width: 95%;
+            height: 75%;
+        }
+         }</style>
+    <title>IncrediMail Shut Down</title>
+</head>
+<body>
+	<div class="modal-container show">
+
+		<div class="the-end-modal">
+			                <div id="IncredimailLogo" >
+                    <a href="/home">
+                        <img src="incredimail.png" height="23" />
+                    </a>
+                </div>
+			<p><br>Dear Valued Customer,<br><br> Over 20 years ago, we set out to create an innovative email platform because we believed that the emailing experience should be beautiful, fun and make people smile.   </p>
+			<p>When we first created IncrediMail, we were amongst the first to feature an unprecedented interactive email experience, tailored to every mood and personality.  It was important to us to keep adding innovative emails, stationaries, and countless smileys, to build an appealing and engaging collection of visual animations. </p>
+			<p>With nearly 4 million customers, 270 million emails sent and 116 million designs downloaded, we are proud of the product we built, but even more so, we’re grateful for the community of customers that helped us grow. Through every turn, your feedback shaped IncrediMail’s development, and your passion helped elevate the product. Together we made this platform what it has become.</p>
+			<p>Today, email is not what it used to be 20 years ago. Back then, there weren’t any social platforms, instant messaging or smart phones—email was really the main source of digital communication.  Now, there are infinite ways to keep you connected on the go, evolving the market and its needs entirely.  So, after much thought and consideration, we have decided to retire our beloved IncrediMail to focus on areas that are more relevant to today’s use of technology. </p>
+			<p><b>As of March 20, 2020, we will shut down our servers and the IncrediMail desktop application will no longer be available.</b></p>
+			<p><u>What should you expect?</u><br>
+			Sending, receiving and viewing your emails, contacts and attachments will not be available through IncrediMail. In some cases, you will still be able to use those functionalities, but they would be substantially less reliable and incredimail would not be able to provide any level of customer service or support.</p>
+			<p>All of our IncrediMial graphics, letters, eCards, animations, emoticons, sounds, notifiers, skins and any other IncrediMail assets as well as any additional services such as Gold Gallery, IncrediMail Plus and the Protection Center, will no longer be available.</p>
+			<p>Our first priority is to help make this transition as easy as possible for you.  Therefore, we strongly suggest contacting your email provider and making sure all your data is backed up (emails, attachments, contacts, etc.).</p>
+			<p>We know for many of you, a great deal of care has gone into managing your emails and contacts with IncrediMail—including your time and the most precious moments you’ve trusted us with—and, for that, we’d like to thank you. </p>
+			<p>We apologize for any inconvenience this transition causes and we so deeply appreciate your loyalty over the years.<p>
+			<p>Best,<br>
+				Dan & the IncrediMail team
+				</p>
+			<div class="close-btn">Confirm</div>
+		</div>
+	</div>
+</body>
+</html>

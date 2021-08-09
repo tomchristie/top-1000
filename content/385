@@ -1,0 +1,1342 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript">
+        function GetCookieVal(offset) {
+            var endstr = document.cookie.indexOf(";", offset);
+            if (endstr == -1)
+                endstr = document.cookie.length;
+            return unescape(document.cookie.substring(offset, endstr));
+        }
+
+        function GetCookie(name) {
+            var arg = name + "=";
+            var alen = arg.length;
+            var clen = document.cookie.length;
+            var i = 0;
+            while (i < clen) {
+                var j = i + alen;
+                if (document.cookie.substring(i, j) == arg)
+                    return GetCookieVal(j);
+                i = document.cookie.indexOf(" ", i) + 1;
+                if (i == 0) break;
+            }
+            return null;
+        }
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent,
+                    app = navigator.appVersion;
+                return { //移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    winphone: u.indexOf('Windows Phone') > -1 //Windows Phone
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase(),
+            appcookie: GetCookie('wap_pcpop')
+        }
+        var hascookie = browser.appcookie;
+        var ref = document.referrer;
+        if (ref.toLocaleLowerCase().indexOf("m.it168.com") != -1) {
+            hascookie = "pc";
+        }
+
+        if ((hascookie == null) && (browser.versions.android || browser.versions.iPhone || browser.versions.winphone)) {
+            location.href = 'http://m.it168.com/';
+        } else if ((hascookie != "pc") && (browser.versions.android || browser.versions.iPhone || browser.versions
+                .winphone)) {
+            location.href = "http://m.it168.com/";
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title>IT168.com – 电商时代IT导购第一站</title>
+    <meta name="description"
+        content="IT168是中国最大的个人和企业IT产品选购、互动网站,每日提供最新的IT产品报价、促销行情、手机、平板、笔记本、相机和企业等50个频道提供最专业的产品选购和使用建议。" />
+    <meta name="msapplication-task"
+        content="name=笔记本;action-uri=http://notebook.it168.com;icon-uri=http://www.it168.com/ico/201210/images/favicon_1.ico" />
+    <meta name="msapplication-task"
+        content="name=手机;action-uri=http://mobile.it168.com/;icon-uri=http://www.it168.com/ico/201210/images/favicon_2.ico" />
+    <meta name="msapplication-task"
+        content="name=IT168产品库;action-uri=http://product.it168.com/;icon-uri=http://www.it168.com/ico/201210/images/favicon_3.ico" />
+    <meta name="msapplication-task"
+        content="name=平板;action-uri=http://pad.it168.com/;icon-uri=http://www.it168.com/ico/201210/images/favicon_4.ico" />
+    <meta name="msapplication-task"
+        content="name=数码相机;action-uri=http://dc.it168.com/;icon-uri=http://www.it168.com/ico/201210/images/favicon_5.ico" />
+    <meta name="domain_verify" content="pmrgi33nmfuw4ir2ejuximjwhaxgg33neiwcez3vnfsceorcgnrdizjqga4tcyjrmuytinbygq4dqm3cgiywcmjugizggojtmiycelbcoruw2zktmf3gkir2ge2tcmzqgu3dsnbxga2de7i">
+     <base target="_blank" />
+       <script type="text/javascript" src="http://cdn.static.it168.com/channel/newpc/js/jquery-1.7.2.min.js"></script>
+    <!-- newit168js -->
+    <script type="text/javascript" src="http://168.it168.com/a/h161.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.it168.com/channel/newpc/swiper/idangerous.swiper.css">
+    <link rel="stylesheet" href="http://cdn.static.it168.com/channel/newpc/font/iconfont.css">
+    <link rel="stylesheet" href="http://cdn.static.it168.com/channel/newpc/css/common.css">
+    <link rel="stylesheet" href="http://cdn.static.it168.com/channel/newpc/css/index.css">
+</head>
+<style>
+    .ad0514 img:first-child{width:80px;height:14px}  
+#ADV_3402 img{width:220px}
+#ADV_3372 img{width:220px}
+#ADV_3368>div:nth-of-type(2){margin-top:-35px !important}
+
+    /*首页广州分站弹出框显示样式*/
+.div2013221{width:370px;height:285px;}
+.tit2013221{border-top:2px #458fce solid;height:29px;line-height:29px;padding:0px 8px 0px 11px;color:#fff;background:#38a2db;font-size:12px;text-align:left;}
+.tit2013221 b{font-size:14px;margin-right:6px;float:Left;}
+.bor2013221{border:1px #3aa3db solid;border-top:0px;width:368px;height:253px;background:#fff;}
+.tit2013221_1{font-size:14px;font-weight:bold;text-align:center;line-height:24px;padding-top:10px;}
+.tit2013221_1 a{color:#3b639f;text-decoration:none;}
+.tit2013221_1 a:hover{color:#ce0000;text-decoration:underline;}
+.cont2013221{padding:8px 0px 0px 12px;width:356px;height:97px;font-size:12px;}
+.cont2013221 .l{width:80px;float:left;text-align:center;padding-top:4px;}
+.cont2013221 .l img{display:block;margin-bottom:13px;border:0px;}
+.cont2013221 .l a{color:#3b639f;text-decoration:none;}
+.cont2013221 .l a:hover{color:#ce0000;text-decoration:underline;}
+.cont2013221 .r{width:264px;float:Right;}
+.list2013221{padding:0px;margin:0px;list-style:none;}
+.list2013221 li{line-height:24px;height:24px;padding:0px;margin:0px;list-style:none;}
+.list2013221 li a{color:#555;text-decoration:none;}
+.list2013221 li a.blue{color:#3b639f;}
+.list2013221 li a:hover{color:#ce0000;text-decoration:underline;}
+.itbtn{ background: url(images/buttons.png) no-repeat;cursor: pointer;display: inline; float: right;height: 13px;margin:8px 0px 0px 15px; width: 13px;}
+.itclose {background-position: -28px 0; margin-right: 10px;}
+.itshow {background-position: 0 0;}
+.ithide { background-position: -14px 0;}
+.content>.clearfix>div
+margin-right:0 !important;
+}
+
+/*文字链广告*/
+.ad_box{ margin:0 auto; width:990px; height:40px; overflow:hidden; background:#f2f2f2; padding:0 5px;}
+.ad_box ul{ width:990px; clear:both; overflow:hidden;}
+.ad_box li{ float:left; width:198px; height:40px; line-height:40px; overflow:hidden; text-align:center;}
+#ADV_108 a{color:#333333}
+
+.tekai_box {margin: 0 auto;width: 1000px;overflow: hidden;margin-top: 10px;}
+.tekai_tit {background: #4AA6EF;height: 35px;line-height: 35px;padding: 0 10px;overflow: hidden;font-size: 17px;color: #ffffff;}
+.tekai_tit a {float: right;color: #ffffff;}
+.tekai1_1 {float: left;width: 370px;margin: 5px 20px 0 0;overflow: hidden;}
+.tekai1_2 {float: left;width: 220px;margin-top: 5px;}
+.tekai1_3 {float: left;margin: 10px 0 0 20px;display: inline;}
+.tekai1_4 {float: left;width: 370px;margin: 6px 20px 0 0;overflow: hidden;}
+.tk_box {width: 100%;}
+.tk_box span {display: block;text-align: center;font-size: 16px;padding-top: 8px;}
+.tk_box a {display: block;}
+.tk_list {width: 100%;clear: both;overflow: hidden;}
+.tk_list li {float: left;width: 100%;height: 158px;}
+.tk_list li span {display: block;text-align: center;font-size: 14px;padding-top: 8px;}
+.tk_list li a {display: block;}
+.tk_list2 {width: 386px;clear: both;overflow: hidden;}
+.tk_list2 li {float: left;width: 177px;height: 158px;margin-right: 16px;}
+.tk_list2 li span {display: block;text-align: center;font-size: 14px;padding-top: 8px;}
+.tk_list2 li a {display: block;}
+ #ADV_3368 a {display:block; width:1000px}
+.tk_list_txt {width: 370px;clear: both;overflow: hidden;}
+.tk_list_txt li {float: left;line-height: 31px;height: 31px;font-size: 16px;width: 366px;background: url(images/bg.png) 0 14px no-repeat;padding-left: 14px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+</style>
+<script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '96a1f5db95cb82d4']);
+        (function() {
+            var vds = document.createElement('script');
+            vds.type='text/javascript';
+            vds.async = true;
+            vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+</script>
+<body>
+ 
+    <div class="header">
+        <div class="top-nav clearfix w1000">
+            <div class="for-us">
+                <p>盛拓传媒旗下网站<i class="iconfont icontop_nav_down"></i></p>
+                <ul>
+                    <li><a href="http://www.it168.com/" target="_self">IT168</a></li>
+                    <li><a href="http://www.pcpop.com/">泡泡网</a></li>
+                    <li><a href="http://www.itpub.net">ITPUB</a></li>
+                    <li><a href="http://wenku.it168.com">IT文库</a></li>
+                    <li><a href="http://www.chinaunix.net/">ChinaUnix</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <a href="javascript:return addFavorite2();">加入收藏</a>
+                </li>
+                <li>
+                    <a href="http://m.it168.com">手机版</a>
+                </li>
+                <li>
+                    <a href="http://weibo.com/it168wangzhan?refer_flag=1001030103_">官方微博</a>
+                </li>
+                <li style="display: none;">
+                    <a href="http://app.mi.com/details?id=com.it168">安卓客户端</a>
+                </li>
+                <li style="display: none;">
+                    <a
+                        href="https://itunes.apple.com/cn/app/it168-%E7%94%B5%E5%95%86%E5%AF%BC%E8%B4%AD%E7%AC%AC%E4%B8%80%E7%AB%99/id1356401723?mt=8">苹果客户端</a>
+                </li>
+            </ul>
+            <div class="login" id="sso_login-yanxm" style="display: none;">
+                <a href="http://u.it168.com/Login?returnUrl=">登录</a>
+                <i></i>
+                <a href="http://u.it168.com/Register?returnUrl=">注册</a>
+            </div>
+            <div class="login2" id="login_style" style="display: none;">
+                <p>
+                    <a id="login_user" href="http://u.it168.com"></a>
+                    <a href="http://u.it168.com/Logout?returnUrl=">退出</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- 顶部导航 -->
+         
+        <div class="nav-list">
+             <!-- 广告 -->
+        <div id="ADV_3368" class="w1000 pt5" style="display:none;padding-top: 10px">
+            <script>
+                LG('ADV_3368');
+            </script>
+        </div>
+        <div id="ADV_3369" class="w1000 pt5" style="display:none;margin-top: 10px">
+            <script>
+                LG('ADV_3369');
+            </script>
+        </div>
+          
+            <div class="w1000">
+                <div class="head clearfix">
+                    <h1>
+                        <a href="http://www.it168.com"></a>
+                    </h1>
+                    <div class="big-nav clearfix">
+                       
+                        <a href="http://www.chinaunix.net/">ChinaUnix社区</a>
+                        <a href="http://www.itpub.net/">ITPUB社区</a>
+                      
+                        <a href="http://edu.itpub.net/">ITPUB学院</a>
+                    </div>
+                    <div class="search">
+                        <form onsubmit="javascript:return SearchCheck1(this);" method="post"
+                            action="http://sou.it168.com/search?q=czxczx">
+                            <input type="text" name="ckey" id="textfield" class="inp" placeholder="请输入搜索关键字">
+                            <i class="iconfont iconnav_search"></i>
+                        </form>
+                    </div>
+                </div>
+                <div class="list">
+                    <ul class="clearfix">
+                        <li>
+                            <ol>
+                                <li><a href="http://www.it168.com/news/">资讯</a></li>
+                                <li><a href="http://tu.it168.com">图赏</a></li>
+                                <li><a href="http://shike.it168.com/">试客</a></li>
+                                <li><a href="http://labs.it168.com">评测</a></li>
+                                <li><a href="http://live.it168.com">直播</a></li>
+                                <li><a href="http://product.it168.com/">报价</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li><a href="http://mobile.it168.com/">手机</a></li>
+                                <li><a href="http://digital.it168.com/">数码影音</a></li>
+                                <li><a href="http://diy.it168.com/">DIY整机</a></li>
+                                <li><a href="http://elec.it168.com/">家电厨卫</a></li>
+                                <li><a href="http://notebook.it168.com/">笔记本平板</a></li>
+                                <li><a href="http://dc.it168.com/">数码相机</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li><a href="http://server.it168.com/">服务器</a></li>
+                                <li><a href="http://cloud.it168.com/">云计算</a></li>
+                                <li><a href="http://net.it168.com/">网络通信</a></li>
+                                <li><a href="http://ai.it168.com/">人工智能</a></li>
+                                <li><a href="http://oa.it168.com/">办公</a></li>
+                                <li><a href="http://storage.it168.com/">存储</a></li>
+                                <li><a href="http://tech.it168.com/">数据库</a></li>
+                                <li><a href="http://z.itpub.net/">技术栈</a></li>
+                                <li><a href="http://sacc.it168.com/">SACC</a></li>
+                                <li><a href="http://dtcc.it168.com/">DTCC</a></li>
+                                
+                            </ol>
+                        </li>
+                    </ul>
+               <!-- 顶部导航 END -->
+            <div id="ADV_3370" class="w1000 pt5" style="display:none;">
+            <script>
+                LG('ADV_3370');
+            </script>
+        </div>
+        <div id="ADV_6205" class="w1000 pt5" style="display:none;margin-top:5px">
+            <script>
+                LG('ADV_6205');
+            </script>
+        </div>
+                <div id="ad_9752_rightpiao"  style="display:none;">
+            <script>
+                LG('ad_9752_rightpiao');
+            </script>
+        </div>
+              
+              <div class="ad_box" style="margin-top:10px">
+    <ul>
+        <li id="ADV_108">
+            <script>LG('ADV_108');</script>
+        </li>
+        <li id="ADV_1187">
+            <script>LG('ADV_1187');</script>
+        </li>
+        <li id="ADV_1388">
+            <script>LG('ADV_1388');</script>
+        </li>
+        <li id="ADV_1623">
+            <script>LG('ADV_1623');</script>
+        </li>
+        <li id="ADV_571">
+            <script>LG('ADV_571');</script>
+        </li>
+    </ul>
+</div>
+              
+              
+                </div>
+            </div>
+        </div>
+       
+    </div>
+             
+    <div class="content clearfix w1000 l1_1">
+        <div class="clearfix" id="slider">
+            <div class="fl w370" id="slider_name">
+              <div style="display:none;"><div id="ADV_3788"><script>LG('ADV_3788');</script></div></div>
+            
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <a  class="arrow-left"><i
+                            class="iconfont iconcalendar_icon_left"></i></a>
+                    <a  class="arrow-right"><i
+                            class="iconfont iconcalendar_icon_right"></i></a>
+                    <div class="pagination-img"></div>
+                    <div class="swiper-container swiper-container-img">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="http://pc.it168.com/a2021/0726/6517/000006517395.shtml" id="m1_p1"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3538/3538514/3/3538/3538514.jpeg_i-w370" alt="锐龙7 5800X处理器 ROG光魔G15电竞主机评测"></div><div class="text"><p>锐龙7 5800X处理器 ROG光魔G15电竞主机评测</p></div></a></div><div class="swiper-slide"><a href="http://mobile.it168.com/a2021/0719/6514/000006514221.shtml" id="m1_p2"><div class="over"><img src="http://sy0.img.it168.com/article/3/3523/3523935.jpg_i-w370" alt="vivo S10上手体验：自然柔光人像 自拍再进化"></div><div class="text"><p>vivo S10上手体验：自然柔光人像 自拍再进化</p></div></a></div><div class="swiper-slide"><a href="http://diy.it168.com/a2021/0806/6522/000006522836.shtml" id="m1_p3"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3562/3562430/3/3562/3562430.png_i-w370" alt="大放异彩！ 专访AMD高级副总裁、大中华区总裁潘晓明先生"></div><div class="text"><p>大放异彩！ 专访AMD高级副总裁、大中华区总裁潘晓明先生</p></div></a></div><div class="swiper-slide"><a href="http://mobile.it168.com/a2021/0607/6490/000006490551.shtml" id="m1_p4"><div class="over"><img src="http://sy0.img.it168.com/article/3/3390/3390318.jpg_i-w370" alt="【OPPO Reno6 Pro+体验】：没有人可以挡住一键美妆的魅力"></div><div class="text"><p>【OPPO Reno6 Pro+体验】：没有人可以挡住一键美妆的魅力</p></div></a></div><div class="swiper-slide"><a href="http://digital.it168.com/a2021/0809/6523/000006523267.shtml" id="m1_p5"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3564/3564217/3/3564/3564217.png_i-w370" alt="惠威M200-Bar无线Soundbar有源音箱体验评测"></div><div class="text"><p>惠威M200-Bar无线Soundbar有源音箱体验评测</p></div></a></div><div class="swiper-slide"><a href="http://notebook.it168.com/a2021/0719/6514/000006514386.shtml" id="m1_p6"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3525/3525999/3/3525/3525999.jpeg_i-w370" alt="这才是你该拥有的游戏本 惠普OMEN暗影精灵7全面体验"></div><div class="text"><p>这才是你该拥有的游戏本 惠普OMEN暗影精灵7全面体验</p></div></a></div>
+                        </div>
+                    </div>
+                </div>
+                 <script>
+                function addLG(adLen,isFirst){
+                    var lis=jQuery(".swiper-wrapper .swiper-slide");
+                    var cmsLen = lis.length;
+                    var totalLen = Math.max(adLen,cmsLen,6);
+                    var list=isFirst ? farrfirst : farr;
+                    for (var i = 0; i < adLen; i++) {
+                        if(isFirst){
+                            tindex=1+i;
+                        }else{
+                            tindex=totalLen-adLen+1+i;
+                        }
+                        ihtml= '<a href="' + list[i].cUrl + '" onclick="webClickData(this,\'IT168首页\', \'焦点图\', \'' +  (tindex)
+                            + '帧\');"><div class="over"><img src="' + Apfx(list[i].cpicaddress) + '"></div><div class="text"><p style="text-align:left;margin-left:5px;color: white;text-shadow: 0px 1px 1px #666">广告</p></div></a>';
+                        if(cmsLen>=tindex){lis[tindex-1].innerHTML=ihtml;}
+                        else{jQuery(".swiper-wrapper .swiper-slide a").append(ihtml);}}
+                }
+                LG("ADV_3371");
+                if (typeof farr !== 'undefined' && farr.length > 0 ){
+                    var adLen = farr.length;
+                    addLG(adLen,false)
+                }
+                if (typeof farrfirst !== 'undefined' && farrfirst.length > 0 ){
+                    var adLen = farrfirst.length;
+                    addLG(adLen,true)
+                }
+              
+            </script>
+                <!-- 轮播图 END -->
+                <!-- 视频 -->
+                <div class="image-text-title">
+                    <span>视频</span>
+                </div>
+                <ul class="video clearfix list">
+                     <li><div class="image-text w180"><a href="http://mobile.it168.com/a2021/0719/6514/000006514221.shtml" id="m2_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3523/3523935.jpg_i-w180" alt="vivo S10上手体验"></div><p>vivo S10上手体验</p></a></div></li><li><div class="image-text w180"><a href="http://mobile.it168.com/a2021/0617/6497/000006497302.shtml" id="m2_p2"><div class="over"><img src="http://sy0.img.it168.com/article/3/3419/3419203.jpg_i-w180" alt="荣耀50 Pro评测"></div><p>荣耀50 Pro评测</p></a></div></li>
+                </ul>
+                <!-- 视频 END -->
+                <!-- 试客 -->
+                <div class="image-text-title">
+                    <span>试客</span>
+                </div>
+                <ul class="video clearfix list">
+                    <li><div class="image-text w180"><a href="http://shike.it168.com/activity-1127" id="m6_p1"><div class="over"><img src=" http://shike.it168.com/thumb/400/uploads/activity/ZHJFGS0E1QQAAK02.jpg" alt="蓝牙耳机中的真旗舰 南卡N2s试用"></div><p>蓝牙耳机中的真旗舰 南卡N2s试用</p></a></div></li><li><div class="image-text w180"><a href="http://shike.it168.com/activity-1117.html" id="m6_p2"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3221/3221075/3/3221/3221075.jpeg" alt="一加 9Pro线下体验会招募"></div><p>一加 9Pro线下体验会招募</p></a></div></li>
+                </ul>
+                <div class="swiper-container swiper-image-text">
+                    <div class="pagination-image-text"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="image-text-list clearfix">
+                                 <li><i>网友文章</i><a href="http://shike.it168.com/article-20963.html">健康饮食不繁琐，云康宝食物秤助力健康生活</a></li><li><i>网友文章</i><a href="http://shike.it168.com/article-20957.html">秒测体温还能双用，家中应该常备这款凡米双用额温枪</a></li><li><i>网友文章</i><a href="http://shike.it168.com/article-20955.html">ANC主动降噪沉浸体验，雷柏Ti100 TWS降噪耳机评</a></li><li><i>网友文章</i><a href="http://shike.it168.com/article-20941.html">自带一丝清凉的夏日绿荫——荣耀50墨玉青</a></li><li><i>网友文章</i><a href="http://shike.it168.com/article-20946.html">一键搞定，不脏手！这款薇娅推荐的智能垃圾桶还真有点意思</a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="image-text-list clearfix">
+                                <li><i>试客说</i><a href="http://shike.it168.com/report-6060.html">低延迟畅玩手游，西圣Olaf游戏耳机体验</a></li><li><i>试客说</i><a href="http://shike.it168.com/report-6058.html">Xisem西圣Olaf游戏耳机评测报告</a></li><li><i>试客说</i><a href="http://shike.it168.com/report-6059.html">西圣Olaf游戏耳机开启游戏新体验也可以日常使用</a></li><li><i>试客说</i><a href="http://shike.it168.com/report-6057.html">听歌、游戏好用的Xisem西圣Olaf耳机评测</a></li><li><i>试客说</i><a href="http://shike.it168.com/report-6056.html">提升游戏水平，好装备不可少：Xisem西圣Olaf游戏耳机</a></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="image-text-list clearfix">
+                              <li><i>活动</i><a href="http://shike.it168.com/activity-1126.html">专业游戏模式 Xisem西圣Olaf游戏耳机试用</a></li><li><i>活动</i><a href="http://shike.it168.com/activity-1125.html">联想领像新品打印机限量首发</a></li><li><i>活动</i><a href="http://shike.it168.com/activity-1124.html">运动黑科技 - 南卡Runner CC II 骨传导运动耳机试用</a></li><li><i>活动</i><a href="http://shike.it168.com/activity-1120.html">影像机皇 一加 9系列线下体验会招募</a></li><li><i>活动</i><a href="http://shike.it168.com/activity-1117.html">一加 OnePlus 9系列产品试用招募</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 试客 END -->
+                       <div id="ADV_20892" style="border-radius: 15px;">
+            <script>
+                LG('ADV_20892');
+            </script>
+        </div>
+            </div>
+    <div class="fl">
+        <div class="tab01" id="tab02">
+            <ul>
+                <li><span>今日要闻</span></li>
+                <li><span>企业焦点</span></li>
+                <li><span>科技日历</span></li>
+            </ul>
+        </div>
+        <div class="tab01Cont" id="tab02_Content0">
+            <ul class="list3 list3_1"><li class="first"><a href="http://mobile.it168.com/a2021/0806/6522/000006522462.shtml" target="_blank" id="m3_p1">荣耀X20：66W超级快充+120Hz全视屏</a></li><li><a href="http://mobile.it168.com/a2021/0805/6522/000006522047.shtml" target="_blank" id="m3_p2">一加 9迎限时优惠：售价3399元起</a></li><li><a href="http://mobile.it168.com/a2021/0803/6521/000006521382.shtml" target="_blank" id="m3_p3">5G新选择 摩托罗拉 edge轻奢版评测</a></li><li><a href="http://mobile.it168.com/a2021/0805/6522/000006522049.shtml" target="_blank" id="m3_p4">一加 9迎大促：3399元就能体验哈苏拍摄</a></li><li><a href="http://mobile.it168.com/a2021/0804/6521/000006521755.shtml" target="_blank" id="m3_p5">游戏机皇红魔6系列与潮酷小黄人</a></li></ul><ul class="list3"><li class="first"><a href="http://notebook.it168.com/a2021/0809/6523/000006523213.shtml" target="_blank" id="m3_p6">1kg超轻机身不到5千元！惠普ProBook 635 G8商务本评测</a></li><li><a href="http://notebook.it168.com/a2021/0805/6522/000006522281.shtml" target="_blank" id="m3_p7">雷神ZERO高性能锐龙本评测</a></li><li><a href="http://notebook.it168.com/a2021/0805/6521/000006521893.shtml" target="_blank" id="m3_p8">2.5K高清屏，天选2新品售9999元</a></li><li><a href="http://notebook.it168.com/a2021/0803/6521/000006521116.shtml" target="_blank" id="m3_p9">售价5999元起！天选2酷睿版火爆暑促</a></li><li><a href="http://notebook.it168.com/a2021/0730/6520/000006520012.shtml" target="_blank" id="m3_p10">假期追剧 星14高性能轻薄本轻便随行</a></li><li><a href="http://notebook.it168.com/a2021/0730/6519/000006519539.shtml" target="_blank" id="m3_p11">2.5K高清屏，天选2新品9999元开启预约</a></li></ul><ul class="list3"><li class="first"><a href="http://elec.it168.com/a2021/0805/6522/000006522255.shtml" target="_blank" id="m3_p12">大通量出水不用等，云米Super Pro 1200G净水机全面体验</a></li><li><a href="http://elec.it168.com/a2021/0805/6522/000006522255.shtml" target="_blank" id="m3_p13">云米Super Pro 1200G净水机体验</a></li><li><a href="http://elec.it168.com/tu/6520744_1.shtml#1" target="_blank" id="m3_p14">创维 OBM 变形电视W82图赏</a></li><li><a href="http://elec.it168.com/a2021/0730/6520/000006520121.shtml" target="_blank" id="m3_p15">UDE打造全民科技体验互动嘉年华</a></li><li><a href="http://elec.it168.com/a2021/0730/6520/000006520097.shtml" target="_blank" id="m3_p16">海信视像大显示矩阵塑造多场景潮流生活</a></li><li><a href="http://elec.it168.com/a2021/0726/6517/000006517124.shtml" target="_blank" id="m3_p17">石头手持无线吸尘器H7重磅发布</a></li></ul><ul class="list3"><li class="first"><a href="http://digital.it168.com/a2021/0809/6523/000006523267.shtml" target="_blank" id="m3_p18">家庭影音至臻尊享体验 惠威M200-Bar无线Soundbar有源音箱体验评测</a></li><li><a href="http://digital.it168.com/a2021/0805/6522/000006522283.shtml" target="_blank" id="m3_p19">OPPO Watch 2系列将于明日首销</a></li><li><a href="http://digital.it168.com/a2021/0803/6521/000006521159.shtml" target="_blank" id="m3_p20">智能手表最终形态？OPPO Watch 2太全能</a></li><li><a href="http://digital.it168.com/a2021/0802/6520/000006520467.shtml" target="_blank" id="m3_p21">真降噪+真无损体验：OnePlus Buds Pro</a></li><li><a href="http://digital.it168.com/a2021/0728/6518/000006518209.shtml" target="_blank" id="m3_p22">华为智选 阿尔法蛋智能词典笔S发布</a></li><li><a href="http://digital.it168.com/a2021/0729/6519/000006519033.shtml" target="_blank" id="m3_p23">OPPO校招显示其或将深入开展健康业务</a></li></ul><ul class="list3"><li class="first"><a href="http://diy.it168.com/a2021/0806/6522/000006522836.shtml" target="_blank" id="m3_p24">大放异彩！ 专访AMD高级副总裁、大中华区总裁潘晓明先生</a></li><li><a href="http://diy.it168.com/a2021/0803/6521/000006521309.shtml" target="_blank" id="m3_p25">Intel众多顶级游戏装备亮相CJ</a></li><li><a href="http://diy.it168.com/a2021/0728/6518/000006518394.shtml" target="_blank" id="m3_p26">攀升经典热销轻薄本一体机推荐</a></li><li><a href="http://diy.it168.com/a2021/0728/6518/000006518178.shtml" target="_blank" id="m3_p27">性价比笔记本与一体机推荐</a></li><li><a href="http://diy.it168.com/a2021/0722/6515/000006515816.shtml" target="_blank" id="m3_p28">精选攀升笔记本和一体机</a></li><li><a href="http://diy.it168.com/a2021/0720/6514/000006514818.shtml" target="_blank" id="m3_p29">高性能游戏电脑主机推荐</a></li></ul>
+        </div>
+        <div class="tab01Cont" id="tab02_Content1" style="display: none">
+            <ul class="list3 list3_1">
+                <li class="first"><a href="http://server.it168.com/a2021/0809/6523/000006523284.shtml" target = "_blank">盘点开放计算的四大创新举措</a> </li>
+                <li><a href="http://server.it168.com/a2021/0806/6522/000006522459.shtml" target="_blank">英伟达GPU加速Cloudera数据平台提升欺诈检测能力</a></li><li><a href="http://server.it168.com/a2021/0805/6521/000006521994.shtml" target="_blank">实践出真知 开放计算正加速在全球市场落地</a></li><li><a href="http://server.it168.com/a2021/0805/6521/000006521874.shtml" target="_blank">英特尔加速制程工艺和封装技术创新</a></li><li><a href="http://storage.it168.com/a2021/0701/6505/000006505388.shtml" target="_blank">科赋NEO N610固态震撼上市，打造高速稳定的娱乐办公新体验</a></li><li><a href="http://storage.it168.com/a2021/0625/6502/000006502201.shtml" target="_blank">希捷2021 Datasphere：携手生态伙伴激活数据深价值</a></li>
+            </ul>
+            <ul class="list3">
+                <li class="first"><a href="http://cloud.it168.com/a2021/0726/6517/000006517054.shtml" target = "_blank">政企加速转型，万亿信创市场谁主沉浮?</a> </li>
+                <li><a href="http://cio.it168.com/a2021/0806/6522/000006522788.shtml" target="_blank">数字科技赋能 打造数字文化融合发展新高地</a></li><li><a href="http://tech.it168.com/a2021/0806/6522/000006522759.shtml" target="_blank">良好数据治理的 6 个最佳实践</a></li><li><a href="http://tech.it168.com/a2021/0806/6522/000006522749.shtml" target="_blank">企业数字化始于营销——从AdTech到MarTech的逻辑转变</a></li><li><a href="http://cio.it168.com/a2021/0806/6522/000006522606.shtml" target="_blank">精彩！2021北京数字经济体验周“数字技术大体验”活动落幕</a></li><li><a href="http://bigdata.it168.com/a2021/0524/6481/000006481347.shtml" target="_blank">“中国数谷”日新月异，贵阳“智”绘数字蓝图</a></li>
+            </ul>
+            <ul class="list3">
+                <li class="first"><a href="http://net.it168.com/a2021/0804/6521/000006521710.shtml" target = "_blank">思科助力金融数字化转型</a> </li>
+                <li><a href="http://net.it168.com/a2021/0804/6521/000006521710.shtml" target="_blank">在云优先的世界中，思科助力金融数字化转型</a></li><li><a href="http://net.it168.com/a2021/0802/6520/000006520629.shtml" target="_blank">博睿数据发布App3.0，携四大新功能洞察真实移动用户体验</a></li><li><a href="http://safe.it168.com/a2021/0730/6519/000006519388.shtml" target="_blank">数据发现和零信任如何帮助防御数据泄露</a></li><li><a href="http://safe.it168.com/a2021/0730/6519/000006519391.shtml" target="_blank">关于威胁者和密码安全的3个误区</a></li><li><a href="http://safe.it168.com/a2021/0730/6519/000006519397.shtml" target="_blank">企业风险远不止勒索软件，盘点当今企业面临的四种安全威胁</a></li>
+            </ul>
+            <ul class="list3">
+                <li class="first"><a href="http://cloud.it168.com/a2021/0723/6516/000006516230.shtml" target = "_blank">云智原生时代，为什么虚拟化依然坚挺？</a> </li>
+                <li><a href="http://cloud.it168.com/a2021/0806/6522/000006522752.shtml" target="_blank">政务数据治理下半场：需求升级，格局生变</a></li><li><a href="http://cloud.it168.com/a2021/0806/6522/000006522748.shtml" target="_blank">2021年11款最佳的开源 Kubernetes 工具</a></li><li><a href="http://cloud.it168.com/a2021/0805/6522/000006522333.shtml" target="_blank">2021全球数字经济大会·数字孪生与先进智造论坛成功举办</a></li><li><a href="http://cloud.it168.com/a2021/0805/6522/000006522316.shtml" target="_blank">阿里云竟然把服务器都泡在了“水”里</a></li><li><a href="http://cloud.it168.com/a2021/0804/6521/000006521818.shtml" target="_blank">甲骨文云技术助力仓库管理转型</a></li>
+            </ul>
+            <ul class="list3">
+                <li class="first"><a href="http://oa.it168.com/a2021/0709/6508/000006508496.shtml" target = "_blank">利盟中国召开2021合作伙伴峰会</a> </li>
+                <li><a href="http://oa.it168.com/a2021/0729/6519/000006519359.shtml" target="_blank">加速办公智变 富士胶片商业创新推出11款彩色数码多功能机</a></li><li><a href="http://oa.it168.com/a2021/0730/6519/000006519508.shtml" target="_blank">承诺不涨价 夏普SF-S201SV入门级黑白激打促销</a></li><li><a href="http://projector.it168.com/a2021/0729/6518/000006518678.shtml" target="_blank">专注垂直市场需求挖掘  专访科视中国区高层</a></li><li><a href="http://oa.it168.com/a2021/0729/6518/000006518618.shtml" target="_blank">商业办公靠谱之选  夏普AR-2348DV黑白复合机特价促销</a></li><li><a href="http://mfp.it168.com/a2020/0327/6163/000006163249.shtml" target="_blank">小巧强悍，夏普SF-S211XC京东热销价10000元</a></li>
+            </ul>
+        </div>
+        <div class="tab01Cont" id="tab02_Content2" style="display: none">
+            <div class="bor0127" id="calendar_contain"></div>
+            <div class="shijianzhou" id="rili_info"></div>
+            <ul class="list3"><li class="first"><a href="http://mobile.it168.com/a2021/0806/6522/000006522462.shtml" target="_blank" id="m5_p1">荣耀X20：超窄边框120Hz全视屏打造沉浸式视觉体验</a></li><li><a href="http://mobile.it168.com/a2021/0805/6522/000006522206.shtml" target="_blank" id="m5_p2">荣耀Magic3系列诞生全过程提前曝光：给用户更极致全能体验</a></li><li><a href="http://mobile.it168.com/a2021/0804/6521/000006521627.shtml" target="_blank" id="m5_p3">OPPO推出下一代屏下摄像头技术，显示与成像同步升级</a></li><li><a href="http://mobile.it168.com/a2021/0803/6521/000006521325.shtml" target="_blank" id="m5_p4">OPPO国美强强联手，共创7月销量历史新高</a></li><li><a href="http://mobile.it168.com/a2021/0802/6520/000006520806.shtml" target="_blank" id="m5_p5">第二届O粉节将开启：OPPO为粉丝制定圆梦计划与促销活动</a></li></ul><ul class="list3"><li class="first"><a href="http://mobile.it168.com/a2021/0802/6520/000006520413.shtml" target="_blank" id="m5_p6">5G云游戏背后的科技力量，高通创新技术持续丰富数字娱乐体验</a></li><li><a href="http://mobile.it168.com/a2021/0730/6520/000006520094.shtml" target="_blank" id="m5_p7">超级玩家生而强悍 iQOO展台现身上海ChinaJoy</a></li><li><a href="http://mobile.it168.com/a2021/0730/6520/000006520061.shtml" target="_blank" id="m5_p8">红魔携3大行业顶流9大游戏IP闪耀ChinaJoy2021！7大看点造就游戏娱乐盛宴</a></li><li><a href="http://mobile.it168.com/a2021/0730/6519/000006519899.shtml" target="_blank" id="m5_p9">火出圈的动漫联名产品，OPPO Reno6 Pro+名侦探柯南限定版</a></li><li><a href="http://mobile.it168.com/a2021/0730/6519/000006519761.shtml" target="_blank" id="m5_p10">夏日氛围感拉满：快用vivo S10来调一杯“青柠莫吉托”吧！</a></li></ul><ul class="list3"><li class="first"><a href="http://notebook.it168.com/a2021/0809/6523/000006523213.shtml" target="_blank" id="m5_p11">1kg超轻机身不到5千元！惠普ProBook 635 G8商务本评测</a></li><li><a href="http://notebook.it168.com/a2021/0803/6521/000006521168.shtml" target="_blank" id="m5_p12">17.3英寸电竞巨屏 惠普OMEN暗影精灵7 Plus旗舰级游戏本评测</a></li><li><a href="http://notebook.it168.com/a2021/0730/6519/000006519548.shtml" target="_blank" id="m5_p13">选本也要有调性 惠普Spectre x360 14可触控变形本你值得拥有</a></li><li><a href="http://diy.it168.com/a2021/0806/6522/000006522836.shtml" target="_blank" id="m5_p14">大放异彩！ 专访AMD高级副总裁、大中华区总裁潘晓明先生</a></li><li><a href="http://diy.it168.com/a2021/0728/6518/000006518398.shtml" target="_blank" id="m5_p15">助力办公好选择，攀升简约式一体机</a></li></ul>
+        </div>
+    </div>
+    
+           <div id="ADV_3402" class="pb10" style="display:none;float:right;margin-right:0px;margin-top:5px">
+            <script>
+                LG('ADV_3402');
+            </script>
+        </div>
+               <div id="ADV_3372" class="mt30" style="display:none;margin-top:5px;float:right;margin-right:0px">
+            <script>
+                LG('ADV_3372');
+            </script>
+        </div>
+              <div class="fr">
+             
+                <!--广告-->
+              
+                <ul class="chanpin show" style="margin-top: 0;">
+                    <li>
+                        <div class="title clearfix">
+                            <div class="fl">
+                                <p>产品报价</p><i></i>
+                            </div>
+                            <a class="fr" href="#">MORE</a>
+                        </div>
+                    </li>
+                    <li>
+                        <ol>
+                            <li class="title clearfix">
+                                <i class="fl"></i>
+                                <a href="http://product.it168.com/0302/">手机</a><strong></strong><a href="http://mobile.it168.com/a2019/1108/6083/000006083980.shtml">手机薅羊毛</a>
+                            </li>
+                            <li>
+                                <a href="http://product.it168.com/0302/3979/">OPPO</a>
+<a href="http://product.it168.com/0302/0349/">华为</a>
+<a href="http://product.it168.com/list_0302_b14090.html">荣耀</a>
+<a href="http://product.it168.com/0302/0209/">三星</a>
+<a href="http://product.it168.com/0302/1184/">小米</a>
+
+                            </li>
+                        </ol>
+                        <div style="display: none;">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/0302/">手机</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0302/s18114v18213">全网通</a></em><em><a href="http://product.it168.com/0302/s2572v16456">移动4G</a></em><em><a href="http://product.it168.com/0302/s2572v2713">联通4G</a></em><em><a href="http://product.it168.com/0302/s2572v18229">电信4G</a></em><em><a href="http://product.it168.com/0302/s18114v17897">双卡双待</a></em><em><a href="http://product.it168.com/0302/s29969v18379">双摄像头</a></em><em><a href="http://product.it168.com/0302/s30493v18423">全面屏</a></em><em><a href="http://product.it168.com/0302/s7272v16756">大屏手机</a></em><em><a href="http://product.it168.com/0302/s29084v17883">指纹识别</a></em><em><a href="http://product.it168.com/0302/s29086v18047">快速充电</a></em><em><a href="http://product.it168.com/0302/s29133v17901">老人机</a></em><em><a href="http://product.it168.com/0302/s29611v18234">高清通话</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/top/Mobile_logo.shtml" target = "_blank">手机品牌</a> 
+                                    <div class="details-list">
+                                       <em><a href="http://product.it168.com/list_0302_b10963.html">一加</a></em><em><a href="http://product.it168.com/0302/0022/">苹果</a></em><em><a href="http://product.it168.com/0302/0349/">华为</a></em><em><a href="http://product.it168.com/0302/1184/">小米</a></em><em><a href="http://product.it168.com/list_0302_b14090.html">荣耀</a></em><em><a href="http://product.it168.com/0302/2805/">vivo</a></em><em><a href="http://product.it168.com/0302/3979/">OPPO</a></em><em><a href="http://product.it168.com/0302/0209/">三星</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/top/Mobile_hot.shtml">热门手机</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/detail/1166302.html">iPhone12</a></em><em><a href="http://product.it168.com/detail/1166294.html">OPPO Reno5 Pro</a></em><em><a href="http://product.it168.com/detail/doc/1151146/index.shtml">荣耀V40</a></em><em><a href="http://product.it168.com/detail/1166291.html">华为Mate40 Pro</a></em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <ol>
+                            <li class="title clearfix">
+                                <i class="fl"></i>
+                                <a href="http://product.it168.com/0301/">笔记本</a><strong></strong><a href="http://product.it168.com/detail/doc/1151397/index.shtml">MacBook Pro</a>
+                            </li>
+                            <li>
+                                <a href="http://product.it168.com/1416/">平板电脑</a>
+<a href="http://product.it168.com/zj/1393/">一体电脑</a>
+<a href="http://product.it168.com/1430/">超极本</a>
+<a href="http://product.it168.com/zj/0101/">台式机</a>
+<a href="http://product.it168.com/0301/0377/">联想</a>
+<a href="http://product.it168.com/0301/6310/">ThinkPad</a>
+<a href="http://product.it168.com/0301/0022/">苹果</a>
+<a href="http://product.it168.com/0301/0064/">戴尔</a>
+<a href="http://product.it168.com/0301/0112/">惠普</a>
+
+                            </li>
+                        </ol>
+                        <div style="display: none;">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/0301/">电脑整机</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0301/">笔记本</a></em><em><a href="http://product.it168.com/1416/">平板电脑</a></em><em><a href="http://product.it168.com/zj/0101/">台式机</a></em><em><a href="http://product.it168.com/zj/1393/">一体电脑</a></em><em><a href="http://product.it168.com/1430/">超极本</a></em><em><a href="http://product.it168.com/1610/">游戏本</a></em><em><a href="http://product.it168.com/0301/s8808v18226">商务办公</a></em><em><a href="http://product.it168.com/0301/s8808v18227">娱乐影音</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/yjws/0220/">配件分类</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/yjws/0220/">鼠标</a></em><em><a href="http://product.it168.com/yjws/0201/">键盘</a></em><em><a href="http://product.it168.com/0250/">固态硬盘</a></em><em><a href="http://product.it168.com/0309/">移动硬盘</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/top/nb_logo.shtml">热门品牌</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0301/0377/">联想</a></em><em><a href="http://product.it168.com/0301/6310/">ThinkPad</a></em><em><a href="http://product.it168.com/0301/0022/">苹果</a></em><em><a href="http://product.it168.com/0301/0064/">戴尔</a></em><em><a href="http://product.it168.com/0301/0112/">惠普</a></em><em><a href="http://product.it168.com/0301/0006/">宏碁</a></em><em><a href="http://product.it168.com/0301/11844/">雷神</a></em><em><a href="http://product.it168.com/0301/1112/">神舟</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/top/nb_hot.shtml">热门产品</a>
+                                    <div class="details-list">
+                                       <em><a href="http://product.it168.com/detail/1166385.html">惠普 星14</a></em><em><a href="http://product.it168.com/detail/1166387.html">惠普 暗影精灵6</a></em><em><a href="http://product.it168.com/detail/1166389.html">华硕 天选2</a></em><em><a href="http://product.it168.com/detail/1166391.html">华硕 灵耀X纵横</a></em><em><a href="http://product.it168.com/detail/1166392.html">ROG 魔霸新锐</a></em><em><a href="http://product.it168.com/detail/1166394.html">联想 拯救者R7000</a></em><em><a href="http://product.it168.com/detail/1166396.html">苹果 MacBook Air</a></em><em><a href="http://product.it168.com/detail/1166386.html">惠普 战66 三代AMD版</a></em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <ol>
+                            <li class="title clearfix">
+                                <i class="fl"></i>
+                                <a href="http://product.it168.com/zxsx/0305/">数码相机</a><strong></strong>
+                            </li>
+                            <li>
+                                <a href="http://product.it168.com/1596/">单反相机</a>&nbsp;<a href="http://product.it168.com/1595/">单电/微单</a>&nbsp;<a href="http://product.it168.com/zxsx/0320/">镜头</a>&nbsp;<a href="http://product.it168.com/zxsx/0306/">摄像机</a>&nbsp;
+                            </li>
+                        </ol>
+                        <div style="display: none;">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/zxsx/0305/">摄影摄像</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0305/">数码相机</a></em><em><a href="http://product.it168.com/1596/">单反相机</a></em><em><a href="http://product.it168.com/1595/">单电/微单</a></em><em><a href="http://product.it168.com/0320/">镜头</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/0313/">相机配件</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0313/">存储卡</a></em><em><a href="http://product.it168.com/0349/">滤镜</a></em><em><a href="http://product.it168.com/0325/">三脚架/云台</a></em><em><a href="http://product.it168.com/0336/">闪光灯/手柄</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/top/dc_logo.shtml" target = "_blank">相机品牌</a> 
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/zxsx/0305/0046/">佳能</a></em><em><a href="http://product.it168.com/zxsx/0305/0171/">尼康</a></em><em><a href="http://product.it168.com/zxsx/0305/0230/">索尼</a></em><em><a href="http://product.it168.com/zxsx/0305/0096/">富士</a></em><em><a href="http://product.it168.com/zxsx/0305/6501/">徕卡</a></em><em><a href="http://product.it168.com/zxsx/0305/0182/">松下</a></em><em><a href="http://product.it168.com/zxsx/0305/1784/">宾得</a></em><em><a href="http://product.it168.com/zxsx/0305/0179/">奥林巴斯</a></em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <ol>
+                            <li class="title clearfix">
+                                <i class="fl"></i>
+                                <a href="http://product.it168.com/0402/">服务器</a><strong></strong><a href="http://product.it168.com/0409/">网络设备</a>
+                            </li>
+                            <li>
+                                <a href="http://product.it168.com/afcp/0642/">安防监控</a>&nbsp;<a href="http://product.it168.com/0309/">存储设备</a>&nbsp;<a href="http://product.it168.com/0412/">交换机</a>&nbsp;
+                            </li>
+                        </ol>
+                        <div style="display: none;border-radius: 10px 0 0px 10px;">
+                            <ul>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/0402/">服务器</a>
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0402/">服务器</a></em><em><a href="http://product.it168.com/0403/">工作站</a></em><em><a href="http://product.it168.com/0703/">NAS网络存储</a></em><em><a href="http://product.it168.com/0707/">磁盘阵列</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/0409/" target = "_blank">网络设备</a> 
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0409/">路由器</a></em><em><a href="http://product.it168.com/1609/">无线路由器</a></em><em><a href="http://product.it168.com/0412/">交换机</a></em><em><a href="http://product.it168.com/0534/">上网行为管理</a></em>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="http://product.it168.com/afcp/0642/" target = "_blank">安防设备</a> 
+                                    <div class="details-list">
+                                        <em><a href="http://product.it168.com/0642/">安防监控</a></em><em><a href="http://product.it168.com/0641/">网络摄像机</a></em><em><a href="http://product.it168.com/0625/">KVM切换器</a></em><em><a href="http://product.it168.com/0443/">无线安全保密</a></em>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="chanpin">
+                    <li>
+                        <div class="title clearfix">
+                            <div class="fl">
+                                <p>精选好价</p><i></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li><a class="txt" href="http://elec.it168.com/a2021/0617/6497/000006497218.shtml">疯狂618！云米净水器与净饮一体机超让利优惠大促</a><a href="http://elec.it168.com/a2021/0617/6497/000006497218.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3418/3418760.jpg" alt=""><div class="fr"><p>疯狂618！云米净水器与净饮一体机超让利优惠大促</p><span>2021-06-17 01:58:30</span></div></div><div class="my-time">2021-06-17 01:58:30</div></div></a></li><li><a class="txt" href="http://mobile.it168.com/a2021/0615/6495/000006495826.shtml">18G超大内存！红魔游戏手机6 Pro氘锋透明版12期免息现已开启预售！</a><a href="http://mobile.it168.com/a2021/0615/6495/000006495826.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3410/3410607.jpg" alt=""><div class="fr"><p>18G超大内存！红魔游戏手机6 Pro氘锋透明版12期免息现已开启预售！</p><span>2021-06-15 05:49:17</span></div></div><div class="my-time">2021-06-15 05:49:17</div></div></a></li><li><a class="txt" href="http://digital.it168.com/a2021/0607/6490/000006490398.shtml">顶级三分频+优惠近千元+送脚架！惠威M5A无线有源音箱太香了</a><a href="http://digital.it168.com/a2021/0607/6490/000006490398.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3389/3389617.jpg" alt=""><div class="fr"><p>顶级三分频+优惠近千元+送脚架！惠威M5A无线有源音箱太香了</p><span>2021-06-07 10:59:13</span></div></div><div class="my-time">2021-06-07 10:59:13</div></div></a></li><li><a class="txt" href="http://mobile.it168.com/a2021/0521/6480/000006480371.shtml">又一款2000元价位段神机！OPPO A95在设计、影像上带来多重惊喜</a><a href="http://mobile.it168.com/a2021/0521/6480/000006480371.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3335/3335559.png" alt=""><div class="fr"><p>又一款2000元价位段神机！OPPO A95在设计、影像上带来多重惊喜</p><span>2021-05-21 11:31:32</span></div></div><div class="my-time">2021-05-21 11:31:32</div></div></a></li><li><a class="txt" href="http://digital.it168.com/a2021/0517/6478/000006478361.shtml">解决果粉充电难题！雷柏PA20mini迷你充电器带来极致充电体验</a><a href="http://digital.it168.com/a2021/0517/6478/000006478361.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3325/3325285.png" alt=""><div class="fr"><p>解决果粉充电难题！雷柏PA20mini迷你充电器带来极致充电体验</p><span>2021-05-17 06:13:36</span></div></div><div class="my-time">2021-05-17 06:13:36</div></div></a></li><li><a class="txt" href="http://digital.it168.com/a2021/0422/6468/000006468739.shtml">集外观、功能、性价比于一身！雷柏Ti100蓝牙耳机仅售399元</a><a href="http://digital.it168.com/a2021/0422/6468/000006468739.shtml"><div class="img-txt"><div class="clearfix"><img class="fl" src="http://sy0.img.it168.com/article/3/3281/3281388.jpeg" alt=""><div class="fr"><p>集外观、功能、性价比于一身！雷柏Ti100蓝牙耳机仅售399元</p><span>2021-04-22 07:18:49</span></div></div><div class="my-time">2021-04-22 07:18:49</div></div></a></li>
+                </ul>
+                <ul class="chanpin">
+                    <li style="margin-bottom: 20px;">
+                        <div class="title clearfix">
+                            <div class="fl">
+                                <p>哈喽维修</p><i></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <ol class="service-logo clearfix">
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#1">
+                                    <i class="iconfont iconrepair_image_iphone"></i>
+                                     <div>苹果维修</div>
+                                </a>
+                               
+                            </li>
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#2">
+                                    <i class="iconfont iconrepair_image_huawei"></i>
+                                    <div>华为维修</div>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#3">
+                                    <i class="iconfont iconrepair_image_samsung"></i>
+                                    <div>三星维修</div>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#4">
+                                    <i class="iconfont iconrepair_image_xiaomi"></i>
+                                    <div>小米维修</div>
+                                </a>
+                               
+                            </li>
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#5">
+                                    <i class="iconfont iconrepair_image_oppo" style="font-size:14px"></i>
+                                    <div style="padding: 3px 0;">oppo维修</div>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href="http://www.hallofix.com/order/product.html#6">
+                                    <i class="iconfont iconrepair_image_vivo" style="font-size:46px" ></i>
+                                     <div>vivo维修</div>
+                                </a>
+                               
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+               <div id="ADV_24184" class="w1000 pt5" style="display:none;margin-top: 10px">
+            <script>
+                LG('ADV_24184');
+            </script>
+        </div>
+                    <div id="ADV_24185" class="w1000 pt5" style="display:none;margin-top: 10px">
+            <script>
+                LG('ADV_24185');
+            </script>
+        </div>
+              
+        <!-- 手机 -->
+        <div class="big-title">
+            <div class="name">
+                <p>手机</p>
+                <p>Mobile phone</p>
+            </div>
+        </div>
+        <div class="clearfix">
+           <div class="fl"><div class="image-text w370"><a href="http://mobile.it168.com/a2021/0729/6519/000006519194.shtml" id="m12_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3546/3546032.jpg_i-w370" alt="硬核纹理战斗感十足 Redmi K40 游戏增强版“逆鳞”款开箱"></div><p>硬核纹理战斗感十足 Redmi K40 游戏增强版“逆鳞”款开箱</p></a></div><ul class="phone clearfix s-img-text list"><li><div class="image-text w180"><a href="http://mobile.it168.com/a2021/0729/6519/000006519144.shtml" id="m12_p2"><div class="over"><img src="http://sy0.img.it168.com/article/3/3546/3546058.jpg_i-w180" alt="OPPO的走心联名充满科技感的浪漫！电致变色现新兰传情"></div><p>OPPO的走心联名充满科技感的浪漫！电致变色现新兰传情</p></a></div></li><li><div class="image-text w180"><a href="http://mobile.it168.com/a2021/0726/6517/000006517502.shtml" id="m12_p3"><div class="over"><img src="http://sy0.img.it168.com/article/3/3545/3545263.jpeg_i-w180" alt="想要随时随地畅享奥运赛事直播 这些手机将是你的最佳选择"></div><p>想要随时随地畅享奥运赛事直播 这些手机将是你的最佳选择</p></a></div></li></div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                        <li class="first"><a href="http://mobile.it168.com/a2021/0730/6520/000006520078.shtml" id="m12_p4" target="_blank">OPPO携《名侦探柯南》与《英雄联盟手游》两大IP亮相CJ2021</a></li><li class=""><a href="http://mobile.it168.com/a2021/0730/6519/000006519925.shtml" id="m12_p5" target="_blank">一加精彩亮相2021 ChinaJoy，跨界互动带来破次元体验</a></li><li class=""><a href="http://mobile.it168.com/a2021/0730/6519/000006519898.shtml" id="m12_p6" target="_blank">2021 ChinaJoy 开幕，与你共同见证魅族的 2021 个环保愿望</a></li><li class=""><a href="http://mobile.it168.com/a2021/0730/6519/000006519676.shtml" id="m12_p7" target="_blank">一加手机全球市场增长强劲，2021年上半年出货量同比增长257%</a></li><li class=""><a href="http://mobile.it168.com/a2021/0730/6519/000006519395.shtml" id="m12_p8" target="_blank">HarmonyOS 2升级用户突破4000万 华为P50全系适配，36个月不卡顿</a></li><li class=""><a href="http://mobile.it168.com/a2021/0729/6519/000006519289.shtml" id="m12_p9" target="_blank">骁龙游戏技术赏：前沿移动科技，焕新游戏体验</a></li>
+                    </ul>
+                    <ul class="list3">
+                         <li class="first"><a href="http://mobile.it168.com/a2021/0806/6522/000006522445.shtml" id="m12_p10" target="_blank">OPPO签约上汽集团，将携手建车机互融生态</a></li><li class=""><a href="http://mobile.it168.com/a2021/0804/6521/000006521412.shtml" id="m12_p11" target="_blank">vivo S10 Pro体验：手机里的自拍APP都可以卸载了</a></li><li class=""><a href="http://mobile.it168.com/a2021/0803/6521/000006521406.shtml" id="m12_p12" target="_blank">realme发布全球最快MagDart磁吸无线闪充，构建业界最全面磁吸无线生态</a></li><li class=""><a href="http://mobile.it168.com/a2021/0802/6520/000006520503.shtml" id="m12_p13" target="_blank">OPPO A93s评测：2000元颜值担当的实用手机</a></li><li class=""><a href="http://mobile.it168.com/a2021/0802/6520/000006520646.shtml" id="m12_p14" target="_blank">荣耀亮相第3届国际音频展 荣耀Earbuds 2 SE黑色版耳机将发售</a></li><li class=""><a href="http://mobile.it168.com/a2021/0730/6520/000006520096.shtml" id="m12_p15" target="_blank">ChinaJoy骁龙主题馆聚力开启 创新前沿科技打造数字娱乐嘉年华</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title">
+                                <p class="title fl bright">手机关注榜</p>
+                            </div>
+                            <ol>
+                               <li><i>1</i><a href="http://product.it168.com/detail/1166466.html" target="_blank"><span>华为 P50pro</span><i>￥7088</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1166462.html" target="_blank"><span>vivo S10</span><i>￥2699</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1166458.html" target="_blank"><span>荣耀 50 Pro</span><i>￥3699</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1166451.html" target="_blank"><span>OPPO Reno6 Pro+ 12GB+256GB</span><i>￥4499</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1166449.html" target="_blank"><span>realme 真我Q3 Pro 狂欢版</span><i>￥1799</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1166447.html" target="_blank"><span>海信 TOUCH</span><i>￥1599</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/1166417.html" target="_blank"><span>魅族 18</span><i>￥4999</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/1166384.html" target="_blank"><span>三星 Galaxy S21 5G（SM-G9910）</span><i>￥4999</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/1166347.html" target="_blank"><span>索尼 Xperia5II5G智能手机骁龙8656.1英寸21：9120HzOLED屏游戏支持微单技术黑色【购机补贴版】</span><i>￥5999</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1166336.html" target="_blank"><span>锤子 坚果R212GB+256GB松绿色1亿像素骁龙865双系统双模5G旗舰手机</span><i>￥4899</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/1166335.html" target="_blank"><span>小米 Redmi9大字体大音量大内存全场景AI四摄高性能游戏芯4GB+128GB墨黛青游戏智能手机红米【购机补贴版】</span><i>￥999</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/1166302.html" target="_blank"><span>苹果 iPhone12A2404128GB黑色支持移动联通电信5G双卡双待手机</span><i>￥6799</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/1166260.html" target="_blank"><span>AORO遨游 A10-5G三防手机</span><i>￥6980</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 手机 END -->
+
+        <!-- 笔记本平板 -->
+        <div class="big-title">
+            <div class="name">
+                <p>笔记本平板</p>
+                <p>Laptops and tablets</p>
+            </div>
+        </div>
+        <div class="clearfix">
+             <div class="fl"><div class="image-text w370"><a href="http://notebook.it168.com/a2021/0719/6514/000006514187.shtml" id="m14_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3523/3523762.png_i-w370" alt="游戏本该怎么选？惠普OMEN暗影精灵7Plus强悍来助阵"></div><p>游戏本该怎么选？惠普OMEN暗影精灵7Plus强悍来助阵</p></a></div><ul class="phone clearfix s-img-text list"><li><div class="image-text w180"><a href="http://notebook.it168.com/a2021/0719/6514/000006514079.shtml" id="m14_p2"><div class="over"><img src="http://sy0.img.it168.com/article/3/3523/3523298.png_i-w180" alt="17.3英寸2K屏，ROG魔霸5R Plus新品首发价13999元"></div><p>17.3英寸2K屏，ROG魔霸5R Plus新品首发价13999元</p></a></div></li><li><div class="image-text w180"><a href="http://notebook.it168.com/a2021/0717/6513/000006513908.shtml" id="m14_p3"><div class="over"><img src="http://sy0.img.it168.com/article/3/3522/3522698.jpg_i-w180" alt="双A平台扛鼎之作！ROG魔霸5R游戏本评测"></div><p>双A平台扛鼎之作！ROG魔霸5R游戏本评测</p></a></div></li></div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                        <li class="first"><a href="http://notebook.it168.com/a2021/0727/6517/000006517728.shtml" id="m14_p4" target="_blank">RTX 30系显卡还能如此炫技！华硕天选2酷睿版游戏本体验</a></li><li class=""><a href="http://notebook.it168.com/a2021/0723/6516/000006516690.shtml" id="m14_p5" target="_blank">这个暑假与孩子一起成长 K12智能教育本助你一臂之力</a></li><li class=""><a href="http://notebook.it168.com/a2021/0722/6515/000006515944.shtml" id="m14_p6" target="_blank">双A平台信仰拉满！ROG魔霸5R/5R Plus游戏本火爆开售中</a></li><li class=""><a href="http://notebook.it168.com/a2021/0720/6514/000006514732.shtml" id="m14_p7" target="_blank">近距离感受它的强大 惠普OMEN暗影精灵7游戏本拆机视频</a></li><li class=""><a href="http://notebook.it168.com/a2021/0719/6514/000006514386.shtml" id="m14_p8" target="_blank">这才是你该拥有的游戏本 惠普OMEN暗影精灵7全面体验</a></li><li class=""><a href="http://notebook.it168.com/a2021/0720/6514/000006514495.shtml" id="m14_p9" target="_blank">满功耗性能+真彩视界 惠普OMEN暗影精灵7成最佳游戏拍档</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li class="first"><a href="http://notebook.it168.com/a2021/0730/6520/000006520105.shtml" id="m14_p10" target="_blank">轻薄本就没有高性能？那是你没遇到惠普星14</a></li><li class=""><a href="http://notebook.it168.com/a2021/0802/6520/000006520825.shtml" id="m14_p11" target="_blank">2.5K高清165Hz高刷屏，天选2新品预约首发价9999元</a></li><li class=""><a href="http://notebook.it168.com/a2021/0729/6519/000006519019.shtml" id="m14_p12" target="_blank">天生出彩好用不贵 入手惠普星14高性能轻薄本的N个理由</a></li><li class=""><a href="http://notebook.it168.com/a2021/0729/6518/000006518735.shtml" id="m14_p13" target="_blank">真生产力工具！惠普ENVY 13面向高阶内容创作者内外兼修</a></li><li class=""><a href="http://notebook.it168.com/a2021/0729/6518/000006518730.shtml" id="m14_p14" target="_blank">暑期孩子不去补习班了？惠普智能教育本辅助孩子在家学习</a></li><li class=""><a href="http://notebook.it168.com/a2021/0728/6518/000006518505.shtml" id="m14_p15" target="_blank">暑期最值得买的真香游戏本！搭载RTX 30系的天选2仅售6999元起</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list" >
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title" id="list_1">
+                                <p class="title fl bright">笔记本销量排行榜</p>
+                                <p class="title fl">游戏本关注榜</p>
+                            </div>
+                            <ol>
+                                 <li><i>1</i><a href="http://product.it168.com/detail/1166396.html" target="_blank"><span>苹果 MacBook Air</span><i>￥7999</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1166395.html" target="_blank"><span>联想 拯救者Y7000P</span><i>￥8999</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1166393.html" target="_blank"><span>ROG 幻13</span><i>￥8499</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1166391.html" target="_blank"><span>华硕 灵耀X纵横</span><i>￥9499</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1166388.html" target="_blank"><span>惠普 暗影精灵6锐龙版</span><i>￥6269</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1166281.html" target="_blank"><span>雷神 一格IGER S1轻薄笔记本电脑</span><i>￥7599</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/1166268.html" target="_blank"><span>Think Book 全新ThinkBook15 酷睿版 英特尔酷睿i7 锐智系创造本</span><i>￥6299</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/1166035.html" target="_blank"><span>神舟 战神ZX6TI-CU5DA</span><i>￥5699</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/1165889.html" target="_blank"><span>华为 MateBookXPro2020款13.9英寸超轻薄全面屏笔记本电脑十代酷睿i516G+512G集显3K触控银</span><i>￥7999</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1165734.html" target="_blank"><span>机械革命 S1Air14英寸AMD锐龙版全新12nm轻薄笔记本电脑R5-3500U8G512GSSD银</span><i>￥3289</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/1165733.html" target="_blank"><span>ThinkPad 联想X39015CD英特尔酷睿i513.3英寸轻薄笔记本电脑i5-10210U8G512G傲腾增强型SSDFHD4G</span><i>￥7659</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/1165732.html" target="_blank"><span>微软 SurfacePro7二合一平板电脑笔记本|12.3英寸第十代酷睿i34G128GSSD亮铂金</span><i>￥5788</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/1165727.html" target="_blank"><span>戴尔 成就500013.3英寸英特尔酷睿i5窄边框轻薄笔记本电脑十代i5-10210U8G512GMX2502G高色域银</span><i>￥5099</i></a></li>
+                            </ol>
+                            <ol style="display: none;">
+                                 <li><i>1</i><a href="http://product.it168.com/detail/1166090.html" target="_blank"><span>惠普 暗影精灵5 15.6英寸</span><i>￥4999</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1165926.html" target="_blank"><span>雷神 五代新911荣耀版16.6英寸游戏笔记本电脑i7-9750H16G512GSSDGTX1660Ti144Hz</span><i>￥8699</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1165924.html" target="_blank"><span>戴尔 灵越500014英寸英特尔酷睿i5高性能轻薄笔记本电脑十代i5-1035G18G512GMX2302G2年上门银</span><i>￥4699</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1165571.html" target="_blank"><span>微星 msi绝影GS6515.6英寸游戏本笔记本电脑i7-9750H8G*2512GSSDGTX1660Ti赛睿144Hz电竞全面屏</span><i>￥9999</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1165565.html" target="_blank"><span>宏碁 Acer暗影骑士·擎144hz电竞屏72%游戏本笔记本电脑i7-10750H16G512GSSDGTX1650Ti4GRGB键盘</span><i>￥7299</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1166059.html" target="_blank"><span>外星人 ALW15M-R3725S</span><i>￥12499</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/626409.html" target="_blank"><span>东芝 X70-AT01S 17.3英寸游戏本(i7-4700MQ/16G/1T/GTX770M 3G独显/1080P/背光键盘/Win8/黑色)</span><i>￥9899</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/626473.html" target="_blank"><span>技嘉 P2542G 15.6英寸游戏本(i7-3630QM/8G/750G/GTX660M 2G独显/DOS/黑色)</span><i>￥6499</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/1162384.html" target="_blank"><span>吾空 K17</span><i>￥7999</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1061420.html" target="_blank"><span>机械革命 MR X6-M 15.6英寸游戏本(i7-4710MQ/8G/1T/GTX860M/DOS/黑色)</span><i>￥5699</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/626385.html" target="_blank"><span>未来人类 X11 11.6英寸游戏本(i7-3630QM/8G/500G/GT650M 2G独显/DOS/黑色)</span><i>￥6299</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/1163502.html" target="_blank"><span>机械师 T58-V</span><i>￥8199</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/1163363.html" target="_blank"><span>华硕 ROG枪神3-RTX2060</span><i>￥14999</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 笔记本平板 END -->
+        <!-- 家电厨卫 -->
+        <div class="big-title">
+            <div class="name">
+                <p>家电厨卫</p>
+                <p>Home appliances</p>
+            </div>
+        </div>
+        <div class="clearfix">
+             <div class="fl"><div class="image-text w370"><a href="http://elec.it168.com/a2021/0617/6497/000006497218.shtml" id="m16_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3418/3418760.jpg_i-w370" alt="疯狂618！云米净水器与净饮一体机超让利优惠大促"></div><p>疯狂618！云米净水器与净饮一体机超让利优惠大促</p></a></div><ul class="phone clearfix s-img-text list"><li><div class="image-text w180"><a href="http://elec.it168.com/a2021/0611/6493/000006493530.shtml" id="m16_p2"><div class="over"><img src="http://sy0.img.it168.com/article/3/3404/3404327.jpg_i-w180" alt="OPPO智能电视K9 65英寸体验：10bit高色准+大功率喇叭 3000元档实力派"></div><p>OPPO智能电视K9 65英寸体验：10bit高色准+大功率喇叭 3000元档实力派</p></a></div></li><li><div class="image-text w180"><a href="http://elec.it168.com/a2021/0616/6496/000006496324.shtml" id="m16_p3"><div class="over"><img src="http://sy0.img.it168.com/article/3/3413/3413786.png_i-w180" alt="美的&国美2021夏季新品盛大发布 双美合璧共创家电新高峰"></div><p>美的&国美2021夏季新品盛大发布 双美合璧共创家电新高峰</p></a></div></li></div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                        <li class="first"><a href="http://elec.it168.com/a2021/0721/6515/000006515060.shtml" id="m16_p4" target="_blank">尽享赛事顶级观看体验 创维W82让你在家“身临赛场”</a></li><li class=""><a href="http://elec.it168.com/a2021/0716/6513/000006513476.shtml" id="m16_p5" target="_blank">欧洲杯战报发布 海信解密激光电视的五个“世界第一”</a></li><li class=""><a href="http://elec.it168.com/a2021/0628/6503/000006503308.shtml" id="m16_p6" target="_blank">“一刀不砍”的画质旗舰 小米电视6至尊版评测</a></li><li class=""><a href="http://elec.it168.com/a2021/0628/6503/000006503059.shtml" id="m16_p7" target="_blank">百级分区背光 LCD电视画质巅峰 小米电视6至尊版发布售5999元</a></li><li class=""><a href="http://elec.it168.com/a2021/0622/6500/000006500501.shtml" id="m16_p8" target="_blank">设计师大力推荐 明基E582高画质智能投影仪值得入手</a></li><li class=""><a href="http://elec.it168.com/a2021/0621/6499/000006499927.shtml" id="m16_p9" target="_blank">创新物联科技赋能金融场景 BOE（京东方）携手中国民生银行打造智慧银行新标杆</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li class="first"><a href="http://elec.it168.com/a2021/0809/6523/000006523508.shtml" id="m16_p10" target="_blank">让激光电视更快进入百姓家庭 —海信王伟专访</a></li><li class=""><a href="http://elec.it168.com/a2021/0802/6520/000006520734.shtml" id="m16_p11" target="_blank">全场景娱乐“神器” 创维W82变形OBM旗舰电视评测</a></li><li class=""><a href="http://elec.it168.com/a2021/0731/6520/000006520176.shtml" id="m16_p12" target="_blank">UDE2021国际显示博览会开幕 引领显示行业发展风向</a></li><li class=""><a href="http://elec.it168.com/a2021/0730/6520/000006520104.shtml" id="m16_p13" target="_blank">“重塑用户体验 畅享未来生活” 三星电子参展UDE2021</a></li><li class=""><a href="http://elec.it168.com/a2021/0727/6517/000006517679.shtml" id="m16_p14" target="_blank">新品60D1S面市 老板电器联手京东、孟美岐打造娱乐轰趴</a></li><li class=""><a href="http://elec.it168.com/a2021/0722/6515/000006515584.shtml" id="m16_p15" target="_blank">领先技术诠释绚丽视界，创维商用亮相InfoComm China 2021展会</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title">
+                                <p class="title fl bright">液晶电视关注榜</p>
+                            </div>
+                            <ol>
+                                <li><i>1</i><a href="http://product.it168.com/detail/1166443.html" target="_blank"><span>创维 S81 Pro</span><i>￥13999</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1166440.html" target="_blank"><span>TCL TCL游戏智屏C9</span><i>￥11999</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1166295.html" target="_blank"><span>小米 电视大师 82英寸至尊纪念版</span><i>￥49999</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1165999.html" target="_blank"><span>荣耀 智慧屏X1 65英寸</span><i>￥3299</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1164502.html" target="_blank"><span>KKTV 康佳K32K632英寸全面屏8GB大内存互动投屏高清画质33核处理器人工智能网络液晶平板教育电视机</span><i>￥799</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1164501.html" target="_blank"><span>康佳 LED43S243英寸智能网络电视高配智慧AI8G大内存全高清平板液晶卧室教育电视机</span><i>￥1549</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/1164498.html" target="_blank"><span>海信 HZ65E3D-PRO65英寸4K超清AI声控MEMC防抖无边全面屏智慧屏教育液晶电视机</span><i>￥3099</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/1164494.html" target="_blank"><span>松下 TH-50FX580C50英寸二级能效开机无广告4K超清HDR运动补偿智能液晶电视机</span><i>￥1999</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/1164493.html" target="_blank"><span>长虹 65D8K65英寸全程8K杜比视听AI画质调校多维交互免遥控人工智能平板液晶LED电视</span><i>￥6999</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1164487.html" target="_blank"><span>风行 39英寸39Y2六核8G同步教育高清人工智能语音家用液晶网络平板智能电视机有线无线连接</span><i>￥849</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/1164486.html" target="_blank"><span>飞利浦 50PUF7593T350英寸舒视蓝护眼防蓝光4K超薄2+16GAI智能语音网络液晶电视机</span><i>￥2699</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/1164473.html" target="_blank"><span>东芝 50U3800C50英寸4K超高清智能语音火箭炮音效16GB大内存纤薄液晶教育电视机</span><i>￥1699</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/1164471.html" target="_blank"><span>海尔 43V3143英寸全面屏全高清人工智能语音遥控幼儿教育LED液晶电视1+16G黑色</span><i>￥1399</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 家电厨卫 END -->
+        <!-- 数码音频 -->
+        <div class="big-title">
+            <div class="name">
+                <p>数码音频</p>
+                <p>Digital audio</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="fl"><div class="image-text w370"><a href="http://digital.it168.com/a2021/0729/6518/000006518738.shtml" id="m18_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3544/3544251.PNG_i-w370" alt="OPPO Watch 2，双擎混动超长续航的全智能表皇"></div><p style="height: 62px;line-height: 62px;">OPPO Watch 2，双擎混动超长续航的全智能表皇</p></a></div></div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                        <li class="first"><a href="http://digital.it168.com/a2021/0809/6523/000006523267.shtml" id="m18_p2" target="_blank">家庭影音至臻尊享体验 惠威M200-Bar无线Soundbar有源音箱体验评测</a></li><li class=""><a href="http://digital.it168.com/a2021/0805/6522/000006522161.shtml" id="m18_p3" target="_blank">OPPO Enco Air果冻色明日开售：夏日潮流必备单品</a></li><li class=""><a href="http://digital.it168.com/a2021/0803/6521/000006521113.shtml" id="m18_p4" target="_blank">CJ首发：西伯利亚S21敦煌博物馆联名款手机游戏耳机抢先体验</a></li><li class=""><a href="http://digital.it168.com/a2021/0730/6519/000006519904.shtml" id="m18_p5" target="_blank">怪盗基德元素加持，OPPO Enco Free2实力种草</a></li><li class=""><a href="http://digital.it168.com/a2021/0727/6518/000006518044.shtml" id="m18_p6" target="_blank">智慧清洁新体验 米家扫拖机器人2开箱</a></li><li class=""><a href="http://digital.it168.com/a2021/0729/6518/000006518946.shtml" id="m18_p7" target="_blank">OPPO确认参与2021ChinaJoy，主题或是柯南与LOL手游</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title" id="list_2">
+                                <p class="title fl bright">耳机排行</p>
+                                <p class="title fl">智能手表排行榜</p>
+                            </div>
+                            <ol>
+                                <li><i>1</i><a href="http://product.it168.com/detail/1166446.html" target="_blank"><span>雷柏 VH120 RGB游戏耳机</span><i>￥99</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1166358.html" target="_blank"><span>Soundcore 声阔Liberty Air 2 Pro</span><i>￥899</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1164724.html" target="_blank"><span>三星 GalaxyBuds真无线无线蓝牙入耳式耳机环境感知立体声运动耳机智能触控AKG品质音效莫奈彩</span><i>￥749</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1164723.html" target="_blank"><span>索尼 WI-1000XM2颈挂式无线蓝牙耳机高音质降噪耳麦主动降噪入耳式手机通话黑色</span><i>￥2499</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1164722.html" target="_blank"><span>Beats BeatsSolo3Wireless头戴式蓝牙无线耳机手机耳机游戏耳机-桀骜黑红十周年版MRQC2PAA</span><i>￥1298</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1164721.html" target="_blank"><span>华为 荣耀原装三键线控带麦半入耳式耳机AM115白色</span><i>￥109</i></a></li>
+                            </ol>
+                            <ol style="display: none;">
+                                <li><i>1</i><a href="http://product.it168.com/detail/1165927.html" target="_blank"><span>华米 T-Rex户外运动智能手表</span><i>￥799</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1164619.html" target="_blank"><span>AMAZFIT AmazfitGTS智能手表运动手表14天续航GPS50米防水NFC蔷薇粉华米科技出品国家田径队推荐产品</span><i>￥899</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1164618.html" target="_blank"><span>华为 WATCHGT2e手表运动智能手表2周续航+100种运动类型+麒麟芯片+心脏健康46mm熔岩红</span><i>￥1238</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1164617.html" target="_blank"><span>360 儿童电话手表C1IPX8防水AI智能定位GPS视频电话手表4G移动联通手表学生男女孩尼罗蓝</span><i>￥499</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1164616.html" target="_blank"><span>小米 米兔儿童电话学习手表4|4G全网通|双摄|1.78英寸|超长待机NFC公交卡防水男女孩学生儿童智能手表粉色</span><i>￥899</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1164615.html" target="_blank"><span>佳明 Fenix5S飞耐时5S中文蓝宝石玻璃镜面GPS多功能登山跑步智能运动表游泳户外腕表光学心率</span><i>￥5180</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 数码音频 END -->
+        <!-- DIY整机 -->
+        <div class="big-title">
+            <div class="name">
+                <p>DIY整机</p>
+                <p>Do it yourself</p>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="fl"><div class="image-text w370"><a href="http://diy.it168.com/a2021/0711/6509/000006509511.shtml" id="m17_p1"><div class="over"><img src="http://sy0.img.it168.com/article/3/3486/3486596.jpg_i-w370" alt="次元联动 华硕鬼灭之刃、高达主板降临BW2021"></div><p style="height: 62px;line-height: 62px;">次元联动 华硕鬼灭之刃、高达主板降临BW2021</p></a></div></div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                         <li class="first"><a href="http://diy.it168.com/a2021/0806/6522/000006522836.shtml" id="m17_p2" target="_blank">大放异彩！ 专访AMD高级副总裁、大中华区总裁潘晓明先生</a></li><li class=""><a href="http://diy.it168.com/a2021/0728/6518/000006518398.shtml" id="m17_p3" target="_blank">助力办公好选择，攀升简约式一体机</a></li><li class=""><a href="http://diy.it168.com/a2021/0728/6518/000006518200.shtml" id="m17_p4" target="_blank">夏日清凉水冷电竞！攀升设计师与游戏专用电脑主机</a></li><li class=""><a href="http://diy.it168.com/a2021/0726/6517/000006517166.shtml" id="m17_p5" target="_blank">颜值与性能并存的一体机  海尔天越S9视频体验</a></li><li class=""><a href="http://diy.it168.com/a2021/0721/6515/000006515259.shtml" id="m17_p6" target="_blank">2021电竞主机推荐，总有一款适合你！</a></li><li class=""><a href="http://diy.it168.com/a2021/0714/6511/000006511569.shtml" id="m17_p7" target="_blank">夏日送清凉，攀升游戏主机与商用主机惊喜狂暑价</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title" id="list_3">
+                                <p class="title fl bright">显卡排行</p>
+                                <p class="title fl">主板排行榜</p>
+                            </div>
+                            <ol>
+                                 <li><i>1</i><a href="http://product.it168.com/detail/1166453.html" target="_blank"><span>影驰 GeForce RTX 3080 星曜 OC</span><i>未上市</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1166088.html" target="_blank"><span>华硕 ROG-STRIX-RTX2070S-A8G-GAMING</span><i>￥4699</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1164866.html" target="_blank"><span>技嘉 RadeonRX5600XTGAMINGOC6G游戏显卡</span><i>￥2499</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1164865.html" target="_blank"><span>微星 万图师GeForceGTX1650VENTUSXS4GOC时尚款游戏电竞电脑独立ITX小卡显卡</span><i>￥1099</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1164864.html" target="_blank"><span>盈通 GTX1650-4GD5大地之神Boost1665MHz7008MHz4GB128BitGDDR5显卡</span><i>￥899</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1164862.html" target="_blank"><span>索泰 RTX2070super玩家力量至尊PGFOCV2显卡台式机游戏吃鸡独立显卡8GD61605-178514000MHz</span><i>￥4499</i></a></li>
+                            </ol>
+                            <ol style="display: none;">
+                                <li><i>1</i><a href="http://product.it168.com/detail/1166087.html" target="_blank"><span>华硕 ROG STRIX Z490-A GAMING吹雪</span><i>￥2499</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1165516.html" target="_blank"><span>七彩虹 iGame Z490 Vulcan X</span><i>未上市</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1165016.html" target="_blank"><span>技嘉 H61M-DS2主板IntelH61LGA1155</span><i>￥479</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/1165012.html" target="_blank"><span>玩家国度 ROGSTRIXB365-FGAMING猛禽主板支持WIN7支持CPU97009400F8500IntelB365LGA1151</span><i>￥1099</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1165009.html" target="_blank"><span>铭瑄 MS-挑战者H81ITX迷你支持WIFIM.2主板IntelH81LGA1150</span><i>￥359</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/1165003.html" target="_blank"><span>昂达 B365SD4全固版支持全系列九代正式版处理器IntelB365LGA1151D4双通道M.24x全速主板</span><i>￥399</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- DIY整机 END -->
+        <!-- 企业IT -->
+        <div class="big-title" style="margin-bottom: 4px;">
+            <div class="name">
+                <p>企业IT</p>
+                <p>Enterprise IT</p>
+            </div>
+           <div class="route">
+                <a href="http://www.chinaunix.net/">CU社区</a>
+                <a href="http://www.itpub.net/">ITPUB</a>
+                <a href="http://wenku.it168.com/">IT文库</a>
+                <a href="http://dtcc.it168.com/">数据库大会</a>
+                <a href="http://sacc.it168.com/">架构师大会</a>
+            </div>
+
+        </div>
+        <div class="clearfix">
+            <div class="fl">
+                <ul class="phone clearfix s-img-text list" style="margin-top: 16px;">
+                    <li><div class="image-text w180"><a href="http://zt.itpub.net/topic/JuniperDataCenter/" target="_blank" id="m19_p1"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3155/3155336/3/3155/3155336.jpeg_i-w180" alt="瞻博网络领跑数据中心网络多云时代"></div><p>瞻博网络领跑数据中心网络多云时代</p></a></div></li><li><div class="image-text w180"><a href="http://zt.itpub.net/topic/juniper2020/" target="_blank" id="m19_p2"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/2/2530/2530595/2/2530/2530595.jpeg_i-w180" alt="利用人工智能构建面向未来的网络"></div><p>利用人工智能构建面向未来的网络</p></a></div></li><li><div class="image-text w180"><a href="http://zt.itpub.net/topic/SANGFOREDS/" target="_blank" id="m19_p3"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/2/2530/2530596/2/2530/2530596.jpeg_i-w180" alt="软件定义存储 激发硬件潜能"></div><p>软件定义存储 激发硬件潜能</p></a></div></li><li><div class="image-text w180"><a href="http://dtcc.it168.com" target="_blank" id="m19_p4"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3523/3523863/3/3523/3523863.jpeg_i-w180" alt="DTCC2021等你前来！"></div><p>DTCC2021等你前来！</p></a></div></li>
+                </ul>
+            </div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                          <li class="first"><a href="http://cloud.it168.com/a2021/0809/6523/000006523424.shtml" target="_blank" id="m20_p1">替换 Spring Cloud，使用基于 Cloud Native 的服务治理</a></li><li class=""><a href="http://cloud.it168.com/a2021/0809/6523/000006523418.shtml" target="_blank" id="m20_p2">SaaS创业失败的10个关键原因</a></li><li><a href="http://bigdata.it168.com/a2021/0510/6475/000006475952.shtml" target="_blank" id="m20_p3">去哪儿网领域驱动设计（DDD）实践之路</a></li><li><a href="http://server.it168.com/a2021/0809/6523/000006523284.shtml" target="_blank" id="m20_p4">直面“双碳”挑战 盘点开放计算的四大创新举措</a></li><li><a href="http://server.it168.com/a2021/0809/6523/000006523110.shtml" target="_blank" id="m20_p5">英特尔携生态伙伴展示AI计算盒参考设计最新成果</a></li><li><a href="http://tech.it168.com/a2021/0809/6523/000006523415.shtml" target="_blank" id="m20_p6">IDC：2020年高精度地图市场总量达到4.74亿元人民币</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li class="first"><a href="http://cio.it168.com/a2021/0806/6522/000006522788.shtml" target="_blank" id="m21_p1">数字科技赋能 打造数字文化融合发展新高地</a></li><li class=""><a href="http://cio.it168.com/a2021/0806/6522/000006522606.shtml" target="_blank" id="m21_p2">精彩！2021北京数字经济体验周“数字技术大体验”活动落幕</a></li><li><a href="http://bigdata.it168.com/a2021/0524/6481/000006481347.shtml" target="_blank" id="m21_p3">“中国数谷”日新月异，贵阳“智”绘数字蓝图</a></li><li><a href="http://net.it168.com/a2021/0804/6521/000006521710.shtml" target="_blank" id="m21_p4">在云优先的世界中，思科助力金融数字化转型</a></li><li><a href="http://wireless.it168.com/a2021/0610/6492/000006492271.shtml" target="_blank" id="m21_p5">第一台Wi-Fi 6无线路由如何选？H3C Magic NX54无线路由抢先评测</a></li><li><a href="http://safe.it168.com/a2021/0809/6523/000006523183.shtml" target="_blank" id="m21_p6">深耕中国企业市场，摩托罗拉系统推出“重塑安全”解决方案</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title" id="list_4">
+                                <p class="title fl bright">服务器关注榜</p>
+                                <p class="title fl">路由器关注榜</p>
+                            </div>
+                            <ol>
+                               <li><i>1</i><a href="http://product.it168.com/detail/436444.html" target="_blank"><span>IBM System x3850 X5(7145I19)</span><i>￥43575</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/615562.html" target="_blank"><span>H3C R390</span><i>￥149000</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/676320.html" target="_blank"><span>惠普 BladeSystem c7000</span><i>￥300000</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/849517.html" target="_blank"><span>浪潮 英信NF5280M4(Xeon E5-2620V2/8G/300G SAS*2/8*HSB)</span><i>￥47700</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/504859.html" target="_blank"><span>IBM System x3650 M3(7945L4C)</span><i>￥38953</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/840432.html" target="_blank"><span>华为 RH2288H V2 BC1M80SRSG</span><i>￥24300</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/507835.html" target="_blank"><span>IBM System x3650 M4(7915I31)</span><i>￥17544</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/494323.html" target="_blank"><span>IBM System x3650 M4(7915I51)</span><i>￥23100</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/910319.html" target="_blank"><span>戴尔 PowerEdge R730(Xeon E5-2603 V3/8GB/300GB)</span><i>￥15000</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1088115.html" target="_blank"><span>H3C VC-UIS8000-Z(1*VC-FSR-B390-Z-L3刀片服务器/1*VC-FST-D3000刀片存储/1*10GE-24P网络模块/10*风扇/1*电源/1个OA管理模</span><i>￥317700</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/1129629.html" target="_blank"><span>戴尔 PowerEdge R730(E5-2620 v3 *2/8GB/300GB)</span><i>￥26628</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/488421.html" target="_blank"><span>戴尔 PowerEdge R720(Xeon E5-2603/2GB/300GB)</span><i>￥12300</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/918806.html" target="_blank"><span>联想 ThinkServer TD340 S2407v2 4/1TAHO</span><i>￥10600</i></a></li>
+                            </ol>
+                            <ol style="display: none;">
+                                 <li><i>1</i><a href="http://product.it168.com/detail/483696.html" target="_blank"><span>华为 SRG2200</span><i>￥5800</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/675866.html" target="_blank"><span>H3C RT-MSR3620</span><i>￥20200</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/676235.html" target="_blank"><span>H3C RT-MSR5660</span><i>￥79700</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/675867.html" target="_blank"><span>H3C RT-MSR3640</span><i>￥25900</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/483697.html" target="_blank"><span>华为 SRG1200</span><i>面议</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/671513.html" target="_blank"><span>中兴 ZXR10 M6000-3S</span><i>面议</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/483699.html" target="_blank"><span>华为 SRG3200</span><i>面议</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/600246.html" target="_blank"><span>神州数码 DCR-2655</span><i>未上市</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/1098763.html" target="_blank"><span>H3C MSR830-WiNet</span><i>￥1089</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1090107.html" target="_blank"><span>H3C RT-MSR3600-28</span><i>￥4600</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/676237.html" target="_blank"><span>H3C RT-SR6602-X1</span><i>￥103700</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/675869.html" target="_blank"><span>H3C RT-MSR3660</span><i>￥50400</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/671512.html" target="_blank"><span>中兴 ZXR10 M6000-5S</span><i>面议</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 企业IT END -->
+        <!-- 企业办公 -->
+        <div class="big-title" style="margin-bottom: 4px;">
+            <div class="name">
+                <p>企业办公</p>
+                <p>Enterprise Office</p>
+            </div>
+            <div class="route">
+                <a href="http://projector.it168.com/" target="_blank">投影机</a>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="fl">
+                <ul class="phone clearfix s-img-text list" style="margin-top: 16px;">
+                    <li><div class="image-text w180"><a href="http://oa.it168.com/a2020/1228/6423/000006423537.shtml" target="_blank" id="m22_p1"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3134/3134810/3/3134/3134810.jpeg_i-w180" alt="DocuPrint CP318 st体验"></div><p>DocuPrint CP318 st体验</p></a></div></li><li><div class="image-text w180"><a href="http://projector.it168.com/a2021/0511/6476/000006476434.shtml" target="_blank" id="m22_p2"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3315/3315671/3/3315/3315671.jpeg_i-w180" alt="爱普生CB-L200W试用"></div><p>爱普生CB-L200W试用</p></a></div></li><li><div class="image-text w180"><a href="http://oa.it168.com/a2021/0520/6479/000006479698.shtml" target="_blank" id="m22_p3"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3355/3355186/3/3355/3355186.jpeg_i-w180" alt="佳能将加强BtoB业务"></div><p>佳能将加强BtoB业务</p></a></div></li><li><div class="image-text w180"><a href="http://oa.it168.com/a2020/1201/6406/000006406893.shtml#" target="_blank" id="m22_p4"><div class="over"><img src="http://sy0.img.it168.com/copy/pc168/3/3134/3134840/3/3134/3134840.jpeg_i-w180" alt="NEC骑士新品试用"></div><p>NEC骑士新品试用</p></a></div></li>
+                </ul>
+            </div>
+            <div class="fl">
+                <div class="tab01Cont other">
+                    <ul class="list3">
+                       <li class="first"><a href="http://oa.it168.com/a2021/0729/6519/000006519359.shtml" target="_blank" id="m23_p1">加速办公智变 富士胶片商业创新推出11款彩色数码多功能机</a></li><li class=""><a href="http://oa.it168.com/a2021/0730/6519/000006519508.shtml" target="_blank" id="m23_p2">承诺不涨价 夏普SF-S201SV入门级黑白激打促销</a></li><li class=""><a href="http://oa.it168.com/a2021/0729/6518/000006518618.shtml" target="_blank" id="m23_p3">商业办公靠谱之选  夏普AR-2348DV黑白复合机特价促销</a></li><li class=""><a href="http://oa.it168.com/a2021/0407/6462/000006462597.shtml" target="_blank" id="m23_p4">引领商务新动向 夏普黑白数码复合机新品上市</a></li><li><a href="http://mfp.it168.com/a2020/0327/6163/000006163244.shtml" target="_blank" id="m23_p5">复合机究竟如何选？看完这个就知道了</a></li><li><a href="http://mfp.it168.com/a2020/0327/6163/000006163216.shtml" target="_blank" id="m23_p6">超高性价比，夏普SF-S211RC京东热销价14000元</a></li>
+                    </ul>
+                    <ul class="list3">
+                        <li class="first"><a href="http://projector.it168.com/a2021/0729/6518/000006518678.shtml" target="_blank" id="m24_p1">专注垂直市场需求挖掘  专访科视中国区高层</a></li><li class=""><a href="http://projector.it168.com/a2021/0727/6517/000006517594.shtml" target="_blank" id="m24_p2">家用投影新选择 NEC CD1100H家用投影机新品测试</a></li><li class=""><a href="http://projector.it168.com/a2021/0723/6516/000006516467.shtml" target="_blank" id="m24_p3">InfoComm China 2021 索尼的视觉盛宴</a></li><li class=""><a href="http://projector.it168.com/a2021/0720/6514/000006514658.shtml" target="_blank" id="m24_p4">科视Christie 集成式解决方案亮相2021北京 InfoComm</a></li><li class=""><a href="http://projector.it168.com/a2021/0723/6516/000006516454.shtml" target="_blank" id="m24_p5">直击InfoComm2021 ｜当代映像，尽在巴可空间</a></li><li class=""><a href="http://projector.it168.com/a2021/0722/6515/000006515628.shtml" target="_blank" id="m24_p6">录取通知书“出圈”背后的高校硬实力，NEC带你一探究竟</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="recommend rank-list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="clearfix title" id="list_5">
+                                <p class="title fl bright">投影机关注榜</p>
+                                <p class="title fl">激光打印机关注榜</p>
+                            </div>
+                            <ol>
+                                 <li><i>1</i><a href="http://product.it168.com/detail/1133057.html" target="_blank"><span>松下 PT-SLZ71C</span><i>￥112000</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/1132602.html" target="_blank"><span>索尼 VPL-HW48</span><i>￥20000</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/1159809.html" target="_blank"><span>钉钉 明我 MS01K 黑色</span><i>￥499</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/192234.html" target="_blank"><span>松下 PT-X500</span><i>￥10799</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/1158188.html" target="_blank"><span>暴风 AI无屏电视 Max 6</span><i>￥3999</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/430659.html" target="_blank"><span>NEC M260X</span><i>￥7500</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/600686.html" target="_blank"><span>日立 HCP-K31</span><i>￥41800</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/642781.html" target="_blank"><span>巴可 RLM G5I</span><i>￥65000</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/453051.html" target="_blank"><span>三星 A8000</span><i>未上市</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/1133013.html" target="_blank"><span>松下 PT-FRZ570C</span><i>￥360000</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/1159663.html" target="_blank"><span>神画 F1</span><i>￥5499</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/614257.html" target="_blank"><span>日立 HCP-A220</span><i>￥75800</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/1159664.html" target="_blank"><span>神画 F1 Pro</span><i>￥6499</i></a></li>
+                            </ol>
+                            <ol style="display: none;">
+                                 <li><i>1</i><a href="http://product.it168.com/detail/183086.html" target="_blank"><span>惠普 LaserJet 5200Lx(Q7552A)</span><i>￥9100</i></a></li><li><i>2</i><a href="http://product.it168.com/detail/439134.html" target="_blank"><span>富士施乐 DocuPrint CP105b</span><i>￥1419</i></a></li><li><i>3</i><a href="http://product.it168.com/detail/180861.html" target="_blank"><span>兄弟 HL-2140</span><i>￥749</i></a></li><li><i>4</i><a href="http://product.it168.com/detail/482069.html" target="_blank"><span>惠普 LaserJet 400 M401d(CF274A)</span><i>￥1690</i></a></li><li><i>5</i><a href="http://product.it168.com/detail/467713.html" target="_blank"><span>惠普 LaserJet Pro P1106(CE653A)</span><i>￥1149</i></a></li><li><i>6</i><a href="http://product.it168.com/detail/183092.html" target="_blank"><span>惠普 LaserJet P1008(CC366A)</span><i>￥1100</i></a></li><li><i>7</i><a href="http://product.it168.com/detail/1090393.html" target="_blank"><span>惠普 Color LaserJet Pro M252n(B4A21A)</span><i>￥2280</i></a></li><li><i>8</i><a href="http://product.it168.com/detail/559935.html" target="_blank"><span>京瓷 FS-1040</span><i>￥999</i></a></li><li><i>9</i><a href="http://product.it168.com/detail/214651.html" target="_blank"><span>惠普 LaserJet P2055dn(CE459A)</span><i>￥3670</i></a></li><li><i>10</i><a href="http://product.it168.com/detail/116401.html" target="_blank"><span>富士施乐 DocuPrint 2050</span><i>￥2599</i></a></li><li><i>11</i><a href="http://product.it168.com/detail/451819.html" target="_blank"><span>联想 LJ2400L</span><i>￥1099</i></a></li><li><i>12</i><a href="http://product.it168.com/detail/51217.html" target="_blank"><span>惠普 LaserJet 5100se</span><i>￥6780</i></a></li><li><i>13</i><a href="http://product.it168.com/detail/103002.html" target="_blank"><span>三星 ML-2010</span><i>￥830</i></a></li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 企业办公 END -->
+        <!-- 推荐 -->
+        <div class="recommend" style="margin-top: 22px;">
+            <ul class="clearfix">
+                <li>
+                    <p class="title">本周最火文章排行</p>
+                    <ol>
+                       <li><i>1</i><a href="http://elec.it168.com/a2021/0809/6523/000006523508.shtml" target="_blank">让激光电视更快进入百姓家庭 —海信王伟专访</a></li><li><i>2</i><a href="http://digital.it168.com/a2021/0809/6523/000006523267.shtml" target="_blank">家庭影音至臻尊享体验 惠威M200-Bar无线Soundbar有源音箱体验评测</a></li><li><i>3</i><a href="http://notebook.it168.com/a2021/0809/6523/000006523213.shtml" target="_blank">1kg超轻机身不到5千元！惠普ProBook 635 G8商务本评测</a></li><li><i>4</i><a href="http://mobile.it168.com/a2021/0806/6522/000006522462.shtml" target="_blank">荣耀X20：超窄边框120Hz全视屏打造沉浸式视觉体验</a></li><li><i>5</i><a href="http://mobile.it168.com/a2021/0806/6522/000006522445.shtml" target="_blank">OPPO签约上汽集团，将携手建车机互融生态</a></li><li><i>6</i><a href="http://elec.it168.com/a2021/0805/6522/000006522255.shtml" target="_blank">大通量出水不用等，云米Super Pro 1200G净水机全面体验</a></li><li><i>7</i><a href="http://notebook.it168.com/a2021/0805/6522/000006522281.shtml" target="_blank">7nm 8核锐龙标压处理器 130W满血版显卡 雷神ZERO高性能锐龙本评测</a></li><li><i>8</i><a href="http://mobile.it168.com/a2021/0805/6522/000006522206.shtml" target="_blank">荣耀Magic3系列诞生全过程提前曝光：给用户更极致全能体验</a></li><li><i>9</i><a href="http://mobile.it168.com/a2021/0804/6521/000006521412.shtml" target="_blank">vivo S10 Pro体验：手机里的自拍APP都可以卸载了</a></li><li><i>10</i><a href="http://mobile.it168.com/a2021/0804/6521/000006521627.shtml" target="_blank">OPPO推出下一代屏下摄像头技术，显示与成像同步升级</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <p class="title">最值得购买产品推荐</p>
+                    <ol>
+                      <li><i>1</i><a href="http://notebook.it168.com/a2020/1019/6363/000006363451.shtml" target="_blank">这可能是今年最能打的全能轻薄本！惠普全新星14焕新来袭</a></li>
+                       <li><i>2</i><a href="http://elec.it168.com/a2021/0617/6497/000006497218.shtml" target="_blank">疯狂618！云米净水器与净饮一体机超让利优惠大促</a></li><li><i>3</i><a href="http://mobile.it168.com/a2021/0615/6495/000006495826.shtml" target="_blank">18G超大内存！红魔游戏手机6 Pro氘锋透明版12期免息现已开启预售！</a></li><li><i>4</i><a href="http://digital.it168.com/a2021/0607/6490/000006490398.shtml" target="_blank">顶级三分频+优惠近千元+送脚架！惠威M5A无线有源音箱太香了</a></li><li><i>5</i><a href="http://mobile.it168.com/a2021/0521/6480/000006480371.shtml" target="_blank">又一款2000元价位段神机！OPPO A95在设计、影像上带来多重惊喜</a></li><li><i>6</i><a href="http://digital.it168.com/a2021/0517/6478/000006478361.shtml" target="_blank">解决果粉充电难题！雷柏PA20mini迷你充电器带来极致充电体验</a></li><li><i>7</i><a href="http://digital.it168.com/a2021/0422/6468/000006468739.shtml" target="_blank">集外观、功能、性价比于一身！雷柏Ti100蓝牙耳机仅售399元</a></li><li><i>8</i><a href="http://digital.it168.com/a2021/0407/6462/000006462767.shtml" target="_blank">多平台连接+兼容多系统！雷柏XK100蓝牙键盘仅售119元</a></li><li><i>9</i><a href="http://digital.it168.com/a2021/0331/6460/000006460305.shtml" target="_blank">设计精致 音质优美，雷柏i300蓝牙TWS耳机仅售239元</a></li><li><i>10</i><a href="http://digital.it168.com/a2021/0318/6454/000006454681.shtml" target="_blank">阳光下的帅气 雷柏Z1 Style智能音频眼镜仅699元</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <p class="title">试客优秀文章推荐</p>
+                    <ol>
+                        <li><i>1</i><a href="http://shike.it168.com/report-6057.html" target="_blank">听歌、游戏好用的Xisem西圣Olaf耳机评测</a></li><li><i>2</i><a href="http://shike.it168.com/report-6059.html" target="_blank">西圣Olaf游戏耳机开启游戏新体验也可以日常使用</a></li><li><i>3</i><a href="http://shike.it168.com/report-6060.html" target="_blank">低延迟畅玩手游，西圣Olaf游戏耳机体验</a></li><li><i>4</i><a href="http://shike.it168.com/report-6058.html" target="_blank">Xisem西圣Olaf游戏耳机评测报告</a></li><li><i>5</i><a href="http://shike.it168.com/article-20810.html" target="_blank">电竞、音质兼具，HECATE GT4低延时蓝牙游戏耳机深</a></li><li><i>6</i><a href="http://shike.it168.com/article-20883.html" target="_blank">睛野N8k扫地机器人测评！扫拖两用、洁净无痕、我要养6个</a></li><li><i>7</i><a href="http://shike.it168.com/article-20875.html" target="_blank">I-Size认证、全年龄段、360°旋转！惠尔顿安全座椅</a></li><li><i>8</i><a href="http://shike.it168.com/article-20817.html" target="_blank">骨传导耳机哪款好？南卡骨传导耳机评测</a></li><li><i>9</i><a href="http://shike.it168.com/article-20824.html" target="_blank">还孩子一个清朗的网络环境！360小贝守护计划青少年模式体</a></li><li><i>10</i><a href="http://shike.it168.com/article-20796.html" target="_blank">担心孩子不好好上网课？用它可以远程控制-向日葵UUPro</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <!-- 推荐 END -->
+        <!-- 图赏 -->
+        <div class="big-title">
+            <div class="name">
+                <p>图赏</p>
+                <p>Picture appreciation</p>
+            </div>
+        </div>
+        <ul class="w1000 photos-of clearfix">
+            <li><div class="image-text w235"><a href="http://elec.it168.com/tu/6520744_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3552/3552598.png_s240x180" alt=""></div><p>探索大屏电视全新形态 创维 OBM 变形电视W82图赏</p></a></div></li><li><div class="image-text w235"><a href="http://digital.it168.com/tu/6518679_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3544/3544071.jpg_s240x180" alt=""></div><p>OPPO Enco Free2柯南限定版开箱图赏</p></a></div></li><li><div class="image-text w235"><a href="http://mobile.it168.com/tu/6514860_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3526/3526664.jpg_s240x180" alt=""></div><p>realme真我GT 大师探索版图赏：源于探索之旅的通感美学</p></a></div></li><li><div class="image-text w235"><a href="http://mobile.it168.com/tu/6512981_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3516/3516209.jpg_s240x180" alt=""></div><p>vivo S10青柠开箱：独特荧光绿+7.29mm超薄机身</p></a></div></li><li><div class="image-text w235"><a href="http://notebook.it168.com/tu/6512798_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3513/3513741.jpg_s240x180" alt=""></div><p>双A合璧信仰外观升级 ROG魔霸5R游戏本图赏</p></a></div></li><li><div class="image-text w235"><a href="http://notebook.it168.com/tu/6512109_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3499/3499695.jpg_s240x180" alt=""></div><p>清新小蓝边，荣耀MagicBook 14锐龙版2021款轻薄本图赏</p></a></div></li><li><div class="image-text w235"><a href="http://digital.it168.com/tu/6511509_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3497/3497159.jpeg_s240x180" alt=""></div><p>奶白小清新 多模无线键盘 雷柏ralemo Pre 5布艺版赏析</p></a></div></li><li><div class="image-text w235"><a href="http://notebook.it168.com/tu/6509976_1.shtml#1" target="_blank"><div class="over"><img src="http://sy0.img.pcpop.com/article/3/3490/3490941.jpg_s240x180" alt=""></div><p>无界笔记本的高光时刻，惠普VICTUS光影精灵7图赏</p></a></div></li>
+                    </ol>
+        </ul>
+        <!-- 图赏 END -->
+    </div>
+    <div class="footer">
+        <div class="foot-nav">
+            <ul class="w1000">
+                <li class="clearfix">
+                    <span>盛拓传媒：</span>
+                    <ol>
+                        <li><a href="http://www.it168.com">IT168</a></li>
+                        <li><a href="http://www.pcpop.com">泡泡网</a></li>
+                        <li><a href="http://shike.it168.com">试客</a></li>
+                        <li><a href="http://www.itpub.net/">ITPUB</a></li>
+                        <li><a href="http://wenku.it168.com/">IT文库</a></li>
+                        <li><a href="http://www.chinaunix.net/">ChinaUnix</a></li>
+                        <li><a href="http://hallofix.com/">哈喽维修</a></li>
+                        <li><a href="http://edu.itpub.net/">ITPUB学院</a></li>
+                        <li><a href="http://blog.itpub.net/">ITPUB博客</a></li>
+                    </ol>
+                </li>
+                <li class="clearfix">
+                    <span>友情链接：</span>
+                    <ol style="width:920px;float:right">
+                        <li><a href="http://www.autohome.com.cn/" title="汽车之家">汽车之家</a></li>
+                        <li><a href="http://product.it168.com/" title="IT168产品报价">IT168产品报价</a></li>
+                        <li><a href="http://zhongce.sina.com.cn/" title="新浪众测">新浪众测</a></li>
+                        <li><a href="http://www.chinaz.com/" title="中国站长站">站长之家</a></li>
+                        <li><a href="http://www.thethirdmedia.com/" title="第三媒体">第三媒体</a></li>
+                        <li><a href="http://www.galaxyclub.cn/" title="盖乐世社区">盖乐世社区</a></li>
+                        <li><a href="http://www.dui.ai/" title="思必驰DUI开放平台">思必驰DUI开放平台</a></li>
+                        <li><a href="http://www.xingcheshixian.com/" title="行车视线">行车视线</a></li>
+                        <li><a href="http://www.yiche.com/" title="易车">易车</a></li>
+                        <li><a href="http://www.c114.com.cn/" title="C114通信网 ">C114通信网 </a></li>
+                         <li style="margin-top:15px"><a href="http://www.mydrivers.com" title="快科技">快科技 </a></li>
+                           <li style="margin-top:15px"><a href="https://tech.ifeng.com/" title="凤凰网科技">凤凰网科技 </a></li>
+                             <li style="margin-top:15px"><a href="https://www.ofweek.com/" title="OFweek维科网">OFweek维科网 </a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <div class="about-us">
+                <a href="http://www.it168.com/bottomfile/it168.shtml">关于我们</a>
+                <a href="http://www.it168.com/bottomfile/ggfw.shtml">广告服务</a>
+                <a href="http://www.it168.com/bottomfile/sytk.shtml">使用条款</a>
+                <a href="http://www.it168.com/bottomfile/lxwm.shtml">联系我们</a>
+            </div>
+            <p>
+                <span>北京盛拓优讯信息技术有限公司. 版权所有</span>
+                <a rel="nofollow" href="http://sy0.img.it168.com/article/0/16/16938.png">中华人民共和国增值电信业务经营许可证
+                    编号：京B2-20170206</a>
+                <span>北京市公安局海淀分局网监中心备案编号：11010802020118 </span>
+            </p>
+            <p>
+                <a rel="nofollow" href="http://www.it168.com/images/gddsjmxkz.png">广播电视节目制作经营许可证:(京)
+                    字第07177号</a>
+                <a rel="nofollow"
+                    href="http://image20.it168.com/201806_0x0/3209/1c5b55a4311a46c7.jpg">信息系统安全等级保护备案：11010813655-00001</a>
+                <span>测绘资质证书:乙测资字11005067</span>
+            </p>
+            <p>
+                <a rel="nofollow"
+                    href="http://image20.it168.com/201804_0x0/3168/a62cebd402905ec7.png">网络文化经营许可证:京网文(2018)
+                    1456-138号</a>
+                <a rel="nofollow" href="http://www.it168.com/images/yyzz.png">工商营业执照</a>
+                <a href="https://beian.miit.gov.cn">京ICP备16024965号-5</a>
+            </p>
+            <p>违法和不良信息举报电话 :010-59548436,010-59544810,17352615567,17816876620,niuxiaotong@pcpop.com,jiachanjuan@126.com</p>
+            <ul class="clearfix" style="width:576px">
+                <li><a href="http://www.bj.cyberpolice.cn/index.jsp" class="wangjing"><img
+                            src="http://www.it168.com/images/bottom_image_baojing.png" alt=""></a></li>
+                <li><a href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202008062400006" class="beian"><img
+                            src="http://www.it168.com/images/bottom_image_beian.png" alt=""></a></li>
+                <li style="margin-right:25px"><a href="https://www.12377.cn/" class="wangjian"><img src="http://www.it168.com/images/bottom_image_jubao.png"
+                            alt=""></a></li>
+                <li><a href="http://www.it168.com/jubao.html" target="_blank" class="wangjian"><img src="http://www.it168.com/images/wcnjubao168.png"
+                            alt=""></a></li>
+            </ul>
+            <img src="http://www.it168.com/images/bottom_image_logo.png" alt="">
+        </div>
+    </div>
+</body>
+<div class="fanhui" id="fanhui" style="display:none;">
+    <a target="_self" href="#top"></a>
+</div>
+              <!--
+             
+              <div style="position:fixed;left:0;bottom: 0px;width: 200px;height: 303px;z-index:99999;/* border: 1px solid #f2f2f2; */">
+  <img style="display:block;width:100%;height:100%;" src="http://www.it168.com/intro110.jpg">
+      <span id="closeIntro" style="position:absolute;width:30px;height:30px;border-radius: 30px;top:-10px;right:-10px;border: 1px solid #ccc;text-align: center;line-height: 30px;background: #fff;color: #999;">×</span>
+    </div>
+-->
+<script src="http://www.it168.com/201710/js/jquery.slides.main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var rili_json={"nowdate":"2021-07-29","showdate":"2021-07-29","list":[{"theyear":"1970","data":[{"themonth":"01","item":[{"thedate":"01","url":"http://live.it168.com/944.html","imgurl":"http://sy0.img.it168.com/copy/3/3214/3214523.jpeg","title":"荣耀V40轻奢版暨荣耀平板7新品发布会","info":""}]}]},{"theyear":"2021","data":[{"themonth":"07","item":[{"thedate":"29","url":"http://live.it168.com/928.html","imgurl":"http://sy0.img.it168.com/copy/3/3085/3085065.jpeg","title":"全感操控激发潜能 iQOO 7新品发布会直播","info":"iQOO 7"}]}]},{"theyear":"2019","data":[{"themonth":"04","item":[{"thedate":"10","url":"http://mobile.it168.com/a2019/0326/5176/000005176923.shtml","imgurl":"http://sy0.img.it168.com/copy/0/779/779507.jpg","title":"OPPO Reno四月十日发布","info":"上海"},{"thedate":"17","url":"http://live.it168.com/739.html","imgurl":"http://sy0.img.it168.com/copy/0/805/805042.jpg","title":"荣耀20i四月十七日发布","info":"北京"},{"thedate":"23","url":"http://mobile.it168.com/a2019/0417/5187/000005187901.shtml","imgurl":"http://sy0.img.it168.com/copy/0/814/814696.jpg","title":"魅族16s旗舰手机发布会","info":"珠海"}]},{"themonth":"05","item":[{"thedate":"06","url":"http://mobile.it168.com/a2019/0425/5192/000005192749.shtml","imgurl":"http://sy0.img.it168.com/copy/0/844/844434.jpg","title":"中兴Axon 10 Pro发布会","info":"福州"},{"thedate":"16","url":"http://mobile.it168.com/a2019/0513/5199/000005199669.shtml","imgurl":"http://sy0.img.it168.com/copy/0/872/872038.jpg","title":"一加7系列新品发布会","info":"北京"},{"thedate":"21","url":"http://mobile.it168.com/a2019/0416/5187/000005187189.shtml","imgurl":"http://sy0.img.it168.com/copy/0/883/883230.jpg","title":"荣耀20系列海外发布会","info":"伦敦"},{"thedate":"23","url":"http://mobile.it168.com/a2019/0520/5204/000005204395.shtml","imgurl":"http://sy0.img.it168.com/copy/0/896/896840.jpg","title":"OPPO K3本月23日发布","info":"北京"},{"thedate":"24","url":"http://mobile.it168.com/a2019/0523/5207/000005207145.shtml","imgurl":"http://sy0.img.it168.com/copy/0/905/905863.jpg","title":"vivo Z5x发布会","info":"网络"}]},{"themonth":"06","item":[{"thedate":"21","url":"http://live.it168.com/769.html","imgurl":"http://sy0.img.it168.com/copy/0/980/980749.jpg","title":"华为nova5系列发布会","info":"武汉"}]},{"themonth":"08","item":[{"thedate":"10","url":"http://elec.it168.com/a2019/0730/6029/000006029625.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1181/1181775.jpg","title":"荣耀智慧屏新品发布会","info":"东莞"}]},{"themonth":"09","item":[{"thedate":"10","url":"http://mobile.it168.com/a2019/0909/6052/000006052149.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1290/1290309.jpg","title":"OPPO Reno2发布会","info":"上海"}]},{"themonth":"10","item":[{"thedate":"10","url":"http://live.it168.com/794.html","imgurl":"http://sy0.img.it168.com/copy/1/1351/1351101.jpg","title":"OPPO Reno Ace超玩大会","info":"成都"},{"thedate":"15","url":"http://mobile.it168.com/a2019/1008/6064/000006064104.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1352/1352710.jpg","title":"一加7T系列新品即将发布","info":"北京"},{"thedate":"22","url":"http://mobile.it168.com/a2019/1016/6069/000006069463.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1371/1371993.jpg","title":"荣耀20青春版发布会","info":"北京"}]},{"themonth":"11","item":[{"thedate":"14","url":"http://mobile.it168.com/a2019/1107/6083/000006083205.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1583/1583709.jpeg","title":"vivo S5新品发布会","info":"杭州"},{"thedate":"25","url":"http://notebook.it168.com/a2019/1120/6091/000006091955.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1604/1604280.jpg","title":"华为MatePad及全场景新品发布会","info":"上海"},{"thedate":"26","url":"http://mobile.it168.com/a2019/1112/6087/000006087396.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1606/1606436.jpeg","title":"荣耀V30系列新品发布会","info":"北京"}]},{"themonth":"12","item":[{"thedate":"05","url":"http://mobile.it168.com/a2019/1203/6099/000006099116.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1645/1645318.jpeg","title":"华为nova 6系列5G新品发布会","info":"武汉"},{"thedate":"16","url":"http://live.it168.com/809.html","imgurl":"http://sy0.img.it168.com/copy/1/1676/1676758.jpeg","title":"vivo X30系列新品发布会","info":"桂林"},{"thedate":"19","url":"http://mobile.it168.com/a2019/1125/6094/000006094208.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1651/1651394.jpg","title":"2019 OPPO开发者大会","info":""},{"thedate":"26","url":"http://mobile.it168.com/a2019/1211/6103/000006103515.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1794/1794264.jpeg","title":"OPPO Reno 3发布会","info":"杭州"}]},{"themonth":"05","item":[{"thedate":"31","url":"http://mobile.it168.com/a2019/0514/5200/000005200239.shtml","imgurl":"http://sy0.img.it168.com/copy/0/927/927563.jpg","title":"荣耀20系列国内发布会","info":"上海"}]},{"themonth":"07","item":[{"thedate":"23","url":"http://mobile.it168.com/a2019/0702/6012/000006012677.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1085/1085506.jpg","title":"荣耀9X系列发布会","info":"西安"}]},{"themonth":"08","item":[{"thedate":"22","url":"http://live.it168.com/785.html","imgurl":"http://sy0.img.it168.com/copy/1/1233/1233398.jpg","title":"荣耀20冰岛幻境派对","info":"北京"}]},{"themonth":"09","item":[{"thedate":"04","url":"http://mobile.it168.com/a2019/0829/6046/000006046074.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1275/1275936.jpg","title":"荣耀20S发布会","info":"武汉"},{"thedate":"26","url":"http://mobile.it168.com/a2019/0924/6059/000006059883.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1326/1326243.jpg","title":"华为Mate30系列9月26日国内发布","info":"上海"}]}]},{"theyear":"2020","data":[{"themonth":"03","item":[{"thedate":"06","url":"http://mobile.it168.com/a2020/0225/6145/000006145375.shtml","imgurl":"http://sy0.img.it168.com/copy/1/1893/1893131.jpg","title":"OPPO Find X2系列新品发布会","info":"线上"},{"thedate":"23","url":"http://live.it168.com/820.html","imgurl":"http://sy0.img.it168.com/copy/1/1922/1922776.jpg","title":"中兴天机Axon 11 5G视频手机发布会","info":"线上"},{"thedate":"26","url":"http://live.it168.com/822.html","imgurl":"http://sy0.img.it168.com/copy/1/1965/1965897.jpeg","title":"华为P40系列全球发布会","info":"线上"},{"thedate":"30","url":"http://live.it168.com/826.html","imgurl":"http://sy0.img.it168.com/copy/1/1970/1970362.jpg","title":"荣耀30S新品发布会","info":"线上"},{"thedate":"31","url":"http://live.it168.com/825.html","imgurl":"http://sy0.img.it168.com/copy/1/1974/1974263.jpg","title":"vivo S6新品发布会","info":"线上"}]},{"themonth":"04","item":[{"thedate":"08","url":"http://live.it168.com/827.html","imgurl":"http://sy0.img.it168.com/copy/2/2002/2002234.jpeg","title":"华为春季新品发布会","info":"线上"},{"thedate":"09","url":"http://live.it168.com/828.html","imgurl":"http://sy0.img.it168.com/copy/2/2008/2008552.jpeg","title":"荣耀Play4T系列新品发布会","info":"线上"},{"thedate":"13","url":"http://live.it168.com/830.html","imgurl":"http://sy0.img.it168.com/copy/2/2023/2023925.jpeg","title":"OPPO Ace2超玩大会","info":"线上"},{"thedate":"15","url":"http://live.it168.com/829.html","imgurl":"http://sy0.img.it168.com/copy/2/2028/2028971.jpeg","title":"荣耀30系列新品发布会","info":"线上"},{"thedate":"16","url":"http://live.it168.com/831.html","imgurl":"http://sy0.img.it168.com/copy/2/2024/2024699.jpg","title":"一加8系列发布会","info":"线上"},{"thedate":"23","url":"http://live.it168.com/837.html","imgurl":"http://sy0.img.it168.com/copy/2/2056/2056026.jpg","title":"iQOO Neo3发布会直播","info":"iQOO Neo3"},{"thedate":"23","url":"http://live.it168.com/836.html","imgurl":"http://sy0.img.it168.com/copy/2/2053/2053753.jpg","title":"nova 7系列新品线上发布会","info":"线上"},{"thedate":"23","url":"http://live.it168.com/833.html","imgurl":"http://sy0.img.it168.com/copy/2/2049/2049320.jpeg","title":"海信彩墨屏阅读手机新品发布会","info":"线上"}]},{"themonth":"05","item":[{"thedate":"08","url":"http://live.it168.com/840.html","imgurl":"http://sy0.img.it168.com/copy/2/2103/2103231.jpg","title":"魅族17系列5G梦想旗舰发布会","info":"线上"},{"thedate":"18","url":"http://live.it168.com/844.html","imgurl":"http://sy0.img.it168.com/copy/2/2134/2134205.jpg","title":"荣耀智慧生活新品发布会","info":"线上"},{"thedate":"19","url":"http://live.it168.com/843.html","imgurl":"http://sy0.img.it168.com/copy/2/2124/2124854.jpg","title":"云米5G IoT战略暨2020新品发布会","info":"线上"},{"thedate":"20","url":"http://live.it168.com/846.html","imgurl":"http://sy0.img.it168.com/copy/2/2141/2141990.jpg","title":"神舟战神TX9-CU5DA系列新品发布会","info":"线上"},{"thedate":"20","url":"http://live.it168.com/847.html","imgurl":"http://sy0.img.it168.com/copy/2/2140/2140961.jpg","title":"荣耀X10新品发布会","info":"线上"},{"thedate":"28","url":"http://live.it168.com/851.html","imgurl":"http://sy0.img.it168.com/copy/2/2177/2177881.jpeg","title":"OPPO Ace2新世纪福音战士限定版发布会","info":"线上"}]},{"themonth":"10","item":[{"thedate":"15","url":"http://live.it168.com/901.html","imgurl":"http://sy0.img.it168.com/copy/2/2783/2783373.jpeg","title":"一加 8T发布会","info":"北京"},{"thedate":"22","url":"http://live.it168.com/903.html","imgurl":"http://sy0.img.it168.com/copy/2/2814/2814742.jpeg","title":"华为Mate40系列全球线上发布会","info":"线上"},{"thedate":"29","url":"http://live.it168.com/907.html","imgurl":"http://sy0.img.it168.com/copy/2/2846/2846895.jpg","title":"云米5G IOT战略新品发布会","info":"线上"},{"thedate":"30","url":"http://live.it168.com/906.html","imgurl":"http://sy0.img.it168.com/copy/2/2854/2854938.jpeg","title":"2020华为年度旗舰新品发布盛典","info":"上海"}]},{"themonth":"11","item":[{"thedate":"17","url":"http://live.it168.com/912.html","imgurl":"http://sy0.img.it168.com/copy/2/2922/2922375.jpg","title":"OPPO未来科技大会","info":"深圳"}]},{"themonth":"12","item":[{"thedate":"10","url":"http://live.it168.com/918.html","imgurl":"http://sy0.img.it168.com/copy/2/2991/2991720.jpg","title":"OPPO Reno5系列发布会直播","info":"OPPO Reno5系列发布会直播"},{"thedate":"24","url":"http://live.it168.com/923.html","imgurl":"http://sy0.img.it168.com/copy/3/3026/3026974.jpeg","title":"猎光766-OPPO Reno5 Pro+新品发布会","info":""},{"thedate":"29","url":"http://live.it168.com/926.html","imgurl":"http://sy0.img.it168.com/copy/3/3047/3047966.jpeg","title":"联合蔡司研发 vivo X60线上发布会直播","info":"线上"}]},{"themonth":"02","item":[{"thedate":"25","url":"http://live.it168.com/814.html","imgurl":"http://sy0.img.it168.com/copy/1/1873/1873373.jpeg","title":"iQOO新品发布会","info":"线上"}]}]},{"theyear":"1970","data":[{"themonth":"01","item":[{"thedate":"01","url":"http://live.it168.com/819.html","imgurl":"http://sy0.img.it168.com/copy/1/1910/1910290.jpeg","title":"vivo NEX 3S新品发布会","info":"线上"}]}]},{"theyear":"2020","data":[{"themonth":"06","item":[{"thedate":"01","url":"http://live.it168.com/853.html","imgurl":"http://sy0.img.it168.com/copy/2/2187/2187320.jpeg","title":"vivo X50Pro线上发布会","info":"线上"},{"thedate":"01","url":"http://live.it168.com/849.html","imgurl":"http://sy0.img.it168.com/copy/2/2180/2180835.jpg","title":"中兴天机Axon 11 SE，做自己的导演 “Action!”","info":"线上"},{"thedate":"11","url":"http://zt.itpub.net/topic/2020salon/","imgurl":"http://sy0.img.it168.com/copy/2/2229/2229394.jpg","title":"新基建时代下的大数据中心变革：创新和开放","info":"线上"},{"thedate":"03","url":"http://live.it168.com/852.html","imgurl":"http://sy0.img.it168.com/copy/2/2200/2200969.jpg","title":"荣耀Play4系列5G新品发布会","info":"线上"},{"thedate":"05","url":"http://live.it168.com/854.html","imgurl":"http://sy0.img.it168.com/copy/2/2212/2212874.jpg","title":"OPPO Reno4线上发布会","info":"线上"},{"thedate":"08","url":"http://live.it168.com/857.html","imgurl":"http://sy0.img.it168.com/copy/2/2211/2211961.png","title":"MAXHUB V5全开 线上新品发布会","info":"线上"}]},{"themonth":"07","item":[{"thedate":"15","url":"http://live.it168.com/866.html","imgurl":"http://sy0.img.it168.com/copy/2/2347/2347702.jpeg","title":"OPPO新一代超级闪充发布会","info":"线上"},{"thedate":"16","url":"http://live.it168.com/865.html","imgurl":"http://sy0.img.it168.com/copy/2/2352/2352141.jpg","title":"A+生产力 荣耀MagicBook新品发布会","info":"线上"},{"thedate":"02","url":"http://live.it168.com/861.html","imgurl":"http://sy0.img.it168.com/copy/2/2300/2300556.jpeg","title":"荣耀夏季5G新品发布会","info":"线上"}]},{"themonth":"08","item":[{"thedate":"03","url":"http://live.it168.com/870.html","imgurl":"http://sy0.img.it168.com/copy/2/2417/2417673.jpeg","title":"vivo S7新品线上发布会","info":"线上"},{"thedate":"17","url":"http://live.it168.com/877.html","imgurl":"http://sy0.img.it168.com/copy/2/2481/2481627.jpeg","title":"iQOO 5系列新品发布会直播","info":"线上"}]},{"themonth":"09","item":[{"thedate":"01","url":"http://live.it168.com/882.html","imgurl":"http://sy0.img.it168.com/copy/2/2547/2547320.jpeg","title":"中兴天机Axon 20 5G发布会","info":"线上"},{"thedate":"16","url":"http://live.it168.com/890.html","imgurl":"http://sy0.img.it168.com/copy/2/2640/2640392.jpg","title":"荣耀猎人游戏本V700发布会","info":"北京"},{"thedate":"21","url":"届时超人气偶像王俊凯将以主讲人身份以5分钟视频形式发布OPPO Reno4系列新品OPPO Reno4 SE。","imgurl":"http://sy0.img.it168.com/copy/2/2651/2651494.jpg","title":"OPPO Reno 4 SE 5G上市","info":"线上"},{"thedate":"03","url":"http://live.it168.com/886.html","imgurl":"http://sy0.img.it168.com/copy/2/2557/2557348.jpeg","title":"华为畅享20系列新品发布会","info":"线上"}]}]},{"theyear":"2021","data":[{"themonth":"01","item":[{"thedate":"21","url":"http://live.it168.com/931.html","imgurl":"http://sy0.img.it168.com/copy/3/3101/3101247.jpg","title":"名副其实的超大杯 vivo X60 Pro+新品发布会","info":""},{"thedate":"22","url":"http://live.it168.com/930.html","imgurl":"http://sy0.img.it168.com/copy/3/3101/3101467.jpg","title":"2021年荣耀新品发布会","info":"线上"},{"thedate":"07","url":"http://live.it168.com/927.html","imgurl":"http://sy0.img.it168.com/copy/3/3067/3067370.jpg","title":"realme真我V15 鲤跃龙门新品发布会","info":"realme真我V15 鲤跃龙门新品发布会"}]},{"themonth":"03","item":[{"thedate":"11","url":"http://live.it168.com/938.html","imgurl":"http://sy0.img.it168.com/copy/3/3198/3198051.jpeg","title":"OPPO Find X3系列全球发布会","info":""},{"thedate":"16","url":"http://live.it168.com/940.html","imgurl":"http://sy0.img.it168.com/copy/3/3252/3252003.jpeg","title":"iQOO Neo5新品发布会","info":""},{"thedate":"02","url":"http://live.it168.com/936.html","imgurl":"http://sy0.img.it168.com/copy/3/3155/3155646.jpeg","title":"Flyme 9发布会直播","info":"线上"},{"thedate":"24","url":"http://live.it168.com/943.html","imgurl":"http://sy0.img.it168.com/copy/3/3214/3214522.jpeg","title":"OnePlus 9系列新品发布会","info":""},{"thedate":"03","url":"http://live.it168.com/933.html","imgurl":"http://sy0.img.it168.com/copy/3/3155/3155625.jpeg","title":"照亮我的美 vivo S9线上发布会直播","info":"线上"},{"thedate":"03","url":"http://live.it168.com/935.html","imgurl":"http://sy0.img.it168.com/copy/3/3155/3155650.jpeg","title":"魅族 18系列5G双旗舰发布会直播","info":"线上"},{"thedate":"31","url":"http://live.it168.com/941.html","imgurl":"http://sy0.img.it168.com/copy/3/3228/3228823.jpg","title":"创维电视2021春季新品发布会","info":""},{"thedate":"31","url":"http://live.it168.com/947.html","imgurl":"http://sy0.img.it168.com/copy/3/3228/3228824.JPG","title":"真我GT Neo 新品发布会","info":""},{"thedate":"04","url":"http://live.it168.com/934.html","imgurl":"http://sy0.img.it168.com/copy/3/3155/3155649.jpeg","title":"不负GT之名 真我GT 5G新品发布会直播","info":"线上"}]},{"themonth":"04","item":[{"thedate":"14","url":"http://live.it168.com/955.html","imgurl":"http://sy0.img.it168.com/copy/3/3385/3385291.jpeg","title":"AI:Helpful 云米2021战略暨年度新品发布会","info":""},{"thedate":"15","url":"http://live.it168.com/954.html","imgurl":"http://sy0.img.it168.com/copy/3/3266/3266961.jpg","title":"中兴Axon 30 Ultra 5G线上发布会直播","info":""},{"thedate":"22","url":"http://live.it168.com/956.html","imgurl":"http://sy0.img.it168.com/copy/3/3280/3280265.jpg","title":"realme真我Q3系列  荧光发布会","info":""}]},{"themonth":"05","item":[{"thedate":"20","url":"http://live.it168.com/970.html","imgurl":"http://sy0.img.it168.com/copy/3/3333/3333863.jpeg","title":"海信TOUCH新品发布会直播","info":""},{"thedate":"27","url":"http://live.it168.com/976.html","imgurl":"http://sy0.img.it168.com/copy/3/3363/3363860.jpg","title":"OPPO Reno6新品发布会","info":""},{"thedate":"06","url":"http://live.it168.com/962.html","imgurl":"http://sy0.img.it168.com/copy/3/3308/3308235.jpg","title":"OPPO超次元发布会","info":""}]},{"themonth":"06","item":[{"thedate":"16","url":"http://live.it168.com/983.html","imgurl":"http://sy0.img.it168.com/copy/3/3416/3416759.jpeg","title":"荣耀50系列新品发布会","info":""}]},{"themonth":"07","item":[{"thedate":"15","url":"http://live.it168.com/989.html","imgurl":"http://sy0.img.it168.com/copy/3/3516/3516792.jpeg","title":"vivo S10系列线上发布会直播","info":"vivo"},{"thedate":"21","url":"http://live.it168.com/990.html","imgurl":"http://sy0.img.it168.com/copy/3/3539/3539889.jpeg","title":"真我GT大师系列新品发布会","info":"真我"},{"thedate":"27","url":"http://live.it168.com/991.html","imgurl":"http://sy0.img.it168.com/copy/3/3539/3539703.jpg","title":"OPPO Watch 2新品发布会","info":"OPPO"},{"thedate":"29","url":"http://live.it168.com/992.html","imgurl":"http://sy0.img.it168.com/copy/3/3546/3546239.jpg","title":"万象新生 华为旗舰芯片发布会直播","info":"华为"}]}]}]}
+</script>
+<script type="text/javascript">
+    function iniMenu(tabObj, selNum, tabTagName, t) {
+        var collection = document.getElementById(tabObj).getElementsByTagName(tabTagName);
+        var selObj = collection[selNum];
+        selObj.className = 'here';
+        document.getElementById(tabObj + "_Content" + selNum).style.display = "block";
+        for (var i = 0; i < collection.length; i++) {
+            collection[i].num = i;
+            collection[i].onmouseover = function () {
+                //onclick
+                temp = this;
+                timer = setTimeout(function () {
+                    if (temp != selObj) {
+                        selObj.className = '';
+                        temp.className = 'here';
+                        document.getElementById(tabObj + "_Content" + temp.num).style.display = "block";
+                        document.getElementById(tabObj + "_Content" + selObj.num).style.display = "none";
+                        selObj = temp;
+                    }
+                }, t);
+            }
+            collection[i].onmouseout = function () {
+                clearTimeout(timer);
+            }
+        }
+    }
+    iniMenu('tab02', 0, 'span', 100);
+    //加入收藏
+    function addFavorite2() {
+        var url = window.location;
+        var title = document.title;
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.indexOf("360se") > -1) {
+            alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+        } else if (ua.indexOf("msie 8") > -1) {
+            window.external.AddToFavoritesBar(url, title); //IE8
+        } else if (document.all) {
+            try {
+                window.external.addFavorite(url, title);
+            } catch(e) {
+                alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+            }
+        } else if (window.sidebar) {
+            window.sidebar.addPanel(title, url, "");
+        } else {
+            alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+        }
+    }
+    window.onscroll = scrollEvent;
+    function scrollEvent() {
+        if (document.getElementById("fanhui").style.display == "none") {
+            document.getElementById("fanhui").style.display = "";
+        }
+        else {
+            var scrollTop = $(document).scrollTop();
+            if (scrollTop == 0) {
+                if (document.getElementById("fanhui").style.display != "none") {
+                    document.getElementById("fanhui").style.display = "none";
+                }
+            }
+        }
+    }
+    function displayNoneTop() {
+
+        document.getElementById("fanhui").style.display = "none";
+        window.onscroll = null;
+        setTimeout(bindScoll, 500);
+    }
+
+    function bindScoll() {
+        window.onscroll = scrollEvent;
+    }
+</script>
+<script type="text/javascript" async="" src="http://dn-growing.qbox.me/vds.js"></script>
+<script src="http://cdn.static.it168.com/channel/newpc/swiper/idangerous.swiper.js"></script>
+<script src="http://cdn.static.it168.com/channel/newpc/js/head_login_em.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://www.it168.com/201710/js/rili.main.js?1"></script>
+<!--<script language="javascript" src="http://stat.it168.com/pv.js"></script>-->
+ <!--
+              <script language="javascript">
+
+    //计数代码
+    function sendPV(){
+        var pvTrack = new PvTrack();
+        pvTrack.type = 6; // 频道类别ID
+        pvTrack.channel = 15; // 频道ID
+
+        pvTrack.pageType = 0;
+        pvTrack.track();
+    }
+    window.setTimeout("sendPV()",1000);
+</script>
+              -->
+<script>
+ if(typeof(BLA)!='undefined'){BLA();}
+</script>
+<!--<script src="http://stat.it168.com/ClickPv.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="http://product.pcpop.com/js/eb/SequelLian109_403.js"></script>
+ <script>
+  
+  $(function(){
+    $("#closeIntro").click(function(){
+        $(this).closest("div").hide();
+    });
+});
+  
+  </script>
+              
+             
+<script type="text/javascript">
+    //当前页面电商返利计算到 文章库 文章页里
+    var line = SequelLian.init();
+    line.ChannelId = 4; //频道id(参数)
+    line.ChannelPageId = 109; //频道页id(参数)
+    line.ChannelPageBlockId = 403; //频道页面块id(参数) 上线前找赵静要
+    //line.DivIds = ""; //需要操作a标签的div(用id获取div),可传多个(参数)
+    line.DivClass = "box,focus3_box"; //需要操作a标签的div (用class获取div)可传多个(参数)
+    line.OtherID = ''; // 产品库前台ID//文章id//帖子ID  可以为空。
+    line.BindEvent();
+</script>
+</body>
+
+
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container-img', {
+        autoplay: 5000,
+        loop: true,
+        pagination: '.pagination-img',
+        paginationClickable: true,
+    })
+    $('.arrow-left').on('click', function () {
+        mySwiper.swipePrev()
+    })
+    $('.arrow-right').on('click', function () {
+        mySwiper.swipeNext()
+    })
+
+    var mySwiper2 = new Swiper('.swiper-image-text', {
+        autoplay: 5000,
+        loop: true,
+        pagination: '.pagination-image-text',
+        paginationClickable: true,
+    })
+    $('.rank-list ul > li > .title p').on('mouseenter mouseleave', function () {
+        $(this).addClass('bright').siblings().removeClass('bright')
+    })
+    // 产品报价
+    $('.content .fr .chanpin.show>li:not(:first-child)').hover(function () {
+        $(this).addClass('details').siblings().removeClass('details')
+        $(this).find('.details').removeClass('details')
+    }, function () {
+        $('.content .fr .chanpin>li').removeClass('details')
+    })
+    
+  $('.content .fr .chanpin:nth-of-type(2) > li:not(:first-child)').hover(
+        function(){
+            $(this).find('.img-txt').show()
+            $(this).find('.txt').hide()
+            $(this).siblings().find('.img-txt').hide()
+            $(this).siblings().find('.txt').css('display','block')
+            if($(this).find('p').height()>=35){
+                $(this).find('span').hide()
+                $(this).find('.my-time').show()
+            }else{
+                $(this).find('span').show()
+                $(this).find('.my-time').hide()
+            }
+        }
+    )
+
+    function aclick(obj){
+        $.each($(obj),function(index,val){
+      val.index = index;
+      $(val).hover(function(){
+          if(this.index == 0){
+                $(obj).parent('div').siblings('ol').eq(0).show()
+                $(obj).parent('div').siblings('ol').eq(1).hide()
+            }else{
+                $(obj).parent('div').siblings('ol').eq(0).hide()
+                $(obj).parent('div').siblings('ol').eq(1).show()
+            }
+        })
+    })
+    }
+    aclick("#list_1 .title")
+    aclick("#list_2 .title")
+    aclick("#list_3 .title")
+    aclick("#list_4 .title")
+    aclick("#list_5 .title")
+    $('.search form i').on('click',function(){
+        $('.search form').submit()
+    })
+</script>
+<script type="text/javascript">
+
+  if($("#ADV_3788").find("a").length>0){
+
+   var dom = $("#ADV_3788");
+   var href = dom.find("a").attr("href");
+   var imgsrc = dom.find("a img").attr("src");
+   var ihtml1 = '<a href="'+href+'" ><div class="over"><img src="'+imgsrc+'" ></div><div class="text"><p style="text-align:left;margin-left:5px;color: white;text-shadow: 0px 1px 1px #666">广告</p></div></a>';
+    jQuery(".swiper-wrapper .swiper-slide").eq(1).html(ihtml1);
+                    
+}
+
+//  if($("#ADV_3371").find("a").length>0){
+
+//    var dom = $("#ADV_3371");
+//    var href = dom.find("a").attr("href");
+//    var imgsrc = dom.find("a img").attr("src");
+//    var ihtml0 = '<a href="'+href+'" ><div class="over"><img src="'+imgsrc+'" ></div><div class="text"><p style="text-align:left;margin-left:5px;color: white;text-shadow: 0px 1px 1px #666">广告</p></div></a>';
+//     jQuery(".swiper-wrapper .swiper-slide").eq(0).html(ihtml0);
+                    
+// }
+</script>
+              <!--
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5e7db88b9c87b18fa16f090e752d5567";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+              -->
+
+</html>

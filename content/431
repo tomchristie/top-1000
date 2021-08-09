@@ -1,0 +1,1017 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+    <title>Tu.Tv Magazine 2021</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap" /></noscript><link rel="stylesheet" href="https://tu.tv/wp-content/cache/min/1/ac6b2c36a3f47a9d88d73e3382b182a1.css" media="all" data-minify="1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://tu.tv/xmlrpc.php" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="canonical" href="https://tu.tv/"/><link rel="next" href="https://tu.tv/page/2"/><link rel="icon" type="image/png" href="https://tu.tv/wp-content/uploads/2021/04/tu.tv-fav.png">
+	<!-- This site is optimized with the Yoast SEO plugin v16.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Tu.Tv Magazine 2021" />
+	<meta property="og:url" content="https://tu.tv/" />
+	<meta property="og:site_name" content="Tu.tv" />
+	<meta property="article:publisher" content="https://web.facebook.com/urdubookspdfdownload" />
+	<meta property="article:modified_time" content="2021-04-08T00:34:53+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@freebooksmania" />
+	<meta name="google-site-verification" content="TuKFBjlOqCgf4GZ2CJk5_PweQHz6oeScJ1casYm3VQE" />
+	<meta name="yandex-verification" content="bf0e02fed8c68831" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//maps.gstatic.com' />
+<link rel='dns-prefetch' href='//fonts.gstatic.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//apis.google.com' />
+<link rel='dns-prefetch' href='//google-analytics.com' />
+<link rel='dns-prefetch' href='//www.google-analytics.com' />
+<link rel='dns-prefetch' href='//ssl.google-analytics.com' />
+<link rel='dns-prefetch' href='//youtube.com' />
+<link rel='dns-prefetch' href='//api.pinterest.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//pixel.wp.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//syndication.twitter.com' />
+<link rel='dns-prefetch' href='//platform.instagram.com' />
+<link rel='dns-prefetch' href='//disqus.com' />
+<link rel='dns-prefetch' href='//sitename.disqus.com' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//platform.linkedin.com' />
+<link rel='dns-prefetch' href='//w.sharethis.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Tu.tv &raquo; Feed" href="https://tu.tv/feed" />
+<link rel="alternate" type="application/rss+xml" title="Tu.tv &raquo; Comments Feed" href="https://tu.tv/comments/feed" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+
+
+<style id='td-theme-inline-css' type='text/css'>
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style>
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://tu.tv/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' src='https://tu.tv/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://tu.tv/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://tu.tv/wp-content/cache/min/1/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1628500183' id='stop-user-enumeration-js' defer></script>
+<script data-minify="1" type='text/javascript' src='https://tu.tv/wp-content/cache/min/1/wp-content/plugins/wp-captcha/assets/js/c4wp-public.js?ver=1628500183' id='c4wp-public-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.8' id='ppress-flatpickr-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.8' id='ppress-select2-js' defer></script>
+<link rel="https://api.w.org/" href="https://tu.tv/wp-json/" /><link rel="alternate" type="application/json" href="https://tu.tv/wp-json/wp/v2/pages/3974" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tu.tv/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://tu.tv/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<link rel='shortlink' href='https://tu.tv/' />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=G-9E3YHHYMZC"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9E3YHHYMZC');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "#website",
+  "name": "freebooksmania - A Digitial Hub of free eBooks pdf download",
+  "url": "https://tu.tv/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tu.tv/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <script type="rocketlazyloadscript">
+        window.tdb_globals = {"wpRestNonce":"3c8eab80d1","wpRestUrl":"https:\/\/tu.tv\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%postname%.html","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50};
+    </script>
+    			<script type="rocketlazyloadscript">
+				window.tdwGlobal = {"adminUrl":"https:\/\/tu.tv\/wp-admin\/","wpRestNonce":"3c8eab80d1","wpRestUrl":"https:\/\/tu.tv\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%postname%.html"};
+			</script>
+			    <script type="rocketlazyloadscript">
+        window.tdaGlobal = {"adminUrl":"https:\/\/tu.tv\/wp-admin\/","wpRestNonce":"3c8eab80d1","wpRestUrl":"https:\/\/tu.tv\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%postname%.html","postId":3974};
+    </script>
+    
+<!-- JS generated by theme -->
+
+<script type="rocketlazyloadscript">
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/tu.tv\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=11.2";
+var td_get_template_directory_uri="https:\/\/tu.tv\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="5";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="a084f7d2ae";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.td-banner-wrap-full,
+    .td-header-style-11 .td-logo-wrap-full {
+        background-color: #2d2d2d;
+    }
+    .td-header-style-11 .td-logo-wrap-full {
+        border-bottom: 0;
+    }
+    @media (min-width: 1019px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 24px !important;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1018px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 14px !important;
+        }
+    }
+.td-banner-wrap-full,
+    .td-header-style-11 .td-logo-wrap-full {
+        background-color: #2d2d2d;
+    }
+    .td-header-style-11 .td-logo-wrap-full {
+        border-bottom: 0;
+    }
+    @media (min-width: 1019px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 24px !important;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1018px) {
+        .td-header-style-2 .td-header-sp-recs,
+        .td-header-style-5 .td-a-rec-id-header > div,
+        .td-header-style-5 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-6 .td-a-rec-id-header > div,
+        .td-header-style-6 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-7 .td-a-rec-id-header > div,
+        .td-header-style-7 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-8 .td-a-rec-id-header > div,
+        .td-header-style-8 .td-g-rec-id-header > .adsbygoogle,
+        .td-header-style-12 .td-a-rec-id-header > div,
+        .td-header-style-12 .td-g-rec-id-header > .adsbygoogle {
+            margin-bottom: 14px !important;
+        }
+    }
+</style>
+
+<link rel="icon" href="https://tu.tv/wp-content/uploads/2019/08/cropped-freebooksmania-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://tu.tv/wp-content/uploads/2019/08/cropped-freebooksmania-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://tu.tv/wp-content/uploads/2019/08/cropped-freebooksmania-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://tu.tv/wp-content/uploads/2019/08/cropped-freebooksmania-logo-270x270.jpg" />
+
+<!-- Button style compiled by theme -->
+
+<style>
+    
+</style>
+
+	<style id="tdw-css-placeholder"></style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+
+<body class="home page-template page-template-page-pagebuilder-latest page-template-page-pagebuilder-latest-php page page-id-3974 td-standard-pack global-block-template-1 tdb-template td-full-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+            <div class="td-scroll-up  td-hide-scroll-up-on-mob" style="display:none;"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#" aria-label="Close"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-home-container"><ul id="menu-home" class="td-mobile-main-menu"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-first menu-item-11"><a href="https://tu.tv" data-wpel-link="internal">Home</a></li>
+<li id="menu-item-932" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-932"><a href="https://tu.tv/category/bio" data-wpel-link="internal">Biography</a></li>
+<li id="menu-item-945" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-945"><a href="https://tu.tv/category/urdu-novels" data-wpel-link="internal">urdu novels</a></li>
+<li id="menu-item-933" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-933"><a href="https://tu.tv/category/history" data-wpel-link="internal">History</a></li>
+<li id="menu-item-934" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-934"><a href="https://tu.tv/category/self-help" data-wpel-link="internal">self help</a></li>
+<li id="menu-item-940" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-940"><a href="https://tu.tv/category/paulo-coelho" data-wpel-link="internal">Paulo coelho</a></li>
+<li id="menu-item-937" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-937"><a href="https://tu.tv/category/sufism" data-wpel-link="internal">sufism</a></li>
+<li id="menu-item-939" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939"><a href="https://tu.tv/category/poetry" data-wpel-link="internal">poetry</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search">
+		<form method="get" class="td-search-form" action="https://tu.tv/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob" class="td-ajax-search-flex"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style 5
+-->
+
+
+<div class="td-header-wrap td-header-style-5 ">
+    
+    <div class="td-header-top-menu-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-top-menu">
+            
+    <div class="top-bar-style-1">
+        
+<div class="td-header-sp-top-menu">
+
+
+	</div>
+        <div class="td-header-sp-top-widget">
+    
+    </div>    </div>
+
+<!-- LOGIN MODAL -->
+
+                <div  id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+                    <div class="td-login-wrap">
+                        <a href="#" aria-label="Back" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <form action="#" method="post">
+                            <div class="td-login-inputs"><input class="td-login-input" autocomplete="username" type="text" name="login_email" id="login_email" value="" required><label for="login_email">your username</label></div>
+	                        <div class="td-login-inputs"><input class="td-login-input" autocomplete="current-password" type="password" name="login_pass" id="login_pass" value="" required><label for="login_pass">your password</label></div>
+                            <input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                            </form>
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                            
+                            
+                            <div class="td-login-info-text"><a class="privacy-policy-link" href="https://tu.tv/privacy-policy" data-wpel-link="internal">Privacy Policy</a></div>
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required><label for="forgot_email">your email</label></div>
+                            <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                        </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap ">
+            <div class="td-container td-header-row td-header-main-menu black-menu">
+                <div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-menu">
+        <h1 class="td-logo">            <a class="td-main-logo" href="https://tu.tv/" data-wpel-link="internal">
+                <img src="https://tu.tv/wp-content/uploads/2021/04/Tu.TV-Logo.png" alt="" width="256" height="256"/>
+                <span class="td-visual-hidden">Tu.tv</span>
+            </a>
+        </h1>    </div>
+    <div class="menu-home-container"><ul id="menu-home-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-11"><a href="https://tu.tv" data-wpel-link="internal">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-932"><a href="https://tu.tv/category/bio" data-wpel-link="internal">Biography</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-945"><a href="https://tu.tv/category/urdu-novels" data-wpel-link="internal">urdu novels</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-933"><a href="https://tu.tv/category/history" data-wpel-link="internal">History</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-934"><a href="https://tu.tv/category/self-help" data-wpel-link="internal">self help</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-940"><a href="https://tu.tv/category/paulo-coelho" data-wpel-link="internal">Paulo coelho</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-937"><a href="https://tu.tv/category/sufism" data-wpel-link="internal">sufism</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-939"><a href="https://tu.tv/category/poetry" data-wpel-link="internal">poetry</a></li>
+</ul></div></div>
+
+
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            <a id="td-header-search-button-mob" href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+        </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://tu.tv/">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+            </div>
+
+            
+
+<div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
+
+            
+                <div class="tdc-content-wrap">
+                    <div id="tdi_1" class="tdc-zone"><div class="tdc_zone tdi_2  wpb_row td-pb-row"  >
+<style scoped>
+
+/* custom css */
+.tdi_2{
+                    min-height: 0;
+                }
+</style><div id="tdi_3" class="tdc-row"><div class="vc_row tdi_4  wpb_row td-pb-row" >
+<style scoped>
+
+/* custom css */
+.tdi_4,
+                .tdi_4 .tdc-columns{
+                    min-height: 0;
+                }.tdi_4,
+				.tdi_4 .tdc-columns{
+				    display: block;
+				}.tdi_4 .tdc-columns{
+				    width: 100%;
+				}
+</style><div class="vc_column tdi_6  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.tdi_6{
+                    vertical-align: baseline;
+                }.tdi_6 > .wpb_wrapper,
+				.tdi_6 > .wpb_wrapper > .tdc-elements{
+				    display: block;
+				}.tdi_6 > .wpb_wrapper > .tdc-elements{
+				    width: 100%;
+				}.tdi_6 > .wpb_wrapper > .vc_row_inner{
+				    width: auto;
+				}.tdi_6 > .wpb_wrapper{
+				    width: auto;
+				    height: auto;
+				}
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_big_grid_2 tdi_7 td-grid-style-1 td-hover-1 td-big-grids td-pb-border-top td_block_template_1"  data-td-block-uid="tdi_7" ><div id=tdi_7 class="td_block_inner"><div class="td-big-grid-wrapper">
+        <div class="td_module_mx9 td-animation-stack td-big-grid-post-0 td-big-grid-post td-big-thumb">
+            <div class="td-module-thumb"><a href="https://tu.tv/2021/08/choose-right-stairlift-for-home.html" rel="bookmark" class="td-image-wrap " title="4 Tips on How to Choose The Right Stairlift For Your Home &#8211; 2021 Guide" data-wpel-link="internal"><img width="741" height="486" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Choose-The-Right-Stairlift-741x486.jpg"   alt="" title="4 Tips on How to Choose The Right Stairlift For Your Home &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/choose-right-stairlift-for-home.html" rel="bookmark" title="4 Tips on How to Choose The Right Stairlift For Your Home &#8211; 2021 Guide" data-wpel-link="internal">4 Tips on How to Choose The Right Stairlift For Your Home &#8211; 2021 Guide</a></h3>                    </div>
+                    <div class="td-module-meta-info">
+                        <span class="td-post-author-name"><a href="https://tu.tv/author/ingeborg-olson" data-wpel-link="internal">Ingeborg Olson</a> <span>-</span> </span>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-09T17:02:52+05:00" >August 9, 2021</time></span>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="td-big-grid-scroll">
+        <div class="td_module_mx10 td-animation-stack td-big-grid-post-1 td-big-grid-post td-small-thumb">
+            <div class="td-module-thumb"><a href="https://tu.tv/2021/08/use-amazonite-for-greater-results.html" rel="bookmark" class="td-image-wrap " title="How To Use Amazonite For Greater Results" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Amazonite-324x160.jpg"   alt="" title="How To Use Amazonite For Greater Results" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/use-amazonite-for-greater-results.html" rel="bookmark" title="How To Use Amazonite For Greater Results" data-wpel-link="internal">How To Use Amazonite For Greater Results</a></h3>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx10 td-animation-stack td-big-grid-post-2 td-big-grid-post td-small-thumb">
+            <div class="td-module-thumb"><a href="https://tu.tv/2021/08/choosing-internet-for-streaming.html" rel="bookmark" class="td-image-wrap " title="4 Things to Look for When Choosing Internet for Streaming &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/gettyimages-1208078147-324x160.jpg"   alt="" title="4 Things to Look for When Choosing Internet for Streaming &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/choosing-internet-for-streaming.html" rel="bookmark" title="4 Things to Look for When Choosing Internet for Streaming &#8211; 2021 Guide" data-wpel-link="internal">4 Things to Look for When Choosing Internet for Streaming &#8211; 2021 Guide</a></h3>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="td_module_mx10 td-animation-stack td-big-grid-post-3 td-big-grid-post td-small-thumb">
+            <div class="td-module-thumb"><a href="https://tu.tv/2021/08/add-augmented-reality-to-e-commerce-store.html" rel="bookmark" class="td-image-wrap " title="4 Tips on How to Add Augmented Reality to Your E-Commerce Store &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Add-Augmented-Reality-to-Your-E-Commerce-Store-324x160.jpeg"   alt="" title="4 Tips on How to Add Augmented Reality to Your E-Commerce Store &#8211; 2021 Guide" /></a></div>            <div class="td-meta-info-container">
+                <div class="td-meta-align">
+                    <div class="td-big-grid-meta">
+                                                <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/add-augmented-reality-to-e-commerce-store.html" rel="bookmark" title="4 Tips on How to Add Augmented Reality to Your E-Commerce Store &#8211; 2021 Guide" data-wpel-link="internal">4 Tips on How to Add Augmented Reality to Your E-Commerce Store &#8211; 2021 Guide</a></h3>                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div></div><div class="clearfix"></div></div></div> <!-- ./block --></div></div></div></div></div></div>                </div>
+
+                    
+
+<div class="td-container td-pb-article-list ">
+    <div class="td-pb-row">
+                        <div class="td-pb-span12 td-main-content" role="main">
+                    <div class="td-ss-main-content td_block_template_1">
+                        <div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">LATEST ARTICLES</span></h4></div>
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack td_module_no_thumb">
+            <div class="td-module-image">
+                                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/who-is-eve-aston-wiki-biography-age-found-dead-in-her-bed-room.html" rel="bookmark" title="Who is Eve Aston? Wiki, Biography, Age, Found Dead in Her Bed Room" data-wpel-link="internal">Who is Eve Aston? Wiki, Biography, Age, Found Dead in Her...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/vaib-sharda" data-wpel-link="internal">Vaib Sharda</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-09T12:06:07+05:00" >August 9, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/mistakes-avoid-when-working-remotely.html" rel="bookmark" class="td-image-wrap " title="4 Common Mistakes to Avoid When Working Remotely &#8211; In 2021" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/remote-work-324x160.jpg"   alt="" title="4 Common Mistakes to Avoid When Working Remotely &#8211; In 2021" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/mistakes-avoid-when-working-remotely.html" rel="bookmark" title="4 Common Mistakes to Avoid When Working Remotely &#8211; In 2021" data-wpel-link="internal">4 Common Mistakes to Avoid When Working Remotely &#8211; In 2021</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/kristen-richards" data-wpel-link="internal">Kristen Richards</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-08T15:43:17+05:00" >August 8, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/facts-about-sex-dolls.html" rel="bookmark" class="td-image-wrap " title="5 Crazy Facts About Sex Dolls &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Sex-Dolls-324x160.png"   alt="" title="5 Crazy Facts About Sex Dolls &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/facts-about-sex-dolls.html" rel="bookmark" title="5 Crazy Facts About Sex Dolls &#8211; 2021 Guide" data-wpel-link="internal">5 Crazy Facts About Sex Dolls &#8211; 2021 Guide</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/ingeborg-olson" data-wpel-link="internal">Ingeborg Olson</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-08T07:00:42+05:00" >August 8, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack td_module_no_thumb">
+            <div class="td-module-image">
+                                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/10-sustainable-products-great-for-home-life.html" rel="bookmark" title="10 sustainable products great for home life" data-wpel-link="internal">10 sustainable products great for home life</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/vaib-sharda" data-wpel-link="internal">Vaib Sharda</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-07T20:42:56+05:00" >August 7, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/pressure-wash-composite-decking.html" rel="bookmark" class="td-image-wrap " title="Can You Pressure Wash Composite Decking? &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Pressure-Wash-Composite-Decking-324x160.jpg"   alt="" title="Can You Pressure Wash Composite Decking? &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/pressure-wash-composite-decking.html" rel="bookmark" title="Can You Pressure Wash Composite Decking? &#8211; 2021 Guide" data-wpel-link="internal">Can You Pressure Wash Composite Decking? &#8211; 2021 Guide</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/ingeborg-olson" data-wpel-link="internal">Ingeborg Olson</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-07T07:00:33+05:00" >August 7, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/cheaper-to-build-new-home-or-remodel.html" rel="bookmark" class="td-image-wrap " title="Is it Cheaper to Build a New Home or Remodel? &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Is-it-Cheaper-to-Build-a-New-Home-or-Remodel-324x160.jpg"   alt="" title="Is it Cheaper to Build a New Home or Remodel? &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/cheaper-to-build-new-home-or-remodel.html" rel="bookmark" title="Is it Cheaper to Build a New Home or Remodel? &#8211; 2021 Guide" data-wpel-link="internal">Is it Cheaper to Build a New Home or Remodel? &#8211;...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/ingeborg-olson" data-wpel-link="internal">Ingeborg Olson</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-07T07:00:08+05:00" >August 7, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/choosing-right-swimming-pool-builder.html" rel="bookmark" class="td-image-wrap " title="4 Tips On Choosing The Right Swimming Pool Builder" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/pool-324x160.jpg"   alt="" title="4 Tips On Choosing The Right Swimming Pool Builder" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/choosing-right-swimming-pool-builder.html" rel="bookmark" title="4 Tips On Choosing The Right Swimming Pool Builder" data-wpel-link="internal">4 Tips On Choosing The Right Swimming Pool Builder</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/dzo-emer" data-wpel-link="internal">Dzo Emer</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T17:35:12+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/choosing-an-iptv-subscription-service-provider.html" rel="bookmark" class="td-image-wrap " title="6 Tips for Choosing an IPTV Subscription Service Provider in 2021" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/IPTV-Subscription-Service-Provider-324x160.png"   alt="" title="6 Tips for Choosing an IPTV Subscription Service Provider in 2021" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/choosing-an-iptv-subscription-service-provider.html" rel="bookmark" title="6 Tips for Choosing an IPTV Subscription Service Provider in 2021" data-wpel-link="internal">6 Tips for Choosing an IPTV Subscription Service Provider in 2021</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/dzo-emer" data-wpel-link="internal">Dzo Emer</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T17:18:25+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/explore-nightlife-scene-haifa-israel.html" rel="bookmark" class="td-image-wrap " title="10 Reasons to Explore the Nightlife Scene in Haifa, Israel" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/10-Reasons-to-Explore-the-Nightlife-Scene-in-Haifa-Israel-1-324x160.jpg"   alt="" title="10 Reasons to Explore the Nightlife Scene in Haifa, Israel" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/explore-nightlife-scene-haifa-israel.html" rel="bookmark" title="10 Reasons to Explore the Nightlife Scene in Haifa, Israel" data-wpel-link="internal">10 Reasons to Explore the Nightlife Scene in Haifa, Israel</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/kristen-richards" data-wpel-link="internal">Kristen Richards</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T16:45:33+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack td_module_no_thumb">
+            <div class="td-module-image">
+                                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/childhood-stars-struggling-to-support-themselves-in-adulthood.html" rel="bookmark" title="Childhood Stars Struggling to Support Themselves in Adulthood" data-wpel-link="internal">Childhood Stars Struggling to Support Themselves in Adulthood</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/vaib-sharda" data-wpel-link="internal">Vaib Sharda</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T16:35:05+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/what-is-a-csa.html" rel="bookmark" class="td-image-wrap " title="What is a CSA? &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Community-Supported-Agriculture-324x160.jpg"   alt="" title="What is a CSA? &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/what-is-a-csa.html" rel="bookmark" title="What is a CSA? &#8211; 2021 Guide" data-wpel-link="internal">What is a CSA? &#8211; 2021 Guide</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/marianna-fenton" data-wpel-link="internal">Marianna Fenton</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T15:38:17+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack td_module_no_thumb">
+            <div class="td-module-image">
+                                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/rohan-mehra-wiki-bio-age-height-net-worth-facts.html" rel="bookmark" title="Rohan Mehra Wiki, Bio, Age, Height, Net Worth, Facts" data-wpel-link="internal">Rohan Mehra Wiki, Bio, Age, Height, Net Worth, Facts</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/vaib-sharda" data-wpel-link="internal">Vaib Sharda</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T12:32:52+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid-->
+
+	<div class="td-block-row">
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack td_module_no_thumb">
+            <div class="td-module-image">
+                                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/scott-wapner-bio-age-wife-family-cnbc-net-worth-salary.html" rel="bookmark" title="Scott Wapner Bio, Age, Wife, Family, CNBC, Net Worth, Salary" data-wpel-link="internal">Scott Wapner Bio, Age, Wife, Family, CNBC, Net Worth, Salary</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/vaib-sharda" data-wpel-link="internal">Vaib Sharda</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-06T06:51:08+05:00" >August 6, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/importance-of-search-visibility-for-small-businesses.html" rel="bookmark" class="td-image-wrap " title="The Importance of Search Visibility for Small Businesses in 2021" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/business-324x160.jpg"   alt="" title="The Importance of Search Visibility for Small Businesses in 2021" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/importance-of-search-visibility-for-small-businesses.html" rel="bookmark" title="The Importance of Search Visibility for Small Businesses in 2021" data-wpel-link="internal">The Importance of Search Visibility for Small Businesses in 2021</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/joanne-chapdelaine" data-wpel-link="internal">Joanne Chapdelaine</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T18:30:54+05:00" >August 5, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 -->
+
+	<div class="td-block-span4">
+<!-- module -->
+        <div class="td_module_1 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://tu.tv/2021/08/engage-toddlers-in-learning.html" rel="bookmark" class="td-image-wrap " title="11 Tips on How to Engage Toddlers in Learning &#8211; 2021 Guide" data-wpel-link="internal"><img width="324" height="160" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/08/Engage-Toddlers-in-Learning-324x160.jpg"   alt="" title="11 Tips on How to Engage Toddlers in Learning &#8211; 2021 Guide" /></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/08/engage-toddlers-in-learning.html" rel="bookmark" title="11 Tips on How to Engage Toddlers in Learning &#8211; 2021 Guide" data-wpel-link="internal">11 Tips on How to Engage Toddlers in Learning &#8211; 2021...</a></h3>
+            <div class="td-module-meta-info">
+                <span class="td-post-author-name"><a href="https://tu.tv/author/ingeborg-olson" data-wpel-link="internal">Ingeborg Olson</a> <span>-</span> </span>                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-08-05T15:40:33+05:00" >August 5, 2021</time></span>                            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span4 --></div><!--./row-fluid--><div class="page-nav td-pb-padding-side"><span class="current">1</span><a href="https://tu.tv/page/2" class="page" title="2" data-wpel-link="internal">2</a><a href="https://tu.tv/page/3" class="page" title="3" data-wpel-link="internal">3</a><span class="extend">...</span><a href="https://tu.tv/page/39" class="last" title="39" data-wpel-link="internal">39</a><a href="https://tu.tv/page/2" aria-label="next-page" data-wpel-link="internal"><i class="td-icon-menu-right"></i></a><span class="pages">Page 1 of 39</span><div class="clearfix"></div></div>                    </div>
+                </div>
+                    </div> <!-- /.td-pb-row -->
+</div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+
+<!-- Instagram -->
+
+	
+	
+            <div class="tdc-footer-wrap ">
+
+                <!-- Footer -->
+				<div class="td-footer-wrapper td-footer-container td-container-wrap td-footer-template-2 ">
+    <div class="td-container">
+
+	    <div class="td-pb-row">
+		    <div class="td-pb-span12">
+			    		    </div>
+	    </div>
+
+        <div class="td-pb-row">
+
+            <div class="td-pb-span4">
+                <div class="td-footer-info"><div class="footer-logo-wrap"><a href="https://tu.tv/" data-wpel-link="internal"><img src="https://tu.tv/wp-content/uploads/2021/04/Tu.TV-Logo.png" alt="" title=""  width="256" height="256"/></a></div><div class="footer-text-wrap"><div class="footer-email-wrap">Contact us: <a href="/cdn-cgi/l/email-protection#6c010d1e07030a03180300030b370d18310b010d0500420f0301">markofotolog[at]gmail.com</a></div></div><div class="footer-social-wrap td-social-style-2"></div></div>                            </div>
+
+            <div class="td-pb-span4">
+                <div class="td_block_wrap td_block_7 tdi_9 td-pb-border-top td_block_template_1 td-column-1 td_block_padding"  data-td-block-uid="tdi_9" ><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">var block_tdi_9 = new tdBlock();
+block_tdi_9.id = "tdi_9";
+block_tdi_9.atts = '{"custom_title":"POPULAR POSTS","limit":3,"sort":"popular","block_type":"td_block_7","separator":"","custom_url":"","block_template_id":"","m6_tl":"","post_ids":"","category_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","offset":"","show_modified_date":"","time_ago":"","time_ago_add_txt":"ago","el_class":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m6f_title_font_header":"","m6f_title_font_title":"Article title","m6f_title_font_settings":"","m6f_title_font_family":"","m6f_title_font_size":"","m6f_title_font_line_height":"","m6f_title_font_style":"","m6f_title_font_weight":"","m6f_title_font_transform":"","m6f_title_font_spacing":"","m6f_title_":"","m6f_cat_font_title":"Article category tag","m6f_cat_font_settings":"","m6f_cat_font_family":"","m6f_cat_font_size":"","m6f_cat_font_line_height":"","m6f_cat_font_style":"","m6f_cat_font_weight":"","m6f_cat_font_transform":"","m6f_cat_font_spacing":"","m6f_cat_":"","m6f_meta_font_title":"Article meta info","m6f_meta_font_settings":"","m6f_meta_font_family":"","m6f_meta_font_size":"","m6f_meta_font_line_height":"","m6f_meta_font_style":"","m6f_meta_font_weight":"","m6f_meta_font_transform":"","m6f_meta_font_spacing":"","m6f_meta_":"","ajax_pagination":"","ajax_pagination_infinite_stop":"","css":"","tdc_css":"","td_column_number":1,"header_color":"","color_preset":"","border_top":"","class":"tdi_9","tdc_css_class":"tdi_9","tdc_css_class_style":"tdi_9_rand_style"}';
+block_tdi_9.td_column_number = "1";
+block_tdi_9.block_type = "td_block_7";
+block_tdi_9.post_count = "3";
+block_tdi_9.found_posts = "555";
+block_tdi_9.header_color = "";
+block_tdi_9.ajax_pagination_infinite_stop = "";
+block_tdi_9.max_num_pages = "185";
+tdBlocksArray.push(block_tdi_9);
+</script><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">POPULAR POSTS</span></h4></div><div id=tdi_9 class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb">
+
+        
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2020/05/annonces-pour-plan-cul-a-macon-3.html" rel="bookmark" title="Annonces Pour Plan Cul a Macon (3)" data-wpel-link="internal">Annonces Pour Plan Cul a Macon (3)</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-05-07T00:30:12+05:00" >May 7, 2020</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack td_module_no_thumb">
+
+        
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/04/jamie-reagans-revenge-impresses-fans.html" rel="bookmark" title="Jamie Reagan’s Revenge Impresses Fans" data-wpel-link="internal">Jamie Reagan’s Revenge Impresses Fans</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-04-17T00:13:23+05:00" >April 17, 2021</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_6 td_module_wrap td-animation-stack">
+
+        <div class="td-module-thumb"><a href="https://tu.tv/2021/04/play-poker-online-casino-indonesia.html" rel="bookmark" class="td-image-wrap " title="How to Play Poker Online in Casino Indonesia" data-wpel-link="internal"><img width="100" height="70" class="entry-thumb" src="https://tu.tv/wp-content/uploads/2021/04/Poker-Online-in-Casino-Indonesia-100x70.jpg"  srcset="https://tu.tv/wp-content/uploads/2021/04/Poker-Online-in-Casino-Indonesia-100x70.jpg 100w, https://tu.tv/wp-content/uploads/2021/04/Poker-Online-in-Casino-Indonesia-218x150.jpg 218w" sizes="(max-width: 100px) 100vw, 100px"  alt="" title="How to Play Poker Online in Casino Indonesia" /></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://tu.tv/2021/04/play-poker-online-casino-indonesia.html" rel="bookmark" title="How to Play Poker Online in Casino Indonesia" data-wpel-link="internal">How to Play Poker Online in Casino Indonesia</a></h3>            <div class="td-module-meta-info">
+                                                <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2021-04-23T15:44:28+05:00" >April 23, 2021</time></span>                            </div>
+        </div>
+
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block -->                            </div>
+
+            <div class="td-pb-span4">
+                <div class="td_block_wrap td_block_popular_categories tdi_10 widget widget_categories td-pb-border-top td_block_template_1"  data-td-block-uid="tdi_10" >
+<style>
+/* custom css */
+.td_block_popular_categories{
+                  padding-bottom: 0;
+                }
+</style><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">POPULAR CATEGORY</span></h4></div><ul class="td-pb-padding-side"><li><a href="https://tu.tv/category/bio" data-wpel-link="internal"><span class="td-cat-name">Biography</span><span class="td-cat-no">214</span></a></li><li><a href="https://tu.tv/category/tips" data-wpel-link="internal"><span class="td-cat-name">Tips</span><span class="td-cat-no">122</span></a></li><li><a href="https://tu.tv/category/home-garden" data-wpel-link="internal"><span class="td-cat-name">Home &amp; Garden</span><span class="td-cat-no">54</span></a></li><li><a href="https://tu.tv/category/business" data-wpel-link="internal"><span class="td-cat-name">business</span><span class="td-cat-no">33</span></a></li><li><a href="https://tu.tv/category/health" data-wpel-link="internal"><span class="td-cat-name">health</span><span class="td-cat-no">31</span></a></li><li><a href="https://tu.tv/category/technology" data-wpel-link="internal"><span class="td-cat-name">Technology</span><span class="td-cat-no">20</span></a></li><li><a href="https://tu.tv/category/beauty-style" data-wpel-link="internal"><span class="td-cat-name">Beauty &amp; Style</span><span class="td-cat-no">16</span></a></li><li><a href="https://tu.tv/category/finance" data-wpel-link="internal"><span class="td-cat-name">Finance</span><span class="td-cat-no">14</span></a></li><li><a href="https://tu.tv/category/gaming-guide" data-wpel-link="internal"><span class="td-cat-name">Gaming Guide</span><span class="td-cat-no">9</span></a></li></ul></div>                            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- Sub Footer -->
+				    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                                    </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    &copy; Tu.Tv 2021                 </div>
+            </div>
+        </div>
+    </div>
+            </div><!--close td-footer-wrap-->
+			
+</div><!--close td-outer-wrap-->
+
+
+<script type="text/javascript">var jQueryScriptOutputted = false;function initJQuery() {if (typeof(jQuery) == "undefined") {if (!jQueryScriptOutputted) {jQueryScriptOutputted = true;document.write("<scr" + "ipt type=\"text/javascript\" src=\"https://code.jquery.com/jquery-1.8.2.min.js\"></scr" + "ipt>");}setTimeout("initJQuery()", 50);}}initJQuery();</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript">jQuery(document).ready(function() {
+jQuery(".a6dd5be9ad9f6b1d9398b43fc4579d5f").click(function() {
+jQuery.post(
+"https://tu.tv/wp-admin/admin-ajax.php", {
+"action": "quick_adsense_onpost_ad_click",
+"quick_adsense_onpost_ad_index": jQuery(this).attr("data-index"),
+"quick_adsense_nonce": "cc3027b028",
+}, function(response) { }
+);
+});
+});
+</script>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2021
+        Version: 11.2 (rara)
+        Deploy mode: deploy
+        
+        uid: 6111197261e51
+    -->
+
+    <script type='text/javascript' id='ppress-frontend-script-js-extra'>
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/tu.tv\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"0bb36ba7c8","disable_ajax_form":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=3.1.16' id='ppress-frontend-script-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js?ver=c19aec6a20dc470dea3def4ce71e04d5' id='tdb_js_posts_autoload-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/td-composer/legacy/Newspaper/js/tagdiv_theme.min.js?ver=11.2' id='td-site-min-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-includes/js/comment-reply.min.js?ver=5.8' id='comment-reply-js' defer></script>
+<script type='text/javascript' src='https://tu.tv/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js?ver=c19aec6a20dc470dea3def4ce71e04d5' id='tdb_js_files_for_front-js' defer></script>
+
+<!-- JS generated by theme -->
+
+<script type="rocketlazyloadscript">
+    
+</script>
+
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://tu.tv/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+</body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1628510578 -->

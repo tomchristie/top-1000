@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script>
+var loc = window.location;
+var loginUrl = loc.protocol + "//" + loc.hostname
+try {
+    if (loc.hash) {
+        document.cookie = "_gwt_dlc=" + encodeURIComponent(loc.hash); 
+        loginUrl += "/Login/SwitchUniverse";
+    } else {
+        loginUrl += "/Default";
+    }
+} catch (e) {};
+loc.replace(loginUrl);
+</script>
+</html>

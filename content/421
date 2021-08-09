@@ -1,0 +1,2297 @@
+
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+					<meta http-equiv="refresh" content="300; url=?refresh=true" />
+					<!-- Fallback Font CSS -->
+	<style id="adjust-fallback-font">
+		.wf-fallback h1, .wf-fallback h2, .wf-fallback h3, .wf-fallback h4, .wf-fallback h5, .wf-fallback h6, .wf-fallback p, .wf-fallback a, .wf-fallback button, .wf-fallback span, .wf-fallback small, .wf-fallback li, .wf-fallback ul, .wf-fallback ol {
+			font-family: arial;
+			line-height: 1.15;
+			letter-spacing: -.85px;
+			word-spacing: -1px;
+			height: auto;
+		}
+		.wf-fallback .menu-item a {
+			font-size: .6725em !important;
+		}
+		.wf-fallback .m-breaking-news a {
+			font-size: .879em !important;
+		}
+		.wf-fallback .a-article__title a.a-article__link {
+			font-size: .9em !important;
+		}
+		.wf-fallback .a-article--card-featured .a-article__title a.a-article__link {
+			font-size: .86em !important;
+		}
+		.wf-fallback .m-panel-navigation__toggle span {
+			font-size: .9em !important;
+		}
+	</style>
+	<!-- End Fallback Font CSS -->
+	<script>
+		/* Immediately set class if font-cached cookie is not present */
+		if (
+			!document.cookie.includes('font-cached')
+		) {
+			document.getElementsByTagName('html')[0].classList.add('wf-fallback');
+		}
+	</script>
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+	<script id="boston-ads" type="text/javascript">
+		var PWT = {};
+		var adLazyLoading = false;
+		var googletag = googletag || {};
+		var gptRan = false;
+		var setProfile = window.matchMedia('(min-width: 1024px)').matches;
+		var FAILSAFE_TIMEOUT = 1000;
+		var DYNAMIC_NAME = 'homepage';
+		var adSlots = [];
+
+		googletag.cmd = googletag.cmd || [];
+
+		PWT.jsLoaded = function() {
+			loadGpt();
+		};
+
+		(function() {
+			var purl = window.location.href;
+			var reportingId = setProfile ? '2890' : '2891';
+			var url = '//ads.pubmatic.com/AdServer/js/pwt/159928/' + reportingId;
+			var profileVersionId = '';
+
+			if (purl.indexOf('pwtv=') > 0) {
+				var regexp = /pwtv=(.*?)(&|$)/g;
+				var matches = regexp.exec(purl);
+				if (matches.length >= 2 && matches[1].length > 0) {
+					profileVersionId = '/' + matches[1];
+				}
+			}
+
+			var wtads = document.createElement('script');
+
+			wtads.async = true;
+			wtads.type = 'text/javascript';
+			wtads.src = url + profileVersionId + '/pwt.js';
+
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(wtads, node);
+		})();
+
+		var loadGpt = function() {
+			// Check the gptRan flag
+			if (!gptRan) {
+				gptRan = true;
+				var gads = document.createElement('script');
+				var useSSL = 'https:' == document.location.protocol;
+				gads.src = (useSSL ? 'https:' : 'http:') + '//securepubads.g.doubleclick.net/tag/js/gpt.js';
+				var node = document.getElementsByTagName('script')[0];
+				node.parentNode.insertBefore(gads, node);
+
+				var lls = document.createElement('script');
+				lls.type = 'text/javascript';
+				lls.src = 'https://www.boston.com/wp-content/themes/bdc-2020/includes/gam/lazy-load-ad.min.js';
+				node.parentNode.insertBefore(lls, gads);
+			}
+		}
+		// Failsafe to call gpt
+		setTimeout(loadGpt, 500);
+	</script>
+
+	<script id="boston-init-adserver" type="text/javascript">
+		// this function will act as a lock and will call the GPT API
+		function initAdserver(forced) {
+			if((forced === true && window.initAdserverFlag !== true) || (PWT.a9_BidsReceived && PWT.ow_BidsReceived)){
+				window.initAdserverFlag = true;
+				PWT.a9_BidsReceived = PWT.ow_BidsReceived = false;
+
+				if( 'undefined' !== typeof AdLazyLoader ) {
+					adLazyLoading = true;
+					var slotsToLazyLoad = [];
+					for ( var prop in window.adSlots ) {
+						if ( window.adSlots.hasOwnProperty( prop ) ) {
+							slotsToLazyLoad.push( window.adSlots[ prop ] );
+						}
+					}
+					AdLazyLoader.registerSlots( slotsToLazyLoad );
+				} else {
+					googletag.pubads().refresh();
+				}
+			}
+		}
+	</script>
+
+	<script id="boston-init-tam" type="text/javascript">
+		!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+		apstag.init({
+			pubID: '3453',
+			adServer: 'googletag'
+		});
+
+		let slots = [];
+
+					slots = [
+				{
+					slotID: 'ad_lead1',
+					sizes: [[728, 90], [970, 90], [320, 50]]
+				},
+				{
+					slotID: 'ad_sectionfront1',
+					sizes: [[300,250], [300,600], [160,600]]
+				},
+				{
+					slotID: 'ad_sectionfront2',
+					sizes: [[300,250], [300,600], [160,600]]
+				},
+			];
+
+							slots.push({ slotID: 'ad_stream1', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+							slots.push({ slotID: 'ad_stream2', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+							slots.push({ slotID: 'ad_stream3', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+							slots.push({ slotID: 'ad_stream4', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+							slots.push({ slotID: 'ad_stream5', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+							slots.push({ slotID: 'ad_stream6', sizes: [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]] })
+			
+		
+		apstag.fetchBids({
+			slots: slots,
+			timeout: 2e3 // Make Sure this timeout is less than or equal to OpenWrap TimeOut
+		}, function(bids) {
+			googletag.cmd.push(function(){
+				apstag.setDisplayBids();
+				PWT.a9_BidsReceived = true;
+				initAdserver(false);
+			});
+		});
+	</script>
+
+	<script id="boston-gam" type="text/javascript">
+		googletag.cmd.push(function() {
+
+			var leaderMapping = googletag
+				.sizeMapping()
+				.addSize([0, 0], [[300, 250], [320, 50], [320, 100]])
+				.addSize([768, 200], [[728, 90], [300,250]])
+				.addSize([1050, 200], [[970, 250], [970, 90], [728, 90], [300, 250]])
+				.build();
+
+			var leader1Mapping = googletag
+				.sizeMapping()
+				.addSize([0, 0], [320, 50])
+				.addSize([768, 200], [728, 90])
+				.addSize([1050, 200], [[970, 90], [728, 90]])
+				.build();
+
+			var leader2Mapping = googletag
+				.sizeMapping()
+				.addSize([0, 0], [[300, 250], [320, 100], [320, 50]])
+				.addSize([768, 200], [[728, 90], [300, 250]])
+				.addSize([1050, 200], [[728, 90], [300, 250]])
+				.build();
+
+			var railMapping = googletag
+				.sizeMapping()
+				.addSize([0, 0], [])
+				.addSize([768, 200], [])
+				.addSize([1050, 200], [[300, 250], [300, 600], [160,600]])
+				.build();
+
+			// Define GAM Slots
+			
+				adSlots['ad_lead1'] = googletag
+					.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [[728, 90], [970, 90], [320, 50]], 'ad_lead1' )
+					.setTargeting('pos', [['lead1'], ['atf']])
+					.defineSizeMapping( leader1Mapping )
+					.addService( googletag.pubads() );
+
+				adSlots['ad_sectionfront1'] = googletag
+					.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [[300,250], [300,600], [160,600]], 'ad_sectionfront1')
+					.setTargeting('pos', [['sectfront1'], ['atf']])
+					.defineSizeMapping(railMapping)
+					.addService( googletag.pubads() );
+
+				adSlots['ad_sectionfront2'] = googletag
+					.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [[300,250], [300,600], [160,600]], 'ad_sectionfront2')
+					.setTargeting('pos', [['sectfront2'], ['atf']])
+					.defineSizeMapping(railMapping)
+					.addService( googletag.pubads() );
+
+				// Dynamically build the in-article ad definitoins and add to the config definition based off of the number of in-article ads
+				
+					adSlots['ad_stream1'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream1' )
+						.setTargeting('pos', [['stream1'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+					adSlots['ad_stream2'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream2' )
+						.setTargeting('pos', [['stream2'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+					adSlots['ad_stream3'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream3' )
+						.setTargeting('pos', [['stream3'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+					adSlots['ad_stream4'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream4' )
+						.setTargeting('pos', [['stream4'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+					adSlots['ad_stream5'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream5' )
+						.setTargeting('pos', [['stream5'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+					adSlots['ad_stream6'] = googletag
+						.defineSlot('/61381659/boston.com/homepage', [[ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 300, 250 ], [ 320, 100 ], [ 320, 50 ]], 'ad_stream6' )
+						.setTargeting('pos', [['stream6'], ['btf']])
+						.defineSizeMapping( leaderMapping )
+						.addService( googletag.pubads() );
+
+				
+			
+			
+				/* googletag.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [], 'ad_partnerad1')
+					.setTargeting('pos', ['partnerad1'])
+					.addService(googletag.pubads());
+
+				googletag.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [], 'ad_partnerad2')
+					.setTargeting('pos', ['partnerad2'])
+					.addService(googletag.pubads());
+
+				googletag.defineSlot('/61381659/boston.com/' + DYNAMIC_NAME, [], 'ad_partnerad3')
+					.setTargeting('pos', ['partnerad3'])
+					.addService(googletag.pubads()); */
+
+			
+			// common targetings
+			googletag.pubads()
+														.setTargeting( 'pgtype', 'homepage' )
+				
+														.setTargeting( 's1', 'boston.com' )
+				
+														.setTargeting( 's2', 'homepage' )
+				
+				
+				.setTargeting( 'environment', ['production'])
+
+				
+				.setTargeting( 'adunblock', ['undefined' !== typeof( window._bcm_il ) ? 'true' : 'false']
+			);
+
+			if (Krux && 'segments' in Krux && 'user' in Krux) {
+				googletag.pubads().setTargeting("ksg", Krux.segments);
+				googletag.pubads().setTargeting("kuid", Krux.user);
+			}
+
+			googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+				var size = event.size;
+				if(size === null) return;
+				var slot = event.slot;
+				var slotDiv = document.getElementById(slot.getSlotElementId());
+
+				if (size[0] > slotDiv.clientWidth) {
+					slotDiv.style.width = size[0] + 'px';
+				}
+
+				if (size[1] > slotDiv.clientHeight) {
+					slotDiv.style.height = size[1] + 'px';
+				}
+			});
+
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().disableInitialLoad();
+			googletag.enableServices();
+
+			// OpenWrap code START here
+			if(typeof PWT.requestBids === 'function') {
+
+				PWT.requestBids(
+					PWT.generateConfForGPT(googletag.pubads().getSlots()),
+					function(adUnitsArray) {
+						PWT.addKeyValuePairsToGPTSlots(adUnitsArray);
+						PWT.ow_BidsReceived = true;
+						initAdserver(false);
+					}
+				);
+			}
+
+			// No need to handle "else" part as we have A9 wrapper on page
+			// OpenWrap code END here
+
+			setTimeout(function() {
+				initAdserver(true); // calling this function with forced mode set to true so that GPT API is always executed
+			}, FAILSAFE_TIMEOUT);
+
+			if ( (PWT.a9_BidsReceived && PWT.ow_BidsReceived) && ! adLazyLoading && 'undefined' !== typeof AdLazyLoader ) {
+				// This is a fallback for if prebid has already returned and
+				// attempted to register ads to lazy load before the ads have
+				// all been defined.
+				adLazyLoading = true;
+				var slotsToLazyLoad = [];
+				for ( var prop in window.adSlots ) {
+					if ( window.adSlots.hasOwnProperty( prop ) ) {
+						slotsToLazyLoad.push( window.adSlots[ prop ] );
+					}
+				}
+				AdLazyLoader.registerSlots( slotsToLazyLoad );
+			}
+
+
+			const hasArcVideo = document.getElementsByClassName( 'a-video' ).length > 0;
+
+			/**
+			 * ===================
+			 * Arc Video
+			 * ===================
+			 */
+			if ( hasArcVideo ) {
+				const params = [
+					'sz=640x480',
+					`iu=/61381659/boston.com/${DYNAMIC_NAME}`,
+					'gdfp_req=1',
+					'env=vp',
+					'output=xml_vast3',
+					'unviewed_position_start=1',
+					'description_url=https%3A%2F%2Fboston.com',
+					'ciu_szs=300x250',
+					`cust_params=${buildCustomParams()}`,
+				].join('&')
+
+				window.PoWaSettings = window.PoWaSettings || {};
+				window.PoWaSettings.advertising = window.PoWaSettings.advertising || {};
+
+				// Define the ad tag to be used by the player.
+				window.PoWaSettings.advertising.adTag = function () {
+					return `//pubads.g.doubleclick.net/gampad/ads?${params}`;
+				};
+
+				/**
+				 * Builds the custom parameters needed for the ARC video preroll
+				 *
+				 * @return string - URL encoded string of parameters
+				 */
+				function buildCustomParams() {
+
+					const getCurrentBreakPoint = function() {
+						if ( window.outerWidth < 768 ) { return 'mobile'; }
+						if ( window.outerWidth < 960 ) { return 'tablet'; }
+						return 'desktop';
+					};
+
+					const getTestQueryString = function() {
+						var queryString = window.location.search;
+						var regex = /[\?\&]test=([^&]*)/;
+						return queryString.match( regex ) ? queryString.match( regex )[1] : '';
+					};
+
+					const customParams = [
+						'pos=preroll',
+						'breakpoint=' + getCurrentBreakPoint(),
+						'test=' + getTestQueryString(),
+					];
+
+					googletag
+						.pubads()
+						.getTargetingKeys()
+						.forEach((key) => customParams.push(`${key}=${googletag.pubads().getTargeting(key)}`));
+
+					return encodeURIComponent(
+						customParams.join('&')
+						.replace('pgtype=post', 'pgtype=article') // Match legacy ad call format
+					);
+				};
+			}
+		});
+	</script>
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.9.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Boston.com: Local breaking news, sports, weather, and things to do</title>
+	<meta name="description" content="What Boston cares about right now: Get breaking updates on news, sports, and weather. Local alerts, things to do, and more on Boston.com." />
+	<link rel="canonical" href="https://www.boston.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Boston.com: Local breaking news, sports, weather, and things to do" />
+	<meta property="og:description" content="What Boston cares about right now: Get breaking updates on news, sports, and weather. Local alerts, things to do, and more on Boston.com." />
+	<meta property="og:url" content="https://www.boston.com/" />
+	<meta property="og:site_name" content="Boston.com" />
+	<meta property="article:publisher" content="https://www.facebook.com/boston" />
+	<meta property="article:modified_time" content="2021-08-09T05:08:42+00:00" />
+	<meta property="og:image" content="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/186510076_10159660918124365_7556135673917168053_n-609ec93be180c.png" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1920" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:image" content="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/186510076_10159660918124365_7556135673917168053_n-609ec93be180c.png" />
+	<meta name="twitter:site" content="@BostonDotCom" />
+	<script type="application/ld+json" class="yoast-schema-graph">{
+	    "@context": "https://schema.org",
+	    "@graph": [
+	        {
+	            "@type": "Organization",
+	            "@id": "https://www.boston.com/#organization",
+	            "name": "Boston.com",
+	            "url": "https://www.boston.com/",
+	            "sameAs": [
+	                "https://www.facebook.com/boston",
+	                "https://instagram.com/boston/",
+	                "https://www.youtube.com/channel/UC8IkdxFyPXgw11n4Ew0osHQ",
+	                "https://twitter.com/BostonDotCom"
+	            ],
+	            "logo": {
+	                "@type": "ImageObject",
+	                "@id": "https://www.boston.com/#logo",
+	                "inLanguage": "en-US",
+	                "url": "https://bdc2020.o0bc.com/wp-content/uploads/2021/05/Boston.com-Logo-609cb231cf4d6.png",
+	                "width": 2820,
+	                "height": 876,
+	                "caption": "Boston.com"
+	            },
+	            "image": {
+	                "@id": "https://www.boston.com/#logo"
+	            }
+	        },
+	        {
+	            "@type": "WebSite",
+	            "@id": "https://www.boston.com/#website",
+	            "url": "https://www.boston.com/",
+	            "name": "Boston.com",
+	            "description": "Boston.com",
+	            "publisher": {
+	                "@id": "https://www.boston.com/#organization"
+	            },
+	            "potentialAction": [
+	                {
+	                    "@type": "SearchAction",
+	                    "target": "https://www.boston.com/?s={search_term_string}",
+	                    "query-input": "required name=search_term_string"
+	                }
+	            ],
+	            "inLanguage": "en-US"
+	        },
+	        {
+	            "@type": "WebPage",
+	            "@id": "https://www.boston.com/#webpage",
+	            "url": "https://www.boston.com/",
+	            "name": "Boston.com: Local breaking news, sports, weather, and things to do",
+	            "isPartOf": {
+	                "@id": "https://www.boston.com/#website"
+	            },
+	            "about": {
+	                "@id": "https://www.boston.com/#organization"
+	            },
+	            "datePublished": "2016-10-26T20:00:30+00:00",
+	            "dateModified": "2021-08-09T05:08:42+00:00",
+	            "description": "What Boston cares about right now: Get breaking updates on news, sports, and weather. Local alerts, things to do, and more on Boston.com.",
+	            "breadcrumb": {
+	                "@id": "https://www.boston.com/#breadcrumb"
+	            },
+	            "inLanguage": "en-US",
+	            "potentialAction": [
+	                {
+	                    "@type": "ReadAction",
+	                    "target": [
+	                        "https://www.boston.com/"
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "BreadcrumbList",
+	            "@id": "https://www.boston.com/#breadcrumb",
+	            "itemListElement": [
+	                {
+	                    "@type": "ListItem",
+	                    "position": 1,
+	                    "item": {
+	                        "@type": "WebPage",
+	                        "@id": "https://www.boston.com/",
+	                        "url": "https://www.boston.com/",
+	                        "name": "Home"
+	                    }
+	                }
+	            ]
+	        }
+	    ]
+	}</script>
+	<meta name="google-site-verification" content="Mvps2Iz3RkrsYB4SIGbGhtQQFSU7Ppzbq8oxq1Ij63k" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//assets.juicer.io' />
+<link rel='dns-prefetch' href='//dz9qn8fh4jznm.cloudfront.net.' />
+<link rel='dns-prefetch' href='//static.chartbeat.com' />
+<link rel='dns-prefetch' href='//cdn.blueconic.net' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Boston.com &raquo; Feed" href="https://www.boston.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Boston.com &raquo; Comments Feed" href="https://www.boston.com/comments/feed/" />
+<link rel='stylesheet' id='juicerstyle-css'  href='//assets.juicer.io/embed.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://bdc2020.o0bc.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp_blocks_embed_weather_podcast-cgb-style-css-css'  href='https://bdc2020.o0bc.com/wp-content/plugins/wp-block-embed-weather-podcast/dist/blocks.style.build.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://bdc2020.o0bc.com/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=3.5.6' type='text/css' media='all' />
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='global-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/global.css?ver=0.1.3' type='text/css' media='all' />
+<noscript><link rel='stylesheet' id='global-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/global.css?ver=0.1.3' type='text/css' media='all' />
+</noscript><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='base-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/base.css?ver=0.1.3' type='text/css' media='all' />
+<noscript><link rel='stylesheet' id='base-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/base.css?ver=0.1.3' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='blocks-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/blocks.css?ver=0.1.3' type='text/css' media='all' />
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='molecules-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/molecules.css?ver=0.1.3' type='text/css' media='all' />
+<noscript><link rel='stylesheet' id='molecules-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/molecules.css?ver=0.1.3' type='text/css' media='all' />
+</noscript><link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='organisms-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/organisms.css?ver=0.1.3' type='text/css' media='all' />
+<noscript><link rel='stylesheet' id='organisms-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/organisms.css?ver=0.1.3' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='styles-css'  href='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/css/style.css?ver=0.1.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script async="async" type='text/javascript' src='//assets.juicer.io/embed-no-jquery.js?ver=5.7.2' id='juicerembed-js'></script>
+<script async="async" type='text/javascript' src='//dz9qn8fh4jznm.cloudfront.net./script.js' id='cleancreative_js-js'></script>
+<script type='text/javascript' id='chartbeat_head_js-js-extra'>
+/* <![CDATA[ */
+var chartbeat_config = {"domain":"boston.com","uid":"8544","useCanonical":"1","useAB":"1","authors":"","sections":"homepage","title":"Boston.com: Local breaking news, sports, weather, and things to do"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/bdc-chartbeat/js/bdc.chartbeat-head.js?ver=1626794527' id='chartbeat_head_js-js'></script>
+<script type='text/javascript' src='//static.chartbeat.com/js/chartbeat_mab.js?ver=5.7.2' id='chartbeat_mab-js'></script>
+<script type='text/javascript' id='ua-wn-js-extra'>
+/* <![CDATA[ */
+var uaWnSettings = {"prompt":{"enabled":true,"prompt_views":2,"prompt_again_views":8}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/urban-airship-web-push-notifications/assets/js/notification.js?ver=1.3.4' id='ua-wn-js'></script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/wp-plugin-bgmp-gdpr/js/bgmp-gdpr.js?ver=5.7.2' id='bgmp-gdpr-js'></script>
+<script async="async" type='text/javascript' src='//cdn.blueconic.net/bostonglobemedia.js' id='blueconic_js-js'></script>
+<link rel="https://api.w.org/" href="https://www.boston.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.boston.com/wp-json/wp/v2/pages/7" /><link rel='shortlink' href='https://www.boston.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.boston.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.boston.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.boston.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.boston.com%2F&#038;format=xml" />
+<script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://fallaciousfifth.com/v2ojfJQXItusfVrUEda5saSZ5uxEMzujCipb6jl01lNcP_fOujjlpKPeM-wc-_90A",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(c,e,o,t,n){function r(o,t){(function n(){try{return 0<(localStorage.getItem("v4ac1eiZr0")||"").split(",")[4]}catch(o){}return!1})()&&(t=c[e].pubads())&&t.setTargeting("admiral-engaged","true")}(n=c[e]=c[e]||{}).cmd=n.cmd||[],typeof n.pubads===o?r():typeof n.cmd.unshift===o?n.cmd.unshift(r):n.cmd.push(r)})(window,"googletag","function");</script><!-- REGI ENV = PRD--><script type="text/javascript">
+//Registration base URL
+regiBaseUrl = 'http://tomcat.boston.com/profiles/outside/REST/';
+</script>        <script class="kxct" data-id="snn54e4ln" data-timing="async" data-version="3.0"
+                type="text/javascript">
+            window.Krux || ((Krux = function () {
+                Krux.q.push(arguments)
+            }).q = []);
+            (function () {
+                var k = document.createElement('script');
+                k.type = 'text/javascript';
+                k.async = true;
+                k.src = (location.protocol === 'https:' ? 'https:' : 'http:') + '//cdn.krxd.net/controltag/snn54e4ln.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(k, s);
+            }());
+        </script>
+		        <script class="kxint" data-namespace="bostonglobe" type="text/javascript">
+            window.Krux || ((Krux = function () {
+                Krux.q.push(arguments);
+            }).q = []);
+            (function () {
+                function retrieve(n) {
+                    var k = 'kx' + 'bostonglobe_' + n, ls = (function () {
+                        try {
+                            return window.localStorage;
+                        } catch (e) {
+                            return null;
+                        }
+                    })();
+                    if (ls) {
+                        return ls[k] || '';
+                    } else if (navigator.cookieEnabled) {
+                        var m = document.cookie.match(k + '=([^;]*)');
+                        return (m && unescape(m[1])) || '';
+                    } else {
+                        return '';
+                    }
+                }
+
+                Krux.user = retrieve('user');
+                Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : [];
+            })();
+        </script>
+		<link rel='manifest' href='https://www.boston.com/wp-content/themes/bdc-2020/manifest.json' /><!-- There is no amphtml version available for this URL. --><link rel="preconnect" href="https://use.typekit.net" crossorigin /><link rel="preconnect" href="https://p.typekit.net" crossorigin /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link rel="preload" href="https://p.typekit.net/p.css?s=1&k=ewj0jxz&ht=tk&f=12784.12094.12095&a=43290994&app=typekit&e=css" as="style" /><link rel="stylesheet" href="https://p.typekit.net/p.css?s=1&k=ewj0jxz&ht=tk&f=12784.12094.12095&a=43290994&app=typekit&e=css"/><style>
+	@font-face {
+	font-family:"franklin-gothic-urw";
+	src:url("https://use.typekit.net/af/9cb78a/0000000000000000000118ad/27/l?primer=81a69539b194230396845be9681d114557adfb35f4cccc679c164afb4aa47365&fvd=n4&v=3") format("woff2");
+	font-display:swap;font-style:normal;font-weight:400;
+	}
+
+	@font-face {
+	font-family:"franklin-gothic-urw-cond";
+	src:url("https://use.typekit.net/af/f4a030/000000000000000077359dfc/30/l?primer=81a69539b194230396845be9681d114557adfb35f4cccc679c164afb4aa47365&fvd=n5&v=3") format("woff2");
+	font-display:swap;font-style:normal;font-weight:500;
+	}
+
+	@font-face {
+	font-family:"franklin-gothic-urw-cond";
+	src:url("https://use.typekit.net/af/a2031c/0000000000000000000118b9/27/l?primer=81a69539b194230396845be9681d114557adfb35f4cccc679c164afb4aa47365&fvd=n7&v=3") format("woff2");
+	font-display:swap;font-style:normal;font-weight:700;
+	}
+
+	.tk-franklin-gothic-urw { font-family: "franklin-gothic-urw",sans-serif; }
+	.tk-franklin-gothic-urw-cond { font-family: "franklin-gothic-urw-cond",sans-serif; }
+
+	</style><link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" as="style" /><link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"><link id="preload_first_main_image" rel="preload" as="image" href="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-scaled.jpg" imagesrcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=900 900w" imagesizes="(max-width: 768px) 100vw, 768px"<link rel="icon" href="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/BDC_Logo_2020_Social_WhiteBG-609c79a967eee-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/BDC_Logo_2020_Social_WhiteBG-609c79a967eee-200x200.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/BDC_Logo_2020_Social_WhiteBG-609c79a967eee-200x200.png" />
+<meta name="msapplication-TileImage" content="https://bdc2020.o0bc.com/wp-content/uploads/2021/05/BDC_Logo_2020_Social_WhiteBG-609c79a967eee.png" />
+	</head>
+
+	<body class="home page-template-default page page-id-7 wp-embed-responsive site-body">
+
+					<script src="https://www.boston.com/wp-content/plugins/bdc-chartbeat/js/bdc.chartbeat-body.js"></script>
+		
+		<header class="o-site-header" id="site-header" aria-label="Site Header">
+			<section class="o-site-header__advert" aria-label="Leaderboard Advert">
+				<div id="js-advert--lead1" class="m-advert m-advert--lead1 m-advert--with-gray m-advert--header "><div class="m-advert__container"><div id="ad_lead1"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_lead1") })</script></div></div></div>			</section>
+
+			<a class="screen-reader-text" href="#site-content">
+				Skip to Main Content			</a>
+
+			<div class="o-site-header__masthead">
+				<div class="m-grid m-grid-container">
+
+					<div class="m-panel-menu">
+						
+<button aria-label="Toggle Panel menu" class="a-button a-button--with-icon m-panel-navigation__toggle" id="js-panel-navigation-trigger" aria-haspopup="true" aria-controls="js-panel-navigation" aria-expanded="false">
+	<svg class="a-icon m-panel-navigation__open" aria-hidden="true" width="19" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#menu"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#menu"></use></svg><span class="screen-reader-text">Open</span>	<svg class="a-icon m-panel-navigation__close" aria-hidden="true" width="19" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close-symbol"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close-symbol"></use></svg><span class="screen-reader-text">Close</span>	<span class="a-hide-mobile">Menu</span>
+</button>
+
+<nav id="js-panel-navigation" class="m-panel-navigation" aria-label="Mobile Navigation"  aria-hidden="true">
+	<div class="m-panel-navigation__wrap" tabindex="-1">
+		<div class="m-panel-navigation_expose">
+			<ul class="a-list a-list--no-style m-panel-navigation__list">
+				<li class="m-panel-navigation__list-item menu-item">
+					<a href="https://www.boston.com">
+						Home					</a>
+				</li>
+			</ul>
+
+			<div class="menu-bdc-main-container"><ul id="panel-primary-nav" class="a-list a-list--no-style m-panel-navigation__menu"><li id="menu-item-22274386" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274386"><a href="https://www.boston.com/category/news/">News</a>
+<ul class="sub-menu">
+	<li id="menu-item-22667276" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667276"><a href="https://www.boston.com/tag/coronavirus/">Coronavirus</a></li>
+	<li id="menu-item-22667248" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667248"><a href="https://www.boston.com/tag/local-news/">Local</a></li>
+	<li id="menu-item-22667254" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667254"><a href="https://www.boston.com/tag/national-news/">National</a></li>
+	<li id="menu-item-22667259" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667259"><a href="https://www.boston.com/tag/world-news/">World</a></li>
+	<li id="menu-item-22667253" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667253"><a href="https://www.boston.com/tag/politics/">Politics</a></li>
+	<li id="menu-item-22667264" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667264"><a href="https://www.boston.com/tag/crime/">Crime</a></li>
+	<li id="menu-item-22667266" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667266"><a href="https://www.boston.com/tag/business/">Business</a></li>
+	<li id="menu-item-22667271" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667271"><a href="https://www.boston.com/tag/jobs/">Jobs</a></li>
+</ul>
+</li>
+<li id="menu-item-22274480" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274480"><a href="https://www.boston.com/category/sports/">Sports</a>
+<ul class="sub-menu">
+	<li id="menu-item-22497520" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497520"><a href="https://www.boston.com/tag/boston-red-sox/">Red Sox</a></li>
+	<li id="menu-item-22497515" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497515"><a href="https://www.boston.com/tag/new-england-patriots/">Patriots</a></li>
+	<li id="menu-item-22497530" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497530"><a href="https://www.boston.com/tag/boston-bruins/">Bruins</a></li>
+	<li id="menu-item-22497525" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497525"><a href="https://www.boston.com/tag/boston-celtics/">Celtics</a></li>
+	<li id="menu-item-22672278" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672278"><a href="https://www.boston.com/tag/new-england-revolution/">Revs</a></li>
+	<li id="menu-item-22779518" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22779518"><a href="https://www.boston.com/tag/olympics/">Olympics</a></li>
+	<li id="menu-item-22360533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360533"><a href="http://www.boston.com/author/chad-finn">Chad Finn</a></li>
+</ul>
+</li>
+<li id="menu-item-22359876" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22359876"><a href="https://www.boston.com/category/weather/">Weather</a>
+<ul class="sub-menu">
+	<li id="menu-item-22360741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360741"><a href="http://www.boston.com/author/david-epstein">David Epstein</a></li>
+</ul>
+</li>
+<li id="menu-item-22274485" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274485"><a href="https://www.boston.com/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li id="menu-item-22672218" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672218"><a href="https://www.boston.com/tag/arts/">Arts</a></li>
+	<li id="menu-item-22672226" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672226"><a href="https://www.boston.com/tag/book-club/">Book Club</a></li>
+	<li id="menu-item-22672229" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672229"><a href="https://www.boston.com/tag/entertainment/">Entertainment</a></li>
+	<li id="menu-item-22672234" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672234"><a href="https://www.boston.com/tag/movies/">Movies</a></li>
+	<li id="menu-item-22672235" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672235"><a href="https://www.boston.com/tag/tv/">TV</a></li>
+	<li id="menu-item-22672238" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672238"><a href="https://www.boston.com/tag/celebs/">Celebs</a></li>
+	<li id="menu-item-22672241" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672241"><a href="https://www.boston.com/tag/music/">Music</a></li>
+	<li id="menu-item-22360713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360713"><a href="https://loveletters.boston.com/">Love Letters</a></li>
+	<li id="menu-item-22672246" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672246"><a href="https://www.boston.com/tag/how-to-boston/">How to Boston</a></li>
+</ul>
+</li>
+<li id="menu-item-22274495" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274495"><a href="https://www.boston.com/category/food/">Food</a>
+<ul class="sub-menu">
+	<li id="menu-item-22672249" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672249"><a href="https://www.boston.com/tag/restaurants/">Restaurants</a></li>
+	<li id="menu-item-22672251" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672251"><a href="https://www.boston.com/tag/bars/">Bars</a></li>
+	<li id="menu-item-22672254" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672254"><a href="https://www.boston.com/tag/beer/">Beer</a></li>
+	<li id="menu-item-22672298" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672298"><a href="https://www.boston.com/tag/food-events/">Events</a></li>
+	<li id="menu-item-22672303" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672303"><a href="https://www.boston.com/tag/food-news/">News</a></li>
+	<li id="menu-item-22672295" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672295"><a href="https://www.boston.com/tag/restaurant-reviews/">Reviews</a></li>
+	<li id="menu-item-22672290" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672290"><a href="https://www.boston.com/tag/restaurant-openings/">Openings</a></li>
+	<li id="menu-item-22672285" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672285"><a href="https://www.boston.com/tag/restaurant-closings/">Closings</a></li>
+	<li id="menu-item-22672258" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672258"><a href="https://www.boston.com/tag/chefs/">Chefs</a></li>
+</ul>
+</li>
+<li id="menu-item-22360356" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22360356"><a href="https://www.boston.com/category/travel/">Travel</a>
+<ul class="sub-menu">
+	<li id="menu-item-22672269" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672269"><a href="https://www.boston.com/tag/new-england-travel/">New England Travel</a></li>
+	<li id="menu-item-22672270" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672270"><a href="https://www.boston.com/tag/summer-road-trips/">Summer Road Trips</a></li>
+	<li id="menu-item-22672274" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672274"><a href="https://www.boston.com/tag/beaches/">Beaches</a></li>
+	<li id="menu-item-22672275" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672275"><a href="https://www.boston.com/tag/skiing/">Skiing</a></li>
+</ul>
+</li>
+<li id="menu-item-22359878" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22359878"><a href="https://www.boston.com/category/events/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-22672313" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672313"><a href="https://www.boston.com/tag/bosten/">BosTen</a></li>
+	<li id="menu-item-22672324" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672324"><a href="https://www.boston.com/tag/food-events/">Food Events</a></li>
+</ul>
+</li>
+<li id="menu-item-639592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-639592"><a href="http://realestate.boston.com/">Real Estate</a></li>
+<li id="menu-item-22360359" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22360359"><a href="https://www.boston.com/category/cars/">Cars</a>
+<ul class="sub-menu">
+	<li id="menu-item-22688550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22688550"><a href="https://www.boston.com/boston-traffic/">Traffic</a></li>
+	<li id="menu-item-22674776" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674776"><a href="https://www.boston.com/tag/car-news/">News</a></li>
+	<li id="menu-item-22674781" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674781"><a href="https://www.boston.com/tag/car-reviews/">Reviews</a></li>
+	<li id="menu-item-22674771" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674771"><a href="https://www.boston.com/tag/car-guides/">Guides</a></li>
+	<li id="menu-item-22674766" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674766"><a href="https://www.boston.com/tag/car-culture/">Car Culture</a></li>
+	<li id="menu-item-22361230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361230"><a href="https://www.boston.com/new-car-specials/">New Car Specials</a></li>
+</ul>
+</li>
+<li id="menu-item-22360995" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-22360995 menu-item-hamburger-only"><a href="https://www.boston.com/" aria-current="page">Extra</a>
+<ul class="sub-menu">
+	<li id="menu-item-22360996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360996 menu-item-hamburger-only"><a href="https://www.boston.com/fresh-start-submit-your-appeal">Fresh Start</a></li>
+	<li id="menu-item-22360999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360999 menu-item-hamburger-only"><a href="https://www.bostonglobemedia.com/">Advertise</a></li>
+	<li id="menu-item-22361010" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361010 menu-item-hamburger-only"><a href="https://advertising.bostonglobemedia.com/">Classified Ads</a></li>
+	<li id="menu-item-22361025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361025 menu-item-hamburger-only"><a href="https://www.boston.com/customer-support">Customer Support</a></li>
+	<li id="menu-item-22864808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22864808"><a href="https://www.boston.com/newsletters/">Newsletters</a></li>
+	<li id="menu-item-22361055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361055 menu-item-hamburger-only"><a href="https://bostonglobemediapartners.applytojob.com/apply">Careers</a></li>
+	<li id="menu-item-22361026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361026 menu-item-hamburger-only"><a href="https://www.boston.com/contact-us">Contact Us</a></li>
+	<li id="menu-item-22361019" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361019 menu-item-hamburger-only"><a href="https://www.legacy.com/obituaries/bostonglobe/">Obituaries</a></li>
+	<li id="menu-item-22361031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361031 menu-item-hamburger-only"><a href="https://www.boston.com/lottery">Lottery</a></li>
+	<li id="menu-item-22361035" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361035 menu-item-hamburger-only"><a href="https://www.boston.com/horoscope">Horoscopes</a></li>
+	<li id="menu-item-22361039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361039 menu-item-hamburger-only"><a href="https://www.boston.com/crossword-puzzle">Crosswords</a></li>
+	<li id="menu-item-22361043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361043 menu-item-hamburger-only"><a href="https://www.boston.com/comics">Comics</a></li>
+	<li id="menu-item-22361045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361045 menu-item-hamburger-only"><a href="https://www.boston.com/today-in-history">Today in History</a></li>
+	<li id="menu-item-22361079" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361079 menu-item-hamburger-only"><a href="https://www.boston.com/section/deals">Deals</a></li>
+</ul>
+</li>
+<li id="menu-item-22363175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22363175 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/">Coupons</a>
+<ul class="sub-menu">
+	<li id="menu-item-22363196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363196 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/doordash">DoorDash Promo Codes</a></li>
+	<li id="menu-item-22363198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363198 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/office-depot">Office Depot Coupons</a></li>
+	<li id="menu-item-22363199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363199 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/h-m">H&#038;M Coupons</a></li>
+	<li id="menu-item-22363203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363203 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/adidas">adidas Promo Codes</a></li>
+	<li id="menu-item-22363206" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363206 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/walmart">Walmart Promo Codes</a></li>
+	<li id="menu-item-22363215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363215 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/grubhub">GrubHub Promo Codes</a></li>
+	<li id="menu-item-22363218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363218 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/ebay">ebay Coupons</a></li>
+	<li id="menu-item-22363220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363220 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/dicks-sporting-goods">Dick&#8217;s Sporting Goods Coupons</a></li>
+	<li id="menu-item-22363225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363225 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/overstock">Overstock Coupons</a></li>
+	<li id="menu-item-22363248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363248 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/hotels-com">Hotels.com Coupons</a></li>
+	<li id="menu-item-22363255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363255 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/vitacost">Vitacost Coupons</a></li>
+	<li id="menu-item-22363259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363259 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/samsung">Samsung Promo Codes</a></li>
+	<li id="menu-item-22363264" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363264 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/forever-21">Forever 21 Coupons</a></li>
+	<li id="menu-item-22363269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363269 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/macys">Macy&#8217;s Coupons</a></li>
+	<li id="menu-item-22363270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363270 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/verizon-wireless">Verizon Promo Codes</a></li>
+</ul>
+</li>
+</ul></div>		</div>
+	</div>
+</nav>
+						<div class="m-panel-overlay"></div>
+					</div>
+
+					<div id="site-logo" class="m-site-logo">
+						
+	<h1 class="m-site-logo__header">
+		<a class="m-site-logo__link" href="https://www.boston.com">
+			<span class="screen-reader-text">Boston.com</span>
+			<img width="133" height="39" src="https://www.boston.com/wp-content/themes/bdc-2020/dist/images/boston-com-logo.png" aria-hidden="true" alt="" />
+		</a>
+	</h1>
+					</div>
+
+					<nav class="m-secondary-menu" aria-label="Utility Navigation" id="utility-navigation">
+						
+<ul class="m-secondary-menu__list a-list--no-style">
+	<li class="m-header-search">
+		<button id="js-search-button" aria-controls="header-search-form" aria-expanded="false" aria-haspopup="true" class="a-button a-button--icon a-button--icon-svg" type="button">
+			<svg class="a-icon" aria-hidden="true" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#search"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#search"></use></svg>			<svg class="a-icon a-icon--close" aria-hidden="true" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close"></use></svg>			<span class="screen-reader-text">Toggle Search Panel</span>
+		</button>
+		<div id="js-search-form" class="m-header-search__form" aria-hidden="true">
+			
+<form role="search" id="searchform--header" class="m-search-form m-search-form--header" method="get" action="https://www.boston.com/">
+		<label for="search-field-search-form-2" class="screen-reader-text m-search-form__label">
+		Search for:	</label>
+	<input class="m-search-form__input" type="text" id="search-field-search-form-2" value="" placeholder="Search Boston.com" name="s" />
+	<button class="m-search-form__button" tabindex="-1" type="submit" aria-label="Submit">
+		<svg class="a-icon a-icon--no-action" aria-hidden="true" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#search"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#search"></use></svg><span class="screen-reader-text">Search Boston.com</span>	</button>
+		</form>
+		</div>
+	</li>
+</ul>
+					</nav>
+
+				</div>
+			</div>
+
+			<div class="o-site-header__menu">
+
+				<div class="m-grid-container m-grid-container-inline">
+					
+	<nav aria-label="Main Site Navigation" class="m-site-navigation m-site-navigation--left" id="site-navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+		<div class="menu-bdc-main-container"><ul id="menu-bdc-main" class="m-primary-menu a-list--no-style"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274386"><a href="https://www.boston.com/category/news/">News</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667276"><a href="https://www.boston.com/tag/coronavirus/">Coronavirus</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667248"><a href="https://www.boston.com/tag/local-news/">Local</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667254"><a href="https://www.boston.com/tag/national-news/">National</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667259"><a href="https://www.boston.com/tag/world-news/">World</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667253"><a href="https://www.boston.com/tag/politics/">Politics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667264"><a href="https://www.boston.com/tag/crime/">Crime</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667266"><a href="https://www.boston.com/tag/business/">Business</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22667271"><a href="https://www.boston.com/tag/jobs/">Jobs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274480"><a href="https://www.boston.com/category/sports/">Sports</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497520"><a href="https://www.boston.com/tag/boston-red-sox/">Red Sox</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497515"><a href="https://www.boston.com/tag/new-england-patriots/">Patriots</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497530"><a href="https://www.boston.com/tag/boston-bruins/">Bruins</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22497525"><a href="https://www.boston.com/tag/boston-celtics/">Celtics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672278"><a href="https://www.boston.com/tag/new-england-revolution/">Revs</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22779518"><a href="https://www.boston.com/tag/olympics/">Olympics</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360533"><a href="http://www.boston.com/author/chad-finn">Chad Finn</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22359876"><a href="https://www.boston.com/category/weather/">Weather</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360741"><a href="http://www.boston.com/author/david-epstein">David Epstein</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274485"><a href="https://www.boston.com/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672218"><a href="https://www.boston.com/tag/arts/">Arts</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672226"><a href="https://www.boston.com/tag/book-club/">Book Club</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672229"><a href="https://www.boston.com/tag/entertainment/">Entertainment</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672234"><a href="https://www.boston.com/tag/movies/">Movies</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672235"><a href="https://www.boston.com/tag/tv/">TV</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672238"><a href="https://www.boston.com/tag/celebs/">Celebs</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672241"><a href="https://www.boston.com/tag/music/">Music</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360713"><a href="https://loveletters.boston.com/">Love Letters</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672246"><a href="https://www.boston.com/tag/how-to-boston/">How to Boston</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22274495"><a href="https://www.boston.com/category/food/">Food</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672249"><a href="https://www.boston.com/tag/restaurants/">Restaurants</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672251"><a href="https://www.boston.com/tag/bars/">Bars</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672254"><a href="https://www.boston.com/tag/beer/">Beer</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672298"><a href="https://www.boston.com/tag/food-events/">Events</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672303"><a href="https://www.boston.com/tag/food-news/">News</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672295"><a href="https://www.boston.com/tag/restaurant-reviews/">Reviews</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672290"><a href="https://www.boston.com/tag/restaurant-openings/">Openings</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672285"><a href="https://www.boston.com/tag/restaurant-closings/">Closings</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672258"><a href="https://www.boston.com/tag/chefs/">Chefs</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22360356"><a href="https://www.boston.com/category/travel/">Travel</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672269"><a href="https://www.boston.com/tag/new-england-travel/">New England Travel</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672270"><a href="https://www.boston.com/tag/summer-road-trips/">Summer Road Trips</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672274"><a href="https://www.boston.com/tag/beaches/">Beaches</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672275"><a href="https://www.boston.com/tag/skiing/">Skiing</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22359878"><a href="https://www.boston.com/category/events/">Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672313"><a href="https://www.boston.com/tag/bosten/">BosTen</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22672324"><a href="https://www.boston.com/tag/food-events/">Food Events</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-639592"><a href="http://realestate.boston.com/">Real Estate</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-22360359"><a href="https://www.boston.com/category/cars/">Cars</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22688550"><a href="https://www.boston.com/boston-traffic/">Traffic</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674776"><a href="https://www.boston.com/tag/car-news/">News</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674781"><a href="https://www.boston.com/tag/car-reviews/">Reviews</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674771"><a href="https://www.boston.com/tag/car-guides/">Guides</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-22674766"><a href="https://www.boston.com/tag/car-culture/">Car Culture</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361230"><a href="https://www.boston.com/new-car-specials/">New Car Specials</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-22360995 menu-item-hamburger-only"><a href="https://www.boston.com/" aria-current="page">Extra</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360996 menu-item-hamburger-only"><a href="https://www.boston.com/fresh-start-submit-your-appeal">Fresh Start</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360999 menu-item-hamburger-only"><a href="https://www.bostonglobemedia.com/">Advertise</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361010 menu-item-hamburger-only"><a href="https://advertising.bostonglobemedia.com/">Classified Ads</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361025 menu-item-hamburger-only"><a href="https://www.boston.com/customer-support">Customer Support</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22864808"><a href="https://www.boston.com/newsletters/">Newsletters</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361055 menu-item-hamburger-only"><a href="https://bostonglobemediapartners.applytojob.com/apply">Careers</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361026 menu-item-hamburger-only"><a href="https://www.boston.com/contact-us">Contact Us</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361019 menu-item-hamburger-only"><a href="https://www.legacy.com/obituaries/bostonglobe/">Obituaries</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361031 menu-item-hamburger-only"><a href="https://www.boston.com/lottery">Lottery</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361035 menu-item-hamburger-only"><a href="https://www.boston.com/horoscope">Horoscopes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361039 menu-item-hamburger-only"><a href="https://www.boston.com/crossword-puzzle">Crosswords</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361043 menu-item-hamburger-only"><a href="https://www.boston.com/comics">Comics</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361045 menu-item-hamburger-only"><a href="https://www.boston.com/today-in-history">Today in History</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22361079 menu-item-hamburger-only"><a href="https://www.boston.com/section/deals">Deals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22363175 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/">Coupons</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363196 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/doordash">DoorDash Promo Codes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363198 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/office-depot">Office Depot Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363199 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/h-m">H&#038;M Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363203 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/adidas">adidas Promo Codes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363206 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/walmart">Walmart Promo Codes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363215 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/grubhub">GrubHub Promo Codes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363218 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/ebay">ebay Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363220 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/dicks-sporting-goods">Dick&#8217;s Sporting Goods Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363225 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/overstock">Overstock Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363248 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/hotels-com">Hotels.com Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363255 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/vitacost">Vitacost Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363259 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/samsung">Samsung Promo Codes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363264 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/forever-21">Forever 21 Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363269 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/macys">Macy&#8217;s Coupons</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22363270 menu-item-hamburger-only"><a href="https://www.boston.com/coupons/verizon-wireless">Verizon Promo Codes</a></li>
+</ul>
+</li>
+</ul></div>	</nav>
+
+	<nav aria-label="Trending Navigation" class="m-site-navigation m-site-navigation--right m-site-navigation--trending" id="trending-navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+		<div class="menu-bdc-trending-container"><ul id="menu-bdc-trending" class="m-primary-menu m-primary-menu--trending a-list--no-style"><li id="menu-item-22359930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22359930"><a href="https://www.boston.com/news/coronavirus/2021/08/06/mass-reports-1111-new-covid-19-cases-2-new-deaths/">Daily COVID #s</a></li>
+<li id="menu-item-22360835" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22360835"><a href="https://www.boston.com/news/politics/2021/06/17/live-blog-updates-on-the-boston-mayors-race/">Mayor&#8217;s race</a></li>
+<li id="menu-item-22359971" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22359971"><a href="https://www.boston.com/tag/olympics/">Olympics</a></li>
+<li id="menu-item-22718234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22718234"><a href="https://www.boston.com/food/food-news/2021/08/06/restaurateurs-and-readers-responses-proof-of-vaccination-at-restaurants/">Restaurants</a></li>
+</ul></div>	</nav>
+				</div>
+			</div>
+
+		</header>
+
+		
+		
+		<main class="t-main" id="site-content" aria-label="Main Site Content">
+
+		
+	<div class="m-grid-container t-layout t-layout--with-sidebar">
+		<section class="t-layout__main">
+
+			
+
+<div class="m-grid m-home-module">
+		<div class="m-home-module__stream m-grid-span-8">
+		<div class="m-grid">
+			
+<article aria-label="Here’s what happened at Obama’s 60th  birthday party on Martha’s Vineyard" id="post-22962455" class="js-article-card a-article a-article--card  a-article--card-featured m-home-module__full-width">
+
+	<!-- Image -->
+	
+	<figure class="a-article__image ">
+		<a href="https://www.boston.com/news/entertainment/2021/08/08/what-happened-barack-obama-birthday-party-marthas-vineyard/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg" class="attachment-16:9 size-16:9 wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+	</figure>
+
+	<!-- Header -->
+	
+<header class="a-article__header">
+	
+			<h2 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/entertainment/2021/08/08/what-happened-barack-obama-birthday-party-marthas-vineyard/" data-p1="hp_primary">
+				Here’s what happened at Obama’s 60th  birthday party on Martha’s Vineyard			</a>
+		</h2>
+	
+</header>
+
+</article>
+
+<article aria-label="Ashish Jha warns of coming surge in COVID deaths" id="post-22961338" class="js-article-card a-article a-article--card  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<figure class="a-article__image ">
+		<a href="https://www.boston.com/news/coronavirus/2021/08/08/ashish-jha-warns-coming-surge-covid-deaths/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg" class="attachment-16:9 size-16:9 wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+	</figure>
+
+	<!-- Header -->
+	
+<header class="a-article__header">
+	
+			<h2 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/coronavirus/2021/08/08/ashish-jha-warns-coming-surge-covid-deaths/" data-p1="hp_secondary">
+				Ashish Jha warns of coming surge in COVID deaths			</a>
+		</h2>
+	
+</header>
+
+</article>
+
+<article aria-label="Andrew Cuomo’s top aide, Melissa DeRosa, resigns as he fights to survive" id="post-22962928" class="js-article-card a-article a-article--card  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<figure class="a-article__image ">
+		<a href="https://www.boston.com/news/national-news/2021/08/08/melissa-derosa-resigns-andrew-cuomo-top-aide/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg" class="attachment-16:9 size-16:9 wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Cuomo_Sexual_Harassment_21963-6110a524ee02c-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+	</figure>
+
+	<!-- Header -->
+	
+<header class="a-article__header">
+	
+			<h2 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/national-news/2021/08/08/melissa-derosa-resigns-andrew-cuomo-top-aide/" data-p1="hp_secondary">
+				Andrew Cuomo’s top aide, Melissa DeRosa, resigns as he fights to survive			</a>
+		</h2>
+	
+</header>
+
+</article>
+
+<article aria-label="5 takeaways as Yam Madar shows flashes in Celtics&#039; Summer League opener" id="post-22962603" class="js-article-card a-article a-article--card  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<figure class="a-article__image ">
+		<a href="https://www.boston.com/sports/analysis/2021/08/08/yam-madar-celtics-summer-league-takeaways/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg" class="attachment-16:9 size-16:9 wp-post-image" alt="Payton Pritchard" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Celtics_Nets_Basketball_40552-611088ee52ad4-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+	</figure>
+
+	<!-- Header -->
+	
+<header class="a-article__header">
+	
+			<h2 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/sports/analysis/2021/08/08/yam-madar-celtics-summer-league-takeaways/" data-p1="hp_secondary">
+				5 takeaways as Yam Madar shows flashes in Celtics&#039; Summer League opener			</a>
+		</h2>
+	
+</header>
+
+</article>
+
+<article aria-label="Counting Crows cancel Boston concert hours before start" id="post-22961750" class="js-article-card a-article a-article--card  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<figure class="a-article__image ">
+		<a href="https://www.boston.com/news/music/2021/08/08/counting-crows-boston-concert-cancel/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg" class="attachment-16:9 size-16:9 wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+	</figure>
+
+	<!-- Header -->
+	
+<header class="a-article__header">
+	
+			<h2 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/music/2021/08/08/counting-crows-boston-concert-cancel/" data-p1="hp_secondary">
+				Counting Crows cancel Boston concert hours before start			</a>
+		</h2>
+	
+</header>
+
+</article>
+		</div>
+	</div>
+	<div class="m-home-module__sidebar m-grid-span-4">
+		
+<article aria-label="Fauci is hopeful COVID vaccines will get full FDA approval within weeks. Here&#8217;s why that matters." id="post-22960326" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			COVID-19 Vaccine		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/coronavirus/2021/08/08/fauci-hopeful-covid-vaccines-full-fda-approval/" data-p1="hp_featurestack">
+				Fauci is hopeful COVID vaccines will get full FDA approval within weeks. Here&#8217;s why that matters.			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Some Boston restaurants take vaccine requirements into their own hands" id="post-22960199" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			Restaurants		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/food/coronavirus/2021/08/08/boston-restaurants-vaccines/" data-p1="hp_featurestack">
+				Some Boston restaurants take vaccine requirements into their own hands			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Woman and dog killed in Cape house fire" id="post-22960954" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			CENTERVILLE		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/local-news/2021/08/08/cape-cod-centerville-house-fire/" data-p1="hp_featurestack">
+				Woman and dog killed in Cape house fire			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Matt Barnes takes &#8216;100 percent&#8217; responsibility for Red Sox loss" id="post-22962446" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			RED SOX		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/sports/boston-red-sox/2021/08/08/matt-barnes-red-sox-blue-jays-loss/" data-p1="hp_featurestack">
+				Matt Barnes takes &#8216;100 percent&#8217; responsibility for Red Sox loss			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Blue Jays rally from down 5 to beat the Red Sox" id="post-22961493" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			RED SOX		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/sports/boston-red-sox/2021/08/08/blue-jays-rally-from-down-5-to-beat-the-red-sox/" data-p1="hp_featurestack">
+				Blue Jays rally from down 5 to beat the Red Sox			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Police investigating road rage related stabbing in West Roxbury" id="post-22962819" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			West Roxbury		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/local-news/2021/08/08/police-investigating-road-rage-related-stabbing-in-west-roxbury/" data-p1="hp_featurestack">
+				Police investigating road rage related stabbing in West Roxbury			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Chase Winovich is reportedly a step closer to returning to the field" id="post-22960475" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			Patriots		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/sports/new-england-patriots/2021/08/08/patriots-chase-winovich-practice-rerturn-injury-update/" data-p1="hp_featurestack">
+				Chase Winovich is reportedly a step closer to returning to the field			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Jaylen Brown celebrates Jayson Tatum&#039;s Olympic win by getting to wear his gold medal" id="post-22960090" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			Celtics		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/sports/boston-celtics/2021/08/08/jaylen-brown-jayson-tatum-olympic-gold-medal/" data-p1="hp_featurestack">
+				Jaylen Brown celebrates Jayson Tatum&#039;s Olympic win by getting to wear his gold medal			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Man killed in single-vehicle rollover crash in Andover" id="post-22960286" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			I-93		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/local-news/2021/08/08/man-killed-in-single-vehicle-rollover-crash-in-andover/" data-p1="hp_featurestack">
+				Man killed in single-vehicle rollover crash in Andover			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Pandemic set off deadly rise in speeding that hasn&#039;t stopped" id="post-22959483" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			Speeding		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/national-news/2021/08/08/pandemic-set-off-deadly-rise-in-speeding-that-hasnt-stopped/" data-p1="hp_featurestack">
+				Pandemic set off deadly rise in speeding that hasn&#039;t stopped			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Apple’s iPhones will include new tools to flag child sexual abuse" id="post-22942698" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			Apple		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/news/national-news/2021/08/07/apples-iphones-will-include-new-tools-to-flag-child-sexual-abuse/" data-p1="hp_featurestack">
+				Apple’s iPhones will include new tools to flag child sexual abuse			</a>
+		</h3>
+	
+</header>
+
+</article>
+
+<article aria-label="Here&#8217;s the forecast for Monday" id="post-22962396" class="js-article-card a-article a-article--bare  m-home-module__thumbnail">
+
+	<!-- Image -->
+	
+	<!-- Header -->
+	
+<header class="a-article__header">
+			<div class="a-article__category">
+			WEATHER		</div>
+	
+			<h3 class="a-article__title">
+			<a class="js-article-card-link a-article__link" href="https://www.boston.com/weather/weather/2021/08/08/monday-august-9-weather-forecast/" data-p1="hp_featurestack">
+				Here&#8217;s the forecast for Monday			</a>
+		</h3>
+	
+</header>
+
+</article>
+	</div>
+</div>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream1" class="m-advert m-advert--stream1  "><div class="m-advert__container"><div id="ad_stream1"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream1") })</script></div></div></div></div></div>
+<section  aria-label="Featured" class="o-featured-content o-featured-content--a m-grid ">
+	
+			<h3 class="o-featured-content__title m-grid-span-full">
+							Featured					</h3>
+	
+		<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/tease/home-of-the-week-a-move-in-ready-4-bedroom-in-the-heart-of-nantucket/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/UGUX5VMSF5BSLCDLSYQAHTUG7E-scaled-1-610ab8da8ca7d-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					Real Estate				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/tease/home-of-the-week-a-move-in-ready-4-bedroom-in-the-heart-of-nantucket/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						Home of the Week: A move-in ready 4-bedroom in the heart of Nantucket					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+			<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/culture/community/2021/08/04/survey-best-new-music-release-boston-artist/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/boston_new_music-610ad94c7d162-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					BOSTON MUSIC				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/culture/community/2021/08/04/survey-best-new-music-release-boston-artist/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						Survey: What&#039;s the best new music release by a Boston artist?					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+			<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/sports/boston-red-sox/2021/08/08/red-sox-kyle-schwarber-hamstring-groin-injury-update/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/06/Nationals_Marlins_Baseball_91517-60d54aeb20083-scaled-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					Red Sox				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/sports/boston-red-sox/2021/08/08/red-sox-kyle-schwarber-hamstring-groin-injury-update/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						Kyle Schwarber reportedly suffers minor setback in injury rehab					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+			<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/culture/community/2021/08/05/fenway-concert-series-never-headlined-by-person-of-color/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_07_09_BostonGlobe.com_Arts_Images_lee_nkotb1_liv1-6108581613875-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					Community				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/culture/community/2021/08/05/fenway-concert-series-never-headlined-by-person-of-color/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						Fenway Park concerts: ‘All white people again. This is unfair.’					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+			<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/news/local-news/2021/08/07/mourner-nevada-trooper-from-mass-killed-in-chase-had-warrior-spirit/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Nevada_Trooper_Killed_Memorial_38802-610e95ef8bcc7-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					Local				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/news/local-news/2021/08/07/mourner-nevada-trooper-from-mass-killed-in-chase-had-warrior-spirit/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						Mourner: Nevada trooper from Mass. killed in chase had &#039;warrior spirit&#039;					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+			<div class="m-grid-span-4">
+		<div class="js-article-card o-featured-content__item m-article-list-feature js-article-list-feature-well   " aria-hidden="false">
+			<div class="m-article-list-feature__image-container">
+				<a href="https://www.boston.com/culture/entertainment/2021/08/07/a-high-energy-homecoming-for-new-kids-on-the-block/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/MPYQ5FBVLLSXTR5J3RMBHRVXLA-610ea96e8a61a-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			</div>
+			<div class="o-featured-content__item-content m-article-list-feature__content">
+								<span class="o-featured-content__topic m-article-list-feature__topic">
+					New Kids on the Block				</span>
+								<h2 class="o-featured-content__headline m-article-list-feature__headline">
+					<a href="https://www.boston.com/culture/entertainment/2021/08/07/a-high-energy-homecoming-for-new-kids-on-the-block/" class="js-article-card-link a-article__link o-featured-content__link m-article-list-feature__link">
+						A high-energy homecoming for New Kids on the Block					</a>
+				</h2>
+			</div>
+		</div>
+	</div>
+		
+	
+</section>
+
+
+<div class="m-generic-cta m-generic-cta--post-content m-generic-cta--dark m-generic-cta--homepage m-generic-cta--email-signup t-amp__generic-cta">
+	<div class="m-generic-cta__wrap">
+				<div class="m-generic-cta__content">
+							<h3 class="m-generic-cta__title">Stay up to date with everything Boston</h3>
+			
+							<p class="m-generic-cta__subtitle">Receive the latest news and breaking updates, straight from our newsroom to your inbox.</p>
+					</div>
+		<div class="m-generic-cta__feature">
+																
+<form id="newsletter-form-3" class="m-form-newsletter m-form-newsletter--horizontal" action="" method="">
+		<fieldset form="newsletter-form" data-mailchimp-list-ids="">
+		<legend class="screen-reader-text">
+			Submit your email		</legend>
+
+		<label class="m-form-newsletter__label" for="email-form-3">
+			<span class="screen-reader-text">Enter your email address</span>
+							<input class="a-input m-form-newsletter__input" type="email" id="email-form-3" name="email" placeholder="Email Address" aria-required="true" required>
+					</label>
+
+		<button type="submit" name="submit" class="a-button a-button--primary m-form-newsletter__button">
+			Sign up		</button>
+
+		<p class="m-form-newsletter-error"></p>
+
+	</fieldset>
+</form>
+					</div>
+	</div>
+</div>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream2" class="m-advert m-advert--stream2  "><div class="m-advert__container"><div id="ad_stream2"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream2") })</script></div></div></div></div></div>
+<section aria-label="Coronavirus" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/tag/coronavirus">
+						Coronavirus					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/news/national-news/2021/08/08/pandemic-set-off-deadly-rise-in-speeding-that-hasnt-stopped/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Reckless_Drivers_92902-610ff6983642a-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-pandemic-set-off-deadly-rise-in-speeding-that-hasnt-stopped" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/news/national-news/2021/08/08/pandemic-set-off-deadly-rise-in-speeding-that-hasnt-stopped/" class="js-article-card-link m-article-list-feature__link">
+						Pandemic set off deadly rise in speeding that hasn&#039;t stopped					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							COVID-19						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/coronavirus/2021/08/08/weary-us-businesses-confront-new-round-of-mask-mandates/" class="js-article-card-link m-article-list__link">
+							Weary US businesses confront new round of mask mandates						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Olympics						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/olympics/2021/08/08/erratic-pandemic-olympics-wind-to-a-nuanced-end/" class="js-article-card-link m-article-list__link">
+							Erratic Pandemic Olympics wind to a nuanced end						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Red Sox 						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/sports/boston-red-sox/2021/08/07/jd-martinez-covid-related-injured-list-red-sox/" class="js-article-card-link m-article-list__link">
+							Red Sox place J.D. Martinez on COVID-19 related injured list						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Obama&#039;s birthday						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/national-news/2021/08/06/what-is-going-on-with-obamas-60th-birthday-bash/" class="js-article-card-link m-article-list__link">
+							What Is Going on With Obama’s 60th Birthday Bash?						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/tag/coronavirus" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="News" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/category/news">
+						News					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/news/local-news/2021/08/08/man-killed-in-single-vehicle-rollover-crash-in-andover/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2019/06/andover-1-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-man-killed-in-single-vehicle-rollover-crash-in-andover" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/news/local-news/2021/08/08/man-killed-in-single-vehicle-rollover-crash-in-andover/" class="js-article-card-link m-article-list-feature__link">
+						Man killed in single-vehicle rollover crash in Andover					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Crime						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/local-news/2021/08/08/man-taken-to-hospital-with-life-threatening-injuries-after-roxbury-stabbing/" class="js-article-card-link m-article-list__link">
+							Man dies after Roxbury stabbing						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Boston City Hall						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/local-news/2021/08/08/city-hall-plaza-renovations-half-finished/" class="js-article-card-link m-article-list__link">
+							City Hall Plaza renovations half finished						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							National						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/national-news/2021/08/08/in-public-cuomo-cast-himself-as-an-advocate-of-women-in-private-women-say-he-was-harassing-them-at-the-same-time/" class="js-article-card-link m-article-list__link">
+							In public, Cuomo cast himself as an advocate of women. In private, women say, he was harassing them at the same time.						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Politics						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/national-news/2021/08/08/former-acting-attorney-general-testifies-about-trumps-efforts-to-subvert-election/" class="js-article-card-link m-article-list__link">
+							Former acting attorney general testifies about Trump’s efforts to subvert election						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/category/news" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream3" class="m-advert m-advert--stream3  "><div class="m-advert__container"><div id="ad_stream3"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream3") })</script></div></div></div></div></div>
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="Sports" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/category/sports">
+						Sports					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/sports/boston-red-sox/2021/08/08/chris-sale-tommy-john-return-saturday-orioles-injury-update/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2019_06_10_BostonGlobe.com_Sports_Images_lee061019soxrangers8SPTS-610ff8c523d6f-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-chris-sale-to-make-red-sox-return-on-saturday-vs-orioles" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/sports/boston-red-sox/2021/08/08/chris-sale-tommy-john-return-saturday-orioles-injury-update/" class="js-article-card-link m-article-list-feature__link">
+						Chris Sale to make Red Sox return on Saturday vs. Orioles					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Red Sox						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/sports/boston-red-sox/2021/08/08/chris-sale-worcestor-rehab-start-red-sox-return-injury-update/" class="js-article-card-link m-article-list__link">
+							Chris Sale ready for MLB return after likely making final rehab start						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Olympics						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/sports/olympics/2021/08/08/us-china-most-gold-medals-count-2020-olympics/" class="js-article-card-link m-article-list__link">
+							US edges out China for most gold medals						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Olympics						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/sports/olympics/2021/08/08/2020-olympics-end-flame-extinguished/" class="js-article-card-link m-article-list__link">
+							Tokyo Olympic Games come to an official end						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Soccer						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/sports/soccer/2021/08/08/lionel-messi-says-goodbye-to-barcelona/" class="js-article-card-link m-article-list__link">
+							Emotional Lionel Messi says he wasn&#8217;t prepared to leave Barcelona						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/category/sports" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="Food" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/category/food">
+						Food					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/food/coronavirus/2021/08/04/cluster-covid-cases-nantucket-restaurant-millies/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="madaket beach" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/madaket-610ab456b9ea9-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-cluster-of-breakthrough-covid-cases-affects-nantucket-restaurant-millies" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/food/coronavirus/2021/08/04/cluster-covid-cases-nantucket-restaurant-millies/" class="js-article-card-link m-article-list-feature__link">
+						Cluster of breakthrough COVID cases affects Nantucket restaurant 					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Cocktail Club						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/food/cocktail-club/2021/08/04/how-to-make-a-sazerac-cocktail-recipe/" class="js-article-card-link m-article-list__link">
+							Cocktail recipe: &#039;This sip is boozy, bitter, and a little sweet&#039;						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Opening						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/food/restaurants/2021/08/03/the-halal-guys-opening-in-cambridge/" class="js-article-card-link m-article-list__link">
+							The Halal Guys opens in Cambridge this weekend						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							🍦🍦🍦🍦						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/food/restaurants/2021/08/02/best-frozen-yogurt-in-boston/" class="js-article-card-link m-article-list__link">
+							Where to find excellent frozen yogurt in and around Boston						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							COVID-19						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/food/food-news/2021/08/02/boston-area-restaurants-and-venues-requiring-proof-of-vaccination/" class="js-article-card-link m-article-list__link">
+							These local businesses are requiring proof of vaccination						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/category/food" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream4" class="m-advert m-advert--stream4  "><div class="m-advert__container"><div id="ad_stream4"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream4") })</script></div></div></div></div></div>
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="Culture" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/category/culture">
+						Culture					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/culture/celebs/2021/08/05/matt-damon-ben-affleck-changing-places/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/https___arcmigration-prdweb.bostonglobe.com_r_Boston_2011-2020_2017_10_10_BostonGlobe.com_Lifestyle_Images_17ad5d49098b4b919e0681dd96d370b5-17ad5d49098b4b919e0681dd96d370b5-0-610c26cc7b2ae-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-matt-damon-used-to-escape-controversy-while-ben-affleck-used-to-be-the-punchline-what-changed" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/culture/celebs/2021/08/05/matt-damon-ben-affleck-changing-places/" class="js-article-card-link m-article-list-feature__link">
+						Matt Damon used to escape controversy, while Ben Affleck used to be the punchline. What changed?					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Community						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/culture/community/2021/08/05/how-readers-feel-about-attending-live-theater-productions/" class="js-article-card-link m-article-list__link">
+							Here&#039;s how Boston.com readers feel about returning to live theater productions right now						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Masks						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/culture/arts/2021/08/05/boston-museum-mfa-ica-gardner-face-covering-requirement/" class="js-article-card-link m-article-list__link">
+							3 of Boston&#039;s biggest art museums will require face coverings						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							COVID						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/culture/entertainment/2021/08/05/fall-out-boy-cancels-fenway-park-concert-covid/" class="js-article-card-link m-article-list__link">
+							Fall Out Boy cancels Fenway Park concert due to positive COVID test						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Love Letters						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/tease/do-i-leave-my-husband-for-my-ex/" class="js-article-card-link m-article-list__link">
+							Do I leave my husband for my ex?						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/category/culture" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream5" class="m-advert m-advert--stream5  "><div class="m-advert__container"><div id="ad_stream5"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream5") })</script></div></div></div></div></div>
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="Travel" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="https://www.boston.com/category/travel">
+						Travel					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/travel/travel/2021/07/29/best-fall-festivals-and-fairs-america-country-living/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/07/P1210625-6102d3ad9746b-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-new-england-has-3-of-the-best-fall-festivals-and-fairs-in-the-u-s-according-to-country-living" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/travel/travel/2021/07/29/best-fall-festivals-and-fairs-america-country-living/" class="js-article-card-link m-article-list-feature__link">
+						New England has 3 of the best fall festivals and fairs in the U.S., according to Country Living					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Travel						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/travel/travel/2021/07/29/best-apple-orchards-in-america-country-living/" class="js-article-card-link m-article-list__link">
+							Mass. has one of the 10 best apple orchards in the U.S., according to Country Living						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Travel						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/travel/travel/2021/07/28/favorite-memory-of-cape-cod/" class="js-article-card-link m-article-list__link">
+							What&#039;s your favorite memory of Cape Cod? 						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Travel						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/travel/travel/2021/07/27/best-date-night-restaurant-america-tripadvisor/" class="js-article-card-link m-article-list__link">
+							Vermont has the best date-night restaurant in America, according to Tripadvisor						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Flights						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/travel/flights/2021/07/26/jetblue-named-among-best-low-cost-airlines-for-2021/" class="js-article-card-link m-article-list__link">
+							JetBlue named among 10 best low-cost airlines for 2021						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="https://www.boston.com/category/travel" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+
+<hr class="wp-block-separator is-style-grey-pattern"/>
+
+<section aria-label="Real Estate" class="o-featured-content o-featured-content--b m-grid">
+		<div class="m-grid-span-8 o-featured-content-inner">
+		<header>
+			<h3 class="o-featured-content__title">
+									<a href="http://realestate.boston.com/">
+						Real Estate					</a>
+							</h3>
+		</header>
+		
+		<div class="js-article-card m-article-list-feature ">
+							<a href="https://www.boston.com/tease/boston-has-one-of-the-most-rat-infested-metro-areas-in-the-u-s-a-new-report-finds/"><img width="768" height="432" src="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg" class="o-featured-content__main-image m-article-list-feature__image wp-post-image" alt="" loading="lazy" srcset="https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=200 200w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=300 300w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=400 400w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=500 500w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=600 600w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=700 700w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=800 800w, https://bdc2020.o0bc.com/wp-content/uploads/2021/08/BTIFLOWSQUI6DBCOFQYQC6P53E-610ab57237426-768x432.jpg?width=900 900w" sizes="(max-width: 768px) 100vw, 768px" /></a>
+			
+			<div class="m-article-list-feature__content">
+				<!-- In this case topic may be a time, or a string -->
+								<h3 id="article-boston-has-one-of-the-most-rat-infested-metro-areas-in-the-u-s-a-new-report-finds" class="m-article-list-feature__headline">
+					<a href="https://www.boston.com/tease/boston-has-one-of-the-most-rat-infested-metro-areas-in-the-u-s-a-new-report-finds/" class="js-article-card-link m-article-list-feature__link">
+						Boston has one of the most rat-infested metro areas in the U.S., a new report finds					</a>
+				</h3>
+			</div>
+		</div>
+			</div>
+
+	
+	<div class="o-featured-content__article-list o-featured-content--has-title m-grid-span-4">
+				<ul class="a-list--no-style m-article-list">
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Real Estate						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/tease/the-cape-the-islands-housing-market-overvalued-undervalued-or-overdue/" class="js-article-card-link m-article-list__link">
+							The Cape &amp; the Islands housing market: Overvalued, undervalued, or overdue?						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Evictions						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/news/politics/2021/08/04/biden-administration-moves-to-block-evictions-in-most-of-u-s-following-liberal-backlash/" class="js-article-card-link m-article-list__link">
+							Biden administration moves to block evictions in most of U.S. following liberal backlash						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Real Estate						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/tease/cdc-issues-new-eviction-ban-for-most-of-us-through-oct-3/" class="js-article-card-link m-article-list__link">
+							CDC issues new eviction ban for most of US through Oct. 3						</a>
+					</h4>
+				</li>
+							<li class="js-article-card m-article-list__item o-featured-content__article-list-item">
+											<span class="m-article-list__topic">
+							Real Estate						</span>
+										<h4 class="m-article-list__headline o-featured-content__list-headline">
+						<a href="https://www.boston.com/tease/recent-homes-sales-in-boston-and-cambridge-aug-4/" class="js-article-card-link m-article-list__link">
+							Recent homes sales in Boston and Cambridge (Aug. 4)						</a>
+					</h4>
+				</li>
+					</ul>
+		
+					<div class="o-featured-content__see-more a-hide-desktop">
+				<a href="http://realestate.boston.com/" class="a-link">
+					See more				</a>
+			</div>
+			</div>
+
+	
+</section>
+<div class="m-content-advert"><div class="m-content-advert-wrap"><span class="m-content-advert-title">Advertisement:</span><div id="js-advert--stream6" class="m-advert m-advert--stream6  "><div class="m-advert__container"><div id="ad_stream6"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_stream6") })</script></div></div></div></div></div>
+<p></p>
+		</section>
+
+		<!-- Sidebar -->
+		<div class="t-layout__sidebar" id="sidebar-home">
+			
+<div class="m-widget">
+	<div class="m-advert m-advert--sidebar">
+		<div class="m-content-advert-wrap">
+			<span class="m-content-advert-title">
+				Advertisement			</span>
+			<div id="js-advert--sectionfront1" class="m-advert m-advert--sectionfront1  "><div class="m-advert__container"><div id="ad_sectionfront1"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_sectionfront1") })</script></div></div></div>		</div>
+	</div>
+</div>
+
+<div class="m-widget">
+	
+<div id="most-popular-posts" class="m-widget m-numbered-post-list">
+	<header class="m-numbered-post-list__header">
+		<h3 class="m-numbered-post-list__header-title">
+			Most Popular		</h3>
+	</header>
+	<div class="m-numbered-post-list__posts">
+		
+<article aria-label="Here’s what happened at Obama’s 60th birthday party on Martha’s Vineyard" id="m-numbered-post-list-1" class="m-numbered-post-list__post">
+	<div class="m-numbered-post-list__image" data-count="1">
+		<a class="m-numbered-post-list__image-link" href="http://boston.com/news/entertainment/2021/08/08/what-happened-barack-obama-birthday-party-marthas-vineyard/">
+			<img src="//bdc2020.o0bc.com/wp-content/uploads/2021/08/obama-16-61107d8bdd009-scaled.jpg?width=190" loading="lazy" width="95" height="95" alt="Here’s what happened at Obama’s 60th birthday party on Martha’s Vineyard" />
+		</a>
+	</div>
+
+	<h4 class="m-numbered-post-list__title" >
+		<a class="m-numbered-post-list__link" href="http://boston.com/news/entertainment/2021/08/08/what-happened-barack-obama-birthday-party-marthas-vineyard/">
+			<span class="screen-reader-text">
+				Visit 			</span>
+			Here’s what happened at Obama’s 60th birthday party on Martha’s Vineyard		</a>
+	</h4>
+</article>
+
+<article aria-label="5 takeaways as Yam Madar shines in Celtics Summer League debut" id="m-numbered-post-list-2" class="m-numbered-post-list__post">
+	<div class="m-numbered-post-list__image" data-count="2">
+		<a class="m-numbered-post-list__image-link" href="http://boston.com/sports/analysis/2021/08/08/yam-madar-celtics-summer-league-takeaways/">
+			<img src="//bdc2020.o0bc.com/wp-content/uploads/2021/02/Celtics_Basketball_67772-60232dbccbd04-scaled.jpg?width=190" loading="lazy" width="95" height="95" alt="5 takeaways as Yam Madar shines in Celtics Summer League debut" />
+		</a>
+	</div>
+
+	<h4 class="m-numbered-post-list__title" >
+		<a class="m-numbered-post-list__link" href="http://boston.com/sports/analysis/2021/08/08/yam-madar-celtics-summer-league-takeaways/">
+			<span class="screen-reader-text">
+				Visit 			</span>
+			5 takeaways as Yam Madar shines in Celtics Summer League debut		</a>
+	</h4>
+</article>
+
+<article aria-label="Fauci is hopeful COVID vaccines will get full FDA approval within weeks. Here&#039;s why that matters." id="m-numbered-post-list-3" class="m-numbered-post-list__post">
+	<div class="m-numbered-post-list__image" data-count="3">
+		<a class="m-numbered-post-list__image-link" href="http://boston.com/news/coronavirus/2021/08/08/fauci-hopeful-covid-vaccines-full-fda-approval/">
+			<img src="//bdc2020.o0bc.com/wp-content/uploads/2021/08/Virus_Outbreak_Congress_35832-6110096065555-scaled.jpg?width=190" loading="lazy" width="95" height="95" alt="Fauci is hopeful COVID vaccines will get full FDA approval within weeks. Here&#039;s why that matters." />
+		</a>
+	</div>
+
+	<h4 class="m-numbered-post-list__title" >
+		<a class="m-numbered-post-list__link" href="http://boston.com/news/coronavirus/2021/08/08/fauci-hopeful-covid-vaccines-full-fda-approval/">
+			<span class="screen-reader-text">
+				Visit 			</span>
+			Fauci is hopeful COVID vaccines will get full FDA approval within weeks. Here&#039;s why that matters.		</a>
+	</h4>
+</article>
+
+<article aria-label="Ashish Jha warns of coming surge in COVID deaths" id="m-numbered-post-list-4" class="m-numbered-post-list__post">
+	<div class="m-numbered-post-list__image" data-count="4">
+		<a class="m-numbered-post-list__image-link" href="http://boston.com/news/coronavirus/2021/08/08/ashish-jha-warns-coming-surge-covid-deaths/">
+			<img src="//bdc2020.o0bc.com/wp-content/uploads/2021/08/s3___bgmp-arc_arc-feeds_generic-photos_to-arc_wiggs_Doctor_10-61104b9db1502-scaled.jpg?width=190" loading="lazy" width="95" height="95" alt="Ashish Jha warns of coming surge in COVID deaths" />
+		</a>
+	</div>
+
+	<h4 class="m-numbered-post-list__title" >
+		<a class="m-numbered-post-list__link" href="http://boston.com/news/coronavirus/2021/08/08/ashish-jha-warns-coming-surge-covid-deaths/">
+			<span class="screen-reader-text">
+				Visit 			</span>
+			Ashish Jha warns of coming surge in COVID deaths		</a>
+	</h4>
+</article>
+
+<article aria-label="Counting Crows cancel Boston concert hours before start" id="m-numbered-post-list-5" class="m-numbered-post-list__post">
+	<div class="m-numbered-post-list__image" data-count="5">
+		<a class="m-numbered-post-list__image-link" href="http://boston.com/news/entertainment/2021/08/08/counting-crows-boston-concert-cancel/">
+			<img src="//bdc2020.o0bc.com/wp-content/uploads/2015/07/d40b277ff45a4fc4ba4ae552dbedf7ff-d40b277ff45a4fc4ba4ae552dbedf7ff-0-scaled.jpg?width=190" loading="lazy" width="95" height="95" alt="Counting Crows cancel Boston concert hours before start" />
+		</a>
+	</div>
+
+	<h4 class="m-numbered-post-list__title" >
+		<a class="m-numbered-post-list__link" href="http://boston.com/news/entertainment/2021/08/08/counting-crows-boston-concert-cancel/">
+			<span class="screen-reader-text">
+				Visit 			</span>
+			Counting Crows cancel Boston concert hours before start		</a>
+	</h4>
+</article>
+	</div>
+</div>
+</div>
+
+
+<div class="m-widget">
+	
+<div class="m-most-popular">
+	<header class="m-most-popular__header">
+		<p class="m-most-popular__header-description">
+			Most Popular		</p>
+					<div class="m-most-popular__logo">
+				<a href="http://www.bostonglobe.com/" class="logo">
+					<svg class="a-icon" aria-hidden="true" width="250" height="39"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#boston-globe"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#boston-globe"></use></svg><span class="screen-reader-text">The Boston Globe Logo</span>				</a>
+			</div>
+				</header>
+	<div class="m-most-popular__posts">
+		<article aria-label="Obama celebrates 60th birthday with friends, celebrities on Martha’s Vineyard" id="most-popular-post-1" class="m-most-popular__post" >
+	<h3 class="m-most-popular__post-title">
+		<a class="m-most-popular__post-link" href="http://bostonglobe.com/2021/08/08/metro/obama-celebrates-60th-birthday-with-friends-celebrities-marthas-vineyard/">
+			Obama celebrates 60th birthday with friends, celebrities on Martha’s Vineyard		</a>
+	</h3>
+</article>
+<article aria-label="With the window to act narrowing, a stark report from the world’s climate experts" id="most-popular-post-2" class="m-most-popular__post" >
+	<h3 class="m-most-popular__post-title">
+		<a class="m-most-popular__post-link" href="http://bostonglobe.com/2021/08/09/science/with-window-act-narrowing-stark-report-worlds-climate-experts/">
+			With the window to act narrowing, a stark report from the world’s climate experts		</a>
+	</h3>
+</article>
+<article aria-label="Vaccinated people can spread the Delta variant. But experts disagree whether those without symptoms should be tested" id="most-popular-post-3" class="m-most-popular__post" >
+	<h3 class="m-most-popular__post-title">
+		<a class="m-most-popular__post-link" href="http://bostonglobe.com/2021/08/08/metro/covid-19-testing-is-increasing-should-there-be-even-more/">
+			Vaccinated people can spread the Delta variant. But experts disagree whether those without symptoms should be tested		</a>
+	</h3>
+</article>
+<article aria-label="Here are seven times you’re already required to show proof you’re vaccinated" id="most-popular-post-4" class="m-most-popular__post" >
+	<h3 class="m-most-popular__post-title">
+		<a class="m-most-popular__post-link" href="http://bostonglobe.com/2021/08/06/nation/here-are-seven-times-youre-already-required-show-proof-youre-vaccinated/">
+			Here are seven times you’re already required to show proof you’re vaccinated		</a>
+	</h3>
+</article>
+<article aria-label="We are seeing a Red Sox team with issues that reflects who they really are" id="most-popular-post-5" class="m-most-popular__post" >
+	<h3 class="m-most-popular__post-title">
+		<a class="m-most-popular__post-link" href="http://bostonglobe.com/2021/08/08/sports/we-are-seeing-red-sox-team-with-issues-that-reflects-who-they-really-are/">
+			We are seeing a Red Sox team with issues that reflects who they really are		</a>
+	</h3>
+</article>
+	</div>
+</div>
+</div>
+
+
+
+<div class="m-widget">
+	<div class="m-advert m-advert--sidebar">
+		<div class="m-content-advert-wrap">
+			<span class="m-content-advert-title">
+				Advertisement			</span>
+			<div id="js-advert--sectionfront2" class="m-advert m-advert--sectionfront2  m-advert--sticky"><div class="m-advert__container"><div id="ad_sectionfront2"><script type="type/javascript">googletag.cmd.push(function() { googletag.display("ad_sectionfront2") })</script></div></div></div>		</div>
+	</div>
+</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	</main>
+	<footer id="site-footer" class="o-site-footer" aria-label="Site Footer">
+		<div class="m-grid-container">
+			<section class="o-site-footer__meta m-grid">
+				<div class="o-site-footer__social m-grid-span-4">
+					
+<ul class="a-list--no-style m-social-share m-social-share--block m-social-share--footer">
+	<li class="m-social-share__item">
+		<a  href="https://www.instagram.com/boston/" class="m-social-share__link" rel="nopenner noreferrer" target="_blank">
+			<svg class="a-icon a-icon--social" aria-hidden="true" width="21" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#instagram-white"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#instagram-white"></use></svg><span class="screen-reader-text">Follow Boston.com on Instagram (Opens in a New Tab)</span>		</a>
+	</li>
+	<li class="m-social-share__item">
+		<a href="https://twitter.com/intent/user?screen_name=BostonDotCom" class="m-social-share__link" rel="nopenner noreferrer" target="_blank">
+			<svg class="a-icon a-icon--social" aria-hidden="true" width="21" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#twitter-white"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#twitter-white"></use></svg><span class="screen-reader-text">Follow Boston.com on Twitter (Opens in a New Tab)</span>		</a>
+	</li>
+	<li class="m-social-share__item">
+		<a href="https://www.facebook.com/boston" class="m-social-share__link" rel="nopenner noreferrer" target="_blank">
+			<svg class="a-icon a-icon--social" aria-hidden="true" width="11" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#facebook-white"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#facebook-white"></use></svg><span class="screen-reader-text">Like Boston.com on Facebook (Opens in a New Tab)</span>		</a>
+	</li>
+</ul>
+				</div>
+
+				<div class="o-site-footer__colophon m-site-colophon m-grid-span-4">
+					<p class="m-site-colophon__text">&copy;2021 Boston Globe Media Partners, LLC</p>
+				</div>
+
+				<div class="o-site-footer__signup m-grid-span-4">
+					<div class="o-site-footer__signup-divider a-pattern-divider a-pattern-divider--full-width a-pattern-divider--red a-hide-desktop"></div>
+					
+<form id="newsletter-form-4" class="m-form-newsletter m-form-newsletter--horizontal" action="" method="">
+			<h4 class="m-form-newsletter__heading">
+			Sign up for our daily newsletter 		</h4>
+		<fieldset form="newsletter-form" data-mailchimp-list-ids="">
+		<legend class="screen-reader-text">
+			Submit your email		</legend>
+
+		<label class="m-form-newsletter__label" for="email-form-4">
+			<span class="screen-reader-text">Enter your email address</span>
+							<input class="a-input m-form-newsletter__input" type="email" id="email-form-4" name="email" placeholder="Email Address" aria-required="true" required>
+					</label>
+
+		<button type="submit" name="submit" class="a-button a-button--primary m-form-newsletter__button">
+			Subscribe		</button>
+
+		<p class="m-form-newsletter-error"></p>
+
+	</fieldset>
+</form>
+				</div>
+
+									<div class="o-site-footer__menu m-grid-span-12">
+						<nav class="o-site-footer__nav m-secondary-menu m-secondary-menu--footer a-list--no-style" aria-label="Footer Navigation">
+							<div class="menu-footer-container"><ul id="footer-menu" class="o-site-footer__menu-list m-secondary-menu__list a-list--no-style"><li id="menu-item-22362950" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22362950"><a href="https://www.boston.com/privacy-policy">Do not sell my data</a></li>
+<li id="menu-item-22362921" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22362921"><a href="https://www.boston.com/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-22362900" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22362900"><a href="https://www.boston.com/terms-of-service">Terms of Service</a></li>
+<li id="menu-item-22362926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22362926"><a href="https://www.boston.com/member-agreement">Member Agreement</a></li>
+</ul></div>						</nav>
+					</div>
+				
+			</section>
+		</div>
+	</footer>
+
+	<!-- Site Modal -->
+	
+<div id="site-modal" class="o-site-modal" aria-hidden="true">
+	<div class="o-site-modal__overlay" tabindex="-1" data-a11y-dialog-hide></div>
+
+	<div role="dialog" class="o-site-modal__content" aria-labelledby="m-site-modal-logo" aria-describedby="modal-description">
+
+		<button data-a11y-dialog-hide="site-modal" class="a-button o-site-modal__close" aria-label="Close this dialog window">
+			<svg class="a-icon" aria-hidden="true" width="17" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close-symbol"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#close-symbol"></use></svg><span class="screen-reader-text">Close Modal</span>		</button>
+
+		<h3 id="m-site-modal-logo" class="m-site-logo">
+			<span class="screen-reader-text">
+				Boston.com Newsletter Signup			</span>
+			<svg class="a-icon" aria-hidden="true" width="200" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#logo"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.boston.com/wp-content/themes/bdc-2020/assets/symbol-defs.svg#logo"></use></svg><span class="screen-reader-text">Boston.com Logo</span>		</h3>
+
+		<p id="modal-description" class="o-site-modal__description">
+			Stay up to date with everything Boston. Receive the latest news and breaking updates, straight from our newsroom to your inbox.		</p>
+
+		<!-- form id should match fieldset 'form' attribute -->
+		
+<form id="newsletter-form-5" class="m-form-newsletter m-form-newsletter--vertical" action="" method="">
+			<h4 class="m-form-newsletter__heading">
+			Enter your email address		</h4>
+		<fieldset form="newsletter-form" data-mailchimp-list-ids="">
+		<legend class="screen-reader-text">
+			Submit your email		</legend>
+
+		<label class="m-form-newsletter__label" for="email-form-5">
+			<span class="screen-reader-text">Enter your email address</span>
+							<input class="a-input m-form-newsletter__input" type="email" id="email-form-5" name="email" placeholder="Email Address" aria-required="true" required>
+					</label>
+
+		<button type="submit" name="submit" class="a-button a-button--primary m-form-newsletter__button">
+			Subscribe		</button>
+
+		<p class="m-form-newsletter-error"></p>
+
+	</fieldset>
+</form>
+
+		<button type="button" name="cancel" class="a-button a-button--is-link a-c-red a-uppercase" data-a11y-dialog-hide="site-modal" >
+			No thanks				<span class="screen-reader-text">
+					 - Closes Modal window				</span>
+			</button>
+	</div>
+</div>
+
+
+	<!-- / Site Modal -->
+
+	
+	<script type="text/javascript" id="ad-refresh-callback">
+		/**
+		 * Refresh the OpenWrap ads.
+		 *
+		 * @param array slotsToRefresh The slots due to be refreshed.
+		 */
+		function refreshOpenWrapAds( slotsToRefresh ) {
+			// Remove the previous bids from GPT.
+			PWT.removeKeyValuePairsFromGPTSlots( slotsToRefresh );
+			apstag.setDisplayBids();
+
+			// Get new bids fot the slots due to refresh and add them to GPT before refreshing.
+			PWT.requestBids(
+				PWT.generateConfForGPT( slotsToRefresh ),
+				function( adUnitsArray ) {
+					PWT.addKeyValuePairsToGPTSlots( adUnitsArray );
+
+					// Push the update to Google.
+					googletag.cmd.push( function() {
+						// Refresh the slots.
+						googletag.pubads().refresh( slotsToRefresh );
+					} );
+				}
+			);
+		}
+	</script>
+	<script type="text/javascript">
+!function(n,t,c,e,u){function r(n){try{f=n(u)}catch(n){return h=n,void i(p,n)}i(s,f)}function i(n,t){for(var c=0;c<n.length;c++)d(n[c],t);
+}function o(n,t){return n&&(f?d(n,f):s.push(n)),t&&(h?d(t,h):p.push(t)),l}function a(n){return o(!1,n)}function d(t,c){
+n.setTimeout(function(){t(c)},0)}var f,h,s=[],p=[],l={then:o,catch:a,_setup:r};n[e]=l;var v=t.createElement("script");
+v.src=c,v.async=!0,v.id="_uasdk",v.rel=e,t.head.appendChild(v)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+	'UA', {
+		appKey: 'XJoCGW0GRDietgEhEXpsJg',
+		token: 'MTpYSm9DR1cwR1JEaWV0Z0VoRVhwc0pnOndCZ3RiWnpwQnFXakEtckxkQnlyTkE1NmRDaWxSMm5vNUFQNkRRZHFjN28',
+				websitePushId: 'web.boston.com.remix',
+						secureIframeUrl: 'https://www.boston.com/secure-bridge.html',		vapidPublicKey: 'BHRLCpgLazdtSrznUKdHmTSjqjEg5PjeRqWDX2g1ezJ40WUFkKMeifMIXqjWC2OQlNoA9KYbl47GloxsgLdbYtE='
+	});
+</script>
+			<script>
+	if (typeof(window.bgmpGdpr) !== 'undefined' && !window.bgmpGdpr.isOptedOut()) {
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+	{n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+	;if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '813236348753005');
+	fbq('track', "PageView");}</script>
+	<noscript><img height="1" width="1" class="hidden"
+	src="https://www.facebook.com/tr?id=813236348753005&ev=PageView&noscript=1"
+	/></noscript>
+<script type='text/javascript' id='frontend-js-extra'>
+/* <![CDATA[ */
+var sportsbarData = {"is_home":"1","tags":"","category":""};
+/* ]]> */
+</script>
+<script async="async" type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/themes/bdc-2020/dist/js/frontend.js?ver=0.1.3' id='frontend-js' async></script>
+<script type='text/javascript' id='avc_frontend-js-extra'>
+/* <![CDATA[ */
+var AdRefreshControl = {"advertiserIds":[],"lineItemIds":[],"sizesToExclude":"","slotIdsToExclude":[],"viewabilityThreshold":"70","refreshInterval":"30","maximumRefreshes":"10","refreshCallback":"refreshOpenWrapAds"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/ad-refresh-control/dist/js/frontend.js?ver=1.0.4' id='avc_frontend-js'></script>
+<script type='text/javascript' id='bgmp-regi-bundle-js-js-extra'>
+/* <![CDATA[ */
+var bgmpRegi = {"regi_signup_form_path":"https:\/\/www.boston.com\/wp-content\/plugins\/wp-plugin-regi-spot-im\/markup\/signup-form.php?blog_name=Boston.com","blog_name":"Boston.com"};
+/* ]]> */
+</script>
+<script async="async" type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/wp-plugin-regi-spot-im//bgmp-regi-bundle.js?ver=0.0.2' id='bgmp-regi-bundle-js-js'></script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/bdc-functionality/assets/js/tracker/lib/AppMeasurement/AppMeasurement.js?ver=2.22.0' id='app_measurement-js'></script>
+<script type='text/javascript' id='bdc_tracker-js-extra'>
+/* <![CDATA[ */
+var bdcDigitalData = {"settings":{"reportSuite":"nytbglobe,nytbgglobal","customLinksReportSuite":"nytbglobe","trackingServer":"smetrics.boston.com"},"pageInstanceID":"Boston.com homepage-www.boston.com","page":{"pageInfo":{"pageID":"Boston.com homepage","internalLinks":"javascript:,cars.com,boston.com,bostonglobe.com,globe.com,cityfeet.com,legacy.com,monstermoving.com,movietickets.com,newsbank.com,salary.com,snocountry.com,travidia.com,uclick.com,zap2it.com,bostondirtdogs.com,adperfect.com,bankrate.com,ce.com,flightview.com,gabriels.com,harvestadsdepot.com,interviewmastery.com,localattitude.com,pair.com,resume.com,sportsballot.com,vanlines.com,boston.addresses.com,boston.jiwire.com,boston.stats.com,gadzoo.com,jobview.boston.monster.com,mrboffo.com,mypublicnotices.com,upickem.com,realtraffic.maptuit.com,caspio.com,upickem.net,boston.houzz.com,localhost,www.boston.com","destinationURL":"https:\/\/www.boston.com\/","pageURL":"https:\/\/www.boston.com\/","channel":"homepage","campaign":"","subsection":"","rssID":"","authors":"bgadmin,bgadmintest","pageLayout":"rail-header-standard","pagination":"","p1":"","pageType":"Boston.com homepage","publishDate":"10\/26\/2016","videoName":"","cms":"WordPress","environment":"Live","summaryLength":0,"searchKeyword":"","trackingCode":"","keywords":"","sponsorName":"","loginStatus":"logged out","publicationName":"Boston.com","galleryName":null,"codeVersion":"2.22.0","articleID":"BDC-7","refresh":"","registrationID":"","newsletter":""}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://bdc2020.o0bc.com/wp-content/plugins/bdc-functionality/dist/js/tracker.js?ver=1626794527' id='bdc_tracker-js'></script>
+	</body>
+</html>
+
+<!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->

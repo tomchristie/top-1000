@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DownloadHelper - Video download browser extension</title>
+		<link rel="prefetch" href="//fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800" />
+<link rel="prefetch" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link rel="prefetch" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="prefetch" href="/css/cache-82030eb4809a302791380e03b8dbc12e.css?FFlDE" />
+		<style>
+			[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+				display: none !important;
+			}
+			#nav ul li a,.button,.icon,.paginator li a,a{text-decoration:none}#banner,#header,#header-wrapper,.box.feature .image,.button,.icon{position:relative}a,body,div,h2,header,html,img,li,nav,p,section,span,ul{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}.hide-init,header,nav,section{display:block}ul{list-style:none}*,.row,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}body{font-family:'Open Sans',sans-serif;font-size:13pt;color:#696969;font-weight:300;line-height:2.25em;-webkit-text-size-adjust:none;background-image:-moz-linear-gradient(top,rgba(0,0,0,.05),rgba(0,0,0,0)),url(/images/bg01.png);background-image:-webkit-linear-gradient(top,rgba(0,0,0,.05),rgba(0,0,0,0)),url(/images/bg01.png);background-image:-ms-linear-gradient(top,rgba(0,0,0,.05),rgba(0,0,0,0)),url(/images/bg01.png);background-image:linear-gradient(top,rgba(0,0,0,.05),rgba(0,0,0,0)),url(/images/bg01.png);background-color:#f7f7f7;background-position:top left,top left;background-repeat:repeat-x,repeat;background-size:100% 30em,auto}.button,h2{font-weight:800}.container{margin-left:auto;margin-right:auto;width:1400px}@media screen and (max-width:1680px){.container{width:1200px}}@media screen and (max-width:1280px){.container{width:960px}}@media screen and (max-width:980px){.container{width:90%!important}}@media screen and (max-width:736px){.container{width:100%!important}}.row{border-bottom:solid 1px transparent;margin:-40px 0 -1px -40px}.row:after,.row:before{content:'';display:block;clear:both;height:0}.\34 u,.\35 u,.\37 u{clear:none;margin-left:0}.row>*{padding:40px 0 0 40px;float:left;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.\37 u{width:58.3333333333%}.\35 u{width:41.6666666667%}.\34 u{width:33.3333333333%}@media screen and (max-width:1680px){.row>*{padding:40px 0 0 40px}.row{margin:-40px 0 -1px -40px}}@media screen and (max-width:1280px){.row>*{padding:25px 0 0 25px}.row{margin:-25px 0 -1px -25px}}@media screen and (max-width:980px){.row>*{padding:25px 0 0 25px}.row{margin:-25px 0 -1px -25px}.\31 2u\28medium\29{width:100%;clear:none;margin-left:0}}@media screen and (max-width:736px){.row>*{padding:20px 0 0 20px}.row{margin:-20px 0 -1px -20px}}a{color:#0090c5}h2{color:#444;font-size:2.25em;margin:.5em 0 .6em;line-height:1.4em}p,ul{margin-bottom:1em;line-height:normal;color:#282828}section{margin-bottom:5em}section:last-child{margin-bottom:0}header{margin:0 0 2em}.image{display:inline-block;outline:0}.image img{display:block;width:100%;border-radius:8px}.image.featured{display:block;width:100%;margin:0 0 2.5em}.button{-moz-transition:background-color .25s ease-in-out;-webkit-transition:background-color .25s ease-in-out;-ms-transition:background-color .25s ease-in-out;transition:background-color .25s ease-in-out;-webkit-appearance:none;display:inline-block;background:#0090c5;color:#fff;border-radius:6px;outline:0;border:0;cursor:pointer;font-size:1.35em;padding:.6em 1.5em}.button.icon:before{position:relative;margin-right:.5em;top:.05em}.button.alt{background:#f1f1f1;background:rgba(0,0,0,.05);color:#444}.button.big{font-size:2.25em;padding:.8em .9em}.box{box-shadow:0 3px 0 0 rgba(0,0,0,.05);background:#fff;border-radius:6px;padding:2em}.box.feature{padding:0;min-height:510px}.box.feature .image{margin:0}.box.feature .image img{border-bottom-left-radius:0;border-bottom-right-radius:0}.icon:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:FontAwesome;font-style:normal;font-weight:400;text-transform:none!important}.icon>.label{display:none}#logo{display:inline-block;padding:.2em;max-width:10em}#header-wrapper{padding:4.5em 0 1em}#features-wrapper{padding:3em 0}#nav{position:absolute;right:0;top:0;font-size:.9em}#nav ul li{float:left;line-height:4.5em;padding-left:1.5em}#nav ul li a{-moz-transition:background-color .25s ease-in-out;-webkit-transition:background-color .25s ease-in-out;-ms-transition:background-color .25s ease-in-out;transition:background-color .25s ease-in-out;font-weight:800;letter-spacing:.025em;color:#696969;border-radius:6px;padding:.5em 1em}#nav ul li>ul{display:none}#nav ul li.current a{background:#444;color:#fff}#banner{padding:4.5em}#banner h2{font-size:3.5em;margin:.1em 0 .35em}#banner p{font-size:2.75em;line-height:1.35em;margin:0}#banner .button{width:100%;margin-bottom:.5em}#banner .button.icon:before{position:absolute;right:.15em;top:50%;margin-top:-.5em}#banner .button.alt{margin-bottom:0}#banner ul{margin:0 0 0 2em}@media screen and (max-width:1680px){body{font-size:12pt}}@media screen and (max-width:1280px){body{font-size:11pt}}@media screen and (max-width:980px){#banner,#header-wrapper,.button{text-align:center}body,html{overflow-x:hidden}body{font-size:11pt}section{clear:both;margin-bottom:3em!important}.button{width:100%;font-size:1.35em;padding:.85em 0!important}.button.icon{padding-right:.75em!important}.button.icon:before{margin-right:.5em;top:.05em}#header-wrapper{padding:3em 0 1em}#header{margin:0 auto}#nav{display:none}#banner{padding:4.5em 3em}#banner ul{margin:2em 0 0}#banner .button.icon:before{position:relative;right:auto;top:auto}#page-wrapper{-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-ms-transition:-ms-transform .5s ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-transition:-moz-transform .5s ease;-webkit-transition:-webkit-transform .5s ease;transition:transform .5s ease;padding-bottom:1px}}@media screen and (max-width:736px){#banner,.button{text-align:center}body{line-height:2em}h2{font-size:13pt;margin:0 0 1em}section{clear:both;margin-bottom:3em!important}.button{width:100%;font-size:1.25em!important;padding:.65em 0!important}.button.icon{padding-right:.75em!important}.button.icon:before{margin-right:.5em;top:.05em}.box{padding:15px;margin:0}.box.feature{margin:20px 0 0!important;padding:0}#banner p,#banner ul{margin:0}.box.feature .image{position:relative;margin:0}.box.feature .image img{border-bottom-left-radius:0;border-bottom-right-radius:0}#header-wrapper{padding:3em 0 1.5em}#banner-wrapper{padding:0 15px}#features-wrapper{padding:0 15px 40px}#banner{padding:15px;margin:0 auto!important}#banner h2{font-size:2em;margin:.75em 0 .5em}#banner p{font-size:1.5em;line-height:1.5em}#banner .button{margin:0 0 1em}}
+		</style>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />		
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		<meta name="description"
+			content="DownloadHelper: the easy way to Web videos. Download tons of videos from most of YouTube like sites." />
+		<meta name="keywords"
+			content="streaming video encoders,educational streaming video,streaming video,mobile streaming video,streaming video recorders,streaming video recording software" />
+		<meta name="author" content="Michel Gutierrez" />
+		<link rel="shortcut icon" href="/images/favicon.gif" type="image/x-gif"/>
+		<link rel="icon" href="/images/favicon.gif" type="image/x-gif"/>	
+		<!-- Scripts -->
+		<link rel="subresource" href="/js/cache-fe2f7b3e934ddfc71715344505de8d18.js?FFlDE">
+<script>!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/js/cache-fe2f7b3e934ddfc71715344505de8d18.js?FFlDE",])</script>
+		<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-1041911-2', 'downloadhelper.net');
+ga('send', 'pageview','/');
+
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+
+		
+	</head>
+	<body class="homepage">
+        
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							
+								
+							<div id="logo">
+								<a href="https://www.downloadhelper.net/" title="Video DownloadHelper"><img src="/images/logo-64.png"/></a>
+							</div>
+
+							
+
+						<!-- Nav -->
+							
+								
+							<nav id="nav">
+								<ul>
+									<li class="current"><a href="https://www.downloadhelper.net/">Home</a></li>
+									<li class=""><a href="https://www.downloadhelper.net/install">Install</a></li>
+									<li class=""><a href="https://www.downloadhelper.net/asites">Video sites</a></li>
+									<li class="">
+										<a href="/help">Support</a>
+										<ul>
+											
+											<li><a href="https://www.downloadhelper.net/faq">FAQ</a></li>
+											<li><a href="https://groups.google.com/forum/#!forum/video-downloadhelper-q-and-a" target="_blank">Support forum</a></li>
+											<li><a href="https://groups.google.com/forum/#!forum/video-downloadhelper-internationalization" target="_blank">Internationalization</a></li>
+											
+										</ul>
+									</li>
+									<li class=""><a href="https://www.downloadhelper.net/donate">Contribute</a></li>
+									<li class=""><a href="https://www.downloadhelper.net/convert">Premium</a></li>
+									
+								</ul>
+							</nav>
+
+							
+
+							
+
+					</header>
+					 
+				</div>
+								
+			<!-- Banner -->
+				
+							
+<script>
+(function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = '/eas/ads/advert.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+				<div id="banner-wrapper">
+					<div id="banner" class="box container">
+						<div class="row">
+							<div class="7u 12u(medium)">
+								<h2>Video DownloadHelper</h2>
+								<p>Browser extension to download videos from the Web</p>
+							</div>
+							<div class="5u 12u(medium) hide-init">
+								<ul>
+									<li><a href="/install" class="button big icon fa-arrow-circle-right">Install</a></li>
+									<li><a href="/help" class="button alt big icon fa-question-circle">Help</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+			<!-- Features -->
+				
+					
+				<div id="features-wrapper" class="hide-init">
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="/q_and_a" class="image featured"><img src="/images/screenshot.png" alt="" /></a>
+										<div class="inner">
+											<header>
+												<h2>So easy to use !</h2>
+												<p>When Video downloadHelper detects videos, the browser toolbar icon activates.
+												Just click on it to see the available videos, just pick the desired one.</p>
+											</header>
+											<p></p>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="https://addons.mozilla.org/firefox/addon/video-downloadhelper" target="_blank" class="image featured">
+											<img src="/images/firefox-logo.png" alt="" />
+										</a>
+										<div class="inner">
+											<header>
+												<h2>For Firefox</h2>
+												<p>The second most downloaded Firefox add-on since 2007</p>
+											</header>
+											<p>Current version is <strong>7.6.0</strong></p>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(medium)">
+
+								<!-- Box -->
+									<section class="box feature">
+										<a href="https://chrome.google.com/webstore/detail/video-downloadhelper/lmjnegcaeklhafolokijcfjliaokphfk" target="_blank" class="image featured">
+											<img src="/images/chrome-logo.png" alt="" />
+										</a>
+										<div class="inner">
+											<header>
+												<h2>For Chrome</h2>
+												<p>The Chrome version was released in late June 2015 and is growing quickly</p>
+											</header>
+											<p>Current version is <strong>7.6.0.0</strong></p>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+			<!-- Main -->
+				
+				
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row 200%">
+							
+							<div class="12u 16u(medium) important(medium)">
+
+								<!-- Content -->
+									<div id="content">
+										<section class="last">
+											
+										</section>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+				
+			<!-- IFrame content -->
+			
+				
+
+			<!-- Footer -->
+				
+					
+				<div id="footer-wrapper" class="hide-init">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="3u 6u(medium) 12u$(small)">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Quick links</h3>
+										<ul class="style2">
+											<li><a href="/howto">Downloader manual</a></li>
+											<li><a href="/conversion-manual">Converter manual</a></li>
+											<li><a href="/q_and_a">Firefox support</a></li>
+											<li><a href="/q_and_a_chrome">Chrome support</a></li>
+											<li><a href="/opensource">Open-source projects</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="3u 6u$(medium) 12u$(small)">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Information</h3>
+										<ul class="style2">
+											<li><a href="/terms-of-service">Terms</a></li>
+											<li><a href="/privacy">Privacy</a></li>
+											<li><a href="/contact">Contact</a></li>
+											<li><a href="/partnership">Partnership</a></li>
+											<li><a href="/help">Help</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="3u 6u(medium) 12u$(small)">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Kiva</h3>
+										<ul class="style2">
+											<li><a href="/kiva">As of 8/9/2021,
+												859 Video DownloadHelper users lent $191035 to
+												real people 5479 projects. </a>
+												</li>
+											<li><a href="/kiva"><strong>Learn more ...</strong></a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="3u 6u$(medium) 12u$(small)">
+
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>Follow Us</h3>
+										<ul>
+											<li><a href="https://twitter.com/downloadhelper" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/pages/Video-DownloadHelper-official/186082954804545" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="https://plus.google.com/+downloadhelper/posts" target="_blank" class="icon fa-google-plus"><span class="label">Google +</span></a></li>
+											<li><a href="https://www.youtube.com/channel/UCLJLAjuwEISpRqyYlmPBdlw/videos" target="_blank" class="icon fa-youtube"><span class="label">Google +</span></a></li>
+										</ul>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; downloadhelper.net. All rights reserved</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+				
+
+			</div>
+
+	</body>
+
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/cache-82030eb4809a302791380e03b8dbc12e.css?FFlDE" />
+<!--
+	Based on Verti by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+</html>
