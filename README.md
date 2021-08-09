@@ -19,7 +19,7 @@ Based on the results I've seen here, I think the most sensible policy for HTTPX 
 for charcter decoding would be...
 
 * Default to whatever charset is specified, using `errors='replace'`.
-* Failing that, attempt `.decode(utf-8, errors='strict')`. Much quicker than chardet, and handles the large majority of cases.
+* Failing that, attempt `.decode(utf-8, errors='strict')`. (Much quicker than chardet, and handles the large majority of cases.)
 * Failing that, attempt chardet.
 
 Also, it's important that the Chinese character set GB2312 should always be coerced to the superset GBK8,
@@ -38,6 +38,9 @@ iso-8859-2 1
 euc-kr 1
 windows-1251 1
 windows-1256 1
+
+Unspecfied charsets, which successfully decode as UTF-8:
+utf-8 192
 
 Guessed charsets:
 gbk 21

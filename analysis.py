@@ -91,6 +91,9 @@ print("Specified charsets:")
 for item in sorted(specified_charsets.items(), key=lambda i: i[1], reverse=True):
     print(item[0], item[1])
 print()
+print("Unspecfied charsets, which successfully decode as UTF-8:")
+print('utf-8', total_with_utf8)
+print()
 print("Guessed charsets:")
 for item in sorted(guessed_charsets.items(), key=lambda i: i[1], reverse=True):
     print(item[0], item[1])
