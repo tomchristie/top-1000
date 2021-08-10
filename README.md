@@ -52,3 +52,20 @@ windows-1252 2
 iso-8859-1 1
 euc-jp 1
 ```
+
+---
+
+Follow-up:
+
+Switched from `chardet` to `charset_normalizer` - in all the examples we have here it gave the same results, but was significantly faster.
+
+Was interested to figure out if the proposed "fallback to utf-8 first" was a good policy or not, so dig some digging into the 192 cases where no charset was specified, but utf-8 decoding works successfully.
+
+Of these cases what we're interested in is are there cases where `content.decode(charset_normalizer_guess) != content.decode("utf-8")`. Turns out there's exactly 12 of these cases. In all of those 12 cases, the reason is because the encoding is actually `utf-8-sig` (Includes a leading BOM)
+
+Anyways, what's the actual upshot of that?...
+
+We can keep our charset decoding policy nice & simple...
+
+* Default to whatever charset is specified, using `errors='replace'`.
+* If no charset is specified, use the `charset_normalizer` guess.
